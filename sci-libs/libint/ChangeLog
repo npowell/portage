@@ -1,0 +1,31 @@
+# ChangeLog for sci-libs/libint
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/libint/ChangeLog,v 1.6 2008/07/07 06:38:17 dberkholz Exp $
+
+*libint-1.1.4 (07 Jul 2008)
+
+  07 Jul 2008; Donnie Berkholz <dberkholz@gentoo.org>; +libint-1.1.4.ebuild:
+  Bump. Clean up ebuild, new homepage, keyword ~amd64.
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  05 Aug 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Remove myself as maintainer, anyone feel free to work on this, although I'll
+  continue to do so as well.
+
+  09 Jul 2006; Donnie Berkholz <dberkholz@gentoo.org>; libint-1.1.2.ebuild:
+  x86 stable.
+
+  07 Jul 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Update to my new email address.
+
+*libint-1.1.2 (06 Dec 2005)
+
+  06 Dec 2005; Donnie Berkholz <dberkholz@gentoo.org>;
+  +files/dont-append-mcpu.patch, +metadata.xml, +libint-1.1.2.ebuild:
+  New library, used to evaluate integrals over Cartesian Gaussian functions.
+  Useful in quantum chemistry. Is autodetected by sci-chemistry/mpqc now and
+  used for very advanced methods, but hopefully will be able to fix that
+  behavior soon.
+

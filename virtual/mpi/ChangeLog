@@ -1,0 +1,20 @@
+# ChangeLog for virtual/mpi
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/virtual/mpi/ChangeLog,v 1.5 2008/04/09 00:46:27 jer Exp $
+
+  09 Apr 2008; Jeroen Roovers <jer@gentoo.org> mpi-1.0.ebuild:
+  Stable for HPPA (bug #216855).
+
+  18 May 2007; Raúl Porcel <armin76@gentoo.org> mpi-1.0.ebuild:
+  ia64 stable
+
+  26 Apr 2007; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Update for cluster herd split to hp-cluster and ha-cluster.
+
+*mpi-1.0 (17 Oct 2006)
+
+  17 Oct 2006; Donnie Berkholz <dberkholz@gentoo.org>; +metadata.xml,
+  +mpi-1.0.ebuild:
+  New-style virtual for MPI implementation, so the default not being keyworded
+  for a certain arch doesn't screw up dependencies.
+

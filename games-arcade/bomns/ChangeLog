@@ -1,0 +1,20 @@
+# ChangeLog for games-arcade/bomns
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-arcade/bomns/ChangeLog,v 1.4 2007/04/09 21:49:41 welp Exp $
+
+  09 Apr 2007; Peter Weller <welp@gentoo.org> bomns-0.99.1.ebuild:
+  Keyworded ~x86-fbsd wrt bug 173405
+
+  08 Apr 2007; Joseph Jezak <josejx@gentoo.org> bomns-0.99.1.ebuild:
+  Marked ~ppc for bug #173426.
+
+  07 Sep 2006; Michael Sterrett <mr_bones_@gentoo.org> bomns-0.99.1.ebuild:
+  patch to fix data install from Tristan Heaven via bug #132092
+
+*bomns-0.99.1 (01 Dec 2005)
+
+  01 Dec 2005; Chris Gianelloni <wolf31o2@gentoo.org> +metadata.xml,
+  +bomns-0.99.1.ebuild:
+  Initial import. Ebuild by Fernando V. <email@missionaccomplish.com>. Closing
+  bug #110094.
+

@@ -1,0 +1,15 @@
+# ChangeLog for app-text/uvconv
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-text/uvconv/ChangeLog,v 1.4 2007/02/09 01:06:52 flameeyes Exp $
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  05 Dec 2005; Mark Loeser <halcy0n@gentoo.org> uvconv-1.1.3b.ebuild:
+  Stable on x86; bug #114324
+
+*uvconv-1.1.3b (22 Nov 2004)
+
+  22 Nov 2004; <pclouds@gentoo.org> +metadata.xml, +uvconv-1.1.3b.ebuild:
+  Initial ebuild
+

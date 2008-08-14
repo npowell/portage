@@ -1,0 +1,58 @@
+# ChangeLog for media-plugins/vdr-graphtft
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-graphtft/ChangeLog,v 1.9 2008/08/10 18:26:55 hd_brummy Exp $
+
+*vdr-graphtft-0.1.21_alpha (10 Aug 2008)
+
+  10 Aug 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/vdr-graphtft-0.1.21_alpha-gentoo.diff,
+  vdr-graphtft-0.1.18_alpha.ebuild, +vdr-graphtft-0.1.21_alpha.ebuild:
+  versions bump
+
+  01 Aug 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
+  add GLEP 56 USE flag desc from use.local.desc
+
+  28 Jul 2008; Carsten Lohrke <carlo@gentoo.org>
+  vdr-graphtft-0.1.18_alpha.ebuild:
+  QA: Get rid of deprecated qt4_min_version(). Please fix your ebuilds to
+  support split Qt 4.4 dependencies, cf. bug 217161 comment 11.
+
+  22 Jun 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/vdr-graphtft-0.1.18_alpha-imagemagick-6.4-new_header.diff,
+  +files/gcc-4.3-missing_includes.diff, vdr-graphtft-0.1.18_alpha.ebuild:
+  add patches to compile with new header structur of imagemagick-6.4.x and
+  gcc-4.3.x
+
+  22 Jun 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  -files/vdr-graphtft-0.1.16_alpha-gentoo.diff,
+  -files/ffmpeg-0.4.9_p20080326-new_header.diff,
+  -vdr-graphtft-0.1.16_alpha.ebuild:
+  cleanup old version; not fixed for newer ffmpeg
+
+  15 May 2008; Matthias Schwarzott <zzam@gentoo.org>
+  +files/vdr-graphtft-0.1.18_alpha-ffmpeg-0.4.9_p20080326-new_header.diff,
+  vdr-graphtft-0.1.16_alpha.ebuild, vdr-graphtft-0.1.18_alpha.ebuild:
+  Fixed new ffmpeg header patch for version 0.1.18_alpha. Fixed quoting of
+  PATCHES.
+
+*vdr-graphtft-0.1.18_alpha (13 Apr 2008)
+
+  13 Apr 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/vdr-graphtft-0.1.18_alpha-gentoo.diff,
+  vdr-graphtft-0.1.16_alpha.ebuild, +vdr-graphtft-0.1.18_alpha.ebuild:
+  version bump; bug 217176 fixed; bug 217518 fixed
+
+  29 Mar 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/ffmpeg-0.4.9_p20080326-new_header.diff,
+  vdr-graphtft-0.1.16_alpha.ebuild:
+  patch to fix new ffmpeg header structur added; bug #214740
+
+*vdr-graphtft-0.1.16_alpha (23 Dec 2007)
+
+  23 Dec 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/vdr-graphtft-0.1.16_alpha-gentoo.diff, +files/confd,
+  +files/graphtft-fe, +files/rc-addon.sh, +metadata.xml,
+  +vdr-graphtft-0.1.16_alpha.ebuild:
+  initial ebuild, find older versions on overlay vdr-testing; Thanks to
+  T.Kost, T.Dressler, S.Grebe for testing on graphtft-fe part
+

@@ -1,0 +1,85 @@
+# ChangeLog for dev-libs/qof
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/qof/ChangeLog,v 1.21 2008/06/17 22:18:52 opfer Exp $
+
+  17 Jun 2008; Christian Faulhammer <opfer@gentoo.org> qof-0.7.5.ebuild:
+  change HOMEPAGE and add pkgconfig dependency, see bug 227557 reported by
+  Patrick Lauer
+
+  11 May 2008; Christian Faulhammer <opfer@gentoo.org> qof-0.7.5.ebuild:
+  move doxygen dependency into build-time dependency field as reported on bug
+  221663 by flameeyes
+
+  24 Mar 2008; Christian Faulhammer <opfer@gentoo.org>
+  -files/qof-0.7.2-remove_spurious_CFLAGS.patch, -qof-0.7.2.ebuild:
+  clean up
+
+  24 Mar 2008; Markus Meier <maekke@gentoo.org> qof-0.7.5.ebuild:
+  amd64 stable, bug #205242
+
+  10 Mar 2008; Raúl Porcel <armin76@gentoo.org> qof-0.7.5.ebuild:
+  sparc stable wrt #212902
+
+  10 Mar 2008; Christian Faulhammer <opfer@gentoo.org> qof-0.7.5.ebuild:
+  stable x86, bug 212902
+
+  01 Mar 2008; nixnut <nixnut@gentoo.org> qof-0.7.5.ebuild:
+  Added ~ppc wrt bug 211735
+
+*qof-0.7.5 (08 Feb 2008)
+
+  08 Feb 2008; Christian Faulhammer <opfer@gentoo.org> -qof-0.7.4.ebuild,
+  +qof-0.7.5.ebuild:
+  version bump and clean up
+
+  30 Jan 2008; Christian Faulhammer <opfer@gentoo.org>
+  files/qof-0.7.4-remove_spurious_CFLAGS.patch, qof-0.7.4.ebuild:
+  add sqlite, doc and nls USE flags; rework the patch so really all
+  unnecessary CFLAGS are removed; prevent auto-detection of some programs
+
+*qof-0.7.4 (30 Jan 2008)
+
+  30 Jan 2008; Christian Faulhammer <opfer@gentoo.org>
+  +files/qof-0.7.4-remove_spurious_CFLAGS.patch, +qof-0.7.4.ebuild:
+  version bump, add dependency on SQLite 2 versions
+
+  10 Jan 2008; Ferris McCormick <fmccor@gentoo.org> qof-0.7.2.ebuild:
+  Sparc stable, part of Bug #205242, all tests pass.
+
+  10 Jan 2008; Christian Faulhammer <opfer@gentoo.org> qof-0.7.2.ebuild:
+  stable x86, bug 205242
+
+  10 Jan 2008; Christian Faulhammer <opfer@gentoo.org> qof-0.7.2.ebuild:
+  add gnome-extra/libgda as DEPEND, fixes bug 204958, reported by Radoslaw
+  Szkodzinski <root AT astralstorm DOT puszkin DOT org>
+
+  12 Nov 2007; Christian Faulhammer <opfer@gentoo.org> qof-0.7.2.ebuild:
+  build it with -j1, see bug 197999; thanks to Volker Wegert
+  <mail@volker-wegert.de>
+
+  05 Nov 2007; Christian Faulhammer <opfer@gentoo.org> qof-0.7.2.ebuild:
+  go to the correct directory in src_unpack(), so epatch actually works
+
+  04 Nov 2007; Christian Faulhammer <opfer@gentoo.org>
+  +files/qof-0.7.2-remove_spurious_CFLAGS.patch, qof-0.7.2.ebuild:
+  remove all warning CFLAGS as they can hinder successful compilation, see
+  bugs 197999 and 196103
+
+  03 Nov 2007; Olivier Crête <tester@gentoo.org> qof-0.7.2.ebuild:
+  Mark ~amd64 for bug #195986
+
+  23 Oct 2007; Raúl Porcel <armin76@gentoo.org> qof-0.7.2.ebuild:
+  Add ~sparc wrt #195986
+
+  16 Oct 2007; Markus Rothe <corsair@gentoo.org> qof-0.7.2.ebuild:
+  Added ~ppc64; bug #195986
+
+  15 Oct 2007; Christian Faulhammer <opfer@gentoo.org> qof-0.7.2.ebuild:
+  src_compile removed, it has been the default definition anyway
+
+*qof-0.7.2 (15 Oct 2007)
+
+  15 Oct 2007; Christian Faulhammer <opfer@gentoo.org> +metadata.xml,
+  +qof-0.7.2.ebuild:
+  initial commit for bug 118517; taken from Sunrise
+

@@ -1,0 +1,46 @@
+# ChangeLog for dev-libs/libmemcached
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/libmemcached/ChangeLog,v 1.8 2008/07/15 14:12:09 caleb Exp $
+
+*libmemcached-0.22 (15 Jul 2008)
+
+  15 Jul 2008; Caleb Tennis <caleb@gentoo.org> +libmemcached-0.22.ebuild:
+  version bump
+
+*libmemcached-0.21 (24 May 2008)
+
+  24 May 2008; Caleb Tennis <caleb@gentoo.org> -libmemcached-0.11.ebuild,
+  -libmemcached-0.13.ebuild, -libmemcached-0.16.ebuild,
+  -libmemcached-0.19.ebuild, +libmemcached-0.21.ebuild:
+  version bump, remove old versions
+
+*libmemcached-0.20 (05 May 2008)
+
+  05 May 2008; Caleb Tennis <caleb@gentoo.org> +libmemcached-0.20.ebuild:
+  version bump
+
+*libmemcached-0.19 (23 Apr 2008)
+
+  23 Apr 2008; Caleb Tennis <caleb@gentoo.org> +libmemcached-0.19.ebuild:
+  version bump
+
+  27 Mar 2008; Caleb Tennis <caleb@gentoo.org> libmemcached-0.16.ebuild:
+  amd64 stable
+
+*libmemcached-0.16 (19 Feb 2008)
+
+  19 Feb 2008; Robin H. Johnson <robbat2@gentoo.org>
+  +libmemcached-0.16.ebuild:
+  Version bump.
+
+*libmemcached-0.13 (14 Jan 2008)
+
+  14 Jan 2008; Samuli Suominen <drac@gentoo.org> +libmemcached-0.13.ebuild:
+  Version bump.
+
+*libmemcached-0.11 (28 Nov 2007)
+
+  28 Nov 2007; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml,
+  +libmemcached-0.11.ebuild:
+  Initial commit. Ebuild by Robin H. Johnson <robbat2@gentoo.org>.
+

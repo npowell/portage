@@ -1,0 +1,32 @@
+# ChangeLog for mail-filter/sid-milter
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/mail-filter/sid-milter/ChangeLog,v 1.7 2008/01/29 18:35:06 mrness Exp $
+
+  29 Jan 2008; Alin Năstac <mrness@gentoo.org> sid-milter-0.2.14.ebuild:
+  Remove libmilter atom from run-time dependencies.
+
+  04 Nov 2007; Alin Năstac <mrness@gentoo.org> sid-milter-0.2.14.ebuild:
+  Remove useless pkg_postinst.
+
+*sid-milter-0.2.14 (12 Oct 2007)
+
+  12 Oct 2007; Alin Năstac <mrness@gentoo.org>
+  -files/sid-milter-0.2.13-queueID.patch, +files/sid-milter-0.2.14-auth.patch,
+  +files/sid-milter-0.2.14-postfix-queueID.patch, +files/gentoo.config.m4,
+  -files/site.config.m4, -sid-milter-0.2.13.ebuild,
+  +sid-milter-0.2.14.ebuild:
+  Version bump, thanks to Jan Oravec <jan dot oravec at 6com dot sk> (#178501).
+  Fix authorized connections rejection (#175898).
+
+  19 Jul 2006; Tuấn Văn <langthang@gentoo.org>
+  files/sid-milter-0.2.13-queueID.patch:
+  incomplete patch.
+
+*sid-milter-0.2.13 (18 Jul 2006)
+
+  18 Jul 2006; Tuấn Văn <langthang@gentoo.org>
+  +files/sid-milter-0.2.13-queueID.patch, +files/sid-filter.conf,
+  +files/sid-filter.init, +files/site.config.m4, +metadata.xml,
+  +sid-milter-0.2.13.ebuild:
+  Initial import
+

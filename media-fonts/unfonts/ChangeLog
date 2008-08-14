@@ -1,0 +1,48 @@
+# ChangeLog for media-fonts/unfonts
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-fonts/unfonts/ChangeLog,v 1.11 2008/05/20 05:00:09 dirtyepic Exp $
+
+*unfonts-1.0.2_pre080514 (20 May 2008)
+
+  20 May 2008; Ryan Hill <dirtyepic@gentoo.org>
+  +unfonts-1.0.2_pre080514.ebuild:
+  Version bump.
+
+  26 Nov 2006; Diego Pettenò <flameeyes@gentoo.org> unfonts-1.0.ebuild:
+  Add ~x86-fbsd keyword, restrict binchecks and strip.
+
+  12 Jul 2006; Aron Griffis <agriffis@gentoo.org> unfonts-1.0.ebuild:
+  Mark 1.0 stable on ia64
+
+  23 Sep 2005; Gustavo Zacarias <gustavoz@gentoo.org> unfonts-1.0.ebuild:
+  Stable on sparc
+
+  23 Aug 2005; Gustavo Zacarias <gustavoz@gentoo.org> unfonts-1.0.ebuild:
+  Added ~sparc
+
+  15 Jul 2005; Diego Pettenò <flameeyes@gentoo.org> unfonts-1.0.ebuild:
+  Stable on amd64.
+
+  29 Sep 2004; Mamoru KOMACHI <usata@gentoo.org> -unfonts-0.0.20040526.ebuild,
+  unfonts-1.0.ebuild:
+  Stable on x86, alpha and ppc.
+
+  12 Sep 2004; Mamoru KOMACHI <usata@gentoo.org> unfonts-1.0.ebuild:
+  Forgot to remove "extra" stuff.
+
+*unfonts-1.0 (12 Sep 2004)
+
+  12 Sep 2004; Mamoru KOMACHI <usata@gentoo.org> +unfonts-1.0.ebuild:
+  Version bumped. Also fixed bug #56993.
+
+  29 Jul 2004; Danny van Dyk <kugelfang@gentoo.org>
+  unfonts-0.0.20040526.ebuild:
+  Marked ~amd64.
+
+*unfonts-0.0.20040526 (05 Jul 2004)
+
+  05 Jul 2004; Mamoru KOMACHI <usata@gentoo.org> +metadata.xml,
+  +unfonts-0.0.20040526.ebuild:
+  Initial import. Ebuild submitted by Jung Tae-young <master@mytears.org>,
+  closing bug #55827
+

@@ -1,0 +1,46 @@
+# ChangeLog for dev-python/mantissa
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/mantissa/ChangeLog,v 1.9 2008/04/03 21:50:03 lordvan Exp $
+
+*mantissa-0.6.19 (03 Apr 2008)
+
+  03 Apr 2008; Thomas Raschbacher <lordvan@gentoo.org>
+  +mantissa-0.6.19.ebuild:
+  added 0.6.19 with ~amd64
+
+  12 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Marien Zwart (marienz, #107204) from metadata.xml.
+
+*mantissa-0.6.1 (02 Nov 2007)
+
+  02 Nov 2007; Ali Polatel <hawking@gentoo.org> -mantissa-0.3.1.ebuild,
+  -mantissa-0.4.1.ebuild, +mantissa-0.6.1.ebuild:
+  Version bump. Drop old.
+
+  21 Feb 2007; Lukasz Strzygowski <lucass@gentoo.org>
+  files/digest-mantissa-0.3.1, files/digest-mantissa-0.4.1, Manifest:
+  Convert to Manifest2.
+
+  01 Apr 2006; Aron Griffis <agriffis@gentoo.org> mantissa-0.4.1.ebuild:
+  Mark 0.4.1 ~ia64
+
+  13 Feb 2006; Marien Zwart <marienz@gentoo.org> mantissa-0.3.1.ebuild,
+  mantissa-0.4.1.ebuild:
+  Stop passing the -R option to trial (deprecated in twisted 2.1, removed in
+  2.2).
+
+  11 Jan 2006; Marien Zwart <marienz@gentoo.org> mantissa-0.3.1.ebuild,
+  mantissa-0.4.1.ebuild:
+  Add missing twisted-mail dependency.
+
+*mantissa-0.4.1 (21 Dec 2005)
+
+  21 Dec 2005; Marien Zwart <marienz@gentoo.org> +mantissa-0.4.1.ebuild:
+  Version bump.
+
+*mantissa-0.3.1 (05 Dec 2005)
+
+  05 Dec 2005; Marien Zwart <marienz@gentoo.org> +metadata.xml,
+  +mantissa-0.3.1.ebuild:
+  New ebuild.
+

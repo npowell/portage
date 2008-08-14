@@ -1,0 +1,92 @@
+# ChangeLog for app-admin/rsyslog
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/rsyslog/ChangeLog,v 1.13 2008/08/14 06:47:37 dev-zero Exp $
+
+  14 Aug 2008; Tiziano Müller <dev-zero@gentoo.org>
+  files/3-devel/rsyslog.init, files/3-stable/rsyslog.init:
+  Added provide logger to init.d-scripts (thanks to Jon Gerdes, bug
+  #234640).
+
+  12 Aug 2008; Tiziano Müller <dev-zero@gentoo.org> rsyslog-3.21.2.ebuild:
+  Removed inherit autotools since unneeded
+
+*rsyslog-3.21.2 (12 Aug 2008)
+*rsyslog-3.18.2 (12 Aug 2008)
+
+  12 Aug 2008; Tiziano Müller <dev-zero@gentoo.org> -rsyslog-3.16.1.ebuild,
+  +rsyslog-3.18.2.ebuild, -rsyslog-3.21.1.ebuild, +rsyslog-3.21.2.ebuild:
+  Version bump for stable and unstable branch. Dropped old versions.
+
+*rsyslog-3.21.1 (31 Jul 2008)
+*rsyslog-3.18.1 (31 Jul 2008)
+
+  31 Jul 2008; Tiziano Müller <dev-zero@gentoo.org> +rsyslog-3.18.1.ebuild,
+  -rsyslog-3.19.7.ebuild, +rsyslog-3.21.1.ebuild:
+  Version bump for stable and unstable branch. Dropped old unstable.
+
+  25 Jul 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
+  add GLEP 56 USE flag desc from use.local.desc
+
+  16 Jun 2008; Jeroen Roovers <jer@gentoo.org> rsyslog-3.19.7.ebuild:
+  Marked ~hppa too.
+
+*rsyslog-3.19.7 (12 Jun 2008)
+
+  12 Jun 2008; Tiziano Müller <dev-zero@gentoo.org> -rsyslog-3.19.5.ebuild,
+  +rsyslog-3.19.7.ebuild:
+  Version bump for devel-branch
+
+*rsyslog-3.19.5 (03 Jun 2008)
+
+  03 Jun 2008; Tiziano Müller <dev-zero@gentoo.org>
+  -files/3.19.2-as_needed.patch, rsyslog-3.16.1.ebuild,
+  -rsyslog-3.19.2.ebuild, +rsyslog-3.19.5.ebuild:
+  Version bump for devel-branch (upstream included --as-needed patch and
+  fixed tight-loop bug). Added PROVIDES to satisfy virtual/logger.
+
+*rsyslog-3.19.2 (19 May 2008)
+*rsyslog-3.16.1 (19 May 2008)
+
+  19 May 2008; Tiziano Müller <dev-zero@gentoo.org>
+  -files/3.14.1-implicit_declaration.patch, +files/3.19.2-as_needed.patch,
+  -rsyslog-3.14.1.ebuild, -rsyslog-3.16.0.ebuild, +rsyslog-3.16.1.ebuild,
+  -rsyslog-3.17.1.ebuild, +rsyslog-3.19.2.ebuild:
+  Version bump, cleaned up the old versions due to a couple of serious bugs.
+  Added GnuTLS USE flag for the devel-branch. Changed dependency for
+  postgresql to virtual/postgresql-base.
+
+  14 May 2008; Markus Meier <maekke@gentoo.org> rsyslog-3.16.0.ebuild,
+  rsyslog-3.17.1.ebuild:
+  add ~x86, bug #222081
+
+*rsyslog-3.17.1 (25 Apr 2008)
+*rsyslog-3.16.0 (25 Apr 2008)
+
+  25 Apr 2008; Tiziano Müller <dev-zero@gentoo.org> +rsyslog-3.16.0.ebuild,
+  -rsyslog-3.17.0.ebuild, +rsyslog-3.17.1.ebuild:
+  Version bump (both stable and testing branches).
+
+*rsyslog-3.17.0 (09 Apr 2008)
+*rsyslog-3.14.1 (09 Apr 2008)
+
+  09 Apr 2008; Tiziano Müller <dev-zero@gentoo.org>
+  -files/3.15/rsyslog.conf, -files/3.15/rsyslog.init,
+  -files/3.15/rsyslog.logrotate, -files/3.15/rsyslog-gentoo.conf,
+  +files/3-devel/rsyslog.conf, +files/3-devel/rsyslog.init,
+  +files/3-stable/rsyslog.conf, +files/3.14.1-implicit_declaration.patch,
+  +files/3-devel/rsyslog.logrotate, +files/3-devel/rsyslog-gentoo.conf,
+  +files/3-stable/rsyslog.init, +files/3-stable/rsyslog.logrotate,
+  +files/3-stable/rsyslog-gentoo.conf, +rsyslog-3.14.1.ebuild,
+  -rsyslog-3.15.0.ebuild, +rsyslog-3.17.0.ebuild:
+  Version bump. Added ebuild for stable branch (3.14.x). Reorganized
+  init.d/conf.d/logrotate files to have one set for the stable and one for
+  the devel branch. Is supposed to fix bug #216968.
+
+*rsyslog-3.15.0 (07 Apr 2008)
+
+  07 Apr 2008; Tiziano Müller <dev-zero@gentoo.org>
+  +files/3.15/rsyslog.conf, +files/3.15/rsyslog.init,
+  +files/3.15/rsyslog.logrotate, +files/3.15/rsyslog-gentoo.conf,
+  +metadata.xml, +rsyslog-3.15.0.ebuild:
+  Initial commit (ebuild written by me.)
+

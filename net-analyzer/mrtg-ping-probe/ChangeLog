@@ -1,0 +1,20 @@
+# ChangeLog for net-analyzer/mrtg-ping-probe
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/mrtg-ping-probe/ChangeLog,v 1.4 2008/01/18 19:10:36 armin76 Exp $
+
+  18 Jan 2008; Raúl Porcel <armin76@gentoo.org>
+  mrtg-ping-probe-2.2.0.ebuild:
+  Fix HOMEPAGE
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  05 Jun 2006; Peter Volkov <pva@gentoo.org> mrtg-ping-probe-2.2.0.ebuild:
+  Fixed missed IUSE variable, copying INSTALL in doc directory and indentation.
+
+*mrtg-ping-probe-2.2.0 (31 May 2006)
+
+  31 May 2006; Markus Ullmann <jokey@gentoo.org> +files/mrtg-ping-cfg,
+  +metadata.xml, +mrtg-ping-probe-2.2.0.ebuild:
+  Initial import, closing bug #54728, thanks to Molchanov Alexander <xorader@mail.ru>
+

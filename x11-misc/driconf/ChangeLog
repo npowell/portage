@@ -1,0 +1,68 @@
+# ChangeLog for x11-misc/driconf
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/driconf/ChangeLog,v 1.16 2008/01/31 04:36:40 dberkholz Exp $
+
+  31 Jan 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  -driconf-0.2.7.ebuild:
+  Clean up.
+
+  08 Sep 2007; Joseph Jezak <josejx@gentoo.org> driconf-0.9.1.ebuild:
+  Marked ppc for bug #191615.  Marked ~ppc64 too.
+
+  07 Sep 2007; Chris Gianelloni <wolf31o2@gentoo.org> driconf-0.9.1.ebuild:
+  Stable on amd64 wrt bug #191615.
+
+  07 Sep 2007; Chris Gianelloni <wolf31o2@gentoo.org> driconf-0.9.1.ebuild:
+  Stable on x86 wrt bug #191615.
+
+  29 Aug 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing joshuabaergen from metadata due to his retirement (see #92210 for
+  reference).
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>; driconf-0.2.7.ebuild,
+  driconf-0.9.1.ebuild:
+  Drop virtual/x11 references.
+
+  21 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  18 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  -driconf-0.9.0.ebuild:
+  Remove older version.
+
+*driconf-0.9.1 (18 Sep 2006)
+
+  18 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  +driconf-0.9.1.ebuild:
+  Bump. Adds some translations and a .desktop file.
+
+  01 Jul 2006; Donnie Berkholz <spyderous@gentoo.org>; driconf-0.2.7.ebuild:
+  x86 stable.
+
+  12 Apr 2006; Daniel Gryniewicz <dang@gentoo.org> driconf-0.9.0.ebuild:
+  Mark ~amd64
+
+  19 Mar 2006; <nixnut@gentoo.org> driconf-0.9.0.ebuild:
+  Added ~ppc. Bug #126816
+
+*driconf-0.9.0 (02 Feb 2006)
+
+  02 Feb 2006; Joshua Baergen <joshuabaergen@gentoo.org>
+  +driconf-0.9.0.ebuild:
+  Version bump due to the poke of Erik Andrén in #70267.
+
+  28 Jan 2006; Donnie Berkholz <spyderous@gentoo.org>; driconf-0.2.7.ebuild:
+  Fix ordering of modular X deps. We want to pull in modular by default when
+  available.
+
+  28 Jan 2006; Joshua Baergen <joshuabaergen@gentoo.org>
+  driconf-0.2.7.ebuild:
+  Fix dependencies per #120548.
+
+*driconf-0.2.7 (09 Sep 2005)
+
+  09 Sep 2005; Joshua Baergen <joshuabaergen@gentoo.org> +metadata.xml,
+  +driconf-0.2.7.ebuild:
+  Initial import.  Thanks to James Le Cuirot and Christoph Brill (egore) for the
+  ebuild.  Bug #70267 .
+

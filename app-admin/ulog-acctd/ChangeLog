@@ -1,0 +1,48 @@
+# ChangeLog for app-admin/ulog-acctd
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/ulog-acctd/ChangeLog,v 1.11 2007/08/30 12:05:44 phreak Exp $
+
+  30 Aug 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing liquidx from metadata due to his retirement (see #171155 for
+  reference).
+
+  17 Apr 2007; Christian Faulhammer <opfer@gentoo.org>
+  ulog-acctd-0.4.3.ebuild:
+  keyworded ~amd64, bug 172324
+
+  06 Apr 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  ulog-acctd-0.4.3.ebuild:
+  ppc stable, bug #172324
+
+  27 Mar 2007; Christian Faulhammer <opfer@gentoo.org>
+  ulog-acctd-0.4.3.ebuild:
+  stable x86, bug 172324
+
+  24 Jan 2007; Marius Mauch <genone@gentoo.org> ulog-acctd-0.4.2.ebuild,
+  ulog-acctd-0.4.3.ebuild:
+  Replacing einfo with elog
+
+*ulog-acctd-0.4.3 (27 Jun 2005)
+
+  27 Jun 2005; Alastair Tse <liquidx@gentoo.org> +ulog-acctd-0.4.3.ebuild:
+  version bump (#97130)
+
+  24 Jun 2005; Alastair Tse <liquidx@gentoo.org> +files/init.d/ulog-acctd,
+  ulog-acctd-0.4.2.ebuild:
+  added init script. thanks to Radek Podgorny (#79034)
+
+  05 Jun 2005; Michael Hanselmann <hansmi@gentoo.org>
+  ulog-acctd-0.4.2.ebuild:
+  Stable on ppc.
+
+  24 Apr 2005; Stephanie Lockwood-Childs <wormo@gentoo.org>
+  ulog-acctd-0.4.2.ebuild:
+  mark ~ppc
+
+*ulog-acctd-0.4.2 (24 Jul 2004)
+
+  24 Jul 2004; Alastair Tse <liquidx@gentoo.org>
+  +files/ulog-acctd-0.4.2-gcc2.patch, +ulog-acctd-0.4.2.ebuild:
+  intial package release. ebuild based on Thomas Eckert ebuild and patch from
+  bug #19204.
+

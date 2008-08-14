@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>no-herd</herd>
+	<maintainer>
+		<email>jer@gentoo.org</email>
+		<name>Jeroen Roovers</name>
+	</maintainer>
+	<use>
+		<flag name='nodpkg'>Disable support for <pkg>app-arch/dpkg</pkg> (useful for building a non-debian system)</flag>
+	</use>
+</pkgmetadata>

@@ -1,0 +1,41 @@
+# ChangeLog for dev-haskell/hsql
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-haskell/hsql/ChangeLog,v 1.11 2007/12/13 05:41:55 dcoutts Exp $
+
+  13 Dec 2007; Duncan Coutts <dcoutts@gentoo.org> hsql-1.7.ebuild:
+  Updates for upward compatability with cabal-1.2 and ghc-6.8
+
+  31 Oct 2007; Duncan Coutts <dcoutts@gentoo.org> hsql-1.7.ebuild:
+  Drop virtual/ghc in favour of dev-lang/ghc
+
+  06 Jan 2007; Andres Loeh <kosmikus@gentoo.org> hsql-1.7.ebuild:
+  Fixed elog / einfo usage.
+
+  16 Mar 2006; Duncan Coutts <dcoutts@gentoo.org> hsql-1.7.ebuild:
+  QA fix; Add eutils to inherit.
+
+  11 Mar 2006; Duncan Coutts <dcoutts@gentoo.org>
+  +files/hsql-1.7-sqltext-to-int.patch, hsql-1.7.ebuild:
+  Add a patch by Bjorn Bringert to fix a problem found in the sqlite3 backend.
+  See also bugs #98549 and #98551.
+
+  11 Mar 2006; Duncan Coutts <dcoutts@gentoo.org> hsql-1.7.ebuild:
+  Remove the backends from PDEPEND. Use a message in pkg_postinst instead.
+
+  09 Mar 2006; Duncan Coutts <dcoutts@gentoo.org> hsql-1.7.ebuild:
+  Add ~sparc to KEYWORDS. See bug #124902
+
+  01 Mar 2006; Michael Hanselmann <hansmi@gentoo.org> hsql-1.7.ebuild:
+  Added to ~ppc. See bug #124469.
+
+  01 Mar 2006; Markus Rothe <corsair@gentoo.org> hsql-1.7.ebuild:
+  Added ~ppc64; bug #124469
+
+  23 Feb 2006; Duncan Coutts <dcoutts@gentoo.org> hsql-1.7.ebuild:
+  Changed PDEPEND on the hsql backends to use '~' deps (as suggested by ciaranm)
+
+*hsql-1.7 (23 Feb 2006)
+
+  23 Feb 2006; <dcoutts@gentoo.org> +metadata.xml, +hsql-1.7.ebuild:
+  Initial import.
+

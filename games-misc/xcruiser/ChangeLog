@@ -1,0 +1,23 @@
+# ChangeLog for games-misc/xcruiser
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-misc/xcruiser/ChangeLog,v 1.5 2007/06/10 14:29:44 nyhm Exp $
+
+  10 Jun 2007; Tristan Heaven <nyhm@gentoo.org> xcruiser-0.30.ebuild:
+  RESTRICT="test"
+
+  05 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org> xcruiser-0.30.ebuild:
+  Removing old virtual/x11 dependency.
+
+  29 Jan 2006; Joshua Baergen <joshuabaergen@gentoo.org>
+  xcruiser-0.30.ebuild:
+  Add modular X dependencies.
+
+  15 Jun 2005; Chris Gianelloni <wolf31o2@gentoo.org> xcruiser-0.30.ebuild:
+  Removed INSTALL file.
+
+*xcruiser-0.30 (06 May 2005)
+
+  06 May 2005; Michael Sterrett <mr_bones_@gentoo.org> +metadata.xml,
+  +xcruiser-0.30.ebuild:
+  xcruise was renamed to xcruiser; version bumped (bug #53824)
+

@@ -1,0 +1,59 @@
+# ChangeLog for media-sound/transkode
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/transkode/ChangeLog,v 1.11 2008/06/14 18:20:00 yngwin Exp $
+
+  14 Jun 2008; Ben de Groot <yngwin@gentoo.org> transkode-0.7.ebuild:
+  Correcting logic in pkg_setup. Fixes bug 226653.
+
+*transkode-0.7 (14 Jun 2008)
+
+  14 Jun 2008; Ben de Groot <yngwin@gentoo.org>
+  +files/transkode-0.7-gcc-4.3.patch, +transkode-0.7.ebuild:
+  Version bump, with changes to the ebuild submitted by Jure Kobal in bug
+  187996. Updated gcc-4.3 patch. Dropped ~x86-fbsd because xineadump needs
+  to be keyworded for that arch first.
+
+  24 Apr 2008; Diego Pettenò <flameeyes@gentoo.org>
+  +files/transkode-0.6+gcc-4.3.patch, transkode-0.6-r1.ebuild:
+  Add patch to build with GCC 4.3.
+
+*transkode-0.6-r1 (21 Jul 2007)
+
+  21 Jul 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  +files/transkode-0.6-wavpack-options-fix.patch,
+  +files/transkode-0.6-wvunpack-options-fix.patch, +transkode-0.6-r1.ebuild:
+  Added wavpack patches from bug 186033. Thanks, Jure!
+
+  19 Mar 2007; Bryan Østergaard <kloeri@gentoo.org> metadata.xml:
+  Remove flameeyes from metadata.xml due to retirement.
+
+*transkode-0.6 (08 Feb 2007)
+
+  08 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> +transkode-0.6.ebuild:
+  Version bump, thanks to Arie Huijzer in bug #165807. Also move the .desktop
+  file in the proper directory setting the category, so that it now appears
+  under Multimedia menu rather than Utilities.
+
+  30 Dec 2006; Andrej Kacian <ticho@gentoo.org> transkode-0.6_beta2.ebuild:
+  Marked ~x86. Closes bug #159146 by Tyson Key <tyson.key at gmail.com>.
+
+  08 Dec 2006; Diego Pettenò <flameeyes@gentoo.org>
+  transkode-0.6_beta2.ebuild:
+  Add ~x86-fbsd keyword.
+
+  06 Dec 2006; Diego Pettenò <flameeyes@gentoo.org>
+  transkode-0.6_beta2.ebuild:
+  Add shorten useflag.
+
+  03 Dec 2006; Diego Pettenò <flameeyes@gentoo.org>
+  transkode-0.6_beta2.ebuild:
+  Add shorten useflag depending on shorten package; add a log message so that
+  users expecting this to work automatically on Amarok to transcode files on
+  the fly know to enable it on the Script Manager.
+
+*transkode-0.6_beta2 (28 Nov 2006)
+
+  28 Nov 2006; Diego Pettenò <flameeyes@gentoo.org> +metadata.xml,
+  +transkode-0.6_beta2.ebuild:
+  Initial import, transcoding frontend for KDE, with Amarok integration.
+

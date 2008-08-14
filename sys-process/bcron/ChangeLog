@@ -1,0 +1,40 @@
+# ChangeLog for sys-process/bcron
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-process/bcron/ChangeLog,v 1.10 2008/03/28 22:49:07 maekke Exp $
+
+  28 Mar 2008; Markus Meier <maekke@gentoo.org> bcron-0.09.ebuild:
+  amd64 stable, bug #207629
+
+  27 Oct 2007; Thilo Bangert <bangert@gentoo.org> bcron-0.09.ebuild:
+  fix quoting - use eclass
+
+  10 Oct 2007; Christian Faulhammer <opfer@gentoo.org> bcron-0.09.ebuild:
+  stable x86, bug 195303
+
+  09 Oct 2007; Daniel Black <dragonheart@gentoo.org> bcron-0.09.ebuild:
+  ~amd64 keyword as per bug #195303 thanks to Sergio Bevilacqua
+
+  26 Aug 2007; Thilo Bangert <bangert@gentoo.org> files/crontab:
+  remove reference to vixie-cron
+
+  26 Feb 2007; Thilo Bangert <bangert@gentoo.org> bcron-0.09.ebuild:
+  fix ROOT misuse
+
+  22 Feb 2007; Thilo Bangert <bangert@gentoo.org> bcron-0.09.ebuild:
+  einfo -> elog
+
+  19 Oct 2006; Thilo Bangert <bangert@gentoo.org> metadata.xml,
+  bcron-0.09.ebuild:
+  add to cron herd - add CRON_SYSTEM_CRONTAB (as per bug #89213) - minor
+  cleanups
+
+  06 Jun 2006; Thilo Bangert <bangert@gentoo.org> bcron-0.09.ebuild:
+  fix creation of trigger fifo
+
+*bcron-0.09 (16 May 2006)
+
+  16 May 2006; Thilo Bangert <bangert@gentoo.org> +files/crontab,
+  +metadata.xml, +bcron-0.09.ebuild:
+  initial import. This is bcron, a new cron system designed with secure
+  operations in mind.
+

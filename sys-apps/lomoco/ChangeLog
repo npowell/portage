@@ -1,0 +1,36 @@
+# ChangeLog for sys-apps/lomoco
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/lomoco/ChangeLog,v 1.7 2007/07/30 09:19:25 hollow Exp $
+
+*lomoco-1.0-r2 (30 Jul 2007)
+
+  30 Jul 2007; Benedikt Böhm <hollow@gentoo.org>
+  +files/lomoco-1.0-updated-udev.patch, +files/lomoco.conf,
+  -lomoco-1.0.ebuild, +lomoco-1.0-r2.ebuild:
+  include udev support, fixes #156665
+
+  15 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+  29 Nov 2006; Olivier Crête <tester@gentoo.org> lomoco-1.0-r1.ebuild:
+  Stable on amd64
+
+*lomoco-1.0-r1 (30 Apr 2006)
+
+  30 Apr 2006; Robin H. Johnson <robbat2@gentoo.org>
+  +files/lomoco-1.0-gentoo-hardware-support.patch, +lomoco-1.0-r1.ebuild:
+  Re-add support for hardware that Gentoo supported in lmctl, and other
+  changes that were previously sent upstream but seem to have been dropped.
+
+  22 Apr 2006; Thomas Cort <tcort@gentoo.org> lomoco-1.0.ebuild:
+  Added ~alpha keyword. Tested by Mike Hlavac <mike@flyingpenguins.org>.
+
+  22 Apr 2006; Benedikt Boehm <hollow@gentoo.org> lomoco-1.0.ebuild:
+  fix #130777
+
+*lomoco-1.0 (20 Apr 2006)
+
+  20 Apr 2006; Benedikt Boehm <hollow@gentoo.org> +metadata.xml,
+  +lomoco-1.0.ebuild:
+  initial version, thanks to Ruud Althuizen <ruud@il.fontys.nl>, fixes #117622
+

@@ -1,0 +1,111 @@
+# ChangeLog for media-gfx/pornview
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/pornview/ChangeLog,v 1.34 2008/04/27 21:35:01 jer Exp $
+
+  27 Apr 2008; Jeroen Roovers <jer@gentoo.org>
+  pornview-0.2.0_pre1-r1.ebuild:
+  Not ported to HPPA.
+
+  21 Apr 2008; Samuli Suominen <drac@gentoo.org>
+  +files/pornview-0.2.0_pre1-desktop-entry.patch, -files/gtkxine.diff,
+  pornview-0.2.0_pre1-r1.ebuild:
+  Insert missing Categories entry.
+
+  21 Apr 2008; Samuli Suominen <drac@gentoo.org>
+  -pornview-0.2.0_pre1.ebuild, pornview-0.2.0_pre1-r1.ebuild:
+  Remove invalid USE static. Move pkgconfig to DEPEND from RDEPEND. Install
+  .desktop file to correct directory.
+
+  13 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  fix herd
+
+  19 Jan 2007; Charlie Shepherd <masterdriverz@gentoo.org>
+  pornview-0.2.0_pre1.ebuild, pornview-0.2.0_pre1-r1.ebuild:
+  QA: remove invalid RESTRICT="mirror"
+
+  27 Oct 2006; <antarus@gentoo.org> metadata.xml,
+  pornview-0.2.0_pre1.ebuild, pornview-0.2.0_pre1-r1.ebuild:
+  add pkgconfig dep for bug #153067
+
+*pornview-0.2.0_pre1-r1 (19 Sep 2006)
+
+  19 Sep 2006; <antarus@gentoo.org> files/pornview-0.2.0_pre1-4.diff,
+  +files/traypatch.diff, +metadata.xml, +pornview-0.2.0_pre1-r1.ebuild:
+  Pushing in some fixes thanks to Ben Hodgetts and bug # 141588
+
+  19 Nov 2005; John N. Laliberte <allanonjl@gentoo.org>
+  pornview-0.2.0_pre1.ebuild:
+  remove gtk2 useflag.
+
+  07 Oct 2005; Diego Pettenò <flameeyes@gentoo.org>
+  pornview-0.2.0_pre1.ebuild:
+  Don't assume ld is GNU ld.
+
+  16 Sep 2005; Ciaran McCreesh <ciaranm@gentoo.org> ChangeLog:
+  Converted to UTF-8, fixed encoding screwups
+
+  01 Aug 2005; <sekretarz@gentoo.org> +files/gtkxine.diff,
+  pornview-0.2.0_pre1.ebuild:
+  Fixed problems with libxine and gtk, thanks Roland Bär <roland@pinguin.tv> 
+  in bug #81179
+
+  07 May 2005; Michael Hanselmann <hansmi@gentoo.org>
+  pornview-0.2.0_pre1.ebuild:
+  Added to ~hppa.
+
+  16 Mar 2005; Michael Hanselmann <hansmi@gentoo.org>
+  pornview-0.2.0_pre1.ebuild:
+  Added to ~sparc.
+
+  04 Oct 2004; Patrick Kursawe <phosphan@gentoo.org> -pornview-0.1.5.ebuild:
+  Removing ancient version which depended on no-longer existing xine-lib.
+
+  06 Sep 2004; Lars Weiler <pylon@gentoo.org> pornview-0.2.0_pre1.ebuild:
+  Stable on ppc.
+
+  07 Jun 2004; Aron Griffis <agriffis@gentoo.org> pornview-0.2.0_pre1.ebuild:
+  Fix use invocation
+
+  28 Apr 2004; Jon Portnoy <avenj@gentoo.org> pornview-0.2.0_pre1.ebuild :
+  Stable on AMD64.
+
+  27 Apr 2004; Aron Griffis <agriffis@gentoo.org> pornview-0.2.0_pre1.ebuild:
+  Add inherit eutils
+
+  28 Mar 2004; Jon Portnoy <avenj@gentoo.org> pornview-0.2.0_pre1.ebuild :
+  AMD64 keywords.
+
+  06 Dec 2003; <spider@gentoo.org> pornview-0.2.0_pre1.ebuild:
+  Fixed gtk2 deps
+
+  16 Nov 2003; Martin Holzer <mholzer@gentoo.org> pornview-0.2.0_pre1.ebuild,
+  files/pornview-0.2.0_pre1-4.diff:
+  Adding thumbnails patch. Closes #32074
+
+  19 Oct 2003; Martin Holzer <mholzer@gentoo.org> pornview-0.2.0_pre1.ebuild:
+  x86 stable.
+
+*pornview-0.2.0_pre1 (25 Jul 2003)
+
+  25 Jul 2003; Nick Hadaway <raker@gentoo.org> pornview-0.2.0_pre1.ebuild:
+  This build now includes the previously missing/old mplayer/xine 
+  support.  Added gtk2, nls, static, and jpeg USE flags.  As mplayer
+  and xine support cannot be installed at the same time, xine takes
+  preference over mplayer.
+
+*pornview-0.1.5 (29 Dec 2002)
+
+  01 Feb 2003; Mark Guertin <gerk@gentoo.org> pornview-0.1.5.ebuild :
+  Set ppc stable in keywords.
+
+  29 Dec 2002; Martin Holzer <mholzer@gentoo.org> pornview-0.1.5.ebuild files/digest-pornview-0.1.5 ChangeLog :
+  Version pumped. Sorry still no mplayer support
+
+*pornview-0.1.4 (15 Dec 2002)
+
+  18 Dec 2002; Martin Holzer <mholzer@gentoo.org> pornview-0.1.4.ebuild :
+  Fixed Dependeny (#12366) doesn't work with xine-lib >=0.9.13) i've added a bug on sf for this
+
+  15 Dec 2002; Martin Holzer <mholzer@gentoo.org> pornview-0.1.4.ebuild files/digest-pornview-0.1.4 Changelog :
+  Added nev Version. Sorry mplayer support is broken by pornview itself. So it's disabled
+

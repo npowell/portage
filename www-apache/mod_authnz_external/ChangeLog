@@ -1,0 +1,30 @@
+# ChangeLog for www-apache/mod_authnz_external
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-apache/mod_authnz_external/ChangeLog,v 1.6 2008/03/02 14:10:50 rbu Exp $
+
+  02 Mar 2008; Robert Buchholz <rbu@gentoo.org>
+  mod_authnz_external-3.1.0.ebuild:
+  stable amd64, bug 205527
+
+  27 Jan 2008; Benedikt Böhm <hollow@gentoo.org>
+  files/10_mod_authnz_external.conf, metadata.xml:
+  update metadata; cleanup
+
+  13 Jan 2008; Dawid Węgliński <cla@gentoo.org>
+  mod_authnz_external-3.1.0.ebuild:
+  Stable on x86 (bug #205527)
+
+  15 Sep 2007; Benedikt Böhm <hollow@gentoo.org>
+  files/10_mod_authnz_external.conf:
+  fix #192289
+
+  10 Sep 2007; Benedikt Böhm <hollow@gentoo.org> metadata.xml:
+  fix metadata
+
+*mod_authnz_external-3.1.0 (08 Sep 2007)
+
+  08 Sep 2007; Benedikt Böhm <hollow@gentoo.org>
+  +files/10_mod_authnz_external.conf, +metadata.xml,
+  +mod_authnz_external-3.1.0.ebuild:
+  initial version; #187739
+

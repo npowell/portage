@@ -1,0 +1,46 @@
+# ChangeLog for media-libs/libiptcdata
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libiptcdata/ChangeLog,v 1.12 2007/12/23 20:12:24 josejx Exp $
+
+  23 Dec 2007; <jjezak@gentoo.org> libiptcdata-1.0.2.ebuild:
+  Marked ppc stable for bug #203059.
+
+  17 Dec 2007; Raúl Porcel <armin76@gentoo.org> libiptcdata-1.0.2.ebuild:
+  ia64 stable
+
+  16 Dec 2007; nixnut <nixnut@gentoo.org> libiptcdata-1.0.2.ebuild:
+  Added ~ppc
+
+  15 Dec 2007; Markus Rothe <corsair@gentoo.org> libiptcdata-1.0.2.ebuild:
+  Stable on ppc64; 199799
+
+  15 Dec 2007; Samuli Suominen <drac@gentoo.org> libiptcdata-1.0.2.ebuild:
+  amd64 stable wrt #199799
+
+  14 Dec 2007; Christian Faulhammer <opfer@gentoo.org>
+  libiptcdata-1.0.2.ebuild:
+  stable x86, bug 199799
+
+  02 Nov 2007; Samuli Suominen <drac@gentoo.org> libiptcdata-1.0.2.ebuild:
+  Keyword ~amd64 wrt #156398.
+
+  24 Oct 2007; Raúl Porcel <armin76@gentoo.org> libiptcdata-1.0.2.ebuild:
+  Add ~ia64 wrt #156398
+
+  08 Oct 2007; Markus Rothe <corsair@gentoo.org> libiptcdata-1.0.2.ebuild:
+  Added ~ppc64; bug #156398
+
+  23 Sep 2007; Gilles Dartiguelongue <eva@gentoo.org>
+  libiptcdata-1.0.2.ebuild:
+  fix quotes & die messages
+
+  18 Sep 2007; Gilles Dartiguelongue <eva@gentoo.org>
+  libiptcdata-1.0.2.ebuild:
+  fixing ebuild wrt to vapier comments
+
+*libiptcdata-1.0.2 (16 Sep 2007)
+
+  16 Sep 2007; Gilles Dartiguelongue <eva@gentoo.org> +metadata.xml,
+  +libiptcdata-1.0.2.ebuild:
+  initial ebuild
+

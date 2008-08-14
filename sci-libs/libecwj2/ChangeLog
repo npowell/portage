@@ -1,0 +1,16 @@
+# ChangeLog for sci-libs/libecwj2
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/libecwj2/ChangeLog,v 1.2 2007/01/10 14:10:09 djay Exp $
+
+  10 Jan 2007; <djay@gentoo.org> libecwj2-3.3.ebuild:
+  Correct the PKG_URL syntaxe
+
+*libecwj2-3.3 (19 Dec 2006)
+
+  19 Dec 2006; <djay@gentoo.org> +metadata.xml, +libecwj2-3.3.ebuild:
+  Initial import of libecwj2. Thanks to Homme Zwaagstra 
+  <hrz@geodata.soton.ac.uk>, Carsten Lohrke <carlo@gentoo.org>, Luca 
+  <luca.casagrande@gmail.com>, Alexandre 
+  Sanches <alexandre.sanches@netcourrier.com>, Emiliano Vavassori 
+  <syntaxerrormmm@gmail.com> for their work on bug #122186.
+

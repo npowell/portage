@@ -1,0 +1,43 @@
+# ChangeLog for games-puzzle/xye
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-puzzle/xye/ChangeLog,v 1.9 2008/06/23 07:24:58 opfer Exp $
+
+  23 Jun 2008; Christian Faulhammer <opfer@gentoo.org> xye-0.8.0.ebuild:
+  stable x86, bug 228963
+
+  22 Jun 2008; Thomas Anderson <gentoofan23@gentoo.org> xye-0.8.0.ebuild:
+  amd64 stable, bug #228963
+
+  02 May 2008; Tristan Heaven <nyhm@gentoo.org>
+  +files/xye-0.8.0-gcc43.patch, xye-0.8.0.ebuild:
+  Fix building with gcc-4.3
+
+  19 Mar 2008; Tristan Heaven <nyhm@gentoo.org> xye-0.8.0.ebuild:
+  Add ~amd64 keyword
+
+*xye-0.8.0 (14 Jan 2008)
+
+  14 Jan 2008; Michael Sterrett <mr_bones_@gentoo.org> +xye-0.8.0.ebuild:
+  version bump
+
+*xye-0.7.6.2 (18 Nov 2006)
+
+  18 Nov 2006; Tristan Heaven <nyhm@gentoo.org> -xye-0.7.5.ebuild,
+  -xye-0.7.6.ebuild, +xye-0.7.6.2.ebuild:
+  Version bump
+
+  29 Jun 2006; Chris Gianelloni <wolf31o2@gentoo.org> xye-0.7.6.ebuild:
+  Fixed binaries being pre-stripped. Thanks to Tristan Heaven
+  <tristanheaven@gmail.com> for the patch. Closing bug #137739.
+
+*xye-0.7.6 (20 May 2006)
+
+  20 May 2006; Michael Sterrett <mr_bones_@gentoo.org> +xye-0.7.6.ebuild:
+  version bump
+
+*xye-0.7.5 (02 May 2006)
+
+  02 May 2006; Michael Sterrett <mr_bones_@gentoo.org> +metadata.xml,
+  +xye-0.7.5.ebuild:
+  initial commit - ebuild submitted by Cristiano Chiucchiolo via bug #131564
+

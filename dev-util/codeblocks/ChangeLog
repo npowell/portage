@@ -1,0 +1,67 @@
+# ChangeLog for dev-util/codeblocks
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/codeblocks/ChangeLog,v 1.13 2008/06/01 00:12:46 jurek Exp $
+
+*codeblocks-8.02 (01 Jun 2008)
+
+  01 Jun 2008; Jurek Bartuszek <jurek@gentoo.org> +files/8.02-version.patch,
+  +codeblocks-8.02.ebuild:
+  Version bump (bug #211865)
+
+  30 Jan 2008; Jurek Bartuszek <jurek@gentoo.org>
+  codeblocks-1.0_pre20071215.ebuild:
+  Minor fixes and changes (bug #199843)
+
+  22 Dec 2007; Jurek Bartuszek <jurek@gentoo.org>
+  -codeblocks-1.0_pre20070124.ebuild, -codeblocks-1.0_pre20070404.ebuild,
+  -codeblocks-1.0_pre20070511.ebuild:
+  Remove older versions
+
+*codeblocks-1.0_pre20071215 (15 Dec 2007)
+
+  15 Dec 2007; Jurek Bartuszek <jurek@gentoo.org>
+  +codeblocks-1.0_pre20071215.ebuild:
+  Version bump
+
+  22 Sep 2007; Jurek Bartuszek <jurek@gentoo.org>
+  codeblocks-1.0_pre20070124.ebuild, codeblocks-1.0_pre20070404.ebuild,
+  codeblocks-1.0_pre20070511.ebuild, codeblocks-1.0_pre20070618.ebuild:
+  Added app-arch/zip dependency (bug #190851)
+
+*codeblocks-1.0_pre20070618 (18 Jun 2007)
+
+  18 Jun 2007; Jurek Bartuszek <jurek@gentoo.org>
+  +codeblocks-1.0_pre20070618.ebuild:
+  Version bump
+
+  14 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+*codeblocks-1.0_pre20070511 (12 May 2007)
+
+  12 May 2007; Jurek Bartuszek <jurek@gentoo.org>
+  +codeblocks-1.0_pre20070511.ebuild:
+  Version bump
+
+*codeblocks-1.0_pre20070404 (04 Apr 2007)
+
+  04 Apr 2007; Jurek Bartuszek <jurek@gentoo.org> +codeblocks-1.0_pre20070404.ebuild:
+  Version bump (fixing bug #172932)
+
+  04 Apr 2007; Peter Weller <welp@gentoo.org>
+  codeblocks-1.0_pre20070124.ebuild:
+  Keyworded ~x86-fbsd
+
+  18 Feb 2007; nixnut <nixnut@gentoo.org> codeblocks-1.0_pre20070124.ebuild:
+  Added ~ppc wrt bug 167048
+
+  17 Feb 2007; Jurek Bartuszek <jurek@gentoo.org>
+  codeblocks-1.0_pre20070124.ebuild:
+  Added ~amd64 keyword (bug #167048)
+
+*codeblocks-1.0_pre20070124 (15 Feb 2007)
+
+  15 Feb 2007; Jurek Bartuszek <jurek@gentoo.org> +metadata.xml,
+  +codeblocks-1.0_pre20070124.ebuild:
+  Initial build using snapshot from svn repository. Fixing bug #89533
+

@@ -1,0 +1,27 @@
+# ChangeLog for dev-php5/pecl-enchant
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-php5/pecl-enchant/ChangeLog,v 1.4 2008/02/23 18:06:12 swegener Exp $
+
+  23 Feb 2008; Sven Wegener <swegener@gentoo.org> pecl-enchant-1.0.1.ebuild:
+  Add ~amd64 keyword.
+
+  26 Dec 2007; Christian Heim <phreak@gentoo.org>
+  +files/digest-pecl-enchant-1.0.1:
+  Adding the missing digest.
+
+  06 Dec 2007; Markus Ullmann <jokey@gentoo.org> pecl-enchant-1.0.1.ebuild:
+  LICENSE fix from project overlay
+
+  03 Dec 2007; Jakub Moc <jakub@gentoo.org> pecl-enchant-1.0.1.ebuild:
+  Fix LICENSE
+
+*pecl-enchant-1.0.1 (15 Nov 2007)
+
+  15 Nov 2007; Markus Ullmann <jokey@gentoo.org> +metadata.xml,
+  +pecl-enchant-1.0.1.ebuild:
+  Initial import from project overlay
+
+  13 Nov 2007; Jakub Moc <jakub@gentoo.org> +metadata.xml,
+  +pecl-enchant-1.0.1.ebuild:
+  New ebuild
+

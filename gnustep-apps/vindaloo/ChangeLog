@@ -1,0 +1,40 @@
+# ChangeLog for gnustep-apps/vindaloo
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/gnustep-apps/vindaloo/ChangeLog,v 1.10 2007/11/16 15:07:23 beandog Exp $
+
+  16 Nov 2007; Steve Dibb <beandog@gentoo.org> vindaloo-0.2-r1.ebuild:
+  amd64 stable, bug 195990
+
+  27 Oct 2007; nixnut <nixnut@gentoo.org> vindaloo-0.2-r1.ebuild:
+  Stable on ppc wrt bug 195990
+
+  17 Oct 2007; Christian Faulhammer <opfer@gentoo.org>
+  vindaloo-0.2-r1.ebuild:
+  stable x86, bug 195990
+
+*vindaloo-0.2-r1 (10 Sep 2007)
+
+  10 Sep 2007; Bernard Cafarelli <voyageur@gentoo.org> -vindaloo-0.1.ebuild,
+  -vindaloo-0.2.ebuild, +vindaloo-0.2-r1.ebuild:
+  Bump from GNUstep overlay
+
+  06 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  08 Jan 2006; Michael Hanselmann <hansmi@gentoo.org> metadata.xml:
+  Remove retiring dev from metadata.
+
+*vindaloo-0.2 (20 Jul 2005)
+
+  20 Jul 2005; Armando Di Cianno <fafhrd@gentoo.org> +vindaloo-0.2.ebuild:
+  Version bump
+
+  16 Jul 2005; David Holm <dholm@gentoo.org> vindaloo-0.1.ebuild:
+  Added to ~ppc.
+
+*vindaloo-0.1 (15 Jul 2005)
+
+  15 Jul 2005; Armando Di Cianno <fafhrd@gentoo.org> +metadata.xml,
+  +vindaloo-0.1.ebuild:
+  Original package import
+

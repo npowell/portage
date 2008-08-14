@@ -1,0 +1,57 @@
+# ChangeLog for dev-util/bless
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/bless/ChangeLog,v 1.11 2007/10/28 18:56:18 compnerd Exp $
+
+*bless-0.5.2 (28 Oct 2007)
+
+  28 Oct 2007; Saleem Abdulrasool <compnerd@gentoo.org> +bless-0.5.2.ebuild:
+  Version bump from upstream (bug #196188)
+
+*bless-0.5.1 (02 Jun 2007)
+
+  02 Jun 2007; Saleem Abdulrasool <compnerd@gentoo.org> +bless-0.5.1.ebuild:
+  Version bump from upstream
+
+  14 May 2007; Saleem Abdulrasool <compnerd@gentoo.org> bless-0.5.0.ebuild:
+  Add scrollkeeper to the dependencies as per bug #177635
+
+  14 May 2007; Saleem Abdulrasool <compnerd@gentoo.org> -bless-0.4.1.ebuild:
+  prune unused versions
+
+  31 Mar 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  -files/bless-0.4.0-namespace.patch, -files/bless-0.4.0-strictness.patch,
+  -files/bless-0.5.0-beta1-install.patch, -bless-0.4.0.ebuild,
+  -bless-0.5.0_beta1.ebuild:
+  prune unneeded versions
+
+*bless-0.5.0 (31 Mar 2007)
+
+  31 Mar 2007; Saleem Abdulrasool <compnerd@gentoo.org> +bless-0.5.0.ebuild:
+  Version bump from upstream
+
+*bless-0.5.0_beta1 (31 Dec 2006)
+
+  31 Dec 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  +files/bless-0.5.0-beta1-install.patch, +bless-0.5.0_beta1.ebuild:
+  Version bump from upstream
+
+*bless-0.4.1 (06 Aug 2006)
+
+  06 Aug 2006; Saleem Abdulrasool <compnerd@gentoo.org> +bless-0.4.1.ebuild:
+  Version bump from upstream
+
+  28 Apr 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  +files/bless-0.4.0-namespace.patch, +files/bless-0.4.0-strictness.patch,
+  bless-0.4.0.ebuild:
+  Adding patches from FreeBSD for building with >=mono-1.1.10; bumped mono to
+  the same. Resolves bug #130826.
+
+  20 Mar 2006; Luis Medinas <metalgod@gentoo.org> bless-0.4.0.ebuild:
+  Added ~amd64 keyword. Closes bug #122938.
+
+*bless-0.4.0 (15 Feb 2006)
+
+  15 Feb 2006; Saleem Abdulrasool <compnerd@gentoo.org> +metadata.xml,
+  +bless-0.4.0.ebuild:
+  Initial import of bless
+

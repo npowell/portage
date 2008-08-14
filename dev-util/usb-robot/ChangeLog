@@ -1,0 +1,26 @@
+# ChangeLog for dev-util/usb-robot
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/usb-robot/ChangeLog,v 1.7 2007/12/21 14:33:14 nixnut Exp $
+
+  21 Dec 2007; nixnut <nixnut@gentoo.org> usb-robot-0.2.0.ebuild:
+  Stable on ppc wrt bug 202736
+
+  10 Aug 2007; Steve Dibb <beandog@gentoo.org> usb-robot-0.2.0.ebuild:
+  amd64 stable, bug 184332
+
+  06 Jul 2007; Christian Faulhammer <opfer@gentoo.org>
+  usb-robot-0.2.0.ebuild:
+  x86 stable, bug 184332
+
+  14 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+  07 May 2005; David Holm <dholm@gentoo.org> usb-robot-0.2.0.ebuild:
+  Added to ~ppc.
+
+*usb-robot-0.2.0 (06 Mar 2004)
+
+  06 Mar 2004; Markus Nigbur <pyrania@gentoo.org> usb-robot-0.2.0.ebuild:
+  Initial import. Thanks to Julien TIERNY <julien.tierny@wanadoo.fr> (bug
+  #42247).
+

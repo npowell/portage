@@ -1,0 +1,80 @@
+# ChangeLog for dev-perl/Mail-DKIM
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Mail-DKIM/ChangeLog,v 1.16 2008/06/17 16:01:53 dertobi123 Exp $
+
+  17 Jun 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  Mail-DKIM-0.31.ebuild:
+  Added ~ppc, bug #219448
+
+  17 Jun 2008; Raúl Porcel <armin76@gentoo.org> Mail-DKIM-0.31.ebuild:
+  Add ~alpha/~sparc wrt #219448
+
+  16 Jun 2008; Brent Baude <ranger@gentoo.org> Mail-DKIM-0.31.ebuild:
+  Marking Mail-DKIM-0.31 ~ppc64 for bug 219448
+
+*Mail-DKIM-0.31 (24 Apr 2008)
+
+  24 Apr 2008; Yuval Yaari <yuval@gentoo.org> +Mail-DKIM-0.31.ebuild:
+  Version bump; got rid of redundant deps (bug #198192, thanks Manuel Mausz)
+
+*Mail-DKIM-0.30.1 (12 Mar 2008)
+
+  12 Mar 2008; Christian Hartmann <ian@gentoo.org> +Mail-DKIM-0.30.1.ebuild:
+  Version bump; bug #212070
+
+*Mail-DKIM-0.26 (13 Jun 2007)
+
+  13 Jun 2007; Michael Cummings <mcummings@gentoo.org>
+  +Mail-DKIM-0.26.ebuild:
+  Version bump
+
+  09 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  Mail-DKIM-0.22.ebuild:
+  Marking stable amd64
+
+*Mail-DKIM-0.24 (06 Apr 2007)
+
+  06 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  +Mail-DKIM-0.24.ebuild:
+  Version bump
+
+*Mail-DKIM-0.23 (11 Mar 2007)
+
+  11 Mar 2007; Michael Cummings <mcummings@gentoo.org>
+  +Mail-DKIM-0.23.ebuild:
+  Version bump
+
+*Mail-DKIM-0.22 (11 Feb 2007)
+
+  11 Feb 2007; Christian Hartmann <ian@gentoo.org> +Mail-DKIM-0.22.ebuild:
+  Version bump
+
+  21 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  Mail-DKIM-0.19.ebuild:
+  Marking amd64 stable
+
+  10 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  -Mail-DKIM-0.17.ebuild, Mail-DKIM-0.18.ebuild, Mail-DKIM-0.19.ebuild:
+  Keywording amd64 stable; cleaned out stale ebuild
+
+*Mail-DKIM-0.19 (14 Sep 2006)
+
+  14 Sep 2006; Yuval Yaari <yuval@gentoo.org> +Mail-DKIM-0.19.ebuild:
+  Version bump
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Mail-DKIM-0.17.ebuild, Mail-DKIM-0.18.ebuild:
+  Adding perl dep; fixed DEPEND
+
+*Mail-DKIM-0.18 (24 Jun 2006)
+
+  24 Jun 2006; Michael Cummings <mcummings@gentoo.org>
+  +Mail-DKIM-0.18.ebuild:
+  Version bump upstream
+
+*Mail-DKIM-0.17 (07 Jun 2006)
+
+  07 Jun 2006; Christian Hartmann <ian@gentoo.org> +metadata.xml,
+  +Mail-DKIM-0.17.ebuild:
+  New package for future usedeps of spamassassin wrt bug #134541
+

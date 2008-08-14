@@ -1,0 +1,74 @@
+# ChangeLog for x11-apps/smproxy
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-apps/smproxy/ChangeLog,v 1.16 2008/07/03 17:54:38 gentoofan23 Exp $
+
+  03 Jul 2008; Thomas Anderson <gentoofan23@gentoo.org>
+  smproxy-1.0.2.ebuild:
+  keyworded ~arch for amd64, bug 229767
+
+  19 Dec 2007; Dawid Węgliński <cla@gentoo.org> smproxy-1.0.2.ebuild:
+  Stable on x86 (bug #202087)
+
+  07 Apr 2007; Robin H. Johnson <robbat2@gentoo.org> smproxy-1.0.2.ebuild:
+  Add ~ppc keyword.
+
+  10 Oct 2006; Donnie Berkholz <dberkholz@gentoo.org>; smproxy-1.0.2.ebuild:
+  Update description to be less generic.
+
+  08 Apr 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  -smproxy-1.0.1.ebuild:
+  Pull old ebuild.
+
+*smproxy-1.0.2 (04 Apr 2006)
+
+  04 Apr 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  +smproxy-1.0.2.ebuild:
+  Man page fix.
+
+  14 Feb 2006; Markus Rothe <corsair@gentoo.org> smproxy-1.0.1.ebuild:
+  Added ~ppc64
+
+  26 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  -smproxy-0.99.2.ebuild, -smproxy-1.0.0.ebuild:
+  Pull old versions.
+
+*smproxy-1.0.1 (23 Dec 2005)
+
+  23 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +smproxy-1.0.1.ebuild:
+  Bump for 7.0.
+
+*smproxy-1.0.0 (18 Dec 2005)
+
+  18 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +smproxy-1.0.0.ebuild:
+  Bump for 7.0RC4.
+
+  09 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  -smproxy-0.99.0.ebuild, -smproxy-0.99.1.ebuild:
+  Pull old versions.
+
+*smproxy-0.99.2 (04 Dec 2005)
+
+  04 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +smproxy-0.99.2.ebuild:
+  Bump for 7.0RC3.
+
+*smproxy-0.99.1 (20 Oct 2005)
+
+  20 Oct 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +smproxy-0.99.1.ebuild:
+  Bump for 7.0 RC1.
+
+  09 Sep 2005; Donnie Berkholz <spyderous@gentoo.org>; +metadata.xml:
+  Add metadata.
+
+  08 Aug 2005; Ferris McCormick <fmccor@gentoo.org> smproxy-0.99.0.ebuild:
+  Add ~sparc keyword (Modular X testing).
+
+*smproxy-0.99.0 (08 Aug 2005)
+
+  08 Aug 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +smproxy-0.99.0.ebuild:
+  Initial commit for modular X.
+

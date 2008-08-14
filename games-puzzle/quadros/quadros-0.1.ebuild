@@ -1,0 +1,40 @@
+# Copyright 1999-2007 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/games-puzzle/quadros/quadros-0.1.ebuild,v 1.6 2007/04/17 13:46:48 opfer Exp $
+
+inherit eutils kde games
+need-qt 3
+
+DESCRIPTION="An implementation of the Tetris game with team multiplayer ability"
+HOMEPAGE="http://quadros.sourceforge.net/"
+SRC_URI="mirror://sourceforge/quadros/${P}.tar.gz"
+
+LICENSE="LGPL-2.1"
+SLOT="0"
+KEYWORDS="~amd64 ~ppc x86"
+IUSE=""
+
+src_unpack() {
+	kde_src_unpack
+	epatch "${FILESDIR}/${P}"-gcc41.patch
+}
+
+src_compile() {
+	kde_src_compile nothing
+	${QTDIR}/bin/qmake -project -o quadros.pro
+	# Need generating .pro file from scratch
+	# because shipped src/quadros.pro is corrupted
+	# and shipped configure scripts requires pre-installed kde-libs
+	# and other stuff like dcopidl,...
+	# which are not required by game
+	echo "QMAKE_CXXFLAGS += ${CXXFLAGS}" >> quadros.pro
+	echo "CONFIG += qt thread warn_on release" >> quadros.pro
+	${QTDIR}/bin/qmake -o Makefile quadros.pro
+	emake || die "emake failed"
+}
+
+src_install() {
+	dogamesbin quadros || die "dogamesbin failed"
+	dodoc AUTHORS ChangeLog TODO NEWS README
+	prepgamesdirs
+}

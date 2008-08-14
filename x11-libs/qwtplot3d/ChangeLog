@@ -1,0 +1,67 @@
+# ChangeLog for x11-libs/qwtplot3d
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/qwtplot3d/ChangeLog,v 1.14 2008/07/28 21:54:21 carlo Exp $
+
+  28 Jul 2008; Carsten Lohrke <carlo@gentoo.org> qwtplot3d-0.2.6-r2.ebuild:
+  QA: Get rid of deprecated qt_min_version(). Quoting issues.
+
+  27 Jul 2008; Carsten Lohrke <carlo@gentoo.org> qwtplot3d-0.2.7.ebuild:
+  Fix the fix...
+
+  26 Jul 2008; Carsten Lohrke <carlo@gentoo.org> qwtplot3d-0.2.7.ebuild:
+  Fix broken split Qt 4.4 dependencies, cf. bug 217161 comment 11.
+
+  20 May 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  qwtplot3d-0.2.7.ebuild:
+  Added qt-4.4 support (bug #217189)
+
+*qwtplot3d-0.2.7 (28 Nov 2007)
+
+  28 Nov 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/qwtplot3d-doxygen.patch, +files/qwtplot3d-examples.patch,
+  +files/qwtplot3d-profile.patch, +qwtplot3d-0.2.7.ebuild:
+  Version bump, modernized the ebuild. Now Qt4 only, Qt3 version split in
+  x11-libs/qwplot3d-qt3. 
+
+  23 Feb 2007; Marcus D. Hanwell <cryos@gentoo.org>
+  -qwtplot3d-0.2.6-r1.ebuild, qwtplot3d-0.2.6-r2.ebuild:
+  Fixed ROOT issue from bug 168044. Also removed old revision.
+
+  21 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  16 Jun 2006; Markus Rothe <corsair@gentoo.org> qwtplot3d-0.2.6-r2.ebuild:
+  Stable on ppc64
+
+  07 May 2006; Markus Rothe <corsair@gentoo.org> qwtplot3d-0.2.6-r2.ebuild:
+  Added ~ppc64
+
+  08 Apr 2006; <nixnut@gentoo.org> qwtplot3d-0.2.6-r2.ebuild:
+  Added ~ppc. bug #129073
+
+  18 Jan 2006; Marcus D. Hanwell <cryos@gentoo.org>
+  qwtplot3d-0.2.6-r2.ebuild:
+  Stable on amd64.
+
+*qwtplot3d-0.2.6-r2 (23 Dec 2005)
+
+  23 Dec 2005; Carsten Lohrke <carlo@gentoo.org> +qwtplot3d-0.2.6-r2.ebuild:
+  install docs, restore lib symlinks
+
+  09 Dec 2005; Marcus D. Hanwell <cryos@gentoo.org>
+  qwtplot3d-0.2.6-r1.ebuild:
+  Few fixes to use Qt3 properly.
+
+*qwtplot3d-0.2.6-r1 (21 Oct 2005)
+
+  21 Oct 2005; Marcus D. Hanwell <cryos@gentoo.org> -qwtplot3d-0.2.6.ebuild,
+  +qwtplot3d-0.2.6-r1.ebuild:
+  Fix various issues outlines in bug 110034.
+
+*qwtplot3d-0.2.6 (14 Oct 2005)
+
+  14 Oct 2005; Marcus D. Hanwell <cryos@gentoo.org> +metadata.xml,
+  +qwtplot3d-0.2.6.ebuild:
+  Initial import, ebuild submitted by Martin Corley <Martin.Corley@ed.ac.uk>,
+  closes bug 83294.
+

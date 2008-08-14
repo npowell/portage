@@ -1,0 +1,14 @@
+# ChangeLog for app-dicts/aspell-la
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-dicts/aspell-la/ChangeLog,v 1.2 2007/11/03 22:14:13 uberlord Exp $
+
+  03 Nov 2007; Roy Marples <uberlord@gentoo.org>
+  aspell-la-6.0.20020503.0.ebuild:
+  Keyworded ~sparc-fbsd and ~x86-fbsd
+
+*aspell-la-6.0.20020503.0 (18 Aug 2007)
+
+  18 Aug 2007; Wulf C. Krueger <philantrop@gentoo.org> +metadata.xml,
+  +aspell-la-6.0.20020503.0.ebuild:
+  Initial ebuild as submitted by Michael Wilcox on bug 156039 for Latin.
+

@@ -1,0 +1,37 @@
+# ChangeLog for games-fps/qudos
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-fps/qudos/ChangeLog,v 1.8 2008/02/29 19:14:34 carlo Exp $
+
+  29 Feb 2008; Carsten Lohrke <carlo@gentoo.org> qudos-9999.ebuild:
+  Remove icon extension from desktop entry to match Icon Theme Specification.
+
+  24 Jun 2007; Piotr Jaroszyński <peper@gentoo.org> qudos-9999.ebuild:
+  (QA) Don't use KEYWORDS="-*". bug #160519.
+
+  12 Mar 2007; Marius Mauch <genone@gentoo.org> qudos-0.40.1.ebuild,
+  qudos-9999.ebuild:
+  Replacing einfo with elog
+
+  05 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org> qudos-0.40.1.ebuild,
+  qudos-9999.ebuild:
+  Removing old virtual/x11 dependency.
+
+  13 Nov 2006; Diego Pettenò <flameeyes@gentoo.org> qudos-0.40.1.ebuild,
+  qudos-9999.ebuild:
+  Remove xmms useflag.
+
+  19 Oct 2006; <tupone@gentoo.org> qudos-0.40.1.ebuild:
+  Added ~amd64 keyword. Bug #140726 by Michael Boone
+
+  07 Jul 2006; Chris Gianelloni <wolf31o2@gentoo.org> qudos-0.40.1.ebuild,
+  qudos-9999.ebuild:
+  Added cdinstall to IUSE and closing bug #139132.
+
+*qudos-9999 (27 Jun 2006)
+*qudos-0.40.1 (27 Jun 2006)
+
+  27 Jun 2006; Chris Gianelloni <wolf31o2@gentoo.org> +metadata.xml,
+  +qudos-0.40.1.ebuild, +qudos-9999.ebuild:
+  Initial import. Ebuilds by Paul Bredbury <brebs@sent.com>. Closing bug
+  #137520.
+

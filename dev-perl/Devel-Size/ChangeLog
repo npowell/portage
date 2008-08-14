@@ -1,0 +1,71 @@
+# ChangeLog for dev-perl/Devel-Size
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Devel-Size/ChangeLog,v 1.17 2008/07/15 18:02:10 armin76 Exp $
+
+  15 Jul 2008; Raúl Porcel <armin76@gentoo.org> Devel-Size-0.69.ebuild:
+  ia64/sparc/x86 stable
+
+*Devel-Size-0.69 (08 Apr 2008)
+
+  08 Apr 2008; Torsten Veller <tove@gentoo.org> metadata.xml,
+  +Devel-Size-0.69.ebuild:
+  Version bump.
+
+  10 Nov 2007; Samuli Suominen <drac@gentoo.org> Devel-Size-0.68.ebuild:
+  amd64 stable
+
+  28 Jul 2007; Raúl Porcel <armin76@gentoo.org> Devel-Size-0.68.ebuild:
+  ia64/x86 stable
+
+  16 Jul 2007; Michael Cummings <mcummings@gentoo.org>
+  Devel-Size-0.68.ebuild:
+  sparc stable
+
+  05 Jul 2007; Raúl Porcel <armin76@gentoo.org> Devel-Size-0.66.ebuild:
+  ia64/x86 stable
+
+  21 Jun 2007; Michael Cummings <mcummings@gentoo.org>
+  Devel-Size-0.66.ebuild:
+  Marking sparc stable
+
+*Devel-Size-0.68 (13 Jun 2007)
+
+  13 Jun 2007; Michael Cummings <mcummings@gentoo.org>
+  +Devel-Size-0.68.ebuild:
+  Version bump
+
+*Devel-Size-0.66 (11 Mar 2007)
+
+  11 Mar 2007; Michael Cummings <mcummings@gentoo.org>
+  +Devel-Size-0.66.ebuild:
+  Version bump
+
+  15 Oct 2006; Bryan Østergaard <kloeri@gentoo.org> Devel-Size-0.64.ebuild:
+  Stable on ia64.
+
+  11 Sep 2006; Michael Cummings <mcummings@gentoo.org>
+  +files/Devel-Size-test-fix.patch, Devel-Size-0.64.ebuild:
+  Patch for tests, affects only tests on amd64
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Devel-Size-0.64.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  20 May 2006; Thomas Cort <tcort@gentoo.org> Devel-Size-0.64.ebuild:
+  Stable on amd64.
+
+  20 Apr 2006; Thomas Cort <tcort@gentoo.org> Devel-Size-0.64.ebuild:
+  Added ~amd64 keyword wrt Bug #103950.
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org> Devel-Size-0.64.ebuild:
+  Mark 0.64 ~ia64
+
+  26 Mar 2006; Michael Cummings <mcummings@gentoo.org>
+  Devel-Size-0.64.ebuild:
+  60+ days, marking stable for sparc and x86
+
+*Devel-Size-0.64 (11 Jan 2006)
+
+  11 Jan 2006; <mcumming@gentoo.org> +metadata.xml, +Devel-Size-0.64.ebuild:
+  Prereq for bug 103950
+

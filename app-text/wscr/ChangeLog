@@ -1,0 +1,43 @@
+# ChangeLog for app-text/wscr
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-text/wscr/ChangeLog,v 1.15 2008/03/24 17:28:46 coldwind Exp $
+
+  24 Mar 2008; Santiago M. Mola <coldwind@gentoo.org> wscr-1.2.ebuild:
+  amd64 stable
+
+  25 Dec 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing taviso from metadata.xml as per #202471. Assigning to
+  maintainer-needed.
+
+  09 Apr 2007; Peter Weller <welp@gentoo.org> wscr-1.2.ebuild:
+  Keyworded ~amd64
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  22 Jun 2006; Gustavo Zacarias <gustavoz@gentoo.org> wscr-1.2.ebuild:
+  Stable on sparc
+
+  13 Aug 2005; Aaron Walker <ka0ttic@gentoo.org> wscr-1.2.ebuild:
+  Stable on mips.
+
+  16 Jul 2005; Joseph Jezak <josejx@gentoo.org> wscr-1.2.ebuild:
+  Marked ppc stable for bug #99222.
+
+  31 May 2005; Stephanie Lockwood-Childs <wormo@gentoo.org> wscr-1.2.ebuild:
+  mark ~ppc
+
+  01 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org> wscr-1.2.ebuild:
+  virtual/glibc -> virtual/libc
+
+  28 Jun 2004; Ciaran McCreesh <ciaranm@gentoo.org> wscr-1.2.ebuild:
+  Added ~sparc, ~mips
+
+  25 Jul 2003; Tavis Ormandy <taviso@gentoo.org> wscr-1.2.ebuild:
+  stable on alpha and x86
+
+*wscr-1.2 (06 May 2003)
+
+  06 May 2003; Tavis Ormandy <taviso@gentoo.org> wscr-1.2.ebuild:
+  Initial import.
+

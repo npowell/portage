@@ -1,0 +1,35 @@
+# ChangeLog for dev-java/xmlstreambuffer
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-java/xmlstreambuffer/ChangeLog,v 1.7 2008/07/19 00:21:28 betelgeuse Exp $
+
+*xmlstreambuffer-0.5.20070412-r1 (19 Jul 2008)
+
+  19 Jul 2008; Petteri Räty <betelgeuse@gentoo.org>
+  +xmlstreambuffer-0.5.20070412-r1.ebuild:
+  Remove unneeded dependency on sjsxp and migrate to the jaf virtual.
+
+  28 Mar 2008; nixnut <nixnut@gentoo.org>
+  xmlstreambuffer-0.5.20070412.ebuild:
+  Stable on ppc wrt bug 214778
+
+  19 Aug 2007; William L. Thomson Jr. <wltjr@gentoo.org>
+  xmlstreambuffer-0.5.20070412.ebuild:
+  amd64 stable, bug #187681.
+
+  15 Aug 2007; Christian Faulhammer <opfer@gentoo.org>
+  xmlstreambuffer-0.5.20070412.ebuild:
+  stable x86, bug 187681
+
+  11 Aug 2007; Krzysiek Pawlik <nelchael@gentoo.org> metadata.xml:
+  Remove myself from <maintainer>.
+
+  23 May 2007; Diego Pettenò <flameeyes@gentoo.org>
+  xmlstreambuffer-0.5.20070412.ebuild:
+  Add ~x86-fbsd keyword. Bug #176906.
+
+*xmlstreambuffer-0.5.20070412 (01 May 2007)
+
+  01 May 2007; Krzysiek Pawlik <nelchael@gentoo.org> +metadata.xml,
+  +xmlstreambuffer-0.5.20070412.ebuild:
+  Initial commit of xmlstreambuffer.
+

@@ -1,0 +1,39 @@
+# ChangeLog for app-text/djview4
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-text/djview4/ChangeLog,v 1.8 2008/05/11 21:39:34 aballier Exp $
+
+  11 May 2008; Alexis Ballier <aballier@gentoo.org> djview4-4.3.ebuild:
+  allow split qt4 deps
+
+  11 May 2008; Alexis Ballier <aballier@gentoo.org> -djview4-4.2.3.ebuild:
+  remove old
+
+*djview4-4.3 (28 Jan 2008)
+
+  28 Jan 2008; Alexis Ballier <aballier@gentoo.org> +djview4-4.3.ebuild:
+  version bump, thanks to Petr Pisar <petr.pisar@atlas.cz>, bug #207959
+
+  15 Jan 2008; Alexis Ballier <aballier@gentoo.org> djview4-4.2.3.ebuild:
+  add missing pkgconfig dep, bug #206021
+
+  15 Jan 2008; Alexis Ballier <aballier@gentoo.org> -djview4-4.1.2.ebuild,
+  -djview4-4.2.ebuild:
+  remove old
+
+*djview4-4.2.3 (10 Dec 2007)
+
+  10 Dec 2007; Alexis Ballier <aballier@gentoo.org> +djview4-4.2.3.ebuild:
+  version bump
+
+*djview4-4.2 (11 Nov 2007)
+
+  11 Nov 2007; Alexis Ballier <aballier@gentoo.org> +djview4-4.2.ebuild:
+  version bump
+
+*djview4-4.1.2 (27 Jul 2007)
+
+  27 Jul 2007; Alexis Ballier <aballier@gentoo.org> +metadata.xml,
+  +djview4-4.1.2.ebuild:
+  Initial import, thanks to Stefan Talpalaru <stefantalpalaru@yahoo.com>, bug
+  #184844
+

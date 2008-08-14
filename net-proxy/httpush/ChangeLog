@@ -1,0 +1,24 @@
+# ChangeLog for net-proxy/httpush
+# Copyright 1999-2006 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-proxy/httpush/ChangeLog,v 1.5 2006/03/06 19:18:38 mrness Exp $
+
+  06 Mar 2006; Alin Nastac <mrness@gentoo.org> httpush-0.9_beta11.ebuild:
+  Replace xml2 USE flag with xml.
+
+  13 Feb 2006; Michael Cummings <mcummings@gentoo.org>
+  httpush-0.9_beta11.ebuild:
+  Virtuals for perl-core
+
+  25 May 2005; Michael Cummings <mcummings@gentoo.org>
+  httpush-0.9_beta11.ebuild:
+  dev-perl/MIME-Base64 => perl-core/MIME-Base64 migration
+
+  22 Apr 2005; Alin Nastac <mrness@gentoo.org> :
+  Rename category & herd www-proxy to net-proxy
+
+*httpush-0.9_beta11 (01 Apr 2005)
+
+  01 Apr 2005; Alin Nastac <mrness@gentoo.org> +metadata.xml,
+  +httpush-0.9_beta11.ebuild:
+  Initial import from bug #87307.
+

@@ -1,0 +1,56 @@
+# ChangeLog for sys-libs/newlib
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-libs/newlib/ChangeLog,v 1.11 2008/06/09 17:20:17 lu_zero Exp $
+
+*newlib-1.16.0 (09 Jun 2008)
+
+  09 Jun 2008; Luca Barbato <lu_zero@gentoo.org> +newlib-1.16.0.ebuild:
+  New Version
+
+*newlib-1.16.0_pre20071025 (25 Oct 2007)
+
+  25 Oct 2007; Luca Barbato <lu_zero@gentoo.org>
+  +newlib-1.16.0_pre20071025.ebuild:
+  New snapshot, avoid strip completely
+
+  19 Mar 2007; Luca Barbato <lu_zero@gentoo.org> newlib-1.15.0.ebuild:
+  Removed multilib useflag
+
+  14 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> newlib-1.15.0.ebuild:
+  Fix softfloat logic.
+
+  14 Feb 2007; Luca Barbato <lu_zero@gentoo.org> -newlib-20061203.ebuild:
+  Cleanup, thanks to rx Kaffee <rxKaffee@unixtriad.com> for pointing out in
+  bug #166707
+
+  14 Feb 2007; Luca Barbato <lu_zero@gentoo.org> -newlib-20061203.ebuild:
+  Cleanup, thanks to rx Kaffee <rxKaffee@unixtriad.com>
+
+  05 Feb 2007; Luca Barbato <lu_zero@gentoo.org> newlib-1.15.0.ebuild:
+  Make it in line with uclibc, as asked by Flameeyes
+
+*newlib-1.15.0 (19 Dec 2006)
+
+  19 Dec 2006; Luca Barbato <lu_zero@gentoo.org> +newlib-1.15.0.ebuild:
+  New version
+
+  10 Dec 2006; Luca Barbato <lu_zero@gentoo.org> newlib-20061203.ebuild:
+  Avoid info collision, thanks to truedfx bug #157647
+
+*newlib-20061203 (04 Dec 2006)
+
+  04 Dec 2006; Luca Barbato <lu_zero@gentoo.org> -newlib-20061113.ebuild,
+  +newlib-20061203.ebuild:
+  Updated snapshot, fixes for SPU support
+
+*newlib-20061113 (13 Nov 2006)
+
+  13 Nov 2006; Luca Barbato <lu_zero@gentoo.org> +newlib-20061113.ebuild:
+  Snapshot with updated Cell support
+
+*newlib-1.14.0 (21 Aug 2006)
+
+  21 Aug 2006; Luca Barbato <lu_zero@gentoo.org> +metadata.xml,
+  +newlib-1.14.0.ebuild:
+  Import from overlay
+

@@ -1,0 +1,118 @@
+# ChangeLog for x11-themes/xcursor-themes
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-themes/xcursor-themes/ChangeLog,v 1.24 2008/05/28 01:37:38 dberkholz Exp $
+
+  28 May 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  xcursor-themes-1.0.1.ebuild:
+  Manually specify module to download from, so we can simplify the eclass.
+
+  10 Sep 2006; Javier Villavicencio <the_paya@gentoo.org>
+  xcursor-themes-1.0.1.ebuild:
+  Add ~x86-fbsd keyword.
+
+  19 Jul 2006; Guy Martin <gmsoft@gentoo.org> xcursor-themes-1.0.1.ebuild:
+  Stable on hppa.
+
+  10 Jul 2006; Aron Griffis <agriffis@gentoo.org>
+  xcursor-themes-1.0.1.ebuild:
+  Mark 1.0.1 stable on ia64
+
+  01 Jul 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  xcursor-themes-1.0.1.ebuild:
+  ppc/sparc/mips/alpha/arm/sh stable
+
+  30 Jun 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  xcursor-themes-1.0.1.ebuild:
+  Stable on amd64.
+
+  30 Jun 2006; Markus Rothe <corsair@gentoo.org>
+  xcursor-themes-1.0.1.ebuild:
+  Stable on ppc64
+
+  30 Jun 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  xcursor-themes-1.0.1.ebuild:
+  x86 stable.
+
+  18 Feb 2006; Stefaan De Roeck <stefaan@gentoo.org>
+  xcursor-themes-1.0.1.ebuild:
+  Marked ~alpha (bug #122726)
+
+  14 Feb 2006; Markus Rothe <corsair@gentoo.org>
+  xcursor-themes-1.0.1.ebuild:
+  Added ~ppc64; bug #122726
+
+  26 Jan 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  xcursor-themes-1.0.1.ebuild:
+  Update description.
+
+  26 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  -files/make-cursordir-configurable.patch:
+  Drop old patch.
+
+  26 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  -xcursor-themes-0.99.1.ebuild, -xcursor-themes-1.0.0.ebuild:
+  Pull old versions.
+
+*xcursor-themes-1.0.1 (23 Dec 2005)
+
+  23 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +xcursor-themes-1.0.1.ebuild:
+  Bump for 7.0.
+
+*xcursor-themes-1.0.0 (18 Dec 2005)
+
+  18 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +xcursor-themes-1.0.0.ebuild:
+  Bump for 7.0RC4.
+
+  09 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  -xcursor-themes-0.99.0.ebuild, -xcursor-themes-0.99.0-r1.ebuild:
+  Pull old versions.
+
+*xcursor-themes-0.99.1 (20 Oct 2005)
+
+  20 Oct 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +xcursor-themes-0.99.1.ebuild:
+  Bump for 7.0 RC1.
+
+  19 Oct 2005; Stephen P. Becker <geoman@gentoo.org>
+  xcursor-themes-0.99.0-r1.ebuild:
+  added ~mips keyword
+
+  09 Sep 2005; Donnie Berkholz <spyderous@gentoo.org>; +metadata.xml:
+  Add metadata.
+
+  04 Sep 2005; MATSUU Takuto <matsuu@gentoo.org>
+  xcursor-themes-0.99.0-r1.ebuild:
+  Added ~sh
+
+  20 Aug 2005; Luca Barbato <lu_zero@gentoo.org>
+  xcursor-themes-0.99.0.ebuild, xcursor-themes-0.99.0-r1.ebuild:
+  Marked ~ppc
+
+*xcursor-themes-0.99.0-r1 (16 Aug 2005)
+
+  16 Aug 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +files/make-cursordir-configurable.patch,
+  +xcursor-themes-0.99.0-r1.ebuild:
+  Make cursors install to the same directory as they did in monolith. Patch
+  from Christophe Saout <christophe@saout.de>.
+
+  16 Aug 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +xcursor-themes-0.99.0.ebuild:
+  Move to x11-themes from x11-misc.
+
+  15 Aug 2005; Herbie Hopkins <herbs@gentoo.org>
+  xcursor-themes-0.99.0.ebuild:
+  Marked ~amd64.
+
+  08 Aug 2005; Ferris McCormick <fmccor@gentoo.org>
+  xcursor-themes-0.99.0.ebuild:
+  Add ~sparc keyword (X Modular testing).
+
+*xcursor-themes-0.99.0 (08 Aug 2005)
+
+  08 Aug 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +xcursor-themes-0.99.0.ebuild:
+  Initial commit for modular X.
+

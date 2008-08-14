@@ -1,0 +1,34 @@
+# ChangeLog for dev-db/sqliteodbc
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-db/sqliteodbc/ChangeLog,v 1.7 2008/04/21 17:06:45 phreak Exp $
+
+  21 Apr 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Fix up metadata.xml. If there's no maintainer for the package, the metadata
+  also needs to contain m-needed@g.o.
+
+  01 Jan 2007; Petteri Räty <betelgeuse@gentoo.org> metadata.xml:
+  Removed arj as he is retired
+
+  11 Dec 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  sqliteodbc-0.70.ebuild:
+  Keyword ~ppc.
+
+*sqliteodbc-0.70 (13 Nov 2006)
+
+  13 Nov 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  +sqliteodbc-0.70.ebuild:
+  (#144826, #151696) Bump since arj doesn't seem to be around.
+
+*sqliteodbc-0.64 (02 Feb 2006)
+
+  02 Feb 2006; Anders Rune Jensen <arj@gentoo.org> +sqliteodbc-0.64-r1.ebuild:
+  Allow one to select sqlite library to compile against. Fixes #121185
+	
+  23 Apr 2005; Sven Wegener <swegener@gentoo.org> sqliteodbc-0.64.ebuild:
+  Fixed invalid atoms in *DEPEND.
+
+*sqliteodbc-0.64 (22 Apr 2005)
+
+  22 Apr 2005; Anders Rune Jensen <arj@gentoo.org> +sqliteodbc-0.64.ebuild:
+  New package. Fixes #56259.
+

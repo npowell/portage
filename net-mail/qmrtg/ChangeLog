@@ -1,0 +1,14 @@
+# ChangeLog for net-mail/qmrtg
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-mail/qmrtg/ChangeLog,v 1.2 2007/06/12 13:05:16 genone Exp $
+
+  12 Jun 2007; Marius Mauch <genone@gentoo.org> qmrtg-2.1.ebuild:
+  Replacing einfo with elog
+
+*qmrtg-2.1 (08 Oct 2006)
+
+  08 Oct 2006; Markus Ullmann <jokey@gentoo.org> +files/mrtg.cfg.patch,
+  +files/qmrtg.conf.sample.patch, +metadata.xml, +qmrtg-2.1.ebuild:
+  Initial import wrt bug #71417 thanks to Angelo Leto and Gudleik Rasch for
+  providing the ebuild in bug #71417
+

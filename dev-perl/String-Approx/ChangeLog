@@ -1,0 +1,39 @@
+# ChangeLog for dev-perl/String-Approx
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/String-Approx/ChangeLog,v 1.9 2007/06/03 15:38:43 armin76 Exp $
+
+  03 Jun 2007; Raúl Porcel <armin76@gentoo.org> String-Approx-3.26.ebuild:
+  Add ~alpha wrt #173106
+
+  29 Mar 2007; Andrej Kacian <ticho@gentoo.org> String-Approx-3.26.ebuild:
+  Stable on x86.
+
+  15 Mar 2007; Markus Rothe <corsair@gentoo.org> String-Approx-3.26.ebuild:
+  Stable  on ppc64; bug #170840
+
+  02 Feb 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  String-Approx-3.26.ebuild:
+  Added ~ppc
+
+  08 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  String-Approx-3.26.ebuild:
+  Marking sparc stable
+
+  08 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  String-Approx-3.26.ebuild:
+  marking amd64 stable
+
+  12 Dec 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  String-Approx-3.26.ebuild:
+  Keyworded ~sparc
+
+  08 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  String-Approx-3.26.ebuild:
+  Added ~x86.
+
+*String-Approx-3.26 (19 Nov 2006)
+
+  19 Nov 2006; Michael Cummings <mcummings@gentoo.org> +metadata.xml,
+  +String-Approx-3.26.ebuild:
+  Bug 154392, dep for fuzzocr, ebuild from tomk
+

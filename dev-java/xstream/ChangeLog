@@ -1,0 +1,67 @@
+# ChangeLog for dev-java/xstream
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-java/xstream/ChangeLog,v 1.17 2008/07/18 20:25:53 betelgeuse Exp $
+
+*xstream-1.2-r2 (18 Jul 2008)
+
+  18 Jul 2008; Petteri Räty <betelgeuse@gentoo.org> +xstream-1.2-r2.ebuild:
+  jmock-1.0 and commons-lang-2.1 are only needed by src_test which is now
+  enabled
+
+  27 Apr 2008; Markus Meier <maekke@gentoo.org> xstream-1.2-r1.ebuild:
+  amd64 stable, bug #211286
+
+  30 Mar 2008; Markus Rothe <corsair@gentoo.org> xstream-1.2-r1.ebuild:
+  Added ~ppc64
+
+  08 Mar 2008; Krzysiek Pawlik <nelchael@gentoo.org> xstream-1.2-r1.ebuild:
+  Stable on ppc, see bug #211286.
+
+  24 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  xstream-1.2-r1.ebuild:
+  stable x86, bug 211286
+
+  08 Jan 2008; <alistair@gentoo.org> +files/xstream-1.2-javadoc-fix.patch,
+  xstream-1.2-r1.ebuild:
+  Actually fixed building javadocs on jdk-1.4
+
+*xstream-1.2-r1 (16 Nov 2007)
+
+  16 Nov 2007; <alistair@gentoo.org> +xstream-1.2-r1.ebuild:
+  Bumping to fix doc install.
+
+  13 Nov 2007; Christian Faulhammer <opfer@gentoo.org> xstream-1.2.ebuild:
+  filtered jikes
+
+  04 Nov 2007; Christian Faulhammer <opfer@gentoo.org> xstream-1.2.ebuild:
+  stable x86, bug 197861
+
+  26 Aug 2007; Petteri Räty <betelgeuse@gentoo.org> xstream-1.2.ebuild:
+  Relax commons-lang dependency to match 2.3
+
+  11 Jul 2007; Petteri Räty <betelgeuse@gentoo.org> xstream-1.2.ebuild:
+  Add src_test as RESTRICT=test until the needed deps are keyworded.
+
+  26 May 2007; Krzysiek Pawlik <nelchael@gentoo.org> xstream-1.2.ebuild:
+  Add ~ppc.
+
+  15 Apr 2007; Petteri Räty <betelgeuse@gentoo.org> xstream-1.2.ebuild:
+  Add java-ant-2 to inherit to make JAVA_PKG_STRICT happy.
+
+  22 Dec 2006; Petteri Räty <betelgeuse@gentoo.org> xstream-1.2.ebuild:
+  Relaxed jmock dependency to allow 1.1.0 too and fixed the java5 use flag
+  handling as 2.0.31 can handle it properly automatically.
+
+  03 Oct 2006; Vlastimil Babka <caster@gentoo.org> xstream-1.2.ebuild:
+  Fixed javadoc target name and raised version of joda-time dependency to
+  >=1.2. Thanks to <bme@visi.com> in bug #149917 for reporting.
+
+  28 Sep 2006; Vlastimil Babka <caster@gentoo.org> xstream-1.2.ebuild:
+  Added missing xml-commons-external dependency.
+
+*xstream-1.2 (23 Sep 2006)
+
+  23 Sep 2006; Joshua Nichols <nichoj@gentoo.org> +metadata.xml,
+  +xstream-1.2.ebuild:
+  Initial commit. Bug #92756
+

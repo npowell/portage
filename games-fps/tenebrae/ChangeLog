@@ -1,0 +1,34 @@
+# ChangeLog for games-fps/tenebrae
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-fps/tenebrae/ChangeLog,v 1.10 2007/07/02 17:39:11 nyhm Exp $
+
+  02 Jul 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/tenebrae-1.04-exec-stack.patch, tenebrae-1.04.ebuild:
+  remove need for an executable stack
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  05 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org> tenebrae-1.04.ebuild:
+  Removing old virtual/x11 dependency.
+
+  20 Mar 2006; <Tupone@gentoo.org> tenebrae-1.04.ebuild:
+  Modular X dependency fix, bug #123115 by P. Nienaber. Thanks UncleOwen
+
+  26 Sep 2005; Chris Gianelloni <wolf31o2@gentoo.org> tenebrae-1.04.ebuild:
+  Making games last on inherit line.
+
+  25 Dec 2004; Mike Frysinger <vapier@gentoo.org> +files/1.04-glhax.patch,
+  -files/1.04-nvidia-opengl.patch, tenebrae-1.04.ebuild:
+  Update the opengl patch #75526.
+
+  03 Jun 2004; Aron Griffis <agriffis@gentoo.org> tenebrae-1.04.ebuild:
+  Fix use invocation
+
+  02 Aug 2003; Chris Gianelloni <wolf31o2@gentoo.org> tenebrae-1.04.ebuild:
+  Fixed to use mirror://sourceforge
+
+*tenebrae-1.04 (15 Jul 2003)
+
+  15 Jul 2003; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by me.

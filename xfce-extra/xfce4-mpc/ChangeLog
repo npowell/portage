@@ -1,0 +1,29 @@
+# ChangeLog for xfce-extra/xfce4-mpc
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/xfce-extra/xfce4-mpc/ChangeLog,v 1.7 2008/08/01 20:11:30 cardoe Exp $
+
+  01 Aug 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
+  add GLEP 56 USE flag desc from use.local.desc
+
+*xfce4-mpc-0.3.3 (27 Apr 2008)
+
+  27 Apr 2008; Samuli Suominen <drac@gentoo.org> +xfce4-mpc-0.3.3.ebuild:
+  Version bump.
+
+  26 Oct 2007; Christoph Mende <angelos@gentoo.org> xfce4-mpc-0.3.2.ebuild:
+  Fix test suite and unrestrict it
+
+  26 Aug 2007; Raúl Porcel <armin76@gentoo.org> xfce4-mpc-0.3.2.ebuild:
+  x86 stable wrt #190072
+
+  08 Aug 2007; Christoph Mende <angelos@gentoo.org> xfce4-mpc-0.3.2.ebuild:
+  Stable on amd64 and removed unneeded dependency on mpd
+
+  31 May 2007; Peter Weller <welp@gentoo.org> xfce4-mpc-0.3.2.ebuild:
+  Keyworded ~amd64
+
+*xfce4-mpc-0.3.2 (31 May 2007)
+
+  31 May 2007; Samuli Suominen <drac@gentoo.org> +xfce4-mpc-0.3.2.ebuild:
+  Initial commit.
+

@@ -1,0 +1,30 @@
+# ChangeLog for xfce-extra/xfce4-cellmodem
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/xfce-extra/xfce4-cellmodem/ChangeLog,v 1.5 2008/06/23 00:02:26 drac Exp $
+
+  23 Jun 2008; Samuli Suominen <drac@gentoo.org>
+  xfce4-cellmodem-0.0.5.ebuild:
+  Fix xfce4-dev-tools dep.
+
+  23 Jun 2008; Samuli Suominen <drac@gentoo.org>
+  xfce4-cellmodem-0.0.5.ebuild:
+  Fix xfce4-dev-tools dep.
+
+  24 Aug 2007; Christoph Mende <angelos@gentoo.org>
+  xfce4-cellmodem-0.0.5.ebuild:
+  Stable on amd64
+
+  10 Mar 2007; Peter Weller <welp@gentoo.org> xfce4-cellmodem-0.0.5.ebuild:
+  Keyworded on amd64 wrt bug 169987
+
+  09 Mar 2007; Christian Faulhammer <opfer@gentoo.org>
+  xfce4-cellmodem-0.0.5.ebuild:
+  stable x86; bug #169987
+
+*xfce4-cellmodem-0.0.5 (27 Feb 2007)
+
+  27 Feb 2007; Samuli Suominen <drac@gentoo.org>
+  +files/xfce4-cellmodem-0.0.5-asneeded.patch,
+  +xfce4-cellmodem-0.0.5.ebuild:
+  Initial commit for bug 168353. Thanks to Jakub Moc.
+

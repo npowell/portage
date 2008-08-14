@@ -1,0 +1,89 @@
+# ChangeLog for dev-libs/cryptlib
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/cryptlib/ChangeLog,v 1.14 2007/02/16 14:36:34 alonbl Exp $
+
+*cryptlib-3.3.1 (16 Feb 2007)
+
+  16 Feb 2007; Alon Bar-Lev <alonbl@gentoo.org> +cryptlib-3.3.1.ebuild:
+  Version bump
+
+*cryptlib-3.3.0-r1 (05 Feb 2007)
+
+  05 Feb 2007; Alon Bar-Lev <alonbl@gentoo.org> -cryptlib-3.2.ebuild,
+  -cryptlib-3.2.1.ebuild, -cryptlib-3.2.2.ebuild, -cryptlib-3.3.0.ebuild,
+  +cryptlib-3.3.0-r1.ebuild:
+  Removed USE static, bug#165371 requested by jakub.
+  Fixed QA issues.
+  Cleanup old packages.
+
+*cryptlib-3.3.0 (22 Oct 2006)
+
+  22 Oct 2006; Alon Bar-Lev <alonbl@gentoo.org>
+  +files/cryptlib-3.3.0-ld.patch, +cryptlib-3.3.0.ebuild:
+  Version bump, fixed QA issues by removing assembly parts, adds odbc use flag
+  (Thanks to Daniel Plaza), closes bug#105954.
+
+*cryptlib-3.2.2 (02 Nov 2005)
+
+  02 Nov 2005; Stefan Briesenick <sbriesen@gentoo.org>
+  +cryptlib-3.2.2.ebuild:
+  version bump, general ebuild cleanup, optional manual is now uploaded to
+  gentoo-mirrors (original had no version tag), added ~amd64 (compiles fine
+  and seems to work).
+
+*cryptlib-3.2.1 (20 Aug 2005)
+
+  20 Aug 2005; Daniel Black <dragonheart@gentoo.org>
+  -cryptlib-3.1_beta05.ebuild, -cryptlib-3.1.ebuild, cryptlib-3.2.ebuild,
+  +cryptlib-3.2.1.ebuild:
+  added shared library symlink (bug #101780 thanks to Daniel Plaza.version
+  bump and old version cleanout also
+
+*cryptlib-3.2 (17 Jun 2005)
+
+  17 Jun 2005; Marcelo Goes <vanquirius@gentoo.org> cryptlib-3.1.ebuild,
+  +cryptlib-3.2.ebuild:
+  Version bump. QA: add missing doc to IUSE.
+
+  17 Feb 2005; Robin H. Johnson <robbat2@gentoo.org> cryptlib-3.1.ebuild,
+  cryptlib-3.1_beta05.ebuild:
+  Bug #69831: Ensure unzip is in DEPEND.
+
+  22 Jan 2005; Daniel Black <dragonheart@gentoo.org> cryptlib-3.1.ebuild,
+  cryptlib-3.1_beta05.ebuild:
+  3.1_beta05 no longer mirrored upstream. Changed to fetch the right
+  documentation as per bug #78971 by Alexander Rittler <alexr@upb.de>.
+
+*cryptlib-3.1 (04 Nov 2004)
+
+  04 Nov 2004; Daniel Black <dragonheart@gentoo.org> +metadata.xml,
+  -cryptlib-3.0.ebuild, +cryptlib-3.1.ebuild, -cryptlib-3.1_beta04.ebuild,
+  cryptlib-3.1_beta05.ebuild, metadata.xml:
+  Removed old versions. Version bump as per bug #69986. Replace use with useq.
+  Added app-arch/zip dependancy as per bug #69831. Thanks to Blake Ramsdell
+  <blake@sendmail.com> and Alexandru Toma <flash3001@yahoo.com> respectively.
+  Metadata added for crypto herd.
+
+  03 Jun 2004; Aron Griffis <agriffis@gentoo.org> cryptlib-3.0.ebuild,
+  cryptlib-3.1_beta04.ebuild, cryptlib-3.1_beta05.ebuild:
+  Fix use invocation
+
+*cryptlib-3.1_beta05 (09 Oct 2003)
+
+  09 Oct 2003; Michael Sterrett <mr_bones_@gentoo.org>
+  cryptlib-3.1_beta05.ebuild:
+  version bump
+
+  09 Oct 2003; Michael Sterrett <mr_bones_@gentoo.org>
+  cryptlib-3.1_beta04.ebuild:
+  tidy; more error messages; actually install the manual if USE=doc
+
+*cryptlib-3.1_beta04 (13 Jun 2003)
+
+  13 Jun 2003; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by me.
+
+*cryptlib-3.0 (13 Jun 2003)
+
+  13 Jun 2003; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by me.

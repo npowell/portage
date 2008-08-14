@@ -1,0 +1,21 @@
+# ChangeLog for media-plugins/quodlibet-importexport
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/quodlibet-importexport/ChangeLog,v 1.4 2007/03/29 08:30:27 corsair Exp $
+
+  29 Mar 2007; Markus Rothe <corsair@gentoo.org>
+  quodlibet-importexport-3077.ebuild:
+  Added ~ppc64
+
+  19 Mar 2007; Bryan Østergaard <kloeri@gentoo.org> metadata.xml:
+  Remove tcort from metadata.xml due to retirement.
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*quodlibet-importexport-3077 (30 Apr 2006)
+
+  30 Apr 2006; <tcort@gentoo.org> +metadata.xml,
+  +quodlibet-importexport-3077.ebuild:
+  Initial Commit. Ebuild by Kai Huuhko <kai.huuhko@gmail.com> and Thomas Cort
+  <tcort@gentoo.org>.
+

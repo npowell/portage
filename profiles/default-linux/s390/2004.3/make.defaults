@@ -1,0 +1,14 @@
+USE="
+bitmap-fonts
+foomaticdb
+font-server
+imlib
+libwww
+mad
+mikmod
+motif
+mpeg
+truetype
+truetype-fonts
+type1-fonts
+"

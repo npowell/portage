@@ -1,0 +1,413 @@
+# ChangeLog for sys-freebsd/freebsd-lib
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-freebsd/freebsd-lib/ChangeLog,v 1.59 2008/05/17 21:55:58 aballier Exp $
+
+*freebsd-lib-6.2-r4 (17 May 2008)
+
+  17 May 2008; Alexis Ballier <aballier@gentoo.org>
+  +files/freebsd-lib-6.2-libc.patch, +files/freebsd-lib-6.2-pty6.patch,
+  +freebsd-lib-6.2-r4.ebuild:
+  Bump for security fixes, bug #206847 and part of bug #209889, aka
+  http://security.freebsd.org/advisories/FreeBSD-SA-08:01.pty.asc and
+  http://security.freebsd.org/advisories/FreeBSD-SA-08:02.libc.asc
+
+  03 Nov 2007; Roy Marples <uberlord@gentoo.org> freebsd-lib-6.2-r3.ebuild:
+  Remove the internal hesiod support and use the ebuild instead.
+
+  03 Nov 2007; Roy Marples <uberlord@gentoo.org> freebsd-lib-6.2-r3.ebuild:
+  Remove the internal hesiod support and use the ebuild instead.
+
+*freebsd-lib-6.2-r3 (23 Oct 2007)
+
+  23 Oct 2007; Roy Marples <uberlord@gentoo.org>
+  +files/freebsd-lib-6.2-libthr.patch, +freebsd-lib-6.2-r3.ebuild:
+  Only install libthr as the treading library, #192711 thanks to Joe Peterson.
+  De-bashify the ebuild.
+
+  16 Oct 2007; Roy Marples <uberlord@gentoo.org>
+  -files/freebsd-lib-6.2-sparc64.patch,
+  -files/freebsd-sources-6.2-sparc64.patch, freebsd-lib-6.2-r2.ebuild:
+  gcc-4 now defines __sparc64__ for us
+
+  14 Sep 2007; Roy Marples <uberlord@gentoo.org>
+  +files/freebsd-lib-6.2-as-needed.patch, freebsd-lib-6.2-r2.ebuild:
+  Sync some --as-needed patches from upstream.
+
+*freebsd-lib-6.2-r2 (12 Sep 2007)
+
+  12 Sep 2007; Roy Marples <uberlord@gentoo.org>
+  +files/freebsd-lib-6.2-dl_iterate_phdr.patch, +freebsd-lib-6.2-r2.ebuild:
+  Backport dl_iterate_phdr from FreeBSD-7 so that future gcc's don't pull in
+  libgcc_s.so.1
+
+  06 Aug 2007; Roy Marples <uberlord@gentoo.org>
+  +files/freebsd-lib-6.2-bluetooth.patch, freebsd-lib-6.2-r1.ebuild:
+  Fix building bluetooth, #181883 thanks to Sascha Lucas
+
+  12 Jul 2007; Roy Marples <uberlord@gentoo.org> +files/libmap.conf,
+  freebsd-lib-6.2.ebuild, freebsd-lib-6.2-r1.ebuild:
+  Install a default libmap.conf which maps libc_r and libpthread to libthr.
+
+  25 May 2007; Roy Marples <uberlord@gentoo.org> freebsd-lib-6.2-r1.ebuild:
+  Display Managers default to VT7, so disable VT7 and upwards so
+  the DMs work by default.
+
+  28 Feb 2007; Roy Marples <uberlord@gentoo.org> freebsd-lib-6.2.ebuild:
+  Install libsmb for mount_smbfs in usbin.
+
+*freebsd-lib-6.2 (15 Jan 2007)
+
+  15 Jan 2007; Timothy Redaelli <drizzt@gentoo.org>
+  -freebsd-lib-6.2_rc2.ebuild, +freebsd-lib-6.2.ebuild:
+  Bump to 6.2 and remove old version.
+
+  05 Jan 2007; Diego Pettenò <flameeyes@gentoo.org>
+  -freebsd-lib-6.1.ebuild:
+  Remove 6.1 ebuild.
+
+  04 Jan 2007; Diego Pettenò <flameeyes@gentoo.org>
+  +files/freebsd-sources-6.2-sparc64.patch, freebsd-lib-6.2_rc2.ebuild:
+  Apply the sparc64 patch when using the build useflag, or building stages
+  with catalyst will fail.
+
+  02 Jan 2007; Diego Pettenò <flameeyes@gentoo.org>
+  freebsd-lib-6.2_rc2.ebuild:
+  Remove histedit.h file from being installed.
+
+*freebsd-lib-6.2_rc2 (29 Dec 2006)
+
+  29 Dec 2006; Diego Pettenò <flameeyes@gentoo.org>
+  -freebsd-lib-6.2_rc1.ebuild, -freebsd-lib-6.2_rc1-r1.ebuild,
+  +freebsd-lib-6.2_rc2.ebuild:
+  Bump to rc2 and remove older versions.
+
+*freebsd-lib-6.2_rc1-r1 (28 Dec 2006)
+
+  28 Dec 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +freebsd-lib-6.2_rc1-r1.ebuild:
+  Add new revision that does not build libedit anymore.
+
+  22 Nov 2006; Diego Pettenò <flameeyes@gentoo.org>
+  -files/freebsd-lib-fixmp.patch, freebsd-lib-6.1.ebuild,
+  -freebsd-lib-6.2_beta3.ebuild, freebsd-lib-6.2_rc1.ebuild:
+  Remove the fixmp patch, that was applied on a Makefile removed right
+  afterward; remove beta3.
+
+*freebsd-lib-6.2_rc1 (19 Nov 2006)
+
+  19 Nov 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +freebsd-lib-6.2_rc1.ebuild:
+  Version bump to 6.2-RC1.
+
+  18 Nov 2006; Diego Pettenò <flameeyes@gentoo.org>
+  -freebsd-lib-6.2_beta2.ebuild:
+  Remove 6.2_beta2.
+
+  17 Nov 2006; Diego Pettenò <flameeyes@gentoo.org>
+  freebsd-lib-6.2_beta3.ebuild:
+  Fix crossdev build, crt* files were installed in the wrong location.
+
+*freebsd-lib-6.2_beta3 (01 Nov 2006)
+
+  01 Nov 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +freebsd-lib-6.2_beta3.ebuild:
+  Bump to 6.2_beta3.
+
+  26 Oct 2006; Diego Pettenò <flameeyes@gentoo.org> freebsd-lib-6.1.ebuild,
+  freebsd-lib-6.2_beta2.ebuild:
+  Require the SYS package when crosscompiling, it's irrelevant which kernel
+  one is using.
+
+  22 Oct 2006; Diego Pettenò <flameeyes@gentoo.org>
+  freebsd-lib-6.2_beta2.ebuild:
+  Install a sandbox configuration file to allow /dev/crypto access in sandbox,
+  to close bug #138344.
+
+  19 Oct 2006; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Remove 6.2_beta1 ebuild.
+
+  19 Oct 2006; Diego Pettenò <flameeyes@gentoo.org>
+  -freebsd-lib-6.2_beta1.ebuild:
+  Remove 6.2_beta1 ebuild.
+
+  17 Oct 2006; Roy Marples <uberlord@gentoo.org>
+  +files/freebsd-lib-6.2-sparc64.patch, freebsd-lib-6.2_beta2.ebuild:
+  Added ~sparc-fbsd keyword.
+
+  06 Oct 2006; Diego Pettenò <flameeyes@gentoo.org>
+  freebsd-lib-6.2_beta2.ebuild:
+  Add a bootstrap useflag to disable libstand, as in stage1 we don't have
+  libbz2 available.
+
+  06 Oct 2006; Diego Pettenò <flameeyes@gentoo.org> freebsd-lib-6.1.ebuild,
+  freebsd-lib-6.2_beta2.ebuild:
+  Add a buildtime dependency over bzip2 because libstand uses it to build a
+  few things.
+
+  06 Oct 2006; Roy Marples <uberlord@gentoo.org>
+  +files/freebsd-lib-6.1-csu.patch, -files/freebsd-lib-6.1-csu-amd64.patch,
+  freebsd-lib-6.1.ebuild, freebsd-lib-6.2_beta1.ebuild,
+  freebsd-lib-6.2_beta2.ebuild:
+  sparc has the same csu issue as amd64 - lacking a dir to install to
+
+  05 Oct 2006; Diego Pettenò <flameeyes@gentoo.org> freebsd-lib-6.1.ebuild,
+  freebsd-lib-6.2_beta2.ebuild:
+  Add a build useflag that uses a downloaded tarball of sys rather than
+  symlinking it.
+
+*freebsd-lib-6.2_beta2 (05 Oct 2006)
+
+  05 Oct 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +freebsd-lib-6.2_beta2.ebuild:
+  Version 6.2_beta2.
+
+  22 Sep 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +files/freebsd-lib-6.2-gcc41.patch, freebsd-lib-6.2_beta1.ebuild:
+  Add patch to build with GCC 4.1 (half committed upstream).
+
+*freebsd-lib-6.2_beta1 (21 Sep 2006)
+
+  21 Sep 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +freebsd-lib-6.2_beta1.ebuild:
+  Add 6.2_beta1 ebuilds.
+
+  03 Sep 2006; Diego Pettenò <flameeyes@gentoo.org> freebsd-lib-6.1.ebuild:
+  Update to new use-expand variable, thanks to Danny Van Dyk.
+
+  27 Jul 2006; Diego Pettenò <flameeyes@gentoo.org>
+  -freebsd-lib-6.0-r3.ebuild:
+  Remove 6.0 version.
+
+  05 Jul 2006; Javier Villavicencio <the_paya@gentoo.org>
+  freebsd-lib-6.0-r3.ebuild, freebsd-lib-6.1.ebuild:
+  Fixes bug #139259. Thanks to Mike Kelly <pioto@pioto.org> for reporting.
+
+  04 Jul 2006; Javier Villavicencio <the_paya@gentoo.org>
+  files/freebsd-lib-6.1-csu-amd64.patch, freebsd-lib-6.1.ebuild:
+  Fixes bug #139109.
+
+  02 Jul 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +files/freebsd-lib-6.1-csu-amd64.patch, freebsd-lib-6.1.ebuild:
+  Add patch to fix csu's makefile on amd64, from Victor Roman Archidona
+  <daijo@unixevil.info> who's working on amd64-fbsd support.
+
+  29 May 2006; Diego Pettenò <flameeyes@gentoo.org> freebsd-lib-6.1.ebuild:
+  Use testflags to avoid adding -fno-stack-protector-all when using GCC 4.1.
+
+  26 May 2006; Diego Pettenò <flameeyes@gentoo.org> freebsd-lib-6.1.ebuild:
+  Don't mess up dependencies when cross-compiling.
+
+  24 May 2006; Diego Pettenò <flameeyes@gentoo.org> freebsd-lib-6.1.ebuild:
+  Add compatibility symlinks for 5.x.
+
+  14 May 2006; Diego Pettenò <flameeyes@gentoo.org> freebsd-lib-6.1.ebuild:
+  Re-add the missing manpages as now OpenSSL installs them in another section.
+
+  09 May 2006; Diego Pettenò <flameeyes@gentoo.org> freebsd-lib-6.1.ebuild:
+  Remove libmd man pages, as openssl installs the same (almost).
+
+*freebsd-lib-6.1 (09 May 2006)
+
+  09 May 2006; Diego Pettenò <flameeyes@gentoo.org>
+  -freebsd-lib-6.1_rc2.ebuild, +freebsd-lib-6.1.ebuild:
+  Update to 6.1-RELEASE.
+
+*freebsd-lib-6.1_rc2 (02 May 2006)
+
+  02 May 2006; Diego Pettenò <flameeyes@gentoo.org>
+  -freebsd-lib-6.1_rc1.ebuild, +freebsd-lib-6.1_rc2.ebuild:
+  Update to 6.1_rc2.
+
+*freebsd-lib-6.1_rc1 (30 Apr 2006)
+
+  30 Apr 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +freebsd-lib-6.1_rc1.ebuild:
+  Update to 6.1_rc1 ensuring that the includes from the same package are used.
+
+*freebsd-lib-6.0-r3 (30 Apr 2006)
+
+  30 Apr 2006; Diego Pettenò <flameeyes@gentoo.org>
+  files/freebsd-lib-6.0-ssp.patch, -freebsd-lib-6.0-r2.ebuild,
+  +freebsd-lib-6.0-r3.ebuild:
+  New patch for ssp support, based on OpenBSD code, too. This version has now
+  the patch by default. Please re-compile gcc if you want to have ssp support,
+  tho.
+
+  30 Apr 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +files/freebsd-lib-6.0-ssp.patch, freebsd-lib-6.0-r2.ebuild:
+  Commit the first try patch for ssp, thanks to solar.
+
+  27 Apr 2006; Diego Pettenò <flameeyes@gentoo.org>
+  freebsd-lib-6.0-r2.ebuild:
+  Make installation to suite more the correct sysroot installation.
+
+  25 Apr 2006; Diego Pettenò <flameeyes@gentoo.org>
+  freebsd-lib-6.0-r2.ebuild:
+  Build and installa lso libm.
+
+  25 Apr 2006; Diego Pettenò <flameeyes@gentoo.org>
+  freebsd-lib-6.0-r2.ebuild:
+  Improve support for crosscompilation, now freebsd-lib actually compiles and
+  install fine on Gentoo/Linux AMD64.
+
+  25 Apr 2006; Diego Pettenò <flameeyes@gentoo.org>
+  freebsd-lib-6.0-r2.ebuild:
+  Improve support for crosscompilation, now freebsd-lib actually compiles and
+  install fine on Gentoo/Linux AMD64.
+
+*freebsd-lib-6.0-r2 (20 Apr 2006)
+
+  20 Apr 2006; Diego Pettenò <flameeyes@gentoo.org>
+  -freebsd-lib-6.0-r1.ebuild, +freebsd-lib-6.0-r2.ebuild:
+  Add new version that now merges freebsd-headers in a single package. The
+  upgrade path from old system it's not impossible albeit a bit difficult. New
+  stage will follow.
+
+  18 Apr 2006; Diego Pettenò <flameeyes@gentoo.org>
+  freebsd-lib-6.0-r1.ebuild:
+  End src functions immediatly when buidling only headers, as this ebuild
+  doesn't provide headers for the libc itself.
+
+*freebsd-lib-6.0-r1 (05 Apr 2006)
+
+  05 Apr 2006; Diego Pettenò <flameeyes@gentoo.org>
+  -freebsd-lib-6.0.ebuild, +freebsd-lib-6.0-r1.ebuild:
+  Don't allow to disable usb support, as many things relies on freebsd-lib
+  having usb support, like SDL.
+
+  04 Apr 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +files/freebsd-lib-6.0-binutils-asm.patch, freebsd-lib-6.0.ebuild:
+  Add patch from Emanuele Giaquinta <exg@gentoo.org> to fix building with
+  binutils 2.16.91.0.7.
+
+  02 Apr 2006; Diego Pettenò <flameeyes@gentoo.org>
+  -files/freebsd-lib-fixmakefiles.patch,
+  -files/freebsd-lib-msun-fenvc.patch, -files/freebsd-lib-runet.patch:
+  Drop obsolete files.
+
+*freebsd-lib-6.0 (01 Apr 2006)
+
+  01 Apr 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +files/freebsd-lib-6.0-flex-2.5.31.patch,
+  +files/freebsd-lib-6.0-gccfloat.patch, +files/freebsd-lib-6.0-pmc.patch,
+  +files/freebsd-lib-bsdxml.patch, +files/freebsd-lib-fixmakefiles.patch,
+  +files/freebsd-lib-fixmp.patch, +files/freebsd-lib-msun-fenvc.patch,
+  +files/freebsd-lib-runet.patch, +metadata.xml, +freebsd-lib-6.0.ebuild:
+  Import into portage.
+
+  20 Feb 2006; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Fix deprecated stuff to use NO_* syntax.
+
+  20 Feb 2006; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Add patch to build with flex 2.5.31 (and hard depend on that version as the
+  change is non-backward-compatible.
+
+  14 Feb 2006; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Make sure that /dev/zero is a character special so that we don't compile a
+  broken libc if /dev is not mounted.
+
+  13 Feb 2006; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Install configuration files here instead than on baselayout.
+
+  13 Feb 2006; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  On suggestion from Benigno B. Junior (bbj), don't extract sys and include,
+  instead symlink them inside ${WORKDIR}. This also drops the patch to fix
+  makefiles.
+
+  13 Jan 2006; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Add -static-libgcc to flags so that libc won't link to libgcc_s.
+
+  23 Oct 2005; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Added conditional src_uri on usr.sbin for nis useflag. Thanks The_Paya @
+  #gentoo-bsd.
+
+*freebsd-lib-6.0_beta4 (19 Sep 2005)
+
+  19 Sep 2005; Diego Pettenò <flameeyes@gentoo.org>
+  +files/freebsd-lib-6.0-fixmakefiles.patch,
+  +files/freebsd-lib-6.0-gccfloat.patch,
+  +files/freebsd-lib-6.0-gccfloat.patch~, +files/freebsd-lib-6.0-pmc.patch,
+  +freebsd-lib-6.0_beta4.ebuild:
+  Added freebsd-lib 6.0_beta4, slotted to avoid removing the old 5.4. This can
+  be a problem, remember\!.
+
+  25 Aug 2005; Diego Pettenò <flameeyes@gentoo.org>
+  +files/freebsd-lib-bsdxml.patch, +files/freebsd-lib-fixmakefiles.patch,
+  +files/freebsd-lib-fixmp.patch, +files/freebsd-lib-msun-fenvc.patch,
+  +files/freebsd-lib-runet.patch, +freebsd-lib-5.4-r2.ebuild:
+  Moved to sys-freebsd.
+
+  18 Aug 2005; Diego Pettenò <flameeyes@gentoo.org>
+  freebsd-lib-5.4-r2.ebuild:
+  Updated to reflect bsdmk/freebsd eclasses changes.
+
+  29 Jul 2005; Diego Pettenò <flameeyes@gentoo.org>
+  freebsd-lib-5.4-r2.ebuild:
+  Adapt to recent bsdmk changes.
+
+  16 Jun 2005; Diego Pettenò <flameeyes@gentoo.org>
+  freebsd-lib-5.4-r2.ebuild:
+  Removed a lot of subtargets which aren't needed on our setup.
+
+  15 Jun 2005; Diego Pettenò <flameeyes@gentoo.org>
+  freebsd-lib-5.4-r2.ebuild:
+  libarchive has its own ebuild now.
+
+  08 Jun 2005; Diego Pettenò <flameeyes@gentoo.org>
+  -files/freebsd-lib-minimal-2.patch, -files/freebsd-lib-minimal.patch,
+  -files/freebsd-lib-nosnmp.patch, freebsd-lib-5.4.ebuild,
+  freebsd-lib-5.4-r1.ebuild, freebsd-lib-5.4-r2.ebuild:
+  Moved also freebsd-lib to use dummy_mk instead of minimal patches.
+
+*freebsd-lib-5.4-r2 (08 Jun 2005)
+
+  08 Jun 2005; Diego Pettenò <flameeyes@gentoo.org>
+  +files/freebsd-lib-minimal-2.patch, freebsd-lib-5.3.ebuild,
+  freebsd-lib-5.3.20050301.ebuild, freebsd-lib-5.3.20050301-r1.ebuild,
+  freebsd-lib-5.4.ebuild, freebsd-lib-5.4-r1.ebuild,
+  +freebsd-lib-5.4-r2.ebuild:
+  New revision which removes a few more external libraries (which are going to
+  be added as ebuilds on their own). Sorry for this rapid-changing.
+
+*freebsd-lib-5.4-r1 (04 Jun 2005)
+
+  04 Jun 2005; Diego Pettenò <flameeyes@gentoo.org>
+  +files/freebsd-lib-nosnmp.patch, +freebsd-lib-5.4-r1.ebuild:
+  Remove libbsnmp and libbegemot as they're installed on their own.
+
+  26 May 2005; Diego Pettenò <flameeyes@gentoo.org>
+  +files/freebsd-lib-fixmp.patch, freebsd-lib-5.4.ebuild:
+  Added a patch to fix a compilation -ssl -> +ssl
+
+*freebsd-lib-5.4_rc4 (05 May 2005)
+
+  05 May 2005; Diego Pettenò <flameeyes@gentoo.org>
+  files/freebsd-lib-minimal.patch, -freebsd-lib-5.4_rc3.ebuild,
+  +freebsd-lib-5.4_rc4.ebuild:
+  Updated to rc4.
+
+*freebsd-lib-5.4_rc3 (29 Apr 2005)
+
+  29 Apr 2005; Diego Pettenò <flameeyes@gentoo.org>
+  +files/freebsd-lib-fixmakefiles.patch, +files/freebsd-lib-minimal.patch,
+  +files/freebsd-lib-msun-fenvc.patch, +files/freebsd-lib-runet.patch,
+  +freebsd-lib-5.4_rc3.ebuild:
+  Added new experimental 5.4_rc3 ebuild which follows the new gentooish
+  structure.
+
+*freebsd-lib-5.3.20050301-r1 (19 Apr 2005)
+
+  19 Apr 2005; Otavio R. Piske <angusyoung@gentoo.org>
+  +files/freebsd-lib-5.3-pkgs_removed.patch,
+  +freebsd-lib-5.3.20050301-r1.ebuild:
+  New ebuild with a patch to avoid compilation of ncurses.
+
+  07 Apr 2005; Otavio R. Piske <angusyoung@gentoo.org> :
+  New ebuild with support for new use flags and based on updated sources
+
+*freebsd-lib-5.2.1 (19 Oct 2004)
+
+  19 Oct 2004; Otavio R. Piske <angusyoung@gentoo.org>
+  freebsd-lib-5.2.1.ebuild:
+  Initial release
+

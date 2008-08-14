@@ -1,0 +1,238 @@
+# ChangeLog for sys-power/acpid
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-power/acpid/ChangeLog,v 1.35 2008/06/14 09:00:57 flameeyes Exp $
+
+  14 Jun 2008; Diego Pettenò <flameeyes@gentoo.org> acpid-1.0.6-r1.ebuild:
+  Enable GNU sources for glibc 2.8 (bug #225417).
+
+  14 Nov 2007; Daniel Gryniewicz <dang@gentoo.org> acpid-1.0.6-r1.ebuild:
+  Marked stable on amd64 for bug #194636
+
+  03 Nov 2007; Raúl Porcel <armin76@gentoo.org> acpid-1.0.6-r1.ebuild:
+  ia64 stable wrt #194636
+
+  14 Oct 2007; Markus Meier <maekke@gentoo.org> acpid-1.0.6-r1.ebuild:
+  x86 stable, bug #194636
+
+*acpid-1.0.6-r1 (14 Oct 2007)
+
+  14 Oct 2007; Stefan Schweizer <genstef@gentoo.org>
+  -files/acpid-1.0.4-default.sh, -files/acpid-1.0.4-gcc4.patch,
+  -files/acpid-1.0.4-logrotate, files/acpid-1.0.6-default.sh,
+  files/acpid-1.0.6-init.d, -files/acpid.conf.d, -acpid-1.0.4-r2.ebuild,
+  -acpid-1.0.6.ebuild, +acpid-1.0.6-r1.ebuild:
+  Fix improper expansion in default.sh, bug 186141, and start init script
+  before hal, bug 194636, also remove old ebuilds
+
+  17 Jul 2007; Mike Frysinger <vapier@gentoo.org>
+  +files/acpid-1.0.6-default.sh, -files/acpid-1.0.6-examples.diff,
+  acpid-1.0.6.ebuild:
+  Use Gentoo defaults for /etc/acpi again since they are better than the
+  Debian ones and fix bashism #170213 by Roy Marples. Also make sure we
+  respect env CFLAGS.
+
+*acpid-1.0.6 (17 Jul 2007)
+
+  17 Jul 2007; Stefan Schweizer <genstef@gentoo.org>
+  +files/acpid-1.0.6-conf.d, +files/acpid-1.0.6-examples.diff,
+  +files/acpid-1.0.6-init.d, +acpid-1.0.6.ebuild:
+  version bump, thanks go to Matej Laitl <strohel@gmail.com> in bug 185553,
+  also thanks for his excellent changelog:
+  * dropped debian patch from SRC_URI, we'll provide light version of that patch
+  * changed KEYWORDS to testing
+  * patch with our own patch, which is an extract from the big debian patch for
+  1.0.4 (all source code changes are ignored, not needed for 1.0.6)
+  * dodir /usr/bin is not needed as acpid Makefile has been fixed
+  * we install sample conf.d file. (this file was already in portage tree but not
+  used in any recent ebuild)
+  * add elog comment about changed logging system
+  * kill doc useflag was not used in ebuild anyway. (this also applies to in-tree
+  1.0.4-r5 ebuild AFAIK)
+  * kill logrotate useflag and modify patch not to ship logrotate file. It had no
+  sense when acpid logs to syslog.
+
+  12 May 2007; Daniel Gryniewicz <dang@gentoo.org> acpid-1.0.4-r5.ebuild:
+  Marked stable on amd64 for bug #126131
+
+  11 May 2007; Raúl Porcel <armin76@gentoo.org> acpid-1.0.4-r5.ebuild:
+  ia64 + x86 stable wrt #126131
+
+*acpid-1.0.4-r5 (10 May 2007)
+
+  10 May 2007; Stefan Schweizer <genstef@gentoo.org> metadata.xml,
+  +acpid-1.0.4-r5.ebuild:
+  Clean up ebuild, use scripts from debian, maintainer back to mobile@, fixes
+  bugs #126131 and #170213
+
+*acpid-1.0.4-r4 (23 Feb 2007)
+
+  23 Feb 2007; Roy Marples <uberlord@gentoo.org> files/acpid-1.0.4-init.d,
+  +acpid-1.0.4-r4.ebuild:
+  Bump for a non bash init script.
+
+  07 Dec 2006; Roy Marples <uberlord@gentoo.org> files/acpid-1.0.4-init.d:
+  Make acpid more robust for start-stop-daemon.
+
+  04 Jul 2006; Patrick McLean <chutzpah@gentoo.org> metadata.xml:
+  Take over maintainership.
+
+  10 Mar 2006; Aron Griffis <agriffis@gentoo.org> acpid-1.0.4-r3.ebuild:
+  Mark 1.0.4-r3 stable on ia64
+
+  20 Feb 2006; Scott Stoddard <deltacow@gentoo.org> acpid-1.0.4-r3.ebuild:
+  Stable on amd64.
+
+  13 Feb 2006; Henrik Brix Andersen <brix@gentoo.org> acpid-1.0.4-r3.ebuild:
+  Stable on x86.
+
+  13 Feb 2006; Henrik Brix Andersen <brix@gentoo.org> -files/acpid.rc6,
+  -files/default.sh-gentoo.patch, -acpid-1.0.2-r2.ebuild:
+  Pruned old ebuild.
+
+  19 Jan 2006; Marcus D. Hanwell <cryos@gentoo.org> acpid-1.0.4-r2.ebuild:
+  Stable on amd64.
+
+  09 Jan 2006; Henrik Brix Andersen <brix@gentoo.org>
+  files/acpid-1.0.4-init.d:
+  Quiet reload() in case acpid isn't running.
+
+*acpid-1.0.4-r3 (09 Jan 2006)
+
+  09 Jan 2006; Henrik Brix Andersen <brix@gentoo.org>
+  files/acpid-1.0.4-init.d, +acpid-1.0.4-r3.ebuild:
+  Fix init script to work with baselayout-1.12.0_rcX.
+
+  17 Dec 2005; Henrik Brix Andersen <brix@gentoo.org>
+  files/acpid-1.0.4-logrotate:
+  Quit down acpid reload from logrotate, thanks to Jan Spitalnik in bug #115564.
+
+  22 Oct 2005; Henrik Brix Andersen <brix@gentoo.org>
+  -acpid-1.0.4-r1.ebuild:
+  Pruned old versions.
+
+  16 Sep 2005; Aron Griffis <agriffis@gentoo.org> acpid-1.0.4-r2.ebuild:
+  Mark 1.0.4-r2 stable on alpha
+
+  08 Sep 2005; Henrik Brix Andersen <brix@gentoo.org> acpid-1.0.2-r2.ebuild,
+  acpid-1.0.4-r1.ebuild, acpid-1.0.4-r2.ebuild:
+  Fixed dependencies, bug #105224.
+
+  23 Aug 2005; Aron Griffis <agriffis@gentoo.org> acpid-1.0.4-r2.ebuild:
+  stable on ia64
+
+  08 Aug 2005; Henrik Brix Andersen <brix@gentoo.org> acpid-1.0.4-r2.ebuild:
+  Stable on x86.
+
+*acpid-1.0.4-r2 (02 Jul 2005)
+
+  02 Jul 2005; <brix@gentoo.org> +files/acpid-1.0.4-init.d,
+  +files/acpid-1.0.4-logrotate, +acpid-1.0.4-r2.ebuild:
+  Added logrotate configuration file (bug #89350), added reload() function to
+  init script.
+
+  26 May 2005; <brix@gentoo.org> -acpid-1.0.1.ebuild,
+  -acpid-1.0.2-r1.ebuild, -acpid-1.0.4.ebuild:
+  Pruned old ebuilds.
+
+  23 May 2005; <brix@gentoo.org> acpid-1.0.4-r1.ebuild:
+  Stable on x86.
+
+  14 May 2005; <brix@gentoo.org> acpid-1.0.4-r1.ebuild:
+  Do not treat warnings as errors, bug #90873.
+
+  26 Apr 2005; <brix@gentoo.org> metadata.xml:
+  Updated metadata.xml
+
+  26 Apr 2005; Martin Schlemmer <azarah@gentoo.org>
+  +files/acpid-1.0.4-gcc4.patch, acpid-1.0.4-r1.ebuild:
+  Fix building with gcc4.  Use proper compiler.
+
+*acpid-1.0.4-r1 (24 Apr 2005)
+
+  24 Apr 2005; <brix@gentoo.org> files/acpid-1.0.4-default,
+  +acpid-1.0.4-r1.ebuild:
+  Fixed example regular expression, bug #89716.
+
+*acpid-1.0.4 (15 Mar 2005)
+*acpid-1.0.2-r2 (15 Mar 2005)
+*acpid-1.0.2-r1 (15 Mar 2005)
+*acpid-1.0.1 (15 Mar 2005)
+
+  15 Mar 2005; Ciaran McCreesh <ciaranm@gentoo.org>
+  +files/acpid-1.0.4-default, +files/acpid-1.0.4-default.sh,
+  +files/acpid.rc6, +files/default.sh-gentoo.patch, +metadata.xml,
+  +acpid-1.0.1.ebuild, +acpid-1.0.2-r1.ebuild, +acpid-1.0.2-r2.ebuild,
+  +acpid-1.0.4.ebuild:
+  Moved from sys-apps/acpid to sys-power/acpid.
+
+  10 Jan 2005; Ciaran McCreesh <ciaranm@gentoo.org> acpid-1.0.1.ebuild,
+  acpid-1.0.2-r1.ebuild, acpid-1.0.2-r2.ebuild, acpid-1.0.4.ebuild:
+  Added in a message with a link to the Power Management Guide, bug #77338
+
+*acpid-1.0.4 (19 Oct 2004)
+
+  19 Oct 2004; Henrik Brix Andersen <brix@gentoo.org>
+  +files/acpid-1.0.4-default, +files/acpid-1.0.4-default.sh,
+  +acpid-1.0.4.ebuild:
+  Version bump.
+
+  27 Apr 2004; Aron Griffis <agriffis@gentoo.org> acpid-1.0.2-r2.ebuild:
+  Add inherit eutils
+
+  28 Jan 2004; Aron Griffis <agriffis@gentoo.org> acpid-1.0.2-r2.ebuild:
+  stable on alpha and ia64
+
+  17 Oct 2003; Tom Payne <twp@gentoo.org> acpid-1.0.2-r2.ebuild :
+  Changed ~x86 to x86.
+
+*acpid-1.0.2-r2 (27 Jul 2003)
+  
+  27 Jul 2003; Tom Payne <twp@gentoo.org> acpid-1.0.2-r2.ebuild :
+  Fix bug # 22238 (default.sh broken).
+
+  12 Jun 2003; Hanno Boeck <hanno@gentoo.org> acpid-1.0.2-r1.ebuild:
+  Changed ~x86 to x86.
+
+*acpid-1.0.2-r1 (07 Jun 2003)
+
+  07 Jun 2003; Seemant Kulleen <seemant@gentoo.org> acpid-1.0.1-r1.ebuild,
+  acpid-1.0.2-r1.ebuild, acpid-1.0.2.ebuild:
+  NO OPTIMISATIONS. DO NOT CHANGE THAT. Closes bug #22365 by Sybren Harmsma
+  <S.Harmsma@student.rug.nl>
+
+*acpid-1.0.2 (14 May 2003)
+
+  14 May 2003; Hanno Boeck <hanno@gentoo.org> acpid-1.0.2.ebuild:
+  New version. Resolves #20852.
+
+*acpid-1.0.1-r1 (16 Oct 2002)
+
+  16 Oct 2002; Hanno Boeck <hanno@gmx.de> acpid-1.0.1-r1.ebuild :
+  Added use of CFLAGS. Must be tested.
+  Resolves bug #8976.
+
+*acpid-1.0.1 (21 May 2002)
+
+  21 Jul 2002; Mark Guertin <gerk@gentoo.org> :
+  Added -ppc to keywords
+
+  11 Jun 2002; Martin Schlemmer <azarah@gentoo.org> :
+
+  Fix kernel virtual .. should not be versioned.
+
+  14 Jul 2002; phoen][x <phoenix@gentoo.org> acpid-1.0.1.ebuild :
+  Added KEYWORDS, SLOT.
+
+  21 May 2002; Martin Schlemmer <azarah@gentoo.org> :
+
+  Updated version.  Resolves bug #2867.
+
+*acpid-1.0.0 (1 Feb 2002)
+
+  1 Feb 2002; G.Bevin <gbevin@gentoo.org> ChangeLog :
+  
+  Added initial ChangeLog which should be updated whenever the package is
+  updated in any way. This changelog is targetted to users. This means that the
+  comments should well explained and written in clean English. The details about
+  writing correct changelogs are explained in the skel.ChangeLog file which you
+  can find in the root directory of the portage repository.

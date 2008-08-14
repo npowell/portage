@@ -1,0 +1,22 @@
+# ChangeLog for app-text/lyx2html
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-text/lyx2html/ChangeLog,v 1.5 2007/03/12 23:53:59 nattfodd Exp $
+
+  12 Mar 2007; Alexandre Buisse <nattfodd@gentoo.org> metadata.xml:
+  Replaced text-markup by tex as maintaining herd (text-markup split).
+
+  05 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  15 Oct 2005; Simon Stelling <blubb@gentoo.org> lyx2html-0.2.ebuild:
+  added ~amd64 keyword
+
+  15 Oct 2005; Joseph Jezak <josejx@gentoo.org> lyx2html-0.2.ebuild:
+  Marked ~ppc for bug #109278.
+
+*lyx2html-0.2 (29 May 2005)
+
+  29 May 2005; Mamoru KOMACHI <usata@gentoo.org> +metadata.xml,
+  +lyx2html-0.2.ebuild:
+  Initial import. Thanks to Samir van de Sand <s.vandesand@web.de>; bug #14750.
+

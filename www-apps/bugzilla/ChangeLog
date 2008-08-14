@@ -1,0 +1,563 @@
+# ChangeLog for www-apps/bugzilla
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-apps/bugzilla/ChangeLog,v 1.117 2008/06/16 21:27:50 beandog Exp $
+
+  16 Jun 2008; Steve Dibb <beandog@gentoo.org> bugzilla-2.22.4.ebuild:
+  amd64 stable
+
+  01 Jun 2008; wrobel@gentoo.org -bugzilla-2.20.5.ebuild,
+  -bugzilla-2.22.3.ebuild, -bugzilla-3.0.2.ebuild:
+  Removed vulnerable versions (#220799).
+
+  20 May 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  bugzilla-2.20.6.ebuild, bugzilla-2.22.4.ebuild, bugzilla-3.0.4.ebuild:
+  ppc stable, bug #220799
+
+  20 May 2008; Raúl Porcel <armin76@gentoo.org> bugzilla-2.20.6.ebuild,
+  bugzilla-2.22.4.ebuild, bugzilla-3.0.4.ebuild:
+  alpha/ia64/sparc stable wrt security #220799
+
+  18 May 2008; Markus Meier <maekke@gentoo.org> bugzilla-2.22.4.ebuild:
+  x86 stable, bug #220799
+
+  18 May 2008; Markus Meier <maekke@gentoo.org> bugzilla-3.0.4.ebuild:
+  amd64/x86 stable, bug #220799
+
+  18 May 2008; Markus Meier <maekke@gentoo.org> bugzilla-2.20.6.ebuild:
+  amd64/x86 stable, bug #220799
+
+  18 May 2008; Markus Rothe <corsair@gentoo.org> bugzilla-2.20.6.ebuild,
+  bugzilla-2.22.4.ebuild, bugzilla-3.0.4.ebuild:
+  Stable on ppc64; bug #220799
+
+*bugzilla-3.0.4 (17 May 2008)
+*bugzilla-2.22.4 (17 May 2008)
+*bugzilla-2.20.6 (17 May 2008)
+
+  17 May 2008; wrobel@gentoo.org +bugzilla-2.20.6.ebuild,
+  +bugzilla-2.22.4.ebuild, -bugzilla-3.0.3.ebuild, +bugzilla-3.0.4.ebuild:
+  Added bugzilla-2.20.6,2.22.4,3.0.4 in response to sec issue #220799.
+
+  20 Feb 2008; Benedikt Böhm <hollow@gentoo.org> bugzilla-2.20.5.ebuild,
+  bugzilla-2.22.3.ebuild, bugzilla-3.0.2.ebuild, bugzilla-3.0.3.ebuild:
+  use ecvs_clean; fix quoting
+
+*bugzilla-3.0.3 (17 Feb 2008)
+
+  17 Feb 2008; Benedikt Böhm <hollow@gentoo.org>
+  +files/3.0/bugzilla.cron.daily, +files/3.0/bugzilla.cron.tab,
+  -files/bugzilla.cron.daily, -files/bugzilla.cron.tab,
+  bugzilla-2.20.5.ebuild, bugzilla-2.22.3.ebuild, bugzilla-3.0.2.ebuild,
+  +bugzilla-3.0.3.ebuild:
+  version bump; major ebuild cleanup wrt #208584
+
+  05 Feb 2008; Benedikt Böhm <hollow@gentoo.org> bugzilla-2.20.5.ebuild,
+  bugzilla-2.22.3.ebuild:
+  fix depend.apache usage wrt #208584
+
+  10 Dec 2007; Raúl Porcel <armin76@gentoo.org> bugzilla-3.0.2.ebuild:
+  alpha/ia64/sparc stable wrt #198075
+
+  06 Dec 2007; Steve Dibb <beandog@gentoo.org> bugzilla-3.0.2.ebuild:
+  amd64 stable, bug 198075
+
+  04 Dec 2007; Markus Rothe <corsair@gentoo.org> bugzilla-3.0.2.ebuild:
+  Stable on ppc64; bug #198075
+
+  04 Dec 2007; nixnut <nixnut@gentoo.org> bugzilla-3.0.2.ebuild:
+  Stable on ppc wrt bug 198075
+
+  03 Dec 2007; Christian Faulhammer <opfer@gentoo.org>
+  bugzilla-3.0.2.ebuild:
+  quote variables
+
+  03 Dec 2007; Christian Faulhammer <opfer@gentoo.org>
+  bugzilla-3.0.2.ebuild:
+  stable x86, bug 198075
+
+  15 Oct 2007; Markus Rothe <corsair@gentoo.org> bugzilla-2.20.5.ebuild:
+  Stable on ppc64
+
+*bugzilla-3.0.2 (19 Sep 2007)
+
+  19 Sep 2007; <wrobel@gentoo.org> -bugzilla-3.0.1.ebuild,
+  +bugzilla-3.0.2.ebuild:
+  Bumped to 3.0.2 (sec issue #193062)
+
+  10 Sep 2007; <wrobel@gentoo.org> -files/2.18/bugzilla.cron.daily,
+  -files/2.18/bugzilla.cron.tab, -files/2.18/apache.htaccess,
+  -files/2.18/postinstall-en.txt, -files/2.18/reconfig,
+  -bugzilla-2.18.6.ebuild, -bugzilla-2.20.4.ebuild, -bugzilla-2.22.2.ebuild:
+  Removed insecure versions (see #190112).
+
+  08 Sep 2007; Steve Dibb <beandog@gentoo.org> bugzilla-2.20.5.ebuild:
+  amd64 stable, bug 190112
+
+  04 Sep 2007; Raúl Porcel <armin76@gentoo.org> bugzilla-2.20.5.ebuild,
+  bugzilla-2.22.3.ebuild:
+  alpha/ia64 stable wrt security #190112
+
+  04 Sep 2007; Jose Luis Rivero <yoswink@gentoo.org> bugzilla-2.20.5.ebuild,
+  bugzilla-2.22.3.ebuild:
+  Stable on sparc wrt security bug #190112
+
+  04 Sep 2007; Christian Faulhammer <opfer@gentoo.org>
+  bugzilla-2.20.5.ebuild, bugzilla-2.22.3.ebuild:
+  stable x86, security bug 190112
+
+  03 Sep 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  bugzilla-2.20.5.ebuild, bugzilla-2.22.3.ebuild:
+  ppc stable, bug #190112
+
+  03 Sep 2007; Markus Rothe <corsair@gentoo.org> bugzilla-2.22.3.ebuild:
+  Stable on ppc64; bug #190112
+
+*bugzilla-3.0.1 (03 Sep 2007)
+*bugzilla-2.22.3 (03 Sep 2007)
+*bugzilla-2.20.5 (03 Sep 2007)
+
+  03 Sep 2007; <wrobel@gentoo.org> +bugzilla-2.20.5.ebuild,
+  +bugzilla-2.22.3.ebuild, -bugzilla-3.0.ebuild, +bugzilla-3.0.1.ebuild:
+  Added updated bugzilla ebuilds to the tree (see #190112).
+
+  17 Aug 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  bugzilla-2.22.2.ebuild:
+  Stable on sparc
+
+  29 Jul 2007; Christian Heim <phreak@gentoo.org> bugzilla-2.18.6.ebuild,
+  bugzilla-2.20.4.ebuild, bugzilla-2.22.2.ebuild:
+  Fixing the DEPEND/RDEPEND for the move of net-www/apache to
+  www-servers/apache (#78622).
+
+  30 Jun 2007; Raúl Porcel <armin76@gentoo.org> bugzilla-3.0.ebuild:
+  Add ~alpha wrt #165190
+
+  06 Jun 2007; Markus Rothe <corsair@gentoo.org> bugzilla-3.0.ebuild:
+  Added ~ppc64; bug #165190
+
+  28 May 2007; Renat Lumpau <rl03@gentoo.org> bugzilla-3.0.ebuild:
+  Add German translation, bug #175271
+
+*bugzilla-3.0 (27 May 2007)
+
+  27 May 2007; Renat Lumpau <rl03@gentoo.org>
+  -files/2.23/postinstall-en.txt, +files/3.0/postinstall-en.txt,
+  -files/2.23/reconfig, +files/3.0/reconfig, -bugzilla-2.23.4.ebuild,
+  +bugzilla-3.0.ebuild:
+  Version bump
+
+  12 May 2007; Luca Longinotti <chtekk@gentoo.org> bugzilla-2.18.6.ebuild,
+  bugzilla-2.20.4.ebuild, bugzilla-2.22.2.ebuild:
+  Apache 1.X masking (fix ebuilds to not require apache-1*).
+
+  23 Apr 2007; Raúl Porcel <armin76@gentoo.org> bugzilla-2.22.2.ebuild:
+  ia64 stable
+
+  16 Apr 2007; Markus Rothe <corsair@gentoo.org> bugzilla-2.22.2.ebuild:
+  Stable on ppc64
+
+  04 Mar 2007; Christian Faulhammer <opfer@gentoo.org>
+  bugzilla-2.22.2.ebuild:
+  stable x86; bug 141638
+
+  25 Feb 2007; Renat Lumpau <rl03@gentoo.org> bugzilla-2.22.2.ebuild:
+  Add optional Perl deps, bug #155342
+
+*bugzilla-2.23.4 (07 Feb 2007)
+
+  07 Feb 2007; Renat Lumpau <rl03@gentoo.org>
+  +files/2.23/postinstall-en.txt, +files/2.23/reconfig,
+  +files/bugzilla.cron.daily, +files/bugzilla.cron.tab,
+  +bugzilla-2.23.4.ebuild:
+  Added bleeding edge version
+
+*bugzilla-2.22.2 (03 Feb 2007)
+*bugzilla-2.20.4 (03 Feb 2007)
+
+  03 Feb 2007; Renat Lumpau <rl03@gentoo.org> -bugzilla-2.20.3.ebuild,
+  +bugzilla-2.20.4.ebuild, -bugzilla-2.22.1.ebuild, +bugzilla-2.22.2.ebuild:
+  Version bump, bug #165173
+
+  03 Jan 2007; Renat Lumpau <rl03@gentoo.org> bugzilla-2.22.1.ebuild:
+  Fix permissions, bug #124282.
+
+  02 Jan 2007; Renat Lumpau <rl03@gentoo.org> -bugzilla-2.18.5.ebuild,
+  bugzilla-2.18.6.ebuild, bugzilla-2.20.3.ebuild, bugzilla-2.22.1.ebuild:
+  Drop mysql dep wrt bug #159781.
+
+  22 Dec 2006; Renat Lumpau <rl03@gentoo.org> bugzilla-2.22.1.ebuild:
+  Fix DBD-mysql depend per bug #158817.
+
+  23 Nov 2006; Francesco Riosa <vivo@gentoo.org> bugzilla-2.18.5.ebuild,
+  bugzilla-2.18.6.ebuild, bugzilla-2.20.3.ebuild, bugzilla-2.22.1.ebuild:
+  dev-db/mysql => virtual/mysql
+
+  24 Oct 2006; Simon Stelling <blubb@gentoo.org> bugzilla-2.18.6.ebuild:
+  stable on amd64 wrt bug 151563
+
+  24 Oct 2006; Joshua Jackson <tsunam@gentoo.org> bugzilla-2.18.6.ebuild:
+  Stable x86; bug #151563
+
+  22 Oct 2006; Markus Rothe <corsair@gentoo.org> bugzilla-2.18.6.ebuild:
+  Stable on ppc64; bug #151563
+
+  21 Oct 2006; Bryan Østergaard <kloeri@gentoo.org> bugzilla-2.18.6.ebuild:
+  Stable on ia64, bug 151563.
+
+  21 Oct 2006; Bryan Østergaard <kloeri@gentoo.org> bugzilla-2.18.6.ebuild:
+  Stable on Alpha, bug 151563.
+
+  21 Oct 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  bugzilla-2.18.6.ebuild:
+  ppc stable, bug #151563
+
+  20 Oct 2006; Jason Wever <weeve@gentoo.org> bugzilla-2.18.6.ebuild:
+  Stable on SPARC wrt security bug #151563.
+
+*bugzilla-2.22.1 (20 Oct 2006)
+*bugzilla-2.20.3 (20 Oct 2006)
+*bugzilla-2.18.6 (20 Oct 2006)
+
+  20 Oct 2006; Renat Lumpau <rl03@gentoo.org> +bugzilla-2.18.6.ebuild,
+  -bugzilla-2.20.2.ebuild, +bugzilla-2.20.3.ebuild, -bugzilla-2.22.ebuild,
+  +bugzilla-2.22.1.ebuild:
+  Version bump, bug #151563.
+
+  09 Jun 2006; Renat Lumpau <rl03@gentoo.org> bugzilla-2.22.ebuild:
+  Need >=Template-Toolkit-2.13 ( bug #134526 ).
+
+  28 Apr 2006; Renat Lumpau <rl03@gentoo.org> bugzilla-2.22.ebuild:
+  Added optional dep on dev-util/patchutils
+
+  23 Apr 2006; Renat Lumpau <rl03@gentoo.org> bugzilla-2.22.ebuild:
+  Extras are good to go on ppc64
+
+*bugzilla-2.22 (23 Apr 2006)
+*bugzilla-2.20.2 (23 Apr 2006)
+
+  23 Apr 2006; Renat Lumpau <rl03@gentoo.org>
+  +files/2.22/bugzilla.cron.daily, +files/2.22/bugzilla.cron.tab,
+  +files/2.22/apache.htaccess, +files/2.22/postinstall-en.txt,
+  +files/2.22/reconfig, -bugzilla-2.20.1.ebuild, +bugzilla-2.20.2.ebuild,
+  +bugzilla-2.22.ebuild:
+  Version bump
+
+  04 Apr 2006; Aron Griffis <agriffis@gentoo.org> bugzilla-2.18.5.ebuild:
+  Mark 2.18.5 stable on ia64
+
+  26 Feb 2006; Renat Lumpau <rl03@gentoo.org> -bugzilla-2.18.4.ebuild:
+  Cleaned out old version
+
+  26 Feb 2006; Bryan Østergaard <kloeri@gentoo.org bugzilla-2.18.5.ebuild:
+  Stable on alpha, bug 123646.
+
+  25 Feb 2006; Mark Loeser <halcy0n@gentoo.org> bugzilla-2.18.5.ebuild:
+  Stable on x86; bug #123646
+
+  23 Feb 2006; Simon Stelling <blubb@gentoo.org> bugzilla-2.18.5.ebuild:
+  stable on amd64 wrt bug 123646
+
+  23 Feb 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  bugzilla-2.18.5.ebuild:
+  Stable on sparc wrt security #123646
+
+  22 Feb 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  bugzilla-2.18.5.ebuild:
+  ppc stable, bug #123646
+
+  22 Feb 2006; Markus Rothe <corsair@gentoo.org> bugzilla-2.18.5.ebuild:
+  Stable on ppc64; bug #123646
+
+*bugzilla-2.20.1 (21 Feb 2006)
+*bugzilla-2.18.5 (21 Feb 2006)
+
+  21 Feb 2006; Renat Lumpau <rl03@gentoo.org> +bugzilla-2.18.5.ebuild,
+  -bugzilla-2.20.ebuild, +bugzilla-2.20.1.ebuild:
+  Vbump wrt security bug #123646.
+
+  17 Feb 2006; Renat Lumpau <rl03@gentoo.org> files/2.20/postinstall-en.txt:
+  Clarified postinstall instructions
+
+  16 Feb 2006; Renat Lumpau <rl03@gentoo.org> bugzilla-2.20.ebuild:
+  Really fix mysql dep
+
+  16 Feb 2006; Renat Lumpau <rl03@gentoo.org> bugzilla-2.20.ebuild:
+  Fixed mysql dep wrt bug #123030.
+
+  13 Feb 2006; Michael Cummings <mcummings@gentoo.org>
+  bugzilla-2.18.4.ebuild, bugzilla-2.20.ebuild:
+  Virtuals for some perl-core deps
+
+  08 Feb 2006; Aron Griffis <agriffis@gentoo.org> bugzilla-2.18.4.ebuild:
+  Mark 2.18.4 stable on alpha
+
+  09 Nov 2005; Renat Lumpau <rl03@gentoo.org> bugzilla-2.18.4.ebuild,
+  bugzilla-2.20.ebuild:
+  Fixed DBD-mysql dependency wrt bug #111922.
+
+  08 Oct 2005; Renat Lumpau <rl03@gentoo.org> -bugzilla-2.18.3.ebuild:
+  Removing vulnerable version
+
+  07 Oct 2005; Gustavo Zacarias <gustavoz@gentoo.org>
+  bugzilla-2.18.4.ebuild:
+  Stable on sparc wrt #107796
+
+  07 Oct 2005; Simon Stelling <blubb@gentoo.org> bugzilla-2.18.4.ebuild:
+  stable on amd64 wrt bug 107796
+
+  06 Oct 2005; Aron Griffis <agriffis@gentoo.org> bugzilla-2.18.4.ebuild,
+  bugzilla-2.20.ebuild:
+  Mark 2.20 2.18.4 ~alpha/~ia64 #108234
+
+  05 Oct 2005; Chris Gianelloni <wolf31o2@gentoo.org>
+  bugzilla-2.18.4.ebuild:
+  Marking stable on x86 due to bug #107796.
+
+  03 Oct 2005; Renat Lumpau <rl03@gentoo.org>
+  +files/2.18/postinstall-en.txt, files/2.18/reconfig,
+  files/2.20/postinstall-en.txt, files/2.20/reconfig,
+  bugzilla-2.18.4.ebuild:
+  Reconfig hook is no longer interactive, per bug #107918.
+
+  02 Oct 2005; Markus Rothe <corsair@gentoo.org> bugzilla-2.18.4.ebuild:
+  Stable on ppc64 (bug #107796)
+
+  02 Oct 2005; Michael Hanselmann <hansmi@gentoo.org>
+  bugzilla-2.18.4.ebuild:
+  Stable on ppc. See bug #107796.
+
+*bugzilla-2.20 (01 Oct 2005)
+*bugzilla-2.18.4 (01 Oct 2005)
+
+  01 Oct 2005; Renat Lumpau <rl03@gentoo.org>
+  -files/2.18.1-r1/apache.htaccess, -files/2.18.1-r1/reconfig,
+  -files/2.18.1-r1/bugzilla.cron.daily, +files/2.20/apache.htaccess,
+  -files/2.18.1-r1/bugzilla.cron.tab, +files/2.20/bugzilla.cron.daily,
+  +files/2.18/bugzilla.cron.daily, +files/2.20/bugzilla.cron.tab,
+  +files/2.18/apache.htaccess, +files/2.18/bugzilla.cron.tab,
+  +files/2.18/reconfig, +files/2.20/postinstall-en.txt,
+  +files/2.20/reconfig, -files/2.20_rc1/apache.htaccess,
+  -files/2.20_rc1/bugzilla.cron.daily, -files/2.20_rc1/bugzilla.cron.tab,
+  -files/2.20_rc1/reconfig, bugzilla-2.18.3.ebuild, +bugzilla-2.18.4.ebuild,
+  -bugzilla-2.20_rc1.ebuild, -bugzilla-2.20_rc2.ebuild,
+  +bugzilla-2.20.ebuild:
+  Version bumps wrt security bug #107796.
+
+*bugzilla-2.20_rc2 (08 Aug 2005)
+
+  08 Aug 2005; Renat Lumpau <rl03@gentoo.org> +bugzilla-2.20_rc2.ebuild:
+  Added 2.20_rc2
+
+  11 Jul 2005; Renat Lumpau <rl03@gentoo.org> -files/bugzilla.conf,
+  -files/bugzilla.cron.daily, -files/bugzilla.cron.tab, -files/bz.cfg.templ,
+  -files/firstcheck.sh, -bugzilla-2.18.1.ebuild, -bugzilla-2.18.1-r1.ebuild:
+  Cleaning house
+
+  11 Jul 2005; Markus Rothe <corsair@gentoo.org> bugzilla-2.18.3.ebuild:
+  Stable on ppc64 (bug #98348)
+
+  11 Jul 2005; Simon Stelling <blubb@gentoo.org> bugzilla-2.18.3.ebuild:
+  stable on amd64 wrt bug 98348
+
+  10 Jul 2005; Jory A. Pratt <anarchy@gentoo.org> bugzilla-2.18.3.ebuild:
+  Stable on SPARC wrt security bug #98348
+
+  10 Jul 2005; Jason Wever <weeve@gentoo.org> bugzilla-2.18.3.ebuild:
+  Stable on SPARC wrt security bug #98348.
+
+*bugzilla-2.18.3 (10 Jul 2005)
+
+  10 Jul 2005; Renat Lumpau <rl03@gentoo.org> files/2.18.1-r1/reconfig,
+  +bugzilla-2.18.3.ebuild:
+  Version bump wrt security #98348.
+
+  09 Jul 2005; Renat Lumpau <rl03@gentoo.org>
+  -files/2.20_rc1/pgsql-version-detect-broken-gentoo.patch,
+  bugzilla-2.20_rc1.ebuild:
+  Update DBD:Pg dependency
+
+*bugzilla-2.20_rc1 (08 Jul 2005)
+
+  08 Jul 2005; Renat Lumpau <rl03@gentoo.org>
+  +files/2.20_rc1/apache.htaccess, +files/2.20_rc1/bugzilla.cron.daily,
+  +files/2.20_rc1/bugzilla.cron.tab,
+  +files/2.20_rc1/pgsql-version-detect-broken-gentoo.patch,
+  +files/2.20_rc1/reconfig, +bugzilla-2.20_rc1.ebuild:
+  Adding latest RC
+
+  26 Jun 2005; Renat Lumpau <rl03@gentoo.org> bugzilla-2.18.1.ebuild:
+  Fixed location of reconfig script
+
+*bugzilla-2.18.1-r1 (26 Jun 2005)
+
+  26 Jun 2005; Renat Lumpau <rl03@gentoo.org>
+  +files/2.18.1-r1/apache.htaccess, +files/2.18.1-r1/bugzilla.cron.daily,
+  +files/2.18.1-r1/bugzilla.cron.tab, +files/2.18.1-r1/reconfig,
+  +bugzilla-2.18.1-r1.ebuild:
+  Fixed reconfig script. Closes #80996 and #96072
+
+  26 Jun 2005; Renat Lumpau <rl03@gentoo.org> :
+  Cleaning house.
+
+  26 Jun 2005; Renat Lumpau <rl03@gentoo.org> -files/CAN-2004-1061.patch,
+  -files/2.18.0_rc1/apache.htaccess, -files/2.18.0_rc1/reconfig,
+  -files/2.18.0_rc2/apache.htaccess, -files/2.18.0_rc2/reconfig,
+  -files/2.18.0_rc3/apache.htaccess, -files/2.18.0_rc3/reconfig,
+  -files/2.18.0_rc4/apache.htaccess, -files/2.18.0_rc4/reconfig,
+  files/bz.cfg.templ, -bugzilla-2.18.0_rc1.ebuild,
+  -bugzilla-2.18.0_rc2.ebuild, -bugzilla-2.18.0_rc3.ebuild,
+  -bugzilla-2.18.0_rc4.ebuild:
+  Removing obsolete versions.
+
+  12 Jun 2005; Jason Wever <weeve@gentoo.org> bugzilla-2.18.1.ebuild:
+  Stable on SPARC.
+
+  25 May 2005; Michael Cummings <mcummings@gentoo.org> bugzilla-2.18.1.ebuild:
+  dev-perl/File-Spec => perl-core/File-Spec migration
+
+  25 May 2005; Michael Cummings <mcummings@gentoo.org>
+  bugzilla-2.18.0_rc4.ebuild:
+  dev-perl/File-Spec => perl-core/File-Spec migration
+
+  25 May 2005; Michael Cummings <mcummings@gentoo.org>
+  bugzilla-2.18.0_rc3.ebuild:
+  dev-perl/File-Spec => perl-core/File-Spec migration
+
+  25 May 2005; Michael Cummings <mcummings@gentoo.org>
+  bugzilla-2.18.0_rc2.ebuild:
+  dev-perl/File-Spec => perl-core/File-Spec migration
+
+  25 May 2005; Michael Cummings <mcummings@gentoo.org>
+  bugzilla-2.18.0_rc1.ebuild:
+  dev-perl/File-Spec => perl-core/File-Spec migration
+
+  24 May 2005; Michael Cummings <mcummings@gentoo.org>
+  bugzilla-2.18.0_rc1.ebuild, bugzilla-2.18.0_rc2.ebuild,
+  bugzilla-2.18.0_rc3.ebuild, bugzilla-2.18.0_rc4.ebuild,
+  bugzilla-2.18.1.ebuild:
+  dev-perl/CGI => perl-core/CGI
+
+  18 May 2005; Markus Rothe <corsair@gentoo.org> bugzilla-2.18.1.ebuild:
+  Stable on ppc64
+
+  13 May 2005; Michael Hanselmann <hansmi@gentoo.org>
+  bugzilla-2.18.1.ebuild:
+  Stable on ppc.
+
+*bugzilla-2.18.1 (13 May 2005)
+
+  13 May 2005; Aaron Walker <ka0ttic@gentoo.org> +bugzilla-2.18.1.ebuild:
+  Version bump for security bug 92376.
+
+  12 Apr 2005; Konstantin Arkhipov <voxus@gentoo.org>
+  bugzilla-2.18.0_rc4.ebuild:
+  Added ~amd64.
+
+  29 Mar 2005; Michael Cummings <mcummings@gentoo.org>
+  bugzilla-2.18.0_rc1.ebuild, bugzilla-2.18.0_rc2.ebuild,
+  bugzilla-2.18.0_rc3.ebuild, bugzilla-2.18.0_rc4.ebuild:
+  Removing dep on dev-perl/Data-Dumper - this ebuild is superceded by the core
+  perl install. Bug 80440.
+
+  09 Mar 2005; Markus Rothe <corsair@gentoo.org> bugzilla-2.18.0_rc4.ebuild:
+  Added ~ppc64 to KEYWORDS
+
+  21 Jan 2005; Luca Barbato <lu_zero@gentoo.org> bugzilla-2.18.0_rc4.ebuild:
+  Marked ppc
+
+*bugzilla-2.18.0_rc4 (19 Jan 2005)
+
+  19 Jan 2005; Stuart Herbert <stuart@gentoo.org>
+  +files/2.18.0_rc4/apache.htaccess, +files/2.18.0_rc4/reconfig,
+  +bugzilla-2.18.0_rc4.ebuild:
+  Added patch for CAN-2004-1061; see bug #76631
+
+  29 Oct 2004; <SeJo@gentoo.org> bugzilla-2.18.0_rc3.ebuild:
+  stable on ppc gsla: 68851
+
+*bugzilla-2.18.0_rc3 (27 Oct 2004)
+
+  27 Oct 2004; Renat Lumpau <rl03@gentoo.org> +bugzilla-2.18.0_rc3.ebuild:
+  Version bump. Security bug #68851.
+
+  05 Sep 2004; Sven Wegener <swegener@gentoo.org> :
+  Fixed ChangeLog header.
+
+  03 Sep 2004; Pieter Van den Abeele <pvdabeel@gentoo.org>
+  bugzilla-2.18.0_rc1.ebuild, bugzilla-2.18.0_rc2.ebuild:
+  Masked bugzilla-2.18.0_rc2.ebuild stable for ppc
+
+  03 Sep 2004; Pieter Van den Abeele <pvdabeel@gentoo.org>
+  bugzilla-2.18.0_rc1.ebuild:
+  Masked bugzilla-2.18.0_rc1.ebuild stable for ppc
+
+  30 Aug 2004; Renat Lumpau <rl03@gentoo.org> :
+  Recommitting Manifest
+
+  30 Aug 2004; Renat Lumpau <rl03@gentoo.org> bugzilla-2.18.0_rc1.ebuild,
+  bugzilla-2.18.0_rc2.ebuild:
+  Fixed DEPEND/RDEPEND
+
+*bugzilla-2.18.0_rc2 (17 Aug 2004)
+
+  17 Aug 2004; Renat Lumpau <rl03@gentoo.org> +files/2.18.0_rc2/apache.htaccess,
+  +files/2.18.0_rc2/reconfig, +bugzilla-2.18.0_rc2.ebuild:
+  Version bump (bug 59165). Cleaned up dependancies.
+
+*bugzilla-2.18.0_rc1 (15 Aug 2004)
+
+  15 Aug 2004; Stuart Herbert <stuart@gentoo.org> +metadata.xml,
+  +files/bugzilla.conf, +files/bugzilla.cron.daily, +files/bugzilla.cron.tab,
+  +files/bz.cfg.templ, +files/cronset.sh, +files/firstcheck.sh,
+  +files/2.18.0_rc1/apache.htaccess, +files/2.18.0_rc1/reconfig,
+  +bugzilla-2.18.0_rc1.ebuild:
+  Moved from net-www/bugzilla to www-apps/bugzilla.
+
+  19 Jul 2004; Michael Sterrett <mr_bones_@gentoo.org>
+  bugzilla-2.18.0_rc1.ebuild:
+  don't use deprecated ? : dep syntax
+
+  17 Jul 2004; Stuart Herbert <stuart@gentoo.org> bugzilla-2.18.0_rc1.ebuild:
+  Fix for repoman warnings
+
+*bugzilla-2.18.0_rc1 (17 Jul 2004)
+
+  17 Jul 2004; Stuart Herbert <stuart@gentoo.org> files/bz.cfg.templ,
+  +files/2.18.0_rc1/apache.htaccess, +files/2.18.0_rc1/reconfig,
+  -bugzilla-2.17.6-r1.ebuild, -bugzilla-2.17.6-r2.ebuild,
+  +bugzilla-2.18.0_rc1.ebuild:
+  Insecure versions removed; see bug #56826
+
+*bugzilla-2.18.0_rc1 (17 Jul 2004)
+
+  17 Jul 2004; Stuart Herbert <stuart@gentoo.org> files/bz.cfg.templ,
+  +files/2.18.0_rc1/apache.htaccess, +files/2.18.0_rc1/reconfig,
+  -bugzilla-2.17.6-r1.ebuild, +bugzilla-2.18.0_rc1.ebuild:
+  Obsolete version; removed by eversionrm tool
+
+*bugzilla-2.18.0_rc1 (17 Jul 2004)
+
+  17 Jul 2004; Stuart Herbert <stuart@gentoo.org> files/bz.cfg.templ,
+  +files/2.18.0_rc1/apache.htaccess, +files/2.18.0_rc1/reconfig,
+  +bugzilla-2.18.0_rc1.ebuild:
+  Version bump, for security bug #56826; new ebuild and reconfig script from
+  Renat Lumpau <lumpau@freeshell.org>; see bug #51979
+
+*bugzilla-2.17.6-r2 (23 Apr 2004)
+
+  23 Apr 2004; Stuart Herbert <stuart@gentoo.org> bugzilla-2.17.6-r2.ebuild:
+  Attempted(!!) fix for mysql password problem; see bug #46436
+
+  17 Apr 2004; Stuart Herbert <stuart@gentoo.org> bugzilla-2.17.6-r1.ebuild:
+  Fix for bug #48026
+
+  13 Apr 2004; Chuck Short <zul@gentoo.org> bugzilla-2.17.6-r1.ebuild:
+  Added apache2 detection, closes #42089.
+
+*bugzilla-2.17.6-r1 (01 Dec 2003)
+
+  01 Dec 2003; Benjamin Coles <sj7trunks@gentoo.org> bugzilla-2.17.6-r1.ebuild:
+  Thanks to Abhishek@gentoo.org for submitting this ebuild; bug #15031
+  Updated ebuild to work with 2.17.6
+  Moved ebuild install directtory to /var/www
+  Todo: Update ebuild to better support upgrades

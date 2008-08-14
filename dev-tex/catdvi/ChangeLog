@@ -1,0 +1,13 @@
+# ChangeLog for dev-tex/catdvi
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-tex/catdvi/ChangeLog,v 1.2 2007/11/19 20:43:56 drac Exp $
+
+  19 Nov 2007; Samuli Suominen <drac@gentoo.org> catdvi-0.14.ebuild:
+  Keyword ~amd64 wrt #199681, use tc-getCC.
+
+*catdvi-0.14 (20 May 2007)
+
+  20 May 2007; Ulrich Mueller <ulm@gentoo.org> +metadata.xml,
+  +catdvi-0.14.ebuild:
+  Initial import, fixes bug #107248.
+

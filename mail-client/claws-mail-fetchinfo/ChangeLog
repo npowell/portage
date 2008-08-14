@@ -1,0 +1,103 @@
+# ChangeLog for mail-client/claws-mail-fetchinfo
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/mail-client/claws-mail-fetchinfo/ChangeLog,v 1.22 2008/06/23 06:52:24 opfer Exp $
+
+  23 Jun 2008; Christian Faulhammer <opfer@gentoo.org>
+  -claws-mail-fetchinfo-0.4.20.ebuild, -claws-mail-fetchinfo-0.4.21.ebuild,
+  -claws-mail-fetchinfo-0.4.22.ebuild:
+  clean up
+
+  21 Jun 2008; Markus Rothe <corsair@gentoo.org>
+  claws-mail-fetchinfo-0.4.23.ebuild:
+  Stable on ppc64; bug #222167
+
+  21 Jun 2008; Christian Faulhammer <opfer@gentoo.org> metadata.xml:
+  correct email address of Ken
+
+  14 Jun 2008; Kenneth Prugh <ken69267@gentoo.org>
+  claws-mail-fetchinfo-0.4.23.ebuild:
+  amd64 stable, bug #222167
+
+  11 Jun 2008; Christian Faulhammer <opfer@gentoo.org>
+  claws-mail-fetchinfo-0.4.23.ebuild:
+  stable x86, bug 222167
+
+  11 Jun 2008; Christian Faulhammer <opfer@gentoo.org> metadata.xml:
+  Changing maintainers
+
+  30 May 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Andrej Kacian (Ticho) from metadata.xml (as per #59986).
+
+  28 May 2008; Mark Loeser <halcy0n@gentoo.org>
+  claws-mail-fetchinfo-0.4.20.ebuild, claws-mail-fetchinfo-0.4.21.ebuild,
+  claws-mail-fetchinfo-0.4.22.ebuild:
+  Fix RDEPEND on pkgconfig; bug #217278
+
+  12 May 2008; Christian Faulhammer <opfer@gentoo.org>
+  claws-mail-fetchinfo-0.4.23.ebuild:
+  raise needed Claws Mail version
+
+*claws-mail-fetchinfo-0.4.23 (12 May 2008)
+
+  12 May 2008; Christian Faulhammer <opfer@gentoo.org>
+  +claws-mail-fetchinfo-0.4.23.ebuild:
+  version bump for bug 218708
+
+  13 Feb 2008; Andrej Kacian <ticho@gentoo.org>
+  claws-mail-fetchinfo-0.4.20.ebuild, claws-mail-fetchinfo-0.4.21.ebuild,
+  claws-mail-fetchinfo-0.4.22.ebuild:
+  Depend on pkgconfig (bug #205864).
+
+*claws-mail-fetchinfo-0.4.22 (28 Dec 2007)
+
+  28 Dec 2007; Andrej Kacian <ticho@gentoo.org>
+  +claws-mail-fetchinfo-0.4.22.ebuild:
+  Version bump. Bug #202634 by Joe <joacher at gmx.de>.
+
+*claws-mail-fetchinfo-0.4.21 (29 Nov 2007)
+
+  29 Nov 2007; Andrej Kacian <ticho@gentoo.org>
+  -claws-mail-fetchinfo-0.4.17.ebuild, -claws-mail-fetchinfo-0.4.18.ebuild,
+  -claws-mail-fetchinfo-0.4.19.ebuild, claws-mail-fetchinfo-0.4.20.ebuild,
+  +claws-mail-fetchinfo-0.4.21.ebuild:
+  Version bump, ebuild cleanup.
+
+  13 Sep 2007; Markus Rothe <corsair@gentoo.org>
+  claws-mail-fetchinfo-0.4.20.ebuild:
+  Stable on ppc64; bug #190104
+
+  13 Sep 2007; Christian Faulhammer <opfer@gentoo.org>
+  claws-mail-fetchinfo-0.4.20.ebuild:
+  x86 stable, security bug 190104
+
+*claws-mail-fetchinfo-0.4.20 (03 Sep 2007)
+
+  03 Sep 2007; Andrej Kacian <ticho@gentoo.org>
+  +claws-mail-fetchinfo-0.4.20.ebuild:
+  Version bump.
+
+*claws-mail-fetchinfo-0.4.19 (07 Jul 2007)
+
+  07 Jul 2007; <ticho@gentoo.org> +claws-mail-fetchinfo-0.4.19.ebuild:
+  Version bump.
+
+  31 Jan 2007; Markus Rothe <corsair@gentoo.org>
+  claws-mail-fetchinfo-0.4.17.ebuild:
+  Stable on ppc64; bug #163611
+
+  25 Jan 2007; Christian Faulhammer <opfer@gentoo.org>
+  claws-mail-fetchinfo-0.4.17.ebuild:
+  stable x86; bug #163611
+
+*claws-mail-fetchinfo-0.4.18 (09 Jan 2007)
+
+  09 Jan 2007; Andrej Kacian <ticho@gentoo.org>
+  +claws-mail-fetchinfo-0.4.18.ebuild:
+  Version bump.
+
+*claws-mail-fetchinfo-0.4.17 (19 Dec 2006)
+
+  19 Dec 2006; Andrej Kacian <ticho@gentoo.org> +metadata.xml,
+  +claws-mail-fetchinfo-0.4.17.ebuild:
+  This is the new name of mail-client/sylpheed-claws-fetchinfo.
+

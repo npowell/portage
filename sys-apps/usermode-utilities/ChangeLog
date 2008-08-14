@@ -1,0 +1,132 @@
+# ChangeLog for sys-apps/usermode-utilities
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/usermode-utilities/ChangeLog,v 1.25 2008/02/14 14:20:11 flameeyes Exp $
+
+  14 Feb 2008; Diego Pettenò <flameeyes@gentoo.org>
+  usermode-utilities-20070815.ebuild:
+  Sed also the makefile for uml_moo and uml_mkcow, it uses a different rule
+  schema.
+
+  14 Feb 2008; Daniel Gryniewicz <dang@gentoo.org>
+  usermode-utilities-20070815.ebuild:
+  respect LDFLAGS; bug #209724
+
+*usermode-utilities-20070815 (22 Dec 2007)
+
+  22 Dec 2007; Daniel Gryniewicz <dang@gentoo.org>
+  +files/usermode-utilities-20070815-nostrip.patch,
+  +usermode-utilities-20070815.ebuild:
+  Bump to 20070815
+
+*usermode-utilities-20060323 (11 Jun 2007)
+
+  11 Jun 2007; Daniel Gryniewicz <dang@gentoo.org>
+  +files/usermode-utilities-20060323-nostrip.patch,
+  +usermode-utilities-20060323.ebuild:
+  Bump to 20060323
+  	- include fix for prestriped files (bug #181480)
+
+*usermode-utilities-20060216 (14 Aug 2006)
+
+  14 Aug 2006; Daniel Gryniewicz <dang@gentoo.org>
+  +files/usermode-utilities-20060216-unlazy.patch, +metadata.xml,
+  +usermode-utilities-20060216.ebuild:
+  Add new upstream for bug #123703 and bug #72366, and take maintainership
+
+  13 Apr 2005; John Mylchreest <johnm@gentoo.org>
+  +files/20040406-CAN-2004-1295.patch:
+  missing patch!
+
+  13 Apr 2005; John Mylchreest <johnm@gentoo.org> :
+  fixing net_slip vuln. #74482
+
+  01 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  usermode-utilities-20020906.ebuild, usermode-utilities-20030118.ebuild,
+  usermode-utilities-20030120.ebuild, usermode-utilities-20030122.ebuild,
+  usermode-utilities-20030202.ebuild, usermode-utilities-20030205-r1.ebuild,
+  usermode-utilities-20030205.ebuild, usermode-utilities-20030903.ebuild,
+  usermode-utilities-20040114.ebuild, usermode-utilities-20040406.ebuild:
+  virtual/glibc -> virtual/libc
+
+*usermode-utilities-20040406 (30 Apr 2004)
+
+  30 Apr 2004; Michael Imhof <tantive@gentoo.org> usermode-utilities-20040406.ebuild:
+  Version bumped. Closes #47470.
+
+  07 Mar 2004; Gustavo Zacarias <gustavoz@gentoo.org>
+  usermode-utilities-20020906.ebuild, usermode-utilities-20030118.ebuild,
+  usermode-utilities-20030120.ebuild, usermode-utilities-20030122.ebuild,
+  usermode-utilities-20030202.ebuild, usermode-utilities-20030205-r1.ebuild,
+  usermode-utilities-20030205.ebuild, usermode-utilities-20030903.ebuild,
+  usermode-utilities-20040114.ebuild:
+  -sparc all, um linux doesn't work on sparc yet
+
+*usermode-utilities-20040114 (28 Jan 2004)
+
+  28 Jan 2004; Michal Januszewski <spock@gentoo.org>
+  usermode-utilities-20020906.ebuild, usermode-utilities-20030118.ebuild,
+  usermode-utilities-20030120.ebuild, usermode-utilities-20030122.ebuild,
+  usermode-utilities-20030202.ebuild, usermode-utilities-20030205-r1.ebuild,
+  usermode-utilities-20030205.ebuild, usermode-utilities-20030903.ebuild,
+  usermode-utilities-20040114.ebuild:
+  Version bump, fixed headers in all ebuilds.
+
+*usermode-utilities-20030903 (22 Sep 2003)
+
+  22 Sep 2003; Michael Imhof <tantive@gentoo.org>
+  Version bumped. Should close #28693.
+
+*usermode-utilities-20030205-r1 (12 Mar 2003)
+
+  12 Mar 2003; Michael Imhof <tantive@gentoo.org>
+  Unmasked
+
+  12 Mar 2003; Michael Imhof <tantive@gentoo.org>
+  Added -DTUNTAP to emake. Should close #16384.
+
+*usermode-utilities-20030205 (02 Mar 2003)
+
+  02 Mar 2003; Michael Imhof <tantive@gentoo.org>
+  Version bumped. Cleaned out old ebuilds.
+
+*usermode-utilities-20030202 (02 Mar 2003)
+
+  02 Mar 2003; Michael Imhof <tantive@gentoo.org>
+  Version bumped.
+
+  06 Dec 2002; Rodney Rees <manson@gentoo.org> : changed sparc ~sparc keywords
+
+*usermode-utilities-20030122 (27 Jan 2003)
+
+  27 Jan 2003; Michael Imhof <tantive@gentoo.org>
+  Version bumped.
+
+*usermode-utilities-20030120 (27 Jan 2003)
+
+  27 Jan 2003; Michael Imhof <tantive@gentoo.org>
+  Version bumped.
+
+*usermode-utilities-20030118 (27 Jan 2003)
+
+  27 Jan 2003; Michael Imhof <tantive@gentoo.org>
+  Version bumped.
+ 
+*usermode-utilities-20021103 (06 Nov 2002)
+
+  06 Nov 2002; Michael Imhof <tantive@gentoo.org>
+  Version bumped.
+
+*usermode-utilities-20021102 (03 Nov 2002)
+
+  03 Nov 2002; Michael Imhof <tantive@gentoo.org>
+  Version bumped.
+
+*usermode-utilities-* (10 Oct 2002)
+
+  10 Oct 2002; Michael Imhof <tantive@gentoo.org>
+  Moved dev-util/usermode to sys-apps/usermode-utilities
+
+*usermode-utilities-20020906 (08 Oct 2002)
+
+  08 Oct 2002; Michael Imhof <tantive@gentoo.org>
+  Version bump thanks to sasquach

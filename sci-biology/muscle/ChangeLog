@@ -1,0 +1,38 @@
+# ChangeLog for sci-biology/muscle
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-biology/muscle/ChangeLog,v 1.9 2008/03/21 21:23:44 dberkholz Exp $
+
+*muscle-3.7 (21 Mar 2008)
+
+  21 Mar 2008; Donnie Berkholz <dberkholz@gentoo.org>; +muscle-3.7.ebuild:
+  Bump. Bug fixes and undocumented new features.
+
+  31 Dec 2007; Jeff Gardner <je_fro@gentoo.org> ChangeLog:
+  fixing my email addy
+
+  26 Dec 2007; Samuli Suominen <drac@gentoo.org> muscle-3.6.ebuild:
+  amd64 stable wrt #203185
+
+  25 Dec 2007; nixnut <nixnut@gentoo.org> muscle-3.6.ebuild:
+  Stable on ppc wrt bug 203185
+
+  21 Oct 2007; <je_fro@gentoo.org> muscle-3.6.ebuild:
+  Adding ~amd64 and ~ppc for seaview
+
+  01 Oct 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Remove myself as maintainer so it goes to all of the sci-biology team.
+
+  20 Aug 2006; Donnie Berkholz <dberkholz@gentoo.org>; muscle-3.6.ebuild:
+  Stable on x86.
+
+  07 Jul 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Update to my new email address.
+
+*muscle-3.6 (21 Feb 2006)
+
+  21 Feb 2006; Donnie Berkholz <dberkholz@gentoo.org>; +metadata.xml,
+  +muscle-3.6.ebuild:
+  New multiple sequence alignment package. Provides a great tradeoff between
+  runtime and quality for global alignments; quite a bit worse on local
+  alignments.
+

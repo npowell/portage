@@ -1,0 +1,50 @@
+# ChangeLog for media-video/pitivi
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/pitivi/ChangeLog,v 1.11 2008/02/24 21:10:09 eva Exp $
+
+  24 Feb 2008; Gilles Dartiguelongue <eva@gentoo.org> pitivi-0.11.1.ebuild:
+  fix python eclass use, bug #207667
+
+*pitivi-0.11.1 (01 Dec 2007)
+
+  01 Dec 2007; Hanno Boeck <hanno@gentoo.org> +pitivi-0.11.1.ebuild:
+  Version bump.
+
+*pitivi-0.11.0 (19 Oct 2007)
+
+  19 Oct 2007; Hanno Boeck <hanno@gentoo.org> +pitivi-0.11.0.ebuild:
+  Version bump.
+
+*pitivi-0.10.3 (10 Jun 2007)
+
+  10 Jun 2007; Hanno Boeck <hanno@gentoo.org> +pitivi-0.10.3.ebuild:
+  Version bump.
+
+  21 Apr 2007; Hanno Boeck <hanno@gentoo.org> pitivi-0.10.2.ebuild:
+  Fix addpredict usage.
+
+*pitivi-0.10.2 (02 Apr 2007)
+
+  02 Apr 2007; Hanno Boeck <hanno@gentoo.org> +pitivi-0.10.2.ebuild:
+  Version bump.
+
+  03 Feb 2007; Steve Dibb <beandog@gentoo.org> pitivi-0.10.0.ebuild:
+  Add ~amd64, bug 164789
+
+  19 Aug 2006; Hanno Boeck <hanno@gentoo.org> pitivi-0.10.1.ebuild:
+  Re-fix access violations.
+
+*pitivi-0.10.1 (08 Aug 2006)
+
+  08 Aug 2006; Hanno Boeck <hanno@gentoo.org> +pitivi-0.10.1.ebuild:
+  Version bump and some changes by Chris Mayo (bug #138938).
+
+  03 Jun 2006; Hanno Boeck <hanno@gentoo.org> pitivi-0.10.0.ebuild:
+  Fix access violations.
+
+*pitivi-0.10.0 (13 May 2006)
+
+  13 May 2006; Hanno Boeck <hanno@gentoo.org> +metadata.xml,
+  +pitivi-0.10.0.ebuild:
+  Initial commit.
+

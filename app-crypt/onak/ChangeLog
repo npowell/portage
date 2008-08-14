@@ -1,0 +1,29 @@
+# ChangeLog for app-crypt/onak
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-crypt/onak/ChangeLog,v 1.5 2008/05/21 15:49:17 dev-zero Exp $
+
+  21 May 2008; Tiziano Müller <dev-zero@gentoo.org> onak-0.3.3-r1.ebuild:
+  Changed dependency for postgresql from dev-db/postgresql to
+  virtual/postgresql-server
+
+*onak-0.3.3-r1 (23 May 2007)
+
+  23 May 2007; Alon Bar-Lev <alonbl@gentoo.org> -onak-0.3.2.ebuild,
+  -onak-0.3.3.ebuild, +onak-0.3.3-r1.ebuild:
+  Fix db engines use flags and CGIs, also works now with gnupg-2, thank to
+  maxim for his help
+
+*onak-0.3.3 (22 May 2007)
+
+  22 May 2007; Alon Bar-Lev <alonbl@gentoo.org> +onak-0.3.3.ebuild:
+  Version bump
+
+  08 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+*onak-0.3.2 (19 Sep 2005)
+
+  19 Sep 2005; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml,
+  +onak-0.3.2.ebuild:
+  Initial commit. Ebuild by Robin H. Johnson <robbat2@gentoo.org>.
+

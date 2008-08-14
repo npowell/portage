@@ -1,0 +1,28 @@
+# ChangeLog for sys-apps/inotail
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/inotail/ChangeLog,v 1.6 2008/04/21 18:28:23 armin76 Exp $
+
+  21 Apr 2008; Raúl Porcel <armin76@gentoo.org> inotail-0.5.ebuild:
+  x86 stable
+
+  06 Oct 2007; Christoph Mende <angelos@gentoo.org> -inotail-0.4.ebuild,
+  inotail-0.5.ebuild:
+  Stable on amd64
+
+*inotail-0.5 (07 Sep 2007)
+
+  07 Sep 2007; Christoph Mende <angelos@gentoo.org> +inotail-0.5.ebuild:
+  Version bump
+
+  01 Aug 2007; Christoph Mende <angelos@gentoo.org> inotail-0.4.ebuild:
+  Stable on amd64
+
+  27 Jun 2007; Christian Faulhammer <opfer@gentoo.org> inotail-0.4.ebuild:
+  keyworded ~x86, bug 183366
+
+*inotail-0.4 (24 Jun 2007)
+
+  24 Jun 2007; Christoph Mende <angelos@gentoo.org> +metadata.xml,
+  +inotail-0.4.ebuild:
+  Initial import
+

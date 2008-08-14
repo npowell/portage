@@ -1,0 +1,82 @@
+# ChangeLog for kde-base/knetworkconf
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/kde-base/knetworkconf/ChangeLog,v 1.16 2008/06/07 16:09:43 keytoaster Exp $
+
+  07 Jun 2008; Tobias Heinlein <keytoaster@gentoo.org>
+  -knetworkconf-3.5.8.ebuild, -knetworkconf-4.0.2.ebuild,
+  -knetworkconf-4.0.3.ebuild:
+  Removed old versions.
+
+*knetworkconf-4.0.5 (05 Jun 2008)
+
+  05 Jun 2008; Tobias Heinlein <keytoaster@gentoo.org>
+  +knetworkconf-4.0.5.ebuild:
+  Added the KDE 4.0.5 version of knetworkconf.
+
+  18 May 2008; Markus Meier <maekke@gentoo.org> knetworkconf-3.5.9.ebuild:
+  amd64/x86 stable, bug #221063
+
+*knetworkconf-4.0.4 (15 May 2008)
+
+  15 May 2008; Ingmar Vanhassel <ingmar@gentoo.org>
+  +knetworkconf-4.0.4.ebuild:
+  Added KDE 4.0.4 version of knetworkconf. Thanks to Jorge Manuel B. S.
+  Vicetto.
+
+  15 May 2008; Markus Rothe <corsair@gentoo.org> knetworkconf-3.5.9.ebuild:
+  Stable on ppc64; bug #221063
+
+  13 May 2008; Jeroen Roovers <jer@gentoo.org> knetworkconf-3.5.9.ebuild:
+  Stable for HPPA (bug #221063).
+
+  12 May 2008; Brent Baude <ranger@gentoo.org> knetworkconf-3.5.9.ebuild:
+  Marking knetworkconf-3.5.9 ppc stable for bug 221063
+
+  12 May 2008; Raúl Porcel <armin76@gentoo.org> knetworkconf-3.5.9.ebuild:
+  alpha/ia64/sparc stable wrt #221063
+
+*knetworkconf-4.0.3 (03 Apr 2008)
+
+  03 Apr 2008; Wulf C. Krueger <philantrop@gentoo.org>
+  +knetworkconf-4.0.3.ebuild:
+  Version bump to KDE 4.0.3. This is still not intended for mainstream so DO
+  NOT KEYWORD IT without talking to the KDE herd first.
+
+  20 Mar 2008; Ingmar Vanhassel <ingmar@gentoo.org>
+  -knetworkconf-4.0.1.ebuild:
+  Old.
+
+*knetworkconf-4.0.2 (10 Mar 2008)
+
+  10 Mar 2008; Wulf C. Krueger <philantrop@gentoo.org>
+  +knetworkconf-4.0.2.ebuild:
+  Version bump to KDE 4.0.2
+
+*knetworkconf-3.5.9 (20 Feb 2008)
+
+  20 Feb 2008; Wulf C. Krueger <philantrop@gentoo.org>
+  +knetworkconf-3.5.9.ebuild:
+  Version bump to KDE 3.5.9.
+
+  17 Feb 2008; Ingmar Vanhassel <ingmar@gentoo.org>
+  -knetworkconf-4.0.0.ebuild:
+  Spring cleaning
+
+*knetworkconf-3.5.8 (10 Feb 2008)
+
+  10 Feb 2008; Wulf C. Krueger <philantrop@gentoo.org>
+  +knetworkconf-3.5.8.ebuild:
+  Added a split ebuild as requested on bug 207977.
+
+*knetworkconf-4.0.1 (06 Feb 2008)
+
+  06 Feb 2008; Wulf C. Krueger <philantrop@gentoo.org>
+  +knetworkconf-4.0.1.ebuild:
+  Version bump to KDE 4.0.1.
+
+*knetworkconf-4.0.0 (17 Jan 2008)
+
+  17 Jan 2008; Ingmar Vanhassel <ingmar@gentoo.org> +metadata.xml,
+  +knetworkconf-4.0.0.ebuild:
+  Added KDE 4.0.0's knetworkconf.
+

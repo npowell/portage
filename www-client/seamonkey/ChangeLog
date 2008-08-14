@@ -1,0 +1,551 @@
+# ChangeLog for www-client/seamonkey
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-client/seamonkey/ChangeLog,v 1.153 2008/08/04 15:09:48 keytoaster Exp $
+
+  04 Aug 2008; Tobias Heinlein <keytoaster@gentoo.org>
+  seamonkey-1.1.11.ebuild:
+  amd64 stable wrt security bug #231975
+
+  19 Jul 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  seamonkey-1.1.11.ebuild:
+  ppc stable, bug #231975
+
+  18 Jul 2008; Christian Faulhammer <opfer@gentoo.org>
+  seamonkey-1.1.11.ebuild:
+  stable x86, security bug 231975
+
+  18 Jul 2008; Jeroen Roovers <jer@gentoo.org> seamonkey-1.1.11.ebuild:
+  Stable for HPPA (bug #231975).
+
+  17 Jul 2008; Markus Rothe <corsair@gentoo.org> seamonkey-1.1.11.ebuild:
+  Stable on ppc64; bug #231975
+
+  17 Jul 2008; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.11.ebuild:
+  alpha/ia64/sparc stable wrt #231975
+
+*seamonkey-1.1.11 (16 Jul 2008)
+
+  16 Jul 2008; Raúl Porcel <armin76@gentoo.org> +seamonkey-1.1.11.ebuild:
+  Version bump
+
+  05 Jul 2008; Brent Baude <ranger@gentoo.org> seamonkey-1.1.10.ebuild:
+  Marking seamonkey-1.1.10 ppc64 and ppc for bug 230567
+
+  04 Jul 2008; Markus Meier <maekke@gentoo.org> seamonkey-1.1.10.ebuild:
+  amd64 stable, bug #230567
+
+  04 Jul 2008; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.10.ebuild:
+  alpha/ia64/sparc stable wrt security #230567
+
+  04 Jul 2008; Jeroen Roovers <jer@gentoo.org> seamonkey-1.1.10.ebuild:
+  Stable for HPPA (bug #230567).
+
+  04 Jul 2008; Christian Faulhammer <opfer@gentoo.org>
+  seamonkey-1.1.10.ebuild:
+  stable x86, security bug 230567
+
+*seamonkey-1.1.10 (02 Jul 2008)
+
+  02 Jul 2008; Raúl Porcel <armin76@gentoo.org> +seamonkey-1.1.10.ebuild:
+  Version bump
+
+  21 May 2008; Raúl Porcel <armin76@gentoo.org> -seamonkey-1.1.9.ebuild:
+  old
+
+  20 May 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  seamonkey-1.1.9-r1.ebuild:
+  ppc stable, bug #218065
+
+  19 May 2008; Tiziano Müller <dev-zero@gentoo.org> seamonkey-1.1.7.ebuild,
+  seamonkey-1.1.9.ebuild, seamonkey-1.1.9-r1.ebuild:
+  Changed dependency for postgresql to virtual/postgresql-server
+
+  18 May 2008; Jeroen Roovers <jer@gentoo.org> seamonkey-1.1.9-r1.ebuild:
+  Stable for HPPA (bug #218065).
+
+  18 May 2008; Robert Buchholz <rbu@gentoo.org> seamonkey-1.1.9-r1.ebuild:
+  amd64 stable (bug #218065)
+
+  18 May 2008; Markus Rothe <corsair@gentoo.org> seamonkey-1.1.9-r1.ebuild:
+  Stable on ppc64; bug #218065
+
+  18 May 2008; Christian Faulhammer <opfer@gentoo.org>
+  seamonkey-1.1.9-r1.ebuild:
+  stable x86, security bug 218065
+
+  17 May 2008; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.9-r1.ebuild:
+  alpha/ia64/sparc stable wrt security #218065
+
+*seamonkey-1.1.9-r1 (17 May 2008)
+
+  17 May 2008; Raúl Porcel <armin76@gentoo.org> +seamonkey-1.1.9-r1.ebuild:
+  Revision bump with a patch from Fedora to fix security issues
+
+  19 Apr 2008; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.9.ebuild:
+  Fix pango check, bug #218438
+
+  19 Apr 2008; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.9.ebuild:
+  We need pango built with X use-flag bug #216377
+
+  28 Mar 2008; Jeroen Roovers <jer@gentoo.org> seamonkey-1.1.9.ebuild:
+  Stable for HPPA (bug #214816).
+
+  27 Mar 2008; Brent Baude <ranger@gentoo.org> seamonkey-1.1.9.ebuild:
+  Marking seamonkey-1.1.9 ppc64 and ppc for bug 214816
+
+  27 Mar 2008; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.9.ebuild:
+  alpha/ia64/sparc stable wrt #214816
+
+  26 Mar 2008; Markus Meier <maekke@gentoo.org> seamonkey-1.1.9.ebuild:
+  amd64/x86 stable, security bug #214816
+
+*seamonkey-1.1.9 (26 Mar 2008)
+
+  26 Mar 2008; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.7.ebuild,
+  seamonkey-1.1.8.ebuild, +seamonkey-1.1.9.ebuild:
+  Version bump
+
+  17 Mar 2008; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.7.ebuild,
+  seamonkey-1.1.8.ebuild:
+  Fix LICENSE, thanks to zlin
+
+  02 Mar 2008; Lars Weiler <pylon@gentoo.org> ChangeLog:
+  stable ppc, security bug 208128
+
+  11 Feb 2008; Olivier Crête <tester@gentoo.org> seamonkey-1.1.8.ebuild:
+  Stable on amd64, security bug #208128
+
+  09 Feb 2008; Jeroen Roovers <jer@gentoo.org> seamonkey-1.1.8.ebuild:
+  Stable for HPPA (bug #208128).
+
+  08 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  seamonkey-1.1.8.ebuild:
+  stable x86, security bug 208128
+
+  08 Feb 2008; Brent Baude <ranger@gentoo.org> seamonkey-1.1.8.ebuild:
+  Marking seamonkey-1.1.8 ppc and ppc64 for bug 208128
+
+  08 Feb 2008; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.8.ebuild:
+  alpha/ia64/sparc stable wrt security #208128
+
+*seamonkey-1.1.8 (08 Feb 2008)
+
+  08 Feb 2008; Raúl Porcel <armin76@gentoo.org> +seamonkey-1.1.8.ebuild:
+  Version bump
+
+  02 Feb 2008; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.7.ebuild:
+  Bump patchset to fix bug #208212
+
+  28 Jan 2008; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.7.ebuild:
+  Bump patchset to make it compile with gcc-4.3, wrt #204703
+
+  23 Jan 2008; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.7.ebuild:
+  Bump patchset to fix building with nss-3.12
+
+  10 Jan 2008; Raúl Porcel <armin76@gentoo.org> -seamonkey-1.1.2.ebuild:
+  old
+
+  07 Dec 2007; Raúl Porcel <armin76@gentoo.org> -seamonkey-1.1.6.ebuild:
+  old
+
+  07 Dec 2007; Jeroen Roovers <jer@gentoo.org> seamonkey-1.1.7.ebuild:
+  Stable for HPPA (bug #200909).
+
+  06 Dec 2007; Steve Dibb <beandog@gentoo.org> seamonkey-1.1.7.ebuild:
+  amd64 stable, bug 200909
+
+  05 Dec 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.7.ebuild:
+  Bump patchset to fix HPPA patch
+
+  04 Dec 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  seamonkey-1.1.7.ebuild:
+  ppc stable, bug #200909
+
+  04 Dec 2007; Markus Rothe <corsair@gentoo.org> seamonkey-1.1.7.ebuild:
+  Stable on ppc64; bug #200909
+
+  04 Dec 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.7.ebuild:
+  alpha/ia64/sparc stable wrt security #200909
+
+  04 Dec 2007; Christian Faulhammer <opfer@gentoo.org>
+  seamonkey-1.1.7.ebuild:
+  stable x86, security bug 200909
+
+*seamonkey-1.1.7 (03 Dec 2007)
+
+  03 Dec 2007; Raúl Porcel <armin76@gentoo.org> +seamonkey-1.1.7.ebuild:
+  Version bump wrt #200909
+
+  29 Nov 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.6.ebuild:
+  Make 1.1.6 it's own patchset
+
+  29 Nov 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.6.ebuild:
+  Bump patchset to fix bug #180870
+
+  23 Nov 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.6.ebuild:
+  Add ~sparc
+
+  12 Nov 2007; Raúl Porcel <armin76@gentoo.org> -seamonkey-1.1.4.ebuild,
+  -seamonkey-1.1.5.ebuild:
+  old
+
+  12 Nov 2007; Samuli Suominen <drac@gentoo.org> seamonkey-1.1.6.ebuild:
+  amd64 stable wrt security #196480
+
+  08 Nov 2007; Jeroen Roovers <jer@gentoo.org> seamonkey-1.1.6.ebuild:
+  Stable for HPPA (bug #196480).
+
+  07 Nov 2007; Markus Rothe <corsair@gentoo.org> seamonkey-1.1.6.ebuild:
+  Stable on ppc64; bug #196480
+
+  07 Nov 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  seamonkey-1.1.6.ebuild:
+  ppc stable, bug #196480
+
+  06 Nov 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.6.ebuild:
+  alpha/ia64/x86 stable wrt security #196480
+
+*seamonkey-1.1.6 (06 Nov 2007)
+
+  06 Nov 2007; Raúl Porcel <armin76@gentoo.org> +seamonkey-1.1.6.ebuild:
+  Version bump
+
+  23 Oct 2007; Christoph Mende <angelos@gentoo.org> seamonkey-1.1.5.ebuild:
+  Stable on amd64 wrt security bug #196480
+
+  23 Oct 2007; Jeroen Roovers <jer@gentoo.org> seamonkey-1.1.5.ebuild:
+  Stable for HPPA (bug #196480). Fixed quoting issues.
+
+  23 Oct 2007; Markus Rothe <corsair@gentoo.org> seamonkey-1.1.5.ebuild:
+  Stable on ppc64; bug #196480
+
+  22 Oct 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  seamonkey-1.1.5.ebuild:
+  ppc stable, bug #196480
+
+  22 Oct 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.5.ebuild:
+  alpha/ia64 stable wrt security #196480
+
+  22 Oct 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.5.ebuild:
+  Revert fix for bug #186750 as it doesn't affect seamonkey
+
+  21 Oct 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.5.ebuild:
+  Bump patchset to fix bug #196444, bug #188636, and fix bug #186750 thanks to
+  Walter Meinl <wuno at lsvw dot de> for the patches
+
+  21 Oct 2007; Markus Meier <maekke@gentoo.org> seamonkey-1.1.5.ebuild:
+  x86 stable, security bug #196480
+
+*seamonkey-1.1.5 (20 Oct 2007)
+
+  20 Oct 2007; Raúl Porcel <armin76@gentoo.org> +seamonkey-1.1.5.ebuild:
+  Version bump
+
+  28 Aug 2007; Raúl Porcel <armin76@gentoo.org> -seamonkey-1.1.3.ebuild:
+  old
+
+  28 Aug 2007; Jeroen Roovers <jer@gentoo.org> seamonkey-1.1.4.ebuild:
+  Stable for HPPA (armin76).
+
+  11 Aug 2007; Steve Dibb <beandog@gentoo.org> seamonkey-1.1.4.ebuild:
+  amd64 stable, security bug 187205
+
+  09 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  seamonkey-1.1.4.ebuild:
+  ppc stable, bug #187205
+
+  07 Aug 2007; Markus Rothe <corsair@gentoo.org> seamonkey-1.1.4.ebuild:
+  Stable on ppc64; bug #187205
+
+  06 Aug 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.4.ebuild:
+  alpha/ia64/x86 stable wrt security #187205
+
+*seamonkey-1.1.4 (05 Aug 2007)
+
+  05 Aug 2007; Raúl Porcel <armin76@gentoo.org> +seamonkey-1.1.4.ebuild:
+  Version bump wrt security #187205
+
+  28 Jul 2007; Steve Dibb <beandog@gentoo.org> seamonkey-1.1.3.ebuild:
+  amd64 stable, security bug 185737
+
+  27 Jul 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  seamonkey-1.1.3.ebuild:
+  Stable on ppc wrt security #185737
+
+  25 Jul 2007; Markus Rothe <corsair@gentoo.org> seamonkey-1.1.3.ebuild:
+  Stable on ppc64; bug #185737
+
+  24 Jul 2007; Jeroen Roovers <jer@gentoo.org> seamonkey-1.1.3.ebuild:
+  Stable for HPPA (bug #185737).
+
+  23 Jul 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.3.ebuild:
+  alpha/ia64/x86 stable wrt security #185737
+
+*seamonkey-1.1.3 (20 Jul 2007)
+
+  20 Jul 2007; Raúl Porcel <armin76@gentoo.org>
+  files/icon/seamonkey.desktop, +seamonkey-1.1.3.ebuild:
+  Fix desktop files, bug 185869, and version bump wrt security #185737
+
+  25 Jun 2007; Raúl Porcel <armin76@gentoo.org> -seamonkey-1.0.7.ebuild:
+  old
+
+  15 Jun 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.2.ebuild:
+  Use enigmail-0.95.0
+
+  13 Jun 2007; Raúl Porcel <armin76@gentoo.org> -seamonkey-1.0.8.ebuild,
+  -seamonkey-1.1.1.ebuild, seamonkey-1.1.2.ebuild:
+  Remove forced MAKEOPTS, bug 181722, remove old
+
+  07 Jun 2007; Jeroen Roovers <jer@gentoo.org> seamonkey-1.1.2.ebuild:
+  Stable for HPPA (bug #180436).
+
+  03 Jun 2007; Markus Rothe <corsair@gentoo.org> seamonkey-1.1.2.ebuild:
+  Stable on ppc64; bug #180436
+
+  02 Jun 2007; René Nussbaumer <killerfox@gentoo.org>
+  seamonkey-1.1.2.ebuild:
+  Stable on ppc. See bug #180436.
+
+  01 Jun 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.2.ebuild:
+  alpha/ia64/x86 stable wrt security #180436
+
+  01 Jun 2007; Christoph Mende <angelos@gentoo.org> seamonkey-1.1.2.ebuild:
+  Stable on amd64 wrt security bug 180436
+
+*seamonkey-1.1.2 (31 May 2007)
+
+  31 May 2007; Raúl Porcel <armin76@gentoo.org> +seamonkey-1.1.2.ebuild:
+  Version bump, security bug #180436
+
+  13 May 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.1.ebuild:
+  Add missing WANT_AUTOCONF, bug 177012
+
+  09 Apr 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.0.7.ebuild,
+  seamonkey-1.0.8.ebuild, seamonkey-1.1.1.ebuild:
+  Use doenvd, bug 173884
+
+  26 Mar 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.0.7.ebuild,
+  seamonkey-1.0.8.ebuild, seamonkey-1.1.1.ebuild:
+  Some touchups and remove www-client/mozilla blocker
+
+  11 Mar 2007; Bryan Østergaard <kloeri@gentoo.org> seamonkey-1.1.1.ebuild:
+  Stable on IA64.
+
+  10 Mar 2007; Markus Rothe <corsair@gentoo.org> seamonkey-1.1.1.ebuild:
+  Stable on ppc64
+
+  09 Mar 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.1.ebuild:
+  Bump patchset for g/fbsd wrt bug 169825 and fix bug 150419
+
+  08 Mar 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.1.ebuild:
+  Fix nss depend, bug 169877
+
+  06 Mar 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.1.ebuild:
+  Bump patchset to fix bug 165777 and bug 168893
+
+  03 Mar 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  seamonkey-1.1.1.ebuild:
+  Stable on ppc wrt bug #165555.
+
+  03 Mar 2007; Jose Luis Rivero <yoswink@gentoo.org> seamonkey-1.1.1.ebuild:
+  Stable on alpha wrt security bug #165555
+
+  01 Mar 2007; René Nussbaumer <killerfox@gentoo.org>
+  seamonkey-1.1.1.ebuild:
+  Stable on hppa. See bug #165555.
+
+  01 Mar 2007; Simon Stelling <blubb@gentoo.org> seamonkey-1.1.1.ebuild:
+  stable on amd64; security bug 165555
+
+  28 Feb 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.1.ebuild:
+  x86 stable wrt security bug 165555
+
+*seamonkey-1.1.1 (28 Feb 2007)
+*seamonkey-1.0.8 (28 Feb 2007)
+
+  28 Feb 2007; Raúl Porcel <armin76@gentoo.org> +seamonkey-1.0.8.ebuild,
+  -seamonkey-1.1.ebuild, +seamonkey-1.1.1.ebuild:
+  version bump, security bug 165555
+
+  30 Jan 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.ebuild:
+  Add xforms USE-flag, thanks to James Cloos <cloos at jhcloos dot com> in bug
+  164591
+
+  25 Jan 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.1.ebuild:
+  Remove mozcalendar USE-flag, bug 163680
+
+*seamonkey-1.1 (24 Jan 2007)
+
+  24 Jan 2007; Raúl Porcel <armin76@gentoo.org> +seamonkey-1.1.ebuild:
+  Version bump, bug 162767, thanks to Lars (Polynomial-C) <polynomial-C at gmx
+  dot de> for the patch
+
+  20 Jan 2007; Raúl Porcel <armin76@gentoo.org> -seamonkey-1.0.2.ebuild,
+  -seamonkey-1.0.3.ebuild, -seamonkey-1.0.5.ebuild, -seamonkey-1.0.6.ebuild:
+  Drop old
+
+  15 Jan 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.0.7.ebuild:
+  Add arm patch, thanks to Anarchy
+
+  12 Jan 2007; Christian Marie <pingu@gentoo.org> seamonkey-1.0.7.ebuild:
+  Add -j1 to emake, to fix parallel build issue, bug #161540
+
+  11 Jan 2007; Raúl Porcel <armin76@gentoo.org> seamonkey-1.0.7.ebuild:
+  license change, bug 150118
+
+  10 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  seamonkey-1.0.7.ebuild:
+  Stable on amd64 wrt bug 158576
+
+  07 Jan 2007; Bryan Østergaard <kloeri@gentoo.org> seamonkey-1.0.7.ebuild:
+  Stable on Alpha, bug 158576.
+
+  29 Dec 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  seamonkey-1.0.7.ebuild:
+  Stable on ppc wrt bug #158576.
+
+  29 Dec 2006; Andrej Kacian <ticho@gentoo.org> seamonkey-1.0.7.ebuild:
+  Stable on x86, security bug #158576.
+
+  28 Dec 2006; Jeroen Roovers <jer@gentoo.org> seamonkey-1.0.7.ebuild:
+  Stable for HPPA (bug #158576).
+
+*seamonkey-1.0.7 (21 Dec 2006)
+
+  21 Dec 2006; Christian Marie <pingu@gentoo.org> +seamonkey-1.0.7.ebuild:
+  Version bump, includes upstream security fixes.
+
+  14 Nov 2006; Jeroen Roovers <jer@gentoo.org> seamonkey-1.0.6.ebuild:
+  Stable for HPPA (bug #154449).
+
+  12 Nov 2006; Bryan Østergaard <kloeri@gentoo.org> seamonkey-1.0.6.ebuild:
+  Stable on Alpha, bug 154449.
+
+  12 Nov 2006; Tim Yamin <plasmaroo@gentoo.org> seamonkey-1.0.6.ebuild:
+  Stable on IA64; bug #154449.
+
+  11 Nov 2006; <blubb@gentoo.org> seamonkey-1.0.6.ebuild:
+  stable on amd64
+
+  09 Nov 2006; Andrej Kacian <ticho@gentoo.org> seamonkey-1.0.6.ebuild:
+  Stable on x86, security bug #154449.
+
+  09 Nov 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  seamonkey-1.0.6.ebuild:
+  ppc stable, bug #154449
+
+  09 Nov 2006; Bryan Østergaard <kloeri@gentoo.org> seamonkey-1.0.6.ebuild:
+  Add moznopango warning.
+
+*seamonkey-1.0.6 (08 Nov 2006)
+
+  08 Nov 2006; Bryan Østergaard <kloeri@gentoo.org>
+  +seamonkey-1.0.6.ebuild:
+  Version bump, bug 154449.
+
+  25 Oct 2006; Joshua Jackson <tsunam@gentoo.org> seamonkey-1.0.5.ebuild:
+  Adding new patch for bug #146357
+
+  15 Oct 2006; Bryan Østergaard <kloeri@gentoo.org> seamonkey-1.0.5.ebuild:
+  Stable on ia64, bug 147651.
+
+  11 Oct 2006; Thomas Cort <tcort@gentoo.org> seamonkey-1.0.5.ebuild:
+  Stable on alpha wrt security Bug #147651.
+
+  09 Oct 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  seamonkey-1.0.5.ebuild:
+  Stable on amd64/x86 wrt bug #147651.
+
+  08 Oct 2006; René Nussbaumer <killerfox@gentoo.org>
+  seamonkey-1.0.5.ebuild:
+  Stable on hppa, ppc. See bug #147651.
+
+*seamonkey-1.0.5 (07 Oct 2006)
+
+  07 Oct 2006; Bryan Østergaard <kloeri@gentoo.org>
+  +seamonkey-1.0.5.ebuild:
+  Bump version to 1.0.5.
+
+  02 Sep 2006; Bryan Østergaard <kloeri@gentoo.org> seamonkey-1.0.3.ebuild:
+  Stable on ia64.
+
+  19 Aug 2006; Bryan Østergaard <kloeri@gentoo.org> seamonkey-1.0.3.ebuild:
+  Add ~ia64 keyword.
+
+  02 Aug 2006; Simon Stelling <blubb@gentoo.org> seamonkey-1.0.3.ebuild:
+  stable on amd64 wrt bug 141842
+
+  01 Aug 2006; Paul Varner <fuzzyray@gentoo.org> seamonkey-1.0.3.ebuild:
+  Stable on x86 wrt security Bug #141842
+
+  01 Aug 2006; Thomas Cort <tcort@gentoo.org> seamonkey-1.0.3.ebuild:
+  Stable on alpha wrt security Bug #141842.
+
+  31 Jul 2006; Rene Nussbaumer <killerfox@gentoo.org>
+  seamonkey-1.0.3.ebuild:
+  Stable on hppa. See bug #141842.
+
+  29 Jul 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  seamonkey-1.0.3.ebuild:
+  ppc stable, bug #141842
+
+*seamonkey-1.0.3 (28 Jul 2006)
+
+  28 Jul 2006; Bryan Østergaard <kloeri@gentoo.org>
+  +seamonkey-1.0.3.ebuild:
+  Bump version, bug 141842.
+
+  07 Jul 2006; Diego Pettenò <flameeyes@gentoo.org> seamonkey-1.0.2.ebuild:
+  Add ~x86-fbsd keyword.
+
+  26 Jun 2006; Guy Martin <gmsoft@gentoo.org> seamonkey-1.0.2.ebuild:
+  Stable on hppa.
+
+  23 Jun 2006; Brent Baude <ranger@gentoo.org> seamonkey-1.0.2.ebuild:
+  Marking seamonkey-1.0.2 ~ppc64 with known errors, same as moz wrt 137198
+
+  23 Jun 2006; Thomas Cort <tcort@gentoo.org> seamonkey-1.0.2.ebuild:
+  Stable on alpha wrt Bug #137198.
+
+  23 Jun 2006; <anarchy@gentoo.org> seamonkey-1.0.2.ebuild:
+  Marked amd64 as per bug #137198
+
+  22 Jun 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  seamonkey-1.0.2.ebuild:
+  Marking stable on x86 wrt bug #137198.
+
+  19 Jun 2006; Luca Barbato <lu_zero@gentoo.org> seamonkey-1.0.2.ebuild:
+  Marked ppc as per bug #137198
+
+*seamonkey-1.0.2 (18 Jun 2006)
+
+  18 Jun 2006; Jory A. Pratt <anarchy@gentoo.org> +seamonkey-1.0.2.ebuild:
+  revision bump, more security fixes
+
+*seamonkey-1.0.1 (21 May 2006)
+
+  21 May 2006; Jory A. Pratt <anarchy@gentoo.org> -seamonkey-1.0.ebuild,
+  -seamonkey-1.0-r1.ebuild, +seamonkey-1.0.1.ebuild:
+  reision bump, including security fixes. pkg_setup removed, to be redone at a
+  later release.
+
+*seamonkey-1.0-r1 (26 Mar 2006)
+
+  26 Mar 2006; Jory A. Pratt <anarchy@gentoo.org> +seamonkey-1.0-r1.ebuild:
+  enigmail support bug #125055, typeahead patch drop'd bug #125080
+
+  20 Mar 2006; Jory A. Pratt <anarchy@gentoo.org> seamonkey-1.0.ebuild:
+  revision to patchset for glibc-2.4 wrt bug#125832
+
+  28 Feb 2006; Rene Nussbaumer <killerfox@gentoo.org> seamonkey-1.0.ebuild:
+  Added to ~ppc.
+
+*seamonkey-1.0 (27 Feb 2006)
+
+  27 Feb 2006; <anarchy@gentoo.org> +files/10seamonkey, +files/google.src,
+  +files/icon/seamonkey.desktop, +files/icon/seamonkey.png,
+  +files/seamonkey-rebuild-databases.pl, +metadata.xml,
+  +seamonkey-1.0.ebuild:
+  initial import,much appreciation wrt bug #116231
+

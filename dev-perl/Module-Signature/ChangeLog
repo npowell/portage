@@ -1,0 +1,92 @@
+# ChangeLog for dev-perl/Module-Signature
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Module-Signature/ChangeLog,v 1.17 2007/05/05 13:55:26 ian Exp $
+
+  05 May 2007; Christian Hartmann <ian@gentoo.org>
+  -Module-Signature-0.44.ebuild, -Module-Signature-0.51.ebuild,
+  -Module-Signature-0.54.ebuild:
+  Cleanup
+
+  05 Mar 2007; Andrej Kacian <ticho@gentoo.org>
+  Module-Signature-0.55.ebuild:
+  Stable on x86, bug #169152.
+
+  04 Mar 2007; Michael Cummings <mcummings@gentoo.org>
+  Module-Signature-0.54.ebuild, Module-Signature-0.55.ebuild:
+  Correcting QA notice - test wasn't in IUSE
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  07 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  Module-Signature-0.44.ebuild, Module-Signature-0.51.ebuild,
+  Module-Signature-0.54.ebuild, Module-Signature-0.55.ebuild:
+  Marking amd64 stable
+
+*Module-Signature-0.55 (20 Aug 2006)
+
+  20 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  +Module-Signature-0.55.ebuild:
+  Version bump
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Module-Signature-0.44.ebuild, Module-Signature-0.51.ebuild,
+  Module-Signature-0.54.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  04 Jul 2006; Christian Hartmann <ian@gentoo.org>
+  Module-Signature-0.44.ebuild, Module-Signature-0.51.ebuild,
+  Module-Signature-0.54.ebuild:
+  Fixed RDEPEND wrt bug #134781
+
+*Module-Signature-0.54 (24 Jun 2006)
+
+  24 Jun 2006; Michael Cummings <mcummings@gentoo.org>
+  +Module-Signature-0.54.ebuild:
+  Version bump.
+
+  13 Feb 2006; Michael Cummings <mcummings@gentoo.org>
+  Module-Signature-0.44.ebuild, Module-Signature-0.51.ebuild:
+  Virtuals for perl-core
+
+  07 Feb 2006; <mcumming@gentoo.org> Module-Signature-0.44.ebuild,
+  Module-Signature-0.51.ebuild:
+  bug 121189, dup'd module in tree
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  Module-Signature-0.44.ebuild:
+  Marking x86 stable
+
+*Module-Signature-0.51 (13 Jan 2006)
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  +Module-Signature-0.51.ebuild:
+  Version bump upstream
+
+  25 May 2005; Michael Cummings <mcummings@gentoo.org>
+  Module-Signature-0.44.ebuild:
+  dev-perl/MIME-Base64 => perl-core/MIME-Base64 migration
+
+  06 May 2005; Sven Wegener <swegener@gentoo.org>
+  Module-Signature-0.44.ebuild:
+  Removed * postfix from <, <=, >= and > dependencies.
+
+  11 Apr 2005; Ferris McCormick <fmccor@gentoo.org>
+  Module-Signature-0.44.ebuild:
+  Remove ~sparc keyword because dev-perl/math-pari-2.010603 will not build,
+  and it will not build because pari-2.1.6 does not build on sparc; See Bug
+  87790 for explanation.
+
+*Module-Signature-0.44 (11 Apr 2005)
+
+  11 Apr 2005; Michael Cummings <mcummings@gentoo.org> +metadata.xml,
+  +Module-Signature-0.44.ebuild:
+  Bugs 88267,88354(ok, that one i created for this), and the one that brought it
+  up first, 83789. Here's the sum up: we tell users to use cpan or g-cpan if a
+  module isn't in the tree. Fine. But if they do that, they can end up with a
+  Module::Signature install because it becoming a silent dep in a lot of places
+  to confirm the security/validity of a module installation. At least this way
+  we can A) provide an ebuild that we can track/fix and B) we have some minor
+  influence in the sanity of their environment. This should override any already
+  installed versions and be safe for future uses.
+

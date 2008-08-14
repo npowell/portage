@@ -1,0 +1,14 @@
+# ChangeLog for dev-scheme/scmxlate
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-scheme/scmxlate/ChangeLog,v 1.2 2008/01/18 18:06:21 opfer Exp $
+
+  18 Jan 2008; Christian Faulhammer <opfer@gentoo.org>
+  scmxlate-20060613.ebuild:
+  keyworded ~x86, bug 206526
+
+*scmxlate-20060613 (17 Jan 2008)
+
+  17 Jan 2008; Marijn Schouten <hkBst@gentoo.org> +metadata.xml,
+  +scmxlate-20060613.ebuild:
+  Initial commit, dep for SLaTeX (bug 188118)
+

@@ -1,0 +1,203 @@
+# ChangeLog for games-kids/gcompris
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-kids/gcompris/ChangeLog,v 1.42 2008/08/04 15:28:55 mr_bones_ Exp $
+
+  04 Aug 2008; Michael Sterrett <mr_bones_@gentoo.org>
+  gcompris-8.4.5.ebuild:
+  EAPI=1 for slot deps
+
+  21 Jul 2008; Michael Sterrett <mr_bones_@gentoo.org>
+  +files/gcompris-8.4.5-redhat.patch, gcompris-8.4.5.ebuild:
+  fix start up problem with patch from redhat, pointed out by Pacho Ramos in bug
+  #225883
+
+*gcompris-8.4.5 (10 Jun 2008)
+
+  10 Jun 2008; Michael Sterrett <mr_bones_@gentoo.org>
+  +files/gcompris-8.4.5-build.patch, +gcompris-8.4.5.ebuild:
+  version bump
+
+  07 Mar 2008; Chris Gianelloni <wolf31o2@gentoo.org>
+  gcompris-6.5.3-r1.ebuild:
+  QA cleanup: Fix quoting.
+
+*gcompris-8.4.4 (14 Feb 2008)
+
+  14 Feb 2008; Michael Sterrett <mr_bones_@gentoo.org>
+  +files/gcompris-8.4.4-build.patch, +gcompris-8.4.4.ebuild:
+  version bump
+
+*gcompris-8.4.3 (13 Feb 2008)
+
+  13 Feb 2008; Michael Sterrett <mr_bones_@gentoo.org>
+  +files/gcompris-8.4.3-build.patch, +gcompris-8.4.3.ebuild:
+  version bump
+
+*gcompris-8.4.2 (30 Oct 2007)
+
+  30 Oct 2007; Michael Sterrett <mr_bones_@gentoo.org>
+  +files/gcompris-8.4.2-build.patch, -files/gcompris-8.4-build.patch,
+  -gcompris-8.4.ebuild, +gcompris-8.4.2.ebuild:
+  version bump
+
+  11 Oct 2007; Michael Sterrett <mr_bones_@gentoo.org> gcompris-8.4.ebuild:
+  Add gstreamer dep for bug #195372
+
+*gcompris-8.4 (08 Oct 2007)
+
+  08 Oct 2007; Michael Sterrett <mr_bones_@gentoo.org>
+  +files/gcompris-8.4-build.patch, +gcompris-8.4.ebuild:
+  version bump - build patch update from Denis Dupeyron (bug #190541)
+
+*gcompris-8.2.2 (10 Mar 2007)
+
+  10 Mar 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/gcompris-8.2.2-build.patch, +gcompris-8.2.2.ebuild:
+  Version bump, bug #157472
+
+  06 Jan 2007; Tristan Heaven <nyhm@gentoo.org> gcompris-8.2.ebuild:
+  Set WANT_AUTOCONF and WANT_AUTOMAKE
+
+  05 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  gcompris-6.5.3-r1.ebuild:
+  Removing old virtual/x11 dependency.
+
+*gcompris-8.2 (07 Nov 2006)
+
+  07 Nov 2006; Michael Sterrett <mr_bones_@gentoo.org> +gcompris-8.2.ebuild:
+  version bump
+
+  30 Oct 2006; <tupone@gentoo.org> gcompris-8.1.ebuild:
+  Fix gcompris failure in configure. Bug #146843 by Ulrich Mueller
+
+  18 Oct 2006; Tristan Heaven <nyhm@gentoo.org> gcompris-8.1.ebuild:
+  Don't build with -Werror, bug #151868
+
+*gcompris-8.1 (16 Oct 2006)
+
+  16 Oct 2006; Michael Sterrett <mr_bones_@gentoo.org> +gcompris-8.1.ebuild:
+  version bump
+
+*gcompris-7.4-r1 (04 Sep 2006)
+
+  04 Sep 2006; <tupone@gentoo.org> +gcompris-7.4-r1.ebuild:
+  Enabling python (conditionally). Bug #130675 by Graeme Boyd
+
+  23 May 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  gcompris-6.5.3-r1.ebuild:
+  Removed editor support since it doesn't compile.
+
+*gcompris-7.4 (13 Apr 2006)
+
+  13 Apr 2006; Michael Sterrett <mr_bones_@gentoo.org> +gcompris-7.4.ebuild:
+  version bump
+
+  14 Feb 2006; Joshua Baergen <joshuabaergen@gentoo.org>
+  gcompris-6.5.3-r1.ebuild, gcompris-7.2.ebuild:
+  Fix dependencies for modular X (bug #122487).
+
+*gcompris-7.2 (13 Dec 2005)
+
+  13 Dec 2005; Michael Sterrett <mr_bones_@gentoo.org> +gcompris-7.2.ebuild:
+  version bump
+
+*gcompris-7.1.1 (28 Nov 2005)
+
+  28 Nov 2005; Michael Sterrett <mr_bones_@gentoo.org>
+  +gcompris-7.1.1.ebuild:
+  version bump
+
+  22 Nov 2005; Michael Sterrett <mr_bones_@gentoo.org> gcompris-7.1.ebuild:
+  sqlite support needs python support, disabled for now (bug #113288)
+
+*gcompris-7.1 (22 Nov 2005)
+
+  22 Nov 2005; Michael Sterrett <mr_bones_@gentoo.org> +gcompris-7.1.ebuild:
+  version bump
+
+*gcompris-6.5.3-r1 (21 Nov 2005)
+
+  21 Nov 2005; Michael Sterrett <mr_bones_@gentoo.org>
+  +gcompris-6.5.3-r1.ebuild:
+  rev bump to run off python support until python 2.4 is supported by upstream
+
+  16 Sep 2005; Ciaran McCreesh <ciaranm@gentoo.org> ChangeLog:
+  Converted to UTF-8, fixed encoding screwups
+
+  07 Jun 2005; Michael Sterrett <mr_bones_@gentoo.org>
+  gcompris-6.5.3.ebuild:
+  disable editor for now since it doesn't build for me.
+
+  06 Jun 2005; Michael Sterrett <mr_bones_@gentoo.org>
+  gcompris-6.5.3.ebuild:
+  Only dep on gnome-python if USE=python (bug #88063)
+
+*gcompris-6.5.3 (06 Jun 2005)
+
+  06 Jun 2005; Michael Sterrett <mr_bones_@gentoo.org>
+  +gcompris-6.5.3.ebuild:
+  version bump (bug #90351)
+
+  17 Mar 2005; Michael Sterrett <mr_bones_@gentoo.org> gcompris-6.5.ebuild:
+  don't install the editor desktop file if editor wasn't installed
+
+*gcompris-6.5 (16 Mar 2005)
+
+  16 Mar 2005; Michael Sterrett <mr_bones_@gentoo.org> gcompris-6.1.ebuild,
+  +gcompris-6.5.ebuild:
+  version bump (bug #82411)
+
+  29 Aug 2004; David Holm <dholm@gentoo.org> gcompris-6.1.ebuild:
+  Added to ~ppc.
+
+*gcompris-6.1 (16 Aug 2004)
+
+  16 Aug 2004; Mike Frysinger <vapier@gentoo.org> +gcompris-6.1.ebuild:
+  Version bump #41126 by Felix von Leitner.
+
+  03 Jul 2004; Tom Martin <slarti@gentoo.org> gcompris-4.2-r1.ebuild:
+  Added to ~amd64, thanks to Ingo Kemper <viper@globalworld.de> for reporting in
+  bug 53024.
+
+  03 Jun 2004; Aron Griffis <agriffis@gentoo.org> gcompris-3.2.ebuild,
+  gcompris-4.2-r1.ebuild:
+  Fix use invocation
+
+*gcompris-4.2-r1 (31 Dec 2003)
+
+  31 Dec 2003; Mike Frysinger <vapier@gentoo.org> :
+  Fix segfault when all locale vars are unset in environment (LANG, etc...) #35443.
+
+*gcompris-4.2 (08 Dec 2003)
+
+  31 Dec 2003; Mike Frysinger <vapier@gentoo.org> :
+  Remove all the games.eclass stuff ... this is too gnome-ified atm.
+
+  08 Dec 2003; Mike Frysinger <vapier@gentoo.org> :
+  Version bump.
+
+*gcompris-4.1 (07 Nov 2003)
+
+  07 Nov 2003; Mike Frysinger <vapier@gentoo.org> :
+  Version bump.
+
+*gcompris-3.2 (18 Aug 2003)
+
+  18 Aug 2003; Michael Sterrett <msterret@gentoo.org> gcompris-3.2.ebuild:
+  version bump (bug 26611)
+
+  01 Jul 2003; Michael Sterrett <msterret@gentoo.org> gcompris-3.1.ebuild:
+  use sed -i
+
+*gcompris-3.1 (21 Jun 2003)
+
+  23 Jun 2003; Mike Frysinger <vapier@gentoo.org> :
+  Version bumped + games.eclass support.  Closes #14911 #15716 #21355.
+
+*gcompris-1.1.0.ebuild (31 julio 2002)
+
+  18 Oct 2002; Daniel Ahlberg <aliz@gentoo.org> gcompris-1.1.0.ebuild :
+  Updated to mirror://sourceforge in SRC_URI.
+
+  31 Jul 2002; J. Alberto Suárez L. <bass@gentoo.org> gcompris-1.1.0.ebuild :
+  First relase.

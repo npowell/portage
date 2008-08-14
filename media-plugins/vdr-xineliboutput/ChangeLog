@@ -1,0 +1,233 @@
+# ChangeLog for media-plugins/vdr-xineliboutput
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-xineliboutput/ChangeLog,v 1.40 2008/08/01 20:00:39 cardoe Exp $
+
+  01 Aug 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
+  add GLEP 56 USE flag desc from use.local.desc
+
+*vdr-xineliboutput-1.0.1 (12 May 2008)
+
+  12 May 2008; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-xineliboutput-1.0.1.ebuild:
+  Version bumped. Thanks to Pertti Kosunen for noticing.
+
+*vdr-xineliboutput-1.0.0 (24 Apr 2008)
+
+  24 Apr 2008; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-xineliboutput-1.0.0.ebuild:
+  Version bumped. Changes based on ebuild from mpz in #gentoo-vdr.
+
+  18 Apr 2008; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-xineliboutput-1.0.0_rc2.ebuild:
+  Fix quoting of PATCHES.
+
+  12 Mar 2008; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-xineliboutput-1.0.0_rc2_p20080120-r1.ebuild:
+  No longer die if no subplugins could be found. Thanks to Martini from
+  vdr-portal.
+
+  18 Feb 2008; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-xineliboutput-1.0.0_rc2_p20080120-r1.ebuild:
+  Using correct way to determine xine-plugin-directory.
+
+*vdr-xineliboutput-1.0.0_rc2_p20080120-r1 (17 Feb 2008)
+
+  17 Feb 2008; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-xineliboutput-1.0.0_rc2_p20080120-r1.ebuild:
+  Restrict xine-lib version to 3 components, soliving Bug #210417.
+
+  17 Feb 2008; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-xineliboutput-1.0.0_rc2_p20080120.ebuild:
+  Do not use autodetect-logic of makefile, solving Bug #209662.
+
+  20 Jan 2008; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-xineliboutput-1.0.0_rc2_p20080120.ebuild:
+  Fixed SRC_URI.
+
+*vdr-xineliboutput-1.0.0_rc2_p20080120 (20 Jan 2008)
+
+  20 Jan 2008; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-xineliboutput-1.0.0_rc1.ebuild, vdr-xineliboutput-1.0.0_rc2.ebuild,
+  +vdr-xineliboutput-1.0.0_rc2_p20080120.ebuild:
+  Added new cvs snapshot.
+
+  30 Sep 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +files/vdr-xineliboutput-1.0.0_rc2-vdr-1.5.9.diff,
+  vdr-xineliboutput-1.0.0_rc2.ebuild:
+  Make it compile with vdr-1.5.9
+
+  16 Aug 2007; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-xineliboutput-1.0.0_rc2.ebuild:
+  Disable automatic conversion to gettext for vdr-1.5.7.
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  vdr-xineliboutput-1.0.0_rc1.ebuild, vdr-xineliboutput-1.0.0_rc2.ebuild:
+  Drop virtual/x11 references.
+
+  26 Jun 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/vdr-xineliboutput-1.0.0_rc2-vdr-1.5.3.diff,
+  vdr-xineliboutput-1.0.0_rc2.ebuild:
+  patch added, fix for compile probs >= vdr-1.5.3
+
+*vdr-xineliboutput-1.0.0_rc2 (21 May 2007)
+
+  21 May 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-xineliboutput-1.0.0_rc2.ebuild:
+  Version bumped.
+
+  19 Mar 2007; Matthias Schwarzott <zzam@gentoo.org>
+  -files/vdr-xineliboutput-1.0.0_pre6-frontend-close.diff,
+  -files/vdr-xineliboutput-1.0.0_pre6-uint64.diff,
+  -vdr-xineliboutput-1.0.0_pre6-r1.ebuild,
+  -vdr-xineliboutput-1.0.0_pre6-r2.ebuild,
+  -vdr-xineliboutput-1.0.0_pre7.ebuild,
+  -vdr-xineliboutput-1.0.0_pre7_p20070129.ebuild:
+  Removed old versions.
+
+  18 Mar 2007; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-xineliboutput-1.0.0_pre6-r1.ebuild,
+  vdr-xineliboutput-1.0.0_pre6-r2.ebuild,
+  vdr-xineliboutput-1.0.0_pre7.ebuild,
+  vdr-xineliboutput-1.0.0_pre7_p20070129.ebuild:
+  Changed Homepage/SRC_URI, as that address will become invalid soon.
+
+*vdr-xineliboutput-1.0.0_rc1 (18 Mar 2007)
+
+  18 Mar 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-xineliboutput-1.0.0_rc1.ebuild:
+  Version bumped.
+
+  01 Mar 2007; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-xineliboutput-1.0.0_pre7_p20070129.ebuild:
+  Use correct version-number for installing the sub-plugins, Bug #168879.
+
+*vdr-xineliboutput-1.0.0_pre7_p20070129 (28 Feb 2007)
+
+  28 Feb 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-xineliboutput-1.0.0_pre7_p20070129.ebuild:
+  Added a new cvs snapshot.
+
+*vdr-xineliboutput-1.0.0_pre7 (14 Jan 2007)
+
+  14 Jan 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-xineliboutput-1.0.0_pre7.ebuild:
+  Version bumped, thanks to Petri Hintukainen <Petri.Hintukainen@hut.fi> for
+  noticing.
+
+*vdr-xineliboutput-1.0.0_pre6-r2 (03 Dec 2006)
+
+  03 Dec 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +files/vdr-xineliboutput-1.0.0_pre6-frontend-close.diff,
+  +vdr-xineliboutput-1.0.0_pre6-r2.ebuild:
+  Added patch to prevent a patch on frontend getting killed/connection lost.
+
+  03 Dec 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +files/vdr-xineliboutput-1.0.0_pre6-uint64.diff,
+  vdr-xineliboutput-1.0.0_pre6-r1.ebuild:
+  Added patch to compile also with vdr-1.4.4_p1
+
+  17 Nov 2006; Matthias Schwarzott <zzam@gentoo.org>
+  -vdr-xineliboutput-1.0.0_pre5-r1.ebuild,
+  -vdr-xineliboutput-1.0.0_pre6.ebuild:
+  Even more cleanup.
+
+*vdr-xineliboutput-1.0.0_pre6-r1 (31 Oct 2006)
+
+  31 Oct 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +files/confd-1.0.0_pre6, +vdr-xineliboutput-1.0.0_pre6-r1.ebuild:
+  Added conf-file-template from Bug #142062.
+
+  26 Oct 2006; Matthias Schwarzott <zzam@gentoo.org>
+  -vdr-xineliboutput-1.0.0_pre3-r1.ebuild,
+  -vdr-xineliboutput-1.0.0_pre5.ebuild:
+  Cleanup of old versions.
+
+*vdr-xineliboutput-1.0.0_pre6 (26 Oct 2006)
+
+  26 Oct 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-xineliboutput-1.0.0_pre6.ebuild:
+  Version bumped.
+
+*vdr-xineliboutput-1.0.0_pre5-r1 (18 Oct 2006)
+
+  18 Oct 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-xineliboutput-1.0.0_pre5-r1.ebuild:
+  Now install all compiled xine-plugins, thanks to riku@sdf-eu.org for
+  reporting, Bug #151719.
+
+  11 Oct 2006; Matthias Schwarzott <zzam@gentoo.org>
+  -vdr-xineliboutput-1.0.0_pre3.ebuild,
+  -vdr-xineliboutput-1.0.0_pre4.ebuild:
+  Removed ebuilds for old and buggy versions.
+
+*vdr-xineliboutput-1.0.0_pre5 (11 Oct 2006)
+
+  11 Oct 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-xineliboutput-1.0.0_pre5.ebuild:
+  Version bumped - seems to no longer crash X11.
+
+*vdr-xineliboutput-1.0.0_pre3-r1 (08 Sep 2006)
+
+  08 Sep 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-xineliboutput-1.0.0_pre3-r1.ebuild,
+  vdr-xineliboutput-1.0.0_pre4.ebuild:
+  Simplifyed patching and backported it to 1.0.0_pre3.
+
+*vdr-xineliboutput-1.0.0_pre4 (07 Sep 2006)
+
+  07 Sep 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-xineliboutput-1.0.0_pre4.ebuild:
+  Added use-flags to selectively enable X11 and fbdev support, suggested by
+  Lucian Muresan <lucianm@users.sourceforge.net>.
+
+*vdr-xineliboutput-1.0.0_pre3 (28 Aug 2006)
+
+  28 Aug 2006; Matthias Schwarzott <zzam@gentoo.org>
+  -vdr-xineliboutput-0.99_rc5.ebuild, -vdr-xineliboutput-0.99.ebuild,
+  -vdr-xineliboutput-1.0.0_pre1.ebuild,
+  +vdr-xineliboutput-1.0.0_pre3.ebuild:
+  Version bumped. Removed older versions.
+
+*vdr-xineliboutput-1.0.0_pre1 (31 Jul 2006)
+
+  31 Jul 2006; Matthias Schwarzott <zzam@gentoo.org> metadata.xml,
+  +vdr-xineliboutput-0.99.ebuild, +vdr-xineliboutput-1.0.0_pre1.ebuild:
+  Version bumped to stable 0.99, also added 1.0.0_pre1.
+
+  28 Jun 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-xineliboutput-0.99_rc5.ebuild:
+  Use multilib.eclass for installation of xine-plugin.
+
+  28 Jun 2006; Matthias Schwarzott <zzam@gentoo.org>
+  -files/xineliboutput-0.99-makefile-gentoo.diff,
+  -files/xineliboutput-0.99rc-amd64.patch,
+  -files/vdr-xineliboutput-0.99rc-fe-segfault.patch,
+  -files/xineliboutput-0.99rc-i18n_fixes.patch,
+  -files/xineliboutput-0.99rc-keyboard-fix.patch,
+  -vdr-xineliboutput-0.99_rc.ebuild:
+  Cleaned up old version.
+
+*vdr-xineliboutput-0.99_rc5 (27 Jun 2006)
+
+  27 Jun 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-xineliboutput-0.99_rc5.ebuild:
+  Version bumped. Now contains correct x11-depends.
+
+*vdr-xineliboutput-0.99_rc (14 May 2006)
+
+  14 May 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +files/vdr-xineliboutput-0.99rc-fe-segfault.patch,
+  +files/xineliboutput-0.99rc-i18n_fixes.patch,
+  +files/xineliboutput-0.99rc-keyboard-fix.patch,
+  +vdr-xineliboutput-0.99_rc.ebuild, -vdr-xineliboutput-0.99.ebuild:
+  Changed Version number to the correct value 0.99_rc. Added a lot of patches.
+
+*vdr-xineliboutput-0.99 (27 Apr 2006)
+
+  27 Apr 2006; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/xineliboutput-0.99-makefile-gentoo.diff,
+  +files/xineliboutput-0.99rc-amd64.patch, +metadata.xml,
+  +vdr-xineliboutput-0.99.ebuild:
+  initial ebuild; thanks to cyberface, mvdbeek on
+  http://www.vdr-portal.de/board/thread.php?postid=457992
+

@@ -1,0 +1,32 @@
+# ChangeLog for app-misc/emelfm2
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/emelfm2/ChangeLog,v 1.19 2008/04/20 16:49:51 drac Exp $
+
+*emelfm2-0.4 (20 Apr 2008)
+
+  20 Apr 2008; Samuli Suominen <drac@gentoo.org> +emelfm2-0.4.ebuild:
+  Version bump and ~amd64 keyword wrt #217039, thanks to Tobias Jakobi.
+
+  07 Sep 2007; Joseph Jezak <josejx@gentoo.org> emelfm2-0.3.5.ebuild:
+  Marked ~ppc for bug #186562.
+
+*emelfm2-0.3.5 (05 Aug 2007)
+
+  05 Aug 2007; Samuli Suominen <drac@gentoo.org> +emelfm2-0.3.5.ebuild:
+  Version bump.
+
+  30 Jul 2007; Markus Rothe <corsair@gentoo.org> emelfm2-0.3.4.ebuild:
+  Added ~ppc64; bug #186562
+
+  26 Jul 2007; Samuli Suominen <drac@gentoo.org> emelfm2-0.3.4.ebuild:
+  Restrict test and clean up.
+
+  25 Jul 2007; Gustavo Zacarias <gustavoz@gentoo.org> emelfm2-0.3.4.ebuild:
+  Keyworded ~sparc wrt #186562
+
+*emelfm2-0.3.4 (23 Jul 2007)
+
+  23 Jul 2007; Samuli Suominen <drac@gentoo.org> +emelfm2-0.3.4.ebuild:
+  Initial commit from Sunrise, thanks to Uwe Helm, Stefan Schweizer, Juan
+  Aguado, Maarten Maathuis, and many others. Bug 153611.
+

@@ -1,0 +1,96 @@
+# ChangeLog for dev-python/pyxf86config
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pyxf86config/ChangeLog,v 1.20 2008/08/05 20:03:03 klausman Exp $
+
+  05 Aug 2008; Tobias Klausmann <klausman@gentoo.org>
+  pyxf86config-0.3.34-r1.ebuild:
+  Stable on alpha, bug #222219
+
+  01 Aug 2008; nixnut <nixnut@gentoo.org> pyxf86config-0.3.34-r1.ebuild:
+  Stable on ppc wrt bug 222219
+
+  28 Jul 2008; Raúl Porcel <armin76@gentoo.org>
+  pyxf86config-0.3.34-r1.ebuild:
+  x86 stable wrt #222219
+
+  23 Jun 2008; Jeroen Roovers <jer@gentoo.org>
+  pyxf86config-0.3.34-r1.ebuild:
+  Stable for HPPA (bug #222219).
+
+  19 Jun 2008; Olivier Crête <tester@gentoo.org>
+  pyxf86config-0.3.34-r1.ebuild:
+  Stable on amd64, bug #222219
+
+  16 Jun 2008; Raúl Porcel <armin76@gentoo.org>
+  pyxf86config-0.3.34-r1.ebuild:
+  ia64/sparc stable wrt #222219
+
+  16 Jun 2008; Mart Raudsepp <leio@gentoo.org>
+  pyxf86config-0.3.34-r1.ebuild:
+  Die if xorg-server is built with USE=minimal as then libxf86config.a is
+  not provided that is required by this package
+
+  22 May 2008; Tobias Klausmann <klausman@gentoo.org>
+  pyxf86config-0.3.34-r1.ebuild:
+  Keyworded on alpha, bug #222899
+
+  21 May 2008; Raúl Porcel <armin76@gentoo.org>
+  pyxf86config-0.3.34-r1.ebuild:
+  Add ~ia64 wrt #222899
+
+  20 May 2008; Ferris McCormick <fmccor@gentoo.org>
+  pyxf86config-0.3.34-r1.ebuild:
+  Add ~sparc --- Bug #222899 --- it builds, but I can't see the point.
+
+  20 May 2008; Jeroen Roovers <jer@gentoo.org>
+  pyxf86config-0.3.34-r1.ebuild:
+  Marked ~hppa (bug #222899).
+
+  19 Mar 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  +files/0.3.34-remove-rgbpath.patch, +files/Makefile.am,
+  pyxf86config-0.3.34-r1.ebuild:
+  (#206989) Fix for amd64 by using rewritten Makefile.am (Dough Klima and
+  me). Also fix for xorg-server 1.5 by removing knowledge of RgbPath.
+
+  14 Feb 2008; Robin H. Johnson <robbat2@gentoo.org>
+  pyxf86config-0.3.34-r1.ebuild:
+  Add ~amd64 keyword.
+
+  31 Jan 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  -pyxf86config-0.3.30.ebuild, -pyxf86config-0.3.33.ebuild,
+  -pyxf86config-0.3.34.ebuild:
+  Clean up.
+
+*pyxf86config-0.3.34-r1 (13 Jan 2008)
+
+  13 Jan 2008; Saleem Abdulrasool <compnerd@gentoo.org>
+  +files/xorg-server-1.4-compat.patch, +pyxf86config-0.3.34-r1.ebuild:
+  Revbump with patch for xorg-server-1.4 from conary
+
+*pyxf86config-0.3.34 (15 Oct 2007)
+
+  15 Oct 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  +pyxf86config-0.3.34.ebuild:
+  (#186802) Updates so the files are on mirrors. Also switch to using
+  fedora-dev thirdpartymirrors setting to better find RPMs.
+
+  15 Oct 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  pyxf86config-0.3.30.ebuild, pyxf86config-0.3.33.ebuild:
+  (#185524) Update homepage.
+
+*pyxf86config-0.3.33 (15 Jul 2007)
+
+  15 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  +pyxf86config-0.3.33.ebuild:
+  Bump.
+
+  05 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  pyxf86config-0.3.30.ebuild:
+  Requires at least 1.1.1-r1 of xorg-server for libxf86config.
+
+*pyxf86config-0.3.30 (05 Sep 2006)
+
+  05 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>; +metadata.xml,
+  +pyxf86config-0.3.30.ebuild:
+  Python wrappers for libxf86config
+

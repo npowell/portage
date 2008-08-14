@@ -1,0 +1,406 @@
+# ChangeLog for mail-client/claws-mail
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/mail-client/claws-mail/ChangeLog,v 1.85 2008/08/08 19:19:55 corsair Exp $
+
+  08 Aug 2008; Markus Rothe <corsair@gentoo.org> claws-mail-3.5.0.ebuild:
+  Stable on ppc64; bug #233817
+
+  08 Aug 2008; nixnut <nixnut@gentoo.org> claws-mail-3.5.0.ebuild:
+  Stable on ppc wrt bug 233817
+
+  05 Aug 2008; Raúl Porcel <armin76@gentoo.org> claws-mail-3.5.0.ebuild:
+  alpha stable wrt #233817
+
+  05 Aug 2008; Ferris McCormick <fmccor@gentoo.org> claws-mail-3.5.0.ebuild:
+  Sparc stable, Bug #233817, works fine.
+
+  04 Aug 2008; Markus Meier <maekke@gentoo.org> claws-mail-3.5.0.ebuild:
+  amd64/x86 stable, bug #233817
+
+  04 Aug 2008; Jeroen Roovers <jer@gentoo.org> claws-mail-3.5.0.ebuild:
+  Stable for HPPA (bug #233817).
+
+*claws-mail-3.5.0 (30 Jun 2008)
+
+  30 Jun 2008; Christian Faulhammer <opfer@gentoo.org>
+  +claws-mail-3.5.0.ebuild:
+  Added an option, "Use secure file deletion if possible", which
+  enables shredding of temporary files and messages instead of
+  just removing them. This is available on the Other preferences
+  page.
+  
+  Added an option, "Select the HTML part of multipart/alternative
+  messages". This is available on the Message View/Text Options
+  preferences page. 
+  
+  Added an option to the 'Create new folder' dialogue which enables
+  new folders to inherit the properties of their parent folders
+  during folder creation.
+  
+  Added a hidden option, "two_line_vertical", which toggles the
+  2-line view in the message list when using the 3-column layout.
+  Defaults to '1', show 2 lines.
+  
+  Added a hidden option, "outgoing_fallback_to_ascii", which allows
+  the user to specify an outgoing charset/encoding, but still fall
+  back to 7bit US-ASCII when possible.
+  Defaults to '1', fallback when possible.
+  
+  Added support for the Avant Window Navgator (Awn) information
+  bubble. This is automatically enabled if dbus is available.
+  
+  Face and X-Face headers can now be added globally and per-account
+  from configuration files under ~/.claws-mail/autofaces/. Further
+  information is provided in the manual.
+  
+  The SHA1 fingerprint is now shown on the SSL certificate dialogue
+  and the labels are now selectable.
+  
+  Several GUI improvements have been made, (Address book, filtering
+  dialogue, Actions dialogue, and Account preferences).
+  
+  New icons have been added for 'Reply to list' and 'Cancel'. The
+  'Insert file' and 'Close' icons have been improved, as have the
+  tray icons. 
+  
+  Added the Trash and Delete icons to the Custom Toolbars options.
+  
+  SMTP-only accounts are now not shown in the Receive menus and
+  Account lists in filtering/processing, as they are irrelevant here.
+  
+  tools/csv2addressbook.pl
+  Support for a gmail exported csv address book was added.
+  
+  Updated English, French, and Spanish manuals.
+  
+  Updated translations: Brazilian Portuguese, Finnish, French,
+  German, and Spanish.
+  
+  Removed unmaintained translations: Bulgarian, Croatian, Czech,
+  Dutch, Greek, Hebrew, Japanese, Korean, Norwegian, Russian,
+  Swedish, and Taiwanese. (New maintainers are very welcome,
+  contact paul@claws-mail.org)
+  
+  Bug fixes
+
+  30 Jun 2008; Christian Faulhammer <opfer@gentoo.org>
+  -claws-mail-3.0.2-r1.ebuild, -claws-mail-3.2.0.ebuild,
+  -claws-mail-3.3.0.ebuild, -claws-mail-3.3.1.ebuild:
+  clean up
+
+  14 Jun 2008; Kenneth Prugh <ken69267@gentoo.org> claws-mail-3.4.0.ebuild:
+  amd64 stable, bug #222167
+
+  14 Jun 2008; nixnut <nixnut@gentoo.org> claws-mail-3.4.0.ebuild:
+  Stable on ppc wrt bug 222167
+
+  13 Jun 2008; Raúl Porcel <armin76@gentoo.org> claws-mail-3.4.0.ebuild:
+  alpha/sparc stable wrt #222167
+
+  12 Jun 2008; Brent Baude <ranger@gentoo.org> claws-mail-3.4.0.ebuild:
+  stable ppc64, bug 222167
+
+  11 Jun 2008; Christian Faulhammer <opfer@gentoo.org>
+  files/plugins-rebuild.sh:
+  make the rebuild script space safe
+
+  11 Jun 2008; Christian Faulhammer <opfer@gentoo.org>
+  claws-mail-3.4.0.ebuild:
+  stable x86, bug 222167
+
+  11 Jun 2008; Jeroen Roovers <jer@gentoo.org> claws-mail-3.4.0.ebuild:
+  Stable for HPPA (bug #222167).
+
+  11 Jun 2008; Christian Faulhammer <opfer@gentoo.org> metadata.xml:
+  Changing maintainers
+
+  30 May 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Andrej Kacian (Ticho) from metadata.xml (as per #59986).
+
+*claws-mail-3.4.0 (12 May 2008)
+
+  12 May 2008; Christian Faulhammer <opfer@gentoo.org>
+  +claws-mail-3.4.0.ebuild:
+  version bump for bug 218708
+
+  23 Feb 2008; Andrej Kacian <ticho@gentoo.org> -claws-mail-3.0.0.ebuild,
+  -claws-mail-3.0.2.ebuild, -claws-mail-3.1.0.ebuild,
+  -claws-mail-3.1.0-r1.ebuild:
+  Old version cleanup.
+
+*claws-mail-3.3.1 (23 Feb 2008)
+
+  23 Feb 2008; Andrej Kacian <ticho@gentoo.org> +claws-mail-3.3.1.ebuild:
+  Version bump.
+
+  16 Feb 2008; Andrej Kacian <ticho@gentoo.org> claws-mail-3.3.0.ebuild:
+  Removed clamav from list of external plugins, due to licensing constraints.
+
+*claws-mail-3.3.0 (13 Feb 2008)
+
+  13 Feb 2008; Andrej Kacian <ticho@gentoo.org> +claws-mail-3.3.0.ebuild:
+  Version bump.
+
+*claws-mail-3.2.0 (28 Dec 2007)
+
+  28 Dec 2007; Andrej Kacian <ticho@gentoo.org> +claws-mail-3.2.0.ebuild:
+  Version bump. Bug #202634 by Joe <joacher at gmx.de>.
+
+  07 Dec 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  claws-mail-3.0.2-r1.ebuild:
+  ppc stable, bug #201244
+
+  07 Dec 2007; Markus Rothe <corsair@gentoo.org> claws-mail-3.0.2-r1.ebuild:
+  Stable on ppc64; bug #201244
+
+  06 Dec 2007; Peter Weller <welp@gentoo.org> claws-mail-3.0.2-r1.ebuild:
+  Stable on amd64 wrt bug 201244
+
+  06 Dec 2007; Jeroen Roovers <jer@gentoo.org> claws-mail-3.0.2-r1.ebuild:
+  Stable for HPPA (bug #201244).
+
+  06 Dec 2007; Raúl Porcel <armin76@gentoo.org> claws-mail-3.0.2-r1.ebuild:
+  alpha/sparc stable wrt security #201244
+
+  06 Dec 2007; Christian Faulhammer <opfer@gentoo.org>
+  claws-mail-3.0.2-r1.ebuild:
+  stable x86, security bug 201244
+
+  05 Dec 2007; Andrej Kacian <ticho@gentoo.org> claws-mail-3.0.2-r1.ebuild,
+  claws-mail-3.1.0-r1.ebuild:
+  Fix sylprint script removal.
+
+  05 Dec 2007; Christian Faulhammer <opfer@gentoo.org>
+  claws-mail-3.0.2-r1.ebuild:
+  revert stable x86
+
+  05 Dec 2007; Christian Faulhammer <opfer@gentoo.org>
+  claws-mail-3.0.2-r1.ebuild:
+  stable x86, security bug 201244
+
+*claws-mail-3.1.0-r1 (04 Dec 2007)
+*claws-mail-3.0.2-r1 (04 Dec 2007)
+
+  04 Dec 2007; Andrej Kacian <ticho@gentoo.org> claws-mail-3.0.2.ebuild,
+  +claws-mail-3.0.2-r1.ebuild, claws-mail-3.1.0.ebuild,
+  +claws-mail-3.1.0-r1.ebuild:
+  Revision bump for the security fix.
+
+  04 Dec 2007; Andrej Kacian <ticho@gentoo.org> claws-mail-3.0.0.ebuild,
+  claws-mail-3.0.2.ebuild, claws-mail-3.1.0.ebuild:
+  Do not install unmaintained and potentially insecure sylprint script,
+  following upstream action. Security bug #201244.
+
+  01 Dec 2007; Andrej Kacian <ticho@gentoo.org> claws-mail-3.0.2.ebuild,
+  claws-mail-3.1.0.ebuild:
+  Add missing spamassassin USE flag. Add optional support for gnutls.
+
+  30 Nov 2007; Andrej Kacian <ticho@gentoo.org> claws-mail-3.1.0.ebuild:
+  Install correct KDE desktop file. Bug #200799, reported by David Relson
+  <relson at osagesoftware.com>.
+
+*claws-mail-3.1.0 (29 Nov 2007)
+
+  29 Nov 2007; Andrej Kacian <ticho@gentoo.org> +claws-mail-3.1.0.ebuild:
+  Version bump.
+
+*claws-mail-3.0.2 (02 Oct 2007)
+
+  02 Oct 2007; Andrej Kacian <ticho@gentoo.org> +claws-mail-3.0.2.ebuild:
+  Version bump.
+
+*claws-mail-3.0.1 (18 Sep 2007)
+
+  18 Sep 2007; Andrej Kacian <ticho@gentoo.org> +claws-mail-3.0.1.ebuild:
+  Version bump.
+
+*claws-mail-3.0.0-r1 (16 Sep 2007)
+
+  16 Sep 2007; Andrej Kacian <ticho@gentoo.org> +claws-mail-3.0.0-r1.ebuild:
+  Add session USE flag to make libSM and libICE dependency optional. Bug
+  #192570 by Sascha Geschwandtner <s.geschwandtner at gmx.de>.
+
+  16 Sep 2007; Christoph Mende <angelos@gentoo.org> claws-mail-3.0.0.ebuild:
+  Stable on amd64 wrt security bug #190104
+
+  13 Sep 2007; Raúl Porcel <armin76@gentoo.org> claws-mail-3.0.0.ebuild:
+  alpha stable wrt security #190104
+
+  13 Sep 2007; Christian Faulhammer <opfer@gentoo.org>
+  claws-mail-3.0.0.ebuild:
+  stable x86, security bug 190104
+
+  13 Sep 2007; Markus Rothe <corsair@gentoo.org> claws-mail-3.0.0.ebuild:
+  Stable on ppc64; bug #190104
+
+  13 Sep 2007; Jose Luis Rivero <yoswink@gentoo.org>
+  claws-mail-3.0.0.ebuild:
+  Stable on sparc wrt security bug #190104
+
+  10 Sep 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  claws-mail-3.0.0.ebuild:
+  ppc stable, bug #190104
+
+  08 Sep 2007; Jeroen Roovers <jer@gentoo.org> claws-mail-3.0.0.ebuild:
+  Stable for HPPA (bug #190104).
+
+*claws-mail-3.0.0 (03 Sep 2007)
+
+  03 Sep 2007; Andrej Kacian <ticho@gentoo.org>
+  -claws-mail-3.0.0_rc1.ebuild, +claws-mail-3.0.0.ebuild:
+  Version bump.
+
+*claws-mail-3.0.0_rc1 (03 Aug 2007)
+
+  03 Aug 2007; Marius Mauch <genone@gentoo.org> claws-mail-2.10.0.ebuild,
+  +claws-mail-3.0.0_rc1.ebuild:
+  Version bump including license change, adding attachwarner to plugin list.
+
+*claws-mail-2.10.0 (07 Jul 2007)
+
+  07 Jul 2007; <ticho@gentoo.org> -claws-mail-2.10.0_rc1.ebuild,
+  +claws-mail-2.10.0.ebuild:
+  Version bump. Removed ebuild for 2.10.0 RC
+
+  24 Jun 2007; Andrej Kacian <ticho@gentoo.org> claws-mail-2.9.1.ebuild,
+  claws-mail-2.9.2.ebuild, claws-mail-2.10.0_rc1.ebuild:
+  Add a runtime dependency on app-crypt/pinentry as well. Bug #183069, by
+  Markus Rothe <corsair at gentoo.org>.
+
+  23 Jun 2007; Marius Mauch <genone@gentoo.org> claws-mail-2.9.1.ebuild,
+  claws-mail-2.9.2.ebuild, claws-mail-2.10.0_rc1.ebuild:
+  Check that pinentry was merged with USE=gtk or USE=qt3 (bug #170967)
+
+*claws-mail-2.10.0_rc1 (23 Jun 2007)
+
+  23 Jun 2007; Marius Mauch <genone@gentoo.org> -claws-mail-2.6.1.ebuild,
+  -claws-mail-2.7.2.ebuild, -claws-mail-2.8.1.ebuild,
+  +claws-mail-2.10.0_rc1.ebuild:
+  Clean out old version, version bump
+
+  26 May 2007; Jeroen Roovers <jer@gentoo.org> claws-mail-2.9.1.ebuild:
+  Stable for HPPA (bug #176805).
+
+*claws-mail-2.9.2 (08 May 2007)
+
+  08 May 2007; Andrej Kacian <ticho@gentoo.org> -claws-mail-2.7.0.ebuild,
+  -claws-mail-2.7.1.ebuild, -claws-mail-2.8.0.ebuild,
+  -claws-mail-2.9.0.ebuild, +claws-mail-2.9.2.ebuild:
+  Version bump. Removed obsolete ebuilds.
+
+  04 May 2007; Andrej Kacian <ticho@gentoo.org> claws-mail-2.9.1.ebuild:
+  Install KDE service script to correct location. Bug #177013, reported by
+  Neil Bothwick <neil at digimed.co.uk>.
+
+  04 May 2007; Jose Luis Rivero <yoswink@gentoo.org>
+  claws-mail-2.9.1.ebuild:
+  Stable on alpha wrt security #176805
+
+  03 May 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  claws-mail-2.9.1.ebuild:
+  ppc stable, bug #176805
+
+  03 May 2007; Raúl Porcel <armin76@gentoo.org> claws-mail-2.9.1.ebuild:
+  x86 stable wrt #176805
+
+  02 May 2007; Markus Rothe <corsair@gentoo.org> claws-mail-2.9.1.ebuild:
+  Stable on ppc64; bug #176805
+
+  02 May 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  claws-mail-2.9.1.ebuild:
+  Stable on sparc wrt security #176805
+
+  02 May 2007; Steve Dibb <beandog@gentoo.org> claws-mail-2.9.1.ebuild:
+  amd64 stable, security bug 176805
+
+*claws-mail-2.9.1 (19 Apr 2007)
+
+  19 Apr 2007; Andrej Kacian <ticho@gentoo.org> +claws-mail-2.9.1.ebuild:
+  Version bump.
+
+  16 Apr 2007; Andrej Kacian <ticho@gentoo.org> claws-mail-2.6.1.ebuild,
+  claws-mail-2.7.0.ebuild, claws-mail-2.7.1.ebuild, claws-mail-2.7.2.ebuild,
+  claws-mail-2.8.0.ebuild, claws-mail-2.8.1.ebuild, claws-mail-2.9.0.ebuild:
+  Change all ewarn calls to elog, since they inform user about plugins
+  rebuild/update, and we want that logged.
+
+*claws-mail-2.9.0 (16 Apr 2007)
+
+  16 Apr 2007; Andrej Kacian <ticho@gentoo.org> +claws-mail-2.9.0.ebuild:
+  Version bump.
+
+*claws-mail-2.8.1 (06 Mar 2007)
+
+  06 Mar 2007; Andrej Kacian <ticho@gentoo.org> +claws-mail-2.8.1.ebuild:
+  Version bump.
+
+  05 Mar 2007; Jose Luis Rivero <yoswink@gentoo.org>
+  claws-mail-2.6.1.ebuild:
+  Stable on alpha wrt bug #163611
+
+  02 Mar 2007; nixnut <nixnut@gentoo.org> claws-mail-2.6.1.ebuild:
+  Stable on ppc wrt bug 163611
+
+  27 Feb 2007; Guy Martin <gmsoft@gentoo.org> claws-mail-2.6.1.ebuild:
+  Stable on hppa
+
+  27 Feb 2007; Andrej Kacian <ticho@gentoo.org> claws-mail-2.6.1.ebuild,
+  claws-mail-2.7.0.ebuild, claws-mail-2.7.2.ebuild:
+  Don't provide virtual/sylpheed anymore, since there's no reason for it now.
+
+*claws-mail-2.8.0 (27 Feb 2007)
+
+  27 Feb 2007; Andrej Kacian <ticho@gentoo.org> +claws-mail-2.8.0.ebuild:
+  Version bump.
+
+  07 Feb 2007; Simon Stelling <blubb@gentoo.org> claws-mail-2.6.1.ebuild:
+  stable on amd64; bug 163611
+
+  31 Jan 2007; Markus Rothe <corsair@gentoo.org> claws-mail-2.6.1.ebuild:
+  Stable on ppc64; bug #163611
+
+  29 Jan 2007; Andrej Kacian <ticho@gentoo.org> claws-mail-2.6.1.ebuild,
+  claws-mail-2.7.0.ebuild, claws-mail-2.7.1.ebuild, claws-mail-2.7.2.ebuild:
+  Install a desktop entry.
+
+  29 Jan 2007; Jason Wever <weeve@gentoo.org> claws-mail-2.6.1.ebuild:
+  Stable on SPARC wrt bug #163611.
+
+*claws-mail-2.7.2 (26 Jan 2007)
+
+  26 Jan 2007; Andrej Kacian <ticho@gentoo.org> +claws-mail-2.7.2.ebuild:
+  Version bump.
+
+  25 Jan 2007; Christian Faulhammer <opfer@gentoo.org>
+  claws-mail-2.6.1.ebuild:
+  stable x86; bug #163611
+
+  16 Jan 2007; Roy Marples <uberlord@gentoo.org> claws-mail-2.7.1.ebuild:
+  Added ~x86-fbsd keyword.
+
+*claws-mail-2.7.1 (15 Jan 2007)
+
+  15 Jan 2007; Andrej Kacian <ticho@gentoo.org> +claws-mail-2.7.1.ebuild:
+  Version bump.
+
+*claws-mail-2.7.0 (09 Jan 2007)
+
+  09 Jan 2007; Andrej Kacian <ticho@gentoo.org> +claws-mail-2.7.0.ebuild:
+  Version bump. Bug #160871.
+
+  26 Dec 2006; Andrej Kacian <ticho@gentoo.org> claws-mail-2.6.1.ebuild:
+  Fix installing KDE service menu script. Closes bug #159076, reported by
+  Jeroen Roovers <jer at gentoo.org>.
+
+  19 Dec 2006; Andrej Kacian <ticho@gentoo.org> files/plugins-rebuild.sh:
+  Remove old plugins before merging new to prevent collision-protect issues.
+  Also, do not merge new plugins again after merging them in place of old
+  ones.
+
+*claws-mail-2.6.1 (08 Dec 2006)
+
+  08 Dec 2006; Marius Mauch <genone@gentoo.org>
+  +claws-mail-2.6.1.ebuild, +files/plugins-rebuild.sh:
+  This is the new name of mail-client/sylpheed-claws. 
+  General overhaul of the ebuild, check for plugins with
+  old names and inform users to install the new versions.

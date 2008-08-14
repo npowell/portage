@@ -1,0 +1,42 @@
+# ChangeLog for x11-misc/xsri
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/xsri/ChangeLog,v 1.10 2008/05/06 13:41:08 drac Exp $
+
+  06 May 2008; Samuli Suominen <drac@gentoo.org> xsri-2.1.0.ebuild,
+  xsri-2.1.0-r1.ebuild:
+  Move pkgconfig to DEPEND wrt #217278.
+
+  02 Aug 2007; Roy Marples <uberlord@gentoo.org> xsri-2.1.0.ebuild,
+  xsri-2.1.0-r1.ebuild:
+  Keyworded ~x86-fbsd, #156902 thanks to Marc Kowarsky.
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  11 Oct 2006; Krzysiek Pawlik <nelchael@gentoo.org> xsri-2.1.0.ebuild,
+  xsri-2.1.0-r1.ebuild:
+  Add missing dev-util/pkgconfig to DEPEND, see bug #150798.
+
+  01 Oct 2006; Olivier Crête <tester@gentoo.org> xsri-2.1.0-r1.ebuild:
+  Mark ~amd64, fix bug #149002
+
+  11 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>; xsri-2.1.0-r1.ebuild:
+  Keyword ~ppc.
+
+*xsri-2.1.0-r1 (09 Jul 2006)
+
+  09 Jul 2006; Krzysiek Pawlik <nelchael@gentoo.org> +xsri-2.1.0-r1.ebuild:
+  New version from Fedora 5.
+
+  13 Jan 2006; Krzysiek Pawlik <nelchael@gentoo.org> xsri-2.1.0.ebuild:
+  Fixed DEPEND for modular X.
+
+  19 Dec 2005; Krzysiek Pawlik <nelchael@gentoo.org> xsri-2.1.0.ebuild:
+  Stable on x86.
+
+*xsri-2.1.0 (01 Nov 2005)
+
+  01 Nov 2005; Krzysiek Pawlik <nelchael@gentoo.org> +metadata.xml,
+  +xsri-2.1.0.ebuild:
+  New package. Bug 97375, thanks to Thomas Weidner (3.14159@gmx.net).
+

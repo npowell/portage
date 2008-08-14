@@ -1,0 +1,17 @@
+# ChangeLog for sci-biology/staden-bin
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-biology/staden-bin/ChangeLog,v 1.3 2007/03/25 03:14:39 kugelfang Exp $
+
+  25 Mar 2007; Danny van Dyk <kugelfang@gentoo.org> staden-bin-1.7.0.ebuild:
+  QA: Removed redundant src_compile().
+
+  22 Oct 2006; Olivier Fisette <ribosome@gentoo.org>
+  staden-bin-1.7.0.ebuild:
+  Explicitely removed all arches (-*) except ~x86.
+
+*staden-bin-1.7.0 (22 Oct 2006)
+
+  22 Oct 2006; Olivier Fisette <ribosome@gentoo.org> +metadata.xml,
+  +staden-bin-1.7.0.ebuild:
+  Initial import. Fixes bug #120446.
+

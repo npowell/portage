@@ -1,0 +1,43 @@
+# ChangeLog for app-backup/backup-manager
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-backup/backup-manager/ChangeLog,v 1.8 2008/06/03 14:27:31 beandog Exp $
+
+  03 Jun 2008; Steve Dibb <beandog@gentoo.org> backup-manager-0.7.5.ebuild:
+  Add ~amd64, bug 194488
+
+  30 May 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Andrej Kacian (Ticho) from metadata.xml (as per #59986).
+
+  03 Mar 2007; Andrej Kacian <ticho@gentoo.org> backup-manager-0.7.5.ebuild:
+  Depend on sufficiently new version of findutils. Bug #169053, by Rob Terhaar
+  <rterhaar at allovermedia.com>.
+
+  24 Jan 2007; Marius Mauch <genone@gentoo.org> backup-manager-0.7.2.ebuild,
+  backup-manager-0.7.4.ebuild, backup-manager-0.7.5.ebuild:
+  Replacing einfo with elog
+
+*backup-manager-0.7.5 (14 Jan 2007)
+
+  14 Jan 2007; Andrej Kacian <ticho@gentoo.org> metadata.xml,
+  +backup-manager-0.7.5.ebuild:
+  Version bump. Set myself as maintainer.
+
+*backup-manager-0.7.4 (19 Aug 2006)
+
+  19 Aug 2006; Lisa Seelye <lisa@gentoo.org>
+  +files/backup-manager-upload-execution-fix-0.7.4.diff,
+  +backup-manager-0.7.4.ebuild:
+  Version bump for bug #143097
+
+  06 Jun 2006; Lisa Seelye <lisa@gentoo.org> files/Makefile-fix.diff,
+  backup-manager-0.7.2.ebuild:
+  Perl installation fix, bug 135686. remove from /usr/share and put to
+  /usr/lib. piggyback on Makefile-fix.diff
+
+*backup-manager-0.7.2 (05 Jun 2006)
+
+  05 Jun 2006; Lisa Seelye <lisa@gentoo.org> +files/Makefile-fix.diff,
+  +files/backup-manager-upload-execution-fix.diff,
+  +files/bzip2-path-fix.diff, +metadata.xml, +backup-manager-0.7.2.ebuild:
+  New ebuild submitted by Park Ji-in, mithrandir at electrang dot net, bug 126638
+

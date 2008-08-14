@@ -1,0 +1,50 @@
+# ChangeLog for x11-themes/mythtv-themes-extra
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-themes/mythtv-themes-extra/ChangeLog,v 1.8 2008/08/12 03:33:28 cardoe Exp $
+
+*mythtv-themes-extra-0.21_p17416 (12 Aug 2008)
+
+  12 Aug 2008; Doug Goldstein <cardoe@gentoo.org>
+  +mythtv-themes-extra-0.21_p17416.ebuild:
+  ProjectGrayhem and blootube fixes
+
+  28 Jul 2008; Carsten Lohrke <carlo@gentoo.org>
+  mythtv-themes-extra-0.21_p16760.ebuild:
+  QA: Get rid of deprecated qt_min_version().
+
+  01 Apr 2008; Doug Goldstein <cardoe@gentoo.org>
+  -mythtv-themes-extra-0.20.1.ebuild, mythtv-themes-extra-0.20.2.ebuild:
+  stable amd64, ppc, x86. remove 0.20.1
+
+*mythtv-themes-extra-0.21_p16760 (01 Apr 2008)
+
+  01 Apr 2008; Doug Goldstein <cardoe@gentoo.org>
+  +mythtv-themes-extra-0.21_p16760.ebuild:
+  0.21 geared ebuild that uses the "themes" repo as it's source. Provided by
+  Jesse Adelman <jesse@boldandbusted.com> bug #214453
+
+*mythtv-themes-extra-0.20.2 (21 Oct 2007)
+
+  21 Oct 2007; Steve Dibb <beandog@gentoo.org>
+  +mythtv-themes-extra-0.20.2.ebuild:
+  Add themes, bug 185121
+
+*mythtv-themes-extra-0.20.1 (12 Aug 2007)
+
+  12 Aug 2007; Steve Dibb <beandog@gentoo.org>
+  +mythtv-themes-extra-0.20.1.ebuild, -mythtv-themes-extra-1.ebuild,
+  -mythtv-themes-extra-2.ebuild:
+  Fix versioning scheme
+
+*mythtv-themes-extra-2 (12 May 2007)
+
+  12 May 2007; Steve Dibb <beandog@gentoo.org>
+  +mythtv-themes-extra-2.ebuild:
+  Add more themes
+
+*mythtv-themes-extra-1 (02 May 2007)
+
+  02 May 2007; Steve Dibb <beandog@gentoo.org> +metadata.xml,
+  +mythtv-themes-extra-1.ebuild:
+  Initial commit, bug 173822
+

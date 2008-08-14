@@ -1,0 +1,23 @@
+# ChangeLog for app-forensics/airt
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-forensics/airt/ChangeLog,v 1.3 2007/02/09 07:13:31 flameeyes Exp $
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  08 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+*airt-0.4-r1 (19 Jul 2005)
+
+  19 Jul 2005; Daniel Black <dragonheart@gentoo.org>
+  +files/airt-0.4-dismod.patch, +files/airt-0.4-kernelupdate.patch,
+  +airt-0.4-r1.ebuild:
+  patch to fix with newer kernels. dismod perl script modified to find the
+  System.map and dismod executables
+
+  26 Jan 2005; Daniel Black <dragonheart@gentoo.org> +airt-0.4.ebuild,
+  +metadata.xml:
+  Initial import as per bug #79524. Thanks to Michael Zanetta
+  <mzanetta@telsys.ch>.
+

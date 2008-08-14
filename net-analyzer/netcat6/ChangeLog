@@ -1,0 +1,32 @@
+# ChangeLog for net-analyzer/netcat6
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/netcat6/ChangeLog,v 1.9 2007/07/09 16:41:02 jer Exp $
+
+  09 Jul 2007; Jeroen Roovers <jer@gentoo.org> netcat6-1.0.ebuild:
+  Stable for HPPA (as informally requested by armin76).
+
+  09 Jul 2007; Raúl Porcel <armin76@gentoo.org> netcat6-1.0.ebuild:
+  alpha stable
+
+  20 Mar 2007; Raúl Porcel <armin76@gentoo.org> netcat6-1.0.ebuild:
+  x86 stable
+
+  20 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+*netcat6-1.0 (19 Feb 2006)
+
+  19 Feb 2006; Mike Frysinger <vapier@gentoo.org> +netcat6-1.0.ebuild:
+  Version bump #123112 by Sascha Geschwandtner.
+
+  18 Oct 2005; Aron Griffis <agriffis@gentoo.org> netcat6-0.5.ebuild:
+  Mark 0.5 stable on alpha
+
+  17 Oct 2005; Aron Griffis <agriffis@gentoo.org> netcat6-0.5.ebuild:
+  Mark 0.5 stable on ia64
+
+*netcat6-0.5 (02 Jun 2003)
+
+  02 Jun 2003; Peter Johanson <latexer@gentoo.org> netcat6-0.5.ebuild:
+  Initial import. Netcat version that supports IPv6 also
+

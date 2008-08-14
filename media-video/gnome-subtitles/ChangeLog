@@ -1,0 +1,85 @@
+# ChangeLog for media-video/gnome-subtitles
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/gnome-subtitles/ChangeLog,v 1.16 2008/05/30 23:22:24 jurek Exp $
+
+*gnome-subtitles-0.8 (30 May 2008)
+
+  30 May 2008; Jurek Bartuszek <jurek@gentoo.org>
+  +gnome-subtitles-0.8.ebuild:
+  Version bump (bug #213381)
+
+*gnome-subtitles-0.7.2-r1 (14 Apr 2008)
+
+  14 Apr 2008; Steve Dibb <beandog@gentoo.org>
+  +gnome-subtitles-0.7.2-r1.ebuild:
+  Add pkgconfig as build time dependency
+
+*gnome-subtitles-0.7.2 (06 Jan 2008)
+
+  06 Jan 2008; Steve Dibb <beandog@gentoo.org>
+  +gnome-subtitles-0.7.2.ebuild:
+  Version bump, bug 200857
+
+  15 Aug 2007; Steve Dibb <beandog@gentoo.org> gnome-subtitles-0.6.ebuild:
+  amd64 stable
+
+  02 Aug 2007; Christian Faulhammer <opfer@gentoo.org>
+  gnome-subtitles-0.3.ebuild:
+  stable x86
+
+  11 Jul 2007; Steve Dibb <beandog@gentoo.org>
+  -gnome-subtitles-0.2.1.ebuild, gnome-subtitles-0.3.ebuild,
+  -gnome-subtitles-0.4.ebuild:
+  amd64 stable, remove old versions
+
+*gnome-subtitles-0.6 (11 Jul 2007)
+
+  11 Jul 2007; Steve Dibb <beandog@gentoo.org> +gnome-subtitles-0.6.ebuild:
+  Version bump, bug 178811
+
+*gnome-subtitles-0.4 (23 Apr 2007)
+
+  23 Apr 2007; Steve Dibb <beandog@gentoo.org> +gnome-subtitles-0.4.ebuild:
+  Version bump, bug 175374
+
+*gnome-subtitles-0.3 (30 Mar 2007)
+
+  30 Mar 2007; Steve Dibb <beandog@gentoo.org> +gnome-subtitles-0.3.ebuild:
+  Version bump, bug 172438, thanks to Pedro Castro for ebuild
+
+*gnome-subtitles-0.2.1 (13 Mar 2007)
+
+  13 Mar 2007; Steve Dibb <beandog@gentoo.org>
+  +gnome-subtitles-0.2.1.ebuild:
+  Version bump, bug 170690
+
+*gnome-subtitles-0.2-r1 (10 Mar 2007)
+
+  10 Mar 2007; Steve Dibb <beandog@gentoo.org> -gnome-subtitles-0.2.ebuild,
+  +gnome-subtitles-0.2-r1.ebuild:
+  Fix mono deps
+
+*gnome-subtitles-0.2 (08 Mar 2007)
+
+  08 Mar 2007; Steve Dibb <beandog@gentoo.org> +gnome-subtitles-0.2.ebuild:
+  version bump, bug 170004
+
+  23 Feb 2007; Christian Faulhammer <opfer@gentoo.org>
+  gnome-subtitles-0.1.ebuild:
+  stable x86; bug 168001
+
+*gnome-subtitles-0.1 (31 Dec 2006)
+
+  31 Dec 2006; Steve Dibb <beandog@gentoo.org> gnome-subtitles-0.0.3.ebuild,
+  +gnome-subtitles-0.1.ebuild:
+  Version bump, bug 158014, update mono deps, change homepage and description
+
+  01 Dec 2006; Steve Dibb <beandog@gentoo.org> gnome-subtitles-0.0.3.ebuild:
+  Fix dependency versioning on mono deps
+
+*gnome-subtitles-0.0.3 (01 Dec 2006)
+
+  01 Dec 2006; Steve Dibb <beandog@gentoo.org> +metadata.xml,
+  +gnome-subtitles-0.0.3.ebuild:
+  Initial import, bug 146003, thanks to Pedro Catro for ebuild
+

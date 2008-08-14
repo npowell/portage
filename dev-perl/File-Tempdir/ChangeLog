@@ -1,0 +1,35 @@
+# ChangeLog for dev-perl/File-Tempdir
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/File-Tempdir/ChangeLog,v 1.8 2007/11/10 11:45:00 drac Exp $
+
+  10 Nov 2007; Samuli Suominen <drac@gentoo.org> File-Tempdir-0.02.ebuild:
+  amd64 stable
+
+  09 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  File-Tempdir-0.02.ebuild:
+  Stable on ppc.
+
+  11 Jul 2007; Raúl Porcel <armin76@gentoo.org> File-Tempdir-0.02.ebuild:
+  alpha/x86 stable
+
+  21 Jun 2007; Michael Cummings <mcummings@gentoo.org>
+  File-Tempdir-0.02.ebuild:
+  Marking sparc stable
+
+  08 Apr 2007; Joseph Jezak <josejx@gentoo.org> File-Tempdir-0.02.ebuild:
+  Marked ~ppc for bug #170491.
+
+  28 Mar 2007; Raúl Porcel <armin76@gentoo.org>
+  File-Tempdir-0.02.ebuild:
+  Add ~ia64 keyword wrt bug 170491
+
+  12 Mar 2007; Bryan Østergaard <kloeri@gentoo.org>
+  File-Tempdir-0.02.ebuild:
+  Add ~alpha keyword, bug 170491.
+
+*File-Tempdir-0.02 (11 Mar 2007)
+
+  11 Mar 2007; Michael Cummings <mcummings@gentoo.org> +metadata.xml,
+  +File-Tempdir-0.02.ebuild:
+  New dep for Mail-Audit
+

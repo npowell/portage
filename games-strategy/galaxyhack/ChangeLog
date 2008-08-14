@@ -1,0 +1,28 @@
+# ChangeLog for games-strategy/galaxyhack
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-strategy/galaxyhack/ChangeLog,v 1.5 2007/11/10 00:47:17 tupone Exp $
+
+*galaxyhack-1.74 (10 Nov 2007)
+
+  10 Nov 2007; Tupone Alfredo <tupone@gentoo.org>
+  +files/galaxyhack-1.74-boost.patch, +files/galaxyhack-1.74-destdirs.patch,
+  +galaxyhack-1.74.ebuild:
+  Version bump
+
+  13 Jun 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/galaxyhack-1.69-boost.patch, galaxyhack-1.69.ebuild:
+  Fix compilation with new dev-libs/boost versions
+
+  14 Feb 2007; Tristan Heaven <nyhm@gentoo.org> -files/galaxyhack.png,
+  galaxyhack-1.69.ebuild:
+  Move icon to mirror://gentoo
+
+  20 Nov 2006; Steve Dibb <beandog@gentoo.org> metadata.xml:
+  Fix metadata herd, add maintainer email
+
+*galaxyhack-1.69 (30 Oct 2006)
+
+  30 Oct 2006; <tupone@gentoo.org> +files/galaxyhack-1.69-destdirs.patch,
+  +files/galaxyhack.png, +metadata.xml, +galaxyhack-1.69.ebuild:
+  New ebuild. Bug #87565 by Christian Mandery
+

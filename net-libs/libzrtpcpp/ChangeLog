@@ -1,0 +1,47 @@
+# ChangeLog for net-libs/libzrtpcpp
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-libs/libzrtpcpp/ChangeLog,v 1.10 2008/06/19 11:17:55 dragonheart Exp $
+
+*libzrtpcpp-1.3.0 (19 Jun 2008)
+
+  19 Jun 2008; Daniel Black <dragonheart@gentoo.org>
+  +libzrtpcpp-1.3.0.ebuild:
+  version bump
+
+*libzrtpcpp-1.1.0 (01 May 2008)
+
+  01 May 2008; Daniel Black <dragonheart@gentoo.org>
+  +libzrtpcpp-1.1.0.ebuild:
+  version bump
+
+  15 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  libzrtpcpp-0.9.0.ebuild:
+  ppc stable, bug #182352
+
+  10 Aug 2007; Steve Dibb <beandog@gentoo.org> libzrtpcpp-0.9.0.ebuild:
+  amd64 stable, bug 182352
+
+  23 Jul 2007; Christian Faulhammer <opfer@gentoo.org>
+  libzrtpcpp-0.9.0.ebuild:
+  stable x86, bug 182352
+
+  10 Nov 2006; Luca Barbato <lu_zero@gentoo.org> libzrtpcpp-0.9.0.ebuild:
+  Marked ~ppc64
+
+  05 Nov 2006; Timothy Redaelli <drizzt@gentoo.org> libzrtpcpp-0.9.0.ebuild:
+  Added >=dev-cpp/commoncpp2-1.5.0 dependency because it will not compile with
+  older version (reported by lu_zero).
+
+  05 Nov 2006; Timothy Redaelli <drizzt@gentoo.org> libzrtpcpp-0.9.0.ebuild:
+  Added ~ppc wrt bug #149793.
+
+  05 Nov 2006; Piotr Jaroszyński <peper@gentoo.org>
+  libzrtpcpp-0.9.0.ebuild:
+  Add ~amd64 wrt bug #149793.
+
+*libzrtpcpp-0.9.0 (02 Oct 2006)
+
+  02 Oct 2006; Daniel Black <dragonheart@gentoo.org> +metadata.xml,
+  +libzrtpcpp-0.9.0.ebuild:
+  initial import - optional dependency of twinkle
+

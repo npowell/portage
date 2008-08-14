@@ -1,0 +1,38 @@
+# ChangeLog for dev-dotnet/ikvm-bin
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-dotnet/ikvm-bin/ChangeLog,v 1.8 2008/03/12 13:53:47 phreak Exp $
+
+  12 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Peter Johanson (latexer, #206688) from metadata.xml.
+
+*ikvm-bin-0.36.0.5 (31 Dec 2007)
+
+  31 Dec 2007; Jurek Bartuszek <jurek@gentoo.org>
+  +files/ikvm-0.36.0.5.pc.in, +ikvm-bin-0.36.0.5.ebuild:
+  Version bump
+
+  28 Jun 2007; Jurek Bartuszek <jurek@gentoo.org> ikvm-bin-0.34.0.2.ebuild:
+  Fixed SRC_URI (bug #183478)
+
+*ikvm-bin-0.34.0.2 (27 Jun 2007)
+
+  27 Jun 2007; Jurek Bartuszek <jurek@gentoo.org> +files/ikvm.pc.in,
+  +ikvm-bin-0.34.0.2.ebuild:
+  Version bump
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  21 May 2005; Tom Martin <slarti@gentoo.org> ChangeLog:
+  Marked ~amd64.
+
+  19 May 2005; Peter Johanson <latexer@gentoo.org> ikvm-bin-0.14.ebuild:
+  Fix the SRC_URI.
+
+*ikvm-bin-0.14 (18 May 2005)
+
+  18 May 2005; Peter Johanson <latexer@gentoo.org> +metadata.xml,
+  +ikvm-bin-0.14.ebuild:
+  Add new ikvm-bin as packaged by Ximian. Makes installing ikvm not require a
+  java + jikes installation.
+

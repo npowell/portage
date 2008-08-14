@@ -1,0 +1,95 @@
+# ChangeLog for app-portage/himerge
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-portage/himerge/ChangeLog,v 1.19 2008/07/06 21:01:05 maekke Exp $
+
+  06 Jul 2008; Markus Meier <maekke@gentoo.org> himerge-0.21.9.ebuild:
+  amd64/x86 stable, bug #208230
+
+*himerge-0.21.9 (21 May 2008)
+
+  21 May 2008; Luis F. Araujo <araujo@gentoo.org> +himerge-0.21.9.ebuild:
+  Adding new version. Fixed an important bug.
+
+*himerge-0.21 (19 May 2008)
+
+  19 May 2008; Luis F. Araujo <araujo@gentoo.org> +himerge-0.21.ebuild:
+  Version 0.21
+
+*himerge-0.20 (02 May 2008)
+
+  02 May 2008; Luis F. Araujo <araujo@gentoo.org> -himerge-0.14.ebuild,
+  +himerge-0.20.ebuild:
+  Adding new version 0.20
+
+*himerge-0.18 (01 Apr 2008)
+
+  01 Apr 2008; Luis F. Araujo <araujo@gentoo.org> +himerge-0.18.ebuild:
+  New release 0.18
+
+*himerge-0.17.9 (04 Mar 2008)
+
+  04 Mar 2008; Luis F. Araujo <araujo@gentoo.org> +himerge-0.17.9.ebuild:
+  Added new version 0.17.9
+
+*himerge-0.17.3 (24 Feb 2008)
+
+  24 Feb 2008; Luis F. Araujo <araujo@gentoo.org> +himerge-0.17.3.ebuild:
+  Added new version 0.17.3
+
+*himerge-0.17 (10 Feb 2008)
+
+  10 Feb 2008; Luis F. Araujo <araujo@gentoo.org> +himerge-0.17.ebuild:
+  Added new himerge version 0.17
+
+  20 Jan 2008; Christoph Mende <angelos@gentoo.org> himerge-0.15.ebuild:
+  Stable on amd64 wrt bug #205272
+
+*himerge-0.16.1-r1 (17 Jan 2008)
+
+  17 Jan 2008; Luis F. Araujo <araujo@gentoo.org> himerge-0.16.1.ebuild,
+  +himerge-0.16.1-r1.ebuild:
+  Rev-bumping for fixing deps.
+
+  16 Jan 2008; Luis F. Araujo <araujo@gentoo.org> himerge-0.16.1.ebuild:
+  Let's add ~x86 too
+
+*himerge-0.16.1 (16 Jan 2008)
+
+  16 Jan 2008; Luis F. Araujo <araujo@gentoo.org> +himerge-0.16.1.ebuild:
+  Updating Himerge version 0.16.1. Bug fix version.
+
+*himerge-0.16 (15 Jan 2008)
+
+  15 Jan 2008; Luis F. Araujo <araujo@gentoo.org> +himerge-0.16.ebuild:
+  Adding new Himerge version 0.16
+
+  12 Jan 2008; Markus Meier <maekke@gentoo.org> himerge-0.15.ebuild:
+  x86 stable, bug #205272
+
+*himerge-0.15 (03 Nov 2007)
+
+  03 Nov 2007; Luis F. Araujo <araujo@gentoo.org> +himerge-0.15.ebuild:
+  New himerge version 0.15
+
+*himerge-0.14.7 (29 Sep 2007)
+
+  29 Sep 2007; Luis F. Araujo <araujo@gentoo.org> +himerge-0.14.7.ebuild:
+  Added new version.
+
+*himerge-0.14 (08 Sep 2007)
+
+  08 Sep 2007; Luis F. Araujo <araujo@gentoo.org> +himerge-0.14.ebuild:
+  Added new version himerge-0.14
+
+*himerge-0.13-r1 (03 Aug 2007)
+
+  03 Aug 2007; <araujo@gentoo.org> -himerge-0.13.ebuild,
+  +himerge-0.13-r1.ebuild:
+  Fixing gtk2hs dependency. Rev bumping
+
+*himerge-0.13 (13 May 2007)
+
+  13 May 2007; Luis F. Araujo <araujo@gentoo.org> +metadata.xml,
+  +himerge-0.13.ebuild:
+  Added Himerge.
+

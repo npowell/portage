@@ -1,0 +1,49 @@
+# ChangeLog for sys-apps/hwinfo
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/hwinfo/ChangeLog,v 1.10 2008/07/16 12:59:19 nixnut Exp $
+
+  16 Jul 2008; nixnut <nixnut@gentoo.org> hwinfo-13.28.ebuild:
+  Stable on ppc wrt bug 231667
+
+  15 Jul 2008; Raúl Porcel <armin76@gentoo.org> hwinfo-13.28.ebuild:
+  x86 stable wrt #231667
+
+  14 Jul 2008; Kenneth Prugh <ken69267@gentoo.org> hwinfo-13.28.ebuild:
+  amd64 stable, bug #231667. Removed dodoc COPYING
+
+*hwinfo-14.19 (14 Jul 2008)
+
+  14 Jul 2008; Robin H. Johnson <robbat2@gentoo.org> +hwinfo-14.19.ebuild:
+  Version bump per bug #231668.
+
+*hwinfo-13.28 (18 May 2007)
+
+  18 May 2007; Timothy Redaelli <drizzt@gentoo.org>
+  +files/hwinfo-13.11-makefile-fixes.patch, +hwinfo-13.28.ebuild:
+  Version bump wrt bug #157256.
+  Authorized by maintainer.
+
+  29 Sep 2006; Robin H. Johnson <robbat2@gentoo.org>
+  +files/hwinfo-13.0-makefile-fixes.patch, hwinfo-13.0.ebuild:
+  Fix bugs #142542 and #149531.
+
+  29 Sep 2006; Robin H. Johnson <robbat2@gentoo.org> hwinfo-13.0.ebuild:
+  Update deps for latest version, bug #143088.
+
+*hwinfo-13.0 (22 Jul 2006)
+
+  22 Jul 2006; Robin H. Johnson <robbat2@gentoo.org> +hwinfo-13.0.ebuild:
+  Fix for GCC4 breakages with a version bump, bug #140911.
+
+  04 Jul 2005; David Holm <dholm@gentoo.org> hwinfo-8.38.ebuild:
+  Added to ~ppc.
+
+*hwinfo-8.38 (04 Jul 2005)
+
+  04 Jul 2005; Robin H. Johnson <robbat2@gentoo.org>
+  +files/hwinfo-8.38-makefile-fixes.patch, +metadata.xml,
+  +hwinfo-8.38.ebuild:
+  Initial commit. Submitted by Serkan Kaba <serkan_kaba@yahoo.com>. Note that
+  this package is unlikely to ever be updated - as newer versions all use the
+  SuSE-specific TIOCGDEV ioctl.
+

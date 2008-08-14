@@ -1,0 +1,130 @@
+# ChangeLog for sci-libs/cfitsio
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/cfitsio/ChangeLog,v 1.20 2008/06/18 21:47:57 bicatali Exp $
+
+*cfitsio-3.090 (18 Jun 2008)
+
+  18 Jun 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  -files/cfitsio-3.006-configure.patch,
+  -files/cfitsio-3.060-autotools.patch,
+  +files/cfitsio-3.090-autotools.patch, -cfitsio-3.006.ebuild,
+  -cfitsio-3.060.ebuild, +cfitsio-3.090.ebuild:
+  Version bump, removed some older versions
+
+  13 Jun 2008; Stephanie Lockwood-Childs <wormo@gentoo.org>
+  cfitsio-2.510-r2.ebuild, cfitsio-3.080.ebuild:
+  mark ~ppc (bug #224585)
+
+  04 Jun 2008; Raúl Porcel <armin76@gentoo.org> cfitsio-2.510-r2.ebuild,
+  cfitsio-3.080.ebuild:
+  Add ~alpha wrt #224585
+
+  04 Jun 2008; Markus Rothe <corsair@gentoo.org> cfitsio-2.510-r2.ebuild,
+  cfitsio-3.080.ebuild:
+  Added ~ppc64; bug #224585
+
+*cfitsio-3.080 (02 Jun 2008)
+
+  02 Jun 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/cfitsio-3.080-autotools.patch, +cfitsio-3.080.ebuild:
+  Version bump with similar autotools changes and license fix (see below for
+  cfitsio-2.510-r2)
+
+*cfitsio-2.510-r2 (02 Jun 2008)
+
+  02 Jun 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/cfitsio-2.510-autotools.patch, +cfitsio-2.510-r2.ebuild:
+  Better autotoolization with libtool for cfitsio-2.510, for consistency
+  with newer versions. Fix license (mainly BSD with pieces of
+  GPL-2). Dropped alpha, ppc and ppc64 keywords because of use of
+  dev-lang/cfortran.
+	
+
+  31 May 2008; Markus Dittrich <markusle@gentoo.org>
+  cfitsio-2.510-r1.ebuild, cfitsio-3.006.ebuild:
+  Added installation of static library (see bug #224225) and fixed general
+  QA things.
+
+  24 Jan 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  files/cfitsio-3.060-autotools.patch, cfitsio-3.060.ebuild:
+  Moved smem binary to examples in doc directory (fixing bug #207023). Now
+  supports library versioning
+
+*cfitsio-3.060 (10 Sep 2007)
+
+  10 Sep 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/cfitsio-3.060-autotools.patch, metadata.xml, +cfitsio-3.060.ebuild:
+  Version bump. Added tests and a proper autotools version, added fortran use
+  flag to enable fortran wrappers. Closing bug #123803
+
+  08 Jan 2007; Danny van Dyk <kugelfang@gentoo.org> -cfitsio-2.490.ebuild,
+  -cfitsio-2.500.ebuild:
+  QA: Removed unused versions.
+
+  02 Jun 2006; Steve Arnold <nerdboy@gentoo.org>
+  files/cfitsio-3.006-configure.patch, cfitsio-2.510-r1.ebuild,
+  cfitsio-3.006.ebuild:
+  Updated symlinks in both recent versions, fix for bug 135130.
+
+  23 May 2006; Markus Rothe <corsair@gentoo.org> cfitsio-2.510-r1.ebuild:
+  Stable on ppc64
+
+  17 May 2006; Steve Arnold <nerdboy@gentoo.org> cfitsio-2.510-r1.ebuild,
+  cfitsio-3.006.ebuild:
+  fixed minor issue with lib installation; added symlink
+
+*cfitsio-3.006 (17 May 2006)
+
+  17 May 2006; Steve Arnold <nerdboy@gentoo.org>
+  +files/cfitsio-2.510-configure.patch,
+  +files/cfitsio-3.006-configure.patch, +cfitsio-2.510-r1.ebuild,
+  +cfitsio-3.006.ebuild, -cfitsio-2.510.ebuild:
+  fixed broken configure and bumped to the current release; newer portage
+  will bomb on the older ebuilds.
+
+  16 Sep 2005; Aron Griffis <agriffis@gentoo.org> cfitsio-2.510.ebuild:
+  Mark 2.510 stable on alpha
+
+  12 Sep 2005; Luis Medinas <metalgod@gentoo.org> cfitsio-2.510.ebuild:
+  Marked Stable on AMD64.
+
+  27 Jun 2005; Steve Arnold <nerdboy@gentoo.org> cfitsio-2.500.ebuild,
+  cfitsio-2.510.ebuild:
+  stable bump for tested arches (x86, ppc, sparc) and to close bug 95278
+
+*cfitsio-2.510 (18 May 2005)
+
+  18 May 2005; Steve Arnold <nerdboy@gentoo.org> cfitsio-2.500.ebuild,
+  +cfitsio-2.510.ebuild:
+  bumped 2.500 to x86 and added 2.510 to close bug 80721
+
+*cfitsio-2.500 (28 Dec 2004)
+
+  28 Dec 2004; Olivier Fisette <ribosome@gentoo.org> +metadata.xml,
+  +cfitsio-2.490.ebuild, +cfitsio-2.500.ebuild:
+  Moved from dev-libs/cfitsio to sci-libs/cfitsio.
+
+*cfitsio-2.500 (18 Dec 2004)
+
+  18 Dec 2004; Steve Arnold <nerdboy@gentoo.org> metadata.xml,
+  cfitsio-2.490.ebuild, +cfitsio-2.500.ebuild:
+  bumped 2.490 to x86 and added cleaned up 2.500 (bug 65654)
+
+  30 Jul 2004; Jon Hood <squinky86@gentoo.org> cfitsio-2.490.ebuild:
+  change virtual/glibc to virtual/libc
+
+  26 Jul 2004; Olivier Fisette <ribosome@gentoo.org>
+  cfitsio-2.430.ebuild, cfitsio-2.490.ebuild:
+  Version bump suggested by Nathaniel C. Domingo <nathaniel.domingo@up.edu.ph>
+  (in bug # 39311).
+  Removed obsolete version (2.430).
+
+  01 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org> cfitsio-2.430.ebuild:
+  virtual/glibc -> virtual/libc
+
+*cfitsio-2.430 (04 Jan 2003)
+
+  04 Jan 2003; George Shapovalov <george@gentoo.org> cfitsio-2.430.ebuild, ChangeLog, files/digest-cfitsio-2.430 :
+  initial release (ref #11508)
+  C and Fortran library for reading and writing files in FITS data format
+  ebuild submitted by Nathaniel C. Domingo <nathaniel.domingo@upd.edu.ph>

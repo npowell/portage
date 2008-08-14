@@ -1,0 +1,20 @@
+# ChangeLog for games-puzzle/glightoff
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-puzzle/glightoff/ChangeLog,v 1.4 2008/03/19 22:18:44 nyhm Exp $
+
+  19 Mar 2008; Tristan Heaven <nyhm@gentoo.org> glightoff-1.0.0.ebuild:
+  Add ~amd64 keyword
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  10 Apr 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  glightoff-1.0.0.ebuild:
+  Added gnome-base/librsvg for bug #128972.
+
+*glightoff-1.0.0 (18 Nov 2005)
+
+  18 Nov 2005; Michael Sterrett <mr_bones_@gentoo.org> +metadata.xml,
+  +glightoff-1.0.0.ebuild:
+  initial commit - ebuild supplied by Christoph Brill (egore) via bug #82686
+

@@ -1,0 +1,57 @@
+# ChangeLog for dev-ruby/fxruby
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/fxruby/ChangeLog,v 1.68 2008/04/27 19:45:23 maekke Exp $
+
+  27 Apr 2008; Markus Meier <maekke@gentoo.org> fxruby-1.6.13.ebuild:
+  amd64 stable, bug #210181
+
+  25 Feb 2008; Jeroen Roovers <jer@gentoo.org> fxruby-1.6.13.ebuild:
+  Stable for HPPA (bug #210181).
+
+  20 Feb 2008; Raúl Porcel <armin76@gentoo.org> fxruby-1.6.13.ebuild:
+  alpha stable wrt #210181
+
+  19 Feb 2008; Ferris McCormick <fmccor@gentoo.org> fxruby-1.6.13.ebuild:
+  Sparc stable, Bug #210181 --- running since November.
+
+  18 Feb 2008; Christian Faulhammer <opfer@gentoo.org> fxruby-1.6.13.ebuild:
+  stable x86, bug 210181
+
+  18 Feb 2008; Brent Baude <ranger@gentoo.org> fxruby-1.6.13.ebuild:
+  stable ppc64, bug 210181
+
+  14 Feb 2008; Matti Bickel <mabi@gentoo.org> -fxruby-1.4.7.ebuild,
+  -fxruby-1.6.11.ebuild, fxruby-1.6.13.ebuild:
+  cleanup, ppc stable (bug #210181)
+
+  03 Dec 2007; Jeroen Roovers <jer@gentoo.org> fxruby-1.4.7-r1.ebuild,
+  fxruby-1.6.12.ebuild:
+  Stable for HPPA (bug #199571).
+
+  23 Nov 2007; Markus Rothe <corsair@gentoo.org> fxruby-1.6.12.ebuild:
+  Stable on ppc64; bug #199571
+
+  22 Nov 2007; Christian Faulhammer <opfer@gentoo.org>
+  fxruby-1.4.7-r1.ebuild:
+  stable x86, bug 199571
+
+  21 Nov 2007; Samuli Suominen <drac@gentoo.org> fxruby-1.4.7-r1.ebuild,
+  fxruby-1.6.12.ebuild:
+  amd64 stable wrt #199571
+
+  20 Nov 2007; Raúl Porcel <armin76@gentoo.org> fxruby-1.6.12.ebuild:
+  alpha stable wrt #199571
+
+  18 Nov 2007; Dawid Węgliński <cla@gentoo.org> fxruby-1.6.12.ebuild:
+  Stable on x86 (bug #199571)
+
+  18 Nov 2007; Matti Bickel <mabi@gentoo.org> fxruby-1.6.12.ebuild:
+  ppc stable (bug #199571)
+
+*fxruby-1.6.13 (18 Nov 2007)
+*fxruby-1.4.7-r1 (18 Nov 2007)
+
+  18 Nov 2007; Matti Bickel <mabi@gentoo.org> +fxruby-1.4.7-r1.ebuild,
+  +fxruby-1.6.13.ebuild:
+  Fixed 1.4 to link against fox-1.4 fxscintilla, Version bump for 1.6
+

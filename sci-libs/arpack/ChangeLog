@@ -1,0 +1,54 @@
+# ChangeLog for sci-libs/arpack
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/arpack/ChangeLog,v 1.9 2008/06/29 08:10:43 tove Exp $
+
+  29 Jun 2008; Torsten Veller <tove@gentoo.org> arpack-96-r2.ebuild:
+  Add missing die: || "..." -> || die "..."
+
+  29 Mar 2008; Sébastien Fabbro <bicatali@gentoo.org> arpack-96-r2.ebuild:
+  Changed sed separator to : for robust path string substitution (BLAS_LIBS)
+
+  24 Mar 2008; Sébastien Fabbro <bicatali@gentoo.org> Manifest:
+  Fixed autotools patch to have it work with as-needed
+
+  04 Mar 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  -files/arpack-96-gcc-4.2.patch, -files/arpack-arscnd.patch,
+  -files/arpack-autotools.patch, metadata.xml, -arpack-96-r1.ebuild,
+  arpack-96-r2.ebuild:
+  mpi fixes: symbol duplication routines, tests and the no-optimization for
+  some lapack routines. Moved patches to the mirrors, and removed old revision
+
+  04 Dec 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  files/arpack-arscnd.patch, files/arpack-autotools.patch:
+  Fixed patch to avoid optiimization on {s,d}lamch.f and {s,d}laruv.f of the
+  internal lapack, which caused hanging on x86 (bug #197801).
+
+*arpack-96-r2 (02 Nov 2007)
+
+  02 Nov 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/arpack-arscnd.patch, +arpack-96-r2.ebuild:
+  Added a patch fixing proper symbol duplication with lapack, thanks to
+  Radice David <david.e.pi.3.14@gmail.com> (bug #197796) and added blas
+  pkg-config support.
+
+*arpack-96-r1 (26 Sep 2007)
+
+  26 Sep 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  files/arpack-autotools.patch, -arpack-96.ebuild, +arpack-96-r1.ebuild:
+  Now compiles with local lapack as system lapack do not go along well (Thanks
+  Michael Krause for the report). New autotools patch, lots of cleanup and a
+  working mpi. Also fixed LICENSE as RiceBSD.
+
+  26 Sep 2007; Markus Dittrich <markusle@gentoo.org>
+  +files/arpack-96-gcc-4.2.patch, arpack-96.ebuild:
+  Removed obsolete ETIME to comply with gcc-4.2 (see bug #193822).
+  Thanks much to Guillaume Horel <ghorel@stanford.edu> for his
+  patch.
+
+*arpack-96 (22 Mar 2007)
+
+  22 Mar 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/arpack-autotools.patch, +metadata.xml, +arpack-96.ebuild:
+  Initial import, closing bug #69241. Thanks David Grant
+  <david.grant@telus.net> for the initial ebuild.
+

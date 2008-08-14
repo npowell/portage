@@ -1,0 +1,135 @@
+# ChangeLog for media-libs/hamlib
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/hamlib/ChangeLog,v 1.28 2008/06/18 03:16:47 darkside Exp $
+
+  18 Jun 2008; Jeremy Olexa <darkside@gentoo.org> -hamlib-1.2.4.ebuild:
+  removed old. fixes bug #200597
+
+  18 Jun 2008; Jeremy Olexa <darkside@gentoo.org> hamlib-1.2.6.1.ebuild:
+  amd64 stable, proxy commit for gentoofan23. bug #225589
+
+  17 Jun 2008; Christian Faulhammer <opfer@gentoo.org>
+  hamlib-1.2.6.1.ebuild:
+  stable x86, bug 225589
+
+  15 Jun 2008; Tobias Klausmann <klausman@gentoo.org> hamlib-1.2.4.ebuild:
+  No hardware to test, so back to ~alpha for stable version.
+
+*hamlib-1.2.7.1 (10 Jun 2008)
+
+  10 Jun 2008; Samuli Suominen <drac@gentoo.org> -hamlib-1.2.5.ebuild,
+  +hamlib-1.2.7.1.ebuild:
+  Version bump from Sunrise's portage-review. Remove unnecessary USE flag X
+  and gd, since rigmatrix doesn't get built. Thanks to Thomas Beierlein wrt
+  #219057.
+
+  09 Nov 2007; Joe Peterson <lavajoe@gentoo.org> hamlib-1.2.6.1.ebuild:
+  Add ~x86-fbsd keyword and elibtoolize (bug #198475)
+
+*hamlib-1.2.6.1 (16 Jun 2007)
+
+  16 Jun 2007; Anant Narayanan <anant@gentoo.org> +hamlib-1.2.6.1.ebuild:
+  vBump to 1.2.6.1, close bug #178994
+
+  11 Apr 2007; Christian Heim <phreak@gentoo.org> hamlib-1.2.4.ebuild,
+  hamlib-1.2.5.ebuild:
+  Use proper helper functions (#173884). Quoting fixes.
+
+  28 Nov 2006; Michael Sterrett <mr_bones_@gentoo.org> hamlib-1.2.4.ebuild,
+  hamlib-1.2.5.ebuild:
+  fix dep syntax
+
+  28 Nov 2006; Christian Faulhammer <opfer@gentoo.org> hamlib-1.2.4.ebuild,
+  hamlib-1.2.5.ebuild:
+  moved tcltk USE flag over to separate tk and tcl flags, see bug #17808
+
+*hamlib-1.2.5 (06 Jul 2006)
+
+  06 Jul 2006; Jon Hood <squinky86@gentoo.org> -hamlib-1.2.1.ebuild,
+  -hamlib-1.2.2.ebuild, -hamlib-1.2.3.ebuild, hamlib-1.2.4.ebuild,
+  +hamlib-1.2.5.ebuild:
+  Mark 1.2.4 stable on amd64 with fixes from Michael Weyershauser
+  <thedude0001@gmx.de> in bug #138107. Add newer version of hamlib.
+  Remove old versions.
+
+  23 Jun 2006; Simon Stelling <blubb@gentoo.org> +metadata.xml,
+  hamlib-1.2.4.ebuild:
+  put metadata.xml in place and restrict test phase for bug 136733
+
+  19 Mar 2006; Joshua Baergen <joshuabaergen@gentoo.org>
+  hamlib-1.2.1.ebuild, hamlib-1.2.2.ebuild, hamlib-1.2.3.ebuild,
+  hamlib-1.2.4.ebuild:
+  Remove unnecessary X dependency.
+
+  13 Sep 2005; Aron Griffis <agriffis@gentoo.org> hamlib-1.2.4.ebuild:
+  Mark 1.2.4 stable on alpha
+
+*hamlib-1.2.4 (12 Jul 2005)
+
+  12 Jul 2005; Robb Romans <killsoft@gentoo.org> +hamlib-1.2.4.ebuild:
+  - New upstream version
+  - New in 1.2.4:
+    * frontend API: port_t renamed as hamlib_port_t
+    * new models: TS-480, VR5000, FT1000MkV Fld
+    * fixes: TS-570S, AR7030, AR3000A, Orion, FT-897, IC746
+    * port: fixed 64bit int handling which potentially fixes backends
+      kenwood/alinco/pcr/uniden/aor/jrc/tentec,
+      added xBSD parallel port support
+
+  21 May 2005; Simon Stelling <blubb@gentoo.org> hamlib-1.2.3.ebuild:
+  added ~amd64 and made multilib-strict save
+
+  11 Jan 2005; Bryan Østergaard <kloeri@gentoo.org> hamlib-1.2.2.ebuild:
+  Stable on alpha.
+
+  08 Dec 2004; Robb Romans <killsoft@gentoo.org> :
+  New in 1.2.3:
+  * frontend API: LEVEL_SQLSTAT marked as deprecated
+  * new backends: Racal, V4L radio cards, Watkins-Johnson 8888
+  * new models: IC-78, IC-7800, IC-R20, IC-756PROIII
+  * fixes: AOR 5k&8k: added S-Meter, 7030: fixed freq,
+    IC-R8500: calibrated S-Meter, legacy Jupiter and many others..
+  * port: mingw32 dist with gcc 3.4 version, and stdcall interface
+    prepared for VisualBasic support.
+
+  01 Oct 2004; Robb Romans <killsoft@gentoo.org> hamlib-1.2.2.ebuild:
+  mark stable on x86
+
+*hamlib-1.2.2 (23 Aug 2004)
+
+  23 Aug 2004; Robb Romans <killsoft@gentoo.org> +hamlib-1.2.2.ebuild:
+  New release of hamlib.
+  
+  New in 1.2.2:
+   * new models: Ten-Tec (Orion), AOR 3030, Yaesu FRG's, Skanti
+   * fixes: JRC NRD435 & NRD535, Drake, AOR3000, and many other
+   * port: Fixes for BRK/RTS/DTR handling under win32 (-> Elektor304)
+   * bindings: updated Visual Basic wrapper file
+   * rigswr: new command to measure VSWR vs frequency
+
+  28 Jul 2004; Robb Romans <killsoft@gentoo.org> hamlib-1.2.1.ebuild:
+  Mark stable on x86, alpha.
+
+  29 Jun 2004; Robb Romans <killsoft@gentoo.org> -hamlib-1.1.4.ebuild:
+  Remove crufty 1.1.4 ebuild
+
+  28 Jun 2004; Aron Griffis <agriffis@gentoo.org> hamlib-1.1.4.ebuild,
+  hamlib-1.2.1.ebuild:
+  fix use invocation, glibc -> libc
+
+  28 Jun 2004; David Holm <dholm@gentoo.org> hamlib-1.2.1.ebuild:
+  Added to ~ppc.
+
+  27 Jun 2004; <robb@gentoo.org> hamlib-1.2.1.ebuild:
+  Add missing copyright statement
+
+*hamlib-1.2.1 (27 Jun 2004)
+
+  27 Jun 2004; <robb@gentoo.org> metadata.xml, +hamlib-1.2.1.ebuild:
+  New release.
+
+*hamlib-1.1.4 (03 Jun 2004)
+
+  03 Jun 2004; <rphillips@gentoo.org> hamlib-1.1.4.ebuild, metadata.xml:
+  New package. Submitted by Robb. Fixes #52155
+

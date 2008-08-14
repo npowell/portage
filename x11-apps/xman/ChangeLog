@@ -1,0 +1,80 @@
+# ChangeLog for x11-apps/xman
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-apps/xman/ChangeLog,v 1.19 2008/03/24 14:13:24 maekke Exp $
+
+  24 Mar 2008; Markus Meier <maekke@gentoo.org> xman-1.0.2.ebuild:
+  amd64 stable, bug #202087
+
+  06 Apr 2007; Joshua Baergen <joshuabaergen@gentoo.org> xman-1.0.2.ebuild:
+  If building with xprint enabled, make sure libXaw is also built with xprint
+  enabled. (Bug #150954, Scott Alfter)
+
+  10 Oct 2006; Donnie Berkholz <dberkholz@gentoo.org>; xman-1.0.2.ebuild:
+  Update description to be less generic.
+
+  17 Aug 2006; Markus Rothe <corsair@gentoo.org> xman-1.0.2.ebuild:
+  Stable on ppc64
+
+  20 May 2006; Robin H. Johnson <robbat2@gentoo.org> xman-1.0.2.ebuild:
+  Added ~ppc after testing.
+
+  08 Apr 2006; Donnie Berkholz <spyderous@gentoo.org>; -xman-1.0.1.ebuild:
+  Pull old ebuild.
+
+*xman-1.0.2 (04 Apr 2006)
+
+  04 Apr 2006; Donnie Berkholz <spyderous@gentoo.org>; +xman-1.0.2.ebuild:
+  Man page fixes.
+
+  14 Feb 2006; Markus Rothe <corsair@gentoo.org> xman-1.0.1.ebuild:
+  Added ~ppc64
+
+  26 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  -xman-0.99.3.ebuild, -xman-1.0.0.ebuild:
+  Pull old versions.
+
+*xman-1.0.1 (23 Dec 2005)
+
+  23 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>; +xman-1.0.1.ebuild:
+  Bump for 7.0.
+
+*xman-1.0.0 (18 Dec 2005)
+
+  18 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org> +xman-1.0.0.ebuild:
+  Bump for 7.0RC4.
+
+  09 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>; -xman-0.99.0.ebuild,
+  -xman-0.99.1.ebuild, -xman-0.99.2.ebuild:
+  Pull old versions.
+
+*xman-0.99.3 (04 Dec 2005)
+
+  04 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +xman-0.99.3.ebuild:
+  Bump for 7.0RC3.
+
+  17 Nov 2005; Herbie Hopkins <herbs@gentoo.org> xman-0.99.2.ebuild:
+  Marked ~amd64.
+
+*xman-0.99.2 (11 Nov 2005)
+
+  11 Nov 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +xman-0.99.2.ebuild:
+  Bump for 7.0RC2.
+
+*xman-0.99.1 (20 Oct 2005)
+
+  20 Oct 2005; Donnie Berkholz <spyderous@gentoo.org>; +xman-0.99.1.ebuild:
+  Bump for 7.0 RC1.
+
+  09 Sep 2005; Donnie Berkholz <spyderous@gentoo.org>; +metadata.xml:
+  Add metadata.
+
+  08 Aug 2005; Ferris McCormick <fmccor@gentoo.org> xman-0.99.0.ebuild:
+  Add ~sparc keyword (Modular X testing).
+
+*xman-0.99.0 (08 Aug 2005)
+
+  08 Aug 2005; Donnie Berkholz <spyderous@gentoo.org>; +xman-0.99.0.ebuild:
+  Initial commit for modular X.
+

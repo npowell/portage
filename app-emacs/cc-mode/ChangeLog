@@ -1,0 +1,27 @@
+# ChangeLog for app-emacs/cc-mode
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emacs/cc-mode/ChangeLog,v 1.5 2008/02/20 08:14:02 opfer Exp $
+
+  20 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  cc-mode-5.31.3.ebuild:
+  stable x86/amd64
+
+  03 Jul 2007; Christian Faulhammer <opfer@gentoo.org>
+  cc-mode-5.31.3.ebuild:
+  removed src_install(); changed location of IUSE; reordered KEYWORDS; removed
+  DEPEND; added trailing slash to HOMEPAGE URI; adjusted DESCRIPTION; added
+  die comments
+
+  19 Jun 2006; Matthew Kennedy <mkennedy@gentoo.org> cc-mode-5.31.3.ebuild:
+  Fix typo in DESCRIPTION.
+
+  18 Jun 2006; Matthew Kennedy <mkennedy@gentoo.org> +metadata.xml:
+  Add missing metadata.xml.
+
+*cc-mode-5.31.3 (18 Jun 2006)
+
+  18 Jun 2006; Matthew Kennedy <mkennedy@gentoo.org>
+  +files/50cc-mode-gentoo.el, +cc-mode-5.31.3.ebuild:
+  Initial port. Ebuild contributed by Adam Piatyszek <ediap@et.put.poznan.pl>
+  and Christian Schlotter <again@gmx.de>. Resolves Bug #93923.
+

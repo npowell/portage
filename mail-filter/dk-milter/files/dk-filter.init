@@ -1,0 +1,47 @@
+#!/sbin/runscript
+# Copyright 1999-2007 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/mail-filter/dk-milter/files/dk-filter.init,v 1.4 2007/10/12 20:31:23 mrness Exp $
+
+depend() {
+	use dns logger net
+}
+
+PIDFILE="/var/run/dk-filter/${SVCNAME}.pid"
+
+check_cfg() {
+
+	if [ -z "${DAEMON_USER}" ] ; then
+		eerror "DAEMON_USER is unset"
+		return 1
+	fi
+
+	SOCKET_TYPE=${SOCKET_SPEC%%:*}
+	SOCKET_ADDRESS=${SOCKET_SPEC#*:}
+	if [ -z "${SOCKET_TYPE}" -o -z "${SOCKET_ADDRESS}" ]; then
+		eerror "SOCKET_SPEC is invalid"
+		return 1
+	fi
+
+	if [[ " ${ADDITIONAL_OPTS} " == *" -"[fpP]" "* ]]; then
+			eerror "-f, -p or -P are not allowed in ADDITIONAL_OPTS"
+			return 1
+	fi
+}
+
+start() {
+	local SOCKET_TYPE SOCKET_ADDRESS
+	check_cfg || return 1
+	
+	ebegin "Starting DomainKeys filter"
+	start-stop-daemon --start --pidfile "${PIDFILE}" \
+		--exec /usr/bin/dk-filter -- -u "${DAEMON_USER}" -p "${SOCKET_SPEC}" -P "${PIDFILE}" ${ADDITIONAL_OPTS} && \
+		[ "${SOCKET_TYPE}" != "local" -a "${SOCKET_TYPE}" != "unix" ] || chmod a+rwx "${SOCKET_ADDRESS}"
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping DomainKeys filter"
+	start-stop-daemon --stop --pidfile "${PIDFILE}"
+	eend $?
+}

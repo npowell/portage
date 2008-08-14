@@ -1,0 +1,44 @@
+# ChangeLog for dev-libs/mpatrol
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/mpatrol/ChangeLog,v 1.17 2008/04/21 17:14:57 phreak Exp $
+
+  21 Apr 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Fix up metadata.xml. If there's no maintainer for the package, the metadata
+  also needs to contain m-needed@g.o.
+
+  11 May 2007; Thilo Bangert <bangert@gentoo.org> +metadata.xml:
+  add metadata.xml
+
+*mpatrol-1.4.8-r2 (30 Apr 2007)
+
+  30 Apr 2007; <solar@gentoo.org> +files/mpatrol-1.4.8-soname.patch,
+  +files/mpatrol-textrel-fix.patch, +mpatrol-1.4.8-r2.ebuild:
+  - fix QA problems bug 176592
+
+  03 Mar 2007; Marius Mauch <genone@gentoo.org> mpatrol-1.4.8-r1.ebuild:
+  Replacing einfo with elog
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  03 Jun 2004; Aron Griffis <agriffis@gentoo.org> mpatrol-1.4.8.ebuild:
+  Fix use invocation
+
+  11 Jan 2004; Heinrich Wendel <lanius@gentoo.org> mpatrol-1.4.8.ebuild:
+  fixed motif dep
+
+  06 Dec 2002; Rodney Rees <manson@gentoo.org> : changed sparc ~sparc keywords
+ 
+*mpatrol-1.4.8 (5 May 2002)
+
+  29 Mar 2003; Alastair Tse <liquidx@gentoo.org> mpatrol-1.4.8.ebuild:
+  updated deps to virtual/motif
+
+  24 Oct 2002; Seemant Kulleen <seemant@gentoo.org> mpatrol-1.4.8.ebuild :
+
+  Changed the x? in DEPEND to X?. Thanks to: gentoo@kolbu.no (Olav Kolbu) in
+  bug #9598.
+
+  5 May 2002; N.Jones <carpaski@twobit.net> mpatrol-1.4.8.ebuild:
+  
+  Initial version of the ebuild. Source code dated: 8 Jan 2002

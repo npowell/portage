@@ -1,0 +1,58 @@
+# ChangeLog for net-analyzer/authforce
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/authforce/ChangeLog,v 1.13 2007/08/04 21:55:51 dragonheart Exp $
+
+  04 Aug 2007; Daniel Black <dragonheart@gentoo.org>
+  -authforce-0.9.6.ebuild:
+  old version cleanout in prep for 187731
+
+  12 Jul 2007; Raúl Porcel <armin76@gentoo.org> authforce-0.9.9.ebuild:
+  x86 stable
+
+  27 May 2007; Daniel Black <dragonheart@gentoo.org>
+  -files/authforce-0.9.8-autoconfupdate.patch,
+  -files/authforce-0.9.8-gettext.patch, -files/authforce-0.9.8-malloc.patch,
+  metadata.xml, -authforce-0.9.8.ebuild:
+  cleanout and taking maintainence
+
+*authforce-0.9.9 (14 May 2007)
+
+  14 May 2007; Daniel Black <dragonheart@gentoo.org>
+  +authforce-0.9.9.ebuild:
+  version bump - thanks to Zachary Landau for the notification and for
+  accepting my patches.
+
+  06 May 2007; Daniel Black <dragonheart@gentoo.org> ChangeLog:
+  fixed broken authforce ebuild. Appoligies to cygeus (and all others) as per
+  bug #176947
+
+*authforce-0.9.8 (17 Apr 2007)
+
+  17 Apr 2007; Daniel Black <dragonheart@gentoo.org>
+  +files/authforce-0.9.8-autoconfupdate.patch,
+  +files/authforce-0.9.8-gettext.patch, +files/authforce-0.9.8-malloc.patch,
+  authforce-0.9.6.ebuild, +authforce-0.9.8.ebuild:
+  version bump as per bug #157715. Thanks upstream for the fixes and me for
+  far too much time hacking it.
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  08 Sep 2004; Renat Lumpau <rl03@gentoo.org> metadata.xml:
+  Fixed herd name
+
+  15 Jul 2004; Robin H. Johnson <robbat2@gentoo.org> authforce-0.9.6.ebuild:
+  fix this incredibly broken package.
+
+  11 Jul 2004; Eldad Zack <eldad@gentoo.org> authforce-0.9.6.ebuild:
+  marked x86 stable
+
+  25 Apr 2004; David Holm <dholm@gentoo.org> authforce-0.9.6.ebuild:
+  Added to ~ppc.
+
+*authforce-0.9.6 (23 Apr 2004)
+
+  23 Apr 2004; Stuart Herbert <stuart@gentoo.org> authforce-0.9.6.ebuild,
+  metadata.xml:
+  Initial import; from Daniel Fullmer <lsmod@hotmail.com>; bug #38217
+

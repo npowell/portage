@@ -1,0 +1,48 @@
+# ChangeLog for dev-ruby/ruby-odbc
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-odbc/ChangeLog,v 1.11 2008/04/13 22:47:54 rbrown Exp $
+
+  13 Apr 2008; Richard Brown <rbrown@gentoo.org> -ruby-odbc-0.9994.ebuild:
+  Remove old version.
+
+  21 Oct 2007; Steve Dibb <beandog@gentoo.org> ruby-odbc-0.9994.ebuild,
+  ruby-odbc-0.9995.ebuild:
+  amd64 stable
+
+  09 Sep 2007; René Nussbaumer <killerfox@gentoo.org>
+  ruby-odbc-0.9995.ebuild:
+  Stable on ppc. See bug #190304.
+
+  27 Aug 2007; Jurek Bartuszek <jurek@gentoo.org> ruby-odbc-0.9995.ebuild:
+  x86 stable (bug #190304)
+
+*ruby-odbc-0.9995 (24 Apr 2007)
+
+  24 Apr 2007; Richard Brown <rbrown@gentoo.org> +ruby-odbc-0.9995.ebuild:
+  Version bump.
+
+  07 Mar 2007; Richard Brown <rbrown@gentoo.org> -ruby-odbc-0.9993.ebuild:
+  Remove old version
+
+*ruby-odbc-0.9994 (04 Feb 2007)
+
+  04 Feb 2007; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  +ruby-odbc-0.9994.ebuild:
+  Version bump by Richard Brown <mynamewasgone@gmail.com>, #163446
+
+  14 Oct 2006; Aron Griffis <agriffis@gentoo.org> ruby-odbc-0.9993.ebuild:
+  Mark 0.9993 ~ia64
+
+  14 Oct 2006; Jason Wever <weeve@gentoo.org> ruby-odbc-0.9993.ebuild:
+  Added ~sparc keyword wrt bug #150234.
+
+  06 Oct 2006; <nixnut@gentoo.org> ruby-odbc-0.9993.ebuild:
+  Added ~ppc wrt bug 150234
+
+*ruby-odbc-0.9993 (06 Oct 2006)
+
+  06 Oct 2006; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  +ruby-odbc-0.9993.ebuild:
+  Initial ebuild by Richard Brown <mynamewasgone@gmail.com> and Josip Dzolonga
+  <jdzolonga@gmail.com>, #111154
+

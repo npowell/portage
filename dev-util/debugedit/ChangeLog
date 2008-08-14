@@ -1,0 +1,79 @@
+# ChangeLog for dev-util/debugedit
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/debugedit/ChangeLog,v 1.20 2008/07/14 18:06:29 gmsoft Exp $
+
+  14 Jul 2008; Guy Martin <gmsoft@gentoo.org> debugedit-4.4.6-r1.ebuild:
+  Stable on hppa.
+
+  19 Jun 2008; Friedrich Oslage <bluebird@gentoo.org>
+  debugedit-4.4.6-r1.ebuild:
+  Stable on sparc
+
+  06 May 2008; Brent Baude <ranger@gentoo.org> debugedit-4.4.6-r1.ebuild:
+  stable ppc, bug 220295
+
+  06 May 2008; Brent Baude <ranger@gentoo.org> debugedit-4.4.6-r1.ebuild:
+  stable ppc64, bug 220295
+
+  05 May 2008; Markus Meier <maekke@gentoo.org> debugedit-4.4.6-r1.ebuild:
+  amd64/x86 stable, bug #220295
+
+  26 Jan 2008; Raúl Porcel <armin76@gentoo.org> debugedit-4.4.6-r1.ebuild:
+  Add ~sparc wrt #207573
+
+  22 Nov 2007; Doug Klima <cardoe@gentoo.org> metadata.xml:
+  Add DOCTYPE to metadata for validation
+
+  07 Nov 2007; <tester@gentoo.org> debugedit-4.4.6-r1.ebuild:
+  Oops, forgot to inherit eutils for epatch
+
+*debugedit-4.4.6-r1 (07 Nov 2007)
+
+  07 Nov 2007; Olivier Crête <tester@gentoo.org>
+  +files/debugedit-4.4.6-busted-paths-with-O0.patch,
+  -debugedit-4.4.3.ebuild, +debugedit-4.4.6-r1.ebuild:
+  Add patch to work with binaries built with -O0, bug #198327
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  03 Oct 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  debugedit-4.4.6.ebuild:
+  Stable on x86 wrt bug #148993.
+
+  25 Sep 2006; <nixnut@gentoo.org> debugedit-4.4.6.ebuild:
+  Stable on ppc wrt bug 148993
+
+  25 Sep 2006; Markus Rothe <corsair@gentoo.org> debugedit-4.4.6.ebuild:
+  Stable on ppc64; bug #149013
+
+  24 Sep 2006; Olivier Crête <tester@gentoo.org> debugedit-4.4.6.ebuild:
+  Stable on amd64
+
+*debugedit-4.4.6 (22 Jul 2006)
+
+  22 Jul 2006; Olivier Crête <tester@gentoo.org> +debugedit-4.4.6.ebuild:
+  Version bump
+
+  25 May 2006; Markus Rothe <corsair@gentoo.org> debugedit-4.4.3.ebuild:
+  Stable on ppc64
+
+  24 Apr 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  debugedit-4.4.3.ebuild:
+  Keyword ~ppc.
+
+  22 Apr 2006; Markus Rothe <corsair@gentoo.org> debugedit-4.4.3.ebuild:
+  Added ~ppc64
+
+  13 Feb 2006; Olivier Crête <tester@gentoo.org> debugedit-4.4.3.ebuild:
+  Mark stable on amd64
+
+*debugedit-4.4.3 (04 Jan 2006)
+
+  04 Jan 2006; Olivier Crête <tester@gentoo.org> +metadata.xml,
+  +debugedit-4.4.3.ebuild:
+  New ebuild, debugedit is taken from the RPM distribution with the same
+  version number, it gets the list of sources files used to build a binary
+  that has debug information embedded and fixes the paths inside the stripping
+  the build directory
+

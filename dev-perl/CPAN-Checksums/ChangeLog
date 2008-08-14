@@ -1,0 +1,85 @@
+# ChangeLog for dev-perl/CPAN-Checksums
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/CPAN-Checksums/ChangeLog,v 1.18 2008/08/02 20:04:37 tove Exp $
+
+*CPAN-Checksums-2.00 (02 Aug 2008)
+
+  02 Aug 2008; Torsten Veller <tove@gentoo.org> +CPAN-Checksums-2.00.ebuild:
+  Version bump
+
+  05 Mar 2007; Andrej Kacian <ticho@gentoo.org> CPAN-Checksums-1.050.ebuild:
+  Stable on x86, bug #169152.
+
+  22 Jan 2007; Bryan Østergaard <kloeri@gentoo.org>
+  CPAN-Checksums-1.050.ebuild:
+  Stable on IA64.
+
+  21 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  CPAN-Checksums-1.050.ebuild:
+  Marking amd64 stable
+
+  15 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  CPAN-Checksums-1.039.ebuild, CPAN-Checksums-1.050.ebuild:
+  Ebuild maintenance
+
+  07 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  CPAN-Checksums-1.050.ebuild:
+  Marking sparc stable; keywording ~amd64
+
+  10 Dec 2006; Yuval Yaari <yuval@gentoo.org> CPAN-Checksums-1.050.ebuild:
+  Changed dependency on perl-core/File-Temp to virtual/perl-File-Temp (bug
+  #157673)
+
+  15 Oct 2006; Bryan Østergaard <kloeri@gentoo.org>
+  CPAN-Checksums-1.039.ebuild:
+  Stable on ia64.
+
+  04 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  CPAN-Checksums-1.039.ebuild, CPAN-Checksums-1.050.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  03 Jul 2006; Christian Hartmann <ian@gentoo.org>
+  CPAN-Checksums-1.039.ebuild, CPAN-Checksums-1.050.ebuild:
+  Fixed RDEPEND wrt bug #134781
+
+*CPAN-Checksums-1.050 (21 May 2006)
+
+  21 May 2006; Christian Hartmann <ian@gentoo.org>
+  -CPAN-Checksums-1.048.ebuild, +CPAN-Checksums-1.050.ebuild:
+  Version bump
+
+*CPAN-Checksums-1.048 (02 May 2006)
+
+  02 May 2006; <mcummings@gentoo.org> +CPAN-Checksums-1.048.ebuild:
+  Version bump
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org>
+  CPAN-Checksums-1.039.ebuild:
+  Mark 1.039 ~ia64
+
+  13 Feb 2006; <mcumming@gentoo.org> CPAN-Checksums-1.039.ebuild:
+  Virtual for perl-core dep
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  -CPAN-Checksums-1.032.ebuild, CPAN-Checksums-1.039.ebuild:
+  Marking stable sparc x86
+
+*CPAN-Checksums-1.039 (22 Nov 2005)
+
+  22 Nov 2005; Michael Cummings <mcummings@gentoo.org>
+  -CPAN-Checksums-1.018.ebuild, CPAN-Checksums-1.032.ebuild,
+  +CPAN-Checksums-1.039.ebuild:
+  Version bump, cleaning up
+
+*CPAN-Checksums-1.032 (11 Nov 2005)
+
+  11 Nov 2005; Michael Cummings <mcummings@gentoo.org>
+  +CPAN-Checksums-1.032.ebuild:
+  New version upstream
+
+*CPAN-Checksums-1.018 (08 Mar 2005)
+
+  08 Mar 2005; Michael Cummings <mcummings@gentoo.org> +metadata.xml,
+  +CPAN-Checksums-1.018.ebuild:
+  Dep for CPAN-Mini
+

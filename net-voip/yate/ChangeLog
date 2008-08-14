@@ -1,0 +1,24 @@
+# ChangeLog for net-voip/yate
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-voip/yate/ChangeLog,v 1.4 2008/05/21 19:01:06 dev-zero Exp $
+
+  21 May 2008; Tiziano Müller <dev-zero@gentoo.org> yate-1.2.0.ebuild:
+  Changed dependency for postgresql from dev-db/postgresql to
+  virtual/postgresql-server
+
+*yate-1.2.0 (01 May 2007)
+
+  01 May 2007; Stefan Schweizer <genstef@gentoo.org> -yate-1.1.0.ebuild,
+  +yate-1.2.0.ebuild:
+  version bump
+
+  08 Apr 2007; Stefan Schweizer <genstef@gentoo.org> yate-1.1.0.ebuild:
+  Dont append /usr for gtk thanks to Ivan <bdfy@mail.ru> in bug 173755
+
+*yate-1.1.0 (18 Oct 2006)
+
+  18 Oct 2006; Stefan Schweizer <genstef@gentoo.org>
+  +files/yate-0.9.0-gtk2.diff, +files/yate.confd, +files/yate.rc6,
+  +metadata.xml, +yate-1.1.0.ebuild:
+  version bump, net-misc -> net-voip
+

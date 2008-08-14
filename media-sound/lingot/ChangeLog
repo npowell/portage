@@ -1,0 +1,21 @@
+# ChangeLog for media-sound/lingot
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/lingot/ChangeLog,v 1.4 2008/07/05 07:04:20 drac Exp $
+
+  05 Jul 2008; Samuli Suominen <drac@gentoo.org>
+  +files/lingot-0.7.6-memory_leak.patch, lingot-0.7.6.ebuild:
+  Fix memory leak (upstream mailing list), thanks to Carlos Laue. Bug
+  228643.
+
+  27 May 2008; Samuli Suominen <drac@gentoo.org> lingot-0.7.6.ebuild:
+  Typing error libgotdocdir to lingotdocdir in src_install
+
+  27 May 2008; Tristan Heaven <nyhm@gentoo.org> lingot-0.7.6.ebuild:
+  Add ~x86 keyword
+
+*lingot-0.7.6 (08 May 2008)
+
+  08 May 2008; Samuli Suominen <drac@gentoo.org>
+  +files/lingot-0.7.6-clean-install.patch, +lingot-0.7.6.ebuild:
+  Initial commit for bug 188845, thanks to gutter.
+

@@ -1,0 +1,26 @@
+# ChangeLog for app-xemacs/skk
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-xemacs/skk/ChangeLog,v 1.10 2008/03/19 20:01:39 graaff Exp $
+
+  19 Mar 2008; Hans de Graaff <graaff@gentoo.org> metadata.xml:
+  A herd should not be listed as maintainer
+
+  03 Jun 2007; Hans de Graaff <graaff@gentoo.org> skk-1.23.ebuild:
+  Stable on amd64, ppc, ppc64, sparc, x86 as per #175560
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  22 Nov 2006; Hans de Graaff <graaff@gentoo.org> metadata.xml:
+  Add correct metadata.
+
+  02 Oct 2003; Aron Griffis <agriffis@gentoo.org> skk-1.23.ebuild:
+  Stable on alpha
+
+*skk-1.23 (16 Dec 2002)
+
+  22 Feb 2003;  <rendhalver@gentoo.org> skk-1.23.ebuild :
+  Add ~alpha to KEYWORDS
+
+  16 Dec 2002; Rendhalver [Peter Brown] <rendhalver@gentoo.org> :
+  Initial import.

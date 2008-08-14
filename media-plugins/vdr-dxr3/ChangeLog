@@ -1,0 +1,72 @@
+# ChangeLog for media-plugins/vdr-dxr3
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-dxr3/ChangeLog,v 1.14 2008/04/21 17:50:46 zzam Exp $
+
+  21 Apr 2008; Matthias Schwarzott <zzam@gentoo.org>
+  +files/vdr-dxr3-0.2.8-ffmpeg-includes.diff, vdr-dxr3-0.2.6.ebuild,
+  vdr-dxr3-0.2.7.ebuild, vdr-dxr3-0.2.8.ebuild:
+  Added patch for new header location in ffmpeg-0.4.9_p20080326, Bug
+  #218094. Fixed quoting.
+
+*vdr-dxr3-0.2.8 (07 Apr 2008)
+
+  07 Apr 2008; Matthias Schwarzott <zzam@gentoo.org> +vdr-dxr3-0.2.8.ebuild:
+  Version bumped.
+
+  08 Mar 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +vdr-dxr3-0.2.7.20080308.ebuild:
+  new snapshot; works also with dxr3 patched vdr-1.6.x
+
+*vdr-dxr3-0.2.7.20080308 (08 Mar 2008)
+
+  08 Mar 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +vdr-dxr3-0.2.7.20080308.ebuild:
+  new snapshot; works also with dxr3 patched vdr-1.6.x
+
+  08 Mar 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-dxr3-0.2.7.20071111.ebuild:
+  stabel on x86
+
+*vdr-dxr3-0.2.7.20071111 (11 Nov 2007)
+
+  11 Nov 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +vdr-dxr3-0.2.7.20071111.ebuild:
+  new snapshot; works with vdr-1.5.11
+
+  11 Nov 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-dxr3-0.2.7.ebuild:
+  stable on x86
+
+  08 Nov 2007; Samuli Suominen <drac@gentoo.org>
+  +files/vdr-dxr3-0.2.7-ffmpeg.patch, vdr-dxr3-0.2.7.ebuild:
+  Fix building with current ffmpeg, was trying to use function from internal
+  headers. Also keyword ~amd64.
+
+*vdr-dxr3-0.2.7 (12 May 2007)
+
+  12 May 2007; Matthias Schwarzott <zzam@gentoo.org> +vdr-dxr3-0.2.7.ebuild:
+  Version bumped.
+
+  08 Dec 2006; Matthias Schwarzott <zzam@gentoo.org> metadata.xml:
+  Added Christian Gmeiner as proxied maintainer.
+
+  29 Nov 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +files/vdr-dxr3-0.2.6-polish.patch, vdr-dxr3-0.2.6.ebuild:
+  Added polish translation by Jakub Klawiter (wariat in #gentoo-vdr).
+
+  19 Nov 2006; Matthias Schwarzott <zzam@gentoo.org> vdr-dxr3-0.2.6.ebuild:
+  Marked stable on x86.
+
+  15 Aug 2006; Matthias Schwarzott <zzam@gentoo.org> metadata.xml:
+  Assigned to Gentoo VDR Project.
+
+  14 Jun 2006; Matthias Schwarzott <zzam@gentoo.org> vdr-dxr3-0.2.6.ebuild:
+  Removed optional dependency em8300-libraries-cvs which does not exist in
+  gentoo.org tree.
+
+*vdr-dxr3-0.2.6 (07 May 2006)
+
+  07 May 2006; Matthias Schwarzott <zzam@gentoo.org> +metadata.xml,
+  +vdr-dxr3-0.2.6.ebuild:
+  Initial import of ebuild. Based on version taken from the gentoo.de-overlay.
+

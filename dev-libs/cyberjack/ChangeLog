@@ -1,0 +1,42 @@
+# ChangeLog for dev-libs/cyberjack
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/cyberjack/ChangeLog,v 1.8 2008/08/06 06:41:38 ulm Exp $
+
+  06 Aug 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
+  Add USE flag description to metadata wrt GLEP 56.
+
+  18 May 2008; Samuli Suominen <drac@gentoo.org> cyberjack-2.0.13.ebuild,
+  cyberjack-2.0.14_beta1.ebuild, cyberjack-3.0.4.ebuild:
+  Move pkgconfig to DEPEND.
+
+*cyberjack-3.0.4 (20 Sep 2007)
+
+  20 Sep 2007; Wolfram Schlich <wschlich@gentoo.org>
+  +files/cyberjack-3.0.4-udev.patch, +files/cyberjack.rules,
+  +cyberjack-3.0.4.ebuild:
+  version bump
+
+*cyberjack-2.0.14_beta1 (18 Mar 2007)
+
+  18 Mar 2007; Wolfram Schlich <wschlich@gentoo.org>
+  +cyberjack-2.0.14_beta1.ebuild:
+  version bump
+
+  03 Mar 2007; Marius Mauch <genone@gentoo.org> cyberjack-2.0.13.ebuild:
+  Replacing einfo with elog
+
+  17 Feb 2007; Wolfram Schlich <wschlich@gentoo.org> files/cyberjack.sh:
+  add hack for >=dev-libs/libusb-0.1.12 to udev script
+
+  17 Feb 2007; Wolfram Schlich <wschlich@gentoo.org>
+  cyberjack-2.0.13.ebuild:
+  fix pcsc-lite usbdropdir stuff
+
+*cyberjack-2.0.13 (12 Feb 2007)
+
+  12 Feb 2007; Wolfram Schlich <wschlich@gentoo.org>
+  +files/cyberjack-2.0.13-build.patch, +files/cyberjack-2.0.13-udev.patch,
+  +files/91-cyberjack.rules, +files/cyberjack-2.0.13-qa.patch,
+  +files/cyberjack.sh, +cyberjack-2.0.13.ebuild:
+  initial import wrt bug #62919
+

@@ -1,0 +1,185 @@
+# ChangeLog for sci-mathematics/mathomatic
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-mathematics/mathomatic/ChangeLog,v 1.32 2008/06/19 12:04:31 bicatali Exp $
+
+*mathomatic-14.0.5 (19 Jun 2008)
+
+  19 Jun 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  +mathomatic-14.0.5.ebuild:
+  Version bump
+
+  17 May 2008; nixnut <nixnut@gentoo.org> mathomatic-12.9.1.ebuild:
+  Stable on ppc wrt bug 216164
+
+  26 Apr 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  -mathomatic-12.6.5.ebuild:
+  Removed older version
+
+*mathomatic-14.0.0 (23 Apr 2008)
+
+  23 Apr 2008; Marcus D. Hanwell <cryos@gentoo.org>
+  +mathomatic-14.0.0.ebuild:
+  Version bump.
+
+  14 Apr 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  mathomatic-12.8.8.ebuild, mathomatic-12.9.1.ebuild:
+  Fixed a doc install with recursive directories (bug #217607)
+
+*mathomatic-12.9.1 (12 Apr 2008)
+
+  12 Apr 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  -mathomatic-12.8.6.ebuild, +mathomatic-12.9.1.ebuild:
+  Version bump
+
+  06 Apr 2008; Markus Meier <maekke@gentoo.org> mathomatic-12.8.8.ebuild:
+  x86 stable, bug #216164
+
+  04 Apr 2008; Kenneth Prugh <ken69267@gentoo.org> mathomatic-12.8.8.ebuild:
+  amd64 stable, bug #216164
+
+*mathomatic-12.8.8 (26 Feb 2008)
+
+  26 Feb 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  -mathomatic-12.8.5.ebuild, +mathomatic-12.8.8.ebuild:
+  Version bump
+
+*mathomatic-12.8.6 (07 Feb 2008)
+
+  07 Feb 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  -mathomatic-12.7.9.ebuild, +mathomatic-12.8.6.ebuild:
+  Version bump
+
+*mathomatic-12.8.5 (25 Jan 2008)
+
+  25 Jan 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  +mathomatic-12.8.5.ebuild:
+  Version bump. Respect user flags and install primes stuff, desktop entries.
+
+  05 Nov 2007; Marcus D. Hanwell <cryos@gentoo.org>
+  mathomatic-12.7.9.ebuild:
+  Removed the icc USE flag stuff as suggested by dberkholz.
+
+*mathomatic-12.7.9 (02 Nov 2007)
+
+  02 Nov 2007; Marcus D. Hanwell <cryos@gentoo.org>
+  +mathomatic-12.7.9.ebuild:
+  Version bump, closes bug 191530.
+
+  18 Jul 2007; Marcus D. Hanwell <cryos@gentoo.org>
+  -mathomatic-12.4.5.ebuild, -mathomatic-12.5.20.ebuild,
+  -mathomatic-12.6.4.ebuild, mathomatic-12.6.5.ebuild:
+  Marked stable on amd64 and pruned old versions.
+
+  13 Mar 2007; Raúl Porcel <armin76@gentoo.org> mathomatic-12.6.5.ebuild:
+  x86 stable
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+*mathomatic-12.6.5 (20 Oct 2006)
+
+  20 Oct 2006; Marcus D. Hanwell <cryos@gentoo.org>
+  -mathomatic-12.5.13.ebuild, mathomatic-12.5.20.ebuild,
+  +mathomatic-12.6.5.ebuild:
+  Version bump, marked newer version stable on amd64 and pruned old version.
+
+*mathomatic-12.6.4 (06 Oct 2006)
+
+  06 Oct 2006; Marcus D. Hanwell <cryos@gentoo.org>
+  +mathomatic-12.6.4.ebuild:
+  Version bump.
+
+*mathomatic-12.5.20 (15 Jul 2006)
+
+  15 Jul 2006; Marcus D. Hanwell <cryos@gentoo.org>
+  -mathomatic-12.5.6.ebuild, mathomatic-12.5.13.ebuild,
+  +mathomatic-12.5.20.ebuild:
+  Version bump, marked newer version stable and pruned old version.
+
+*mathomatic-12.5.13 (09 Apr 2006)
+
+  09 Apr 2006; Marcus D. Hanwell <cryos@gentoo.org>
+  -mathomatic-12.5.3.ebuild, mathomatic-12.5.6.ebuild,
+  +mathomatic-12.5.13.ebuild:
+  Version bump, stable on amd64 and pruned an old version.
+
+*mathomatic-12.5.6 (20 Jan 2006)
+
+  20 Jan 2006; Marcus D. Hanwell <cryos@gentoo.org>
+  -mathomatic-12.5.5.ebuild, +mathomatic-12.5.6.ebuild:
+  Version bump, closes bug 119696.
+
+*mathomatic-12.5.5 (18 Jan 2006)
+
+  18 Jan 2006; Marcus D. Hanwell <cryos@gentoo.org>
+  -mathomatic-12.4.11-r1.ebuild, mathomatic-12.5.3.ebuild,
+  +mathomatic-12.5.5.ebuild:
+  Version bump, mark previous version stable on amd64.
+
+*mathomatic-12.5.3 (08 Dec 2005)
+
+  08 Dec 2005; Marcus D. Hanwell <cryos@gentoo.org>
+  -mathomatic-12.4.11.ebuild, +mathomatic-12.5.3.ebuild:
+  Version bump.
+
+*mathomatic-12.4.11-r1 (02 Oct 2005)
+
+  02 Oct 2005; Olivier Fisette <ribosome@gentoo.org>
+  +mathomatic-12.4.11-r1.ebuild:
+  Fixed readline support (bug #107109).
+
+*mathomatic-12.4.11 (23 Sep 2005)
+
+  23 Sep 2005; Marcus D. Hanwell <cryos@gentoo.org>
+  +mathomatic-12.4.11.ebuild:
+  Version bump, now installing files in ebuild due to broken makefile.
+
+  28 Aug 2005; Marcus D. Hanwell <cryos@gentoo.org>
+  -mathomatic-12.3.1.ebuild, mathomatic-12.4.5.ebuild:
+  Stable on amd64 and x86. Remove old version.
+
+*mathomatic-12.4.5 (26 Jul 2005)
+
+  26 Jul 2005; Marcus D. Hanwell <cryos@gentoo.org>
+  mathomatic-12.3.1.ebuild, +mathomatic-12.4.5.ebuild:
+  Version bump, and mark previous version stable.
+
+*mathomatic-12.3.1 (09 May 2005)
+
+  09 May 2005; Marcus D. Hanwell <cryos@gentoo.org>
+  -files/gentoo-mathomatic-11.1c.diff,
+  -files/mathomatic-12.2c-makefile.patch, metadata.xml,
+  -mathomatic-11.1c.ebuild, -mathomatic-11.7.ebuild,
+  -mathomatic-12.2c.ebuild, +mathomatic-12.3.1.ebuild:
+  Version bump with some security fixes, thanks to DerCorny for spotting it.
+  Cleaned out old versions.
+
+*mathomatic-12.2c (08 Apr 2005)
+
+  08 Apr 2005; Marcus D. Hanwell <cryos@gentoo.org>
+  +files/mathomatic-12.2c-makefile.patch, +mathomatic-12.2c.ebuild:
+  Version bump, tidied ebuild up, made it respect user CFLAGS and added
+  src_test(). Closes bug 88254.
+
+*mathomatic-11.7 (28 Jan 2005)
+
+  28 Jan 2005; Patrick Kursawe <phosphan@gentoo.org> +mathomatic-11.7.ebuild:
+  Version bump (bug #69483) with little changes
+
+*mathomatic-11.1c (28 Dec 2004)
+
+  28 Dec 2004; Olivier Fisette <ribosome@gentoo.org> +metadata.xml,
+  +files/gentoo-mathomatic-11.1c.diff, +mathomatic-11.1c.ebuild:
+  Moved from app-sci/mathomatic to sci-mathematics/mathomatic.
+
+  13 Nov 2004; Michael Hanselmann <hansmi@gentoo.org> mathomatic-11.1c.ebuild:
+  Added to ~ppc.
+
+  28 Jul 2004; <malc@gentoo.org> mathomatic-11.1c.ebuild:
+  Add ~amd64 closes bug #57764
+
+*mathomatic-11.1c (20 May 2004)
+
+  20 May 2004; Thomas Veith <xtv@gentoo.org> mathomatic-11.1c.ebuild, Manifest,
+ChangeLog, metadata.xml, files/gentoo-mathomatic-11.1c.diff :
+  Initial import.  

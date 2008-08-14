@@ -1,0 +1,387 @@
+# ChangeLog for net-p2p/ktorrent
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-p2p/ktorrent/ChangeLog,v 1.87 2008/07/17 19:11:48 corsair Exp $
+
+  17 Jul 2008; Markus Rothe <corsair@gentoo.org> ktorrent-2.2.7.ebuild:
+  Stable on ppc64; bug #231630
+
+  16 Jul 2008; nixnut <nixnut@gentoo.org> ktorrent-2.2.7.ebuild:
+  Stable on ppc wrt bug 231630
+
+  16 Jul 2008; Dawid Węgliński <cla@gentoo.org> ktorrent-2.2.7.ebuild:
+  Stable on amd64 (bug #231630)
+
+  14 Jul 2008; Raúl Porcel <armin76@gentoo.org> ktorrent-2.2.7.ebuild:
+  sparc/x86 stable wrt #231630
+
+*ktorrent-3.0.2-r1 (31 May 2008)
+
+  31 May 2008; Ioannis Aslanidis <deathwing00@gentoo.org>
+  +ktorrent-3.0.2-r1.ebuild:
+  Fixes bug #214036: Forced the dependency of dev-libs/geoip so that ktorrent
+  is no longer linked against the internal copy of GeoIP.
+
+*ktorrent-3.0.2 (31 May 2008)
+*ktorrent-2.2.7 (31 May 2008)
+
+  31 May 2008; Ioannis Aslanidis <deathwing00@gentoo.org>
+  +ktorrent-2.2.7.ebuild, +ktorrent-3.0.2.ebuild:
+  Version bump.
+
+*ktorrent-2.2.6 (25 Apr 2008)
+
+  25 Apr 2008; Ben de Groot <yngwin@gentoo.org> +ktorrent-2.2.6.ebuild:
+  Version bump, fixes bug 219115
+
+*ktorrent-3.0.1 (26 Mar 2008)
+
+  26 Mar 2008; Ioannis Aslanidis <deathwing00@gentoo.org>
+  +ktorrent-3.0.1.ebuild:
+  Version bump. Fixes bug #214844. Thanks to Kalidarn <dcecchin@gmail.com> for
+  reporting it. Changed NEED_KDE to :kde-4. Thanks to zlin@gentoo.org for his
+  help with KDE 4 changes.
+
+*ktorrent-3.0.0 (22 Feb 2008)
+
+  22 Feb 2008; Timo Gurr <tgurr@gentoo.org> +ktorrent-3.0.0.ebuild:
+  Add ktorrent-3.0.0.ebuild, first ktorrent release based on KDE4.
+
+  19 Feb 2008; Ingmar Vanhassel <ingmar@gentoo.org> ktorrent-2.2.4.ebuild,
+  ktorrent-2.2.5-r1.ebuild:
+  Update kde-base/* dependencies so that KDE 4 doesn't satisfy it. bug 206528.
+
+  19 Feb 2008; Ingmar Vanhassel <ingmar@gentoo.org> -ktorrent-2.2.5.ebuild:
+  Old.
+
+*ktorrent-2.2.5-r1 (15 Feb 2008)
+
+  15 Feb 2008; Timo Gurr <tgurr@gentoo.org> +ktorrent-2.2.5-r1.ebuild:
+  Add ktorrent-2.2.5-r1.ebuild, revision bump fixing bug #206957.
+
+*ktorrent-2.2.5 (29 Jan 2008)
+
+  29 Jan 2008; Timo Gurr <tgurr@gentoo.org>
+  +files/ktorrent-2.2.5-avahi-check.patch, -ktorrent-2.2.2.ebuild,
+  +ktorrent-2.2.5.ebuild:
+  Add ktorrent-2.2.5.ebuild and clean out old.
+
+  06 Jan 2008; Wulf C. Krueger <philantrop@gentoo.org>
+  ktorrent-2.2.4.ebuild:
+  Marked stable on amd64 as per bug 203756.
+
+  05 Jan 2008; Raúl Porcel <armin76@gentoo.org> ktorrent-2.2.4.ebuild:
+  sparc stable wrt #203756
+
+  03 Jan 2008; Brent Baude <ranger@gentoo.org> ktorrent-2.2.4.ebuild:
+  Marking ktorrent-2.2.4 ppc64 for bug 203756
+
+  03 Jan 2008; Brent Baude <ranger@gentoo.org> ktorrent-2.2.4.ebuild:
+  Marking ktorrent-2.2.4 ppc for bug 203756
+
+  03 Jan 2008; Markus Meier <maekke@gentoo.org> ktorrent-2.2.4.ebuild:
+  x86 stable, bug #203756
+
+*ktorrent-2.2.4 (21 Nov 2007)
+
+  21 Nov 2007; Timo Gurr <tgurr@gentoo.org> -ktorrent-2.2.3.ebuild,
+  +ktorrent-2.2.4.ebuild:
+  Add ktorrent-2.2.4.ebuild, fixes bug #199627 and bug #199631. Cleanup older
+  version.
+
+  17 Nov 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  ktorrent-2.2.2.ebuild:
+  Corrected dependencies to fix bug 198945.
+
+*ktorrent-2.2.3 (16 Nov 2007)
+
+  16 Nov 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  -files/ktorrent-2.2.1-fix-wait-job-crash.patch, -ktorrent-2.1.4.ebuild,
+  -ktorrent-2.2.1-r1.ebuild, +ktorrent-2.2.3.ebuild:
+  Version bump as per bug 199285. Corrected dependencies to fix bug 198945.
+  Removed obsolete versions.
+
+  20 Oct 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  ktorrent-2.2.2.ebuild:
+  Marked stable on amd64 as per bug 195684.
+
+  20 Oct 2007; Raúl Porcel <armin76@gentoo.org> ktorrent-2.2.2.ebuild:
+  sparc stable wrt #195684
+
+  19 Oct 2007; nixnut <nixnut@gentoo.org> ktorrent-2.2.2.ebuild:
+  Stable on ppc wrt bug 195684
+
+  15 Oct 2007; Markus Rothe <corsair@gentoo.org> ktorrent-2.2.2.ebuild:
+  Stable on ppc64; bug #195684
+
+  14 Oct 2007; Christian Faulhammer <opfer@gentoo.org>
+  ktorrent-2.2.2.ebuild:
+  stable x86, bug 195684
+
+*ktorrent-2.2.2 (31 Aug 2007)
+
+  31 Aug 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  -ktorrent-2.1.3.ebuild, -ktorrent-2.2.1.ebuild, +ktorrent-2.2.2.ebuild:
+  Removed the obsolete versions 2.1.3 and 2.2.1.
+  Version bump to 2.2.2 as per bug 190806.
+
+  17 Aug 2007; Markus Rothe <corsair@gentoo.org> ktorrent-2.1.4.ebuild:
+  Stable on ppc64; bug #188823
+
+  15 Aug 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  ktorrent-2.1.4.ebuild:
+  Marked stable on amd64 as per bug 188823.
+
+  15 Aug 2007; Gustavo Zacarias <gustavoz@gentoo.org> ktorrent-2.1.4.ebuild:
+  Stable on sparc wrt #188823
+
+  14 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  ktorrent-2.1.4.ebuild:
+  ppc stable, bug #188823
+
+  14 Aug 2007; Raúl Porcel <armin76@gentoo.org> ktorrent-2.1.4.ebuild:
+  x86 stable wrt #188823
+
+*ktorrent-2.2.1-r1 (10 Aug 2007)
+
+  10 Aug 2007; Tobias Heinlein <keytoaster@gentoo.org>
+  +files/ktorrent-2.2.1-fix-wait-job-crash.patch, +ktorrent-2.2.1-r1.ebuild:
+  Adding a patch to fix a crash, see bug 187977
+
+  25 Jul 2007; Carsten Lohrke <carlo@gentoo.org>
+  -files/ktorrent-2.0.3-znow.patch,
+  -files/ktorrent-2.2_rc1-xfs-delalloc-confighdrs-fix.patch,
+  -files/ktorrent-2.2_rc1-xfs-delalloc-parens-fix.patch,
+  -ktorrent-1.2.ebuild, -ktorrent-2.0.ebuild, -ktorrent-2.0.1.ebuild,
+  -ktorrent-2.0.2.ebuild, -ktorrent-2.0.3.ebuild, -ktorrent-2.1_rc1.ebuild,
+  -ktorrent-2.1.ebuild, -ktorrent-2.1.2.ebuild, -ktorrent-2.2_rc1.ebuild,
+  -ktorrent-2.2.ebuild, ktorrent-2.2.1.ebuild:
+  Clean up.
+
+*ktorrent-2.2.1 (23 Jul 2007)
+
+  23 Jul 2007; Tobias Heinlein <keytoaster@gentoo.org>
+  +ktorrent-2.2.1.ebuild:
+  Version bump
+
+*ktorrent-2.2 (06 Jul 2007)
+
+  06 Jul 2007; Tobias Heinlein <keytoaster@gentoo.org> +ktorrent-2.2.ebuild:
+  Version bump, bug 184195
+
+  05 Jul 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  ktorrent-2.2_rc1.ebuild:
+  Corrected the list of supported languages. Fixes bug 184287.
+
+  21 Jun 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  +files/ktorrent-2.2_rc1-xfs-delalloc-confighdrs-fix.patch,
+  +files/ktorrent-2.2_rc1-xfs-delalloc-parens-fix.patch,
+  ktorrent-2.2_rc1.ebuild:
+  Added two upstream patches which fix bug 182727.
+
+*ktorrent-2.2_rc1 (19 Jun 2007)
+
+  19 Jun 2007; Ioannis Aslanidis <deathwing00@gentoo.org>
+  +ktorrent-2.2_rc1.ebuild:
+  Version bump. See bug #180693 for details.
+
+*ktorrent-2.1.4 (25 Apr 2007)
+
+  25 Apr 2007; Marijn Schouten <hkBst@gentoo.org> +ktorrent-2.1.4.ebuild:
+  add 2.1.4, fixes bug 175953
+
+  09 Apr 2007; Marcus D. Hanwell <cryos@gentoo.org> ktorrent-2.1.3.ebuild:
+  Stable on amd64, bug 170303.
+
+  04 Apr 2007; Markus Rothe <corsair@gentoo.org> ktorrent-2.1.3.ebuild:
+  Stable on ppc64; bug #170303
+
+  04 Apr 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  ktorrent-2.1.3.ebuild:
+  ppc stable, bug #170303
+
+  03 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org> ktorrent-2.1.3.ebuild:
+  Stable on sparc wrt security #170303
+
+  02 Apr 2007; Raúl Porcel <armin76@gentoo.org> ktorrent-2.1.3.ebuild:
+  x86 stable wrt security bug 170303
+
+*ktorrent-2.1.3 (02 Apr 2007)
+
+  02 Apr 2007; Ioannis Aslanidis <deathwing00@gentoo.org>
+  +ktorrent-2.1.3.ebuild:
+  Version bump. This version contains some fixes as detailed in
+  http://bugs.kde.org/show_bug.cgi?id=143637.
+
+  21 Mar 2007; Chris Gianelloni <wolf31o2@gentoo.org> ktorrent-2.1.2.ebuild:
+  Stable on amd64 wrt bug #170303.
+
+  20 Mar 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  ktorrent-2.1.2.ebuild:
+  Stable on ppc wrt bug #170303.
+
+  16 Mar 2007; Gustavo Zacarias <gustavoz@gentoo.org> ktorrent-2.1.2.ebuild:
+  Stable on sparc wrt security #170303
+
+  15 Mar 2007; Markus Rothe <corsair@gentoo.org> ktorrent-2.1.2.ebuild:
+  Stable on ppc64; bug #170303
+
+  14 Mar 2007; Christian Faulhammer <opfer@gentoo.org>
+  ktorrent-2.1.2.ebuild:
+  stable x86, security bug 170303
+
+*ktorrent-2.1.2 (14 Mar 2007)
+
+  14 Mar 2007; Ioannis Aslanidis <deathwing00@gentoo.org>
+  +ktorrent-2.1.2.ebuild:
+  Version bump. Fixes security bug #170303.
+
+  06 Mar 2007; Timothy Redaelli <drizzt@gentoo.org> ktorrent-2.1.ebuild:
+  Add ~x86-fbsd keyword.
+  Thanks to Emanuele A. Bagnaschi for reporting wrt bug #165072
+
+  11 Feb 2007; Ioannis Aslanidis <deathwing00@gentoo.org> ChangeLog:
+  Manifest regenerated.
+
+*ktorrent-2.1 (10 Feb 2007)
+
+  10 Feb 2007; Ioannis Aslanidis <deathwing00@gentoo.org>
+  +ktorrent-2.1.ebuild:
+  Version bump. See details on bug #165674 and the bugs it blocks.
+
+*ktorrent-2.1_rc1 (11 Jan 2007)
+
+  11 Jan 2007; Charlie Shepherd <masterdriverz@gentoo.org>
+  -ktorrent-2.1_beta1.ebuild, +ktorrent-2.1_rc1.ebuild:
+  Bump to 2.1_rc1 and remove vulnerable version 2.1_beta1. Bug 161416
+
+*ktorrent-2.1_beta1 (23 Nov 2006)
+
+  23 Nov 2006; Ioannis Aslanidis <deathwing00@gentoo.org>
+  +ktorrent-2.1_beta1.ebuild:
+  Version bump.
+
+  23 Nov 2006; Ioannis Aslanidis <deathwing00@gentoo.org>
+  +files/ktorrent-2.0.3-znow.patch, ktorrent-2.0.3.ebuild:
+  Corrected patch name to conform standards so that it does not interfere with
+  other application versions.
+
+  13 Nov 2006; Joseph Jezak <josejx@gentoo.org> +files/ktorrent-znow.patch,
+  ktorrent-2.0.3.ebuild:
+  Added patch for bug #151851.
+
+  20 Oct 2006; <nixnut@gentoo.org> ktorrent-2.0.2.ebuild:
+  Stable on ppc wrt bug 146038
+
+  20 Oct 2006; Simon Stelling <blubb@gentoo.org> ktorrent-2.0.2.ebuild:
+  stable on amd64
+
+  17 Oct 2006; Joshua Jackson <tsunam@gentoo.org> ktorrent-2.0.2.ebuild:
+  Stable x86; bug #146038
+
+  15 Oct 2006; Ioannis Aslanidis <deathwing00@gentoo.org>
+  ktorrent-2.0.3.ebuild:
+  Cosmetic improvement: Replaced a tabulator for a space.
+
+  15 Oct 2006; Jason Wever <weeve@gentoo.org> ktorrent-2.0.2.ebuild:
+  Stable on SPARC wrt bug #146038.
+
+  13 Oct 2006; Markus Rothe <corsair@gentoo.org> ktorrent-2.0.2.ebuild:
+  Stable on ppc64; bug #146038
+
+*ktorrent-2.0.3 (10 Oct 2006)
+
+  10 Oct 2006; Ioannis Aslanidis <deathwing00@gentoo.org> metadata.xml,
+  +ktorrent-2.0.3.ebuild:
+  Version bump. Added languages support to this new version.
+
+  20 Sep 2006; Ioannis Aslanidis <deathwing00@gentoo.org>
+  -ktorrent-1.0.ebuild:
+  Ebuild clean-up by bug #147001.
+
+  09 Sep 2006; <ticho@gentoo.org> ktorrent-1.2.ebuild:
+  Stable on x86, bug #146262.
+
+*ktorrent-2.0.2 (30 Aug 2006)
+
+  30 Aug 2006; Ioannis Aslanidis <deathwing00@gentoo.org>
+  ktorrent-2.0.ebuild, ktorrent-2.0.1.ebuild, +ktorrent-2.0.2.ebuild:
+  Added kdeenablefinal to IUSE. Version bump requested in bug #145611.
+
+*ktorrent-2.0.1 (22 Aug 2006)
+
+  22 Aug 2006; Ioannis Aslanidis <deathwing00@gentoo.org>
+  +ktorrent-2.0.1.ebuild:
+  Version bump. Resolves bug #144735. Increased dependency from KDE 3.3 to KDE
+  3.4.
+
+  15 Aug 2006; Jason Wever <weeve@gentoo.org> ktorrent-2.0.ebuild:
+  Added ~sparc keyword.
+
+  09 Aug 2006; Ioannis Aslanidis <deathwing00@gentoo.org>
+  -ktorrent-2.0_beta1.ebuild, -ktorrent-2.0_rc1.ebuild:
+  Removed old pre-release ebuilds.
+
+*ktorrent-2.0 (08 Aug 2006)
+
+  08 Aug 2006; Ioannis Aslanidis <deathwing00@gentoo.org>
+  +ktorrent-2.0.ebuild:
+  Version bump. Resolves bug #143228. Thanks to Tiago Freire for reporting.
+
+*ktorrent-2.0_rc1 (18 Jul 2006)
+
+  18 Jul 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +ktorrent-2.0_rc1.ebuild:
+  Version bump.
+
+  21 May 2006; Diego Pettenò <flameeyes@gentoo.org>
+  ktorrent-2.0_beta1.ebuild:
+  Add missing gmp dependency, thanks to Rickard Närström in bug #133923.
+
+*ktorrent-2.0_beta1 (20 May 2006)
+
+  20 May 2006; Carsten Lohrke <carlo@gentoo.org> +ktorrent-2.0_beta1.ebuild:
+  Version bump.
+
+*ktorrent-1.2 (31 Jan 2006)
+
+  31 Jan 2006; Carsten Lohrke <carlo@gentoo.org> -ktorrent-1.1_rc1.ebuild,
+  -ktorrent-1.1.ebuild, -ktorrent-1.2_rc1.ebuild, +ktorrent-1.2.ebuild:
+  version bump
+
+*ktorrent-1.2_rc1 (01 Jan 2006)
+
+  01 Jan 2006; Carsten Lohrke <carlo@gentoo.org> +ktorrent-1.2_rc1.ebuild:
+  version bump
+
+  23 Nov 2005; Markus Rothe <corsair@gentoo.org> ktorrent-1.1.ebuild:
+  Added ~ppc64 keyword
+
+*ktorrent-1.1 (09 Oct 2005)
+
+  09 Oct 2005; Gregorio Guidi <greg_g@gentoo.org> +ktorrent-1.1.ebuild:
+  New version.
+
+  14 Sep 2005; <mkay@gentoo.org> ktorrent-1.0.ebuild:
+  Upstream has changed location of sources. Updating SRC_URI
+
+*ktorrent-1.1_rc1 (14 Sep 2005)
+
+  14 Sep 2005; <mkay@gentoo.org> +ktorrent-1.1_rc1.ebuild:
+  Version bump to 1.1_rc1
+
+  23 Aug 2005; Gregorio Guidi <greg_g@gentoo.org> ktorrent-1.0.ebuild:
+  Stable on x86.
+
+  16 Jul 2005; Danny van Dyk <kugelfang@gentoo.org> ktorrent-1.0.ebuild:
+  Marked ~amd64.
+
+  14 Jul 2005; David Holm <dholm@gentoo.org> ktorrent-1.0.ebuild:
+  Added to ~ppc.
+
+*ktorrent-1.0 (13 Jul 2005)
+
+  13 Jul 2005; Gregorio Guidi <greg_g@gentoo.org> +metadata.xml,
+  +ktorrent-1.0.ebuild:
+  Initial import. Ebuild suggested by Pat Double <double@inebraska.com> and
+  Christian Hartmann <christian.hartmann@email.de>.
+

@@ -1,0 +1,67 @@
+# ChangeLog for net-analyzer/echoping
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/echoping/ChangeLog,v 1.16 2008/08/04 19:25:13 jer Exp $
+
+  04 Aug 2008; Jeroen Roovers <jer@gentoo.org> metadata.xml:
+  Describe local USE flags for GLEP 56.
+
+  21 May 2008; Tiziano Müller <dev-zero@gentoo.org> ChangeLog:
+  Changed dependency for postgresql from dev-db/postgresql to
+  virtual/postgresql-server
+
+  26 Jan 2008; <pva@gentoo.org> echoping-6.0.2.ebuild:
+  Do not die if ssl and gnutls are enabled, better chose gnutls, thank Paul
+  Tobias <tobias.pal AT gmail.com> for patch, bug #141782.
+
+  06 Sep 2007; Markus Ullmann <jokey@gentoo.org>
+  -files/maxtoread-5.2.0.patch, -echoping-5.2.0.ebuild,
+  -echoping-6.0.1.ebuild:
+  Cleanup
+
+  06 Sep 2007; Markus Ullmann <jokey@gentoo.org> echoping-6.0.2.ebuild:
+  Stable on x86
+
+*echoping-6.0.2 (29 Jul 2007)
+
+  29 Jul 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  +echoping-6.0.2.ebuild:
+  Version bump, bug #184713
+
+  09 Jul 2007; Raúl Porcel <armin76@gentoo.org> echoping-6.0.1.ebuild:
+  x86 stable
+
+*echoping-6.0.1 (12 Apr 2007)
+
+  12 Apr 2007; Markus Ullmann <jokey@gentoo.org> +echoping-6.0.1.ebuild:
+  Version bump wrt bug #172453 thanks to Stephane Bortzmeyer
+
+  01 Feb 2007; Markus Ullmann <jokey@gentoo.org> echoping-5.2.0.ebuild:
+  emake > make
+
+  27 Jul 2006; Marcelo Goes <vanquirius@gentoo.org> echoping-5.2.0.ebuild:
+  Force ebuild to fail if both ssl and gnutls USE flags are set. Fixes bug
+  141782. Thanks to Johannes Weiner <hnazfoo at gmail dot com>.
+
+  27 Jul 2006; Marcelo Goes <vanquirius@gentoo.org> metadata.xml:
+  Remove angusyoung from metadata.xml, see bug 58356.
+
+  26 Feb 2006; Marcelo Goes <vanquirius@gentoo.org> echoping-5.2.0.ebuild:
+  Add quotes to S, FILESDIR and D, use make install instead of emake install,
+  do not install COPYING.
+
+  27 May 2005; Otavio Piske <angusyoung@gentoo.org> echoping-5.2.0.ebuild:
+  Marked as x86.
+
+  05 Apr 2005; Otavio R. Piske <angusyoung@gentoo.org> echoping-5.2.0.ebuild:
+  Removed 1 of the 2 use_enable icp in src_compile
+
+  25 Jan 2005; Otavio R. Piske <angusyoung@gentoo.org> echoping-5.2.0.ebuild:
+  Removed einstall in favour of emake install
+
+*echoping-5.2.0 (25 Jan 2005)
+
+  25 Jan 2005; Otavio R. Piske <angusyoung@gentoo.org>
+  +files/maxtoread-5.2.0.patch, +echoping-5.2.0.ebuild:
+  Initial release. Thanks to Gudleik Rasch <gudleik@rastamatra.org> for
+  submitting the ebuild.
+

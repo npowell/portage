@@ -1,0 +1,36 @@
+# ChangeLog for games-arcade/sdl-sopwith
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-arcade/sdl-sopwith/ChangeLog,v 1.8 2007/04/24 15:11:26 drizzt Exp $
+
+  24 Apr 2007; Timothy Redaelli <drizzt@gentoo.org>
+  sdl-sopwith-1.7.1.ebuild:
+  Add ~x86-fbsd keyword.
+  Thanks to Nathan Smith for reporting wrt bug #175779
+
+  24 Apr 2006; <Tupone@gentoo.org> +files/sdl-sopwith-1.7.1-gcc41.patch,
+  sdl-sopwith-1.7.1.ebuild:
+  Fix for gcc-4.1
+
+  17 Apr 2004; Chris Gianelloni <wolf31o2@gentoo.org>
+  sdl-sopwith-1.7.1.ebuild:
+  Reverting DEPEND and RDEPEND to orginal state. Bug #48117 should have rather
+  been only about the gdk-pixbuf not being needed.
+
+  17 Apr 2004; Chris Gianelloni <wolf31o2@gentoo.org>
+  sdl-sopwith-1.7.1.ebuild:
+  Swapping DEPEND and RDEPEND.
+
+  17 Apr 2004; Chris Gianelloni <wolf31o2@gentoo.org>
+  sdl-sopwith-1.7.1.ebuild:
+  Fixing DEPEND and RDEPEND and closing bug #48117.
+
+  17 Apr 2004; Chris Gianelloni <wolf31o2@gentoo.org>
+  sdl-sopwith-1.7.1.ebuild:
+  Removing gdk-pixbuf from DEPEND and closing bug #48117.
+
+*sdl-sopwith-1.7.1 (29 Nov 2003)
+
+  29 Nov 2003; Michael Sterrett <mr_bones_@gentoo.org> metadata.xml,
+  sdl-sopwith-1.7.1.ebuild:
+  initial commit; ebulid supplied by Jonathan Hitchcock via bug 34723 (modified)
+

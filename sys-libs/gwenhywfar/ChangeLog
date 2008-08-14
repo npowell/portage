@@ -1,0 +1,234 @@
+# ChangeLog for sys-libs/gwenhywfar
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-libs/gwenhywfar/ChangeLog,v 1.56 2008/08/05 13:32:47 tove Exp $
+
+  05 Aug 2008; Torsten Veller <tove@gentoo.org> gwenhywfar-2.6.2.ebuild:
+  Stable on x86 (#233536)
+
+  01 Aug 2008; nixnut <nixnut@gentoo.org> gwenhywfar-2.6.2.ebuild:
+  Stable on ppc wrt bug 233536
+
+*gwenhywfar-3.3.3 (11 Jun 2008)
+
+  11 Jun 2008; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-3.3.3.ebuild:
+  Version bump.
+
+  14 May 2008; Hanno Boeck <hanno@gentoo.org> gwenhywfar-2.6.1.ebuild,
+  gwenhywfar-2.6.2.ebuild:
+  doxygen is only a build-time dependency.
+
+  05 Feb 2008; Markus Rothe <corsair@gentoo.org> gwenhywfar-2.6.2.ebuild:
+  Added ~ppc64; fix dependencies for app-office/kmymoney2
+
+*gwenhywfar-2.6.2 (19 Nov 2007)
+
+  19 Nov 2007; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-2.6.2.ebuild:
+  Version bump.
+
+  16 Nov 2007; Steve Dibb <beandog@gentoo.org> gwenhywfar-2.6.1.ebuild:
+  amd64 stable, bug 192840
+
+  28 Oct 2007; Ferris McCormick <fmccor@gentoo.org> gwenhywfar-2.6.1.ebuild:
+  Sparc stable, all tests pass. (Bookkeeping)
+
+  21 Sep 2007; Christian Faulhammer <opfer@gentoo.org>
+  gwenhywfar-2.6.1.ebuild:
+  stable x86, bug 192840
+
+  20 Sep 2007; Raúl Porcel <armin76@gentoo.org> gwenhywfar-1.18.0.ebuild,
+  gwenhywfar-2.4.0.ebuild, gwenhywfar-2.4.1.ebuild, gwenhywfar-2.5.1.ebuild,
+  gwenhywfar-2.5.2.ebuild, gwenhywfar-2.5.4.ebuild, gwenhywfar-2.6.1.ebuild:
+  Drop alpha/ia64 keyword, no hardware to test
+
+  19 Sep 2007; Lars Weiler <pylon@gentoo.org> gwenhywfar-2.6.1.ebuild:
+  Stable on ppc; bug #192840.
+
+*gwenhywfar-2.6.1 (01 Aug 2007)
+
+  01 Aug 2007; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-2.6.1.ebuild:
+  Version bump.
+
+  25 Jul 2007; Guy Martin <gmsoft@gentoo.org> gwenhywfar-2.5.4.ebuild:
+  Added ~hppa to KEYWORDS.
+
+  21 May 2007; Raúl Porcel <armin76@gentoo.org> gwenhywfar-2.4.0.ebuild:
+  alpha stable wrt #149970
+
+*gwenhywfar-2.5.4 (02 Apr 2007)
+
+  02 Apr 2007; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-2.5.4.ebuild:
+  Version bump.
+
+*gwenhywfar-2.5.2 (26 Jan 2007)
+
+  26 Jan 2007; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-2.5.2.ebuild:
+  Version bump.
+
+*gwenhywfar-2.5.1 (17 Jan 2007)
+
+  17 Jan 2007; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-2.5.1.ebuild:
+  Version bump.
+
+  22 Dec 2006; Matti Bickel <mabi@gentoo.org> gwenhywfar-2.4.0.ebuild:
+  ppc stable (bug #149970)
+
+*gwenhywfar-2.4.1 (04 Dec 2006)
+
+  04 Dec 2006; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-2.4.1.ebuild:
+  Version bump.
+
+  04 Nov 2006; <blubb@gentoo.org> gwenhywfar-2.4.0.ebuild:
+  stable on amd64
+
+  15 Oct 2006; Aron Griffis <agriffis@gentoo.org> gwenhywfar-2.4.0.ebuild:
+  Mark 2.4.0 stable on ia64. #149970
+
+  10 Oct 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  gwenhywfar-2.4.0.ebuild:
+  Stable on sparc wrt #149970
+
+  09 Oct 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  gwenhywfar-2.4.0.ebuild:
+  Stable on x86 wrt bug #149970.
+
+*gwenhywfar-2.4.0 (08 Sep 2006)
+
+  08 Sep 2006; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-2.4.0.ebuild:
+  Version bump.
+
+*gwenhywfar-2.3.1 (21 Jul 2006)
+
+  21 Jul 2006; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-2.3.1.ebuild:
+  Version bump.
+
+*gwenhywfar-2.3.0 (16 Jun 2006)
+
+  16 Jun 2006; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-2.3.0.ebuild:
+  Version bump.
+
+*gwenhywfar-2.2.0 (03 Jun 2006)
+
+  03 Jun 2006; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-2.2.0.ebuild:
+  Version bump.
+
+  27 Mar 2006; Michael Sterrett <mr_bones_@gentoo.org>
+  gwenhywfar-2.1.1.ebuild:
+  remove nested die; tidy
+
+  26 Mar 2006; Hanno Boeck <hanno@gentoo.org> gwenhywfar-2.1.1.ebuild:
+  Clean up ebuild.
+
+*gwenhywfar-2.1.1 (26 Mar 2006)
+
+  26 Mar 2006; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-2.1.1.ebuild:
+  Version bump.
+
+*gwenhywfar-2.1.0 (22 Mar 2006)
+
+  22 Mar 2006; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-2.1.0.ebuild:
+  Version bump.
+
+  06 Feb 2006; Aron Griffis <agriffis@gentoo.org> gwenhywfar-1.18.0.ebuild:
+  Mark 1.18.0 stable on alpha/ia64 #113175
+
+*gwenhywfar-1.99.6 (31 Jan 2006)
+
+  31 Jan 2006; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-1.99.6.ebuild:
+  Version bump.
+
+*gwenhywfar-1.99.5 (27 Jan 2006)
+
+  27 Jan 2006; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-1.99.5.ebuild:
+  Version bump.
+
+*gwenhywfar-1.99.4 (17 Jan 2006)
+
+  17 Jan 2006; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-1.99.4.ebuild:
+  Version bump.
+
+  24 Dec 2005; Michael Hanselmann <hansmi@gentoo.org>
+  gwenhywfar-1.18.0.ebuild:
+  Stable on ppc.
+
+*gwenhywfar-1.99.0_beta (28 Nov 2005)
+
+  28 Nov 2005; Hanno Boeck <hanno@gentoo.org>
+  +gwenhywfar-1.99.0_beta.ebuild:
+  Version bump.
+
+  26 Nov 2005; Simon Stelling <blubb@gentoo.org> gwenhywfar-1.18.0.ebuild:
+  mark stable on amd64
+
+  26 Nov 2005; Mark Loeser <halcy0n@gentoo.org> gwenhywfar-1.18.0.ebuild:
+  Stable on x86; bug #113175
+
+  21 Nov 2005; Gustavo Zacarias <gustavoz@gentoo.org>
+  gwenhywfar-1.18.0.ebuild:
+  Stable on sparc wrt #113175 #111738
+
+*gwenhywfar-1.18.0 (26 Sep 2005)
+
+  26 Sep 2005; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-1.18.0.ebuild:
+  Version bump.
+
+  17 Sep 2005; Ciaran McCreesh <ciaranm@gentoo.org> ChangeLog:
+  Converted to UTF-8, fixed encoding screwups
+
+  16 Sep 2005; Aron Griffis <agriffis@gentoo.org> gwenhywfar-1.9.0.ebuild:
+  Mark 1.9.0 stable on alpha
+
+  26 Aug 2005; Aron Griffis <agriffis@gentoo.org> gwenhywfar-1.14.0.ebuild:
+  add ~ia46
+
+*gwenhywfar-1.14.0 (12 Jul 2005)
+
+  12 Jul 2005; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-1.14.0.ebuild:
+  Version bump.
+
+*gwenhywfar-1.11.0 (13 Apr 2005)
+
+  13 Apr 2005; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-1.11.0.ebuild:
+  Version bump.
+
+*gwenhywfar-1.9.0 (13 Mar 2005)
+
+  13 Mar 2005; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-1.9.0.ebuild:
+  Version bump.
+
+  22 Feb 2005; Hanno Boeck <hanno@gentoo.org> gwenhywfar-1.7.2.ebuild:
+  Stable on x86.
+
+*gwenhywfar-1.7.2 (31 Jan 2005)
+
+  31 Jan 2005; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-1.7.2.ebuild:
+  Version bump.
+
+*gwenhywfar-1.6.0 (23 Jan 2005)
+
+  23 Jan 2005; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-1.6.0.ebuild:
+  Version bump.
+
+*gwenhywfar-1.4.1 (14 Jan 2005)
+
+  14 Jan 2005; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-1.4.1.ebuild:
+  Version bump.
+
+*gwenhywfar-1.4 (05 Jan 2005)
+
+  05 Jan 2005; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-1.4.ebuild:
+  Version bump.
+
+  03 Jan 2005; Chris White <chriswhite@gentoo.org> gwenhywfar-1.3.ebuild:
+  ~ppc towards bug #73702.
+
+  27 Dec 2004; Bryan Østergaard <kloeri@gentoo.org> gwenhywfar-1.3.ebuild:
+  ~alpha keyword.
+
+  26 Dec 2004; Jason Wever <weeve@gentoo.org> gwenhywfar-1.3.ebuild:
+  Added ~sparc keyword wrt bug #73702.
+
+*gwenhywfar-1.3 (24 Nov 2004)
+
+  24 Nov 2004; Hanno Boeck <hanno@gentoo.org> +gwenhywfar-1.3.ebuild:
+  Initial commit, ebuild by Florian Müller in bug #65401.
+

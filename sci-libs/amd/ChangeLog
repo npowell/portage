@@ -1,0 +1,43 @@
+# ChangeLog for sci-libs/amd
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/amd/ChangeLog,v 1.10 2008/06/29 08:13:40 tove Exp $
+
+  29 Jun 2008; Torsten Veller <tove@gentoo.org> amd-2.0.4.ebuild,
+  amd-2.2.0.ebuild:
+  Add missing die: || "..." -> || die "..."
+
+  15 Apr 2008; Jeroen Roovers <jer@gentoo.org> amd-2.2.0.ebuild:
+  Marked ~hppa (bug #215841).
+
+  12 Apr 2008; Raúl Porcel <armin76@gentoo.org> amd-2.2.0.ebuild:
+  Add ~sparc wrt #215841
+
+  07 Apr 2008; Tobias Klausmann <klausman@gentoo.org> amd-2.2.0.ebuild:
+  Keyworded on alpha, bug #215841
+
+  26 Mar 2008; Markus Rothe <corsair@gentoo.org> amd-2.2.0.ebuild:
+  Added ~ppc64; bug #213350
+
+  15 Mar 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/amd-2.2.0-tests.patch, amd-2.2.0.ebuild:
+  Added patch for tests
+
+  03 Mar 2008; Daniel Drake <dsd@gentoo.org> amd-2.0.4.ebuild,
+  amd-2.2.0.ebuild:
+  Correct license from LGPL-2 to LGPL-2.1
+
+  09 Sep 2007; Joseph Jezak <josejx@gentoo.org> amd-2.2.0.ebuild:
+  Marked ~ppc for bug #191600.
+
+*amd-2.2.0 (18 Aug 2007)
+
+  18 Aug 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/amd-2.2.0-autotools.patch, +amd-2.2.0.ebuild:
+  Version bump, and fixed the patch for tests
+
+*amd-2.0.4 (19 Feb 2007)
+
+  19 Feb 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/amd-2.0.4-autotools.patch, +metadata.xml, +amd-2.0.4.ebuild:
+  Initial import, with autotoolization.
+

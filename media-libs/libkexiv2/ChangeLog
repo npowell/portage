@@ -1,0 +1,78 @@
+# ChangeLog for media-libs/libkexiv2
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libkexiv2/ChangeLog,v 1.19 2008/06/29 13:03:05 keytoaster Exp $
+
+*libkexiv2-0.1.7 (29 Jun 2008)
+
+  29 Jun 2008; Tobias Heinlein <keytoaster@gentoo.org>
+  +libkexiv2-0.1.7.ebuild:
+  Version bump.
+
+*libkexiv2-0.1.6 (30 Dec 2007)
+
+  30 Dec 2007; Tobias Heinlein <keytoaster@gentoo.org>
+  +libkexiv2-0.1.6.ebuild:
+  Version bump.
+
+  06 Oct 2007; Lars Weiler <pylon@gentoo.org> libkexiv2-0.1.5.ebuild:
+  ppc stable.
+
+  27 Aug 2007; Raúl Porcel <armin76@gentoo.org> libkexiv2-0.1.5.ebuild:
+  alpha/ia64/x86 stable
+
+  25 Aug 2007; Steve Dibb <beandog@gentoo.org> libkexiv2-0.1.5.ebuild:
+  amd64 stable
+
+  13 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  libkexiv2-0.1.1.ebuild:
+  ppc. stable
+
+  09 Aug 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  libkexiv2-0.1.5.ebuild:
+  Stable on sparc
+
+  14 Jun 2007; Raúl Porcel <armin76@gentoo.org> libkexiv2-0.1.1.ebuild:
+  alpha stable
+
+  20 May 2007; Matti Bickel <mabi@gentoo.org> libkexiv2-0.1.1.ebuild,
+  libkexiv2-0.1.5.ebuild:
+  keyworded ~ppc (bug #169160)
+
+  20 May 2007; <pva@gentoo.org> Manifest:
+  Fixing manifest.
+
+*libkexiv2-0.1.5 (20 May 2007)
+
+  20 May 2007; <pva@gentoo.org> +libkexiv2-0.1.5.ebuild:
+  Version bump. Thank all who helped us in bug #178840 and bug #178904.
+
+  16 May 2007; Raúl Porcel <armin76@gentoo.org> libkexiv2-0.1.1.ebuild:
+  Add ~alpha wrt #169164
+
+  08 May 2007; Raúl Porcel <armin76@gentoo.org> libkexiv2-0.1.1.ebuild:
+  ia64 + x86 stable
+
+  23 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  libkexiv2-0.1.1.ebuild:
+  Stable on sparc
+
+  31 Mar 2007; Raúl Porcel <armin76@gentoo.org> libkexiv2-0.1.1.ebuild:
+  Add ~ia64 wrt bug 169164
+
+  17 Mar 2007; Marcus D. Hanwell <cryos@gentoo.org> libkexiv2-0.1.1.ebuild:
+  Marked ~amd64, bug 169160.
+
+  09 Mar 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  libkexiv2-0.1.1.ebuild:
+  Keyworded ~sparc wrt #169160
+
+  04 Mar 2007; Ioannis Aslanidis <deathwing00@gentoo.org>
+  libkexiv2-0.1.1.ebuild:
+  Fixed SRC_URI.
+
+*libkexiv2-0.1.1 (03 Mar 2007)
+
+  03 Mar 2007; Ioannis Aslanidis <deathwing00@gentoo.org> +metadata.xml,
+  +libkexiv2-0.1.1.ebuild:
+  Initial version. Required by kipi-plugins and digikam.
+

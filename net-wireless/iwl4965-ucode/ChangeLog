@@ -1,0 +1,46 @@
+# ChangeLog for net-wireless/iwl4965-ucode
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-wireless/iwl4965-ucode/ChangeLog,v 1.8 2008/08/13 22:57:02 hanno Exp $
+
+*iwl4965-ucode-228.57.1.21 (13 Aug 2008)
+
+  13 Aug 2008; Hanno Boeck <hanno@gentoo.org>
+  +iwl4965-ucode-228.57.1.21.ebuild:
+  Version bump.
+
+  22 Feb 2008; Saleem Abdulrasool <compnerd@gentoo.org>
+  iwl4965-ucode-4.44.1.18.ebuild, iwl4965-ucode-4.44.1.20.ebuild:
+  Fix description (bug #209173)
+
+  01 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  iwl4965-ucode-4.44.1.20.ebuild:
+  stable x86/amd64, bug 208447
+
+*iwl4965-ucode-4.44.1.20 (23 Dec 2007)
+
+  23 Dec 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +iwl4965-ucode-4.44.1.20.ebuild:
+  Version bump (bug #202818) and fix the dependencies
+
+  20 Nov 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  -iwl4965-ucode-4.44.17.ebuild:
+  Prune unused versions
+
+*iwl4965-ucode-4.44.1.18 (29 Sep 2007)
+
+  29 Sep 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +iwl4965-ucode-4.44.1.18.ebuild, -iwl4965-ucode-4.44.15.ebuild:
+  prune older release, version bump for new ABI version
+
+*iwl4965-ucode-4.44.17 (26 Jul 2007)
+
+  26 Jul 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +iwl4965-ucode-4.44.17.ebuild:
+  Version bump from upstream, fix a minor install issue
+
+*iwl4965-ucode-4.44.15 (11 Jul 2007)
+
+  11 Jul 2007; Saleem Abdulrasool <compnerd@gentoo.org> +metadata.xml,
+  +iwl4965-ucode-4.44.15.ebuild:
+  Initial import
+

@@ -1,0 +1,120 @@
+# ChangeLog for net-irc/quassel
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-irc/quassel/ChangeLog,v 1.22 2008/07/02 22:52:24 flameeyes Exp $
+
+  02 Jul 2008; Diego Pettenò <flameeyes@gentoo.org>
+  quassel-0.2.0_rc1.ebuild, quassel-0.2.9999.ebuild, quassel-9999-r1.ebuild:
+  Add missing eutils inherit for the non-git ebuilds as otherwise it seems
+  to be failing.
+
+  02 Jul 2008; Diego Pettenò <flameeyes@gentoo.org>
+  quassel-0.2.9999.ebuild, quassel-9999-r1.ebuild:
+  Use the new icons instead of the old ones.
+
+*quassel-0.2.0_rc1 (02 Jul 2008)
+
+  02 Jul 2008; Diego Pettenò <flameeyes@gentoo.org>
+  +quassel-0.2.0_rc1.ebuild:
+  Update to the Release Candidate (is it today RC day?). This version uses
+  cmake now so there you go with the new deps too.
+
+  29 Jun 2008; Torsten Veller <tove@gentoo.org> quassel-0.2.0_beta1.ebuild:
+  Add missing die: || "..." -> || die "..."
+
+  17 Jun 2008; Diego Pettenò <flameeyes@gentoo.org>
+  quassel-0.2.9999.ebuild, quassel-9999-r1.ebuild:
+  Depend on cmake 2.4.7 as upstream needs at least that version for the
+  build to work.
+
+*quassel-0.2.9999 (16 Jun 2008)
+
+  16 Jun 2008; Diego Pettenò <flameeyes@gentoo.org>
+  +quassel-0.2.9999.ebuild:
+  Add live ebuild for 0.2 branch.
+
+*quassel-9999-r1 (16 Jun 2008)
+
+  16 Jun 2008; Diego Pettenò <flameeyes@gentoo.org> -quassel-9999.ebuild,
+  +quassel-9999-r1.ebuild:
+  New revision of the live ebuild. Upstream switched to cmake, so let's
+  follow with the ebuild too.
+
+  03 Jun 2008; Diego Pettenò <flameeyes@gentoo.org> quassel-9999.ebuild:
+  Update live ebuild to use GIT rather than Subversion, as upstream switched
+  repository.
+
+  18 May 2008; Diego Pettenò <flameeyes@gentoo.org>
+  quassel-0.2.0_beta1.ebuild, quassel-9999.ebuild:
+  Install the desktop file only when the GUI client is built, and fix the
+  name of the client.
+
+*quassel-0.2.0_beta1 (15 May 2008)
+
+  15 May 2008; Diego Pettenò <flameeyes@gentoo.org>
+  -quassel-0.2.0_alpha4.ebuild, -quassel-0.2.0_alpha5.ebuild,
+  +quassel-0.2.0_beta1.ebuild, quassel-9999.ebuild:
+  Version bump to the first beta.
+
+  11 Apr 2008; Diego Pettenò <flameeyes@gentoo.org> quassel-9999.ebuild:
+  Don't dodoc devnotes anymore as they are no more on the SVN repository.
+
+*quassel-0.2.0_alpha5 (10 Apr 2008)
+
+  10 Apr 2008; Diego Pettenò <flameeyes@gentoo.org>
+  +quassel-0.2.0_alpha5.ebuild:
+  Version bump.
+
+*quassel-9999 (05 Apr 2008)
+
+  05 Apr 2008; Diego Pettenò <flameeyes@gentoo.org>
+  quassel-0.2.0_alpha4.ebuild, +quassel-9999.ebuild:
+  Avoid parallel make as per bug #216101 in alpha4, and add a live SVN
+  ebuild as was requested a couple of times (again, I prefer it here rather
+  than in a number of unofficial overlays breaking it.
+
+*quassel-0.2.0_alpha4 (01 Apr 2008)
+
+  01 Apr 2008; Diego Pettenò <flameeyes@gentoo.org>
+  -quassel-0.2.0_alpha1.ebuild, -quassel-0.2.0_alpha2.ebuild,
+  -quassel-0.2.0_alpha3.ebuild, +quassel-0.2.0_alpha4.ebuild:
+  Version bump.
+
+  24 Mar 2008; Raúl Porcel <armin76@gentoo.org>
+  quassel-0.2.0_alpha3.ebuild:
+  Add ~x86
+
+*quassel-0.2.0_alpha3 (18 Mar 2008)
+
+  18 Mar 2008; Diego Pettenò <flameeyes@gentoo.org>
+  +quassel-0.2.0_alpha3.ebuild:
+  Version bump.
+
+  03 Mar 2008; Diego Pettenò <flameeyes@gentoo.org>
+  quassel-0.2.0_alpha2.ebuild:
+  Prefer split version to monolithic.
+
+  02 Mar 2008; Diego Pettenò <flameeyes@gentoo.org> metadata.xml:
+  Update documentation for X USE flag as the server is no more always built,
+  and add documentation for server USE flag.
+
+*quassel-0.2.0_alpha2 (02 Mar 2008)
+
+  02 Mar 2008; Diego Pettenò <flameeyes@gentoo.org>
+  +quassel-0.2.0_alpha2.ebuild:
+  Version bump and fix bug #211523.
+
+  26 Feb 2008; Diego Pettenò <flameeyes@gentoo.org>
+  quassel-0.2.0_alpha1.ebuild:
+  Depend on at least version 4.3.
+
+  26 Feb 2008; Diego Pettenò <flameeyes@gentoo.org>
+  quassel-0.2.0_alpha1.ebuild:
+  Enable X USE flag with USE defaults, as most users will likely want the
+  client too.
+
+*quassel-0.2.0_alpha1 (26 Feb 2008)
+
+  26 Feb 2008; Diego Pettenò <flameeyes@gentoo.org> +metadata.xml,
+  +quassel-0.2.0_alpha1.ebuild:
+  Initial import of Quassel, with a flag to enable/disable build of GUI client.
+

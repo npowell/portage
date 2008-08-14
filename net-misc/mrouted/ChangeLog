@@ -1,0 +1,32 @@
+# ChangeLog for net-misc/mrouted
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/mrouted/ChangeLog,v 1.9 2007/05/14 19:45:44 bangert Exp $
+
+  14 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+  30 Sep 2006; Robin H. Johnson <robbat2@gentoo.org>
+  mrouted-3.9_beta3.ebuild:
+  Add ~amd64 so I can use it.
+
+  02 Apr 2006; Robin H. Johnson <robbat2@gentoo.org>
+  mrouted-3.9_beta3.ebuild:
+  Compile fix for bug #98997, need linux-2.6 headers on linux.
+
+  01 May 2005; Michael Hanselmann <hansmi@gentoo.org>
+  mrouted-3.9_beta3.ebuild:
+  Stable on ppc.
+
+  06 Nov 2004; <pyrania@gentoo.org> mrouted-3.9_beta3.ebuild:
+  Marked stable on x86.
+
+  02 Oct 2004; Markus Nigbur <pyrania@gentoo.org> mrouted-3.9_beta3.ebuild:
+  yes, we do have debian in mirrors.
+
+  27 Apr 2004; Aron Griffis <agriffis@gentoo.org> mrouted-3.9_beta3.ebuild:
+  Add inherit eutils
+
+*mrouted-3.9_beta3 (17 Nov 2003)
+
+  17 Nov 2003; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by David Bryson <mutex@kerneli.org> #29097.

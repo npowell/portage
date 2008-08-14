@@ -1,0 +1,54 @@
+# ChangeLog for media-libs/libofa
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libofa/ChangeLog,v 1.15 2008/04/16 12:57:29 drac Exp $
+
+  16 Apr 2008; Samuli Suominen <drac@gentoo.org>
+  +files/libofa-0.9.3-gcc-4.3.patch, libofa-0.9.3.ebuild:
+  Fix building with GCC 4.3, thanks to Mikko C. in bug 215563.
+
+  06 Feb 2008; Santiago M. Mola <coldwind@gentoo.org> libofa-0.9.3.ebuild:
+  HOMEPAGE and SRC_URI updated, quoting fixed.
+
+  11 Sep 2007; Samuli Suominen <drac@gentoo.org> libofa-0.9.3.ebuild:
+  Fix fftw depends to version 3, fails at configure stage with 2.
+
+  23 Jan 2007; Steve Dibb <beandog@gentoo.org> libofa-0.9.3.ebuild:
+  amd64 stable, bug 158836
+
+  26 Dec 2006; Gustavo Zacarias <gustavoz@gentoo.org> libofa-0.9.3.ebuild:
+  Stable on sparc wrt #158836
+
+  25 Dec 2006; Andrej Kacian <ticho@gentoo.org> libofa-0.9.3.ebuild:
+  Stable on x86, bug #158836.
+
+  23 Dec 2006; Matti Bickel <mabi@gentoo.org> libofa-0.9.3.ebuild:
+  ppc stable (bug #158836)
+
+  23 Dec 2006; Markus Rothe <corsair@gentoo.org> libofa-0.9.3.ebuild:
+  Stable on ppc64; bug #158836
+
+  01 Dec 2006; Gustavo Zacarias <gustavoz@gentoo.org> libofa-0.9.3.ebuild:
+  Keyworded ~sparc wrt #156599
+
+  21 Nov 2006; Brent Baude <ranger@gentoo.org> libofa-0.9.3.ebuild:
+  Marking libofa-0.9.3 ~ppc64 for bug 155302
+
+  21 Nov 2006; Joseph Jezak <josejx@gentoo.org> libofa-0.9.3.ebuild:
+  Marked ~ppc for bug #155302.
+
+  25 Sep 2006; Patrick McLean <chutzpah@gentoo.org> libofa-0.9.3.ebuild:
+  Add ~amd64.
+
+  30 Aug 2006; Carsten Lohrke <carlo@gentoo.org>
+  +files/libofa-0.9.3-gcc-4.patch, libofa-0.9.3.ebuild:
+  GCC 4 patch, thanks to Dave Baker.
+
+  27 Aug 2006; Carsten Lohrke <carlo@gentoo.org> libofa-0.9.3.ebuild:
+  Fix whitespace.
+
+*libofa-0.9.3 (27 Aug 2006)
+
+  27 Aug 2006; Carsten Lohrke <carlo@gentoo.org> +metadata.xml,
+  +libofa-0.9.3.ebuild:
+  Initial commit. Thanks to Maxwell Gender-Jones, bug #126069.
+

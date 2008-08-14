@@ -1,0 +1,74 @@
+# ChangeLog for dev-java/gnu-jaf
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-java/gnu-jaf/ChangeLog,v 1.18 2007/04/06 23:00:03 betelgeuse Exp $
+
+  06 Apr 2007; Petteri Räty <betelgeuse@gentoo.org> -gnu-jaf-1.0-r1.ebuild:
+  Mark stable on amd64 wrt bug #172304 and remove generation 1 ebuild.
+
+  06 Apr 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  gnu-jaf-1.0-r2.ebuild:
+  ppc stable, bug #172304
+
+  29 Mar 2007; Markus Rothe <corsair@gentoo.org> gnu-jaf-1.0-r2.ebuild:
+  Stable on ppc64; bug #172304
+
+  28 Mar 2007; Petteri Räty <betelgeuse@gentoo.org> gnu-jaf-1.0-r1.ebuild,
+  gnu-jaf-1.0-r2.ebuild:
+  Switch license to GPL-2-with-linking-exception as that is what the actual
+  *.java files indicate.
+
+  27 Mar 2007; Christian Faulhammer <opfer@gentoo.org>
+  gnu-jaf-1.0-r2.ebuild:
+  stable x86, bug 172304
+
+  26 Mar 2007; Petteri Räty <betelgeuse@gentoo.org> gnu-jaf-1.0-r2.ebuild:
+  Switch to java-pkg_dojavadoc.
+
+  26 Mar 2007; Petteri Räty <betelgeuse@gentoo.org> metadata.xml,
+  gnu-jaf-1.0-r1.ebuild, gnu-jaf-1.0-r2.ebuild:
+  Fix LICENSE to LGPL-2.1 wrt bug #172161 and remove trailing white space from
+  metadata.xml.
+
+  09 Dec 2006; Diego Pettenò <flameeyes@gentoo.org> gnu-jaf-1.0-r2.ebuild:
+  Add ~x86-fbsd keyword.
+
+  05 Oct 2006; Gustavo Zacarias <gustavoz@gentoo.org> gnu-jaf-1.0-r1.ebuild,
+  gnu-jaf-1.0-r2.ebuild:
+  Dropping sparc keywords, see #96229
+
+*gnu-jaf-1.0-r2 (29 Sep 2006)
+
+  29 Sep 2006; Vlastimil Babka <caster@gentoo.org> +gnu-jaf-1.0-r2.ebuild:
+  Revbump to use generation-2 java eclasses.
+
+  01 May 2006; Markus Rothe <corsair@gentoo.org> gnu-jaf-1.0-r1.ebuild:
+  Stable on ppc64
+
+  23 Jan 2006; Markus Rothe <corsair@gentoo.org> gnu-jaf-1.0-r1.ebuild:
+  Added ~ppc64; bug #93807
+
+*gnu-jaf-1.0-r1 (17 Sep 2005)
+
+  17 Sep 2005; Petteri Räty <betelgeuse@gentoo.org> metadata.xml,
+  -gnu-jaf-1.0.ebuild, +gnu-jaf-1.0-r1.ebuild:
+  Version bump so that gnu-activation users update to this package.
+
+  27 Jun 2005; Jason Wever <weeve@gentoo.org> gnu-jaf-1.0.ebuild:
+  Stable on SPARC wrt bug #93807.
+
+  04 Jun 2005; Jason Wever <weeve@gentoo.org> gnu-jaf-1.0.ebuild:
+  Added ~sparc keyword wrt bug #93807.
+
+  31 May 2005; Jan Brinkmann <luckyduck@gentoo.org> gnu-jaf-1.0.ebuild:
+  stable on amd64, ppc and x86 wrt #93807
+
+  31 May 2005; Jan Brinkmann <luckyduck@gentoo.org> gnu-jaf-1.0.ebuild:
+  gnu-jaf doesnt like emake
+
+*gnu-jaf-1.0 (31 May 2005)
+
+  31 May 2005; Jan Brinkmann <luckyduck@gentoo.org> +metadata.xml,
+  +gnu-jaf-1.0.ebuild:
+  Initial import. GPL licensed alternative to dev-java/sun-jaf-bin which is
+  about to be dropped.
+

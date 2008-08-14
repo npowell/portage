@@ -1,0 +1,108 @@
+# ChangeLog for media-libs/libprojectm
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libprojectm/ChangeLog,v 1.24 2008/07/17 18:09:49 aballier Exp $
+
+*libprojectm-1.2.0 (17 Jul 2008)
+
+  17 Jul 2008; Alexis Ballier <aballier@gentoo.org>
+  +libprojectm-1.2.0.ebuild:
+  version bump
+
+*libprojectm-1.1 (19 May 2008)
+
+  19 May 2008; Samuli Suominen <drac@gentoo.org> +libprojectm-1.1.ebuild:
+  Version bump.
+
+*libprojectm-1.01-r2 (16 Apr 2008)
+
+  16 Apr 2008; Samuli Suominen <drac@gentoo.org> libprojectm-0.99-r1.ebuild,
+  -libprojectm-1.01-r1.ebuild, +libprojectm-1.01-r2.ebuild:
+  Revision bump for last change, and revert old ebuild back to ~mips because
+  of depends.
+
+  16 Apr 2008; Samuli Suominen <drac@gentoo.org>
+  +files/libprojectm-1.01-gcc43.patch,
+  +files/libprojectm-1.01-white_window.patch, libprojectm-1.01-r1.ebuild:
+  Fix white window problem with libvisual-projectm and amarok wrt #211263,
+  thanks to Torsten Grote. Fix also building with GCC 4.3.
+
+  15 Feb 2008; Samuli Suominen <drac@gentoo.org> -libprojectm-0.99.ebuild,
+  -libprojectm-1.01.ebuild:
+  Remove old.
+
+  12 Nov 2007; Samuli Suominen <drac@gentoo.org> libprojectm-1.01-r1.ebuild:
+  Multilib issues wrt #198260, thanks to Jorge Manuel B. S. Vicetto.
+
+*libprojectm-1.01-r1 (02 Nov 2007)
+
+  02 Nov 2007; Samuli Suominen <drac@gentoo.org>
+  +files/libprojectm-1.01-cmake_soname.patch,
+  +files/libprojectm-1.01-soil_64bit_fixes.patch,
+  +libprojectm-1.01-r1.ebuild:
+  Add SONAME and 64bit fixes, thanks to William Pitcock.
+
+  24 Oct 2007; Joe Peterson <lavajoe@gentoo.org>
+  -files/libprojectm-1.01-freebsd.patch,
+  +files/libprojectm-1.01-malloc.patch, libprojectm-1.01.ebuild:
+  Make malloc.h -> stdlib.h patch unconditional
+
+  24 Oct 2007; Jeroen Roovers <jer@gentoo.org> libprojectm-1.01.ebuild:
+  Marked ~hppa (bug #196836).
+
+  23 Oct 2007; Jeroen Roovers <jer@gentoo.org> libprojectm-0.99-r1.ebuild:
+  Stable for HPPA too (audacious-plugins).
+
+  23 Oct 2007; Joe Peterson <lavajoe@gentoo.org>
+  +files/libprojectm-1.01-freebsd.patch, libprojectm-1.01.ebuild:
+  Patched to compile on FreeBSD; added media-libs/glew dependency
+
+*libprojectm-1.01 (23 Oct 2007)
+
+  23 Oct 2007; Samuli Suominen <drac@gentoo.org> +libprojectm-1.01.ebuild:
+  Version bump.
+
+  18 Oct 2007; Raúl Porcel <armin76@gentoo.org> libprojectm-0.99-r1.ebuild:
+  alpha stable
+
+  15 Jun 2007; Joshua Kinard <kumba@gentoo.org> libprojectm-0.99-r1.ebuild:
+  Stable on mips.
+
+  15 Apr 2007; Peter Weller <welp@gentoo.org> libprojectm-0.99-r1.ebuild:
+  Stable on amd64
+
+  13 Apr 2007; Raúl Porcel <armin76@gentoo.org> libprojectm-0.99-r1.ebuild:
+  x86 stable
+
+  10 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  libprojectm-0.99-r1.ebuild:
+  Stable on sparc
+
+*libprojectm-0.99-r1 (11 Mar 2007)
+
+  11 Mar 2007; Peter Weller <welp@gentoo.org> +files/libprojectm-fbsd.patch,
+  +libprojectm-0.99-r1.ebuild:
+  Added patch to let it compile on x86-fbsd, keyworded x86-fbsd
+
+  11 Mar 2007; Bryan Østergaard <kloeri@gentoo.org>
+  libprojectm-0.99.ebuild:
+  Alpha love.
+
+  08 Mar 2007; Jason Wever <weeve@gentoo.org> libprojectm-0.99.ebuild:
+  Added ~sparc keyword wrt bug #168465.
+
+  26 Feb 2007; Jeroen Roovers <jer@gentoo.org> libprojectm-0.99.ebuild:
+  Marked ~hppa (bug #168465).
+
+  26 Feb 2007; Tony Vroon <chainsaw@gentoo.org> libprojectm-0.99.ebuild:
+  Keyword ~ppc & ~ppc64. Tested with GCC 4.1.2; 64UL.
+
+  13 Nov 2006; Andrej Kacian <ticho@gentoo.org> libprojectm-0.99.ebuild:
+  Added ~x86 keyword, bug #154846.
+
+*libprojectm-0.99 (06 Nov 2006)
+
+  06 Nov 2006; Diego Pettenò <flameeyes@gentoo.org> +metadata.xml,
+  +libprojectm-0.99.ebuild:
+  Initial import, ProjectM library, thanks to all the users submitting ebuilds
+  and feedback in bug #87870.
+

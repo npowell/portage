@@ -1,0 +1,21 @@
+# ChangeLog for net-mail/checkpw
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-mail/checkpw/ChangeLog,v 1.6 2007/05/08 23:09:27 genone Exp $
+
+  08 May 2007; Marius Mauch <genone@gentoo.org> checkpw-1.01.ebuild:
+  Replacing einfo with elog
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  16 May 2005; MATSUU Takuto <matsuu@gentoo.org> checkpw-1.01.ebuild:
+  Fixed inheriting gcc, Bug 92745.
+
+  01 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org> checkpw-1.01.ebuild:
+  virtual/glibc -> virtual/libc
+
+*checkpw-1.01 (12 Mar 2004)
+
+  12 Mar 2004; <matsuu@gentoo.org> checkpw-1.01.ebuild:
+  Initial import.
+

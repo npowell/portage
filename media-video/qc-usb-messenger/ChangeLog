@@ -1,0 +1,57 @@
+# ChangeLog for media-video/qc-usb-messenger
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/qc-usb-messenger/ChangeLog,v 1.11 2008/02/08 16:52:35 tove Exp $
+
+  08 Feb 2008; Torsten Veller <tove@gentoo.org>
+  qc-usb-messenger-1.7-r1.ebuild:
+  Stable on x86
+
+  08 Feb 2008; Santiago M. Mola <coldwind@gentoo.org>
+  qc-usb-messenger-1.7-r1.ebuild:
+  amd64 stable
+
+*qc-usb-messenger-1.7-r1 (28 Jan 2008)
+
+  28 Jan 2008; Santiago M. Mola <coldwind@gentoo.org>
+  +files/qc-usb-messenger-1.7-2.6.24.patch, +qc-usb-messenger-1.7-r1.ebuild:
+  Patch for linux 2.6.24, thanks to Antonio Quartulli <www.quartulli.org>
+  #207696.
+
+  24 Jan 2008; <tove@gentoo.org> qc-usb-messenger-1.7.ebuild:
+  Stable on x86 (#207206)
+
+  23 Jan 2008; Samuli Suominen <drac@gentoo.org>
+  qc-usb-messenger-1.7.ebuild:
+  amd64 stable wrt #207206
+
+  21 Oct 2007; Santiago M. Mola <coldwind@gentoo.org> metadata.xml:
+  Taking maintainership.
+
+*qc-usb-messenger-1.7 (21 Oct 2007)
+
+  21 Oct 2007; Samuli Suominen <drac@gentoo.org>
+  +qc-usb-messenger-1.7.ebuild:
+  Version bump.
+
+*qc-usb-messenger-1.6 (11 Jun 2007)
+
+  11 Jun 2007; Samuli Suominen <drac@gentoo.org>
+  +qc-usb-messenger-1.6.ebuild:
+  Version bump.
+
+  05 Feb 2007; Torsten Veller <tove@gentoo.org> qc-usb-messenger-1.5.ebuild:
+  Stable on x86.
+
+  10 Dec 2006; Matthias Schwarzott <zzam@gentoo.org>
+  qc-usb-messenger-1.5.ebuild:
+  Added depend to virtual/linux-sources and block against qc-usb.
+
+*qc-usb-messenger-1.5 (07 Dec 2006)
+
+  07 Dec 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +files/qc-usb-messenger-2.6.19.patch,
+  +files/qc-usb-messenger-koutput.patch, +metadata.xml,
+  +qc-usb-messenger-1.5.ebuild:
+  Initial import of ebuild, based on qc-usb, modified and maintained by Samuli
+  Suominen <sasuomin@uusikaupunki.fi>.
+

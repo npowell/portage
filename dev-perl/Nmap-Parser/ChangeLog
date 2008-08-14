@@ -1,0 +1,33 @@
+# ChangeLog for dev-perl/Nmap-Parser
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Nmap-Parser/ChangeLog,v 1.7 2008/06/27 21:10:03 armin76 Exp $
+
+  27 Jun 2008; Raúl Porcel <armin76@gentoo.org> Nmap-Parser-1.11.ebuild:
+  x86 stable
+
+*Nmap-Parser-1.11 (14 Jun 2007)
+
+  14 Jun 2007; Michael Cummings <mcummings@gentoo.org>
+  +Nmap-Parser-1.11.ebuild:
+  Version bump
+
+  19 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  Nmap-Parser-1.05.ebuild:
+  Version bump, thanks seemant
+
+  10 Dec 2006; Yuval Yaari <yuval@gentoo.org> Nmap-Parser-1.05.ebuild:
+  Changed perl-core/Storable to virtual/perl-Storable (bug #157682)
+
+  17 Nov 2006; <blubb@gentoo.org> Nmap-Parser-1.05.ebuild:
+  stable on amd64
+
+  11 Sep 2006; Michael Cummings <mcummings@gentoo.org>
+  Nmap-Parser-1.05.ebuild:
+  Keywording ~amd64
+
+*Nmap-Parser-1.05 (25 Aug 2006)
+
+  25 Aug 2006; Christian Hartmann <ian@gentoo.org> +metadata.xml,
+  +Nmap-Parser-1.05.ebuild:
+  Dep for bug #144762; fixes bug #144041
+

@@ -1,0 +1,24 @@
+# ChangeLog for dev-perl/IO-AIO
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/IO-AIO/ChangeLog,v 1.4 2008/07/30 01:00:45 robbat2 Exp $
+
+*IO-AIO-3.06 (30 Jul 2008)
+
+  30 Jul 2008; Robin H. Johnson <robbat2@gentoo.org> +IO-AIO-3.06.ebuild:
+  Version bump.
+
+*IO-AIO-2.51 (27 Oct 2007)
+
+  27 Oct 2007; Robin H. Johnson <robbat2@gentoo.org> +IO-AIO-2.51.ebuild:
+  Version bump.
+
+  15 Jun 2007; Michael Cummings <mcummings@gentoo.org> IO-AIO-2.33.ebuild:
+  Marking amd64 stable
+
+*IO-AIO-2.33 (09 May 2007)
+
+  09 May 2007; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml, 
+  +IO-AIO-2.33.ebuild:
+  Initial Commit. Ebuild by Robin H. Johnson <robbat2@gentoo.org>. Yet another
+  dep for mogilefs-server.
+

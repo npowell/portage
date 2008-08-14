@@ -1,0 +1,38 @@
+# ChangeLog for games-puzzle/mirrormagic
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-puzzle/mirrormagic/ChangeLog,v 1.11 2007/02/22 01:14:19 peper Exp $
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  06 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  mirrormagic-2.0.2.ebuild:
+  Remove old virtual/x11 dependency.
+
+  27 Sep 2006; Tristan Heaven <nyhm@gentoo.org> mirrormagic-2.0.2.ebuild:
+  Add inherit eutils
+
+  19 May 2006; <Tupone@gentoo.org> +files/mirrormagic-2.0.2-gcc41.patch,
+  mirrormagic-2.0.2.ebuild:
+  Fix for gcc-4.1
+
+  17 Feb 2006; <Tupone@gentoo.org> mirrormagic-2.0.2.ebuild:
+  Modular X dependency fix
+  Build X or SDL, not both.
+
+  29 Dec 2004; Joseph Jezak <josejx@gentoo.org> mirrormagic-2.0.2.ebuild:
+  Marked ppc stable.
+
+  05 Nov 2004; Joseph Jezak <josejx@gentoo.org> mirrormagic-2.0.2.ebuild:
+  Added ~ppc.
+
+  27 Mar 2004; Michael Sterrett <mr_bones_@gentoo.org>
+  mirrormagic-2.0.2.ebuild:
+  use || in DEPEND to say what we really mean
+
+*mirrormagic-2.0.2 (24 Aug 2003)
+
+  24 Aug 2003; Michael Sterrett <msterret@gentoo.org>
+  mirrormagic-2.0.2.ebuild:
+  initial commit.  Ebuild copied from the rocksndiamonds ebuild.
+

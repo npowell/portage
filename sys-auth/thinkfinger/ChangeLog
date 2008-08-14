@@ -1,0 +1,34 @@
+# ChangeLog for sys-auth/thinkfinger
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-auth/thinkfinger/ChangeLog,v 1.6 2007/09/08 18:21:42 vapier Exp $
+
+  08 Sep 2007; Mike Frysinger <vapier@gentoo.org> thinkfinger-0.3.ebuild:
+  Make kernel check a warning and use emake in src_install.
+
+*thinkfinger-0.3 (11 Apr 2007)
+
+  11 Apr 2007; Tony Vroon <chainsaw@gentoo.org> +thinkfinger-0.3.ebuild:
+  Version bump, closes bug #172837. This release requires UINPUT support in
+  the kernel and features USB-level debugging. It should also keep the
+  fingerprint reader from heating up as much as it did on 0.2.2
+
+  27 Feb 2007; Piotr Jaroszyński <peper@gentoo.org>
+  thinkfinger-0.2.2-r1.ebuild:
+  Add ~amd64 wrt bug #167951.
+
+  22 Feb 2007; Tony Vroon <chainsaw@gentoo.org> thinkfinger-0.2.2-r1.ebuild:
+  Put inherit in correct location, as requested by Mr_Bones.
+
+*thinkfinger-0.2.2-r1 (21 Feb 2007)
+
+  21 Feb 2007; Tony Vroon <chainsaw@gentoo.org> -thinkfinger-0.2.2.ebuild,
+  +thinkfinger-0.2.2-r1.ebuild:
+  Install PAM module into correct directory.
+
+*thinkfinger-0.2.2 (21 Feb 2007)
+
+  21 Feb 2007; Tony Vroon <chainsaw@gentoo.org> +metadata.xml,
+  +thinkfinger-0.2.2.ebuild:
+  Initial commit, ebuild by me but heavily inspired by the work of John
+  Schember <j5483@yahoo.com>. Closes bug #162297.
+

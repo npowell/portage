@@ -1,0 +1,82 @@
+# ChangeLog for net-ftp/filezilla
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-ftp/filezilla/ChangeLog,v 1.16 2008/08/13 09:06:14 voyageur Exp $
+
+*filezilla-3.1.1.1 (13 Aug 2008)
+
+  13 Aug 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  -filezilla-3.0.11.1.ebuild, -filezilla-3.1.0.ebuild,
+  +filezilla-3.1.1.1.ebuild:
+  Version bump, mostly bugfixes. Also fixes a vulnerability regarding the
+  way some errors are handled on SSL/TLS secured data transfers
+
+*filezilla-3.1.0 (23 Jul 2008)
+
+  23 Jul 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  -filezilla-3.1.0_rc2.ebuild, +filezilla-3.1.0.ebuild:
+  Version bump, mostly bugfixes after the release candidates
+
+*filezilla-3.1.0_rc2 (19 Jul 2008)
+
+  19 Jul 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  -filezilla-3.1.0_rc1.ebuild, +filezilla-3.1.0_rc2.ebuild:
+  Second release candidate, bugfixes and enables SOCKS5 and HTTP/1.1 proxy
+  support for SFTP connections
+
+*filezilla-3.1.0_rc1 (18 Jul 2008)
+
+  18 Jul 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  -filezilla-3.0.11.ebuild, +filezilla-3.1.0_rc1.ebuild:
+  3.1.0 release candidate, includes IPv6, SOCKS5 and HTTP/1.1 proxy support
+
+  13 Jul 2008; Joseph Jezak <josejx@gentoo.org> filezilla-3.0.4.ebuild,
+  filezilla-3.0.11.1.ebuild:
+  Marked ~ppc for bug #229001.
+
+*filezilla-3.0.11.1 (07 Jul 2008)
+
+  07 Jul 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  +filezilla-3.0.11.1.ebuild:
+  Version bump, bugfixes and minor changes
+
+  04 Jul 2008; Raúl Porcel <armin76@gentoo.org> filezilla-3.0.4.ebuild:
+  x86 stable wrt #230513
+
+  02 Jul 2008; Kenneth Prugh <ken69267@gentoo.org> filezilla-3.0.4.ebuild:
+  amd64 stable, bug #230513
+
+  02 Jul 2008; Bernard Cafarelli <voyageur@gentoo.org> metadata.xml,
+  filezilla-3.0.4.ebuild:
+  Adding myself as maintainer, remove unused autotools inherit
+
+*filezilla-3.0.11 (01 Jul 2008)
+
+  01 Jul 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  +filezilla-3.0.11.ebuild:
+  Version bump, bug #206600
+
+  27 Jan 2008; Raúl Porcel <armin76@gentoo.org> filezilla-3.0.4.ebuild:
+  Add ~ia64/~sparc
+
+  29 Dec 2007; <welp@gentoo.org> filezilla-3.0.4.ebuild:
+  Keyworded ~amd64; bug 202996
+
+  25 Dec 2007; Jason Smathers <jsin@gentoo.org> filezilla-3.0.4.ebuild:
+  WXRC magic no longer required with eselect-wxwidgets-0.7-r1
+
+  23 Dec 2007; Jason Smathers <jsin@gentoo.org> filezilla-3.0.4.ebuild:
+  removed unicode use flag as it is the only option now
+
+  22 Dec 2007; Jason Smathers <jsin@gentoo.org> filezilla-3.0.4.ebuild:
+  updated rdepend and removed desktop entry
+
+  22 Dec 2007; Jason Smathers <jsin@gentoo.org> +metadata.xml,
+  +filezilla-3.0.4.ebuild:
+  added metadata.xml
+
+*filezilla-3.0.4 (22 Dec 2007)
+
+  22 Dec 2007; Jason Smathers <jsin@gentoo.org> +filezilla-3.0.4.ebuild:
+  New ebuild, thanks to the users whom contributed:  Matthew Schultz, Kalidarn,
+  Paul Bredbury, zhoumi, Alois Hammer, and Pham Ngoc Hai.  Bug #89290
+

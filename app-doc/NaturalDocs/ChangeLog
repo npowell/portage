@@ -1,0 +1,74 @@
+# ChangeLog for app-doc/NaturalDocs
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-doc/NaturalDocs/ChangeLog,v 1.20 2008/03/12 10:10:00 phreak Exp $
+
+  12 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Josh Glover (jmglov, #206782) from metadata.xml.
+
+  19 Feb 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  NaturalDocs-1.35.ebuild:
+  ppc stable, bug #117377
+
+  17 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  NaturalDocs-1.35.ebuild:
+  quote variable
+
+  17 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  NaturalDocs-1.35.ebuild:
+  stable amd64, security bug 117377
+
+  16 Feb 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  NaturalDocs-1.35.ebuild:
+  re-add ~ppc for now, bug #117377
+
+  12 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  NaturalDocs-1.35.ebuild:
+  stable x86, security bug 117377
+
+  13 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add herd
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  19 Jan 2007; Charlie Shepherd <masterdriverz@gentoo.org>
+  NaturalDocs-1.22-r1.ebuild, NaturalDocs-1.35.ebuild:
+  QA: remove invalid RESTRICT="mirror"
+
+  19 Mar 2006; Mark Loeser <halcy0n@gentoo.org> NaturalDocs-1.22-r1.ebuild,
+  NaturalDocs-1.35.ebuild:
+  Add DEPEND on app-arch/unzip
+
+*NaturalDocs-1.35 (31 Jan 2006)
+
+  31 Jan 2006; Josh Glover <jmglov@gentoo.org> +NaturalDocs-1.35.ebuild:
+  Version bump; submitted by Josh Glover in bug #79212; also resolved issue
+  first reported in bug #117377 where many files are installed with 777 or 666
+  modes (yuck)
+
+  16 Dec 2005; Diego Pettenò <flameeyes@gentoo.org>
+  NaturalDocs-1.22-r1.ebuild:
+  Remove GNUish cp -a call. Bug #103487.
+
+  24 Apr 2005; Michael Hanselmann <hansmi@gentoo.org>
+  NaturalDocs-1.22-r1.ebuild:
+  Stable on ppc.
+
+  12 Nov 2004; Simon Stelling <blubb@gentoo.org> NaturalDocs-1.22-r1.ebuild:
+  stable on amd64
+
+  15 Jul 2004; Josh Glover <jmglov@gentoo.org> NaturalDocs-1.22-r1.ebuild:
+  marking stable on x86
+
+  29 Jun 2004; Aron Griffis <agriffis@gentoo.org> NaturalDocs-1.22-r1.ebuild:
+  update head/tail usage
+
+  13 Jun 2004; David Holm <dholm@gentoo.org> NaturalDocs-1.22-r1.ebuild:
+  Added to ~ppc.
+
+*NaturalDocs-1.22-r1 (12 Jun 2004)
+
+  12 Jun 2004; Josh Glover <jmglov@gentoo.org> NaturalDocs-1.22-r1.ebuild,
+  metadata.xml:
+  This package was submitted by Josh Glover in bug #47266
+

@@ -1,0 +1,106 @@
+# ChangeLog for games-sports/xmoto
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-sports/xmoto/ChangeLog,v 1.23 2008/03/19 23:25:58 genstef Exp $
+
+*xmoto-0.4.2 (19 Mar 2008)
+
+  19 Mar 2008; Stefan Schweizer <genstef@gentoo.org> -xmoto-0.4.1.ebuild,
+  +xmoto-0.4.2.ebuild:
+  version bump, fixes bug 213289 and 213871
+
+*xmoto-0.4.1 (11 Mar 2008)
+
+  11 Mar 2008; Stefan Schweizer <genstef@gentoo.org> +xmoto-0.4.1.ebuild:
+  version bump thanks to Tomáš Chvátal <tomas.chvatal@gmail.com> in bug 208008
+
+  29 Feb 2008; Carsten Lohrke <carlo@gentoo.org> xmoto-0.2.0.ebuild:
+  Remove icon extension from desktop entry to match Icon Theme Specification.
+
+*xmoto-0.3.4 (21 Oct 2007)
+
+  21 Oct 2007; Stefan Schweizer <genstef@gentoo.org> +xmoto-0.3.4.ebuild:
+  version bump
+
+*xmoto-0.3.3 (02 Sep 2007)
+
+  02 Sep 2007; Stefan Schweizer <genstef@gentoo.org> +xmoto-0.3.3.ebuild:
+  Version bump and enable zoom always, bug 188651
+
+*xmoto-0.3.2 (08 Aug 2007)
+
+  08 Aug 2007; Stefan Schweizer <genstef@gentoo.org> +xmoto-0.3.2.ebuild:
+  version bump thanks to Franz Fellner <fellner@gmx.de> in bug 187341
+
+*xmoto-0.3.1 (05 Jul 2007)
+
+  05 Jul 2007; Stefan Schweizer <genstef@gentoo.org> +xmoto-0.3.1.ebuild:
+  version bump thanks to Franz Fellner <fellner@gmx.de> in bug 184262
+
+  18 Jun 2007; Stefan Schweizer <genstef@gentoo.org> xmoto-0.3.0.ebuild:
+  Add missing sqlite-3 depend thanks to Marco Squarcina <lavish@gmail.com> and
+  Christian Limberg <barneyman@gmx.de> in bug 182446
+
+*xmoto-0.3.0 (17 Jun 2007)
+
+  17 Jun 2007; Stefan Schweizer <genstef@gentoo.org> +xmoto-0.3.0.ebuild:
+  version bump
+
+  23 Apr 2007; Tristan Heaven <nyhm@gentoo.org> xmoto-0.2.7.ebuild:
+  Fix collision with media-gfx/inkscape
+
+*xmoto-0.2.7 (20 Mar 2007)
+
+  20 Mar 2007; Stefan Schweizer <genstef@gentoo.org> +xmoto-0.2.7.ebuild:
+  version bump, bug 171559
+
+*xmoto-0.2.6 (06 Mar 2007)
+
+  06 Mar 2007; <genstef@gentoo.org> -xmoto-0.2.2-r1.ebuild,
+  +xmoto-0.2.6.ebuild:
+  Version bump thanks to Sebastien M <watersoul@gmail.com> in bug 169395
+
+*xmoto-0.2.4 (24 Dec 2006)
+
+  24 Dec 2006; Stefan Schweizer <genstef@gentoo.org> +xmoto-0.2.4.ebuild:
+  Version bump thanks to Franz Fellner <fellner@gmx.de> in bug 159016, works
+  now with -j2, bug 147725
+
+*xmoto-0.2.2-r1 (16 Dec 2006)
+
+  16 Dec 2006; Tristan Heaven <nyhm@gentoo.org> -xmoto-0.2.2.ebuild,
+  +xmoto-0.2.2-r1.ebuild:
+  Fix nls support and web access, bug #158089
+
+  13 Nov 2006; Luis Medinas <metalgod@gentoo.org> xmoto-0.2.0.ebuild:
+  Stable on amd64. Closes bug #153468.
+
+*xmoto-0.2.2 (02 Oct 2006)
+
+  02 Oct 2006; Stefan Schweizer <genstef@gentoo.org> -xmoto-0.2.1.ebuild,
+  +xmoto-0.2.2.ebuild:
+  version bump, parallel make problems still present, mailed upstream again
+
+  15 Sep 2006; Stefan Schweizer <genstef@gentoo.org> xmoto-0.2.1.ebuild:
+  workaround bug 147725, thanks Kyle Hunter <keletmaster@gmail.com>
+
+  15 Sep 2006; Stefan Schweizer <genstef@gentoo.org> +xmoto-0.2.1.ebuild:
+  version bump
+
+  02 Sep 2006; <nixnut@gentoo.org> xmoto-0.2.0.ebuild:
+  ~ppc added. bug 145827
+
+  15 Aug 2006; Stefan Schweizer <genstef@gentoo.org> +files/xmoto.xpm,
+  xmoto-0.2.0.ebuild:
+  Add desktop entry for xmoto-edit and icon thanks to SnowBear <dark@gd2d.net>
+  in bug 107968
+
+  13 Aug 2006; Michael Sterrett <mr_bones_@gentoo.org> metadata.xml,
+  xmoto-0.2.0.ebuild:
+  tidy ebuild; fixup metadata
+
+*xmoto-0.2.0 (13 Aug 2006)
+
+  13 Aug 2006; Stefan Schweizer <genstef@gentoo.org>
+  +files/xmoto-as-needed.patch, +metadata.xml, +xmoto-0.2.0.ebuild:
+  New ebuild thanks to many contributors in bug 107968
+

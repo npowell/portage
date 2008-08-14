@@ -1,0 +1,70 @@
+# ChangeLog for games-simulation/lincity-ng
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-simulation/lincity-ng/ChangeLog,v 1.14 2008/06/28 07:38:16 maekke Exp $
+
+  28 Jun 2008; Markus Meier <maekke@gentoo.org> lincity-ng-1.1.2.ebuild:
+  x86 stable, bug #229659
+
+  27 Jun 2008; Santiago M. Mola <coldwind@gentoo.org>
+  lincity-ng-1.1.2.ebuild:
+  amd64 stable wrt bug #229659
+
+  21 Nov 2007; Ryan Hill <dirtyepic@gentoo.org> lincity-ng-1.1.0.ebuild,
+  lincity-ng-1.1.1.ebuild:
+  Also allow building <1.1.2 with ftjam for bug #188194
+
+  20 Nov 2007; Ferris McCormick <fmccor@gentoo.org> lincity-ng-1.1.2.ebuild:
+  Add ~sparc and allow for ftjam as well as jam (builds and works with
+  ftjam)--- Bug #188194.
+
+*lincity-ng-1.1.2 (05 Nov 2007)
+
+  05 Nov 2007; Michael Sterrett <mr_bones_@gentoo.org>
+  +lincity-ng-1.1.2.ebuild:
+  version bump
+
+*lincity-ng-1.1.1 (19 Aug 2007)
+
+  19 Aug 2007; Michael Sterrett <mr_bones_@gentoo.org>
+  +lincity-ng-1.1.1.ebuild:
+  version bump
+
+*lincity-ng-1.1.0 (20 Feb 2007)
+
+  20 Feb 2007; Michael Sterrett <mr_bones_@gentoo.org>
+  +lincity-ng-1.1.0.ebuild:
+  version bump
+
+  07 Feb 2007; Tristan Heaven <nyhm@gentoo.org> lincity-ng-1.0.3.ebuild:
+  Use mirror://berlios
+
+  17 Apr 2006; Chris Gianelloni <wolf31o2@gentoo.org> ChangeLog:
+  Moved games_pkg_setup to beginning of pkg_setup.
+
+*lincity-ng-1.0.3 (15 Apr 2006)
+
+  15 Apr 2006; Michael Sterrett <mr_bones_@gentoo.org>
+  +lincity-ng-1.0.3.ebuild:
+  version bump
+
+*lincity-ng-1.0.2 (15 Nov 2005)
+
+  15 Nov 2005; Michael Sterrett <mr_bones_@gentoo.org>
+  +lincity-ng-1.0.2.ebuild:
+  version bump
+
+  26 Jul 2005; Simon Stelling <blubb@gentoo.org> lincity-ng-1.0.1.ebuild:
+  stable on amd64
+
+*lincity-ng-1.0.1 (20 Jul 2005)
+
+  20 Jul 2005; Michael Sterrett <mr_bones_@gentoo.org>
+  +lincity-ng-1.0.1.ebuild:
+  version bump (bug #99662)
+
+*lincity-ng-1.0 (23 Jun 2005)
+
+  23 Jun 2005; Michael Sterrett <mr_bones_@gentoo.org> +metadata.xml,
+  +lincity-ng-1.0.ebuild:
+  initial commit - ebuild submitted by Anno v. Heimburg via bug #94809
+

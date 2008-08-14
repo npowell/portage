@@ -1,0 +1,21 @@
+#!/sbin/runscript
+# Copyright 1999-2004 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/net-mail/up-imapproxy/files/imapproxy.rc6,v 1.2 2004/07/14 23:52:37 agriffis Exp $
+
+depend() {
+	use logger
+	need net
+}
+
+start() {
+	ebegin "Starting imapproxy"
+	start-stop-daemon --start --quiet --exec /usr/sbin/imapproxyd
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping imapproxy"
+	start-stop-daemon --stop --quiet --exec /usr/sbin/imapproxyd
+	eend $?
+}

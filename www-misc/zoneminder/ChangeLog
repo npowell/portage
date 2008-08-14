@@ -1,0 +1,140 @@
+# ChangeLog for www-misc/zoneminder
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-misc/zoneminder/ChangeLog,v 1.27 2008/06/29 15:57:17 loki_val Exp $
+
+  29 Jun 2008; Peter Alfredsen <loki_val@gentoo.org>
+  -files/1.23.1/zm_mpeg_ofc.patch, zoneminder-1.23.3.ebuild:
+  Fix compatibility with ffmpeg-0.4.9_p20080326 with judicious sedding. Drop
+  patch which caused build error against 0.4.9_p20080326. Raise deps to
+  >=ffmpeg-0.4.9_p20080326. Fixes bug #228731.
+
+  17 May 2008; wrobel@gentoo.org -files/postinstall-2.txt,
+  -files/Makefile.am.patch, -files/ffmpeg.patch, -files/postupgrade.txt,
+  -files/zm_create.sql.in.diff, -zoneminder-1.22.3.ebuild,
+  -zoneminder-1.23.1.ebuild, zoneminder-1.23.3.ebuild:
+  Cleaned the problematic zoneminder ebuilds and fixed bug #222079.
+
+*zoneminder-1.23.3 (06 May 2008)
+
+  06 May 2008; wrobel@gentoo.org +files/10_zoneminder.conf,
+  +zoneminder-1.23.3.ebuild:
+  Adding zoneminder-1.23.3 to the tree (sec issue #219694, bugs #212150 and
+  #216678)
+
+*zoneminder-1.23.1 (23 Feb 2008)
+
+  23 Feb 2008; Benedikt Böhm <hollow@gentoo.org>
+  +files/1.23.1/Makefile.am.patch, +files/1.23.1/zm_create.sql.in.patch,
+  +files/1.23.1/zm_mpeg_ofc.patch, +files/1.23.1/zm_remote_camera.patch,
+  metadata.xml, +zoneminder-1.23.1.ebuild:
+  version bump #204297, fixes #197621
+
+  23 Feb 2008; Benedikt Böhm <hollow@gentoo.org> zoneminder-1.22.3.ebuild:
+  ebuild cleanup wrt #208584, also fixes #207481
+
+  26 May 2007; Renat Lumpau <rl03@gentoo.org> +files/ffmpeg.patch,
+  zoneminder-1.22.3.ebuild:
+  Fix bugs #175261, #174616.
+
+  19 Apr 2007; Christian Faulhammer <opfer@gentoo.org>
+  zoneminder-1.22.3.ebuild:
+  keyworded ~amd64, bug 168375
+
+*zoneminder-1.22.3 (11 Dec 2006)
+
+  11 Dec 2006; Renat Lumpau <rl03@gentoo.org> +files/zm_create.sql.in.diff,
+  -zoneminder-1.22.2.ebuild, +zoneminder-1.22.3.ebuild:
+  Version bump. Fix bug #155077, bug #157676.
+
+  23 Nov 2006; Francesco Riosa <vivo@gentoo.org> zoneminder-1.22.2.ebuild:
+  dev-db/mysql => virtual/mysql
+
+  21 Nov 2006; Renat Lumpau <rl03@gentoo.org> files/postinstall-2.txt,
+  files/init.d, -files/postinstall.txt, -files/zmconfig-gentoo.txt,
+  -zoneminder-1.21.4.ebuild:
+  Housekeeping
+
+  01 Nov 2006; Renat Lumpau <rl03@gentoo.org> files/postinstall-2.txt:
+  Fix postinstall instructions, bug #153585.
+
+  03 Aug 2006; Renat Lumpau <rl03@gentoo.org> zoneminder-1.22.2.ebuild:
+  emake install needs -j1. bug #142662.
+
+*zoneminder-1.22.2 (01 Jul 2006)
+
+  01 Jul 2006; Renat Lumpau <rl03@gentoo.org> files/postinstall-2.txt,
+  files/postupgrade.txt, -zoneminder-1.22.0.ebuild,
+  +zoneminder-1.22.2.ebuild:
+  Version bump
+
+  08 Feb 2006; Renat Lumpau <rl03@gentoo.org> files/postinstall-2.txt:
+  Mention which database to use
+
+  08 Feb 2006; Renat Lumpau <rl03@gentoo.org> zoneminder-1.22.0.ebuild:
+  Show the right postinstall instructions
+
+*zoneminder-1.22.0 (06 Feb 2006)
+
+  06 Feb 2006; Renat Lumpau <rl03@gentoo.org> +files/postinstall-2.txt,
+  +files/Makefile.am.patch, +files/conf.d, +files/init.d,
+  +files/postupgrade.txt, +zoneminder-1.22.0.ebuild:
+  Version bump
+
+  06 Feb 2006; Renat Lumpau <rl03@gentoo.org> -zoneminder-0.9.12.ebuild,
+  -zoneminder-1.21.2.ebuild, -zoneminder-1.21.3.ebuild:
+  Housekeeping
+
+  06 Feb 2006; Renat Lumpau <rl03@gentoo.org> zoneminder-1.21.4.ebuild:
+  Fixed #121752.
+
+*zoneminder-1.21.4 (05 Jan 2006)
+
+  05 Jan 2006; Renat Lumpau <rl03@gentoo.org> files/postinstall.txt,
+  +zoneminder-1.21.4.ebuild:
+  Version bump (bug #117944), fixes for bug #106913.
+
+  12 Dec 2005; Carsten Lohrke <carlo@gentoo.org> +metadata.xml:
+  now maintained by the webapp herd, as arranged with rl03
+
+*zoneminder-1.21.3 (08 Aug 2005)
+
+  08 Aug 2005; Renat Lumpau <rl03@gentoo.org> +zoneminder-1.21.3.ebuild:
+  Added 1.21.3
+
+*zoneminder-1.21.2 (07 Jul 2005)
+
+  07 Jul 2005; Renat Lumpau <rl03@gentoo.org> +files/postinstall.txt,
+  +files/zmconfig-gentoo.txt, +zoneminder-1.21.2.ebuild:
+  Version bump. Create log dirs (wrt #72002).
+
+  06 May 2005; Sven Wegener <swegener@gentoo.org> zoneminder-0.9.12.ebuild:
+  Removed * postfix from <, <=, >= and > dependencies.
+
+  22 Nov 2004; Daniel Black <dragonheart@gentoo.org> zoneminder-0.9.12.ebuild:
+  added dev-perl/DBD-mysql RDEPEND as per bug #72003. Thanks Jakub Sadowski
+  <JakubSadowski@Yahoo.com> for the bug report
+
+  05 Sep 2004; Sven Wegener <swegener@gentoo.org> :
+  Fixed ChangeLog header.
+
+  31 Aug 2004; David Holm <dholm@gentoo.org> zoneminder-0.9.12.ebuild:
+  Added to ~ppc.
+
+*zoneminder-0.9.12 (15 Aug 2004)
+
+  15 Aug 2004; Stuart Herbert <stuart@gentoo.org> +zoneminder-0.9.12.ebuild:
+  Moved from net-www/zoneminder to www-misc/zoneminder.
+
+  27 Apr 2004; Aron Griffis <agriffis@gentoo.org> zoneminder-0.9.12.ebuild:
+  Add inherit eutils
+
+*zoneminder-0.9.12 (20 Jun 2003)
+
+  20 Jun 2003; mkeadle <mkeadle@gentoo.org> zoneminder-0.9.12.ebuild:
+  initial import. very impressive program. much thanks go to MAL
+  <mal@komcept.com> for putting this all together very well in bug #22665. MALs
+  ebuild used its own internal vars to track where to install the web content. I
+  switched this over to the datadir format used by the apache ebuilds. This lets
+  zoneminder install to the same location apache was installed to without user
+  interaction, but still leaves the door open for customization.
+

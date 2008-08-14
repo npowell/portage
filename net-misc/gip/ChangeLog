@@ -1,0 +1,65 @@
+# ChangeLog for net-misc/gip
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/gip/ChangeLog,v 1.16 2008/07/22 04:03:09 darkside Exp $
+
+  20 Jul 2008; Jeremy Olexa <darkside@gentoo.org>
+  +files/gip-1.6.1.1-libsigcpp.patch, gip-1.6.1.1.ebuild:
+  Add patch to fix compilation error due to API change with libsigc++. Thanks
+  to Vladimir for submitting patch in bug #231298
+
+  17 Mar 2008; Santiago M. Mola <coldwind@gentoo.org> gip-1.6.1.1.ebuild:
+  amd64 stable and pkgconfig dep added (bug #205439).
+
+  12 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Josh Glover (jmglov, #206782) from metadata.xml.
+
+  29 Feb 2008; Carsten Lohrke <carlo@gentoo.org> ChangeLog:
+  Remove icon extension from desktop entry to match Icon Theme Specification.
+
+  12 Aug 2007; <malc@gentoo.org> gip-1.6.1.1.ebuild:
+  Fixup broken sed-fu in src_compile preventing code being built with correct
+  path to icons, add ~amd64 per bug #187968
+
+  05 Aug 2007; Josh Glover <jmglov@gentoo.org> gip-1.6.1.1.ebuild:
+  Been in Portage forever with no outstanding bugs; marking stable on x86
+
+  14 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+*gip-1.6.1.1 (23 Jan 2007)
+
+  23 Jan 2007; Charlie Shepherd <masterdriverz@gentoo.org>
+  -gip-1.0.0.1.ebuild, -gip-1.1.0.1.ebuild, -gip-1.2.0.1.ebuild,
+  -gip-1.6.0.1.ebuild, +gip-1.6.1.1.ebuild:
+  Bump to version 1.6.1.1; thanks to Alessio D'Ascanio; bug 110214
+
+  05 Aug 2006; Chris White <chriswhite@gentoo.org> metadata.xml:
+  metadata.xml translation by Yoshino-san in bug #135159
+
+*gip-1.6.0.1 (03 Sep 2005)
+
+  03 Sep 2005; Marcelo Goes <vanquirius@gentoo.org> gip-1.0.0.1.ebuild,
+  gip-1.1.0.1.ebuild, gip-1.2.0.1.ebuild, +gip-1.6.0.1.ebuild:
+  Update HOMEPAGE, use versionator eclass and other misc fixes. Version bump.
+  Also fix dependencies for bug 80540. Thanks to Yaakov S
+  <yselkowitz@hotmail.com>.
+
+*gip-1.2.0.1 (20 Jul 2004)
+
+  20 Jul 2004; Josh Glover <jmglov@gentoo.org> gip-1.2.0.1.ebuild:
+  Version bump
+
+*gip-1.1.0.1 (08 Jul 2004)
+
+  08 Jul 2004; Josh Glover <jmglov@gentoo.org> gip-1.1.0.1.ebuild:
+  Version bump; submitted by Josh Glover in bug #55055
+
+  26 Jun 2004; Josh Glover <jmglov@gentoo.org> gip-1.0.0.1.ebuild:
+  Incorporates fix to Bug #55186 submitted solar@gentoo.org
+
+*gip-1.0.0.1 (24 Jun 2004)
+
+  24 Jun 2004; Josh Glover <jmglov@gentoo.org> gip-1.0.0.1.ebuild,
+  metadata.xml:
+  This package was submitted by Josh Glover in bug #55055
+

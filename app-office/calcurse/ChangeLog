@@ -1,0 +1,29 @@
+# ChangeLog for app-office/calcurse
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-office/calcurse/ChangeLog,v 1.5 2008/05/17 15:45:31 cedk Exp $
+
+*calcurse-2.1 (17 May 2008)
+
+  17 May 2008; Cédric Krier <cedk@gentoo.org> -calcurse-1.7.ebuild,
+  -calcurse-1.8.ebuild, -calcurse-2.0.ebuild, +calcurse-2.1.ebuild:
+  Version bump
+
+*calcurse-2.0 (08 Mar 2008)
+
+  08 Mar 2008; Cédric Krier <cedk@gentoo.org> +calcurse-2.0.ebuild:
+  Version bump
+
+  22 Sep 2007; Wulf C. Krueger <philantrop@gentoo.org> calcurse-1.8.ebuild:
+  Keyworded ~amd64 as per bug 189034.
+
+*calcurse-1.8 (29 May 2007)
+
+  29 May 2007; Cédric Krier <cedk@gentoo.org> +calcurse-1.8.ebuild:
+  Version bump
+
+*calcurse-1.7 (01 May 2007)
+
+  01 May 2007; Cedric Krier <cedk@gentoo.org> +metadata.xml,
+  +calcurse-1.7.ebuild:
+  New ebuild for bug #111327, thanks to Tomoyuki Sakurai
+

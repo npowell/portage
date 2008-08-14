@@ -1,0 +1,81 @@
+# ChangeLog for games-strategy/widelands
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-strategy/widelands/ChangeLog,v 1.15 2008/04/13 10:18:33 genstef Exp $
+
+  13 Apr 2008; Stefan Schweizer <genstef@gentoo.org>
+  widelands-0.0.12.ebuild:
+  add missing boost dependancy, bug 216586
+
+*widelands-0.0.12 (05 Apr 2008)
+
+  05 Apr 2008; Stefan Schweizer <genstef@gentoo.org>
+  +widelands-0.0.12.ebuild:
+  version bump
+
+  22 Jan 2008; Tristan Heaven <nyhm@gentoo.org> widelands-0.0.11.ebuild:
+  Add libpng dep, bug #206432
+
+*widelands-0.0.11 (14 Sep 2007)
+
+  14 Sep 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/widelands-0.0.11-build.patch, +widelands-0.0.11.ebuild:
+  Version bump by Juan Aguado, bug #192244
+
+*widelands-0.0.10 (21 Mar 2007)
+
+  21 Mar 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/widelands-0.0.10-build.patch, +widelands-0.0.10.ebuild:
+  Version bump
+
+*widelands-0.0.9.5-r1 (21 Mar 2006)
+
+  21 Mar 2006; Markus Ullmann <jokey@gentoo.org>
+  +widelands-0.0.9.5-r1.ebuild:
+  Added locale support wrt bug #126874
+
+  26 Feb 2006; Mark Loeser <halcy0n@gentoo.org>
+  +files/widelands-0.0.9.5-gcc41.patch, widelands-0.0.9.5.ebuild:
+  Add patch to fix compilation with gcc-4.1 by Konrad Campowsky <frollen AT cs
+  DOT tu-berlin DOT de>; bug #120082
+
+  13 Jan 2006; Stefan Schweizer <genstef@gentoo.org>
+  +files/widelands-makefile.patch, widelands-0.0.9.5.ebuild:
+  Use user-CFLAGS thanks to Christopher Covington <covracer@gmail.com> in bug
+  118358
+
+  09 Jan 2006; Stefan Schweizer <genstef@gentoo.org>
+  widelands-0.0.9.5.ebuild:
+  Fix depends, add sdl-mixer, remove jpeg, thanks to Jonas Bergler
+  <jbergler@gmail.com> in bug 118381
+
+*widelands-0.0.9.5 (07 Jan 2006)
+
+  07 Jan 2006; Stefan Schweizer <genstef@gentoo.org>
+  +widelands-0.0.9.5.ebuild:
+  Version bump thanks to Alexander Jenisch <nt-@gmx.de>, Anton Romanov
+  <theli@ukr.net>, Ben Hodgetts <ben@atomnet.co.uk> and Mr. Bones.
+  <mr_bones_@gentoo.org> in bug 114653, also add desktop entry with icon
+
+  29 Oct 2005; Luca Barbato <lu_zero@gentoo.org> widelands-0.0.9.ebuild:
+  fixed ppc osdep, still broken on gcc4
+
+  15 Jun 2005; Chris Gianelloni <wolf31o2@gentoo.org>
+  widelands-0.0.9.ebuild:
+  Removed COPYING file.
+
+  05 May 2005; Michael Sterrett <mr_bones_@gentoo.org>
+  widelands-0.0.9.ebuild:
+  tidy ebuild
+
+  05 May 2005; Chris Gianelloni <wolf31o2@gentoo.org> :
+  Added Manifest (bad wolfie) and closing bug #91537.
+
+*widelands-0.0.9 (05 May 2005)
+
+  05 May 2005; Chris Gianelloni <wolf31o2@gentoo.org>
+  +files/widelands-0.0.9-amd64.patch, +metadata.xml,
+  +widelands-0.0.9.ebuild:
+  Initial import. Original ebuild by Elias Kunnas <elias_kunnas@welho.com>.
+  Ebuild modified by Christoph Brill <egore@gmx.de> and by myself. Original
+  amd64 patch idea by Peter Roozemaal <mathfox@xs4all.nl>. Closing bug #59674.
+

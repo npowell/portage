@@ -1,0 +1,22 @@
+# ChangeLog for net-misc/liveice
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/liveice/ChangeLog,v 1.8 2007/05/14 19:45:44 bangert Exp $
+
+  14 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  01 Jul 2004; Jon Hood <squinky86@gentoo.org> liveice-2000530.ebuild:
+  change virtual/glibc to virtual/libc, add IUSE
+
+  23 Feb 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  liveice-2000530.ebuild:
+  Updated mpg123 to virtual/mpg123
+
+*liveice-2000530 (30 Oct 2002)
+
+  30 Oct 2002; Daniel Ahlberg <aliz@gentoo.org> :
+  Initial import. Ebuild submitted by Hannes Mehnert <hannes@gentoo.org> 
+  in #5920.

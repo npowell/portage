@@ -1,0 +1,89 @@
+# ChangeLog for net-mail/dot-forward
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-mail/dot-forward/ChangeLog,v 1.25 2008/04/06 17:08:19 hollow Exp $
+
+*dot-forward-0.71-r3 (06 Apr 2008)
+
+  06 Apr 2008; Benedikt Böhm <hollow@gentoo.org>
+  +dot-forward-0.71-r3.ebuild:
+  use new qmail.eclass; ebuild cleanup
+
+  21 Oct 2006; Michael Hanselmann <hansmi@gentoo.org>
+  dot-forward-0.71-r2.ebuild:
+  Stable on ppc64.
+
+  30 Aug 2006; Markus Rothe <corsair@gentoo.org> dot-forward-0.71-r2.ebuild:
+  Added ~ppc64
+
+  01 Mar 2006; Michael Hanselmann <hansmi@gentoo.org>
+  -dot-forward-0.71-r1.ebuild, dot-forward-0.71-r2.ebuild:
+  Removed old version, marked stable on amd64, create qmail group.
+
+  18 Oct 2005; Aron Griffis <agriffis@gentoo.org>
+  dot-forward-0.71-r2.ebuild:
+  Mark 0.71-r2 stable on alpha
+
+  17 Oct 2005; Aron Griffis <agriffis@gentoo.org>
+  dot-forward-0.71-r2.ebuild:
+  Mark 0.71-r2 stable on ia64
+
+  15 Oct 2005; Michael Hanselmann <hansmi@gentoo.org>
+  dot-forward-0.71-r2.ebuild:
+  Stable on hppa, mips, ppc, sparc, x86.
+
+*dot-forward-0.71-r2 (20 Sep 2005)
+
+  20 Sep 2005; Michael Hanselmann <hansmi@gentoo.org>
+  +dot-forward-0.71-r2.ebuild:
+  Fixed bug 105750.
+
+  06 Aug 2005; Michael Hanselmann <hansmi@gentoo.org>
+  dot-forward-0.71-r1.ebuild:
+  Disabled maketest, see bug 97850.
+
+  04 Jul 2005; Andrej Kacian <ticho@gentoo.org> metadata.xml:
+  Changed herd to qmail in metadata.
+
+  30 May 2005; Sven Wegener <swegener@gentoo.org>
+  dot-forward-0.71-r1.ebuild:
+  Moved from gcc.eclass to toolchain-funcs.eclass, bug #92745.
+
+  01 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  dot-forward-0.71-r1.ebuild:
+  virtual/glibc -> virtual/libc
+
+  10 Apr 2004; Joshua Kinard <kumba@gentoo.org> dot-forward-0.71-r1.ebuild:
+  Marked stable on mips.
+
+  25 Mar 2004; Joshua Kinard <kumba@gentoo.org> dot-forward-0.71-r1.ebuild:
+  Added ~mips to KEYWORDS.
+
+  08 Mar 2004; Jon Portnoy <avenj@gentoo.org> dot-forward-0.71-r1.ebuild :
+  Stable on AMD64.
+
+  18 Feb 2004; Aron Griffis <agriffis@gentoo.org> dot-forward-0.71-r1.ebuild:
+  stable on ia64
+
+  28 Jan 2004; Jon Portnoy <avenj@gentoo.org> dot-forward-0.71-r1.ebuild :
+  AMD64 keywords.
+
+*dot-forward-0.71-r1 (05 Mar 2003)
+
+  03 Sep 2003; Mike Frysinger <vapier@gentoo.org> :
+  Add head -1 patch.
+
+  16 Mar 2003; Will Woods <wwoods@gentoo.org> dot-forward-0.71-r1.ebuild:
+  Added alpha to KEYWORDS
+
+  05 Mar 2003; Mike Frysinger <vapier@gentoo.org> :
+  Version bumped to fix glibc/errno issue #16798 (#16267).
+
+*dot-forward-0.71 (1 Feb 2002)
+
+  1 Feb 2002; G.Bevin <gbevin@gentoo.org> ChangeLog :
+  
+  Added initial ChangeLog which should be updated whenever the package is
+  updated in any way. This changelog is targetted to users. This means that the
+  comments should well explained and written in clean English. The details about
+  writing correct changelogs are explained in the skel.ChangeLog file which you
+  can find in the root directory of the portage repository.

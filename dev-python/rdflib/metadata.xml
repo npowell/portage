@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>python</herd>
+	<use>
+		<flag name='redland'>enable support for Redland triplestore</flag>
+		<flag name='zodb'>enable support for Zope Object Database triplestore</flag>
+	</use>
+</pkgmetadata>

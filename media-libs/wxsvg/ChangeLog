@@ -1,0 +1,32 @@
+# ChangeLog for media-libs/wxsvg
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/wxsvg/ChangeLog,v 1.8 2008/05/19 07:04:35 drac Exp $
+
+  19 May 2008; Samuli Suominen <drac@gentoo.org> wxsvg-1.0_beta7.ebuild:
+  Move pkgconfig to DEPEND.
+
+  28 Jan 2008; Raúl Porcel <armin76@gentoo.org> metadata.xml:
+  Replace wxwindows with wxwidgets in metadata
+
+  17 Jun 2007; Raúl Porcel <armin76@gentoo.org> wxsvg-1.0_beta7.ebuild:
+  x86 stable wrt #181365
+
+  08 Jun 2007; Matti Bickel <mabi@gentoo.org> wxsvg-1.0_beta7.ebuild:
+  ~ppc added (bug #177363)
+
+  19 May 2007; Peter Weller <welp@gentoo.org> wxsvg-1.0_beta7.ebuild:
+  Keyworded ~amd64 wrt bug 177363
+
+  23 Apr 2007; Ryan Hill <dirtyepic@gentoo.org> wxsvg-1.0_beta7.ebuild:
+  Bump freetype dependency.
+
+  23 Apr 2007; Ryan Hill <dirtyepic@gentoo.org>
+  +files/wxsvg-1.0_beta7-freetype.patch, wxsvg-1.0_beta7.ebuild:
+  Add patch to allow building with later freetype versions.  Bug #175640.
+
+*wxsvg-1.0_beta7 (28 Jan 2007)
+
+  28 Jan 2007; Ryan Hill <dirtyepic@gentoo.org> +metadata.xml,
+  +wxsvg-1.0_beta7.ebuild:
+  Initial import.  Thanks to everyone on bug #112887.
+

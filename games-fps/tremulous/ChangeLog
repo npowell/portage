@@ -1,0 +1,37 @@
+# ChangeLog for games-fps/tremulous
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-fps/tremulous/ChangeLog,v 1.7 2008/02/29 19:22:46 carlo Exp $
+
+  29 Feb 2008; Carsten Lohrke <carlo@gentoo.org> tremulous-1.1.0.ebuild,
+  tremulous-1.1.0-r1.ebuild:
+  Remove icon extension from desktop entry to match Icon Theme Specification.
+
+  13 Jun 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/tremulous-1.1.0-gcc42.patch, tremulous-1.1.0-r1.ebuild:
+  Patch for gcc-4.2
+
+*tremulous-1.1.0-r1 (18 May 2007)
+
+  18 May 2007; Tupone Alfredo <tupone@gentoo.org>
+  +tremulous-1.1.0-r1.ebuild:
+  Fix uncorrect detection of cross-compiling. Bug #154745 by Kyle Hunter
+
+  05 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  tremulous-1.1.0.ebuild:
+  Removing old virtual/x11 dependency.
+
+  10 Nov 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  tremulous-1.1.0.ebuild:
+  Stable on amd64/ppc/x86.
+
+  25 Oct 2006; Michael Hanselmann <hansmi@gentoo.org>
+  tremulous-1.1.0.ebuild:
+  Added to ~ppc.
+
+*tremulous-1.1.0 (06 Sep 2006)
+
+  06 Sep 2006; Chris Gianelloni <wolf31o2@gentoo.org> +metadata.xml,
+  +tremulous-1.1.0.ebuild:
+  Initial import. Original ebuild by Paul Bredbury <brebs@sent.com>. Edited by
+  Tristan Heaven <tristanheaven@gmail.com>. Closing bug #128370.
+

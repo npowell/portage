@@ -1,0 +1,20 @@
+# ChangeLog for net-misc/netkit-rwall
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/netkit-rwall/ChangeLog,v 1.4 2008/04/21 18:01:20 phreak Exp $
+
+  21 Apr 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Fix up metadata.xml. If there's no maintainer for the package, the metadata
+  also needs to contain m-needed@g.o.
+
+  11 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  fix herd
+
+  24 Oct 2004; Wout Mertens <wmertens@gentoo.org> netkit-rwall-0.17.ebuild:
+  Changed keywords to be only ~x86. Removed my fancy sed use (-i is not
+  supported on all sed versions). No revision bump since it does not impact
+  the program itself.
+
+*netkit-rwall-0.17 (23 Oct 2004)
+
+  23 Oct 2004; Wout Mertens <wmertens@gentoo.org> netkit-rwall-0.17.ebuild:
+  Initial import. Ebuild submitted by I.Radusch <ilja@radusch.com>.

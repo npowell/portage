@@ -1,0 +1,60 @@
+# ChangeLog for dev-perl/net-sftp
+# Copyright 2000-2006 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/net-sftp/ChangeLog,v 1.14 2006/10/20 17:51:13 mcummings Exp $
+
+  20 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  -net-sftp-0.08.ebuild, -net-sftp-0.09.ebuild, net-sftp-0.10.ebuild:
+  Cleaning up ebuilds
+
+  01 Sep 2006; Michael Cummings <mcummings@gentoo.org> net-sftp-0.10.ebuild:
+  Keywording ~amd64
+
+  06 Aug 2006; Michael Cummings <mcummings@gentoo.org> net-sftp-0.08.ebuild,
+  net-sftp-0.09.ebuild, net-sftp-0.10.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  05 Jul 2006; Christian Hartmann <ian@gentoo.org> net-sftp-0.08.ebuild,
+  net-sftp-0.09.ebuild, net-sftp-0.10.ebuild:
+  Fixed RDEPEND wrt bug #134781
+
+  12 Jun 2006; Michael Cummings <mcummings@gentoo.org> net-sftp-0.08.ebuild,
+  net-sftp-0.09.ebuild, net-sftp-0.10.ebuild:
+  Marking sparc stable
+
+  31 Mar 2006; <mcummings@gentoo.org> net-sftp-0.08.ebuild,
+  net-sftp-0.09.ebuild, net-sftp-0.10.ebuild:
+  bug 126378, homepage no longer valid
+
+  31 Jan 2006; Aron Griffis <agriffis@gentoo.org> net-sftp-0.10.ebuild:
+  Mark 0.10 stable on alpha
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org> net-sftp-0.10.ebuild:
+  Marking x86 stable
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org> net-sftp-0.10.ebuild:
+  Marking sparc x86 stable
+
+*net-sftp-0.10 (19 Nov 2005)
+
+  19 Nov 2005; <mcumming@gentoo.org> +net-sftp-0.10.ebuild:
+  Version bump
+
+  10 Sep 2005; Aron Griffis <agriffis@gentoo.org> net-sftp-0.08.ebuild:
+  Mark 0.08 stable on alpha
+
+*net-sftp-0.09 (29 Apr 2005)
+
+  29 Apr 2005; Michael Cummings <mcummings@gentoo.org>
+  -net-sftp-0.05.ebuild, net-sftp-0.08.ebuild, +net-sftp-0.09.ebuild:
+  Cleaning for mirror
+
+*net-sftp-0.08 (29 Mar 2004)
+
+  29 Mar 2004; Michael Cummings <mcummings@gentoo.org> net-sftp-0.08.ebuild:
+  new version; bumped as a dep of bricolage
+
+*net-sftp-0.05 (23 Jun 2003)
+
+  23 Jun 2003; Michael Cummings <mcummings@gentoo.org> net-sftp-0.05.ebuild:
+  net-sftp is a dep for bricolage, a new ebuild from bugzie
+

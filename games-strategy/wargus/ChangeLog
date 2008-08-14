@@ -1,0 +1,50 @@
+# ChangeLog for games-strategy/wargus
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-strategy/wargus/ChangeLog,v 1.9 2007/04/20 16:21:03 nyhm Exp $
+
+  20 Apr 2007; Tristan Heaven <nyhm@gentoo.org> wargus-2.2.4.ebuild:
+  Fix install script, bug #174937
+
+*wargus-2.2.4 (10 Apr 2007)
+
+  10 Apr 2007; Tristan Heaven <nyhm@gentoo.org> -wargus-2.2.3.ebuild,
+  +wargus-2.2.4.ebuild:
+  Version bump
+
+*wargus-2.2.3 (05 Mar 2007)
+
+  05 Mar 2007; Michael Sterrett <mr_bones_@gentoo.org> +wargus-2.2.3.ebuild:
+  version bump
+
+  20 Feb 2007; Simon Stelling <blubb@gentoo.org> wargus-2.1-r1.ebuild:
+  keyword ~amd64; bug 164914
+
+  24 Oct 2006; Chris Gianelloni <wolf31o2@gentoo.org> wargus-2.1-r1.ebuild:
+  Moved cdrom_get_cds to src_unpack since binary packages don't require the
+  original media to install.
+
+  17 Apr 2006; Chris Gianelloni <wolf31o2@gentoo.org> wargus-2.1-r1.ebuild:
+  Moved games_pkg_setup to beginning of pkg_setup.
+
+  08 Jan 2006; Stefan Schweizer <genstef@gentoo.org>
+  -files/wargus-2.1-ai.patch, wargus-2.1-r1.ebuild:
+  Move the ai-patch to the mirrors because it has a cvs Id tag and thus breaks
+  in gentoo cvs, thanks to Anton Romanov <theli@ukr.net> in bug 118221
+
+*wargus-2.1-r1 (06 Jan 2006)
+
+  06 Jan 2006; Stefan Schweizer <genstef@gentoo.org> +wargus-2.1-r1.ebuild:
+  Add desktop link and icon derived from wargus.sourceforge.net/images/wargus.png
+
+*wargus-2.1 (06 Jan 2006)
+
+  06 Jan 2006; Stefan Schweizer <genstef@gentoo.org>
+  +files/wargus-2.1-ai.patch, +files/wargus-2.1-aitransporter.patch,
+  +files/wargus-2.1-humanbasespell.patch, +metadata.xml, +wargus-2.1.ebuild:
+  New ebuild thanks to Martti Rannanjärvi <mrannanj@iki.fi>, Russell Smith
+  <mr-russ@pws.com.au>, Giacomo Perale <ghepeu@virgilio.it>, Jacob Gemmell
+  <dante333@gci.net>, Mr. Bones. <mr_bones_@gentoo.org>, Hinrik Örn Sigurðsson
+  <flanders@simnet.is>, Chris Gianelloni <wolf31o2@gentoo.org>, Wescott
+  <wescott2003@hotmail.com> and Florian Manschwetus
+  <FlorianManschwetus@gmx.de>
+

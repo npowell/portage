@@ -1,0 +1,119 @@
+# ChangeLog for x11-wm/compiz
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-wm/compiz/ChangeLog,v 1.26 2008/07/25 14:03:52 carlo Exp $
+
+  25 Jul 2008; Carsten Lohrke <carlo@gentoo.org> compiz-0.6.2-r1.ebuild:
+  Wrong split/monolithic dependency order, missing slot dependency.
+
+  05 Jun 2008; Rémi Cardona <remi@gentoo.org> compiz-0.5.0.ebuild,
+  compiz-0.5.2.ebuild, compiz-0.6.2.ebuild, compiz-0.6.2-r1.ebuild:
+  pkgmove to gnome-base/gnome-control-center
+
+  27 Feb 2008; Doug Klima <cardoe@gentoo.org> compiz-0.6.2-r1.ebuild:
+  fix quoting and add dbus-glib to depend. bug #202436
+
+  26 Nov 2007; Markus Rothe <corsair@gentoo.org> compiz-0.6.2-r1.ebuild:
+  Added ~ppc64
+
+*compiz-0.6.2-r1 (06 Nov 2007)
+
+  06 Nov 2007; Hanno Boeck <hanno@gentoo.org>
+  +files/compiz-0.6.2-CVE-2007-3920.patch, +compiz-0.6.2-r1.ebuild:
+  Security fix for CVE-2007-3920.
+
+  31 Oct 2007; Hanno Boeck <hanno@gentoo.org> compiz-0.6.2.ebuild:
+  Lower libwnck-dep again.
+
+*compiz-0.6.2 (18 Oct 2007)
+
+  18 Oct 2007; Hanno Boeck <hanno@gentoo.org> +compiz-0.6.2.ebuild:
+  Version bump.
+
+  19 Aug 2007; Hanno Boeck <hanno@gentoo.org> compiz-0.5.2.ebuild:
+  Switch kde-dependencies, so kdebase is preferred before kwin.
+
+  17 Aug 2007; Hanno Boeck <hanno@gentoo.org> compiz-0.5.2.ebuild:
+  Add libwnck-dep.
+
+*compiz-0.5.2 (13 Aug 2007)
+
+  13 Aug 2007; Hanno Boeck <hanno@gentoo.org> +compiz-0.5.2.ebuild:
+  Version bump.
+
+  03 May 2007; Hanno Boeck <hanno@gentoo.org> files/compiz-start,
+  compiz-0.5.0.ebuild:
+  Fix some minor issues (gconf schema installation, more deps).
+
+*compiz-0.5.0 (24 Apr 2007)
+
+  24 Apr 2007; Hanno Boeck <hanno@gentoo.org> +compiz-0.5.0.ebuild:
+  Version bump.
+
+  10 Mar 2007; Hanno Boeck <hanno@gentoo.org> files/compiz-start:
+  Fix typo.
+
+  28 Jan 2007; Hanno Boeck <hanno@gentoo.org> compiz-0.3.6.ebuild:
+  Fix dep issues, dbus is always required if kde-decorator is built.
+
+  20 Jan 2007; Hanno Boeck <hanno@gentoo.org> compiz-0.3.6.ebuild:
+  Fix a bunch of smaller issues, mostly depend-related, don't install
+  old/broken compiz-aiglx/xgl/nvidia-scripts any more, please use and test
+  compiz-start instead.
+
+*compiz-0.3.6 (06 Jan 2007)
+
+  06 Jan 2007; Hanno Boeck <hanno@gentoo.org> +files/0.3.6/compiz-start,
+  +compiz-0.3.6.ebuild:
+  Version bump, now with kde-decorator.
+
+  29 Nov 2006; Hanno Boeck <hanno@gentoo.org> +files/compiz-start,
+  compiz-0.3.4.ebuild:
+  Add generic compiz start script.
+
+  26 Nov 2006; Hanno Boeck <hanno@gentoo.org> compiz-0.3.4.ebuild:
+  Add dependency to libXinerama.
+
+*compiz-0.3.4 (22 Nov 2006)
+
+  22 Nov 2006; Hanno Boeck <hanno@gentoo.org> +compiz-0.3.4.ebuild:
+  Version bump.
+
+*compiz-0.3.2 (01 Nov 2006)
+
+  01 Nov 2006; Hanno Boeck <hanno@gentoo.org> +compiz-0.3.2.ebuild:
+  Version bump.
+
+  18 Oct 2006; Olivier Crête <tester@gentoo.org> compiz-0.2.0.ebuild:
+  Use gnome2 eclass to install schemas properly, bug #150535
+
+*compiz-0.2.0 (03 Oct 2006)
+
+  03 Oct 2006; Hanno Boeck <hanno@gentoo.org> +compiz-0.2.0.ebuild:
+  Add first release version.
+
+*compiz-0.0.13_pre20060928 (28 Sep 2006)
+
+  28 Sep 2006; Hanno Boeck <hanno@gentoo.org> files/compiz-aiglx,
+  +files/compiz-nvidia, +files/compiz-xgl,
+  +compiz-0.0.13_pre20060928.ebuild:
+  Version bump, new scripts for xgl and nvidia, misc fixes.
+
+  21 Sep 2006; Hanno Boeck <hanno@gentoo.org>
+  compiz-0.0.13_pre20060921.ebuild:
+  Re-add gnome-deps, seems it's not possible at the moment to have less
+  dependencies.
+
+*compiz-0.0.13_pre20060921 (21 Sep 2006)
+
+  21 Sep 2006; Hanno Boeck <hanno@gentoo.org> files/compiz-aiglx,
+  +compiz-0.0.13_pre20060921.ebuild:
+  Version bump, cleaned up dependencies.
+
+*compiz-0.0.13_pre20060916 (16 Sep 2006)
+
+  16 Sep 2006; Hanno Boeck <hanno@gentoo.org>
+  +files/03-composite-cube-logo.patch, +files/04-fbconfig-depth-fix.patch,
+  +files/06-glfinish.patch, +files/07-cow.patch, +files/compiz-aiglx,
+  +compiz-0.0.13_pre20060916.ebuild:
+  Initial commit of compiz.
+

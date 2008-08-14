@@ -1,0 +1,32 @@
+# ChangeLog for media-libs/libcaptury
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libcaptury/ChangeLog,v 1.6 2008/05/22 10:10:25 trapni Exp $
+
+*libcaptury-0.3.0_pre200712251-r1 (22 May 2008)
+
+  22 May 2008; Christian Parpart <trapni@gentoo.org>
+  +libcaptury-0.3.0_pre200712251-r1.ebuild:
+  play nice with FEATURE=ccache users, see bug 206822
+
+  13 Feb 2008; Christian Faulhammer <opfer@gentoo.org> metadata.xml:
+  add no-herd
+
+*libcaptury-0.3.0_pre200712251 (25 Dec 2007)
+
+  25 Dec 2007; Christian Parpart <trapni@gentoo.org>
+  +libcaptury-0.3.0_pre200712251.ebuild:
+  snapshot bump
+
+  01 Jul 2007; Piotr Jaroszyński <peper@gentoo.org>
+  libcaptury-0.3.0_pre200706031.ebuild:
+  (QA) RESTRICT="multilib-pkg-force" -> EMULTILIB_PKG="true"
+
+  15 Jun 2007; <trapni@gentoo.org> libcaptury-0.3.0_pre200706031.ebuild:
+  added missing useflag to IUSE
+
+*libcaptury-0.3.0_pre200706031 (14 Jun 2007)
+
+  14 Jun 2007; <trapni@gentoo.org> +metadata.xml,
+  +libcaptury-0.3.0_pre200706031.ebuild:
+  initial import
+

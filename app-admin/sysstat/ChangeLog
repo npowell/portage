@@ -1,0 +1,463 @@
+# ChangeLog for app-admin/sysstat
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/sysstat/ChangeLog,v 1.122 2008/07/15 18:04:59 jer Exp $
+
+  15 Jul 2008; Jeroen Roovers <jer@gentoo.org> sysstat-8.1.1.ebuild,
+  sysstat-8.1.2.ebuild, sysstat-8.1.3.ebuild, sysstat-8.1.4.ebuild:
+  Remove unwanted CFLAGS in older 8.1 versions too.
+
+*sysstat-8.1.5 (15 Jul 2008)
+
+  15 Jul 2008; Jeroen Roovers <jer@gentoo.org> +sysstat-8.1.5.ebuild:
+  Version bump.
+
+*sysstat-8.1.4 (22 Jun 2008)
+
+  22 Jun 2008; Jeroen Roovers <jer@gentoo.org> +sysstat-8.1.4.ebuild:
+  Version bump.
+
+*sysstat-8.1.3 (25 May 2008)
+
+  25 May 2008; Jeroen Roovers <jer@gentoo.org> +sysstat-8.1.3.ebuild:
+  Version bump.
+
+*sysstat-8.1.2 (19 Mar 2008)
+
+  19 Mar 2008; Jeroen Roovers <jer@gentoo.org> +sysstat-8.1.2.ebuild:
+  (Development) version bump.
+
+  10 Mar 2008; Jeroen Roovers <jer@gentoo.org> sysstat-8.1.1.ebuild:
+  Revert x86 and ppc stabilisation for development version 8.1.1 (bug #212398).
+
+  09 Mar 2008; Dawid Węgliński <cla@gentoo.org> sysstat-8.1.1.ebuild:
+  Stable on x86 (bug #212398)
+
+  09 Mar 2008; nixnut <nixnut@gentoo.org> sysstat-8.1.1.ebuild:
+  Stable on ppc wrt bug 212398
+
+  17 Feb 2008; Jeroen Roovers <jer@gentoo.org> -sysstat-8.0.3.ebuild:
+  Remove old version.
+
+  17 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  sysstat-8.0.4-r1.ebuild:
+  stable amd64, bug 209847
+
+  14 Feb 2008; nixnut <nixnut@gentoo.org> sysstat-8.0.4-r1.ebuild:
+  Stable on ppc wrt bug 209847
+
+  13 Feb 2008; Raúl Porcel <armin76@gentoo.org> sysstat-8.0.4-r1.ebuild:
+  alpha/sparc stable wrt #209847
+
+  13 Feb 2008; Brent Baude <ranger@gentoo.org> sysstat-8.0.4-r1.ebuild:
+  stable ppc64, bug 209847
+
+  12 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  sysstat-8.0.4-r1.ebuild:
+  stable x86, bug 209847
+
+  12 Feb 2008; Jeroen Roovers <jer@gentoo.org> sysstat-8.0.4-r1.ebuild:
+  Stable for HPPA (bug #209847).
+
+  12 Feb 2008; Jeroen Roovers <jer@gentoo.org> -sysstat-8.0.4.ebuild:
+  Remove intermediate version.
+
+*sysstat-8.1.1 (10 Feb 2008)
+
+  10 Feb 2008; Jeroen Roovers <jer@gentoo.org> +sysstat-8.1.1.ebuild:
+  Version bump (development version - not intended to go stable).
+
+  15 Jan 2008; Jeroen Roovers <jer@gentoo.org> -sysstat-8.0.2.ebuild:
+  Remove old version.
+
+  15 Jan 2008; Raúl Porcel <armin76@gentoo.org> sysstat-8.0.3.ebuild:
+  alpha/sparc stable wrt #205506
+
+  14 Jan 2008; <welp@gentoo.org> sysstat-8.0.3.ebuild:
+  Stable on amd64; bug 205506
+
+  13 Jan 2008; Brent Baude <ranger@gentoo.org> sysstat-8.0.3.ebuild:
+  Marking sysstat-8.0.3 ppc64 for bug 205506
+
+  13 Jan 2008; nixnut <nixnut@gentoo.org> sysstat-8.0.3.ebuild:
+  Stable on ppc wrt bug 205506
+
+  13 Jan 2008; Christian Faulhammer <opfer@gentoo.org> sysstat-8.0.3.ebuild:
+  stable x86, bug 205506
+
+  12 Jan 2008; Jeroen Roovers <jer@gentoo.org> sysstat-8.0.3.ebuild:
+  Stable for HPPA (bug #205506).
+
+*sysstat-8.0.4-r1 (12 Jan 2008)
+
+  12 Jan 2008; Jeroen Roovers <jer@gentoo.org> +sysstat-8.0.4-r1.ebuild:
+  As sysconfdir appears to be ignored in configure, set conf_dir to make sure
+  /etc/sysconfig/ is not used. Add warning to notify users of the relocation.
+
+*sysstat-8.0.4 (12 Jan 2008)
+
+  12 Jan 2008; Jeroen Roovers <jer@gentoo.org> +sysstat-8.0.4.ebuild:
+  Version bump.
+
+  16 Dec 2007; Jeroen Roovers <jer@gentoo.org> -sysstat-8.0.1.ebuild:
+  Out with the old.
+
+  16 Dec 2007; Samuli Suominen <drac@gentoo.org> sysstat-8.0.2.ebuild:
+  amd64 stable wrt #201956
+
+  14 Dec 2007; nixnut <nixnut@gentoo.org> sysstat-8.0.2.ebuild:
+  Stable on ppc wrt bug 201956
+
+  12 Dec 2007; Markus Rothe <corsair@gentoo.org> sysstat-8.0.2.ebuild:
+  Stable on ppc64; bug #201956
+
+  11 Dec 2007; Raúl Porcel <armin76@gentoo.org> sysstat-8.0.2.ebuild:
+  alpha/sparc stable wrt #201956
+
+  11 Dec 2007; Christian Faulhammer <opfer@gentoo.org> sysstat-8.0.2.ebuild:
+  stable x86, bug 201956
+
+  11 Dec 2007; Jeroen Roovers <jer@gentoo.org> sysstat-8.0.2.ebuild:
+  Stable for HPPA (bug #201956).
+
+*sysstat-8.0.3 (24 Nov 2007)
+
+  24 Nov 2007; Jeroen Roovers <jer@gentoo.org> +sysstat-8.0.3.ebuild:
+  Version bump (and congratulations :-).
+
+  11 Nov 2007; Jeroen Roovers <jer@gentoo.org>
+  -files/sysstat-8.0.0-make.patch, -sysstat-8.0.0.ebuild:
+  Version clean up.
+
+  11 Nov 2007; Raúl Porcel <armin76@gentoo.org> sysstat-8.0.1.ebuild:
+  alpha/sparc stable wrt #198559
+
+  11 Nov 2007; Samuli Suominen <drac@gentoo.org> sysstat-8.0.1.ebuild:
+  amd64 stable wrt #198559
+
+  10 Nov 2007; Markus Rothe <corsair@gentoo.org> sysstat-8.0.1.ebuild:
+  Stable on ppc64; bug #198559
+
+  10 Nov 2007; Dawid Węgliński <cla@gentoo.org> sysstat-8.0.1.ebuild:
+  Stable on x86 (bug #198559)
+
+  09 Nov 2007; nixnut <nixnut@gentoo.org> sysstat-8.0.1.ebuild:
+  Stable on ppc wrt bug 198559
+
+  09 Nov 2007; Jeroen Roovers <jer@gentoo.org>
+  -files/sysstat-5.0.5-gcc4.diff, -sysstat-7.0.4-r2.ebuild:
+  Remove deprecated version and old patch.
+
+  09 Nov 2007; Jeroen Roovers <jer@gentoo.org> sysstat-8.0.1.ebuild:
+  Stable for HPPA (bug #198559).
+
+*sysstat-8.0.2 (09 Nov 2007)
+
+  09 Nov 2007; Jeroen Roovers <jer@gentoo.org> +sysstat-8.0.2.ebuild:
+  Version bump.
+
+  18 Oct 2007; Christoph Mende <angelos@gentoo.org> sysstat-8.0.0.ebuild:
+  Stable on amd64 wrt bug #194877
+
+  09 Oct 2007; Jeroen Roovers <jer@gentoo.org> -sysstat-5.0.5-r2.ebuild:
+  Removing ancient version, despite lacking mips keywording on newer versions,
+  but especially because I promised myself never to touch this ebuild (bug
+  #190537).
+
+  06 Oct 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  sysstat-8.0.0.ebuild:
+  ppc stable, bug #194877
+
+  06 Oct 2007; Raúl Porcel <armin76@gentoo.org> sysstat-8.0.0.ebuild:
+  alpha/sparc/x86 stable wrt #194877
+
+  06 Oct 2007; Tom Gall <tgall@gentoo.org> sysstat-8.0.0.ebuild:
+  stable on ppc64, bug #194877
+
+  06 Oct 2007; Jeroen Roovers <jer@gentoo.org> sysstat-8.0.0.ebuild:
+  Stable for HPPA (bug #194877).
+
+  05 Oct 2007; Jeroen Roovers <jer@gentoo.org> sysstat-8.0.0.ebuild,
+  sysstat-8.0.1.ebuild:
+  Quote DESTDIR.
+
+*sysstat-8.0.1 (05 Oct 2007)
+
+  05 Oct 2007; Jeroen Roovers <jer@gentoo.org> +sysstat-8.0.1.ebuild:
+  Version bump (thanks to Dmitry Karasik, bug #194795).
+
+  22 Sep 2007; Jeroen Roovers <jer@gentoo.org>
+  +files/sysstat-8.0.0-make.patch, sysstat-8.0.0.ebuild:
+  Fix parallel make / NFS issue (bug #193208, thanks to DrChandra and Mark
+  Wagner.
+
+  08 Sep 2007; Jeroen Roovers <jer@gentoo.org>
+  -files/sysstat-7.1.4-strip.patch, sysstat-8.0.0.ebuild:
+  Remove redundant patch.
+
+  08 Sep 2007; Jeroen Roovers <jer@gentoo.org> -sysstat-7.1.6.ebuild:
+  Removing the remaining development release.
+
+  08 Sep 2007; Jeroen Roovers <jer@gentoo.org> sysstat-8.0.0.ebuild:
+  Fix multilib issue (bug #190514).
+
+*sysstat-8.0.0 (08 Sep 2007)
+
+  08 Sep 2007; Jeroen Roovers <jer@gentoo.org> +sysstat-8.0.0.ebuild:
+  Version bump (bug #191656).
+
+  28 Aug 2007; Jeroen Roovers <jer@gentoo.org> -sysstat-7.1.5.ebuild:
+  Remove deprecated development version.
+
+  28 Aug 2007; Jeroen Roovers <jer@gentoo.org> sysstat-7.0.4-r2.ebuild:
+  Fix trivial (QA) issues.
+
+  28 Aug 2007; Jeroen Roovers <jer@gentoo.org> sysstat-7.1.6.ebuild:
+  Fix trivial (QA) issues.
+
+  24 Jul 2007; Jeroen Roovers <jer@gentoo.org> -sysstat-7.1.4.ebuild:
+  Clean up.
+
+*sysstat-7.1.6 (24 Jul 2007)
+
+  24 Jul 2007; Jeroen Roovers <jer@gentoo.org> +sysstat-7.1.6.ebuild:
+  Version bump.
+
+  12 Jul 2007; Christoph Mende <angelos@gentoo.org> sysstat-7.0.4-r2.ebuild:
+  Stable on amd64
+
+  12 Jul 2007; Raúl Porcel <armin76@gentoo.org> sysstat-7.0.4-r2.ebuild:
+  alpha stable
+
+  22 Jun 2007; Jeroen Roovers <jer@gentoo.org> sysstat-7.1.5.ebuild:
+  Fix patching (bug #182807)
+
+*sysstat-7.1.5 (21 Jun 2007)
+
+  21 Jun 2007; Jeroen Roovers <jer@gentoo.org> +sysstat-7.1.5.ebuild:
+  Version bump (bug #182756).
+
+  12 Jun 2007; Jeroen Roovers <jer@gentoo.org>
+  +files/sysstat-7.1.4-strip.patch, sysstat-7.1.4.ebuild:
+  Fix NLS (bug #181737). Clean up.
+
+*sysstat-7.1.4 (10 Jun 2007)
+
+  10 Jun 2007; Jeroen Roovers <jer@gentoo.org> metadata.xml,
+  +sysstat-7.1.4.ebuild:
+  Made myself maintainer. Version bump.
+
+  08 Jun 2007; Jeroen Roovers <jer@gentoo.org> sysstat-7.0.4-r2.ebuild:
+  Do not install the cron.d file (bug #172548 comment #5).
+
+*sysstat-7.0.4-r2 (31 May 2007)
+
+  31 May 2007; Markus Ullmann <jokey@gentoo.org>
+  -files/sysstat-6.0.0-gcc4.diff, -files/sysstat-6.0.1-gcc4.diff,
+  +files/sysstat.init.d, -sysstat-5.0.2.ebuild, -sysstat-6.0.1.ebuild,
+  -sysstat-7.0.1.ebuild, -sysstat-7.0.4-r1.ebuild, +sysstat-7.0.4-r2.ebuild:
+  Cleanup and fix paths per bug #172548 thanks to Sergij Borodych
+
+  15 Apr 2007; Markus Rothe <corsair@gentoo.org> sysstat-7.0.4-r1.ebuild:
+  Stable on ppc64
+
+  01 Apr 2007; Michael Hanselmann <hansmi@gentoo.org>
+  sysstat-7.0.4-r1.ebuild:
+  Stable on ppc.
+
+*sysstat-7.0.4-r1 (27 Mar 2007)
+
+  27 Mar 2007; Markus Ullmann <jokey@gentoo.org> -sysstat-7.0.4.ebuild,
+  +sysstat-7.0.4-r1.ebuild:
+  Fix man dir, thanks to William Zhou for the patch in bug #171601
+
+  23 Mar 2007; Jeroen Roovers <jer@gentoo.org> sysstat-7.0.4.ebuild:
+  Stable for HPPA too.
+
+  22 Mar 2007; Gustavo Zacarias <gustavoz@gentoo.org> sysstat-7.0.4.ebuild:
+  Stable on sparc
+
+  20 Mar 2007; Raúl Porcel <armin76@gentoo.org> sysstat-7.0.4.ebuild:
+  x86 stable
+
+*sysstat-7.0.4 (12 Feb 2007)
+
+  12 Feb 2007; <solar@gentoo.org> metadata.xml, +sysstat-7.0.4.ebuild:
+  - version bump. Make sure we do not strip objects before installing them.
+  portage handles that
+
+*sysstat-7.0.1 (13 Nov 2006)
+
+  13 Nov 2006; Markus Ullmann <jokey@gentoo.org> metadata.xml,
+  +sysstat-7.0.1.ebuild:
+  Version bump
+
+  27 Apr 2006; Alec Warner <antarus@gentoo.org> files/digest-sysstat-5.0.2,
+  files/digest-sysstat-5.0.5-r2, files/digest-sysstat-6.0.1, Manifest:
+  Fixing duff SHA256 digests: Bug # 131293
+
+  25 Feb 2006; Aaron Walker <ka0ttic@gentoo.org> sysstat-5.0.2.ebuild,
+  sysstat-5.0.5-r2.ebuild, sysstat-6.0.1.ebuild:
+  Update gettext dep for bug #123098.
+
+  09 Sep 2005; Aron Griffis <agriffis@gentoo.org> sysstat-5.0.5-r2.ebuild:
+  Mark 5.0.5-r2 stable on alpha
+
+  08 Sep 2005; Aaron Walker <ka0ttic@gentoo.org> sysstat-5.0.5-r2.ebuild:
+  Stable on mips.
+
+  25 Aug 2005; Aaron Walker <ka0ttic@gentoo.org>
+  +files/sysstat-5.0.5-gcc4.diff:
+  Add missing gcc4 patch.
+
+*sysstat-5.0.5-r2 (25 Aug 2005)
+
+  25 Aug 2005; Aaron Walker <ka0ttic@gentoo.org> +files/crontab,
+  +metadata.xml, -sysstat-5.0.4.ebuild, -sysstat-5.0.5-r1.ebuild,
+  +sysstat-5.0.5-r2.ebuild, -sysstat-6.0.0.ebuild, sysstat-6.0.1.ebuild:
+  Revision bump; provide our own crontab that's not broken; make sure
+  SA_LIB_DIR gets passed to make otherwise sa{1,2,dc} will be installed to
+  /usr/local/lib. Keeping keywords. Tidy old ebuilds.
+
+  05 Aug 2005; Fernando J. Pereda <ferdy@gentoo.org>
+  sysstat-5.0.5-r1.ebuild, sysstat-6.0.0.ebuild, sysstat-6.0.1.ebuild:
+  marked ~alpha, wrt bug #98561
+
+  03 Aug 2005; Aaron Walker <ka0ttic@gentoo.org> sysstat-5.0.5-r1.ebuild:
+  Added ~mips to 5.0.5-r1. Leaving 6.0.x alone until I can investigate further
+  since at the very least, iostat seems broken on mips.
+
+  04 Jul 2005; Aaron Walker <ka0ttic@gentoo.org> sysstat-6.0.1.ebuild:
+  Specify SA_LIB_DIR in src_compile as well so that sa1.in gets the correct
+  path, bug 97790.
+
+*sysstat-6.0.1 (28 Jun 2005)
+
+  28 Jun 2005; Aaron Walker <ka0ttic@gentoo.org>
+  +files/sysstat-6.0.1-gcc4.diff, sysstat-6.0.0.ebuild,
+  +sysstat-6.0.1.ebuild:
+  Version bump; fixed deps.
+
+*sysstat-6.0.0 (16 May 2005)
+
+  16 May 2005; Aaron Walker <ka0ttic@gentoo.org>
+  +files/sysstat-6.0.0-gcc4.diff, +sysstat-6.0.0.ebuild:
+  Version bump; added gcc4 patch.
+
+  31 Mar 2005; <blubb@gentoo.org> sysstat-5.0.5-r1.ebuild:
+  stable on amd64
+
+  31 Mar 2005; <blubb@gentoo.org> sysstat-5.0.5-r1.ebuild:
+  stable on amd64
+
+  09 Mar 2005; Marcus D. Hanwell <cryos@gentoo.org> sysstat-5.0.5-r1.ebuild:
+  Marked ~amd64, closes bug 84246.
+
+  14 Feb 2005; Guy Martin <gmsoft@gentoo.org> sysstat-5.0.5-r1.ebuild:
+  Stable on hppa.
+
+  28 Jan 2005; Gustavo Zacarias <gustavoz@gentoo.org> sysstat-5.0.5-r1.ebuild:
+  Stable on sparc
+
+  27 Jan 2005; <plasmaroo@gentoo.org> sysstat-5.0.5-r1.ebuild:
+  Mark 5.0.5-r1 stable on x86.
+
+*sysstat-5.0.5-r1 (13 Nov 2004)
+
+  13 Nov 2004; <plasmaroo@gentoo.org> +sysstat-5.0.5-r1.ebuild,
+  -sysstat-5.0.5.ebuild:
+  Adding a crontab script, bug #43386.
+
+  05 Oct 2004; Pieter Van den Abeele <pvdabeel@gentoo.org>
+  sysstat-5.0.5.ebuild:
+  Masked sysstat-5.0.5.ebuild stable for ppc
+
+  03 Oct 2004; Jason Wever <weeve@gentoo.org> sysstat-5.0.5.ebuild:
+  Added ~spac keyword, since it was missed in the version bump.
+
+  28 Aug 2004; Tom Gall <tgall@gentoo.org> sysstat-5.0.5.ebuild:
+  stable on ppc64, bug #60163
+
+*sysstat-5.0.5 (21 Jun 2004)
+
+  21 Jun 2004; <plasmaroo@gentoo.org> +sysstat-5.0.5.ebuild:
+  Version bump. Closes bug #53739.
+
+  17 Jun 2004; Michael Sterrett <mr_bones_@gentoo.org>
+  sysstat-3.3.6-r1.ebuild, sysstat-4.0.7.ebuild, sysstat-5.0.0.ebuild,
+  sysstat-5.0.1.ebuild:
+  Cleaned out older versions.
+
+  01 Jun 2004; Gustavo Zacarias <gustavoz@gentoo.org> sysstat-5.0.2.ebuild:
+  Keyworded hppa
+
+*sysstat-5.0.4 (25 May 2004)
+
+  25 May 2004; Jon Portnoy <avenj@gentoo.org> sysstat-5.0.4.ebuild :
+  Version bump.
+
+  18 May 2004; <tuxus@gentoo.org> sysstat-5.0.2.ebuild:
+  Added mips to keywords
+
+  03 Apr 2004; Lars Weiler <pylon@gentoo.org> sysstat-5.0.2.ebuild:
+  stable on ppc as required in bug #45159
+
+  23 Mar 2004; Jason Wever <weeve@gentoo.org> sysstat-5.0.2.ebuild:
+  Marked stable on sparc wrt bug #45159.
+
+  23 Mar 2004; Jon Portnoy <avenj@gentoo.org> sysstat-5.0.2.ebuild :
+  Stable on AMD64.
+
+*sysstat-5.0.2 (23 Mar 2004)
+
+  23 Mar 2004; <plasmaroo@gentoo.org> sysstat-5.0.2.ebuild:
+  Version bump; closes bug #45159.
+
+*sysstat-5.0.1 (01 Mar 2004)
+
+  01 Mar 2004; <plasmaroo@gentoo.org> sysstat-5.0.1.ebuild:
+  Version bump; closes bug #43381.
+
+  01 Feb 2004; Jon Portnoy <avenj@gentoo.org> sysstat-5.0.0.ebuild :
+  AMD64 keywords.
+
+  03 Jan 2004; Martin Holzer <mholzer@gentoo.org> sysstat-3.3.6-r1.ebuild,
+  sysstat-4.0.7.ebuild, sysstat-5.0.0.ebuild:
+  Adding keepdir. Closes bug #37084.
+
+*sysstat-5.0.0 (02 Jan 2004)
+
+  02 Jan 2004; <plasmaroo@gentoo.org> sysstat-5.0.0.ebuild:
+  Version bump; closes bug #36961.
+
+  04 Nov 2003; Christian Birchinger <joker@gentoo.org> sysstat-4.0.7.ebuild:
+  Added sparc stable keyword
+
+*sysstat-4.0.7 (16 Dec 2002)
+
+  14 Jan 2003; Martin Holzer <mholzer@gentoo.org> sysstat-4.0.7.ebuild :
+  Corrected SRC_URI.
+
+  16 Dec 2002; Thomas Raschbacher <lordvan@gentoo.org>:
+  version bump; fixed bug #12233
+	
+  06 Dec 2002; Rodney Rees <manson@gentoo.org> : changed sparc ~sparc keywords
+ 
+*sysstat-3.3.6-r1 (12 Mar 2002)
+
+  30 Jul 2002; Calum Selkirk <cselkirk@gentoo.org> sysstat-3.3.6-r1 :
+
+  Added ppc to KEYWORDS.
+
+  12 Mar 2002; Seemant Kulleen <seemant@gentoo.org> sysstat-3.3.6-r1 :
+
+  Added USE dependent nls compilation.
+
+*sysstat-3.3.6 (1 Feb 2002)
+
+  1 Feb 2002; G.Bevin <gbevin@gentoo.org> ChangeLog :
+  
+  Added initial ChangeLog which should be updated whenever the package is
+  updated in any way. This changelog is targetted to users. This means that the
+  comments should well explained and written in clean English. The details about
+  writing correct changelogs are explained in the skel.ChangeLog file which you
+  can find in the root directory of the portage repository.

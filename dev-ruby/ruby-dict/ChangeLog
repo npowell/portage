@@ -1,0 +1,27 @@
+# ChangeLog for dev-ruby/ruby-dict
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-dict/ChangeLog,v 1.5 2008/07/25 07:14:18 wormo Exp $
+
+  25 Jul 2008; Stephanie Lockwood-Childs <wormo@gentoo.org>
+  ruby-dict-0.9.4.ebuild:
+  mark ~ppc (needed for bug #230517)
+
+  08 Jul 2008; Javier Villavicencio <the_paya@gentoo.org>
+  ruby-dict-0.9.4.ebuild:
+  Add ~x86-fbsd.
+
+  07 Jul 2008; Friedrich Oslage <bluebird@gentoo.org>
+  ruby-dict-0.9.4.ebuild:
+  Add ~sparc keyword, bug #230517
+
+  04 Jul 2008; Christian Faulhammer <opfer@gentoo.org>
+  ruby-dict-0.9.4.ebuild:
+  keyworded ~x86 for bug 230517
+
+*ruby-dict-0.9.4 (27 Dec 2007)
+
+  27 Dec 2007; Diego Pettenò <flameeyes@gentoo.org> +metadata.xml,
+  +ruby-dict-0.9.4.ebuild:
+  Initial import of ruby-dict, an RFC 2229 client. It's needed for the
+  dictclient plugin of rbot.
+

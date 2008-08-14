@@ -1,0 +1,33 @@
+# ChangeLog for media-tv/wis-go7007
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-tv/wis-go7007/ChangeLog,v 1.5 2007/07/17 01:11:12 beandog Exp $
+
+*wis-go7007-0.9.8-r2 (17 Jul 2007)
+
+  17 Jul 2007; Steve Dibb <beandog@gentoo.org>
+  files/wis-go7007-0.9.8-fix-udev.diff, +files/snd.patch,
+  +wis-go7007-0.9.8-r2.ebuild:
+  Patch to work with 2.6.21, 2.6.22 kernels (thanks to Alan Hourihane)
+
+  01 May 2007; Marius Mauch <genone@gentoo.org> wis-go7007-0.9.8.ebuild,
+  wis-go7007-0.9.8-r1.ebuild:
+  Replacing einfo with elog
+
+  26 Apr 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +files/wis-go7007-0.9.8-kernel-2.6.17.diff, wis-go7007-0.9.8-r1.ebuild:
+  Make it compile with kernel greater than 2.6.16, solving Bug #157021, thanks
+  to Brian Long <vrtladept@gmail.com> and Greg Smolyn <smolyn@gmail.com> for
+  the patch.
+
+*wis-go7007-0.9.8-r1 (26 Apr 2007)
+
+  26 Apr 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +files/wis-go7007-0.9.8-fix-udev.diff, +wis-go7007-0.9.8-r1.ebuild:
+  Added fixed udev rules, due to bug #163610.
+
+*wis-go7007-0.9.8 (02 Dec 2006)
+
+  02 Dec 2006; Steve Dibb <beandog@gentoo.org> +metadata.xml,
+  +wis-go7007-0.9.8.ebuild:
+  Initial import, bug 121398, thanks to Jesse D. Guardiani for original ebuild
+

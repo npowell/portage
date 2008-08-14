@@ -1,0 +1,88 @@
+# ChangeLog for sys-block/iscsitarget
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-block/iscsitarget/ChangeLog,v 1.14 2008/07/18 16:03:37 flameeyes Exp $
+
+*iscsitarget-0.4.16_p162 (18 Jul 2008)
+
+  18 Jul 2008; Diego Pettenò <flameeyes@gentoo.org>
+  +files/iscsitarget-0.4.17-build.patch, +files/ietd-init.d-2,
+  +iscsitarget-0.4.16_p162.ebuild:
+  Add a snapshot of current SVN for iscsitarget, this has the proper fixes
+  for glibc 2.8 rather than our hacks, and also builds and runs fine with
+  kernel 2.6.26. Also update to the new init script provided by Natanael
+  Copa in bug #197472 that is POSIX compatible.
+
+*iscsitarget-0.4.16 (14 Jun 2008)
+
+  14 Jun 2008; Diego Pettenò <flameeyes@gentoo.org>
+  +files/iscsitarget-0.4.16+glibc-2.8-lists.patch,
+  +iscsitarget-0.4.16.ebuild:
+  Version bump (bug #223093), and apply patch to fix building with glibc 2.8
+  (bug #225719).
+
+  12 Apr 2008; nixnut <nixnut@gentoo.org> iscsitarget-0.4.15-r1.ebuild:
+  Stable on ppc wrt bug 214805
+
+  06 Apr 2008; Markus Meier <maekke@gentoo.org>
+  iscsitarget-0.4.15-r1.ebuild:
+  amd64/x86 stable (bug #214805) and quotes
+
+  09 Mar 2008; Mike Frysinger <vapier@gentoo.org>
+  iscsitarget-0.4.15-r1.ebuild:
+  Allow linux-mod_pkg_postinst to run #212443 by Craig.
+
+  22 Feb 2008; Mike Frysinger <vapier@gentoo.org>
+  +files/iscsitarget-0.4.15-build.patch,
+  +files/iscsitarget-0.4.15-isns-set-scn-flag.patch,
+  +files/iscsitarget-0.4.15-kmem.patch,
+  +files/iscsitarget-0.4.15-scatter.patch, files/ietd-init.d,
+  iscsitarget-0.4.15-r1.ebuild:
+  Respect user LDFLAGS. Fix building with gcc-3.4/-O0 #180619 by Natanael
+  Copa. Add some kernel updates from upstream #191313.
+
+  14 Jan 2008; Robin H. Johnson <robbat2@gentoo.org> metadata.xml:
+  Change herd.
+
+*iscsitarget-0.4.15-r1 (06 Nov 2007)
+
+  06 Nov 2007; Robin H. Johnson <robbat2@gentoo.org>
+  +iscsitarget-0.4.15-r1.ebuild:
+  Lock down perms on ietd.conf and initiation.allow/deny per security bug
+  #198209.
+
+*iscsitarget-0.4.15 (28 May 2007)
+
+  28 May 2007; Robin H. Johnson <robbat2@gentoo.org>
+  +iscsitarget-0.4.15.ebuild:
+  Bug #159587, version bump.
+
+  27 Dec 2006; Robin H. Johnson <robbat2@gentoo.org>
+  files/iscsitarget-0.4.14-isns-compilefix.patch:
+  Bug #159199, messed up the path in the patch.
+
+*iscsitarget-0.4.14 (27 Dec 2006)
+
+  27 Dec 2006; Robin H. Johnson <robbat2@gentoo.org>
+  +files/iscsitarget-0.4.14-isns-compilefix.patch,
+  +iscsitarget-0.4.14.ebuild:
+  Version bump, bug #155845
+
+  23 May 2006; Robin H. Johnson <robbat2@gentoo.org>
+  iscsitarget-0.4.13.ebuild:
+  Add ~ppc.
+
+*iscsitarget-0.4.13 (20 Feb 2006)
+
+  20 Feb 2006; Robin H. Johnson <robbat2@gentoo.org>
+  +files/iscsitarget-0.4.13-usrbuildfix.patch, +files/ietd-conf.d,
+  +files/ietd-init.d, +iscsitarget-0.4.13.ebuild:
+  Bug #122632 - amd64 keyword. Bug #115529, version bump. Now includes much
+  better init scripts.
+
+*iscsitarget-0.4.12 (05 Dec 2005)
+
+  05 Dec 2005; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml,
+  +iscsitarget-0.4.12.ebuild:
+  Initial commit - bug #98781, based on ebuild submitted by Dick Marinus
+  <dm@chello.nl>.
+

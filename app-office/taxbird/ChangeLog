@@ -1,0 +1,55 @@
+# ChangeLog for app-office/taxbird
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-office/taxbird/ChangeLog,v 1.14 2008/01/23 21:20:22 wrobel Exp $
+
+*taxbird-0.11 (23 Jan 2008)
+
+  23 Jan 2008; <wrobel@gentoo.org> -taxbird-0.11_rc.ebuild,
+  +taxbird-0.11.ebuild:
+  I was too quick. taxbird-11 got released today. Added 0.11, removed 0.11_rc.
+
+*taxbird-0.11_rc (23 Jan 2008)
+
+  23 Jan 2008; <wrobel@gentoo.org> +taxbird-0.11_rc.ebuild:
+  Added taxbird-0.11_rc.
+
+  08 Sep 2007; Hanno Boeck <hanno@gentoo.org> taxbird-0.10.ebuild:
+  Needs guile with regex support.
+
+  08 Sep 2007; Hanno Boeck <hanno@gentoo.org> taxbird-0.10.ebuild:
+  Improve dev-guile use-check.
+
+  07 Sep 2007; Hanno Boeck <hanno@gentoo.org> taxbird-0.10.ebuild:
+  Add check for guile use-flags.
+
+  14 Aug 2007; wrobel@gentoo.org -taxbird-0.6.ebuild, -taxbird-0.7.ebuild:
+  Removed older, buggy taxbird-0.6 and taxbird-0.7 from the tree.
+
+*taxbird-0.10 (14 Aug 2007)
+
+  14 Aug 2007; wrobel@gentoo.org +taxbird-0.10.ebuild:
+  Added taxbird 0.10 to the tree.
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  10 Jan 2007; Piotr Jaroszyński <peper@gentoo.org> Manifest:
+  Fix Manifest.
+
+  10 Jan 2007; <marijn@gentoo.org> taxbird-0.7.ebuild:
+  Dependency update: dev-util/guile -> dev-scheme/guile.
+
+  10 Jan 2007; <marijn@gentoo.org> taxbird-0.6.ebuild:
+  Dependency update: dev-util/guile -> dev-scheme/guile.
+
+*taxbird-0.7 (29 May 2006)
+
+  29 May 2006; <wrobel@gentoo.org> +taxbird-0.7.ebuild:
+  Update to taxbird-0.6
+
+  13 Jan 2006; Saleem Abdulrasool <compnerd@gentoo.org> taxbird-0.6.ebuild:
+  pkgmove gnome-extra/libgtkhtml gnome-extra/gtkhtml
+
+  12 Jan 2006; <wrobel@gentoo.org> ChangeLog:
+  Added taxbird to portage.
+

@@ -1,0 +1,47 @@
+# ChangeLog for media-plugins/mythmovies
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/mythmovies/ChangeLog,v 1.7 2008/08/12 03:43:58 cardoe Exp $
+
+*mythmovies-0.21_p17821 (12 Aug 2008)
+
+  12 Aug 2008; Doug Goldstein <cardoe@gentoo.org>
+  -mythmovies-0.21_beta16366.ebuild, +mythmovies-0.21_p17821.ebuild:
+  latest upstream fixes
+
+*mythmovies-0.21_p16468 (09 Mar 2008)
+
+  09 Mar 2008; Doug Goldstein <cardoe@gentoo.org>
+  +mythmovies-0.21_p16468.ebuild:
+  0.21 release
+
+*mythmovies-0.21_beta16366 (06 Mar 2008)
+
+  06 Mar 2008; Doug Klima <cardoe@gentoo.org>
+  +mythmovies-0.21_beta16366.ebuild, -mythmovies-0.21_pre15448.ebuild:
+  0.21 beta bump
+
+*mythmovies-0.21_pre15448 (15 Jan 2008)
+
+  15 Jan 2008; Doug Klima <cardoe@gentoo.org>
+  -mythmovies-0.21_pre14242.ebuild, -mythmovies-0.21_pre14320.ebuild,
+  +mythmovies-0.21_pre15448.ebuild:
+  update to newer trunk revision
+
+*mythmovies-0.21_pre14320 (27 Aug 2007)
+
+  27 Aug 2007; Doug Goldstein <cardoe@gentoo.org>
+  +mythmovies-0.21_pre14320.ebuild:
+  trunk bump
+
+*mythmovies-0.21_pre14242 (21 Aug 2007)
+
+  21 Aug 2007; Doug Goldstein <cardoe@gentoo.org>
+  -mythmovies-0.21_pre12242.ebuild, +mythmovies-0.21_pre14242.ebuild:
+  screwed up the rev number
+
+*mythmovies-0.21_pre12242 (21 Aug 2007)
+
+  21 Aug 2007; Doug Goldstein <cardoe@gentoo.org>
+  +mythmovies-0.21_pre12242.ebuild:
+  trunk ebuild from Dave Oxley <dave@daveoxley.co.uk>
+

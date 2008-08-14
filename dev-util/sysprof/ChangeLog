@@ -1,0 +1,62 @@
+# ChangeLog for dev-util/sysprof
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/sysprof/ChangeLog,v 1.11 2008/05/01 14:53:40 leio Exp $
+
+*sysprof-1.0.10 (01 May 2008)
+
+  01 May 2008; Mart Raudsepp <leio@gentoo.org> +sysprof-1.0.10.ebuild:
+  Version bump. Adds linux-2.6.25 compatibility. Fix for missing pkgconfig
+  dep, bug 206251
+
+  29 Feb 2008; Carsten Lohrke <carlo@gentoo.org> sysprof-1.0.8.ebuild,
+  sysprof-1.0.9.ebuild:
+  Remove icon extension from desktop entry to match Icon Theme Specification.
+
+*sysprof-1.0.9 (23 Nov 2007)
+
+  23 Nov 2007; Mart Raudsepp <leio@gentoo.org> +sysprof-1.0.9.ebuild:
+  Version bump for better Linux 2.6.23 compatibility
+
+  14 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+*sysprof-1.0.8 (22 Dec 2006)
+
+  22 Dec 2006; Mart Raudsepp <leio@gentoo.org> metadata.xml,
+  -sysprof-1.0.6.ebuild, +sysprof-1.0.8.ebuild:
+  Version bump to compile against older than 2.6.18 kernels and not panic with
+  preemptible kernels; remove the kernel panic causing older version; fixes
+  bug 157177. Take over maintenance and add long description
+
+*sysprof-1.0.6 (09 Nov 2006)
+
+  09 Nov 2006; Mike Frysinger <vapier@gentoo.org> +sysprof-1.0.6.ebuild:
+  Version bump #154539 by the PaX Team.
+
+*sysprof-1.0.3 (11 Jun 2006)
+
+  11 Jun 2006; Mike Frysinger <vapier@gentoo.org> +sysprof-1.0.3.ebuild:
+  Version bump #134517 by PaX Team.
+
+*sysprof-1.0.2 (08 Apr 2006)
+
+  08 Apr 2006; Mike Frysinger <vapier@gentoo.org> +sysprof-1.0.2.ebuild:
+  Version bump #128980 by Marco Matthies.
+
+*sysprof-1.0.1 (14 Jan 2006)
+
+  14 Jan 2006; Mike Frysinger <vapier@gentoo.org>
+  +files/sysprof-1.0.1-INTERVAL_should_not_be_zero.patch,
+  +sysprof-1.0.1.ebuild:
+  Version bump #118890 by TGL.
+
+*sysprof-1.0 (05 Oct 2005)
+
+  05 Oct 2005; Jeremy Huddleston <eradicator@gentoo.org>
+  +sysprof-1.0.ebuild:
+  Version bump and ~amd64.
+
+*sysprof-0.91 (30 Jul 2005)
+
+  30 Jul 2005; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by me.

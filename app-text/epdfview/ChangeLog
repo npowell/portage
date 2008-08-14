@@ -1,0 +1,105 @@
+# ChangeLog for app-text/epdfview
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-text/epdfview/ChangeLog,v 1.29 2008/07/19 16:05:41 jer Exp $
+
+  19 Jul 2008; Jeroen Roovers <jer@gentoo.org> epdfview-0.1.6-r1.ebuild:
+  Marked ~hppa too.
+
+  16 Jul 2008; Alexis Ballier <aballier@gentoo.org>
+  epdfview-0.1.6-r1.ebuild:
+  keyword ~x86-fbsd, thanks to Davide Italiano <dav_it@gentoo.org>, bug
+  #231423
+
+  22 Apr 2008; David Shakaryan <omp@gentoo.org>
+  +files/epdfview-0.1.6-gcc-4.3.patch, epdfview-0.1.6-r1.ebuild:
+  Fix compilation issue with GCC 4.3; patch by ape. (bug #214070)
+
+  04 Jan 2008; David Shakaryan <omp@gentoo.org> -epdfview-0.1.6.ebuild:
+  Remove older version.
+
+  03 Jan 2008; Brent Baude <ranger@gentoo.org> epdfview-0.1.6-r1.ebuild:
+  Marking epdfview-0.1.6-r1 ppc64 for bug 202871
+
+  26 Dec 2007; Samuli Suominen <drac@gentoo.org> epdfview-0.1.6-r1.ebuild:
+  amd64 stable wrt #202871
+
+  22 Dec 2007; Markus Meier <maekke@gentoo.org> epdfview-0.1.6-r1.ebuild:
+  x86 stable, bug #202871
+
+  21 Dec 2007; Ferris McCormick <fmccor@gentoo.org>
+  epdfview-0.1.6-r1.ebuild:
+  Sparc stable --- Bug #202871 --- works fine for me.
+
+  21 Dec 2007; nixnut <nixnut@gentoo.org> epdfview-0.1.6-r1.ebuild:
+  Stable on ppc wrt bug 202871
+
+  08 Sep 2007; David Shakaryan <omp@gentoo.org> -files/search_fix.patch,
+  -epdfview-0.1.5.ebuild:
+  Remove older version.
+
+*epdfview-0.1.6-r1 (08 Sep 2007)
+
+  08 Sep 2007; David Shakaryan <omp@gentoo.org>
+  +files/epdfview-0.1.6-print-segfault.patch, +epdfview-0.1.6-r1.ebuild:
+  Fix segmentation fault when printing; thanks to Daniel Pielmeier.
+
+  15 Jul 2007; Christoph Mende <angelos@gentoo.org> epdfview-0.1.6.ebuild:
+  Stable on amd64 wrt bug #184961
+
+  15 Jul 2007; nixnut <nixnut@gentoo.org> epdfview-0.1.6.ebuild:
+  Stable on ppc wrt bug 184961
+
+  14 Jul 2007; Christian Faulhammer <opfer@gentoo.org>
+  epdfview-0.1.6.ebuild:
+  stable x86, bug 184961
+
+  02 Jul 2007; Gustavo Zacarias <gustavoz@gentoo.org> epdfview-0.1.6.ebuild:
+  Stable on sparc
+
+  11 Apr 2007; Markus Rothe <corsair@gentoo.org> epdfview-0.1.6.ebuild:
+  Added ~ppc64
+
+  04 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org> epdfview-0.1.5.ebuild:
+  Stable on sparc
+
+*epdfview-0.1.6 (09 Mar 2007)
+
+  09 Mar 2007; David Shakaryan <omp@gentoo.org> +epdfview-0.1.6.ebuild:
+  Version bump. (bug #169961)
+
+  08 Mar 2007; Gustavo Zacarias <gustavoz@gentoo.org> epdfview-0.1.5.ebuild:
+  Keyworded ~sparc wrt #169762
+
+  18 Feb 2007; nixnut <nixnut@gentoo.org> epdfview-0.1.5.ebuild:
+  Stable on ppc wrt bug 167113
+
+  16 Feb 2007; Simon Stelling <blubb@gentoo.org> epdfview-0.1.5.ebuild:
+  stable on amd64; bug 167113
+
+  16 Feb 2007; Christian Faulhammer <opfer@gentoo.org>
+  epdfview-0.1.5.ebuild:
+  stable x86; bug 167113
+
+  25 Jan 2007; Peter Weller <welp@gentoo.org> +files/search_fix.patch,
+  epdfview-0.1.5.ebuild:
+  Added a patch to prevent segfaults whilst searching on x86-fbsd
+
+  24 Jan 2007; Peter Weller <welp@gentoo.org> epdfview-0.1.5.ebuild:
+  Removed ~x86-fbsd keyword due to segfaults whilst searching...
+
+  21 Jan 2007; Peter Weller <welp@gentoo.org> epdfview-0.1.5.ebuild:
+  Added ~x86-fbsd keyword
+
+  23 Dec 2006; <nixnut@gentoo.org> epdfview-0.1.5.ebuild:
+  Added ~ppc wrt bug 158779
+
+  02 Dec 2006; Bryan Østergaard <kloeri@gentoo.org> epdfview-0.1.5.ebuild:
+  Fix small type, reported by hoffie in #gentoo-bugs.
+
+  30 Nov 2006; David Shakaryan <omp@gentoo.org> epdfview-0.1.5.ebuild:
+  Update HOMEPAGE and SRC_URI.
+
+  25 Nov 2006; David Shakaryan <omp@gentoo.org> +epdfview-0.1.5.ebuild,
+  +metadata.xml:
+  Adding app-text/epdfview to tree; based on ebuild available on site.
+

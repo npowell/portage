@@ -1,0 +1,100 @@
+# ChangeLog for dev-perl/net-ssh-perl
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/net-ssh-perl/ChangeLog,v 1.23 2007/07/11 20:33:10 armin76 Exp $
+
+  11 Jul 2007; Raúl Porcel <armin76@gentoo.org> net-ssh-perl-1.30.ebuild:
+  alpha stable
+
+  05 Mar 2007; Andrej Kacian <ticho@gentoo.org> net-ssh-perl-1.30.ebuild:
+  Stable on x86, bug #169152.
+
+  20 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  -net-ssh-perl-1.25.ebuild, -net-ssh-perl-1.27.ebuild,
+  net-ssh-perl-1.29.ebuild, net-ssh-perl-1.30.ebuild:
+  Marking amd64 stable; cleaning up ebuilds
+
+  01 Sep 2006; Michael Cummings <mcummings@gentoo.org>
+  net-ssh-perl-1.30.ebuild:
+  Keywording ~amd64
+
+  06 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  net-ssh-perl-1.25.ebuild, net-ssh-perl-1.27.ebuild,
+  net-ssh-perl-1.29.ebuild, net-ssh-perl-1.30.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  05 Jul 2006; Christian Hartmann <ian@gentoo.org> net-ssh-perl-1.25.ebuild,
+  net-ssh-perl-1.27.ebuild, net-ssh-perl-1.29.ebuild,
+  net-ssh-perl-1.30.ebuild:
+  Fixed RDEPEND wrt bug #134781
+
+  12 Jun 2006; Michael Cummings <mcummings@gentoo.org>
+  net-ssh-perl-1.25.ebuild, net-ssh-perl-1.27.ebuild,
+  net-ssh-perl-1.29.ebuild, net-ssh-perl-1.30.ebuild:
+  Marking sparc stable
+
+*net-ssh-perl-1.30 (01 May 2006)
+
+  01 May 2006; <mcumming@gentoo.org> +net-ssh-perl-1.30.ebuild:
+  Version bump
+
+  13 Feb 2006; Michael Cummings <mcummings@gentoo.org>
+  net-ssh-perl-1.25.ebuild, net-ssh-perl-1.27.ebuild,
+  net-ssh-perl-1.29.ebuild:
+  Virtuals for perl-core
+
+  31 Jan 2006; Aron Griffis <agriffis@gentoo.org> net-ssh-perl-1.29.ebuild:
+  Mark 1.29 stable on alpha
+
+  15 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  net-ssh-perl-1.27.ebuild, net-ssh-perl-1.29.ebuild:
+  Mirror syntax in 1.27 and 1.29
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  net-ssh-perl-1.29.ebuild:
+  Marking x86 stable
+
+*net-ssh-perl-1.29 (19 Nov 2005)
+
+  19 Nov 2005; <mcumming@gentoo.org> +net-ssh-perl-1.29.ebuild:
+  Version bump
+
+  10 Sep 2005; Aron Griffis <agriffis@gentoo.org> net-ssh-perl-1.25.ebuild:
+  Mark 1.25 stable on alpha
+
+  25 May 2005; Michael Cummings <mcummings@gentoo.org>
+  net-ssh-perl-1.27.ebuild:
+  dev-perl/MIME-Base64 => perl-core/MIME-Base64 migration
+
+  25 May 2005; Michael Cummings <mcummings@gentoo.org>
+  net-ssh-perl-1.25.ebuild:
+  dev-perl/MIME-Base64 => perl-core/MIME-Base64 migration
+
+  24 May 2005; Michael Cummings <mcummings@gentoo.org>
+  net-ssh-perl-1.25.ebuild, net-ssh-perl-1.27.ebuild:
+  dev-perl/Digest-MD5 => perl-core/Digest-MD5
+
+*net-ssh-perl-1.27 (29 Apr 2005)
+
+  29 Apr 2005; Michael Cummings <mcummings@gentoo.org>
+  -net-ssh-perl-1.23.ebuild, net-ssh-perl-1.25.ebuild,
+  +net-ssh-perl-1.27.ebuild:
+  Cleaning for mirror syntax
+
+*net-ssh-perl-1.25 (29 Mar 2004)
+
+  29 Mar 2004; Michael Cummings <mcummings@gentoo.org>
+  net-ssh-perl-1.25.ebuild:
+  New version; bumped for deps of bricolage
+
+  20 Mar 2004; Joshua Kinard <kumba@gentoo.org> net-ssh-perl-1.23.ebuild:
+  Added ~mips to KEYWORDS.
+
+  27 Oct 2003; Brad House <brad_mssw@gentoo.org> net-ssh-perl-1.23.ebuild:
+  add ~amd64 flag
+
+*net-ssh-perl-1.23 (23 Jun 2003)
+
+  23 Jun 2003; Michael Cummings <mcummings@gentoo.org>
+  net-ssh-perl-1.23.ebuild:
+  net-ssh is a dep for net-sftp, a dep for the bricolage package
+

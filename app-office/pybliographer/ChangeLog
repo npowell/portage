@@ -1,0 +1,67 @@
+# ChangeLog for app-office/pybliographer
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-office/pybliographer/ChangeLog,v 1.16 2008/03/01 14:22:07 dev-zero Exp $
+
+*pybliographer-1.2.11 (01 Mar 2008)
+
+  01 Mar 2008; Tiziano Müller <dev-zero@gentoo.org>
+  -pybliographer-1.2.4.ebuild, -pybliographer-1.2.6.2.ebuild,
+  +pybliographer-1.2.11.ebuild:
+  Version bump (bug #167874). Dropped old versions.
+
+  21 Oct 2007; Markus Meier <maekke@gentoo.org> pybliographer-1.2.9.ebuild:
+  x86 stable, bug #175169 and quotes
+
+  21 Oct 2007; nixnut <nixnut@gentoo.org> pybliographer-1.2.9.ebuild:
+  Stable on ppc wrt bug 175169
+
+  12 Mar 2007; Alexandre Buisse <nattfodd@gentoo.org> metadata.xml:
+  Replaced text-markup by tex as maintaining herd (text-markup split).
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*pybliographer-1.2.9 (18 Jul 2006)
+
+  18 Jul 2006; Alexandre Buisse <nattfodd@gentoo.org>
+  +pybliographer-1.2.9.ebuild:
+  Bump to 1.2.9 (requested in bug #130696).
+
+  06 Dec 2005; Marien Zwart <marienz@gentoo.org> pybliographer-1.2.4.ebuild,
+  pybliographer-1.2.6.2.ebuild:
+  Add missing scrollkeeper dependency (bug #107379)
+
+  16 Jul 2005; Joseph Jezak <josejx@gentoo.org> pybliographer-1.2.4.ebuild:
+  Marked ppc stable for bug #99175.
+
+*pybliographer-1.2.6.2 (02 Jul 2005)
+
+  02 Jul 2005; Mamoru KOMACHI <usata@gentoo.org> pybliographer-1.2.4.ebuild,
+  +pybliographer-1.2.6.2.ebuild:
+  Version bumped; bug #97664.
+
+  28 Jun 2005; John N. Laliberte <allanonjl@gentoo.org>
+  pybliographer-1.2.4.ebuild:
+  fix for access violation due to gnome2 eclass change, see bug #92920
+
+  11 Apr 2005; Simon Stelling <blubb@gentoo.org> pybliographer-1.2.4.ebuild:
+  added ~amd64
+
+  17 Nov 2004; Mamoru KOMACHI <usata@gentoo.org> pybliographer-1.2.4.ebuild:
+  Added to ~ppc; bug #70211.
+
+  21 Oct 2004; Mamoru KOMACHI <usata@gentoo.org>
+  +files/pybliographer-1.2.4-gentoo.diff, pybliographer-1.2.4.ebuild:
+  Disables setup-check.py; bug #68309.
+
+  21 Oct 2004; Mamoru KOMACHI <usata@gentoo.org> pybliographer-1.2.4.ebuild:
+  Uses gnome2.eclass.
+
+*pybliographer-1.2.4 (17 Oct 2004)
+
+  17 Oct 2004; Mamoru KOMACHI <usata@gentoo.org> +metadata.xml,
+  +pybliographer-1.2.4.ebuild:
+  Initial import. Thanks to John Steele Scott <toojays@toojays.net>,
+  Jean-Luc Jox <jljox@yahoo.com> and Ronny Haryanto <rh-gentoo@terasi.net>.
+  This closes bug #20027.
+

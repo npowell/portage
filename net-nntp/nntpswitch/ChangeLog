@@ -1,0 +1,26 @@
+# ChangeLog for net-nntp/nntpswitch
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-nntp/nntpswitch/ChangeLog,v 1.5 2008/05/21 19:00:22 dev-zero Exp $
+
+  21 May 2008; Tiziano Müller <dev-zero@gentoo.org> nntpswitch-0.11.ebuild:
+  Changed dependency for postgresql from dev-db/postgresql to
+  virtual/postgresql-server
+
+  23 Nov 2006; Francesco Riosa <vivo@gentoo.org> nntpswitch-0.11.ebuild:
+  dev-db/mysql => virtual/mysql
+
+  16 May 2005; Sven Wegener <swegener@gentoo.org> nntpswitch-0.11.ebuild:
+  Added cross-compile support.
+
+*nntpswitch-0.11 (17 Jan 2005)
+
+  17 Jan 2005; Sven Wegener <swegener@gentoo.org> +metadata.xml,
+  +files/nntpswitch.init.d, +nntpswitch-0.11.ebuild:
+  Moved from net-news/nntpswitch to net-nntp/nntpswitch.
+
+*nntpswitch-0.11 (01 Dec 2004)
+
+  01 Dec 2004; Sven Wegener <swegener@gentoo.org> +metadata.xml,
+  +files/nntpswitch.init.d, +nntpswitch-0.11.ebuild:
+  Initial import, ebuild written by me.
+

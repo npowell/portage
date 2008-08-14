@@ -1,0 +1,50 @@
+# ChangeLog for sys-apps/kudzu
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/kudzu/ChangeLog,v 1.30 2008/07/20 01:49:49 darkside Exp $
+
+  20 Jul 2008; Jeremy Olexa <darkside@gentoo.org> kudzu-1.2.83.ebuild:
+  Make SRC_URI and explicit location. This file is hard to find on the fedora
+  mirrors and hasn't been pushed to the Gentoo mirrors since its inception
+  into the portage tree
+
+  29 May 2008; Ali Polatel <hawking@gentoo.org> kudzu-1.2.71.ebuild,
+  kudzu-1.2.83.ebuild:
+  python_mod_compile is ROOT aware.
+
+*kudzu-1.2.83 (19 Mar 2008)
+
+  19 Mar 2008; Donnie Berkholz <dberkholz@gentoo.org>; +kudzu-1.2.83.ebuild:
+  Bump, keyword ~amd64.
+
+  31 Jan 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  -files/1.2.52-remove-pci-fill-class.patch,
+  -files/1.2.52-remove-sata-ata-storage-classes.patch, -kudzu-1.2.52.ebuild:
+  Clean up.
+
+*kudzu-1.2.71 (20 Jun 2007)
+
+  20 Jun 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  +files/1.2.71-sparc-updates.patch, +kudzu-1.2.71.ebuild:
+  Bump. Should fix #164329 zlib linking issue. Also respects CC, LDFLAGS, etc,
+  might even crosscompile, and removes patches required for pre-2.2.4
+  pciutils. Incorporate the sparc patch from upstream instead of our own.
+  Compile the Python module.
+
+  02 May 2007; Donnie Berkholz <dberkholz@gentoo.org>; kudzu-1.2.52.ebuild:
+  Update homepage, since the old one vanished.
+
+  22 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>; kudzu-1.2.52.ebuild:
+  Fix keywording.
+
+  19 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>; kudzu-1.2.52.ebuild:
+  Clean up python modules after uninstalling.
+
+*kudzu-1.2.52 (05 Sep 2006)
+
+  05 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  +files/1.2.52-remove-pci-device-class.patch,
+  +files/1.2.52-remove-pci-fill-class.patch,
+  +files/1.2.52-remove-sata-ata-storage-classes.patch,
+  +files/sunlance.patch, +metadata.xml, +kudzu-1.2.52.ebuild:
+  Red Hat Hardware detection tools
+

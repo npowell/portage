@@ -1,0 +1,28 @@
+# ChangeLog for x11-misc/cairo-clock
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/cairo-clock/ChangeLog,v 1.6 2008/02/09 01:20:23 coldwind Exp $
+
+  09 Feb 2008; Santiago M. Mola <coldwind@gentoo.org>
+  -cairo-clock-0.3.2.ebuild:
+  Remove unused versions
+
+  08 Dec 2007; Samuli Suominen <drac@gentoo.org> cairo-clock-0.3.3.ebuild:
+  amd64 stable
+
+*cairo-clock-0.3.3 (10 Sep 2007)
+
+  10 Sep 2007; Samuli Suominen <drac@gentoo.org> +cairo-clock-0.3.3.ebuild:
+  Version bump for bug 191845, thanks to Arfrever Frehtes Taifersar Arahesis
+  for reporting.
+
+  31 Aug 2007; David Shakaryan <omp@gentoo.org> metadata.xml:
+  Remove myself as sole maintainer; still part of desktop-misc herd.
+
+  02 Mar 2007; Roy Marples <uberlord@gentoo.org> cairo-clock-0.3.2.ebuild:
+  Add ~x86-fbsd keyword.
+
+  11 Nov 2006; David Shakaryan <omp@gentoo.org> +cairo-clock-0.3.2.ebuild,
+  +metadata.xml:
+  Add x11-misc/cairo-clock to tree. Loosely based on Samuli Suominen's ebuild.
+  (bug #126181)
+

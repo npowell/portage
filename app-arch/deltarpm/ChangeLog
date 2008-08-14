@@ -1,0 +1,20 @@
+# ChangeLog for app-arch/deltarpm
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-arch/deltarpm/ChangeLog,v 1.4 2008/06/09 00:36:56 darkside Exp $
+
+*deltarpm-3.4 (09 Jun 2008)
+
+  09 Jun 2008; Jeremy Olexa <darkside@gentoo.org> +deltarpm-3.4.ebuild:
+  app-arch/deltarpm version bump, bug #198594. Thanks to Andrey Falko for
+  testing and providing feedback
+
+  10 Aug 2007; Greg Kroah-Hartman <gregkh@gentoo.org> deltarpm-3.3.ebuild:
+  add ~x86 as it works for me and I need this application on some machines.
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*deltarpm-3.3 (04 Nov 2005)
+
+  04 Nov 2005; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by me.

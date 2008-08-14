@@ -1,0 +1,34 @@
+# ChangeLog for media-gfx/openmesh
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/openmesh/ChangeLog,v 1.6 2008/08/11 23:40:23 yngwin Exp $
+
+  11 Aug 2008; Ben de Groot <yngwin@gentoo.org> openmesh-1.0.0.ebuild,
+  openmesh-1.9.4-r1.ebuild, openmesh-1.9.5.ebuild:
+  Fix split qt4 deps wrt bug 217161.
+
+*openmesh-1.9.5 (22 May 2007)
+
+  22 May 2007; Daniel Drake <dsd@gentoo.org> +openmesh-1.9.5.ebuild:
+  New upstream release with LGPL-2.1 licensing terms
+
+*openmesh-1.9.4-r1 (08 Feb 2007)
+
+  08 Feb 2007; Daniel Drake <dsd@gentoo.org> -openmesh-1.9.4.ebuild,
+  +openmesh-1.9.4-r1.ebuild:
+  Require fixed acgmake, and fix compiler flags for debug and non-debug cases
+
+*openmesh-1.9.4 (14 Dec 2006)
+
+  14 Dec 2006; Daniel Drake <dsd@gentoo.org> +openmesh-1.9.4.ebuild:
+  Add beta release
+
+  23 Nov 2006; <blubb@gentoo.org> openmesh-1.0.0.ebuild:
+  stable on amd64
+
+*openmesh-1.0.0 (19 Sep 2006)
+
+  19 Sep 2006; Daniel Drake <dsd@gentoo.org>
+  +files/openmesh-1.0.0-gcc41.patch, +metadata.xml, +openmesh-1.0.0.ebuild:
+  Initial import based on ebuild by Seemant Kulleen, thanks to ville in bug
+  #128305
+

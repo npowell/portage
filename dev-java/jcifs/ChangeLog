@@ -1,0 +1,51 @@
+# ChangeLog for dev-java/jcifs
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-java/jcifs/ChangeLog,v 1.14 2007/06/18 17:22:37 flameeyes Exp $
+
+  18 Jun 2007; Diego Pettenò <flameeyes@gentoo.org> jcifs-1.2.13.ebuild:
+  Add ~x86-fbsd keyword.
+
+  15 Jun 2007; Vlastimil Babka <caster@gentoo.org> -files/build-xml.patch,
+  -jcifs-1.1.5.ebuild:
+  Gen-1 punt.
+
+  15 Jun 2007; Christoph Mende <angelos@gentoo.org> jcifs-1.2.13.ebuild:
+  Stable on amd64 wrt bug 180363
+
+  14 Jun 2007; Tobias Scherbaum <dertobi123@gentoo.org> jcifs-1.2.13.ebuild:
+  ppc stable, bug #180363
+
+  07 Jun 2007; Markus Rothe <corsair@gentoo.org> jcifs-1.2.13.ebuild:
+  Stable on ppc64; bug #180363
+
+  02 Jun 2007; Christian Faulhammer <opfer@gentoo.org> jcifs-1.2.13.ebuild:
+  stable x86, bug 180363
+
+  30 May 2007; Petteri Räty <betelgeuse@gentoo.org> jcifs-1.2.13.ebuild:
+  Add examples use flag.
+
+  25 Apr 2007; Petteri Räty <betelgeuse@gentoo.org> metadata.xml:
+  Remove trailing white space.
+
+*jcifs-1.2.13 (25 Apr 2007)
+
+  25 Apr 2007; Petteri Räty <betelgeuse@gentoo.org> +jcifs-1.2.13.ebuild:
+  Version bump using generation 2.
+
+  18 Feb 2007; nixnut <nixnut@gentoo.org> jcifs-1.1.5.ebuild:
+  Stable on ppc wrt bug 160569
+
+  20 Jan 2007; Markus Rothe <corsair@gentoo.org> jcifs-1.1.5.ebuild:
+  Added ~ppc64
+
+  14 May 2005; Jan Brinkmann <luckyduck@gentoo.org> jcifs-1.1.5.ebuild:
+  added ~ppc to KEYWORDS
+
+  13 Feb 2005; Jan Brinkmann <luckyduck@gentoo.org> jcifs-1.1.5.ebuild:
+  stable on amd64 and x86.
+
+*jcifs-1.1.5 (23 Dec 2004)
+
+  23 Dec 2004; Karl Trygve Kalleberg <karltk@gentoo.org> jcifs-1.1.5.ebuild:
+  Initial import. Ebuild submitted by none other than the mean ebuild producing 
+  machine Jan 'Berta' Brinkmann <lukcy@the-luckyduck.de>. Fixes #75227.

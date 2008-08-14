@@ -1,0 +1,62 @@
+# ChangeLog for sci-electronics/eagle
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-electronics/eagle/ChangeLog,v 1.13 2008/07/17 00:12:09 nixphoeni Exp $
+
+  17 Jul 2008; Joe Sapp <nixphoeni@gentoo.org> ChangeLog:
+  Revised ebuild for eagle version 5, which uses a new packaging system and
+  adds some documentation. Thanks to Lukas Sandström for the bump notice and
+  ebuild help on bug #221847.
+
+  29 Feb 2008; Carsten Lohrke <carlo@gentoo.org> eagle-4.16_p1.ebuild,
+  eagle-4.16_p2.ebuild, eagle-4.16_p2-r2.ebuild:
+  Remove icon extension from desktop entry to match Icon Theme Specification.
+
+*eagle-4.16_p2-r2 (13 Jan 2008)
+
+  13 Jan 2008; Joe Sapp <nixphoeni@gentoo.org> files/eagle_wrapper_script,
+  -eagle-4.16_p2-r1.ebuild, +eagle-4.16_p2-r2.ebuild:
+  Pass arguments to the eagle wrapper script to the binary (thanks Denilson)
+
+*eagle-4.16_p2-r1 (10 Nov 2007)
+
+  10 Nov 2007; Joe Sapp <nixphoeni@gentoo.org> +files/eagle_wrapper_script,
+  eagle-4.16_p1.ebuild, eagle-4.16_p2.ebuild, +eagle-4.16_p2-r1.ebuild:
+  Added script to /usr/bin to execute eagle as recommended by CadSoft at
+  http://www.cadsoft.de/faq.htm#17040701 . Also see bug #188368. This
+  eliminates the need to append the eagle directory to the PATH env var.
+  Also quoted variables that may need it.
+
+  13 Oct 2007; Christoph Mende <angelos@gentoo.org> eagle-4.16_p2.ebuild:
+  Stable on amd64 wrt bug #188368
+
+  13 Sep 2007; Joe Sapp <nixphoeni@gentoo.org> eagle-4.16_p1.ebuild,
+  eagle-4.16_p2.ebuild:
+  Added PRELINK_PATH_MASK to /etc/env.d/90eagle on suggestion of James
+  Limbouris in bug #191961
+
+  15 Aug 2007; Markus Ullmann <jokey@gentoo.org> eagle-4.16_p2.ebuild:
+  Stable on x86 wrt bug #188368
+
+*eagle-4.16_p2 (12 Jun 2007)
+
+  12 Jun 2007; Joe Sapp <nixphoeni@gentoo.org> metadata.xml,
+  +eagle-4.16_p2.ebuild:
+  Bumped to _p2, updated and fixed formatting in metadata.xml (#181430)
+
+  29 Apr 2007; Torsten Veller <tove@gentoo.org> eagle-4.16_p1.ebuild:
+  Fix *initd, *confd and *envd calls (#173884, #174266)
+
+  18 Apr 2007; Christian Faulhammer <opfer@gentoo.org> eagle-4.16_p1.ebuild:
+  keyworded ~amd64, bug 173051
+
+  07 Dec 2006; Joe Sapp <nixphoeni@gentoo.org> eagle-4.16_p1.ebuild:
+  Applied jakub's fix to bug #157374 - changed the 'case' statement to check
+  for "de" anywhere in LINGUAS.
+
+*eagle-4.16_p1 (05 Dec 2006)
+
+  05 Dec 2006; Joe Sapp <nixphoeni@gentoo.org> +metadata.xml,
+  +eagle-4.16_p1.ebuild:
+  Initial commit. Thanks to Michael Ihde for the initial ebuild submission.
+  This closes bug #37217.
+

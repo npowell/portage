@@ -1,0 +1,17 @@
+# ChangeLog for dev-util/ald
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/ald/ChangeLog,v 1.3 2007/02/09 03:00:14 flameeyes Exp $
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  09 Jun 2005; Olivier Crête <tester@gentoo.org> ald-0.1.7.ebuild:
+  Marking stable
+
+*ald-0.1.7 (12 Apr 2005)
+
+  12 Apr 2005; Olivier Crête <tester@gentoo.org> +metadata.xml,
+  +ald-0.1.7.ebuild:
+  Initial import of ebuild contributed by Miles Lubin <miles@lubin.us> (bug
+  #54336)
+

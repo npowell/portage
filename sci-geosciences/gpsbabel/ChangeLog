@@ -1,0 +1,66 @@
+# ChangeLog for sci-geosciences/gpsbabel
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-geosciences/gpsbabel/ChangeLog,v 1.13 2008/05/17 13:38:06 hanno Exp $
+
+*gpsbabel-1.3.5 (17 May 2008)
+
+  17 May 2008; Hanno Boeck <hanno@gentoo.org>
+  +files/gpsbabel-1.3.5-dont-install-pdf.diff, +gpsbabel-1.3.5.ebuild:
+  Version bump, first part of 1.3.3-patch is no longer needed, splittet out
+  second part.
+
+  01 Oct 2007; Ferris McCormick <fmccor@gentoo.org> gpsbabel-1.3.4.ebuild:
+  Add ~sparc at user request, Bug #194397 -- runs test and installs.
+
+*gpsbabel-1.3.4 (23 Aug 2007)
+
+  23 Aug 2007; Hanno Boeck <hanno@gentoo.org>
+  +files/gpsbabel-1.3.3-freebsd.patch, +gpsbabel-1.3.4.ebuild:
+  Version bump and FreeBSD-fix.
+
+  18 Jul 2007; Marcus D. Hanwell <cryos@gentoo.org>
+  -files/gpsbabel-1.3.2.patch, -files/gpsbabel.patch,
+  -gpsbabel-1.3.2.ebuild, gpsbabel-1.3.3.ebuild:
+  Marked stable on amd64, removed old version.
+
+  28 Mar 2007; Marcus D. Hanwell <cryos@gentoo.org> gpsbabel-1.3.3.ebuild:
+  Rekeyworded ~amd64, please do not remove keywords on bumps unless there is a
+  reason for it.
+
+*gpsbabel-1.3.3 (01 Mar 2007)
+
+  01 Mar 2007; <djay@gentoo.org> +files/gpsbabel-1.3.3.patch,
+  +gpsbabel-1.3.3.ebuild:
+  Version bump thanks to jakub for his reminder (bug #168813)
+
+  08 Jan 2007; Danny van Dyk <kugelfang@gentoo.org> -gpsbabel-1.2.7.ebuild,
+  -gpsbabel-1.3.1.ebuild:
+  QA: Removed unused versions.
+
+  02 Dec 2006; Steve Dibb <beandog@gentoo.org> gpsbabel-1.2.7.ebuild,
+  gpsbabel-1.3.1.ebuild, gpsbabel-1.3.2.ebuild:
+  Add ~amd64, bug 127686
+
+*gpsbabel-1.3.2 (24 Nov 2006)
+
+  24 Nov 2006; <djay@gentoo.org> +files/gpsbabel-1.3.2.patch,
+  +gpsbabel-1.3.2.ebuild:
+  Version bump, thanks to Alistair Boyle <sail.not.swim@gmail.com> for his
+  reminder (bug #155185)
+
+*gpsbabel-1.3.1 (30 Sep 2006)
+
+  30 Sep 2006; <djay@gentoo.org> +files/gpsbabel.patch,
+  +gpsbabel-1.3.1.ebuild:
+  Version Bump, thanks jakub and ranaldo@unina.it for their help.
+
+*gpsbabel-1.2.7 (08 Sep 2005)
+
+  30 Sep 2006; <djay@gentoo.org> gpsbabel-1.2.7.ebuild:
+  Modifications relative to bug #144169, solving the tetex dependencies (thx
+  jakub).
+
+  08 Sep 2005; Olivier Fisette <ribosome@gentoo.org> +metadata.xml,
+  +gpsbabel-1.2.7.ebuild:
+  Initial import. Thanks to Gérald Fenoy <djayweb@djayux.net> for his work.
+

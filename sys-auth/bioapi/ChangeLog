@@ -1,0 +1,32 @@
+# ChangeLog for sys-auth/bioapi
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-auth/bioapi/ChangeLog,v 1.7 2008/02/27 10:24:02 vapier Exp $
+
+  27 Feb 2008; Mike Frysinger <vapier@gentoo.org> bioapi-1.2.3.ebuild:
+  Add missing eutils inherit for enewgroup as pointed out by Shufeng Zheng.
+
+*bioapi-1.2.3 (31 Dec 2007)
+
+  31 Dec 2007; Mike Frysinger <vapier@gentoo.org> +bioapi-1.2.3.ebuild:
+  Version bump and cleanup.
+
+  05 Sep 2007; Chris Gianelloni <wolf31o2@gentoo.org> metadata.xml:
+  Changed maintainer to Mike Frysinger <vapier@gentoo.org>.
+
+  09 Apr 2007; Chris Gianelloni <wolf31o2@gentoo.org> bioapi-1.2.2.ebuild:
+  Change insinto /etc/env.d ; doins -> doenvd for bug #173884.
+
+  27 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> bioapi-1.2.2.ebuild:
+  Add ~amd64 wrt bug #168336.
+
+  05 Oct 2006; Chris Gianelloni <wolf31o2@gentoo.org> bioapi-1.2.2.ebuild:
+  qt USE should be qt3.
+
+*bioapi-1.2.2 (05 Oct 2006)
+
+  05 Oct 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  +files/51-bioapi.rules, +files/bioapi-1.2.2_patch, +metadata.xml,
+  +bioapi-1.2.2.ebuild:
+  Initial import. Ebuild by Jochen Maes <jochen.maes@sejo.be> who will be
+  maintaining this package. I will be his proxy maintainer.
+

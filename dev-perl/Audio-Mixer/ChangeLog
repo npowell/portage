@@ -1,0 +1,39 @@
+# ChangeLog for dev-perl/Audio-Mixer
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Audio-Mixer/ChangeLog,v 1.9 2007/01/14 22:24:19 mcummings Exp $
+
+  14 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  Audio-Mixer-0.7.ebuild:
+  Ebuild maintenance
+
+  06 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Audio-Mixer-0.7.ebuild:
+  Marking amd64 stable
+
+  04 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Audio-Mixer-0.7.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  10 Jul 2006; Aron Griffis <agriffis@gentoo.org> Audio-Mixer-0.7.ebuild:
+  Mark 0.7 stable on ia64
+
+  11 Jun 2006; Michael Cummings <mcummings@gentoo.org>
+  Audio-Mixer-0.7.ebuild:
+  Marking stable sparc
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org> Audio-Mixer-0.7.ebuild:
+  Mark 0.7 ~ia64
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  Audio-Mixer-0.7.ebuild:
+  Marking stable x86
+
+  19 Apr 2005; Jan Brinkmann <luckyduck@gentoo.org> Audio-Mixer-0.7.ebuild:
+  added ~amd64 and ~ppc to KEYWORDS
+
+*Audio-Mixer-0.7 (19 Apr 2005)
+
+  19 Apr 2005; Michael Cummings <mcummings@gentoo.org> +metadata.xml,
+  +Audio-Mixer-0.7.ebuild:
+  New dep for mplay, bug 74394
+

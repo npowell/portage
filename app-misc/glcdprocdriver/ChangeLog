@@ -1,0 +1,49 @@
+# ChangeLog for app-misc/glcdprocdriver
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/glcdprocdriver/ChangeLog,v 1.9 2008/02/21 23:54:30 robbat2 Exp $
+
+  21 Feb 2008; Robin H. Johnson <robbat2@gentoo.org>
+  glcdprocdriver-0.0.4.ebuild:
+  Add ~ppc.
+
+*glcdprocdriver-0.0.4 (17 Apr 2007)
+
+  17 Apr 2007; Robert Buchholz <rbu@gentoo.org> metadata.xml,
+  +glcdprocdriver-0.0.4.ebuild:
+  Version bump
+
+  11 Apr 2007; Peter Weller <welp@gentoo.org>
+  glcdprocdriver-0.0.3-r2.ebuild:
+  Stable on amd64 wrt bug 173271
+
+  08 Apr 2007; Torsten Veller <tove@gentoo.org>
+  files/glcdprocdriver-0.0.3-makefile.patch,
+  -glcdprocdriver-0.0.3-r1.ebuild, glcdprocdriver-0.0.3-r2.ebuild:
+  Stable on x86. Removed old version.
+
+*glcdprocdriver-0.0.3-r2 (07 Apr 2007)
+
+  07 Apr 2007; Robert Buchholz <rbu@gentoo.org>
+  +files/glcdprocdriver-0.0.3-makefile.patch,
+  +glcdprocdriver-0.0.3-r2.ebuild:
+  Fix as-needed issue wrt bug #173271, thanks tove
+
+  07 Apr 2007; Markus Ullmann <jokey@gentoo.org>
+  glcdprocdriver-0.0.3-r1.ebuild:
+  Stable on x86 wrt bug #173271
+
+*glcdprocdriver-0.0.3-r1 (02 Apr 2007)
+
+  02 Apr 2007; Robert Buchholz <rbu@gentoo.org>
+  -glcdprocdriver-0.0.3.ebuild, +glcdprocdriver-0.0.3-r1.ebuild:
+  install libs into /usr/lib64 on amd64 systems
+
+  18 Oct 2006; Markus Ullmann <jokey@gentoo.org> metadata.xml:
+  Metadata update
+
+*glcdprocdriver-0.0.3 (08 Oct 2006)
+
+  08 Oct 2006; Markus Ullmann <jokey@gentoo.org> +metadata.xml,
+  +glcdprocdriver-0.0.3.ebuild:
+  Initial version, ebuild contributed by Lucian Muresan
+

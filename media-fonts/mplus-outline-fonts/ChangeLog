@@ -1,0 +1,52 @@
+# ChangeLog for media-fonts/mplus-outline-fonts
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-fonts/mplus-outline-fonts/ChangeLog,v 1.8 2008/08/09 00:45:06 matsuu Exp $
+
+*mplus-outline-fonts-0_pre016 (09 Aug 2008)
+
+  09 Aug 2008; MATSUU Takuto <matsuu@gentoo.org>
+  -mplus-outline-fonts-0_pre011.ebuild,
+  -mplus-outline-fonts-0_pre012.ebuild,
+  +mplus-outline-fonts-0_pre016.ebuild:
+  Version bumped, bug #232786.
+
+*mplus-outline-fonts-0_pre014 (08 Mar 2007)
+
+  08 Mar 2007; Masatomo Nakano <nakano@gentoo.org>
+  +mplus-outline-fonts-0_pre014.ebuild:
+  Version bump.
+
+*mplus-outline-fonts-0_pre012 (09 Oct 2006)
+
+  09 Oct 2006; MATSUU Takuto <matsuu@gentoo.org>
+  -mplus-outline-fonts-0_pre010.ebuild, mplus-outline-fonts-0_pre011.ebuild,
+  +mplus-outline-fonts-0_pre012.ebuild:
+  Version bumped.
+  Fixed LICENSE.
+  Remove old version.
+
+  11 Jul 2006; Aron Griffis <agriffis@gentoo.org>
+  mplus-outline-fonts-0_pre011.ebuild:
+  Mark 0_pre011 ~ia64
+
+*mplus-outline-fonts-0_pre011 (28 Mar 2006)
+
+  28 Mar 2006; Mamoru KOMACHI <usata@gentoo.org>
+  +mplus-outline-fonts-0_pre011.ebuild:
+  Version bumped.
+
+  12 Jan 2006; Robin H. Johnson <robbat2@gentoo.org>
+  mplus-outline-fonts-0_pre010.ebuild:
+  Modular-X fixes for DEPEND. font eclass handles this correctly. Fix rm to
+  always include -f to avoid interactivity.
+
+  10 Jan 2006; Michael Hanselmann <hansmi@gentoo.org>
+  mplus-outline-fonts-0_pre010.ebuild:
+  Added to ~hppa, ~ppc.
+
+*mplus-outline-fonts-0_pre010 (23 Dec 2005)
+
+  23 Dec 2005; Mamoru KOMACHI <usata@gentoo.org> +metadata.xml,
+  +mplus-outline-fonts-0_pre010.ebuild:
+  Initial import. Thanks to kuratomi, a5hr and bashi (GentooJP users).
+

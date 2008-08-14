@@ -1,0 +1,13 @@
+# ChangeLog for net-analyzer/dhcpdump
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/dhcpdump/ChangeLog,v 1.2 2008/06/11 07:44:49 bangert Exp $
+
+  11 Jun 2008; Thilo Bangert <bangert@gentoo.org> dhcpdump-1.7.ebuild:
+  add amd64 keyword - bug #225787
+
+*dhcpdump-1.7 (26 Aug 2007)
+
+  26 Aug 2007; Thilo Bangert <bangert@gentoo.org> +metadata.xml,
+  +dhcpdump-1.7.ebuild:
+  initial import - thanks Adam Carheden - bug #121895
+

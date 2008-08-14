@@ -1,0 +1,124 @@
+# ChangeLog for mail-client/claws-mail-acpi-notifier
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/mail-client/claws-mail-acpi-notifier/ChangeLog,v 1.22 2008/06/23 06:20:13 opfer Exp $
+
+  23 Jun 2008; Christian Faulhammer <opfer@gentoo.org>
+  -claws-mail-acpi-notifier-1.0.12.ebuild,
+  -claws-mail-acpi-notifier-1.0.13.ebuild,
+  -claws-mail-acpi-notifier-1.0.14.ebuild,
+  -claws-mail-acpi-notifier-1.0.15.ebuild:
+  clean up
+
+  21 Jun 2008; Christian Faulhammer <opfer@gentoo.org> metadata.xml:
+  correct email address of Ken
+
+  14 Jun 2008; Kenneth Prugh <ken69267@gentoo.org>
+  claws-mail-acpi-notifier-1.0.16.ebuild:
+  amd64 stable, bug #222167
+
+  11 Jun 2008; Christian Faulhammer <opfer@gentoo.org>
+  claws-mail-acpi-notifier-1.0.16.ebuild:
+  stable x86, bug 222167
+
+  11 Jun 2008; Christian Faulhammer <opfer@gentoo.org> metadata.xml:
+  Changing maintainers
+
+  30 May 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Andrej Kacian (Ticho) from metadata.xml (as per #59986).
+
+  28 May 2008; Mark Loeser <halcy0n@gentoo.org>
+  claws-mail-acpi-notifier-1.0.12.ebuild,
+  claws-mail-acpi-notifier-1.0.13.ebuild,
+  claws-mail-acpi-notifier-1.0.14.ebuild,
+  claws-mail-acpi-notifier-1.0.15.ebuild:
+  Fix RDEPEND on pkgconfig; bug #217278
+
+*claws-mail-acpi-notifier-1.0.16 (12 May 2008)
+
+  12 May 2008; Christian Faulhammer <opfer@gentoo.org>
+  +claws-mail-acpi-notifier-1.0.16.ebuild:
+  version bump for bug 218708
+
+*claws-mail-acpi-notifier-1.0.15 (13 Feb 2008)
+
+  13 Feb 2008; Andrej Kacian <ticho@gentoo.org>
+  claws-mail-acpi-notifier-1.0.12.ebuild,
+  claws-mail-acpi-notifier-1.0.13.ebuild,
+  claws-mail-acpi-notifier-1.0.14.ebuild,
+  +claws-mail-acpi-notifier-1.0.15.ebuild:
+  Version bump. Depend on pkgconfig (bug #205864).
+
+*claws-mail-acpi-notifier-1.0.14 (28 Dec 2007)
+
+  28 Dec 2007; Andrej Kacian <ticho@gentoo.org>
+  +claws-mail-acpi-notifier-1.0.14.ebuild:
+  Version bump. Bug #202634 by Joe <joacher at gmx.de>.
+
+*claws-mail-acpi-notifier-1.0.13 (29 Nov 2007)
+
+  29 Nov 2007; Andrej Kacian <ticho@gentoo.org>
+  -claws-mail-acpi-notifier-1.0.5.ebuild,
+  -claws-mail-acpi-notifier-1.0.6.ebuild,
+  -claws-mail-acpi-notifier-1.0.7.ebuild,
+  -claws-mail-acpi-notifier-1.0.8.ebuild,
+  -claws-mail-acpi-notifier-1.0.9.ebuild,
+  -claws-mail-acpi-notifier-1.0.10.ebuild,
+  -claws-mail-acpi-notifier-1.0.11.ebuild,
+  +claws-mail-acpi-notifier-1.0.13.ebuild:
+  Version bump, ebuild cleanup.
+
+  13 Sep 2007; Christian Faulhammer <opfer@gentoo.org>
+  claws-mail-acpi-notifier-1.0.12.ebuild:
+  x86 stable, security bug 190104
+
+*claws-mail-acpi-notifier-1.0.12 (03 Sep 2007)
+
+  03 Sep 2007; Andrej Kacian <ticho@gentoo.org>
+  +claws-mail-acpi-notifier-1.0.12.ebuild:
+  Version bump.
+
+*claws-mail-acpi-notifier-1.0.11 (07 Jul 2007)
+
+  07 Jul 2007; <ticho@gentoo.org> +claws-mail-acpi-notifier-1.0.11.ebuild:
+  Version bump.
+
+*claws-mail-acpi-notifier-1.0.10 (08 May 2007)
+
+  08 May 2007; Andrej Kacian <ticho@gentoo.org>
+  +claws-mail-acpi-notifier-1.0.10.ebuild:
+  Version bump.
+
+*claws-mail-acpi-notifier-1.0.9 (16 Apr 2007)
+
+  16 Apr 2007; Andrej Kacian <ticho@gentoo.org>
+  +claws-mail-acpi-notifier-1.0.9.ebuild:
+  Version bump.
+
+*claws-mail-acpi-notifier-1.0.8 (27 Feb 2007)
+
+  27 Feb 2007; Andrej Kacian <ticho@gentoo.org>
+  +claws-mail-acpi-notifier-1.0.8.ebuild:
+  Version bump.
+
+  25 Jan 2007; Christian Faulhammer <opfer@gentoo.org>
+  claws-mail-acpi-notifier-1.0.5.ebuild:
+  stable x86; bug #163611
+
+*claws-mail-acpi-notifier-1.0.7 (15 Jan 2007)
+
+  15 Jan 2007; Andrej Kacian <ticho@gentoo.org>
+  +claws-mail-acpi-notifier-1.0.7.ebuild:
+  Version bump.
+
+*claws-mail-acpi-notifier-1.0.6 (09 Jan 2007)
+
+  09 Jan 2007; Andrej Kacian <ticho@gentoo.org>
+  +claws-mail-acpi-notifier-1.0.6.ebuild:
+  Version bump.
+
+*claws-mail-acpi-notifier-1.0.5 (19 Dec 2006)
+
+  19 Dec 2006; Andrej Kacian <ticho@gentoo.org> +metadata.xml,
+  +claws-mail-acpi-notifier-1.0.5.ebuild:
+  This is the new name of mail-client/sylpheed-claws-acpi-notifier.
+

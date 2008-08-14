@@ -1,0 +1,120 @@
+# ChangeLog for sys-apps/kexec-tools
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/kexec-tools/ChangeLog,v 1.20 2008/08/01 10:10:04 zzam Exp $
+
+*kexec-tools-1.101-r5 (01 Aug 2008)
+
+  01 Aug 2008; Matthias Schwarzott <zzam@gentoo.org> files/kexec.init,
+  +kexec-tools-1.101-r5.ebuild:
+  Fixed init script to detect reboot also with baselayout-2, Bug #218268.
+
+  21 Mar 2008; Stefan Schweizer <genstef@gentoo.org>
+  -files/kexec-tools-9999-LDFLAGS.patch, files/kexec.init,
+  kexec-tools-9999.ebuild:
+  remove failing patch thanks to pioto in bug 213426 and fix init script for
+  openrc, bug 214018
+
+  11 Mar 2008; Stefan Schweizer <genstef@gentoo.org>
+  +files/kexec-tools-1.101-respect-LDFLAGS.patch,
+  kexec-tools-1.101-r4.ebuild:
+  respect ldflags, thanks to Arfrever Frehtes Taifersar Arahesis
+  <Arfrever.FTA@GMail.Com> in bug 181463
+
+  21 Jan 2008; Stefan Schweizer <genstef@gentoo.org> files/kexec.init:
+  set KPARAM correctly thanks to Friedrich Oslage <bluebird@porno-bullen.de>
+  in bug 203406
+
+  12 May 2007; Daniel Drake <dsd@gentoo.org> metadata.xml:
+  Move from kernel to kernel-misc herd
+
+*kexec-tools-1.101-r4 (13 Mar 2007)
+
+  13 Mar 2007; Roy Marples <uberlord@gentoo.org> files/kexec.init,
+  +kexec-tools-1.101-r4.ebuild:
+  New init script works with non bash shells.
+
+*kexec-tools-9999 (06 Mar 2007)
+
+  06 Mar 2007; Mike Frysinger <vapier@gentoo.org>
+  +files/kexec-tools-9999-LDFLAGS.patch, +kexec-tools-9999.ebuild:
+  Add ebuild for git tree.
+
+  06 Mar 2007; <genstef@gentoo.org> +files/kexec-linux-headers.patch,
+  -kexec-tools-1.101.ebuild, kexec-tools-1.101-r3.ebuild:
+  Do not use linux-headers incorrectly, thanks to Sheldon Hearn
+  <sheldonh@starjuice.net> in bug 169610
+
+  05 Nov 2006; <blubb@gentoo.org> kexec-tools-1.101-r3.ebuild:
+  stable on amd64
+
+  28 Oct 2006; Christian Faulhammer <opfer@gentoo.org>
+  kexec-tools-1.101-r3.ebuild:
+  x86 stable wrt bug #151251
+
+  13 Aug 2006; Roy Marples <uberlord@gentoo.org> files/kexec.conf,
+  files/kexec.init:
+  Update the init script so that it's more intelligent working things out
+  so it should just work for most peoples installs.
+  
+  We now confiure kexec on shutdown by default instead of startup.
+
+*kexec-tools-1.101-r3 (13 Jun 2006)
+
+  13 Jun 2006; Daniel Drake <dsd@gentoo.org> files/kexec.conf,
+  files/kexec.init, -kexec-tools-1.100-r1.ebuild,
+  -kexec-tools-1.101-r1.ebuild, -kexec-tools-1.101-r2.ebuild,
+  +kexec-tools-1.101-r3.ebuild:
+  Add new configuration variable, which allows you to load the kernel image
+  during shutdown rather than startup. This saves some memory during system
+  operation, but poses an inconvenience if you like to use 'kexec --unload'
+  during operation to disable kexec for the next reboot.
+
+*kexec-tools-1.101-r2 (04 Mar 2006)
+
+  04 Mar 2006; Stefan Schweizer <genstef@gentoo.org> files/kexec.init,
+  +kexec-tools-1.101-r2.ebuild:
+  version bump, add kdump patches from fastboot mailing list, use make
+  install, sanitize init script thanks to David Danier <golk@gmx.net> in bug
+  124966
+
+  25 Feb 2006; Mike Frysinger <vapier@gentoo.org>
+  +files/kexec-tools-1.101-ppc64.patch, kexec-tools-1.101-r1.ebuild:
+  Fix configure detection of ppc64 hosts.
+
+  29 Jan 2006; Mike Frysinger <vapier@gentoo.org>
+  +files/kexec-tools-1.101-LDFLAGS.patch, kexec-tools-1.101-r1.ebuild:
+  Fix building with LDFLAGS.
+
+*kexec-tools-1.101-r1 (20 Jan 2006)
+
+  20 Jan 2006; Stefan Schweizer <genstef@gentoo.org> files/kexec.conf,
+  files/kexec.init, +kexec-tools-1.101-r1.ebuild:
+  Add KPARAM autodetection thanks to James Le Cuirot <chewi@ffaura.com> in bug
+  107527
+
+  29 Oct 2005; Mark Loeser <halcy0n@gentoo.org> kexec-tools-1.101.ebuild:
+  Stable on x86; bug #110734
+
+*kexec-tools-1.101 (12 Mar 2005)
+
+  12 Mar 2005; Stefan Schweizer <genstef@gentoo.org>
+  +kexec-tools-1.101.ebuild:
+  version bump
+
+*kexec-tools-1.100-r1 (04 Feb 2005)
+
+  04 Feb 2005; Stefan Schweizer <genstef@gentoo.org> files/kexec.init,
+  +kexec-tools-1.100-r1.ebuild:
+  Making initrd support actually work, thanks to mayday147 in
+  http://forums.gentoo.org/viewtopic.php?p=2055679#2055679
+
+*kexec-tools-1.100 (31 Jan 2005)
+
+  31 Jan 2005; Stefan Schweizer <genstef@gentoo.org> +metadata.xml,
+  +files/kexec.conf, +files/kexec.init, +kexec-tools-1.100.ebuild:
+  New ebuild thanks to Starz McCllelan <starz@antisocial.com>, Jay Pfeifer
+  <pfeifer@gentoo.org>, Christopher Sidebottom <damouse@zero10.demon.co.uk>,
+  Justus Winter <justus@sunny-winter.de>, Radoslaw -AstralStorm- Szkodzinski
+  <astralstorm@gmail.com>, Daniel Webert <rockoo@gmail.com> and Carlos Silva
+  <r3pek@r3pek.homelinux.org> in bug 50313
+

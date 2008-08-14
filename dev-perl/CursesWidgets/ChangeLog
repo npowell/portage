@@ -1,0 +1,39 @@
+# ChangeLog for dev-perl/CursesWidgets
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/CursesWidgets/ChangeLog,v 1.10 2007/01/15 15:39:41 mcummings Exp $
+
+  15 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  CursesWidgets-1.997.ebuild:
+  Ebuild maintenance
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  CursesWidgets-1.997.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  10 Jul 2006; Aron Griffis <agriffis@gentoo.org>
+  CursesWidgets-1.997.ebuild:
+  Mark 1.997 stable on ia64
+
+  04 Jul 2006; Christian Hartmann <ian@gentoo.org>
+  CursesWidgets-1.997.ebuild:
+  Fixed RDEPEND wrt bug #134781; fixed DEPEND
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org>
+  CursesWidgets-1.997.ebuild:
+  Mark 1.997 ~ia64
+
+  17 Apr 2004; Michael McCabe <randy@gentoo.org>
+  CursesWidgets-1.997.ebuild:
+  added s390 keywords
+
+  05 Dec 2003; Jason Wever <weeve@gentoo.org> CursesWidgets-1.997.ebuild:
+  Marked stable on sparc to fix broken dependencies.
+
+*CursesWidgets-1.997 (22 Mar 2003)
+
+  22 Mar 2003; Lars Weiler <pylon@gentoo.org> CursesWidgets-1.997.ebuild:
+  marked as x86
+
+  22 Mar 2003; Lars Weiler <pylon@gentoo.org> CursesWidgets-1.997.ebuild:
+  Initial ChangeLog
+

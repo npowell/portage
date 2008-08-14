@@ -1,0 +1,53 @@
+# ChangeLog for www-apps/freeradius-dialupadmin
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-apps/freeradius-dialupadmin/ChangeLog,v 1.8 2007/04/14 08:58:32 mrness Exp $
+
+  14 Apr 2007; Alin Năstac <mrness@gentoo.org> files/setrootpath,
+  freeradius-dialupadmin-1.70.3.ebuild:
+  Use freeradius-1.1.6 tarball.
+
+  18 Jan 2007; Alin Năstac <mrness@gentoo.org>
+  -files/freeradius-dialupadmin-1.70.2-sqldebug.patch,
+  -freeradius-dialupadmin-1.70.2.ebuild:
+  Remove old version.
+
+*freeradius-dialupadmin-1.70.3 (09 Sep 2006)
+
+  09 Sep 2006; Alin Nastac <mrness@gentoo.org>
+  +files/freeradius-dialupadmin-1.70.3-sqldebug.patch,
+  -files/freeradius-dialupadmin-1.70-sqldebug.patch,
+  -freeradius-dialupadmin-1.70-r1.ebuild,
+  +freeradius-dialupadmin-1.70.3.ebuild:
+  Version bump.
+
+*freeradius-dialupadmin-1.70.2 (13 May 2006)
+
+  13 May 2006; Alin Nastac <mrness@gentoo.org>
+  +files/freeradius-dialupadmin-1.70.2-sqldebug.patch,
+  +freeradius-dialupadmin-1.70.2.ebuild:
+  Version bump.
+
+  04 Oct 2005; Alin Nastac <mrness@gentoo.org>
+  -freeradius-dialupadmin-1.70.ebuild:
+  Remove obsolete test version.
+
+*freeradius-dialupadmin-1.70-r1 (06 Aug 2005)
+
+  06 Aug 2005; Alin Nastac <mrness@gentoo.org>
+  +files/freeradius-dialupadmin-1.70-sqldebug.patch,
+  +freeradius-dialupadmin-1.70-r1.ebuild:
+  Fix include paths to configuration files and disable sql debug, thanks to
+  Robert Withrow <witr@rwwa.com> (#101226).
+
+*freeradius-dialupadmin-1.70 (23 Jun 2005)
+
+  23 Jun 2005; Alin Nastac <mrness@gentoo.org>
+  -freeradius-dialupadmin-1.0.2.ebuild, +freeradius-dialupadmin-1.70.ebuild:
+  Correct version number - it does not share version with freeradius package.
+
+*freeradius-dialupadmin-1.0.2 (29 Mar 2005)
+
+  29 Mar 2005; Alin Nastac <mrness@gentoo.org> +metadata.xml,
+  +files/setrootpath, +freeradius-dialupadmin-1.0.2.ebuild:
+  Initial version (#84070).
+

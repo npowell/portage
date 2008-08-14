@@ -1,0 +1,26 @@
+# ChangeLog for games-strategy/lightyears
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-strategy/lightyears/ChangeLog,v 1.6 2008/05/29 16:55:42 hawking Exp $
+
+  29 May 2008; Ali Polatel <hawking@gentoo.org> lightyears-1.2a.ebuild:
+  python_mod_optimize is ROOT aware.
+
+  28 Mar 2008; Tristan Heaven <nyhm@gentoo.org> lightyears-1.2a.ebuild:
+  Fix python eclass usage
+
+  29 May 2007; Tristan Heaven <nyhm@gentoo.org> lightyears-1.2a.ebuild:
+  Byte compile .py files for some speedup, bug #180191
+
+  30 Apr 2007; Tristan Heaven <nyhm@gentoo.org> lightyears-1.2a.ebuild:
+  keyword ~x86
+
+  29 Apr 2007; Tupone Alfredo <tupone@gentoo.org> lightyears-1.2a.ebuild:
+  Fix mkdirhier not available, bug #176394 by Federico Guglielmo Edoardo Granata
+
+*lightyears-1.2a (27 Apr 2007)
+
+  27 Apr 2007; Tupone Alfredo <tupone@gentoo.org>
+  +files/lightyears-1.2a-gentoo.patch, +metadata.xml,
+  +lightyears-1.2a.ebuild:
+  New package, Bug #130485 by Alexandru Toma
+

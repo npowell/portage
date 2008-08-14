@@ -1,0 +1,56 @@
+# ChangeLog for sys-devel/dev86
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-devel/dev86/ChangeLog,v 1.12 2008/03/06 16:20:46 angelos Exp $
+
+  06 Mar 2008; Christoph Mende <angelos@gentoo.org> dev86-0.16.17-r5.ebuild:
+  Stable on amd64, bug #208905
+
+*dev86-0.16.17-r5 (26 Feb 2008)
+
+  26 Feb 2008; Raúl Porcel <armin76@gentoo.org> -dev86-0.16.17-r3.ebuild,
+  -dev86-0.16.17-r4.ebuild, +dev86-0.16.17-r5.ebuild:
+  Fix bug #167790 and bug #201313
+
+*dev86-0.16.17-r4 (04 Nov 2007)
+
+  04 Nov 2007; Charlie Shepherd <masterdriverz@gentoo.org>
+  +dev86-0.16.17-r4.ebuild:
+  Move man pages from /usr/man to /usr/share/man. Bug 167790, thanks to Andy
+  Romeril for reporting.
+
+  15 Jul 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Assigning to m-needed, as beu is being retired (#66608).
+
+  13 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+  11 Dec 2006; Elfyn McBratney <beu@gentoo.org> dev86-0.16.17-r3.ebuild:
+  Kill redundant DEPEND on virtual/libc.
+
+  11 Aug 2006; Chris Bainbridge <chrb@gentoo.org> -dev86-0.16.17-r2.ebuild,
+  dev86-0.16.17-r3.ebuild:
+  stable on x86
+
+*dev86-0.16.17-r3 (04 Aug 2006)
+
+  04 Aug 2006; Chris Bainbridge <chrb@gentoo.org> +dev86-0.16.17-r3.ebuild:
+  Add bin86 as a depend and fix collisions, bug #139188
+
+*dev86-0.16.17-r2 (11 Nov 2005)
+
+  11 Nov 2005; <chrb@gentoo.org> +files/dev86-pic.patch,
+  +dev86-0.16.17-r2.ebuild:
+  Fix PIC compile, CFLAGS (#111257)
+
+*dev86-0.16.17-r1 (10 Nov 2005)
+
+  10 Nov 2005; Robin H. Johnson <robbat2@gentoo.org>
+  +dev86-0.16.17-r1.ebuild:
+  New revision that compiles on amd64.
+
+*dev86-0.16.17 (26 Oct 2005)
+
+  26 Oct 2005; Chris Bainbridge <chrb@gentoo.org> +metadata.xml,
+  +dev86-0.16.17.ebuild:
+  This package was submitted by Olaf Wepner in bug #101754
+

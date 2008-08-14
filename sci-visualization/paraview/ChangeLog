@@ -1,0 +1,119 @@
+# ChangeLog for sci-visualization/paraview
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-visualization/paraview/ChangeLog,v 1.24 2008/07/30 21:47:18 markusle Exp $
+
+  29 Jul 2008; Markus Dittrich <markusle@gentoo.org>
+  paraview-3.3_pre20080514.ebuild:
+  Added OpenFOAM-1.5 support patch (fixes bug #233191). Thanks much to
+  Takuya OSHIMA <oshima@eng.niigata-u.ac.jp> for providing a
+  customized patch and Oliver Borm <oli.borm@web.de> for his patch. 
+
+  28 Jul 2008; Carsten Lohrke <carlo@gentoo.org> paraview-3.2.1.ebuild:
+  QA: Get rid of deprecated qt4_min_version().
+
+  27 Jul 2008; Carsten Lohrke <carlo@gentoo.org>
+  paraview-3.3_pre20080514.ebuild:
+  Fix broken split Qt 4.4 dependencies, cf. bug 217161 comment 11.
+
+  27 May 2008; Markus Dittrich <markusle@gentoo.org> ChangeLog:
+  Removed package from package.mask.
+
+  26 May 2008; Markus Dittrich <markusle@gentoo.org>
+  -files/paraview-3.3_pre20080514-qt.patch,
+  +files/paraview-3.3_pre20080514-qt4.4.patch,
+  paraview-3.3_pre20080514.ebuild:
+  Added support for qt4, fixed bogus /usr/plugin install directory and
+  depend explicitly on eselect-opengl to avoid missing declarations 
+  in older glext header files.
+
+*paraview-3.3_pre20080514 (15 May 2008)
+
+  15 May 2008; Markus Dittrich <markusle@gentoo.org>
+  +files/paraview-3.3_pre20080514-gcc4.3.patch,
+  +files/paraview-3.3_pre20080514-qt.patch,
+  +paraview-3.3_pre20080514.ebuild:
+  Added development version which fixes the non-functioning
+  screenshot feature (see bug #220477).
+
+  12 May 2008; Markus Dittrich <markusle@gentoo.org> paraview-2.6.2.ebuild,
+  paraview-3.2.1.ebuild:
+  Removed runtime dependency on app-doc/doxygen (fixes bug #221689).
+
+  20 Feb 2008; Markus Dittrich <markusle@gentoo.org>
+  +files/paraview-3.2.1-openmpi.patch, paraview-3.2.1.ebuild:
+  Enabled support for openmpi and mpich2 (see bug #210639).
+
+  15 Feb 2008; Markus Dittrich <markusle@gentoo.org>
+  +files/paraview-2.6.2-tkImgGIF.patch, paraview-2.6.2.ebuild:
+  Added patch to take care of SA28784 and CVE-2008-0553 (see bug #208464).
+
+  14 Feb 2008; Markus Dittrich <markusle@gentoo.org> paraview-3.2.1.ebuild:
+  Added pkg_setup logic and EAPI=1 in response to updated qt4.eclass 
+  (see bug #210062). Thanks much to Jakub Moc <jakub@gentoo.org> for
+  the fix.
+
+  21 Jan 2008; Markus Dittrich <markusle@gentoo.org> paraview-3.2.1.ebuild:
+  Fixed improper MPI cmake option (bug #206840).
+
+  19 Jan 2008; Markus Dittrich <markusle@gentoo.org> paraview-3.2.1.ebuild:
+  Let the qt4 eclass check for qt3support.
+
+  05 Jan 2008; Markus Dittrich <markusle@gentoo.org> paraview-3.2.1.ebuild:
+  Added patch to support OpenFOAM (see bug #202685). Thanks much to
+  Oliver Borm <oli.borm@web.de> for his help and patch.
+
+*paraview-3.2.1 (14 Dec 2007)
+
+  14 Dec 2007; Markus Dittrich <markusle@gentoo.org>
+  +files/paraview-3.2-libxml2-fix.patch,
+  +files/paraview-3.2-support-qt4.3.patch, +paraview-3.2.1.ebuild:
+  Version bump (fixes bug #183192).
+
+  19 Aug 2007; Markus Dittrich <markusle@gentoo.org>
+  -files/paraview-2.4.4-hdf5-zlib.patch, -files/paraview-2.4.4-png.patch,
+  -files/paraview-2.4.4-python-wrap.patch, -paraview-2.4.4.ebuild,
+  -paraview-2.6.0.ebuild, -paraview-2.6.1.ebuild:
+  Removed obsolete versions.
+
+*paraview-2.6.2 (25 Jul 2007)
+
+  25 Jul 2007; Markus Dittrich <markusle@gentoo.org> +paraview-2.6.2.ebuild:
+  Version bump. Thanks much to Daniel Tourde <daniel.tourde@bredband.net> 
+  for helping with the ebuild.
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  paraview-2.4.4.ebuild, paraview-2.6.0.ebuild, paraview-2.6.1.ebuild:
+  Drop virtual/x11 references.
+
+*paraview-2.6.1 (24 Apr 2007)
+
+  24 Apr 2007; Markus Dittrich <markusle@gentoo.org> +paraview-2.6.1.ebuild:
+  Version bump. Dropped ffmpeg keyword for now since the build 
+  fails due to undefined macros in one of the ffmpeg headers.
+  Thanks much to Sebastien Fabbro <bicatali@gentoo.org>
+  for his ebuild.
+
+*paraview-2.6.0 (20 Feb 2007)
+
+  20 Feb 2007; Markus Dittrich <markusle@gentoo.org>
+  +files/paraview-2.6.0-hdf5-zlib.patch,
+  +files/paraview-2.6.0-include.patch, +paraview-2.6.0.ebuild:
+  Version bump.
+
+  29 Nov 2006; Markus Dittrich <markusle@gentoo.org>
+  +files/paraview-2.4.4-python-wrap.patch, paraview-2.4.4.ebuild:
+  Added patch that ensures that all dynamic libs needed for pvpython
+  are present.
+
+  20 Nov 2006; Markus Dittrich <markusle@gentoo.org> paraview-2.4.4.ebuild:
+  Added ffmpeg and threads USE flags. Also, added paraview libdir
+  to LDPATH.
+
+*paraview-2.4.4 (18 Oct 2006)
+
+  18 Oct 2006; Markus Dittrich <markusle@gentoo.org>
+  +files/paraview-2.4.4-hdf5-zlib.patch, +files/paraview-2.4.4-png.patch,
+  +metadata.xml, +paraview-2.4.4.ebuild:
+  Initial import (fixes bug #118130). Many thanks to Daniel Tourde
+  <daniel.tourde@caelae.se> for his ebuild and testing.
+

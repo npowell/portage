@@ -1,0 +1,44 @@
+# ChangeLog for x11-plugins/wmfire
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-plugins/wmfire/ChangeLog,v 1.13 2008/06/28 06:57:33 maekke Exp $
+
+  28 Jun 2008; Markus Meier <maekke@gentoo.org> wmfire-1.2.3.ebuild:
+  x86 stable, bug #229563
+
+  26 Jun 2008; nixnut <nixnut@gentoo.org> wmfire-1.2.3.ebuild:
+  Stable on ppc wrt bug 229563
+
+  25 Feb 2008; Samuli Suominen <drac@gentoo.org> wmfire-1.2.3.ebuild:
+  USE flag session for libSM and libICE, amd64 stable.
+
+*wmfire-1.2.3 (12 Jan 2008)
+
+  12 Jan 2008; Samuli Suominen <drac@gentoo.org>
+  +files/wmfire-1.2.3-stringh.patch, +wmfire-1.2.3.ebuild:
+  Version bump wrt #203120, thanks to Denilson for reporting.
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  wmfire-0.0.3.9_pre4.ebuild:
+  Drop virtual/x11 references.
+
+  06 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  24 Jan 2006; Krzysiek Pawlik <nelchael@gentoo.org>
+  wmfire-0.0.3.9_pre4.ebuild:
+  Fixed DEPEND for modular X.
+
+  10 Nov 2004; Michele Noberasco <s4t4n@gentoo.org> wmfire-0.0.3.9_pre4.ebuild:
+  Removed COPYING and INSTALL from dodoc.
+
+  23 Nov 2004; Jason Wever <weeve@gentoo.org> wmfire-0.0.3.9_pre4.ebuild:
+  Added ~sparc keyword.
+
+*wmfire-0.0.3.9_pre4 (4-Aug-2002)
+
+  24 Oct 2002; Nick Hadaway <raker@gentoo.org>
+  wmfire-0.0.3.9_pre4.ebuild, files/digest-wmfire-0.0.3.9_pre4 :
+  Initial add of ebuild to portage
+
+  4 Aug 2002; Matthew Schlegel <nitehawk-gentoo@1ststep.net> :
+  First version of the package.

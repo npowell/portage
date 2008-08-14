@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>kernel</herd>
+	<maintainer>
+		<email>kernel@gentoo.org</email>
+		<name>Gentoo kernel herd</name>
+	</maintainer>
+	<maintainer>
+		<email>voxus@gentoo.org</email>
+		<name>Konstantin V. Arkhipov</name>
+	</maintainer>
+	<longdescription>
+		Andrew Morton's patchset for 2.6. It contains experimental features,
+		cleanups, and other interesting patches.
+	</longdescription>
+</pkgmetadata>

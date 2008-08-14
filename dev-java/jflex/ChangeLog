@@ -1,0 +1,15 @@
+# ChangeLog for dev-java/jflex
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-java/jflex/ChangeLog,v 1.3 2008/01/10 22:34:32 caster Exp $
+
+  10 Jan 2008; Vlastimil Babka <caster@gentoo.org> jflex-1.4.1.ebuild:
+  Restrict junit dependency.
+
+  11 Jul 2007; Alistair John Bush <ali_bush@gentoo.org>
+  +files/jflex-1.4.1-build.xml.patch:
+  Added patch file which I missed when adding ebuild to portage.
+
+  02 Jul 2007; Alistair John Bush <ali_bush@gentoo.org> ChangeLog:
+  Adding jflex to tree with 2 minor fixes. Thank you to elvanor
+  <elvanor@gmail.com> for contributing the ebuild.
+

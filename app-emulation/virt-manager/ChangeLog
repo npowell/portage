@@ -1,0 +1,39 @@
+# ChangeLog for app-emulation/virt-manager
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/virt-manager/ChangeLog,v 1.7 2008/05/15 10:26:28 dberkholz Exp $
+
+*virt-manager-0.5.4 (15 May 2008)
+
+  15 May 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  +files/virt-manager-0.5.4-polkit-root.patch, +virt-manager-0.5.4.ebuild:
+  (#208470) Bump, keyword ~amd64.
+
+  31 Jan 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  -virt-manager-0.4.0.ebuild:
+  Clean up.
+
+  15 Oct 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  virt-manager-0.4.0.ebuild:
+  (#186434) Set GCONF_DEBUG above inherit rather than below (Jakub Moc).
+
+*virt-manager-0.5.1 (15 Oct 2007)
+
+  15 Oct 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  +virt-manager-0.5.1.ebuild:
+  Adds some new features like remote access and OpenVZ (although the latter
+  may only be at the libvirt level so far).
+
+  13 Jun 2007; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Add xen herd, at rbu's request.
+
+  12 Jun 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  virt-manager-0.4.0.ebuild:
+  (#181595) Require USE=python on x11-libs/vte (Rafal Boniecki).
+
+*virt-manager-0.4.0 (10 Jun 2007)
+
+  10 Jun 2007; Donnie Berkholz <dberkholz@gentoo.org>; +metadata.xml,
+  +virt-manager-0.4.0.ebuild:
+  Add a graphical tool for administering virtual machines including Xen, QEMU
+  and KVM.
+

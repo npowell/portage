@@ -1,0 +1,25 @@
+# ChangeLog for media-gfx/grub-splashes
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/grub-splashes/ChangeLog,v 1.8 2008/05/28 20:08:15 maekke Exp $
+
+  28 May 2008; Markus Meier <maekke@gentoo.org> grub-splashes-0.1.ebuild:
+  amd64/x86 stable, bug #223487
+
+  16 Jan 2008; Markus Meier <maekke@gentoo.org> grub-splashes-0.1.ebuild:
+  make repoman happy
+
+  24 Oct 2007; <welp@gentoo.org> grub-splashes-0.1.ebuild:
+  Fix grammatical error in elog
+
+  24 Oct 2007; <welp@gentoo.org> metadata.xml:
+  Fixed metadata.xml
+
+  20 Sep 2007; Peter Weller <welp@gentoo.org> grub-splashes-0.1.ebuild:
+  Updated HOMEPAGE
+
+  20 Sep 2007; Peter Weller <welp@gentoo.org> grub-splashes-0.1.ebuild:
+  Use  when checking for /boot/grub
+
+  04 Jul 2007; Peter Weller <welp@gentoo.org> ChangeLog:
+  Initial import
+

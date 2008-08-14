@@ -1,0 +1,33 @@
+# ChangeLog for app-xemacs/gentoo-syntax
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-xemacs/gentoo-syntax/ChangeLog,v 1.7 2008/05/14 17:29:41 opfer Exp $
+
+  14 May 2008; Christian Faulhammer <opfer@gentoo.org>
+  gentoo-syntax-1.8.ebuild:
+  stable x86, bug 222023
+
+  14 May 2008; Hans de Graaff <graaff@gentoo.org> gentoo-syntax-1.8.ebuild:
+  Mark stable on amd64, bug 222023
+
+*gentoo-syntax-1.9 (14 May 2008)
+
+  14 May 2008; Hans de Graaff <graaff@gentoo.org> +gentoo-syntax-1.9.ebuild:
+  Version bump
+
+  30 Mar 2008; Hans de Graaff <graaff@gentoo.org> gentoo-syntax-1.8.ebuild:
+  Add missing dependency on app-xemacs/sh-script, thanks to ulm for the report
+
+*gentoo-syntax-1.8 (22 Mar 2008)
+
+  22 Mar 2008; Hans de Graaff <graaff@gentoo.org> +gentoo-syntax-1.8.ebuild:
+  Version bump
+
+  19 Mar 2008; Hans de Graaff <graaff@gentoo.org> metadata.xml:
+  A herd should not be listed as maintainer
+
+*gentoo-syntax-1.7 (15 Sep 2007)
+
+  15 Sep 2007; Hans de Graaff <graaff@gentoo.org> +gentoo-syntax-1.7.ebuild:
+  Initial public version of gentoo-syntax, a package to help edit
+  gentoo-specific files such as ebuilds with XEmacs.
+

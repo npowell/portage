@@ -1,0 +1,59 @@
+# ChangeLog for games-util/atlas
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-util/atlas/ChangeLog,v 1.15 2008/07/22 19:03:34 tupone Exp $
+
+  22 Jul 2008; Tupone Alfredo <tupone@gentoo.org>
+  +files/atlas-0.3.1-gcc-4.3.patch, atlas-0.3.1.ebuild:
+  Fix building with gcc-4.3 Bug #232445 by <bugs@dev.gentooexperimental.org>
+
+  26 Dec 2007; Tupone Alfredo <tupone@gentoo.org>
+  +files/atlas-0.3.1-simgearNew.patch, atlas-0.3.1.ebuild:
+  Fix building with simgear 1.0.0 Bug #203303 by Thomas Witt
+
+  12 Mar 2007; Marius Mauch <genone@gentoo.org> atlas-0.2.2-r1.ebuild,
+  atlas-0.3.0.ebuild, atlas-0.3.1.ebuild:
+  Replacing einfo with elog
+
+*atlas-0.3.1 (10 Mar 2007)
+
+  10 Mar 2007; <tupone@gentoo.org> +atlas-0.3.1.ebuild:
+  Version bump to 0.3.1
+
+  06 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org> atlas-0.3.0.ebuild:
+  Remove old virtual/x11 dependency.
+
+  25 Mar 2006; <Tupone@gentoo.org> atlas-0.3.0.ebuild:
+  New arch ~amd64, bug #126307 by Bernard Cafarelli
+
+*atlas-0.3.0 (08 Mar 2006)
+
+  08 Mar 2006; <Tupone@gentoo.org> +atlas-0.3.0.ebuild:
+  Version bump (Bug #84891). Thanks Bernard Cafarelli
+  Fixed path for FlightGear scenery data
+
+  24 Aug 2005; Chris Gianelloni <wolf31o2@gentoo.org> atlas-0.2.2-r1.ebuild:
+  Add inherit eutils.
+
+  05 Jun 2005; Michael Hanselmann <hansmi@gentoo.org> atlas-0.2.2-r1.ebuild:
+  Stable on ppc.
+
+  13 Mar 2005; Michael Sterrett <mr_bones_@gentoo.org> atlas-0.2.2-r1.ebuild:
+  use games.eclass variables; stable for x86
+
+*atlas-0.2.2-r1 (14 Feb 2005)
+
+  14 Feb 2005; Michael Sterrett <mr_bones_@gentoo.org> +files/0.2.2-fix.patch,
+  +atlas-0.2.2-r1.ebuild:
+  rev bump to include patch from David Holm (bug #81723)
+
+  12 Apr 2004; Jason Wever <weeve@gentoo.org> atlas-0.2.2.ebuild:
+  Added ~sparc keyword.
+
+  03 Sep 2003; Michael Sterrett <msterret@gentoo.org> atlas-0.2.2.ebuild:
+  header fix
+
+*atlas-0.2.2 (26 Aug 2003)
+
+  26 Aug 2003; Michael Sterrett <msterret@gentoo.org> atlas-0.2.2.ebuild:
+  initial commit.  ebuild draft from Jeff Thorsett via bug 25540
+

@@ -1,0 +1,253 @@
+# ChangeLog for media-video/nvidia-settings
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/nvidia-settings/ChangeLog,v 1.47 2008/06/29 15:25:51 peper Exp $
+
+*nvidia-settings-173.14.09 (29 Jun 2008)
+
+  29 Jun 2008; Piotr Jaroszyński <peper@gentoo.org>
+  nvidia-settings-1.0.20070621.ebuild, nvidia-settings-169.04.ebuild,
+  nvidia-settings-169.07.ebuild, nvidia-settings-171.05.ebuild,
+  nvidia-settings-173.08.ebuild, +nvidia-settings-173.14.09.ebuild:
+  Add 173.14.09 and missing x11-proto/xf86vidmodeproto dep.
+
+*nvidia-settings-173.08 (26 May 2008)
+
+  26 May 2008; <chainsaw@gentoo.org> +nvidia-settings-173.08.ebuild:
+  Version bump. Upstream no longer uses imake, simplify ebuild accordingly.
+
+*nvidia-settings-171.05 (31 Mar 2008)
+
+  31 Mar 2008; Piotr Jaroszyński <peper@gentoo.org>
+  +nvidia-settings-171.05.ebuild:
+  Add 171.05.
+
+  06 Mar 2008; Olivier Crête <tester@gentoo.org> nvidia-settings-169.07.ebuild:
+  Stable on amd64, bug #212536
+
+  06 Mar 2008; Raúl Porcel <armin76@gentoo.org>
+  nvidia-settings-169.07.ebuild:
+  x86 stable wrt #212536
+
+*nvidia-settings-169.07 (25 Dec 2007)
+
+  25 Dec 2007; Piotr Jaroszyński <peper@gentoo.org>
+  +nvidia-settings-169.07.ebuild:
+  Add 169.07.
+
+  20 Nov 2007; Piotr Jaroszyński <peper@gentoo.org>
+  -nvidia-settings-1.0.20051122-r3.ebuild,
+  -nvidia-settings-1.0.20061102.ebuild,
+  -nvidia-settings-1.0.20070302.ebuild:
+  Remove old versions.
+
+*nvidia-settings-169.04 (20 Nov 2007)
+
+  20 Nov 2007; Piotr Jaroszyński <peper@gentoo.org>
+  +files/nvidia-settings-169.04-no-display.patch,
+  +nvidia-settings-169.04.ebuild:
+  Add 169.04 with a patch allowing to run nvidia-setting without $DISPLAY.
+  Thanks to Tommy Yu <a_korner@hotmail.com> in bug #94240.
+
+  12 Nov 2007; Peter Weller <welp@gentoo.org>
+  nvidia-settings-1.0.20070621.ebuild:
+  Stable on amd64
+
+  12 Nov 2007; Raúl Porcel <armin76@gentoo.org>
+  nvidia-settings-1.0.20070621.ebuild:
+  x86 stable
+
+  10 Aug 2007; Steve Dibb <beandog@gentoo.org>
+  nvidia-settings-1.0.20070302.ebuild:
+  amd64 stable, bug 182703
+
+  01 Aug 2007; Raúl Porcel <armin76@gentoo.org>
+  nvidia-settings-1.0.20070302.ebuild:
+  x86 stable wrt #182703
+
+*nvidia-settings-1.0.20070621 (31 Jul 2007)
+
+  31 Jul 2007; Piotr Jaroszyński <peper@gentoo.org>
+  nvidia-settings-1.0.20051122-r3.ebuild,
+  nvidia-settings-1.0.20061102.ebuild, nvidia-settings-1.0.20070302.ebuild,
+  +nvidia-settings-1.0.20070621.ebuild:
+  Add 1.0.20070621 and remove nvidia-legacy-drivers from deps.
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  nvidia-settings-1.0.20051122-r3.ebuild:
+  Drop virtual/x11 references.
+
+  13 Apr 2007; Peter Weller <welp@gentoo.org>
+  nvidia-settings-1.0.20070302.ebuild:
+  Keyworded ~x86-fbsd
+
+*nvidia-settings-1.0.20070302 (07 Mar 2007)
+
+  07 Mar 2007; Piotr Jaroszyński <peper@gentoo.org> metadata.xml,
+  nvidia-settings-1.0.20051122-r3.ebuild,
+  -nvidia-settings-1.0.20060516-r1.ebuild,
+  -nvidia-settings-1.0.20060919.ebuild, nvidia-settings-1.0.20061102.ebuild,
+  +nvidia-settings-1.0.20070302.ebuild:
+  Version bump and a little clean up.
+
+*nvidia-settings-1.0.20061102 (10 Nov 2006)
+
+  10 Nov 2006; Kristopher Kersey <augustus@gentoo.org>
+  +nvidia-settings-1.0.20061102.ebuild:
+  Added new version of nvidia-settings.  Bug #154402.  This should be marked
+  stable once nvidia-drivers-1.0.9629 is marked stable.
+
+  30 Oct 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  nvidia-settings-1.0.20051122-r3.ebuild,
+  nvidia-settings-1.0.20060516-r1.ebuild,
+  nvidia-settings-1.0.20060919.ebuild:
+  Added pkgconfig to DEPEND and closing bug #153076.
+
+*nvidia-settings-1.0.20060919 (06 Oct 2006)
+
+  06 Oct 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  +nvidia-settings-1.0.20060919.ebuild:
+  Version bump to the new nvidia-settings for bug #148860. This is still
+  masked because there are reports that it requires the masked BETA
+  nvidia-drivers to function properly.
+
+  05 Oct 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  nvidia-settings-1.0.20051122-r3.ebuild,
+  nvidia-settings-1.0.20060516-r1.ebuild:
+  Removing references to media-video/nvidia-glx since it is no longer in the
+  tree.
+
+  04 Oct 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  nvidia-settings-1.0.20051122-r3.ebuild,
+  nvidia-settings-1.0.20060516-r1.ebuild:
+  Added x11-libs/libXv to DEPEND for bug #141064.
+
+  07 Jul 2006; Martin Schlemmer <azarah@gentoo.org>
+  nvidia-settings-1.0.20051122-r3.ebuild:
+  Fix DEPEND for new nvidia stuff.  Stable x86.
+
+*nvidia-settings-1.0.20060516-r1 (07 Jul 2006)
+
+  07 Jul 2006; Kristopher Kersey <augustus@gentoo.org>
+  +nvidia-settings-1.0.20060516-r1.ebuild:
+  Added rdepend for new nvidia-drivers or nvidia-legacy-drivers.  Bug 139500.
+
+  30 Jun 2006; Olivier Crête <tester@gentoo.org> -files/libXNVCtrl.a,
+  nvidia-settings-1.0.6111.ebuild, nvidia-settings-1.0.6629.ebuild:
+  Moved libXNVCtrl.a to my devspace
+
+*nvidia-settings-1.0.20060516 (27 Jun 2006)
+
+  27 Jun 2006; Martin Schlemmer <azarah@gentoo.org>
+  +nvidia-settings-1.0.20060516.ebuild:
+  New release.
+
+  19 Apr 2006; Kristopher Kersey <augustus@gentoo.org>
+  nvidia-settings-1.0.20051122-r3.ebuild:
+  Marking nvidia-settings-1.0.20051122-r3 stable for amd64 to match stable
+  nvidia-kernel and nvidia-glx.  Should fix bug #129404.
+
+  17 Apr 2006; Diego Pettenò <flameeyes@gentoo.org>
+  nvidia-settings-1.0.20051122-r3.ebuild:
+  Accept nvidia-freebsd in alternative to nvidia-kernel package.
+
+  03 Feb 2006; Simon Stelling <blubb@gentoo.org> +files/libXNVCtrl.a,
+  -files/libXNVCtrl.a.bz2, nvidia-settings-1.0.6111.ebuild,
+  nvidia-settings-1.0.6629.ebuild:
+  no need to bzip smallish files
+
+*nvidia-settings-1.0.20051122-r3 (19 Jan 2006)
+
+  19 Jan 2006; Kristopher Kersey <augustus@gentoo.org>
+  +nvidia-settings-1.0.20051122-r3.ebuild:
+  Added modular X support.  Bug #114603.
+
+*nvidia-settings-1.0.20051122-r2 (07 Dec 2005)
+
+  07 Dec 2005; Martin Schlemmer <azarah@gentoo.org>
+  +files/icon/nvidia-settings.desktop, +files/icon/nvidia-settings.png,
+  +nvidia-settings-1.0.20051122-r2.ebuild:
+  Do not install manpage into datadir.  Add desktop entry and icon.
+  Resolves bug #114720, thanks to Peter Hyman <pete4abw@comcast.net>.
+
+*nvidia-settings-1.0.20051122-r1 (07 Dec 2005)
+
+  07 Dec 2005; Martin Schlemmer <azarah@gentoo.org>
+  +nvidia-settings-1.0.20051122-r1.ebuild:
+  Add manpage.
+
+*nvidia-settings-1.0.20051122 (05 Dec 2005)
+
+  05 Dec 2005; Martin Schlemmer <azarah@gentoo.org>
+  +nvidia-settings-1.0.20051122.ebuild:
+  New release.
+
+*nvidia-settings-1.0.20050729 (24 Aug 2005)
+
+  24 Aug 2005; Martin Schlemmer <azarah@gentoo.org>
+  +nvidia-settings-1.0.20050729.ebuild:
+  Update version.
+
+*nvidia-settings-1.0.20050525 (21 Jun 2005)
+
+  21 Jun 2005; Martin Schlemmer <azarah@gentoo.org>
+  +nvidia-settings-1.0.20050525.ebuild:
+  Update version. Change version scheme to make updates easier. Include NVCtrl
+  lib and headers, bug #80427.
+
+  12 Jun 2005; Sven Wegener <swegener@gentoo.org>
+  nvidia-settings-1.0.6111.ebuild, nvidia-settings-1.0.6629.ebuild,
+  nvidia-settings-1.0.7167.ebuild:
+  Removed * postfix from <, <=, >= and > dependencies.
+
+  25 Apr 2005; Donnie Berkholz <spyderous@gentoo.org>; metadata.xml:
+  Update maintainer to x11-drivers.
+
+*nvidia-settings-1.0.7167 (12 Mar 2005)
+
+  12 Mar 2005; Martin Schlemmer <azarah@gentoo.org>
+  +nvidia-settings-1.0.7167.ebuild:
+  Update to latest version, thanks Zander. Fixup libXNVCtrl.a build, so that
+  it is done native (no need for tarball on 64bit machines, etc).
+
+  17 Jan 2005; Andrew Bevitt <cyfred@gentoo.org>
+  nvidia-settings-1.0.6629.ebuild:
+  Marking 6629 stable across archs
+
+*nvidia-settings-1.0.6629 (07 Nov 2004)
+
+  07 Nov 2004; Andrew Bevitt <cyfred@gentoo.org>
+  nvidia-settings-1.0.6106.ebuild, nvidia-settings-1.0.6111.ebuild,
+  +nvidia-settings-1.0.6629.ebuild:
+  Changes to reflect new nvidia drivers
+
+  17 Aug 2004; Andrew Bevitt <cyfred@gentoo.org>; :
+  Fixing digests
+
+*nvidia-settings-1.0.6106 (16 Aug 2004)
+
+  16 Aug 2004; Andrew Bevitt <cyfred@gentoo.org>;
+  +nvidia-settings-1.0.6106.ebuild, -nvidia-settings-1.0.ebuild:
+  Moving versions to match nvidia module versions
+
+*nvidia-settings-1.0.6111 (06 Aug 2004)
+
+  06 Aug 2004; Andrew Bevitt <cyfred@gentoo.org>;
+  +nvidia-settings-1.0.6111.ebuild:
+  Manually mirroring nvidia-settings for the new 6111 driver as nvidia didnt do
+  a version change.
+
+  26 Jul 2004; Andrew Bevitt <cyfred@gentoo.org>; nvidia-settings-1.0.ebuild:
+  Depending on the 6106 drivers and closing bug 57449
+
+  02 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  nvidia-settings-1.0.ebuild:
+  virtual/glibc -> virtual/libc
+
+*nvidia-settings-1.0 (02 Jul 2004)
+
+  02 Jul 2004; Andrew Bevitt <cyfred@gentoo.org>; +metadata.xml,
+  +files/libXNVCtrl.a.bz2, +nvidia-settings-1.0.ebuild:
+  New Package nvidia-settings. Introduced to conincide with
+  nvidia-kernel-1.0.6106 which it was released with. Thanks to people on bug
+  #55714 (wolf especially for making the initial ebuild).
+

@@ -1,0 +1,55 @@
+# ChangeLog for app-i18n/man-pages-pl
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-i18n/man-pages-pl/ChangeLog,v 1.10 2008/02/26 19:13:58 armin76 Exp $
+
+  26 Feb 2008; Raúl Porcel <armin76@gentoo.org>
+  -man-pages-pl-20051024.ebuild, -man-pages-pl-20070126.ebuild,
+  man-pages-pl-20070628.ebuild:
+  All stable, remove old
+
+  26 Sep 2007; Michał Januszewski <spock@gentoo.org>
+  -man-pages-pl-20040401.ebuild:
+  Remove an old ebuild (bug #193619).
+
+*man-pages-pl-20070628 (16 Jul 2007)
+
+  16 Jul 2007; Michal Januszewski <spock@gentoo.org>
+  +man-pages-pl-20070628.ebuild:
+  Version bump (bug #185319).
+
+  21 Jun 2007; Michał Januszewski <spock@gentoo.org>
+  man-pages-pl-20051024.ebuild, man-pages-pl-20070126.ebuild:
+  Don't install a manpage for mc (bug #182535).
+
+*man-pages-pl-20070126 (06 May 2007)
+
+  06 May 2007; Michał Januszewski <spock@gentoo.org>
+  +man-pages-pl-20070126.ebuild:
+  Version bump (bug #176728).
+
+  04 Dec 2006; Michał Januszewski <spock@gentoo.org>
+  man-pages-pl-20051024.ebuild:
+  Remove manpages provided by app-arch/rpm (bug #157107).
+
+  01 Nov 2006; Michał Januszewski <spock@gentoo.org>
+  man-pages-pl-20051024.ebuild:
+  Don't install suauth.5 and limits.5 as these are provided by other packages
+  (bug #152946).
+
+  28 Oct 2006; Michał Januszewski <spock@gentoo.org>
+  man-pages-pl-20051024.ebuild:
+  Don't install manpages provided by vim-core (bug #152946).
+
+*man-pages-pl-20051024 (09 Apr 2006)
+
+  09 Apr 2006; Michał Januszewski <spock@gentoo.org>
+  +man-pages-pl-20051024.ebuild:
+  Version bump.
+
+*man-pages-pl-20040401 (21 Jun 2004)
+
+  21 Jun 2004; Michal Januszewski <spock@gentoo.org> +metadata.xml,
+  +man-pages-pl-20040401.ebuild:
+  Initial commit, original ebuild submitted by Miroslaw Mieszczak
+  <mieszcz[at]zabrze[dot]zigzag[dot]pl>. This closes bug #54405.
+

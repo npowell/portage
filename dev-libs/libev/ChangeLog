@@ -1,0 +1,24 @@
+# ChangeLog for dev-libs/libev
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/libev/ChangeLog,v 1.4 2008/08/14 07:39:31 aballier Exp $
+
+  14 Aug 2008; Alexis Ballier <aballier@gentoo.org> libev-3.43.ebuild:
+  keyword ~x86-fbsd
+
+*libev-3.43 (02 Aug 2008)
+
+  02 Aug 2008; MATSUU Takuto <matsuu@gentoo.org> +libev-3.43.ebuild:
+  Version bumped.
+
+*libev-3.42-r1 (22 Jun 2008)
+
+  22 Jun 2008; MATSUU Takuto <matsuu@gentoo.org>
+  files/libev-3.42-gentoo.patch, -libev-3.42.ebuild, +libev-3.42-r1.ebuild:
+  Removed event.h.
+
+*libev-3.42 (17 Jun 2008)
+
+  17 Jun 2008; MATSUU Takuto <matsuu@gentoo.org>
+  +files/libev-3.42-gentoo.patch, +metadata.xml, +libev-3.42.ebuild:
+  Initial import, bug #227819.
+

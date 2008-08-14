@@ -1,0 +1,45 @@
+# ChangeLog for app-emacs/csharp-mode
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emacs/csharp-mode/ChangeLog,v 1.8 2008/06/14 23:24:19 ulm Exp $
+
+  14 Jun 2008; Ulrich Mueller <ulm@gentoo.org> csharp-mode-0.7.0.ebuild:
+  Do not assign SIMPLE_ELISP since elisp.eclass now detects this case
+  automatically.
+
+  17 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  csharp-mode-0.7.0.ebuild:
+  stable x86/amd64
+
+  07 Dec 2007; Ulrich Mueller <ulm@gentoo.org> -csharp-mode-0.6.0-r1.ebuild,
+  csharp-mode-0.7.0.ebuild:
+  Undo previous change. Remove old version.
+
+  04 Dec 2007; Ulrich Mueller <ulm@gentoo.org> csharp-mode-0.6.0-r1.ebuild,
+  csharp-mode-0.7.0.ebuild:
+  Explicitely call elisp_pkg_setup.
+
+*csharp-mode-0.7.0 (24 Oct 2007)
+
+  24 Oct 2007; Ulrich Mueller <ulm@gentoo.org> -csharp-mode-0.5.0.ebuild,
+  +csharp-mode-0.7.0.ebuild:
+  Version bump and remove old.
+
+*csharp-mode-0.6.0-r1 (02 Jul 2007)
+
+  02 Jul 2007; Christian Faulhammer <opfer@gentoo.org>
+  -csharp-mode-0.6.0.ebuild, +csharp-mode-0.6.0-r1.ebuild:
+  using new-style virtual dependency
+
+*csharp-mode-0.6.0 (26 Apr 2007)
+
+  26 Apr 2007; Ulrich Mueller <ulm@gentoo.org> csharp-mode-0.5.0.ebuild,
+  +csharp-mode-0.6.0.ebuild:
+  Version bump. Define SIMPLE_ELISP=t.
+
+*csharp-mode-0.5.0 (27 Jul 2006)
+
+  27 Jul 2006; Matthew Kennedy <mkennedy@gentoo.org>
+  +files/80csharp-mode-gentoo.el, +metadata.xml, +csharp-mode-0.5.0.ebuild:
+  Initial port. Ebuild contributed by Matthew Kennedy <mkennedy@gentoo.org>;
+  Resolves Bug #130918.
+

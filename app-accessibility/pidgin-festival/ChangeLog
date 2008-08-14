@@ -1,0 +1,28 @@
+# ChangeLog for app-accessibility/pidgin-festival
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-accessibility/pidgin-festival/ChangeLog,v 1.6 2008/03/05 19:34:03 tester Exp $
+
+  05 Mar 2008; <tester@gentoo.org> pidgin-festival-2.2.ebuild:
+  Inherit eutils, bug #212411
+
+  09 Jan 2008; Olivier Crête <tester@gentoo.org>
+  pidgin-festival-2.2.ebuild:
+  Add required dependencies on pkg-config, pidgin and gtk
+
+  09 Nov 2007; nixnut <nixnut@gentoo.org> pidgin-festival-2.2.ebuild:
+  Added ~ppc wrt bug 197103
+
+  26 Oct 2007; Ferris McCormick <fmccor@gentoo.org>
+  pidgin-festival-2.2.ebuild:
+  Add ~sparc keyword, Bug #197103, because it does build so it can be tested at
+  least.  Unfortunately, it can't be tested by me.
+
+  26 Oct 2007; Markus Meier <maekke@gentoo.org> pidgin-festival-2.2.ebuild:
+  add ~x86, bug #197103
+
+*pidgin-festival-2.2 (26 Oct 2007)
+
+  26 Oct 2007; Olivier Crête <tester@gentoo.org> +metadata.xml,
+  +pidgin-festival-2.2.ebuild:
+  Add new package, which is the continuatio of net-im/festival-gaim
+

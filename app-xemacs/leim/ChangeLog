@@ -1,0 +1,48 @@
+# ChangeLog for app-xemacs/leim
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-xemacs/leim/ChangeLog,v 1.14 2008/03/19 19:43:00 graaff Exp $
+
+  19 Mar 2008; Hans de Graaff <graaff@gentoo.org> metadata.xml:
+  A herd should not be listed as maintainer
+
+  25 Oct 2007; Hans de Graaff <graaff@gentoo.org> -leim-1.20.ebuild:
+  Remove old version
+
+  03 Jun 2007; Hans de Graaff <graaff@gentoo.org> -leim-1.22.ebuild:
+  Remove intermediate version
+
+  03 Jun 2007; Hans de Graaff <graaff@gentoo.org> leim-1.24.ebuild:
+  Stable on amd64, ppc, ppc64, sparc, x86 as per #175560
+
+  29 May 2007; Raúl Porcel <armin76@gentoo.org> leim-1.24.ebuild:
+  alpha stable wrt #175560
+
+*leim-1.24 (22 Dec 2006)
+
+  22 Dec 2006; Hans de Graaff <graaff@gentoo.org> +leim-1.24.ebuild:
+  Version bump.
+
+*leim-1.22 (12 Nov 2006)
+
+  12 Nov 2006; Hans de Graaff <graaff@gentoo.org> +metadata.xml,
+  -leim-1.19.ebuild, +leim-1.22.ebuild:
+  Version bump; remove old version; add metadata.
+
+  07 Aug 2005; Michael Hanselmann <hansmi@gentoo.org> leim-1.20.ebuild:
+  Stable on ppc.
+
+  02 Oct 2003; Aron Griffis <agriffis@gentoo.org> leim-1.20.ebuild:
+  Stable on alpha
+
+*leim-1.20 (22 Feb 2003)
+
+  22 Feb 2003;  <rendhalver@gentoo.org> leim-1.19.ebuild leim-1.20.ebuild files/digest-leim-1.20 :
+  Add ~alpha to KEYWORDS
+
+  22 Feb 2003; Rendhalver <rendhalver@gentoo.org> :
+  new stable ebuild
+
+*leim-1.19 (16 Dec 2002)
+
+  16 Dec 2002; Rendhalver [Peter Brown] <rendhalver@gentoo.org> :
+  Initial import.

@@ -1,0 +1,21 @@
+# ChangeLog for sci-chemistry/mustang
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/mustang/ChangeLog,v 1.4 2008/04/29 10:30:16 markusle Exp $
+
+  29 Apr 2008; Markus Dittrich <markusle@gentoo.org> ChangeLog:
+  Redigested ebuild to fix broken Manifest (bug #219429).
+
+  11 Dec 2006; Donnie Berkholz <dberkholz@gentoo.org>; mustang-3.ebuild:
+  Stable on x86.
+
+  11 Dec 2006; Donnie Berkholz <dberkholz@gentoo.org>; mustang-3.ebuild:
+  License is more accurately the generic BSD than the specific Intel (although
+  perhaps that shouldn't even exist); also add reference for citation (Arun S.
+  Konagurthu).
+
+*mustang-3 (21 Oct 2006)
+
+  21 Oct 2006; Donnie Berkholz <dberkholz@gentoo.org>; +metadata.xml,
+  +mustang-3.ebuild:
+  New package: MUltiple STructural AligNment AlGorithm.
+

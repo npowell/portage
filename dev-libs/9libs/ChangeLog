@@ -1,0 +1,48 @@
+# ChangeLog for dev-libs/9libs
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/9libs/ChangeLog,v 1.14 2008/03/26 15:39:55 armin76 Exp $
+
+  26 Mar 2008; Raúl Porcel <armin76@gentoo.org> 9libs-1.0-r1.ebuild:
+  sparc/x86 stable
+
+  22 Jul 2007; Hans de Graaff <graaff@gentoo.org> 9libs-1.0.ebuild,
+  9libs-1.0-r1.ebuild:
+  Drop virtual/x11 references.
+
+  14 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+  08 Dec 2006; Charlie Shepherd <masterdriverz@gentoo.org>
+  9libs-1.0-r1.ebuild:
+  Add blocker against dev-libs/libevent, thanks to Cédric Krier; bug 137932
+
+  27 Aug 2006; Michael Sterrett <mr_bones_@gentoo.org> 9libs-1.0.ebuild:
+  modX deps from 9libs-1.0-r1
+
+*9libs-1.0-r1 (21 Jan 2006)
+
+  21 Jan 2006; Marcelo Goes <vanquirius@gentoo.org> +9libs-1.0-r1.ebuild:
+  Make modular X friendly.
+
+  07 Aug 2004; Tom Martin <slarti@gentoo.org> 9libs-1.0.ebuild:
+  Typo in DESCRIPTION: compatability -> compatibility. Bug 59717.
+
+  19 Jun 2004; Jason Wever <weeve@gentoo.org> 9libs-1.0.ebuild:
+  Stable on sparc.
+
+  01 Jun 2004; Michael Sterrett <mr_bones_@gentoo.org> 9libs-1.0.ebuild:
+  sync IUSE; fix depend
+
+  25 Apr 2004; Aron Griffis <agriffis@gentoo.org> 9libs-1.0.ebuild:
+  Add die following econf for bug 48950
+
+*9libs-1.0 (03 Apr 2003)
+
+  03 Apr 2003; Dylan Carlson <absinthe@gentoo.org> 9libs-1.0.ebuild:
+  x86 moved to stable.  added ~sparc ~ppc.
+
+  10 Mar 2003; Dylan Carlson <absinthe@gentoo.org> ChangeLog  :
+
+  Initial import.  Ebuild submitted by Burton Samograd
+  <kruhft@kruhft.dyndns.org>.   9libs is a package of Plan 9 compatibility
+  libraries used by acme and sam.

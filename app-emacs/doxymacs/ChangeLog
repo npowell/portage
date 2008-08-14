@@ -1,0 +1,30 @@
+# ChangeLog for app-emacs/doxymacs
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emacs/doxymacs/ChangeLog,v 1.4 2008/04/02 06:34:30 opfer Exp $
+
+  02 Apr 2008; Christian Faulhammer <opfer@gentoo.org>
+  doxymacs-1.8.0-r2.ebuild:
+  stable x86/amd64
+
+*doxymacs-1.8.0-r2 (04 Jul 2007)
+
+  04 Jul 2007; Ulrich Mueller <ulm@gentoo.org> files/50doxymacs-gentoo.el,
+  -doxymacs-1.8.0.ebuild, -doxymacs-1.8.0-r1.ebuild,
+  +doxymacs-1.8.0-r2.ebuild:
+  Make proper use of autoloads in sitefile, fixes bug #184175.
+
+*doxymacs-1.8.0-r1 (04 Jul 2007)
+
+  04 Jul 2007; Christian Faulhammer <opfer@gentoo.org>
+  files/50doxymacs-gentoo.el, +doxymacs-1.8.0-r1.ebuild:
+  don't create autoloads as they are not sufficient; instead load doxymacs
+  when a C mode is entered; kill the font-lock in the site-init; fixes bug
+  184175, reported by Anders Bach Nielsen <abachn@daimi.au.dk>
+
+*doxymacs-1.8.0 (02 Jul 2007)
+
+  02 Jul 2007; Christian Faulhammer <opfer@gentoo.org>
+  +files/50doxymacs-gentoo.el, +metadata.xml, +doxymacs-1.8.0.ebuild:
+  new ebuild for bug 110083; taken from Sunrise; thanks to Ciprian Ciubotariu
+  <cheepeero@gmx.net> and Christian Schlotter <again@gmx.de>: massaged a bit
+

@@ -1,0 +1,75 @@
+# ChangeLog for dev-util/ketchup
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/ketchup/ChangeLog,v 1.17 2008/01/15 15:28:02 fmccor Exp $
+
+  15 Jan 2008; Ferris McCormick <fmccor@gentoo.org> ketchup-0.9.8.ebuild:
+  Add ~sparc for testing, thanks to Tiago Cunha --- Bug #205908.
+
+  15 Jul 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Assigning to m-needed, as nattfodd is being retired (#108329).
+
+  20 Apr 2007; Joseph Jezak <josejx@gentoo.org> ketchup-0.9.8.ebuild:
+  Marked ppc stable for bug #174903.
+
+  18 Apr 2007; Christian Faulhammer <opfer@gentoo.org> ketchup-0.9.8.ebuild:
+  stable x86/amd64, bug 174903
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  08 May 2006; Alexandre Buisse <nattfodd@gentoo.org> metadata.xml:
+  Stepped up as package maintainer, replacing morfic.
+
+*ketchup-0.9.8 (01 May 2006)
+
+  01 May 2006; Daniel Goller <morfic@gentoo.org> +ketchup-0.9.8.ebuild:
+  Bump to 0.9.8
+
+  03 Apr 2006; Daniel Drake <dsd@gentoo.org> -ketchup-0.9.6.ebuild,
+  ketchup-0.9.6-r1.ebuild:
+  Stable on x86
+
+  06 Mar 2006; Daniel Goller <morfic@gentoo.org> ketchup-0.9.6-r1.ebuild:
+  Stable on ppc and amd64
+
+  06 Mar 2006; Daniel Goller <morfic@gentoo.org> -ketchup-0.9.5.ebuild:
+  Clean up old version
+
+  06 Mar 2006; Daniel Goller <morfic@gentoo.org> +files/ketchup-list.patch,
+  ketchup-0.9.6.ebuild, ketchup-0.9.6-r1.ebuild,
+  ketchup-0.9.6_p20060301.ebuild:
+  Adding patch to fix issue with -l as reported in bug #124874
+
+*ketchup-0.9.6_p20060301 (02 Mar 2006)
+
+  02 Mar 2006; Daniel Goller <morfic@gentoo.org>
+  -ketchup-0.9.6_p20060228.ebuild, +ketchup-0.9.6_p20060301.ebuild:
+  Removing 0228 snapshot and adding 0301 snapshot since i dont have the
+  tarball that was not uploaded and i made one on 0301 in its place
+
+*ketchup-0.9.6_p20060228 (28 Feb 2006)
+
+  28 Feb 2006; Aron Griffis <agriffis@gentoo.org> metadata.xml,
+  +ketchup-0.9.6_p20060228.ebuild:
+  Bump to nightly snapshot to fix various bugs.  Add ~alpha, ~ia64
+
+*ketchup-0.9.6-r1 (24 Dec 2005)
+
+  24 Dec 2005; Daniel Goller <morfic@gentoo.org> +ketchup-0.9.6-r1.ebuild:
+  Changed install location to /usr/bin more users than root will need this,
+  thanks dsd
+
+  09 Dec 2005; Mark Loeser <halcy0n@gentoo.org> ketchup-0.9.6.ebuild:
+  Stable on x86; bug #114594
+
+*ketchup-0.9.6 (06 Nov 2005)
+
+  06 Nov 2005; Daniel Goller <morfic@gentoo.org> +ketchup-0.9.6.ebuild:
+  Version Bump
+
+*ketchup-0.9.5 (02 Nov 2005)
+
+  02 Nov 2005; Daniel Goller <morfic@gentoo.org> +metadata.xml,
+  +ketchup-0.9.5.ebuild:
+  Initial commit of the ketchup script
+

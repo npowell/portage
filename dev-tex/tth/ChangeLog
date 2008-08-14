@@ -1,0 +1,25 @@
+# ChangeLog for dev-tex/tth
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-tex/tth/ChangeLog,v 1.5 2007/07/27 19:35:27 aballier Exp $
+
+*tth-3.77 (27 Jul 2007)
+
+  27 Jul 2007; Alexis Ballier <aballier@gentoo.org> +tth-3.77.ebuild:
+  bump to latest version, install latex2gif ps2gif ps2png, bug #185328
+
+  24 Jul 2007; Steve Dibb <beandog@gentoo.org> tth-3.66.ebuild:
+  Add ~amd64, bug 185326
+
+  12 Mar 2007; Alexandre Buisse <nattfodd@gentoo.org> metadata.xml:
+  Replaced text-markup by tex as maintaining herd (text-markup split).
+
+  05 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+*tth-3.66 (12 Feb 2005)
+
+  12 Feb 2005; Mamoru KOMACHI <usata@gentoo.org> +metadata.xml,
+  +tth-3.66.ebuild:
+  Initial import. Ebuild submitted by Niels Laukens <nielchiano@skynet.be>;
+  bug #70442.
+

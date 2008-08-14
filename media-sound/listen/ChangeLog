@@ -1,0 +1,90 @@
+# ChangeLog for media-sound/listen
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/listen/ChangeLog,v 1.19 2007/08/11 10:34:15 drac Exp $
+
+  11 Aug 2007; Samuli Suominen <drac@gentoo.org> listen-0.5-r1.ebuild:
+  Fix elementtree depends for bug 185533.
+
+  16 Jul 2007; Michael Sterrett <mr_bones_@gentoo.org> listen-0.5.ebuild,
+  listen-0.5-r1.ebuild:
+  add cdr to IUSE
+
+  15 Jul 2007; J. Alberto Suárez López <bass@gentoo.org>
+  listen-0.5.ebuild:
+  Fixing dbus bug and depend problem
+
+  23 Apr 2007; Sven Wegener <swegener@gentoo.org> listen-0.5.ebuild:
+  Sync IUSE (+libsexy)
+
+*listen-0.5 (07 Apr 2007)
+
+  07 Apr 2007; J. Alberto Suárez López <bass@gentoo.org>
+  -listen-0.5_beta1-r1.ebuild, -listen-0.5_beta1-r2.ebuild,
+  +listen-0.5.ebuild:
+  Final 0.5 version.
+
+*listen-0.5_beta1-r2 (21 Jan 2007)
+
+  21 Jan 2007; J. Alberto Suárez López <bass@gentoo.org>
+  +listen-0.5_beta1-r2.ebuild:
+  dbus love :) #157720
+
+  02 Jan 2007; Michael Sterrett <mr_bones_@gentoo.org> -listen-0.4.3.ebuild:
+  clean out an older ebuild with a (now) broken sqlite dependency
+
+*listen-0.5_beta1-r1 (15 Oct 2006)
+
+  15 Oct 2006; J. Alberto Suárez López <bass@gentoo.org>
+  files/Makefile.patch, listen-0.5_beta1-r1.ebuild:
+  Fixed listen script #151379
+  Ready for Sexy and muscibrainz but not working yet.
+
+*listen-0.5_beta1 (12 Oct 2006)
+
+  13 Oct 2006; Simon Stelling <blubb@gentoo.org> listen-0.5_beta1.ebuild:
+  fix wrt multilib-strict and re-add ~amd64; bug 146613
+
+  12 Oct 2006; J. Alberto Suárez López <bass@gentoo.org>
+  +files/Makefile.patch, +files/check.patch, +listen-0.5_beta1.ebuild:
+  new beta version #148931
+
+*listen-0.4.3-r2 (11 Aug 2006)
+
+  11 Aug 2006; J. Alberto Suárez López <bass@gentoo.org>
+  +listen-0.4.3-r2.ebuild:
+  Fixed bug #143125
+
+*listen-0.4.3-r1 (13 Jul 2006)
+
+  13 Jul 2006; J. Alberto Suárez López <bass@gentoo.org>
+  -listen-0.4.2-r2.ebuild, +listen-0.4.3-r1.ebuild:
+  Fixed sqlite depend
+
+  12 Jul 2006; Danny van Dyk <kugelfang@gentoo.org> listen-0.4.2-r2.ebuild,
+  listen-0.4.3.ebuild:
+  QA: Added cdr to IUSE.
+
+*listen-0.4.3 (30 May 2006)
+
+  30 May 2006; J. Alberto Suárez López <bass@gentoo.org>
+  +listen-0.4.3.ebuild:
+  Version bump. #132686
+
+*listen-0.4.2-r2 (9 Apr 2006)
+
+  13 Apr 2006; J. Alberto Suárez López <bass@gentoo.org>
+  listen-0.4.2-r2.ebuild:
+  added gnome-vfs hal check
+
+  12 Apr 2006; J. Alberto Suárez López <bass@gentoo.org>
+  listen-0.4.2-r2.ebuild:
+  added cdr flag and serpentine rdepend
+
+  12 Apr 2006; J. Alberto Suárez López <bass@gentoo.org>
+  listen-0.4.2-r2.ebuild:
+  added cdr flag and serpentine rdepend
+
+  9 Apr 2006: Jose Alberto Suarez Lopez <bass@gentoo.org> listen-0.4.2-r2.ebuild:
+  First relase.
+  Thanks contributors #121740
+

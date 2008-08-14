@@ -1,0 +1,36 @@
+# ChangeLog for media-plugins/vdr-skinenigmang
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-skinenigmang/ChangeLog,v 1.6 2008/08/04 21:06:32 hd_brummy Exp $
+
+  04 Aug 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/imagemagick-6.4.x.diff, vdr-skinenigmang-0.0.6.ebuild:
+  fix for new imagemagick include dir struct
+
+*vdr-skinenigmang-0.0.6 (09 Mar 2008)
+
+  09 Mar 2008; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-skinenigmang-0.0.3.ebuild, vdr-skinenigmang-0.0.4.ebuild,
+  +vdr-skinenigmang-0.0.6.ebuild:
+  Version bumped. Add hack to disable bad makefile gettext check.
+
+*vdr-skinenigmang-0.0.5 (29 Dec 2007)
+
+  29 Dec 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +vdr-skinenigmang-0.0.5.ebuild:
+  version bump
+
+  17 Apr 2007; Matthias Schwarzott <zzam@gentoo.org> files/rc-addon.sh:
+  Removed bash specific stuff.
+
+*vdr-skinenigmang-0.0.4 (02 Apr 2007)
+
+  02 Apr 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +vdr-skinenigmang-0.0.4.ebuild:
+  version bump
+
+*vdr-skinenigmang-0.0.3 (06 Mar 2007)
+
+  06 Mar 2007; Joerg Bornkessel <hd_brummy@gentoo.org> +files/rc-addon.sh,
+  +metadata.xml, +vdr-skinenigmang-0.0.3.ebuild:
+  initial ebuild
+

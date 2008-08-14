@@ -1,0 +1,64 @@
+# ChangeLog for app-shells/rssh
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-shells/rssh/ChangeLog,v 1.18 2008/02/20 12:55:46 caleb Exp $
+
+  20 Feb 2008; Caleb Tennis <caleb@gentoo.org> ChangeLog:
+  remove old version
+
+  20 Feb 2008; Caleb Tennis <caleb@gentoo.org> rssh-2.3.2.ebuild:
+  stabilizing amd64, I think it was missed long ago in bug #142399
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  06 Aug 2006; Jason Wever <weeve@gentoo.org> rssh-2.3.2.ebuild:
+  Stable on SPARC wrt security bug #142399.
+
+  05 Aug 2006; Michael Hanselmann <hansmi@gentoo.org> rssh-2.3.2.ebuild:
+  Stable on ppc.
+
+  05 Aug 2006; <ticho@gentoo.org> rssh-2.3.2.ebuild:
+  Stable on x86. Security bug #142399.
+
+*rssh-2.3.2 (10 Jan 2006)
+
+  10 Jan 2006; Mike Frysinger <vapier@gentoo.org> +rssh-2.3.2.ebuild:
+  Version bump #118433 by Micheal Marineau.
+
+*rssh-2.3.0 (24 Dec 2005)
+
+  24 Dec 2005; Mike Frysinger <vapier@gentoo.org> +rssh-2.3.0.ebuild:
+  Version bump #115082.
+
+  23 Sep 2005; Marcus D. Hanwell <cryos@gentoo.org> rssh-2.2.3.ebuild:
+  Marked ~amd64.
+
+*rssh-2.2.3 (16 Jan 2005)
+
+  16 Jan 2005; Mike Frysinger <vapier@gentoo.org> -rssh-2.2.1.ebuild,
+  -rssh-2.2.2.ebuild, +rssh-2.2.3.ebuild:
+  Version bump for security #72816.
+
+*rssh-2.2.2 (25 Oct 2004)
+
+  25 Oct 2004; Mike Frysinger <vapier@gentoo.org> +rssh-2.2.2.ebuild:
+  Version bump for security #66988.
+
+*rssh-2.2.1 (22 Jun 2004)
+
+  22 Jun 2004; Mike Frysinger <vapier@gentoo.org> +rssh-2.2.1.ebuild:
+  Version bump for security bug #54754.
+
+  25 Apr 2004; Aron Griffis <agriffis@gentoo.org> rssh-2.1.1.ebuild:
+  Add die following econf for bug 48950
+
+  14 Oct 2003; Max Kalika <max@gentoo.org> rssh-2.1.1.ebuild:
+  Comply with Gentoo policies with respect to libexecdir.
+
+  23 Sep 2003; Christian Birchinger <joker@gentoo.org> rssh-2.1.1.ebuild:
+  Added sparc keyword
+
+*rssh-2.1.1 (27 Jul 2003)
+
+  27 Jul 2003; Mike Frysinger <vapier@gentoo.org> :
+  Initial version.  Obtained from gentoo.de Stefan Knoblich <stefan.knoblich@t-online.de>.

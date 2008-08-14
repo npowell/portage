@@ -1,0 +1,39 @@
+# ChangeLog for games-puzzle/hoh-bin
+# Copyright 2000-2006 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-puzzle/hoh-bin/ChangeLog,v 1.10 2006/12/06 17:04:24 wolf31o2 Exp $
+
+  06 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org> hoh-bin-1.01.ebuild:
+  Remove old virtual/x11 dependency.
+
+  29 Aug 2006; Luis Medinas <metalgod@gentoo.org> hoh-bin-1.01.ebuild:
+  Stable on amd64.
+
+  31 Mar 2006; Chris Gianelloni <wolf31o2@gentoo.org> hoh-bin-1.01.ebuild:
+  Changed nostrip to strip.
+
+  17 Feb 2006; <Tupone@gentoo.org> hoh-bin-1.01.ebuild:
+  Modular X dependency fix
+
+  23 Aug 2005; Chris Gianelloni <wolf31o2@gentoo.org> hoh-bin-1.0.ebuild,
+  hoh-bin-1.01.ebuild:
+  cp -dpR -> cp -pPR for bug #103487.
+
+  23 Aug 2005; Chris Gianelloni <wolf31o2@gentoo.org> hoh-bin-1.0.ebuild,
+  hoh-bin-1.01.ebuild:
+  cp -a -> cp -dpR for bug #103487.
+
+  04 Jun 2004; Jason Eric Huebel <jhuebel@gentoo.org> hoh-bin-1.01.ebuild:
+  ~amd64, added emul-linux-x86-xlibs dependency for amd64
+
+*hoh-bin-1.01 (13 Jan 2004)
+
+  13 Jan 2004; Michael Sterrett <mr_bones_@gentoo.org> hoh-bin-1.01.ebuild:
+  version bump
+
+*hoh-bin-1.0 (04 Jan 2004)
+
+  04 Jan 2004; Michael Sterrett <mr_bones_@gentoo.org> hoh-bin-1.0.ebuild,
+  metadata.xml:
+  initial commit; ebuild based on the one submitted by Felix Riemann via bug
+  36222
+

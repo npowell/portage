@@ -1,0 +1,205 @@
+# ChangeLog for x11-wm/dwm
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-wm/dwm/ChangeLog,v 1.46 2008/07/30 18:24:16 cedk Exp $
+
+  30 Jul 2008; Cédric Krier <cedk@gentoo.org> -dwm-4.2.ebuild:
+  Remove old
+
+*dwm-5.1 (30 Jul 2008)
+
+  30 Jul 2008; Cédric Krier <cedk@gentoo.org> +dwm-5.1.ebuild:
+  Version bump
+
+  22 Jul 2008; Markus Rothe <corsair@gentoo.org> dwm-5.0.1.ebuild:
+  Stable on ppc64; bug #232477
+
+  22 Jul 2008; Cédric Krier <cedk@gentoo.org> files/dwm.desktop:
+  Fix desktop type
+
+  22 Jul 2008; Torsten Veller <tove@gentoo.org> dwm-5.0.1.ebuild:
+  Stable on x86 (#232477)
+
+  22 Jul 2008; Cédric Krier <cedk@gentoo.org> dwm-5.0.1.ebuild:
+  Fix xinerama dependencies and CFLAGS for bug #232477
+
+  21 Jul 2008; nixnut <nixnut@gentoo.org> dwm-5.0.1.ebuild:
+  Stable on ppc wrt bug 232477
+
+  20 Jul 2008; Kenneth Prugh <ken69267@gentoo.org> dwm-5.0.1.ebuild:
+  amd64 stable, bug #232477
+
+  20 Jul 2008; Cédric Krier <cedk@gentoo.org> dwm-4.2.ebuild,
+  dwm-5.0.1.ebuild:
+  Fix website
+
+  20 Jul 2008; Cédric Krier <cedk@gentoo.org> -dwm-4.3.ebuild,
+  -dwm-4.4.ebuild, -dwm-4.4.1.ebuild, -dwm-4.5.ebuild, -dwm-4.6.ebuild,
+  -dwm-4.7.ebuild, -dwm-4.8.ebuild, -dwm-4.9.ebuild:
+  Remove old
+
+  18 Jul 2008; Alexis Ballier <aballier@gentoo.org> dwm-5.0.1.ebuild:
+  keyword ~x86-fbsd thanks to Davide Italiano <dav_it@gentoo.org>, bug
+  #231109
+
+*dwm-5.0.1 (19 Jun 2008)
+
+  19 Jun 2008; Cédric Krier <cedk@gentoo.org> +dwm-5.0.1.ebuild:
+  Version bump
+
+*dwm-4.9 (04 Apr 2008)
+
+  04 Apr 2008; Cédric Krier <cedk@gentoo.org> +dwm-4.9.ebuild:
+  Version bump
+
+*dwm-4.8 (16 Mar 2008)
+
+  16 Mar 2008; Cédric Krier <cedk@gentoo.org> +dwm-4.8.ebuild:
+  Version bump
+
+  08 Feb 2008; Cédric Krier <cedk@gentoo.org> metadata.xml:
+  Add desktop-wm as backup herd
+
+*dwm-4.7 (21 Nov 2007)
+
+  21 Nov 2007; Cédric Krier <cedk@gentoo.org> +dwm-4.7.ebuild:
+  Version bump
+
+*dwm-4.6 (16 Nov 2007)
+
+  16 Nov 2007; Cédric Krier <cedk@gentoo.org> +dwm-4.6.ebuild:
+  Version bump
+
+*dwm-4.5 (22 Sep 2007)
+
+  22 Sep 2007; Cédric Krier <cedk@gentoo.org> +dwm-4.5.ebuild:
+  Version bump
+
+*dwm-4.4.1 (26 Aug 2007)
+
+  26 Aug 2007; Cédric Krier <cedk@gentoo.org> +dwm-4.4.1.ebuild:
+  Version bump
+
+*dwm-4.4 (23 Aug 2007)
+
+  23 Aug 2007; Cédric Krier <cedk@gentoo.org> +dwm-4.4.ebuild:
+  Version bump
+
+  25 Jul 2007; Christoph Mende <angelos@gentoo.org> dwm-4.2.ebuild:
+  Stable on amd64 wrt bug #185308
+
+  16 Jul 2007; Markus Rothe <corsair@gentoo.org> dwm-4.2.ebuild:
+  Stable on ppc64; bug #185308
+
+  16 Jul 2007; nixnut <nixnut@gentoo.org> dwm-4.2.ebuild:
+  Stable on ppc wrt bug 185308
+
+*dwm-4.3 (14 Jul 2007)
+
+  14 Jul 2007; Cédric Krier <cedk@gentoo.org> +dwm-4.3.ebuild:
+  Version bump
+
+  14 Jul 2007; Torsten Veller <tove@gentoo.org> dwm-4.2.ebuild:
+  Stable on x86
+
+  14 Jul 2007; Cédric Krier <cedk@gentoo.org> -dwm-4.0.ebuild,
+  -dwm-4.1.ebuild:
+  Remove old
+
+*dwm-4.2 (30 May 2007)
+
+  30 May 2007; Cédric Krier <cedk@gentoo.org> -dwm-3.9.ebuild,
+  +dwm-4.2.ebuild:
+  Version bump
+
+*dwm-4.1 (21 May 2007)
+
+  21 May 2007; Cédric Krier <cedk@gentoo.org> +dwm-4.1.ebuild:
+  Version bump
+
+*dwm-4.0 (20 Apr 2007)
+
+  20 Apr 2007; Cedric Krier <cedk@gentoo.org> -dwm-3.8.ebuild,
+  +dwm-4.0.ebuild:
+  Version bump
+
+*dwm-3.9 (09 Apr 2007)
+
+  09 Apr 2007; Cedric Krier <cedk@gentoo.org> -dwm-3.7.ebuild,
+  +dwm-3.9.ebuild:
+  Version bump
+
+*dwm-3.8 (06 Mar 2007)
+
+  06 Mar 2007; Cedric Krier <cedk@gentoo.org> -dwm-3.4.ebuild,
+  -dwm-3.5.ebuild, +dwm-3.8.ebuild:
+  Version bump
+
+*dwm-3.7 (24 Feb 2007)
+
+  24 Feb 2007; Cedric Krier <cedk@gentoo.org> +dwm-3.7.ebuild:
+  Version bump
+
+  20 Feb 2007; Cedric Krier <cedk@gentoo.org> -dwm-3.3.ebuild:
+  Remove old
+
+*dwm-3.5 (20 Feb 2007)
+
+  20 Feb 2007; Cedric Krier <cedk@gentoo.org> +dwm-3.5.ebuild:
+  Version bump
+
+*dwm-3.4 (07 Feb 2007)
+
+  07 Feb 2007; Cedric Krier <cedk@gentoo.org> -dwm-3.2.2.ebuild,
+  +dwm-3.4.ebuild:
+  Version bump and add eclass savedconfig
+
+*dwm-3.3 (01 Feb 2007)
+
+  01 Feb 2007; Cedric Krier <cedk@gentoo.org> -dwm-3.1.ebuild,
+  +dwm-3.3.ebuild:
+  Version bump
+
+  28 Jan 2007; Cedric Krier <cedk@gentoo.org> dwm-3.1.ebuild,
+  dwm-3.2.2.ebuild:
+  Fix HOMEPAGE for bug #164253
+
+  27 Jan 2007; Cedric Krier <cedk@gentoo.org> -dwm-2.8.ebuild,
+  -dwm-2.9.ebuild, -dwm-3.0.ebuild:
+  Remove old
+
+*dwm-3.2.2 (27 Jan 2007)
+
+  27 Jan 2007; Cedric Krier <cedk@gentoo.org> +dwm-3.2.2.ebuild:
+  Version bump
+
+  21 Jan 2007; Markus Rothe <corsair@gentoo.org> dwm-3.1.ebuild:
+  Added ~ppc64
+
+  21 Jan 2007; nixnut <nixnut@gentoo.org> dwm-3.1.ebuild:
+  Added ~ppc wrt bug 162327
+
+*dwm-3.1 (16 Jan 2007)
+
+  16 Jan 2007; Cedric Krier <cedk@gentoo.org> +dwm-3.1.ebuild:
+  Version bump
+
+*dwm-3.0 (13 Jan 2007)
+
+  13 Jan 2007; Cedric Krier <cedk@gentoo.org> +dwm-3.0.ebuild:
+  Version bump
+
+*dwm-2.9 (09 Jan 2007)
+
+  09 Jan 2007; Cedric Krier <cedk@gentoo.org> +files/dwm.desktop,
+  +dwm-2.9.ebuild:
+  Version bump
+
+  07 Jan 2007; Cedric Krier <cedk@gentoo.org> dwm-2.8.ebuild:
+  Improve pkg_preinst
+
+*dwm-2.8 (07 Jan 2007)
+
+  07 Jan 2007; Cedric Krier <cedk@gentoo.org> +metadata.xml,
+  +dwm-2.8.ebuild:
+  New ebuild for bug #141530
+

@@ -1,0 +1,24 @@
+# ChangeLog for dev-libs/libtomfloat
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/libtomfloat/ChangeLog,v 1.6 2008/06/10 13:14:03 darkside Exp $
+
+  10 Jun 2008; Jeremy Olexa <darkside@gentoo.org> libtomfloat-0.02.ebuild:
+  Punt DEPEND on app-arch/unzip as SRC_URI has changed
+
+  10 Jun 2008; Jeremy Olexa <darkside@gentoo.org> libtomfloat-0.02.ebuild:
+  ah, found the issues with bug #206158 - missing dep on dev-libs/libtommath.
+  Thanks to Evil Compile Person for reporting
+
+  10 Jun 2008; Jeremy Olexa <darkside@gentoo.org> libtomfloat-0.02.ebuild:
+  Minor QA fixes: HOMEPAGE, SRC_URI, dodoc
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  19 Mar 2006; Mark Loeser <halcy0n@gentoo.org> libtomfloat-0.02.ebuild:
+  Add DEPEND on app-arch/unzip
+
+*libtomfloat-0.02 (16 Mar 2005)
+
+  16 Mar 2005; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by me.

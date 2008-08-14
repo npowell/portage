@@ -1,0 +1,74 @@
+# ChangeLog for media-plugins/gst-plugins-cdio
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/gst-plugins-cdio/ChangeLog,v 1.15 2008/08/08 18:05:01 maekke Exp $
+
+  08 Aug 2008; Markus Meier <maekke@gentoo.org>
+  gst-plugins-cdio-0.10.8.ebuild:
+  x86 stable, bug #232054
+
+  07 Aug 2008; Tobias Klausmann <klausman@gentoo.org>
+  gst-plugins-cdio-0.10.8.ebuild:
+  Stable on alpha, bug #232054
+
+  01 Aug 2008; Brent Baude <ranger@gentoo.org>
+  gst-plugins-cdio-0.10.8.ebuild:
+  Marking gst-plugins-cdio-0.10.8 ppc64 stable for bug 232054
+
+  30 Jul 2008; Brent Baude <ranger@gentoo.org>
+  gst-plugins-cdio-0.10.8.ebuild:
+  Marking gst-plugins-cdio-0.10.8 ppc stable for bug 232054
+
+  26 Jul 2008; Olivier Crête <tester@gentoo.org>
+  gst-plugins-cdio-0.10.8.ebuild:
+  Stable on amd64, bug #232054
+
+*gst-plugins-cdio-0.10.8 (29 Jun 2008)
+
+  29 Jun 2008; Samuli Suominen <drac@gentoo.org>
+  -gst-plugins-cdio-0.10.6.ebuild, -gst-plugins-cdio-0.10.7.ebuild,
+  +gst-plugins-cdio-0.10.8.ebuild:
+  Version bump.
+
+  12 Jun 2008; nixnut <nixnut@gentoo.org> gst-plugins-cdio-0.10.7.ebuild:
+  Added ~ppc wrt bug 225291
+
+*gst-plugins-cdio-0.10.7 (21 Feb 2008)
+
+  21 Feb 2008; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  +gst-plugins-cdio-0.10.7.ebuild:
+  version bump
+
+*gst-plugins-cdio-0.10.6 (30 Aug 2007)
+
+  30 Aug 2007; Samuli Suominen <drac@gentoo.org>
+  +gst-plugins-cdio-0.10.6.ebuild:
+  Version bump.
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*gst-plugins-cdio-0.10.5 (25 Jan 2007)
+
+  25 Jan 2007; Jim Ramsay <lack@gentoo.org> +gst-plugins-cdio-0.10.5.ebuild:
+  Version bump - gst-plugins-good-0.10.5 is released
+
+  10 Jan 2007; Mart Raudsepp <leio@gentoo.org>
+  -gst-plugins-cdio-0.10.2.ebuild:
+  Prune old version
+
+*gst-plugins-cdio-0.10.3 (05 May 2006)
+
+  05 May 2006; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  +gst-plugins-cdio-0.10.3.ebuild:
+  version bump
+
+  28 Feb 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  gst-plugins-cdio-0.10.2.ebuild:
+  dropping ~ppc due to bad rdeps
+
+*gst-plugins-cdio-0.10.2 (27 Feb 2006)
+
+  27 Feb 2006; Zaheer Abbas Merali <zaheerm@gentoo.org> +metadata.xml,
+  +gst-plugins-cdio-0.10.2.ebuild:
+  cdio plugin for gstreamer 0.10
+

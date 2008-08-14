@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<herd>no-herd</herd>
+<maintainer>
+  <email>jokey@gentoo.org</email>
+  <name>Markus Ullmann</name>
+</maintainer>
+<maintainer>
+  <email>gentoo@necoro.eu</email>
+  <name>René Neumann</name>
+</maintainer>
+<use>
+  <flag name='etc-proposals'>Use <pkg>app-portage/etc-proposals</pkg> for
+    updating CONFIG_PROTECTed stuff</flag>
+  <flag name='userpriv'>Allow emerge processes as normal user</flag>
+</use>
+</pkgmetadata>

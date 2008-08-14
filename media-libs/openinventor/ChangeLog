@@ -1,0 +1,92 @@
+# ChangeLog for media-libs/openinventor
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/openinventor/ChangeLog,v 1.19 2008/08/10 14:19:59 fmccor Exp $
+
+  10 Aug 2008; Ferris McCormick <fmccor@gentoo.org>
+  openinventor-2.1.5.10-r2.ebuild:
+  Add ~sparc for testing, it now builds.  Bug #231962.
+
+  10 Aug 2008; Stefaan De Roeck <stefaan@gentoo.org>
+  +files/support-sparc.patch, openinventor-2.1.5.10-r2.ebuild:
+  Small patch needed to support sparc (fixes #231962)
+
+  07 Jun 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  files/gcc4-support.patch, openinventor-2.1.5.10-r2.ebuild:
+  Added a few trivial fixes for gcc-4.3 in gcc4-support.patch, and filter
+  optimizations >=O2 because of segmentation faults
+
+  23 May 2008; Markus Meier <maekke@gentoo.org>
+  openinventor-2.1.5.10-r2.ebuild:
+  add quotes
+
+  19 Nov 2006; Stefaan De Roeck <stefaan@gentoo.org>
+  -files/gentoo-paths.patch, -openinventor-2.1.5.10-r1.ebuild:
+  Remove obsolete ebuild and patch
+
+  08 Nov 2006; Daniel Gryniewicz <dang@gentoo.org>
+  openinventor-2.1.5.10-r2.ebuild:
+  Marked stable on amd64 for bug #153075
+
+  03 Nov 2006; Christian Faulhammer <opfer@gentoo.org>
+  openinventor-2.1.5.10-r2.ebuild:
+  stabled x86, bug #153075
+
+  28 Oct 2006; Stefaan De Roeck <stefaan@gentoo.org>
+  openinventor-2.1.5.10-r2.ebuild:
+  Stable on alpha
+
+  09 Jul 2006; Stefaan De Roeck <stefaan@gentoo.org>
+  openinventor-2.1.5.10-r2.ebuild:
+  When media-libs/mesa was compiled without USE-flag motif, inform that
+  remerging that will be necessary (bug #131728)
+
+*openinventor-2.1.5.10-r2 (20 Jan 2006)
+
+  20 Jan 2006; Stefaan De Roeck <stefaan@gentoo.org>
+  +openinventor-2.1.5.10-r2.ebuild:
+  Porting to modular X
+
+  26 Dec 2005; Stefaan De Roeck <stefaan@gentoo.org>
+  -openinventor-2.1.5.10.ebuild:
+  Remove old ebuild
+
+  25 Dec 2005; Stefaan De Roeck <stefaan@gentoo.org>
+  openinventor-2.1.5.10-r1.ebuild:
+  Marking stable on alpha, bug #116087
+
+  24 Dec 2005; Simon Stelling <blubb@gentoo.org>
+  openinventor-2.1.5.10-r1.ebuild:
+  stable on amd64
+
+  20 Dec 2005; Chris White <chriswhite@gentoo.org>
+  openinventor-2.1.5.10-r1.ebuild:
+  x86 stable for bug #116087.
+
+*openinventor-2.1.5.10-r1 (15 Nov 2005)
+
+  15 Nov 2005; Stefaan De Roeck <stefaan@gentoo.org>
+  +files/gentoo-paths-v2.patch, +openinventor-2.1.5.10-r1.ebuild:
+  Correct paths in *.RUNME files, put manuals in /usr/share/man instead of
+  /usr/man
+
+  15 Nov 2005; Chris White <chriswhite@gentoo.org>
+  openinventor-2.1.5.10.ebuild:
+  Marked x86 stable as per bug #112485.
+
+  14 Nov 2005; Stefaan De Roeck <stefaan@gentoo.org>
+  openinventor-2.1.5.10.ebuild:
+  Fix multilib-strict issue
+
+  14 Nov 2005; Stefaan De Roeck <stefaan@gentoo.org>
+  openinventor-2.1.5.10.ebuild:
+  Stable on alpha (bug #112485)
+
+*openinventor-2.1.5.10 (16 Sep 2005)
+
+  16 Sep 2005; Stefaan De Roeck <stefaan@gentoo.org>
+  +files/freetype2-activate.patch, +files/freetype2-includes.patch,
+  +files/gcc4-support.patch, +files/gentoo-paths.patch, +files/no-csh.patch,
+  +files/support-archs.patch, +files/use-byacc.patch, +metadata.xml,
+  +openinventor-2.1.5.10.ebuild:
+  New ebuild for SGI OpenInventor, fixes bug #31742
+

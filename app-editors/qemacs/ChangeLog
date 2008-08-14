@@ -1,0 +1,167 @@
+# ChangeLog for app-editors/qemacs
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-editors/qemacs/ChangeLog,v 1.36 2007/12/15 09:07:10 ulm Exp $
+
+  15 Dec 2007; Ulrich Mueller <ulm@gentoo.org>
+  files/qemacs-0.3.2_pre20070226-Makefile-gentoo.patch:
+  Fix install failure with USE="-X", bug #202355.
+
+  10 Oct 2007; Christian Faulhammer <opfer@gentoo.org>
+  qemacs-0.3.2_pre20070226.ebuild:
+  remove PROVIDE=virtual/editor as we have now a new-style virtual
+
+  23 Sep 2007; Christian Faulhammer <opfer@gentoo.org>
+  -files/qemacs-0.3.1-libpng-1_2.patch,
+  +files/qemacs-0.3.1-manpage-ref-fix.patch:
+  removed the wrong patch, so now doing the right one, plus restoring the needed
+
+  22 Sep 2007; Christian Faulhammer <opfer@gentoo.org>
+  -files/qemacs-0.3.1-Makefile-gentoo.patch,
+  -files/qemacs-0.3.1-configure-gentoo.patch,
+  -files/qemacs-0.3.1-gcc-3.4.patch,
+  -files/qemacs-0.3.1-gcc4_charset_c.patch,
+  -files/qemacs-0.3.1-gcc4_tty_c.patch,
+  -files/qemacs-0.3.1-gcc4_x11_c.patch,
+  -files/qemacs-0.3.1-make_backup.patch,
+  -files/qemacs-0.3.1-manpage-ref-fix.patch,
+  -files/qemacs-0.3.1-qemacs-datadir.patch,
+  -files/qemacs-0.3.1-tty_utf8.patch, -qemacs-0.3.1-r3.ebuild:
+  clean up
+
+  22 Sep 2007; Christoph Mende <angelos@gentoo.org>
+  qemacs-0.3.2_pre20070226.ebuild:
+  Stable on amd64 wrt bug #193289
+
+  22 Sep 2007; nixnut <nixnut@gentoo.org> qemacs-0.3.2_pre20070226.ebuild:
+  Stable on ppc wrt bug 193289
+
+  21 Sep 2007; Christian Faulhammer <opfer@gentoo.org>
+  qemacs-0.3.2_pre20070226.ebuild:
+  stable x86, bug 193289
+
+  22 Jul 2007; Ulrich Mueller <ulm@gentoo.org> qemacs-0.3.1-r3.ebuild,
+  qemacs-0.3.2_pre20070226.ebuild:
+  Fix X dependencies.
+
+  22 Jul 2007; David Shakaryan <omp@gentoo.org> qemacs-0.3.1-r3.ebuild:
+  Remove virtual/x11 from dependencies.
+
+  24 Jun 2007; Ulrich Mueller <ulm@gentoo.org> qemacs-0.3.1-r3.ebuild,
+  qemacs-0.3.2_pre20070226.ebuild:
+  Provide virtual/editor.
+
+  14 May 2007; Christian Faulhammer <opfer@gentoo.org>
+  qemacs-0.3.2_pre20070226.ebuild:
+  removed virtual/x11 from DEPEND lines; fixed a typo in DESCRIPTION
+
+*qemacs-0.3.2_pre20070226 (26 Feb 2007)
+
+  26 Feb 2007; Christian Faulhammer <opfer@gentoo.org>
+  +files/qemacs-0.3.2_pre20070226-Makefile-gentoo.patch,
+  +files/qemacs-0.3.2_pre20070226-make_backup.patch,
+  +files/qemacs-0.3.2_pre20070226-qemacs-datadir.patch,
+  +files/qemacs-0.3.2_pre20070226-tty_utf8.patch,
+  +qemacs-0.3.2_pre20070226.ebuild:
+  version bump: CVS snapshot from upstream to fix bug 144081, reported by DMoL
+  <master_temp@tut.by>
+
+  04 Dec 2006; Christian Faulhammer <opfer@gentoo.org>
+  -files/qemacs-Makefile-gentoo.patch, -files/qemacs-ppc-segfault.patch,
+  -qemacs-0.3.1.ebuild, -qemacs-0.3.1-r1.ebuild, -qemacs-0.3.1-r2.ebuild:
+  clean up old versions
+
+  29 Nov 2006; Christian Faulhammer <opfer@gentoo.org>
+  qemacs-0.3.1-r3.ebuild:
+  inherited flag-o-matic correctly as found by Timothy Redaelli
+  <drizzt@gentoo.org>; added some quotes around variables
+
+  30 Oct 2006; Christian Faulhammer <opfer@gentoo.org>
+  qemacs-0.3.1-r3.ebuild:
+  do flag filtering the right way, as reported in bug #148229
+
+  09 Aug 2006; Danny van Dyk <kugelfang@gentoo.org> qemacs-0.3.1-r3.ebuild:
+  Marked stable on amd64 wrt bug #141567.
+
+  28 Jul 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  qemacs-0.3.1-r3.ebuild:
+  ppc stable, bug #141567
+
+  27 Jul 2006; Joshua Jackson <tsunam@gentoo.org> ChangeLog:
+  Stable x86 gcc4.1; bug #141567
+
+*qemacs-0.3.1-r3 (25 Jul 2006)
+
+  25 Jul 2006; Matthew Kennedy <mkennedy@gentoo.org>
+  +files/qemacs-0.3.1-gcc4_charset_c.patch,
+  +files/qemacs-0.3.1-gcc4_tty_c.patch,
+  +files/qemacs-0.3.1-gcc4_x11_c.patch,
+  +files/qemacs-0.3.1-libpng-1_2.patch, +qemacs-0.3.1-r3.ebuild:
+  Various GCC4 fixes; Resolves Bug #141292; Thanks to Christian 'Opfer'
+  Faulhammer.
+
+  18 Mar 2006; Joshua Baergen <joshuabaergen@gentoo.org>
+  qemacs-0.3.1.ebuild, qemacs-0.3.1-r1.ebuild, qemacs-0.3.1-r2.ebuild:
+  Add modular X dependencies.
+
+*qemacs-0.3.1-r2 (23 Apr 2005)
+
+  23 Apr 2005; Mamoru KOMACHI <usata@gentoo.org>
+  +files/qemacs-0.3.1-Makefile-gentoo.patch,
+  +files/qemacs-0.3.1-manpage-ref-fix.patch,
+  +files/qemacs-0.3.1-qemacs-datadir.patch, +qemacs-0.3.1-r2.ebuild:
+  Various patches from James Rowe <jnrowe@ukfsn.org>; bug #82915.
+
+  21 Apr 2005; Simon Stelling <blubb@gentoo.org> qemacs-0.3.1.ebuild:
+  stable on amd64
+
+  17 Mar 2005; Joseph Jezak <josejx@gentoo.org>
+  files/qemacs-0.3.1-gcc-3.4.patch, +files/qemacs-ppc-segfault.patch,
+  qemacs-0.3.1.ebuild, qemacs-0.3.1-r1.ebuild:
+  Added workaround to prevent segfaults on ppc.
+
+  06 Mar 2005; Joseph Jezak <josejx@gentoo.org>
+  +files/qemacs-0.3.1-gcc-3.4.patch, qemacs-0.3.1-r1.ebuild,
+  qemacs-0.3.1.ebuild:
+  Added patch to fix compiling on gcc 3.4.
+
+*qemacs-0.3.1-r1 (20 Feb 2005)
+
+  20 Feb 2005; Mamoru KOMACHI <usata@gentoo.org>
+  +files/qemacs-0.3.1-make_backup.patch, +qemacs-0.3.1-r1.ebuild:
+  Added a patch to enable users to choose whether to create ~ backup file.
+  This closes bug #75052.
+
+  05 Oct 2004; Pieter Van den Abeele <pvdabeel@gentoo.org>
+  qemacs-0.3.1.ebuild:
+  Masked qemacs-0.3.1.ebuild stable for ppc
+
+  07 Sep 2004; Mamoru KOMACHI <usata@gentoo.org> qemacs-0.3.1.ebuild,
+  +files/qemacs-0.3.1-tty_utf8.patch:
+  Added utf8 patch. Closing bug #62829.
+
+  04 Sep 2004; David Holm <dholm@gentoo.org> qemacs-0.3.1.ebuild:
+  Added to ~ppc.
+
+  25 Apr 2004; Aron Griffis <agriffis@gentoo.org> qemacs-0.3.1.ebuild:
+  Add die following econf for bug 48950
+
+  03 Apr 2004; Daniel Ahlberg <aliz@gentoo.org> qemacs-0.3.1.ebuild:
+  Adding amd64 keyword, closing #46659.
+
+  29 Mar 2004; Michael Sterrett <mr_bones_@gentoo.org> qemacs-0.3.1.ebuild:
+  inherit eutils for epatch; tidy; fix IUSE
+
+  13 Mar 2004; Michael Sterrett <mr_bones_@gentoo.org> qemacs-0.3.1.ebuild:
+  Don't assign default to S; header fix
+
+  11 Dec 2003; Jeremy Maitin-Shepard <jbms@gentoo.org> qemacs-0.3.1.ebuild:
+  The ebuild now patches the configure script so that the package
+  compiles on GCC 3.3.  Resolves Bug #35632.
+
+*qemacs-0.3.1 (11 May 2003)
+
+  11 May 2003; Matthew Kennedy <mkennedy@gentoo.org> qemacs-0.3.1.ebuild,
+  files/qemacs-Makefile-gentoo.patch:
+  New ebuid. Submitted by Paul Totterman <paul_totterman@yahoo.com> bug #20341.
+  Massaged by Matthew Kennedy <mkennedy@gentoo.org>
+

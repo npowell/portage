@@ -1,0 +1,70 @@
+# ChangeLog for app-forensics/foremost
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-forensics/foremost/ChangeLog,v 1.12 2008/03/24 22:11:34 ikelos Exp $
+
+*foremost-1.5.3 (24 Mar 2008)
+
+  24 Mar 2008; Mike Auty <ikelos@gentoo.org> foremost-1.4.ebuild,
+  foremost-1.5.ebuild, +foremost-1.5.3.ebuild:
+  Version bump, and re-apply patch. Fixes bug 214471.
+
+  31 Jan 2008; Mike Auty <ikelos@gentoo.org> ChangeLog:
+  Re-sign digestless manifest.
+
+*foremost-1.5 (17 May 2007)
+
+  17 May 2007; Robert Clark <hyakuhei@gentoo.org> +foremost-1.5.ebuild:
+  Added foremost-1.5 this no longer requires the location patch
+
+  21 Feb 2007; Mike Auty <ikelos@gentoo.org> foremost-1.4.ebuild:
+  Added in ~amd64 after reported success.
+
+*foremost-1.4 (21 Feb 2007)
+
+  21 Feb 2007; Mike Auty <ikelos@gentoo.org>
+  +files/foremost-1.4-config-location.patch, metadata.xml,
+  +foremost-1.4.ebuild:
+  Version bump, and taking over maintainership of the package. Fixes bug
+  #144065.
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  08 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+*foremost-1.0 (12 Oct 2005)
+
+  12 Oct 2005; Daniel Black <dragonheart@gentoo.org> +foremost-1.0.ebuild:
+  version bump - bug #108827 thanks to Leo
+
+  14 Dec 2004; Daniel Black <dragonheart@gentoo.org> foremost-0.69.ebuild:
+  ppc stable
+
+  18 Sep 2004; Sven Wegener <swegener@gentoo.org> :
+  Fixed ChangeLog header.
+
+  13 Sep 2004; Daniel Black <dragonheart@gentoo.org> foremost-0.69.ebuild:
+  x86 stable
+
+  12 Sep 2004; Daniel Black <dragonheart@gentoo.org> metadata.xml:
+  metadata.xml update. forensics herd taking over maintaince
+
+*foremost-0.69 (12 Sep 2004)
+
+  12 Sep 2004; Daniel Black <dragonheart@gentoo.org> +metadata.xml,
+  +foremost-0.69.ebuild:
+  Moved from app-admin/foremost to app-forensics/foremost.
+
+  29 Jun 2004; Aron Griffis <agriffis@gentoo.org> foremost-0.69.ebuild:
+  add sed-4 dep
+
+  28 Apr 2004; David Holm <dholm@gentoo.org> foremost-0.69.ebuild:
+  Added to ~ppc.
+
+*foremost-0.69 (27 Apr 2004)
+
+  27 Apr 2004; Martin Holzer <mholzer@gentoo.org> foremost-0.69.ebuild,
+  metadata.xml:
+  Initial ebuild. Submitted by Daniel Fullmer <lsmod@hotmail.com> in 47094
+

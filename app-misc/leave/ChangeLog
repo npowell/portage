@@ -1,0 +1,29 @@
+# ChangeLog for app-misc/leave
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/leave/ChangeLog,v 1.8 2007/03/19 01:44:48 kloeri Exp $
+
+  19 Mar 2007; Bryan Østergaard <kloeri@gentoo.org> metadata.xml:
+  Remove ka0ttic from metadata.xml due to retirement.
+
+  08 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  05 Jun 2005; Michael Hanselmann <hansmi@gentoo.org> leave-20041016.ebuild:
+  Stable on ppc.
+
+  10 May 2005; Stephanie Lockwood-Childs <wormo@gentoo.org>
+  leave-20041016.ebuild:
+  mark ~ppc
+
+  19 Nov 2004; Aaron Walker <ka0ttic@gentoo.org> leave-20041016.ebuild:
+  Marked stable on x86.
+
+  26 Oct 2004; Aaron Walker <ka0ttic@gentoo.org> leave-20041016.ebuild:
+  Use tc-getCC() - bug #68987
+
+*leave-20041016 (17 Oct 2004)
+
+  17 Oct 2004; Aaron Walker <ka0ttic@gentoo.org> +metadata.xml,
+  +files/README, +files/leave-fix-makefile.diff, +leave-20041016.ebuild:
+  Initial commit.
+

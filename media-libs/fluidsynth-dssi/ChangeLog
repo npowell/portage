@@ -1,0 +1,26 @@
+# ChangeLog for media-libs/fluidsynth-dssi
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/fluidsynth-dssi/ChangeLog,v 1.5 2008/03/13 21:23:06 aballier Exp $
+
+  13 Mar 2008; Alexis Ballier <aballier@gentoo.org> metadata.xml,
+  fluidsynth-dssi-0.9.1.ebuild:
+  Handle to proaudio herd like dssi, use emake instead of make, fix typo in
+  doc name
+
+  03 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  24 Mar 2006; Stephanie Lockwood-Childs <wormo@gentoo.org>
+  fluidsynth-dssi-0.9.1.ebuild:
+  mark ~ppc
+
+  06 Mar 2006; Diego Pettenò <flameeyes@gentoo.org>
+  fluidsynth-dssi-0.9.1.ebuild:
+  Make pkgconfig a build time dependency.
+
+*fluidsynth-dssi-0.9.1 (09 Oct 2005)
+
+  09 Oct 2005; MATSUU Takuto <matsuu@gentoo.org>
+  +fluidsynth-dssi-0.9.1.ebuild:
+  Initial import. Bug 83082.
+

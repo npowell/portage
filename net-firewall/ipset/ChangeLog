@@ -1,0 +1,97 @@
+# ChangeLog for net-firewall/ipset
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-firewall/ipset/ChangeLog,v 1.17 2008/08/14 00:06:25 robbat2 Exp $
+
+*ipset-2.3.3a (14 Aug 2008)
+
+  14 Aug 2008; Robin H. Johnson <robbat2@gentoo.org> +ipset-2.3.3a.ebuild:
+  Bug #233763, version bump to resolve glibc-2.8 issues. Upstream also now
+  includes modules buildable without patching the kernel.
+
+*ipset-2.3.1.20080612 (25 Jun 2008)
+
+  25 Jun 2008; Robin H. Johnson <robbat2@gentoo.org>
+  +ipset-2.3.1.20080612.ebuild:
+  Version bump per bug #226155.
+
+*ipset-2.3.0.20070828-r2 (14 Nov 2007)
+
+  14 Nov 2007; <pva@gentoo.org> -ipset-2.3.0.20070828-r1.ebuild,
+  +ipset-2.3.0.20070828-r2.ebuild:
+  Fixed LIBDIR to include /; bug 199084 reported by Krzysztof Olędzki
+  <ole+gentoo AT ans.pl>.
+
+  10 Nov 2007; <pva@gentoo.org> -ipset-2.1.0.20050119-r1.ebuild,
+  -ipset-2.2.8.20051203.ebuild, -ipset-2.2.9.20060508.ebuild:
+  Clean old.
+
+  10 Nov 2007; Christian Faulhammer <opfer@gentoo.org>
+  ipset-2.2.9.20070401.ebuild:
+  stable x86, bug 198158
+
+*ipset-2.3.0.20070828-r1 (07 Nov 2007)
+
+  07 Nov 2007; <pva@gentoo.org> -ipset-2.3.0.20070828.ebuild,
+  +ipset-2.3.0.20070828-r1.ebuild:
+  Cleaned ebuild, courtesy of Donnie Berkholz <dberkholz AT gentoo.org>
+
+*ipset-2.3.0.20070828 (05 Nov 2007)
+
+  05 Nov 2007; <pva@gentoo.org> metadata.xml, +ipset-2.3.0.20070828.ebuild:
+  Version bump. Added myself in metadata. Added emerge --config to patch the
+  kernel.
+
+  12 Apr 2007; Stefan Schweizer <genstef@gentoo.org>
+  -ipset-2.1.0.20050119.ebuild:
+  Remove old version that uses check_KV, bug 150058
+
+*ipset-2.2.9.20070401 (10 Apr 2007)
+
+  10 Apr 2007; Robin H. Johnson <robbat2@gentoo.org>
+  +ipset-2.2.9.20070401.ebuild:
+  New version from upstream, bug #173218. Please note that while this version
+  will compile without a patched kernel, you still need a patched kernel to
+  use it!.
+
+*ipset-2.2.9.20060508 (25 May 2006)
+
+  25 May 2006; Robin H. Johnson <robbat2@gentoo.org>
+  ipset-2.2.8.20051203.ebuild, +ipset-2.2.9.20060508.ebuild:
+  Bug #126878, upstream seems to have changed the directory name inside the
+  tarball. Also version bump that fixes a return code issue.
+
+  27 Jan 2006; Robin H. Johnson <robbat2@gentoo.org>
+  ipset-2.2.8.20051203.ebuild:
+  Adjust description to indicate that this package only provides the userspace
+  portion of ipset. You must still manually patch your kernel to have ipset
+  support.
+
+*ipset-2.2.8.20051203 (12 Dec 2005)
+
+  12 Dec 2005; Robin H. Johnson <robbat2@gentoo.org>
+  +ipset-2.2.8.20051203.ebuild:
+  Version bump.
+
+  26 Sep 2005; Robin H. Johnson <robbat2@gentoo.org>
+  ipset-2.1.0.20050119-r1.ebuild:
+  Stable on x86, 146 days in ~x86.
+
+  06 May 2005; Sven Wegener <swegener@gentoo.org>
+  ipset-2.1.0.20050119.ebuild, ipset-2.1.0.20050119-r1.ebuild:
+  Removed * postfix from <, <=, >= and > dependencies.
+
+*ipset-2.1.0.20050119-r1 (03 May 2005)
+
+  03 May 2005; Robin H. Johnson <robbat2@gentoo.org>
+  +ipset-2.1.0.20050119-r1.ebuild:
+  Convert to use linux-info eclass.
+
+  26 Apr 2005; Andrej Kacian <ticho@gentoo.org> ipset-2.1.0.20050119.ebuild:
+  Added ~amd64 keyword.
+
+*ipset-2.1.0.20050119 (10 Mar 2005)
+
+  10 Mar 2005; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml,
+  +ipset-2.1.0.20050119.ebuild:
+  Initial commit, ebuild by Robin H. Johnson <robbat2@gentoo.org>.
+

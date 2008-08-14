@@ -1,0 +1,74 @@
+# ChangeLog for dev-util/regexxer
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/regexxer/ChangeLog,v 1.18 2007/05/02 15:43:22 armin76 Exp $
+
+  02 May 2007; Raúl Porcel <armin76@gentoo.org> regexxer-0.9.ebuild:
+  x86 stable since 0.8 doesn't work
+
+*regexxer-0.9 (02 May 2007)
+
+  02 May 2007; Samuli Suominen <drac@gentoo.org> +regexxer-0.9.ebuild:
+  Version bump for bugs 149772 and 176804. Thanks to Maarten Bressers, Philip
+  Belemezov and Matthias Langer.
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  15 Jan 2006; Krzysiek Pawlik <nelchael@gentoo.org> -regexxer-0.6.ebuild:
+  Removed old version.
+
+  14 Jan 2006; Krzysiek Pawlik <nelchael@gentoo.org> regexxer-0.8.ebuild:
+  Stable on x86.
+
+  01 Nov 2005; Krzysiek Pawlik <nelchael@gentoo.org> regexxer-0.6.ebuild,
+  regexxer-0.8.ebuild:
+  Fixed dodoc not to install COPYING and INSTALL.
+
+  12 Aug 2005; Luis Medinas <metalgod@gentoo.org> regexxer-0.8.ebuild:
+  Added ~amd64 Keywords.
+
+  15 Jun 2005; David Holm <dholm@gentoo.org> regexxer-0.8.ebuild:
+  Added to ~ppc.
+
+*regexxer-0.8 (14 Jun 2005)
+
+  14 Jun 2005; Jonathan Smith <smithj@gentoo.org> -regexxer-0.4.ebuild,
+  -regexxer-0.5.ebuild, +regexxer-0.8.ebuild:
+  version bump for #57041 and cleanup
+
+  29 Nov 2004; Joe McCann <joem@gentoo.org> regexxer-0.4.ebuild,
+  regexxer-0.5.ebuild, regexxer-0.6.ebuild:
+  Fixing the mm deps for real, closes bug #60889
+
+  30 May 2004; Yi Qiang <khai@gentoo.org> regexxer-0.4.ebuild,
+  regexxer-0.5.ebuild, regexxer-0.6.ebuild:
+  Fixed gtkmm deps.
+
+  11 Apr 2004; Markus Nigbur <pyrania@gentoo.org> regexxer-0.6.ebuild:
+  Marking stable on x86.
+
+  25 Jan 2004; Markus Nigbur <pyrania@gentoo.org> regexxer-0.5.ebuild:
+  Marked stable on x86.
+
+*regexxer-0.6 (25 Jan 2004)
+
+  25 Jan 2004; Markus Nigbur <pyrania@gentoo.org> regexxer-0.6.ebuild:
+  Version bump and dependency updates.
+
+*regexxer-0.5 (06 Nov 2003)
+
+  06 Nov 2003; Alastair Tse <liquidx@gentoo.org> metadata.xml,
+  regexxer-0.5.ebuild:
+  version bump, fixed deps
+
+  13 Jul 2003; Martin Holzer <mholzer@gentoo.org> regexxer-0.4.ebuild:
+  update x11-libs/gtkmm to dev-cpp/gtkmm
+
+*regexxer-0.4 (10 Mar 2003)
+
+  10 Mar 2003; Graham Forest <vladimir@gentoo.org> regexxer-0.4.ebuild:
+  Added libpcre with utf-8 dep
+
+  10 Mar 2003; Graham Forest <vladimir@gentoo.org> regexxer-0.4.ebuild:
+  Initial import.  Ebuild submitted by Rui Lopes <rui@ruilopes.com>
+

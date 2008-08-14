@@ -1,0 +1,13 @@
+# ChangeLog for dev-ruby/mime-types
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/mime-types/ChangeLog,v 1.2 2007/03/13 23:40:26 tgall Exp $
+
+  13 Mar 2007; Tom Gall <tgall@gentoo.org> mime-types-1.15.ebuild:
+  added ~ppc64
+
+*mime-types-1.15 (24 Feb 2007)
+
+  24 Feb 2007; Hans de Graaff <graaff@gentoo.org> +metadata.xml,
+  +mime-types-1.15.ebuild:
+  Add dev-ruby/mime-types as a dependency for dev-ruby/rflickr.
+

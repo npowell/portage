@@ -1,0 +1,30 @@
+# ChangeLog for dev-ruby/ruby-zoom
+# Copyright 1999-2006 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-zoom/ChangeLog,v 1.6 2006/10/03 05:03:15 pclouds Exp $
+
+*ruby-zoom-0.2.2 (03 Oct 2006)
+
+  03 Oct 2006; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  +files/0.2.0-ldflags.patch, +ruby-zoom-0.2.2.ebuild:
+  Added 0.2.2 together with a patch to fix #148657
+
+  27 Apr 2006; Marien Zwart <marienz@gentoo.org>
+  files/digest-ruby-zoom-0.2.0, Manifest:
+  Fixing SHA256 digest, pass four
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org> ruby-zoom-0.2.0.ebuild:
+  Mark 0.2.0 ~ia64
+
+  01 Feb 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  ruby-zoom-0.2.0.ebuild:
+  added to ~ppc
+
+  24 Sep 2005; Simon Stelling <blubb@gentoo.org> ruby-zoom-0.2.0.ebuild:
+  added ~amd64 keyword
+
+*ruby-zoom-0.2.0 (25 Aug 2005)
+
+  25 Aug 2005; Michael Kohl <citizen428@gentoo.org> +metadata.xml,
+  +ruby-zoom-0.2.0.ebuild:
+  Initial import. Added because app-misc/alexandria depends on it.
+

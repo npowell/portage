@@ -1,0 +1,99 @@
+# ChangeLog for app-text/lcdf-typetools
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-text/lcdf-typetools/ChangeLog,v 1.25 2008/08/12 11:47:35 armin76 Exp $
+
+  12 Aug 2008; Raúl Porcel <armin76@gentoo.org> lcdf-typetools-2.69.ebuild:
+  alpha/ia64/x86 stable wrt #234257
+
+  09 Aug 2008; Santiago M. Mola <coldwind@gentoo.org>
+  lcdf-typetools-2.69.ebuild:
+  amd64 stable wrt bug #234257
+
+  08 Aug 2008; Markus Rothe <corsair@gentoo.org> lcdf-typetools-2.69.ebuild:
+  Stable on ppc64; bug #234257
+
+  08 Aug 2008; Ferris McCormick <fmccor@gentoo.org>
+  lcdf-typetools-2.69.ebuild:
+  Sparc stable, Bug #234257.
+
+  02 Aug 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
+  Add USE flag description to metadata wrt GLEP 56.
+
+*lcdf-typetools-2.69 (30 May 2008)
+
+  30 May 2008; Alexis Ballier <aballier@gentoo.org>
+  +lcdf-typetools-2.69.ebuild:
+  version bump
+
+  12 May 2008; nixnut <nixnut@gentoo.org> lcdf-typetools-2.66.ebuild:
+  Stable on ppc wrt bug 220651
+
+  06 Apr 2008; Markus Rothe <corsair@gentoo.org> lcdf-typetools-2.66.ebuild:
+  Added ~ppc; bug #195815
+
+  06 Apr 2008; Markus Rothe <corsair@gentoo.org> lcdf-typetools-2.66.ebuild:
+  Stable on ppc64; bug #215735
+
+  02 Mar 2008; Santiago M. Mola <coldwind@gentoo.org>
+  lcdf-typetools-2.66.ebuild:
+  amd64 stable wrt bug #208750
+
+  10 Feb 2008; Alexis Ballier <aballier@gentoo.org>
+  lcdf-typetools-2.66.ebuild:
+  keyword ~x86-fbsd
+
+  07 Feb 2008; Raúl Porcel <armin76@gentoo.org> lcdf-typetools-2.66.ebuild:
+  alpha/ia64 stable wrt #208750
+
+  05 Feb 2008; Ferris McCormick <fmccor@gentoo.org>
+  lcdf-typetools-2.66.ebuild:
+  Sparc stable --- Bug #208750 --- required for texlive.
+
+  04 Feb 2008; Jeroen Roovers <jer@gentoo.org> lcdf-typetools-2.66.ebuild:
+  Stable for HPPA (bug #208750).
+
+  03 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  lcdf-typetools-2.66.ebuild:
+  stable x86, bug 208750
+
+  18 Dec 2007; Jeroen Roovers <jer@gentoo.org> lcdf-typetools-2.66.ebuild:
+  Marked ~hppa (bug #195815).
+
+  10 Dec 2007; Alexis Ballier <aballier@gentoo.org>
+  lcdf-typetools-2.66.ebuild:
+  use virtual/tex-base rather than latex-base as it only needs kpathsea
+
+  18 Nov 2007; Alexis Ballier <aballier@gentoo.org>
+  lcdf-typetools-2.66.ebuild:
+  rename tetex useflag to kpathsea which makes more sense
+
+  25 Oct 2007; Raúl Porcel <armin76@gentoo.org> lcdf-typetools-2.66.ebuild:
+  Add ~alpha/~ia64 wrt #195815
+
+  23 Oct 2007; Ferris McCormick <fmccor@gentoo.org>
+  lcdf-typetools-2.66.ebuild:
+  Add ~sparc --- Help with Bug #195815
+
+  14 Oct 2007; Alexis Ballier <aballier@gentoo.org>
+  lcdf-typetools-2.66.ebuild:
+  virtual/tetex -> virtual/latex-base
+
+  14 Oct 2007; Markus Rothe <corsair@gentoo.org> lcdf-typetools-2.66.ebuild:
+  Added ~ppc64; bug #194363
+
+  18 Sep 2007; Alexis Ballier <aballier@gentoo.org>
+  -lcdf-typetools-2.65.ebuild:
+  cleanup old version
+
+*lcdf-typetools-2.66 (04 Sep 2007)
+
+  04 Sep 2007; Alexis Ballier <aballier@gentoo.org>
+  +lcdf-typetools-2.66.ebuild:
+  version bump
+
+*lcdf-typetools-2.65 (26 Jul 2007)
+
+  26 Jul 2007; Alexis Ballier <aballier@gentoo.org> +metadata.xml,
+  +lcdf-typetools-2.65.ebuild:
+  Initial import, thanks to everybody in bug #84774
+

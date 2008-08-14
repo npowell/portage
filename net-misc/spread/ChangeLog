@@ -1,0 +1,28 @@
+# ChangeLog for net-misc/spread
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/spread/ChangeLog,v 1.5 2008/01/11 08:38:56 armin76 Exp $
+
+  11 Jan 2008; Raúl Porcel <armin76@gentoo.org> spread-4.0.0.ebuild:
+  Fix make install, bug #205283
+
+*spread-4.0.0 (22 Mar 2007)
+
+  22 Mar 2007; Raúl Porcel <armin76@gentoo.org> -spread-3.17.3.ebuild,
+  -spread-3.17.3-r1.ebuild, +spread-4.0.0.ebuild:
+  Version bump wrt bug 170656 and drop old
+
+*spread-3.17.3-r1 (06 Oct 2006)
+
+  06 Oct 2006; Caleb Tennis <caleb@gentoo.org> +files/spread.init.d,
+  +spread-3.17.3-r1.ebuild:
+  bump from bug #146345
+
+  29 Apr 2006; Caleb Tennis <caleb@gentoo.org> spread-3.17.3.ebuild:
+  move the enewuser into pkg_postinst
+
+*spread-3.17.3 (05 Jan 2006)
+
+  05 Jan 2006; Caleb Tennis <caleb@gentoo.org> +metadata.xml,
+  +spread-3.17.3.ebuild:
+  Initial import
+

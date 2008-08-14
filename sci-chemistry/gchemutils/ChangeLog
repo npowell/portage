@@ -1,0 +1,23 @@
+# ChangeLog for sci-chemistry/gchemutils
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/gchemutils/ChangeLog,v 1.5 2008/04/21 01:51:55 je_fro Exp $
+
+  21 Apr 2008; Jeff Gardner <je_fro@gentoo.org> -gchemutils-0.8.4.ebuild,
+  gchemutils-0.8.7.ebuild:
+  Fix RDEPEND for bug #217278
+
+*gchemutils-0.8.7 (29 Mar 2008)
+
+  29 Mar 2008; Jeff Gardner <je_fro@gentoo.org> +gchemutils-0.8.7.ebuild:
+  Bump and keyword ~x86 thanks to Robert Bridge on bug 215363.
+
+  31 Dec 2007; Jeff Gardner <je_fro@gentoo.org> ChangeLog:
+  Fixing up my email address.
+
+  17 Dec 2007; <je_fro@gentoo.org> metadata.xml:
+  Fixing up metadata description.
+
+  23 Oct 2007; Jeff Gardner <je_fro@gentoo.org> gchemutils-0.8.3.ebuild:
+  Creating ChangeLog and adding chemical-mime-data as a dep, thanks to
+  urcindalo on bug 60666.
+

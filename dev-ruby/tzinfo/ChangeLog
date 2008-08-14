@@ -1,0 +1,59 @@
+# ChangeLog for dev-ruby/tzinfo
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/tzinfo/ChangeLog,v 1.12 2008/07/07 18:53:15 bluebird Exp $
+
+  07 Jul 2008; Friedrich Oslage <bluebird@gentoo.org> tzinfo-0.3.8.ebuild:
+  Add ~sparc keyword, bug #230517
+
+*tzinfo-0.3.8 (26 Apr 2008)
+
+  26 Apr 2008; Hans de Graaff <graaff@gentoo.org> +tzinfo-0.3.8.ebuild:
+  Version bump: Updated to tzdata version 2008b, ruby 1.9 compatibility fixes.
+
+*tzinfo-0.3.7 (19 Mar 2008)
+
+  19 Mar 2008; Hans de Graaff <graaff@gentoo.org> +tzinfo-0.3.7.ebuild:
+  Version bump: Updated to tzdata version 2008a
+
+  19 Mar 2008; Hans de Graaff <graaff@gentoo.org> -tzinfo-0.3.3.ebuild,
+  -tzinfo-0.3.4.ebuild, -tzinfo-0.3.5.ebuild:
+  Remove old versions
+
+*tzinfo-0.3.6 (26 Jan 2008)
+
+  26 Jan 2008; Hans de Graaff <graaff@gentoo.org> +tzinfo-0.3.6.ebuild:
+  Version bump: Updated to tzdata version 2007k
+
+*tzinfo-0.3.5 (04 Nov 2007)
+
+  04 Nov 2007; Hans de Graaff <graaff@gentoo.org> +tzinfo-0.3.5.ebuild:
+  Version bump: Updated to tzdata version 2007h
+
+*tzinfo-0.3.4 (25 Aug 2007)
+
+  25 Aug 2007; Hans de Graaff <graaff@gentoo.org> -tzinfo-0.3.2.ebuild,
+  +tzinfo-0.3.4.ebuild:
+  Version bump: Updated to tzdata version 2007g. Remove old version.
+
+  19 Mar 2007; Bryan Østergaard <kloeri@gentoo.org> metadata.xml:
+  Remove flameeyes from metadata.xml due to retirement.
+
+  17 Mar 2007; Robin H. Johnson <robbat2@gentoo.org> tzinfo-0.3.3.ebuild:
+  Add ~x86 and ~ppc.
+
+  28 Nov 2006; Diego Pettenò <flameeyes@gentoo.org> tzinfo-0.3.2.ebuild,
+  tzinfo-0.3.3.ebuild:
+  Fix header (my local copy had the correct header, what's happened?).
+
+*tzinfo-0.3.3 (28 Nov 2006)
+
+  28 Nov 2006; Diego Pettenò <flameeyes@gentoo.org> +tzinfo-0.3.3.ebuild:
+  Version bump.
+
+*tzinfo-0.3.2 (23 Nov 2006)
+
+  23 Nov 2006; Diego Pettenò <flameeyes@gentoo.org> +metadata.xml,
+  +tzinfo-0.3.2.ebuild:
+  Initial import of tzinfo gem package (future dependency of rbot, and thus in
+  portage).
+

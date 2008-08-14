@@ -1,0 +1,26 @@
+# ChangeLog for sys-apps/hwdata-redhat
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/hwdata-redhat/ChangeLog,v 1.4 2008/07/15 17:05:57 darkside Exp $
+
+*hwdata-redhat-0.217 (15 Jul 2008)
+
+  15 Jul 2008; Jeremy Olexa <darkside@gentoo.org>
+  -hwdata-redhat-0.216.ebuild, +hwdata-redhat-0.217.ebuild:
+  Version bump to fix bug #231414, upstream doesn't have distfile anymore.
+  Remove old version
+
+*hwdata-redhat-0.216 (19 Mar 2008)
+
+  19 Mar 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  +hwdata-redhat-0.216.ebuild:
+  Bump, and add support for testing (arch tester Thomas A., bug #207279).
+
+  08 Sep 2006; Markus Rothe <corsair@gentoo.org> hwdata-redhat-0.187.ebuild:
+  Added ~ppc64; bug #146851
+
+*hwdata-redhat-0.187 (05 Sep 2006)
+
+  05 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>; +metadata.xml,
+  +hwdata-redhat-0.187.ebuild:
+  Hardware identification and configuration data
+

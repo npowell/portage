@@ -1,0 +1,65 @@
+# ChangeLog for x11-plugins/pidgin-otr
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-plugins/pidgin-otr/ChangeLog,v 1.14 2008/07/02 15:40:19 tester Exp $
+
+*pidgin-otr-3.2.0 (02 Jul 2008)
+
+  02 Jul 2008; Olivier Crête <tester@gentoo.org> -pidgin-otr-3.0.0.ebuild,
+  +pidgin-otr-3.2.0.ebuild:
+  Version bump, cleanup old
+
+  20 Feb 2008; Raúl Porcel <armin76@gentoo.org> pidgin-otr-3.1.0.ebuild:
+  sparc stable wrt #210398
+
+  17 Feb 2008; nixnut <nixnut@gentoo.org> pidgin-otr-3.1.0.ebuild:
+  Stable on ppc wrt bug 210398
+
+  16 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  pidgin-otr-3.1.0.ebuild:
+  stable x86, bug 210398
+
+  27 Jan 2008; Christoph Mende <angelos@gentoo.org> pidgin-otr-3.1.0.ebuild:
+  Stable on amd64, bug #204427
+
+  07 Jan 2008; <tester@gentoo.org> pidgin-otr-3.0.0.ebuild,
+  pidgin-otr-3.1.0.ebuild:
+  Add build-time dep on pkgconfig
+
+  07 Jan 2008; <tester@gentoo.org> pidgin-otr-3.0.0.ebuild,
+  pidgin-otr-3.1.0.ebuild:
+  Add dep on gtk (and check that pidgin has it too)
+
+  28 Aug 2007; nixnut <nixnut@gentoo.org> pidgin-otr-3.0.0.ebuild:
+  Stable on ppc wrt bug 189781
+
+  26 Aug 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  pidgin-otr-3.0.0.ebuild:
+  Marked stable on amd64 as per bug 189781.
+
+  24 Aug 2007; Christian Faulhammer <opfer@gentoo.org>
+  pidgin-otr-3.0.0.ebuild:
+  stable x86, bug 189781
+
+  22 Aug 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  pidgin-otr-3.0.0.ebuild:
+  Stable on sparc wrt #189781
+
+  07 Aug 2007; Olivier Crête <tester@gentoo.org> +pidgin-otr-3.1.0.ebuild:
+  Version bump, bug #187573
+
+*pidgin-otr-3.1.0 (07 Aug 2007)
+
+  07 Aug 2007; Olivier Crête <tester@gentoo.org> +pidgin-otr-3.1.0.ebuild:
+  Version bump, bug #187573
+
+  07 May 2007; Timothy Redaelli <drizzt@gentoo.org> pidgin-otr-3.0.0.ebuild:
+  Readd old keywords.
+
+*pidgin-otr-3.0.0 (07 May 2007)
+
+  07 May 2007; Timothy Redaelli <drizzt@gentoo.org> +metadata.xml,
+  +pidgin-otr-3.0.0.ebuild:
+  New ebuild wrt bug #177441.
+  Patch taken from otr-dev mailing list.
+  Thanks to Andrea Perotti for testing.
+

@@ -1,0 +1,28 @@
+# ChangeLog for dev-ruby/wirble
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/wirble/ChangeLog,v 1.7 2008/04/12 18:04:20 ken69267 Exp $
+
+  12 Apr 2008; Kenneth Prugh <ken69267@gentoo.org> wirble-0.1.2.ebuild:
+  amd64 stable, bug #217327
+
+  12 Apr 2008; Dawid Węgliński <cla@gentoo.org> wirble-0.1.2.ebuild:
+  Stable on x86 (bug #217327)
+
+  12 Apr 2008; nixnut <nixnut@gentoo.org> wirble-0.1.2.ebuild:
+  Stable on ppc wrt bug 217327
+
+  20 Jun 2007; Christoph Mende <angelos@gentoo.org> wirble-0.1.2.ebuild:
+  Added ~amd64 wrt 181246
+
+  08 Mar 2007; René Nussbaumer <killerfox@gentoo.org> wirble-0.1.2.ebuild:
+  Added to ~ppc.
+
+  04 Mar 2007; Marius Mauch <genone@gentoo.org> wirble-0.1.2.ebuild:
+  Replacing einfo with elog
+
+*wirble-0.1.2 (04 Feb 2007)
+
+  04 Feb 2007; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  +wirble-0.1.2.ebuild:
+  Initial ebuild by Armando Di Cianno <armando@goodship.net>, #163492
+

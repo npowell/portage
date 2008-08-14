@@ -1,0 +1,19 @@
+# ChangeLog for app-emacs/csv-mode
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emacs/csv-mode/ChangeLog,v 1.4 2008/02/25 07:36:35 opfer Exp $
+
+  25 Feb 2008; Christian Faulhammer <opfer@gentoo.org> csv-mode-1.50.ebuild:
+  stable x86/amd64
+
+  04 Jul 2007; Ulrich Mueller <ulm@gentoo.org> csv-mode-1.50.ebuild:
+  Remove redundant src_install.
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*csv-mode-1.50 (19 May 2006)
+
+  19 May 2006; Matthew Kennedy <mkennedy@gentoo.org>
+  +files/50csv-mode-gentoo.el, +metadata.xml, +csv-mode-1.50.ebuild:
+  Initial port.  Ebuild contributed by Matthew Kennedy <mkennedy@gentoo.org>.
+

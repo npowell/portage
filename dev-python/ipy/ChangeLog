@@ -1,0 +1,52 @@
+# ChangeLog for dev-python/ipy
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/ipy/ChangeLog,v 1.11 2008/02/06 19:50:30 lucass Exp $
+
+*ipy-0.56 (06 Feb 2008)
+
+  06 Feb 2008; Lukasz Strzygowski <lucass@gentoo.org> -ipy-0.55.ebuild,
+  +ipy-0.56.ebuild:
+  Version bump, fixed src_test (bug #209152). Removed old version.
+
+  30 Dec 2007; Samuli Suominen <drac@gentoo.org> ipy-0.53.ebuild:
+  amd64 stable wrt #203554
+
+*ipy-0.55 (28 Dec 2007)
+
+  28 Dec 2007; Tiziano Müller <dev-zero@gentoo.org> -ipy-0.51.ebuild,
+  +ipy-0.55.ebuild:
+  Dropped old version. Version bump.
+
+  28 Dec 2007; Markus Meier <maekke@gentoo.org> ipy-0.53.ebuild:
+  x86 stable, bug #203554
+
+  26 Jul 2007; Markus Rothe <corsair@gentoo.org> ipy-0.53.ebuild:
+  Added ~ppc64; bug #186188
+
+*ipy-0.53 (28 Feb 2007)
+
+  28 Feb 2007; Lukasz Strzygowski <lucass@gentoo.org> -ipy-0.42.ebuild,
+  +ipy-0.53.ebuild:
+  Version bump: cleanup, added examples use-flag, removed patch. Dropped 0.42.
+
+*ipy-0.51 (03 Nov 2006)
+
+  03 Nov 2006; Lukasz Strzygowski <lucass@gentoo.org>
+  +files/ipy-0.51-nosetuptools.diff, +ipy-0.51.ebuild:
+  Version bump, bug #153813.
+
+  13 Jun 2006; Gustavo Zacarias <gustavoz@gentoo.org> ipy-0.42.ebuild:
+  Keyworded ~sparc wrt #135613
+
+  06 Jun 2006; Tobias Scherbaum <dertobi123@gentoo.org> ipy-0.42.ebuild:
+  Added ~ppc, bug #135613
+
+  05 Jun 2006; Stefan Schweizer <genstef@gentoo.org> ipy-0.42.ebuild:
+  add ~x86
+
+*ipy-0.42 (05 Jun 2006)
+
+  05 Jun 2006; Lukasz Strzygowski <lucass@gentoo.org> +metadata.xml,
+  +ipy-0.42.ebuild:
+  Initial commit, bug #59037.
+

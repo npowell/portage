@@ -1,0 +1,21 @@
+# ChangeLog for net-analyzer/nfdump
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/nfdump/ChangeLog,v 1.4 2007/09/06 17:41:07 jokey Exp $
+
+  06 Sep 2007; Markus Ullmann <jokey@gentoo.org> -nfdump-1.5.ebuild:
+  Cleanup
+
+*nfdump-1.5.1 (22 Mar 2007)
+
+  22 Mar 2007; Marcelo Goes <vanquirius@gentoo.org> +nfdump-1.5.1.ebuild:
+  1.5.1 version bump.
+
+  19 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+*nfdump-1.5 (27 Mar 2006)
+
+  27 Mar 2006; Markus Ullmann <jokey@gentoo.org> +metadata.xml,
+  +nfdump-1.5.ebuild:
+  Initial import wrt bug #123710
+

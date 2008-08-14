@@ -1,0 +1,66 @@
+# ChangeLog for dev-ruby/ruby-gtkmozembed
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-gtkmozembed/ChangeLog,v 1.13 2008/05/15 20:47:55 maekke Exp $
+
+  15 May 2008; Markus Meier <maekke@gentoo.org>
+  ruby-gtkmozembed-0.16.0.ebuild:
+  amd64 stable, bug #215149
+
+  22 Apr 2008; Hans de Graaff <graaff@gentoo.org>
+  -ruby-gtkmozembed-0.15.0.ebuild:
+  Remove old version
+
+  02 Apr 2008; Christian Faulhammer <opfer@gentoo.org>
+  ruby-gtkmozembed-0.16.0.ebuild:
+  stable x86, bug 215149
+
+  29 Mar 2008; Brent Baude <ranger@gentoo.org>
+  ruby-gtkmozembed-0.16.0.ebuild:
+  Marking ruby-gtkmozembed-0.16.0 ~ppc for bug 215149
+
+  29 Mar 2008; Hans de Graaff <graaff@gentoo.org>
+  +files/ruby-gtkmozembed-0.16.0-seamonkey.patch,
+  ruby-gtkmozembed-0.16.0.ebuild:
+  Fix seamonkey support for 0.16.0 with a new patch that takes into account that
+  0.16.0 already has support for different gecko providers. Reported in #215149.
+
+  28 Mar 2008; Ferris McCormick <fmccor@gentoo.org>
+  ruby-gtkmozembed-0.16.0.ebuild:
+  Add ~sparc for testing, related to Bug #215149.
+
+  17 Jan 2008; Diego Pettenò <flameeyes@gentoo.org>
+  ruby-gtkmozembed-0.16.0.ebuild:
+  Add missing pkg-config dependency. Thanks Patrick in bug #206216.
+
+*ruby-gtkmozembed-0.16.0 (30 Dec 2006)
+
+  30 Dec 2006; Luis Medinas <metalgod@gentoo.org>
+  +ruby-gtkmozembed-0.16.0.ebuild:
+  Version Bump.
+
+  05 Oct 2006; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  +files/ruby-gtkmozembed-0.15.0-seamonkey.patch,
+  -ruby-gtkmozembed-0.14.1.ebuild, ruby-gtkmozembed-0.15.0.ebuild:
+  Use seamonkey instead of mozilla (#137665). Removed 0.14.1
+
+*ruby-gtkmozembed-0.15.0 (02 Sep 2006)
+
+  02 Sep 2006; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  +files/ruby-gtkmozembed-0.15.0-firefox.patch,
+  +ruby-gtkmozembed-0.15.0.ebuild:
+  Version bump, #139164
+
+  08 Aug 2006; Luis Medinas <metalgod@gentoo.org>
+  ruby-gtkmozembed-0.14.1.ebuild:
+  Added ~amd64 keyword.
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org>
+  ruby-gtkmozembed-0.14.1.ebuild:
+  Mark 0.14.1 ~ia64
+
+*ruby-gtkmozembed-0.14.1 (15 Nov 2005)
+
+  15 Nov 2005; Michael Kohl <citizen428@gentoo.org> +metadata.xml,
+  +ruby-gtkmozembed-0.14.1.ebuild:
+  Initial import. See bugs #103470 and #109641.
+

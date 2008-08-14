@@ -1,0 +1,521 @@
+# ChangeLog for sys-apps/paludis
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/paludis/ChangeLog,v 1.102 2008/08/11 10:54:17 gentoofan23 Exp $
+
+  11 Aug 2008; Thomas Anderson <gentoofan23@gentoo.org> metadata.xml:
+  I'm going to help maintain this package.
+
+*paludis-0.28.2 (04 Aug 2008)
+
+  04 Aug 2008; Ingmar Vanhassel <ingmar@gentoo.org> +paludis-0.28.2.ebuild:
+  Version bump.
+
+*paludis-0.28.1 (29 Jul 2008)
+
+  29 Jul 2008; Santiago M. Mola <coldwind@gentoo.org>
+  +paludis-0.28.1.ebuild:
+  Version bump, deps on tr1 virtuals removed.
+
+*paludis-0.28.0 (07 Jul 2008)
+
+  07 Jul 2008; Thomas Anderson <gentoofan23@gentoo.org>
+  -paludis-0.26.0.ebuild, -paludis-0.26.1.ebuild, +paludis-0.28.0.ebuild:
+  Version bump, clean old versions
+
+*paludis-0.26.2 (29 May 2008)
+
+  29 May 2008; Bo Ørsted Andresen <zlin@gentoo.org> +paludis-0.26.2.ebuild:
+  Version bump.
+
+*paludis-0.26.1 (30 Apr 2008)
+
+  30 Apr 2008; Bo Ørsted Andresen <zlin@gentoo.org> -paludis-0.24.6.ebuild,
+  -paludis-0.26.0_pre3.ebuild, -paludis-0.26.0_pre4.ebuild,
+  +paludis-0.26.1.ebuild:
+  Version bump.
+
+  28 Apr 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Remove Stephen Bennett (spb) from metadata.xml (as per #64840).
+
+*paludis-0.26.0 (25 Apr 2008)
+
+  25 Apr 2008; Richard Brown <rbrown@gentoo.org> +paludis-0.26.0.ebuild:
+  Version bump.
+
+  23 Apr 2008; Bo Ørsted Andresen <zlin@gentoo.org>
+  paludis-0.26.0_pre3.ebuild, paludis-0.26.0_pre4.ebuild:
+  USE=cran is currently dead. Bug #219046.
+
+*paludis-0.26.0_pre4 (22 Apr 2008)
+
+  22 Apr 2008; Richard Brown <rbrown@gentoo.org>
+  -paludis-0.26.0_pre1.ebuild, -paludis-0.26.0_pre2.ebuild,
+  +paludis-0.26.0_pre4.ebuild:
+  Version bump
+
+*paludis-0.26.0_pre3 (22 Apr 2008)
+
+  22 Apr 2008; Richard Brown <rbrown@gentoo.org>
+  +paludis-0.26.0_pre3.ebuild:
+  Version bump.
+
+*paludis-0.26.0_pre2 (16 Apr 2008)
+
+  16 Apr 2008; Bo Ørsted Andresen <zlin@gentoo.org>
+  -files/paludis-0.26.0_alpha14-broken-profiles.patch,
+  -paludis-0.26.0_alpha13.ebuild, -paludis-0.26.0_alpha14-r1.ebuild,
+  +paludis-0.26.0_pre2.ebuild:
+  Version bump.
+
+*paludis-0.26.0_pre1 (13 Apr 2008)
+
+  13 Apr 2008; Bo Ørsted Andresen <zlin@gentoo.org>
+  -files/paludis-0.26.0_alpha9-echo-functions.patch,
+  -paludis-0.26.0_alpha9-r1.ebuild, -paludis-0.26.0_alpha11.ebuild,
+  -paludis-0.26.0_alpha12.ebuild, -paludis-0.26.0_alpha14.ebuild,
+  +paludis-0.26.0_pre1.ebuild:
+  Version bump.
+
+*paludis-0.26.0_alpha14-r1 (03 Apr 2008)
+
+  03 Apr 2008; Stephen Bennett <spb@gentoo.org>
+  +files/paludis-0.26.0_alpha14-broken-profiles.patch,
+  +paludis-0.26.0_alpha14-r1.ebuild:
+  Add patch from svn trunk to improve handling of broken profiles
+
+*paludis-0.26.0_alpha14 (26 Mar 2008)
+
+  26 Mar 2008; Richard Brown <rbrown@gentoo.org>
+  +paludis-0.26.0_alpha14.ebuild:
+  Version Bump.
+
+*paludis-0.26.0_alpha13 (23 Mar 2008)
+
+  23 Mar 2008; Richard Brown <rbrown@gentoo.org>
+  +paludis-0.26.0_alpha13.ebuild:
+  Version bump.
+
+*paludis-0.26.0_alpha12 (09 Mar 2008)
+
+  09 Mar 2008; Bo Ørsted Andresen <zlin@gentoo.org>
+  -files/paludis-0.20.0-dotfiles.patch,
+  -files/paludis-0.26.0_alpha4-news_test.patch,
+  -files/paludis-0.26.0_alpha5-env.patch, -paludis-0.24.1.ebuild,
+  -paludis-0.24.2.ebuild, -paludis-0.24.5.ebuild,
+  -paludis-0.26.0_alpha3.ebuild, -paludis-0.26.0_alpha4.ebuild,
+  -paludis-0.26.0_alpha5.ebuild, -paludis-0.26.0_alpha5-r1.ebuild,
+  -paludis-0.26.0_alpha6.ebuild, -paludis-0.26.0_alpha7.ebuild,
+  -paludis-0.26.0_alpha9.ebuild, +paludis-0.26.0_alpha12.ebuild:
+  Bump. Do some cleaning.
+
+*paludis-0.26.0_alpha11 (07 Mar 2008)
+
+  07 Mar 2008; Santiago M. Mola <coldwind@gentoo.org>
+  +paludis-0.26.0_alpha11.ebuild:
+  Add 0.26.0_alpha11.
+
+  18 Feb 2008; Richard Brown <rbrown@gentoo.org>
+  files/paludis-0.26.0_alpha9-echo-functions.patch:
+  Include fix for news test failure
+
+*paludis-0.26.0_alpha9-r1 (18 Feb 2008)
+
+  18 Feb 2008; Richard Brown <rbrown@gentoo.org>
+  +files/paludis-0.26.0_alpha9-echo-functions.patch,
+  +paludis-0.26.0_alpha9-r1.ebuild:
+  Add echo function stderr patch.
+
+*paludis-0.26.0_alpha9 (23 Jan 2008)
+
+  23 Jan 2008; Piotr Jaroszyński <peper@gentoo.org>
+  +paludis-0.26.0_alpha9.ebuild:
+  Add 0.26.0_alpha9.
+
+*paludis-0.26.0_alpha7 (18 Jan 2008)
+
+  18 Jan 2008; Piotr Jaroszyński <peper@gentoo.org>
+  paludis-0.26.0_alpha3.ebuild, paludis-0.26.0_alpha4.ebuild,
+  paludis-0.26.0_alpha5.ebuild, paludis-0.26.0_alpha5-r1.ebuild,
+  paludis-0.26.0_alpha6.ebuild, +paludis-0.26.0_alpha7.ebuild:
+  Add 0.26.0_alpha7. Update epydoc dep.
+
+*paludis-0.26.0_alpha6 (13 Jan 2008)
+
+  13 Jan 2008; Piotr Jaroszyński <peper@gentoo.org>
+  +paludis-0.26.0_alpha6.ebuild:
+  Add 0.26.0_alpha6.
+
+  05 Jan 2008; Stephen Bennett <spb@gentoo.org>
+  files/paludis-0.26.0_alpha5-env.patch:
+  Fix line endings in patch file
+
+*paludis-0.26.0_alpha5-r1 (05 Jan 2008)
+
+  05 Jan 2008; Piotr Jaroszyński <peper@gentoo.org>
+  +files/paludis-0.26.0_alpha5-env.patch, +paludis-0.26.0_alpha5-r1.ebuild:
+  Add 0.26.0_alpha5-r1 with env handling fix.
+
+*paludis-0.26.0_alpha5 (05 Jan 2008)
+
+  05 Jan 2008; Piotr Jaroszyński <peper@gentoo.org>
+  +paludis-0.26.0_alpha5.ebuild:
+  Add 0.26.0_alpha5.
+
+  02 Jan 2008; Piotr Jaroszyński <peper@gentoo.org> -paludis-0.16.2.ebuild,
+  -paludis-0.20.0.ebuild, -paludis-0.20.1.ebuild, -paludis-0.20.2.ebuild,
+  -paludis-0.22.1.ebuild, -paludis-0.22.2.ebuild, paludis-0.24.1.ebuild,
+  paludis-0.24.2.ebuild, paludis-0.24.5.ebuild, paludis-0.24.6.ebuild,
+  paludis-0.26.0_alpha3.ebuild, paludis-0.26.0_alpha4.ebuild:
+  Remove old versions. Block bash versions that don't work with current paludis.
+
+  01 Jan 2008; Piotr Jaroszyński <peper@gentoo.org>
+  files/paludis-0.26.0_alpha4-news_test.patch, paludis-0.24.5.ebuild,
+  paludis-0.24.6.ebuild, paludis-0.26.0_alpha3.ebuild,
+  paludis-0.26.0_alpha4.ebuild:
+  Use new eselect-news for 0.26.0_alpha4 and the old one for the rest.
+
+  30 Dec 2007; Piotr Jaroszyński <peper@gentoo.org>
+  files/paludis-0.26.0_alpha4-news_test.patch, paludis-0.26.0_alpha4.ebuild:
+  Fix news patch and eselect-news dep.
+
+  13 Dec 2007; Piotr Jaroszyński <peper@gentoo.org>
+  files/paludis-0.26.0_alpha4-news_test.patch:
+  Better news patch.
+
+  10 Dec 2007; Piotr Jaroszyński <peper@gentoo.org>
+  +files/paludis-0.26.0_alpha4-news_test.patch,
+  paludis-0.26.0_alpha4.ebuild:
+  Add patch fixing news test.
+
+*paludis-0.26.0_alpha4 (17 Nov 2007)
+
+  17 Nov 2007; Piotr Jaroszyński <peper@gentoo.org>
+  +paludis-0.26.0_alpha4.ebuild:
+  Add 0.26.0_alpha4.
+
+  08 Nov 2007; Fernando J. Pereda <ferdy@gentoo.org>
+  paludis-0.26.0_alpha3.ebuild:
+  Filter -O3 (fixes bug #198487)
+
+  07 Nov 2007; Piotr Jaroszyński <peper@gentoo.org>
+  paludis-0.26.0_alpha3.ebuild:
+  No need for pkg_preinst any more.
+
+*paludis-0.26.0_alpha3 (05 Nov 2007)
+
+  05 Nov 2007; Piotr Jaroszyński <peper@gentoo.org>
+  +paludis-0.26.0_alpha3.ebuild:
+  Add 0.26.0_alpha3.
+
+*paludis-0.24.6 (14 Aug 2007)
+
+  14 Aug 2007; Piotr Jaroszyński <peper@gentoo.org> +paludis-0.24.6.ebuild:
+  Add 0.24.6.
+
+  25 Jul 2007; Piotr Jaroszyński <peper@gentoo.org> paludis-0.24.5.ebuild:
+  Fix deps.
+
+  10 Jul 2007; Piotr Jaroszyński <peper@gentoo.org> paludis-0.24.5.ebuild:
+  Move eselect-news to PDEPEND so portage users with collision-protect won't cry.
+
+*paludis-0.24.5 (09 Jul 2007)
+
+  09 Jul 2007; Piotr Jaroszyński <peper@gentoo.org> +paludis-0.24.5.ebuild:
+  Add 0.24.5.
+
+  09 Jul 2007; Richard Brown <rbrown@gentoo.org> -paludis-0.24.4.ebuild:
+  0.24.4 still has ldconfig problems
+
+*paludis-0.24.4 (09 Jul 2007)
+
+  09 Jul 2007; Piotr Jaroszyński <peper@gentoo.org> -paludis-0.24.3.ebuild,
+  +paludis-0.24.4.ebuild:
+  Add ebuild for 0.24.4 and nuke broken 0.24.3.
+
+*paludis-0.24.3 (09 Jul 2007)
+
+  09 Jul 2007; Piotr Jaroszyński <peper@gentoo.org> +paludis-0.24.3.ebuild:
+  Version bump.
+
+*paludis-0.24.2 (07 May 2007)
+
+  07 May 2007; Piotr Jaroszyński <peper@gentoo.org> +paludis-0.24.2.ebuild:
+  Version bump.
+
+*paludis-0.24.1 (05 May 2007)
+
+  05 May 2007; Fernando J. Pereda <ferdy@gentoo.org> +paludis-0.24.1.ebuild:
+  New upstream version.
+
+  23 Apr 2007; Raúl Porcel <armin76@gentoo.org> paludis-0.22.2.ebuild:
+  Add ~ia64
+
+  22 Apr 2007; Bryan Østergaard <kloeri@gentoo.org> paludis-0.22.2.ebuild:
+  Add ~mips keyword.
+
+  20 Apr 2007; Markus Rothe <corsair@gentoo.org> paludis-0.22.2.ebuild:
+  Added ~ppc64
+
+*paludis-0.22.2 (01 Apr 2007)
+
+  01 Apr 2007; Piotr Jaroszyński <peper@gentoo.org> +paludis-0.22.2.ebuild:
+  Version bump.
+
+  31 Mar 2007; René Nussbaumer <killerfox@gentoo.org>
+  -paludis-0.18.1.ebuild:
+  Clean up old version.
+
+  29 Mar 2007; Danny van Dyk <kugelfang@gentoo.org> paludis-0.20.0.ebuild,
+  paludis-0.20.1.ebuild, paludis-0.20.2.ebuild, paludis-0.22.1.ebuild:
+  Updated deps to use new tr1 virtuals.
+
+*paludis-0.22.1 (26 Mar 2007)
+
+  26 Mar 2007; René Nussbaumer <killerfox@gentoo.org>
+  +paludis-0.22.1.ebuild:
+  Version bump from upstream
+
+*paludis-0.20.2 (22 Mar 2007)
+
+  22 Mar 2007; Stephen Bennett <spb@gentoo.org> +paludis-0.20.2.ebuild:
+  New upstream version
+
+*paludis-0.20.1 (02 Mar 2007)
+
+  02 Mar 2007; Richard Brown <rbrown@gentoo.org> +paludis-0.20.1.ebuild:
+  Version bump
+
+  27 Feb 2007; Stephen Bennett <spb@gentoo.org> paludis-0.20.0.ebuild:
+  Remove selinux logic from the ebuild; it's now built unconditionally and
+  switched at runtime
+
+*paludis-0.20.0 (24 Feb 2007)
+
+  24 Feb 2007; Mike Kelly <pioto@gentoo.org>
+  -files/paludis-0.14.3-ruby-so.patch, -files/paludis-0.16.0-gcc34.patch,
+  -files/paludis-0.18.0-do_config.patch,
+  +files/paludis-0.20.0-dotfiles.patch, -paludis-0.14.3.ebuild,
+  -paludis-0.16.0.ebuild, -paludis-0.16.1.ebuild, -paludis-0.18.0.ebuild,
+  +paludis-0.20.0.ebuild:
+  Version bump. Remove old versions.
+
+  16 Feb 2007; Mike Kelly <pioto@gentoo.org> paludis-0.18.1.ebuild:
+  Dep on >=app-shells/bash-3.1 now (we use += in some places).
+
+*paludis-0.18.1 (08 Feb 2007)
+
+  08 Feb 2007; Fernando J. Pereda <ferdy@gentoo.org> paludis-0.18.1.ebuild:
+  New upstream version.
+
+  07 Feb 2007; René Nussbaumer <killerfox@gentoo.org>
+  +files/paludis-0.18.0-do_config.patch, paludis-0.18.0.ebuild:
+  Fix bug #165824
+
+*paludis-0.18.0 (07 Feb 2007)
+
+  07 Feb 2007; Timothy Redaelli <drizzt@gentoo.org> +paludis-0.18.0.ebuild:
+  Version dump, removed mips and alpha keyword.
+
+*paludis-0.16.2 (28 Jan 2007)
+
+  28 Jan 2007; Alexander H. Færøy <eroyf@gentoo.org>
+  +paludis-0.16.2.ebuild:
+  Version Bump.
+
+*paludis-0.16.1 (26 Jan 2007)
+
+  26 Jan 2007; Alexander H. Færøy <eroyf@gentoo.org>
+  +paludis-0.16.1.ebuild:
+  Version Bump.
+
+  25 Jan 2007; Christian Heim <phreak@gentoo.org>
+  +files/paludis-0.16.0-gcc34.patch, paludis-0.16.0.ebuild:
+  Fixing compilation of paludis-0.16.0 (when using =gcc-3.4*), bug #163729.
+
+*paludis-0.16.0 (24 Jan 2007)
+
+  24 Jan 2007; Mike Kelly <pioto@gentoo.org>
+  -files/paludis-0.14.1-vdb-path.patch, -files/paludis-0.14.2-ruby-so.patch,
+  -paludis-0.12.0.ebuild, -paludis-0.14.0.ebuild, -paludis-0.14.1.ebuild,
+  -paludis-0.14.2.ebuild, +paludis-0.16.0.ebuild:
+  Bump to version 0.16.0. Remove old versions.
+
+  14 Jan 2007; Danny van Dyk <kugelfang@gentoo.org>
+  +files/paludis-0.14.3-ruby-so.patch, paludis-0.14.3.ebuild:
+  Fix test failure with ruby enabled.
+
+  14 Jan 2007; David Shakaryan <omp@gentoo.org> +paludis-0.14.3.ebuild:
+  Version bump.
+
+  08 Jan 2007; Stephen Bennett <spb@gentoo.org>
+  +files/paludis-0.14.2-ruby-so.patch, paludis-0.14.2.ebuild:
+  Fix test failure with ruby enabled
+
+*paludis-0.14.2 (08 Jan 2007)
+
+  08 Jan 2007; Stephen Bennett <spb@gentoo.org> +paludis-0.14.2.ebuild:
+  Version bump
+
+  06 Jan 2007; Fernando J. Pereda <ferdy@gentoo.org>
+  +files/paludis-0.14.1-vdb-path.patch, paludis-0.14.1.ebuild:
+  Add a last-minute patch to 'Be less sensitive to vdb_path detection failure'
+
+*paludis-0.14.1 (05 Jan 2007)
+
+  05 Jan 2007; Michael Hanselmann <hansmi@gentoo.org>
+  +paludis-0.14.1.ebuild:
+  Version bump.
+
+  03 Jan 2007; Mike Kelly <pioto@gentoo.org> paludis-0.14.0.ebuild:
+  Fix autoconf dep versioning.
+
+*paludis-0.14.0 (03 Jan 2007)
+
+  03 Jan 2007; Mike Kelly <pioto@gentoo.org> -paludis-0.10.1.ebuild,
+  +paludis-0.14.0.ebuild:
+  Version bump.
+
+  28 Dec 2006; Stephen Bennett <spb@gentoo.org> paludis-0.12.0.ebuild:
+  Don't use parallel make for install. It's broken because of an automake bug
+
+*paludis-0.12.0 (02 Dec 2006)
+
+  02 Dec 2006; Michael Hanselmann <hansmi@gentoo.org> -paludis-0.6.6.ebuild,
+  -paludis-0.6.7.ebuild, -paludis-0.8.0.ebuild, -paludis-0.8.1.ebuild,
+  -paludis-0.8.2.ebuild, -paludis-0.8.4.ebuild, -paludis-0.10.0.ebuild,
+  +paludis-0.12.0.ebuild:
+  Version bump, remove old ebuilds.
+
+*paludis-0.10.1 (29 Nov 2006)
+
+  29 Nov 2006; Michael Hanselmann <hansmi@gentoo.org>
+  +paludis-0.10.1.ebuild:
+  Version bump.
+
+  28 Nov 2006; Michael Hanselmann <hansmi@gentoo.org> paludis-0.10.0.ebuild:
+  Update libwrapiter dep.
+
+*paludis-0.10.0 (28 Nov 2006)
+
+  28 Nov 2006; Michael Hanselmann <hansmi@gentoo.org>
+  +paludis-0.10.0.ebuild:
+  Version bump.
+
+*paludis-0.8.4 (15 Nov 2006)
+
+  15 Nov 2006; Mike Kelly <pioto@gentoo.org> +paludis-0.8.4.ebuild:
+  Version bump.
+
+*paludis-0.8.2 (25 Oct 2006)
+
+  25 Oct 2006; Danny van Dyk <kugelfang@gentoo.org> +paludis-0.8.2.ebuild:
+  Version bump.
+
+*paludis-0.8.1 (21 Oct 2006)
+
+  21 Oct 2006; Stephen Bennett <spb@gentoo.org> +paludis-0.8.1.ebuild:
+  Version bump
+
+*paludis-0.8.0 (12 Oct 2006)
+
+  12 Oct 2006; Stephen Bennett <spb@gentoo.org> -paludis-0.6.0.ebuild,
+  -paludis-0.6.1.ebuild, -paludis-0.6.2.ebuild, -paludis-0.6.4.ebuild,
+  -paludis-0.6.5.ebuild, +paludis-0.8.0.ebuild:
+  Version bump, cleared old ebuilds
+
+*paludis-0.6.7 (02 Oct 2006)
+
+  02 Oct 2006; Danny van Dyk <kugelfang@gentoo.org> +paludis-0.6.7.ebuild:
+  Version bump.
+
+*paludis-0.6.6 (27 Sep 2006)
+
+  27 Sep 2006; Fernando J. Pereda <ferdy@gentoo.org> +paludis-0.6.6.ebuild:
+  New upstream version.
+
+*paludis-0.6.4 (14 Sep 2006)
+
+  14 Sep 2006; Fernando J. Pereda <ferdy@gentoo.org> +paludis-0.6.4.ebuild:
+  New upstream version.
+
+  14 Sep 2006; Joshua Nichols <nichoj@gentoo.org> paludis-0.6.2.ebuild:
+  Added ~ppc.
+
+  13 Sep 2006; Mike Kelly <pioto@gentoo.org> paludis-0.6.0.ebuild,
+  paludis-0.6.1.ebuild, paludis-0.6.2.ebuild:
+  Remove a --disable-qa argument to econf, since we're using $(use_enable qa)
+  now...
+
+*paludis-0.6.2 (12 Sep 2006)
+
+  12 Sep 2006; Fernando J. Pereda <ferdy@gentoo.org> +paludis-0.6.2.ebuild:
+  New upstream version.
+
+*paludis-0.6.1 (03 Sep 2006)
+
+  03 Sep 2006; Stephen Bennett <spb@gentoo.org> +paludis-0.6.1.ebuild:
+  Version bump
+
+  02 Sep 2006; Jeroen Roovers <jer@gentoo.org> paludis-0.6.0.ebuild:
+  Marked ~hppa.
+
+*paludis-0.6.0 (31 Aug 2006)
+
+  31 Aug 2006; Stephen Bennett <spb@gentoo.org> +paludis-0.6.0.ebuild:
+  Version bump
+
+*paludis-0.4.4 (22 Aug 2006)
+
+  22 Aug 2006; Fernando J. Pereda <ferdy@gentoo.org> +paludis-0.4.4.ebuild:
+  New upstream version.
+
+*paludis-0.4.3 (28 Jul 2006)
+
+  28 Jul 2006; Christel Dahlskjaer <christel@gentoo.org>
+  +paludis-0.4.3.ebuild:
+  Version Bump
+
+*paludis-0.4.2 (15 Jul 2006)
+
+  15 Jul 2006; Stephen Bennett <spb@gentoo.org> -paludis-0.2.4.ebuild,
+  -paludis-0.2.5.ebuild, +paludis-0.4.2.ebuild:
+  Version bump; cleared old versions
+
+*paludis-0.4.0 (07 Jul 2006)
+
+  07 Jul 2006; Stephen Bennett <spb@gentoo.org> +paludis-0.4.0.ebuild:
+  Version bump
+
+*paludis-0.2.5 (31 May 2006)
+
+  31 May 2006; dercorny +paludis-0.2.5.ebuild:
+  Adding new upstream version
+
+  22 May 2006; John N. Laliberte <allanonjl@gentoo.org>
+  -paludis-0.2.1.ebuild, -paludis-0.2.2.ebuild, -paludis-0.2.3.ebuild:
+  prune old versions.
+
+*paludis-0.2.4 (21 May 2006)
+
+  21 May 2006; Fernando J. Pereda <ferdy@gentoo.org> +paludis-0.2.4.ebuild:
+  Version bump
+
+*paludis-0.2.3 (19 May 2006)
+
+  19 May 2006; Stephen Bennett <spb@gentoo.org> +paludis-0.2.3.ebuild:
+  Version bump
+
+  06 May 2006; Stephen Bennett <spb@gentoo.org> paludis-0.2.2.ebuild:
+  Added ~hppa
+
+  04 May 2006; Ferris McCormick <fmccor@gentoo.org> paludis-0.2.1.ebuild:
+  Add ~sparc keyword.  Builds and runs well enough on sparc to generate a
+  stage-1+ at least (system + xorg client + tcltk, ruby, etc.).
+
+*paludis-0.2.1 (03 May 2006)
+
+  03 May 2006; Stephen Bennett <spb@gentoo.org> +metadata.xml,
+  +paludis-0.2.1.ebuild:
+  Added new package.
+
+

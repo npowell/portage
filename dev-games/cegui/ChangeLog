@@ -1,0 +1,89 @@
+# ChangeLog for dev-games/cegui
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-games/cegui/ChangeLog,v 1.20 2008/06/29 21:01:42 nyhm Exp $
+
+*cegui-0.6.1 (29 Jun 2008)
+
+  29 Jun 2008; Tristan Heaven <nyhm@gentoo.org> +cegui-0.6.1.ebuild:
+  Version bump
+
+*cegui-0.6.0 (27 Mar 2008)
+
+  27 Mar 2008; Tristan Heaven <nyhm@gentoo.org> +cegui-0.6.0.ebuild:
+  Version bump
+
+  06 Sep 2007; Christian Faulhammer <opfer@gentoo.org>
+  cegui-0.5.0b-r3.ebuild:
+  stable x86, bug 188632
+
+  02 Sep 2007; Christoph Mende <angelos@gentoo.org> cegui-0.5.0b-r3.ebuild:
+  Stable on amd64 wrt bug #188632
+
+  02 Sep 2007; nixnut <nixnut@gentoo.org> cegui-0.5.0b-r3.ebuild:
+  Stable on ppc wrt bug 186632
+
+*cegui-0.5.0b-r3 (11 Aug 2007)
+
+  11 Aug 2007; Tristan Heaven <nyhm@gentoo.org> -cegui-0.5.0b-r2.ebuild,
+  +cegui-0.5.0b-r3.ebuild:
+  Remove freeimage USE flag, bug #178110
+
+*cegui-0.5.0b-r2 (22 May 2007)
+
+  22 May 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/cegui-0.5.0b-lua.patch, +cegui-0.5.0b-r2.ebuild:
+  Patch for lua 5.1 support from Devils-Hawk, bug #177670
+
+  04 May 2007; Matti Bickel <mabi@gentoo.org> cegui-0.5.0b-r1.ebuild:
+  ~ppc readded (bug #174055)
+
+  10 Apr 2007; Peter Weller <welp@gentoo.org> cegui-0.5.0b-r1.ebuild:
+  Keyworded ~amd64 wrt bug 174055
+
+*cegui-0.5.0b-r1 (10 Apr 2007)
+
+  10 Apr 2007; Tristan Heaven <nyhm@gentoo.org> +cegui-0.5.0b-r1.ebuild:
+  New revision with freeimage USE flag
+
+*cegui-0.5.0b (07 Feb 2007)
+
+  07 Feb 2007; Michael Sterrett <mr_bones_@gentoo.org> +cegui-0.5.0b.ebuild:
+  version bump
+
+*cegui-0.5.0 (20 Nov 2006)
+
+  20 Nov 2006; Tristan Heaven <nyhm@gentoo.org> +cegui-0.5.0.ebuild:
+  Version bump
+
+  03 Apr 2006; <Tupone@gentoo.org> +files/cegui-0.4.1-gcc-41.patch,
+  cegui-0.4.1.ebuild:
+  gcc-4.1 patch, bug #126517 by Matteo Azzali
+
+  26 Feb 2006; Mike Frysinger <vapier@gentoo.org> cegui-0.4.1.ebuild:
+  Fix by basic/Tupon Alfredo for RPATH issues in sample code #117297.
+
+  03 Feb 2006; Michael Sterrett <mr_bones_@gentoo.org> cegui-0.4.1.ebuild:
+  stable for x86
+
+*cegui-0.4.1 (28 Dec 2005)
+
+  28 Dec 2005; Michael Sterrett <mr_bones_@gentoo.org> +cegui-0.4.1.ebuild:
+  version bump
+
+  28 Dec 2005; Michael Sterrett <mr_bones_@gentoo.org> cegui-0.4.0.ebuild:
+  stable for x86
+
+*cegui-0.4.0 (25 Sep 2005)
+
+  25 Sep 2005; Mike Frysinger <vapier@gentoo.org> +cegui-0.4.0.ebuild:
+  Version bump #105152 by Mathias Weber.
+
+*cegui-0.3.0 (25 Jul 2005)
+
+  25 Jul 2005; Mike Frysinger <vapier@gentoo.org> +cegui-0.3.0.ebuild:
+  Version bump #100270 by Mathias Weber.
+
+*cegui-0.2.0 (03 May 2005)
+
+  03 May 2005; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by Michael Kedzierski #85971.

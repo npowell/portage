@@ -1,0 +1,25 @@
+# ChangeLog for app-text/htp
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-text/htp/ChangeLog,v 1.7 2007/02/09 01:04:38 flameeyes Exp $
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  08 Sep 2004; Renat Lumpau <rl03@gentoo.org> metadata.xml:
+  Fixed herd name
+
+  01 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org> htp-1.15.ebuild:
+  virtual/glibc -> virtual/libc
+
+*htp-1.15 (23 Apr 2004)
+
+  23 Apr 2004; Stuart Herbert <stuart@gentoo.org> htp-1.15.ebuild,
+  metadata.xml:
+  Moved from dev-util to app-text; added -l switch to patch
+
+*htp-1.15 (23 Apr 2004)
+
+  23 Apr 2004; Stuart Herbert <stuart@gentoo.org> htp-1.15.ebuild,
+  metadata.xml:
+  Initial import; thanks to DC <ddcc@email.com>; see bug #40573
+

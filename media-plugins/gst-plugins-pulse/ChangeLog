@@ -1,0 +1,44 @@
+# ChangeLog for media-plugins/gst-plugins-pulse
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/gst-plugins-pulse/ChangeLog,v 1.9 2008/08/08 18:55:27 maekke Exp $
+
+  08 Aug 2008; Markus Meier <maekke@gentoo.org> ChangeLog:
+  x86 stable, bug #232054
+
+  07 Aug 2008; Tobias Klausmann <klausman@gentoo.org>
+  gst-plugins-pulse-0.9.7.ebuild:
+  Stable on alpha, bug #232054
+
+  31 Jul 2008; Raúl Porcel <armin76@gentoo.org>
+  gst-plugins-pulse-0.9.7.ebuild:
+  sparc stable wrt #232054
+
+  20 Apr 2008; Markus Meier <maekke@gentoo.org>
+  gst-plugins-pulse-0.9.7.ebuild:
+  x86 stable, bug #217742
+
+  15 Apr 2008; Olivier Crête <tester@gentoo.org>
+  gst-plugins-pulse-0.9.7.ebuild:
+  Stable on amd64, bug #217742
+
+  25 Jan 2008; Raúl Porcel <armin76@gentoo.org>
+  gst-plugins-pulse-0.9.7.ebuild:
+  Add ~sparc wrt #207369
+
+*gst-plugins-pulse-0.9.7 (23 Jan 2008)
+
+  23 Jan 2008; Jim Ramsay <lack@gentoo.org> +gst-plugins-pulse-0.9.7.ebuild:
+  Version bump (Bug #206767)
+
+*gst-plugins-pulse-0.9.5 (02 Nov 2007)
+
+  02 Nov 2007; Samuli Suominen <drac@gentoo.org>
+  +gst-plugins-pulse-0.9.5.ebuild:
+  Version bump and keyword ~amd64.
+
+*gst-plugins-pulse-0.9.4 (17 Dec 2006)
+
+  17 Dec 2006; Jim Ramsay <lack@gentoo.org> +metadata.xml,
+  +gst-plugins-pulse-0.9.4.ebuild:
+  New ebuild, adapted from request in bug 139977
+

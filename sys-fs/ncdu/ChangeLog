@@ -1,0 +1,42 @@
+# ChangeLog for sys-fs/ncdu
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/ncdu/ChangeLog,v 1.11 2008/08/07 00:28:52 gentoofan23 Exp $
+
+  07 Aug 2008; Thomas Anderson <gentoofan23@gentoo.org> ncdu-1.3.ebuild:
+  stable amd64, bug #225581
+
+  18 Jul 2008; Christian Faulhammer <opfer@gentoo.org> ncdu-1.3.ebuild:
+  stable x86, bug 225581
+
+  11 Jul 2008; Raúl Porcel <armin76@gentoo.org> ncdu-1.3.ebuild:
+  sparc stable wrt #225581, thanks to Tiago Cunha for testing
+
+  03 Oct 2007; Christian Faulhammer <opfer@gentoo.org> ncdu-1.1.ebuild:
+  stable x86, bug 193510
+
+  03 Oct 2007; Ferris McCormick <fmccor@gentoo.org> ncdu-1.1.ebuild:
+  Sparc stable --- Bug #193510 --- works fine.
+
+  03 Oct 2007; Christoph Mende <angelos@gentoo.org> ncdu-1.1.ebuild:
+  Stable on amd64 wrt bug #193510
+
+  03 Oct 2007; Wolfram Schlich <wschlich@gentoo.org> ncdu-1.3.ebuild:
+  removed default code
+
+*ncdu-1.3 (03 Oct 2007)
+
+  03 Oct 2007; Wolfram Schlich <wschlich@gentoo.org> +ncdu-1.3.ebuild:
+  version bump wrt bug #193512
+
+  03 Aug 2007; Gustavo Zacarias <gustavoz@gentoo.org> ncdu-1.1.ebuild:
+  Keyworded ~sparc for chiguire
+
+  16 Jun 2007; Christoph Mende <angelos@gentoo.org> ncdu-1.1.ebuild:
+  Added ~amd64
+
+*ncdu-1.1 (01 May 2007)
+
+  01 May 2007; Wolfram Schlich <wschlich@gentoo.org> +metadata.xml,
+  +ncdu-1.1.ebuild:
+  initial import
+

@@ -1,0 +1,19 @@
+# ChangeLog for sys-apps/dtc
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/dtc/ChangeLog,v 1.4 2008/02/20 23:01:54 coldwind Exp $
+
+  20 Feb 2008; Santiago M. Mola <coldwind@gentoo.org> dtc-1.0.0.ebuild:
+  Add ~amd64 wrt bug #209995
+
+  13 Feb 2008; Dawid Węgliński <cla@gentoo.org> dtc-1.0.0.ebuild:
+  Add ~x86 keyword (bug #209995)
+
+  08 Jan 2008; Brent Baude <ranger@gentoo.org> dtc-1.0.0.ebuild:
+  Marking dtc-1.0.0 ppc and ppc64 stable to support the development PS3 profile
+
+*dtc-1.0.0 (07 Dec 2007)
+
+  07 Dec 2007; Luca Barbato <lu_zero@gentoo.org> +metadata.xml,
+  +dtc-1.0.0.ebuild:
+  First commit (imported from cell overlay)
+

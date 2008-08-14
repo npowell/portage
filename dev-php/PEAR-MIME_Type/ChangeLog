@@ -1,0 +1,49 @@
+# ChangeLog for dev-php/PEAR-MIME_Type
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-php/PEAR-MIME_Type/ChangeLog,v 1.12 2007/12/06 00:33:17 jokey Exp $
+
+  06 Dec 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  LICENSE fix from project overlay
+
+  01 Dec 2007; nixnut <nixnut@gentoo.org> PEAR-MIME_Type-1.0.0.ebuild:
+  Stable on ppc wrt bug 200678
+
+  28 Nov 2007; Dawid Węgliński <cla@gentoo.org>
+  PEAR-MIME_Type-1.0.0.ebuild:
+  Stable on x86 (bug #200678)
+
+  28 Nov 2007; Christoph Mende <angelos@gentoo.org>
+  PEAR-MIME_Type-1.0.0.ebuild:
+  Stable on amd64 wrt bug #200678
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  25 Nov 2006; Bryan Østergaard <kloeri@gentoo.org>
+  PEAR-MIME_Type-1.0.0.ebuild:
+  Add ~alpha + ~ia64 keywords, bug 134270.
+
+  27 May 2006; Luca Longinotti <chtekk@gentoo.org> ChangeLog:
+  Added to ~amd64. See bug #134270.
+
+  25 May 2006; Michael Hanselmann <hansmi@gentoo.org>
+  PEAR-MIME_Type-1.0.0.ebuild:
+  Added to ~hppa, ~ppc64, ~sparc. See bug #134270.
+
+  25 May 2006; <nixnut@gentoo.org> PEAR-MIME_Type-1.0.0.ebuild:
+  Added ~ppc. bug #134270
+
+  24 Oct 2005; Sebastian Bergmann <sebastian@gentoo.org>
+  PEAR-MIME_Type-1.0.0.ebuild:
+  Add ~amd64.
+
+  08 Oct 2005; Sebastian Bergmann <sebastian@gentoo.org>
+  PEAR-MIME_Type-1.0.0.ebuild:
+  Fix RDEPEND.
+
+*PEAR-MIME_Type-1.0.0 (22 Sep 2005)
+
+  22 Sep 2005; Sebastian Bergmann <sebastian@gentoo.org> +metadata.xml,
+  +PEAR-MIME_Type-1.0.0.ebuild:
+  Initial ebuild, closes bug 106813.
+

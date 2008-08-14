@@ -1,0 +1,56 @@
+# ChangeLog for media-plugins/gmpc-mdcover
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/gmpc-mdcover/ChangeLog,v 1.12 2008/03/20 21:47:02 angelos Exp $
+
+  20 Mar 2008; Christoph Mende <angelos@gentoo.org>
+  -gmpc-mdcover-0.14.0.ebuild, -gmpc-mdcover-0.15.0.ebuild:
+  Remove old
+
+  17 Mar 2008; Ferris McCormick <fmccor@gentoo.org>
+  gmpc-mdcover-0.15.5.0.ebuild:
+  Sparc stable --- part of Bug #212077.
+
+  16 Mar 2008; Markus Meier <maekke@gentoo.org>
+  gmpc-mdcover-0.15.5.0.ebuild:
+  x86 stable, bug #212077
+
+  02 Mar 2008; nixnut <nixnut@gentoo.org> gmpc-mdcover-0.15.5.0.ebuild:
+  Stable on ppc wrt bug 212077
+
+  02 Mar 2008; Christoph Mende <angelos@gentoo.org>
+  gmpc-mdcover-0.15.5.0.ebuild:
+  Stable on amd64, bug #212077
+
+*gmpc-mdcover-0.15.5.0 (27 Jan 2008)
+
+  27 Jan 2008; Christoph Mende <angelos@gentoo.org> metadata.xml,
+  +gmpc-mdcover-0.15.5.0.ebuild:
+  Taking over maintainership and version bump (Bug #202995 by Jesse Adelman)
+
+  07 Aug 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  gmpc-mdcover-0.15.0.ebuild:
+  Stable on sparc
+
+  25 Jul 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  gmpc-mdcover-0.15.0.ebuild:
+  Keyworded ~ppc
+
+  04 Jul 2007; Andrej Kacian <ticho@gentoo.org> gmpc-mdcover-0.14.0.ebuild,
+  gmpc-mdcover-0.15.0.ebuild:
+  Add check for correct USE flag for x11-libs/gtk+-2.
+
+  27 Jun 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  gmpc-mdcover-0.15.0.ebuild:
+  Keyworded ~sparc
+
+*gmpc-mdcover-0.15.0 (19 Jun 2007)
+
+  19 Jun 2007; Andrej Kacian <ticho@gentoo.org> +gmpc-mdcover-0.15.0.ebuild:
+  Version bump.
+
+*gmpc-mdcover-0.14.0 (15 Apr 2007)
+
+  15 Apr 2007; Andrej Kacian <ticho@gentoo.org> +metadata.xml,
+  +gmpc-mdcover-0.14.0.ebuild:
+  Initial commit. Bug #173241, by fabien Zouaoui <fabien at zouaoui.org>.
+

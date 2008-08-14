@@ -1,0 +1,78 @@
+# ChangeLog for app-mobilephone/kannel
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-mobilephone/kannel/ChangeLog,v 1.17 2008/06/24 00:31:46 mrness Exp $
+
+  24 Jun 2008; Alin Năstac <mrness@gentoo.org>
+  +files/kannel-1.4.1-nolex.patch, kannel-1.4.1.ebuild:
+  Remove flex test during configure (#221365). Ebuild code cleanup.
+
+  21 May 2008; Tiziano Müller <dev-zero@gentoo.org> kannel-1.4.1.ebuild:
+  Changed dependency for postgresql from dev-db/postgresql to
+  virtual/postgresql-server
+
+  14 May 2008; Diego Pettenò <flameeyes@gentoo.org> kannel-1.4.1.ebuild:
+  Depend on virtual/pam as the code builds fine with OpenPAM.
+
+  04 Nov 2007; Alin Năstac <mrness@gentoo.org> kannel-1.4.1.ebuild:
+  Remove useless pkg_preinst function.
+
+  18 Aug 2007; Alin Năstac <mrness@gentoo.org>
+  -files/kannel-1.4.0-custom-wap-ports.patch,
+  -files/kannel-1.4.0-mysql-list.patch, -kannel-1.4.0-r2.ebuild:
+  Remove obsolete version.
+
+  24 Apr 2007; Christian Faulhammer <opfer@gentoo.org> kannel-1.4.1.ebuild:
+  stable x86, bug 175512
+
+  22 Apr 2007; Alin Năstac <mrness@gentoo.org> kannel-1.4.0-r2.ebuild,
+  kannel-1.4.1.ebuild:
+  Use newinitd and newconfd (#174266).
+
+  23 Nov 2006; Francesco Riosa <vivo@gentoo.org> kannel-1.4.0-r2.ebuild,
+  kannel-1.4.1.ebuild:
+  dev-db/mysql => virtual/mysql
+
+*kannel-1.4.1 (15 Nov 2006)
+
+  15 Nov 2006; Alin Nastac <mrness@gentoo.org>
+  +files/kannel-1.4.1-custom-wap-ports.patch, +kannel-1.4.1.ebuild:
+  Version bump. Add sqlite3 USE flag.
+
+  17 Sep 2006; Alin Nastac <mrness@gentoo.org> -kannel-1.4.0.ebuild:
+  Remove old revision.
+
+  02 Jun 2006; Alin Nastac <mrness@gentoo.org> kannel-1.4.0-r2.ebuild:
+  Stable on x86.
+
+*kannel-1.4.0-r2 (01 May 2006)
+
+  01 May 2006; Alin Nastac <mrness@gentoo.org>
+  files/kannel-1.4.0-custom-wap-ports.patch, -kannel-1.4.0-r1.ebuild,
+  +kannel-1.4.0-r2.ebuild:
+  Fix custom-wap-ports patch; the old version generates panic messages when
+  user don't have a "wapbox" group in its configuration file (#126331 comment #6).
+
+*kannel-1.4.0-r1 (25 Mar 2006)
+
+  25 Mar 2006; Alin Nastac <mrness@gentoo.org>
+  +files/kannel-1.4.0-custom-wap-ports.patch, +kannel-1.4.0-r1.ebuild:
+  Add patch for customizing WAP ports, created by Lubor Kolar
+  <kolar@porcus.cz> (#126331).
+
+  06 Dec 2005; Alin Nastac <mrness@gentoo.org>
+  +files/kannel-1.4.0-mysql-list.patch, kannel-1.4.0.ebuild:
+  Rename list_delete function to list_delete_at - the old name is used in
+  mysql-4.1. See bug #114483.
+
+  23 Oct 2005; Konstantin Arkhipov <voxus@gentoo.org> kannel-1.4.0.ebuild:
+  Added to ~amd64.
+
+  05 Jun 2005; Alin Nastac <mrness@gentoo.org> kannel-1.4.0.ebuild:
+  Stable on x86.
+
+*kannel-1.4.0 (16 May 2005)
+
+  16 May 2005; Alin Nastac <mrness@gentoo.org> +files/kannel-confd,
+  +files/kannel-initd, +metadata.xml, +kannel-1.4.0.ebuild:
+  Initial import from bug #30749.
+

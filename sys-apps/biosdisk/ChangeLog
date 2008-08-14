@@ -1,0 +1,24 @@
+# ChangeLog for sys-apps/biosdisk
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/biosdisk/ChangeLog,v 1.5 2007/02/22 01:03:12 jokey Exp $
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  08 Jan 2007; Danny van Dyk <kugelfang@gentoo.org> -biosdisk-0.50.ebuild:
+  QA: Removed unused versions.
+
+  23 Jan 2006; Bryan Østergaard <kloeri@gentoo.org metadata.xml:
+  Remove pkdawson from metadata, bug 57788.
+
+*biosdisk-0.65 (03 Jan 2005)
+
+  03 Jan 2005; Patrick Dawson <pkdawson@gentoo.org> biosdisk-0.50.ebuild,
+  +biosdisk-0.65.ebuild:
+  Version bump.
+
+*biosdisk-0.50 (22 Aug 2004)
+
+  22 Aug 2004; Patrick Dawson <pkdawson@gentoo.org> biosdisk-0.50.ebuild :
+  Initial import.  Ebuild submitted by Robert Paskowitz <rpaskowitz@confucius.ca>.
+  Closes bug #57481.

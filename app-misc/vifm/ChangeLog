@@ -1,0 +1,51 @@
+# ChangeLog for app-misc/vifm
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/vifm/ChangeLog,v 1.15 2008/05/12 18:37:02 maekke Exp $
+
+  12 May 2008; Markus Meier <maekke@gentoo.org> vifm-0.3a.ebuild:
+  amd64 stable, bug #220933
+
+  08 May 2008; Raúl Porcel <armin76@gentoo.org> vifm-0.3a.ebuild:
+  x86 stable
+
+*vifm-0.3a (18 Mar 2008)
+
+  18 Mar 2008; Raúl Porcel <armin76@gentoo.org> -vifm-0.2.ebuild,
+  vifm-0.2a.ebuild, +vifm-0.3a.ebuild:
+  Version bump wrt #105473
+
+  12 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Peter Johanson (latexer, #206688) from metadata.xml.
+
+  28 Jan 2007; Marius Mauch <genone@gentoo.org> vifm-0.2.ebuild,
+  vifm-0.2a.ebuild:
+  Replacing einfo with elog
+
+  01 Nov 2005; Krzysiek Pawlik <nelchael@gentoo.org> vifm-0.2a.ebuild:
+  Stable on x86. Bug 111167.
+
+  12 May 2005; Stephanie Lockwood-Childs <wormo@gentoo.org> vifm-0.2a.ebuild:
+  mark ~ppc
+
+  06 May 2005; Sven Wegener <swegener@gentoo.org> vifm-0.2a.ebuild:
+  Removed * postfix from <, <=, >= and > dependencies.
+
+  21 Apr 2005; Simon Stelling <blubb@gentoo.org> vifm-0.2a.ebuild:
+  stable on amd64
+
+  29 Oct 2004; Tom Martin <slarti@gentoo.org> vifm-0.2a.ebuild:
+  Marked ~amd64, see bug 69274.
+
+  15 Apr 2004; Michael McCabe <randy@gentoo.org> vifm-0.2a.ebuild:
+  adding s390 to keywords
+
+*vifm-0.2a (15 Jan 2004)
+
+  15 Jan 2004; Peter Johanson <latexer@gentoo.org> metadata.xml,
+  vifm-0.2.ebuild, vifm-0.2a.ebuild:
+  New version, added metadata.xml, and fixed the einfo in the end of vifm-0.2
+
+*vifm-0.2 (21 May 2003)
+
+  21 May 2003; Peter Johanson <latexer@gentoo.org> vifm-0.2.ebuild:
+  Initial import

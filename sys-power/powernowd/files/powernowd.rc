@@ -1,0 +1,18 @@
+#!/sbin/runscript
+
+depend() {
+	need localmount
+	use logger
+}
+
+start() {
+	ebegin "Starting powernowd"
+	/usr/sbin/powernowd -q ${POWERNOWD_OPTS}
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping powernowd"
+	start-stop-daemon --stop --exec /usr/sbin/powernowd
+	eend $?
+}

@@ -1,0 +1,299 @@
+# ChangeLog for media-libs/allegro
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/allegro/ChangeLog,v 1.78 2008/06/01 15:55:51 nyhm Exp $
+
+*allegro-4.2.2-r1 (01 Jun 2008)
+
+  01 Jun 2008; Tristan Heaven <nyhm@gentoo.org>
+  +files/allegro-4.2.2-autoconf.patch, +allegro-4.2.2-r1.ebuild:
+  Fix autoconf-2.62 failure, bug #218208; Install liballeg.so symlink, bug
+  #220955
+
+  13 May 2008; Ferris McCormick <fmccor@gentoo.org> allegro-4.2.2.ebuild:
+  Sparc stable, Bug #221821.
+
+  12 May 2008; Tristan Heaven <nyhm@gentoo.org> allegro-4.1.14.ebuild:
+  Remove tetex USE flag, bug #196745
+
+  29 Feb 2008; Carsten Lohrke <carlo@gentoo.org> allegro-4.2.2.ebuild:
+  Remove icon extension from desktop entry to match Icon Theme Specification.
+
+  26 Feb 2008; Ferris McCormick <fmccor@gentoo.org> allegro-4.2.2.ebuild:
+  Add ~sparc for testing --- Bug #210519.
+
+  21 Feb 2008; Raúl Porcel <armin76@gentoo.org> allegro-4.2.2.ebuild:
+  alpha/ia64 stable wrt #208870
+
+  10 Feb 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  allegro-4.2.2.ebuild:
+  ppc stable, bug #208870
+
+  05 Feb 2008; Santiago M. Mola <coldwind@gentoo.org> allegro-4.2.2.ebuild:
+  Second amd64 round.
+
+  05 Feb 2008; Santiago M. Mola <coldwind@gentoo.org> ChangeLog:
+  amd64 stable, #208870
+
+  05 Feb 2008; Christian Faulhammer <opfer@gentoo.org> allegro-4.2.2.ebuild:
+  stable x86, bug 208870
+
+  05 Feb 2008; Tristan Heaven <nyhm@gentoo.org> allegro-4.2.2.ebuild:
+  Statically link utility programs with liballeg
+
+*allegro-4.2.2 (22 Jul 2007)
+
+  22 Jul 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/allegro-4.2.2-exec-stack.patch, +files/allegro-4.2.2-flags.patch,
+  +allegro-4.2.2.ebuild:
+  Version bump
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  allegro-4.1.14.ebuild, allegro-4.2.0-r1.ebuild:
+  Drop virtual/x11 references.
+
+  28 Feb 2007; Tristan Heaven <nyhm@gentoo.org> allegro-4.2.1.ebuild:
+  install setup utility, bug #155123
+
+  03 Feb 2007; Tristan Heaven <nyhm@gentoo.org> allegro-4.2.1.ebuild:
+  Add jack USE flag
+
+  02 Feb 2007; Tristan Heaven <nyhm@gentoo.org>
+  files/allegro-4.2.1-flags.patch, allegro-4.2.1.ebuild:
+  strip ldflags from allegro-config --libs
+
+  02 Feb 2007; Tristan Heaven <nyhm@gentoo.org> allegro-4.2.1.ebuild:
+  Add vga USE flag for bug #129534
+
+*allegro-4.2.1 (29 Nov 2006)
+
+  29 Nov 2006; Tristan Heaven <nyhm@gentoo.org>
+  +files/allegro-4.2.1-exec-stack.patch, +files/allegro-4.2.1-flags.patch,
+  +allegro-4.2.1.ebuild:
+  Version bump
+
+  01 Nov 2006; Tristan Heaven <nyhm@gentoo.org> allegro-4.2.0-r2.ebuild:
+  Doesn't like parallel make install
+
+*allegro-4.2.0-r2 (30 Oct 2006)
+
+  30 Oct 2006; Tristan Heaven <nyhm@gentoo.org>
+  +files/allegro-4.2.0-exec-stack.patch, +files/allegro-4.2.0-flags.patch,
+  +allegro-4.2.0-r2.ebuild:
+  No more exec stacks; always install static lib; let portage strip binaries
+
+  28 Aug 2006; Luis Medinas <metalgod@gentoo.org> allegro-4.2.0-r1.ebuild:
+  Stable on amd64. Bug #145148.
+
+  27 Aug 2006; Jason Wever <weeve@gentoo.org> allegro-4.1.14.ebuild:
+  Stable on SPARC wrt bug #145148.
+
+  15 Aug 2006; Markus Rothe <corsair@gentoo.org> allegro-4.2.0-r1.ebuild:
+  Added ~ppc64
+
+  06 Aug 2006; Aron Griffis <agriffis@gentoo.org> allegro-4.2.0-r1.ebuild:
+  Mark 4.2.0-r1 stable on ia64
+
+  02 Aug 2006; Thomas Cort <tcort@gentoo.org> allegro-4.2.0-r1.ebuild:
+  Stable on alpha wrt Bug #142288.
+
+  01 Aug 2006; Joshua Jackson <tsunam@gentoo.org> allegro-4.2.0-r1.ebuild:
+  Stable x86; bug #142288
+
+  31 Jul 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  allegro-4.2.0-r1.ebuild:
+  ppc stable, bug #142288
+
+  13 Jul 2006; Aron Griffis <agriffis@gentoo.org> allegro-4.1.18.ebuild:
+  Mark 4.1.18 stable on ia64
+
+  12 Jul 2006; Joseph Jezak <josejx@gentoo.org> allegro-4.1.18.ebuild:
+  Marked ppc stable for bug #140025.
+
+  27 Apr 2006; Marien Zwart <marienz@gentoo.org> Manifest:
+  Fixing SHA256 digest, pass four
+
+*allegro-4.2.0-r1 (31 Mar 2006)
+
+  31 Mar 2006; <Tupone@gentoo.org> allegro-4.0.3.ebuild,
+  allegro-4.1.14.ebuild, allegro-4.1.18.ebuild, -allegro-4.2.0.ebuild,
+  +allegro-4.2.0-r1.ebuild:
+  Modular X dep fixes for all but last ebuild
+  4.2.0 now default to use shared, even when USE="static" from
+  Bug #111896 - David Wang
+
+  13 Jan 2006; Stefan Schweizer <genstef@gentoo.org> allegro-4.2.0.ebuild:
+  Add modular depends
+
+*allegro-4.2.0 (03 Dec 2005)
+
+  03 Dec 2005; Michael Sterrett <mr_bones_@gentoo.org>
+  +allegro-4.2.0.ebuild:
+  version bump
+
+  20 Nov 2005; Mike Frysinger <vapier@gentoo.org>
+  +files/allegro-4.1.18-gcc4.patch, allegro-4.1.18.ebuild:
+  Add patch by Mark Loeser to fix building with gcc-4.
+
+  18 Oct 2005; Aron Griffis <agriffis@gentoo.org> allegro-4.1.14.ebuild:
+  Mark 4.1.14 stable on alpha
+
+  19 Aug 2005; Mike Frysinger <vapier@gentoo.org>
+  +files/allegro-4.1.18-m4.patch, allegro-4.1.18.ebuild:
+  Fix aclocal underquoted warnings.
+
+  10 Aug 2005; <dang@gentoo.org> allegro-4.1.18.ebuild:
+  Keyworded ~amd64
+
+  08 May 2005; Aron Griffis <agriffis@gentoo.org> allegro-4.1.14.ebuild:
+  stable on ia64
+
+*allegro-4.1.18 (29 Jan 2005)
+
+  29 Jan 2005; Michael Sterrett <mr_bones_@gentoo.org> +allegro-4.1.18.ebuild:
+  version bump (bug #79920)
+
+  18 Jan 2005; Chris Gianelloni <wolf31o2@gentoo.org> allegro-4.0.3.ebuild,
+  allegro-4.1.14.ebuild, allegro-4.1.17.ebuild:
+  Added installation of examples based on doc USE flag and closing bug #76843.
+
+  09 Dec 2004; Michael Sterrett <mr_bones_@gentoo.org> -allegro-4.1.15.ebuild,
+  -allegro-4.1.16.ebuild:
+  clean older ebuilds
+
+*allegro-4.1.17 (09 Dec 2004)
+
+  09 Dec 2004; Michael Sterrett <mr_bones_@gentoo.org> +allegro-4.1.17.ebuild:
+  version bump
+
+  22 Nov 2004; Joseph Jezak <josejx@gentoo.org> allegro-4.1.14.ebuild:
+  Marked ppc stable again.
+
+*allegro-4.1.16 (17 Nov 2004)
+
+  17 Nov 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  +allegro-4.1.16.ebuild:
+  Version bump (-amd64, -sparc).
+
+  09 Nov 2004; Joseph Jezak <josejx@gentoo.org> allegro-4.1.14.ebuild:
+  Marked ppc stable.
+
+*allegro-4.1.14 (08 Oct 2004)
+
+  08 Oct 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  +allegro-4.1.14.ebuild:
+  4.1.14 back in.  4.1.15 marked -amd64 because of assembly errors.
+
+  20 Aug 2004; Michael Sterrett <mr_bones_@gentoo.org> -allegro-4.1.14.ebuild:
+  clean older version
+
+  12 Aug 2004; Michael Sterrett <mr_bones_@gentoo.org> allegro-4.0.3.ebuild:
+  remove the prototype for malloc for gcc34 (bug #58279); error check sed; tidy
+
+*allegro-4.1.15 (11 Aug 2004)
+
+  11 Aug 2004; Michael Sterrett <mr_bones_@gentoo.org> +allegro-4.1.15.ebuild:
+  version bump (bug #59951)
+
+  06 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  allegro-4.1.14.ebuild:
+  ~amd64
+
+  09 Jun 2004; Michael Sterrett <mr_bones_@gentoo.org> metadata.xml:
+  add metadata.xml
+
+  09 Jun 2004; Michael Sterrett <mr_bones_@gentoo.org> allegro-4.1.14.ebuild:
+  filter out -fprefetch-loop-arrays (bug #53352)
+
+  06 Jun 2004; Michael Sterrett <mr_bones_@gentoo.org> allegro-4.1.11.ebuild,
+  allegro-4.1.12.ebuild:
+  clean older ebuilds
+
+*allegro-4.1.14 (04 Jun 2004)
+
+  04 Jun 2004; Michael Sterrett <mr_bones_@gentoo.org> allegro-4.1.14.ebuild:
+  version bump
+
+  19 Mar 2004; Aron Griffis <agriffis@gentoo.org> allegro-4.1.12.ebuild:
+  add ~alpha and ~ia64
+
+*allegro-4.1.12 (01 Mar 2004)
+
+  01 Mar 2004; David Holm <dholm@gentoo.org> allegro-4.1.12.ebuild:
+  Version bumped and added to ~ppc.
+
+  25 Sep 2003; Mamoru KOMACHI <usata@gentoo.org> allegro-4.0.3.ebuild,
+  allegro-4.1.11.ebuild, allegro-4.1.9.ebuild:
+  Changed app-text/tetex to virtual/tetex.
+
+  22 Aug 2003; Michael Sterrett <msterret@gentoo.org> allegro-4.1.11.ebuild:
+  Add back Spanky's fixes from 4.1.9 that I missed before.
+
+*allegro-4.1.11 (22 Aug 2003)
+
+  22 Aug 2003; Michael Sterrett <msterret@gentoo.org> allegro-4.1.11.ebuild:
+  version bump for unstable (development) version
+
+*allegro-4.1.9 (19 Jun 2003)
+
+  21 Aug 2003; Mike Frysinger <vapier@gentoo.org> :
+  Actually, -fprefetch-loop-arrays wasnt the problem ...
+  sed-ed out 'mcpu=pentiumpro' from configure script #26031
+
+  20 Aug 2003; Mike Frysinger <vapier@gentoo.org> :
+  filter out the flag -fprefetch-loop-arrays #26031
+
+  19 Jun 2003; Mike Frysinger <vapier@gentoo.org> :
+  Version bump + cleanup #11148.
+
+*allegro-4.0.3 (25 Apr 2003)
+
+  21 Aug 2003; Mike Frysinger <vapier@gentoo.org> :
+  Actually, -fprefetch-loop-arrays wasnt the problem ...
+  sed-ed out 'mcpu=pentiumpro' from configure script #26031
+
+  20 Aug 2003; Mike Frysinger <vapier@gentoo.org> :
+  filter out the flag -fprefetch-loop-arrays #26031
+
+  19 Jun 2003; Mike Frysinger <vapier@gentoo.org> :
+  Cleanup + arts USE support #20195.
+
+  25 Apr 2003; Mike Frysinger <vapier@gentoo.org> :
+  Version bump.
+
+*allegro-4.0.2 (06 Jul 2002)
+
+  11 Jan 2003; Seemant Kulleen <seemant@gentoo.org> allegro-4.0.3.ebuild :
+  filtered out the -fPIC flag.
+
+  06 Jul 2002; Seemant Kulleen <seemant@gentoo.org> allegro-4.0.2.ebuild
+  files/digest-allegro-4.0.2 :
+  Version bump.
+
+*allegro-4.0.1 (30 Apr 2002)
+
+  13 May 2002; Matthew Kennedy <mkennedy@gentoo.org>
+  allegro-4.0.1-r2.ebuild, files/digest-allegro-4.0.1-r2, ChangeLog :
+  Fixed dependencies. Fixed tetex sandbox violations. Fixed build
+  flags.
+
+*allegro-4.0.1 (30 Apr 2002)
+
+  30 Apr 2002; Seemant Kulleen <seemant@gentoo.org> allegro-4.0.1-r1.ebuild
+  files/digest-allegro-4.0.1-r1 :
+  Added tetex USE flag dependent dvi documentation compilation.  This fixes 
+  bug # 2266 by rparker@ntlworld.com (Robin Parker)
+
+*allegro-4.0.1 (14 Apr 2002)
+
+  14 Apr 2002; Seemant Kulleen <seemant@gentoo.org> allegro-4.0.1.ebuild
+  files/digest-allegro-4.0.1 :
+  Version bump, and changed the fbcon USE flag to just fb
+
+*allegro-3.9.37 (1 Feb 2002)
+
+  1 Feb 2002; G.Bevin <gbevin@gentoo.org> ChangeLog :
+  Added initial ChangeLog which should be updated whenever the package is
+  updated in any way. This changelog is targetted to users. This means that the
+  comments should well explained and written in clean English. The details about
+  writing correct changelogs are explained in the skel.ChangeLog file which you
+  can find in the root directory of the portage repository.

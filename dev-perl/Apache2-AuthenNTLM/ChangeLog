@@ -1,0 +1,23 @@
+# ChangeLog for dev-perl/Apache2-AuthenNTLM
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Apache2-AuthenNTLM/ChangeLog,v 1.4 2007/10/09 07:40:36 opfer Exp $
+
+  09 Oct 2007; Christian Faulhammer <opfer@gentoo.org>
+  Apache2-AuthenNTLM-0.02.ebuild:
+  stable x86, bug 195183
+
+  07 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  Apache2-AuthenNTLM-0.02.ebuild:
+  Marking amd64 stable
+
+  10 Dec 2006; Yuval Yaari <yuval@gentoo.org>
+  Apache2-AuthenNTLM-0.02.ebuild:
+  Changed dependency on perl-core/MIME-Base64 to virtual/perl-MIME-Base64 (bug
+  #157678)
+
+*Apache2-AuthenNTLM-0.02 (22 Nov 2006)
+
+  22 Nov 2006; Christian Hartmann <ian@gentoo.org> +metadata.xml,
+  +Apache2-AuthenNTLM-0.02.ebuild:
+  New package
+

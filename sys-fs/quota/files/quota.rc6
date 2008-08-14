@@ -1,0 +1,27 @@
+#!/sbin/runscript
+# Copyright 1999-2005 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License, v2
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/quota/files/quota.rc6,v 1.3 2005/08/17 00:27:50 vapier Exp $
+
+depend() {
+	need localmount
+	use portmap
+}
+
+start() {
+	if [[ ${RUN_QUOTACHECK} == "yes" ]] ; then
+		ebegin "Checking quotas (may take a while)"
+		/usr/sbin/quotacheck ${QUOTACHECK_OPTS}
+		eend $?
+	fi
+
+	ebegin "Starting quota"
+	/usr/sbin/quotaon ${QUOTAON_OPTS}
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping quota"
+	/usr/sbin/quotaoff ${QUOTAOFF_OPTS}
+	eend $?
+}

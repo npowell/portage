@@ -1,0 +1,38 @@
+# ChangeLog for net-misc/tiers
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/tiers/ChangeLog,v 1.11 2007/06/12 21:21:39 jokey Exp $
+
+  12 Jun 2007; Markus Ullmann <jokey@gentoo.org> tiers-1.1.ebuild:
+  Stable on x86 wrt bug #181612
+
+  10 Jun 2007; Robin H. Johnson <robbat2@gentoo.org> tiers-1.1.ebuild:
+  This works on my ppc and amd64 boxes.
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  27 Apr 2006; Alec Warner <antarus@gentoo.org> files/digest-tiers-1.1,
+  Manifest:
+  Fixing SHA256 digest, pass four
+
+  30 Jan 2006; Robin H. Johnson <robbat2@gentoo.org> Manifest:
+  Manifest fix.
+
+  29 Jan 2006; Marcus D. Hanwell <cryos@gentoo.org> tiers-1.1.ebuild:
+  Dependency update: media-gfx/gnuplot -> sci-visualization/gnuplot.
+
+  12 Dec 2005; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml:
+  Add metadata.xml
+
+  01 Jul 2004; Jon Hood <squinky86@gentoo.org> tiers-1.1.ebuild:
+  change virtual/glibc to virtual/libc
+
+  27 Apr 2004; Aron Griffis <agriffis@gentoo.org> tiers-1.1.ebuild:
+  Add inherit eutils
+
+*tiers-1.1 (11 Jan 2004)
+
+  11 Jan 2004; Robin H. Johnson <robbat2@gentoo.org> tiers-1.1.ebuild,
+  files/tiers1.1-gccfixes.patch:
+  Initial commit, ebuild by robbat2@gentoo.org
+

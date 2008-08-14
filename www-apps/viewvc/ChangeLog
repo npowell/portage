@@ -1,0 +1,93 @@
+# ChangeLog for www-apps/viewvc
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-apps/viewvc/ChangeLog,v 1.24 2008/05/29 18:15:17 hawking Exp $
+
+  29 May 2008; Ali Polatel <hawking@gentoo.org> viewvc-1.0.4.ebuild,
+  viewvc-1.0.4-r1.ebuild, viewvc-1.0.5.ebuild:
+  python_mod_optimize is ROOT aware. Removed redundant python_version from
+  pkg_postrm.
+
+  10 Mar 2008; Steve Dibb <beandog@gentoo.org> viewvc-1.0.5.ebuild:
+  amd64 stable, bug 212288
+
+  09 Mar 2008; Tobias Scherbaum <dertobi123@gentoo.org> viewvc-1.0.5.ebuild:
+  ppc stable, bug #212288
+
+  08 Mar 2008; Christian Faulhammer <opfer@gentoo.org> viewvc-1.0.5.ebuild:
+  stable x86, security bug 212288; this time correct version
+
+  07 Mar 2008; Ferris McCormick <fmccor@gentoo.org> viewvc-1.0.5.ebuild:
+  Sparc stable, Security Bug #212288.
+
+  07 Mar 2008; Christian Faulhammer <opfer@gentoo.org>
+  viewvc-1.0.4-r1.ebuild:
+  stable x86, security bug 212288
+
+*viewvc-1.0.5 (07 Mar 2008)
+
+  07 Mar 2008; Benedikt Böhm <hollow@gentoo.org> +viewvc-1.0.5.ebuild:
+  version bump wrt security #212288
+
+  22 Feb 2008; Benedikt Böhm <hollow@gentoo.org> viewvc-1.0.4-r1.ebuild:
+  fix #210994
+
+*viewvc-1.0.4-r1 (20 Feb 2008)
+
+  20 Feb 2008; Benedikt Böhm <hollow@gentoo.org> metadata.xml,
+  -viewvc-1.0.3.ebuild, viewvc-1.0.4.ebuild, +viewvc-1.0.4-r1.ebuild:
+  webappify viewvc, #182093
+
+  26 Oct 2007; wrobel@gentoo.org viewvc-1.0.4.ebuild:
+  Fixed message on installing the ebuild (see #179612).
+
+  20 Sep 2007; Christoph Mende <angelos@gentoo.org> viewvc-1.0.4.ebuild:
+  Stable on amd64 wrt bug #183151
+
+  17 Sep 2007; Lars Weiler <pylon@gentoo.org> viewvc-1.0.4.ebuild:
+  Stable on ppc; bug #183151.
+
+  17 Sep 2007; Christian Faulhammer <opfer@gentoo.org> viewvc-1.0.4.ebuild:
+  stable x86, bug 183151
+
+  08 Sep 2007; Steve Dibb <beandog@gentoo.org> viewvc-1.0.3.ebuild,
+  viewvc-1.0.4.ebuild:
+  Keyword ~amd64
+
+  06 Sep 2007; Steve Dibb <beandog@gentoo.org> viewvc-1.0.3.ebuild,
+  viewvc-1.0.4.ebuild:
+  amd64 stable
+
+  19 Aug 2007; Christian Heim <phreak@gentoo.org> viewvc-1.0.3.ebuild,
+  viewvc-1.0.4.ebuild:
+  Moving dev-python/mod_python to www-apache.
+
+  09 Aug 2007; Gustavo Zacarias <gustavoz@gentoo.org> viewvc-1.0.4.ebuild:
+  Stable on sparc
+
+*viewvc-1.0.4 (26 May 2007)
+
+  26 May 2007; Renat Lumpau <rl03@gentoo.org> +viewvc-1.0.4.ebuild:
+  Version bump, fixes #179612, #175618, #175840.
+
+  24 May 2007; Gustavo Zacarias <gustavoz@gentoo.org> viewvc-1.0.3.ebuild:
+  Keyworded ~sparc wrt #129395
+
+  06 Apr 2007; Tobias Scherbaum <dertobi123@gentoo.org> viewvc-1.0.3.ebuild:
+  ppc stable, bug #129395
+
+  17 Mar 2007; Steve Dibb <beandog@gentoo.org> viewvc-1.0.3.ebuild:
+  add ~amd64, bug 129395
+
+  03 Mar 2007; nixnut <nixnut@gentoo.org> viewvc-1.0.3.ebuild:
+  Added ~ppc wrt bug 129395
+
+  02 Mar 2007; Raúl Porcel <armin76@gentoo.org> viewvc-1.0.3.ebuild:
+  x86 stable wrt bug 129395
+
+*viewvc-1.0.3 (01 Mar 2007)
+
+  01 Mar 2007; Renat Lumpau <rl03@gentoo.org> +metadata.xml,
+  +viewvc-1.0.3.ebuild:
+  Version bump from www-apps/viewcvs. Fixes bugs #107033, #108367, #110020,
+  #111767, #113767, #114487, #116504, #129395, #136552, #142377, 155144.
+

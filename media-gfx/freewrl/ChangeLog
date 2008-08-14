@@ -1,0 +1,72 @@
+# ChangeLog for media-gfx/freewrl
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/freewrl/ChangeLog,v 1.17 2007/07/22 10:02:16 dberkholz Exp $
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  freewrl-1.16.1.ebuild, freewrl-1.18.10.ebuild, freewrl-1.18.14.ebuild,
+  freewrl-1.19.1.ebuild:
+  Drop virtual/x11 references.
+
+*freewrl-1.19.1 (02 Apr 2007)
+
+  02 Apr 2007; Hanno Boeck <hanno@gentoo.org> +freewrl-1.19.1.ebuild:
+  Version bump.
+
+*freewrl-1.18.14 (13 Feb 2007)
+
+  13 Feb 2007; Hanno Boeck <hanno@gentoo.org> +freewrl-1.18.14.ebuild:
+  Version bump.
+
+*freewrl-1.18.10 (17 Jan 2007)
+
+  17 Jan 2007; Hanno Boeck <hanno@gentoo.org> +files/freewrl-makefile,
+  +freewrl-1.18.10.ebuild:
+  Version bump and don't install fonts any more, depend on ttf-bitstream-vera
+  instead and set a symlink.
+
+  27 Aug 2006; Michael Sterrett <mr_bones_@gentoo.org>
+  -files/FreeWRL-1.06+gentoo_pd.diff, -freewrl-1.06.ebuild:
+  clean out old, non-modX ebuild
+
+  13 Feb 2006; Michael Cummings <mcummings@gentoo.org> freewrl-1.06.ebuild,
+  freewrl-1.16.1.ebuild:
+  Virtuals for perl-core
+
+  18 Jan 2006; Hanno Boeck <hanno@gentoo.org> freewrl-1.16.1.ebuild:
+  Modular X dependencies.
+
+  14 Jan 2006; Hanno Boeck <hanno@gentoo.org> freewrl-1.16.1.ebuild:
+  Fails with parallel build, set MAKEOPTS to -j1.
+
+  30 Dec 2005; <mcumming@gentoo.org> freewrl-1.06.ebuild:
+  Migrating libnet to perl-core
+
+  20 Dec 2005; Hanno Boeck <hanno@gentoo.org> freewrl-1.06.ebuild:
+  Remove dep on saxon-bin (bug #109622).
+
+*freewrl-1.16.1 (20 Dec 2005)
+
+  20 Dec 2005; Hanno Boeck <hanno@gentoo.org>
+  +files/freewrl-1.16.1-disable-rpm.patch,
+  +files/freewrl-1.16.1-plugin-install.patch,
+  +files/freewrl-1.16.1-use-java-home.patch, +freewrl-1.16.1.ebuild:
+  Version bump, thanks to basic in bug #74706.
+
+  16 Dec 2005; Diego Pettenò <flameeyes@gentoo.org> freewrl-1.06.ebuild:
+  Remove GNUish cp -a call. Bug #103487.
+
+  25 May 2005; Michael Cummings <mcummings@gentoo.org> freewrl-1.06.ebuild:
+  dev-perl/MIME-Base64 => perl-core/MIME-Base64 migration
+
+  24 May 2005; Michael Cummings <mcummings@gentoo.org> freewrl-1.06.ebuild:
+  dev-perl/Digest-MD5 => perl-core/Digest-MD5
+
+  01 Aug 2004; Michael Sterrett <mr_bones_@gentoo.org> freewrl-1.06.ebuild:
+  dev-java/saxon -> dev-java/saxon-bin
+
+*freewrl-1.06 (27 Jun 2004)
+
+  27 Jun 2004; Hanno Boeck <hanno@gentoo.org>
+  +files/FreeWRL-1.06+gentoo_pd.diff, +freewrl-1.06.ebuild:
+  User submitted ebuild from Denis Pitzalis in bug #22358.
+

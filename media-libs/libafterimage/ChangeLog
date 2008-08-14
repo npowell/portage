@@ -1,0 +1,72 @@
+# ChangeLog for media-libs/libafterimage
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libafterimage/ChangeLog,v 1.17 2008/07/04 10:02:07 bicatali Exp $
+
+*libafterimage-1.18 (04 Jul 2008)
+
+  04 Jul 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  +libafterimage-1.18.ebuild:
+  Version bump
+
+  08 Apr 2008; Raúl Porcel <armin76@gentoo.org> libafterimage-1.15.ebuild:
+  ia64/sparc stable wrt #215898
+
+  07 Apr 2008; Tobias Klausmann <klausman@gentoo.org>
+  libafterimage-1.15.ebuild:
+  Stable on alpha, bug #215898
+
+  04 Apr 2008; Brent Baude <ranger@gentoo.org> libafterimage-1.15.ebuild:
+  stable ppc64, bug 215898
+
+  03 Apr 2008; Markus Meier <maekke@gentoo.org> libafterimage-1.15.ebuild:
+  amd64/x86 stable, bug #215898
+
+  03 Apr 2008; Jeroen Roovers <jer@gentoo.org> libafterimage-1.15.ebuild:
+  Stable for HPPA (bug #215898).
+
+  03 Apr 2008; Brent Baude <ranger@gentoo.org> libafterimage-1.15.ebuild:
+  stable ppc, bug 215898
+
+  07 Mar 2008; Raúl Porcel <armin76@gentoo.org> libafterimage-1.15.ebuild:
+  Add ~ia64
+
+  27 Nov 2007; Raúl Porcel <armin76@gentoo.org> libafterimage-1.15.ebuild:
+  Add ~alpha/~sparc wrt #200316
+
+  26 Nov 2007; Markus Rothe <corsair@gentoo.org> libafterimage-1.15.ebuild:
+  Added ~ppc64; bug #200316
+
+  25 Nov 2007; René Nussbaumer <killerfox@gentoo.org>
+  libafterimage-1.15.ebuild:
+  Added to ~hppa.
+
+  25 Nov 2007; René Nussbaumer <killerfox@gentoo.org>
+  libafterimage-1.15.ebuild:
+  Added to ~ppc.
+
+  20 Nov 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  libafterimage-1.15.ebuild:
+  Fixed html install directory (bug #199565), thanks Flameeyes.
+
+  05 Nov 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  files/libafterimage-makefile.in.patch:
+  Fixed re-install and linking (bug #198087, thanks galtgendo@o2.pl)
+
+*libafterimage-1.15 (04 Nov 2007)
+
+  04 Nov 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/libafterimage-1.15-examples.patch,
+  +files/libafterimage-makefile.in.patch, +libafterimage-1.15.ebuild:
+  Version bump.
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  libafterimage-1.07.ebuild:
+  Drop virtual/x11 references.
+
+*libafterimage-1.07 (05 Feb 2007)
+
+  05 Feb 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/libafterimage-config.patch, +files/libafterimage-examples.patch,
+  +metadata.xml, +libafterimage-1.07.ebuild:
+  Initial import. Closing bug #149088.
+

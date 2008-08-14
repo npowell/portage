@@ -1,0 +1,86 @@
+# ChangeLog for app-emulation/kvm
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/kvm/ChangeLog,v 1.11 2008/08/07 14:37:12 dang Exp $
+
+*kvm-72-r1 (07 Aug 2008)
+
+  07 Aug 2008; Daniel Gryniewicz <dang@gentoo.org> metadata.xml,
+  +kvm-72-r1.ebuild:
+  Add vde flag to expose new VDE support
+
+  04 Aug 2008; Daniel Gryniewicz <dang@gentoo.org> metadata.xml,
+  +kvm-72.ebuild:
+  Bump to 72
+
+*kvm-72 (04 Aug 2008)
+
+  04 Aug 2008; Daniel Gryniewicz <dang@gentoo.org> metadata.xml,
+  +kvm-72.ebuild:
+  Bump to kvm-72
+
+  28 Jul 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
+  add GLEP 56 USE flag desc from use.local.desc
+
+  17 Jul 2008; Daniel Gryniewicz <dang@gentoo.org>
+  -files/kvm-45-qemu-configure.patch, -files/kvm-57-kernel-longmode.patch,
+  -files/kvm-57-qemu-kvm-cmdline.patch, -files/kvm-61-qemu-kvm.patch,
+  -files/kvm-68-libkvm-no-kernel.patch,
+  -files/kvm-69-qemu-ifup_ifdown.patch, -files/kvm-69-qemu-no-blobs.patch,
+  -files/kvm-70-block-rw-range-check.patch,
+  -files/kvm-70-qemu-kvm-doc.patch, -files/kvm-71-qemu-configure.patch,
+  -files/kvm-71-qemu-kvm-doc.patch, kvm-71-r2.ebuild:
+  Move patches into external tarball on mirrors. Git repo is hosted at
+  http://github.com/dang/kvm-patches/tree/master
+
+*kvm-71-r2 (16 Jul 2008)
+
+  16 Jul 2008; Daniel Gryniewicz <dang@gentoo.org>
+  files/kvm-71-qemu-configure.patch, -kvm-71-r1.ebuild, +kvm-71-r2.ebuild:
+  Fix audio configuration again.
+
+  - Add OSS by default (bug #231926)
+
+  - make the sdl flag enable sdl audio (bug #231925)
+
+  - Make it possible to enable multiple outputs (kvm configure was broken
+
+  before)
+
+*kvm-71-r1 (15 Jul 2008)
+
+  15 Jul 2008; Daniel Gryniewicz <dang@gentoo.org>
+  +files/kvm-71-qemu-configure.patch, -kvm-71.ebuild, +kvm-71-r1.ebuild:
+  Fix sound configuration broken in 71, and add pulseaudio
+
+  15 Jul 2008; Daniel Gryniewicz <dang@gentoo.org> -files/kvm-48-kvm.patch,
+  +files/kvm-71-qemu-kvm-doc.patch, kvm-70.ebuild, kvm-70-r1.ebuild,
+  +kvm-71.ebuild:
+  Bump to 71
+
+*kvm-71 (15 Jul 2008)
+
+  15 Jul 2008; Daniel Gryniewicz <dang@gentoo.org> +kvm-71.ebuild:
+  Bump to 71
+
+*kvm-70-r1 (14 Jul 2008)
+
+  14 Jul 2008; Daniel Gryniewicz <dang@gentoo.org>
+  +files/kvm-70-block-rw-range-check.patch, +kvm-70-r1.ebuild:
+  Add block device bounds checking; bug #231753
+
+  10 Jul 2008; Daniel Gryniewicz <dang@gentoo.org> kvm-70.ebuild:
+  Disable the bios flag for now, it doesn't build. Bug #231343
+
+  10 Jul 2008; Daniel Gryniewicz <dang@gentoo.org> metadata.xml:
+  I guess virtualization isn't a herd yet
+
+*kvm-70 (09 Jul 2008)
+
+  09 Jul 2008; Daniel Gryniewicz <dang@gentoo.org>
+  +files/kvm-45-qemu-configure.patch, +files/kvm-48-kvm.patch,
+  +files/kvm-57-kernel-longmode.patch, +files/kvm-57-qemu-kvm-cmdline.patch,
+  +files/kvm-61-qemu-kvm.patch, +files/kvm-68-libkvm-no-kernel.patch,
+  +files/kvm-69-qemu-ifup_ifdown.patch, +files/kvm-69-qemu-no-blobs.patch,
+  +files/kvm-70-qemu-kvm-doc.patch, +metadata.xml, +kvm-70.ebuild:
+  Add kvm to the tree
+

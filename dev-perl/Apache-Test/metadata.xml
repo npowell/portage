@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>perl</herd>
+	<maintainer>
+		<email>perl@gentoo.org</email>
+		<description>Primary Maintainer</description>
+	</maintainer>
+	<longdescription>Provides a suite of Apache tests, including tests for the
+		different mod_perls. Testing is disabled at this time - interactive,
+		requires interaction with the live filesystem.</longdescription>
+</pkgmetadata>

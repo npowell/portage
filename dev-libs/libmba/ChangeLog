@@ -1,0 +1,14 @@
+# ChangeLog for dev-libs/libmba
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/libmba/ChangeLog,v 1.2 2007/04/15 20:27:54 ticho Exp $
+
+  15 Apr 2007; Andrej Kacian <ticho@gentoo.org> libmba-0.9.1.ebuild:
+  Stable on x86, bug #174628.
+
+*libmba-0.9.1 (08 Oct 2006)
+
+  08 Oct 2006; Markus Ullmann <jokey@gentoo.org> +metadata.xml,
+  +libmba-0.9.1.ebuild:
+  Initial commit, thanks to Jonathan Manning and Daniel Willmann for providing
+  an ebuild in bug #63546
+

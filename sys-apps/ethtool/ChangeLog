@@ -1,0 +1,174 @@
+# ChangeLog for sys-apps/ethtool
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/ethtool/ChangeLog,v 1.53 2007/12/13 20:10:20 cardoe Exp $
+
+  13 Dec 2007; Doug Klima <cardoe@gentoo.org> -ethtool-4.ebuild,
+  -ethtool-5.ebuild:
+  remove old versions
+
+  19 Nov 2007; Joshua Kinard <kumba@gentoo.org> ethtool-6.ebuild:
+  Stable on mips, per #195209.
+
+  14 Oct 2007; Raúl Porcel <armin76@gentoo.org> ethtool-6.ebuild:
+  alpha/ia64 stable wrt #195209
+
+  11 Oct 2007; Tom Gall <tgall@gentoo.org> ethtool-6.ebuild:
+  stable on ppc64, bug #195209
+
+  10 Oct 2007; Lars Weiler <pylon@gentoo.org> ethtool-6.ebuild:
+  stable ppc, bug #195209
+
+  10 Oct 2007; Christian Birchinger <joker@gentoo.org> ethtool-6.ebuild:
+  Added sparc stable keyword
+
+  09 Oct 2007; Christian Faulhammer <opfer@gentoo.org> ethtool-6.ebuild:
+  stable x86, bug 195209
+
+  09 Oct 2007; Jeroen Roovers <jer@gentoo.org> ethtool-6.ebuild:
+  Stable for HPPA (bug #195209).
+
+  09 Oct 2007; Christoph Mende <angelos@gentoo.org> ethtool-6.ebuild:
+  Stable on amd64 wrt bug #195209
+
+  28 Jul 2007; Steve Dibb <beandog@gentoo.org> ethtool-5.ebuild:
+  amd64 stable, bug 186737
+
+  27 Jul 2007; Raúl Porcel <armin76@gentoo.org> ethtool-5.ebuild:
+  alpha stable wrt #186737, thanks to Tobias Klausmann for testing
+
+  27 Jul 2007; Jeroen Roovers <jer@gentoo.org> ethtool-5.ebuild:
+  Stable for HPPA (bug #186737).
+
+*ethtool-6 (26 Jul 2007)
+
+  26 Jul 2007; Mike Frysinger <vapier@gentoo.org> +ethtool-6.ebuild:
+  Version bump.
+
+  11 May 2007; Joshua Kinard <kumba@gentoo.org> ethtool-5.ebuild:
+  Stable on mips.
+
+  23 Apr 2007; Raúl Porcel <armin76@gentoo.org> ethtool-5.ebuild:
+  ia64 stable
+
+  16 Apr 2007; Markus Rothe <corsair@gentoo.org> ethtool-5.ebuild:
+  Stable on ppc64
+
+  06 Apr 2007; Tobias Scherbaum <dertobi123@gentoo.org> ethtool-5.ebuild:
+  ppc stable
+
+  22 Mar 2007; Gustavo Zacarias <gustavoz@gentoo.org> ethtool-5.ebuild:
+  Stable on sparc
+
+  21 Mar 2007; Raúl Porcel <armin76@gentoo.org> ethtool-5.ebuild:
+  x86 stable
+
+  03 Nov 2006; Ilya A. Volynets-Evenbakh <iluxa@gentoo.org>
+  ethtool-4.ebuild:
+  stabilize on mips
+
+  13 Sep 2006; Aron Griffis <agriffis@gentoo.org> ethtool-4.ebuild:
+  Mark 4 stable on ia64. #146793
+
+  12 Sep 2006; Gustavo Zacarias <gustavoz@gentoo.org> ethtool-4.ebuild:
+  Stable on hppa wrt #146793
+
+  09 Sep 2006; <ticho@gentoo.org> ethtool-4.ebuild:
+  Stable on x86, bug #146793.
+
+  08 Sep 2006; Gustavo Zacarias <gustavoz@gentoo.org> ethtool-4.ebuild:
+  Stable on sparc wrt #146793
+
+  08 Sep 2006; Thomas Cort <tcort@gentoo.org> ethtool-4.ebuild:
+  Stable on alpha wrt Bug #146793.
+
+  08 Sep 2006; Stephanie Lockwood-Childs <wormo@gentoo.org> ethtool-4.ebuild:
+  stable on ppc (Bug #146793)
+
+  08 Sep 2006; Olivier Crête <tester@gentoo.org> ethtool-4.ebuild:
+  Stable on amd64 per bug #146793
+
+  08 Sep 2006; Markus Rothe <corsair@gentoo.org> ethtool-4.ebuild:
+  Stable on ppc64; bug #146793
+
+*ethtool-5 (08 Sep 2006)
+
+  08 Sep 2006; Mike Frysinger <vapier@gentoo.org> +ethtool-5.ebuild:
+  Version bump #146708 by Shark.
+
+  07 Sep 2006; Gustavo Zacarias <gustavoz@gentoo.org> ethtool-3.ebuild:
+  Stable on sparc
+
+*ethtool-4 (06 Aug 2006)
+
+  06 Aug 2006; Mike Frysinger <vapier@gentoo.org> +ethtool-4.ebuild:
+  Version bump #143007 by Shark.
+
+  09 Jul 2006; Joshua Kinard <kumba@gentoo.org> ethtool-3.ebuild:
+  Marked stable on mips.
+
+*ethtool-3_p20060531 (31 May 2006)
+
+  31 May 2006; Robin H. Johnson <robbat2@gentoo.org>
+  +ethtool-3_p20060531.ebuild:
+  Version bump using snapshot of git from upstream, supports PCI-E hardware
+  better.
+
+  17 Sep 2005; Ciaran McCreesh <ciaranm@gentoo.org> ChangeLog:
+  Converted to UTF-8, fixed encoding screwups
+
+  23 Jul 2005; MATSUU Takuto <matsuu@gentoo.org> ethtool-2.ebuild:
+  Stable on sh.
+
+  09 Apr 2005; Markus Rothe <corsair@gentoo.org> ethtool-2.ebuild:
+  Stable on ppc64
+
+  28 Mar 2005; Michael Hanselmann <hansmi@gentoo.org> ethtool-2.ebuild:
+  Stable on ppc.
+
+  19 Mar 2005; Bryan Østergaard <kloeri@gentoo.org> ethtool-2.ebuild:
+  Stable on alpha.
+
+  14 Feb 2005; Gustavo Zacarias <gustavoz@gentoo.org> ethtool-2.ebuild:
+  Stable on sparc
+
+  12 Feb 2005; Robin H. Johnson <robbat2@gentoo.org> ethtool-2.ebuild,
+  ethtool-3.ebuild:
+  Add ~mips for my XXS1500 hardware.
+
+*ethtool-3 (11 Feb 2005)
+
+  11 Feb 2005; Mike Frysinger <vapier@gentoo.org> +ethtool-3.ebuild:
+  Version bump and magically fix #55941 by Milus János in the process.
+
+*ethtool-2 (29 Sep 2004)
+
+  29 Sep 2004; Mike Frysinger <vapier@gentoo.org> +ethtool-2.ebuild:
+  Version bump #64544 by Kenneth Ljungh.
+
+  03 Sep 2004; Pieter Van den Abeele <pvdabeel@gentoo.org> ethtool-1.8.ebuild:
+  Masked ethtool-1.8.ebuild stable for ppc
+
+  17 Jul 2004; Tom Gall <tgall@gentoo.org> ethtool-1.8.ebuild:
+  stable on ppc64, bug #56893
+
+*ethtool-1.8 (10 Mar 2004)
+
+  10 Mar 2004; Aron Griffis <agriffis@gentoo.org> ethtool-1.8.ebuild:
+  version bump
+
+  10 Mar 2004; <agriffis@gentoo.org> ethtool-1.7.ebuild:
+  add ia64 keyword
+
+  06 Dec 2002; Rodney Rees <manson@gentoo.org> : changed sparc ~sparc keywords
+ 
+*ethtool-1.7 (10 Nov 2002)
+
+  03 Aug 2003; Guy Martin <gmsoft@gentoo.org> ethtool-1.7.ebuild :
+  Added hppa to KEYWORDS.
+
+  10 Nov 2002; Stefan Jones <cretin@gentoo.org>:
+
+  A utility which allows you to manipulate ehternet driver options 
+  like duplux setting, etc. This is the Initial commit. Tested on
+  X86 and sparc64, others should work. Was needed to adjust the 
+  Sparc ultra10 Happy Meal Ethernet device settings

@@ -1,0 +1,185 @@
+# ChangeLog for dev-lang/spidermonkey
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/spidermonkey/ChangeLog,v 1.43 2008/04/10 20:51:06 aballier Exp $
+
+  10 Apr 2008; Alexis Ballier <aballier@gentoo.org>
+  -files/spidermonkey-1.5-header.diff,
+  -files/spidermonkey-1.5-threadsafe.diff, -spidermonkey-1.5_rc5.ebuild,
+  -spidermonkey-1.5-r1.ebuild, -spidermonkey-1.5-r2.ebuild,
+  -spidermonkey-1.6.ebuild:
+  remove old
+
+  29 Dec 2007; Brent Baude <ranger@gentoo.org> spidermonkey-1.7.0.ebuild:
+  Marking spidermonkey-1.7.0 ppc64 for bug 202885
+
+  26 Dec 2007; Samuli Suominen <drac@gentoo.org> spidermonkey-1.7.0.ebuild:
+  amd64 stable wrt #202885
+
+  21 Dec 2007; Jeroen Roovers <jer@gentoo.org> spidermonkey-1.7.0.ebuild:
+  Stable for HPPA (bug #202885).
+
+  21 Dec 2007; nixnut <nixnut@gentoo.org> spidermonkey-1.7.0.ebuild:
+  Stable on ppc wrt bug 202885
+
+  21 Dec 2007; Raúl Porcel <armin76@gentoo.org> spidermonkey-1.7.0.ebuild:
+  alpha/x86 stable wrt #202885
+
+  20 Dec 2007; Ferris McCormick <fmccor@gentoo.org>
+  spidermonkey-1.7.0.ebuild:
+  Sparc stable, Bug #202885, 30 day rule.
+
+  11 Dec 2007; Raúl Porcel <armin76@gentoo.org> spidermonkey-1.6.ebuild:
+  alpha stable
+
+*spidermonkey-1.7.0 (15 Nov 2007)
+
+  15 Nov 2007; Alexis Ballier <aballier@gentoo.org>
+  +files/spidermonkey-1.7.0-threadsafe.diff, +spidermonkey-1.7.0.ebuild:
+  version bump
+
+  15 Oct 2007; Markus Rothe <corsair@gentoo.org> spidermonkey-1.6.ebuild:
+  Stable on ppc64
+
+  26 Sep 2007; Raúl Porcel <armin76@gentoo.org> spidermonkey-1.6.ebuild:
+  sparc/x86 stable
+
+  13 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  spidermonkey-1.5-r2.ebuild:
+  ppc. stable
+
+*spidermonkey-1.6 (13 May 2007)
+
+  13 May 2007; Alexis Ballier <aballier@gentoo.org>
+  +files/spidermonkey-1.6-header.patch, +spidermonkey-1.6.ebuild:
+  Version bump
+
+  24 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  spidermonkey-1.5-r2.ebuild:
+  Stable on sparc
+
+  23 Apr 2007; Raúl Porcel <armin76@gentoo.org> spidermonkey-1.5-r2.ebuild:
+  x86 stable
+
+  29 Dec 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  spidermonkey-1.5-r1.ebuild:
+  Stable on sparc
+
+  28 Nov 2006; Ferris McCormick <fmccor@gentoo.org>
+  spidermonkey-1.5-r1.ebuild, spidermonkey-1.5-r2.ebuild:
+  Add ~sparc keyword.  The -1.5-r1 version should be the new stable version
+  (upgrade from current stable, which is 1.5_rc5), but it can't start as stable
+  because it currently has no sparc keyword of any kind.  But both -r1 and -r2
+  build just fine.  Notice Bug #89510 for sparc comments.
+
+*spidermonkey-1.5-r2 (25 Oct 2006)
+
+  25 Oct 2006; Alexis Ballier <aballier@gentoo.org>
+  +files/spidermonkey-1.5-header.diff,
+  +files/spidermonkey-1.5-threadsafe.diff, +metadata.xml,
+  +spidermonkey-1.5-r2.ebuild:
+  Adding threadsafe support, thanks to Ben de Groot for the patches, bug #129222
+
+  08 Oct 2006; Simon Stelling <blubb@gentoo.org> spidermonkey-1.5-r1.ebuild:
+  stable on amd64
+
+  08 Sep 2006; Thomas Cort <tcort@gentoo.org> spidermonkey-1.5-r1.ebuild:
+  Added ~alpha keyword.
+
+  16 Jul 2006; Diego Pettenò <flameeyes@gentoo.org>
+  files/spidermonkey-1.5-build.patch, spidermonkey-1.5-r1.ebuild:
+  Add ~x86-fbsd keyword (and relative fixes).
+
+  22 Mar 2006; Michael Hanselmann <hansmi@gentoo.org>
+  spidermonkey-1.5-r1.ebuild:
+  Stable on ppc.
+
+  19 Mar 2006; Markus Rothe <corsair@gentoo.org> spidermonkey-1.5-r1.ebuild:
+  Stable on ppc64
+
+  13 Mar 2006; Joshua Jackson <tsunam@gentoo.org>
+  spidermonkey-1.5-r1.ebuild:
+  Stable on x86; bug #124233
+
+  05 Mar 2006; Diego Pettenò <flameeyes@gentoo.org>
+  spidermonkey-1.5-r1.ebuild:
+  Fix for multilib-strict.
+
+*spidermonkey-1.5-r1 (28 Feb 2006)
+
+  28 Feb 2006; Mike Frysinger <vapier@gentoo.org>
+  +files/spidermonkey-1.5-build.patch, +spidermonkey-1.5-r1.ebuild:
+  Clean up build system to not suck #123564 by Jeroen Roovers.
+
+*spidermonkey-1.5 (19 Feb 2006)
+
+  19 Feb 2006; Marcelo Goes <vanquirius@gentoo.org>
+  -spidermonkey-1.5_rc6.ebuild, +spidermonkey-1.5.ebuild:
+  1.5 version bump for bug 121076. Request by Sascha Geschwandtner <s dot
+  geschwandtner at gmx dot de>.
+
+  06 Dec 2005; Jeroen Roovers <jer@gentoo.org>
+  spidermonkey-1.5_rc6-r1.ebuild:
+  Cleaned up more tc stuff.
+
+  02 Dec 2005; Jeroen Roovers <jer@gentoo.org>
+  spidermonkey-1.5_rc6-r1.ebuild:
+  src_install needs CC at least, apparently. :-(
+
+  02 Dec 2005; Jeroen Roovers <jer@gentoo.org>
+  spidermonkey-1.5_rc6-r1.ebuild:
+  More cleanups (call tc-get* only 3 times).
+
+  02 Dec 2005; Jeroen Roovers <jer@gentoo.org>
+  spidermonkey-1.5_rc6-r1.ebuild:
+  Removed extraneous BUILD_OPT variable assignment
+
+  02 Dec 2005; Jeroen Roovers <jer@gentoo.org>
+  spidermonkey-1.5_rc6-r1.ebuild:
+  Added AR from toolchain-funs as well for the fun of it. Slight cleanup.
+
+  02 Dec 2005; Jeroen Roovers <jer@gentoo.org>
+  files/spidermonkey-1.5_rc6-va_copy-fix.patch,
+  spidermonkey-1.5_rc6-r1.ebuild:
+  Fixed patch to support hppa, changed ebuild to use toolchain-funcs
+
+  17 Aug 2005; Josh Grebe <squash@gentoo.org> spidermonkey-1.5_rc5.ebuild:
+  GOod on sparc, bug #89510
+
+  01 Aug 2005; Joseph Jezak <josejx@gentoo.org>
+  spidermonkey-1.5_rc6-r1.ebuild:
+  Marked ppc stable.
+
+  31 Jul 2005; Markus Rothe <corsair@gentoo.org>
+  spidermonkey-1.5_rc6-r1.ebuild:
+  Stable on ppc64 (bug #100841)
+
+  30 Jul 2005; Diego Pettenò <flameeyes@gentoo.org>
+  spidermonkey-1.5_rc6-r1.ebuild:
+  Stable on amd64 (dependency of gxine).
+
+  18 Apr 2005; Markus Rothe <corsair@gentoo.org>
+  spidermonkey-1.5_rc6-r1.ebuild:
+  Added ~ppc64 to KEYWORDS; bug #89510
+
+  19 Feb 2005; Michael Hanselmann <hansmi@gentoo.org>
+  +files/spidermonkey-1.5_rc6-va_copy-fix.patch,
+  spidermonkey-1.5_rc6-r1.ebuild:
+  Added patch from bug 81473. It fixes va_copy vs. VA_COPY.
+
+*spidermonkey-1.5_rc6-r1 (04 Sep 2004)
+
+  04 Sep 2004; Mamoru KOMACHI <usata@gentoo.org>
+  +spidermonkey-1.5_rc6-r1.ebuild:
+  spidermonkey-1.5_rc6.ebuild doesn't install all the headers needed by
+  sablotron to build with JavaScript support. Also moved headers to
+  /usr/include/js.
+
+*spidermonkey-1.5_rc6 (04 Sep 2004)
+
+  04 Sep 2004; Mamoru KOMACHI <usata@gentoo.org> +spidermonkey-1.5_rc6.ebuild:
+  Version bumped. Install headers, too. See bug #24502.
+
+*spidermonkey-1.5_rc5 (23 Feb 2003)
+
+  23 Feb 2003; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by Asser Femø <asser@diku.dk>.

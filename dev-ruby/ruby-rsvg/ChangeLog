@@ -1,0 +1,36 @@
+# ChangeLog for dev-ruby/ruby-rsvg
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-rsvg/ChangeLog,v 1.7 2008/04/22 18:43:54 graaff Exp $
+
+  22 Apr 2008; Hans de Graaff <graaff@gentoo.org> -ruby-rsvg-0.14.1.ebuild,
+  -ruby-rsvg-0.15.0.ebuild:
+  Remove old versions
+
+  08 Apr 2008; Hans de Graaff <graaff@gentoo.org> ruby-rsvg-0.16.0.ebuild:
+  Add cairo USE flag as reported by betelgeuse in #216795; clean up
+  dependencies list.
+
+  17 Jan 2008; Diego Pettenò <flameeyes@gentoo.org>
+  ruby-rsvg-0.16.0.ebuild:
+  Add missing pkg-config dependency. Thanks Patrick in bug #206219.
+
+*ruby-rsvg-0.16.0 (30 Dec 2006)
+
+  30 Dec 2006; Luis Medinas <metalgod@gentoo.org> +ruby-rsvg-0.16.0.ebuild:
+  Version Bump. Added ~amd64 keyword.
+
+*ruby-rsvg-0.15.0 (30 Aug 2006)
+
+  30 Aug 2006; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  +ruby-rsvg-0.15.0.ebuild:
+  Version bump
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org> ruby-rsvg-0.14.1.ebuild:
+  Mark 0.14.1 ~ia64
+
+*ruby-rsvg-0.14.1 (15 Nov 2005)
+
+  15 Nov 2005; Michael Kohl <citizen428@gentoo.org> +metadata.xml,
+  +ruby-rsvg-0.14.1.ebuild:
+  Initial import. See bugs #103470 and #109641.
+

@@ -1,0 +1,31 @@
+# ChangeLog for games-fps/quake3-teamarena
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-fps/quake3-teamarena/ChangeLog,v 1.6 2007/03/12 15:00:33 genone Exp $
+
+  12 Mar 2007; Marius Mauch <genone@gentoo.org>
+  quake3-teamarena-1.32b.ebuild:
+  Replacing einfo with elog
+
+  24 Oct 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  quake3-teamarena-1.32b.ebuild:
+  Moved cdrom_get_cds to src_unpack since binary packages don't require the
+  original media to install.
+
+  24 May 2006; Diego Pettenò <flameeyes@gentoo.org>
+  quake3-teamarena-1.32b.ebuild:
+  Add ~x86-fbsd keyword.
+
+  01 May 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  quake3-teamarena-1.32b.ebuild:
+  Marking stable on amd64 and x86.
+
+  17 Apr 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  quake3-teamarena-1.32b.ebuild:
+  Fixed up file collisions and closing bug #130263.
+
+*quake3-teamarena-1.32b (27 Mar 2006)
+
+  27 Mar 2006; Chris Gianelloni <wolf31o2@gentoo.org> +metadata.xml,
+  +quake3-teamarena-1.32b.ebuild:
+  Initial import.  Ebuild by me.  Closing bug #112107.
+

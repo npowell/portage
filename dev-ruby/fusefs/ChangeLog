@@ -1,0 +1,45 @@
+# ChangeLog for dev-ruby/fusefs
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/fusefs/ChangeLog,v 1.12 2007/10/14 04:36:11 tgall Exp $
+
+  13 Oct 2007; Tom Gall <tgall@gentoo.org> fusefs-0.6.0.ebuild:
+  stable on ppc64
+
+  24 Jul 2007; Steve Dibb <beandog@gentoo.org> fusefs-0.6.0.ebuild:
+  Add ~amd64, bug 184378
+
+  09 Mar 2007; Tom Gall <tgall@gentoo.org> fusefs-0.6.0.ebuild:
+  added ~ppc64
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  27 Apr 2006; Marien Zwart <marienz@gentoo.org> files/digest-fusefs-0.4,
+  files/digest-fusefs-0.5.1, files/digest-fusefs-0.6.0, Manifest:
+  Fixing SHA256 digest, pass four
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org> fusefs-0.6.0.ebuild:
+  Mark 0.6.0 ~ia64
+
+  22 Jan 2006; Caleb Tennis <caleb@gentoo.org> fusefs-0.6.0.ebuild:
+  x86 stable
+
+*fusefs-0.6.0 (23 Dec 2005)
+
+  23 Dec 2005; Caleb Tennis <caleb@gentoo.org> +fusefs-0.6.0.ebuild:
+  Version bump
+
+  23 Dec 2005; Caleb Tennis <caleb@gentoo.org> fusefs-0.5.1.ebuild:
+  x86 stable
+
+*fusefs-0.5.1 (01 Nov 2005)
+
+  01 Nov 2005; Caleb Tennis <caleb@gentoo.org> +fusefs-0.5.1.ebuild:
+  Version bump
+
+*fusefs-0.4 (28 Sep 2005)
+
+  28 Sep 2005; Caleb Tennis <caleb@gentoo.org> +metadata.xml,
+  +fusefs-0.4.ebuild:
+  Initial import
+

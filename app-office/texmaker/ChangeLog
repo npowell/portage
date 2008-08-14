@@ -1,0 +1,186 @@
+# ChangeLog for app-office/texmaker
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-office/texmaker/ChangeLog,v 1.47 2008/07/27 01:00:21 carlo Exp $
+
+  27 Jul 2008; Carsten Lohrke <carlo@gentoo.org> texmaker-1.71-r1.ebuild:
+  Fix broken split Qt 4.4 dependencies, cf. bug 217161 comment 11.
+
+  02 Jul 2008; Alexis Ballier <aballier@gentoo.org> -texmaker-1.71.ebuild:
+  remove unused version
+
+  02 Jul 2008; Alexis Ballier <aballier@gentoo.org>
+  files/texmaker-1.71-hunspell.patch, texmaker-1.71-r1.ebuild:
+  fix hunspell detection by using pkgconfig, by René 'Necoro' Neumann
+  <gentoo@necoro.eu>, bug #229729
+
+*texmaker-1.71-r1 (13 May 2008)
+
+  13 May 2008; Alexis Ballier <aballier@gentoo.org>
+  +files/texmaker-1.71-hunspell.patch, +texmaker-1.71-r1.ebuild:
+  Use system hunspell, by Dustin Surawicz, bug #220617
+
+  11 May 2008; Alexis Ballier <aballier@gentoo.org> texmaker-1.60.ebuild:
+  switch to latex-base, allow split qt4 deps
+
+*texmaker-1.71 (11 May 2008)
+
+  11 May 2008; Alexis Ballier <aballier@gentoo.org> +texmaker-1.71.ebuild:
+  version bump, thanks to Dustin Surawicz
+  <gentoobugs.20.dsurawicz@spamgourmet.com> for reporting in bug #220617
+
+  26 Jan 2008; Alexis Ballier <aballier@gentoo.org>
+  -texmaker-1.11-r1.ebuild, -texmaker-1.30.ebuild, -texmaker-1.40.ebuild,
+  -texmaker-1.50-r1.ebuild:
+  remove old
+
+  21 Jan 2008; Raúl Porcel <armin76@gentoo.org> texmaker-1.60.ebuild:
+  sparc stable wrt #193181
+
+  21 Jan 2008; Markus Meier <maekke@gentoo.org> texmaker-1.60.ebuild:
+  x86 stable, bug #193181
+
+  20 Jan 2008; Christoph Mende <angelos@gentoo.org> texmaker-1.60.ebuild:
+  Stable on amd64 wrt bug #193181
+
+  20 Jan 2008; Brent Baude <ranger@gentoo.org> texmaker-1.60.ebuild:
+  Marking texmaker-1.60 ~ppc64 for bug 193181
+
+  20 Jan 2008; Brent Baude <ranger@gentoo.org> texmaker-1.60.ebuild:
+  Marking texmaker-1.60 ppc for bug 193181
+
+*texmaker-1.60 (11 Nov 2007)
+
+  11 Nov 2007; Alexis Ballier <aballier@gentoo.org> +texmaker-1.60.ebuild:
+  version bump, bug #185800
+
+  22 Jul 2007; Denis Dupeyron <calchan@gentoo.org> texmaker-1.11-r1.ebuild,
+  texmaker-1.30.ebuild, texmaker-1.40.ebuild, texmaker-1.50-r1.ebuild:
+  Drop virtual/x11 dependency.
+
+  29 Jun 2007; Lars Weiler <pylon@gentoo.org> texmaker-1.50-r1.ebuild:
+  Stable on ppc; bug #183633.
+
+  29 Jun 2007; Christoph Mende <angelos@gentoo.org> texmaker-1.50-r1.ebuild:
+  Stable on amd64 wrt bug #183633
+
+  21 Jun 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  texmaker-1.50-r1.ebuild:
+  Stable on sparc
+
+  13 May 2007; Markus Ullmann <jokey@gentoo.org> texmaker-1.50-r1.ebuild:
+  Stable on x86
+
+  12 Mar 2007; Alexandre Buisse <nattfodd@gentoo.org> metadata.xml:
+  Replaced text-markup by tex as maintaining herd (text-markup split).
+
+  08 Feb 2007; Alexandre Buisse <nattfodd@gentoo.org>
+  texmaker-1.50-r1.ebuild:
+  Correct wrong dodoc.
+
+*texmaker-1.50-r1 (05 Feb 2007)
+
+  05 Feb 2007; Alexandre Buisse <nattfodd@gentoo.org> -texmaker-1.50.ebuild,
+  +texmaker-1.50-r1.ebuild:
+  Fix compilation error and update of dep (>=qt-4.2.2) (bug #160465).
+
+  25 Jan 2007; Marius Mauch <genone@gentoo.org> texmaker-1.11-r1.ebuild,
+  texmaker-1.30.ebuild, texmaker-1.40.ebuild, texmaker-1.50.ebuild:
+  Replacing einfo with elog
+
+*texmaker-1.50 (04 Jan 2007)
+
+  04 Jan 2007; Przemysław Maciąg <troll@gentoo.org> +texmaker-1.50.ebuild:
+  Version bump (1.50).
+
+  04 Jan 2007; Przemysław Maciąg <troll@gentoo.org> texmaker-1.40.ebuild:
+  Fixed PREFIX use in cpp files (see #159400).
+
+*texmaker-1.40 (09 Oct 2006)
+
+  09 Oct 2006; Markus Ullmann <jokey@gentoo.org> +texmaker-1.40.ebuild:
+  Version bump wrt bug #143363
+
+  01 Oct 2006; Alexandre Buisse <nattfodd@gentoo.org>
+  texmaker-1.11-r1.ebuild, texmaker-1.30.ebuild:
+  Corrected DEPEND/RDEPEND mix, thanks to Flameeyes for report and patch.
+
+  07 Sep 2006; Diego Pettenò <flameeyes@gentoo.org> texmaker-1.30.ebuild:
+  Add ~x86-fbsd keyword.
+
+  16 Aug 2006; Caleb Tennis <caleb@gentoo.org> texmaker-1.30.ebuild:
+  Change qt_min_version to qt4_min_version
+
+  07 May 2006; Martin Ehmsen <ehmsen@gentoo.org> texmaker-1.30.ebuild:
+  Fixed depend on qt-4.1, bug #132543.
+
+  09 Mar 2006; Alexandre Buisse <nattfodd@gentoo.org>
+  texmaker-1.11-r1.ebuild:
+  Typo, DEPEND -> RDEPEND. Thanks to Markus Ullmann.
+
+  25 Jan 2006; Alexandre Buisse <nattfodd@gentoo.org> -texmaker-1.11.ebuild,
+  texmaker-1.11-r1.ebuild, texmaker-1.21.ebuild:
+  Modular X porting. Also removed old texmaker-1.11 which was still in ~arch.
+
+  15 Jan 2006; Alexandre Buisse <nattfodd@gentoo.org> texmaker-1.21.ebuild:
+  Added big ewarn about possible qt-4.0/4.1 up/down cycle in emerge world.
+
+  08 Jan 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  texmaker-1.11-r1.ebuild:
+  ppc stable, bug #117469
+
+  12 Jan 2006; Alexandre Buisse <nattfodd@gentoo.org> texmaker-1.21.ebuild:
+  Require qt4 to be < 4.1 (see bug #118196). Hopefully will be fixed in newer
+  releases.
+
+  06 Jan 2006; Simon Stelling <blubb@gentoo.org> texmaker-1.11-r1.ebuild:
+  stable on amd64
+
+  02 Jan 2006; Mark Loeser <halcy0n@gentoo.org> texmaker-1.11-r1.ebuild:
+  Stable on x86; bug #117469
+
+  02 Jan 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  texmaker-1.11-r1.ebuild:
+  Stable on sparc wrt #117469
+
+*texmaker-1.21 (02 Jan 2006)
+
+  02 Jan 2006; Alexandre Buisse <nattfodd@gentoo.org>
+  -texmaker-1.2.1.ebuild, +texmaker-1.21.ebuild:
+  Changed numbering from 1.2.1 to 1.21 for portage to realize that this is the
+  latest version (closing bug #114037).
+
+*texmaker-1.2.1 (07 Dec 2005)
+
+  07 Dec 2005; Alexandre Buisse <nattfodd@gentoo.org>
+  +texmaker-1.2.1.ebuild:
+  Bump to 1.2.1 (mainly switch to qt4). Thanks to Markus Ullmann for the ebuild
+  (bug #114037).
+
+*texmaker-1.11-r1 (02 Jul 2005)
+
+  02 Jul 2005; Mamoru KOMACHI <usata@gentoo.org> +texmaker-1.11-r1.ebuild:
+  Added desktop entry; bug #97126. Thanks to Sebastian Kemper
+  <sebastian_ml@gmx.net>.
+
+  01 Jul 2005; Caleb Tennis <caleb@gentoo.org> texmaker-1.11.ebuild:
+  Fix qmake bin path per bug #97535
+
+  28 Jan 2005; Jan Brinkmann <luckyduck@gentoo.org> texmaker-1.11.ebuild:
+  added ~amd64 to KEYWORDS. fixes #71354
+
+  02 Jan 2005; Joseph Jezak <josejx@gentoo.org> texmaker-1.11.ebuild:
+  Marked ~ppc.
+
+  01 Jan 2005; Jason Wever <weeve@gentoo.org> texmaker-1.11.ebuild:
+  Added ~sparc keyword.
+
+  26 Nov 2004; Mamoru KOMACHI <usata@gentoo.org> texmaker-1.11.ebuild:
+  Use kde-functions.eclass. This fixes bug #72515.
+
+*texmaker-1.11 (07 Nov 2004)
+
+  07 Nov 2004; Mamoru KOMACHI <usata@gentoo.org> +metadata.xml,
+  +texmaker-1.11.ebuild:
+  Initial import. Ebuild submitted by Alex Linke <incubation.11@freenet.de>;
+  bug #68439.
+

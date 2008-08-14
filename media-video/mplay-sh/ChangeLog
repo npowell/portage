@@ -1,0 +1,20 @@
+# ChangeLog for media-video/mplay-sh
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/mplay-sh/ChangeLog,v 1.3 2007/07/17 09:17:25 zzam Exp $
+
+  17 Jul 2007; Matthias Schwarzott <zzam@gentoo.org>
+  mplay-sh-0.5.3-r1.ebuild:
+  Marked stable on x86.
+
+*mplay-sh-0.5.3-r1 (16 Jun 2007)
+
+  16 Jun 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +mplay-sh-0.5.3-r1.ebuild:
+  Changed tmp-file-location to absolute path.
+
+*mplay-sh-0.5.3 (15 May 2007)
+
+  15 May 2007; Matthias Schwarzott <zzam@gentoo.org> +metadata.xml,
+  +mplay-sh-0.5.3.ebuild:
+  Initial import of ebuild. Moved here from vdr-testing overlay.
+

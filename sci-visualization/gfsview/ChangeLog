@@ -1,0 +1,24 @@
+# ChangeLog for sci-visualization/gfsview
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-visualization/gfsview/ChangeLog,v 1.4 2007/02/22 01:08:35 jokey Exp $
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+*gfsview-0.4.2 (05 Apr 2006)
+
+  05 Apr 2006; Markus Dittrich <markusle@gentoo.org> +gfsview-0.4.2.ebuild:
+  Version bump. Thanks to Tim Cera <timcera@earthlink.net> for his
+  ebuild. This fixes bug #128597.
+
+  17 Mar 2006; Scott Stoddard <deltacow@gentoo.org> gfsview-0.4.ebuild:
+  Added ~amd64.
+
+*gfsview-0.4 (07 Feb 2006)
+
+  07 Feb 2006; Markus Dittrich <markusle@gentoo.org>
+  +files/gtk-client-events-handling.patch, +metadata.xml,
+  +gfsview-0.4.ebuild:
+  Initial import (fixes bug #102325). Many thanks to Tim Cera 
+  <timcera@earthlink.net> for his ebuild and patches.
+

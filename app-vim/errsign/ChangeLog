@@ -1,0 +1,29 @@
+# ChangeLog for app-vim/errsign
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-vim/errsign/ChangeLog,v 1.8 2008/03/25 23:51:07 coldwind Exp $
+
+  25 Mar 2008; Santiago M. Mola <coldwind@gentoo.org> errsign-0.1.ebuild:
+  Added ~amd64.
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  07 Apr 2006; Bryan Østergaard <kloeri@gentoo.org metadata.xml:
+  Remove ciaranm from metadata.xml.
+
+  05 Jun 2005; Michael Hanselmann <hansmi@gentoo.org> errsign-0.1.ebuild:
+  Stable on ppc.
+
+  02 Jun 2005; Stephanie Lockwood-Childs <wormo@gentoo.org>
+  errsign-0.1.ebuild:
+  mark ~ppc
+
+  24 Nov 2004; Ciaran McCreesh <ciaranm@gentoo.org> errsign-0.1.ebuild:
+  mips, sparc, x86 stable
+
+*errsign-0.1 (05 Nov 2004)
+
+  05 Nov 2004; Ciaran McCreesh <ciaranm@gentoo.org> +metadata.xml,
+  +errsign-0.1.ebuild:
+  New toy
+

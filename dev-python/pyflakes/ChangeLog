@@ -1,0 +1,23 @@
+# ChangeLog for dev-python/pyflakes
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pyflakes/ChangeLog,v 1.5 2007/05/31 20:47:04 lucass Exp $
+
+  31 May 2007; Lukasz Strzygowski <lucass@gentoo.org> pyflakes-0.2.1.ebuild:
+  Marked ~amd64.
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  06 Jun 2006; Carsten Lohrke <carlo@gentoo.org> pyflakes-0.2.1.ebuild:
+  Fix use of nonexistent versioned virtual/python.
+
+  01 Apr 2006; Aron Griffis <agriffis@gentoo.org> pyflakes-0.2.1.ebuild:
+  Mark 0.2.1 ~ia64
+
+*pyflakes-0.2.1 (20 Feb 2006)
+
+  20 Feb 2006; Marien Zwart <marienz@gentoo.org> +metadata.xml,
+  +pyflakes-0.2.1.ebuild:
+  New ebuild contributed by Qiangning Hong <hongqn@gmail.com>, closes bug
+  #123479.
+

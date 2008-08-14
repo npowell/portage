@@ -1,0 +1,50 @@
+# ChangeLog for x11-themes/smooth-themes
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-themes/smooth-themes/ChangeLog,v 1.11 2008/05/24 13:34:59 maekke Exp $
+
+  24 May 2008; Markus Meier <maekke@gentoo.org>
+  smooth-themes-0.5.8-r1.ebuild:
+  unquote ${A}
+
+  24 May 2008; Markus Meier <maekke@gentoo.org>
+  smooth-themes-0.5.8-r1.ebuild:
+  amd64 stable, bug #220633
+
+  16 Jun 2007; Christoph Mende <angelos@gentoo.org>
+  smooth-themes-0.5.8-r1.ebuild:
+  Added ~amd64
+
+  17 Feb 2006; Paul Varner <fuzzyray@gentoo.org>
+  smooth-themes-0.5.8-r1.ebuild:
+  Stable on x86 Bug #122748
+
+  17 Feb 2006; Joseph Jezak <josejx@gentoo.org>
+  smooth-themes-0.5.8-r1.ebuild:
+  Marked ppc stable for bug #122748.
+
+  14 Feb 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  smooth-themes-0.5.8-r1.ebuild:
+  Stable on sparc wrt #122748
+
+  13 Jan 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  smooth-themes-0.5.8.ebuild, smooth-themes-0.5.8-r1.ebuild:
+  Keyworded ~sparc
+
+*smooth-themes-0.5.8-r1 (19 Sep 2005)
+
+  19 Sep 2005; Leonardo Boshell <leonardop@gentoo.org>
+  +smooth-themes-0.5.8-r1.ebuild:
+  Removed the gtk2 USE flag (bug #106560).
+
+  05 Sep 2005; Leonardo Boshell <leonardop@gentoo.org>
+  smooth-themes-0.5.8.ebuild:
+  Stable on x86.
+
+  04 Aug 2005; David Holm <dholm@gentoo.org> smooth-themes-0.5.8.ebuild:
+  Added to ~ppc.
+
+*smooth-themes-0.5.8 (04 Aug 2005)
+
+  04 Aug 2005; Leonardo Boshell <leonardop@gentoo.org>
+  smooth-themes-0.5.8.ebuild:
+  New package, reported on bug #33928. Initial work by Anton Romanov.

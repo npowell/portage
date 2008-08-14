@@ -1,0 +1,29 @@
+# ChangeLog for app-doc/podbrowser
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-doc/podbrowser/ChangeLog,v 1.6 2008/05/13 11:02:16 tove Exp $
+
+*podbrowser-0.12 (13 May 2008)
+
+  13 May 2008; Torsten Veller <tove@gentoo.org> +podbrowser-0.12.ebuild:
+  Version bump (#199493)
+
+  06 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  podbrowser-0.09.ebuild:
+  Marking amd64 stable
+
+  26 Jun 2006; Michael Cummings <mcummings@gentoo.org>
+  podbrowser-0.09.ebuild:
+  Keywording ~amd64
+
+  08 Jan 2006; Michael Cummings <mcummings@gentoo.org> +files/Makefile.new,
+  podbrowser-0.09.ebuild:
+  Bug 117889, fixed ebuild, fixed makefile
+
+  14 Dec 2005; Doug Goldstein <cardoe@gentoo.org> podbrowser-0.09.ebuild:
+  Originally fixing ||( ) depend issue. Fixed all depends.
+
+*podbrowser-0.09 (12 Dec 2005)
+
+  12 Dec 2005; <mcumming@gentoo.org> +metadata.xml, +podbrowser-0.09.ebuild:
+  GTK2 pod browsing package :)
+

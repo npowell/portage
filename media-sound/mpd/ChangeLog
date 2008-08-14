@@ -1,0 +1,536 @@
+# ChangeLog for media-sound/mpd
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/mpd/ChangeLog,v 1.124 2008/07/22 01:32:50 darkside Exp $
+
+  22 Jul 2008; Jeremy Olexa <darkside@gentoo.org> Manifest:
+  re-manifest distfile for mpd-0.14.0_pre20080204 with Chainsaw's permission
+
+  20 Jul 2008; <chainsaw@gentoo.org> ChangeLog:
+  Re-manifest, as requested in bug #232501 by $reporter.
+
+  30 Jun 2008; Christoph Mende <angelos@gentoo.org> +mpd-0.13.2.ebuild,
+  +mpd-0.14.0_pre20080630.ebuild:
+  Version bump
+
+*mpd-0.14.0_pre20080630 (30 Jun 2008)
+*mpd-0.13.2 (30 Jun 2008)
+
+  30 Jun 2008; Christoph Mende <angelos@gentoo.org> +mpd-0.13.2.ebuild,
+  +mpd-0.14.0_pre20080630.ebuild:
+  Version bump
+
+  13 May 2008; Christoph Mende <angelos@gentoo.org>
+  mpd-0.14.0_pre20080204.ebuild:
+  Added a USE flag for wavpack, bug 221857
+
+  11 Apr 2008; Ben de Groot <yngwin@gentoo.org> files/mpd.rc:
+  Adding "use net.lo" to init.d script. Fixes bug 215801.
+
+  07 Feb 2008; Raúl Porcel <armin76@gentoo.org> mpd-0.13.1.ebuild:
+  sparc stable wrt security #208787
+
+  04 Feb 2008; Tobias Scherbaum <dertobi123@gentoo.org> mpd-0.13.1.ebuild:
+  ppc stable, bug #208787
+
+*mpd-0.14.0_pre20080204 (04 Feb 2008)
+
+  04 Feb 2008; Christoph Mende <angelos@gentoo.org>
+  -mpd-0.14.0_pre20080203.ebuild, +mpd-0.14.0_pre20080204.ebuild:
+  Bump snapshot again, last one was missing a header
+
+  04 Feb 2008; Markus Rothe <corsair@gentoo.org> mpd-0.13.1.ebuild:
+  Stable on ppc64; bug #208787
+
+*mpd-0.14.0_pre20080203 (04 Feb 2008)
+
+  04 Feb 2008; Christoph Mende <angelos@gentoo.org>
+  -mpd-0.14.0_pre20080120.ebuild, +mpd-0.14.0_pre20080203.ebuild:
+  Bump snapshot to fix a security bug and remove the vulnerable one
+
+  04 Feb 2008; Christoph Mende <angelos@gentoo.org> mpd-0.13.1.ebuild:
+  Stable on amd64
+
+  04 Feb 2008; Dawid Węgliński <cla@gentoo.org> mpd-0.13.1.ebuild:
+  Stable on x86 (bug #208787)
+
+  04 Feb 2008; Jeroen Roovers <jer@gentoo.org> mpd-0.13.1.ebuild:
+  Stable for HPPA (bug #208787).
+
+*mpd-0.13.1 (03 Feb 2008)
+
+  03 Feb 2008; Christoph Mende <angelos@gentoo.org> +mpd-0.13.1.ebuild:
+  Version bump, bug 208787
+
+*mpd-0.14.0_pre20080120 (20 Jan 2008)
+
+  20 Jan 2008; Christoph Mende <angelos@gentoo.org> metadata.xml,
+  +mpd-0.14.0_pre20080120.ebuild:
+  Add a 0.14.0 snapshot to fix bug 192722 and take over maintainership
+
+  08 Oct 2007; Jeroen Roovers <jer@gentoo.org> mpd-0.13.0.ebuild:
+  Update DESCRIPTION.
+
+  26 Aug 2007; Andrej Kacian <ticho@gentoo.org> -mpd-0.12.1.ebuild,
+  -mpd-0.12.2.ebuild:
+  Dropping obsolete ebuilds.
+
+  30 Jul 2007; Markus Rothe <corsair@gentoo.org> mpd-0.13.0.ebuild:
+  Stable on ppc64; bug #186361
+
+  28 Jul 2007; nixnut <nixnut@gentoo.org> mpd-0.13.0.ebuild:
+  Stable on ppc wrt bug 186361
+
+  25 Jul 2007; Christoph Mende <angelos@gentoo.org> mpd-0.13.0.ebuild:
+  Stable on amd64 wrt bug #186361
+
+  25 Jul 2007; Jeroen Roovers <jer@gentoo.org> mpd-0.13.0.ebuild:
+  Stable for HPPA (bug #186361).
+
+  23 Jul 2007; Andrej Kacian <ticho@gentoo.org> mpd-0.13.0.ebuild:
+  Stable on x86.
+
+  17 Jul 2007; Gustavo Zacarias <gustavoz@gentoo.org> mpd-0.13.0.ebuild:
+  Stable on sparc
+
+  27 Jun 2007; Gustavo Zacarias <gustavoz@gentoo.org> mpd-0.12.2.ebuild:
+  Stable on sparc
+
+  12 Jun 2007; Andrej Kacian <ticho@gentoo.org> files/mpd.rc:
+  Point mpd to correct config file when stopping the service. Bug #181730, by
+  Alexey B. <acore at ngs.ru>.
+
+  31 May 2007; Andrej Kacian <ticho@gentoo.org> mpd-0.13.0.ebuild:
+  Move enewuser call back to pkg_setup().
+
+*mpd-0.13.0 (28 May 2007)
+
+  28 May 2007; Andrej Kacian <ticho@gentoo.org> -files/mpd-0.12.rc6,
+  -files/mpd-0.12-conf.patch, +files/mpd.rc, +files/mpdconf.patch,
+  mpd-0.12.1.ebuild, mpd-0.12.2.ebuild, +mpd-0.13.0.ebuild:
+  Version bump. Ebuild updates by J. Alexander Treuman <jat at
+  spatialrift.net>. Changed names of initscript and config file patch in
+  FILESDIR to be version-agnostic, as they are used by both 0.12 and 0.13.
+
+  28 Apr 2007; Torsten Veller <tove@gentoo.org> mpd-0.12.1.ebuild,
+  mpd-0.12.2.ebuild:
+  Use newinitd
+
+  18 Apr 2007; Andrej Kacian <ticho@gentoo.org> -mpd-0.12.0.ebuild:
+  Removing obsolete ebuild.
+
+  25 Mar 2007; Andrej Kacian <ticho@gentoo.org> files/mpd-0.12.rc6:
+  Removed "before xdm" line from initscript depend, as it makes mpd to not
+  start at all, because it needs alsasound, which starts after xdm.
+
+*mpd-0.12.2 (20 Mar 2007)
+
+  20 Mar 2007; Andrej Kacian <ticho@gentoo.org> +mpd-0.12.2.ebuild:
+  Version bump.
+
+  20 Feb 2007; Markus Rothe <corsair@gentoo.org> mpd-0.12.1.ebuild:
+  Added ~ppc64
+
+  18 Feb 2007; Andrej Kacian <ticho@gentoo.org> files/mpd-0.12.rc6,
+  -files/mpd.rc6, -mpd-0.11.5-r2.ebuild:
+  Removed last 0.11 ebuild from the tree. Added "before xdm" to initscript
+  depends, as suggested by Tom Wesley <tom at tomaw.net>.
+
+  15 Nov 2006; Jeroen Roovers <jer@gentoo.org> mpd-0.12.1.ebuild:
+  Stable for HPPA (bug #154742).
+
+  14 Nov 2006; Christian Faulhammer <opfer@gentoo.org> mpd-0.12.1.ebuild:
+  stable x86, bug #154742
+
+  13 Nov 2006; Gustavo Zacarias <gustavoz@gentoo.org> mpd-0.12.1.ebuild:
+  Stable on sparc wrt #154742
+
+  13 Nov 2006; Joseph Jezak <josejx@gentoo.org> mpd-0.12.1.ebuild:
+  Marked ppc stable for bug #154742.
+
+  11 Nov 2006; Michael Cummings <mcummings@gentoo.org> mpd-0.12.1.ebuild:
+  Marking amd64 stable, bug 154742
+
+  19 Oct 2006; Andrej Kacian <ticho@gentoo.org> mpd-0.11.5-r2.ebuild,
+  mpd-0.12.0.ebuild, mpd-0.12.1.ebuild:
+  Change flac dependency atom to ~media-libs/flac-1.1.2 to prevent using
+  currently broken flac-1.1.3 (bug #152007).
+
+  11 Oct 2006; <ticho@gentoo.org> mpd-0.11.5-r2.ebuild,
+  -mpd-0.12.0_rc1.ebuild, -mpd-0.12.0_rc2.ebuild, -mpd-0.12.0_rc3.ebuild,
+  -mpd-0.12.0_rc4.ebuild:
+  Removed rc ebuilds. Fix typo in 0.11.5-r2. Closes bug #150869, by Christoph
+  Mende <ch.mende at gmail.com>.
+
+*mpd-0.12.1 (11 Oct 2006)
+
+  11 Oct 2006; <ticho@gentoo.org> +mpd-0.12.1.ebuild:
+  Version bump.
+
+  07 Oct 2006; Andrej Kacian <ticho@gentoo.org> mpd-0.12.0.ebuild:
+  Depend on >=flac-1.1.1. Fixes bug #149738, reported by Bill Skellenger
+  <william at skellenger.net>.
+
+  03 Oct 2006; Andrej Kacian <ticho@gentoo.org> files/mpd-0.12.rc6:
+  Added optional dependency on pulseaudio to the init script. Suggested by
+  Maarten Billemont <Lhunath at Pandora.Be>, in bug #149797.
+
+*mpd-0.12.0 (22 Sep 2006)
+
+  22 Sep 2006; <ticho@gentoo.org> +mpd-0.12.0.ebuild:
+  Version bump.
+
+*mpd-0.12.0_rc4 (16 Sep 2006)
+
+  16 Sep 2006; <ticho@gentoo.org> +files/mpd-0.12-conf.patch,
+  +mpd-0.12.0_rc4.ebuild:
+  New RC. Create a separate patch for config file, instead of using sed tweaks.
+
+  10 Sep 2006; Javier Villavicencio <the_paya@gentoo.org>
+  mpd-0.12.0_rc3.ebuild:
+  Add ~x86-fbsd keyword.
+
+  09 Sep 2006; <ticho@gentoo.org> mpd-0.12.0_rc1.ebuild,
+  mpd-0.12.0_rc2.ebuild, mpd-0.12.0_rc3.ebuild:
+  Display correct path to example config file in postinst. Closes bug #145822,
+  reported by Ludvig Ericson <ludvig.ericson at gmail.com>.
+
+  28 Aug 2006; Andrej Kacian <ticho@gentoo.org> files/mpd-0.12.rc6:
+  "use esound" in the new initscript. Closes bug #142613, reported by Andrzej
+  <wasowski at data.pl>.
+
+  28 Aug 2006; Andrej Kacian <ticho@gentoo.org> mpd-0.11.5-r2.ebuild,
+  mpd-0.12.0_rc1.ebuild, mpd-0.12.0_rc2.ebuild, mpd-0.12.0_rc3.ebuild:
+  Block sys-cluster/mpich2, since it also installs /usr/bin/mpd and
+  /etc/mpd.conf. Bug #145367.
+
+*mpd-0.12.0_rc3 (24 Aug 2006)
+
+  24 Aug 2006; <ticho@gentoo.org> +mpd-0.12.0_rc3.ebuild:
+  New release candidate. Use /var/log/mpd dir for logs, so we do not have to
+  create them with correct perms in /var/log.
+
+*mpd-0.12.0_rc2 (19 Aug 2006)
+
+  19 Aug 2006; <ticho@gentoo.org> +mpd-0.12.0_rc2.ebuild:
+  New release candidate.
+
+  18 Aug 2006; Jeroen Roovers <jer@gentoo.org> mpd-0.12.0_rc1.ebuild:
+  Marked ~hppa (bug #143510).
+
+  11 Aug 2006; Gustavo Zacarias <gustavoz@gentoo.org> mpd-0.12.0_rc1.ebuild:
+  To ~sparc wrt #143510
+
+*mpd-0.12.0_rc1 (10 Aug 2006)
+
+  10 Aug 2006; Andrej Kacian <ticho@gentoo.org> +files/mpd-0.12.rc6,
+  -mpd-0.11.5.ebuild, +mpd-0.12.0_rc1.ebuild:
+  A release candidate is out - version bump. Use ebuild from latest mpd-svn
+  for this. Remove ebuild for 0.11.5.
+
+  08 May 2006; <tcort@gentoo.org> mpd-0.11.5-r2.ebuild:
+  Removed INSTALL from dodoc.
+
+  16 Mar 2006; <ticho@gentoo.org> mpd-0.11.5-r2.ebuild:
+  Depend on alsa-utils instead of alsa-libs, because alsa-utils provides
+  alsasound initscript we need. Bug #126417.
+
+  07 Feb 2006; Simon Stelling <blubb@gentoo.org> mpd-0.11.5-r2.ebuild:
+  stable on amd64
+
+  17 Jan 2006; Guy Martin <gmsoft@gentoo.org> mpd-0.11.5-r2.ebuild:
+  Stable on hppa.
+
+  15 Jan 2006; Michael Hanselmann <hansmi@gentoo.org> mpd-0.11.5-r2.ebuild:
+  Stable on ppc.
+
+  09 Jan 2006; Gustavo Zacarias <gustavoz@gentoo.org> mpd-0.11.5-r2.ebuild:
+  Stable on sparc
+
+  09 Jan 2006; Andrej Kacian <ticho@gentoo.org> -mpd-0.11.5-r1.ebuild,
+  mpd-0.11.5-r2.ebuild:
+  0.11.5-r2 stable on x86. Removed 0.11.5-r1.
+
+*mpd-0.11.5-r2 (01 Nov 2005)
+
+  01 Nov 2005; Andrej Kacian <ticho@gentoo.org> +mpd-0.11.5-r2.ebuild:
+  Changed home directory of mpd user and all related config settings to
+  /var/lib/mpd. Closes bug #83644.
+
+  24 Oct 2005; Andrej Kacian <ticho@gentoo.org> files/mpd.rc6:
+  Use nfsmount in initscript depend(). Closes bug #110065, reported by Daniel
+  Willmann <willmann.daniel at web.de>.
+
+  16 Oct 2005; Andrej Kacian <ticho@gentoo.org> mpd-0.11.5.ebuild,
+  mpd-0.11.5-r1.ebuild:
+  Added a notice about the ogg->vorbis USE flag change.
+
+*mpd-0.11.5-r1 (16 Oct 2005)
+
+  16 Oct 2005; Andrej Kacian <ticho@gentoo.org> files/mpd.rc6,
+  mpd-0.11.5.ebuild, +mpd-0.11.5-r1.ebuild:
+  Modify installed initscript to need alsasound if alsa USE flag is set.
+  Closes bug #99969 by Mike Kelly <pioto01 at gmail.com>. Change ogg USE flag
+  to vorbis, bug #101877. Removed conditional dependency on libogg, as
+  libvorbis itself depends on it. 'use netmount' in initscript depend(),
+  closes bug #103458, by Nikolay Pashenkov <wildfire at ufanet.ru>.
+
+  28 May 2005; Jan Brinkmann <luckyduck@gentoo.org> -mpd-0.11.4.ebuild,
+  -mpd-0.11.4-r1.ebuild, -mpd-0.11.4-r2.ebuild, mpd-0.11.5.ebuild:
+  Dont make use of the deprecated oggvorbis useflag any longer, see #94254.
+
+  22 May 2005; Guy Martin <gmsoft@gentoo.org> mpd-0.11.5.ebuild:
+  Stable on hppa.
+
+  05 May 2005; Jan Brinkmann <luckyduck@gentoo.org> files/mpd.rc6:
+  added option to stop() in the initscript, see #89180 for details
+
+  04 Apr 2005; Thomas Matthijs <axxo@gentoo.org> files/mpd.rc6:
+  add use alsasound to init script
+
+  14 Feb 2005; Andrej Kacian <ticho@gentoo.org> mpd-0.11.4-r1.ebuild,
+  mpd-0.11.4-r2.ebuild, mpd-0.11.4.ebuild, mpd-0.11.5.ebuild:
+  Block media-sound/mpd-svn. Should have done this long ago.
+
+  21 Jan 2005; Lars Weiler <pylon@gentoo.org> mpd-0.11.5.ebuild:
+  Stable on ppc.
+
+*mpd-0.11.5 (07 Nov 2004)
+
+  07 Nov 2004; Thomas Matthijs <axxo@gentoo.org> +mpd-0.11.5.ebuild:
+  Version bump + included some suggestions from Avuton Olrich (#70293)
+
+  06 Nov 2004; Lars Weiler <pylon@gentoo.org> mpd-0.11.4-r2.ebuild:
+  Stable on ppc.
+
+  30 Oct 2004; Chris White <chriswhite@gentoo.org> mpd-0.11.4-r2.ebuild:
+  Fixed some permissions issues in mpd for ferringb as per bug #64558.
+
+*mpd-0.11.4-r2 (29 Oct 2004)
+
+  29 Oct 2004; Brian Harring <ferringb@gentoo.org> +mpd-0.11.4-r2.ebuild:
+  Create the initial log files/directories w/ appropriate perms. (#64558)
+
+  20 Oct 2004; Guy Martin <gmsoft@gentoo.org> mpd-0.11.4-r1.ebuild:
+  Stable on hppa.
+
+  19 Oct 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  -mpd-0.11.0-r2.ebuild, -mpd-0.11.1-r2.ebuild, -mpd-0.11.2-r2.ebuild,
+  -mpd-0.11.3.ebuild:
+  Removing old versions.
+
+  18 Oct 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  mpd-0.11.4-r1.ebuild:
+  Stable amd64, sparc, x86.
+
+*mpd-0.11.4-r1 (17 Sep 2004)
+
+  17 Sep 2004; Brian Harring <ferringb@gentoo.org> +mpd-0.11.4-r1.ebuild:
+  removed USE="droproot", it's now default.
+
+  16 Sep 2004; Guy Martin <gmsoft@gentoo.org> mpd-0.11.4.ebuild:
+  Stable on hppa.
+
+  03 Sep 2004; Jeremy Huddleston <eradicator@gentoo.org> mpd-0.11.4.ebuild:
+  Stable amd64, sparc, x86.
+
+*mpd-0.11.4 (08 Aug 2004)
+
+  08 Aug 2004; Martin Holzer <mholzer@gentoo.org> +mpd-0.11.4.ebuild:
+  Version bumped. Closes 58022
+
+*mpd-0.11.4 (29 Jul 2004)
+
+  29 Jul 2004; Brian Harring <ferringb@gentoo.org> mpd-0.11.3.ebuild,
+  +mpd-0.11.4.ebuild:
+  version bumped.  added ~ppc back into 0.11.3 .
+
+*mpd-0.11.3 (28 Jul 2004)
+
+  28 Jul 2004; Martin Holzer <mholzer@gentoo.org> mpd-0.11.3.ebuild:
+  Version bumped.
+
+  26 Jul 2004; Brian Harring <ferringb@gentoo.org> mpd-0.11.0-r2.ebuild,
+  mpd-0.11.1-r2.ebuild, mpd-0.11.2-r2.ebuild:
+  corrected invalib depend syntax for libmikmod, bug #58347
+
+  26 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org> mpd-0.11.2-r2.ebuild:
+  Syncing USE flags... adding missing alsa to IUSE.
+
+*mpd-0.11.2-r2 (22 Jul 2004)
+
+  22 Jul 2004; Brian Harring <ferringb@gentoo.org> mpd-0.11.0-r1.ebuild,
+  mpd-0.11.0-r2.ebuild, mpd-0.11.1-r1.ebuild, mpd-0.11.1-r2.ebuild,
+  mpd-0.11.2-r1.ebuild, mpd-0.11.2-r2.ebuild, files/mpd.rc6:
+  revbumping due to error in the installed config :/ .  See bug #57999 .
+  Many thanks to Antoine Marmignon for catching it.
+
+*mpd-0.11.2-r1 (22 Jul 2004)
+
+  22 Jul 2004; Brian Harring <ferringb@gentoo.org> mpd-0.10.3-r1.ebuild,
+  mpd-0.10.4.ebuild, mpd-0.11.2.ebuild, mpd-0.9.4-r1.ebuild, mpd-0.11.2-r1.ebuild:
+  Cleaning up of older versions, fixed depends in 0.11.2 and added
+  USE="droproot" in a revbump.
+
+*mpd-0.11.1-r1 (22 Jul 2004)
+
+  22 Jul 2004; Brian Harring <ferringb@gentoo.org> metadata.xml,
+  mpd-0.11.0-r1.ebuild, mpd-0.11.0.ebuild, mpd-0.11.1-r1.ebuild,
+  mpd-0.11.1.ebuild, files/mpd.rc6:
+  revbumping 0.11.0 and 0.11.1 to push out corrected deps/configuration
+  handling, added USE="droproot" option to control whether mpd runs as root, or
+  user mpd, and adjusted the default configuration so that it binds strictly to
+  localhost. These changes are intended to secure the default install- versions
+  beyond 0.11.2 will install mpd as non-root by default.  Corrected init.d script
+  so that /etc/mpd.conf is used (was fixed once upon a time, but crept back in)
+  which closes bug #56132 .
+
+*mpd-0.11.2 (21 Jul 2004)
+
+  21 Jul 2004; Martin Holzer <mholzer@gentoo.org> mpd-0.11.2.ebuild:
+  Version bumped.
+
+  16 Jul 2004; Brian Harring <ferringb@gentoo.org> mpd-0.11.0.ebuild:
+  Stabling 0.11.0 for x86.
+
+*mpd-0.11.1 (27 Jun 2004)
+
+  27 Jun 2004; Martin Holzer <mholzer@gentoo.org> mpd-0.11.1.ebuild:
+  Version bumped. Closes 54616
+
+  27 Jun 2004; Martin Holzer <mholzer@gentoo.org> mpd-0.11.0.ebuild:
+  changed the port to std port
+
+  27 Jun 2004; David Holm <dholm@gentoo.org> mpd-0.11.0.ebuild:
+  Added to ~ppc.
+
+*mpd-0.11.0 (26 Jun 2004)
+
+  26 Jun 2004; Martin Holzer <mholzer@gentoo.org> mpd-0.11.0.ebuild:
+  Version bumped.
+
+*mpd-0.10.4 (26 May 2004)
+
+  26 May 2004; Martin Holzer <mholzer@gentoo.org> mpd-0.10.4.ebuild:
+  Version bumped.
+
+*mpd-0.9.4-r1 (24 May 2004)
+
+  24 May 2004; Brian Harring <ferringb@gentoo.org> mpd-0.10.3-r1.ebuild,
+  mpd-0.10.3.ebuild, mpd-0.9.4-r1.ebuild, mpd-0.9.4.ebuild, files/mpd.rc6:
+  Rev-bumped 0.9.4 and 10.3 to -r1, fixed init script.  bug #51748
+
+  03 May 2004; Jeremy Huddleston <eradicator@gentoo.org> mpd-0.10.3.ebuild,
+  mpd-0.9.4.ebuild:
+  Changing mad dep to madplay.
+
+  25 Apr 2004; Jeremy Huddleston <eradicator@gentoo.org> mpd-0.10.2.ebuild,
+  mpd-0.10.3.ebuild:
+  Stable x86.  Removing old ebuild.
+
+  22 Apr 2004; Jeremy Huddleston <eradicator@gentoo.org> mpd-0.10.2.ebuild,
+  mpd-0.10.3.ebuild:
+  flac added to IUSE to close bug #48656.
+
+  20 Apr 2004; Jeremy Huddleston <eradicator@gentoo.org> mpd-0.10.2.ebuild,
+  mpd-0.10.3.ebuild, mpd-0.9.4.ebuild, files/mpd.conf, files/mpd.rc6:
+  Init script reworked per upstream request.  Bug #48210.
+
+  14 Apr 2004; Jeremy Huddleston <eradicator@gentoo.org> mpd-0.10.1.ebuild:
+  Removing old ebuilds.
+
+  13 Apr 2004; Jason Wever <weeve@gentoo.org> mpd-0.10.3.ebuild:
+  Added ~sparc keyword.
+
+*mpd-0.10.3 (03 Apr 2004)
+
+  03 Apr 2004; Jeremy Huddleston <eradicator@gentoo.org> mpd-0.10.3.ebuild:
+  Version bump.  Bug #46662.
+
+  30 Mar 2004; Jeremy Huddleston <eradicator@gentoo.org> mpd-0.10.0.ebuild,
+  mpd-0.10.1.ebuild, mpd-0.10.2.ebuild, mpd-0.9.2.ebuild, mpd-0.9.3.ebuild,
+  mpd-0.9.4.ebuild:
+  Removing old ebuilds... updating libao DEPEND for bug #46067.
+
+  28 Mar 2004; Jon Portnoy <avenj@gentoo.org> mpd-0.10.2.ebuild :
+  AMD64 keywords.
+
+  26 Mar 2004; Jeremy Huddleston <eradicator@gentoo.org> mpd-0.10.2.ebuild:
+  Added USE flags to control more configure options.
+
+*mpd-0.10.2 (25 Mar 2004)
+
+  25 Mar 2004; Martin Holzer <mholzer@gentoo.org> mpd-0.10.2.ebuild:
+  Version bumped.
+
+*mpd-0.10.1 (10 Mar 2004)
+
+  10 Mar 2004; Martin Holzer <mholzer@gentoo.org> mpd-0.10.1.ebuild:
+  Version bumped.
+
+  04 Mar 2004; Brian Harring <ferringb@gentoo.org> mpd-0.9.4.ebuild,
+  files/mpd.rc6:
+  Bumping to stable on x86, adding ~amd64 keywording.
+
+*mpd-0.10.0 (03 Mar 2004)
+
+  03 Mar 2004; Martin Holzer <mholzer@gentoo.org> mpd-0.10.0.ebuild,
+  files/mpd.rc6:
+  Version bumped.
+
+  27 Jan 2004; Nick Hadaway <raker@gentoo.org> files/mpd.rc6:
+  Added a more robust mpd.rc6 as suggested by Starz McCllelan on
+  bug #39270.  It allows for reading in daemon config values from
+  /etc/mpd.conf or ~/.mpd/mpdconf instead of from conf.d. 
+
+*mpd-0.9.4 (20 Jan 2004)
+
+  20 Jan 2004; Nick Hadaway <raker@gentoo.org> mpd-0.9.4.ebuild:
+  Version bump.  Please comment on bug #38880 so we can get this marked
+  stable. :)
+
+  19 Nov 2003; Martin Holzer <mholzer@gentoo.org> mpd-0.9.3.ebuild,
+  files/mpd.conf, files/mpd.rc6:
+  adding init script. submitted by Nikl <gentoo-bugzilla@nikl.net> in #26513.
+
+*mpd-0.9.3 (31 Oct 2003)
+
+  31 Oct 2003; Martin Holzer <mholzer@gentoo.org> mpd-0.9.2.ebuild,
+  mpd-0.9.3.ebuild:
+  Version bumped & changed SRC_RI to sf
+
+*mpd-0.9.2 (09 Oct 2003)
+
+  09 Oct 2003; Martin Holzer <mholzer@gentoo.org> mpd-0.9.2.ebuild:
+  Version bumped.
+
+*mpd-0.9.1 (08 Oct 2003)
+
+  08 Oct 2003; Martin Holzer <mholzer@gentoo.org> mpd-0.9.1.ebuild:
+  Version bumped.
+
+*mpd-0.8.7 (21 Sep 2003)
+
+  21 Sep 2003; jje <jje@gentoo.org> mpd-0.8.5.ebuild, mpd-0.8.7.ebuild:
+  Version bump. Removed old version. Closes #27331.
+
+*mpd-0.8.5 (18 Aug 2003)
+
+  18 Aug 2003; Nick Hadaway <raker@gentoo.org> mpd-0.8.5.ebuild:
+  Version bump.  Removed 0.8.4 as there is a typo in the sources,
+  etc.  See bug #26841.
+
+*mpd-0.8.4 (13 Aug 2003)
+
+  13 Aug 2003; Nick Hadaway <raker@gentoo.org> mpd-0.8.4.ebuild:
+  Version bump.  Closes bug #26548
+
+*mpd-0.8.2 (31 Jul 2003)
+
+  31 Jul 2003; rob holland <tigger@gentoo.org> mpd-0.8.2.ebuild:
+  Version bump, noted by sbh <starz@antisocial.com>, closes #25147
+
+*mpd-0.8.1 (17 Jul 2003)
+
+  17 Jul 2003; Nick Hadaway <raker@gentoo.org> mpd-0.8.1.ebuild:
+  New ebuild.  Depends on the newer media-libs/{libmad,libid3tag}
+  rather than media-sound/mad

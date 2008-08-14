@@ -1,0 +1,45 @@
+# ChangeLog for dev-python/simplejson
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/simplejson/ChangeLog,v 1.7 2008/01/04 17:23:34 hawking Exp $
+
+*simplejson-1.7.3 (04 Jan 2008)
+
+  04 Jan 2008; Ali Polatel <hawking@gentoo.org> +simplejson-1.7.3.ebuild:
+  Version bump.
+
+  11 Oct 2007; Michael Hanselmann <hansmi@gentoo.org>
+  simplejson-1.7.1.ebuild:
+  Stable on amd64, x86.
+
+  11 Oct 2007; Michael Hanselmann <hansmi@gentoo.org>
+  simplejson-1.7.1.ebuild:
+  Stable on amd64, x86.
+
+  04 Jul 2007; Lukasz Strzygowski <lucass@gentoo.org>
+  -simplejson-1.6.ebuild, simplejson-1.7.1.ebuild:
+  Removed use_setuptools sed. Dropped old version.
+
+*simplejson-1.7.1 (22 Apr 2007)
+
+  22 Apr 2007; Lukasz Strzygowski <lucass@gentoo.org>
+  -simplejson-1.7.ebuild, +simplejson-1.7.1.ebuild:
+  Version bump. Dropped 1.7.
+
+*simplejson-1.7 (24 Mar 2007)
+
+  24 Mar 2007; Tiziano Müller <dev-zero@gentoo.org> -simplejson-1.5.ebuild,
+  +simplejson-1.7.ebuild:
+  Version bump (thanks to Brad Walker). Dropped old version.
+
+*simplejson-1.6 (05 Mar 2007)
+
+  05 Mar 2007; Tiziano Müller <dev-zero@gentoo.org> +simplejson-1.6.ebuild:
+  Version bump, thanks to Brad Walker, keep the old version for stabilization
+
+  05 Feb 2007; Tiziano Müller <dev-zero@gentoo.org> simplejson-1.5.ebuild:
+  Fixed ez_setup sed.
+
+  03 Feb 2007; Tiziano Müller <dev-zero@gentoo.org> -simplejson-1.4.ebuild,
+  +simplejson-1.5.ebuild, +metadata.xml:
+  Initial ebuild for bug #129346 (thanks to Brad Walker)
+

@@ -1,0 +1,24 @@
+# ChangeLog for dev-cpp/gflags
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-cpp/gflags/ChangeLog,v 1.5 2008/06/16 19:37:28 dev-zero Exp $
+
+*gflags-0.8 (16 Jun 2008)
+
+  16 Jun 2008; Tiziano Müller <dev-zero@gentoo.org> +gflags-0.8.ebuild:
+  Version bump (bug #218802, fixes bug #227473)
+
+  10 Mar 2008; Alec Warner <antarus@gentoo.org> gflags-0.7.ebuild:
+  distutils fix from dev-zero
+
+  09 Mar 2008; Alec Warner <antarus@gentoo.org> gflags-0.7.ebuild:
+  remove mirror://, it was wrong anyway
+
+  09 Mar 2008; Alec Warner <antarus@gentoo.org> gflags-0.7.ebuild:
+  Thanks to leio for pointing out I'm retarded and didn't specify an SRC_URI
+
+*gflags-0.7 (09 Mar 2008)
+
+  09 Mar 2008; Alec Warner <antarus@gentoo.org> +metadata.xml,
+  +gflags-0.7.ebuild:
+  -m Initial import of gflags
+

@@ -1,0 +1,29 @@
+# ChangeLog for games-sports/ski
+# Copyright 2000-2006 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-sports/ski/ChangeLog,v 1.8 2006/05/30 01:49:46 josejx Exp $
+
+  30 May 2006; Joseph Jezak <josejx@gentoo.org> ski-6.5.ebuild:
+  Marked ppc stable.
+
+  15 May 2006; Thomas Cort <tcort@gentoo.org> ski-6.5.ebuild:
+  Stable on amd64.
+
+  09 May 2006; Thomas Cort <tcort@gentoo.org> ski-6.5.ebuild:
+  Stable on alpha.
+
+  03 Apr 2006; Thomas Cort <tcort@gentoo.org> ski-6.5.ebuild:
+  Added ~alpha keyword.
+
+  05 Nov 2004; Joseph Jezak <josejx@gentoo.org> ski-6.5.ebuild:
+  Added ~ppc.
+
+*ski-6.5 (12 Jan 2004)
+
+  12 Jan 2004; Michael Sterrett <mr_bones_@gentoo.org> ski-6.5.ebuild:
+  version bump
+
+*ski-6.3 (04 Jan 2004)
+
+  04 Jan 2004; Michael Sterrett <mr_bones_@gentoo.org> ski-6.3.ebuild:
+  initial commit; ebuild submitted by Eric Harney via bug 37141 (modified)
+

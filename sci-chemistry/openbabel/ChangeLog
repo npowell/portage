@@ -1,0 +1,120 @@
+# ChangeLog for sci-chemistry/openbabel
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/openbabel/ChangeLog,v 1.18 2008/07/06 21:00:29 markusle Exp $
+
+*openbabel-2.2.0 (06 Jul 2008)
+
+  06 Jul 2008; Markus Dittrich <markusle@gentoo.org> openbabel-2.0.2.ebuild,
+  -openbabel-2.1.0.ebuild, openbabel-2.1.1.ebuild,
+  -openbabel-2.2.0_beta4-r1.ebuild, +openbabel-2.2.0.ebuild:
+  Version bump (fixes bug #230803). Removed old ebuilds.
+
+*openbabel-2.2.0_beta5 (19 May 2008)
+
+  19 May 2008; Marcus D. Hanwell <cryos@gentoo.org>
+  +openbabel-2.2.0_beta5.ebuild:
+  Version bump.
+
+  27 Apr 2008; Marcus D. Hanwell <cryos@gentoo.org>
+  -openbabel-2.2.0_beta4.ebuild:
+  Removed in favour of newer revision.
+
+*openbabel-2.2.0_beta4-r1 (21 Apr 2008)
+
+  21 Apr 2008; Marcus D. Hanwell <cryos@gentoo.org>
+  +files/openbabel-2.2.0_beta4-obconversion_api_fix.diff,
+  +openbabel-2.2.0_beta4-r1.ebuild:
+  Bug 216057 - added back in missing API element.
+
+*openbabel-2.2.0_beta4 (01 Mar 2008)
+
+  01 Mar 2008; Marcus D. Hanwell <cryos@gentoo.org>
+  +openbabel-2.2.0_beta4.ebuild:
+  Version bump.
+
+*openbabel-2.1.1 (11 Jul 2007)
+
+  11 Jul 2007; Marcus D. Hanwell <cryos@gentoo.org> +openbabel-2.1.1.ebuild:
+  Version bump.
+
+*openbabel-2.1.0 (08 Apr 2007)
+
+  08 Apr 2007; Marcus D. Hanwell <cryos@gentoo.org> metadata.xml,
+  +openbabel-2.1.0.ebuild:
+  Version bump and added a longdescription in metadata.
+
+  07 Jan 2007; Danny van Dyk <kugelfang@gentoo.org>
+  -openbabel-1.100.2.ebuild, -openbabel-2.0.1.ebuild:
+  QA: Removed unused versions.
+
+  20 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  (#148281) Change herd to sci-chemistry from sci.
+
+  28 Aug 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  openbabel-2.0.2.ebuild:
+  Stable on sparc
+
+  23 Aug 2006; <blubb@gentoo.org> openbabel-2.0.2.ebuild:
+  stable on amd64
+
+  20 Aug 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  openbabel-2.0.2.ebuild:
+  Stable on x86/ppc.
+
+  03 Aug 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  openbabel-2.0.1.ebuild:
+  Stable on sparc
+
+*openbabel-2.0.2 (25 Jul 2006)
+
+  25 Jul 2006; Patrick Kursawe <phosphan@gentoo.org>
+  +openbabel-2.0.2.ebuild:
+  Version bump
+
+  09 Jul 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  openbabel-2.0.1.ebuild:
+  x86/ppc stable.
+
+*openbabel-2.0.1 (13 May 2006)
+
+  13 May 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  +openbabel-2.0.1.ebuild:
+  Bump. Many of the changes are internal, to help adding new translators etc.
+  Also adds support for Perl and Python scripting, better batch conversion,
+  support for reading gzipped files and support for InChI identifiers.
+
+*openbabel-1.100.2 (24 Dec 2004)
+
+  24 Dec 2004; Olivier Fisette <ribosome@gentoo.org> +metadata.xml,
+  +openbabel-1.100.2.ebuild:
+  Moved from app-sci/openbabel to sci-chemistry/openbabel.
+
+  06 Jun 2004; Danny van Dyk <kugelfang@gentoo.org> openbabel-1.100.2.ebuild:
+  Marked stable on amd64.
+
+  15 May 2004; Danny van Dyk <kugelfang@gentoo.org> openbabel-1.100.2.ebuild:
+  Marked ~amd64.
+
+  01 Apr 2004; Patrick Kursawe <phosphan@gentoo.org> openbabel-1.100.1.ebuild:
+  Cleanup
+
+  01 Apr 2004; Patrick Kursawe <phosphan@gentoo.org> openbabel-1.100.2.ebuild:
+  Stable for ppc
+
+  24 Feb 2004; Luca Barbato <lu_zero@gentoo.org> openbabel-1.100.2.ebuild:
+  Marked ~ppc
+
+*openbabel-1.100.2 (24 Feb 2004)
+
+  24 Feb 2004; Patrick Kursawe <phosphan@gentoo.org> openbabel-1.100.2.ebuild:
+  Version bump
+
+  16 Dec 2003; Jason Wever <weeve@gentoo.org> openbabel-1.100.1.ebuild:
+  Added ~sparc keyword to fix broken dependencies in app-sci/xdrawchem.
+
+*openbabel-1.100.1 (24 Sep 2003)
+
+  24 Sep 2003; Patrick Kursawe <phosphan@gentoo.org> metadata.xml,
+  openbabel-1.100.1.ebuild:
+  Initial import, modified from bug 28536
+

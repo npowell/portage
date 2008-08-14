@@ -1,0 +1,67 @@
+# ChangeLog for app-portage/flagedit
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-portage/flagedit/ChangeLog,v 1.16 2007/08/09 15:55:48 dertobi123 Exp $
+
+  09 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  flagedit-0.0.7.ebuild:
+  Stable on ppc.
+
+  04 Jul 2007; Raúl Porcel <armin76@gentoo.org> flagedit-0.0.7.ebuild:
+  x86 stable
+
+  14 May 2007; Steve Dibb <beandog@gentoo.org> flagedit-0.0.7.ebuild:
+  amd64 stable
+
+  11 Jan 2007; Markus Rothe <corsair@gentoo.org> flagedit-0.0.7.ebuild:
+  Added ~ppc64; bug #161464
+
+  28 Nov 2006; Tiziano Müller <dev-zero@gentoo.org> flagedit-0.0.7.ebuild:
+  ~x86-fbsd keyword added.
+
+  25 Oct 2006; Damien Krotkine <dams@gentoo.org> -flagedit-0.0.2.ebuild,
+  -flagedit-0.0.3.ebuild, -flagedit-0.0.4.ebuild:
+  remove old versions
+
+  28 May 2006; Thomas Cort <tcort@gentoo.org> flagedit-0.0.5.ebuild:
+  Stable on amd64 wrt Bug #134636.
+
+  15 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  flagedit-0.0.2.ebuild, flagedit-0.0.3.ebuild, flagedit-0.0.4.ebuild,
+  flagedit-0.0.5.ebuild, flagedit-0.0.7.ebuild:
+  Added IUSE var to ebuilds, no changes
+
+*flagedit-0.0.7 (26 Dec 2005)
+
+  26 Dec 2005; Damien Krotkine <dams@gentoo.org> +flagedit-0.0.7.ebuild:
+  version bump
+
+  09 Dec 2005; Damien Krotkine <dams@gentoo.org> flagedit-0.0.5.ebuild:
+  marking stable on x86 and ppc
+
+*flagedit-0.0.5 (19 Oct 2005)
+
+  19 Oct 2005; Damien Krotkine <dams@gentoo.org> +flagedit-0.0.5.ebuild:
+  version bump flagedit-0.0.5.ebuild
+
+*flagedit-0.0.4 (19 Oct 2005)
+
+  19 Oct 2005; Damien Krotkine <dams@gentoo.org> +flagedit-0.0.4.ebuild:
+  version bump
+
+*flagedit-0.0.3 (19 Oct 2005)
+
+  19 Oct 2005; Damien Krotkine <dams@gentoo.org> +flagedit-0.0.3.ebuild:
+  version bump
+
+  18 Oct 2005; Marcus D. Hanwell <cryos@gentoo.org> flagedit-0.0.2.ebuild:
+  Marked ~amd64, closes bug 109665.
+
+  15 Oct 2005; <dams@gentoo.org> flagedit-0.0.2.ebuild:
+  added ~ppc
+
+*flagedit-0.0.2 (14 Oct 2005)
+
+  14 Oct 2005; Damien Krotkine <dams@gentoo.org> +metadata.xml,
+  +flagedit-0.0.2.ebuild:
+  initial ebuild
+

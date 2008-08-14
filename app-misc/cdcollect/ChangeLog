@@ -1,0 +1,29 @@
+# ChangeLog for app-misc/cdcollect
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/cdcollect/ChangeLog,v 1.6 2008/06/06 20:56:32 drac Exp $
+
+  06 Jun 2008; Samuli Suominen <drac@gentoo.org> cdcollect-0.6.0.ebuild:
+  Moved intltool to DEPEND wrt #221509.
+
+  20 Apr 2008; Samuli Suominen <drac@gentoo.org> -cdcollect-0.5.1.ebuild,
+  cdcollect-0.6.0.ebuild:
+  Move pkgconfig from RDEPEND to DEPEND.
+
+*cdcollect-0.6.0 (28 Feb 2007)
+
+  28 Feb 2007; Lars Weiler <pylon@gentoo.org> +cdcollect-0.6.0.ebuild:
+  Version bump; thanks to E.S. Lehman for the updated ebuild in bug #161758.
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  09 Feb 2006; Luis Medinas <metalgod@gentoo.org> cdcollect-0.5.1.ebuild:
+  Update dependencies and install only with sqlite-2.8 series thanks to
+  Torsten Veller <tove@gentoo.org>. Closes bug #82949.
+
+*cdcollect-0.5.1 (30 Dec 2005)
+
+  30 Dec 2005; Luis Medinas <metalgod@gentoo.org> +metadata.xml,
+  +cdcollect-0.5.1.ebuild:
+  New Package. Ebuild made by me.
+

@@ -1,0 +1,555 @@
+# ChangeLog for app-accessibility/gnome-mag
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-accessibility/gnome-mag/ChangeLog,v 1.135 2008/08/12 14:01:44 armin76 Exp $
+
+  12 Aug 2008; Raúl Porcel <armin76@gentoo.org> gnome-mag-0.15.0.ebuild:
+  alpha/ia64/sparc stable wrt #229709
+
+  10 Aug 2008; Markus Meier <maekke@gentoo.org> gnome-mag-0.15.0.ebuild:
+  x86 stable, bug #229709
+
+*gnome-mag-0.15.2 (06 Aug 2008)
+
+  06 Aug 2008; Gilles Dartiguelongue <eva@gentoo.org>
+  +gnome-mag-0.15.2.ebuild:
+  bump to 0.15.2, bug fixes and translation updates.
+
+  30 Jul 2008; Brent Baude <ranger@gentoo.org> gnome-mag-0.15.0.ebuild:
+  Marking gnome-mag-0.15.0 ppc stable for bug 229709
+
+  26 Jul 2008; Olivier Crête <tester@gentoo.org> gnome-mag-0.15.0.ebuild:
+  Stable on amd64, bug #229709
+
+*gnome-mag-0.15.0 (29 Mar 2008)
+
+  29 Mar 2008; Gilles Dartiguelongue <eva@gentoo.org>
+  +gnome-mag-0.15.0.ebuild:
+  bump to 0.15.0
+
+  29 Nov 2007; Jeroen Roovers <jer@gentoo.org> gnome-mag-0.14.10.ebuild:
+  Stable for HPPA (bug #199740).
+
+  26 Nov 2007; Markus Rothe <corsair@gentoo.org> gnome-mag-0.14.10.ebuild:
+  Stable on ppc64; bug #199740
+
+  24 Nov 2007; Brent Baude <ranger@gentoo.org> gnome-mag-0.14.10.ebuild:
+  Marking gnome-mag-0.14.10 ppc stable for bug 199740
+
+  22 Nov 2007; Raúl Porcel <armin76@gentoo.org> gnome-mag-0.14.10.ebuild:
+  alpha/ia64/sparc stable wrt #199740
+
+  21 Nov 2007; Dawid Węgliński <cla@gentoo.org> gnome-mag-0.14.10.ebuild:
+  Stable on x86 (bug #199740)
+
+  20 Nov 2007; Samuli Suominen <drac@gentoo.org> gnome-mag-0.14.10.ebuild:
+  amd64 stable wrt #199740
+
+*gnome-mag-0.14.10 (14 Oct 2007)
+
+  14 Oct 2007; Gilles Dartiguelongue <eva@gentoo.org>
+  +gnome-mag-0.14.10.ebuild:
+  bump to 0.14.10
+
+  09 Sep 2007; Tom Gall <tgall@gentoo.org> gnome-mag-0.14.3.ebuild:
+  stable for ppc64 (bug #185823)
+
+  28 Aug 2007; Jeroen Roovers <jer@gentoo.org> gnome-mag-0.14.3.ebuild:
+  Stable for HPPA (bug #185823).
+
+  11 Aug 2007; Mart Raudsepp <leio@gentoo.org> -gnome-mag-0.12.5.ebuild:
+  Removing Gnome 2.14
+
+  11 Aug 2007; Andrej Kacian <ticho@gentoo.org> gnome-mag-0.14.3.ebuild:
+  Stable on x86, bug #185823.
+
+  10 Aug 2007; Christoph Mende <angelos@gentoo.org> gnome-mag-0.14.3.ebuild:
+  Stable on amd64 wrt bug #185823
+
+  08 Aug 2007; Raúl Porcel <armin76@gentoo.org> gnome-mag-0.14.3.ebuild:
+  alpha/ia64 stable wrt #185823
+
+  07 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  gnome-mag-0.14.3.ebuild:
+  Stable on ppc wrt bug #185823.
+
+  07 Aug 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  gnome-mag-0.14.3.ebuild:
+  Stable on sparc wrt #185823
+
+  26 Jul 2007; Raúl Porcel <armin76@gentoo.org> gnome-mag-0.14.0.ebuild:
+  alpha stable
+
+  22 Jul 2007; David Shakaryan <omp@gentoo.org> gnome-mag-0.12.5.ebuild,
+  gnome-mag-0.13.1.ebuild:
+  Remove virtual/x11 from dependencies.
+
+*gnome-mag-0.14.6 (21 Jul 2007)
+
+  21 Jul 2007; Gilles Dartiguelongue <eva@gentoo.org>
+  -gnome-mag-0.14.1.ebuild, +gnome-mag-0.14.6.ebuild:
+  bump to 0.14.6
+   * fix bugs
+   * enhance performance (compositor)
+   * applet for colorblind*
+   * added deps for possible python extensions (not in use yet ?)
+
+  06 Jul 2007; Roy Marples <uberlord@gentoo.org> gnome-mag-0.14.3.ebuild:
+  Keyworded ~x86-fbsd
+
+  20 Apr 2007; Raúl Porcel <armin76@gentoo.org> gnome-mag-0.14.0.ebuild:
+  ia64 + x86 stable
+
+*gnome-mag-0.14.3 (28 Mar 2007)
+
+  28 Mar 2007; Daniel Gryniewicz <dang@gentoo.org> +gnome-mag-0.14.3.ebuild:
+  Bump to 0.14.3
+
+  18 Feb 2007; Markus Rothe <corsair@gentoo.org> gnome-mag-0.14.0.ebuild:
+  Stable on ppc64
+
+  01 Feb 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  gnome-mag-0.14.0.ebuild:
+  Stable on sparc
+
+*gnome-mag-0.14.1 (22 Jan 2007)
+
+  22 Jan 2007; Leonardo Boshell <leonardop@gentoo.org>
+  +gnome-mag-0.14.1.ebuild:
+  New release. Dropped popt dependency. Added Xcomposite dependency to make
+  sure the new functionality is used. Updated glib dependency.
+
+  21 Jan 2007; Bryan Østergaard <kloeri@gentoo.org>
+  gnome-mag-0.13.1.ebuild:
+  Stable on IA64, bug 156662.
+
+  19 Jan 2007; Jeroen Roovers <jer@gentoo.org> gnome-mag-0.14.0.ebuild:
+  Stable for HPPA (bug #147751).
+
+  14 Jan 2007; Bryan Østergaard <kloeri@gentoo.org>
+  gnome-mag-0.13.1.ebuild:
+  Stable on Alpha.
+
+  21 Dec 2006; Markus Rothe <corsair@gentoo.org> gnome-mag-0.13.1.ebuild:
+  Stable on ppc64; bug #156662
+
+  18 Dec 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  gnome-mag-0.13.1.ebuild:
+  Stable on sparc
+
+*gnome-mag-0.14.0 (18 Dec 2006)
+
+  18 Dec 2006; Leonardo Boshell <leonardop@gentoo.org>
+  +gnome-mag-0.14.0.ebuild:
+  New release.
+
+  17 Dec 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  gnome-mag-0.13.1.ebuild:
+  Stable on ppc wrt bug #156662.
+
+  12 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  gnome-mag-0.13.1.ebuild:
+  Stable on amd64 wrt bug #156662.
+
+  10 Dec 2006; Andrej Kacian <ticho@gentoo.org> gnome-mag-0.13.1.ebuild:
+  Stable on x86, bug #156662.
+
+  19 Oct 2006; Bryan Østergaard <kloeri@gentoo.org>
+  gnome-mag-0.12.5.ebuild:
+  Stable on Alpha.
+
+  14 Sep 2006; Aron Griffis <agriffis@gentoo.org> gnome-mag-0.12.5.ebuild:
+  Mark 0.12.5 stable on ia64. #139612
+
+*gnome-mag-0.13.1 (07 Sep 2006)
+
+  07 Sep 2006; Daniel Gryniewicz <dang@gentoo.org> +gnome-mag-0.13.1.ebuild:
+  New version for gnome 2.16
+
+  16 Aug 2006; Markus Rothe <corsair@gentoo.org> gnome-mag-0.12.5.ebuild:
+  Stable on ppc64
+
+*gnome-mag-0.12.6 (25 Jul 2006)
+
+  25 Jul 2006; Leonardo Boshell <leonardop@gentoo.org>
+  -gnome-mag-0.12.4.ebuild, +gnome-mag-0.12.6.ebuild:
+  New release.
+
+  17 Jul 2006; Daniel Gryniewicz <dang@gentoo.org> gnome-mag-0.12.5.ebuild:
+  Marked stable on amd64 for bug #139612
+
+  16 Jul 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  gnome-mag-0.12.5.ebuild:
+  hppa stable, bug #139612
+
+  14 Jul 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  gnome-mag-0.12.5.ebuild:
+  ppc stable, bug #139612
+
+  12 Jul 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  gnome-mag-0.12.5.ebuild:
+  Stable on x86 wrt bug #139612.
+
+  10 Jul 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  gnome-mag-0.12.5.ebuild:
+  Stable on sparc wrt #139612
+
+*gnome-mag-0.12.5 (15 May 2006)
+
+  15 May 2006; Leonardo Boshell <leonardop@gentoo.org>
+  +gnome-mag-0.12.5.ebuild:
+  New release.
+
+  21 Apr 2006; Thomas Cort <tcort@gentoo.org> gnome-mag-0.12.3.ebuild:
+  Stable on alpha wrt Bug #126321.
+
+  24 Mar 2006; Aron Griffis <agriffis@gentoo.org> gnome-mag-0.12.3.ebuild:
+  Mark 0.12.3 stable on ia64
+
+  19 Mar 2006; Markus Rothe <corsair@gentoo.org> gnome-mag-0.12.3.ebuild:
+  Stable on ppc64
+
+  18 Mar 2006; Olivier Crête <tester@gentoo.org> gnome-mag-0.12.3.ebuild:
+  Stable on amd64 per bug #126321
+
+*gnome-mag-0.12.4 (18 Mar 2006)
+
+  18 Mar 2006; John N. Laliberte <allanonjl@gentoo.org>
+  +gnome-mag-0.12.4.ebuild:
+  new version.
+
+  17 Mar 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  gnome-mag-0.12.3.ebuild:
+  Stable on x86 wrt bug #126321.
+
+  17 Mar 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  gnome-mag-0.12.3.ebuild:
+  Stable gnome-2.12.3 for ppc, bug #126321
+
+  14 Mar 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  gnome-mag-0.12.3.ebuild:
+  Stable on hppa
+
+  13 Mar 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  gnome-mag-0.12.3.ebuild:
+  Stable on sparc
+
+  14 Feb 2006; Leonardo Boshell <leonardop@gentoo.org>
+  gnome-mag-0.12.2.ebuild, gnome-mag-0.12.3.ebuild:
+  Added proper modular X dependencies.
+
+  06 Feb 2006; Aron Griffis <agriffis@gentoo.org> gnome-mag-0.12.2.ebuild:
+  Mark 0.12.2 stable on alpha
+
+  04 Feb 2006; Aron Griffis <agriffis@gentoo.org> gnome-mag-0.12.2.ebuild:
+  Mark 0.12.2 stable on ia64
+
+  03 Feb 2006; Guy Martin <gmsoft@gentoo.org> gnome-mag-0.12.2.ebuild:
+  Stable on hppa.
+
+*gnome-mag-0.12.3 (03 Feb 2006)
+
+  03 Feb 2006; John N. Laliberte <allanonjl@gentoo.org>
+  +gnome-mag-0.12.3.ebuild:
+  new version
+
+  25 Jan 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  gnome-mag-0.12.2-r1.ebuild:
+  Fix deps, reported by leonardop.
+
+*gnome-mag-0.12.2-r1 (25 Jan 2006)
+
+  25 Jan 2006; Marcelo Goes <vanquirius@gentoo.org>
+  +gnome-mag-0.12.2-r1.ebuild:
+  Modular X loving for bug 117971.
+
+  22 Jan 2006; <dang@gentoo.org> gnome-mag-0.12.2.ebuild:
+  Marked stable on amd64 per bug #119634
+
+  22 Jan 2006; Markus Rothe <corsair@gentoo.org> gnome-mag-0.12.2.ebuild:
+  Stable on ppc64
+
+  22 Jan 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  gnome-mag-0.12.2.ebuild:
+  Marked ppc stable for bug #119634; Stabilize Gnome-2.12.2
+
+  22 Jan 2006; Joshua Jackson <tsunam@gentoo.org> gnome-mag-0.12.2.ebuild:
+  Stable on x86 for bug #119634; Stabilize Gnome-2.12.2
+
+  20 Jan 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  gnome-mag-0.12.2.ebuild:
+  Stable on sparc wrt #119634
+
+*gnome-mag-0.12.2 (05 Oct 2005)
+
+  05 Oct 2005; Leonardo Boshell <leonardop@gentoo.org>
+  +gnome-mag-0.12.2.ebuild:
+  New version.
+
+  09 Sep 2005; Aron Griffis <agriffis@gentoo.org> gnome-mag-0.12.1.ebuild:
+  Mark 0.12.1 stable on alpha
+
+  03 Sep 2005; Markus Rothe <corsair@gentoo.org> gnome-mag-0.12.1.ebuild:
+  Stable on ppc64
+
+  02 Sep 2005; Michael Hanselmann <hansmi@gentoo.org>
+  gnome-mag-0.12.1.ebuild:
+  Stable on ppc.
+
+  28 Aug 2005; Simon Stelling <blubb@gentoo.org> gnome-mag-0.12.1.ebuild:
+  stable on amd64
+
+  27 Aug 2005; Guy Martin <gmsoft@gentoo.org> gnome-mag-0.12.1.ebuild:
+  Stable on hppa.
+
+  26 Aug 2005; Gustavo Zacarias <gustavoz@gentoo.org>
+  gnome-mag-0.12.1.ebuild:
+  Stable on sparc
+
+  25 Aug 2005; Aron Griffis <agriffis@gentoo.org> gnome-mag-0.12.1.ebuild:
+  stable on ia64
+
+  25 Aug 2005; Leonardo Boshell <leonardop@gentoo.org>
+  gnome-mag-0.12.1.ebuild:
+  Stable on x86.
+
+  23 Aug 2005; Aron Griffis <agriffis@gentoo.org> gnome-mag-0.12.0.ebuild:
+  stable on ia64
+
+  13 Jul 2005; Stephen P. Becker <geoman@gentoo.org>
+  gnome-mag-0.10.11.ebuild, gnome-mag-0.11.14.ebuild,
+  gnome-mag-0.12.0.ebuild, gnome-mag-0.12.1.ebuild:
+  removing mips keywords
+
+  02 Jul 2005; Bryan Østergaard <kloeri@gentoo.org>
+  gnome-mag-0.12.0.ebuild:
+  Stable on alpha.
+
+*gnome-mag-0.12.1 (13 Jun 2005)
+
+  13 Jun 2005; Leonardo Boshell <leonardop@gentoo.org> gnome-mag-0.12.1.ebuild:
+  New release.
+
+  12 Jun 2005; Olivier Crête <tester@gentoo.org> gnome-mag-0.12.0.ebuild:
+  Stable on amd64
+
+  09 Jun 2005; Markus Rothe <corsair@gentoo.org> gnome-mag-0.12.0.ebuild:
+  Stable on ppc64
+
+  05 Jun 2005; Michael Hanselmann <hansmi@gentoo.org>
+  gnome-mag-0.12.0.ebuild:
+  Stable on ppc.
+
+  19 May 2005; Guy Martin <gmsoft@gentoo.org> gnome-mag-0.12.0.ebuild:
+  Stable on hppa.
+
+  16 May 2005; Gustavo Zacarias <gustavoz@gentoo.org>
+  gnome-mag-0.12.0.ebuild:
+  Stable on sparc
+
+  13 May 2005; Leonardo Boshell <leonardop@gentoo.org> gnome-mag-0.12.0.ebuild:
+  Stable on x86.
+
+  06 May 2005; Markus Rothe <corsair@gentoo.org> gnome-mag-0.12.0.ebuild:
+  Added ~ppc64 to KEYWORDS
+
+  31 Mar 2005; Aron Griffis <agriffis@gentoo.org> gnome-mag-0.11.14.ebuild:
+  stable on ia64
+
+  31 Mar 2005; <blubb@gentoo.org> gnome-mag-0.11.14.ebuild:
+  stable on amd64
+
+  21 Mar 2005; Guy Martin <gmsoft@gentoo.org> gnome-mag-0.11.14.ebuild:
+  Stable on hppa.
+
+  20 Mar 2005; Bryan Østergaard <kloeri@gentoo.org>
+  gnome-mag-0.11.14.ebuild:
+  Stable on alpha.
+
+*gnome-mag-0.12.0 (10 Mar 2005)
+
+  10 Mar 2005; Leonardo Boshell <leonardop@gentoo.org> gnome-mag-0.12.0.ebuild:
+  New release.
+
+  09 Mar 2005; Gustavo Zacarias <gustavoz@gentoo.org>
+  gnome-mag-0.11.14.ebuild:
+  Stable on sparc
+
+  09 Mar 2005; Mike Gardiner <obz@gentoo.org> gnome-mag-0.11.14.ebuild:
+  Keyworded x86 ppc
+
+*gnome-mag-0.11.14 (01 Mar 2005)
+
+  01 Mar 2005; Mike Gardiner <obz@gentoo.org> +gnome-mag-0.11.14.ebuild:
+  New version
+
+  08 Jan 2005; Tom Martin <slarti@gentoo.org> gnome-mag-0.11.10.ebuild:
+  Stable on amd64.
+
+  28 Dec 2004; Ciaran McCreesh <ciaranm@gentoo.org> :
+  Change encoding to UTF-8 for GLEP 31 compliance
+
+  23 Dec 2004; Guy Martin <gmsoft@gentoo.org> gnome-mag-0.11.10.ebuild:
+  Stable on hppa.
+
+  21 Dec 2004; Gustavo Zacarias <gustavoz@gentoo.org>
+  gnome-mag-0.11.10.ebuild:
+  Stable on sparc
+
+  19 Dec 2004; Bryan Østergaard <kloeri@gentoo.org>
+  gnome-mag-0.11.10.ebuild:
+  Stable on alpha.
+
+  19 Dec 2004; Mike Gardiner <obz@gentoo.org> gnome-mag-0.11.10.ebuild:
+  Keyworded x86 and ppc for GNOME 2.8.1
+
+  11 Dec 2004; Bryan Østergaard <kloeri@gentoo.org>
+  gnome-mag-0.11.5.ebuild:
+  Stable on alpha.
+
+*gnome-mag-0.11.11 (11 Dec 2004)
+
+  11 Dec 2004; Mike Gardiner <obz@gentoo.org> +gnome-mag-0.11.11.ebuild:
+  New version
+
+*gnome-mag-0.11.10 (23 Nov 2004)
+
+  23 Nov 2004; Leonardo Boshell <leonardop@gentoo.org>
+  gnome-mag-0.11.10.ebuild:
+  Version bump. Added support for the `static' USE flag.
+
+  12 Nov 2004; Mike Gardiner <obz@gentoo.org> gnome-mag-0.11.5.ebuild:
+  Keyworded ppc for GNOME 2.8
+
+  12 Nov 2004; Gustavo Zacarias <gustavoz@gentoo.org> gnome-mag-0.11.5.ebuild:
+  Stable on sparc
+
+  05 Oct 2004; Pieter Van den Abeele <pvdabeel@gentoo.org>
+  gnome-mag-0.10.11.ebuild:
+  Masked gnome-mag-0.10.11.ebuild stable for ppc
+
+  01 Oct 2004; Stephen P. Becker <geoman@gentoo.org> gnome-mag-0.10.11.ebuild:
+  stable on mips
+
+*gnome-mag-0.11.5 (18 Sep 2004)
+
+  18 Sep 2004; Leonardo Boshell <leonardop@gentoo.org> gnome-mag-0.11.5.ebuild:
+  New release.
+
+  18 Sep 2004; Leonardo Boshell <leonardop@gentoo.org> gnome-mag-0.10.6.ebuild:
+  Removed 0.10.6
+
+  05 Aug 2004; Gustavo Zacarias <gustavoz@gentoo.org>
+  gnome-mag-0.10.11.ebuild:
+  Stable on sparc
+
+  05 Aug 2004; Guy Martin <gmsoft@gentoo.org> gnome-mag-0.10.11.ebuild:
+  Stable on hppa.
+
+  28 Jun 2004; Aron Griffis <agriffis@gentoo.org> gnome-mag-0.10.4.ebuild,
+  gnome-mag-0.10.6.ebuild:
+  sync IUSE (-debug)
+
+  16 Jun 2004; Bryan Østergaard <kloeri@gentoo.org> gnome-mag-0.10.11.ebuild:
+  Stable on alpha.
+
+  30 May 2004; L. Boshell <leonardop@gentoo.org> gnome-mag-0.10.11.ebuild:
+  Marked stable on x86.
+
+  25 May 2004; Guy Martin <gmsoft@gentoo.org> gnome-mag-0.10.10.ebuild:
+  Marked stable on hppa.
+
+  15 May 2004; Stephen P. Becker <geoman@gentoo.org> gnome-mag-0.10.10.ebuild,
+  gnome-mag-0.10.11.ebuild:
+  0.10.10 stable on mips, 0.10.11 ~mips
+
+  28 Apr 2004; Gustavo Zacarias <gustavoz@gentoo.org>
+  gnome-mag-0.10.10.ebuild:
+  Stable on sparc
+
+  28 Apr 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  gnome-mag-0.10.11.ebuild:
+  Fixed IUSE.
+
+  22 Apr 2004; L. Boshell <leonardop@gentoo.org> gnome-mag-0.10.10.ebuild:
+  Marked stable on x86.
+
+*gnome-mag-0.10.11 (22 Apr 2004)
+
+  22 Apr 2004; L. Boshell <leonardop@gentoo.org> gnome-mag-0.10.11.ebuild:
+  New release.
+
+  20 Apr 2004; Guy Martin <gmsoft@gentoo.org> gnome-mag-0.10.9.ebuild:
+  Marked stable on hppa.
+
+  18 Apr 2004; L. Boshell <leonardop@gentoo.org> gnome-mag-0.10.9.ebuild:
+  Marked stable on x86.
+
+  12 Apr 2004; Chris Aniszczyk <zx@gentoo.org> gnome-mag-0.10.6.ebuild,
+  gnome-mag-0.10.8.ebuild:
+  Marking stable on hppa
+
+  12 Apr 2004; L. Boshell <leonardop@gentoo.org> gnome-mag-0.10.8.ebuild:
+  Marked stable on x86.
+
+*gnome-mag-0.10.10 (23 Mar 2004)
+
+  23 Mar 2004; L. Boshell <leonardop@gentoo.org> gnome-mag-0.10.10.ebuild:
+  New release, ready for Gnome 2.6.
+  
+  17 Mar 2004; Gustavo Zacarias <gustavoz@gentoo.org> gnome-mag-0.10.6.ebuild:
+  sparc keyword again
+
+*gnome-mag-0.10.9 (16 Mar 2004)
+
+  16 Mar 2004; L. Boshell <leonardop@gentoo.org> gnome-mag-0.10.9.ebuild:
+  New release.
+  
+  16 Mar 2004; L. Boshell <leonardop@gentoo.org> gnome-mag-0.10.6.ebuild:
+  Marked stable on x86.
+  
+  13 Mar 2004; foser <foser@gentoo.org> metadata.xml :
+  Maintainership to gnome-accessibility herd
+
+*gnome-mag-0.10.8 (10 Mar 2004)
+
+  10 Mar 2004; L. Boshell <leonardop@gentoo.org> gnome-mag-0.10.8.ebuild:
+  New release.
+  
+*gnome-mag-0.10.6 (11 Feb 2004)
+
+  11 Feb 2004; L. Boshell <leonardop@gentoo.org> gnome-mag-0.10.6.ebuild:
+  New release.
+  
+  10 Feb 2004; Bartosch Pixa <darkspecter@gentoo.org> gnome-mag-0.10.4.ebuild:
+  set ppc in keywords
+
+  06 Feb 2004; Luca Barbato <lu_zero@gentoo.org> gnome-mag-0.10.4.ebuild:
+  Marked ~ppc as requested by Spider
+
+  01 Feb 2004; Jon Portnoy <avenj@gentoo.org> gnome-mad-0.10.4.ebuild :
+  AMD64 keywords.
+
+  28 Jan 2004; Aron Griffis <agriffis@gentoo.org> gnome-mag-0.10.4.ebuild:
+  stable on alpha and ia64
+
+  18 Jan 2004; <gustavoz@gentoo.org> gnome-mag-0.10.4.ebuild:
+  stable on hppa and sparc
+
+  14 Jan 2004; Mike Gardiner <obz@gentoo.org> gnome-mag-0.10.4.ebuild:
+  Stable on x86 as part of GNOME-2.4.1
+
+  07 Jan 2004; <gustavoz@gentoo.org> gnome-mag-0.10.4.ebuild:
+  keyworded ~sparc
+
+*gnome-mag-0.10.4 (14 Dec 2003)
+
+  14 Dec 2003; foser <foser@gentoo.org> gnome-mag-0.10.4.ebuild :
+  New release, trivial fixes 
+
+  10 Nov 2003; L. Boshell <leonardop@gentoo.org> gnome-mag-0.10.3.ebuild :
+  Marking as x86-stable.
+  
+*gnome-mag-0.10.3 (10 Oct 2003)
+
+  10 Oct 2003; L. Boshell <leonardop@gentoo.org> gnome-mag-0.10.3.ebuild :
+  Initial import.

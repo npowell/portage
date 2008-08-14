@@ -1,0 +1,26 @@
+# ChangeLog for games-arcade/stardork
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-arcade/stardork/ChangeLog,v 1.8 2008/05/05 20:20:05 nyhm Exp $
+
+  05 May 2008; Tristan Heaven <nyhm@gentoo.org> stardork-0.6.ebuild:
+  Respect CFLAGS/LDFLAGS; add ~amd64 keyword
+
+  08 Feb 2007; Chris Gianelloni <wolf31o2@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  21 May 2006; Markus Rothe <corsair@gentoo.org> stardork-0.6.ebuild:
+  Stable on ppc64
+
+  21 Dec 2004; Yuta SATOH <nigoro@gentoo.org> stardork-0.6.ebuild:
+  added ~ppc64
+
+  19 Dec 2004; Joseph Jezak <josejx@gentoo.org> stardork-0.6.ebuild:
+  Marked ~ppc.
+
+*stardork-0.6 (03 Dec 2004)
+
+  03 Dec 2004; Michael Kohl <citizen428@gentoo.org> +metadata.xml,
+  +stardork-0.6.ebuild:
+  Initial commit; Ebuild submitted by Adrian Fruehwirth
+  <fruehwia@spengergasse.at> in bug #72936
+

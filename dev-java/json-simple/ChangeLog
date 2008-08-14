@@ -1,0 +1,24 @@
+# ChangeLog for dev-java/json-simple
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-java/json-simple/ChangeLog,v 1.4 2008/04/21 18:37:08 betelgeuse Exp $
+
+  21 Apr 2008; Petteri Räty <betelgeuse@gentoo.org>
+  files/extra-constructors-from-azureus.patch:
+  Don't use absolute paths in patch.
+
+  20 Apr 2008; Petteri Räty <betelgeuse@gentoo.org>
+  json-simple-20080420.ebuild:
+  Add DEPEND on unzip.
+
+  20 Apr 2008; Petteri Räty <betelgeuse@gentoo.org>
+  files/extra-constructors-from-azureus.patch:
+  Remove CVS keywords from the patch.
+
+*json-simple-20080420 (20 Apr 2008)
+
+  20 Apr 2008; Petteri Räty <betelgeuse@gentoo.org> +files/build.xml,
+  +files/extra-constructors-from-azureus.patch, +metadata.xml,
+  +json-simple-20080420.ebuild:
+  Initial addition. Thanks to serkan for the original ebuild which was then
+  improved by me.
+

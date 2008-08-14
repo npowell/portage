@@ -1,0 +1,23 @@
+# ChangeLog for dev-java/excalibur-logger
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-java/excalibur-logger/ChangeLog,v 1.4 2007/11/20 05:27:33 ali_bush Exp $
+
+*excalibur-logger-2.1-r1 (20 Nov 2007)
+
+  20 Nov 2007; <alistair@gentoo.org> +excalibur-logger-2.1-r1.ebuild:
+  Bumping to support javamail virtual.
+
+  13 Apr 2007; Alistair John Bush <ali_bush@gentoo.org>
+  excalibur-logger-2.1.ebuild:
+  Added to ~amd64
+
+  26 Dec 2006; Petteri Räty <betelgeuse@gentoo.org>
+  excalibur-logger-2.1.ebuild:
+  Added missing dependencies.
+
+*excalibur-logger-2.1 (22 Dec 2006)
+
+  22 Dec 2006; Petteri Räty <betelgeuse@gentoo.org> +metadata.xml,
+  +excalibur-logger-2.1.ebuild:
+  Initial ebuild for bug #158497. Ebuild written by me.
+

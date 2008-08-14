@@ -1,0 +1,34 @@
+# ChangeLog for app-misc/irtrans-irserver
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/irtrans-irserver/ChangeLog,v 1.4 2008/08/10 18:53:31 hd_brummy Exp $
+
+*irtrans-irserver-5.11.10 (10 Aug 2008)
+
+  10 Aug 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/irtrans-irserver-5.11.08-arm_remotes-1.patch,
+  +irtrans-irserver-5.11.10.ebuild:
+  version bump, includes now arm support; thanks to M.Fetka on #232227
+
+*irtrans-irserver-5.9.07 (06 Dec 2007)
+
+  06 Dec 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  files/irtrans-server.initd, -irtrans-irserver-5.9.01.ebuild,
+  irtrans-irserver-5.9.04.ebuild, +irtrans-irserver-5.9.07.ebuild:
+  version bump, updated initscrit with provide lirc, tanks to M.Fetka on
+  #200224 ; clean up; fix quoting warnings to make repoman happy
+
+*irtrans-irserver-5.9.04 (26 Aug 2007)
+
+  26 Aug 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +irtrans-irserver-5.9.04.ebuild:
+  version bump, thanks to M.Fetka on bug 190278
+
+*irtrans-irserver-5.9.01 (16 Aug 2007)
+
+  16 Aug 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/irtrans-irserver-5.9.01-missing-include.diff,
+  +files/irtrans-server.confd, +files/irtrans-server.initd, +metadata.xml,
+  +irtrans-irserver-5.9.01.ebuild:
+  initial ebuild, thanks to M.Fetka ( proxied Maintainer ) and C.Heuchober on
+  bug #167434
+

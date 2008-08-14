@@ -1,0 +1,67 @@
+# ChangeLog for games-action/powermanga
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-action/powermanga/ChangeLog,v 1.15 2008/06/25 19:23:15 nixnut Exp $
+
+  25 Jun 2008; nixnut <nixnut@gentoo.org> powermanga-0.90.ebuild:
+  Stable on ppc wrt bug 229239
+
+  24 Jun 2008; Christian Faulhammer <opfer@gentoo.org>
+  powermanga-0.90.ebuild:
+  stable x86, bug 229239
+
+  24 Jun 2008; Santiago M. Mola <coldwind@gentoo.org>
+  powermanga-0.90.ebuild:
+  amd64 stable wrt bug #229239.
+
+*powermanga-0.90 (04 Sep 2007)
+
+  04 Sep 2007; Michael Sterrett <mr_bones_@gentoo.org>
+  +powermanga-0.90.ebuild:
+  version bump
+
+  20 Sep 2006; <blubb@gentoo.org> powermanga-0.80.ebuild:
+  stable on amd64
+
+  27 Apr 2006; Marien Zwart <marienz@gentoo.org>
+  files/digest-powermanga-0.79, files/digest-powermanga-0.80, Manifest:
+  Fixing SHA256 digest, pass four
+
+  13 Apr 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  -powermanga-0.78.ebuild, powermanga-0.79.ebuild, powermanga-0.80.ebuild:
+  Moved games_pkg_setup to the beginning of pkg_setup and removing older ebuilds.
+
+*powermanga-0.80 (03 Apr 2006)
+
+  03 Apr 2006; Michael Sterrett <mr_bones_@gentoo.org>
+  +powermanga-0.80.ebuild:
+  version bump
+
+  15 Mar 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  powermanga-0.78.ebuild, powermanga-0.79.ebuild:
+  Added check for mikmod USE flag on sdl-mixer and closing bug #126103.
+
+  12 Nov 2004; Simon Stelling <blubb@gentoo.org> powermanga-0.79.ebuild:
+  added ~amd64
+
+  07 Aug 2004; Michael Sterrett <mr_bones_@gentoo.org> powermanga-0.79.ebuild:
+  no need to install the Makefiles
+
+*powermanga-0.79 (03 Aug 2004)
+
+  03 Aug 2004; Michael Sterrett <mr_bones_@gentoo.org>
+  +powermanga-0.79.ebuild:
+  version bump
+
+  29 Jul 2003; Michael Sterrett <msterret@gentoo.org> powermanga-0.78.ebuild:
+  use the distribution site now that they're providing versioned releases.
+
+*powermanga-0.78 (29 Jul 2003)
+
+  29 Jul 2003; Michael Sterrett <msterret@gentoo.org> powermanga-0.78.ebuild:
+  version bump
+
+*powermanga-0.77 (03 Jul 2003)
+
+  03 Jul 2003; Michael Sterrett <msterret@gentoo.org> powermanga-0.77.ebuild:
+  Initial commit
+

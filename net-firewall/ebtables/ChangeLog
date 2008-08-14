@@ -1,0 +1,113 @@
+# ChangeLog for net-firewall/ebtables
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-firewall/ebtables/ChangeLog,v 1.24 2008/08/13 04:36:22 pva Exp $
+
+*ebtables-2.0.8.2-r1 (13 Aug 2008)
+
+  13 Aug 2008; Peter Volkov <pva@gentoo.org>
+  +files/ebtables-v2.0.8-2-LDFLAGS.diff,
+  +files/ebtables-v2.0.8-2-ethertype-DESTDIR-mkdir.patch,
+  +ebtables-2.0.8.2-r1.ebuild:
+  Fixed bug #233190, thank Suertreus for report. Also make ebtables respect
+  LDFLAGS.
+
+  11 May 2008; Peter Volkov <pva@gentoo.org>
+  -files/ebtables-2.0.8.1-fix-textrel.patch,
+  -files/ebtables-2.0.8.1-scripts-build.patch, -ebtables-2.0.8.1.ebuild,
+  ebtables-2.0.8.2.ebuild:
+  Removed useless postinst message, bug #221031 reported by Denilson.
+  Removed old ebuild.
+
+  02 Nov 2007; Lars Weiler <pylon@gentoo.org> ebtables-2.0.8.2.ebuild:
+  stable ppc, bug #197750
+
+  02 Nov 2007; Steve Dibb <beandog@gentoo.org> ebtables-2.0.8.2.ebuild:
+  amd64 stable
+
+  01 Nov 2007; Dawid Węgliński <cla@gentoo.org> ebtables-2.0.8.2.ebuild:
+  Stable on x86 (bug #197750)
+
+*ebtables-2.0.8.2 (28 Sep 2007)
+
+  28 Sep 2007; <pva@gentoo.org> -files/ebtables-2.0.6-gcc34.patch,
+  -files/ebtables-2.0.6-gcc4.patch, +files/ebtables-2.0.8.1-ebt-save.diff,
+  -files/README.gentoo.init, files/ebtables.confd, files/ebtables.initd,
+  -ebtables-2.0.6-r1.ebuild, -ebtables-2.0.8.1-r1.ebuild,
+  +ebtables-2.0.8.2.ebuild:
+  Version bump. Finally init script works, thank Lech Perczak <lech.perczak AT
+  multivision.pl>, bug #189315. Remove old.
+
+  10 Sep 2007; Markus Meier <maekke@gentoo.org> ebtables-2.0.8.1.ebuild:
+  stable on x86, wrt bug #191127
+
+  05 Sep 2007; Christoph Mende <angelos@gentoo.org> ebtables-2.0.8.1.ebuild:
+  Stable on amd64
+
+  03 Sep 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  ebtables-2.0.8.1.ebuild:
+  ppc stable, bug #191127
+
+*ebtables-2.0.8.1-r1 (02 Sep 2007)
+
+  02 Sep 2007; <pva@gentoo.org> +files/README.gentoo.init,
+  +files/ebtables.confd, +files/ebtables.initd, -ebtables-2.0.6.ebuild,
+  +ebtables-2.0.8.1-r1.ebuild:
+  Added init scripts into /usr/share/doc. See README.gentoo.init and bug
+  #189315 for details. Thank Lech Perczak <lech.perczak AT multivision.pl> for
+  report.
+
+*ebtables-2.0.8.1 (12 Aug 2007)
+
+  12 Aug 2007; <pva@gentoo.org> +files/ebtables-2.0.8.1-fix-textrel.patch,
+  +files/ebtables-2.0.8.1-scripts-build.patch, metadata.xml,
+  +ebtables-2.0.8.1.ebuild:
+  Version bump. Fixed bug #159371 and bug #167769. Thank Jochen Schlick,
+  Olivier Huber, Richard Benjamin Voigt and others mentioned in that bugs.
+
+  16 Jul 2007; <pva@gentoo.org> metadata.xml:
+  Grabed from solar.
+
+  25 Aug 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  ebtables-2.0.6-r1.ebuild:
+  Stable on amd64 and x86 wrt bug #142194.
+
+  31 Jul 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  ebtables-2.0.6-r1.ebuild:
+  ppc stable, bug #142194
+
+*ebtables-2.0.6-r1 (19 Jan 2006)
+
+  19 Jan 2006; <solar@gentoo.org> +files/ebtables-2.0.6-gcc4.patch,
+  +ebtables-2.0.6-r1.ebuild:
+  - ebtables-2.0.6 does not build with gcc-4.x; Bug #119489
+
+  07 Jun 2005; <solar@gentoo.org> ebtables-2.0.6.ebuild:
+  - ebtables used the host compiler vs the cross compiler while merging. We use
+  toolchain-funcs now
+
+  31 Dec 2004; Sven Wegener <swegener@gentoo.org> ebtables-2.0.6.ebuild:
+  Moved inherit to the top. Don't use variables in HOMEPAGE. Use MY_P.
+
+  11 Dec 2004; <solar@gentoo.org> ebtables-2.0.6.ebuild:
+  stable on x86
+
+  24 Jul 2004; <solar@gentoo.org> ebtables-2.0.6.ebuild:
+  update for ebtables -p support. bug 58116. Reported by Andrej Kacian
+
+  19 Jul 2004; Travis Tilley <lv@gentoo.org>
+  +files/ebtables-2.0.6-gcc34.patch, ebtables-2.0.6.ebuild:
+  added 'inherit eutils', fixed compiling with gcc 3.4, and added ~amd64 keyword
+
+  01 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  ebtables-2.0.6.ebuild:
+  virtual/glibc -> virtual/libc
+
+  19 Jun 2004; David Holm <dholm@gentoo.org> ebtables-2.0.6.ebuild:
+  Added to ~ppc.
+
+*ebtables-2.0.6 (28 Feb 2004)
+
+  28 Feb 2004; <solar@gentoo.org> ebtables-2.0.6.ebuild, metadata.xml:
+  initial import into portage of the ebtable utility that enables basic ethernet
+  frame filtering on a bridge, MAC NAT and brouting.
+

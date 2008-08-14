@@ -1,0 +1,35 @@
+# ChangeLog for app-misc/geneweb
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/geneweb/ChangeLog,v 1.6 2008/07/31 16:14:27 ulm Exp $
+
+  31 Jul 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
+  Add USE flag description to metadata wrt GLEP 56.
+
+  25 Apr 2008; Tupone Alfredo <tupone@gentoo.org> geneweb-5.01-r1.ebuild:
+  Do not try to remove . and .. directories
+
+*geneweb-5.01-r1 (23 Apr 2008)
+
+  23 Apr 2008; <atupone@gentoo.org> files/geneweb-5.01-gentoo.patch,
+  +geneweb-5.01-r1.ebuild:
+  Respect nostrip
+  Add additional gwc2, contrib/gwdiff.
+  Put html doc in the appropriate place
+
+*geneweb-5.01 (03 Jan 2008)
+
+  03 Jan 2008; Tupone Alfredo <tupone@gentoo.org>
+  +files/geneweb-5.01-gentoo.patch, +geneweb-5.01.ebuild:
+  Version bump to 5.01 plus optional ocamlopt support.
+  Bug #204110 by Alexis Ballier <aballier@gentoo.org>
+
+  26 Aug 2007; Tupone Alfredo <tupone@gentoo.org> geneweb-5.00.ebuild:
+  Added ~x86 keyword
+
+*geneweb-5.00 (18 Aug 2007)
+
+  18 Aug 2007; Tupone Alfredo <tupone@gentoo.org>
+  +files/geneweb-5.00-gentoo.patch, +files/geneweb.confd,
+  +files/geneweb.initd, +metadata.xml, +geneweb-5.00.ebuild:
+  New ebuild. Based on bug #22239 by David Grant
+

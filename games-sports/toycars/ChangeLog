@@ -1,0 +1,46 @@
+# ChangeLog for games-sports/toycars
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-sports/toycars/ChangeLog,v 1.10 2008/01/01 20:08:38 nyhm Exp $
+
+*toycars-0.3.5 (01 Jan 2008)
+
+  01 Jan 2008; Tristan Heaven <nyhm@gentoo.org>
+  +files/toycars-0.3.5-asneeded.patch, +files/toycars-0.3.5-assert.patch,
+  +files/toycars-0.3.5-datadir.patch, +files/toycars-0.3.5-fmod.patch,
+  +toycars-0.3.5.ebuild:
+  Version bump, bug #203790
+
+*toycars-0.3.4 (08 Nov 2007)
+
+  08 Nov 2007; Tupone Alfredo <tupone@gentoo.org>
+  +files/toycars-0.3.4-asneeded.patch, +files/toycars-0.3.4-gentoo.patch,
+  +toycars-0.3.4.ebuild:
+  Version bump. Bug #197995 by Samuli Suominen
+
+*toycars-0.3.3 (22 May 2007)
+
+  22 May 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/toycars-0.3.3-asneeded.patch, +toycars-0.3.3.ebuild:
+  Version bump
+
+  04 Apr 2007; Samuli Suominen <drac@gentoo.org>
+  files/toycars-0.3.2-asneeded.patch:
+  Fix asneeded patch, after resurrecting this package it had size 0 bytes.
+
+  02 Apr 2007; <tupone@gentoo.org> +files/toycars-0.3.2-asneeded.patch,
+  +metadata.xml, +toycars-0.3.2.ebuild:
+  Resurrecting, as there is a verbal permission to use the music on this game
+  See bug #116905
+
+  26 Mar 2007; Samuli Suominen <drac@gentoo.org>
+  +files/toycars-0.3.2-asneeded.patch, toycars-0.3.2.ebuild:
+  Fix linking with -Wl,--as-needed.
+
+  26 Mar 2007; <tupone@gentoo.org> toycars-0.3.2.ebuild:
+  Added keyword ~x86. Bug #172262 by Will Briggs
+
+*toycars-0.3.2 (25 Mar 2007)
+
+  25 Mar 2007; <tupone@gentoo.org> +metadata.xml, +toycars-0.3.2.ebuild:
+  New package, requested by roma1390 with bug #116905
+

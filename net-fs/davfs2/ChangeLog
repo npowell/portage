@@ -1,0 +1,211 @@
+# ChangeLog for net-fs/davfs2
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-fs/davfs2/ChangeLog,v 1.37 2008/04/05 09:56:02 genstef Exp $
+
+*davfs2-1.3.0 (05 Apr 2008)
+
+  05 Apr 2008; Stefan Schweizer <genstef@gentoo.org>
+  +files/davfs2-neon-0.28.patch, +davfs2-1.3.0.ebuild:
+  Version bump, bug 214497, also fix mounting in nobody's home, bug 156591
+
+*davfs2-1.2.2 (08 Aug 2007)
+
+  08 Aug 2007; Stefan Schweizer <genstef@gentoo.org> +davfs2-1.2.2.ebuild:
+  version bump thanks to Tero Pelander <tpeland@tkukoulu.fi> in bug 185493
+
+  25 Mar 2007; Raúl Porcel <armin76@gentoo.org> davfs2-1.1.4.ebuild:
+  x86 stable wrt bug 172120
+
+  25 Mar 2007; Tobias Scherbaum <dertobi123@gentoo.org> davfs2-1.1.4.ebuild:
+  Stable on ppc wrt bug #172120.
+
+*davfs2-1.1.4 (06 Feb 2007)
+
+  06 Feb 2007; <genstef@gentoo.org> +davfs2-1.1.4.ebuild:
+  Version bump fixing bug 164165 and 154837
+
+*davfs2-1.1.3-r1 (01 Dec 2006)
+
+  01 Dec 2006; Stefan Schweizer <genstef@gentoo.org>
+  +files/davfs2-nobody.diff, +davfs2-1.1.3-r1.ebuild:
+  Add patch to fix mounting in nobodies home, /, thanks to Maik Nijhuis
+  <maik@cs.vu.nl> in bug 156591
+
+*davfs2-1.1.3 (14 Nov 2006)
+
+  14 Nov 2006; Stefan Schweizer <genstef@gentoo.org> +davfs2-1.1.3.ebuild:
+  Version bump thanks to toto <toto@darkside.tomsk.ru> in bug 155143
+
+*davfs2-1.1.1 (04 Oct 2006)
+
+  04 Oct 2006; Stefan Schweizer <genstef@gentoo.org>
+  -files/davfs2-cvs1.0.2-badpointer.patch, -davfs2-1.0.2_p20060820.ebuild,
+  -davfs2-1.0.2_p20060820-r1.ebuild, +davfs2-1.1.1.ebuild:
+  Version bump thanks to Toralf Förster <toralf.foerster@gmx.de>
+
+*davfs2-1.0.2_p20060820-r1 (22 Sep 2006)
+
+  22 Sep 2006; Stefan Schweizer <genstef@gentoo.org>
+  +files/davfs2-cvs1.0.2-badpointer.patch,
+  +davfs2-1.0.2_p20060820-r1.ebuild:
+  Add patch to fix some bugs thanks to Butchie <butchie@free.fr> in bug 148566
+
+*davfs2-1.0.2_p20060820 (22 Aug 2006)
+
+  22 Aug 2006; Stefan Schweizer <genstef@gentoo.org>
+  +davfs2-1.0.2_p20060820.ebuild:
+  version bump fixing the neon-0.26 bug 139324, thanks to Toralf Förster
+  <toralf.foerster@gmx.de>
+
+  05 Jul 2006; Stefan Schweizer <genstef@gentoo.org> davfs2-0.2.8.ebuild:
+  DEPEND on <neon-0.26, waiting for upstream to port it. Thanks to Armando Di
+  Cianno <armando@goodship.net> in bug 139324
+
+  25 Jun 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  -files/include-compiler.patch, -files/makefile_0.2.7.patch,
+  -davfs2-0.2.4-r1.ebuild, -davfs2-0.2.4-r2.ebuild, -davfs2-0.2.7.ebuild,
+  davfs2-0.2.8.ebuild:
+  ppc stable, #105264. Housekeeping.
+
+  25 Jun 2006; Stefan Schweizer <genstef@gentoo.org> davfs2-0.2.8.ebuild:
+  RESTRICT="test", because the test can fail thanks to Tobias Scherbaum
+  <dertobi123@gentoo.org> in bug 105264
+
+  23 Jun 2006; Chris Gianelloni <wolf31o2@gentoo.org> davfs2-0.2.8.ebuild:
+  Stable on x86 wrt bug #105264.
+
+  23 Jun 2006; Simon Stelling <blubb@gentoo.org> davfs2-0.2.8.ebuild:
+  readding ~amd64 per bug 119877
+
+  14 Jun 2006; Stefan Schweizer <genstef@gentoo.org> davfs2-0.2.8.ebuild:
+  inherit linux-mod.eclass instead of doing it manually
+
+  13 Jun 2006; Roy Marples <uberlord@gentoo.org> davfs2-0.2.4-r1.ebuild,
+  davfs2-0.2.4-r2.ebuild, davfs2-0.2.7.ebuild, davfs2-0.2.8.ebuild:
+  Change update-modules to modules-update and respect ${ROOT}
+
+*davfs2-0.2.8 (14 Mar 2006)
+
+  14 Mar 2006; Stefan Schweizer <genstef@gentoo.org> +davfs2-0.2.8.ebuild:
+  Version Bump thanks to toto <toto@darkside.tomsk.ru> in bug 126136
+
+  17 Feb 2006; Joseph Jezak <josejx@gentoo.org> davfs2-0.2.4-r1.ebuild:
+  Marked ppc stable for bug #121606.
+
+*davfs2-0.2.7 (06 Feb 2006)
+
+  06 Feb 2006; Stefan Schweizer <genstef@gentoo.org>
+  +files/makefile_0.2.7.patch, davfs2-0.2.4-r1.ebuild,
+  davfs2-0.2.4-r2.ebuild, +davfs2-0.2.7.ebuild:
+  Change depend to <neon-0.25 #121804 thanks to Alexander Jenisch
+  <nt-@gmx.de>, version bump #119877 thanks to Sascha (kn0rki) Hoppe
+  <Vipklick@gmx.de> dropping amd64 patch and keyword for now.
+
+*davfs2-0.2.4-r2 (08 Oct 2005)
+
+  08 Oct 2005; Stefan Schweizer <genstef@gentoo.org>
+  +davfs2-0.2.4-r2.ebuild:
+  Fixing einstall paths thanks to Oliver Kastler <1730@gmx.net> in bug 105264
+
+  09 Sep 2005; Stefan Schweizer <genstef@gentoo.org> davfs2-0.2.4-r1.ebuild:
+  Adding \!CODA_OLD_API check thanks to Hans-Christian Armingeon
+  <mog.johnny@gmx.net>, Maurice van der Pot <griffon26@gentoo.org> and
+  Hans-Christian Armingeon <mog.johnny@gmx.net> in bug 100847
+
+  21 Aug 2005; Stefan Schweizer <genstef@gentoo.org>
+  -files/davfs2.nokernelsrc.patch, files/include-compiler.patch,
+  -files/include_compiler.patch, -davfs2-0.2.3-r1.ebuild,
+  -davfs2-0.2.4.ebuild:
+  Fix amd64 compile thanks to Marc <marcpg@gmx.de> in bug 102357, remove old
+  ebuilds
+
+*davfs2-0.2.4-r1 (20 Aug 2005)
+
+  20 Aug 2005; Stefan Schweizer <genstef@gentoo.org>
+  +davfs2-0.2.4-r1.ebuild:
+  Fix some installation problems thanks to Alexander Skwar
+  <askwar@digitalprojects.com> in bug 102522 and Michael Mauch
+  <michael.mauch@gmx.de> in bug 102440
+
+*davfs2-0.2.4 (18 Jul 2005)
+
+  18 Jul 2005; Stefan Schweizer <genstef@gentoo.org>
+  +files/include-compiler.patch, +davfs2-0.2.4.ebuild:
+  Version Bump, contains security fix bug 94071
+
+  12 Jul 2005; Simon Stelling <blubb@gentoo.org>
+  +files/include_compiler.patch, davfs2-0.2.3-r1.ebuild:
+  fix bug 81507 and keyword ~amd64
+
+  11 Jul 2005; Stefan Schweizer <genstef@gentoo.org> davfs2-0.2.3-r1.ebuild:
+  Fixing bug 96901 by making the patch conditional (only 2.4 kernel) thanks to
+  Michal Januszewski <spock@gentoo.org> and Stuart Grimshaw
+  <stuart.gentoo@smgsystems.co.uk>
+
+  17 May 2005; Stefan Schweizer <genstef@gentoo.org> davfs2-0.2.3-r1.ebuild:
+  More verbose message thanks to R. May <Tinitus1@onlinehome.de> in bug 92876
+
+  26 Jan 2005; Stefan Schweizer <genstef@gentoo.org>
+  -files/davfs2-0.2.2-pid.patch, -davfs2-0.2.1.ebuild,
+  -davfs2-0.2.2-r1.ebuild, -davfs2-0.2.2.ebuild, davfs2-0.2.3-r1.ebuild:
+  0.2.3-r1 x86 stable, conversion to linux-mod, old ebuild clean-out
+
+*davfs2-0.2.3-r1 (15 Dec 2004)
+
+  15 Dec 2004; Stefan Schweizer <genstef@gentoo.org>
+  +davfs2-0.2.3-r1.ebuild, -davfs2-0.2.3.ebuild:
+  Fixing nondebug build thanks to Joshua Schmidlkofer <menion@asylumwear.com>
+  in bug 74345
+
+  27 Nov 2004; Stefan Schweizer <genstef@gentoo.org> davfs2-0.2.3.ebuild:
+  Adding debug use flag and modules.d file for autoloading the module on demand
+
+  27 Nov 2004; Stefan Schweizer <genstef@gentoo.org>
+  +files/davfs2.nokernelsrc.patch, davfs2-0.2.3.ebuild:
+  Kernel header fix, closes bug 62502, thank2 to Tobias Klauser
+  <tklauser@nuerscht.ch>
+
+*davfs2-0.2.3 (24 Nov 2004)
+
+  24 Nov 2004; Stefan Schweizer <genstef@gentoo.org> +metadata.xml,
+  +davfs2-0.2.3.ebuild:
+  Version bump, closes bug 70692 thanks to Tobias Klauser
+  <tklauser@nuerscht.ch> and Sascha (kn0rki) Hoppe <Vipklick@gmx.de>
+
+  09 Nov 2004; Maurice van der Pot <griffon26@gentoo.org>
+  davfs2-0.2.2-r1.ebuild:
+  Marked stable on x86, closing bug #69149.
+
+*davfs2-0.2.2-r1 (03 Nov 2004)
+
+  03 Nov 2004; <solar@gentoo.org> +files/davfs2-0.2.2-pid.patch,
+  +davfs2-0.2.2-r1.ebuild:
+  security bump
+
+  05 Sep 2004; Sven Wegener <swegener@gentoo.org> :
+  Fixed ChangeLog header.
+
+*davfs2-0.2.1 (15 Aug 2004)
+
+  15 Aug 2004; Stuart Herbert <stuart@gentoo.org> +davfs2-0.2.1.ebuild,
+  +davfs2-0.2.2.ebuild:
+  Moved from net-www/davfs2 to net-fs/davfs2.
+
+  03 Jun 2004; David Holm <dholm@gentoo.org> davfs2-0.2.2.ebuild:
+  Added to ~ppc.
+
+*davfs2-0.2.2 (01 Jun 2004)
+
+  01 Jun 2004; Martin Holzer <mholzer@gentoo.org> davfs2-0.2.1.ebuild,
+  davfs2-0.2.2.ebuild:
+  Version bumed. Closes 51166
+
+  11 Oct 2003; Martin Holzer <mholzer@gentoo.org> davfs2-0.2.1.ebuild:
+  Added ssl with IUSE. Closes #25165.
+
+*davfs2-0.2.1 (17 Apr 2003)
+
+  17 Apr 2003; Seth Chandler <sethbc@gentoo.org>; Manifest,
+  davfs2-0.2.1.ebuild:
+  initial import courtesy of me =)
+

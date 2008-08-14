@@ -1,0 +1,21 @@
+# ChangeLog for dev-tinyos/ncc
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-tinyos/ncc/ChangeLog,v 1.4 2007/03/05 22:35:58 sanchan Exp $
+
+  05 Mar 2007; Sandro Bonazzola <sanchan@gentoo.org> ChangeLog:
+  Removing myself from metadata.xml as I'm stepping back.
+
+  14 Nov 2006; Sandro Bonazzola <sanchan@gentoo.org> ncc-1.1.15.ebuild:
+  Keywording ~amd64.
+
+  13 Mar 2006; Sandro Bonazzola <sanchan@gentoo.org> metadata.xml,
+  ncc-1.1.15.ebuild:
+  Fix missing IUSE, thanks to Daniel Ahlberg for gentoo.tampered.net.
+
+*ncc-1.1.15 (22 Jan 2006)
+
+  22 Jan 2006; Sandro Bonazzola <sanchan@gentoo.org> +metadata.xml,
+  +ncc-1.1.15.ebuild:
+  New ebuild, thanks to Aurélien Francillon and Daniel Black.
+  Close bug #98400.
+

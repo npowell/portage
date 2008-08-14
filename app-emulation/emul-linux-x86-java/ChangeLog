@@ -1,0 +1,323 @@
+# ChangeLog for app-emulation/emul-linux-x86-java
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/emul-linux-x86-java/ChangeLog,v 1.58 2008/07/12 21:41:57 ken69267 Exp $
+
+  12 Jul 2008; Kenneth Prugh <ken69267@gentoo.org>
+  emul-linux-x86-java-1.4.2.18.ebuild, emul-linux-x86-java-1.5.0.16.ebuild,
+  emul-linux-x86-java-1.6.0.07.ebuild:
+  amd64 stable, bug #231337
+
+*emul-linux-x86-java-1.4.2.18 (09 Jul 2008)
+
+  09 Jul 2008; Petteri Räty <betelgeuse@gentoo.org>
+  +emul-linux-x86-java-1.4.2.18.ebuild:
+  Version bump.
+
+*emul-linux-x86-java-1.6.0.07 (09 Jul 2008)
+*emul-linux-x86-java-1.5.0.16 (09 Jul 2008)
+
+  09 Jul 2008; Serkan Kaba <serkan@gentoo.org>
+  emul-linux-x86-java-1.5.0.15.ebuild, +emul-linux-x86-java-1.5.0.16.ebuild,
+  emul-linux-x86-java-1.6.0.05.ebuild, +emul-linux-x86-java-1.6.0.07.ebuild:
+  Version bump. Fix quoting.
+
+  22 May 2008; Markus Meier <maekke@gentoo.org>
+  emul-linux-x86-java-1.6.0.06.ebuild:
+  amd64 stable, bug #222311
+
+  17 May 2008; Petteri Räty <betelgeuse@gentoo.org>
+  emul-linux-x86-java-1.4.2.17.ebuild:
+  Update download url because of changes in Sun download center. Fixes bug
+  #220375.
+
+  19 Apr 2008; Vlastimil Babka <caster@gentoo.org>
+  emul-linux-x86-java-1.5.0.15.ebuild, emul-linux-x86-java-1.6.0.06.ebuild:
+  Install revdep-rebuild mask file - bug #177925.
+
+*emul-linux-x86-java-1.6.0.06 (19 Apr 2008)
+
+  19 Apr 2008; Vlastimil Babka <caster@gentoo.org>
+  +emul-linux-x86-java-1.6.0.06.ebuild:
+  Version bump.
+
+  28 Mar 2008; Vlastimil Babka <caster@gentoo.org>
+  emul-linux-x86-java-1.5.0.15.ebuild,
+  emul-linux-x86-java-1.6.0.05-r1.ebuild:
+  Fix CDS generation on hardened, bug #215225.
+
+*emul-linux-x86-java-1.6.0.05-r1 (27 Mar 2008)
+
+  27 Mar 2008; Vlastimil Babka <caster@gentoo.org> files/construct-1.6.sh,
+  files/construct.sh, -files/javasettings_Linux_x86.xml,
+  -emul-linux-x86-java-1.4.2.16.ebuild,
+  -emul-linux-x86-java-1.5.0.13.ebuild, emul-linux-x86-java-1.5.0.15.ebuild,
+  -emul-linux-x86-java-1.6.0.03.ebuild,
+  -emul-linux-x86-java-1.6.0.04.ebuild,
+  +emul-linux-x86-java-1.6.0.05-r1.ebuild:
+  Remove vulnerable versions. Create Class Data Sharing archive also for
+  server VM in 1.6, bug #207282.
+
+  27 Mar 2008; Markus Meier <maekke@gentoo.org>
+  emul-linux-x86-java-1.5.0.15.ebuild, emul-linux-x86-java-1.6.0.05.ebuild:
+  amd64 stable, security bug #212425
+
+*emul-linux-x86-java-1.6.0.05 (26 Mar 2008)
+*emul-linux-x86-java-1.5.0.15 (26 Mar 2008)
+
+  26 Mar 2008; Vlastimil Babka <caster@gentoo.org>
+  +emul-linux-x86-java-1.5.0.15.ebuild,
+  +emul-linux-x86-java-1.6.0.05.ebuild:
+  Version bump, security bug #212425.
+
+  20 Mar 2008; Peter Volkov <pva@gentoo.org>
+  emul-linux-x86-java-1.4.2.17.ebuild:
+  amd64 stable, security bug #212425.
+
+*emul-linux-x86-java-1.4.2.17 (05 Mar 2008)
+
+  05 Mar 2008; Vlastimil Babka <caster@gentoo.org>
+  +emul-linux-x86-java-1.4.2.17.ebuild:
+  Version bump, security bug #212425.
+
+  08 Dec 2007; Petteri Räty <betelgeuse@gentoo.org>
+  emul-linux-x86-java-1.6.0.03.ebuild:
+  Add dependency on app-emulation/emul-linux-x86-compat for Java Web Start.
+
+  08 Nov 2007; Vlastimil Babka <caster@gentoo.org>
+  -files/emul-linux-x86-java-1.4.2.env,
+  -emul-linux-x86-java-1.4.2.03-r2.ebuild:
+  Removing vulnerable blackdown-based version.
+
+  06 Nov 2007; Chris Gianelloni <wolf31o2@gentoo.org>
+  emul-linux-x86-java-1.4.2.16.ebuild:
+  Stable on amd64 wrt bug #178962.
+
+*emul-linux-x86-java-1.4.2.16 (03 Nov 2007)
+
+  03 Nov 2007; Vlastimil Babka <caster@gentoo.org>
+  +files/emul-linux-x86-java-1.4.env, +emul-linux-x86-java-1.4.2.16.ebuild,
+  -emul-linux-x86-java-1.5.0.12.ebuild,
+  -emul-linux-x86-java-1.6.0.02.ebuild:
+  Version bump, security bug #178962 use Sun JRE instead of blackdown, change
+  slot from 1.4.2 to 1.4 to follow sun-jre-bin. Cleanup unused versions.
+
+  12 Oct 2007; William L. Thomson Jr. <wltjr@gentoo.org>
+  emul-linux-x86-java-1.4.2.03-r2.ebuild,
+  emul-linux-x86-java-1.5.0.13.ebuild, emul-linux-x86-java-1.6.0.03.ebuild:
+  amd64 stable, bug #194711. Added quotes, still missing from older soon to be
+  removed versions.
+
+*emul-linux-x86-java-1.6.0.03 (04 Oct 2007)
+*emul-linux-x86-java-1.5.0.13 (04 Oct 2007)
+
+  04 Oct 2007; Petteri Räty <betelgeuse@gentoo.org>
+  +emul-linux-x86-java-1.5.0.13.ebuild,
+  +emul-linux-x86-java-1.6.0.03.ebuild:
+  Version bump for bug #194699.
+
+  17 Aug 2007; Petteri Räty <betelgeuse@gentoo.org>
+  -emul-linux-x86-java-1.5.0.11.ebuild, -emul-linux-x86-java-1.6.0.ebuild,
+  -emul-linux-x86-java-1.6.0-r1.ebuild,
+  -emul-linux-x86-java-1.6.0.01.ebuild:
+  Delete old versions/revisions.
+
+  17 Aug 2007; Petteri Räty <betelgeuse@gentoo.org>
+  emul-linux-x86-java-1.6.0.02.ebuild:
+  Fix HOMEPAGE for bug #188972.
+
+  22 Jul 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  emul-linux-x86-java-1.5.0.12.ebuild, emul-linux-x86-java-1.6.0.02.ebuild:
+  Marked stable on amd64 as per bug 185256.
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  emul-linux-x86-java-1.5.0.11.ebuild, emul-linux-x86-java-1.5.0.12.ebuild,
+  emul-linux-x86-java-1.6.0.ebuild, emul-linux-x86-java-1.6.0-r1.ebuild,
+  emul-linux-x86-java-1.6.0.01.ebuild, emul-linux-x86-java-1.6.0.02.ebuild:
+  Drop virtual/x11 references.
+
+  22 Jul 2007; David Shakaryan <omp@gentoo.org>
+  emul-linux-x86-java-1.5.0.11.ebuild, emul-linux-x86-java-1.6.0.ebuild,
+  emul-linux-x86-java-1.6.0-r1.ebuild:
+  Remove virtual/x11 from dependencies.
+
+  12 Jul 2007; Petteri Räty <betelgeuse@gentoo.org> metadata.xml:
+  Remove herbs from metadata.xml as in reality this has been maintained by us
+  Java folks.
+
+*emul-linux-x86-java-1.6.0.02 (12 Jul 2007)
+
+  12 Jul 2007; Petteri Räty <betelgeuse@gentoo.org>
+  +emul-linux-x86-java-1.6.0.02.ebuild:
+  Version bump for bug #184407.
+
+  02 Jul 2007; Piotr Jaroszyński <peper@gentoo.org>
+  emul-linux-x86-java-1.4.2.03-r2.ebuild,
+  emul-linux-x86-java-1.5.0.11.ebuild, emul-linux-x86-java-1.5.0.12.ebuild,
+  emul-linux-x86-java-1.6.0.ebuild, emul-linux-x86-java-1.6.0-r1.ebuild,
+  emul-linux-x86-java-1.6.0.01.ebuild:
+  (QA) RESTRICT clean up.
+
+  25 Jun 2007; Christoph Mende <angelos@gentoo.org>
+  emul-linux-x86-java-1.6.0.01.ebuild:
+  Stable on amd64 wrt bug 177842
+
+*emul-linux-x86-java-1.5.0.12 (11 Jun 2007)
+
+  11 Jun 2007; Petteri Räty <betelgeuse@gentoo.org>
+  +emul-linux-x86-java-1.5.0.12.ebuild:
+  Version bump slot 1.5. Ebuild now uses pax-utils.eclass and depends on
+  emul-linux-x86- packages instead of the normal ones.
+
+*emul-linux-x86-java-1.6.0.01 (02 Jun 2007)
+
+  02 Jun 2007; Petteri Räty <betelgeuse@gentoo.org>
+  +emul-linux-x86-java-1.6.0.01.ebuild, -emul-linux-x86-java-1.6.0.1.ebuild:
+  Versioned it wrong. It should be 1.6.0.01.
+
+  02 Jun 2007; Petteri Räty <betelgeuse@gentoo.org>
+  files/emul-linux-x86-java-1.6.env:
+  Sync env file with sun-jre-bin-1.6.0.1
+
+*emul-linux-x86-java-1.6.0.1 (02 Jun 2007)
+
+  02 Jun 2007; Petteri Räty <betelgeuse@gentoo.org>
+  +emul-linux-x86-java-1.6.0.1.ebuild:
+  Version bump. Fixes security bug #178851. Depend on the emul-linux
+  packages instead of the 64 bit packages for alsa and xlibs.
+
+  14 May 2007; Vlastimil Babka <caster@gentoo.org>
+  -emul-linux-x86-java-1.5.0.10.ebuild:
+  Remove vulnerable version.
+
+  11 May 2007; Steve Dibb <beandog@gentoo.org>
+  emul-linux-x86-java-1.5.0.11.ebuild:
+  amd64 stable, security bug 176675
+
+*emul-linux-x86-java-1.6.0-r1 (09 May 2007)
+
+  09 May 2007; Petteri Räty <betelgeuse@gentoo.org>
+  +emul-linux-x86-java-1.6.0-r1.ebuild:
+  Use pax-utils.eclass and use m instead of pemsv as the chpax flags.
+
+  07 May 2007; Petteri Räty <betelgeuse@gentoo.org>
+  emul-linux-x86-java-1.4.2.03-r2.ebuild:
+  Call java-vm-2_pkg_setup in pkg_setup.
+
+  07 Mar 2007; Chris Gianelloni <wolf31o2@gentoo.org>
+  emul-linux-x86-java-1.4.2.03-r2.ebuild,
+  emul-linux-x86-java-1.5.0.10.ebuild, emul-linux-x86-java-1.5.0.11.ebuild,
+  emul-linux-x86-java-1.6.0.ebuild:
+  Change all instances of [ to [[.
+
+*emul-linux-x86-java-1.5.0.11 (11 Feb 2007)
+
+  11 Feb 2007; Simon Stelling <blubb@gentoo.org>
+  +emul-linux-x86-java-1.5.0.11.ebuild:
+  version bump; bug 166305
+
+  11 Feb 2007; Simon Stelling <blubb@gentoo.org>
+  emul-linux-x86-java-1.6.0.ebuild:
+  TEXTREL stuff; bug 164456
+
+  10 Feb 2007; Joshua Nichols <nichoj@gentoo.org>
+  -emul-linux-x86-java-1.4.2.03-r1.ebuild,
+  -emul-linux-x86-java-1.5.0.08.ebuild:
+  Pruned old revisions with same keywords.
+
+  03 Feb 2007; Steve Dibb <beandog@gentoo.org> metadata.xml,
+  emul-linux-x86-java-1.5.0.10.ebuild:
+  amd64 stable, security bug 159547
+
+  26 Jan 2007; Vlastimil Babka <caster@gentoo.org>
+  files/digest-emul-linux-x86-java-1.4.2.03-r1,
+  files/digest-emul-linux-x86-java-1.4.2.03-r2, Manifest:
+  Fix digests.
+
+*emul-linux-x86-java-1.6.0 (26 Jan 2007)
+
+  26 Jan 2007; William L. Thomson Jr. <wltjr@gentoo.org>
+  +files/emul-linux-x86-java-1.6.env, +files/construct-1.6.sh,
+  files/construct.sh, +emul-linux-x86-java-1.6.0.ebuild:
+  Added 1.6.0 version of emul package, providing a 1.6 plugin for amd64
+
+*emul-linux-x86-java-1.5.0.10 (26 Jan 2007)
+
+  26 Jan 2007; William L. Thomson Jr. <wltjr@gentoo.org>
+  +emul-linux-x86-java-1.5.0.10.ebuild:
+  Bumping 1.5 package per GSLA# 200701-15 and CERT# TA07-022A. Just changed
+  package name from .08
+
+  23 Jan 2007; Vlastimil Babka <caster@gentoo.org> files/construct.sh:
+  Fix construct.sh to write into  instead of /tmp/ for bug #159547.
+
+  23 Jan 2007; Steve Dibb <beandog@gentoo.org>
+  emul-linux-x86-java-1.4.2.03-r2.ebuild,
+  emul-linux-x86-java-1.5.0.08.ebuild:
+  amd64 stable, bugs 151705, 159547
+
+*emul-linux-x86-java-1.5.0.08 (15 Sep 2006)
+
+  15 Sep 2006; Joshua Nichols <nichoj@gentoo.org>
+  +files/emul-linux-x86-java-1.5.env, +files/construct.sh,
+  +emul-linux-x86-java-1.5.0.08.ebuild:
+  Version bump using sun-jre-bin-1.5.0.08 as a template. See bug #116981.
+
+*emul-linux-x86-java-1.4.2.03-r2 (12 Sep 2006)
+
+  12 Sep 2006; Joshua Nichols <nichoj@gentoo.org>
+  +files/emul-linux-x86-java-1.4.2.env,
+  +emul-linux-x86-java-1.4.2.03-r2.ebuild:
+  Revision bump to support the new Java system.
+
+  17 Mar 2006; Herbie Hopkins <herbs@gentoo.org>
+  -emul-linux-x86-java-1.4.2.02.ebuild,
+  -emul-linux-x86-java-1.4.2.03.ebuild:
+  Prune old versions
+
+  09 Mar 2006; Diego Pettenò <flameeyes@gentoo.org>
+  emul-linux-x86-java-1.4.2.02.ebuild, emul-linux-x86-java-1.4.2.03.ebuild,
+  emul-linux-x86-java-1.4.2.03-r1.ebuild:
+  Use nostrip instead of strip restriction for compatibility with older portage.
+
+  09 Mar 2006; Diego Pettenò <flameeyes@gentoo.org>
+  emul-linux-x86-java-1.4.2.02.ebuild, emul-linux-x86-java-1.4.2.03.ebuild,
+  emul-linux-x86-java-1.4.2.03-r1.ebuild:
+  Add strip restriction, as the binaries are already stripped.
+
+  12 Feb 2006; Simon Stelling <blubb@gentoo.org>
+  emul-linux-x86-java-1.4.2.03-r1.ebuild:
+  minor code cleanup:
+  	* move ABI=x86 to pkg_setup
+  	* `dirname $i`/`basename $i .jar` -> ${i%.jar}
+
+  19 Jan 2006; Marcus D. Hanwell <cryos@gentoo.org>
+  emul-linux-x86-java-1.4.2.03-r1.ebuild:
+  Stable on amd64, little early as discussed on IRC.
+
+*emul-linux-x86-java-1.4.2.03-r1 (17 Jan 2006)
+
+  17 Jan 2006; Herbie Hopkins <herbs@gentoo.org>
+  +emul-linux-x86-java-1.4.2.03-r1.ebuild:
+  Also install javaws subdirectory, bug 118634
+
+*emul-linux-x86-java-1.4.2.03 (07 Jan 2006)
+
+  07 Jan 2006; Simon Stelling <blubb@gentoo.org>
+  +emul-linux-x86-java-1.4.2.03.ebuild:
+  Version bump wrt security bug 118194
+
+  11 Dec 2005; Herbie Hopkins <herbs@gentoo.org>
+  emul-linux-x86-java-1.4.2.02.ebuild:
+  Fix RDEPEND, closing bug #115068.
+
+  08 Dec 2005; Herbie Hopkins <herbs@gentoo.org>
+  emul-linux-x86-java-1.4.2.02.ebuild:
+  Don't provide virtual/jre.
+
+*emul-linux-x86-java-1.4.2.02 (08 Dec 2005)
+
+  08 Dec 2005; Herbie Hopkins <herbs@gentoo.org>
+  +files/javasettings_Linux_x86.xml, +metadata.xml,
+  +emul-linux-x86-java-1.4.2.02.ebuild:
+  Initial release, largely based on blackdown-jre ebuild.
+

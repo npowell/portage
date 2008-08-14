@@ -1,0 +1,119 @@
+# ChangeLog for media-video/smplayer
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/smplayer/ChangeLog,v 1.28 2008/06/16 19:24:19 yngwin Exp $
+
+  16 Jun 2008; Ben de Groot <yngwin@gentoo.org> smplayer-0.6.0.ebuild,
+  smplayer-0.6.1.ebuild:
+  Re-added check for qt3support, as this is apparently still needed. Bug
+  227619.
+
+  16 Jun 2008; Peter Volkov <pva@gentoo.org> smplayer-0.6.0.ebuild:
+  amd64 stable, bug #224795
+
+  16 Jun 2008; Jeroen Roovers <jer@gentoo.org> smplayer-0.6.0.ebuild:
+  Stable for HPPA (bug #224795).
+
+  05 Jun 2008; Tobias Klausmann <klausman@gentoo.org> smplayer-0.6.0.ebuild:
+  Stable on alpha, bug #224795
+
+  04 Jun 2008; Raúl Porcel <armin76@gentoo.org> smplayer-0.6.0.ebuild:
+  sparc stable wrt #224795
+
+  04 Jun 2008; Dawid Węgliński <cla@gentoo.org> smplayer-0.6.0.ebuild:
+  Stable on x86 (bug #224795)
+
+  04 Jun 2008; Markus Rothe <corsair@gentoo.org> smplayer-0.6.0.ebuild:
+  Stable on ppc/ppc64; bug #224795
+
+*smplayer-0.6.1 (28 May 2008)
+
+  28 May 2008; Ben de Groot <yngwin@gentoo.org> smplayer-0.6.0.ebuild,
+  +smplayer-0.6.1.ebuild:
+  Version bump to 0.6.1. Inluded new Catalan translation option. Fixed svn
+  revision in 0.6.0 ebuild.
+
+  18 May 2008; Jeroen Roovers <jer@gentoo.org> smplayer-0.6.0_rc4.ebuild:
+  Stable for HPPA.
+
+*smplayer-0.6.0 (14 May 2008)
+
+  14 May 2008; Ben de Groot <yngwin@gentoo.org> +smplayer-0.6.0.ebuild:
+  Version bump to 0.6.0 final release. Removed qt3support checks, as
+  qt3support is no longer needed.
+
+  09 May 2008; Raúl Porcel <armin76@gentoo.org> smplayer-0.6.0_rc4.ebuild:
+  Add ~sparc
+
+  01 May 2008; Alexis Ballier <aballier@gentoo.org>
+  smplayer-0.6.0_rc4.ebuild:
+  keyword ~x86-fbsd
+
+  25 Apr 2008; Ben de Groot <yngwin@gentoo.org> smplayer-0.6.0_rc3.ebuild,
+  smplayer-0.6.0_rc4.ebuild:
+  Adjusting dep. Fixes bug 212737
+
+  23 Apr 2008; Kenneth Prugh <ken69267@gentoo.org>
+  smplayer-0.6.0_rc3.ebuild:
+  amd64 stable, bug #217963
+
+  22 Apr 2008; Tobias Klausmann <klausman@gentoo.org>
+  smplayer-0.6.0_rc4.ebuild:
+  Keyworded on alpha, bug #218437
+
+  21 Apr 2008; Jeroen Roovers <jer@gentoo.org> smplayer-0.6.0_rc4.ebuild:
+  Marked ~hppa (bug #218437).
+
+  19 Apr 2008; Dawid Węgliński <cla@gentoo.org> smplayer-0.6.0_rc3.ebuild:
+  Stable on x86 (bug #217963)
+
+  16 Apr 2008; Markus Rothe <corsair@gentoo.org> smplayer-0.6.0_rc3.ebuild:
+  Stable on ppc; bug #217963
+
+  16 Apr 2008; Markus Rothe <corsair@gentoo.org> smplayer-0.6.0_rc3.ebuild:
+  Stable on ppc64; bug #217963
+
+*smplayer-0.6.0_rc4 (15 Apr 2008)
+
+  15 Apr 2008; Ben de Groot <yngwin@gentoo.org> +smplayer-0.6.0_rc4.ebuild:
+  Version bump
+
+  10 Apr 2008; Ben de Groot <yngwin@gentoo.org> -smplayer-0.6.0_rc2.ebuild:
+  Removing old rc version.
+
+  27 Mar 2008; Markus Rothe <corsair@gentoo.org> smplayer-0.6.0_rc3.ebuild:
+  Added ~ppc/~ppc64
+
+*smplayer-0.6.0_rc3 (23 Mar 2008)
+
+  23 Mar 2008; Ben de Groot <yngwin@gentoo.org> +smplayer-0.6.0_rc3.ebuild:
+  Version bump. Added Basque and Macedonian translations. Updated ebuild to
+  allow for split qt-4.4 deps (fixes bug 212737).
+
+  19 Feb 2008; Ben de Groot <yngwin@gentoo.org>
+  -smplayer-0.5.62.ebuild, -smplayer-0.6.0_rc1.ebuild,
+  smplayer-0.6.0_rc2.ebuild:
+  Removing old versions. Updating current ebuild with warning about 
+  mplayer png support, fixes #209521.
+
+*smplayer-0.6.0_rc2 (17 Feb 2008)
+
+  17 Feb 2008; Ben de Groot <yngwin@gentoo.org> metadata.xml,
+  +smplayer-0.6.0_rc2.ebuild:
+  version bump
+
+*smplayer-0.6.0_rc1 (03 Feb 2008)
+
+  03 Feb 2008; Alexis Ballier <aballier@gentoo.org>
+  +smplayer-0.6.0_rc1.ebuild:
+  version bump
+
+  01 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  smplayer-0.5.62.ebuild:
+  keyworded ~x86, bug 207569
+
+*smplayer-0.5.62 (26 Jan 2008)
+
+  26 Jan 2008; Alexis Ballier <aballier@gentoo.org> +metadata.xml,
+  +smplayer-0.5.62.ebuild:
+  Initial import, ebuild by  Davide Pesavento, bug #176211
+

@@ -1,0 +1,33 @@
+# ChangeLog for dev-scheme/guile-gnome-platform
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-scheme/guile-gnome-platform/ChangeLog,v 1.5 2008/07/05 08:27:02 drac Exp $
+
+  05 Jul 2008; Samuli Suominen <drac@gentoo.org>
+  -guile-gnome-platform-2.15.95.ebuild:
+  Remove the broken version I introduced, use 2.15.92 or 2.16.1.
+
+*guile-gnome-platform-2.16.1 (03 Jul 2008)
+
+  03 Jul 2008; Marijn Schouten <hkBst@gentoo.org>
+  +guile-gnome-platform-2.16.1.ebuild:
+  bump
+
+*guile-gnome-platform-2.15.95 (25 Nov 2007)
+
+  25 Nov 2007; Samuli Suominen <drac@gentoo.org>
+  +guile-gnome-platform-2.15.95.ebuild:
+  Version bump.
+
+  08 Oct 2007; Denis Dupeyron <calchan@gentoo.org>
+  guile-gnome-platform-2.15.92.ebuild:
+  Added --disable-Werror option to econf.
+
+*guile-gnome-platform-2.15.92 (06 Jun 2007)
+
+  06 Jun 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  +files/2.15.92-add-atk-overrides.patch,
+  +files/2.15.92-add-cairo-fix-from-bzr.patch, +metadata.xml,
+  +guile-gnome-platform-2.15.92.ebuild:
+  Add Guile Scheme code that wraps the GNOME developer platform. The cairo fix
+  is from upstream bzr, but the atk fix hasn't yet made its way upstream.
+

@@ -1,0 +1,584 @@
+# ChangeLog for www-apps/mediawiki
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-apps/mediawiki/ChangeLog,v 1.108 2008/06/26 11:15:46 armin76 Exp $
+
+  26 Jun 2008; Raúl Porcel <armin76@gentoo.org> mediawiki-1.12.0.ebuild:
+  Add ~alpha wrt #229197
+
+  01 Jun 2008; wrobel@gentoo.org +files/access_restrict_1.12.0.patch,
+  mediawiki-1.12.0.ebuild:
+  Fix for #219713.
+
+  29 May 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Philippe Trottier (tchiwam) from metadata.xml (as per #52828).
+
+*mediawiki-1.12.0 (27 Apr 2008)
+
+  27 Apr 2008; wrobel@gentoo.org +mediawiki-1.12.0.ebuild:
+  Added mediawiki-1.12.0. Bug #216192.
+
+  03 Apr 2008; Benedikt Böhm <hollow@gentoo.org> mediawiki-1.11.1.ebuild,
+  mediawiki-1.11.2.ebuild:
+  fix #212738
+
+  08 Mar 2008; <pva@gentoo.org> mediawiki-1.11.2.ebuild:
+  amd64 stable, security bug #212170.
+
+  04 Mar 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  mediawiki-1.11.2.ebuild:
+  ppc stable, bug #212170
+
+  04 Mar 2008; Raúl Porcel <armin76@gentoo.org> mediawiki-1.11.2.ebuild:
+  sparc stable wrt #212170
+
+  03 Mar 2008; Markus Meier <maekke@gentoo.org> mediawiki-1.11.2.ebuild:
+  x86 stable, security bug #212170
+
+*mediawiki-1.11.2 (03 Mar 2008)
+
+  03 Mar 2008; Benedikt Böhm <hollow@gentoo.org> +mediawiki-1.11.2.ebuild:
+  version bump wrt security #212170
+
+  26 Feb 2008; Gunnar Wrobel <wrobel@gentoo.org>
+  -files/postinstall-1.5-en.txt, -mediawiki-1.8.5.ebuild,
+  mediawiki-1.11.1.ebuild:
+  Remove vulnerable version (sec issue #207757) and fix dependencies (#208584).
+
+  25 Feb 2008; Steve Dibb <beandog@gentoo.org> mediawiki-1.11.1.ebuild:
+  amd64 stable, security bug 207757
+
+  24 Feb 2008; Raúl Porcel <armin76@gentoo.org> mediawiki-1.11.1.ebuild:
+  sparc stable wrt security #207757
+
+  19 Feb 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  mediawiki-1.11.1.ebuild:
+  ppc stable, bug #207757
+
+  16 Feb 2008; Markus Meier <maekke@gentoo.org> mediawiki-1.11.1.ebuild:
+  x86 stable, security bug #207757 and restrict tests with jakubs permission
+
+*mediawiki-1.11.1 (15 Feb 2008)
+
+  15 Feb 2008; Gunnar Wrobel <wrobel@gentoo.org>
+  -files/jobindexlength-mysql5.patch, +files/postinstall-1.11-en.txt,
+  -files/jobindexlength-mysql4.patch, -files/postinstall-en.txt,
+  -mediawiki-1.6.10.ebuild, -mediawiki-1.9.4.ebuild,
+  -mediawiki-1.10.2.ebuild, -mediawiki-1.11.0.ebuild,
+  +mediawiki-1.11.1.ebuild:
+  Added mediawiki-1.11.1 to the tree. Removed the other branches (sec issue
+  #207757)
+
+  26 Nov 2007; <tchiwam@gentoo.org> files/postinstall-1.5-en.txt,
+  mediawiki-1.6.10.ebuild, mediawiki-1.8.5.ebuild, mediawiki-1.9.4.ebuild,
+  mediawiki-1.10.2.ebuild, mediawiki-1.11.0.ebuild:
+  Fixed quoting complaint from repoman
+
+  26 Nov 2007; Philippe Trottier <tchiwam@gentoo.org>
+  files/postinstall-1.5-en.txt, mediawiki-1.11.0.ebuild:
+  Bug 199361 xml support needed in php, Thanks to Jakub we also clean up the
+  dieing properly.
+
+  26 Nov 2007; Philippe Trottier <tchiwam@gentoo.org>
+  files/postinstall-1.5-en.txt:
+  Make it even more clear to users not to just expect upgrade and work. Bug
+  185731
+
+  29 Sep 2007; <wrobel@gentoo.org> -mediawiki-1.8.3.ebuild,
+  -mediawiki-1.8.4.ebuild, -mediawiki-1.9.0.ebuild, -mediawiki-1.9.1.ebuild,
+  -mediawiki-1.9.2.ebuild, -mediawiki-1.9.3.ebuild,
+  -mediawiki-1.10.0_rc1.ebuild, -mediawiki-1.10.0.ebuild:
+  -m Removed insecure versions (see #192197).
+
+  29 Sep 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  mediawiki-1.8.5.ebuild:
+  Marked stable on amd64 as per security bug 192197.
+
+  25 Sep 2007; Raúl Porcel <armin76@gentoo.org> mediawiki-1.8.5.ebuild:
+  sparc stable wrt security #192197
+
+  19 Sep 2007; <wrobel@gentoo.org> mediawiki-1.11.0.ebuild:
+  Fixed missing includes/filerepo in mediawiki-1.11.0. Fixes #192861.
+
+  17 Sep 2007; Markus Meier <maekke@gentoo.org> mediawiki-1.8.5.ebuild:
+  x86 stable, security bug #192197
+
+  17 Sep 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  mediawiki-1.8.5.ebuild:
+  ppc stable, bug #192197
+
+*mediawiki-1.11.0 (17 Sep 2007)
+*mediawiki-1.10.2 (17 Sep 2007)
+*mediawiki-1.9.4 (17 Sep 2007)
+*mediawiki-1.8.5 (17 Sep 2007)
+
+  17 Sep 2007; <wrobel@gentoo.org> mediawiki-1.8.4.ebuild,
+  +mediawiki-1.8.5.ebuild, +mediawiki-1.9.4.ebuild,
+  +mediawiki-1.10.2.ebuild, +mediawiki-1.11.0.ebuild:
+  Added mediawiki 1.11.0, 1.10.2, 1.9.4, 1.8.5 in response to sec issue #192197.
+
+  02 Jul 2007; Piotr Jaroszyński <peper@gentoo.org>
+  mediawiki-1.6.10.ebuild, mediawiki-1.8.3.ebuild, mediawiki-1.8.4.ebuild,
+  mediawiki-1.9.0.ebuild, mediawiki-1.9.1.ebuild, mediawiki-1.9.2.ebuild,
+  mediawiki-1.9.3.ebuild, mediawiki-1.10.0_rc1.ebuild,
+  mediawiki-1.10.0.ebuild:
+  (QA) RESTRICT clean up.
+
+  10 May 2007; Christian Parpart <trapni@gentoo.org>
+  -mediawiki-1.6.9.ebuild, -mediawiki-1.7.2.ebuild, -mediawiki-1.7.3.ebuild:
+  cleaned up very old releases
+
+*mediawiki-1.10.0 (10 May 2007)
+
+  10 May 2007; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.10.0.ebuild:
+  version bump
+
+*mediawiki-1.10.0_rc1 (01 May 2007)
+
+  01 May 2007; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.10.0_rc1.ebuild:
+  version bump to 1.10.0_rc1
+
+*mediawiki-1.9.3 (21 Feb 2007)
+*mediawiki-1.8.4 (21 Feb 2007)
+*mediawiki-1.7.3 (21 Feb 2007)
+*mediawiki-1.6.10 (21 Feb 2007)
+
+  21 Feb 2007; <tchiwam@gentoo.org> +mediawiki-1.6.10.ebuild,
+  +mediawiki-1.7.3.ebuild, +mediawiki-1.8.4.ebuild, +mediawiki-1.9.3.ebuild:
+  Security fix in many versions
+
+  14 Feb 2007; <tchiwam@gentoo.org> mediawiki-1.8.3.ebuild,
+  mediawiki-1.9.2.ebuild:
+  bug #162535, thank you to ProTech for working this out. 
+
+  08 Feb 2007; <tchiwam@gentoo.org> mediawiki-1.8.3.ebuild:
+  30 days went by and there is no major bugs
+
+*mediawiki-1.9.2 (05 Feb 2007)
+
+  05 Feb 2007; Philippe Trottier <tchiwam@gentoo.org>
+  +mediawiki-1.9.2.ebuild:
+  Version bump and security fix. 
+
+*mediawiki-1.9.1 (24 Jan 2007)
+
+  24 Jan 2007; Philippe Trottier <tchiwam@gentoo.org> +mediawiki-1.9.1.ebuild:
+  New version, bug fixes and one security fix.
+
+  08 Jan 2007; Philippe Trottier <tchiwam@gentoo.org> -mediawiki-1.7.1,
+  -mediawiki-1.6.8, -mediawiki-1.8.2:
+  Cleaning versions with security vulnerability
+
+*mediawiki-1.8.3 (12 Jan 2007)
+  12 Jan 2007; Philippe Trottier <tchiwam@gentoo.org> +mediawiki-1.9.0:
+  Version Bump
+  
+*mediawiki-1.8.3 (08 Jan 2007)
+  08 Jan 2007; Philippe Trottier <tchiwam@gentoo.org> +mediawiki-1.8.3:
+  Security update and upstream bug fixes. bug#161091
+  Will not pull the database anymore bug#159781.
+
+*mediawiki-1.7.2 (08 Jan 2007)
+  08 Jan 2007; Philippe Trottier <tchiwam@gentoo.org> +mediawiki-1.7.2:
+  Security update, bug fixes upstream. bug#161091
+
+*mediawiki-1.6.9 (08 Jan 2007)
+  08 Jan 2007; Philippe Trottier <tchiwam@gentoo.org> +mediawiki-1.6.9:
+  Security update bug#161091
+
+*mediawiki-1.5.8 (08 Jan 2007)
+  08 Jan 2007; Philippe Trottier <tchiwam@gentoo.org> -mediawiki-1.5.8:
+  mediawiki-1.6.8 can support the dbase used by 1.5.x.
+
+*mediawiki-1.4.15 (08 Jan 2007)
+  08 Jan 2007; Philippe Trottier <tchiwam@gentoo.org> -mediawiki-1.4.15:
+  Too hard to support security update on that old version.
+
+  13 Dec 2006; Michael Sterrett <mr_bones_@gentoo.org>
+  mediawiki-1.8.2.ebuild:
+  add restrict use flag to IUSE
+
+  11 Dec 2006; Philippe Trottier <tchiwam@gentoo.org> mediawiki-1.8.2.ebuild:
+  start with more restricted access possible  bug#150143.
+
+  11 Dec 2006; Philippe Trottier <tchiwam@gentoo.org> mediawiki-1.8.2.ebuild:
+  job key lenght bug#152089.
+
+*mediawiki-1.8.2 (05 Dec 2006)
+  05 Dec 2006; Philippe Trottier <tchiwam@gentoo.org> mediawiki-1.8.2.ebuild:
+  version update, support for postgres, bug#156334, bug#152089, bug#147668
+  big thank you to dev-zero to test this.
+
+  23 Nov 2006; Francesco Riosa <vivo@gentoo.org> mediawiki-1.4.15.ebuild,
+  mediawiki-1.5.8.ebuild, mediawiki-1.6.8.ebuild, mediawiki-1.7.1.ebuild:
+  dev-db/mysql => virtual/mysql
+
+*mediawiki-1.6.8 (03 Oct 2006)
+  03 Oct 2006; Philippe Trottier <tchiwam@gentoo.org>
+  30 days are gone, no bugs, I use it myself, it's now stable.
+
+*mediawiki-1.7.1 (31 Aug 2006)
+  31 Aug 2006; Philippe Trottier <tchiwam@gentoo.org>
+  mediawiki-1.7.1:
+  Patched some KEY lenght issue
+
+*mediawiki-1.7.1 (30 Aug 2006)
+  30 Aug 2006; Philippe Trottier <tchiwam@gentoo.org>
+  +mediawiki-1.7.1:
+  New major version has come out. Big thanks to Daedius. Bug #139942
+
+*mediawiki-1.6.x (30 Aug 2006)
+  30 Aug 2006; Philippe Trottier <tchiwam@gentoo.org>
+  -mediawiki-1.6.4, -mediawiki-1.6.5, -mediawiki-1.6.6, -mediawiki-1.6.7:
+  Removed versions with GLSA
+
+*mediawiki-1.5.x (30 Aug 2006)
+  30 Aug 2006; Philippe Trottier <tchiwam@gentoo.org>
+  -mediawiki-1.5.3, -mediawiki-1.5.4, -mediawiki-1.5.6:
+  Removed versions with GLSA. 
+
+*mediawiki-1.5.8 (30 Aug 2006)
+  30 Aug 2006; Philippe Trottier <tchiwam@gentoo.org>
+  mediawiki-1.5.8.ebuild: 
+  Stable for more than 30 days, also oldest supported version by upstream.
+  Closing bug # 105818.
+
+*mediawiki-1.6.8 (30 Aug 2006)
+  30 Aug 2006; Philippe Trottier <tchiwam@gentoo.org>
+  +mediawiki-1.6.8.ebuild: 
+  Version bump and bug fix.
+
+*mediawiki-1.4.x (30 Aug 2006)
+  30 Aug 2006; Philippe Trottier <tchiwam@gentoo.org>
+  -mediawiki-1.4.11.ebuild, -mediawiki-1.4.12.ebuild, -mediawiki-1.4.14.ebuild:
+  removed ebuilds with GLSA bug #140492
+
+*mediawiki-1.3.x (30 Aug 2006)
+  30 Aug 2006; Philippe Trottier <tchiwam@gentoo.org>
+  -mediawiki-1.3.16.ebuild, -mediawiki-1.3.17.ebuild,  -mediawiki-1.3.18.ebuild:
+  removed mediawiki-1.3.x from the tree bug #140492 and bug #105818
+
+*mediawiki-1.6.7 (07 Jun 2006)
+  07 Jun 2006; Philippe Trottier <tchiwam@gentoo.org>
+  +mediawiki-1.6.7.ebuild:
+  version bump, security bug #135883
+
+*mediawiki-1.6.6 (23 May 2006)
+  23 May 2006; Philippe Trottier <tchiwam@gentoo.org>
+  +mediawiki-1.6.6.ebuild:
+  version bump, security bug #134115
+
+*mediawiki-1.6.5 (03 May 2006)
+
+  03 May 2006; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.6.5.ebuild:
+  version bump
+
+*mediawiki-1.6.4 (02 May 2006)
+
+  02 May 2006; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.6.4.ebuild:
+  initial 1.6.x ebuild
+
+*mediawiki-1.5.8 (12 Apr 2006)
+*mediawiki-1.5.3 (12 Apr 2006)
+*mediawiki-1.3.18 (12 Apr 2006)
+
+  12 Apr 2006; Philippe Trottier <tchiwam@gentoo.org>
+  +mediawiki-1.5.8:
+  postinstall-1.5-en.txt created change to reflect configuration changes. refs bug #129138
+  +mediawiki-1.5.3:
+  fixed header complain from repoman.
+  +mediawiki-1.3.18:
+  created digest.
+
+*mediawiki-1.4.15 (29 Mar 2006)
+
+  29 Mar 2006; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.4.15.ebuild:
+  version bump, see #127971
+
+*mediawiki-1.5.8 (28 Mar 2006)
+
+  28 Mar 2006; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.5.8.ebuild:
+  version bump
+
+  09 Mar 2006; Christian Parpart <trapni@gentoo.org> mediawiki-1.5.6.ebuild:
+  adding missing use-flag requirement. refs bug #105818
+
+  07 Mar 2006; Christian Parpart <trapni@gentoo.org>
+  -mediawiki-1.4.10.ebuild:
+  plain old version cleanup
+
+*mediawiki-1.4.14 (07 Mar 2006)
+
+  07 Mar 2006; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.4.14.ebuild:
+  bump 1.4.14 for the 1.4.x series
+
+*mediawiki-1.5.6 (29 Jan 2006)
+
+  29 Jan 2006; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.5.6.ebuild:
+  version bump
+
+  14 Jan 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  mediawiki-1.5.4.ebuild:
+  added to ~ppc
+
+  14 Jan 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  mediawiki-1.4.12.ebuild:
+  ppc stable, bug #113887
+
+  26 Dec 2005; Jason Wever <weeve@gentoo.org> mediawiki-1.4.12.ebuild:
+  Stable on SPARC.
+
+*mediawiki-1.5.4 (23 Dec 2005)
+
+  23 Dec 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.5.4.ebuild:
+  version bump
+
+  06 Dec 2005; Christian Parpart <trapni@gentoo.org>
+  -mediawiki-1.3.15-r1.ebuild, -mediawiki-1.4.9-r1.ebuild,
+  -mediawiki-1.5.0.ebuild, -mediawiki-1.5.1.ebuild,
+  -mediawiki-1.5.1-r1.ebuild, -mediawiki-1.5.2.ebuild:
+  cleanup old/sick versions
+
+*mediawiki-1.5.3 (06 Dec 2005)
+
+  06 Dec 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.5.3.ebuild:
+  version bump (closes #114582) - also fixes #112500
+
+*mediawiki-1.5.2 (07 Nov 2005)
+*mediawiki-1.4.12 (07 Nov 2005)
+*mediawiki-1.3.18 (07 Nov 2005)
+
+  07 Nov 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.3.18.ebuild, +mediawiki-1.4.12.ebuild,
+  +mediawiki-1.5.2.ebuild:
+  version bumps
+
+*mediawiki-1.5.1-r1 (31 Oct 2005)
+
+  31 Oct 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.5.1-r1.ebuild:
+  incorporate thoughts from bug #110977
+
+  26 Oct 2005; Christian Parpart <trapni@gentoo.org>
+  -mediawiki-1.5.0_rc2.ebuild, -mediawiki-1.5.0_rc3.ebuild,
+  -mediawiki-1.5.0_rc4.ebuild:
+  more cleanup
+
+  26 Oct 2005; Christian Parpart <trapni@gentoo.org>
+  -mediawiki-1.5.0_rc4-r1.ebuild:
+  version cleanup
+
+*mediawiki-1.5.1 (26 Oct 2005)
+
+  26 Oct 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.5.1.ebuild:
+  version bump
+
+*mediawiki-1.4.11 (23 Oct 2005)
+*mediawiki-1.3.17 (23 Oct 2005)
+
+  23 Oct 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.3.17.ebuild, +mediawiki-1.4.11.ebuild:
+  version bumps (security/bug fix releases)
+
+*mediawiki-1.5.0 (23 Oct 2005)
+
+  23 Oct 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.5.0.ebuild:
+  version bump
+
+  16 Oct 2005; Jason Wever <weeve@gentoo.org> mediawiki-1.5.0_rc4-r1.ebuild:
+  Added ~sparc keyword.
+
+*mediawiki-1.4.10 (24 Sep 2005)
+*mediawiki-1.3.16 (24 Sep 2005)
+
+  24 Sep 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.3.16.ebuild, +mediawiki-1.4.10.ebuild:
+  version bump
+
+*mediawiki-1.3.15-r1 (17 Sep 2005)
+
+  17 Sep 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.3.15-r1.ebuild:
+  use virtual/tetex and virtual/ghostscript instead of explicitely qualifying
+  a fixed package
+
+  16 Sep 2005; Christian Parpart <trapni@gentoo.org>
+  mediawiki-1.5.0_rc4-r1.ebuild:
+  cleaning up some DIRS not to install from dist (as supposed in #105435)
+
+  15 Sep 2005; Michael Sterrett <mr_bones_@gentoo.org>
+  mediawiki-1.5.0_rc4-r1.ebuild:
+  functions go in pkg_setup
+
+*mediawiki-1.5.0_rc4-r1 (15 Sep 2005)
+*mediawiki-1.4.9-r1 (15 Sep 2005)
+
+  15 Sep 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.4.9-r1.ebuild, +mediawiki-1.5.0_rc4-r1.ebuild:
+  fixing ghostscript depend and solved some more depend-on-useflag issues on
+  mediawiki 1.5
+
+*mediawiki-1.5.0_rc4 (30 Aug 2005)
+*mediawiki-1.4.9 (30 Aug 2005)
+*mediawiki-1.3.15 (30 Aug 2005)
+
+  30 Aug 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.3.15.ebuild, +mediawiki-1.4.9.ebuild,
+  +mediawiki-1.5.0_rc4.ebuild:
+  version bumps
+
+*mediawiki-1.5.0_rc3 (25 Aug 2005)
+
+  25 Aug 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.5.0_rc3.ebuild:
+  versiion bump
+
+*mediawiki-1.5.0_rc2 (24 Aug 2005)
+
+  24 Aug 2005; Christian Parpart <trapni@gentoo.org>
+  -mediawiki-1.5.0_rc1.ebuild, +mediawiki-1.5.0_rc2.ebuild:
+  bumping 1.5.0_rc2...
+
+*mediawiki-1.5.0_rc1 (24 Aug 2005)
+
+  24 Aug 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.5.0_rc1.ebuild:
+  bringing 1.5 series into the tree (masked for testing anyway)
+
+  24 Aug 2005; Christian Parpart <trapni@gentoo.org>
+  -mediawiki-1.3.11.ebuild, -mediawiki-1.3.12.ebuild,
+  -mediawiki-1.4.4.ebuild, -mediawiki-1.4.5.ebuild:
+  clean out pretty old versions of mediawiki
+
+*mediawiki-1.4.8 (24 Aug 2005)
+*mediawiki-1.3.14 (24 Aug 2005)
+
+  24 Aug 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.3.14.ebuild, +mediawiki-1.4.8.ebuild:
+  version bump; 1.3.14 is security fix only and 1.4.8 is security fix *and*
+  minor bugfixes regarding IE7/mono-skin. read the RELEASE-NOTES for more
+  infos
+
+*mediawiki-1.4.7 (16 Jul 2005)
+
+  16 Jul 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.4.7.ebuild:
+  version bump
+
+  22 Jun 2005; Jason Wever <weeve@gentoo.org> mediawiki-1.4.5.ebuild:
+  Added ~sparc keyword.
+
+*mediawiki-1.4.5 (05 Jun 2005)
+*mediawiki-1.3.13 (05 Jun 2005)
+
+  05 Jun 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.3.13.ebuild, +mediawiki-1.4.5.ebuild:
+  Bumping upstream releases 1.3.13 and 1.4.5
+
+  10 May 2005; Christian Parpart <trapni@gentoo.org> mediawiki-1.4.4.ebuild:
+  marked stable for amd64 and x86
+
+*mediawiki-1.4.4 (04 May 2005)
+
+  04 May 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.4.4.ebuild:
+  man, yet another release, they're fast, aren't they? (just announced a
+  minute ago)
+
+*mediawiki-1.4.3 (04 May 2005)
+
+  04 May 2005; Christian Parpart <trapni@gentoo.org> mediawiki-1.4.0.ebuild,
+  mediawiki-1.4.1.ebuild, mediawiki-1.4.2.ebuild, +mediawiki-1.4.3.ebuild:
+  version bump, and honoring bug #78164
+
+*mediawiki-1.3.12 (25 Apr 2005)
+
+  25 Apr 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.3.12.ebuild:
+  version bump
+
+  25 Apr 2005; Christian Parpart <trapni@gentoo.org> :
+  version bump
+
+*mediawiki-1.4.1 (25 Apr 2005)
+
+  25 Apr 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.4.1.ebuild:
+  version bump
+
+  03 Apr 2005; Christian Parpart <trapni@gentoo.org> mediawiki-1.4.0.ebuild:
+  adding ppc keyword on request
+
+*mediawiki-1.4.0 (23 Mar 2005)
+
+  23 Mar 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.4.0.ebuild:
+  version bump
+
+*mediawiki-1.4.0_rc1 (21 Feb 2005)
+
+  21 Feb 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.4.0_rc1.ebuild:
+  version bump of to 1.4.0_rc1 of the 1.4.x series (security update)
+
+*mediawiki-1.3.11 (21 Feb 2005)
+
+  21 Feb 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.3.11.ebuild:
+  * version bump to 1.3.11 (security update)
+  * also make use of local math useflag as proposed in bug 82329.
+
+  18 Feb 2005; Christian Parpart <trapni@gentoo.org> :
+  fixed bug 82329: typo
+
+  17 Feb 2005; Christian Parpart <trapni@gentoo.org>
+  +files/postinstall-1.4-en.txt:
+  be honest to comments in bug #81671
+
+*mediawiki-1.4.0_beta6 (17 Feb 2005)
+
+  17 Feb 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.4.0_beta6.ebuild:
+  version bump to 1.4.0_beta6; although fixed bug #81671 for 1.4x line
+
+*mediawiki-1.3.10 (04 Feb 2005)
+
+  04 Feb 2005; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.3.10.ebuild:
+  version bump
+
+  23 Jan 2005; Christian Parpart <trapni@gentoo.org> mediawiki-1.3.9.ebuild:
+  -m marking stable for x86 and amd64 since no known problems occured
+
+*mediawiki-1.3.9 (19 Dec 2004)
+
+  19 Dec 2004; Christian Parpart <trapni@gentoo.org>
+  +mediawiki-1.3.9.ebuild:
+  version bump to 1.3.9
+
+  05 Dec 2004; Christian Parpart <trapni@gentoo.org> mediawiki-1.3.8.ebuild:
+  marked ~amd64, as proposed by Wolfgang Loeffler (bug #37894) comment 19;
+  he tested it, and it runs well on this arch
+
+  16 Nov 2004; Christian Parpart <trapni@gentoo.org>:
+  improved ebuild'ing behavior with the experience users made in 
+  bug #37894 already. Thanks to Alex Plank <aplank@notsohotmail.com> 
+  for his initial ebuild.
+
+*mediawiki-1.3.8 (16 Nov 2004)
+
+  16 Nov 2004; Christian Parpart <trapni@gentoo.org> +metadata.xml,
+  +mediawiki-1.3.8.ebuild:
+  Initial import of WikiPedia's MediaWiki
+

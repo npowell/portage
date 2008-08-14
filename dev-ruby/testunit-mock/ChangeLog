@@ -1,0 +1,19 @@
+# ChangeLog for dev-ruby/testunit-mock
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/testunit-mock/ChangeLog,v 1.4 2008/06/29 10:32:08 tove Exp $
+
+  29 Jun 2008; Torsten Veller <tove@gentoo.org> testunit-mock-0.03.ebuild:
+  Add missing die: || "..." -> || die "..."
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org> testunit-mock-0.03.ebuild:
+  Mark 0.03 ~ia64
+
+*testunit-mock-0.03 (03 May 2005)
+
+  03 May 2005; Michael Kohl <citizen428@gentoo.org> +metadata.xml,
+  +testunit-mock-0.03.ebuild:
+  Initial import; submitted by awk <glawk01@awks.org> in bug #59050
+

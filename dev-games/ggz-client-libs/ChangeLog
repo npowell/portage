@@ -1,0 +1,107 @@
+# ChangeLog for dev-games/ggz-client-libs
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-games/ggz-client-libs/ChangeLog,v 1.24 2008/06/15 14:32:56 armin76 Exp $
+
+  15 Jun 2008; Raúl Porcel <armin76@gentoo.org>
+  ggz-client-libs-0.0.14.1.ebuild:
+  alpha/ia64/sparc/x86 stable wrt #226019
+
+  14 Jun 2008; nixnut <nixnut@gentoo.org> ggz-client-libs-0.0.14.1.ebuild:
+  Stable on ppc wrt bug 226019
+
+  05 May 2008; Raúl Porcel <armin76@gentoo.org> ChangeLog:
+  Add ~alpha/~ia64 wrt #218794
+
+  26 Mar 2008; Samuli Suominen <drac@gentoo.org>
+  ggz-client-libs-0.0.14.1.ebuild:
+  amd64 stable wrt #214349
+
+*ggz-client-libs-0.0.14.1 (18 Feb 2008)
+
+  18 Feb 2008; Tristan Heaven <nyhm@gentoo.org>
+  +ggz-client-libs-0.0.14.1.ebuild:
+  Version bump
+
+  15 Nov 2007; Samuli Suominen <drac@gentoo.org>
+  ggz-client-libs-0.0.14.ebuild:
+  Keyword ~amd64.
+
+*ggz-client-libs-0.0.14 (22 Feb 2007)
+
+  22 Feb 2007; Tristan Heaven <nyhm@gentoo.org>
+  +ggz-client-libs-0.0.14.ebuild:
+  Version bump
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  19 Oct 2006; Tristan Heaven <nyhm@gentoo.org>
+  ggz-client-libs-0.0.13.ebuild:
+  CONFIG_PROTECT_MASK ggz.modules so changes won't be lost when more than one
+  game is installed without running etc-update
+
+  16 Oct 2006; Tristan Heaven <nyhm@gentoo.org>
+  ggz-client-libs-0.0.13.ebuild:
+  Use games.eclass
+
+  06 Oct 2006; Tristan Heaven <nyhm@gentoo.org>
+  ggz-client-libs-0.0.13.ebuild:
+  Remove dev-libs/popt from DEPEND
+
+  18 Jul 2006; Michael Hanselmann <hansmi@gentoo.org>
+  ggz-client-libs-0.0.13.ebuild:
+  Stable on ppc.
+
+  07 Jul 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  ggz-client-libs-0.0.13.ebuild:
+  Stable on x86 wrt bug #138482. Marked -amd64 and removed ~sparc for the same
+  bug.
+
+  05 Jul 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  ggz-client-libs-0.0.13.ebuild:
+  Removed HACKING and TODO from dodoc.
+
+  02 Jul 2006; Lars Weiler <pylon@gentoo.org> ggz-client-libs-0.0.9.ebuild:
+  Stable on ppc; bug #138482.
+
+*ggz-client-libs-0.0.13 (24 Mar 2006)
+
+  24 Mar 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  +ggz-client-libs-0.0.13.ebuild:
+  Version bumped to 0.0.13 and closing bug #94365.
+
+  24 Mar 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  ggz-client-libs-0.0.5-r1.ebuild, ggz-client-libs-0.0.9.ebuild:
+  Added ibiblio mirror and closing bug #87288.
+
+*ggz-client-libs-0.0.9 (26 Dec 2004)
+
+  26 Dec 2004; Mike Frysinger <vapier@gentoo.org>
+  -ggz-client-libs-0.0.7.ebuild, +ggz-client-libs-0.0.9.ebuild:
+  Version bump #69430 by Bryan Duff.
+
+  19 Apr 2004; Chris Gianelloni <wolf31o2@gentoo.org>
+  ggz-client-libs-0.0.7.ebuild:
+  Adding IUSE.
+
+  19 Apr 2004; Chris Gianelloni <wolf31o2@gentoo.org>
+  ggz-client-libs-0.0.5-r1.ebuild:
+  Adding IUSE.
+
+*ggz-client-libs-0.0.7 (10 Jul 2003)
+
+  10 Jul 2003; Mike Frysinger <vapier@gentoo.org> :
+  Version bumpage #24165.
+
+*ggz-client-libs-0.0.5-r1 (23 Oct 2002)
+
+  23 Oct 2002; J Robert Ray <jrray@gentoo.org> :
+  Patch to prevent -I/usr/include being put in $CPPFLAGS, which was
+  generating a compiler warning with gcc 3.2, causing the configure
+  phase to fail.  Closes bug 9413.
+
+*ggz-client-libs-0.0.5 (13 Apr 2002)
+
+  13 Apr 2002; T.Kvernes <terjekv@math.uio.no> ChangeLog :
+  Initial ebuild.  This is the client library for games developed at GGZ
+  Gameing Zone.

@@ -1,0 +1,49 @@
+# ChangeLog for x11-misc/lndir
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/lndir/ChangeLog,v 1.13 2007/01/25 05:06:47 beandog Exp $
+
+  25 Jan 2007; Steve Dibb <beandog@gentoo.org> lndir-1.0.1.ebuild:
+  amd64 stable, bug 158773
+
+  12 Jan 2007; nixnut <nixnut@gentoo.org> lndir-1.0.1.ebuild:
+  Stable on ppc wrt bug 158773
+
+  11 Jan 2007; Christian Faulhammer <opfer@gentoo.org> lndir-1.0.1.ebuild:
+  stable x86, bug #158773
+
+  11 Jan 2007; Markus Rothe <corsair@gentoo.org> lndir-1.0.1.ebuild:
+  Stable on ppc64; bug #158773
+
+  09 Jan 2007; Gustavo Zacarias <gustavoz@gentoo.org> lndir-1.0.1.ebuild:
+  Stable on sparc wrt #158773
+
+  30 Nov 2006; Gustavo Zacarias <gustavoz@gentoo.org> lndir-1.0.1.ebuild:
+  Keyworded ~sparc wrt #156664
+
+  11 Oct 2006; Donnie Berkholz <dberkholz@gentoo.org>; lndir-1.0.1.ebuild:
+  Update description to be less generic.
+
+  14 Feb 2006; Markus Rothe <corsair@gentoo.org> lndir-1.0.1.ebuild:
+  Added ~ppc64
+
+  09 Feb 2006; Patrick McLean <chutzpah@gentoo.org> lndir-1.0.1.ebuild:
+  Added ~amd64 (bug #121981).
+
+  07 Jan 2006; <nixnut@gentoo.org> lndir-1.0.1.ebuild:
+  Add ~ppc keyword
+
+  26 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  -lndir-1.0.0.ebuild:
+  Pull old versions.
+
+*lndir-1.0.1 (23 Dec 2005)
+
+  23 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>; +lndir-1.0.1.ebuild:
+  Bump for 7.0.
+
+*lndir-1.0.0 (17 Dec 2005)
+
+  17 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org> +metadata.xml,
+  +lndir-1.0.0.ebuild:
+  New X modular package in 7.0RC4.
+

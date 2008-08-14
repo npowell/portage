@@ -1,0 +1,38 @@
+# ChangeLog for app-arch/fastjar
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-arch/fastjar/ChangeLog,v 1.10 2008/03/31 20:08:42 maekke Exp $
+
+  31 Mar 2008; Markus Meier <maekke@gentoo.org> fastjar-0.95.ebuild:
+  amd64/x86 stable, bug #214938; quotes
+
+  28 Mar 2008; Brent Baude <ranger@gentoo.org> fastjar-0.95.ebuild:
+  stable ppc, bug 214938
+
+  27 Mar 2008; Markus Rothe <corsair@gentoo.org> fastjar-0.95.ebuild:
+  Stable on ppc64; bug #214938
+
+  15 Aug 2007; Vlastimil Babka <caster@gentoo.org> fastjar-0.95.ebuild:
+  Add block to <=dev-java/kaffe-1.1.7-r5 to ensure kaffe is upgraded first and
+  there are no file collisions, bug #188542.
+
+  14 Aug 2007; Markus Rothe <corsair@gentoo.org> fastjar-0.95.ebuild:
+  Added ~ppc64; bug #188082
+
+*fastjar-0.95 (08 Aug 2007)
+
+  08 Aug 2007; Petteri Räty <betelgeuse@gentoo.org> +fastjar-0.95.ebuild:
+  Version bump for bug #188082. fastjar moved from sourceforge to savannah.
+
+  11 Mar 2007; Joshua Nichols <nichoj@gentoo.org> fastjar-0.94.ebuild:
+  Added ~amd64, see bug #168713.
+
+  02 Mar 2007; nixnut <nixnut@gentoo.org> fastjar-0.94.ebuild:
+  Added ~ppc wrt bug 168713
+
+*fastjar-0.94 (28 Feb 2007)
+
+  28 Feb 2007; Petteri Räty <betelgeuse@gentoo.org> +metadata.xml,
+  +fastjar-0.94.ebuild:
+  Initial addition. Ebuild written by me. Fastjar is a jar implementation
+  written in C.
+

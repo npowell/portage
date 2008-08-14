@@ -1,0 +1,17 @@
+# ChangeLog for media-plugins/vdr-svdrpservice
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-svdrpservice/ChangeLog,v 1.2 2007/10/07 11:10:38 zzam Exp $
+
+*vdr-svdrpservice-0.0.3 (07 Oct 2007)
+
+  07 Oct 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-svdrpservice-0.0.3.ebuild:
+  Version bumped.
+
+*vdr-svdrpservice-0.0.2 (27 Sep 2006)
+
+  27 Sep 2006; Joerg Bornkessel <hd_brummy@gentoo.org> +metadata.xml,
+  +vdr-svdrpservice-0.0.2.ebuild:
+  initial ebuild; thx to Mentox at
+  http://www.vdr-portal.de/board/thread.php?postid=498072
+

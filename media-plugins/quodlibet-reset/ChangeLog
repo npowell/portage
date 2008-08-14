@@ -1,0 +1,32 @@
+# ChangeLog for media-plugins/quodlibet-reset
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/quodlibet-reset/ChangeLog,v 1.7 2007/03/29 08:32:17 corsair Exp $
+
+  29 Mar 2007; Markus Rothe <corsair@gentoo.org>
+  quodlibet-reset-3644.ebuild:
+  Added ~ppc64
+
+  19 Mar 2007; Bryan Østergaard <kloeri@gentoo.org> metadata.xml:
+  Remove tcort from metadata.xml due to retirement.
+
+  07 Oct 2006; Thomas Cort <tcort@gentoo.org> -quodlibet-reset-3065.ebuild:
+  Fix manifest wrt Bug #150400.
+
+  05 Oct 2006; Thomas Cort <tcort@gentoo.org> -quodlibet-reset-3065.ebuild:
+  Remove old ebuild.
+
+*quodlibet-reset-3644 (20 Jul 2006)
+
+  20 Jul 2006; Thomas Cort <tcort@gentoo.org> +quodlibet-reset-3644.ebuild:
+  Version bump to 3644.
+
+  10 Jul 2006; Thomas Cort <tcort@gentoo.org> quodlibet-reset-3065.ebuild:
+  Added ~alpha keyword.
+
+*quodlibet-reset-3065 (03 May 2006)
+
+  03 May 2006; <tcort@gentoo.org> +metadata.xml,
+  +quodlibet-reset-3065.ebuild:
+  Initial Commit. Ebuild by Kai Huuhko <kai.huuhko@gmail.com> and Thomas Cort
+  <tcort@gentoo.org>.
+

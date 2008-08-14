@@ -1,0 +1,51 @@
+# ChangeLog for net-p2p/lince
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-p2p/lince/ChangeLog,v 1.11 2008/06/19 14:21:51 coldwind Exp $
+
+  19 Jun 2008; Santiago M. Mola <coldwind@gentoo.org> lince-0.99.4.ebuild:
+  Use correct gtkmm slot as advised by remi, bump EAPI.
+
+*lince-0.99.4 (12 May 2008)
+
+  12 May 2008; Santiago M. Mola <coldwind@gentoo.org> -lince-0.99.2.ebuild,
+  -lince-0.99.3.ebuild, +lince-0.99.4.ebuild:
+  Version bump, remove old.
+
+*lince-0.99.3 (16 Apr 2008)
+
+  16 Apr 2008; Santiago M. Mola <coldwind@gentoo.org> -lince-0.99.1.ebuild,
+  +lince-0.99.3.ebuild:
+  Bump to 0.99.3, remove old.
+
+*lince-0.99.2 (22 Mar 2008)
+
+  22 Mar 2008; Santiago M. Mola <coldwind@gentoo.org> +lince-0.99.2.ebuild:
+  Version bump.
+
+  22 Mar 2008; Markus Rothe <corsair@gentoo.org> lince-0.99.1.ebuild:
+  Added ~ppc; bug #211992
+
+  15 Mar 2008; Santiago M. Mola <coldwind@gentoo.org> -lince-0.99.ebuild,
+  lince-0.99.1.ebuild:
+  Remove bogus version and clean up dependencies.
+
+  11 Mar 2008; Brent Baude <ranger@gentoo.org> lince-0.99.1.ebuild:
+  Marking lince-0.99.1 ~ppc64 for bug 211992
+
+*lince-0.99.1 (08 Mar 2008)
+
+  08 Mar 2008; Santiago M. Mola <coldwind@gentoo.org> +lince-0.99.1.ebuild:
+  Version bump, includes minor fixes and menu entry.
+
+  03 Mar 2008; <cla@gentoo.org> lince-0.99.ebuild:
+  Add ~x86 keyword (bug #211031)
+
+  03 Mar 2008; Santiago M. Mola <coldwind@gentoo.org> lince-0.99.ebuild:
+  Remove nls flag, it does nothing.
+
+*lince-0.99 (01 Mar 2008)
+
+  01 Mar 2008; Santiago M. Mola <coldwind@gentoo.org> +lince-0.99.ebuild:
+  Initial ebuild for bug #211831, thanks to Federico Moro <zayer at frikis dot
+  org>.
+

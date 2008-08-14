@@ -1,0 +1,23 @@
+# ChangeLog for media-sound/tapiir
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/tapiir/ChangeLog,v 1.17 2008/05/12 15:53:15 drac Exp $
+
+*tapiir-0.7.2 (12 May 2008)
+
+  12 May 2008; Samuli Suominen <drac@gentoo.org> +tapiir-0.7.2.ebuild:
+  Version bump.
+
+  01 Nov 2006; Alexis Ballier <aballier@gentoo.org>
+  +files/tapiir-0.7.1-gcc4.patch, tapiir-0.7.1.ebuild:
+  Gcc 4 fix wrt bug #153361
+
+  25 Jul 2005; David Holm <dholm@gentoo.org> tapiir-0.7.1.ebuild:
+  Added to ~ppc.
+
+  19 Apr 2005; Bryan Østergaard <kloeri@gentoo.org> metadata.xml:
+  Remove retired developer from metadata.xml.
+
+  18 Dec 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  tapiir-0.7.1.ebuild:
+  Added to ~sparc.
+

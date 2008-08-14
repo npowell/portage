@@ -1,0 +1,253 @@
+# ChangeLog for net-misc/dropbear
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/dropbear/ChangeLog,v 1.63 2008/03/29 04:15:55 vapier Exp $
+
+*dropbear-0.51 (29 Mar 2008)
+
+  29 Mar 2008; Mike Frysinger <vapier@gentoo.org> +dropbear-0.51.ebuild:
+  Version bump.
+
+  29 Mar 2008; Mike Frysinger <vapier@gentoo.org> dropbear-0.50-r1.ebuild:
+  Fix install when USE=minimal #198247.
+
+  17 Mar 2008; Santiago M. Mola <coldwind@gentoo.org>
+  dropbear-0.50-r1.ebuild:
+  ~amd64 added wrt bug #210795
+
+  06 Mar 2008; Raúl Porcel <armin76@gentoo.org> dropbear-0.50-r1.ebuild:
+  Add ~alpha/~ia64/~sparc wrt #210795
+
+  05 Mar 2008; Brent Baude <ranger@gentoo.org> dropbear-0.50-r1.ebuild:
+  keyworded ~arch for ppc64, bug 210795
+
+  04 Mar 2008; <cla@gentoo.org> dropbear-0.50-r1.ebuild:
+  Marked ~x86 (bug #210795). Thanks to Michał Wołonkiewicz <volon@vp.pl> for
+  testing.
+
+  03 Mar 2008; Jeroen Roovers <jer@gentoo.org> dropbear-0.50-r1.ebuild:
+  Marked ~hppa (bug #210795).
+
+*dropbear-0.50-r1 (20 Feb 2008)
+
+  20 Feb 2008; Diego Pettenò <flameeyes@gentoo.org>
+  +dropbear-0.50-r1.ebuild:
+  Add new revision that fixes PAM support, and uses the new pambase setup. The
+  PAM configuration file switched from sshd to dropbear, and uses
+  system-remote-login by default.
+
+  06 Oct 2007; Mike Frysinger <vapier@gentoo.org> dropbear-0.50.ebuild:
+  Add support for USE=bsdpty to control openpty support #192220 by Max and
+  general ebuild cleanup.
+
+*dropbear-0.50 (12 Aug 2007)
+
+  12 Aug 2007; Mike Frysinger <vapier@gentoo.org> +dropbear-0.50.ebuild:
+  Version bump.
+
+  31 Mar 2007; Raúl Porcel <armin76@gentoo.org> dropbear-0.49.ebuild:
+  ia64 stable wrt security bug 168847
+
+  26 Mar 2007; Alec Warner <antarus@gentoo.org> dropbear-0.47-r1.ebuild,
+  dropbear-0.48.1.ebuild, dropbear-0.48.1-r1.ebuild, dropbear-0.49.ebuild:
+  Remove dependency on portage: ref bug 162516
+
+  07 Mar 2007; Alexander H. Færøy <eroyf@gentoo.org> dropbear-0.49.ebuild:
+  Stable on MIPS; bug #168847
+
+  05 Mar 2007; Jose Luis Rivero <yoswink@gentoo.org> dropbear-0.49.ebuild:
+  Stable on alpha wrt security bug #168847
+
+  04 Mar 2007; Jason Wever <weeve@gentoo.org> dropbear-0.49.ebuild:
+  Stable on SPARC wrt security bug #168847.
+
+  03 Mar 2007; Steve Dibb <beandog@gentoo.org> dropbear-0.49.ebuild:
+  amd64 stable, bug 168847
+
+  03 Mar 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  dropbear-0.49.ebuild:
+  Stable on ppc wrt bug #168847.
+
+  02 Mar 2007; Jeroen Roovers <jer@gentoo.org> dropbear-0.49.ebuild:
+  Stable for HPPA (bug #168847).
+
+  02 Mar 2007; Christian Faulhammer <opfer@gentoo.org> dropbear-0.49.ebuild:
+  stable x86; bug 168847
+
+*dropbear-0.49 (27 Feb 2007)
+
+  27 Feb 2007; Mike Frysinger <vapier@gentoo.org> +dropbear-0.49.ebuild:
+  Version bump.
+
+*dropbear-0.48.1-r1 (04 Feb 2007)
+
+  04 Feb 2007; Daniel Black <dragonheart@gentoo.org>
+  +dropbear-0.48.1-r1.ebuild:
+  added savedconfig.eclass prototype - similar to bug #158185
+
+  04 Jan 2007; Mike Frysinger <vapier@gentoo.org> dropbear-0.48.1.ebuild:
+  Set default sftp path to point to the openssh binary #159894 by Lars Weiler.
+
+  05 Aug 2006; Chris White <chriswhite@gentoo.org> metadata.xml:
+  metadata.xml translation by Yoshino-san in bug #135034
+
+*dropbear-0.48.1 (07 Jun 2006)
+
+  07 Jun 2006; Mike Frysinger <vapier@gentoo.org> +dropbear-0.48.1.ebuild:
+  Version bump #134512 by Milan Holzäpfel.
+
+  23 May 2006; <solar@gentoo.org> -dropbear-0.43.ebuild,
+  -dropbear-0.45.ebuild, -dropbear-0.46.ebuild, -dropbear-0.47.ebuild:
+  - removed obsolete/vuln ebuilds
+
+  19 Feb 2006; Joshua Kinard <kumba@gentoo.org> dropbear-0.47-r1.ebuild:
+  Marked stable on mips.
+
+  03 Feb 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  dropbear-0.47-r1.ebuild:
+  ppc stable, bug #119232
+
+  03 Feb 2006; Jose Luis Rivero <yoswink@gentoo.org>
+  dropbear-0.47-r1.ebuild:
+  Stable on alpha wrt sec bug #119232
+
+  02 Feb 2006; Rene Nussbaumer <killerfox@gentoo.org>
+  dropbear-0.47-r1.ebuild:
+  Stable on hppa. See bug #119232.
+
+  02 Feb 2006; Mark Loeser <halcy0n@gentoo.org> dropbear-0.47-r1.ebuild:
+  Stable on x86; bug #119232
+
+  02 Feb 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  dropbear-0.47-r1.ebuild:
+  Stable on sparc wrt security #119232
+
+  02 Feb 2006; Simon Stelling <blubb@gentoo.org> dropbear-0.47-r1.ebuild:
+  stable on amd64 wrt bug 119232
+
+*dropbear-0.47-r1 (02 Feb 2006)
+
+  02 Feb 2006; Mike Frysinger <vapier@gentoo.org>
+  +files/dropbear-0.47-CVE-2006-0225.patch, +dropbear-0.47-r1.ebuild:
+  Fix for security issue #119232.
+
+  30 Dec 2005; Joshua Kinard <kumba@gentoo.org> dropbear-0.47.ebuild:
+  Marked stable on mips.
+
+  21 Dec 2005; Fernando J. Pereda <ferdy@gentoo.org> dropbear-0.47.ebuild:
+  Stable on alpha wrt security bug #116006
+
+  20 Dec 2005; Michael Hanselmann <hansmi@gentoo.org> dropbear-0.47.ebuild:
+  Stable on hppa, ppc.
+
+  20 Dec 2005; Simon Stelling <blubb@gentoo.org> dropbear-0.47.ebuild:
+  stable on amd64 wrt bug 116006
+
+  20 Dec 2005; Mark Loeser <halcy0n@gentoo.org> dropbear-0.47.ebuild:
+  Stable on x86; bug #116006
+
+  20 Dec 2005; Gustavo Zacarias <gustavoz@gentoo.org> dropbear-0.47.ebuild:
+  Stable on sparc wrt security #116006
+
+*dropbear-0.47 (20 Dec 2005)
+
+  20 Dec 2005; Mike Frysinger <vapier@gentoo.org> +dropbear-0.47.ebuild:
+  Version bump #116006 by Sune Kloppenborg Jeppesen.
+
+  10 Dec 2005; Simon Stelling <blubb@gentoo.org> dropbear-0.46.ebuild:
+  stable on amd64
+
+  28 Nov 2005; Gustavo Zacarias <gustavoz@gentoo.org> dropbear-0.46.ebuild:
+  Stable on sparc
+
+  27 Nov 2005; <solar@gentoo.org> dropbear-0.46.ebuild:
+  - stable on x86
+
+  18 Oct 2005; Aron Griffis <agriffis@gentoo.org> dropbear-0.46.ebuild:
+  Mark 0.46 stable on alpha
+
+  13 Aug 2005; Michael Hanselmann <hansmi@gentoo.org> dropbear-0.45.ebuild:
+  Stable on ppc.
+
+  18 Jul 2005; Gustavo Zacarias <gustavoz@gentoo.org> dropbear-0.45.ebuild:
+  Stable on sparc
+
+*dropbear-0.46 (17 Jul 2005)
+
+  17 Jul 2005; <solar.@gentoo.org> +files/dropbear-0.46-dbscp.patch,
+  dropbear-0.45.ebuild, +dropbear-0.46.ebuild:
+  - version bump. fixed dbscp so that it actually works when using +multicall
+
+*dropbear-0.45 (08 Mar 2005)
+
+  08 Mar 2005; <solar@gentoo.org> +files/dropbear-0.45-urandom.patch,
+  +dropbear-0.45.ebuild:
+  - Version bump. Adds support for pam and minimal support
+
+*dropbear-0.44 (11 Jan 2005)
+
+  11 Jan 2005; Mike Frysinger <vapier@gentoo.org>
+  +dropbear-0.44.ebuild:
+  Version bump.
+
+  11 Jan 2005; Gustavo Zacarias <gustavoz@gentoo.org> dropbear-0.43.ebuild:
+  Keyworded sparc directly, it'll be required soon
+
+  23 Sep 2004; Mike Frysinger <vapier@gentoo.org> dropbear-0.43.ebuild,
+  dropbear-0.44_alpha4.ebuild:
+  Add support for USE=static #65108 by Frank Benkstein.
+
+*dropbear-0.44_alpha4 (22 Sep 2004)
+
+  22 Sep 2004; Mike Frysinger <vapier@gentoo.org>
+  +files/0.44_alpha4-install.patch, +dropbear-0.44_alpha4.ebuild:
+  Version bump to test-release.
+
+*dropbear-0.43 (15 Aug 2004)
+
+  15 Aug 2004; Mike Frysinger <vapier@gentoo.org> -dropbear-0.42.ebuild,
+  +dropbear-0.43.ebuild:
+  Version bump.
+
+  09 Jul 2004; Mike Frysinger <vapier@gentoo.org> dropbear-0.42.ebuild:
+  Add support for multibinary functionality (multicall) and static.
+
+*dropbear-0.42 (21 Jun 2004)
+
+  21 Jun 2004; Mike Frysinger <vapier@gentoo.org> +files/dropbear.conf.d,
+  +files/dropbear.init.d, +dropbear-0.42.ebuild:
+  Version bump #54599 by Priit Laes.  Also add some init.d scripts.
+
+*dropbear-0.41 (10 Mar 2004)
+
+  10 Mar 2004; Mike Frysinger <vapier@gentoo.org> :
+  Version bump #43859 by Thomas Eckert.
+
+*dropbear-0.39 (25 Dec 2003)
+
+  25 Dec 2003; Mike Frysinger <vapier@gentoo.org> :
+  Version bump #35951.
+
+*dropbear-0.38 (11 Oct 2003)
+
+  11 Oct 2003; Mike Frysinger <vapier@gentoo.org> :
+  Version bump.
+
+*dropbear-0.37 (06 Oct 2003)
+
+  06 Oct 2003; Mike Frysinger <vapier@gentoo.org> :
+  Version bump.
+
+*dropbear-0.36 (20 Aug 2003)
+
+  20 Aug 2003; Mike Frysinger <vapier@gentoo.org> :
+  Version bump + change install script to use make install + add zlib USE.
+
+*dropbear-0.32 (12 Jun 2003)
+
+  12 Jun 2003; Mike Frysinger <vapier@gentoo.org> :
+  Version bump + ppc stable.
+
+*dropbear-0.30 (30 Apr 2003)
+
+  30 Apr 2003; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by me.

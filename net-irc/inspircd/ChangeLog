@@ -1,0 +1,137 @@
+# ChangeLog for net-irc/inspircd
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-irc/inspircd/ChangeLog,v 1.24 2008/05/21 18:56:03 dev-zero Exp $
+
+  21 May 2008; Tiziano Müller <dev-zero@gentoo.org> inspircd-1.1.19.ebuild:
+  Changed dependency for postgresql from dev-db/postgresql to
+  virtual/postgresql-server
+
+  28 Apr 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  inspircd-1.1.19.ebuild:
+  ppc stable, bug #215704
+
+  26 Apr 2008; Markus Meier <maekke@gentoo.org> inspircd-1.1.19.ebuild:
+  fix cp for openssl in src_unpack, fix ipv6 detection, x86 stable (security
+  bug #215704)
+
+*inspircd-1.1.19 (23 Apr 2008)
+
+  23 Apr 2008; Robert Buchholz <rbu@gentoo.org> -inspircd-1.1.12.ebuild,
+  -inspircd-1.1.13.ebuild, -inspircd-1.1.13-r1.ebuild,
+  +inspircd-1.1.19.ebuild:
+  Non-maintainer-commit: Security bump (bug #215704). Ebuild created by
+  satmd (bug #218880). Moved user creation to preinst step (bug #217042) and
+  introduced some new features, such as LDAP authentication.
+
+  22 Apr 2008; Jeroen Roovers <jer@gentoo.org> metadata.xml:
+  Update maintainer info.
+
+*inspircd-1.1.14 (12 Nov 2007)
+
+  12 Nov 2007; Michael Hanselmann <hansmi@gentoo.org> files/init.d_inspircd,
+  +inspircd-1.1.14.ebuild:
+  Update init.d script from bug 194654. Bump version according to bug 198317
+  with a patch from Eugene Janusov:
+  - toolchain-funcs has been removed from inherit, because not used. Not sure
+    about multilib, leaving it
+  - IUSE moved behind KEYWORDS as in docs and skel.ebuild
+  - svn isn't actually used, so all svn stuff removed
+  - trailing slash added to HOMEPAGE
+  - SRC_URI now points to the official site, because there is no new version on
+    SourceForge
+  - --disable-interactive option added for ./configure
+  - src_compile() partly rewritten and gracefully reformatted
+  - all references to the name of the package replaced with ${PN}
+
+*inspircd-1.1.13-r1 (05 Oct 2007)
+
+  05 Oct 2007; Michael Hanselmann <hansmi@gentoo.org>
+  +inspircd-1.1.13-r1.ebuild:
+  Replace --bin-dir with --binary-dir, bug 194654.
+
+*inspircd-1.1.13 (03 Oct 2007)
+
+  03 Oct 2007; Michael Hanselmann <hansmi@gentoo.org>
+  -inspircd-1.1.11.ebuild, +inspircd-1.1.13.ebuild:
+  Version bump, bug 194652.
+
+*inspircd-1.1.12 (20 Sep 2007)
+
+  20 Sep 2007; Michael Hanselmann <hansmi@gentoo.org>
+  -inspircd-1.1.8-r1.ebuild, -inspircd-1.1.9.ebuild,
+  +inspircd-1.1.12.ebuild:
+  Version bump from bug 193000. Drop old versions.
+
+*inspircd-1.1.11 (06 Aug 2007)
+
+  06 Aug 2007; Michael Hanselmann <hansmi@gentoo.org>
+  +inspircd-1.1.11.ebuild:
+  Version bump (bug 181243).
+
+*inspircd-1.1.9 (11 Jul 2007)
+
+  11 Jul 2007; Michael Hanselmann <hansmi@gentoo.org>
+  -inspircd-1.1.8.ebuild, +inspircd-1.1.9.ebuild:
+  Version bump.
+
+  11 Jul 2007; Michael Hanselmann <hansmi@gentoo.org>
+  inspircd-1.1.8-r1.ebuild:
+  Install includes (bug 181243).
+
+*inspircd-1.1.8-r1 (11 Jul 2007)
+
+  11 Jul 2007; Michael Hanselmann <hansmi@gentoo.org> files/init.d_inspircd,
+  +inspircd-1.1.8-r1.ebuild:
+  Use --logfile, bug 181243.
+
+  10 Jul 2007; Michael Hanselmann <hansmi@gentoo.org> files/init.d_inspircd:
+  Add "provide ircd".
+
+*inspircd-1.1.8 (16 Jun 2007)
+
+  16 Jun 2007; Michael Hanselmann <hansmi@gentoo.org> metadata.xml,
+  +inspircd-1.1.8.ebuild:
+  Version bump by Craig Edwards, bug 181243.
+
+  28 Jan 2007; Michael Hanselmann <hansmi@gentoo.org>
+  -inspircd-1.0.6.ebuild, -inspircd-1.0.7.ebuild:
+  Remove old ebuilds.
+
+  04 Jan 2007; Michael Hanselmann <hansmi@gentoo.org>
+  inspircd-1.0.7-r1.ebuild:
+  Stable on ppc, x86.
+
+*inspircd-1.0.7-r1 (28 Nov 2006)
+
+  28 Nov 2006; Michael Hanselmann <hansmi@gentoo.org>
+  +inspircd-1.0.7-r1.ebuild:
+  New ebuild from William Pitcock in bug 150542 (comment 28). Drops SSL support.
+
+*inspircd-1.0.7 (22 Oct 2006)
+
+  22 Oct 2006; Michael Hanselmann <hansmi@gentoo.org>
+  +inspircd-1.0.7.ebuild:
+  InspIRCd 1.0.7 ebuild by William Pitcock, bug 150542.
+  - updates to 1.0.7 release
+  - fixes improper SSL built_with_use
+  - changes USE=ssl to USE=openssl or USE=gnutls to select which SSL engine
+    modules to enable
+
+  25 Aug 2006; Michael Hanselmann <hansmi@gentoo.org> inspircd-1.0.6.ebuild:
+  Stable on ppc, x86. See bug #145079.
+
+*inspircd-1.0.6 (30 Jul 2006)
+
+  30 Jul 2006; Michael Hanselmann <hansmi@gentoo.org>
+  -inspircd-1.0.5.ebuild, +inspircd-1.0.6.ebuild:
+  Bumped due to a security bug, #142185.
+
+  15 Jul 2006; Michael Hanselmann <hansmi@gentoo.org>
+  +files/init.d_inspircd:
+  Forgot init.d script.
+
+*inspircd-1.0.5 (14 Jul 2006)
+
+  14 Jul 2006; Michael Hanselmann <hansmi@gentoo.org> +metadata.xml,
+  +inspircd-1.0.5.ebuild:
+  Added to portage, ebuild by William Pitcock <nenolod@nenolod.net>.

@@ -1,0 +1,37 @@
+# ChangeLog for net-analyzer/thrulay
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/thrulay/ChangeLog,v 1.9 2007/06/10 19:17:53 robbat2 Exp $
+
+  10 Jun 2007; Robin H. Johnson <robbat2@gentoo.org> thrulay-0.6.ebuild,
+  thrulay-0.8.ebuild:
+  Fix HOMEPAGE in SRC_URI.
+
+  09 Apr 2007; Peter Weller <welp@gentoo.org> thrulay-0.8.ebuild:
+  Stable on amd64 wrt bug 173857
+
+  09 Apr 2007; nixnut <nixnut@gentoo.org> thrulay-0.8.ebuild:
+  Stable on ppc wrt bug 173857
+
+  20 Mar 2007; Raúl Porcel <armin76@gentoo.org> thrulay-0.8.ebuild:
+  x86 stable
+
+  30 Sep 2006; Robin H. Johnson <robbat2@gentoo.org> thrulay-0.8.ebuild:
+  Add ~amd64 so I can use it.
+
+*thrulay-0.8 (12 Dec 2005)
+
+  12 Dec 2005; Robin H. Johnson <robbat2@gentoo.org> +thrulay-0.8.ebuild:
+  Version bump.
+
+  26 Sep 2005; Robin H. Johnson <robbat2@gentoo.org> thrulay-0.6.ebuild:
+  Stable on x86, 114 days in ~x86.
+
+  04 Jun 2005; Sven Wegener <swegener@gentoo.org> thrulay-0.6.ebuild:
+  Added cross-compile support and error checking.
+
+*thrulay-0.6 (04 Jun 2005)
+
+  04 Jun 2005; Robin H. Johnson <robbat2@gentoo.org> +files/thrulayd-conf.d,
+  +files/thrulayd-init.d, +metadata.xml, +thrulay-0.6.ebuild:
+  Initial commit. Ebuild by Robin Johnson <robbat2@gentoo.org>.
+

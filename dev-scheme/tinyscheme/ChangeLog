@@ -1,0 +1,40 @@
+# ChangeLog for dev-scheme/tinyscheme
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-scheme/tinyscheme/ChangeLog,v 1.8 2008/05/08 10:07:42 hkbst Exp $
+
+*tinyscheme-1.39 (08 May 2008)
+
+  08 May 2008; Marijn Schouten <hkBst@gentoo.org> +tinyscheme-1.39.ebuild:
+  bump
+
+  13 Mar 2008; Marijn Schouten <hkBst@gentoo.org> tinyscheme-1.38-r1.ebuild:
+  fix bug 206224
+
+  07 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  tinyscheme-1.38-r1.ebuild:
+  keyworded ~x86, bug 209164
+
+*tinyscheme-1.38-r1 (07 Feb 2008)
+
+  07 Feb 2008; Marijn Schouten <hkBst@gentoo.org> -tinyscheme-1.38.ebuild,
+  +tinyscheme-1.38-r1.ebuild:
+  do the bump for previous change
+
+  07 Feb 2008; Marijn Schouten <hkBst@gentoo.org> tinyscheme-1.38.ebuild:
+  fix bug 209164 thanks to Harald van Dijk <truedfx@gentoo.org>
+
+*tinyscheme-1.38 (09 Jun 2007)
+
+  09 Jun 2007; Marijn Schouten <hkBst@gentoo.org> -tinyscheme-1.37.ebuild,
+  +tinyscheme-1.38.ebuild:
+  bump, make sure CFLAGS and LDFLAGS are respected and DEBUG is not on by
+  default, install init file which it complained about
+
+  11 Feb 2007; Matti Bickel <mabi@gentoo.org> tinyscheme-1.37.ebuild:
+  keyworded ~ppc (bug #161578)
+
+*tinyscheme-1.37 (11 Jan 2007)
+
+  11 Jan 2007; Marijn Schouten <hkBst@gentoo.org> +tinyscheme-1.37.ebuild:
+  Initial ebuild. Thanks to Jonas Geiregat <yux@sdf-eu.org>
+

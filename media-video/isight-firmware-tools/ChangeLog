@@ -1,0 +1,32 @@
+# ChangeLog for media-video/isight-firmware-tools
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/isight-firmware-tools/ChangeLog,v 1.5 2008/08/03 19:39:47 eva Exp $
+
+  03 Aug 2008; Gilles Dartiguelongue <eva@gentoo.org> ChangeLog:
+  remove hal from RDEPEND since it's not used
+
+*isight-firmware-tools-1.2 (03 Aug 2008)
+
+  03 Aug 2008; Gilles Dartiguelongue <eva@gentoo.org>
+  +isight-firmware-tools-1.2.ebuild:
+  bump to 1.2, bug #232161.
+
+*isight-firmware-tools-1.0.2 (18 Feb 2008)
+
+  18 Feb 2008; Gilles Dartiguelongue <eva@gentoo.org> metadata.xml,
+  isight-firmware-tools-1.0.ebuild, +isight-firmware-tools-1.0.2.ebuild:
+  bump to 1.0.2, add myself to maintainer (bug #210632)
+  fix quoting
+
+*isight-firmware-tools-1.0 (29 Dec 2007)
+
+  29 Dec 2007; Stefan Schweizer <genstef@gentoo.org> +files/ift-ldadd.diff,
+  +isight-firmware-tools-1.0.ebuild:
+  version bump
+
+*isight-firmware-tools-0.5.1.1 (19 Dec 2007)
+
+  19 Dec 2007; Stefan Schweizer <genstef@gentoo.org> +metadata.xml,
+  +isight-firmware-tools-0.5.1.1.ebuild:
+  new ebuild
+

@@ -1,0 +1,57 @@
+# ChangeLog for app-dicts/aspell-ca
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-dicts/aspell-ca/ChangeLog,v 1.16 2007/11/03 22:00:12 uberlord Exp $
+
+  03 Nov 2007; Roy Marples <uberlord@gentoo.org>
+  aspell-ca-0.60.20040130.ebuild:
+  Keyworded ~sparc-fbsd and ~x86-fbsd
+
+  15 Aug 2007; Jeroen Roovers <jer@gentoo.org>
+  aspell-ca-0.60.20040130.ebuild:
+  Stable for HPPA (bug #178690).
+
+  09 Aug 2007; Markus Rothe <corsair@gentoo.org>
+  aspell-ca-0.60.20040130.ebuild:
+  Stable on ppc64; bug #178690
+
+  05 Aug 2007; Raúl Porcel <armin76@gentoo.org>
+  aspell-ca-0.60.20040130.ebuild:
+  alpha/ia64/x86 stable wrt #178690
+
+  05 Aug 2007; nixnut <nixnut@gentoo.org> aspell-ca-0.60.20040130.ebuild:
+  Stable on ppc wrt bug 178690
+
+  04 Aug 2007; Ferris McCormick <fmccor@gentoo.org> ChangeLog:
+  Fix digests.
+
+  04 Aug 2007; Ferris McCormick <fmccor@gentoo.org>
+  aspell-ca-0.60.20040130.ebuild:
+  Sparc stable --- Part of Bug #178690
+
+  04 Aug 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  aspell-ca-0.60.20040130.ebuild:
+  Marked stable on amd64 as per bug 178690.
+
+*aspell-ca-0.60.20040130 (03 Aug 2007)
+
+  03 Aug 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  +aspell-ca-0.60.20040130.ebuild:
+  Version bump as per bug 171137. Thanks, jakub, for the ebuild!
+
+  01 Dec 2006; Kevin F. Quinn <kevquinn@gentoo.org> aspell-ca-0.50.2.ebuild:
+  Ebuild cleanups for bug #132718
+
+  30 Jul 2004; Anders Rune Jensen <arj@gentoo.org> +metadata.xml:
+  QA - IUSE fix and {add missing,correct} metatata.xml
+
+*aspell-ca-0.50.2 (18 Oct 2002)
+
+  02 Dec 2002; Seemant Kulleen <seemant@gentoo.org> * :
+
+  Moved from app-i18n to app-dicts
+
+  18 Oct 2002; Seemant Kulleen <seemant@gentoo.org> aspell-ca-0.50.2.ebuild
+  files/digest-aspell-ca-0.50.2 :
+
+  Catalan language aspell dictionary.  GPL copyright is assumed from
+  Redhat's source of this.

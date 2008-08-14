@@ -1,0 +1,38 @@
+# ChangeLog for dev-python/pyinotify
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pyinotify/ChangeLog,v 1.8 2008/03/28 07:05:00 hawking Exp $
+
+*pyinotify-0.7.1 (28 Mar 2008)
+
+  28 Mar 2008; Ali Polatel <hawking@gentoo.org> +pyinotify-0.7.1.ebuild:
+  Version bump.
+
+  01 Mar 2008; Christoph Mende <angelos@gentoo.org> pyinotify-0.7.0.ebuild:
+  Stable on amd64, bug #203522
+
+  17 Feb 2008; nixnut <nixnut@gentoo.org> pyinotify-0.7.0.ebuild:
+  Stable on ppc wrt bug 203522
+
+  16 Feb 2008; Dawid Węgliński <cla@gentoo.org> pyinotify-0.7.0.ebuild:
+  Stable on x86 (bug #203522)
+
+  07 Sep 2007; Joseph Jezak <josejx@gentoo.org> pyinotify-0.7.0.ebuild:
+  Marked ~ppc for bug #186636.
+
+*pyinotify-0.7.0 (17 Feb 2007)
+
+  17 Feb 2007; Lukasz Strzygowski <lucass@gentoo.org>
+  +pyinotify-0.7.0.ebuild:
+  Version bump: added NEED_PYTHON, added docs and examples controlled by USE
+  flags.
+
+  05 Feb 2007; Daniel Gryniewicz <dang@gentoo.org> pyinotify-0.6.3.ebuild:
+  Marked ~amd64
+
+*pyinotify-0.6.3 (03 Feb 2007)
+
+  03 Feb 2007; Bryan Østergaard <kloeri@gentoo.org> +metadata.xml,
+  +pyinotify-0.6.3.ebuild:
+  Initial import, bug 125960. Slightly updated ebuild from Panard
+  <panard.inzenet.org>
+

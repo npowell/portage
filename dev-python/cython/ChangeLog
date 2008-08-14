@@ -1,0 +1,44 @@
+# ChangeLog for dev-python/cython
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/cython/ChangeLog,v 1.11 2008/07/13 21:10:08 josejx Exp $
+
+  13 Jul 2008; Joseph Jezak <josejx@gentoo.org> cython-0.9.6.12.ebuild:
+  Marked ~ppc.
+
+  26 May 2008; Raúl Porcel <armin76@gentoo.org> cython-0.9.6.12.ebuild:
+  Add ~sparc
+
+  25 May 2008; Markus Rothe <corsair@gentoo.org> cython-0.9.6.12.ebuild:
+  Stable on ppc64; bug #223443
+
+  24 May 2008; Jeroen Roovers <jer@gentoo.org> cython-0.9.6.12.ebuild:
+  Stable for HPPA (bug #223443).
+
+  08 Apr 2008; Raúl Porcel <armin76@gentoo.org> cython-0.9.6.12.ebuild:
+  Add ~ia64 wrt #215557
+
+  07 Apr 2008; Markus Rothe <corsair@gentoo.org> cython-0.9.6.12.ebuild:
+  Added ~ppc64; bug #215557
+
+  31 Mar 2008; Jeroen Roovers <jer@gentoo.org> cython-0.9.6.12.ebuild:
+  Marked ~hppa (bug #215557).
+
+*cython-0.9.6.12 (20 Mar 2008)
+
+  20 Mar 2008; Ali Polatel <hawking@gentoo.org> +cython-0.9.6.12.ebuild:
+  Version bump. Thanks to René 'Necoro' Neumann
+
+*cython-0.9.6.10b (04 Jan 2008)
+
+  04 Jan 2008; Ali Polatel <hawking@gentoo.org> +cython-0.9.6.10b.ebuild:
+  Version bump.
+
+  07 Oct 2007; Tiziano Müller <dev-zero@gentoo.org> cython-0.9.6.6.ebuild:
+  Added ~amd64 keyword
+
+*cython-0.9.6.6 (06 Oct 2007)
+
+  06 Oct 2007; Ali Polatel <hawking@gentoo.org> +metadata.xml,
+  +cython-0.9.6.6.ebuild:
+  Initial import. Ebuild submitted by Samuele Kaplun <kaplun@alice.it>
+

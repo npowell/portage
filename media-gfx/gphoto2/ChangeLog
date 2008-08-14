@@ -1,0 +1,274 @@
+# ChangeLog for media-gfx/gphoto2
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/gphoto2/ChangeLog,v 1.69 2008/08/04 22:07:54 eva Exp $
+
+*gphoto2-2.4.2 (04 Aug 2008)
+
+  04 Aug 2008; Gilles Dartiguelongue <eva@gentoo.org> +gphoto2-2.4.2.ebuild:
+  bump to 2.4.2.
+
+  03 Aug 2008; Gilles Dartiguelongue <eva@gentoo.org> -gphoto2-2.2.0.ebuild,
+  -gphoto2-2.3.1.ebuild, -gphoto2-2.4.0.ebuild:
+  clean up old revisions.
+
+  28 May 2008; Markus Meier <maekke@gentoo.org> gphoto2-2.4.1.ebuild:
+  fix docdir, bug #223881
+
+  25 May 2008; Markus Meier <maekke@gentoo.org> gphoto2-2.4.1.ebuild:
+  amd64 stable, bug #221853
+
+  24 May 2008; Tobias Klausmann <klausman@gentoo.org> gphoto2-2.4.1.ebuild:
+  Stable on alpha, bug #221853
+
+  18 May 2008; Raúl Porcel <armin76@gentoo.org> gphoto2-2.4.1.ebuild:
+  sparc stable wrt #221853
+
+  17 May 2008; Raúl Porcel <armin76@gentoo.org> gphoto2-2.2.0.ebuild,
+  gphoto2-2.3.1.ebuild, gphoto2-2.4.0.ebuild, gphoto2-2.4.1.ebuild:
+  Drop ia64, no hardware to test
+
+  17 May 2008; Christian Faulhammer <opfer@gentoo.org> gphoto2-2.4.1.ebuild:
+  stable x86, bug 221853
+
+  16 May 2008; nixnut <nixnut@gentoo.org> gphoto2-2.4.1.ebuild:
+  Stable on ppc wrt bug 221853
+
+  14 May 2008; Markus Rothe <corsair@gentoo.org> gphoto2-2.4.1.ebuild:
+  Stable on ppc64; bug #221853
+
+  31 Mar 2008; Gilles Dartiguelongue <eva@gentoo.org> gphoto2-2.4.1.ebuild:
+  fix built_with_use arguments order
+
+  31 Mar 2008; Mart Raudsepp <leio@gentoo.org> gphoto2-2.4.1.ebuild:
+  Fix build by inheriting eutils to get built_with_use definition, bug 215517
+
+*gphoto2-2.4.1 (30 Mar 2008)
+
+  30 Mar 2008; Gilles Dartiguelongue <eva@gentoo.org> -gphoto2-2.1.4.ebuild,
+  -gphoto2-2.1.5.ebuild, -gphoto2-2.1.6.ebuild, +gphoto2-2.4.1.ebuild:
+  bump to 2.4.1 with a fix for bug #194929. Clean up old revisions.
+
+  07 Oct 2007; Gilles Dartiguelongue <eva@gentoo.org> gphoto2-2.4.0.ebuild:
+  raising libgphoto dependency per bug #194929
+
+*gphoto2-2.4.0 (03 Oct 2007)
+
+  03 Oct 2007; Gilles Dartiguelongue <eva@gentoo.org> +gphoto2-2.4.0.ebuild:
+  bump to 2.4.0
+
+  30 Aug 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing liquidx from metadata due to his retirement (see #171155 for
+  reference).
+
+  06 Jun 2007; Matthias Schwarzott <zzam@gentoo.org> metadata.xml:
+  I do no longer maintain gphoto. Added to herd graphics.
+
+  28 Mar 2007; Raúl Porcel <armin76@gentoo.org> gphoto2-2.2.0.ebuild:
+  ia64 stable wrt bug 158684
+
+*gphoto2-2.3.1 (27 Jan 2007)
+
+  27 Jan 2007; Alon Bar-Lev <alonbl@gentoo.org> +gphoto2-2.3.1.ebuild:
+  Version bump, bug#159609, maintainer is not responsive
+
+  11 Jan 2007; Daniel Gryniewicz <dang@gentoo.org> gphoto2-2.2.0.ebuild:
+  Marked stable on amd64 for bug #158684
+
+  30 Dec 2006; Bryan Østergaard <kloeri@gentoo.org> gphoto2-2.2.0.ebuild:
+  Stable on Alpha, bug 158684.
+
+  23 Dec 2006; Matthias Schwarzott <zzam@gentoo.org> metadata.xml:
+  Added me to maintainers.
+
+  22 Dec 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  gphoto2-2.2.0.ebuild:
+  Stable on ppc wrt bug #158684.
+
+  22 Dec 2006; Andrej Kacian <ticho@gentoo.org> gphoto2-2.2.0.ebuild:
+  Stable on x86, bug #158684.
+
+  21 Dec 2006; Markus Rothe <corsair@gentoo.org> gphoto2-2.2.0.ebuild:
+  Stable on ppc64; bug #158684
+
+  21 Dec 2006; Gustavo Zacarias <gustavoz@gentoo.org> gphoto2-2.2.0.ebuild:
+  Stable on sparc wrt #158684
+
+  20 Dec 2006; Matthias Schwarzott <zzam@gentoo.org> gphoto2-2.1.6.ebuild,
+  gphoto2-2.2.0.ebuild:
+  Removed calls to eautoreconf which never worked anyway, also removed now
+  useless eclasses.
+
+*gphoto2-2.2.0 (05 Jul 2006)
+
+  05 Jul 2006; Daniel Gryniewicz <dang@gentoo.org> +gphoto2-2.2.0.ebuild:
+  Bump to 2.2.0.  Bug #138962
+
+  25 Nov 2005; Marcus D. Hanwell <cryos@gentoo.org> gphoto2-2.1.6.ebuild:
+  Stable on amd64.
+
+  03 Nov 2005; Alastair Tse <liquidx@gentoo.org> gphoto2-2.1.4.ebuild,
+  gphoto2-2.1.5.ebuild:
+  fix elibtoolize before autotools (#106176)
+
+  16 Sep 2005; <dang@gentoo.org> gphoto2-2.1.6.ebuild:
+  Don't re-autotool after elibtoolize.  Bug #106176
+
+  05 Sep 2005; Markus Rothe <corsair@gentoo.org> gphoto2-2.1.6.ebuild:
+  Stable on ppc64
+
+  26 Aug 2005; Aron Griffis <agriffis@gentoo.org> gphoto2-2.1.6.ebuild:
+  stable on alpha ia64
+
+  24 Aug 2005; Aron Griffis <agriffis@gentoo.org> gphoto2-2.1.5.ebuild:
+  stable on ia64
+
+  31 Jul 2005; Tobias Scherbaum <dertobi123@gentoo.org>
+  gphoto2-2.1.5.ebuild:
+  ppc stable
+
+  27 Jun 2005; Markus Rothe <corsair@gentoo.org> gphoto2-2.1.5.ebuild:
+  Stable on ppc64
+
+  25 Jun 2005; Gustavo Zacarias <gustavoz@gentoo.org> gphoto2-2.1.5.ebuild:
+  Stable on sparc
+
+  24 Jun 2005; Alastair Tse <liquidx@gentoo.org> gphoto2-2.1.6.ebuild:
+  change jpeg USE flag to exif (#93652)
+
+*gphoto2-2.1.6 (24 Jun 2005)
+
+  24 Jun 2005; Alastair Tse <liquidx@gentoo.org> -gphoto2-2.1.1-r1.ebuild,
+  -gphoto2-2.1.2.ebuild, -gphoto2-2.1.3.ebuild, gphoto2-2.1.5.ebuild,
+  +gphoto2-2.1.6.ebuild:
+  version bump (#96879)
+
+  08 May 2005; Aron Griffis <agriffis@gentoo.org> gphoto2-2.1.4.ebuild:
+  stable on ia64
+
+  30 Mar 2005; Bryan Østergaard <kloeri@gentoo.org> gphoto2-2.1.5.ebuild:
+  Add ~alpha keyword, bug 87009.
+
+*gphoto2-2.1.5 (13 Jan 2005)
+
+  13 Jan 2005; Alastair Tse <liquidx@gentoo.org> +gphoto2-2.1.5.ebuild:
+  version bump (#74640) thanks to Robert Davis <rdavis@unico.com>.
+
+  17 Oct 2004; Dylan Carlson <absinthe@gentoo.org> gphoto2-2.1.4.ebuild:
+  stable on amd64.
+
+  31 Jul 2004; Tom Gall <tgall@gentoo.org> gphoto2-2.1.4.ebuild:
+  stable on ppc64, bug #57131
+
+  25 Apr 2004; Aron Griffis <agriffis@gentoo.org> gphoto2-2.1.1-r1.ebuild,
+  gphoto2-2.1.2.ebuild, gphoto2-2.1.3.ebuild, gphoto2-2.1.4.ebuild:
+  Add die following econf for bug 48950
+
+  23 Feb 2004; Sven Blumenstein <bazik@gentoo.org> gphoto2-2.1.4.ebuild:
+  Stable on sparc.
+
+  18 Feb 2004; Aron Griffis <agriffis@gentoo.org> gphoto2-2.1.3.ebuild,
+  gphoto2-2.1.4.ebuild:
+  add ia64/~ia64 keywords
+
+  05 Feb 2004; Luca Barbato <lu_zero@gentoo.org> gphoto2-2.1.3.ebuild:
+  Marked ppc
+
+*gphoto2-2.1.4 (01 Feb 2004)
+
+  01 Feb 2004; Alastair Tse <liquidx@gentoo.org> gphoto2-2.1.3.ebuild,
+  gphoto2-2.1.4.ebuild:
+  version bump (#38713)
+
+  29 Nov 2003; Brad House <brad_mssw@gentoo.org> gphoto2-2.1.3.ebuild:
+  mark stable on amd64
+
+*gphoto2-2.1.3 (28 Oct 2003)
+
+  28 Oct 2003; Alastair Tse <liquidx@gentoo.org> gphoto2-2.1.3.ebuild:
+  version bump (#31566)
+
+  26 Oct 2003; Brad House <brad_mssw@gentoo.org> gphoto2-2.1.2.ebuild:
+  add ~amd64 flag
+
+  12 Oct 2003; Heinrich Wendel <lanius@gentoo.org> gphoto2-2.1.2.ebuild:
+  fixed dep on libgphoto2
+
+*gphoto2-2.1.2 (28 Aug 2003)
+
+  28 Aug 2003; Alastair Tse <liquidx@gentoo.org> gphoto2-2.1.2.ebuild,
+  metadata.xml:
+  version bump, add maintainer
+
+  09 Jul 2003; Alastair Tse <liquidx@gentoo.org> gphoto2-2.1.1-r1.ebuild:
+  added pkgconfig dep
+
+  02 Jul 2003; Jason Wever <weeve@gentoo.org> gphoto2-2.1.1-r1.ebuild:
+  Changed ~sparc keyword to sparc.
+
+  10 Jun 2003; Alastair Tse <liquidx@gentoo.org> gphoto2-2.1.1-r1.ebuild:
+  bumped to stable x86
+
+  20 May 2003; Jason Wever <weeve@gentoo.org> gphoto2-2.1.1-r1.ebuild:
+  Added ~sparc to keywords.
+
+*gphoto2-2.1.1-r1 (11 May 2003)
+
+  11 May 2003; Alastair Tse <liquidx@gentoo.org> gphoto2-2.1.1-r1.ebuild:
+  added optional exif support. Bug #12044.
+
+*gphoto2-2.1.1 (12 feb 2003)
+  
+  12 feb 2003; Spider <spider@gentoo.org> gphoto2-2.1.1.ebuild :
+  lots of changes, libgphoto2 dependency, added aalib? useflag (jpeg is only 
+  used to transfer data to aalib for previews.) added ncurses for the 
+  configurator frontend, added readline optional diable switch. Marked popt 
+   as a fixed dep, since it will become the defacto standard
+
+  
+
+*gphoto2-2.1.0 (23 Oct 2002)
+  
+  02 Dec 2002; Spider <spider@gentoo.org> gphoto2-2.1.0 :
+  marked it as x86
+
+  06 Nov 2002; Seemant Kulleen <seemant@gentoo.org> gphoto2-2.0-r1.ebuild
+  gphoto2-2.1.0.ebuild :
+
+  Introduced flag-o-matic inheritance to filter out the -pipe optimisation
+  flag.  USE dependent NLS compilation. Man pages installed into FHS correct
+  locations.
+
+  23 Oct 2002 ; Spider <spider@gentoo.org> gphoto2-2.1.0.ebuild :
+  new ebuild introduced to bugzilla by  
+  Robert Davis <rdavis@uniformcompany.com>
+
+*gphoto2-2.0-r1 (01 April 2002)
+
+  19 Oct 2002; Calum Selkirk <cselkirk@gentoo.org> gphoto2-2.0-r1.ebuild :
+
+  Added ppc to KEYWORDS.
+
+  11 Apr 2002; Spider <spider@gentoo.org>
+  Update all glib dependencies to use glib-1.2*  in preparation of
+unmasking the glib-2.0.1 packages
+
+  01 April 2002; Spider <spider@gentoo.org>
+  move to gphoto2
+
+*gphoto-2.0-r1 (16 March 2002)
+
+  16 March 2002; M.Schlemmer <azarah@gentoo.org> :
+
+  Libtoolize gphoto to properly fix the compile/missing libraries.
+
+*gphoto-2.0 (11 March 2002)
+
+*gphoto-2.0_beta3 (1 Feb 2002)
+
+  1 Feb 2002; G.Bevin <gbevin@gentoo.org> ChangeLog :
+  
+  Added initial ChangeLog which should be updated whenever the package is
+  updated in any way. This changelog is targetted to users. This means that the
+  comments should well explained and written in clean English. The details about
+  writing correct changelogs are explained in the skel.ChangeLog file which you
+  can find in the root directory of the portage repository.

@@ -1,0 +1,37 @@
+# ChangeLog for app-backup/kbackup
+# Copyright 2006-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-backup/kbackup/ChangeLog,v 1.7 2008/03/26 20:58:17 deathwing00 Exp $
+
+  26 Mar 2008; Ioannis Aslanidis <deathwing00@gentoo.org>
+  -kbackup-0.5.1.ebuild:
+  Cleaned up older versions.
+
+  09 Feb 2008; Wulf C. Krueger <philantrop@gentoo.org> kbackup-0.5.3.ebuild:
+  Marked stable on amd64 as per bug 208607.
+
+  02 Feb 2008; Christian Faulhammer <opfer@gentoo.org> kbackup-0.5.3.ebuild:
+  stable x86, bug 208607
+
+*kbackup-0.5.4 (30 Jan 2008)
+
+  30 Jan 2008; Ioannis Aslanidis <deathwing00@gentoo.org>
+  +kbackup-0.5.4.ebuild:
+  Version bump.
+
+*kbackup-0.5.3 (14 Oct 2007)
+
+  14 Oct 2007; Tobias Heinlein <keytoaster@gentoo.org>
+  +kbackup-0.5.3.ebuild:
+  Version bump, bug #195822
+
+  26 Dec 2006; Piotr Jaroszyński <peper@gentoo.org> kbackup-0.5.1.ebuild:
+  Add ~amd64 wrt bug #159012.
+
+*kbackup-0.5.1 (15 Oct 2006)
+
+  15 Oct 2006; Ioannis Aslanidis <deathwing00@gentoo.org> +metadata.xml,
+  +kbackup-0.5.1.ebuild:
+  Initial version. Fixes bug #151330. Thanks to Gero Mudersbach for his inital
+  ebuild. Added language support and documentation support to the initial
+  ebuild.
+

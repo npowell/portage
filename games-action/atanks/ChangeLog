@@ -1,0 +1,175 @@
+# ChangeLog for games-action/atanks
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-action/atanks/ChangeLog,v 1.32 2008/08/11 08:14:07 mr_bones_ Exp $
+
+*atanks-3.1 (11 Aug 2008)
+
+  11 Aug 2008; Michael Sterrett <mr_bones_@gentoo.org> +atanks-3.1.ebuild:
+  version bump
+
+  25 Jun 2008; nixnut <nixnut@gentoo.org> atanks-2.9.ebuild:
+  Stable on ppc wrt bug 229241
+
+  25 Jun 2008; Christian Faulhammer <opfer@gentoo.org> atanks-2.9.ebuild:
+  stable x86, bug 229241
+
+  24 Jun 2008; Kenneth Prugh <ken69267@gentoo.org> atanks-2.9.ebuild:
+  amd64 stable, bug #229241
+
+*atanks-2.9 (27 Mar 2008)
+
+  27 Mar 2008; Tristan Heaven <nyhm@gentoo.org> +atanks-2.9.ebuild:
+  Version bump
+
+*atanks-2.8 (17 Feb 2008)
+
+  17 Feb 2008; Tristan Heaven <nyhm@gentoo.org> +atanks-2.8.ebuild:
+  Version bump
+
+*atanks-2.7 (19 Dec 2007)
+
+  19 Dec 2007; Michael Sterrett <mr_bones_@gentoo.org> +atanks-2.7.ebuild:
+  version bump
+
+*atanks-2.5 (18 Aug 2007)
+
+  18 Aug 2007; Michael Sterrett <mr_bones_@gentoo.org> +atanks-2.5.ebuild:
+  version bump
+
+*atanks-2.4 (29 Jun 2007)
+
+  29 Jun 2007; Tristan Heaven <nyhm@gentoo.org> +atanks-2.4.ebuild:
+  Version bump
+
+*atanks-2.3 (08 Apr 2007)
+
+  08 Apr 2007; Michael Sterrett <mr_bones_@gentoo.org> -atanks-2.2.ebuild,
+  +atanks-2.3.ebuild:
+  version bump; clean out older ebuild
+
+*atanks-2.2 (10 Mar 2007)
+
+  10 Mar 2007; Tristan Heaven <nyhm@gentoo.org> +atanks-2.2.ebuild:
+  Version bump
+
+*atanks-2.1 (13 Feb 2007)
+
+  13 Feb 2007; Tristan Heaven <nyhm@gentoo.org> +atanks-2.1.ebuild:
+  Version bump
+
+*atanks-2.0 (11 Jan 2007)
+
+  11 Jan 2007; Tristan Heaven <nyhm@gentoo.org> +atanks-2.0.ebuild:
+  Version bump
+
+  27 Oct 2006; Tristan Heaven <nyhm@gentoo.org> atanks-1.1.0.ebuild:
+  Remove unneeded allegttf dependency
+
+  20 Sep 2006; <blubb@gentoo.org> atanks-1.1.0.ebuild:
+  stable on amd64
+
+  28 Jan 2006; Joshua Baergen <joshuabaergen@gentoo.org>
+  atanks-1.1.0.ebuild:
+  Remove x11 dependencies as this package does not directly depend on X.
+
+  19 Aug 2005; Mark Loeser <halcy0n@gentoo.org> -files/atanks-gcc34.patch,
+  +files/atanks-1.1.0-gcc4.patch, atanks-1.1.0.ebuild:
+  Fix compilation on GCC-4.  Similar fix as was needed for gcc-3.4, but this one
+  sucks less.  Removed the old fix and apply this one in all cases since it
+  doesn't break on gcc-3.3.
+
+  10 Aug 2005; <dang@gentoo.org> atanks-1.1.0.ebuild:
+  Keyworded ~amd64
+
+  19 May 2005; Michael Sterrett <mr_bones_@gentoo.org> atanks-1.1.0.ebuild:
+  fix up patching.  gcc-3.3 doesn't like the patch for gcc-3.4.
+
+  17 May 2005; Chris Gianelloni <wolf31o2@gentoo.org> atanks-1.1.0.ebuild:
+  Cleanup for bug #92745.
+
+  19 Dec 2004; Joseph Jezak <josejx@gentoo.org> atanks-1.1.0.ebuild:
+  Marked ppc stable.
+
+  20 Nov 2004; Michael Sterrett <mr_bones_@gentoo.org>
+  +files/1.1.0-gentoo.patch, atanks-1.1.0.ebuild:
+  add two patches from basic (bug #66718)
+
+  01 Nov 2004; Joseph Jezak <josejx@gentoo.org> atanks-1.1.0.ebuild:
+  Marked ~ppc
+
+  12 Sep 2004; Michael Sterrett <mr_bones_@gentoo.org> atanks-1.1.0.ebuild:
+  need eutils for epatch
+
+  04 Sep 2004; Daniel Goller <morfic@gentoo.org> +files/atanks-gcc34.patch,
+  atanks-1.1.0.ebuild:
+  applied gcc34 patch, fixing bug #60692
+  thanks Halcy0n
+
+  23 Mar 2004; Michael Sterrett <mr_bones_@gentoo.org> atanks-1.1.0.ebuild:
+  don't rdepend on sed
+
+  23 Mar 2004; Michael Sterrett <mr_bones_@gentoo.org> atanks-0.9.9d.ebuild,
+  atanks-1.0.0.ebuild:
+  clean old versions
+
+*atanks-1.1.0 (05 Feb 2004)
+
+  05 Feb 2004; Michael Sterrett <mr_bones_@gentoo.org> atanks-0.9.9d.ebuild,
+  atanks-1.0.0.ebuild, atanks-1.1.0.ebuild:
+  version bump
+
+*atanks-1.0.0 (25 Nov 2003)
+
+  25 Nov 2003; Michael Sterrett <mr_bones_@gentoo.org> atanks-1.0.0.ebuild:
+  version bump
+
+*atanks-0.9.9d (20 Aug 2003)
+
+  20 Aug 2003; Michael Sterrett <msterret@gentoo.org> atanks-0.9.9d.ebuild:
+  version bump
+
+*atanks-0.9.9b (15 Aug 2003)
+
+  15 Aug 2003; Michael Sterrett <msterret@gentoo.org> atanks-0.9.9b.ebuild:
+  version bump
+
+*atanks-0.9.9a (11 Aug 2003)
+
+  11 Aug 2003; Michael Sterrett <msterret@gentoo.org> atanks-0.9.9a.ebuild:
+  version bump
+
+*atanks-0.9.8h (08 Aug 2003)
+
+  08 Aug 2003; Michael Sterrett <msterret@gentoo.org> atanks-0.9.8h.ebuild:
+  version bump
+
+*atanks-0.9.8g (04 Aug 2003)
+
+  04 Aug 2003; Michael Sterrett <msterret@gentoo.org> atanks-0.9.8g.ebuild:
+  version bump
+
+*atanks-0.9.8f (03 Aug 2003)
+
+  03 Aug 2003; Michael Sterrett <msterret@gentoo.org> atanks-0.9.8f.ebuild:
+  version bump
+
+  02 Aug 2003; Michael Sterrett <msterret@gentoo.org> atanks-0.9.8e.ebuild:
+  using sed -i so need to depend on sed >= 4
+
+*atanks-0.9.8e (02 Aug 2003)
+
+  02 Aug 2003; Michael Sterrett <msterret@gentoo.org> atanks-0.9.8d.ebuild,
+  atanks-0.9.8e.ebuild:
+  version bump. includes the good pkg_postinst note from Rob Cakebread (bug
+  25787)
+
+*atanks-0.9.8d (01 Aug 2003)
+
+  01 Aug 2003; Michael Sterrett <msterret@gentoo.org> atanks-0.9.8d.ebuild:
+  version bump
+
+*atanks-0.9.8b (31 Jul 2003)
+
+  31 Jul 2003; Michael Sterrett <msterret@gentoo.org> atanks-0.9.8b.ebuild:
+  initial commit.  ebuild submitted by Rob Cakebread via bug 25606 (modified)
+

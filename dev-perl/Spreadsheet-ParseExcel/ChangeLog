@@ -1,0 +1,100 @@
+# ChangeLog for dev-perl/Spreadsheet-ParseExcel
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Spreadsheet-ParseExcel/ChangeLog,v 1.20 2007/11/10 14:34:30 drac Exp $
+
+  10 Nov 2007; Samuli Suominen <drac@gentoo.org>
+  Spreadsheet-ParseExcel-0.32.ebuild:
+  amd64 stable
+
+  13 Jul 2007; Raúl Porcel <armin76@gentoo.org>
+  Spreadsheet-ParseExcel-0.32.ebuild:
+  ia64/x86 stable
+
+  10 Jul 2007; Michael Cummings <mcummings@gentoo.org>
+  Spreadsheet-ParseExcel-0.28.ebuild:
+  sparc stable
+
+  10 Jul 2007; Michael Cummings <mcummings@gentoo.org>
+  Spreadsheet-ParseExcel-0.28.ebuild, Spreadsheet-ParseExcel-0.32.ebuild:
+  Fixing deps to reflect optional unicode and cjk support
+
+  21 Jun 2007; Michael Cummings <mcummings@gentoo.org>
+  Spreadsheet-ParseExcel-0.32.ebuild:
+  Marking sparc stable
+
+*Spreadsheet-ParseExcel-0.32 (05 May 2007)
+
+  05 May 2007; Christian Hartmann <ian@gentoo.org>
+  -Spreadsheet-ParseExcel-0.30.ebuild, -Spreadsheet-ParseExcel-0.31.ebuild,
+  +Spreadsheet-ParseExcel-0.32.ebuild:
+  Version bump; old (see upstream changelog); SRC_TEST love
+
+*Spreadsheet-ParseExcel-0.31 (04 May 2007)
+
+  04 May 2007; Christian Hartmann <ian@gentoo.org>
+  +Spreadsheet-ParseExcel-0.31.ebuild:
+  Version bump
+
+  09 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  Spreadsheet-ParseExcel-0.28.ebuild:
+  Marking stable amd64
+
+*Spreadsheet-ParseExcel-0.30 (06 Apr 2007)
+
+  06 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  +Spreadsheet-ParseExcel-0.30.ebuild:
+  Version bump
+
+  14 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  -Spreadsheet-ParseExcel-0.27.ebuild:
+  Cleaning out spare ebuild
+
+*Spreadsheet-ParseExcel-0.28 (14 Jan 2007)
+*Spreadsheet-ParseExcel-0.27 (14 Jan 2007)
+*Spreadsheet-ParseExcel-0.26.03 (14 Jan 2007)
+
+  14 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  +Spreadsheet-ParseExcel-0.26.03.ebuild,
+  +Spreadsheet-ParseExcel-0.27.ebuild, +Spreadsheet-ParseExcel-0.28.ebuild,
+  -Spreadsheet-ParseExcel-0.2603.ebuild:
+  Version bump; had to adjust version numbering
+
+  15 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  Spreadsheet-ParseExcel-0.2603.ebuild:
+  Marking amd64 stable
+
+  17 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Spreadsheet-ParseExcel-0.2603.ebuild:
+  Keyworing ~amd64
+
+  17 Aug 2006; Christian Hartmann <ian@gentoo.org>
+  Spreadsheet-ParseExcel-0.2603.ebuild:
+  Missing dev-perl/IO-stringy dependency added; META.yml does not say so but
+  the package needs dev-perl/IO-stringy to work correctly
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Spreadsheet-ParseExcel-0.2603.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  10 Jul 2006; Aron Griffis <agriffis@gentoo.org>
+  Spreadsheet-ParseExcel-0.2603.ebuild:
+  Mark 0.2603 stable on ia64
+
+  04 Jul 2006; Christian Hartmann <ian@gentoo.org>
+  Spreadsheet-ParseExcel-0.2603.ebuild:
+  Fixed RDEPEND wrt bug #134781
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org>
+  Spreadsheet-ParseExcel-0.2603.ebuild:
+  Mark 0.2603 ~ia64
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  Spreadsheet-ParseExcel-0.2603.ebuild:
+  marking sparc x86 stable
+
+*Spreadsheet-ParseExcel-0.2603 (01 May 2005)
+
+  01 May 2005; Michael Cummings <mcummings@gentoo.org> +metadata.xml,
+  +Spreadsheet-ParseExcel-0.2603.ebuild:
+  Optional dep for new swish-e
+

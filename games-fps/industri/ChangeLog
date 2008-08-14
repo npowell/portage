@@ -1,0 +1,34 @@
+# ChangeLog for games-fps/industri
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-fps/industri/ChangeLog,v 1.10 2008/01/30 17:30:00 nyhm Exp $
+
+  30 Jan 2008; Tristan Heaven <nyhm@gentoo.org> industri-1.01.ebuild:
+  Depend on virtual/opengl and not media-libs/mesa
+
+  02 Jul 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/industri-1.01-exec-stack.patch, industri-1.01.ebuild:
+  remove need for an executable stack
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  11 Jan 2007; Chris Gianelloni <wolf31o2@gentoo.org> industri-1.01.ebuild:
+  Add games-fps/quake1-data to RDEPEND w/ USE=cdinstall, since it requires the
+  data to play.
+
+  05 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org> industri-1.01.ebuild:
+  Removing old virtual/x11 dependency.
+
+  22 Mar 2006; Michael Sterrett <mr_bones_@gentoo.org> industri-1.01.ebuild:
+  modular X deps
+
+  16 Sep 2005; Michael Sterrett <mr_bones_@gentoo.org> industri-1.01.ebuild:
+  needs app-arch/unzip; tidy
+
+  03 Jun 2004; Aron Griffis <agriffis@gentoo.org> industri-1.01.ebuild:
+  Fix use invocation
+
+*industri-1.01 (30 Oct 2003)
+
+  30 Oct 2003; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by me.

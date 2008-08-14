@@ -1,0 +1,35 @@
+# ChangeLog for www-apps/horde-groupware
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-apps/horde-groupware/ChangeLog,v 1.5 2008/08/07 18:44:34 wrobel Exp $
+
+  07 Aug 2008; wrobel@gentoo.org horde-groupware-1.0.6.ebuild,
+  horde-groupware-1.1.1.ebuild:
+  Add the horde applications combined within this meta package.
+
+*horde-groupware-1.1.1 (24 Jun 2008)
+*horde-groupware-1.0.6 (24 Jun 2008)
+
+  24 Jun 2008; wrobel@gentoo.org metadata.xml,
+  -horde-groupware-1.0.5.ebuild, +horde-groupware-1.0.6.ebuild,
+  -horde-groupware-1.1.ebuild, +horde-groupware-1.1.1.ebuild:
+  Added horde-groupware-{1.0.6,1.1.1}, removed horde-groupware-{1.0.5,1.1}
+  (sec issue #228509).
+
+*horde-groupware-1.1 (01 Jun 2008)
+
+  01 Jun 2008; Mike Frysinger <vapier@gentoo.org>
+  +horde-groupware-1.1.ebuild:
+  Version bump #224333 by Arfrever Frehtes Taifersar Arahesis.
+
+*horde-groupware-1.0.5 (09 Mar 2008)
+
+  09 Mar 2008; Mike Frysinger <vapier@gentoo.org>
+  +horde-groupware-1.0.5.ebuild:
+  Version bump.
+
+*horde-groupware-1.0.4 (20 Feb 2008)
+
+  20 Feb 2008; Mike Frysinger <vapier@gentoo.org> +metadata.xml,
+  +horde-groupware-1.0.4.ebuild:
+  Initial package #187384 by Toffanin [WiredTEK].
+

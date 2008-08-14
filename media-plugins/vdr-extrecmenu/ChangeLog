@@ -1,0 +1,112 @@
+# ChangeLog for media-plugins/vdr-extrecmenu
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-extrecmenu/ChangeLog,v 1.21 2008/06/15 21:40:50 hd_brummy Exp $
+
+  15 Jun 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/vdr-extrecmenu-1.2_pre1-gcc43.patch,
+  vdr-extrecmenu-1.2_pre1.ebuild:
+  patch to fix gcc-4.3.x compile problems; thanks to M.Brakemeier on bug
+  #227093
+
+  09 Apr 2008; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-extrecmenu-1.2_pre1.ebuild:
+  Fix vdr dependency.
+
+*vdr-extrecmenu-1.2_pre1 (07 Apr 2008)
+
+  07 Apr 2008; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-extrecmenu-1.2_pre1.ebuild:
+  Added 1.2-test1 version.
+
+*vdr-extrecmenu-1.1 (22 Oct 2007)
+
+  22 Oct 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-extrecmenu-1.1.ebuild:
+  Version bumped.
+
+*vdr-extrecmenu-1.0 (07 Oct 2007)
+
+  07 Oct 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +vdr-extrecmenu-1.0.ebuild:
+  version bump
+
+*vdr-extrecmenu-0.13-r1 (23 May 2007)
+
+  23 May 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +files/0.13/MainMenuHooks.diff, +files/0.13/series,
+  +vdr-extrecmenu-0.13-r1.ebuild:
+  Added mainmenuhooks support.
+
+  05 Feb 2007; Matthias Schwarzott <zzam@gentoo.org>
+  files/digest-vdr-extrecmenu-0.13, Manifest:
+  Fixed upstream modified tarball.
+
+*vdr-extrecmenu-0.13 (04 Feb 2007)
+
+  04 Feb 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +vdr-extrecmenu-0.13.ebuild:
+  version bump
+
+  03 Dec 2006; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/vdr-extrecmenu-0.12a-uint32_t.diff, vdr-extrecmenu-0.12a.ebuild:
+  patch to fix missing header added
+
+  26 Oct 2006; Matthias Schwarzott <zzam@gentoo.org>
+  -vdr-extrecmenu-0.9.ebuild:
+  Now really doing cleanup, thanks to jakub for telling me. :)
+
+  25 Oct 2006; Matthias Schwarzott <zzam@gentoo.org> ChangeLog:
+  Cleanup of old version.
+
+  08 Sep 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-extrecmenu-0.12a.ebuild:
+  Stable on x86.
+
+  02 Aug 2006; Matthias Schwarzott <zzam@gentoo.org> metadata.xml:
+  Assigned package to VDR-Project.
+
+  25 Jun 2006; Joerg Bornkessel <hd_brummy@gentoo.org>
+  -vdr-extrecmenu-0.10.ebuild, -vdr-extrecmenu-0.11.ebuild,
+  -vdr-extrecmenu-0.12.ebuild:
+  cleanup old versions
+
+*vdr-extrecmenu-0.12a (20 Jun 2006)
+
+  20 Jun 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-extrecmenu-0.12a.ebuild:
+  Version bumped. This is a bugfix release.
+
+*vdr-extrecmenu-0.12 (20 Jun 2006)
+
+  20 Jun 2006; Joerg Bornkessel <hd_brummy@gentoo.org>
+  -vdr-extrecmenu-0.8a.ebuild, +vdr-extrecmenu-0.12.ebuild:
+  version bump; old version removed
+
+*vdr-extrecmenu-0.11 (28 May 2006)
+
+  28 May 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-extrecmenu-0.11.ebuild:
+  Version bumped.
+
+  22 May 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-extrecmenu-0.8a.ebuild, vdr-extrecmenu-0.9.ebuild:
+  Marked stable on x86.
+
+*vdr-extrecmenu-0.10 (05 May 2006)
+
+  05 May 2006; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +vdr-extrecmenu-0.10.ebuild:
+  version bump
+
+*vdr-extrecmenu-0.9 (16 Apr 2006)
+
+  16 Apr 2006; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +vdr-extrecmenu-0.9.ebuild:
+  version bump
+
+*vdr-extrecmenu-0.8a (01 Apr 2006)
+
+  01 Apr 2006; Joerg Bornkessel <hd_brummy@gentoo.org> +metadata.xml,
+  +vdr-extrecmenu-0.8a.ebuild:
+  initial ebuild
+

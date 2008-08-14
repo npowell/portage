@@ -1,0 +1,38 @@
+# ChangeLog for app-forensics/cmospwd
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-forensics/cmospwd/ChangeLog,v 1.8 2008/03/12 09:48:57 phreak Exp $
+
+  12 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Robert Clark (hyakuhei, #154737) from metadata.xml.
+
+  27 Jun 2007; Daniel Black <dragonheart@gentoo.org> -cmospwd-4.4.ebuild,
+  -cmospwd-4.7.ebuild, cmospwd-4.8.ebuild:
+  added amd64 keyword. removed old versions
+
+*cmospwd-4.8 (17 May 2007)
+
+  17 May 2007; Robert Clark <hyakuhei@gentoo.org> +cmospwd-4.8.ebuild:
+  Version bump to 4.8
+  HOMEPAGE changed
+  SRC_URI changed, files are now .tar.bz2
+
+  08 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+*cmospwd-4.7 (07 Nov 2005)
+
+  07 Nov 2005; Daniel Black <dragonheart@gentoo.org> +cmospwd-4.7.ebuild:
+  version bump
+
+  04 Sep 2005; Daniel Black <dragonheart@gentoo.org> cmospwd-4.6.ebuild:
+  stable x86
+
+*cmospwd-4.6 (28 Jul 2005)
+
+  28 Jul 2005; Daniel Black <dragonheart@gentoo.org> +cmospwd-4.6.ebuild:
+  Version bump
+
+  26 Jan 2005; Daniel Black <dragonheart@gentoo.org>
+  +cmospwd-4.4.ebuild, +metadata.xml:
+  Initial import
+

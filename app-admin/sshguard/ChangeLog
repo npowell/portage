@@ -1,0 +1,28 @@
+# ChangeLog for app-admin/sshguard
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/sshguard/ChangeLog,v 1.7 2008/07/18 23:16:24 cla Exp $
+
+  18 Jul 2008; Dawid Węgliński <cla@gentoo.org> sshguard-1.0.ebuild:
+  amd64 stable (bug #225235)
+
+  17 Jul 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
+  add GLEP 56 USE flag desc from use.local.desc
+
+  14 Jun 2008; Raúl Porcel <armin76@gentoo.org> sshguard-1.0.ebuild:
+  x86 stable wrt #225235
+
+  15 Aug 2007; Steve Dibb <beandog@gentoo.org> sshguard-1.0.ebuild:
+  add ~amd64, bug 188693
+
+  08 Jul 2007; Ali Polatel <hawking@gentoo.org> sshguard-1.0.ebuild:
+  Added support for g/fbsd (bug #182926 thanks to Pierre Guinoiseau)
+
+  22 Jun 2007; Ali Polatel <hawking@gentoo.org> sshguard-1.0.ebuild:
+  Added virtual/logger to RDEPEND
+
+*sshguard-1.0 (21 Jun 2007)
+
+  21 Jun 2007; Ali Polatel (hawking) <polatel@gmail.com>
+  +sshguard-1.0.ebuild:
+  Import from gentoo-sunrise, bug #169754 (thanks to Brandon Captain)
+

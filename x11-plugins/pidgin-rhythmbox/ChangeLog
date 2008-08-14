@@ -1,0 +1,22 @@
+# ChangeLog for x11-plugins/pidgin-rhythmbox
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-plugins/pidgin-rhythmbox/ChangeLog,v 1.6 2007/08/28 16:24:55 nixnut Exp $
+
+  28 Aug 2007; nixnut <nixnut@gentoo.org> pidgin-rhythmbox-2.0.ebuild:
+  Stable on ppc wrt bug 189781
+
+  26 Aug 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  pidgin-rhythmbox-2.0.ebuild:
+  Marked stable on amd64 as per bug 189781.
+
+  24 Aug 2007; Christian Faulhammer <opfer@gentoo.org>
+  pidgin-rhythmbox-2.0.ebuild:
+  stable x86, bug 189781
+
+  22 Aug 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  pidgin-rhythmbox-2.0.ebuild:
+  Stable on sparc wrt #189781
+
+  01 May 2007; Olivier Crête <tester@gentoo.org> ChangeLog:
+  Add continuation of x11-plugins/gaim-rhythmbox
+

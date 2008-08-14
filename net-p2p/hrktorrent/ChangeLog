@@ -1,0 +1,55 @@
+# ChangeLog for net-p2p/hrktorrent
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-p2p/hrktorrent/ChangeLog,v 1.11 2008/06/30 16:19:39 drac Exp $
+
+*hrktorrent-0.3.2 (30 Jun 2008)
+
+  30 Jun 2008; Samuli Suominen <drac@gentoo.org> +hrktorrent-0.3.2.ebuild:
+  Version bump wrt #230215, tanks to Sebastian Mair for reporting.
+
+  05 Jun 2008; Raúl Porcel <armin76@gentoo.org> -hrktorrent-0.3.0.ebuild,
+  hrktorrent-0.3.1.ebuild:
+  x86 stable, remove old
+
+  10 Apr 2008; Samuli Suominen <drac@gentoo.org> hrktorrent-0.3.1.ebuild:
+  amd64 stable
+
+*hrktorrent-0.3.1 (16 Mar 2008)
+
+  16 Mar 2008; Samuli Suominen <drac@gentoo.org> +hrktorrent-0.3.1.ebuild:
+  Version bump wrt #213515, thanks to Nico R. Wohlgemuth for reporting.
+
+  25 Feb 2008; Raúl Porcel <armin76@gentoo.org> hrktorrent-0.3.0.ebuild:
+  x86 stable
+
+  05 Feb 2008; Samuli Suominen <drac@gentoo.org> -hrktorrent-0.2.3.ebuild,
+  hrktorrent-0.3.0.ebuild:
+  amd64 stable
+
+*hrktorrent-0.3.0 (25 Dec 2007)
+
+  25 Dec 2007; Samuli Suominen <drac@gentoo.org> +hrktorrent-0.3.0.ebuild:
+  Version bump wrt #203304, thanks to Sebastian Mair for reporting.
+
+*hrktorrent-0.2.3 (02 Dec 2007)
+
+  02 Dec 2007; Samuli Suominen <drac@gentoo.org> +hrktorrent-0.2.3.ebuild:
+  Version bump, drop patch since it was applied upstream.
+
+  26 Nov 2007; Samuli Suominen <drac@gentoo.org>
+  +files/hrktorrent-0.2.2-Makefile.patch, hrktorrent-0.2.2.ebuild:
+  Makefile was confusing LDFLAGS with LIBS, CFLAGS with CXXFLAGS, add a patch
+  for it. Keyword ~amd64 wrt #200409.
+
+*hrktorrent-0.2.2 (26 Nov 2007)
+
+  26 Nov 2007; Raúl Porcel <armin76@gentoo.org> -hrktorrent-0.2.1.ebuild,
+  +hrktorrent-0.2.2.ebuild:
+  Version bump
+
+*hrktorrent-0.2.1 (23 Nov 2007)
+
+  23 Nov 2007; Raúl Porcel <armin76@gentoo.org> +metadata.xml,
+  +hrktorrent-0.2.1.ebuild:
+  Initial import, initial ebuild by 'most.idiot' from the forums
+

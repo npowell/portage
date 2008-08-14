@@ -1,0 +1,66 @@
+# ChangeLog for sci-libs/pgplot
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/pgplot/ChangeLog,v 1.13 2008/06/29 08:07:10 tove Exp $
+
+  29 Jun 2008; Torsten Veller <tove@gentoo.org> pgplot-5.2.2-r2.ebuild:
+  Add missing die: || "..." -> || die "..."
+
+  27 Jun 2008; Ulrich Mueller <ulm@gentoo.org> pgplot-5.2.2-r2.ebuild:
+  Change dependency from virtual/motif to x11-libs/openmotif, bug 224749.
+
+  23 Jun 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  pgplot-5.2.2-r2.ebuild:
+  Enabling gif, wd and ppd drivers to be compiled when gfortran >= 4.3, some
+  minor qa fixes
+
+  11 Oct 2007; Sébastien Fabbro <bicatali@gentoo.org> -pgplot-5.2.2.ebuild,
+  -pgplot-5.2.2-r1.ebuild, pgplot-5.2.2-r2.ebuild:
+  Added ifc as a possible fortran compiler, x11-libs/libXt as a dep, more
+  cleaning.
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>; pgplot-5.2.2.ebuild:
+  Drop virtual/x11 references.
+
+  23 Apr 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  pgplot-5.2.2-r2.ebuild:
+  fixed a bad link for shared lib
+
+*pgplot-5.2.2-r2 (09 Mar 2007)
+
+  09 Mar 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  files/pgplot-drivers.patch, -files/pgplot-path.patch,
+  +files/pgplot-pgdisp.patch, +pgplot-5.2.2-r2.ebuild:
+  Now install pgdisp, more drivers, and more doc. Add a motif and tk flag 
+  to allow these two drivers to be built. Remove drivers using the non 
+  standard fortran %val for gfortran to compile (if g77 selected, drivers
+  won't be removed). Did some cleaning as well.
+
+*pgplot-5.2.2-r1 (05 Mar 2007)
+
+  05 Mar 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/pgplot-path.patch, metadata.xml, +pgplot-5.2.2-r1.ebuild:
+  General cleaning, added patches, a src_test, now does full 
+  installation, and a longdescrption in metadata.xml. Also tested on 
+  amd64.
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  05 Aug 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Remove myself as maintainer, anyone feel free to work on this, although I'll
+  continue to do so as well.
+
+  07 Jul 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Update to my new email address.
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org> pgplot-5.2.2.ebuild:
+  Mark 5.2.2 ~ia64
+
+*pgplot-5.2.2 (16 Dec 2005)
+
+  16 Dec 2005; Donnie Berkholz <dberkholz@gentoo.org>;
+  +files/pgplot-compile-setup.patch, +files/pgplot-drivers.patch,
+  +files/pgplot-makemake.patch, +metadata.xml, +pgplot-5.2.2.ebuild:
+  A Fortran- or C-callable, device-independent graphics package for making
+  simple scientific graphs.
+

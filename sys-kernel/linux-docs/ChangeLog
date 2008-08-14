@@ -1,0 +1,70 @@
+# ChangeLog for sys-kernel/linux-docs
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/linux-docs/ChangeLog,v 1.16 2008/05/08 12:24:12 mpagano Exp $
+
+  08 May 2008; Mike Pagano <mpagano@gentoo.org> linux-docs-2.4.32.ebuild,
+  linux-docs-2.6.16.ebuild, +linux-docs-2.6.25.2.ebuild:
+  Version bump and qa cleanups
+
+*linux-docs-2.6.25.2 (08 May 2008)
+
+  08 May 2008; Mike Pagano <mpagano@gentoo.org> +linux-docs-2.6.25.2.ebuild:
+  Version bump
+
+*linux-docs-2.6.24.2 (17 Feb 2008)
+
+  17 Feb 2008; Mike Pagano <mpagano@gentoo.org> +linux-docs-2.6.24.2.ebuild:
+  Version bump for 2.6.24 series
+
+  05 Nov 2007; Michael Pagano <mpagano@gentoo.org> ChangeLog:
+  Added myself as maintainer, version bumps for 2.4 and 2.6 kernel documentation.
+
+  04 Nov 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing myself as the maintainer.
+
+  12 May 2007; Daniel Drake <dsd@gentoo.org> metadata.xml:
+  Remove kernel herd from metadata
+
+  13 Nov 2006; Joseph Jezak <josejx@gentoo.org> linux-docs-2.6.16.ebuild:
+  Marked ppc stable for bug #154904.
+
+  17 Aug 2006; Markus Rothe <corsair@gentoo.org> linux-docs-2.6.16.ebuild:
+  Stable on ppc64
+
+  02 Aug 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  linux-docs-2.4.32.ebuild, linux-docs-2.6.16.ebuild:
+  Stable on sparc
+
+  24 Jul 2006; Daniel Drake <dsd@gentoo.org> linux-docs-2.6.16.ebuild:
+  Stable on x86 and amd64
+
+  27 Jun 2006; Guy Martin <gmsoft@gentoo.org> linux-docs-2.6.16.ebuild:
+  Added ~hppa to KEYWORDS.
+
+  30 May 2006; Markus Rothe <corsair@gentoo.org> linux-docs-2.6.16.ebuild:
+  Added ~ppc64; bug #134615
+
+  30 May 2006; Joseph Jezak <josejx@gentoo.org> linux-docs-2.4.32.ebuild,
+  linux-docs-2.6.16.ebuild:
+  Marked ~ppc for bug #134615.
+
+  30 May 2006; Jason Wever <weeve@gentoo.org> linux-docs-2.4.32.ebuild,
+  linux-docs-2.6.16.ebuild:
+  Added ~sparc keywords wrt bug #134615.
+
+  28 May 2006; Thomas Cort <tcort@gentoo.org> linux-docs-2.4.32.ebuild,
+  linux-docs-2.6.16.ebuild:
+  Added ~alpha keyword wrt Bug #134615.
+
+  28 May 2006; Diego Pettenò <flameeyes@gentoo.org>
+  linux-docs-2.4.32.ebuild, linux-docs-2.6.16.ebuild:
+  Add ~amd64 keyword as per bug #134615.
+
+*linux-docs-2.6.16 (11 May 2006)
+*linux-docs-2.4.32 (11 May 2006)
+
+  11 May 2006; Henrik Brix Andersen <brix@gentoo.org> +metadata.xml,
+  +linux-docs-2.4.32.ebuild, +linux-docs-2.6.16.ebuild:
+  Initial versions of split-out Linux kernel documentation (man pages, HTML
+  docs). Will eventually fix bug #131648.
+

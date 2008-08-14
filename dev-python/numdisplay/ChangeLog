@@ -1,0 +1,16 @@
+# ChangeLog for dev-python/numdisplay
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/numdisplay/ChangeLog,v 1.2 2008/06/26 14:29:48 bicatali Exp $
+
+*numdisplay-1.4 (26 Jun 2008)
+
+  26 Jun 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  +numdisplay-1.4.ebuild:
+  Version bump
+
+*numdisplay-1.3 (23 Aug 2007)
+
+  23 Aug 2007; Sébastien Fabbro <bicatali@gentoo.org> +metadata.xml,
+  +numdisplay-1.3.ebuild:
+  Initial import. Closing bug #147468.
+

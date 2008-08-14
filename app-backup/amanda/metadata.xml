@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<herd>app-backup</herd>
+	<maintainer>
+		<email>robbat2@gentoo.org</email>
+		<description>Primary maintainer</description>
+		<name>Robin H. Johnson</name>
+	</maintainer>
+	<maintainer>
+		<email>monitor@oops.co.at</email>
+		<description>Proxied developer. Please CC on bugs.</description>
+		<name>Stefan G. Weichinger</name>
+	</maintainer>
+	<use>
+		<flag name='xfs'>Support for backing up raw XFS filesystems using
+			xfsdump</flag>
+	</use>
+</pkgmetadata>

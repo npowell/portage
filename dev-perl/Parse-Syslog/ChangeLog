@@ -1,0 +1,48 @@
+# ChangeLog for dev-perl/Parse-Syslog
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Parse-Syslog/ChangeLog,v 1.12 2008/07/17 18:49:01 armin76 Exp $
+
+  17 Jul 2008; Raúl Porcel <armin76@gentoo.org> Parse-Syslog-1.10.ebuild:
+  alpha/sparc/x86 stable
+
+*Parse-Syslog-1.10 (29 Apr 2008)
+
+  29 Apr 2008; Yuval Yaari <yuval@gentoo.org> +Parse-Syslog-1.10.ebuild:
+  Version bump
+
+  12 Apr 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  Parse-Syslog-1.09.ebuild:
+  Added ~ppc, bug #216925
+
+  19 Nov 2007; Raúl Porcel <armin76@gentoo.org> Parse-Syslog-1.09.ebuild:
+  alpha stable wrt #199035
+
+  14 Nov 2007; Alex Howells <ahowells@gentoo.org> ChangeLog:
+  changing ~amd64 -> amd64, wrt bug #199035 (rdepend)
+
+  13 Nov 2007; Dawid Węgliński <cla@gentoo.org> Parse-Syslog-1.09.ebuild:
+  Stable on x86 (bug #199035)
+
+  13 Nov 2007; Markus Rothe <corsair@gentoo.org> Parse-Syslog-1.09.ebuild:
+  Stable on ppc64; bug #199035
+
+  27 Jul 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  Parse-Syslog-1.09.ebuild:
+  Stable on sparc
+
+  27 Jun 2007; Raúl Porcel <armin76@gentoo.org> Parse-Syslog-1.09.ebuild:
+  Add ~alpha wrt #183038
+
+  27 Jun 2007; Markus Rothe <corsair@gentoo.org> Parse-Syslog-1.09.ebuild:
+  Added ~ppc64; bug #183038
+
+  26 Jun 2007; Ferris McCormick <fmccor@gentoo.org>
+  Parse-Syslog-1.09.ebuild:
+  Add ~sparc keyword --- Bug #183038 --- all tests successful.
+
+*Parse-Syslog-1.09 (26 Jun 2007)
+
+  26 Jun 2007; Christian Hartmann <ian@gentoo.org> +metadata.xml,
+  +Parse-Syslog-1.09.ebuild:
+  New package requested by dertobi123
+

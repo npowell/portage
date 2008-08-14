@@ -1,0 +1,66 @@
+# ChangeLog for x11-apps/xkbutils
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-apps/xkbutils/ChangeLog,v 1.15 2008/03/24 14:10:21 maekke Exp $
+
+  24 Mar 2008; Markus Meier <maekke@gentoo.org> xkbutils-1.0.1.ebuild:
+  amd64 stable, bug #202087
+
+  19 Dec 2007; Dawid Węgliński <cla@gentoo.org> xkbutils-1.0.1.ebuild:
+  Stable on x86 (bug #202087)
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  20 May 2006; Robin H. Johnson <robbat2@gentoo.org> xkbutils-1.0.1.ebuild:
+  Added ~ppc after testing.
+
+  14 Feb 2006; Markus Rothe <corsair@gentoo.org> xkbutils-1.0.1.ebuild:
+  Added ~ppc64
+
+  26 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  -xkbutils-0.99.2.ebuild, -xkbutils-1.0.0.ebuild:
+  Pull old versions.
+
+*xkbutils-1.0.1 (23 Dec 2005)
+
+  23 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +xkbutils-1.0.1.ebuild:
+  Bump for 7.0.
+
+*xkbutils-1.0.0 (18 Dec 2005)
+
+  18 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +xkbutils-1.0.0.ebuild:
+  Bump for 7.0RC4.
+
+  09 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  -xkbutils-0.99.0.ebuild, -xkbutils-0.99.1.ebuild:
+  Pull old versions.
+
+*xkbutils-0.99.2 (04 Dec 2005)
+
+  04 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +xkbutils-0.99.2.ebuild:
+  Bump for 7.0RC3.
+
+  17 Nov 2005; Herbie Hopkins <herbs@gentoo.org> xkbutils-0.99.1.ebuild:
+  Marked ~amd64.
+
+*xkbutils-0.99.1 (11 Nov 2005)
+
+  11 Nov 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +xkbutils-0.99.1.ebuild:
+  Bump for 7.0RC2.
+
+  09 Sep 2005; Donnie Berkholz <spyderous@gentoo.org>; +metadata.xml:
+  Add metadata.
+
+  08 Aug 2005; Ferris McCormick <fmccor@gentoo.org> xkbutils-0.99.0.ebuild:
+  Add ~sparc keyword (Modular X testing).
+
+*xkbutils-0.99.0 (08 Aug 2005)
+
+  08 Aug 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +xkbutils-0.99.0.ebuild:
+  Initial commit for modular X.
+

@@ -1,0 +1,74 @@
+# ChangeLog for dev-perl/IO-Interface
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/IO-Interface/ChangeLog,v 1.18 2007/07/11 20:18:07 armin76 Exp $
+
+  11 Jul 2007; Raúl Porcel <armin76@gentoo.org> IO-Interface-1.03.ebuild:
+  ia64 stable
+
+  11 Jul 2007; Raúl Porcel <armin76@gentoo.org> IO-Interface-1.03.ebuild:
+  x86 stable
+
+  05 May 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  IO-Interface-1.03.ebuild:
+  ppc stable
+
+  10 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  IO-Interface-1.03.ebuild:
+  sparc stable
+
+  09 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  IO-Interface-1.03.ebuild:
+  Marking stable amd64
+
+  05 Mar 2007; Andrej Kacian <ticho@gentoo.org> IO-Interface-1.02.ebuild:
+  Stable on x86, bug #169152.
+
+*IO-Interface-1.03 (05 Feb 2007)
+
+  05 Feb 2007; Michael Cummings <mcummings@gentoo.org>
+  +IO-Interface-1.03.ebuild:
+  Version bump
+
+  23 Jan 2007; Bryan Østergaard <kloeri@gentoo.org>
+  IO-Interface-1.02.ebuild:
+  Add ~ia64 keyword.
+
+  06 Jan 2007; Bryan Østergaard <kloeri@gentoo.org>
+  IO-Interface-1.02.ebuild:
+  Add ~alpha keyword.
+
+  21 Oct 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  IO-Interface-1.02.ebuild:
+  ppc stable
+
+  21 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  IO-Interface-1.02.ebuild:
+  Marking stable sparc
+
+  21 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  IO-Interface-1.02.ebuild:
+  Marking amd64 stable
+
+*IO-Interface-1.02 (24 Sep 2006)
+
+  24 Sep 2006; Christian Hartmann <ian@gentoo.org>
+  +IO-Interface-1.02.ebuild:
+  Version bump
+
+  09 Sep 2006; <nixnut@gentoo.org> IO-Interface-0.98.ebuild:
+  Added ~ppc wrt bug 146683
+
+  07 Sep 2006; Michael Cummings <mcummings@gentoo.org>
+  IO-Interface-0.98.ebuild:
+  Just cleaning up
+
+  07 Sep 2006; Michael Cummings <mcummings@gentoo.org>
+  IO-Interface-0.98.ebuild:
+  Bug 146683, keywording ~amd64 and ~sparc
+
+*IO-Interface-0.98 (07 Sep 2006)
+
+  07 Sep 2006; Yuval Yaari <yuval@gentoo.org> +metadata.xml,
+  +IO-Interface-0.98.ebuild:
+  Adding IO-Interface to the tree, dependency of dev-perl/Net-Pcap-0.14
+

@@ -1,0 +1,93 @@
+# ChangeLog for net-analyzer/smokeping
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/smokeping/ChangeLog,v 1.22 2008/05/13 15:57:36 jer Exp $
+
+  13 May 2008; Jeroen Roovers <jer@gentoo.org> smokeping-2.3.5.ebuild:
+  Marked ~hppa (LuckyLuke).
+
+*smokeping-2.3.5 (21 Apr 2008)
+
+  21 Apr 2008; Luca Longinotti <chtekk@gentoo.org> files/smokeping.init,
+  -smokeping-2.0.9.ebuild, -smokeping-2.2.3-r1.ebuild,
+  smokeping-2.2.4.ebuild, +smokeping-2.3.5.ebuild:
+  Add smokeping 2.3.5, fixes bug #203945. Mark smokeping 2.2.4 amd64 stable.
+  Cleanup old ebuilds.
+
+  05 Feb 2008; Benedikt Böhm <hollow@gentoo.org> smokeping-2.0.9.ebuild,
+  smokeping-2.2.3-r1.ebuild, smokeping-2.2.4.ebuild:
+  remove apache depend implied already by mod_perl
+
+  20 Jan 2008; Raúl Porcel <armin76@gentoo.org> smokeping-2.2.4.ebuild:
+  sparc/x86 stable
+
+  18 Sep 2007; Michael Hanselmann <hansmi@gentoo.org> files/smokeping.init:
+  Set LC_ALL before starting smokeping. This allows 2.2.x to start when
+  LC_NUMERIC is set.
+
+*smokeping-2.2.4 (17 Sep 2007)
+
+  17 Sep 2007; Michael Hanselmann <hansmi@gentoo.org>
+  +smokeping-2.2.4.ebuild:
+  Version bump.
+
+*smokeping-2.2.3-r1 (16 Sep 2007)
+
+  16 Sep 2007; Michael Hanselmann <hansmi@gentoo.org>
+  -smokeping-2.2.3.ebuild, +smokeping-2.2.3-r1.ebuild:
+  Install cropper scripts.
+
+  14 Sep 2007; Michael Hanselmann <hansmi@gentoo.org>
+  smokeping-2.2.3.ebuild:
+  Depend on dev-perl/Net-DNS, required by the AnotherDNS probe.
+
+*smokeping-2.2.3 (13 Sep 2007)
+
+  13 Sep 2007; Michael Hanselmann <hansmi@gentoo.org>
+  +smokeping-2.2.3.ebuild:
+  Version bump.
+
+  13 Sep 2007; Michael Hanselmann <hansmi@gentoo.org>
+  smokeping-2.0.9.ebuild:
+  Fix website and source URL, bug #183711. Fix typo in output.
+
+  29 Jul 2007; Christian Heim <phreak@gentoo.org> smokeping-2.0.9.ebuild:
+  Fixing the DEPEND/RDEPEND for the move of net-www/apache to
+  www-servers/apache (#78622).
+
+  17 May 2007; Luca Longinotti <chtekk@gentoo.org> smokeping-2.0.9.ebuild:
+  Fix bug #157690.
+
+  14 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+  01 May 2007; Marius Mauch <genone@gentoo.org> smokeping-2.0.9.ebuild:
+  Replacing einfo with elog
+
+  28 Apr 2007; Torsten Veller <tove@gentoo.org> smokeping-2.0.9.ebuild:
+  Use newinitd
+
+  17 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  smokeping-2.0.9.ebuild:
+  Stable on sparc
+
+  13 Mar 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  smokeping-2.0.9.ebuild:
+  Keyworded ~sparc wrt #168808
+
+  09 Oct 2006; Luca Longinotti <chtekk@gentoo.org> smokeping-2.0.9.ebuild:
+  Fix bug #150559.
+
+  20 Sep 2006; <blubb@gentoo.org> smokeping-2.0.9.ebuild:
+  stable on amd64
+
+  20 Sep 2006; Joshua Jackson <tsunam@gentoo.org> smokeping-2.0.9.ebuild:
+  Stable x86; bug #148231
+
+*smokeping-2.0.9 (09 Aug 2006)
+
+  09 Aug 2006; Luca Longinotti <chtekk@gentoo.org> +files/78_smokeping.conf,
+  +files/config.dist, +files/smokeping.init, +metadata.xml,
+  +smokeping-2.0.9.ebuild:
+  Add package, closes bug #66980. Thanks to Lee Thompson and Steve Clement for
+  the initial ebuild.
+

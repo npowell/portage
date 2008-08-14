@@ -1,0 +1,210 @@
+# ChangeLog for www-apps/drupal
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-apps/drupal/ChangeLog,v 1.49 2008/07/31 20:41:04 wrobel Exp $
+
+*drupal-5.9 (31 Jul 2008)
+
+  31 Jul 2008; wrobel@gentoo.org -drupal-5.8.ebuild, +drupal-5.9.ebuild:
+  Bumped to drupal-5.9 in response to sec issue #233478. Removed vulnerable 5.8.
+
+  15 Jul 2008; Peter Volkov <pva@gentoo.org> drupal-5.8.ebuild,
+  drupal-6.3.ebuild:
+  drupal works with either gd or gd-external in php, fixing php checks.
+  Thank padde for IRC-report.
+
+*drupal-6.3 (14 Jul 2008)
+*drupal-5.8 (14 Jul 2008)
+
+  14 Jul 2008; Peter Volkov <pva@gentoo.org> -drupal-5.6.ebuild,
+  -drupal-5.7.ebuild, +drupal-5.8.ebuild, -drupal-6.0.ebuild,
+  -drupal-6.1.ebuild, -drupal-6.2.ebuild, +drupal-6.3.ebuild:
+  Version bump, bug #231748, thank John Klehm for report. Fixes security bug
+  #231372, thank Hanno Boeck and our security team for report. Removed
+  vulnerable versions.
+
+*drupal-5.7 (27 Apr 2008)
+
+  27 Apr 2008; wrobel@gentoo.org +drupal-5.7.ebuild:
+  Added drupal-5.7. Bug #218842.
+
+*drupal-6.2 (25 Apr 2008)
+
+  25 Apr 2008; Benedikt Böhm <hollow@gentoo.org> +drupal-6.2.ebuild:
+  version bump wrt security #217223
+
+  03 Apr 2008; Benedikt Böhm <hollow@gentoo.org> drupal-5.6.ebuild,
+  drupal-6.0.ebuild, drupal-6.1.ebuild:
+  fix #213061
+
+*drupal-6.1 (01 Mar 2008)
+
+  01 Mar 2008; Benedikt Böhm <hollow@gentoo.org> +drupal-6.1.ebuild:
+  version bump wrt security #211940
+
+  15 Feb 2008; Gunnar Wrobel <wrobel@gentoo.org> drupal-5.6.ebuild,
+  drupal-6.0.ebuild:
+  Correct the dependency on php.
+
+*drupal-6.0 (15 Feb 2008)
+
+  15 Feb 2008; Gunnar Wrobel <wrobel@gentoo.org> +drupal-6.0.ebuild:
+  Added drupal-6.0 to the tree (#208227).
+
+*drupal-5.6 (17 Jan 2008)
+
+  17 Jan 2008; Gunnar Wrobel <wrobel@gentoo.org> -drupal-5.5.ebuild,
+  +drupal-5.6.ebuild:
+  Added drupal-5.6, removed drupal-5.5 in response to sec issue #205305.
+
+*drupal-5.5 (07 Dec 2007)
+
+  07 Dec 2007; Gunnar Wrobel <wrobel@gentoo.org> -drupal-5.4.ebuild,
+  +drupal-5.5.ebuild:
+  Added drupal-5.5 to the tree, removed drupal-5.4. Closes security issue
+  #201550.
+
+*drupal-5.4 (06 Dec 2007)
+
+  06 Dec 2007; Gunnar Wrobel <wrobel@gentoo.org> +files/postinstall-en.txt,
+  metadata.xml, -drupal-5.2.ebuild, -drupal-5.3.ebuild, +drupal-5.4.ebuild:
+  Added drupal-5.4 to the tree. Fixes security bug #201478. Removed Roy
+  Marples as maintainer since he retired. Added a postinstall instructions
+  file.
+
+*drupal-5.3 (18 Oct 2007)
+
+  18 Oct 2007; Roy Marples <uberlord@gentoo.org> +drupal-5.3.ebuild:
+  Bump, #196116.
+
+*drupal-5.2 (28 Jul 2007)
+
+  28 Jul 2007; Roy Marples <uberlord@gentoo.org> +drupal-5.2.ebuild:
+  Bump, #186884 thanks to Pierre-Yves Rofes.
+
+  19 Mar 2007; Luca Barbato <lu_zero@gentoo.org> drupal-5.1.ebuild:
+  protect .htaccess
+
+*drupal-5.1 (21 Feb 2007)
+
+  21 Feb 2007; Roy Marples <uberlord@gentoo.org> +drupal-5.1.ebuild:
+  Bump
+
+*drupal-5.0 (18 Jan 2007)
+
+  18 Jan 2007; Roy Marples <uberlord@gentoo.org> +drupal-5.0.ebuild:
+  New release, fixes #162489.
+
+*drupal-4.7.5 (06 Jan 2007)
+
+  06 Jan 2007; Roy Marples <uberlord@gentoo.org> +drupal-4.7.5.ebuild:
+  New release, #160375 thanks to Executioner.
+
+  03 Jan 2007; Roy Marples <uberlord@gentoo.org> drupal-4.7.4.ebuild:
+  Don't pull in any databases ourselves, #159781.
+
+*drupal-4.7.4 (28 Nov 2006)
+
+  28 Nov 2006; Roy Marples <uberlord@gentoo.org> +drupal-4.7.4.ebuild:
+  New version, addresses some security issues, #151993.
+  We no longer install any 3rd party modules, #98524.
+
+  23 Nov 2006; Francesco Riosa <vivo@gentoo.org> drupal-4.5.7.ebuild,
+  drupal-4.5.8.ebuild, drupal-4.6.2.ebuild, drupal-4.6.3.ebuild,
+  drupal-4.6.5.ebuild, drupal-4.6.6.ebuild, drupal-4.6.8.ebuild,
+  drupal-4.6.9.ebuild, drupal-4.7.0.ebuild, drupal-4.7.2.ebuild,
+  drupal-4.7.3.ebuild:
+  dev-db/mysql => virtual/mysql
+
+  28 Oct 2006; Sven Wegener <swegener@gentoo.org> drupal-4.5.7.ebuild,
+  drupal-4.5.8.ebuild, drupal-4.6.2.ebuild, drupal-4.6.3.ebuild,
+  drupal-4.6.5.ebuild, drupal-4.6.6.ebuild, drupal-4.6.8.ebuild,
+  drupal-4.6.9.ebuild, drupal-4.7.0.ebuild, drupal-4.7.2.ebuild,
+  drupal-4.7.3.ebuild:
+  Use emerge --config instead of ebuild config.
+
+*drupal-4.7.3 (21 Aug 2006)
+*drupal-4.6.9 (21 Aug 2006)
+
+  21 Aug 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  +drupal-4.6.9.ebuild, +drupal-4.7.3.ebuild:
+  Security bump, bug #142774
+
+  05 Jun 2006; Roy Marples <uberlord@gentoo.org> drupal-4.7.2.ebuild:
+  Depend on virtual/httpd-php instead of apache, #117759.
+
+*drupal-4.7.2 (05 Jun 2006)
+*drupal-4.6.8 (05 Jun 2006)
+
+  05 Jun 2006; Lim Swee Tat <st_lim@gentoo.org> +drupal-4.6.8.ebuild,
+  +drupal-4.7.2.ebuild:
+  Added 4.7.2 and 4.6.8
+
+*drupal-4.7.0 (05 May 2006)
+*drupal-4.6.6 (05 May 2006)
+*drupal-4.5.8 (05 May 2006)
+
+  05 May 2006; Lim Swee Tat <st_lim@gentoo.org> +drupal-4.5.8.ebuild,
+  +drupal-4.6.6.ebuild, +drupal-4.7.0.ebuild:
+  Updated and added 4.6.6, 4.7.0 and 4.5.8
+
+  03 Jan 2006; Lim Swee Tat <st_lim@gentoo.org> drupal-4.6.5.ebuild:
+  OOps with Bug #117439
+
+*drupal-4.6.5 (01 Jan 2006)
+*drupal-4.5.7 (01 Jan 2006)
+
+  01 Jan 2006; Lim Swee Tat <st_lim@gentoo.org> +drupal-4.5.7.ebuild,
+  +drupal-4.6.5.ebuild:
+  Happy New Year!!! Version bump overdue.
+
+  31 Oct 2005; <soulse@gentoo.org> +files/postinstall-en-4.6.3.txt,
+  drupal-4.6.3.ebuild:
+  * Fixed ebuild as per bug #109482
+  * Fixed post-install text
+
+*drupal-4.6.3 (05 Sep 2005)
+
+  05 Sep 2005; Lim Swee Tat <st_lim@gentoo.org> files/4.6.0/engines,
+  files/4.6.0/language, files/4.6.0/modules, files/4.6.0/themes,
+  +drupal-4.6.3.ebuild:
+  Version bumped to 4.6.3
+
+  04 Aug 2005; Lim Swee Tat <st_lim@gentoo.org> drupal-4.5.2.ebuild,
+  drupal-4.6.2.ebuild:
+  Added ~amd64
+
+  04 Aug 2005; Lim Swee Tat <st_lim@gentoo.org> drupal-4.6.2.ebuild:
+  Updated drupal hopefully that fixes bugs #100219, #100077, #98485, #98524
+
+  14 Jul 2005; Stuart Herbert <stuart@gentoo.org> drupal-4.6.2.ebuild:
+  Removed calls to deprecated webapp_runbycgibin function; fixes bug 98484
+
+*drupal-4.6.2 (05 Jul 2005)
+
+  05 Jul 2005; Lim Swee Tat <st_lim@gentoo.org> files/4.6.0/modules,
+  files/4.6.0/themes, +drupal-4.6.2.ebuild:
+  Bumped version
+
+  16 Jun 2005; Luca Barbato <lu_zero@gentoo.org> drupal-4.6.1.ebuild:
+  Marked ~ppc
+
+  16 Jun 2005; Fernando J. Pereda <ferdy@gentoo.org> drupal-4.6.1.ebuild:
+  keyworded ~alpha. wrt keywording policy and bug #94927
+
+*drupal-4.6.1 (16 Jun 2005)
+
+  16 Jun 2005; Lim Swee Tat <st_lim@gentoo.org> files/4.6.0/language,
+  files/4.6.0/modules, files/4.6.0/themes, +drupal-4.6.1.ebuild:
+  Version bump.  There was a security flaw.
+
+  05 May 2005; Lim Swee Tat <st_lim@gentoo.org> +files/4.6.0/engines,
+  +files/4.6.0/language, +files/4.6.0/modules, +files/4.6.0/themes,
+  drupal-4.6.0.ebuild:
+  Devised new method of getting the modules themes and others
+
+  02 May 2005; Lim Swee Tat <st_lim@gentoo.org> drupal-4.6.0.ebuild:
+  Updated modules to today's list
+
+  27 Apr 2005; Jose Luis Rivero <yoswink@gentoo.org> drupal-4.5.2.ebuild:
+  keyworded ~alpha
+

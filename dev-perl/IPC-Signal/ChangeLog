@@ -1,0 +1,38 @@
+# ChangeLog for dev-perl/IPC-Signal
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/IPC-Signal/ChangeLog,v 1.9 2007/01/15 23:21:37 mcummings Exp $
+
+  15 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  IPC-Signal-1.00.ebuild:
+  Ebuild maintenance
+
+  17 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  IPC-Signal-1.00.ebuild:
+  Marking amd64 stable
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  IPC-Signal-1.00.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  10 Jul 2006; Aron Griffis <agriffis@gentoo.org> IPC-Signal-1.00.ebuild:
+  Mark 1.00 stable on ia64
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org> IPC-Signal-1.00.ebuild:
+  Mark 1.00 ~ia64
+
+  17 Mar 2006; Scott Stoddard <deltacow@gentoo.org> IPC-Signal-1.00.ebuild:
+  Added ~amd64.
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  IPC-Signal-1.00.ebuild:
+  Marking stable sparc x86
+
+  19 May 2005; Michael Cummings <mcummings@gentoo.org> IPC-Signal-1.00.ebuild:
+  Unclean syntax in src_uri cleaned up
+
+*IPC-Signal-1.00 (19 May 2005)
+
+  19 May 2005; Michael Cummings <mcummings@gentoo.org> +metadata.xml,
+  +IPC-Signal-1.00.ebuild:
+  Initial import, requested by johnm for asterisk
+

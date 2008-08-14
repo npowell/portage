@@ -1,0 +1,53 @@
+# ChangeLog for dev-perl/Class-Spiffy
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Class-Spiffy/ChangeLog,v 1.13 2007/04/15 20:33:47 corsair Exp $
+
+  15 Apr 2007; Markus Rothe <corsair@gentoo.org> Class-Spiffy-0.15.ebuild:
+  Stable on ppc64
+
+  05 Mar 2007; Andrej Kacian <ticho@gentoo.org> Class-Spiffy-0.15.ebuild:
+  Stable on x86, bug #169152.
+
+  15 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  Class-Spiffy-0.12.ebuild, Class-Spiffy-0.15.ebuild:
+  Ebuild maintenance
+
+  04 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Class-Spiffy-0.12.ebuild, Class-Spiffy-0.15.ebuild:
+  Adding perl dep
+
+  10 Jul 2006; Aron Griffis <agriffis@gentoo.org> Class-Spiffy-0.15.ebuild:
+  Mark 0.15 stable on ia64
+
+  29 Jun 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  Class-Spiffy-0.15.ebuild:
+  Stable on hppa
+
+  11 Jun 2006; Michael Cummings <mcummings@gentoo.org>
+  Class-Spiffy-0.15.ebuild:
+  Marking stable sparc
+
+  21 May 2006; Markus Rothe <corsair@gentoo.org> Class-Spiffy-0.12.ebuild:
+  Stable on ppc64
+
+*Class-Spiffy-0.15 (24 Apr 2006)
+
+  24 Apr 2006; <mcummings@gentoo.org> +Class-Spiffy-0.15.ebuild:
+  Version bump
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org> Class-Spiffy-0.12.ebuild:
+  Mark 0.12 ~ia64
+
+  26 Mar 2006; Michael Cummings <mcummings@gentoo.org>
+  Class-Spiffy-0.12.ebuild:
+  60+ days, marking stable for sparc and x86
+
+  23 Jan 2006; Markus Rothe <corsair@gentoo.org> Class-Spiffy-0.12.ebuild:
+  Added ~ppc64; bug #119199
+
+*Class-Spiffy-0.12 (22 Jan 2006)
+
+  22 Jan 2006; Michael Cummings <mcummings@gentoo.org> +metadata.xml,
+  +Class-Spiffy-0.12.ebuild:
+  Subclass of spiffy, new dep of yaml
+

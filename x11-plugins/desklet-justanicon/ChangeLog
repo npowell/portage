@@ -1,0 +1,27 @@
+# ChangeLog for x11-plugins/desklet-justanicon
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-plugins/desklet-justanicon/ChangeLog,v 1.7 2007/02/21 23:17:31 jokey Exp $
+
+  21 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  06 Oct 2006; <nixnut@gentoo.org> desklet-justanicon-0.2.ebuild:
+  Added ~ppc wrt bug 103966
+
+  10 Jul 2006; Thomas Cort <tcort@gentoo.org> desklet-justanicon-0.2.ebuild:
+  Added ~alpha keyword wrt Bug #103966.
+
+  24 Mar 2006; Aron Griffis <agriffis@gentoo.org>
+  desklet-justanicon-0.2.ebuild:
+  Mark 0.2 ~ia64
+
+  16 Jan 2006; Joe Sapp <nixphoeni@gentoo.org>
+  desklet-justanicon-0.2.ebuild:
+  Updated HOMEPAGE and SRC_URI to reflect new gDesklets website
+
+*desklet-justanicon-0.2 (30 Aug 2005)
+
+  30 Aug 2005; Joe Sapp <nixphoeni@gentoo.org> +metadata.xml,
+  +desklet-justanicon-0.2.ebuild:
+  Initial commit
+

@@ -1,0 +1,71 @@
+# ChangeLog for dev-python/axiom
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/axiom/ChangeLog,v 1.16 2008/04/03 21:44:49 lordvan Exp $
+
+  03 Apr 2008; Thomas Raschbacher <lordvan@gentoo.org> axiom-0.5.27.ebuild:
+  added ~amd64 arch
+
+  12 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Marien Zwart (marienz, #107204) from metadata.xml.
+
+*axiom-0.5.27 (23 Jan 2008)
+
+  23 Jan 2008; Ali Polatel <hawking@gentoo.org>
+  +files/axiom-0.5.27-sqlite3.patch, -axiom-0.4.0.ebuild,
+  -axiom-0.5.0.ebuild, +axiom-0.5.27.ebuild:
+  Version bump. Drop old.
+
+  25 Dec 2007; Brent Baude <ranger@gentoo.org> axiom-0.5.20.ebuild:
+  Marked axiom-0.5.20 ~ppc64 for bug 144202
+
+*axiom-0.5.20 (02 Nov 2007)
+
+  02 Nov 2007; Ali Polatel <hawking@gentoo.org>
+  +files/axiom-0.5.20-sqlite3.patch, +axiom-0.5.20.ebuild:
+  Version bump.
+
+  14 Jan 2007; Tiziano Müller <dev-zero@gentoo.org> axiom-0.5.0.ebuild:
+  Corrected dependencies and fixed src_test.
+
+*axiom-0.5.0 (13 Jan 2007)
+
+  13 Jan 2007; Tiziano Müller <dev-zero@gentoo.org> +axiom-0.5.0.ebuild:
+  Version bump.
+
+  01 Aug 2006; Tom Gall <tgall@gentoo.org> axiom-0.4.0.ebuild:
+  added ~ppc64
+
+  04 Jul 2006; Marien Zwart <marienz@gentoo.org> axiom-0.4.0.ebuild:
+  Tighten epsilon dependency (this does not work with the epsilon-0.5 I will
+  add in a bit).
+
+  27 Apr 2006; Marien Zwart <marienz@gentoo.org> files/digest-axiom-0.4.0,
+  Manifest:
+  Fixing SHA256 digest, pass four
+
+  26 Apr 2006; Marien Zwart <marienz@gentoo.org> -axiom-0.3.0.ebuild,
+  axiom-0.4.0.ebuild:
+  Increase minimum required sqlite version, drop old ebuild.
+
+  01 Apr 2006; Aron Griffis <agriffis@gentoo.org> axiom-0.4.0.ebuild:
+  Mark 0.4.0 ~ia64
+
+  13 Feb 2006; Marien Zwart <marienz@gentoo.org> axiom-0.4.0.ebuild:
+  Increase required twisted version to 2.2 to make "axiomatic start" without
+  arguments work.
+
+  13 Feb 2006; Marien Zwart <marienz@gentoo.org> axiom-0.3.0.ebuild,
+  axiom-0.4.0.ebuild:
+  Do not pass -R to trial (deprecated in 2.1, removed in 2.2).
+
+*axiom-0.4.0 (21 Dec 2005)
+
+  21 Dec 2005; Marien Zwart <marienz@gentoo.org> +axiom-0.4.0.ebuild:
+  Version bump.
+
+*axiom-0.3.0 (05 Dec 2005)
+
+  05 Dec 2005; Marien Zwart <marienz@gentoo.org> +metadata.xml,
+  +axiom-0.3.0.ebuild:
+  New ebuild.
+

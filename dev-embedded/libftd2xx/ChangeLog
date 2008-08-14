@@ -1,0 +1,16 @@
+# ChangeLog for dev-embedded/libftd2xx
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-embedded/libftd2xx/ChangeLog,v 1.2 2007/12/29 12:27:16 jurek Exp $
+
+*libftd2xx-0.4.13-r1 (29 Dec 2007)
+
+  29 Dec 2007; Jurek Bartuszek <jurek@gentoo.org> -libftd2xx-0.4.13.ebuild,
+  +libftd2xx-0.4.13-r1.ebuild:
+  Fixed not installing WinTypes.h
+
+*libftd2xx-0.4.13 (02 Sep 2007)
+
+  02 Sep 2007; Jurek Bartuszek <jurek@gentoo.org> +metadata.xml,
+  +libftd2xx-0.4.13.ebuild:
+  Initial version
+

@@ -1,0 +1,48 @@
+# ChangeLog for app-text/linuxdoc-tools
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-text/linuxdoc-tools/ChangeLog,v 1.9 2007/09/29 07:46:34 pva Exp $
+
+*linuxdoc-tools-0.9.21_p11 (29 Sep 2007)
+
+  29 Sep 2007; <pva@gentoo.org> +linuxdoc-tools-0.9.21_p11.ebuild:
+  Version bump, bug #190967.
+
+  13 Mar 2007; Leonardo Boshell <leonardop@gentoo.org> metadata.xml:
+  Replacing text-markup herd with the new sgml herd.
+
+  16 Feb 2007; Leonardo Boshell <leonardop@gentoo.org>
+  linuxdoc-tools-0.9.21_p4.ebuild:
+  Remove invalid use of ROOT (bug #167240).
+
+  22 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  linuxdoc-tools-0.9.21_p4.ebuild:
+  Keyword ~ppc.
+
+  06 Sep 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +files/linuxdoc-tools-0.9.21-malloc.patch,
+  linuxdoc-tools-0.9.21_p4.ebuild:
+  Add patch to build on FreeBSD and add ~x86-fbsd keyword. See bug #146536.
+
+*linuxdoc-tools-0.9.21_p4 (01 Jul 2006)
+
+  01 Jul 2006; Martin Schlemmer <azarah@gentoo.org>
+  +files/linuxdoc-tools-0.9.13-letter.patch,
+  +files/linuxdoc-tools-0.9.20-lib64.patch,
+  +files/linuxdoc-tools-0.9.20-strip.patch, +files/linuxdoc-tools-fi.patch,
+  +linuxdoc-tools-0.9.21_p4.ebuild:
+  Update version. Add patches from fedora and fix catalog path (based on
+  fedora's method, but non-broken). Install latex files.
+
+  18 Nov 2005; Leonardo Boshell <leonardop@gentoo.org>
+  linuxdoc-tools-0.9.21.ebuild:
+  Restrict app-text/tetex dependency to avoid access violations (bug #105905).
+
+  30 Aug 2005; Leonardo Boshell <leonardop@gentoo.org>
+  linuxdoc-tools-0.9.21.ebuild:
+  Use a mirror:// URI in SRC_URI.
+
+*linuxdoc-tools-0.9.21 (12 Aug 2005)
+
+  12 Aug 2005; Leonardo Boshell <leonardop@gentoo.org>
+  linuxdoc-tools-0.9.21.ebuild:
+  New package, requested on bug #88232.

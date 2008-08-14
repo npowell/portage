@@ -1,0 +1,43 @@
+# ChangeLog for sys-auth/pam_abl
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-auth/pam_abl/ChangeLog,v 1.7 2007/11/21 16:28:40 drac Exp $
+
+  21 Nov 2007; Samuli Suominen <drac@gentoo.org> pam_abl-0.2.3-r1.ebuild:
+  amd64 stable wrt #197429
+
+  29 Oct 2007; Dawid Węgliński <cla@gentoo.org> pam_abl-0.2.3-r1.ebuild:
+  Stable on x86 (bug #197429)
+
+  29 Oct 2007; Markus Ullmann <jokey@gentoo.org> pam_abl-0.2.3-r1.ebuild:
+  restrict tests as they're broken
+
+  17 Sep 2007; Markus Ullmann <jokey@gentoo.org> pam_abl-0.2.3-r1.ebuild:
+  use pam.eclass instead of manual hacks, thanks to jakub for notify wrt bug
+  #192032
+
+*pam_abl-0.2.3-r1 (12 Jul 2007)
+
+  12 Jul 2007; Markus Ullmann <jokey@gentoo.org> +pam_abl-0.2.3-r1.ebuild:
+  Don't mess with system-auth
+
+  07 Apr 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Fix digest
+
+*pam_abl-0.2.3 (07 Apr 2007)
+
+  07 Apr 2007; Markus Ullmann <jokey@gentoo.org> +files/system-auth,
+  +metadata.xml, +pam_abl-0.2.3.ebuild:
+  Import from sunrise, proxy-maintaining now
+
+  07 Apr 2007; Alessio Cassibba (X-Drum) <swapon@gmail.com>
+  pam_abl-0.2.3.ebuild, files/system-auth:
+  fixed strict aliasing problems, removed "session required pam_abl.so" in
+  system-auth to avoid unknown Module error
+
+  07 Jan 2007; Jakub Moc <jakub@gentoo.org> pam_abl-0.2.3.ebuild:
+  Add keepdir
+
+  08 Jun 2006; Jakub Moc <jakub@gentoo.org> +pam_abl-0.2.3.ebuild:
+  New ebuild, based on ebuild submitted by iryoku (iryoku at terra dot es),
+  Bug 95248
+

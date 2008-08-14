@@ -1,0 +1,27 @@
+# ChangeLog for x11-misc/nitrogen
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/nitrogen/ChangeLog,v 1.5 2008/08/11 13:13:18 omp Exp $
+
+*nitrogen-1.4 (11 Aug 2008)
+
+  11 Aug 2008; David Shakaryan <omp@gentoo.org> -nitrogen-1.0.ebuild,
+  +nitrogen-1.4.ebuild:
+  Version bump and remove older version. (bug #233100)
+
+*nitrogen-1.2 (14 Apr 2008)
+
+  14 Apr 2008; David Shakaryan <omp@gentoo.org> +nitrogen-1.2.ebuild:
+  Version bump.
+
+  30 Sep 2007; David Shakaryan <omp@gentoo.org> -nitrogen-1.0_rc4.ebuild:
+  Remove old release candidate.
+
+*nitrogen-1.0 (29 May 2007)
+
+  29 May 2007; David Shakaryan <omp@gentoo.org> +nitrogen-1.0.ebuild:
+  Version bump. (bug #180052)
+
+  20 Oct 2006; David Shakaryan <omp@gentoo.org> +metadata.xml,
+  +nitrogen-1.0_rc4.ebuild:
+  Initial ebuild by me.
+

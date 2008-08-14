@@ -1,0 +1,147 @@
+# ChangeLog for app-crypt/ccid
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-crypt/ccid/ChangeLog,v 1.31 2008/07/24 21:11:34 cardoe Exp $
+
+  24 Jul 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
+  add GLEP 56 USE flag desc from use.local.desc
+
+  11 May 2008; Alon Bar-Lev <alonbl@gentoo.org> ccid-1.3.0.ebuild,
+  ccid-1.3.1.ebuild, ccid-1.3.5.ebuild:
+  Remove flex detection, bug#221361
+
+*ccid-1.3.5 (22 Feb 2008)
+
+  22 Feb 2008; Alon Bar-Lev <alonbl@gentoo.org> -ccid-1.3.4.ebuild,
+  +ccid-1.3.5.ebuild:
+  Version bump
+
+*ccid-1.3.4 (08 Feb 2008)
+
+  08 Feb 2008; Alon Bar-Lev <alonbl@gentoo.org>
+  -files/ccid-1.3.3-udev.patch, -ccid-1.3.2.ebuild, -ccid-1.3.3.ebuild,
+  +ccid-1.3.4.ebuild:
+  Version bump
+
+  07 Feb 2008; Alon Bar-Lev <alonbl@gentoo.org>
+  +files/ccid-1.3.3-udev.patch, ccid-1.3.3.ebuild:
+  Upstream added more udev fix
+
+*ccid-1.3.3 (07 Feb 2008)
+
+  07 Feb 2008; Alon Bar-Lev <alonbl@gentoo.org> +ccid-1.3.3.ebuild:
+  Version bump
+
+*ccid-1.3.2 (22 Jan 2008)
+
+  22 Jan 2008; Alon Bar-Lev <alonbl@gentoo.org> +ccid-1.3.2.ebuild:
+  Version bump
+
+  02 Jan 2008; Christoph Mende <angelos@gentoo.org> ccid-1.3.1.ebuild:
+  Stable on amd64 wrt bug #199377
+
+  30 Dec 2007; Markus Meier <maekke@gentoo.org> ccid-1.3.1.ebuild:
+  x86 stable, bug #199377
+
+*ccid-1.3.1 (16 Nov 2007)
+
+  16 Nov 2007; Alon Bar-Lev <alonbl@gentoo.org> +ccid-1.3.1.ebuild:
+  Version bump
+
+  25 Jul 2007; Guy Martin <gmsoft@gentoo.org> ccid-1.3.0.ebuild:
+  Stable on hppa
+
+  21 Jun 2007; Alon Bar-Lev <alonbl@gentoo.org>
+  -files/ccid-1.1.0-build.patch, -ccid-1.0.1.ebuild, -ccid-1.0.1-r1.ebuild,
+  -ccid-1.1.0.ebuild, -ccid-1.1.0-r1.ebuild, -ccid-1.2.0.ebuild,
+  -ccid-1.2.1.ebuild:
+  Cleanup
+
+  20 Jun 2007; Chris Gianelloni <wolf31o2@gentoo.org> ccid-1.3.0.ebuild:
+  Stable on amd64 wrt bug #181511.
+
+  19 Jun 2007; Christian Faulhammer <opfer@gentoo.org> ccid-1.3.0.ebuild:
+  stable x86, bug 181511
+
+*ccid-1.3.0 (10 May 2007)
+
+  10 May 2007; Alon Bar-Lev <alonbl@gentoo.org> +ccid-1.3.0.ebuild:
+  Version bump
+
+  01 May 2007; Markus Rothe <corsair@gentoo.org> ccid-1.2.1.ebuild:
+  Added ~ppc64; bug #176528
+
+  20 Apr 2007; Hanno Boeck <hanno@gentoo.org> ccid-1.2.1.ebuild:
+  Remove libchipcard-specific paths.
+
+*ccid-1.2.1 (27 Jan 2007)
+
+  27 Jan 2007; Alon Bar-Lev <alonbl@gentoo.org> +ccid-1.2.1.ebuild:
+  Version bump
+
+*ccid-1.2.0 (19 Jan 2007)
+
+  19 Jan 2007; Alon Bar-Lev <alonbl@gentoo.org> +ccid-1.2.0.ebuild:
+  Version bump
+
+  18 Jan 2007; Alon Bar-Lev <alonbl@gentoo.org> ccid-1.1.0-r1.ebuild:
+  Added static pcsc-lite dependency, closes bug#162602, thanks to Timo Gurr
+
+*ccid-1.1.0-r1 (28 Dec 2006)
+
+  28 Dec 2006; Alon Bar-Lev <alonbl@gentoo.org>
+  +files/ccid-1.1.0-build.patch, +ccid-1.1.0-r1.ebuild:
+  Add twinserial support, closes bug#157716, thanks to Jerome
+
+  02 Dec 2006; Steve Dibb <beandog@gentoo.org> ccid-1.0.1.ebuild,
+  ccid-1.0.1-r1.ebuild, ccid-1.1.0.ebuild:
+  Add ~amd64, bug 134306
+
+*ccid-1.1.0 (23 Sep 2006)
+
+  23 Sep 2006; Daniel Black <dragonheart@gentoo.org> +ccid-1.1.0.ebuild:
+  version bump thanks to Alon Bar-Lev bug #145110
+
+*ccid-1.0.1-r1 (24 May 2006)
+
+  24 May 2006; Marcelo Goes <vanquirius@gentoo.org> -ccid-0.9.4.3.ebuild,
+  -ccid-1.0.0.ebuild, +ccid-1.0.1-r1.ebuild:
+  Add sys-libs/libchipcard support through chipcard2 USE flag. Fixes bug
+  131421, reported by Christoph Probst <chris-ml-gentoo-bugzilla at netzpunkt
+  dot org>. Also removing old ebuilds.
+
+*ccid-1.0.1 (22 Apr 2006)
+
+  22 Apr 2006; Marcelo Goes <vanquirius@gentoo.org>
+  -files/ccid-0.9.3.1-ifdhandler.diff, -ccid-0.9.3.1.ebuild,
+  +ccid-1.0.1.ebuild:
+  1.0.1 version bump, thanks to Alon Bar-Lev <alon.barlev at gmail dot com>.
+
+*ccid-1.0.0 (01 Apr 2006)
+
+  01 Apr 2006; Marcelo Goes <vanquirius@gentoo.org> +ccid-1.0.0.ebuild:
+  1.0.0 version bump for bug 124865, thanks to Alon Bar-Lev <alon dot barlev
+  at gmail dot com>.
+
+*ccid-0.9.4.3 (10 Dec 2005)
+
+  10 Dec 2005; Marcelo Goes <vanquirius@gentoo.org> +ccid-0.9.4.3.ebuild:
+  0.9.4.3 version bump for bug 114852. Thanks to Pol <d dot paolino at gmail
+  dot com>. ifdhandler patch is now in upstream.
+
+  29 Oct 2005; Marcelo Goes <vanquirius@gentoo.org>
+  +files/ccid-0.9.3.1-ifdhandler.diff, ccid-0.9.3.1.ebuild:
+  Add patch from bug 109379 to allow compilation. Thanks to step <step at step
+  dot ee> and Steven Coutts <scoutts at bcs dot org dot uk>.
+
+  29 Sep 2005; Marcelo Goes <vanquirius@gentoo.org> ccid-0.9.3.1.ebuild:
+  Do not install COPYING.
+
+  21 Jul 2005; David Holm <dholm@gentoo.org> ccid-0.9.3.1.ebuild:
+  Added to ~ppc.
+
+*ccid-0.9.3.1 (20 Jul 2005)
+
+  20 Jul 2005; Daniel Black <dragonheart@gentoo.org> +metadata.xml,
+  +ccid-0.9.3.1.ebuild:
+  Initial import as per bug #95956. Ebuild contributed by Alon Bar-Lev
+

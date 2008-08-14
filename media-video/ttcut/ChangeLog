@@ -1,0 +1,81 @@
+# ChangeLog for media-video/ttcut
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/ttcut/ChangeLog,v 1.17 2008/07/26 21:30:59 carlo Exp $
+
+  26 Jul 2008; Carsten Lohrke <carlo@gentoo.org> ttcut-0.19.6-r1.ebuild:
+  Fix broken split Qt 4.4 dependencies, cf. bug 217161 comment 11.
+
+  25 Jul 2008; Steve Dibb <beandog@gentoo.org> ttcut-0.19.6-r1.ebuild:
+  Drop amd64, bug 228145
+
+  25 Jun 2008; Dawid Węgliński <cla@gentoo.org> ttcut-0.19.6-r1.ebuild:
+  Reverting back to ~amd64
+
+  25 Jun 2008; Dawid Węgliński <cla@gentoo.org> ttcut-0.19.6-r1.ebuild:
+  Stable on amd64 (bug #228145)
+
+  22 Jun 2008; Christian Faulhammer <opfer@gentoo.org>
+  ttcut-0.19.6-r1.ebuild:
+  stable x86, bug 228145
+
+  09 May 2008; Ben de Groot <yngwin@gentoo.org> ttcut-0.19.6-r1.ebuild:
+  Adjust qt dep to include qt-4.4 meta ebuild.
+
+  12 Apr 2008; Ben de Groot <yngwin@gentoo.org> -ttcut-0.19.4.ebuild,
+  -ttcut-0.19.5.ebuild, -ttcut-0.19.5-r1.ebuild, -ttcut-0.19.6.ebuild,
+  ttcut-0.19.6-r1.ebuild:
+  Removing older versions. Fixing src_url and qt4 deps. Fixes bug 217193.
+
+*ttcut-0.19.6-r1 (01 Feb 2008)
+
+  01 Feb 2008; Matthias Schwarzott <zzam@gentoo.org>
+  +ttcut-0.19.6-r1.ebuild:
+  Now using slot dependency/eapi-1 for qt4.
+
+*ttcut-0.19.6 (02 Sep 2007)
+
+  02 Sep 2007; Matthias Schwarzott <zzam@gentoo.org> +ttcut-0.19.6.ebuild:
+  Version bumped. This among other stuff fixes layout when using Qt version
+  4.3.x, thanks to Daniel Pielmeier <daniel.pielmeier@googlemail.com>.
+
+*ttcut-0.19.5-r1 (18 Aug 2007)
+
+  18 Aug 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +ttcut-0.19.5-r1.ebuild:
+  Now use eqtmake4 from qt4.eclass
+
+*ttcut-0.19.5 (21 Jun 2007)
+
+  21 Jun 2007; Matthias Schwarzott <zzam@gentoo.org> +ttcut-0.19.5.ebuild:
+  Version bumped.
+
+  13 Jun 2007; Matthias Schwarzott <zzam@gentoo.org> ttcut-0.19.4.ebuild:
+  Adapted to changed source tarball, thanks to Daniel Pielmeier.
+
+  01 Jun 2007; Matthias Schwarzott <zzam@gentoo.org> ttcut-0.19.4.ebuild:
+  Do not install copying and install files.
+
+*ttcut-0.19.4 (01 Jun 2007)
+
+  01 Jun 2007; Matthias Schwarzott <zzam@gentoo.org>
+  -ttcut-0.11.4_alpha.ebuild, -ttcut-0.19.2.ebuild, -ttcut-0.19.3.ebuild,
+  +ttcut-0.19.4.ebuild:
+  Version bumped, thanks to Daniel Pielmeier.
+
+*ttcut-0.19.3 (14 May 2007)
+
+  14 May 2007; Stefan Schweizer <genstef@gentoo.org> +ttcut-0.19.3.ebuild:
+  version bump
+
+*ttcut-0.19.2 (27 Apr 2007)
+
+  27 Apr 2007; Matthias Schwarzott <zzam@gentoo.org> +ttcut-0.19.2.ebuild:
+  Version bumped. Added depend to virtual/opengl.
+
+*ttcut-0.11.4_alpha (21 Apr 2007)
+
+  21 Apr 2007; Matthias Schwarzott <zzam@gentoo.org> +metadata.xml,
+  +ttcut-0.11.4_alpha.ebuild:
+  Imported into portage tree from sunrise overlay. It will be proxy maintained
+  by Daniel Pielmeier.
+

@@ -1,0 +1,25 @@
+# ChangeLog for app-admin/socklog
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/socklog/ChangeLog,v 1.6 2007/02/21 19:46:05 peper Exp $
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*socklog-2.0.2-r1 (15 Feb 2006)
+
+  15 Feb 2006; Mike Frysinger <vapier@gentoo.org>
+  +files/socklog-2.0.2-tryto-race-fix.patch, +socklog-2.0.2-r1.ebuild:
+  Fix from upstream for race condition #122784 by Alex Efros.
+
+*socklog-2.0.2 (12 Apr 2005)
+
+  12 Apr 2005; Mike Frysinger <vapier@gentoo.org> +socklog-2.0.2.ebuild:
+  Version bump #88762 by Thilo Bangert.
+
+  03 Mar 2005; Ciaran McCreesh <ciaranm@gentoo.org> socklog-1.5.0.ebuild:
+  Dependency update: sys-apps/runit -> sys-process/runit.
+
+*socklog-1.5.0 (09 Oct 2004)
+
+  09 Oct 2004; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by Torne Wuff #39263.

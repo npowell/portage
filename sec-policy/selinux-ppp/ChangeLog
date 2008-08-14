@@ -1,0 +1,26 @@
+# ChangeLog for sec-policy/selinux-ppp
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sec-policy/selinux-ppp/ChangeLog,v 1.4 2008/05/25 23:50:02 pebenito Exp $
+
+*selinux-ppp-20080525 (25 May 2008)
+
+  25 May 2008; Chris PeBenito <pebenito@gentoo.org>
+  +selinux-ppp-20080525.ebuild:
+  New SVN snapshot.
+
+  03 Feb 2008; Chris PeBenito <pebenito@gentoo.org>
+  selinux-ppp-20070928.ebuild:
+  Mark stable.
+
+*selinux-ppp-20070928 (26 Nov 2007)
+
+  26 Nov 2007; Chris PeBenito <pebenito@gentoo.org>
+  +selinux-ppp-20070928.ebuild:
+  New SVN snapshot.
+
+*selinux-ppp-20070329 (11 Jun 2007)
+
+  11 Jun 2007; Petre Rodan <kaiowas@gentoo.org> +metadata.xml,
+  +selinux-ppp-20070329.ebuild:
+  initial commit
+

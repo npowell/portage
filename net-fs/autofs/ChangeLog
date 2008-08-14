@@ -1,0 +1,317 @@
+# ChangeLog for net-fs/autofs
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-fs/autofs/ChangeLog,v 1.74 2008/05/12 21:45:33 solar Exp $
+
+  12 May 2008; <solar@gentoo.org> autofs-5.0.3-r5.ebuild:
+  - Keyworded ~arm per request. Builds native but fails at cross-compiles.
+
+  05 May 2008; Stefaan De Roeck <stefaan@gentoo.org> autofs-5.0.3-r5.ebuild:
+  Patch patches in temporary directory (fixes bug #220315)
+
+*autofs-5.0.3-r5 (03 May 2008)
+
+  03 May 2008; Stefaan De Roeck <stefaan@gentoo.org>
+  +files/autofs-5.0.3-heimdal.patch, autofs-5.0.3-r4.ebuild,
+  +autofs-5.0.3-r5.ebuild:
+  Support also heimdal's krb5 implementation (fixes bug #210762) + some QA
+
+*autofs-5.0.3-r4 (28 Apr 2008)
+
+  28 Apr 2008; Stefaan De Roeck <stefaan@gentoo.org>
+  +files/autofs-5.0.3-map-patch-fix.patch, -autofs-5.0.3-r3.ebuild,
+  +autofs-5.0.3-r4.ebuild:
+  Fix error introduced by autofs-5.0.3-map-type-in-map-name.patch (patch
+  taken from redhat rawhide autofs-5.0.3-11), also fix bug #219607
+
+*autofs-5.0.3-r3 (28 Apr 2008)
+
+  28 Apr 2008; Stefaan De Roeck <stefaan@gentoo.org>
+  +autofs-5.0.3-r3.ebuild:
+  Revision bump to include the most recent patches + to fix bugs #157968 and
+  #154797
+
+*autofs-5.0.3-r2 (18 Feb 2008)
+
+  18 Feb 2008; Stefaan De Roeck <stefaan@gentoo.org>
+  +autofs-5.0.3-r2.ebuild:
+  Update patch list
+
+*autofs-4.1.3-r9 (05 Feb 2008)
+
+  05 Feb 2008; Stefaan De Roeck <stefaan@gentoo.org> +files/autofs.rc14,
+  +autofs-4.1.3-r9.ebuild:
+  Fix bug #91104
+
+  05 Feb 2008; Stefaan De Roeck <stefaan@gentoo.org> +files/autofs5.rc1,
+  -files/autofs.rc14, metadata.xml, autofs-5.0.3.ebuild,
+  autofs-5.0.3-r1.ebuild:
+  Rename file in the tree, specify name in metadata
+
+*autofs-5.0.3-r1 (01 Feb 2008)
+
+  01 Feb 2008; Stefaan De Roeck <stefaan@gentoo.org>
+  +autofs-5.0.3-r1.ebuild:
+  Add use flag for sasl, force dependency on krb5 when using sasl (bug #208393)
+
+*autofs-5.0.3 (31 Jan 2008)
+
+  31 Jan 2008; Stefaan De Roeck <stefaan@gentoo.org> +files/autofs.rc14,
+  metadata.xml, +autofs-5.0.3.ebuild:
+  Big version bump to 5.0.3, probably fixes many open bugs
+
+*autofs-4.1.3-r8 (24 Jan 2008)
+
+  24 Jan 2008; Stefaan De Roeck <stefaan@gentoo.org> +files/autofs.rc13,
+  +autofs-4.1.3-r8.ebuild:
+  Fix bug #110887, + avoid segfault on amd64
+
+  06 May 2007; Marius Mauch <genone@gentoo.org> autofs-3.1.7-r4.ebuild,
+  autofs-3.1.7-r5.ebuild, autofs-3.1.7-r6.ebuild, autofs-4.0.0.ebuild,
+  autofs-4.1.3.ebuild, autofs-4.1.3-r1.ebuild, autofs-4.1.3-r2.ebuild,
+  autofs-4.1.3-r3.ebuild, autofs-4.1.3-r4.ebuild, autofs-4.1.3-r7.ebuild:
+  Replacing einfo with elog
+
+  29 Apr 2007; Torsten Veller <tove@gentoo.org> autofs-4.1.3-r7.ebuild:
+  Fix *initd, *confd and *envd calls (#173884, #174266)
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  25 Nov 2006; Guy Martin <gmsoft@gentoo.org> autofs-4.1.3-r7.ebuild:
+  Stable on hppa.
+
+  15 Jul 2006; Bryan Østergaard <kloeri@gentoo.org> metadata.xml:
+  Remove rphillips from metadata.xml as he's retired.
+
+  02 Jun 2006; Robin H. Johnson <robbat2@gentoo.org> autofs-4.1.3-r7.ebuild:
+  Bug #135023, fix a parallel make bug.
+
+*autofs-4.1.3-r7 (30 May 2006)
+
+  30 May 2006; Alec Warner <antarus@gentoo.org> -autofs-4.1.3-r6.ebuild,
+  +autofs-4.1.3-r7.ebuild:
+  revbump for sort fix
+
+  30 May 2006; Alec Warner <antarus@gentoo.org> files/auto.net:
+  s/+/-/ for bug #120403, completely my fault :(
+
+*autofs-4.1.3-r6 (28 May 2006)
+
+  28 May 2006; Alec Warner <antarus@gentoo.org>
+  -files/autofs-4.1.3-fix-sort-opts.patch, files/auto.net,
+  -autofs-4.1.3-r5.ebuild, +autofs-4.1.3-r6.ebuild:
+  Refix bug #120403 with permission from robbat2
+
+*autofs-4.1.3-r5 (20 May 2006)
+
+  20 May 2006; Mark Loeser <halcy0n@gentoo.org>
+  +files/autofs-4.1.3-fix-sort-opts.patch, +autofs-4.1.3-r5.ebuild:
+  Add patch to to fix sort options; bug #120403
+
+  19 Feb 2006; Joshua Kinard <kumba@gentoo.org> autofs-4.1.3-r4.ebuild:
+  Added ~mips to KEYWORDS.
+
+  06 Jul 2005; Robin H. Johnson <robbat2@gentoo.org> -files/auto.home,
+  -files/ldap.diff, -files/open_max.diff:
+  These FILESDIR items are not used anymore. Bump.
+
+  06 Jun 2005; Markus Rothe <corsair@gentoo.org> autofs-4.1.3-r4.ebuild:
+  Stable on ppc64
+
+  17 May 2005; Stephanie Lockwood-Childs <wormo@gentoo.org>
+  autofs-4.1.3-r4.ebuild:
+  marked stable on ppc, closes bug #92808
+
+  17 Apr 2005; Aron Griffis <agriffis@gentoo.org> autofs-4.1.3-r4.ebuild:
+  Stable on alpha amd64 ia64
+
+  12 Apr 2005; Gustavo Zacarias <gustavoz@gentoo.org>
+  autofs-4.1.3-r4.ebuild:
+  Stable on sparc
+
+  11 Apr 2005; Robin H. Johnson <robbat2@gentoo.org> autofs-4.1.3-r4.ebuild:
+  Stable on x86.
+
+  09 Apr 2005; Markus Rothe <corsair@gentoo.org> autofs-4.1.3-r2.ebuild:
+  Stable on ppc64
+
+  09 Apr 2005; Simon Stelling <blubb@gentoo.org> autofs-4.1.3-r4.ebuild:
+  fixed multilib-strict issues
+
+  01 Apr 2005; Aron Griffis <agriffis@gentoo.org> autofs-4.1.3-r2.ebuild:
+  stable on ia64
+
+  23 Mar 2005; <agriffis@gentoo.org> autofs-4.1.3-r2.ebuild:
+  Stable on amd64
+
+  19 Mar 2005; Bryan Østergaard <kloeri@gentoo.org> autofs-4.1.3-r2.ebuild:
+  Stable on alpha.
+
+*autofs-4.1.3-r4 (14 Mar 2005)
+
+  14 Mar 2005; Robin H. Johnson <robbat2@gentoo.org> +files/autofs.rc10,
+  +files/autofs.rc11, +files/autofs.rc12, files/autofs.rc9,
+  +autofs-4.1.3-r4.ebuild:
+  Bug #82086 - totally revamp the init script, now supports all daemon
+  options. Also cleanup all usage of unsafe sub-shells.
+
+  05 Feb 2005; Maurice van der Pot <griffon26@gentoo.org>
+  +files/autofs-4.1.3-signal-race-fix.patch, autofs-4.1.3-r3.ebuild:
+  Added hopefully corrected version of signal-race-fix patch for bug #77077.
+
+*autofs-4.1.3-r3 (05 Feb 2005)
+
+  05 Feb 2005; Robin H. Johnson <robbat2@gentoo.org> +autofs-4.1.3-r3.ebuild:
+  Try to fix bug #77077, by removing signal-race-fix.patch.
+
+  10 Jan 2005; Gustavo Zacarias <gustavoz@gentoo.org> autofs-4.1.3-r2.ebuild:
+  Stable on sparc
+
+  07 Jan 2005; Robin H. Johnson <robbat2@gentoo.org> autofs-4.1.3-r2.ebuild:
+  4.1.3-r2 Stable on x86.
+
+  16 Dec 2004; Robin H. Johnson <robbat2@gentoo.org> files/autofs.rc8,
+  files/autofs.rc9:
+  Bug #74662, add use portmap again.
+
+*autofs-4.1.3-r2 (09 Dec 2004)
+
+  09 Dec 2004; Robin H. Johnson <robbat2@gentoo.org> files/auto.master,
+  files/auto.net, files/autofs.rc9, +autofs-4.1.3-r2.ebuild:
+  Added some of the debian patches that fix up LDAP and Hesiod in 4.1.3.
+
+*autofs-4.1.3-r1 (08 Dec 2004)
+
+  08 Dec 2004; Robin H. Johnson <robbat2@gentoo.org> files/auto.master,
+  +files/auto.net, +files/autofs.confd9, +files/autofs.rc9,
+  +autofs-4.1.3-r1.ebuild:
+  Fixed bugs 16320,49477,58292,62819,65626,69309,70827. Apply upstream patches.
+
+  02 Sep 2004; Sven Wegener <swegener@gentoo.org> -files/autofs,
+  files/autofs.rc6, files/autofs.rc7, files/autofs.rc8:
+  tail +2 -> tail -n +2 to be compatible with latest coreutils. Closes bug
+  #62606.
+
+  27 Jul 2004; <agriffis@gentoo.org> autofs-3.1.7-r5.ebuild:
+  stable on ia64
+
+  17 Jul 2004; Tom Gall <tgall@gentoo.org> autofs-4.1.3.ebuild:
+  stable on ppc64, bug #56994
+
+*autofs-4.1.3 (26 May 2004)
+
+  26 May 2004; Michael Imhof <tantive@gentoo.org> autofs-4.1.3.ebuild:
+  Version bumped.
+
+  27 Apr 2004; Aron Griffis <agriffis@gentoo.org> autofs-3.1.7-r6.ebuild,
+  autofs-4.0.0.ebuild:
+  Add inherit eutils
+
+  20 Apr 2004; <agriffis@gentoo.org> autofs-4.0.0.ebuild:
+  Add ~ia64
+
+  02 Mar 2004; <augustus@gentoo.org> autofs-4.0.0.ebuild:
+  Added ~amd64 keyword.
+
+  16 Jan 2004; <rphillips@gentoo.org> autofs-4.0.0.ebuild:
+  changed configuration file paths in man files
+
+  05 Jan 2004; zhen <zhen@gentoo.org> metadata.xml:
+  changed herd to net-fs
+
+  21 Nov 2003; <rphillips@gentoo.org> autofs-4.0.0.ebuild:
+  added Ervin Nemeth's sed entry to allow for portage controlled CFLAGS.
+
+*autofs-4.0.0 (27 Oct 2003)
+
+  27 Oct 2003; Ryan Phillips <rphillips@gentoo.org> autofs-4.0.0.ebuild:
+  version bump.  added as unstable. Thanks to Gregory Shimansky
+
+*autofs-3.1.7-r6 (25 Sep 2003)
+
+  25 Sep 2003; Martin Holzer <mholzer@gentoo.org> autofs-3.1.7-r6.ebuild:
+  Added autoconf for ldap. Closes #27369.
+
+  26 Jul 2003; Stefan Jones <cretin@gentoo.org> files/autofs.rc8 
+  files/autofs.confd:
+  Fixed the --timeout options, can be specified in daemonoptions in 
+  autofs.confd or via the last option in the misc.master file.
+
+  25 May 2003; Martin Holzer <mholzer@gentoo.org> autofs-3.1.7-r3.ebuild,
+  autofs-3.1.7-r4.ebuild, autofs-3.1.7-r5.ebuild:
+  now uses mirror://kernel
+
+  12 May 2003; Jason Wever <weeve@gentoo.org> autofs-3.1.7-r5.ebuild:
+  Changed ~sparc keyword to sparc.
+
+  05 May 2003; Jason Wever <weeve@gentoo.org> autofs-3.1.7-r5.ebuild:
+  Added ~sparc to keywords.
+
+  09 Jan 2003; Kain <kain@kain.org> autofs-3.1.7-r5.ebuild:
+  Add ppc to KEYWORDS
+  
+  07 Jan 2003; Aron Griffis <agriffis@gentoo.org> autofs-3.1.7-r5.ebuild:
+  Add alpha to KEYWORDS
+
+*autofs-3.1.7-r5 (17 Nov 2002)
+  
+  17 Nov 2002; Brad Cowan <bcowan@gebtoo.org> autofs-3.1.7-r5.ebuild,
+  files/digest-autofs-3.1.7-r5, files/ldap_config.patch, files/autofs.rc8 :
+
+  More ldap fixes, init script still needs some tweaking.
+
+*autofs-3.1.7-r4 (27 Oct 2002)
+  
+  20 Sep 2002; Brad Cowan <bradlyatc@cowancomputers.com> autofs-3.1.7-r4.ebuild :
+  files/digest-autofs-3.1.7-r4, files/nisyp.patch, files/autofs1.confd, 
+  files/autofs.rc7, files/automount.diff.
+  
+  Added net-nds/portmap and net-nds/ypbind as RDEPEND, updated init scripts 
+  remove old files, and Updated ChangeLog. Init script now has a working
+  stats option to display current autofs state (as status seems to be a 
+  predefined function that only displays the whether the daemon is running or 
+  stopped). Added einfo to ebuild noting to start portmap for NFS support without 
+  NFS started on current setup. Hopefully fixed some library compile problems.
+  
+*autofs-3.1.7-r3 (16 Apr 2002)  
+  
+  16 Jul 2002; Ben Lutgens <lamer@gentoo.org> files/autofs.rc6  :
+
+  made the initscript depend on ypbind
+
+  30 Apr 2002; William McArthur <sandymac@gentoo.org> autofs-3.1.7-r3.ebuild :
+
+  Added HOMEPAGE, LICENSE and made the DESCRIPTION a little more so.
+
+
+  21 Jun 2002; Ryan Phillips <rphillips@gentoo.org> files/autofs.rc6 :
+
+  added a /g to the pidfile variable
+
+  16 Apr 2002; Seemant Kulleen <seemant@gentoo.org> autofs-3.1.7-r3.ebuild
+  files/digest-autofs-3.1.7-r3 :
+
+  I did not bump the revision number up last time.  That would have been a good
+  idea to do.
+
+*autofs-3.1.7-r2 (11 Apr 2002)
+
+  11 Apr 2002; Seemant Kulleen <seemant@gentoo.org> files/autofs :
+
+  xevol@newtonave.net (David Snopek) in bug #1432 gave us a more modern 
+  gentoofied script.
+
+  2 Feb 2002; Donny Davies <woodchip@gentoo.org> files/autofs.rc6 :
+
+  Added patch, contributed through bugzilla (Bug #444), which supposedly fixes
+  problem with timeouts.  Hope everything is OK now.
+
+*autofs-3.1.7-r2 (1 Feb 2002)
+
+  1 Feb 2002; G.Bevin <gbevin@gentoo.org> ChangeLog :
+  
+  Added initial ChangeLog which should be updated whenever the package is
+  updated in any way. This changelog is targetted to users. This means that the
+  comments should well explained and written in clean English. The details about
+  writing correct changelogs are explained in the skel.ChangeLog file which you
+  can find in the root directory of the portage repository.

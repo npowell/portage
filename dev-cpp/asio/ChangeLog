@@ -1,0 +1,67 @@
+# ChangeLog for dev-cpp/asio
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-cpp/asio/ChangeLog,v 1.15 2008/06/11 16:21:56 drac Exp $
+
+*asio-1.1.0 (11 Jun 2008)
+
+  11 Jun 2008; Samuli Suominen <drac@gentoo.org> +asio-1.1.0.ebuild:
+  Version bump.
+
+  05 Feb 2008; Tiziano Müller <dev-zero@gentoo.org>
+  -files/asio-0.3.7-recursive_init.patch, -asio-0.3.7.ebuild:
+  Dropped old version.
+
+  05 Feb 2008; Christian Faulhammer <opfer@gentoo.org> asio-0.3.9.ebuild:
+  stable x86, bug 209002
+
+  05 Feb 2008; Samuli Suominen <drac@gentoo.org> asio-0.3.9.ebuild:
+  amd64 stable wrt #209002
+
+*asio-0.3.9 (24 Dec 2007)
+
+  24 Dec 2007; Tiziano Müller <dev-zero@gentoo.org>
+  -files/asio-0.3.7-double_delete_fix.patch, -asio-0.3.7-r1.ebuild,
+  -asio-0.3.8.ebuild, +asio-0.3.9.ebuild:
+  Version bump (bug #202975), only do 'make clean' when tests have been run
+  (bug #203109)
+
+*asio-0.3.8 (01 Dec 2007)
+
+  01 Dec 2007; Tiziano Müller <dev-zero@gentoo.org> +asio-0.3.8.ebuild:
+  Version bump (bug #199226)
+
+*asio-0.3.7-r1 (12 Jul 2007)
+
+  12 Jul 2007; Tiziano Müller <dev-zero@gentoo.org>
+  +files/asio-0.3.7-double_delete_fix.patch, +asio-0.3.7-r1.ebuild:
+  Fixed bug #177800 (thanks to Roman Le Négrate). Added examples USE-flag
+
+  11 Feb 2007; Raúl Porcel <armin76@gentoo.org> asio-0.3.7.ebuild:
+  x86 stable
+
+  16 Nov 2006; Tiziano Müller <dev-zero@gentoo.org> asio-0.3.7.ebuild:
+  Added ~amd64 keyword, bug #153514
+
+  16 Nov 2006; Tiziano Müller <dev-zero@gentoo.org>
+  +files/asio-0.3.7-recursive_init.patch, -asio-0.3.4.ebuild,
+  asio-0.3.7.ebuild:
+  Added recursive-init patch, bug #153514 - thanks to Jack Lloyd. Dropped old
+  version.
+
+  18 Oct 2006; Tiziano Müller <dev-zero@gentoo.org> ChangeLog:
+  Version bump.
+
+  15 Jul 2006; Bryan Østergaard <kloeri@gentoo.org> metadata.xml:
+  Remove rphillips from metadata.xml as he's retired.
+
+  20 Oct 2005; <rphillips@gentoo.org> asio-0.3.4.ebuild:
+  add doc use flag to pull in doxygen
+
+  20 Oct 2005; <rphillips@gentoo.org> asio-0.3.4.ebuild:
+  Added doc use flag
+
+*asio-0.3.4 (16 Oct 2005)
+
+  16 Oct 2005; <rphillips@gentoo.org> +metadata.xml, +asio-0.3.4.ebuild:
+  Initial import
+

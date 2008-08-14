@@ -1,0 +1,53 @@
+# ChangeLog for media-sound/paprefs
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/paprefs/ChangeLog,v 1.14 2008/05/03 13:24:55 drac Exp $
+
+  03 May 2008; Samuli Suominen <drac@gentoo.org>
+  +files/paprefs-0.9.6-gcc43.patch, paprefs-0.9.6.ebuild:
+  Fix building with GCC 4.3 wrt #220108, thanks to Peter Tworek.
+
+  11 Feb 2008; Olivier Crête <tester@gentoo.org> paprefs-0.9.6.ebuild:
+  Stable on amd64, bug #204219
+
+  25 Jan 2008; Raúl Porcel <armin76@gentoo.org> paprefs-0.9.6.ebuild:
+  Add ~sparc wrt #207369
+
+  24 Jan 2008; Diego Pettenò <flameeyes@gentoo.org> paprefs-0.9.6.ebuild:
+  Add missing inherit for eutils.
+
+  24 Jan 2008; Diego Pettenò <flameeyes@gentoo.org> paprefs-0.9.6.ebuild:
+  Add check for glib USE flag on pulseaudio for next revision.
+
+  03 Jan 2008; Markus Meier <maekke@gentoo.org> paprefs-0.9.6.ebuild:
+  x86 stable, bug #204219 and remove inexistent doc
+
+  31 Dec 2007; Joseph Jezak <josejx@gentoo.org> paprefs-0.9.5.ebuild,
+  paprefs-0.9.6.ebuild:
+  Marked ~ppc for bug #197340.
+
+*paprefs-0.9.6 (03 Nov 2007)
+
+  03 Nov 2007; Samuli Suominen <drac@gentoo.org> +paprefs-0.9.6.ebuild:
+  Version bump.
+
+  02 Jun 2007; deedra waters <dmwaters@gentoo.org> paprefs-0.9.5.ebuild:
+  Adding ~amd64 keyword (closes 176229)
+
+  13 Nov 2006; Diego Pettenò <flameeyes@gentoo.org> paprefs-0.9.5.ebuild:
+  Remove -*, might be misleading.
+
+  13 Oct 2006; Diego Pettenò <flameeyes@gentoo.org> paprefs-0.9.5.ebuild:
+  Remove old version and add missing dependency over gnome-icon-theme.
+
+  10 Oct 2006; Joshua Jackson <tsunam@gentoo.org> paprefs-0.9.5.ebuild:
+  adding ~x86 as they build per galtgendo
+
+  31 Aug 2006; Diego Pettenò <flameeyes@gentoo.org> +metadata.xml:
+  Add missing metadata I forgot.
+
+*paprefs-0.9.5 (31 Aug 2006)
+
+  31 Aug 2006; Diego Pettenò <flameeyes@gentoo.org> +paprefs-0.9.5.ebuild:
+  Initial import, PulseAudio Preferences Dialog, masked pending testing from
+  GNOME users.
+

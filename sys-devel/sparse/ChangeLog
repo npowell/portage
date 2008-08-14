@@ -1,0 +1,106 @@
+# ChangeLog for sys-devel/sparse
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-devel/sparse/ChangeLog,v 1.26 2008/06/16 04:01:50 josejx Exp $
+
+  16 Jun 2008; Joseph Jezak <josejx@gentoo.org> sparse-0.4.1.ebuild:
+  Marked ppc stable.
+
+  12 May 2008; Markus Rothe <corsair@gentoo.org> sparse-0.4.1.ebuild:
+  Stable on ppc64
+
+  24 Feb 2008; Raúl Porcel <armin76@gentoo.org> sparse-0.4.1.ebuild:
+  ia64/sparc/x86 stable
+
+  31 Dec 2007; <solar@gentoo.org> metadata.xml:
+  - removing self from metadata.xml
+
+  10 Dec 2007; Luca Barbato <lu_zero@gentoo.org> sparse-0.4.ebuild:
+  Marked ppc
+
+  10 Dec 2007; Jeroen Roovers <jer@gentoo.org> sparse-0.4.ebuild:
+  Stable for HPPA (bug #201707).
+
+  09 Dec 2007; Markus Rothe <corsair@gentoo.org> sparse-0.4.ebuild:
+  Stable on ppc64; bug #201707
+
+  09 Dec 2007; Raúl Porcel <armin76@gentoo.org> sparse-0.4.ebuild:
+  ia64 stable wrt #201707
+
+  08 Dec 2007; Samuli Suominen <drac@gentoo.org> sparse-0.4.ebuild:
+  amd64 stable wrt #201707
+
+  08 Dec 2007; Dawid Węgliński <cla@gentoo.org> sparse-0.4.ebuild:
+  Stable on x86 (bug #201707)
+
+*sparse-0.4.1 (08 Dec 2007)
+
+  08 Dec 2007; Mike Frysinger <vapier@gentoo.org> +sparse-0.4.1.ebuild:
+  Version bump #201697 by Marcin Slusarz.
+
+  23 Sep 2007; Raúl Porcel <armin76@gentoo.org> sparse-0.3-r1.ebuild:
+  ia64 stable wrt #192849
+
+  20 Sep 2007; Christoph Mende <angelos@gentoo.org> sparse-0.3-r1.ebuild:
+  Stable on amd64 wrt bug #192849
+
+  20 Sep 2007; Lars Weiler <pylon@gentoo.org> sparse-0.3-r1.ebuild:
+  Stable on ppc; bug #192849.
+
+  19 Sep 2007; Markus Meier <maekke@gentoo.org> sparse-0.3-r1.ebuild:
+  x86 stable, bug #192849
+
+  18 Sep 2007; Jeroen Roovers <jer@gentoo.org> sparse-0.3-r1.ebuild:
+  Stable for HPPA (bug #192849).
+
+*sparse-0.4 (17 Sep 2007)
+
+  17 Sep 2007; Mike Frysinger <vapier@gentoo.org>
+  +files/sparse-0.4-makefile-fix.patch, +sparse-0.4.ebuild,
+  sparse-9999.ebuild:
+  Version bump.
+
+*sparse-9999 (25 Aug 2007)
+
+  25 Aug 2007; Mike Frysinger <vapier@gentoo.org> +sparse-9999.ebuild:
+  Add live git ebuild.
+
+*sparse-0.3-r1 (02 Aug 2007)
+
+  02 Aug 2007; Mike Frysinger <vapier@gentoo.org>
+  files/sparse-0.3-makefile-fix.patch, metadata.xml, +sparse-0.3-r1.ebuild:
+  Fix header install and library generation/install #183679 by Daniel Gryniewicz.
+
+*sparse-0.3 (26 Jun 2007)
+
+  26 Jun 2007; <solar@gentoo.org> +files/sparse-0.3-makefile-fix.patch,
+  +sparse-0.3.ebuild:
+  - version bump. bug #179762 thanks PaX Team
+
+  12 May 2007; Daniel Drake <dsd@gentoo.org> metadata.xml:
+  Move from kernel to kernel-misc herd
+
+*sparse-0.2 (08 Dec 2006)
+
+  08 Dec 2006; <solar@gentoo.org> +sparse-0.2.ebuild:
+  - version bump. bug 157339
+
+*sparse-0.1 (09 Nov 2006)
+
+  09 Nov 2006; Mike Frysinger <vapier@gentoo.org> +sparse-0.1.ebuild,
+  -sparse-2005.10.28.ebuild, -sparse-2006.09.23.ebuild:
+  First real release.
+
+  26 Sep 2006; Mart Raudsepp <leio@gentoo.org>
+  files/digest-sparse-2006.09.23, Manifest:
+  Fix digest after upstream tarball update, closes bug #149089.
+
+*sparse-2006.09.23 (23 Sep 2006)
+
+  23 Sep 2006; Mike Frysinger <vapier@gentoo.org> +sparse-2006.09.23.ebuild:
+  Version bump.
+
+*sparse-2005.10.28 (27 Oct 2005)
+
+  27 Oct 2005; <solar.@gentoo.org> +metadata.xml, +sparse-2005.10.28.ebuild:
+  - initial commit of sparse. Bug #110656
+

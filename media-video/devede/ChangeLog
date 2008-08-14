@@ -1,0 +1,77 @@
+# ChangeLog for media-video/devede
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/devede/ChangeLog,v 1.16 2008/07/28 14:16:05 drac Exp $
+
+*devede-3.9 (28 Jul 2008)
+
+  28 Jul 2008; Samuli Suominen <drac@gentoo.org> metadata.xml,
+  -devede-3.8c.ebuild, +devede-3.9.ebuild:
+  Version bump wrt #229283, thanks to Lietart Frederic for reporting.
+  Re-assign to herd based on Comment #3.
+
+  29 May 2008; Ali Polatel <hawking@gentoo.org> devede-3.6.ebuild,
+  devede-3.8c.ebuild:
+  python_mod_optimize is ROOT aware.
+
+*devede-3.8c (26 May 2008)
+
+  26 May 2008; Samuli Suominen <drac@gentoo.org> -devede-3.4.ebuild,
+  +devede-3.8c.ebuild:
+  Version bump.
+
+  02 Apr 2008; Markus Meier <maekke@gentoo.org> devede-3.6.ebuild:
+  amd64/x86 stable, bug #215463
+
+*devede-3.6 (25 Dec 2007)
+
+  25 Dec 2007; Samuli Suominen <drac@gentoo.org> +devede-3.6.ebuild:
+  Version bump.
+
+*devede-3.4 (02 Dec 2007)
+
+  02 Dec 2007; Samuli Suominen <drac@gentoo.org> +devede-3.4.ebuild:
+  Version bump.
+
+*devede-3.3 (04 Nov 2007)
+
+  04 Nov 2007; Samuli Suominen <drac@gentoo.org> +devede-3.3.ebuild:
+  Version bump.
+
+*devede-3.2 (11 Oct 2007)
+
+  11 Oct 2007; Samuli Suominen <drac@gentoo.org> +devede-3.2.ebuild:
+  Version bump for bug 195327, thanks to Alessandro Guido for reporting.
+
+  15 Sep 2007; Samuli Suominen <drac@gentoo.org> devede-3.1b.ebuild:
+  GPL-3.
+
+*devede-3.1b (15 Sep 2007)
+
+  15 Sep 2007; Samuli Suominen <drac@gentoo.org> +devede-3.1b.ebuild:
+  Version bump for bug 192604, thanks to Greg Fitzgerald for reporting.
+
+  13 Aug 2007; Christoph Mende <angelos@gentoo.org> devede-3.01.ebuild:
+  Added ~amd64 wrt bug #183944
+
+  02 Jul 2007; Samuli Suominen <drac@gentoo.org> devede-3.01.ebuild:
+  Make psyco optional for bug 183944.
+
+*devede-3.01 (01 Jul 2007)
+
+  01 Jul 2007; Samuli Suominen <drac@gentoo.org> -devede-2.13.ebuild,
+  -devede-3.0.ebuild, +devede-3.01.ebuild:
+  Version bump for bug 183785, thanks to Greg Fitzgerald for reporting.
+
+*devede-3.0 (24 Jun 2007)
+
+  24 Jun 2007; Samuli Suominen <drac@gentoo.org> +devede-3.0.ebuild:
+  Version bump for bug 183003. Thanks to Greg Fitzgerald for reporting.
+
+  17 Jun 2007; Samuli Suominen <drac@gentoo.org> devede-2.13.ebuild:
+  Fix previous commit.
+
+*devede-2.13 (17 Jun 2007)
+
+  17 Jun 2007; Samuli Suominen <drac@gentoo.org> +devede-2.13.ebuild:
+  Initial commit for bug 139986.
+

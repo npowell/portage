@@ -1,0 +1,26 @@
+# ChangeLog for dev-java/diablo-jre-bin
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-java/diablo-jre-bin/ChangeLog,v 1.4 2007/07/22 09:41:58 graaff Exp $
+
+  22 Jul 2007; Hans de Graaff <graaff@gentoo.org>
+  diablo-jre-bin-1.5.0.07.01.ebuild:
+  Drop virtual/x11 references.
+
+*diablo-jre-bin-1.5.0.07.01 (03 Dec 2006)
+
+  03 Dec 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +files/diablo-jre-bin-1.5.env, -files/diablo-jre-bin.env,
+  -diablo-jre-bin-1.5.0.07.00.ebuild, +diablo-jre-bin-1.5.0.07.01.ebuild:
+  Version bump, remove stricter restrict, use QA_TEXTREL instead.
+
+  12 Sep 2006; Diego Pettenò <flameeyes@gentoo.org>
+  diablo-jre-bin-1.5.0.07.00.ebuild:
+  Move slot to 1.5.
+
+*diablo-jre-bin-1.5.0.07.00 (21 Jul 2006)
+
+  21 Jul 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +files/diablo-jre-bin.env, +metadata.xml,
+  +diablo-jre-bin-1.5.0.07.00.ebuild:
+  Initial import, ebuild from Timothy Redaelli in bug #141071.
+

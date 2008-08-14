@@ -1,0 +1,40 @@
+# ChangeLog for games-fps/rtcwmp-demo
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-fps/rtcwmp-demo/ChangeLog,v 1.9 2007/04/28 18:08:33 swegener Exp $
+
+  28 Apr 2007; Sven Wegener <swegener@gentoo.org> rtcwmp-demo-1.1.ebuild:
+  Fix *initd, *confd and *envd calls (#173884, #174266)
+
+  12 Mar 2007; Marius Mauch <genone@gentoo.org> rtcwmp-demo-1.1.ebuild:
+  Replacing einfo with elog
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  05 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  rtcwmp-demo-1.1.ebuild:
+  Removing old virtual/x11 dependency.
+
+  07 Oct 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  rtcwmp-demo-1.1.ebuild:
+  Stable on amd64/x86.
+
+  31 Mar 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  rtcwmp-demo-1.1.ebuild:
+  Changed nomirror to mirror and nostrip to strip.
+
+  15 Mar 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  rtcwmp-demo-1.1.ebuild:
+  Changed to use idsoftware thirdpartymirror.
+
+  24 Jan 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  rtcwmp-demo-1.1.ebuild:
+  Added more quoting and second dir entry on dedictated games_make_wrapper.
+
+*rtcwmp-demo-1.1 (24 Jan 2006)
+
+  24 Jan 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  +files/rtcwmp-demo-ded.rc, +metadata.xml, +rtcwmp-demo-1.1.ebuild:
+  Initial import. Ebuild by Alexander Nicolaysen Sornes
+  <alex@thehandofagony.com>. Closing bug #115712.
+

@@ -1,0 +1,78 @@
+# ChangeLog for net-libs/gtk-vnc
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-libs/gtk-vnc/ChangeLog,v 1.19 2008/08/12 13:49:06 armin76 Exp $
+
+  12 Aug 2008; Raúl Porcel <armin76@gentoo.org> gtk-vnc-0.3.6.ebuild:
+  alpha/ia64/sparc stable wrt #229709
+
+  10 Aug 2008; Markus Meier <maekke@gentoo.org> gtk-vnc-0.3.6.ebuild:
+  x86 stable, bug #229709
+
+  30 Jul 2008; Brent Baude <ranger@gentoo.org> gtk-vnc-0.3.6.ebuild:
+  Marking gtk-vnc-0.3.6 ppc stable for bug 229709
+
+  26 Jul 2008; Olivier Crête <tester@gentoo.org> gtk-vnc-0.3.6.ebuild:
+  Stable on amd64, bug #229709
+
+  08 Jun 2008; Mart Raudsepp <leio@gentoo.org> gtk-vnc-0.3.6.ebuild:
+  Remove USE=debug as it does not affect anything anymore
+
+  02 Jun 2008; Brent Baude <ranger@gentoo.org> gtk-vnc-0.3.6.ebuild:
+  Marking gtk-vnc-0.3.6 ~ppc to satisfy broken tree dep as noted by Mr Bones
+
+  02 Jun 2008; Alexis Ballier <aballier@gentoo.org> gtk-vnc-0.3.6.ebuild:
+  keyword ~x86-fbsd
+
+*gtk-vnc-0.3.6 (25 May 2008)
+
+  25 May 2008; Rémi Cardona <remi@gentoo.org> +gtk-vnc-0.3.6.ebuild:
+  bump to 0.3.6, bugfix release
+
+  12 May 2008; Jeroen Roovers <jer@gentoo.org> gtk-vnc-0.3.4.ebuild:
+  Marked ~hppa (bug #218794).
+
+  08 May 2008; Gilles Dartiguelongue <eva@gentoo.org> -gtk-vnc-0.3.2.ebuild,
+  -gtk-vnc-0.3.3.ebuild, gtk-vnc-0.3.4.ebuild:
+  clean up old revisions, add examples use flag.
+
+  24 Apr 2008; Markus Rothe <corsair@gentoo.org> gtk-vnc-0.3.4.ebuild:
+  Added ~ppc64; bug #218794
+
+  25 Mar 2008; Raúl Porcel <armin76@gentoo.org> gtk-vnc-0.3.4.ebuild:
+  Add ~alpha/~ia64/~sparc
+
+*gtk-vnc-0.3.4 (23 Mar 2008)
+
+  23 Mar 2008; Gilles Dartiguelongue <eva@gentoo.org> +gtk-vnc-0.3.4.ebuild:
+  bump to 0.3.4, fix dependencies a bit, bug #211958
+
+*gtk-vnc-0.3.3 (26 Feb 2008)
+
+  26 Feb 2008; Mart Raudsepp <leio@gentoo.org> metadata.xml,
+  +gtk-vnc-0.3.3.ebuild:
+  Version bump and add gnome herd to metadata
+
+  31 Jan 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  -gtk-vnc-0.2.0.ebuild:
+  Clean up.
+
+  13 Jan 2008; Donnie Berkholz <dberkholz@gentoo.org>; gtk-vnc-0.2.0.ebuild,
+  gtk-vnc-0.3.2.ebuild:
+  (#205469) Add pkgconfig dep (Patrick Lauer).
+
+*gtk-vnc-0.3.2 (11 Jan 2008)
+
+  11 Jan 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  +gtk-vnc-0.3.2.ebuild:
+  (#204111) Bump.
+
+  02 Nov 2007; Christoph Mende <angelos@gentoo.org> gtk-vnc-0.2.0.ebuild:
+  Added ~amd64
+
+*gtk-vnc-0.2.0 (15 Oct 2007)
+
+  15 Oct 2007; Donnie Berkholz <dberkholz@gentoo.org>; +metadata.xml,
+  +gtk-vnc-0.2.0.ebuild:
+  (#189824) Add VNC widget for GTK+, based on the work of Jiri Tyr. This is a
+  dep of new virt-manager.
+

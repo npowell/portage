@@ -1,0 +1,45 @@
+# ChangeLog for net-misc/sobby
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/sobby/ChangeLog,v 1.13 2007/08/21 12:32:34 dev-zero Exp $
+
+  21 Aug 2007; Tiziano Müller <dev-zero@gentoo.org> -sobby-0.4.3.ebuild,
+  +sobby-0.4.4.ebuild:
+  Version bump.
+
+  21 Aug 2007; Tiziano Müller <dev-zero@gentoo.org> sobby-0.4.3.ebuild:
+  Added inherit eutils (bug #189691)
+
+*sobby-0.4.3 (18 Aug 2007)
+
+  18 Aug 2007; Tiziano Müller <dev-zero@gentoo.org>
+  +files/sobby-conf-0.4.3, +files/sobby-init-0.4.3, -sobby-0.4.1.ebuild,
+  +sobby-0.4.3.ebuild:
+  Version bump (bug #171089), dropped old versions.
+
+  29 Apr 2007; Torsten Veller <tove@gentoo.org> sobby-0.3.0.ebuild,
+  sobby-0.4.1.ebuild:
+  Fix *initd, *confd and *envd calls (#173884, #174266)
+
+  28 Oct 2006; Matti Bickel <mabi@gentoo.org> sobby-0.3.0.ebuild:
+  Stable on ppc (bug #115113)
+
+  28 Oct 2006; Gustavo Felisberto <humpback@gentoo.org>;
+  files/sobby-init-0.2.0:
+  Changed need to use on dependency to mDNSresponder.
+
+  23 Oct 2006; Gustavo Felisberto <humpback@gentoo.org>; sobby-0.3.0.ebuild,
+  sobby-0.4.1.ebuild:
+  Added dep on dev-util/pkgconfig . Fixes bug #152519.
+
+  30 Aug 2006; Gustavo Felisberto <humpback@gentoo.org>; sobby-0.4.1.ebuild:
+  Hanno detected a missing dep.
+
+*sobby-0.4.0_rc1 (18 Jun 2006)
+
+  18 Jun 2006; Gustavo Felisberto <humpback@gentoo.org>;
+  +sobby-0.4.0_rc1.ebuild:
+  Added rc version that works with lattest gobby
+
+  23 Jan 2006; Chris Gianelloni <wolf31o2@gentoo.org> sobby-0.3.0.ebuild:
+  Marking stable on x86 wrt bug #115113.
+

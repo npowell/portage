@@ -1,0 +1,52 @@
+# ChangeLog for net-irc/anope
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-irc/anope/ChangeLog,v 1.11 2008/03/24 17:10:18 armin76 Exp $
+
+*anope-1.7.21 (24 Mar 2008)
+
+  24 Mar 2008; Raúl Porcel <armin76@gentoo.org> -anope-1.7.19.ebuild,
+  -anope-1.7.20.ebuild, +anope-1.7.21.ebuild:
+  Version bump
+
+*anope-1.7.20 (08 Jan 2008)
+
+  08 Jan 2008; Markus Ullmann <jokey@gentoo.org> +anope-1.7.20.ebuild:
+  Version bump
+
+  27 Dec 2007; Markus Ullmann <jokey@gentoo.org> anope-1.7.19.ebuild:
+  Install services.conf as services.conf.example to avoid overwriting
+
+  25 Oct 2007; Raúl Porcel <armin76@gentoo.org> -anope-1.7.18.ebuild:
+  old
+
+*anope-1.7.19 (06 Sep 2007)
+
+  06 Sep 2007; Markus Ullmann <jokey@gentoo.org> +anope-1.7.19.ebuild:
+  Version bump
+
+  21 Apr 2007; Bjarke Istrup Pedersen <gurligebis@gentoo.org> anope-1.7.18.ebuild:
+  replacing insinto with newconfd and newinitd functions
+
+  06 Mar 2007; Luca Barbato <lu_zero@gentoo.org> anope-1.7.18.ebuild:
+  do not wipe configuration
+
+*anope-1.7.18 (20 Feb 2007)
+
+  20 Feb 2007; Raúl Porcel <armin76@gentoo.org> -anope-1.7.15.ebuild,
+  -anope-1.7.17.ebuild, +anope-1.7.18.ebuild:
+  Version bump, drop old
+
+  23 Nov 2006; Francesco Riosa <vivo@gentoo.org> anope-1.7.15.ebuild,
+  anope-1.7.17.ebuild:
+  dev-db/mysql => virtual/mysql
+
+*anope-1.7.17 (26 Oct 2006)
+
+  26 Oct 2006; Markus Ullmann <jokey@gentoo.org> +anope-1.7.17.ebuild:
+  Security version bump
+
+*anope-1.7.15 (29 Aug 2006)
+
+  29 Aug 2006; Bjarke Istrup Pedersen <gurligebis@gentoo.org> :
+  Initial import.  Based on ebuild by Björn Stiddien <keeper@anope.org>.
+

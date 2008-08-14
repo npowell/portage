@@ -1,0 +1,14 @@
+# ChangeLog for sci-libs/mmdb
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/mmdb/ChangeLog,v 1.2 2008/02/06 09:08:26 dberkholz Exp $
+
+  06 Feb 2008; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Change herd to sci-chemistry from sci.
+
+*mmdb-1.0.8.3 (21 Dec 2007)
+
+  21 Dec 2007; Donnie Berkholz <dberkholz@gentoo.org>; +metadata.xml,
+  +mmdb-1.0.8.3.ebuild:
+  New package that's a dependency of Coot: The Coordinate Library is designed
+  to assist CCP4 developers in working with coordinate files.
+

@@ -1,0 +1,62 @@
+# ChangeLog for media-video/istanbul
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/istanbul/ChangeLog,v 1.13 2008/05/29 17:30:45 hawking Exp $
+
+  29 May 2008; Ali Polatel <hawking@gentoo.org> istanbul-0.2.0-r1.ebuild,
+  istanbul-0.2.1.ebuild, istanbul-0.2.2.ebuild:
+  python_mod_optimize is ROOT aware. Remove redundant python_version from
+  pkg_postrm.
+
+  27 Nov 2007; Matthias Schwarzott <zzam@gentoo.org>
+  istanbul-0.2.0-r1.ebuild, istanbul-0.2.1.ebuild, istanbul-0.2.2.ebuild:
+  Fixed quoting.
+
+  01 Sep 2007; Samuli Suominen <drac@gentoo.org> istanbul-0.2.2.ebuild:
+  Add USE encode check for libtheora wrt #168989.
+
+*istanbul-0.2.2 (23 Feb 2007)
+
+  23 Feb 2007; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  +istanbul-0.2.2.ebuild:
+  version bump
+
+  22 Jan 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  istanbul-0.2.0.ebuild, istanbul-0.2.0-r1.ebuild, istanbul-0.2.1.ebuild:
+  Fix gconf depatom
+
+*istanbul-0.2.1 (28 Jul 2006)
+
+  28 Jul 2006; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  +istanbul-0.2.1.ebuild:
+  version bump
+
+  25 Jul 2006; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  istanbul-0.2.0-r1.ebuild:
+  add build dep on new version of intltool
+
+  21 Jul 2006; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  istanbul-0.2.0-r1.ebuild:
+  addpredict on /root/.gnome2
+
+  18 Jul 2006; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  istanbul-0.2.0-r1.ebuild:
+  fix plugin deps
+
+  18 Jul 2006; John N. Laliberte <allanonjl@gentoo.org>
+  istanbul-0.2.0-r1.ebuild:
+  add intltoolize line, fixes #140906
+
+*istanbul-0.2.0-r1 (17 Jul 2006)
+
+  17 Jul 2006; John N. Laliberte <allanonjl@gentoo.org>
+  +istanbul-0.2.0-r1.ebuild:
+  disable py compiling, use python eclass instead.
+
+  15 Jul 2006; <zaheerm@gentoo.org> istanbul-0.2.0.ebuild:
+  add description and iuse
+
+*istanbul-0.2.0 (13 Jul 2006)
+
+  13 Jul 2006; <zaheerm@gentoo.org> +metadata.xml, +istanbul-0.2.0.ebuild:
+  Initial Ebuild
+

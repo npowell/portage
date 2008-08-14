@@ -1,0 +1,67 @@
+# ChangeLog for sys-block/btrace
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-block/btrace/ChangeLog,v 1.14 2008/05/28 18:17:37 robbat2 Exp $
+
+*btrace-0.99.3 (28 May 2008)
+
+  28 May 2008; Robin H. Johnson <robbat2@gentoo.org> +btrace-0.99.3.ebuild:
+  Version bump, also fix doc installing per bug #222717.
+
+  16 Dec 2007; Samuli Suominen <drac@gentoo.org>
+  btrace-0.0.20071210202527.ebuild:
+  amd64 stable wrt #202240
+
+  16 Dec 2007; Robin H. Johnson <robbat2@gentoo.org>
+  btrace-0.0.20071210202527.ebuild:
+  Fix manpage install location.
+
+  15 Dec 2007; Dawid Węgliński <cla@gentoo.org>
+  btrace-0.0.20071210202527.ebuild:
+  Stable on x86 (bug #202240)
+
+  15 Dec 2007; Robin H. Johnson <robbat2@gentoo.org>
+  btrace-0.0.20060614042007.ebuild, btrace-0.0.20070730162628.ebuild:
+  Make repoman stop whining.
+
+  15 Dec 2007; Robin H. Johnson <robbat2@gentoo.org>
+  btrace-0.0.20071210202527.ebuild:
+  Missing dep dev-libs/libaio for the btreplay program.
+
+  14 Dec 2007; nixnut <nixnut@gentoo.org> btrace-0.0.20071210202527.ebuild:
+  Stable on ppc wrt bug 202240
+
+*btrace-0.0.20071210202527 (14 Dec 2007)
+
+  14 Dec 2007; Robin H. Johnson <robbat2@gentoo.org>
+  +btrace-0.0.20071210202527.ebuild:
+  Version bump.
+
+*btrace-0.0.20070730162628 (18 Aug 2007)
+
+  18 Aug 2007; Robin H. Johnson <robbat2@gentoo.org>
+  +btrace-0.0.20070730162628.ebuild:
+  Version bump.
+
+  14 Jul 2007; Robin H. Johnson <robbat2@gentoo.org>
+  btrace-0.0.20060614042007.ebuild:
+  Bug #184016, install pdf doc properly.
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+*btrace-0.0.20060614042007 (14 Jun 2006)
+
+  14 Jun 2006; Robin H. Johnson <robbat2@gentoo.org>
+  btrace-0.0.20060428050322.ebuild, +btrace-0.0.20060614042007.ebuild:
+  Bug #136482, fix tetex DEPEND. Also version bump.
+
+  07 Jun 2006; Robin H. Johnson <robbat2@gentoo.org>
+  btrace-0.0.20060428050322.ebuild:
+  Bug #135905, fix typo.
+
+*btrace-0.0.20060428050322 (07 May 2006)
+
+  07 May 2006; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml,
+  +btrace-0.0.20060428050322.ebuild:
+  Initial package by Robin H. Johnson <robbat2@gentoo.org>.
+

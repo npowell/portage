@@ -1,0 +1,54 @@
+# ChangeLog for dev-php/roadsend-php
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-php/roadsend-php/ChangeLog,v 1.8 2008/06/18 22:30:48 pchrist Exp $
+
+  18 Jun 2008; Panagiotis Christopoulos <pchrist@gentoo.org>
+  files/bigloo-3.1a-configsupport.patch:
+  Updating bigloo's versioning config/support patch, cause of issues with
+  dos line ending and sys-devel/patch-2.5.9, fixes bug 219624
+
+*roadsend-php-2.9.6 (25 Apr 2008)
+
+  25 Apr 2008; Marijn Schouten <hkBst@gentoo.org>
+  +files/bigloo-3.1a-configsupport.patch, +roadsend-php-2.9.6.ebuild:
+  bump
+
+*roadsend-php-2.9.5 (15 Feb 2008)
+
+  15 Feb 2008; Marijn Schouten <hkBst@gentoo.org>
+  +roadsend-php-2.9.5.ebuild:
+  bump:
+the sockets extension has been implemented (TCP streams only)
+more build system fixes
+lots of optimizations to the runtime and FastCGI backend
+runtime fixes
+
+*roadsend-php-2.9.4 (18 Jan 2008)
+
+  18 Jan 2008; Marijn Schouten <hkBst@gentoo.org>
+  +roadsend-php-2.9.4.ebuild:
+  bump
+
+*roadsend-php-2.9.3 (01 Jan 2008)
+
+  01 Jan 2008; Marijn Schouten <hkBst@gentoo.org>
+  +roadsend-php-2.9.3.ebuild:
+  add bump, 2.9.3 should support all core PHP5 stuff
+
+*roadsend-php-2.9.2 (20 Aug 2007)
+
+  20 Aug 2007; Marijn Schouten <hkBst@gentoo.org>
+  -roadsend-php-2.9.1_p6.ebuild, +roadsend-php-2.9.2.ebuild:
+  bump, fixes some segfaults, turn on unsafe building
+
+  17 Aug 2007; Christian Faulhammer <opfer@gentoo.org>
+  roadsend-php-2.9.1_p6.ebuild:
+  keyworded ~x86, bug 189021
+
+*roadsend-php-2.9.1_p6 (14 Aug 2007)
+
+  14 Aug 2007; Marijn Schouten <hkBst@gentoo.org> +metadata.xml,
+  +roadsend-php-2.9.1_p6.ebuild:
+  Initial ebuild. Much thanks to Panagiotis Christopoulos <pxrist@gmail.com>
+  and Shannon Weyrick <weyrick@roadsend.com>
+

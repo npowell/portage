@@ -1,0 +1,21 @@
+# ChangeLog for app-office/homebank
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-office/homebank/ChangeLog,v 1.4 2008/04/23 08:22:37 calchan Exp $
+
+*homebank-3.8 (23 Apr 2008)
+
+  23 Apr 2008; Denis Dupeyron <calchan@gentoo.org> +homebank-3.8.ebuild:
+  Version bump.
+
+  01 Apr 2008; Denis Dupeyron <calchan@gentoo.org> homebank-3.7.ebuild:
+  eautoconf was enough, thanks to Tiziano Müller.
+
+  01 Apr 2008; Denis Dupeyron <calchan@gentoo.org> homebank-3.7.ebuild:
+  Oops, forgot librsvg dependency.
+
+*homebank-3.7 (01 Apr 2008)
+
+  01 Apr 2008; Denis Dupeyron <calchan@gentoo.org> +metadata.xml,
+  +homebank-3.7.ebuild:
+  Initial commit, thanks to everybody on bug #139634.
+

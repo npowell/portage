@@ -1,0 +1,26 @@
+# ChangeLog for media-sound/sonik
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/sonik/ChangeLog,v 1.5 2008/03/12 09:44:36 phreak Exp $
+
+  12 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Eldad Zack (eldad, #53978) from metadata.xml.
+
+  21 Oct 2006; Carsten Lohrke <carlo@gentoo.org> sonik-1.0.0.ebuild:
+  QA: need-kde() has to be called after setting R/DEPEND.
+
+*sonik-1.0.0 (07 Oct 2006)
+
+  07 Oct 2006; Eldad Zack <eldad@gentoo.org> -sonik-1.0_beta2.ebuild,
+  +sonik-1.0.0.ebuild:
+  Version bump and ebuild cleanups. Also closes bug #145366. Removed beta
+  version (which doesn't compile under gcc 4.1.1)
+
+  02 Jun 2006; Eldad Zack <eldad@gentoo.org> sonik-1.0_beta2.ebuild:
+  Removed arts useflag, better failure notice via kde.eclass. bug #134682.
+
+*sonik-1.0_beta2 (05 May 2006)
+
+  05 May 2006; Eldad Zack <eldad@gentoo.org> +metadata.xml,
+  +sonik-1.0_beta2.ebuild:
+  Initial ebuild. Thanks to Tobias Roeser <le.petit.fou@web.de>.
+

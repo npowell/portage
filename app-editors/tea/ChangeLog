@@ -1,0 +1,162 @@
+# ChangeLog for app-editors/tea
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-editors/tea/ChangeLog,v 1.38 2008/07/28 19:52:47 ulm Exp $
+
+  28 Jul 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
+  Add USE flag description to metadata wrt GLEP 56.
+
+*tea-17.6.3 (03 Jul 2008)
+
+  03 Jul 2008; Thomas Anderson <gentoofan23@gentoo.org> +tea-17.6.3.ebuild:
+  Version bump
+
+  23 Apr 2008; Raúl Porcel <armin76@gentoo.org> tea-17.6.0.ebuild:
+  x86 stable
+
+  21 Mar 2008; Peter Weller <welp@gentoo.org> tea-17.6.0.ebuild:
+  Fix patch; bug 213903
+
+  17 Mar 2008; Raúl Porcel <armin76@gentoo.org> tea-17.6.0.ebuild:
+  Fix patch, welp fails
+
+*tea-17.6.0 (17 Mar 2008)
+
+  17 Mar 2008; Peter Weller <welp@gentoo.org> +tea-17.6.0.ebuild:
+  Bump
+
+  01 Mar 2008; Raúl Porcel <armin76@gentoo.org> tea-17.5.4.ebuild:
+  x86 stable
+
+  02 Feb 2008; Raúl Porcel <armin76@gentoo.org> tea-17.5.0.ebuild:
+  x86 stable
+
+*tea-17.5.4 (25 Jan 2008)
+
+  25 Jan 2008; Samuli Suominen <drac@gentoo.org>
+  +files/tea-17.5.4-forced-cflags-and-compiler-warnings.patch,
+  +tea-17.5.4.ebuild:
+  Version bump. Stop installing stripped binary. Include string.h where strlen
+  is used, was hidden by forced -w in CFLAGS.
+
+*tea-17.5.1 (07 Jan 2008)
+
+  07 Jan 2008; <welp@gentoo.org> +tea-17.5.1.ebuild:
+  Bump
+
+*tea-17.5.0 (02 Jan 2008)
+
+  02 Jan 2008; Peter Weller <welp@gentoo.org> +tea-17.5.0.ebuild:
+  Bump
+
+  30 Dec 2007; Samuli Suominen <drac@gentoo.org> -files/tea_icon_v2.png,
+  -tea-16.1.1.ebuild, -tea-16.1.1-r1.ebuild, -tea-17.0.0.ebuild,
+  -tea-17.0.2.ebuild, -tea-17.3.5.ebuild, tea-17.4.1.ebuild:
+  amd64 stable, closing also #200306, leaving QA bugs 200229 and 200304 open -
+  not a regression.
+
+  16 Dec 2007; Raúl Porcel <armin76@gentoo.org> tea-17.4.1.ebuild:
+  x86 stable
+
+  29 Nov 2007; Raúl Porcel <armin76@gentoo.org> tea-17.3.5.ebuild:
+  x86 stable
+
+*tea-17.4.1 (17 Nov 2007)
+
+  17 Nov 2007; Peter Weller <welp@gentoo.org> +tea-17.4.1.ebuild:
+  Bump
+
+  22 Oct 2007; <welp@gentoo.org> ChangeLog:
+  Bump to 17.3.5, remove sounds USE in previous versions. Fixes bugs 196402
+  and 188371, respectively.
+
+  11 Oct 2007; Rémi Cardona <remi@gentoo.org> tea-16.1.1.ebuild,
+  tea-16.1.1-r1.ebuild, tea-17.0.0.ebuild, tea-17.0.2.ebuild:
+  update gtksourceview deps (see bug #195366)
+
+  05 Sep 2007; Raúl Porcel <armin76@gentoo.org> tea-17.0.2.ebuild:
+  x86 stable
+
+  08 Jul 2007; Raúl Porcel <armin76@gentoo.org> tea-17.0.0.ebuild:
+  Re-add ~ia64/~x86 because welp fails
+
+*tea-17.0.0 (07 Jul 2007)
+*tea-16.1.1-r1 (07 Jul 2007)
+
+  07 Jul 2007; Peter Weller <welp@gentoo.org> -tea-15.0.1.ebuild,
+  -tea-16.0.3.ebuild, -tea-16.0.5.ebuild, tea-16.1.1.ebuild,
+  +tea-16.1.1-r1.ebuild, +tea-17.0.0.ebuild:
+  Clean up old versions, bump, revbump to fix install locations
+
+  27 Jun 2007; Christoph Mende <angelos@gentoo.org> tea-16.1.1.ebuild:
+  Stable on amd64 wrt bug 183366
+
+  08 Jun 2007; Raúl Porcel <armin76@gentoo.org> tea-16.1.1.ebuild:
+  x86 stable
+
+*tea-16.1.1 (08 May 2007)
+
+  08 May 2007; Raúl Porcel <armin76@gentoo.org> -tea-16.1.0.ebuild,
+  +tea-16.1.1.ebuild:
+  Version bump, remove oldish, as it was broken, and rekeyword ~ia64, on
+  behalf of welp
+
+  15 Apr 2007; Raúl Porcel <armin76@gentoo.org> tea-16.0.5.ebuild:
+  Add ~ia64, stable x86
+
+*tea-16.1.0 (15 Apr 2007)
+
+  15 Apr 2007; Peter Weller <welp@gentoo.org> +tea-16.1.0.ebuild:
+  Bumped wrt bug 174683
+
+  31 Mar 2007; Raúl Porcel <armin76@gentoo.org> tea-16.0.3.ebuild:
+  x86 stable
+
+  10 Mar 2007; Peter Weller <welp@gentoo.org> tea-16.0.5.ebuild:
+  Keyworded ~x86-fbsd
+
+*tea-16.0.5 (07 Mar 2007)
+
+  07 Mar 2007; Peter Weller <welp@gentoo.org> -tea-14.3.1.ebuild,
+  -tea-15.0.0.ebuild, tea-15.0.1.ebuild, +tea-16.0.5.ebuild:
+  Punted old versions, 15.0.1 stable on amd64, bumped.
+
+  28 Feb 2007; Peter Weller <welp@gentoo.org> ChangeLog:
+  New version, bumped ebuild
+
+  07 Feb 2007; Peter Weller <welp@gentoo.org> tea-15.0.0.ebuild:
+  Minor fixes
+
+  06 Feb 2007; Raúl Porcel <armin76@gentoo.org> tea-15.0.1.ebuild:
+  x86 stable
+
+  08 Jan 2007; Peter Weller (welp) <welp@gentoo.org> tea-15.0.0.ebuild,
+  tea-15.0.1.ebuild:
+  Fixed a couple of things as upstream have no --disable :(
+
+  07 Jan 2007; Peter Weller (welp) <welp@gentoo.org> tea-15.0.0.ebuild,
+  tea-15.0.1.ebuild:
+  Removed sounds USE flag as package is b0rked
+
+*tea-15.0.1 (06 Jan 2007)
+
+  06 Jan 2007; Peter Weller (welp) <welp@gentoo.org> tea-14.3.1.ebuild,
+  tea-15.0.0.ebuild, +tea-15.0.1.ebuild:
+  Bumped to 15.0.1, various other edits
+
+*tea-15.0.0 (30 Dec 2006)
+
+  30 Dec 2006; Peter Weller <welp@gentoo.org> +tea-15.0.0.ebuild:
+  New release of tea, bumpz0r!
+
+  18 Dec 2006; Peter Weller <welp@gentoo.org> tea-14.3.1.ebuild:
+  Updated ebuild to reflect new icon
+
+  18 Dec 2006; Peter Weller <welp@gentoo.org> +files/tea_icon_v2.png:
+  Removed obslete icon and added new icon
+
+*tea-14.3.1 (10 Dec 2006)
+
+  10 Dec 2006; Peter Weller <welp@gentoo.org> +metadata.xml,
+  +tea-14.3.1.ebuild:
+  Added tea-14.3.1 to the tree wrt bug #153602
+

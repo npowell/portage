@@ -1,0 +1,53 @@
+# ChangeLog for dev-perl/Schedule-At
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Schedule-At/ChangeLog,v 1.13 2007/03/05 12:25:03 ticho Exp $
+
+  05 Mar 2007; Andrej Kacian <ticho@gentoo.org> Schedule-At-1.06.ebuild:
+  Stable on x86, bug #169152.
+
+  19 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  Schedule-At-1.05.ebuild:
+  Ebuild maintenance
+
+  24 Nov 2006; Michael Cummings <mcummings@gentoo.org>
+  Schedule-At-1.06.ebuild:
+  amd64 stable
+
+  15 Oct 2006; Bryan Østergaard <kloeri@gentoo.org>
+  Schedule-At-1.06.ebuild:
+  Stable on ia64.
+
+  17 Sep 2006; Michael Cummings <mcummings@gentoo.org> ChangeLog:
+  Keywording ~amd64
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Schedule-At-1.05.ebuild, Schedule-At-1.06.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  04 Jul 2006; Christian Hartmann <ian@gentoo.org> Schedule-At-1.05.ebuild,
+  Schedule-At-1.06.ebuild:
+  Fixed RDEPEND wrt bug #134781
+
+  12 Jun 2006; Michael Cummings <mcummings@gentoo.org>
+  Schedule-At-1.06.ebuild:
+  Marking sparc stable
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org> Schedule-At-1.06.ebuild:
+  Mark 1.06 ~ia64
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  Schedule-At-1.05.ebuild:
+  Marking sparc x86 stable
+
+*Schedule-At-1.06 (13 Jan 2006)
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  Schedule-At-1.05.ebuild, +Schedule-At-1.06.ebuild:
+  Version bump
+
+*Schedule-At-1.05 (14 May 2005)
+
+  14 May 2005; Michael Cummings <mcummings@gentoo.org> +metadata.xml,
+  +Schedule-At-1.05.ebuild:
+  Bug 88118 - portknock dep
+

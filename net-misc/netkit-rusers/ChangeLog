@@ -1,0 +1,18 @@
+# ChangeLog for net-misc/netkit-rusers
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/netkit-rusers/ChangeLog,v 1.4 2008/04/21 18:00:23 phreak Exp $
+
+  21 Apr 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Fix up metadata.xml. If there's no maintainer for the package, the metadata
+  also needs to contain m-needed@g.o.
+
+  11 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  fix herd
+
+  13 Sep 2006; Peter Volkov <pva@gentoo.org> netkit-rusers-0.17.ebuild:
+  Marked ~amd64.
+
+*net-misc/netkit-rusers-0.17 (23 Oct 2004)
+
+  23 Octy 2004; Wout Mertens <wmertens@gentoo.org> :
+  Initial import.

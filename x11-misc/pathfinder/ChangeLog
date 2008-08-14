@@ -1,0 +1,80 @@
+# ChangeLog for x11-misc/pathfinder
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/pathfinder/ChangeLog,v 1.17 2008/04/21 18:34:15 phreak Exp $
+
+  21 Apr 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Fix up metadata.xml. If there's no maintainer for the package, the metadata
+  also needs to contain m-needed@g.o.
+
+*pathfinder-1.6.31 (25 Feb 2008)
+
+  25 Feb 2008; Matti Bickel <mabi@gentoo.org> -pathfinder-1.6.27.ebuild,
+  -pathfinder-1.6.29.ebuild, +pathfinder-1.6.31.ebuild:
+  added new version, cleanup
+
+  25 Feb 2008; Jeroen Roovers <jer@gentoo.org> pathfinder-1.6.30.ebuild:
+  Stable for HPPA (bug #210543).
+
+  21 Nov 2007; Ferris McCormick <fmccor@gentoo.org>
+  pathfinder-1.6.30.ebuild:
+  Add ~sparc keyword (implicit in Bug #199853), it's a utility from
+  x11-libs/fox.
+
+*pathfinder-1.6.30 (21 Nov 2007)
+
+  21 Nov 2007; Matti Bickel <mabi@gentoo.org> +pathfinder-1.6.30.ebuild:
+  version bump
+
+*pathfinder-1.6.29 (09 Oct 2007)
+
+  09 Oct 2007; Matti Bickel <mabi@gentoo.org> -pathfinder-1.6.19.ebuild,
+  -pathfinder-1.6.25.ebuild, +pathfinder-1.6.29.ebuild:
+  clean stale versions, bump
+
+  09 Oct 2007; Jeroen Roovers <jer@gentoo.org> pathfinder-1.6.27.ebuild:
+  Stable for HPPA (bug #194813).
+
+*pathfinder-1.6.27 (06 Jun 2007)
+
+  06 Jun 2007; Matti Bickel <mabi@gentoo.org> +pathfinder-1.6.27.ebuild:
+  version bump
+
+  06 Jun 2007; Jeroen Roovers <jer@gentoo.org> pathfinder-1.6.25.ebuild:
+  Stable for HPPA (bug #181017).
+
+  19 May 2007; Matti Bickel <mabi@gentoo.org> -pathfinder-1.4.12.ebuild,
+  -pathfinder-1.5.4.ebuild:
+  clean old ebuilds
+
+*pathfinder-1.6.25 (28 Mar 2007)
+
+  28 Mar 2007; Matti Bickel <mabi@gentoo.org> +pathfinder-1.6.25.ebuild:
+  Version bump
+
+*pathfinder-1.6.19 (20 Dec 2006)
+
+  20 Dec 2006; Matti Bickel <mabi@gentoo.org> -pathfinder-1.2.15.ebuild,
+  +pathfinder-1.6.19.ebuild:
+  revbump+cleanup
+
+  30 Oct 2006; Matti Bickel <mabi@gentoo.org> pathfinder-1.2.15.ebuild,
+  pathfinder-1.4.12.ebuild, pathfinder-1.5.4.ebuild:
+  Killed ranged deps, set DEPEND (bug #153329)
+
+  29 Oct 2006; Matti Bickel <mabi@gentoo.org> -pathfinder-1.0.53.ebuild:
+  Removing stale ebuilds (bug #153234)
+
+  15 Jul 2006; Bryan Østergaard <kloeri@gentoo.org> metadata.xml:
+  Remove rphillips from metadata.xml as he's retired.
+
+  04 Jul 2005; Jonathan Smith <smithj@gentoo.org> +metadata.xml:
+  added metadata
+
+*pathfinder-1.2.15 (07 May 2005)
+
+  07 May 2005; <rphillips@gentoo.org> +pathfinder-1.0.53.ebuild,
+  +pathfinder-1.2.15.ebuild, +pathfinder-1.4.12.ebuild,
+  +pathfinder-1.5.4.ebuild:
+  Added Yaakov Selkowitz's eclass based fox ebuilds for testing.
+  Fixes #88924
+

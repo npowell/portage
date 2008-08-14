@@ -1,0 +1,59 @@
+# ChangeLog for media-plugins/vdr-vompserver
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-vompserver/ChangeLog,v 1.11 2008/04/28 08:34:02 zzam Exp $
+
+  28 Apr 2008; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-vompserver-0.2.6-r1.ebuild, vdr-vompserver-0.2.7.ebuild:
+  Fixed quoting.
+
+  08 Feb 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-vompserver-0.2.7.ebuild:
+  stabel x86; thanks to P.Frank on bug 208223
+
+*vdr-vompserver-0.2.7 (30 Dec 2007)
+
+  30 Dec 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/vdr-vompserver-0.2.7-gentoo.diff, -vdr-vompserver-0.2.5.ebuild,
+  -vdr-vompserver-0.2.6.ebuild, vdr-vompserver-0.2.6-r1.ebuild,
+  +vdr-vompserver-0.2.7.ebuild:
+  version bump, thanks to P.Frank on bug 203708; cleanup; 0.2.6-r1 stable on x86
+
+*vdr-vompserver-0.2.6-r1 (24 Jun 2007)
+
+  24 Jun 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +files/vdr-vompserver-0.2.6-vdr-1.5.0.diff,
+  +vdr-vompserver-0.2.6-r1.ebuild:
+  Added vdr-1.5.0 patch.
+
+  08 Jun 2007; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-vompserver-0.2.6.ebuild:
+  Do not install COPYING.
+
+  02 May 2007; Raúl Porcel <armin76@gentoo.org>
+  vdr-vompserver-0.2.6.ebuild:
+  x86 stable wrt #176576
+
+  30 Apr 2007; Matthias Schwarzott <zzam@gentoo.org> metadata.xml:
+  Fixed metadata to really contain Petric Frank to be proxied maintainer.
+
+*vdr-vompserver-0.2.6 (17 Feb 2007)
+
+  17 Feb 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/vdr-vompserver-0.2.6-gentoo.diff, +vdr-vompserver-0.2.6.ebuild:
+  version bump; thanks to Petric Frank on #bug 167309
+
+  05 Jan 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-vompserver-0.2.5.ebuild:
+  einfo converted to elog
+
+  27 Nov 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-vompserver-0.2.5.ebuild:
+  Added mirror://gentoo
+
+*vdr-vompserver-0.2.5 (27 Nov 2006)
+
+  27 Nov 2006; Matthias Schwarzott <zzam@gentoo.org> +metadata.xml,
+  +vdr-vompserver-0.2.5.ebuild:
+  Initial import of ebuild, thanks to Petric Frank <pfrank@gmx.de> who will
+  also maintain it, Bug #156122.
+

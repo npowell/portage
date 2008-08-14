@@ -1,0 +1,65 @@
+# ChangeLog for dev-dotnet/galago-sharp
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-dotnet/galago-sharp/ChangeLog,v 1.15 2007/02/03 14:40:42 nixnut Exp $
+
+  03 Feb 2007; nixnut <nixnut@gentoo.org> galago-sharp-0.5.0.ebuild:
+  Stable on ppc wrt bug 164273
+
+  01 Feb 2007; Christian Faulhammer <opfer@gentoo.org>
+  galago-sharp-0.5.0.ebuild:
+  stable x86; bug #164273
+
+  28 Jan 2007; Olivier Crête <tester@gentoo.org> galago-sharp-0.5.0.ebuild:
+  Stable on amd64 per bug #164273
+
+  21 Dec 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  galago-sharp-0.5.0.ebuild:
+  Add a nasty hack to prevent building of tests
+
+  19 Dec 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  galago-sharp-0.5.0.ebuild:
+  Add check to ensure that dbus is <0.90 if we check for the mono useflag
+
+  02 Dec 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  -galago-sharp-0.3.2.ebuild:
+  prune old version
+
+  16 Oct 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  galago-sharp-0.5.0.ebuild:
+  Fix dependency, thanks to Josh_B for noticing it
+
+  16 Sep 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  galago-sharp-0.5.0.ebuild:
+  Added ~ppc, bug #147751
+
+  27 Aug 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  galago-sharp-0.3.2.ebuild:
+  fixing the dep on galago-sharp, 0.3 is not API compatible with 0.5
+
+*galago-sharp-0.5.0 (08 Aug 2006)
+
+  08 Aug 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  +files/galago-sharp-0.5.0-tests.patch, +galago-sharp-0.5.0.ebuild:
+  Version bump from upstream
+
+  25 Apr 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  galago-sharp-0.3.2.ebuild:
+  Added to ~ppc, bug #131179
+
+  13 Feb 2006; Luis Medinas <metalgod@gentoo.org> galago-sharp-0.3.2.ebuild:
+  Added ~amd64 keyword.
+
+  08 Feb 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  galago-sharp-0.3.2.ebuild:
+  (#122115) Need to inherit eutils to use built_with_use().
+
+  04 Feb 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  galago-sharp-0.3.2.ebuild:
+  Updating deps as per hidden deps.  Resolves bug #121563
+
+*galago-sharp-0.3.2 (01 Feb 2006)
+
+  01 Feb 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  +galago-sharp-0.3.2.ebuild:
+  Initial import of galago-sharp
+

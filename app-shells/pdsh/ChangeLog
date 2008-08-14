@@ -1,0 +1,56 @@
+# ChangeLog for app-shells/pdsh
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-shells/pdsh/ChangeLog,v 1.12 2008/08/03 15:20:56 ulm Exp $
+
+  03 Aug 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
+  Add USE flag description to metadata wrt GLEP 56.
+
+*pdsh-2.16 (15 Jun 2008)
+
+  15 Jun 2008; Sven Wegener <swegener@gentoo.org> +pdsh-2.16.ebuild:
+  Version bump.
+
+  15 Jun 2008; Sven Wegener <swegener@gentoo.org>
+  +files/pdsh-2.14-gcc-4.3-unistd.h.patch,
+  +files/pdsh-2.14-glibc-2.8-ARG_MAX.patch, pdsh-2.14.ebuild:
+  Add compability patches for gcc-4.3 and glibc-2.8.
+
+  14 Mar 2008; Caleb Tennis <caleb@gentoo.org> pdsh-2.14.ebuild:
+  amd64 stable
+
+  31 Jan 2008; Donnie Berkholz <dberkholz@gentoo.org>; -pdsh-2.9.ebuild,
+  -pdsh-2.11.ebuild, -pdsh-2.12.ebuild:
+  Clean up.
+
+  29 Jan 2008; Justin Bronder <jsbronder@gentoo.org> pdsh-2.9.ebuild,
+  pdsh-2.11.ebuild, pdsh-2.12.ebuild, pdsh-2.14.ebuild:
+  Fix HOMEPAGE (and SRC_URI as long as I'm here).  Bug #207642
+
+  22 Jan 2008; Christian Faulhammer <opfer@gentoo.org> pdsh-2.14.ebuild:
+  stable x86, bug 206923
+
+*pdsh-2.14 (08 Sep 2007)
+
+  08 Sep 2007; Sven Wegener <swegener@gentoo.org> +pdsh-2.14.ebuild:
+  Version bump.
+
+  26 Apr 2007; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Update for cluster herd split to hp-cluster and ha-cluster.
+
+*pdsh-2.12 (17 Apr 2007)
+
+  17 Apr 2007; Sven Wegener <swegener@gentoo.org> +pdsh-2.12.ebuild:
+  Version bump. Add ~amd64 keyword.
+
+*pdsh-2.11 (22 Nov 2006)
+
+  22 Nov 2006; Donnie Berkholz <dberkholz@gentoo.org>; +pdsh-2.11.ebuild:
+  (#153687) Bump; make rsh optional, switch to sourceforge, use DESTDIR for
+  installing (Allen S. Rout).
+
+*pdsh-2.9 (20 Jul 2006)
+
+  20 Jul 2006; Donnie Berkholz <dberkholz@gentoo.org>; +metadata.xml,
+  +pdsh-2.9.ebuild:
+  (#81171) Add the parallel distributed shell (jghobrial@uh.edu).
+

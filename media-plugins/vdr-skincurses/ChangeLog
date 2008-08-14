@@ -1,0 +1,55 @@
+# ChangeLog for media-plugins/vdr-skincurses
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-skincurses/ChangeLog,v 1.10 2008/04/05 22:27:17 hd_brummy Exp $
+
+*vdr-skincurses-0.1.7 (05 Apr 2008)
+
+  05 Apr 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-skincurses-0.0.8.ebuild, vdr-skincurses-0.1.2.ebuild,
+  +vdr-skincurses-0.1.7.ebuild:
+  version bump, fix bug 216339; thanks to D.Liana for reporting this;
+  keyworded ~amd64
+
+*vdr-skincurses-0.1.2 (24 Mar 2008)
+
+  24 Mar 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +vdr-skincurses-0.1.2.ebuild:
+  version bump
+
+  30 Oct 2006; Matthias Schwarzott <zzam@gentoo.org>
+  -vdr-skincurses-0.0.5.ebuild, -vdr-skincurses-0.0.6.ebuild:
+  Cleanup of old ebuilds.
+
+  19 Oct 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-skincurses-0.0.8.ebuild:
+  Now use better source-file without much patching.
+
+*vdr-skincurses-0.0.8 (20 Sep 2006)
+
+  20 Sep 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-skincurses-0.0.8.ebuild:
+  Version bumped, thanks to Lucian Muresan <lucianm@users.sourceforge.net>.
+
+  15 Aug 2006; Matthias Schwarzott <zzam@gentoo.org> metadata.xml:
+  Assigned to Gentoo VDR Project.
+
+  23 Jun 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-skincurses-0.0.6.ebuild:
+  Marked stable on x86.
+
+*vdr-skincurses-0.0.6 (17 Apr 2006)
+
+  17 Apr 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-skincurses-0.0.6.ebuild:
+  Version bumped.
+
+  17 Apr 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-skincurses-0.0.5.ebuild:
+  Marked stable on x86
+
+*vdr-skincurses-0.0.5 (13 Mar 2006)
+
+  13 Mar 2006; Matthias Schwarzott <zzam@gentoo.org> +metadata.xml,
+  +vdr-skincurses-0.0.5.ebuild:
+  Imported ebuild from gentoo.de
+

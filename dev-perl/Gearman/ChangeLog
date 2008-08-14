@@ -1,0 +1,24 @@
+# ChangeLog for dev-perl/Gearman
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Gearman/ChangeLog,v 1.4 2008/01/12 03:57:10 robbat2 Exp $
+
+  12 Jan 2008; Robin H. Johnson <robbat2@gentoo.org> Gearman-1.08.ebuild:
+  Simplify using eclass.
+
+*Gearman-1.09 (27 Oct 2007)
+
+  27 Oct 2007; Robin H. Johnson <robbat2@gentoo.org> +Gearman-1.09.ebuild:
+  Version bump.
+
+*Gearman-1.08 (24 May 2007)
+
+  24 May 2007; Robin H. Johnson <robbat2@gentoo.org> +Gearman-1.08.ebuild:
+  Version bump.
+
+*Gearman-1.07 (09 May 2007)
+
+  09 May 2007; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml,
+  +Gearman-1.07.ebuild:
+  Initial commit. Ebuild by Robin H. Johnson <robbat2@gentoo.org>. Required as
+  dep by new version of mogilefs-server.
+

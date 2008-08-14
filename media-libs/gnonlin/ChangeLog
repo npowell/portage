@@ -1,0 +1,49 @@
+# ChangeLog for media-libs/gnonlin
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/gnonlin/ChangeLog,v 1.9 2007/12/30 12:24:41 jokey Exp $
+
+  30 Dec 2007; Markus Ullmann <jokey@gentoo.org> gnonlin-0.10.9.ebuild:
+  Stable on x86
+
+*gnonlin-0.10.9 (13 Sep 2007)
+
+  13 Sep 2007; Samuli Suominen <drac@gentoo.org> +gnonlin-0.10.9.ebuild:
+  Version bump.
+
+*gnonlin-0.10.8 (10 Jun 2007)
+
+  10 Jun 2007; Hanno Boeck <hanno@gentoo.org> +gnonlin-0.10.8.ebuild:
+  Version bump.
+
+*gnonlin-0.10.7 (02 Apr 2007)
+
+  02 Apr 2007; Hanno Boeck <hanno@gentoo.org> +gnonlin-0.10.7.ebuild:
+  Version bump.
+
+*gnonlin-0.10.4 (11 May 2006)
+
+  11 May 2006; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  -gnonlin-0.10.3.ebuild, +gnonlin-0.10.4.ebuild:
+  version bump
+
+  27 Apr 2006; Marien Zwart <marienz@gentoo.org> Manifest:
+  Fixing SHA256 digest, pass four
+
+*gnonlin-0.10.3 (26 Apr 2006)
+
+  26 Apr 2006; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  -gnonlin-0.10.1.ebuild, -gnonlin-0.10.2.ebuild, +gnonlin-0.10.3.ebuild:
+  version bump
+
+*gnonlin-0.10.2 (21 Apr 2006)
+
+  21 Apr 2006; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  +gnonlin-0.10.2.ebuild:
+  version bump
+
+*gnonlin-0.10.1 (07 Apr 2006)
+
+  07 Apr 2006; Zaheer Abbas Merali <zaheerm@gentoo.org> +metadata.xml,
+  +gnonlin-0.10.1.ebuild:
+  Initial import
+

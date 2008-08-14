@@ -1,0 +1,26 @@
+# ChangeLog for sys-cluster/openais
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-cluster/openais/ChangeLog,v 1.3 2008/03/17 16:02:41 xmerlin Exp $
+
+*openais-0.80.3 (17 Mar 2008)
+
+  17 Mar 2008; Christian Zoffoli <xmerlin@gentoo.org>
+  +files/openais-0.80.3-Makefile.inc-FLAGS.patch,
+  +files/openais-0.80.3-Makefile-ARCH.patch,
+  +files/openais-0.80.3-Makefile-LIBDIR.patch, +openais-0.80.3.ebuild,
+  openais-0.82.ebuild:
+  Added 0.80.3 needed by gfs 2.01.00, fixed parallel build in 0.82 bug #210202, 
+  fixed missing include in 0.82 bug #213716.
+
+  14 Feb 2008; Wolfram Schlich <wschlich@gentoo.org> openais-0.82.ebuild:
+  use custom openais.conf, fix init script
+
+*openais-0.82 (14 Feb 2008)
+
+  14 Feb 2008; Wolfram Schlich <wschlich@gentoo.org>
+  +files/Makefile.inc-FLAGS.patch, +files/Makefile-ARCH.patch,
+  +files/Makefile-LIBDIR.patch, +files/Makefile-install.patch,
+  +files/ais.initd, +files/openais.conf, +metadata.xml,
+  +openais-0.82.ebuild:
+  initial import
+

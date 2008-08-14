@@ -1,0 +1,20 @@
+# ChangeLog for sys-fs/ocfs2-tools
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/ocfs2-tools/ChangeLog,v 1.3 2007/04/26 07:39:22 dberkholz Exp $
+
+  26 Apr 2007; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Update for cluster herd split to hp-cluster and ha-cluster.
+
+  25 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  ocfs2-tools-1.2.1.ebuild:
+  (#142216) build system's broke, always requires glib for debugfs utility.
+
+*ocfs2-tools-1.2.1 (20 Jul 2006)
+
+  20 Jul 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  +files/INSTALL.GENTOO, +files/ocfs2.conf, +files/ocfs2.init,
+  +metadata.xml, +ocfs2-tools-1.2.1.ebuild:
+  (#98024) Add userland tools for the OCFS2 clustering filesystem. Ebuild and
+  related files written by Mauricio Zambrano, Lazar Obradovic and others. I've
+  fixed up some grammer and the ebuild for addition to the tree.
+

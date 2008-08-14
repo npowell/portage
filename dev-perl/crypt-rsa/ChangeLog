@@ -1,0 +1,107 @@
+# ChangeLog for dev-perl/crypt-rsa
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/crypt-rsa/ChangeLog,v 1.28 2008/03/28 09:27:41 jer Exp $
+
+  28 Mar 2008; Jeroen Roovers <jer@gentoo.org> crypt-rsa-1.58.ebuild:
+  Stable for HPPA too.
+
+  27 Dec 2007; Andrej Kacian <ticho@gentoo.org> crypt-rsa-1.58.ebuild:
+  Stable on x86.
+
+  10 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  crypt-rsa-1.58.ebuild:
+  sparc stable
+
+  08 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  crypt-rsa-1.58.ebuild:
+  Marking amd64 stable
+
+*crypt-rsa-1.58 (02 Jan 2007)
+
+  02 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  +crypt-rsa-1.58.ebuild:
+  Version bump
+
+  20 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  -crypt-rsa-1.50.ebuild, -crypt-rsa-1.55.ebuild, crypt-rsa-1.57.ebuild:
+  Cleaning up
+
+  06 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  crypt-rsa-1.50.ebuild, crypt-rsa-1.55.ebuild, crypt-rsa-1.57.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  05 Jul 2006; Christian Hartmann <ian@gentoo.org> crypt-rsa-1.50.ebuild,
+  crypt-rsa-1.55.ebuild, crypt-rsa-1.57.ebuild:
+  Fixed RDEPEND wrt bug #134781
+
+  02 Jul 2006; Michael Cummings <mcummings@gentoo.org>
+  crypt-rsa-1.57.ebuild:
+  Marking amd64 stable
+
+  11 Jun 2006; Michael Cummings <mcummings@gentoo.org>
+  crypt-rsa-1.50.ebuild, crypt-rsa-1.55.ebuild, crypt-rsa-1.57.ebuild:
+  Marking stable sparc
+
+  13 Feb 2006; Michael Cummings <mcummings@gentoo.org>
+  crypt-rsa-1.50.ebuild, crypt-rsa-1.55.ebuild, crypt-rsa-1.57.ebuild:
+  Virtuals for perl-core
+
+  31 Jan 2006; Aron Griffis <agriffis@gentoo.org> crypt-rsa-1.57.ebuild:
+  Mark 1.57 stable on alpha
+
+  16 Jan 2006; Rene Nussbaumer <killerfox@gentoo.org> crypt-rsa-1.57.ebuild:
+  Stable on hppa.
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  crypt-rsa-1.57.ebuild:
+  marking stable x86
+
+  09 Jan 2006; <mcumming@gentoo.org> crypt-rsa-1.50.ebuild,
+  crypt-rsa-1.55.ebuild, crypt-rsa-1.57.ebuild:
+  Description fix, thanks Yuval :)
+
+*crypt-rsa-1.57 (12 Nov 2005)
+
+  12 Nov 2005; Michael Cummings <mcummings@gentoo.org>
+  +crypt-rsa-1.57.ebuild:
+  Version bump upstream
+
+  10 Nov 2005; Jason Wever <weeve@gentoo.org> crypt-rsa-1.55.ebuild:
+  Added ~sparc keyword.
+
+  10 Sep 2005; Aron Griffis <agriffis@gentoo.org> crypt-rsa-1.50.ebuild:
+  Mark 1.50 stable on alpha
+
+  25 May 2005; Michael Cummings <mcummings@gentoo.org> crypt-rsa-1.50.ebuild,
+  crypt-rsa-1.55.ebuild:
+  dev-perl/Digest-MD5 now in perl-core
+
+  06 May 2005; Sven Wegener <swegener@gentoo.org> crypt-rsa-1.55.ebuild:
+  Removed * postfix from <, <=, >= and > dependencies.
+
+  22 Apr 2005; Simon Stelling <blubb@gentoo.org> crypt-rsa-1.50.ebuild:
+  stable on amd64
+
+  11 Apr 2005; Ferris McCormick <fmccor@gentoo.org> crypt-rsa-1.55.ebuild:
+  Remove ~sparc keyword: Problems with pari-2.1.6; see Bug 87790.
+
+*crypt-rsa-1.55 (11 Apr 2005)
+
+  11 Apr 2005; Michael Cummings <mcummings@gentoo.org> crypt-rsa-1.50.ebuild,
+  +crypt-rsa-1.55.ebuild:
+  Version bump, good for module signature
+
+  25 Feb 2004; Joshua Kinard <kumba@gentoo.org> crypt-rsa-1.50.ebuild:
+  Added ~mips to KEYWORDS to satisfy repoman deps.
+
+  27 Oct 2003; Brad House <brad_mssw@gentoo.org> crypt-rsa-1.50.ebuild:
+  add ~amd64 flag
+
+  02 Jul 2003; Michael Cummings <mcummings@gentoo.org> crypt-rsa-1.50.ebuild:
+  Fixed a bad dep for data-dumper
+
+*crypt-rsa-1.50 (23 Jun 2003)
+
+  23 Jun 2003; Michael Cummings <mcummings@gentoo.org> crypt-rsa-1.50.ebuild:
+  dep for net-ssh
+

@@ -1,0 +1,42 @@
+# ChangeLog for dev-lisp/cl-regex
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-lisp/cl-regex/ChangeLog,v 1.10 2008/03/27 16:19:21 armin76 Exp $
+
+  27 Mar 2008; Raúl Porcel <armin76@gentoo.org> cl-regex-1-r1.ebuild,
+  cl-regex-1-r2.ebuild:
+  Fix debian HOMEPAGE
+
+  03 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> cl-regex-1-r1.ebuild,
+  cl-regex-1-r2.ebuild:
+  Use mirror://debian/ where applicable, or use mirror://gentoo/ if the file
+  has been removed from debian's mirrors.
+
+*cl-regex-1-r2 (16 Nov 2006)
+
+  16 Nov 2006; Matthew Kennedy <mkennedy@gentoo.org>
+  +files/defconstant-gentoo.patch, files/regex.asd, +cl-regex-1-r2.ebuild:
+  Conditionally define constant regex::+special-class-names+.
+
+  24 May 2005; <mkennedy@gentoo.org> cl-regex-1-r1.ebuild:
+  Keywording ~sparc
+
+  15 Apr 2005; Matthew Kennedy <mkennedy@gentoo.org> -cl-regex-1.ebuild,
+  cl-regex-1-r1.ebuild:
+  Remove old ebuilds; Keywording ~ppc, x86
+
+  18 Mar 2005; Matthew Kennedy <mkennedy@gentoo.org> cl-regex-1-r1.ebuild:
+  Keywording for ~amd64
+
+*cl-regex-1-r1 (12 Feb 2004)
+
+  12 Feb 2004; <mkennedy@gentoo.org> cl-regex-1-r1.ebuild:
+  Cleanup for eclass changes.
+
+  15 Oct 2003; Matthew Kennedy <mkennedy@gentoo.org> cl-regex-1.ebuild,
+  metadata.xml, files/1-macs.lisp-gentoo.patch:
+  postrm, preinst, sbcl patch
+
+*cl-regex-1 (07 Jul 2003)
+
+  07 Jul 2003; Matthew Kennedy <mkennedy@gentoo.org> :
+  initial import

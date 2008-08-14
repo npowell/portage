@@ -1,0 +1,115 @@
+# ChangeLog for media-libs/mlt
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/mlt/ChangeLog,v 1.26 2008/08/06 21:09:55 aballier Exp $
+
+  06 Aug 2008; Alexis Ballier <aballier@gentoo.org>
+  +files/mlt-0.2.4-sox1410.patch, mlt-0.2.4-r2.ebuild:
+  fix building against latest sox
+
+  27 Jul 2008; Carsten Lohrke <carlo@gentoo.org> mlt-0.2.4-r2.ebuild:
+  QA: Get rid of deprecated qt_min_version().
+
+  17 Jul 2008; Alexis Ballier <aballier@gentoo.org> mlt-0.2.4-r2.ebuild:
+  Fix deps wrt ffmpeg: 0.4.9_p20070616-r3 to -r20 doesn't have swscaler, -r1
+  and -r2 have it, part of bug #231831.
+
+  12 Jul 2008; Alexis Ballier <aballier@gentoo.org>
+  +files/mlt-0.2.4-avfreestatic.patch, mlt-0.2.4-r2.ebuild:
+  backport a patch from upstream to fix runtime error with recent ffmpegs
+
+  12 Jul 2008; Alexis Ballier <aballier@gentoo.org> mlt-0.2.4-r2.ebuild:
+  disable kino support when we don't have quicktime or dv, it fails with gcc
+  4.3 without dv and it is an automagic dep, bug #231000
+
+  12 Jul 2008; Alexis Ballier <aballier@gentoo.org> -mlt-0.2.4-r1.ebuild:
+  remove old
+
+  10 Apr 2008; Alexis Ballier <aballier@gentoo.org>
+  +files/mlt-0.2.4-gcc-4.3.patch, mlt-0.2.4-r2.ebuild:
+  gcc 4.3 build fix by Martin Väth <vaeth@mathematik.uni-wuerzburg.de>, bug
+  #216215
+
+  10 Apr 2008; Alexis Ballier <aballier@gentoo.org> -mlt-0.2.4.ebuild:
+  remove old
+
+*mlt-0.2.4-r2 (10 Apr 2008)
+
+  10 Apr 2008; Alexis Ballier <aballier@gentoo.org>
+  +files/mlt-0.2.4-avdevice.patch, +files/mlt-0.2.4-bashism.patch,
+  +files/mlt-0.2.4-double-fps.patch, +files/mlt-0.2.4-ffmpegheaders.patch,
+  +mlt-0.2.4-r2.ebuild:
+  Rev bump: bashism in /bin/sh script fix by Martin Väth
+  <vaeth@mathematik.uni-wuerzburg.de>, bug #216216. Backport a 'fix' from
+  upstream to build with recent ffmpegs, bug #214520. Dont mess up fps type
+  which fixes an issue of a/v sync fix by Ollie Wild
+  <aloysius.wild@gmail.com>, bug #211242. Allow building with new ffmpeg
+  headers layout fix by me.
+
+*mlt-0.2.4-r1 (23 Nov 2007)
+
+  23 Nov 2007; Samuli Suominen <drac@gentoo.org>
+  +files/mlt-0.2.4-sox1400.patch, +mlt-0.2.4-r1.ebuild:
+  Revision bump for SOX 14.0.0 compability and pkg setup check for USE
+  libsamplerate if USE sox is defined.
+
+*mlt-0.2.4 (21 Aug 2007)
+
+  21 Aug 2007; Alexis Ballier <aballier@gentoo.org> +mlt-0.2.4.ebuild:
+  version bump, closing bug #186935 and bug #188621, thanks to Roberto
+  Castagnola <roberto.castagnola@gmail.com> for the ebuild
+
+  26 Apr 2007; Alexis Ballier <aballier@gentoo.org> -mlt-20051209.ebuild:
+  remove old snapshot and fix header
+
+  26 Apr 2007; Alexis Ballier <aballier@gentoo.org>
+  +files/mlt-0.2.3-nostrip.patch, mlt-0.2.3.ebuild:
+  Dont strip binaries while installing them
+
+*mlt-0.2.3 (26 Apr 2007)
+
+  26 Apr 2007; Alexis Ballier <aballier@gentoo.org> +mlt-0.2.3.ebuild:
+  Version bump
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  10 Jan 2007; Diego Pettenò <flameeyes@gentoo.org> metadata.xml:
+  Add missing email address for herd with name != alias.
+
+  19 Sep 2006; Luca Barbato <lu_zero@gentoo.org> mlt-0.2.2.ebuild:
+  Jack module requires ladspa-sdk, see bug #147498
+
+  08 Sep 2006; Markus Rothe <corsair@gentoo.org> mlt-0.2.2.ebuild,
+  mlt-20051209.ebuild:
+  Added ~ppc64; bug #146851
+
+  02 Sep 2006; Luca Barbato <lu_zero@gentoo.org>
+  +files/mlt-0.2.2-motion-est-nonx86.patch, mlt-0.2.2.ebuild:
+  Make motion estimation build on non x86 arches
+
+  17 Jul 2006; Marc Hildebrand <zypher@gentoo.org> mlt-0.2.2.ebuild
+  Some cleanup and fixes. Thanks to Tiziano Müller for all his work on this.
+
+*mlt-0.2.2 (01 Jan 2006)
+
+  17 Jul 2006; Marc Hildebrand <zypher@gentoo.org> mlt-0.2.2.ebuild
+  Version bump. Thanks to Danny (kugelfang@gentoo.org) for the amd64-fix.
+
+  24 Jun 2006; Diego Pettenò <flameeyes@gentoo.org> mlt-20051209.ebuild:
+  Change xml2 useflag to xml.
+
+  31 May 2006; Luca Barbato <lu_zero@gentoo.org> mlt-20051209.ebuild:
+  Minor fix, thanks to wishmerhill <wishmerhill@nousefornames.it> for spotting it
+
+  18 Jan 2006; Luca Barbato <lu_zero@gentoo.org> mlt-20051209.ebuild:
+  Added mmx useflag, should workaround amd64 build problems
+
+  12 Dec 2005; <zypher@gentoo.org> mlt-20051209.ebuild:
+  Added ~amd64 and ~x86 keywords
+
+*mlt-20051209 (10 Dec 2005)
+
+  10 Dec 2005; Luca Barbato <lu_zero@gentoo.org> +metadata.xml,
+  +mlt-20051209.ebuild:
+  First commit
+

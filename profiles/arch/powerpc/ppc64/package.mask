@@ -1,0 +1,5 @@
+# Copyright 1999-2008 Gentoo Foundation.
+# Distributed under the terms of the GNU General Public License, v2
+# $Header: /var/cvsroot/gentoo-x86/profiles/arch/powerpc/ppc64/package.mask,v 1.2 2008/04/08 15:44:45 wolf31o2 Exp $
+
+### THIS FILE IS ONLY FOR PACKAGES MASKED ON BOTH 64-BIT AND 32-BIT USERLAND!!!

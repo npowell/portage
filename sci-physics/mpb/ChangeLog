@@ -1,0 +1,37 @@
+# ChangeLog for sci-physics/mpb
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-physics/mpb/ChangeLog,v 1.9 2007/10/26 16:33:44 pbienst Exp $
+
+*mpb-1.4.2-r1 (26 Oct 2007)
+
+  26 Oct 2007; <pbienst@gentoo.org> +mpb-1.4.2-r1.ebuild:
+  Add mpi-support.
+
+  21 Aug 2007; <pbienst@gentoo.org> mpb-1.4.2.ebuild:
+  Added ~amd64.
+
+  10 Jan 2007; Piotr Jaroszyński <peper@gentoo.org> Manifest:
+  Fix Manifest.
+
+  10 Jan 2007; <marijn@gentoo.org> mpb-1.4.2.ebuild:
+  Dependency update: dev-util/guile -> dev-scheme/guile.
+
+  07 Nov 2006; Markus Dittrich <markusle@gentoo.org>
+  +files/mpb-1.4.2-gcc4.patch, mpb-1.4.2.ebuild:
+  Fixed compile problems with gcc4 and added dependency on guile.
+
+  07 Nov 2006; <pbienst@gentoo.org> mpb-1.4.2.ebuild:
+  Fix dependencies.
+
+  02 Jul 2006; Luis Medinas <metalgod@gentoo.org> metadata.xml:
+  Update metadata to sci-physics.
+
+  02 Jul 2006; Luis Medinas <metalgod@gentoo.org> +metadata.xml,
+  +mpb-1.4.2.ebuild:
+  Moved from sci-misc/mpb to sci-physics/mpb.
+
+*mpb-1.4.2 (04 Jan 2006)
+
+  04 Jan 2006; Peter Bienstman <pbienst@gentoo.org> +mpb-1.4.2.ebuild:
+  New ebuild (closes #36581).
+

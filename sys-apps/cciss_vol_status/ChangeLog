@@ -1,0 +1,31 @@
+# ChangeLog for sys-apps/cciss_vol_status
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/cciss_vol_status/ChangeLog,v 1.4 2008/02/15 13:35:06 chainsaw Exp $
+
+*cciss_vol_status-1.03 (15 Feb 2008)
+
+  15 Feb 2008; Tony Vroon <chainsaw@gentoo.org>
+  cciss_vol_status-1.02.ebuild, +cciss_vol_status-1.03.ebuild:
+  Version bump to 1.03; contains a major overhaul of the logical drive
+  discovery algorithm. This adds supports for the MSA500 fibre channel
+  controller. Marked 1.02 stable on AMD64, tested on a Proliant DL365 G1 with
+  a P400i controller. Closes bug #209640 by Johan Andersson <johan@e-626.net>.
+
+  17 Jan 2008; Tony Vroon <chainsaw@gentoo.org>
+  cciss_vol_status-1.02.ebuild:
+  Mark stable on X86.
+
+  30 May 2007; Tony Vroon <chainsaw@gentoo.org>
+  cciss_vol_status-1.02.ebuild:
+  Added ~x86 keyword based on user testing by Alois Schmid
+  <alois.schmid@gmx.de> on HP ProLiant DL380 G3, DL380 G4 & DL360, as reported
+  in bug #171244.
+
+*cciss_vol_status-1.02 (19 Apr 2007)
+
+  19 Apr 2007; Tony Vroon <chainsaw@gentoo.org> +metadata.xml,
+  +cciss_vol_status-1.02.ebuild:
+  Initial commit. Ebuild by me, but based on the submission by Peter Molnar
+  <mp428@hszk.bme.hu> in bug #171244. AMD64 keyword approval from KingTaco,
+  tested by me on a HP Proliant DL365 G1.
+

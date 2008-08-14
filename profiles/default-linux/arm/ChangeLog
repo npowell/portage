@@ -1,0 +1,26 @@
+# ChangeLog for Gentoo/x86 profile directory
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/profiles/default-linux/arm/ChangeLog,v 1.12 2008/04/10 06:34:05 dberkholz Exp $
+
+  10 Apr 2008; Donnie Berkholz <dberkholz@gentoo.org>; use.mask:
+  changing around video_cards_via masking by unmasking only for available
+  arches instead of masking on unavailable.
+
+  02 Apr 2008; Mart Raudsepp <leio@gentoo.org> package.use.mask:
+  USE mask dvb and mythtv on gst-plugins-meta - dependencies not keyworded
+
+  02 Apr 2008; Mart Raudsepp <leio@gentoo.org> use.mask:
+  Mask networkmanager USE flag - no version of it keyworded
+
+  01 Apr 2008; Daniel Black <dragonheart@gentoo.org> use.mask:
+  mask ssh2 as net-libs/libssh2 does not have keywords yet
+
+  13 Jun 2007; Samuli Suominen <drac@gentoo.org> use.mask, 
+  package.use.mask:
+  Add required masks to support thunar-thumbnailers.
+
+  09 Jun 2007; Rémi Cardona <remi@gentoo.org> +package.mask:
+  Move Gnome 2.18 mask to arm subprofile
+
+  28 Mar 2007; Steve Dibb <beandog@gentoo.org> +package.use.mask:
+  Add package.use.mask, ChangeLog, mask mp2 on mplayer.

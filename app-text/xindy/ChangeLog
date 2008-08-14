@@ -1,0 +1,22 @@
+# ChangeLog for app-text/xindy
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-text/xindy/ChangeLog,v 1.4 2008/07/07 13:48:39 armin76 Exp $
+
+  07 Jul 2008; Raúl Porcel <armin76@gentoo.org> xindy-2.3.ebuild:
+  Add ~alpha/~ia64 wrt #229217
+
+  23 May 2008; Markus Meier <maekke@gentoo.org> xindy-2.3.ebuild:
+  add ~x86, bug #223323
+
+  19 May 2008; Alexis Ballier <aballier@gentoo.org> xindy-2.3.ebuild:
+  We need some cyrillic fonts too, thanks to Philipp Riegger
+  <stoile@anderedomain.de> for reporting in bug #222785
+
+*xindy-2.3 (17 May 2008)
+
+  17 May 2008; Alexis Ballier <aballier@gentoo.org> +metadata.xml,
+  +xindy-2.3.ebuild:
+  Initial import, thanks to Gour and other people involved in bug #71531 and
+  also thanks to people in #gentoo-lisp for help with having it to work with
+  external clisp
+

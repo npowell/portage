@@ -1,0 +1,32 @@
+# ChangeLog for x11-wm/amiwm
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-wm/amiwm/ChangeLog,v 1.9 2007/12/09 18:05:27 coldwind Exp $
+
+  09 Dec 2007; Santiago M. Mola <coldwind@gentoo.org> amiwm-0.20_p48.ebuild:
+  Keyworded ~amd64
+
+  22 Jul 2007; David Shakaryan <omp@gentoo.org> amiwm-0.20_p48.ebuild:
+  Remove virtual/x11 from dependencies.
+
+  21 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  11 Feb 2006; Krzysiek Pawlik <nelchael@gentoo.org> amiwm-0.20_p48.ebuild:
+  Fixed DEPEND for modular X.
+
+  25 Dec 2005; Mike Frysinger <vapier@gentoo.org>
+  +files/amiwm-0.20_p48-flex.patch, amiwm-0.20_p48.ebuild:
+  Fix building with flex-2.5.31 #110169.
+
+  10 May 2005; David Holm <dholm@gentoo.org> amiwm-0.20_p48.ebuild:
+  Added to ~ppc.
+
+  24 Sep 2003; <paul@gentoo.org> amiwm-0.20_p48.ebuild:
+  Change the (R) character into (R) to disallow confusion. (The character was
+  not in UTF-8)
+
+*amiwm-0.20_p48 (06 Sep 2003)
+
+  06 Sep 2003; Karl Trygve Kalleberg <karltk@gentoo.org> amiwm-0.20_p48.ebuild:
+  Initial import.  Ebuild submitted by Henrik Hellerstedt <henrik@katedral.se>.
+  Fixes #1858.

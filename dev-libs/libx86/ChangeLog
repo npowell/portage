@@ -1,0 +1,30 @@
+# ChangeLog for dev-libs/libx86
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/libx86/ChangeLog,v 1.7 2008/08/07 21:54:46 maekke Exp $
+
+  07 Aug 2008; Markus Meier <maekke@gentoo.org> libx86-0.99.ebuild:
+  amd64/x86 stable, bug #231739
+
+  28 May 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Alon Bar-Lev (alonbl) from metadata.xml (as per #147110). Assigning
+  to maintainer-needed.
+
+  07 Feb 2008; Robin H. Johnson <robbat2@gentoo.org> metadata.xml:
+  Fix metadata typo.
+
+  10 Nov 2007; Samuli Suominen <drac@gentoo.org> libx86-0.99.ebuild:
+  Keyword ~amd64 wrt #197687.
+
+  10 Oct 2007; Alon Bar-Lev <alonbl@gentoo.org>
+  files/libx86-0.99-build.patch, libx86-0.99.ebuild:
+  Fix lib dir, bug#192814, thanks for Pacho Ramos for reporting
+
+  18 Sep 2007; Alon Bar-Lev <alonbl@gentoo.org> libx86-0.99.ebuild:
+  Add die thanks to vapier
+
+*libx86-0.99 (17 Sep 2007)
+
+  17 Sep 2007; Alon Bar-Lev <alonbl@gentoo.org>
+  +files/libx86-0.99-build.patch, +metadata.xml, +libx86-0.99.ebuild:
+  Initial add, bug#156431
+

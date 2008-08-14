@@ -1,0 +1,13 @@
+# ChangeLog for app-cdr/cuegen
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-cdr/cuegen/ChangeLog,v 1.2 2007/02/21 20:14:54 peper Exp $
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*cuegen-1.2.0 (28 Feb 2006)
+
+  28 Feb 2006; Stefan Briesenick <sbriesen@gentoo.org> +metadata.xml,
+  +cuegen-1.2.0.ebuild:
+  initial commit
+

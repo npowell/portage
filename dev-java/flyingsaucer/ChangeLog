@@ -1,0 +1,13 @@
+# ChangeLog for dev-java/flyingsaucer
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-java/flyingsaucer/ChangeLog,v 1.2 2008/01/29 08:19:05 fordfrog Exp $
+
+  29 Jan 2008; Miroslav Šulc <fordfrog@gentoo.org> flyingsaucer-7.ebuild:
+  ~amd64 keyword added
+
+*flyingsaucer-7 (28 Jan 2008)
+
+  28 Jan 2008; Petteri Räty <betelgeuse@gentoo.org> +metadata.xml,
+  +flyingsaucer-7.ebuild:
+  Initial addition. Fixes bug #207913. Ebuild written by me.
+

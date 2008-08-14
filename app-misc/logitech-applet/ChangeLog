@@ -1,0 +1,42 @@
+# ChangeLog for app-misc/logitech-applet
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/logitech-applet/ChangeLog,v 1.8 2008/05/29 07:13:33 phreak Exp $
+
+  29 May 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Carlos Silva (r3pek) from metadata.xml (as per #80351).
+
+  09 Aug 2006; Joshua Jackson <tsunam@gentoo.org>
+  logitech-applet-0.4_pre1-r2.ebuild:
+  Stable x86; bug #134186
+
+  08 Aug 2006; Thomas Cort <tcort@gentoo.org>
+  logitech-applet-0.4_pre1-r2.ebuild:
+  Stable on amd64 wrt Bug #134186. Tested by thedude0001@gmx.de.
+
+*logitech-applet-0.4_pre1-r2 (28 Jun 2006)
+
+  28 Jun 2006; Carlos Silva <r3pek@gentoo.org>
+  +files/add-new-id-of-mx300.patch, -logitech-applet-0.4_pre1-r1.ebuild,
+  +logitech-applet-0.4_pre1-r2.ebuild:
+  Added support for a new MX300 ID. wrt bug #134186, thx to Samuli Suominen.
+  Rev bumped and removed the other revision.
+
+*logitech-applet-0.4_pre1-r1 (22 Mar 2006)
+
+  22 Mar 2006; Carlos Silva <r3pek@gentoo.org>
+  +logitech-applet-0.4_pre1-r1.ebuild:
+  Added a patch to support MX518
+
+  31 Oct 2005; Krzysiek Pawlik <nelchael@gentoo.org>
+  logitech-applet-0.4_pre1.ebuild:
+  Fixed dodoc not to install COPYING.
+
+  16 Sep 2005; Ciaran McCreesh <ciaranm@gentoo.org> ChangeLog:
+  Converted to UTF-8, fixed encoding screwups
+
+*logitech-applet-0.4_pre1 (12 Apr 2005)
+
+  12 Apr 2005; Carlos Silva <r3pek@gentoo.org> +metadata.xml,
+  +logitech-applet-0.4_pre1.ebuild:
+  Initial import thanks to Martti Rannanjärvi in bug #44813
+

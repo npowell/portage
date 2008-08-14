@@ -1,0 +1,25 @@
+# ChangeLog for sci-chemistry/autodock
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/autodock/ChangeLog,v 1.5 2008/08/05 05:48:56 dberkholz Exp $
+
+  05 Aug 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  +files/4.0.1-gcc-4.3.patch, autodock-4.0.1-r1.ebuild:
+  Fix for gcc 4.3.
+
+*autodock-4.0.1-r1 (26 Jun 2007)
+
+  26 Jun 2007; Olivier Fisette <ribosome@gentoo.org>
+  +autodock-4.0.1-r1.ebuild:
+  Install documentation and parameter files. Added test suite. Ebuild clean-up.
+
+  21 Jun 2007; Olivier Fisette <ribosome@gentoo.org> autodock-4.0.1.ebuild:
+  Added a notice and URL to encourage Gentoo users to register as AutoDock
+  users for grant application purposes.
+
+*autodock-4.0.1 (19 Jun 2007)
+
+  19 Jun 2007; Olivier Fisette <ribosome@gentoo.org> +metadata.xml,
+  +autodock-4.0.1.ebuild:
+  Initial import. Thanks to Luc Grenier <lgrenier@rsvs.ulaval.ca> for his
+  ebuild and for testing the package.
+

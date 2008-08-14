@@ -1,0 +1,47 @@
+# ChangeLog for media-sound/abcm2ps
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/abcm2ps/ChangeLog,v 1.14 2007/02/22 00:46:34 peper Exp $
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*abcm2ps-4.12.24 (11 Sep 2006)
+
+  11 Sep 2006; Luis Medinas <metalgod@gentoo.org> +abcm2ps-4.12.24.ebuild:
+  Version Bump by Dominique Michel <dominique.michel@citycable.ch> cloes bug
+  #145198.
+
+  16 Jun 2006; Diego Pettenò <flameeyes@gentoo.org> abcm2ps-3.7.21.ebuild:
+  Remove gnuconfig update.
+
+  10 Sep 2005; Diego Pettenò <flameeyes@gentoo.org> abcm2ps-3.7.21.ebuild:
+  Don't install INSTALL file.
+
+  17 Mar 2005; Michael Hanselmann <hansmi@gentoo.org> abcm2ps-3.7.21.ebuild:
+  Added to ~ppc.
+
+*abcm2ps-3.7.21 (18 Dec 2004)
+
+  18 Dec 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  +files/abcm2ps-3.7.21-destdir.patch, -abcm2ps-2.11.3.ebuild,
+  +abcm2ps-3.7.21.ebuild, -abcm2ps-3.7.9.ebuild:
+  Version bump for security bug #74702.
+
+  14 Sep 2004; Jeremy Huddleston <eradicator@gentoo.org> abcm2ps-3.7.9.ebuild:
+  Stable amd64, sparc.
+
+  04 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org> abcm2ps-3.7.9.ebuild:
+  Added ~amd64 ~sparc.
+
+  26 Mar 2004; Jeremy Huddleston <eradicator@gentoo.org> abcm2ps-3.7.9.ebuild:
+  Cleaned up and put in stable x86.
+
+*abcm2ps-3.7.9 (28 Sep 2003)
+
+  28 Sep 2003; jje <jje@gentoo.org> abcm2ps-3.7.9.ebuild:
+  Version bump.
+
+*abcm2ps-2.11.3 (16 Nov 2002)
+
+  16 Nov 2002; Matthew Turk <satai@gentoo.org> :
+  Initial import.  Ebuild submitted by submitter_name <peter@peterjohanson.com>

@@ -1,0 +1,30 @@
+# ChangeLog for sci-biology/embassy-phylipnew
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-biology/embassy-phylipnew/ChangeLog,v 1.6 2007/02/15 20:00:31 je_fro Exp $
+
+  15 Feb 2007; Jeff Gardner <je_fro@gentoo.org>
+  embassy-phylipnew-3.6b.ebuild:
+  Adding ~amd64.
+
+  03 Nov 2006; nixnut <nixnut@gentoo.org> embassy-phylipnew-3.6b.ebuild:
+  Stable on ppc wrt bug 153766
+
+  03 Nov 2006; Jeff Gardner <je_fro@gentoo.org>
+  embassy-phylipnew-3.6b.ebuild:
+  Added ~sparc
+
+  02 Nov 2006; Fabian Groffen <grobian@gentoo.org>
+  embassy-phylipnew-3.6b.ebuild:
+  Dropped ppc-macos, see you in prefix.
+
+  02 Nov 2006; Olivier Fisette <ribosome@gentoo.org>
+  embassy-phylipnew-3.6b.ebuild:
+  Added to x86.
+
+*embassy-phylipnew-3.6b (21 Jul 2006)
+
+  21 Jul 2006; Olivier Fisette <ribosome@gentoo.org> +metadata.xml,
+  +embassy-phylipnew-3.6b.ebuild:
+  Initial import. This package will probably replace EMBASSY-PHYLIP in new
+  EMBASSY releases.
+

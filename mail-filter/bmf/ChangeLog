@@ -1,0 +1,32 @@
+# ChangeLog for mail-filter/bmf
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/mail-filter/bmf/ChangeLog,v 1.9 2007/12/09 14:06:01 drac Exp $
+
+  09 Dec 2007; Samuli Suominen <drac@gentoo.org> bmf-0.9.4.ebuild:
+  ~amd64 wrt #189183
+
+  18 Mar 2007; Marius Mauch <genone@gentoo.org> bmf-0.9.4.ebuild:
+  Replacing einfo with elog
+
+  23 Nov 2006; Francesco Riosa <vivo@gentoo.org> bmf-0.9.4.ebuild:
+  dev-db/mysql => virtual/mysql
+
+  01 May 2005; Michael Hanselmann <hansmi@gentoo.org> bmf-0.9.4.ebuild:
+  Stable on ppc.
+
+  30 Nov 2004; Sven Wegener <swegener@gentoo.org> bmf-0.9.4.ebuild:
+  Fixed invalid atoms in *DEPEND.
+
+  05 Jun 2004; David Holm <dholm@gentoo.org> bmf-0.9.4.ebuild:
+  Added to ~ppc.
+
+*bmf-0.9.4 (03 Jun 2004)
+
+  03 Jun 2004; Seemant Kulleen <seemant@gentoo.org> +metadata.xml,
+  +bmf-0.9.4.ebuild:
+  Moved from net-mail/bmf to mail-filter/bmf.
+
+*bmf-0.9.4 (16 Jul 2003)
+	
+  16 Jul 2003; Nick Hadaway <raker@gentoo.org>  bmf-0.9.4.ebuild:
+  Thanks to Steingrim Dovland for submitting this ebuild in bug #19947.

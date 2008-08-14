@@ -1,0 +1,33 @@
+# ChangeLog for dev-java/antenna
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-java/antenna/ChangeLog,v 1.6 2007/07/12 22:26:44 betelgeuse Exp $
+
+  12 Jul 2007; Petteri Räty <betelgeuse@gentoo.org>
+  -antenna-0.9.13-r1.ebuild:
+  Remove old version.
+
+*antenna-0.9.14 (10 May 2007)
+
+  10 May 2007; Petteri Räty <betelgeuse@gentoo.org> +antenna-0.9.14.ebuild:
+  Version bump. Adds source and examples use flags and uses
+  java-pkg_register-ant-task to register ant task.
+
+  14 Jan 2007; Petteri Räty <betelgeuse@gentoo.org>
+  antenna-0.9.13-r1.ebuild:
+  Fixed to work with JAVA_PKG_STRICT, ant-core is a RDEPEND too, sun-jdk-1.6
+  can't build javadocs for this ebuild, javadocs were not installed.
+
+  13 Sep 2006; Joshua Nichols <nichoj@gentoo.org> metadata.xml,
+  antenna-0.9.13-r1.ebuild:
+  Adding missing dependency on app-arch/unzip. Whitespace fix.
+
+  22 Jul 2006; Krzysiek Pawlik <nelchael@gentoo.org>
+  antenna-0.9.13-r1.ebuild:
+  ant_src_unpack -> src_unpack
+
+*antenna-0.9.13-r1 (09 Jul 2006)
+
+  09 Jul 2006; Krzysiek Pawlik <nelchael@gentoo.org>
+  +files/antenna-0.9.13-ant.patch, +metadata.xml, +antenna-0.9.13-r1.ebuild:
+  Initial version.
+

@@ -1,0 +1,17 @@
+# ChangeLog for app-misc/flasm
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/flasm/ChangeLog,v 1.2 2007/09/03 09:42:17 pclouds Exp $
+
+*flasm-1.6.2 (03 Sep 2007)
+
+  03 Sep 2007; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  -files/flasm-1.6.1-makefile.patch, +files/flasm-1.6.2-makefile.patch,
+  -flasm-1.6.1.ebuild, +flasm-1.6.2.ebuild:
+  Version bump, #190711
+
+*flasm-1.6.1 (08 Dec 2006)
+
+  08 Dec 2006; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  +files/flasm-1.6.1-makefile.patch, +metadata.xml, +flasm-1.6.1.ebuild:
+  new ebuild from drizzt@gentoo.org, #126156
+

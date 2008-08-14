@@ -1,0 +1,61 @@
+# ChangeLog for sys-boot/grub-static
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-boot/grub-static/ChangeLog,v 1.14 2008/02/25 22:13:20 wolf31o2 Exp $
+
+  25 Feb 2008; Chris Gianelloni <wolf31o2@gentoo.org>
+  grub-static-0.97.ebuild:
+  Sync with sys-boot/grub.
+
+  20 Dec 2006; Daniel Drake <dsd@gentoo.org> grub-static-0.97.ebuild:
+  Stable on amd64, bug #156459
+
+  12 Nov 2006; Olivier Crête <tester@gentoo.org> grub-static-0.97.ebuild:
+  Inherit mount-boot to auto-mount boot partition r/w
+
+  03 Nov 2006; Olivier Crête <tester@gentoo.org> grub-static-0.97.ebuild:
+  Added code to install into /boot in pkg_postinst from grub ebuild, see bug
+  #153956
+
+*grub-static-0.97 (23 Oct 2006)
+
+  23 Oct 2006; Daniel Drake <dsd@gentoo.org> +grub-static-0.97.ebuild:
+  New version, generated from sys-boot/grub-0.97-r3
+
+  16 Sep 2006; <blubb@gentoo.org> -grub-static-0.93.20030118.ebuild:
+  version cleanups
+
+  07 Sep 2006; <blubb@gentoo.org> grub-static-0.96-r1.ebuild:
+  stable on amd64
+
+*grub-static-0.96-r1 (13 Jun 2006)
+
+  13 Jun 2006; Simon Stelling <blubb@gentoo.org> -grub-static-0.96.ebuild,
+  +grub-static-0.96-r1.ebuild:
+  fix bug 136594
+
+  12 Jun 2006; Olivier Crête <tester@gentoo.org>
+  files/digest-grub-static-0.96, Manifest:
+  Fixed digest
+
+*grub-static-0.96 (11 Jun 2006)
+
+  11 Jun 2006; Simon Stelling <blubb@gentoo.org>
+  grub-static-0.93.20030118.ebuild, +grub-static-0.96.ebuild:
+  clean up KEYWORDS and bump to  amore recent version
+
+  15 Feb 2006; Olivier Crête <tester@gentoo.org>
+  grub-static-0.93.20030118.ebuild:
+  Fix blocker for sys-apps -> sys-boot move
+
+*grub-static-0.93.20030118 (08 Dec 2003)
+
+  08 Dec 2003; Seemant Kulleen <seemant@gentoo.org>
+  grub-static-0.93.20030118.ebuild, metadata.xml:
+  moved from sys-apps to sys-boot
+
+*grub-static-0.93.20030118 (26 Jul 2003)
+
+  26 Jul 2003; Olivier Crete <tester@gentoo.org>
+  grub-static-0.93.20030118.ebuild:
+  Initial version of grub static for amd64 since there is no 64-bit bootloader
+

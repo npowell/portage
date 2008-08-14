@@ -1,0 +1,120 @@
+# ChangeLog for app-admin/python-updater
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/python-updater/ChangeLog,v 1.31 2008/07/18 13:23:17 tester Exp $
+
+  18 Jul 2008; Olivier Crête <tester@gentoo.org> python-updater-0.5.ebuild:
+  Stable on amd64, bug #208902
+
+  13 Jul 2008; Joseph Jezak <josejx@gentoo.org> python-updater-0.5.ebuild:
+  Marked ppc stable for bug #208902.
+
+  11 Jul 2008; Jeroen Roovers <jer@gentoo.org> python-updater-0.5.ebuild:
+  Stable for HPPA (bug #208902).
+
+  10 Jul 2008; Raúl Porcel <armin76@gentoo.org> python-updater-0.5.ebuild:
+  alpha/ia64/sparc stable wrt #208902
+
+  09 Jul 2008; Markus Rothe <corsair@gentoo.org> python-updater-0.5.ebuild:
+  Stable on ppc64; bug #208902
+
+  09 Jul 2008; Christian Faulhammer <opfer@gentoo.org>
+  python-updater-0.5.ebuild:
+  stable x86, bug 208902
+
+*python-updater-0.5 (24 Jun 2008)
+
+  24 Jun 2008; Ali Polatel <hawking@gentoo.org> +python-updater-0.5.ebuild:
+  Version bump.
+
+*python-updater-9999 (20 Jun 2008)
+
+  20 Jun 2008; Ali Polatel <hawking@gentoo.org> +python-updater-9999.ebuild:
+  Added scm ebuild for testing.
+
+  24 Apr 2008; <ricmm@gentoo.org> python-updater-0.2.ebuild:
+  Drop to ~mips due to unstable deps
+
+*python-updater-0.4 (04 Jan 2008)
+
+  04 Jan 2008; Ali Polatel <hawking@gentoo.org> +python-updater-0.4.ebuild:
+  Version bump, handle missing SLOT bug 201848.
+
+*python-updater-0.3 (29 Oct 2007)
+
+  29 Oct 2007; Ali Polatel <hawking@gentoo.org> python-updater-0.2.ebuild,
+  +python-updater-0.3.ebuild:
+  version bump. fixing bug 180088 and some other problems. changed HOMEPAGE
+
+  26 Oct 2007; Ali Polatel <hawking@gentoo.org> python-updater-0.2.ebuild:
+  Changed SRC_URI to mirror://gentoo
+
+  07 Sep 2007; Ali Polatel <hawking@gentoo.org> -python-updater-0.1.ebuild,
+  python-updater-0.2.ebuild:
+  add blocker for older python versions to prevent collisions (bug 190454).
+  drop old
+
+  31 May 2007; Bryan Østergaard <kloeri@gentoo.org> metadata.xml:
+  Remove myself as I'm retiring.
+
+  16 May 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  python-updater-0.2.ebuild:
+  ppc stable, bug #177804
+
+  16 May 2007; Daniel Gryniewicz <dang@gentoo.org>
+  python-updater-0.2.ebuild:
+  Marked stable on amd64 for bug #177804
+
+  14 May 2007; Bryan Østergaard <kloeri@gentoo.org>
+  python-updater-0.2.ebuild:
+  Stable on Alpha and Mips.
+
+  14 May 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  python-updater-0.2.ebuild:
+  Stable on sparc wrt security #177804
+
+  14 May 2007; Jeroen Roovers <jer@gentoo.org> python-updater-0.2.ebuild:
+  Stable for HPPA (preparation for bug #177804).
+
+  13 May 2007; Markus Rothe <corsair@gentoo.org> python-updater-0.2.ebuild:
+  Stable on ppc64; bug #177804
+
+  12 May 2007; Raúl Porcel <armin76@gentoo.org> python-updater-0.2.ebuild:
+  ia64 + x86 stable wrt security bug #177804
+
+  12 May 2007; Markus Rothe <corsair@gentoo.org> python-updater-0.2.ebuild:
+  Added ~ppc64; bug #177270
+
+  11 May 2007; Bryan Østergaard <kloeri@gentoo.org>
+  python-updater-0.2.ebuild:
+  Add ~alpha and ~mips keywords.
+
+  08 May 2007; Roy Marples <uberlord@gentoo.org> python-updater-0.2.ebuild:
+  Added ~sparc-fbsd keyword, #177426.
+  Added ~x86-fbsd keyword, #177426.
+
+  08 May 2007; Raúl Porcel <armin76@gentoo.org> python-updater-0.2.ebuild:
+  Add ~ia64 wrt bug 177270
+
+  07 May 2007; Jeroen Roovers <jer@gentoo.org> python-updater-0.2.ebuild:
+  Marked ~hppa (bug #177270).
+
+*python-updater-0.2 (07 May 2007)
+
+  07 May 2007; Bryan Østergaard <kloeri@gentoo.org>
+  +python-updater-0.2.ebuild:
+  Small bump, ripping out logging and --new option.
+
+  06 May 2007; Lukasz Strzygowski <lucass@gentoo.org>
+  python-updater-0.1.ebuild:
+  Marked ~amd64.
+
+  06 May 2007; Bryan Østergaard <kloeri@gentoo.org>
+  python-updater-0.1.ebuild:
+  Fix RDEPEND.
+
+*python-updater-0.1 (06 May 2007)
+
+  06 May 2007; Bryan Østergaard <kloeri@gentoo.org>
+  +python-updater-0.1.ebuild:
+  Initial import of stand-alone python-updater.
+

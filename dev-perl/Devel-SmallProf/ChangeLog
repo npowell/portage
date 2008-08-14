@@ -1,0 +1,54 @@
+# ChangeLog for dev-perl/Devel-SmallProf
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Devel-SmallProf/ChangeLog,v 1.11 2007/11/10 12:36:35 drac Exp $
+
+  10 Nov 2007; Samuli Suominen <drac@gentoo.org>
+  Devel-SmallProf-2.02.ebuild:
+  amd64 stable
+
+  16 Jul 2007; Michael Cummings <mcummings@gentoo.org>
+  Devel-SmallProf-2.02.ebuild:
+  sparc stable
+
+  21 Jun 2007; Michael Cummings <mcummings@gentoo.org>
+  Devel-SmallProf-2.01.ebuild:
+  Marking sparc stable
+
+*Devel-SmallProf-2.02 (12 Jun 2007)
+
+  12 Jun 2007; Michael Cummings <mcummings@gentoo.org>
+  +Devel-SmallProf-2.02.ebuild:
+  Version bump
+
+*Devel-SmallProf-2.01 (16 Apr 2007)
+
+  16 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  +Devel-SmallProf-2.01.ebuild:
+  Version bump
+
+  15 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  Devel-SmallProf-1.15.ebuild:
+  Ebuild maintenance
+
+  20 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  Devel-SmallProf-1.15.ebuild:
+  Marking amd64 stable
+
+  11 Sep 2006; Michael Cummings <mcummings@gentoo.org>
+  Devel-SmallProf-1.15.ebuild:
+  Keywording ~amd64
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Devel-SmallProf-1.15.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  12 Jun 2006; Michael Cummings <mcummings@gentoo.org>
+  Devel-SmallProf-1.15.ebuild:
+  Marking stable sparc
+
+*Devel-SmallProf-1.15 (20 Apr 2006)
+
+  20 Apr 2006; <mcummings@gentoo.org> +metadata.xml,
+  +Devel-SmallProf-1.15.ebuild:
+  Initial import. Used for profiling, such as in app-vim/perl-support
+

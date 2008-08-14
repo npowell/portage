@@ -1,0 +1,30 @@
+# ChangeLog for app-emulation/ies4linux
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/ies4linux/ChangeLog,v 1.5 2007/08/17 21:09:11 rbu Exp $
+
+  17 Aug 2007; Robert Buchholz <rbu@gentoo.org> ies4linux-2.5_beta6.ebuild:
+  Keyworded ~amd64 (bug #184168)
+
+  14 Jul 2007; Stefan Schweizer <genstef@gentoo.org>
+  ies4linux-2.5_beta6.ebuild:
+  Allow kdewebdev and kommander to fulfill the depend, fixing install on
+  kde-non-meta installs
+
+  23 Jun 2007; Jurek Bartuszek <jurek@gentoo.org> metadata.xml:
+  Added <longdescription> tags in English and French
+
+*ies4linux-2.5_beta6 (23 Jun 2007)
+
+  23 Jun 2007; Jurek Bartuszek <jurek@gentoo.org>
+  +files/ies4linux-2.5_beta6-Installation_directory_discovery.patch,
+  +ies4linux-2.5_beta6.ebuild:
+  Added 2.5_beta6 version for testing purposes {fixing bug #182855)
+
+*ies4linux-2.0.5 (21 Jun 2007)
+
+  21 Jun 2007; Jurek Bartuszek <jurek@gentoo.org>
+  +files/ies4linux-2.0.5-Adapt_paths.patch, +metadata.xml,
+  +ies4linux-2.0.5.ebuild:
+  Initial version (closing bug #143798), credit goes Mathieu Bonnet
+  <mathieu.bonnet@riverside-idealism.org> for providing the ebuilds.
+

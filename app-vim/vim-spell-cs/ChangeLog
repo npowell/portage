@@ -1,0 +1,26 @@
+# ChangeLog for app-vim/vim-spell-cs
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-vim/vim-spell-cs/ChangeLog,v 1.6 2007/10/22 15:23:01 cla Exp $
+
+  22 Oct 2007; Dawid Węgliński <cla@gentoo.org>
+  vim-spell-cs-20061021.ebuild:
+  Stable on x86 (bug #180064)
+
+  02 Jul 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  vim-spell-cs-20061021.ebuild:
+  Stable on sparc
+
+  31 May 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  vim-spell-cs-20061021.ebuild:
+  Keyworded ~sparc
+
+  06 Nov 2006; Mike Kelly <pioto@gentoo.org> metadata.xml:
+  Add Czech description to metadata.xml
+
+*vim-spell-cs-20061021 (06 Nov 2006)
+
+  06 Nov 2006; Mike Kelly <pioto@gentoo.org> +metadata.xml,
+  +vim-spell-cs-20061021.ebuild:
+  New ebuild. See Bug #152283
+
+

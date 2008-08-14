@@ -1,0 +1,28 @@
+# ChangeLog for x11-plugins/pidgin-encryption
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-plugins/pidgin-encryption/ChangeLog,v 1.6 2007/08/28 14:45:51 nixnut Exp $
+
+  28 Aug 2007; nixnut <nixnut@gentoo.org> pidgin-encryption-3.0.ebuild:
+  Stable on ppc wrt bug 189781
+
+  26 Aug 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  pidgin-encryption-3.0.ebuild:
+  Marked stable on amd64 as per bug 189781.
+
+  24 Aug 2007; Christian Faulhammer <opfer@gentoo.org>
+  pidgin-encryption-3.0.ebuild:
+  stable x86, bug 189781
+
+  23 Aug 2007; Jeroen Roovers <jer@gentoo.org> pidgin-encryption-3.0.ebuild:
+  Stable for HPPA (bug #189781).
+
+  22 Aug 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  pidgin-encryption-3.0.ebuild:
+  Stable on sparc wrt #189781
+
+*pidgin-encryption-3.0 (09 May 2007)
+
+  09 May 2007; Olivier Crête <tester@gentoo.org> +metadata.xml,
+  +pidgin-encryption-3.0.ebuild:
+  New name of x11-plugins/gaim-encryption and new version
+

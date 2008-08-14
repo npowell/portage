@@ -1,0 +1,26 @@
+# ChangeLog for dev-embedded/xgpasm
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-embedded/xgpasm/ChangeLog,v 1.8 2008/05/18 16:48:21 drac Exp $
+
+  18 May 2008; Samuli Suominen <drac@gentoo.org> xgpasm-1.0.ebuild:
+  Move pkgconfig to DEPEND and change dep. >=gtk+-1.2 to =gtk+-1.2* which it
+  links to.
+
+  14 Jan 2008; Robin H. Johnson <robbat2@gentoo.org> metadata.xml:
+  Change metadata.
+
+  15 Nov 2006; Robin H. Johnson <robbat2@gentoo.org> xgpasm-1.0.ebuild:
+  Bug #155027, make sure we have pkgconfig. Add ~ppc to keywords.
+
+  24 Mar 2004; Daniel Black <dragonheart@gentoo.org> xgpasm-1.0.ebuild:
+  Removed surperflous S assignment. Thanks to aliz@gentoo.org
+
+  05 Mar 2004; Daniel Black <dragonheart@gentoo.org> xgpasm-1.0.ebuild:
+  Marked stable on x86
+
+*xgpasm-1.0 (05 Dec 2003)
+
+  05 Dec 2003; Robin H. Johnson <robbat2@gentoo.org> metadata.xml,
+  xgpasm-1.0.ebuild:
+  initial ebuild by robbat2@gentoo.org
+

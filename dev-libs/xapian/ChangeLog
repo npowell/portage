@@ -1,0 +1,128 @@
+# ChangeLog for dev-libs/xapian
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/xapian/ChangeLog,v 1.29 2008/07/06 19:00:14 maekke Exp $
+
+  06 Jul 2008; Markus Meier <maekke@gentoo.org> xapian-1.0.6.ebuild:
+  x86 stable, bug #228537
+
+  21 Jun 2008; nixnut <nixnut@gentoo.org> xapian-1.0.6.ebuild:
+  Stable on ppc wrt bug 228537
+
+*xapian-1.0.6 (05 Apr 2008)
+
+  05 Apr 2008; Hanno Boeck <hanno@gentoo.org> +xapian-1.0.6.ebuild:
+  Version bump and cleanup.
+
+  12 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Marien Zwart (marienz, #107204) from metadata.xml.
+
+  20 Jun 2007; Christoph Mende <angelos@gentoo.org> xapian-0.9.9.ebuild:
+  Added ~amd64 wrt bug 177807
+
+*xapian-0.9.9 (28 Nov 2006)
+
+  28 Nov 2006; Marien Zwart <marienz@gentoo.org> -xapian-0.9.2.ebuild,
+  -xapian-0.9.2-r1.ebuild, -xapian-0.9.3-r1.ebuild, -xapian-0.9.4.ebuild,
+  -xapian-0.9.5.ebuild, +xapian-0.9.9.ebuild:
+  Version bump, remove old ebuilds.
+
+  28 Oct 2006; Christian Faulhammer <opfer@gentoo.org> xapian-0.9.6.ebuild:
+  x86 stable wrt bug #152041
+
+  21 Oct 2006; <nixnut@gentoo.org> xapian-0.9.6.ebuild:
+  Stable on ppc wrt bug 152041
+
+  04 Aug 2006; Daniel Black <dragonheart@gentoo.org> metadata.xml:
+  remove me from maintainership. Added metadata.xml description
+
+*xapian-0.9.6 (25 May 2006)
+
+  25 May 2006; Marien Zwart <marienz@gentoo.org> +xapian-0.9.6.ebuild:
+  Version bump.
+
+*xapian-0.9.5 (05 May 2006)
+
+  05 May 2006; Marien Zwart <marienz@gentoo.org> metadata.xml,
+  +xapian-0.9.5.ebuild:
+  Version bump, add myself as maintainer.
+
+*xapian-0.9.4 (23 Feb 2006)
+
+  23 Feb 2006; Daniel Black <dragonheart@gentoo.org> +xapian-0.9.4.ebuild:
+  version bump
+
+*xapian-0.9.3-r1 (18 Feb 2006)
+
+  18 Feb 2006; Daniel Black <dragonheart@gentoo.org>
+  files/xapian-0.9.3-config.patch, -xapian-0.9.3.ebuild,
+  +xapian-0.9.3-r1.ebuild:
+  missed quote in patch - bug #123239 thanks Gary Young
+
+*xapian-0.9.3 (18 Feb 2006)
+
+  18 Feb 2006; Daniel Black <dragonheart@gentoo.org>
+  +files/xapian-0.9.3-config.patch, +xapian-0.9.3.ebuild:
+  version bump
+
+*xapian-0.9.2-r1 (14 Jan 2006)
+
+  14 Jan 2006; Daniel Black <dragonheart@gentoo.org>
+  +files/xapian-0.9.2-config.patch, -xapian-0.8.3.ebuild,
+  +xapian-0.9.2-r1.ebuild:
+  added patch by author Olly Betts to xapian-config problem -thanks to
+  Jean-Francois Dockes. Removed old xapian version
+
+  07 Oct 2005; Daniel Black <dragonheart@gentoo.org> -xapian-0.7.5.ebuild,
+  xapian-0.8.3.ebuild, -xapian-0.8.5.ebuild, -xapian-0.9.1.ebuild,
+  xapian-0.9.2.ebuild:
+  x86 and ppc stable. removed old versions. QA fixes (install and copyright
+  docs installed) also applied
+
+*xapian-0.9.2 (16 Jul 2005)
+
+  16 Jul 2005; Daniel Black <dragonheart@gentoo.org> +xapian-0.9.2.ebuild:
+  version bump
+
+  26 Jun 2005; Daniel Black <dragonheart@gentoo.org> xapian-0.9.1.ebuild:
+  Fixed src_test thanks to Olly Betts
+
+*xapian-0.9.1 (25 Jun 2005)
+
+  25 Jun 2005; Daniel Black <dragonheart@gentoo.org> +xapian-0.9.1.ebuild:
+  version bump
+
+*xapian-0.8.5 (24 Jan 2005)
+
+  24 Jan 2005; Daniel Black <dragonheart@gentoo.org> -xapian-0.5.5.ebuild,
+  xapian-0.8.3.ebuild, +xapian-0.8.5.ebuild:
+  version bump as per bug #78691. Old version removed. PPC and x86 Keywords
+  added to 0.8.3. Thanks to Sig Lange <exonic@signuts.net> for the bug report
+
+*xapian-0.8.3 (15 Nov 2004)
+
+  15 Nov 2004; Daniel Black <dragonheart@gentoo.org> +xapian-0.8.3.ebuild:
+  version bump as per bug #70662. Thanks to  
+  Greg Bowyer <gbowyer@fastmail.co.uk> for the updated ebuild
+
+  01 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org> xapian-0.5.5.ebuild,
+  xapian-0.7.5.ebuild:
+  virtual/glibc -> virtual/libc
+
+  06 Jun 2004; Daniel Black <dragonheart@gentoo.org> xapian-0.7.5.ebuild:
+  x86 keyword.
+
+  20 Apr 2004; David Holm <dholm@gentoo.org> xapian-0.7.5.ebuild:
+  Added to ~ppc.
+
+*xapian-0.7.5 (20 Apr 2004)
+
+  20 Apr 2004; Daniel Black <dragonheart@gentoo.org> metadata.xml,
+  xapian-0.7.5.ebuild:
+  version bump. Thanks to Ludwig Ruderstaller <lr@bestheads.com> in bug #48035
+
+*xapian-0.5.5 (13 Mar 2003)
+
+  13 Mar 2003; George Shapovalov <george@gentoo.org> ChangeLog, xapian-0.5.5.ebuild, files/{digest-xapian-0.5.5} :
+  initial release (#14849)
+  Xapian Probabilistic Information Retrieval library
+  ebuild submitted by Leon Brocard <acme@astray.com>

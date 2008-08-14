@@ -1,0 +1,157 @@
+# ChangeLog for net-misc/nxnode
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/nxnode/ChangeLog,v 1.34 2008/07/21 15:47:11 voyageur Exp $
+
+  21 Jul 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  -nxnode-3.1.0-r2.ebuild:
+  Remove old 3.1 version
+
+  06 Jul 2008; Markus Meier <maekke@gentoo.org> nxnode-3.2.0-r3.ebuild:
+  amd64 stable, bug #230147
+
+  03 Jul 2008; Christian Faulhammer <opfer@gentoo.org>
+  nxnode-3.2.0-r3.ebuild:
+  stable x86, security bug 230147
+
+*nxnode-3.2.0-r3 (30 Jun 2008)
+
+  30 Jun 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  -nxnode-3.2.0-r1.ebuild, -nxnode-3.2.0-r2.ebuild, +nxnode-3.2.0-r3.ebuild:
+  Security bump, bug #230147
+
+*nxnode-3.2.0-r2 (16 Jun 2008)
+
+  16 Jun 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  +nxnode-3.2.0-r2.ebuild:
+  Maintenance release bump, minor bugfixes
+
+  05 Jun 2008; Peter Volkov <pva@gentoo.org> nxnode-3.2.0.ebuild:
+  amd64 stable, bug #222967.
+
+  29 May 2008; Christian Faulhammer <opfer@gentoo.org> nxnode-3.2.0.ebuild:
+  x86 stable, bug #222967
+
+*nxnode-3.2.0-r1 (28 May 2008)
+
+  28 May 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  +nxnode-3.2.0-r1.ebuild:
+  Maintenance release bump, minor bugfixes
+
+*nxnode-3.2.0 (09 Apr 2008)
+
+  09 Apr 2008; Bernard Cafarelli <voyageur@gentoo.org> +nxnode-3.2.0.ebuild:
+  Version bump, new 3.2.0 series
+
+  03 Apr 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  -nxnode-3.0.0-r3.ebuild:
+  Remove vulnerable version, security bug #210317
+
+  19 Mar 2008; Peter Volkov <pva@gentoo.org> nxnode-3.1.0-r2.ebuild:
+  amd64 stable, security bug #210317.
+
+  07 Mar 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  nxnode-3.0.0-r3.ebuild, -nxnode-3.0.0-r4.ebuild, -nxnode-3.1.0.ebuild,
+  -nxnode-3.1.0-r1.ebuild, nxnode-3.1.0-r2.ebuild:
+  Fix chown on license file (create nx user preventively, use nx:0), thanks pva
+  Remove some versions (security bug #210317)
+
+  18 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  nxnode-3.1.0-r2.ebuild:
+  stable x86, security bug 210317
+
+*nxnode-3.1.0-r2 (17 Feb 2008)
+
+  17 Feb 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  +nxnode-3.1.0-r2.ebuild:
+  Security update, bug #210317
+  Shorten DESCRIPTION
+
+*nxnode-3.1.0-r1 (24 Jan 2008)
+
+  24 Jan 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  +nxnode-3.1.0-r1.ebuild:
+  Maintenance release bump
+
+*nxnode-3.1.0 (14 Dec 2007)
+
+  14 Dec 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  nxnode-3.0.0-r3.ebuild, nxnode-3.0.0-r4.ebuild, +nxnode-3.1.0.ebuild:
+  Version bump, update dependencies in 3.0.0 ebuilds
+
+*nxnode-3.0.0-r4 (03 Dec 2007)
+
+  03 Dec 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  +nxnode-3.0.0-r4.ebuild:
+  Version bump
+
+  20 Sep 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  -files/nxnode-2.1.0-init, -files/nxnode-2.1.0-setup.patch,
+  -nxnode-2.1.0.ebuild, -nxnode-3.0.0-r2.ebuild:
+  Remove vulnerable NX 2.1 versions, security bug #192712
+
+  20 Sep 2007; Robert Buchholz <rbu@gentoo.org> nxnode-3.0.0-r3.ebuild:
+  amd64 stable (bug #180040)
+
+  20 Sep 2007; Christian Faulhammer <opfer@gentoo.org>
+  nxnode-3.0.0-r3.ebuild:
+  stable x86, security bug 192712
+
+*nxnode-3.0.0-r3 (18 Sep 2007)
+
+  18 Sep 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  +nxnode-3.0.0-r3.ebuild:
+  Third maintenance release
+
+*nxnode-3.0.0-r2 (22 Jul 2007)
+
+  22 Jul 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  -nxnode-3.0.0-r1.ebuild, +nxnode-3.0.0-r2.ebuild:
+  Second maintenance release and security bump, bug #185398
+
+  06 Jul 2007; Bernard Cafarelli <voyageur@gentoo.org> -nxnode-3.0.0.ebuild:
+  Removed old version
+
+  03 Jul 2007; Christian Faulhammer <opfer@gentoo.org> nxnode-2.1.0.ebuild:
+  stable x86, bug 180040
+
+*nxnode-3.0.0-r1 (02 Jul 2007)
+
+  02 Jul 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  +files/nxnode-3.0.0-init, +nxnode-3.0.0-r1.ebuild:
+  Maintenance release and nxsensor script fix
+
+  02 Jul 2007; Bernard Cafarelli <voyageur@gentoo.org> nxnode-3.0.0.ebuild:
+  Fixed error message typo
+
+  02 Jul 2007; Piotr Jaroszyński <peper@gentoo.org> nxnode-2.1.0.ebuild,
+  nxnode-3.0.0.ebuild:
+  (QA) RESTRICT clean up.
+
+  21 Jun 2007; Bernard Cafarelli <voyageur@gentoo.org> nxnode-3.0.0.ebuild:
+  Only check VNC installation when vnc USE flag is set
+
+*nxnode-3.0.0 (21 Jun 2007)
+
+  21 Jun 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  +files/nxnode-3.0.0-setup.patch, +nxnode-3.0.0.ebuild:
+  Version bump, thanks to Timo Gurr <psy@monsterserver.de> in bug #182779
+
+  27 May 2007; Bernard Cafarelli <voyageur@gentoo.org> nxnode-2.1.0.ebuild:
+  Dropped glib-1.2 dependency
+
+  12 May 2007; Bernard Cafarelli <voyageur@gentoo.org> metadata.xml:
+  Fixed maintainer in metadata.xml
+
+  28 Apr 2007; Sven Wegener <swegener@gentoo.org> nxnode-2.1.0.ebuild:
+  Fix *initd, *confd and *envd calls (#17388, #174266)
+
+  26 Apr 2007; Bernard Cafarelli <voyageur@gentoo.org> nxnode-2.1.0.ebuild:
+  Cleaning old blockers
+
+*nxnode-2.1.0 (30 Mar 2007)
+
+  30 Mar 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  +files/nxnode-2.1.0-init, +files/nxnode-2.1.0-setup.patch, +metadata.xml,
+  +nxnode-2.1.0.ebuild:
+  Initial commit, bug #153866
+

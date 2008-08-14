@@ -1,0 +1,37 @@
+# ChangeLog for sci-calculators/hexcalc
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-calculators/hexcalc/ChangeLog,v 1.8 2007/07/22 07:29:44 dberkholz Exp $
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>; hexcalc-1.11.ebuild,
+  hexcalc-1.11-r1.ebuild:
+  Drop virtual/x11 references.
+
+*hexcalc-1.11-r1 (25 Jul 2006)
+
+  25 Jul 2006; Joseph Jezak <josejx@gentoo.org> +files/hexcalc-order.diff,
+  +hexcalc-1.11-r1.ebuild:
+  Added fix for bug #140987.
+
+  03 Feb 2006; Joseph Jezak <josejx@gentoo.org> hexcalc-1.11.ebuild:
+  Added missing rman dep for modular X.
+
+  19 Jan 2006; Donnie Berkholz <spyderous@gentoo.org>; hexcalc-1.11.ebuild:
+  Add modular X deps.
+
+  08 Dec 2005; Marcus D. Hanwell <cryos@gentoo.org> hexcalc-1.11.ebuild:
+  Stable on amd64.
+
+  24 Apr 2005; Michael Hanselmann <hansmi@gentoo.org> hexcalc-1.11.ebuild:
+  Stable on ppc.
+
+  13 Dec 2004; Michael Hanselmann <hansmi@gentoo.org> hexcalc-1.11.ebuild:
+  Added to ~ppc. See bug #74229.
+
+  08 Sep 2004; <blubb@gentoo.org> hexcalc-1.11.ebuild:
+  added ~amd64 keyword
+
+*hexcalc-1.11 (26 Jun 2003)
+
+   26 Jun 2003; Jon Portnoy <avenj@gentoo.org> hexcalc-1.11.ebuild :
+   Initial import. Submitted in bug 20164 by Damjan
+   <damjan.bole@studioproteus.si> with a minor fix from Don Seiler.

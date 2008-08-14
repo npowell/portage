@@ -1,0 +1,52 @@
+# ChangeLog for dev-python/fuse-python
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/fuse-python/ChangeLog,v 1.8 2008/06/08 18:06:52 jokey Exp $
+
+  08 Jun 2008; Markus Ullmann <jokey@gentoo.org> metadata.xml:
+  Update metadata
+
+  29 May 2008; Ali Polatel <hawking@gentoo.org> fuse-python-0.2.ebuild:
+  python_mod_optimize is ROOT aware.
+
+  29 May 2008; Ali Polatel <hawking@gentoo.org> fuse-python-0.2.ebuild:
+  python_mod_compile is ROOT aware.
+
+  17 May 2008; Samuli Suominen <drac@gentoo.org> fuse-python-0.2.ebuild:
+  Byte-compile.
+
+  21 Apr 2008; Markus Ullmann <jokey@gentoo.org> fuse-python-0.2.ebuild:
+  Actually commit the fixed ebuild instead of the unfixed one
+  fuse-python-0.2.ebuild
+
+  21 Apr 2008; Markus Ullmann <jokey@gentoo.org>
+  -fuse-python-0.2_pre2.ebuild, fuse-python-0.2.ebuild:
+  Drop old
+
+  21 Apr 2008; Markus Ullmann <jokey@gentoo.org>
+  +files/fuse_python_accept_none.patch, +metadata.xml,
+  +fuse-python-0.2_pre2.ebuild, +fuse-python-0.2.ebuild:
+  Package move from sys-fs/fuse-python to dev-python/fuse-python part 1
+
+*fuse-python-0.2 (21 Apr 2008)
+
+  21 Apr 2008; Markus Ullmann <jokey@gentoo.org>
+  +files/fuse_python_accept_none.patch, metadata.xml,
+  +fuse-python-0.2.ebuild:
+  Version bump with fixes from bug #196627
+
+  12 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Josh Glover (jmglov, #206782) from metadata.xml.
+
+  13 Feb 2008; Christian Faulhammer <opfer@gentoo.org> metadata.xml:
+  add no-herd
+
+  27 Jun 2007; Sven Wegener <swegener@gentoo.org>
+  fuse-python-0.2_pre2.ebuild:
+  Add ~amd64 keyword.
+
+*fuse-python-0.2_pre2 (17 Jun 2007)
+
+  17 Jun 2007; Josh Glover <jmglov@gentoo.org> +metadata.xml,
+  +fuse-python-0.2_pre2.ebuild:
+  This package was submitted by Moritz Armingeon in bug #63789
+

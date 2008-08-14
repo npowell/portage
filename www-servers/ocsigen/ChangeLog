@@ -1,0 +1,80 @@
+# ChangeLog for www-servers/ocsigen
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-servers/ocsigen/ChangeLog,v 1.19 2008/04/13 19:12:58 aballier Exp $
+
+  13 Apr 2008; Alexis Ballier <aballier@gentoo.org> -ocsigen-0.99.5.ebuild:
+  remove old
+
+*ocsigen-1.0.0 (10 Apr 2008)
+
+  10 Apr 2008; Alexis Ballier <aballier@gentoo.org> +ocsigen-1.0.0.ebuild:
+  version bump, thanks Pierre
+
+  01 Mar 2008; Alexis Ballier <aballier@gentoo.org>
+  -files/ocsigen-0.99.3-lwt-gentoo.patch, -ocsigen-0.99.4.ebuild:
+  remove old
+
+*ocsigen-0.99.5 (18 Jan 2008)
+
+  18 Jan 2008; Alexis Ballier <aballier@gentoo.org> +ocsigen-0.99.5.ebuild:
+  version bump, thanks Pierre
+
+  03 Dec 2007; Alexis Ballier <aballier@gentoo.org> -ocsigen-0.99.3.ebuild:
+  remove old
+
+*ocsigen-0.99.4 (22 Nov 2007)
+
+  22 Nov 2007; Alexis Ballier <aballier@gentoo.org> +ocsigen-0.99.4.ebuild:
+  version bump
+
+  12 Nov 2007; Alexis Ballier <aballier@gentoo.org> ocsigen-0.99.3.ebuild:
+  nuke logrotate useflag
+
+  12 Nov 2007; Alexis Ballier <aballier@gentoo.org> -ocsigen-0.99.2.ebuild:
+  remove old
+
+  12 Nov 2007; Alexis Ballier <aballier@gentoo.org> ocsigen-0.99.3.ebuild:
+  remove libdir override, let ocamlfind tell it where to install
+
+*ocsigen-0.99.3 (10 Nov 2007)
+
+  10 Nov 2007; Alexis Ballier <aballier@gentoo.org>
+  +files/ocsigen-0.99.3-lwt-gentoo.patch, +ocsigen-0.99.3.ebuild:
+  version bump, thanks to Pierre Clairambault <pclairam@gmail.com>, bug #198470
+
+  21 Oct 2007; Alexis Ballier <aballier@gentoo.org> ocsigen-0.99.2.ebuild:
+  dont install examples in /usr/local
+
+  18 Sep 2007; Alexis Ballier <aballier@gentoo.org> -ocsigen-0.99.0.ebuild:
+  cleanup old version
+
+*ocsigen-0.99.2 (31 Aug 2007)
+
+  31 Aug 2007; Alexis Ballier <aballier@gentoo.org> +ocsigen-0.99.2.ebuild:
+  version bump
+
+  22 Aug 2007; Alexis Ballier <aballier@gentoo.org> -ocsigen-0.6.0.ebuild:
+  remove old version
+
+  02 Jul 2007; Piotr Jaroszyński <peper@gentoo.org> ocsigen-0.6.0.ebuild,
+  ocsigen-0.99.0.ebuild:
+  (QA) RESTRICT clean up.
+
+  04 May 2007; Alexis Ballier <aballier@gentoo.org> ocsigen-0.99.0.ebuild:
+  Add readme to doc
+
+  04 May 2007; Alexis Ballier <aballier@gentoo.org> ocsigen-0.6.0.ebuild:
+  Fix src_uri
+
+*ocsigen-0.99.0 (04 May 2007)
+
+  04 May 2007; Alexis Ballier <aballier@gentoo.org> files/ocsigen.initd,
+  +ocsigen-0.99.0.ebuild:
+  Version bump, thanks to Pierre Clairambault for the ebuild
+
+*ocsigen-0.6.0 (28 Mar 2007)
+
+  28 Mar 2007; Alexis Ballier <aballier@gentoo.org> +files/ocsigen.confd,
+  +files/ocsigen.initd, +metadata.xml, +ocsigen-0.6.0.ebuild:
+  Initial import, thanks to Pierre Clairambault <pclairam@gmail.com>, bug #171135
+

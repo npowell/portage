@@ -1,0 +1,60 @@
+# ChangeLog for x11-apps/xpr
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-apps/xpr/ChangeLog,v 1.14 2007/12/20 00:20:54 cla Exp $
+
+  19 Dec 2007; Dawid Węgliński <cla@gentoo.org> xpr-1.0.2.ebuild:
+  Stable on x86 (bug #202087)
+
+  09 Oct 2007; Donnie Berkholz <dberkholz@gentoo.org>; -xpr-1.0.1.ebuild:
+  Drop old ebuilds.
+
+  07 Apr 2007; Robin H. Johnson <robbat2@gentoo.org> xpr-1.0.2.ebuild:
+  Add ~ppc keyword.
+
+*xpr-1.0.2 (04 Feb 2007)
+
+  04 Feb 2007; Joshua Baergen <joshuabaergen@gentoo.org> +xpr-1.0.2.ebuild:
+  Version bump.  Brings some small man page fixes.
+
+  14 Feb 2006; Markus Rothe <corsair@gentoo.org> xpr-1.0.1.ebuild:
+  Added ~ppc64
+
+  26 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org> -xpr-0.99.2.ebuild,
+  -xpr-1.0.0.ebuild:
+  Pull old versions.
+
+*xpr-1.0.1 (23 Dec 2005)
+
+  23 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>; +xpr-1.0.1.ebuild:
+  Bump for 7.0.
+
+*xpr-1.0.0 (18 Dec 2005)
+
+  18 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org> +xpr-1.0.0.ebuild:
+  Bump for 7.0RC4.
+
+  09 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>; -xpr-0.99.0.ebuild,
+  -xpr-0.99.1.ebuild:
+  Pull old versions.
+
+*xpr-0.99.2 (04 Dec 2005)
+
+  04 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org> +xpr-0.99.2.ebuild:
+  Bump for 7.0RC3.
+
+*xpr-0.99.1 (20 Oct 2005)
+
+  20 Oct 2005; Donnie Berkholz <spyderous@gentoo.org>; +xpr-0.99.1.ebuild:
+  Bump for 7.0 RC1.
+
+  09 Sep 2005; Donnie Berkholz <spyderous@gentoo.org>; +metadata.xml:
+  Add metadata.
+
+  08 Aug 2005; Ferris McCormick <fmccor@gentoo.org> xpr-0.99.0.ebuild:
+  Add ~sparc keyword (Modular X testing).
+
+*xpr-0.99.0 (08 Aug 2005)
+
+  08 Aug 2005; Donnie Berkholz <spyderous@gentoo.org>; +xpr-0.99.0.ebuild:
+  Initial commit for modular X.
+

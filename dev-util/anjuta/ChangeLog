@@ -1,0 +1,357 @@
+# ChangeLog for dev-util/anjuta
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/anjuta/ChangeLog,v 1.87 2008/08/03 21:50:51 mabi Exp $
+
+  03 Aug 2008; Matti Bickel <mabi@gentoo.org> anjuta-2.4.2.ebuild:
+  ~ppc readded (bug #204495)
+
+  07 Jul 2008; Rémi Cardona <remi@gentoo.org> anjuta-2.4.2.ebuild:
+  2.4.2 still can't do 'make install -jN'
+
+*anjuta-2.4.2 (08 Jun 2008)
+
+  08 Jun 2008; Gilles Dartiguelongue <eva@gentoo.org>
+  +files/anjuta-2.4.2-documentation.patch, +anjuta-2.4.2.ebuild:
+  bump to 2.4.2. Bug fixes and translation updates.
+
+  07 Jun 2008; Jeroen Roovers <jer@gentoo.org> anjuta-2.4.1.ebuild:
+  Marked ~hppa too.
+
+  10 May 2008; Raúl Porcel <armin76@gentoo.org> anjuta-2.2.0-r1.ebuild:
+  sparc stable
+
+*anjuta-2.4.1 (09 Apr 2008)
+
+  09 Apr 2008; Rémi Cardona <remi@gentoo.org> +anjuta-2.4.1.ebuild:
+  Bump to 2.4.1, force -j1 for src_install (see Gnome Bug #527144 and Gentoo
+  Bug #216898)
+
+*anjuta-2.4.0 (12 Mar 2008)
+
+  12 Mar 2008; Rémi Cardona <remi@gentoo.org> +anjuta-2.4.0.ebuild:
+  bump to 2.4.0 (major release)
+
+  03 Mar 2008; Christoph Mende <angelos@gentoo.org> anjuta-2.2.0-r1.ebuild:
+  Stable on amd64, bug #204494
+
+  24 Jan 2008; Christian Faulhammer <opfer@gentoo.org>
+  anjuta-2.2.0-r1.ebuild:
+  x86 stable, bug 204494
+
+  06 Jan 2008; Ferris McCormick <fmccor@gentoo.org> anjuta-2.2.0-r1.ebuild:
+  Add ~sparc for testing, Bug #204495.
+
+  05 Jan 2008; Saleem Abdulrasool <compnerd@gentoo.org>
+  anjuta-2.2.0-r1.ebuild:
+  Add scrollkeeper depend (bug #186068)
+
+  05 Jan 2008; Saleem Abdulrasool <compnerd@gentoo.org>
+  anjuta-1.2.4-r1.ebuild, anjuta-2.2.0-r1.ebuild:
+  fix a few quoting issues
+
+  05 Jan 2008; Saleem Abdulrasool <compnerd@gentoo.org>
+  -anjuta-2.1.0_beta1.ebuild, -anjuta-2.1.1_beta1.ebuild,
+  -anjuta-2.2.0.ebuild:
+  prune unused versions
+
+  05 Jan 2008; Saleem Abdulrasool <compnerd@gentoo.org> metadata.xml:
+  Add welp as co-maintainer
+
+  12 Oct 2007; Rémi Cardona <remi@gentoo.org> anjuta-2.1.0_beta1.ebuild,
+  anjuta-2.1.1_beta1.ebuild, anjuta-2.2.0.ebuild, anjuta-2.2.0-r1.ebuild:
+  update gtksourceview deps (see bug #195366)
+
+*anjuta-2.2.0-r1 (14 Aug 2007)
+
+  14 Aug 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +anjuta-2.2.0-r1.ebuild:
+  Add devhelp useflag (bug #188471)
+
+*anjuta-2.2.0 (12 Jul 2007)
+
+  12 Jul 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +anjuta-2.2.0.ebuild:
+  Version bump from upstream (bug #173169)
+
+  14 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+  17 Apr 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  anjuta-1.2.4-r1.ebuild:
+  Force makeopts -j1 as it breaks currently (bug #161823)
+
+  07 Apr 2007; Petteri Räty <betelgeuse@gentoo.org> -anjuta-1.2.4.ebuild:
+  Remove old ebuild with broken autotools handling wrt bug #160008.
+
+  09 Mar 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  anjuta-2.1.0_beta1.ebuild, anjuta-2.1.1_beta1.ebuild:
+  Moving autogen to a runtime dependency as per bug #169869
+
+  05 Mar 2007; Marius Mauch <genone@gentoo.org> anjuta-1.2.4.ebuild,
+  anjuta-1.2.4-r1.ebuild, anjuta-2.1.0_beta1.ebuild,
+  anjuta-2.1.1_beta1.ebuild:
+  Replacing einfo with elog
+
+  25 Feb 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  anjuta-2.1.1_beta1.ebuild:
+  Add gnome-doc-utils dependency as per bug #168342
+
+*anjuta-2.1.1_beta1 (24 Feb 2007)
+
+  24 Feb 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +anjuta-2.1.1_beta1.ebuild:
+  Version bump from upstream (bug #168101)
+
+  02 Feb 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +files/anjuta-2.1.0-sandbox-fix.patch, anjuta-2.1.0_beta1.ebuild:
+  Add patch to fix sandboxing issue (bug #164740)
+
+  02 Feb 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  anjuta-2.1.0_beta1.ebuild:
+  Fix typo noticed by Anton Romanov <theli@ukr.net>
+
+  30 Jan 2007; Saleem Abdulrasool <compnerd@gentoo.org> metadata.xml:
+  Add myself as co-maintainer
+
+*anjuta-2.1.0_beta1 (30 Jan 2007)
+
+  30 Jan 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +anjuta-2.1.0_beta1.ebuild:
+  New major version with tons of goodies
+
+  04 Jan 2007; Diego Pettenò <flameeyes@gentoo.org> anjuta-1.2.4-r1.ebuild:
+  Fix broken autotools handling.
+
+  04 Jun 2006; <nixnut@gentoo.org> anjuta-1.2.4-r1.ebuild:
+  Stable on ppc; bug #122740
+
+  26 May 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  anjuta-1.2.4-r1.ebuild:
+  Stable on x86 wrt bug #122740.
+
+  29 Apr 2006; Simon Stelling <blubb@gentoo.org> anjuta-1.2.4-r1.ebuild:
+  stable on amd64
+
+  13 Mar 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  anjuta-1.2.4-r1.ebuild:
+  Stable on sparc
+
+  20 Feb 2006; <malverian@gentoo.org> -files/anjuta-1.2.2-64bit.patch,
+  -files/xim_patch.patch, anjuta-1.2.4-r1.ebuild:
+  Don't install docs twice, bug #61344. Cleaned up old patches
+
+  14 Feb 2006; Seemant Kulleen <seemant@gentoo.org> anjuta-1.2.4-r1.ebuild:
+  scrollkeeper fixes, thanks to AllanonJL
+
+*anjuta-1.2.4-r1 (28 Dec 2005)
+
+  28 Dec 2005; <malverian@gentoo.org> +files/anjuta-1.2.4-gtk-fix.patch,
+  -anjuta-1.2.2.ebuild, -anjuta-1.2.2-r1.ebuild, anjuta-1.2.4.ebuild,
+  +anjuta-1.2.4-r1.ebuild:
+  Fix bug #108674 and #115680. anjuta-1.2.4-r1 has gtk+-2.8.9 fix.
+  Cleaned out old ebuilds.
+
+  05 Oct 2005; Simon Stelling <blubb@gentoo.org> anjuta-1.2.4.ebuild:
+  make it adhere multilib-strict; bug 97271
+
+  04 Sep 2005; Jason Wever <weeve@gentoo.org> anjuta-1.2.4.ebuild:
+  Stable on SPARC.
+
+  19 Aug 2005; Jason Wever <weeve@gentoo.org> anjuta-1.2.4.ebuild:
+  Marked this ~sparc as it should have been committed as maintainer cannot
+  follow keywording policies.
+
+*anjuta-1.2.4 (18 Aug 2005)
+
+  18 Aug 2005; Philip Walls <malverian@gentoo.org> anjuta-1.2.4.ebuild:
+  Version bump, fixes Pango rendering issue. Marking stable on all archs
+  that have stable keywords for Pango 1.8.x and were marked stable for
+  anjuta-1.2.2*
+
+  24 Apr 2005; Michael Hanselmann <hansmi@gentoo.org>
+  anjuta-1.2.2-r1.ebuild:
+  Stable on ppc.
+
+  20 Apr 2005; Simon Stelling <blubb@gentoo.org> anjuta-1.2.2-r1.ebuild:
+  stable on amd64
+
+  24 Aug 2004; Lisa Seelye <lisa@gentoo.org> anjuta-1.2.2-r1.ebuild,
+  anjuta-1.2.2.ebuild:
+  Fixing the dependency which was changed (but not updated in these ebuilds,
+  foser). closes bug #61304
+
+  24 Aug 2004; Danny van Dyk <kugelfang@gentoo.org>
+  files/anjuta-1.2.2-64bit.patch:
+  Fixed the 64bit patch, BUG #50255.
+
+  23 Aug 2004; Lisa Seelye <lisa@gentoo.org> anjuta-1.2.2-r1.ebuild,
+  anjuta-1.2.2.ebuild:
+  fix bug #61363
+
+  22 Aug 2004; Lisa Seelye <lisa@gentoo.org> -files/anjuta-1.2.0_xim.patch,
+  +files/xim_patch.patch, anjuta-1.2.2-r1.ebuild, anjuta-1.2.2.ebuild:
+  xim patch fix
+
+  22 Aug 2004; Lisa Seelye <lisa@gentoo.org> -anjuta-1.0.2.ebuild,
+  -anjuta-1.2.0-r1.ebuild, -anjuta-1.2.0.ebuild, -anjuta-1.2.1-r1.ebuild,
+  -anjuta-1.2.1.ebuild, anjuta-1.2.2-r1.ebuild:
+  add docs on doc USE flag to close bug #53146
+
+  22 Aug 2004; Lisa Seelye <lisa@gentoo.org> -anjuta-1.0.2.ebuild,
+  -anjuta-1.2.0-r1.ebuild, -anjuta-1.2.0.ebuild, -anjuta-1.2.1-r1.ebuild,
+  -anjuta-1.2.1.ebuild:
+  cleaning up a bit
+
+*anjuta-1.2.2-r1 (03 Jul 2004)
+
+  03 Jul 2004; Danny van Dyk <kugelfang@gentoo.org> +anjuta-1.2.2-r1.ebuild:
+  Added 64bit cleaning patch unconditionally to all archs.
+
+  02 May 2004; Danny van Dyk <kugelfang@gentoo.org> anjuta-1.2.2.ebuild:
+  Marked ~amd64.
+
+  30 Apr 2004; Gustavo Zacarias <gustavoz@gentoo.org> anjuta-1.2.2.ebuild:
+  Stable on sparc
+
+  19 Apr 2004; Jason Wever <weeve@gentoo.org> anjuta-1.2.2.ebuild:
+  Added ~sparc keyword.
+
+*anjuta-1.2.2 (18 Apr 2004)
+
+  18 Apr 2004; Lisa Seelye <lisa@gentoo.org> anjuta-1.2.2.ebuild:
+  bump to 1.2.2 to close email requests and some bugs (bug #48162). anyone want
+  to test this on 64bit port?
+
+  14 Apr 2004; Lisa Seelye <lisa@gentoo.org> anjuta-1.2.1-r1.ebuild:
+  add the generate tag patch to 1.2.1 too
+
+*anjuta-1.2.0-r1 (10 Apr 2004)
+
+  10 Apr 2004; Lisa Seelye <lisa@gentoo.org> anjuta-1.2.0-r1.ebuild,
+  files/anjuta-1.2.0.globaltagfix.diff.gz:
+  create_global_tags patch to use a shebang for bug #46824
+
+*anjuta-1.2.1-r1 (08 Apr 2004)
+
+  08 Apr 2004; Lisa Seelye <lisa@gentoo.org> anjuta-1.2.1-r1.ebuild,
+  files/anjuta-1.2.1.fix.cmp.usage.diff.gz,
+  files/anjuta-1.2.1.pass.proper.aclocal.args.diff.gz:
+  two patches for anjuta-1.2.1 to try and fix the issue in bug 42959. they seem
+  to work locally... test away, oh faithful users
+
+  23 Feb 2004; Sven Blumenstein <bazik@gentoo.org> anjuta-1.2.1.ebuild:
+  Stable on sparc. Thanks to Lars Weiler <pylon@gentoo.org> for testing!
+
+*anjuta-1.2.1 (11 Feb 2004)
+
+  11 Feb 2004; Lisa Seelye <lisa@gentoo.org> anjuta-1.2.1.ebuild:
+  version bump to cure bug #40113
+
+  14 Dec 2003; Jon Portnoy <avenj@gentoo.org> anjuta-1.2.0 ebuild :
+  AMD64 keywords.
+
+*anjuta-1.2.0 (08 Dec 2003)
+
+  13 Dec 2003; MATSUU Takuto <matsuu@gentoo.org> anjuta-1.2.0.ebuild :
+  Added XIM patch. (#35569)
+
+  08 Dec 2003; foser <foser@gentoo.org> anjuta-1.2.0.ebuild :
+  First stable release of the gnome2 port
+  minor dep fix
+  added disclaimer on missing project template dev libs
+
+*anjuta-1.1.98 (10 Nov 2003)
+
+  26 Nov 2003; foser <foser@gentoo.org> anjuta-1.1.98.ebuild :
+  Limit jobs to fix possible build problems
+  Remove *mm deps, unneeded
+
+  10 Nov 2003; Lisa Seelye <lisa@gentoo.org> anjuta-1.1.98.ebuild:
+  Versioon bump
+
+*anjuta-1.1.97-r1 (07 Oct 2003)
+
+  07 Oct 2003; Lisa Seelye <lisa@gentoo.org> anjuta-1.1.97-r1.ebuild:
+  fix new project crash bug (bug 24855)
+
+  26 Sep 2003; Luca Barbato <lu_zero@gentoo.org> anjuta-1.1.97.ebuild:
+  Added ~ppc to keyword.
+
+  25 Sep 2003; Chuck Short <zul@gentoo.org> anjuta-1.0.2.ebuild:
+  Added sparc to keyword.
+
+  19 Jul 2003; Alastair Tse <liquidx@gentoo.org> anjuta-1.1.1.ebuild:
+  dev version should of never gone stable, even though its masked
+
+*anjuta-1.1.97 (16 Jul 2003)
+  16 Jul 2003; Lisa Marie Seelye <lisa@gentoo.org> anjuta-1.1.97.ebuild,
+  Inital commit of this version.  Basically a s/1.1.1/1.1.97/.
+  Update- Forgot to mark as ~x86!!
+
+  09 Jul 2003; Alastair Tse <liquidx@gentoo.org> anjuta-1.0.2.ebuild,
+  anjuta-1.1.1.ebuild:
+  dep cleanup. removing libzvt from 1.0.2 because gtk1 ver is provide by
+  gnome-libs
+
+  27 Jun 2003; foser <foser@gentoo.org> anjuta-1.0.2.ebuild :
+  Removed db dep, it's not needed at all (!) (#23376)
+
+*anjuta-1.1.1 (07 Jun 2003)
+
+  07 Jun 2003; foser <foser@gentoo.org> anjuta-1.1.1.ebuild :
+  New development version as requested in #21134
+
+*anjuta-1.0.2 (05 Apr 2003)
+
+  15 Apr 2003; Martin Holzer <mholzer@gentoo.org> anjuta-1.0.2.ebuild:
+  Adding dev-libs/libpcre as depend. Fixes #19345.
+
+  05 Apr 2003; Seth Chandler <sethbc@gentoo.org>; anjuta-1.0.2.ebuild:
+  bumpage
+
+*anjuta-1.0.1 (18 Dec 2002)
+
+  18 Dec 2002; foser <foser@gentoo.org> anjuta-1.0.1.ebuild :
+  New version, fixed deps
+
+  06 Dec 2002; Rodney Rees <manson@gentoo.org> : changed sparc ~sparc keywords
+ 
+*anjuta-1.0.0 (06 Nov 2002)
+
+  09 Nov 2002; Spider <spider@gentoo.org> anjuta-1.0.0.ebuild :
+  Went over the dependencies to match configure.in and configure. works with 
+  mixed install of gnome1 and gnome2.
+  
+  
+  06 Nov 2002; Brandon Low <lostlogic@gentoo.org> anjuta-1.0.0.ebuild :
+  Update to 1.0.0 final, change deps to match those described in
+  package readme, combined with those known.  This needs testing 
+  from clean installs based on gnome1 and gnome2 before marked 
+  stable.
+
+*anjuta-0.9.99 (19 Aug 2002)
+
+  18 Oct 2002; foser <foser@gentoo.org> anjuta-0.9.99.ebuild :
+  Added gnome-print dep
+
+  19 Sep 2002; Olivier Reisch <doctomoe@gentoo.org> anjuta-0.9.99.ebuild:
+  Added ppc keyword
+
+  19 Aug 2002; Gabriele Giorgetti <stroke@gentoo.org> anjuta-0.9.99.ebuild:
+  
+  New version, this is the Anjuta 1.0-beta1 (preview).
+  Changed SRC_URI to use the mirror://sourceforge eclass
+
+*anjuta-0.1.9 (15 Feb 2002)
+
+  10 Sep 2002; Seemant Kulleen <seemant@gentoo.org> anjuta-0.1.9.ebuild :
+
+  Added gnome-vfs-1 as a dependency. Thanks to Lisa[NY] and the forums.
+
+  30 Aug 2002; Seemant Kulleen <seemant@gentoo.org> anjuta-0.1.9.ebuild :
+
+  LFH fixes.
+
+  15 Feb 2002; Bruce A. Locke <blocke@shivan.org> anjuta-0.1.9.ebuild :
+
+  Anjuta 0.1.9 added

@@ -1,0 +1,13 @@
+# ChangeLog for app-accessibility/morseall
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-accessibility/morseall/ChangeLog,v 1.2 2007/02/21 19:23:02 peper Exp $
+
+  21 Feb 2007; <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*morseall-0.4.8 (01 Apr 2006)
+
+  01 Apr 2006; Jeremy Huddleston <eradicator@gentoo.org> +metadata.xml,
+  +morseall-0.4.8.ebuild:
+  Initial ebuild thanks to gennio <gennio@gmail.com> in but #102658.
+

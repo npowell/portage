@@ -1,0 +1,17 @@
+# ChangeLog for dev-libs/phlib
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/phlib/ChangeLog,v 1.4 2007/02/09 02:35:53 flameeyes Exp $
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  01 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org> phlib-1.20.ebuild:
+  virtual/glibc -> virtual/libc
+
+*phlib-1.20 (02 Apr 2004)
+
+  02 Apr 2004; Rainer Groesslinger <scandium@gentoo.org> phlib-1.20.ebuild:
+  Initial commit.
+  Ebuild submitted by Michael C. Ferguson (bug #45570) with some minor
+  changes added
+

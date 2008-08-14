@@ -1,0 +1,30 @@
+# ChangeLog for dev-ruby/ruby-prof
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-prof/ChangeLog,v 1.5 2008/02/26 05:43:36 flameeyes Exp $
+
+*ruby-prof-0.6.0 (26 Feb 2008)
+
+  26 Feb 2008; Diego Pettenò <flameeyes@gentoo.org>
+  +ruby-prof-0.6.0.ebuild:
+  Version bump, now the kcachegrind output works properly.
+
+*ruby-prof-0.5.2 (25 Aug 2007)
+
+  25 Aug 2007; Hans de Graaff <graaff@gentoo.org> +ruby-prof-0.5.2.ebuild:
+  Version bump: performance improvements, bug fixes, and a rails plugin.
+
+*ruby-prof-0.5.0 (11 Jul 2007)
+
+  11 Jul 2007; Hans de Graaff <graaff@gentoo.org> +ruby-prof-0.5.0.ebuild:
+  Version bump, thanks to Flameeyes in bug 184950.
+
+  14 Apr 2007; Robin H. Johnson <robbat2@gentoo.org> ruby-prof-0.4.1.ebuild:
+  Add ~ppc for work.
+
+*ruby-prof-0.4.1 (18 Dec 2006)
+
+  18 Dec 2006; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org> +metadata.xml,
+  +ruby-prof-0.4.1.ebuild:
+  New ebuild from Antti Tuominen <hhaamu@surfeu.fi> with some modification
+  from me, ~amd64 from Josip Dzolonga <jdzolonga@gmail.com>, bug #126671
+

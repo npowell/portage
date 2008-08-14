@@ -1,0 +1,27 @@
+# ChangeLog for media-plugins/vdr-actuator
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-actuator/ChangeLog,v 1.4 2008/03/24 14:55:13 hd_brummy Exp $
+
+*vdr-actuator-1.1.1 (24 Mar 2008)
+
+  24 Mar 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  -vdr-actuator-1.0.3.ebuild, vdr-actuator-1.0.4.ebuild,
+  +vdr-actuator-1.1.1.ebuild:
+  cleanup; actuator-1.0.4 , x86, ~amd64 added; version bump
+
+*vdr-actuator-1.0.4 (25 Jun 2007)
+
+  25 Jun 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-actuator-1.0.4.ebuild:
+  Version bumped. This should get consistent handling of DVB-device numbers.
+  Should work with vdr-1.5.
+
+  15 Aug 2006; Matthias Schwarzott <zzam@gentoo.org> metadata.xml:
+  Assigned to Gentoo VDR Project.
+
+*vdr-actuator-1.0.3 (02 May 2006)
+
+  02 May 2006; Matthias Schwarzott <zzam@gentoo.org> +metadata.xml,
+  +vdr-actuator-1.0.3.ebuild:
+  Initial import of ebuild written by me.
+

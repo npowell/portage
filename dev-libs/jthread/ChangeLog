@@ -1,0 +1,24 @@
+# ChangeLog for dev-libs/jthread
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/jthread/ChangeLog,v 1.5 2007/12/15 15:33:36 drac Exp $
+
+*jthread-1.2.1 (15 Dec 2007)
+
+  15 Dec 2007; Samuli Suominen <drac@gentoo.org> +jthread-1.2.1.ebuild:
+  Version bump.
+
+  14 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  08 Oct 2006; Simon Stelling <blubb@gentoo.org> jthread-1.2.0.ebuild:
+  added ~amd64
+
+*jthread-1.2.0 (21 May 2006)
+
+  21 May 2006; Stefan Schweizer <genstef@gentoo.org> +metadata.xml,
+  +jthread-1.2.0.ebuild:
+  New Ebuild jthread, dependency of tapioca, bug 127383
+

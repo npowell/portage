@@ -1,0 +1,37 @@
+# ChangeLog for games-misc/gnurobots
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-misc/gnurobots/ChangeLog,v 1.12 2008/04/03 04:52:03 mr_bones_ Exp $
+
+  03 Apr 2008; Michael Sterrett <mr_bones_@gentoo.org>
+  gnurobots-1.0d.ebuild:
+  it only looks like there's a test there (bug #214721)
+
+  13 Mar 2008; Chris Gianelloni <wolf31o2@gentoo.org> gnurobots-1.0d.ebuild:
+  QA cleanup: Fix quoting (again).
+
+  07 Mar 2008; Chris Gianelloni <wolf31o2@gentoo.org> gnurobots-1.0d.ebuild:
+  QA cleanup: Fix quoting.
+
+  10 Jan 2007; Piotr Jaroszyński <peper@gentoo.org> gnurobots-1.0d.ebuild:
+  Dependency update: dev-util/guile -> dev-scheme/guile.
+
+  05 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org> gnurobots-1.0d.ebuild:
+  Removing old virtual/x11 dependency.
+
+  29 Jan 2006; Joshua Baergen <joshuabaergen@gentoo.org>
+  gnurobots-1.0d.ebuild:
+  Add modular X dependencies.
+
+  24 Aug 2005; Homer Parker <hparker@gentoo.org> gnurobots-1.0d.ebuild:
+  Marked ~amd64.
+
+  29 Dec 2004; Joseph Jezak <josejx@gentoo.org> gnurobots-1.0d.ebuild:
+  Marked ppc stable.
+
+  05 Nov 2004; Joseph Jezak <josejx@gentoo.org> gnurobots-1.0d.ebuild:
+  Added ~ppc.
+
+*gnurobots-1.0d (22 Dec 2002)
+
+  22 Dec 2002; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by Rigo Ketelings <rigo@home.nl>.

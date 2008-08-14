@@ -1,0 +1,34 @@
+# ChangeLog for gnustep-apps/projectmanager
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/gnustep-apps/projectmanager/ChangeLog,v 1.6 2008/03/08 13:42:12 coldwind Exp $
+
+  08 Mar 2008; Santiago M. Mola <coldwind@gentoo.org>
+  projectmanager-0.2.ebuild:
+  amd64 stable wrt bug #207381
+
+  30 Jan 2008; Brent Baude <ranger@gentoo.org> projectmanager-0.2.ebuild:
+  Marking projectmanager-0.2 ppc for bug 207381
+
+  25 Jan 2008; Christian Faulhammer <opfer@gentoo.org>
+  projectmanager-0.2.ebuild:
+  stable x86, bug 207381
+
+  10 Dec 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  +files/projectmanager-0.2-gnustep-base1.15.patch,
+  projectmanager-0.2.ebuild:
+  Add patch to make it compile with gnustep-base 1.15
+
+*projectmanager-0.2 (10 Sep 2007)
+
+  10 Sep 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  +files/projectmanager-0.2-gui12.patch,
+  +files/projectmanager-0.2-pathdomainmask.patch,
+  -projectmanager-0.1.2.ebuild, +projectmanager-0.2.ebuild:
+  Version bump from the GNUstep overlay
+
+*projectmanager-0.1.2 (05 Dec 2006)
+
+  05 Dec 2006; Fabian Groffen <grobian@gentoo.org> +metadata.xml,
+  +projectmanager-0.1.2.ebuild:
+  Initial version, based on the ebuild by Fabian Borschel
+

@@ -1,0 +1,33 @@
+# ChangeLog for dev-python/configobj
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/configobj/ChangeLog,v 1.5 2008/05/13 10:11:17 hawking Exp $
+
+*configobj-4.5.2 (13 May 2008)
+
+  13 May 2008; Ali Polatel <hawking@gentoo.org> configobj-4.4.0-r1.ebuild,
+  +configobj-4.5.2.ebuild:
+  Version bump. Quoting.
+
+  05 Jul 2007; Rob Cakebread <pythonhead@gentoo.org>
+  configobj-4.4.0-r1.ebuild:
+  Add setuptools depend
+
+*configobj-4.4.0-r1 (05 Jul 2007)
+
+  05 Jul 2007; Rob Cakebread <pythonhead@gentoo.org>
+  +configobj-4.4.0-r1.ebuild:
+  Change setup.py to use setuptools setup
+
+*configobj-4.4.0 (10 Mar 2007)
+
+  10 Mar 2007; Lukasz Strzygowski <lucass@gentoo.org>
+  -configobj-4.3.2.ebuild, +configobj-4.4.0.ebuild:
+  Version bump: added src_test. Removed 4.3.2.
+
+  05 Feb 2007; Tiziano Müller <dev-zero@gentoo.org> configobj-4.3.2.ebuild:
+  Added ~amd64 keyword
+
+  03 Feb 2007; Tiziano Müller <dev-zero@gentoo.org> configobj-4.3.2.ebuild,
+  +metadata.xml:
+  Initial ebuild.
+

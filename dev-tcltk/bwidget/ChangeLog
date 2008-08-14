@@ -1,0 +1,46 @@
+# ChangeLog for dev-tcltk/bwidget
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-tcltk/bwidget/ChangeLog,v 1.14 2007/04/20 06:13:09 nerdboy Exp $
+
+*bwidget-1.8.0 (20 Apr 2007)
+
+  20 Apr 2007; Steve Arnold <nerdboy@gentoo.org> bwidget-1.7.0.ebuild,
+  +bwidget-1.8.0.ebuild:
+  Updated to current version required by setools (the latter won't build
+  the apol gui against earlier versions).  Also fixed lib path in 1.7.0
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  21 Apr 2005; Simon Stelling <blubb@gentoo.org> bwidget-1.7.0.ebuild:
+  stable on amd64
+
+  02 Apr 2005; Jason Wever <weeve@gentoo.org> bwidget-1.7.0.ebuild:
+  Stable on SPARC.
+
+  31 Dec 2004; Ciaran McCreesh <ciaranm@gentoo.org> :
+  Change encoding to UTF-8 for GLEP 31 compliance
+
+  03 Jun 2004; Bryan Østergaard <kloeri@gentoo.org> bwidget-1.7.0.ebuild:
+  Stable on alpha.
+
+  14 Apr 2004; Daniel Ahlberg <aliz@gentoo.org> bwidget-1.4.1.ebuild:
+  Added IUSE=
+
+*bwidget-1.7.0 (04 Apr 2004)
+
+  04 Apr 2004; Chris Aniszczyk <zx@gentoo.org> :
+  Version bump. Added metadata.xml.
+
+  14 Jan 2004; Aron Griffis <agriffis@gentoo.org> bwidget-1.4.1.ebuild:
+  add ~alpha
+
+  15 Dec 2003; Jason Wever <weeve@gentoo.org> bwidget-1.4.1.ebuild:
+  Added ~sparc keyword to fix broken dependencies in app-sci/lard.
+
+  13 Feb 2003; Mark Guertin <gerk@gentoo.org> bwidget-1.4.1.ebuild :
+  set ppc in keywords
+
+*bwidget-1.4.1 (14 Aug 2002)
+  14 Aug 2002; Daniel Ahlberg <aliz@gentoo.org> bwidget-1.4.1.ebuild :
+  Initial import. Ebuild submitted by Chris Bainbridge <chrb@dcs.ed.ac.uk>.

@@ -1,0 +1,49 @@
+# ChangeLog for dev-ml/ocaml-sqlite3
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ml/ocaml-sqlite3/ChangeLog,v 1.9 2008/07/13 06:55:09 josejx Exp $
+
+  13 Jul 2008; Joseph Jezak <josejx@gentoo.org> ocaml-sqlite3-1.2.0.ebuild:
+  Marked ~ppc for bug #197363.
+
+  07 Jun 2008; Alexis Ballier <aballier@gentoo.org>
+  -ocaml-sqlite3-1.0.2.ebuild:
+  remove old
+
+*ocaml-sqlite3-1.2.0 (12 May 2008)
+
+  12 May 2008; Alexis Ballier <aballier@gentoo.org>
+  +ocaml-sqlite3-1.2.0.ebuild:
+  version bump
+
+  13 Apr 2008; Alexis Ballier <aballier@gentoo.org>
+  -ocaml-sqlite3-0.23.0.ebuild:
+  remove old
+
+*ocaml-sqlite3-1.0.2 (08 Apr 2008)
+
+  08 Apr 2008; Alexis Ballier <aballier@gentoo.org>
+  +ocaml-sqlite3-1.0.2.ebuild:
+  version bump
+
+  08 Apr 2008; Alexis Ballier <aballier@gentoo.org>
+  -ocaml-sqlite3-0.22.0.ebuild:
+  remove old
+
+  02 Jan 2008; Alexis Ballier <aballier@gentoo.org>
+  +files/ocaml-sqlite3-0.23.0-noocamlopt.patch, ocaml-sqlite3-0.23.0.ebuild:
+  Add support to not build with ocamlopt
+
+*ocaml-sqlite3-0.23.0 (08 Dec 2007)
+
+  08 Dec 2007; Alexis Ballier <aballier@gentoo.org>
+  +ocaml-sqlite3-0.23.0.ebuild:
+  version bump, thanks to Arfrever Frehtes Taifersar Arahesis
+  <Arfrever.FTA@GMail.Com> for reporting, bug #201634
+
+*ocaml-sqlite3-0.22.0 (31 Aug 2007)
+
+  31 Aug 2007; Alexis Ballier <aballier@gentoo.org>
+  +files/ocaml-sqlite3-0.22.0-destdir.patch, +metadata.xml,
+  +ocaml-sqlite3-0.22.0.ebuild:
+  Initial import, thanks to Pierre Clairambault for the ebuild
+

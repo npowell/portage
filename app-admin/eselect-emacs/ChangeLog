@@ -1,0 +1,205 @@
+# ChangeLog for app-admin/eselect-emacs
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/eselect-emacs/ChangeLog,v 1.51 2008/07/04 02:33:41 jer Exp $
+
+  04 Jul 2008; Jeroen Roovers <jer@gentoo.org> eselect-emacs-1.5.ebuild:
+  Stable for HPPA (bug #229605).
+
+  28 Jun 2008; Raúl Porcel <armin76@gentoo.org> eselect-emacs-1.5.ebuild:
+  alpha/ia64 stable wrt #229605
+
+  28 Jun 2008; Markus Meier <maekke@gentoo.org> eselect-emacs-1.5.ebuild:
+  x86 stable, bug #229605
+
+  27 Jun 2008; Brent Baude <ranger@gentoo.org> eselect-emacs-1.5.ebuild:
+  Marking eselect-emacs-1.5 ppc64 for bug 229605
+
+  27 Jun 2008; Ferris McCormick <fmccor@gentoo.org>
+  eselect-emacs-1.5.ebuild:
+  Sparc stable, part of Bug #229605.
+
+  27 Jun 2008; Santiago M. Mola <coldwind@gentoo.org>
+  eselect-emacs-1.5.ebuild:
+  amd64 stable wrt bug #229605
+
+  26 Jun 2008; nixnut <nixnut@gentoo.org> eselect-emacs-1.5.ebuild:
+  Stable on ppc wrt bug 229605
+
+*eselect-emacs-1.5 (25 May 2008)
+
+  25 May 2008; Ulrich Mueller <ulm@gentoo.org> -eselect-emacs-1.4.ebuild,
+  +eselect-emacs-1.5.ebuild:
+  Version bump.
+
+*eselect-emacs-1.4 (13 May 2008)
+
+  13 May 2008; Ulrich Mueller <ulm@gentoo.org> +eselect-emacs-1.4.ebuild:
+  Version bump. New module for etags.
+
+  30 Apr 2008; Ulrich Mueller <ulm@gentoo.org> eselect-emacs-1.3-r2.ebuild:
+  Move eselect-ctags to RDEPEND where it belongs.
+
+  08 Mar 2008; Ulrich Mueller <ulm@gentoo.org> files/emacs-updater:
+  Update emacs-updater to version 0.6.
+
+  21 Feb 2008; Christian Faulhammer <opfer@gentoo.org> files/emacs-updater:
+  bump emacs-updater to version 0.4
+
+  01 Feb 2008; Ulrich Mueller <ulm@gentoo.org> -eselect-emacs-1.1.ebuild,
+  -eselect-emacs-1.3.ebuild:
+  Remove old.
+
+  20 Jan 2008; Christoph Mende <angelos@gentoo.org>
+  eselect-emacs-1.3-r2.ebuild:
+  Stable on amd64 wrt bug #206089
+
+  19 Jan 2008; nixnut <nixnut@gentoo.org> eselect-emacs-1.3-r2.ebuild:
+  Stable on ppc wrt bug 206089
+
+  18 Jan 2008; Brent Baude <ranger@gentoo.org> eselect-emacs-1.3-r2.ebuild:
+  Marking eselect-emacs-1.3-r2 ppc64 for bug 206089
+
+  17 Jan 2008; Jeroen Roovers <jer@gentoo.org> eselect-emacs-1.3-r2.ebuild:
+  Stable for HPPA (bug #206089).
+
+  16 Jan 2008; Christian Faulhammer <opfer@gentoo.org>
+  eselect-emacs-1.3-r2.ebuild:
+  stable x86, bug 206089
+
+  16 Jan 2008; Raúl Porcel <armin76@gentoo.org>
+  eselect-emacs-1.3-r2.ebuild:
+  alpha/ia64/sparc stable wrt #206089
+
+*eselect-emacs-1.3-r2 (09 Jan 2008)
+
+  09 Jan 2008; Ulrich Mueller <ulm@gentoo.org> +files/emacs-updater,
+  -eselect-emacs-1.3-r1.ebuild, +eselect-emacs-1.3-r2.ebuild:
+  Install emacs-updater shell script. Remove intermediate revision.
+
+*eselect-emacs-1.3-r1 (21 Dec 2007)
+
+  21 Dec 2007; Ulrich Mueller <ulm@gentoo.org> +eselect-emacs-1.3-r1.ebuild:
+  Move ctags module into its own package. Drop m68k keyword.
+
+*eselect-emacs-1.3 (20 Nov 2007)
+
+  20 Nov 2007; Ulrich Mueller <ulm@gentoo.org> -eselect-emacs-1.2.ebuild,
+  +eselect-emacs-1.3.ebuild:
+  Version bump, only minor documentation changes. Remove old version.
+
+  25 Aug 2007; Ulrich Mueller <ulm@gentoo.org> -eselect-emacs-0.8-r1.ebuild:
+  Remove old version.
+
+*eselect-emacs-1.2 (22 Aug 2007)
+
+  22 Aug 2007; Ulrich Mueller <ulm@gentoo.org> -eselect-emacs-1.0.ebuild,
+  +eselect-emacs-1.2.ebuild:
+  Version bump; improves behaviour on FreeBSD where /usr/bin/ctags is a real
+  binary. Thanks to Joe Peterson <lavajoe@gentoo.org> for pointing this out.
+
+  13 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  eselect-emacs-1.1.ebuild:
+  ppc. stable
+
+  01 Aug 2007; <metalgod@gentoo.org> eselect-emacs-1.1.ebuild:
+  Stable on amd64. See bug #187057.
+
+  30 Jul 2007; Jeroen Roovers <jer@gentoo.org> eselect-emacs-1.1.ebuild:
+  Stable for HPPA (bug #187057).
+
+  30 Jul 2007; Raúl Porcel <armin76@gentoo.org> eselect-emacs-1.1.ebuild:
+  alpha/ia64 stable wrt #187057
+
+  30 Jul 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  eselect-emacs-1.1.ebuild:
+  Stable on sparc wrt #187057
+
+  30 Jul 2007; Markus Rothe <corsair@gentoo.org> eselect-emacs-1.1.ebuild:
+  Stable on ppc64; bug #187057
+
+  30 Jul 2007; Christian Faulhammer <opfer@gentoo.org>
+  eselect-emacs-1.1.ebuild:
+  stable x86, bug 187057
+
+*eselect-emacs-1.1 (29 Jun 2007)
+
+  29 Jun 2007; Ulrich Mueller <ulm@gentoo.org> +eselect-emacs-1.1.ebuild:
+  Version bump, new eselect module for ctags. Bug #29398.
+
+*eselect-emacs-1.0 (17 Jun 2007)
+
+  17 Jun 2007; Ulrich Mueller <ulm@gentoo.org> +eselect-emacs-1.0.ebuild:
+  Version bump. Give a message in list command if XEmacs is found. Call
+  env.eselect module for INFOPATH, fixes bug #181166. Other minor changes.
+
+  12 Jun 2007; Diego Pettenò <flameeyes@gentoo.org>
+  eselect-emacs-0.8-r1.ebuild:
+  Add ~sparc-fbsd keyword as per bug #174882.
+
+  01 Jun 2007; nixnut <nixnut@gentoo.org> eselect-emacs-0.8-r1.ebuild:
+  Stable on ppc wrt bug 180100
+
+  29 May 2007; Raúl Porcel <armin76@gentoo.org>
+  eselect-emacs-0.8-r1.ebuild:
+  alpha/ia64 stable wrt #180100
+
+  29 May 2007; Jeroen Roovers <jer@gentoo.org> eselect-emacs-0.8-r1.ebuild:
+  Stable for HPPA (bug #180100).
+
+  28 May 2007; Christian Faulhammer <opfer@gentoo.org>
+  eselect-emacs-0.8-r1.ebuild:
+  x86/amd64 stable, bug 180100
+
+  28 May 2007; Brent Baude <ranger@gentoo.org> eselect-emacs-0.8-r1.ebuild:
+  marking -0.8-r1 ppc64 stable to support stablization of 180100
+
+  28 May 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  eselect-emacs-0.8-r1.ebuild:
+  Stable on sparc wrt #180100
+
+  15 May 2007; Roy Marples <uberlord@gentoo.org>
+  eselect-emacs-0.8-r1.ebuild:
+  Added ~x86-fbsd keyword, #174884
+
+  14 May 2007; Markus Ullmann <jokey@gentoo.org>
+  eselect-emacs-0.8-r1.ebuild:
+  Works on arm as well
+
+  30 Apr 2007; Tony Vroon <chainsaw@gentoo.org> eselect-emacs-0.8-r1.ebuild:
+  Add ~ppc keyword. Tested on a PowerBook 5,9 with GCC 4.1.2
+
+  21 Apr 2007; Markus Rothe <corsair@gentoo.org>
+  eselect-emacs-0.8-r1.ebuild:
+  Added ~ppc64; bug #174882
+
+  19 Apr 2007; Christian Faulhammer <opfer@gentoo.org>
+  eselect-emacs-0.8-r1.ebuild:
+  Change HOMEPAGE to the new project page
+
+  19 Apr 2007; Bryan Østergaard <kloeri@gentoo.org>
+  eselect-emacs-0.8-r1.ebuild:
+  Add ~alpha keyword, bug 174882.
+
+  18 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  eselect-emacs-0.8-r1.ebuild:
+  Keyworded ~sparc wrt #174882
+
+  18 Apr 2007; Jeroen Roovers <jer@gentoo.org> eselect-emacs-0.8-r1.ebuild:
+  Marked ~hppa (bug #174882).
+
+  17 Apr 2007; Raúl Porcel <armin76@gentoo.org>
+  eselect-emacs-0.8-r1.ebuild:
+  Add ~ia64 wrt bug 174882
+
+  17 Apr 2007; Christian Faulhammer <opfer@gentoo.org>
+  eselect-emacs-0.8-r1.ebuild:
+  keyworded ~amd64, bug 174882
+
+*eselect-emacs-0.8-r1 (16 Apr 2007)
+
+  16 Apr 2007; Christian Faulhammer <opfer@gentoo.org> +metadata.xml,
+  +eselect-emacs-0.8-r1.ebuild:
+  initial import from Emacs Overlay. Features: switch the target of the
+  /usr/bin/emacs symlink, man and info pages so several versions can be
+  installed in parallel on a system
+

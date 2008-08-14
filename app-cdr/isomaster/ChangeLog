@@ -1,0 +1,51 @@
+# ChangeLog for app-cdr/isomaster
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-cdr/isomaster/ChangeLog,v 1.9 2008/02/14 17:01:41 drac Exp $
+
+*isomaster-1.3.1 (14 Feb 2008)
+
+  14 Feb 2008; Samuli Suominen <drac@gentoo.org> -isomaster-1.0.ebuild,
+  -isomaster-1.2.ebuild, +isomaster-1.3.1.ebuild:
+  Version bump wrt #209879, by armin76
+
+*isomaster-1.2 (16 Dec 2007)
+
+  16 Dec 2007; Lars Weiler <pylon@gentoo.org> -isomaster-0.8.1.ebuild,
+  +isomaster-1.2.ebuild:
+  Version bump; bug #191159.  Cleanup.  Quotes.
+
+*isomaster-1.0 (20 Jul 2007)
+
+  20 Jul 2007; Lars Weiler <pylon@gentoo.org> -isomaster-0.7.ebuild,
+  -isomaster-0.7-r1.ebuild, isomaster-0.8.1.ebuild, +isomaster-1.0.ebuild:
+  Version bump, bug #181542; cleanup; desktop-entry fix, bug #179871.
+
+  19 May 2007; Peter Weller <welp@gentoo.org> isomaster-0.8.1.ebuild:
+  Keyworded ~x86-fbsd
+
+*isomaster-0.8.1 (10 Apr 2007)
+
+  10 Apr 2007; Lars Weiler <pylon@gentoo.org> +isomaster-0.8.1.ebuild:
+  Version bump; bug #171520.
+
+  12 Feb 2007; Piotr Jaroszyński <peper@gentoo.org>
+  isomaster-0.7-r1.ebuild:
+  Add ~amd64 wrt bug #166394.
+
+*isomaster-0.7-r1 (09 Feb 2007)
+
+  09 Feb 2007; Lars Weiler <pylon@gentoo.org> -isomaster-0.5.ebuild,
+  +isomaster-0.7-r1.ebuild:
+  Added missing PREFIX for the icons directory; bug #157697.
+
+*isomaster-0.7 (04 Feb 2007)
+
+  04 Feb 2007; Lars Weiler <pylon@gentoo.org> +isomaster-0.7.ebuild:
+  Version bump; bug #157697; thanks to Wojciech Myrda for the ebuild.
+
+*isomaster-0.5 (03 Dec 2006)
+
+  03 Dec 2006; Lars Weiler <pylon@gentoo.org> +metadata.xml,
+  +isomaster-0.5.ebuild:
+  New ebuild from bug #151910.
+

@@ -1,0 +1,33 @@
+# ChangeLog for sci-biology/meme
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-biology/meme/ChangeLog,v 1.7 2008/06/14 12:34:50 markusle Exp $
+
+  14 Jun 2008; Markus Dittrich <markusle@gentoo.org> -meme-3.5.4.ebuild:
+  Removed old ebuild with bad autotools usage (fixes bug #226609).
+
+  31 Dec 2007; Jeff Gardner <je_fro@gentoo.org> ChangeLog, Manifest:
+  Fixing my email addy.
+
+  17 Sep 2007; <je_fro@gentoo.org> Manifest:
+  Used cvs manually to add patches without mangling.
+
+*meme-3.5.4-r1 (17 Sep 2007)
+
+  17 Sep 2007; <je_fro@gentoo.org> files/meme-3.5.4-patch1.patch,
+  files/meme-3.5.4-patch2.patch, +meme-3.5.4-r1.ebuild:
+  Once again, remove parallel install for amd64 boxes, and add upstream patches.
+
+  17 Sep 2007; <je_fro@gentoo.org> -meme-3.5.4-r1.ebuild:
+  Whoa...this version worked in my overlay. Pulling until I figure out what
+  went wrong.
+
+  17 Sep 2007; <je_fro@gentoo.org> +files/meme-3.5.4-patch1.patch,
+  +files/meme-3.5.4-patch2.patch, meme-3.5.4.ebuild:
+  Remove parallel install for amd64 boxes, and add upstream patches.
+
+*meme-3.5.4 (24 Apr 2007)
+
+  24 Apr 2007; Olivier Fisette <ribosome@gentoo.org>
+  +files/meme-3.5.4-Makefile.am.patch, +metadata.xml, +meme-3.5.4.ebuild:
+  Initial import.
+

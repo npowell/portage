@@ -1,0 +1,37 @@
+# ChangeLog for dev-perl/Parallel-ForkManager
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Parallel-ForkManager/ChangeLog,v 1.9 2007/01/19 15:12:33 mcummings Exp $
+
+  19 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  Parallel-ForkManager-0.7.5.ebuild:
+  Version bump, thanks seemant
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Parallel-ForkManager-0.7.5.ebuild:
+  Adding perl dep; fixed header; fixed DEPEND
+
+  17 Sep 2005; Aron Griffis <agriffis@gentoo.org>
+  Parallel-ForkManager-0.7.5.ebuild:
+  Mark 0.7.5 stable on ia64
+
+  08 Sep 2005; Aron Griffis <agriffis@gentoo.org>
+  Parallel-ForkManager-0.7.5.ebuild:
+  Mark 0.7.5 stable on alpha
+
+  26 Aug 2005; Aron Griffis <agriffis@gentoo.org>
+  Parallel-ForkManager-0.7.5.ebuild:
+  add ~ia64
+
+  29 Apr 2005; Michael Cummings <mcummings@gentoo.org>
+  Parallel-ForkManager-0.7.5.ebuild:
+  Cleaning for mirror
+
+  22 Apr 2005; Simon Stelling <blubb@gentoo.org>
+  Parallel-ForkManager-0.7.5.ebuild:
+  stable on amd64
+
+*Parallel-ForkManager-0.7.5 (28 Mar 2004)
+
+  28 Mar 2004; Michael Imhof <tantive@gentoo.org> Parallel-ForkManager-0.7.5.ebuild:
+  Initial ebuild. Submitted by Antonio <netbix@netbix.net>. Closes #45930.
+

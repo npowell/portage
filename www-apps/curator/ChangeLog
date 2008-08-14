@@ -1,0 +1,42 @@
+# ChangeLog for www-apps/curator
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-apps/curator/ChangeLog,v 1.8 2008/02/19 11:57:36 hollow Exp $
+
+  19 Feb 2008; Benedikt Böhm <hollow@gentoo.org> metadata.xml,
+  curator-2.0.ebuild, curator-2.1.ebuild:
+  ebuild cleanup wrt #208584
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  10 Jan 2007; Christian Heim <phreak@gentoo.org> curator-2.1.ebuild:
+  Fixing src_install (thanks to Jason Wever in #gentoo-dev).
+
+*curator-2.1 (06 Jan 2007)
+
+  06 Jan 2007; Christian Heim <phreak@gentoo.org> +metadata.xml,
+  +curator-2.1.ebuild:
+  Bumping www-apps/curator on behalf of treecleaner (closing #117665).
+
+  29 Dec 2004; Ciaran McCreesh <ciaranm@gentoo.org> :
+  Change encoding to UTF-8 for GLEP 31 compliance
+
+  05 Sep 2004; Sven Wegener <swegener@gentoo.org> :
+  Fixed ChangeLog header.
+
+  03 Sep 2004; Pieter Van den Abeele <pvdabeel@gentoo.org> curator-2.0.ebuild:
+  Masked curator-2.0.ebuild stable for ppc
+
+*curator-2.0 (15 Aug 2004)
+
+  15 Aug 2004; Stuart Herbert <stuart@gentoo.org> +curator-2.0.ebuild:
+  Moved from net-www/curator to www-apps/curator.
+
+  08 Jun 2004; Bryan Østergaard <kloeri@gentoo.org> curator-2.0.ebuild:
+  Stable on alpha.
+
+*curator-2.0 (02 Apr 2003)
+
+  02 Apr 2003; Seth Chandler <sethbc@gentoo.org>; curator-2.0.ebuild:
+  added curator to portage
+

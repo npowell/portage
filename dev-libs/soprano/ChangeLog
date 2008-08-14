@@ -1,0 +1,38 @@
+# ChangeLog for dev-libs/soprano
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/soprano/ChangeLog,v 1.8 2008/08/06 11:06:32 ulm Exp $
+
+  06 Aug 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
+  Add USE flag description to metadata wrt GLEP 56.
+
+  27 Jul 2008; Carsten Lohrke <carlo@gentoo.org> soprano-2.0.2.ebuild:
+  Fix broken split Qt 4.4 dependencies, cf. bug 217161 comment 11.
+
+  22 Mar 2008; Ingmar Vanhassel <ingmar@gentoo.org> -soprano-2.0.0.ebuild,
+  -soprano-2.0.3.ebuild:
+  Old.
+
+*soprano-2.0.3 (21 Mar 2008)
+
+  21 Mar 2008; Ingmar Vanhassel <ingmar@gentoo.org> +soprano-2.0.3.ebuild:
+  Version bump.
+
+*soprano-2.0.2 (08 Mar 2008)
+
+  08 Mar 2008; Ingmar Vanhassel <ingmar@gentoo.org> +soprano-2.0.2.ebuild:
+  Added soprano-2.0.2.ebuild. Fix dependencies for Qt-4.4.0_beta1.
+
+  18 Jan 2008; Ingmar Vanhassel <ingmar@gentoo.org> soprano-2.0.0.ebuild:
+  Depend on at least >=dev-libs/rasqal-0.9.15. Thanks to Carsten Lorke, bug
+  206570.
+
+  14 Jan 2008; Ingmar Vanhassel <ingmar@gentoo.org>
+  soprano-2.0.0.ebuild:
+  Disable the optional Sesame storage backend until sesame is in portage.
+
+*soprano-2.0.0 (13 Jan 2008)
+
+  13 Jan 2008; Wulf C. Krueger <philantrop@gentoo.org> +metadata.xml,
+  +soprano-2.0.0.ebuild:
+  Initial import to the tree as per bug 205646.
+

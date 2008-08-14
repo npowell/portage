@@ -1,0 +1,95 @@
+# ChangeLog for net-mail/gnubiff
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-mail/gnubiff/ChangeLog,v 1.20 2008/06/10 18:41:17 dertobi123 Exp $
+
+  10 Jun 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  gnubiff-2.2.10.ebuild:
+  Fix pkgconfig dep (#205440)
+
+*gnubiff-2.2.10 (10 Jun 2008)
+
+  10 Jun 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  -gnubiff-2.1.9.ebuild, -gnubiff-2.2.1.ebuild, -gnubiff-2.2.2.ebuild,
+  -gnubiff-2.2.5.ebuild, +gnubiff-2.2.10.ebuild:
+  cleanup, version bump (#225209)
+
+  14 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml,
+  gnubiff-2.1.3.ebuild, gnubiff-2.1.9.ebuild, gnubiff-2.2.1.ebuild,
+  gnubiff-2.2.2.ebuild, gnubiff-2.2.5.ebuild:
+  Removing Masatomo Nakano (nakano, #200340) from metadata.xml. Fixing the
+  minor syntax errors.
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>; gnubiff-2.1.9.ebuild,
+  gnubiff-2.2.1.ebuild, gnubiff-2.2.2.ebuild, gnubiff-2.2.5.ebuild:
+  Drop virtual/x11 references.
+
+*gnubiff-2.2.5 (02 Mar 2007)
+
+  02 Mar 2007; Masatomo Nakano <nakano@gentoo.org> +gnubiff-2.2.5.ebuild:
+  Version bump.
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  21 Oct 2006; Aron Griffis <agriffis@gentoo.org> gnubiff-2.1.3.ebuild:
+  Mark 2.1.3 stable on alpha
+
+*gnubiff-2.2.2 (02 Oct 2006)
+
+  02 Oct 2006; Aron Griffis <agriffis@gentoo.org> +gnubiff-2.2.2.ebuild:
+  Bump to 2.2.2 (from 2.2.1)
+
+  02 Oct 2006; Aron Griffis <agriffis@gentoo.org> gnubiff-2.1.9.ebuild:
+  Update 2.1.9 ebuild to include fixes from 2.2.1 ebuild, and fix
+  password-saving support #133853
+
+*gnubiff-2.2.1 (02 Oct 2006)
+
+  02 Oct 2006; Aron Griffis <agriffis@gentoo.org> gnubiff-2.1.9.ebuild,
+  +gnubiff-2.2.1.ebuild:
+  Bump to 2.2.1
+
+  21 Mar 2006; Daniel Drake <dsd@gentoo.org> gnubiff-2.1.3.ebuild,
+  gnubiff-2.1.9.ebuild:
+  Depend on virtual/fam
+
+*gnubiff-2.1.9 (30 Jan 2006)
+
+  30 Jan 2006; Aron Griffis <agriffis@gentoo.org> -gnubiff-2.1.1.ebuild,
+  gnubiff-2.1.3.ebuild, +gnubiff-2.1.9.ebuild:
+  Bump to 2.1.9 (from 2.1.3) #107359
+  Add app-admin/fam rdep to 2.1.3 #101832
+  Remove 2.1.1
+
+  02 Oct 2005; Aron Griffis <agriffis@gentoo.org> gnubiff-2.1.3.ebuild:
+  Mark 2.1.3 ~alpha
+
+  27 Sep 2005; Luis Medinas <metalgod@gentoo.org> gnubiff-2.1.3.ebuild:
+  Added ~amd64 keyword. Closes bug #107280.
+
+  06 May 2005; Masatomo Nakano <nakano@gentoo.org> gnubiff-2.1.3.ebuild:
+  Marked stable on x86.
+
+*gnubiff-2.1.3 (08 Apr 2005)
+
+  08 Apr 2005; Masatomo Nakano <nakano@gentoo.org> +gnubiff-2.1.3.ebuild:
+  Version bump.
+
+  12 Mar 2005; Masatomo Nakano <nakano@gentoo.org> gnubiff-2.1.1.ebuild:
+  Added libglade to DEPEND.
+
+*gnubiff-2.0.2 (10 Mar 2005)
+
+  10 Mar 2005; Masatomo Nakano <nakano@gentoo.org> -gnubiff-2.0.2.ebuild:
+  Remove old ebuild.
+
+*gnubiff-2.1.1 (07 Mar 2005)
+
+  07 Mar 2005; Masatomo Nakano <nakano@gentoo.org> metadata.xml,
+  +gnubiff-2.1.1.ebuild:
+  version bump
+
+  05 Nov 2004; Andrej Kacian <ticho@gentoo.org> :
+  Initial import, closes #39429. Ebuild submitted by Andreas Waschinski
+  <wascha@web.de>.
+

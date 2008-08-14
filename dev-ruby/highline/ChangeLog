@@ -1,0 +1,53 @@
+# ChangeLog for dev-ruby/highline
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/highline/ChangeLog,v 1.14 2007/12/10 16:57:52 armin76 Exp $
+
+  10 Dec 2007; Raúl Porcel <armin76@gentoo.org> highline-1.2.9.ebuild,
+  highline-1.4.0.ebuild:
+  ia64 stable
+
+  14 Nov 2007; Peter Weller <welp@gentoo.org> highline-1.4.0.ebuild:
+  Stable on amd64 wrt bug 198966
+
+  13 Nov 2007; Markus Rothe <corsair@gentoo.org> highline-1.4.0.ebuild:
+  Stable on ppc64; bug #198966
+
+  13 Nov 2007; Raúl Porcel <armin76@gentoo.org> highline-1.4.0.ebuild:
+  Add ~ia64 wrt #198966
+
+  12 Nov 2007; Dawid Węgliński <cla@gentoo.org> highline-1.4.0.ebuild:
+  Stable on x86 (bug #198966)
+
+*highline-1.4.0 (25 Aug 2007)
+
+  25 Aug 2007; Hans de Graaff <graaff@gentoo.org> +highline-1.4.0.ebuild:
+  Version bump: support for terminal size grabbing on Solaris.
+
+  25 Aug 2007; Hans de Graaff <graaff@gentoo.org> -highline-1.2.0.ebuild:
+  Remove old version
+
+*highline-1.2.9 (14 Jul 2007)
+
+  14 Jul 2007; Joshua Nichols <nichoj@gentoo.org> +highline-1.2.9.ebuild:
+  Version bump. See bug #184631.
+
+*highline-1.2.7 (18 May 2007)
+
+  18 May 2007; Robin H. Johnson <robbat2@gentoo.org> +highline-1.2.7.ebuild:
+  Version bump, dep for capistrano-1.99*
+
+  16 May 2007; Robin H. Johnson <robbat2@gentoo.org> highline-1.2.0.ebuild:
+  Works on ~ppc and ~amd64.
+
+  13 Mar 2007; Tom Gall <tgall@gentoo.org> highline-1.2.0.ebuild:
+  added ~ppc64
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*highline-1.2.0 (29 Apr 2006)
+
+  29 Apr 2006; Caleb Tennis <caleb@gentoo.org> +metadata.xml,
+  +highline-1.2.0.ebuild:
+  initial commit
+

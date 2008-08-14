@@ -1,0 +1,46 @@
+# ChangeLog for sci-physics/cernlib
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-physics/cernlib/ChangeLog,v 1.10 2008/06/27 10:39:23 ulm Exp $
+
+  27 Jun 2008; Ulrich Mueller <ulm@gentoo.org> cernlib-2006.ebuild,
+  cernlib-2006-r1.ebuild:
+  Change dependency from virtual/motif to x11-libs/openmotif, bug 224749.
+
+  03 Apr 2008; Jeroen Roovers <jer@gentoo.org> cernlib-2006-r1.ebuild:
+  Marked ~hppa too.
+
+  16 Mar 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/cernlib-2006-nogfortran.patch, cernlib-2006-r1.ebuild:
+  Fixes for g77 to work, bug #213358
+
+*cernlib-2006-r1 (11 Mar 2008)
+
+  11 Mar 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  +cernlib-2006-r1.ebuild:
+  New series of patches from Debian, more compatible with gfortran and better
+  tests. Much ebuild cleaning.
+
+  23 Nov 2007; Samuli Suominen <drac@gentoo.org> cernlib-2006.ebuild:
+  amd64 stable wrt #196304
+
+  24 Oct 2007; Christian Faulhammer <opfer@gentoo.org> cernlib-2006.ebuild:
+  stable x86, bug 196282
+
+  18 Oct 2007; Ferris McCormick <fmccor@gentoo.org> cernlib-2006.ebuild:
+  Sparc stable --- Bug #196304 --- we've been testing this 2 months.
+
+  03 Sep 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/cernlib-2006-maketest.patch, +files/cernlib-2006-test64.patch,
+  +files/cernlib-2006-testlink.patch, cernlib-2006.ebuild:
+  now allow user' FFLAGS and added a src_test. should close bug #190534.
+
+  28 Aug 2007; Ferris McCormick <fmccor@gentoo.org> cernlib-2006.ebuild:
+  Add ~sparc for testing (Bug #190163 comment 3) --- but please see Bug #190534
+  (very poor choice of compiler flags for a high performance library).
+
+*cernlib-2006 (24 Aug 2007)
+
+  24 Aug 2007; Sébastien Fabbro <bicatali@gentoo.org> +metadata.xml,
+  +cernlib-2006.ebuild:
+  Initial import. Closes bug #65708
+

@@ -1,0 +1,34 @@
+# ChangeLog for x11-plugins/compiz-fusion-plugins-main
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-plugins/compiz-fusion-plugins-main/ChangeLog,v 1.7 2007/10/31 00:26:38 hanno Exp $
+
+  31 Oct 2007; Hanno Boeck <hanno@gentoo.org>
+  compiz-fusion-plugins-main-0.6.0.ebuild:
+  Needs latest libxml2.
+
+  25 Oct 2007; Olivier Crête <tester@gentoo.org>
+  compiz-fusion-plugins-main-0.6.0.ebuild:
+  Marked ~amd64
+
+  24 Oct 2007; Luca Barbato <lu_zero@gentoo.org>
+  compiz-fusion-plugins-main-0.6.0.ebuild:
+  Marked ~ppc
+
+  24 Oct 2007; Hanno Boeck <hanno@gentoo.org>
+  compiz-fusion-plugins-main-0.6.0.ebuild:
+  Add jpeg to IUSE.
+
+  24 Oct 2007; Hanno Boeck <hanno@gentoo.org>
+  compiz-fusion-plugins-main-0.6.0.ebuild:
+  QA fixes.
+
+  23 Oct 2007; Hanno Boeck <hanno@gentoo.org>
+  compiz-fusion-plugins-main-0.6.0.ebuild:
+  make check is broken upstream.
+
+*compiz-fusion-plugins-main-0.6.0 (23 Oct 2007)
+
+  23 Oct 2007; Hanno Boeck <hanno@gentoo.org> +metadata.xml,
+  +compiz-fusion-plugins-main-0.6.0.ebuild:
+  Initial compiz-fusion commit, ebuild based on xeffects overlay.
+

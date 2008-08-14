@@ -1,0 +1,20 @@
+# ChangeLog for games-fps/alephone-infinity
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-fps/alephone-infinity/ChangeLog,v 1.4 2008/03/18 02:10:43 nyhm Exp $
+
+  18 Mar 2008; Tristan Heaven <nyhm@gentoo.org> alephone-infinity-1.ebuild:
+  Add ~amd64 keyword, bug #206647
+
+  05 Jul 2007; Markus Rothe <corsair@gentoo.org> alephone-infinity-1.ebuild:
+  Added ~ppc64; bug #183570
+
+  13 Feb 2007; Tristan Heaven <nyhm@gentoo.org> -files/AlephOne.png,
+  alephone-infinity-1.ebuild:
+  Move icon to mirror://gentoo
+
+*alephone-infinity-1 (03 Jun 2006)
+
+  03 Jun 2006; <Tupone@gentoo.org> +files/AlephOne.png,
+  +alephone-infinity-1.ebuild:
+  Initial import.  Ebuild submitted by David Bailey and Ben Urban, bug #82912
+

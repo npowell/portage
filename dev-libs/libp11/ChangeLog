@@ -1,0 +1,74 @@
+# ChangeLog for dev-libs/libp11
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/libp11/ChangeLog,v 1.21 2008/04/27 03:45:15 drac Exp $
+
+  27 Apr 2008; Samuli Suominen <drac@gentoo.org> libp11-0.2.2.ebuild,
+  libp11-0.2.3.ebuild:
+  Set empty RDEPEND since pkgconfig is only DEPEND.
+
+  13 Nov 2007; Markus Rothe <corsair@gentoo.org> libp11-0.2.3.ebuild:
+  Stable on ppc64; bug #198688
+
+  13 Nov 2007; Raúl Porcel <armin76@gentoo.org> libp11-0.2.3.ebuild:
+  ia64/sparc stable wrt #198688
+
+  11 Nov 2007; Dawid Węgliński <cla@gentoo.org> libp11-0.2.3.ebuild:
+  Stable on x86 (bug #198688)
+
+  10 Nov 2007; Samuli Suominen <drac@gentoo.org> libp11-0.2.3.ebuild:
+  amd64 stable wrt #198688
+
+  10 Nov 2007; nixnut <nixnut@gentoo.org> libp11-0.2.3.ebuild:
+  Stable on ppc wrt bug 198688
+
+  29 Aug 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing kaiowas from metadata due to his retirement (see #61930 for
+  reference).
+
+  26 Jul 2007; Guy Martin <gmsoft@gentoo.org> libp11-0.2.3.ebuild:
+  Added ~hppa to KEYWORDS.
+
+*libp11-0.2.3 (20 Jul 2007)
+
+  20 Jul 2007; Alon Bar-Lev <alonbl@gentoo.org> +libp11-0.2.3.ebuild:
+  Version bump
+
+  25 Nov 2006; Bryan Østergaard <kloeri@gentoo.org> libp11-0.2.2.ebuild:
+  Add ~alpha keyword, bug 135397.
+
+  14 Oct 2006; Petre Rodan <kaiowas@gentoo.org> libp11-0.2.2.ebuild:
+  added pkgconfig dep. fix for bug #151166
+
+  13 Sep 2006; Petre Rodan <kaiowas@gentoo.org> -libp11-0.2.1.ebuild,
+  libp11-0.2.2.ebuild:
+  mark stable on amd64 ia64 ppc ppc64 sparc x86
+
+  13 Jul 2006; Aron Griffis <agriffis@gentoo.org> libp11-0.2.2.ebuild:
+  Mark 0.2.2 ~ia64 #135397
+
+*libp11-0.2.2 (17 Jun 2006)
+
+  17 Jun 2006; Petre Rodan <kaiowas@gentoo.org> +libp11-0.2.2.ebuild:
+  version bump
+
+  13 Jun 2006; Gustavo Zacarias <gustavoz@gentoo.org> libp11-0.2.1.ebuild:
+  Keyworded ~sparc wrt #135397
+
+  12 Jun 2006; Mike Doty <kingtaco@gentoo.org> libp11-0.2.1.ebuild:
+  ~amd64
+
+  08 Jun 2006; Markus Rothe <corsair@gentoo.org> libp11-0.2.1.ebuild:
+  I wanted ~ppc64 not ppc64...
+
+  08 Jun 2006; Markus Rothe <corsair@gentoo.org> libp11-0.2.1.ebuild:
+  Added ~ppc64; bug #135397
+
+  06 Jun 2006; Tobias Scherbaum <dertobi123@gentoo.org> libp11-0.2.1.ebuild:
+  Added ~ppc, bug #135397
+
+*libp11-0.2.1 (03 Jun 2006)
+
+  03 Jun 2006; Petre Rodan <kaiowas@gentoo.org> +metadata.xml,
+  +libp11-0.2.1.ebuild:
+  initial commit. contributed by Mark Raddatz in bug #115276
+

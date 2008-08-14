@@ -1,0 +1,32 @@
+# ChangeLog for games-arcade/gunocide2ex
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-arcade/gunocide2ex/ChangeLog,v 1.9 2007/04/24 14:44:07 drizzt Exp $
+
+  24 Apr 2007; Timothy Redaelli <drizzt@gentoo.org> gunocide2ex-1.0.ebuild:
+  Add ~x86-fbsd keyword.
+  Thanks to Nathan Smith for reporting wrt bug #175779
+
+  23 Aug 2006; Chris Gianelloni <wolf31o2@gentoo.org> +files/1.0-gcc4.patch,
+  gunocide2ex-1.0.ebuild:
+  Added gcc4 patch from Mark Loeser <mark@halcy0n.com> and closing bug #131028.
+
+  17 May 2005; Chris Gianelloni <wolf31o2@gentoo.org>
+  gunocide2ex-1.0.ebuild:
+  Cleanup for bug #92745.
+
+  22 Dec 2004; Joseph Jezak <josejx@gentoo.org> gunocide2ex-1.0.ebuild:
+  Marked ppc stable.
+
+  03 Nov 2004; Joseph Jezak <josejx@gentoo.org> gunocide2ex-1.0.ebuild:
+  Added ~ppc.
+
+  26 Mar 2004; Michael Sterrett <mr_bones_@gentoo.org> gunocide2ex-1.0.ebuild:
+  don't rdepend on sed; tidy
+
+  28 Nov 2003; Michael Sterrett <mr_bones_@gentoo.org> gunocide2ex-1.0.ebuild:
+  actually compile; depend on sed-4; more error checking/messages; tidy
+
+*gunocide2ex-1.0 (14 Nov 2003)
+
+  14 Nov 2003; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by me.

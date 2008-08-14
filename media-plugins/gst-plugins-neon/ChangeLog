@@ -1,0 +1,99 @@
+# ChangeLog for media-plugins/gst-plugins-neon
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/gst-plugins-neon/ChangeLog,v 1.18 2008/08/08 18:44:42 maekke Exp $
+
+  08 Aug 2008; Markus Meier <maekke@gentoo.org>
+  gst-plugins-neon-0.10.7.ebuild:
+  x86 stable, bug #232054
+
+  07 Aug 2008; Tobias Klausmann <klausman@gentoo.org>
+  gst-plugins-neon-0.10.7.ebuild:
+  Stable on alpha, bug #232054
+
+  01 Aug 2008; Brent Baude <ranger@gentoo.org>
+  gst-plugins-neon-0.10.7.ebuild:
+  Marking gst-plugins-neon-0.10.7 ppc64 stable for bug 232054
+
+  30 Jul 2008; Brent Baude <ranger@gentoo.org>
+  gst-plugins-neon-0.10.7.ebuild:
+  Marking gst-plugins-neon-0.10.7 ppc stable for bug 232054
+
+  26 Jul 2008; Olivier Crête <tester@gentoo.org>
+  gst-plugins-neon-0.10.7.ebuild:
+  Stable on amd64, bug #232054
+
+  13 Jul 2008; Joseph Jezak <josejx@gentoo.org>
+  gst-plugins-neon-0.10.7.ebuild:
+  Marked ~ppc for bug #208732.
+
+*gst-plugins-neon-0.10.7 (29 Jun 2008)
+
+  29 Jun 2008; Samuli Suominen <drac@gentoo.org>
+  -files/gst-plugins-neon-0.10.5-neon.patch,
+  -files/gst-plugins-neon-0.10.6-neon-0.28.1.patch,
+  -gst-plugins-neon-0.10.5.ebuild, -gst-plugins-neon-0.10.5-r1.ebuild,
+  -gst-plugins-neon-0.10.6.ebuild, -gst-plugins-neon-0.10.6-r1.ebuild,
+  +gst-plugins-neon-0.10.7.ebuild:
+  Version bump.
+
+  13 Apr 2008; Benedikt Böhm <hollow@gentoo.org>
+  gst-plugins-neon-0.10.6-r1.ebuild:
+  fix neon DEPEND
+
+*gst-plugins-neon-0.10.6-r1 (13 Apr 2008)
+
+  13 Apr 2008; Benedikt Böhm <hollow@gentoo.org>
+  +files/gst-plugins-neon-0.10.6-neon-0.28.1.patch,
+  gst-plugins-neon-0.10.6.ebuild, +gst-plugins-neon-0.10.6-r1.ebuild:
+  fix #214451
+
+  21 Feb 2008; Samuli Suominen <drac@gentoo.org>
+  -gst-plugins-neon-0.10.5.4.ebuild:
+  Remove unused version, it used a weird version number.
+
+*gst-plugins-neon-0.10.6 (21 Feb 2008)
+
+  21 Feb 2008; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  +gst-plugins-neon-0.10.6.ebuild:
+  version bump
+
+*gst-plugins-neon-0.10.5.4 (20 Feb 2008)
+
+  20 Feb 2008; Samuli Suominen <drac@gentoo.org>
+  +gst-plugins-neon-0.10.5.4.ebuild:
+  Version bump to get working http streaming..
+
+*gst-plugins-neon-0.10.5-r1 (03 Feb 2008)
+
+  03 Feb 2008; Samuli Suominen <drac@gentoo.org>
+  +files/gst-plugins-neon-0.10.5-neon.patch,
+  +gst-plugins-neon-0.10.5-r1.ebuild:
+  Fix #208611, HTTP streaming, thanks to Thomas Green.
+
+*gst-plugins-neon-0.10.5 (30 Aug 2007)
+
+  30 Aug 2007; Samuli Suominen <drac@gentoo.org>
+  +gst-plugins-neon-0.10.5.ebuild:
+  Version bump.
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*gst-plugins-neon-0.10.4 (25 Jan 2007)
+
+  25 Jan 2007; Jim Ramsay <lack@gentoo.org> +gst-plugins-neon-0.10.4.ebuild:
+  Version bump - gst-plugins-bad-0.10.4 is released
+
+*gst-plugins-neon-0.10.3 (20 Jul 2006)
+
+  20 Jul 2006; <zaheerm@gentoo.org>
+  +files/gst-plugins-neon-0.10.3-neonfix.patch,
+  +gst-plugins-neon-0.10.3.ebuild:
+  version bump, plus patch from Samuli Suominen
+
+*gst-plugins-neon-0.10.1 (24 Mar 2006)
+
+  24 Mar 2006; Zaheer Abbas Merali <zaheerm@gentoo.org> +metadata.xml,
+  +gst-plugins-neon-0.10.1.ebuild:
+  initial ebuild for gst-plugins-neon
+

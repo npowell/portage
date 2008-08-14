@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+    <herd>no-herd</herd>
+    <maintainer>
+        <email>maintainer-needed@gentoo.org</email>
+    </maintainer>
+    <maintainer>
+        <email>brain@brainbox.cc</email>
+		<name>Craig Edwards</name>
+		<description>Formerly indirectly maintaining through hansmi@gentoo.org -
+looking for a new proxy maintainer</description>
+    </maintainer>
+</pkgmetadata>

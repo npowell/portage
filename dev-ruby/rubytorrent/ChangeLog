@@ -1,0 +1,31 @@
+# ChangeLog for dev-ruby/rubytorrent
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rubytorrent/ChangeLog,v 1.8 2007/01/14 09:56:27 josejx Exp $
+
+  14 Jan 2007; Joseph Jezak <josejx@gentoo.org> rubytorrent-0.3.ebuild:
+  Marked ~ppc for bug #159979.
+
+  05 Jan 2007; Diego Pettenò <flameeyes@gentoo.org> rubytorrent-0.3.ebuild:
+  Convert to use elog.
+
+  20 Oct 2006; Aron Griffis <agriffis@gentoo.org> rubytorrent-0.3.ebuild:
+  Mark 0.3 stable on ia64
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org> rubytorrent-0.3.ebuild:
+  Mark 0.3 ~ia64
+
+  16 Jun 2005; <dang@gentoo.org> rubytorrent-0.3.ebuild:
+  Added ~amd64
+
+  12 Mar 2005; Michael Kohl <citizen428@gentoo.org> rubytorrent-0.3.ebuild:
+  Marked stable on x86.
+
+  16 Feb 2005; Michael Kohl <citizen428@gentoo.org> rubytorrent-0.3.ebuild:
+  Minor ebuild fixes.
+
+*rubytorrent-0.3 (15 Feb 2005)
+
+  15 Feb 2005; Michael Kohl <citizen428@gentoo.org> +metadata.xml,
+  +rubytorrent-0.3.ebuild:
+  Initial import.
+

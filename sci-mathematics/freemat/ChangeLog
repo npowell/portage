@@ -1,0 +1,72 @@
+# ChangeLog for sci-mathematics/freemat
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-mathematics/freemat/ChangeLog,v 1.14 2008/08/06 20:27:08 ulm Exp $
+
+  06 Aug 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
+  Add USE flag description to metadata wrt GLEP 56.
+
+  27 Jul 2008; Carsten Lohrke <carlo@gentoo.org> freemat-3.6.ebuild:
+  Fix broken split Qt 4.4 dependencies, cf. bug 217161 comment 11.
+
+  22 Jul 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  files/freemat-3.6-includes.patch:
+  Changed a cmath include for a math.h, probably a gcc < 4.3 bug on amd64
+  multilib. Closing bug #232620
+
+  28 May 2008; Andrey Grozin <grozin@gentoo.org> freemat-3.6.ebuild:
+  Added fdo-mime_desktop_database_update and elogs with instructions for the
+  user
+
+  20 May 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/freemat-3.6-includes.patch, freemat-3.6.ebuild:
+  Fixed for gcc-4.3, some includes files and adpated for qt-4.4. Also set
+  some use flags as default
+
+*freemat-3.6 (24 Mar 2008)
+
+  24 Mar 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/freemat-3.6-optional-deps.patch, metadata.xml, +freemat-3.6.ebuild:
+  Version bump. Added patch to allow more robust optional dependencies,
+  fixed blas/lapack hangling
+
+  13 Jan 2008; Sébastien Fabbro <bicatali@gentoo.org> -freemat-3.4.ebuild,
+  freemat-3.5.ebuild:
+  Specify blas/lapack with new mechanism, added opengl requirement for
+  qt4, and some cleaning.
+
+  11 Jan 2008; Markus Dittrich <markusle@gentoo.org> freemat-3.5.ebuild:
+  Added missing QT4 dependency (fixes bug #205259).
+
+  26 Sep 2007; Sébastien Fabbro <bicatali@gentoo.org> -freemat-3.2.ebuild,
+  freemat-3.4.ebuild, freemat-3.5.ebuild:
+  Added $ROOT when initializing freemat directory. Removed older version
+
+*freemat-3.5 (25 Sep 2007)
+
+  25 Sep 2007; Sébastien Fabbro <bicatali@gentoo.org> +freemat-3.5.ebuild:
+  Version bump.
+
+  26 Aug 2007; Sébastien Fabbro <bicatali@gentoo.org> freemat-3.4.ebuild:
+  portaudio flag properly added
+
+*freemat-3.4 (20 Aug 2007)
+
+  20 Aug 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  -files/freemat-3.3-pointer.patch, -freemat-3.3.ebuild,
+  +freemat-3.4.ebuild:
+  Version bump. Removed version 3.3 because of upstream critical bugs.
+
+*freemat-3.3 (13 Aug 2007)
+
+  13 Aug 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/freemat-3.3-pointer.patch, +freemat-3.3.ebuild:
+  Version bump
+
+*freemat-3.2 (01 Aug 2007)
+
+  01 Aug 2007; Sébastien Fabbro <bicatali@gentoo.org> +metadata.xml,
+  +freemat-3.2.ebuild:
+  Initial import from gentooscience overlay. Thanks Andrey Grozin
+  <A.G.Grozin@inp.nsk.su>, David S. Brown <davesbrown@yahoo.com> for their
+  work. Closing #79499
+

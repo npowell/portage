@@ -1,0 +1,18 @@
+# ChangeLog for games-arcade/grande-KXL
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-arcade/grande-KXL/ChangeLog,v 1.6 2007/04/08 00:25:48 josejx Exp $
+
+  08 Apr 2007; Joseph Jezak <josejx@gentoo.org> grande-KXL-0.6.ebuild:
+  Marked ~ppc for bug #173426.
+
+  14 Mar 2007; Tristan Heaven <nyhm@gentoo.org> grande-KXL-0.6.ebuild:
+  Install menu entry, bug #160216
+
+  01 Nov 2006; Tristan Heaven <nyhm@gentoo.org>
+  files/0.6-configure.in.patch, grande-KXL-0.6.ebuild:
+  Fix hardcoded score path
+
+*grande-KXL-0.6 (04 Mar 2003)
+
+  04 Mar 2003; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by Daniele Foci <sunscan@sunscan.org> #14248.

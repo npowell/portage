@@ -1,0 +1,128 @@
+# ChangeLog for dev-php5/pecl-memcache
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-php5/pecl-memcache/ChangeLog,v 1.23 2008/05/09 12:56:34 hoffie Exp $
+
+  09 May 2008; Christian Hoffmann <hoffie@gentoo.org>
+  pecl-memcache-2.0.4.ebuild:
+  explicitly call phpize, not src_unpack (bug 220519)
+
+  07 May 2008; Christian Hoffmann <hoffie@gentoo.org>
+  pecl-memcache-2.0.4.ebuild:
+  calling php-ext-source-r1_src_unpack explicitly, bug 220519
+
+*pecl-memcache-3.0.1 (11 Feb 2008)
+*pecl-memcache-2.2.3 (11 Feb 2008)
+
+  11 Feb 2008; Raúl Porcel <armin76@gentoo.org>
+  +pecl-memcache-2.2.3.ebuild, +pecl-memcache-3.0.1.ebuild:
+  Version bump, from the php overlay
+
+  06 Dec 2007; Markus Ullmann <jokey@gentoo.org> pecl-memcache-2.0.4.ebuild,
+  -pecl-memcache-2.1.2.ebuild, pecl-memcache-2.2.1.ebuild,
+  pecl-memcache-3.0.0.ebuild:
+  LICENSE fix from project overlay
+
+  03 Dec 2007; Jakub Moc <jakub@gentoo.org>
+  pecl-memcache-2.0.4.ebuild, pecl-memcache-2.2.1.ebuild,
+  pecl-memcache-3.0.0.ebuild:
+  Fix LICENSE
+
+*pecl-memcache-3.0.0 (29 Nov 2007)
+
+  29 Nov 2007; Markus Ullmann <jokey@gentoo.org>
+  +pecl-memcache-3.0.0.ebuild:
+  Version bump from project overlay
+
+  26 Nov 2007; Jakub Moc <jakub@gentoo.org> +metadata.xml,
+  +pecl-memcache-3.0.0.ebuild:
+  Version bump, new API. See README for details on new API and INI directives.
+
+*pecl-memcache-2.2.1 (15 Nov 2007)
+
+  15 Nov 2007; Markus Ullmann <jokey@gentoo.org>
+  -pecl-memcache-2.2.0.ebuild, +pecl-memcache-2.2.1.ebuild:
+  Version bump from project overlay
+
+  09 Nov 2007; Jakub Moc <jakub@gentoo.org> +pecl-memcache-2.2.1.ebuild:
+  Version bump - bugfix release
+
+*pecl-memcache-2.2.0 (23 Sep 2007)
+
+  23 Sep 2007; Anant Narayanan <anant@gentoo.org>
+  +pecl-memcache-2.2.0.ebuild:
+  version bump to 2.2.0
+
+*pecl-memcache-2.1.2 (20 Aug 2007)
+
+  20 Aug 2007; Markus Ullmann <jokey@gentoo.org>
+  -pecl-memcache-2.1.0.ebuild, +pecl-memcache-2.1.2.ebuild:
+  Porting from project overlay
+
+  16 Aug 2007; Jakub Moc <jakub@gentoo.org> +metadata.xml,
+  +pecl-memcache-2.1.2.ebuild:
+  Version bump, Bug 179724
+
+*pecl-memcache-2.1.0 (18 Mar 2007)
+
+  18 Mar 2007; Luca Longinotti <chtekk@gentoo.org>
+  -pecl-memcache-2.0.0.ebuild, -pecl-memcache-2.0.1.ebuild,
+  pecl-memcache-2.0.4.ebuild, +pecl-memcache-2.1.0.ebuild:
+  Cleanup, version bump, remove old versions.
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*pecl-memcache-2.0.4 (02 Jul 2006)
+
+  02 Jul 2006; Robin H. Johnson <robbat2@gentoo.org>
+  +pecl-memcache-2.0.4.ebuild:
+  Version bump.
+
+  03 May 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  pecl-memcache-2.0.1.ebuild:
+  Stable on hppa & sparc
+
+  28 Mar 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  pecl-memcache-2.0.1.ebuild:
+  Keyworded ~hppa
+
+*pecl-memcache-2.0.1 (02 Feb 2006)
+
+  02 Feb 2006; Sebastian Bergmann <sebastian@gentoo.org>
+  +pecl-memcache-2.0.1.ebuild:
+  Version bump.
+
+  20 Jan 2006; Konstantin Arkhipov <voxus@gentoo.org>
+  pecl-memcache-2.0.0.ebuild:
+  Added ~amd64 keyword.
+
+  11 Jan 2006; Luca Longinotti <chtekk@gentoo.org>
+  -files/config-zlib-det-fix.patch, pecl-memcache-2.0.0.ebuild:
+  Remove unused patch and eutils inherit.
+
+  11 Jan 2006; Robin H. Johnson <robbat2@gentoo.org>
+  pecl-memcache-2.0.0.ebuild:
+  Better fix for bug #117990.
+
+  06 Jan 2006; Luca Longinotti <chtekk@gentoo.org>
+  +files/config-zlib-det-fix.patch, pecl-memcache-2.0.0.ebuild:
+  Fix bug #117990.
+
+*pecl-memcache-2.0.0 (05 Jan 2006)
+
+  05 Jan 2006; Sebastian Bergmann <sebastian@gentoo.org>
+  -pecl-memcache-1.5.ebuild, +pecl-memcache-2.0.0.ebuild:
+  Version bump.
+
+  17 Dec 2005; Luca Longinotti <chtekk@gentoo.org> pecl-memcache-1.5.ebuild:
+  Fix var ordering.
+
+  19 Nov 2005; Markus Rothe <corsair@gentoo.org> pecl-memcache-1.5.ebuild:
+  Added ~ppc64 keyword; bug #102649
+
+  10 Sep 2005; Jason Wever <weeve@gentoo.org> pecl-memcache-1.5.ebuild:
+  Added ~sparc keyword.
+
+  18 Aug 2005; <stuart@gentoo.org> ChangeLog:
+  Initial version; replaces older dev-php/* packages
+

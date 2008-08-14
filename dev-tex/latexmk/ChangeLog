@@ -1,0 +1,31 @@
+# ChangeLog for dev-tex/latexmk
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-tex/latexmk/ChangeLog,v 1.8 2008/05/19 20:45:18 maekke Exp $
+
+  19 May 2008; Markus Meier <maekke@gentoo.org> latexmk-307a.ebuild:
+  amd64/x86 stable, bug #222471
+
+  15 Jul 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Assigning to tex, as nattfodd is being retired (#108329).
+
+  12 Mar 2007; Alexandre Buisse <nattfodd@gentoo.org> metadata.xml:
+  Replaced text-markup by tex as maintaining herd (text-markup split).
+
+  02 Dec 2006; Steve Dibb <beandog@gentoo.org> latexmk-307a.ebuild:
+  Add ~amd64, bug 133920
+
+  19 Mar 2006; Mark Loeser <halcy0n@gentoo.org> latexmk-307a.ebuild:
+  Add DEPEND on app-arch/unzip
+
+  09 Mar 2006; Martin Ehmsen <ehmsen@gentoo.org> latexmk-307a.ebuild:
+  Removed INSTALL from dodoc, found by QA script.
+
+  28 Nov 2005; Alexandre Buisse <nattfodd@gentoo.org> metadata.xml:
+  Added myself as maintainer, as planned on bug 111324.
+
+*latexmk-307a (18 Nov 2005)
+
+  18 Nov 2005; Sebastian Bergmann <sebastian@gentoo.org> +metadata.xml,
+  +latexmk-307a.ebuild:
+  Initial ebuild, closes bug 111324.
+

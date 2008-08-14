@@ -1,0 +1,79 @@
+# ChangeLog for dev-libs/gdl
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/gdl/ChangeLog,v 1.18 2008/06/21 19:44:28 corsair Exp $
+
+  21 Jun 2008; Markus Rothe <corsair@gentoo.org> gdl-0.7.6.ebuild:
+  Stable on ppc64; bug #225105
+
+  06 Jun 2008; Raúl Porcel <armin76@gentoo.org> gdl-0.7.11.ebuild:
+  Add ~alpha/~ia64
+
+  06 Jun 2008; Jeroen Roovers <jer@gentoo.org> gdl-0.7.11.ebuild:
+  Marked ~hppa (maybe remi).
+
+  10 May 2008; Raúl Porcel <armin76@gentoo.org> gdl-0.7.6.ebuild:
+  sparc stable
+
+*gdl-0.7.11 (12 Mar 2008)
+
+  12 Mar 2008; Rémi Cardona <remi@gentoo.org> +gdl-0.7.11.ebuild:
+  bump to 0.7.11
+
+  03 Mar 2008; Christoph Mende <angelos@gentoo.org> gdl-0.7.6.ebuild:
+  Stable on amd64, bug #204494
+
+  24 Jan 2008; Christian Faulhammer <opfer@gentoo.org> gdl-0.7.6.ebuild:
+  stable x86, bug 204494
+
+  06 Jan 2008; Ferris McCormick <fmccor@gentoo.org> gdl-0.7.6.ebuild:
+  Add ~sparc for testing, needed by Bug #204495
+
+  20 Oct 2007; Markus Rothe <corsair@gentoo.org> gdl-0.7.6.ebuild:
+  Added ~ppc64; bug #189993
+
+  30 Jul 2007; Tobias Scherbaum <dertobi123@gentoo.org> gdl-0.7.1.ebuild:
+  ppc stable, bug #185630
+
+  25 Jul 2007; Christian Faulhammer <opfer@gentoo.org> gdl-0.7.1.ebuild:
+  stable x86, bug 185630
+
+  19 Jul 2007; Christoph Mende <angelos@gentoo.org> gdl-0.7.1.ebuild:
+  Stable on amd64 wrt bug #185630
+
+*gdl-0.7.6 (12 Jul 2007)
+
+  12 Jul 2007; Saleem Abdulrasool <compnerd@gentoo.org> +gdl-0.7.6.ebuild:
+  Version bump from upstream (bug #171803)
+
+  22 Mar 2007; Daniel Gryniewicz <dang@gentoo.org> metadata.xml:
+  Move maintainer to compnerd; nothing maintained by gnome uses it
+
+  30 Jan 2007; Daniel Gryniewicz <dang@gentoo.org> ChangeLog:
+  Bump to 0.7.1
+  	(bug #164237)
+  * Use canonical property names (#381845)
+  * fix undefined symbol in python bindings (#397562)
+  * New translation: dz (Pema Geyleg  <pema.geyleg@gmail.com>)
+  * Added support to build without GNOME
+  * Split into libgdl and libgdl-gnome
+  * Removed some deprecated API
+  * Bug fixes for window positioning (thanks for the patches)
+  * Some fixes to build system
+  * Added dockbar style setting.
+  * Restore dockitem demensions when showing them.
+  * Improved restoring dockitem placements when showing them.
+
+*gdl-0.7.0 (30 Jan 2007)
+
+  30 Jan 2007; Saleem Abdulrasool <compnerd@gentoo.org> +gdl-0.7.0.ebuild:
+  Version bump
+
+  16 Jul 2006; Tobias Scherbaum <dertobi123@gentoo.org> gdl-0.6.1.ebuild:
+  Added ~ppc
+
+*gdl-0.6.1 (29 Jun 2006)
+
+  29 Jun 2006; Martin Schlemmer <azarah@gentoo.org> +metadata.xml,
+  +gdl-0.6.1.ebuild:
+  Import.  Only saw bug #8561 after I added, so imported some changes.
+

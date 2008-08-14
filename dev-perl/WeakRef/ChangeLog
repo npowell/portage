@@ -1,0 +1,34 @@
+# ChangeLog for dev-perl/WeakRef
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/WeakRef/ChangeLog,v 1.10 2007/01/19 17:13:15 mcummings Exp $
+
+  19 Jan 2007; Michael Cummings <mcummings@gentoo.org> WeakRef-0.01.ebuild:
+  Ebuild maintenance
+
+  06 Aug 2006; Michael Cummings <mcummings@gentoo.org> WeakRef-0.01.ebuild:
+  Adding perl dep; fixed header; fixed DEPEND
+
+  02 Oct 2005; Aron Griffis <agriffis@gentoo.org> WeakRef-0.01.ebuild:
+  Mark 0.01 stable on ia64
+
+  08 Sep 2005; Aron Griffis <agriffis@gentoo.org> WeakRef-0.01.ebuild:
+  Mark 0.01 stable on alpha
+
+  26 Aug 2005; Aron Griffis <agriffis@gentoo.org> WeakRef-0.01.ebuild:
+  add ~ia64
+
+  25 Apr 2005; Michael Cummings <mcummings@gentoo.org> WeakRef-0.01.ebuild:
+  Cleaning
+
+  22 Apr 2005; Simon Stelling <blubb@gentoo.org> WeakRef-0.01.ebuild:
+  stable on amd64
+
+  20 Apr 2005; Michael Hanselmann <hansmi@gentoo.org> WeakRef-0.01.ebuild:
+  Stable on ppc.
+
+*WeakRef-0.01 (05 Jun 2004)
+
+  05 Jun 2004; Michael Cummings <mcummings@gentoo.org> WeakRef-0.01.ebuild,
+  metadata.xml:
+  missing dep for filehandle-unget
+

@@ -1,0 +1,82 @@
+# ChangeLog for mail-filter/policyd-weight
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/mail-filter/policyd-weight/ChangeLog,v 1.15 2008/05/30 06:57:52 phreak Exp $
+
+  30 May 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Andrej Kacian (Ticho) from metadata.xml (as per #59986).
+
+  05 Apr 2008; Andrej Kacian <ticho@gentoo.org>
+  -policyd-weight-0.1.14.5.ebuild, -policyd-weight-0.1.14.14.ebuild,
+  -policyd-weight-0.1.14.15.ebuild, policyd-weight-0.1.14.17.ebuild:
+  Use virtual/perl-Sys-Syslog in DEPEND. Bug #211631, by Jakub Moc. Old
+  ebuild cleanup.
+
+  29 Mar 2008; Christian Faulhammer <opfer@gentoo.org>
+  policyd-weight-0.1.14.17.ebuild:
+  stable x86, security bug 214403
+
+  29 Mar 2008; Andrej Kacian <ticho@gentoo.org>
+  policyd-weight-0.1.14.17.ebuild:
+  Change default LOCKPATH value to /var/run/policyd-weight in config, it is
+  safer there than in /tmp.
+
+*policyd-weight-0.1.14.17 (28 Mar 2008)
+
+  28 Mar 2008; Andrej Kacian <ticho@gentoo.org>
+  +policyd-weight-0.1.14.17.ebuild:
+  Version bump.
+
+*policyd-weight-0.1.14.15 (27 Mar 2008)
+
+  27 Mar 2008; Andrej Kacian <ticho@gentoo.org>
+  -policyd-weight-0.1.14.3.ebuild, -policyd-weight-0.1.14.4.ebuild,
+  +policyd-weight-0.1.14.15.ebuild:
+  Version bump. New version fixes insecure temp. file creation
+  vulnerability, reported by Chris Howells. Removed old ebuilds.
+
+*policyd-weight-0.1.14.14 (27 Jan 2008)
+
+  27 Jan 2008; Andrej Kacian <ticho@gentoo.org>
+  +policyd-weight-0.1.14.14.ebuild:
+  Version bump. Bug #206779 by Bernhard Frauendienst <gentoo at obeliks de>.
+
+  13 Aug 2007; Christoph Mende <angelos@gentoo.org>
+  policyd-weight-0.1.14.5.ebuild:
+  Added ~amd64
+
+  04 Aug 2007; Andrej Kacian <ticho@gentoo.org>
+  policyd-weight-0.1.14.5.ebuild:
+  Stable on x86.
+
+  18 Jul 2007; Raúl Porcel <armin76@gentoo.org>
+  policyd-weight-0.1.14.5.ebuild:
+  Add ~alpha wrt #179622, thanks to Brian Evans for testing
+
+  17 Jul 2007; Andrej Kacian <ticho@gentoo.org> files/policyd-weight.init.d:
+  Fix initscript stop() function to also stop cache instance. Suggested by
+  Paul B. Henson <henson at acm.org> in bug #185611.
+
+*policyd-weight-0.1.14.5 (10 May 2007)
+
+  10 May 2007; Andrej Kacian <ticho@gentoo.org>
+  +policyd-weight-0.1.14.5.ebuild:
+  Version bump.
+
+*policyd-weight-0.1.14.4 (02 May 2007)
+
+  02 May 2007; Andrej Kacian <ticho@gentoo.org>
+  +policyd-weight-0.1.14.4.ebuild:
+  Version bump.
+
+  26 Mar 2007; Andrej Kacian <ticho@gentoo.org>
+  policyd-weight-0.1.14.3.ebuild:
+  Add a warning about verizon.net being blacklisted often.
+
+*policyd-weight-0.1.14.3 (26 Mar 2007)
+
+  26 Mar 2007; Andrej Kacian <ticho@gentoo.org>
+  +files/policyd-weight.init.d, +metadata.xml,
+  +policyd-weight-0.1.14.3.ebuild:
+  Initial import. Ebuild written by Brian E <grknight at scent-team.com> in
+  bug #169646.
+

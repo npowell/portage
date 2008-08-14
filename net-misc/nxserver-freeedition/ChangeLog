@@ -1,0 +1,160 @@
+# ChangeLog for net-misc/nxserver-freeedition
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/nxserver-freeedition/ChangeLog,v 1.30 2008/07/21 15:45:35 voyageur Exp $
+
+*nxserver-freeedition-3.2.0.13 (21 Jul 2008)
+
+  21 Jul 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  -nxserver-freeedition-3.1.0.ebuild, -nxserver-freeedition-3.1.0-r1.ebuild,
+  -nxserver-freeedition-3.2.0-r2.ebuild,
+  +nxserver-freeedition-3.2.0.13.ebuild:
+  Remove old 3.0/3.1 versions, add minor release to ebuild version in latest
+  3.2
+
+*nxserver-freeedition-3.2.0-r2 (16 Jun 2008)
+
+  16 Jun 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  +nxserver-freeedition-3.2.0-r2.ebuild:
+  Maintenance release bump, minor bugfixes
+
+  05 Jun 2008; Peter Volkov <pva@gentoo.org>
+  nxserver-freeedition-3.2.0.ebuild:
+  amd64 stable, bug #222967.
+
+  29 May 2008; Christian Faulhammer <opfer@gentoo.org>
+  nxserver-freeedition-3.2.0.ebuild:
+  x86 stable, bug #222967
+
+*nxserver-freeedition-3.2.0-r1 (28 May 2008)
+
+  28 May 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  +nxserver-freeedition-3.2.0-r1.ebuild:
+  Maintenance release bump, minor bugfixes
+
+*nxserver-freeedition-3.2.0 (09 Apr 2008)
+
+  09 Apr 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  +nxserver-freeedition-3.2.0.ebuild:
+  Version bump, new 3.2.0 series
+
+  03 Apr 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  -files/nxserver-3.0.0-r3-setup.patch,
+  -nxserver-freeedition-3.0.0-r3.ebuild,
+  -nxserver-freeedition-3.0.0-r4.ebuild:
+  Removing 3.0 versions, they depend on vulnerable net-misc/nxnode versions
+
+  19 Mar 2008; Peter Volkov <pva@gentoo.org>
+  nxserver-freeedition-3.1.0-r1.ebuild:
+  amd64 stable, security bug #210317.
+
+  18 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  nxserver-freeedition-3.1.0.ebuild:
+  stable x86, security bug 210317
+
+*nxserver-freeedition-3.1.0-r1 (24 Jan 2008)
+
+  24 Jan 2008; Bernard Cafarelli <voyageur@gentoo.org>
+  +nxserver-freeedition-3.1.0-r1.ebuild:
+  Maintenance release bump
+
+*nxserver-freeedition-3.1.0 (14 Dec 2007)
+
+  14 Dec 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  +nxserver-freeedition-3.1.0.ebuild:
+  Version bump
+
+*nxserver-freeedition-3.0.0-r4 (03 Dec 2007)
+
+  03 Dec 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  +files/nxserver-3.0.0-r4-setup.patch,
+  nxserver-freeedition-3.0.0-r3.ebuild,
+  +nxserver-freeedition-3.0.0-r4.ebuild:
+  Version bump, fix some quoting
+
+  20 Sep 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  -files/nxserver-2.1.0-setup.patch, -files/nxserver-3.0.0-setup.patch,
+  -nxserver-freeedition-2.1.0.ebuild, -nxserver-freeedition-3.0.0-r2.ebuild:
+  Remove vulnerable NX 2.1 versions, security bug #192712
+
+  20 Sep 2007; Robert Buchholz <rbu@gentoo.org>
+  nxserver-freeedition-3.0.0-r3.ebuild:
+  amd64 stable (bug #180040)
+
+  20 Sep 2007; Christian Faulhammer <opfer@gentoo.org>
+  nxserver-freeedition-3.0.0-r3.ebuild:
+  stable x86, security bug 192712
+
+  19 Sep 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  nxserver-freeedition-3.0.0-r3.ebuild:
+  Fix files installation mode, added check on postinst
+
+  18 Sep 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  nxserver-freeedition-3.0.0-r3.ebuild:
+  Fix variables quoting, thanks opfer
+  Also clean up the install section
+
+*nxserver-freeedition-3.0.0-r3 (18 Sep 2007)
+
+  18 Sep 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  +files/nxserver-3.0.0-r3-setup.patch,
+  +nxserver-freeedition-3.0.0-r3.ebuild:
+  Third maintenance release
+  Thanks Timo Gurr <timo.gurr@gmail.com> for the updated setup patch
+
+*nxserver-freeedition-3.0.0-r2 (22 Jul 2007)
+
+  22 Jul 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  -nxserver-freeedition-3.0.0-r1.ebuild,
+  +nxserver-freeedition-3.0.0-r2.ebuild:
+  Second maintenance release
+
+  06 Jul 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  -nxserver-freeedition-3.0.0.ebuild:
+  Removed old version
+
+  03 Jul 2007; Christian Faulhammer <opfer@gentoo.org>
+  nxserver-freeedition-2.1.0.ebuild:
+  stable x86, bug 180040
+
+*nxserver-freeedition-3.0.0-r1 (02 Jul 2007)
+
+  02 Jul 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  +nxserver-freeedition-3.0.0-r1.ebuild:
+  Maintenance release
+
+  02 Jul 2007; Piotr Jaroszyński <peper@gentoo.org>
+  nxserver-freeedition-2.1.0.ebuild, nxserver-freeedition-3.0.0.ebuild:
+  (QA) RESTRICT clean up.
+
+*nxserver-freeedition-3.0.0 (21 Jun 2007)
+
+  21 Jun 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  +files/nxserver-3.0.0-setup.patch, +nxserver-freeedition-3.0.0.ebuild:
+  Version bump, thanks to Timo Gurr <psy@monsterserver.de> in bug #182779
+
+  11 Jun 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  nxserver-freeedition-2.1.0.ebuild:
+  Added missing dependencies, bug #181614
+
+  05 Jun 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  files/nxserver-2.1.0-init:
+  Init script cleanup, thanks to Christian Faulhammer <opfer@gentoo.org>
+
+  12 May 2007; Bernard Cafarelli <voyageur@gentoo.org> metadata.xml:
+  Fixed maintainer in metadata.xml
+
+  28 Apr 2007; Sven Wegener <swegener@gentoo.org>
+  nxserver-freeedition-2.1.0.ebuild:
+  Fix *initd, *confd and *envd calls (#17388, #174266)
+
+  26 Apr 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  nxserver-freeedition-2.1.0.ebuild:
+  Updated blockers on other NX servers
+
+*nxserver-freeedition-2.1.0 (30 Mar 2007)
+
+  30 Mar 2007; Bernard Cafarelli <voyageur@gentoo.org>
+  +files/nxserver-2.1.0-init, +files/nxserver-2.1.0-setup.patch,
+  +metadata.xml, +nxserver-freeedition-2.1.0.ebuild:
+  Initial commit, bug #153866
+

@@ -1,0 +1,63 @@
+# ChangeLog for kde-base/kdepimlibs
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/kde-base/kdepimlibs/ChangeLog,v 1.12 2008/06/09 15:02:43 keytoaster Exp $
+
+  09 Jun 2008; Tobias Heinlein <keytoaster@gentoo.org>
+  -kdepimlibs-4.0.2.ebuild, -kdepimlibs-4.0.3.ebuild:
+  Removed old versions.
+
+*kdepimlibs-4.0.5 (05 Jun 2008)
+
+  05 Jun 2008; Tobias Heinlein <keytoaster@gentoo.org>
+  +kdepimlibs-4.0.5.ebuild:
+  Added the KDE 4.0.5 version of kdepimlibs.
+
+*kdepimlibs-4.0.4 (15 May 2008)
+
+  15 May 2008; Ingmar Vanhassel <ingmar@gentoo.org>
+  +kdepimlibs-4.0.4.ebuild:
+  Added KDE 4.0.4 version of kdepimlibs. Thanks to Jorge Manuel B. S.
+  Vicetto.
+
+*kdepimlibs-4.0.3 (03 Apr 2008)
+
+  03 Apr 2008; Wulf C. Krueger <philantrop@gentoo.org>
+  +kdepimlibs-4.0.3.ebuild:
+  Version bump to KDE 4.0.3. This is still not intended for mainstream so DO
+  NOT KEYWORD IT without talking to the KDE herd first.
+
+  20 Mar 2008; Ingmar Vanhassel <ingmar@gentoo.org>
+  -kdepimlibs-4.0.1.ebuild:
+  Old.
+
+*kdepimlibs-4.0.2 (10 Mar 2008)
+
+  10 Mar 2008; Wulf C. Krueger <philantrop@gentoo.org>
+  +kdepimlibs-4.0.2.ebuild:
+  Version bump to KDE 4.0.2
+
+  05 Mar 2008; Jeroen Roovers <jer@gentoo.org> kdepimlibs-4.0.1.ebuild:
+  Marked ~hppa.
+
+  16 Feb 2008; Ingmar Vanhassel <ingmar@gentoo.org>
+  -kdepimlibs-4.0.0.ebuild:
+  Spring cleaning
+
+*kdepimlibs-4.0.1 (06 Feb 2008)
+
+  06 Feb 2008; Wulf C. Krueger <philantrop@gentoo.org>
+  +kdepimlibs-4.0.1.ebuild:
+  Version bump to KDE 4.0.1.
+
+  20 Jan 2008; Ingmar Vanhassel <ingmar@gentoo.org> kdepimlibs-4.0.0.ebuild:
+  Added missing debug htmlhandbook test USE-flags.
+
+  20 Jan 2008; Ingmar Vanhassel <ingmar@gentoo.org> kdepimlibs-4.0.0.ebuild:
+  Depend on >=app-crypt/gpgme-1.1.6, fixes bug 206724.
+
+*kdepimlibs-4.0.0 (17 Jan 2008)
+
+  17 Jan 2008; Wulf C. Krueger <philantrop@gentoo.org>
+  +kdepimlibs-4.0.0.ebuild:
+  Added KDE 4.0.0's kdepimlibs.
+

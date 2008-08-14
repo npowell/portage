@@ -1,0 +1,25 @@
+# ChangeLog for games-fps/quake3-ra3
+# Copyright 2000-2006 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-fps/quake3-ra3/ChangeLog,v 1.7 2006/10/24 21:18:21 wolf31o2 Exp $
+
+*quake3-ra3-1.76-r1 (24 Oct 2006)
+
+  24 Oct 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  +quake3-ra3-1.76-r1.ebuild:
+  Added new revision for testing which uses the brand-spankin-new
+  games-mods.eclass to reduce ebuild code.
+
+*quake3-ra3-1.76 (18 Aug 2004)
+
+  18 Aug 2004; Chris Gianelloni <wolf31o2@gentoo.org> +quake3-ra3-1.76.ebuild:
+  Added ebuild for version 1.76 and closing bug #54855.
+
+*quake3-ra3-1.7 (02 Sep 2003)
+
+  02 Sep 2003; Mike Frysinger <vapier@gentoo.org> :
+  Version bump #27572.
+
+*quake3-ra3-1.65 (02 Jul 2003)
+
+  02 Jul 2003; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by Erik Swanson <gentoo-bugzilla@erik.swanson.name> #20306.

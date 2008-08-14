@@ -1,0 +1,82 @@
+# ChangeLog for app-emulation/hercules
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/hercules/ChangeLog,v 1.23 2008/07/30 16:58:27 cardoe Exp $
+
+  30 Jul 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
+  add GLEP 56 USE flag desc from use.local.desc
+
+  27 Jun 2007; Raúl Porcel <armin76@gentoo.org> hercules-3.04.ebuild:
+  alpha/x86 stable wrt #183080
+
+  27 Jun 2007; Gustavo Zacarias <gustavoz@gentoo.org> hercules-3.04.ebuild:
+  Stable on sparc wrt #183080
+
+  26 Jun 2007; Lars Weiler <pylon@gentoo.org> hercules-3.04.ebuild:
+  Stable on ppc; bug #183080.
+
+  24 Jun 2007; Christoph Mende <angelos@gentoo.org> hercules-3.04.ebuild:
+  Stable on amd64 wrt bug 183080
+
+*hercules-3.05 (24 Jun 2007)
+
+  24 Jun 2007; Mike Frysinger <vapier@gentoo.org> +hercules-3.05.ebuild:
+  Version bump #183079 by Jay Maynard.
+
+*hercules-3.04 (07 Apr 2007)
+
+  07 Apr 2007; Mike Frysinger <vapier@gentoo.org> +hercules-3.04.ebuild:
+  Version bump #116190 by Jay Maynard.
+
+  25 Jan 2007; Marius Mauch <genone@gentoo.org> hercules-2.17.1-r1.ebuild,
+  hercules-3.00.ebuild, hercules-3.01.ebuild, hercules-3.02.ebuild:
+  Replacing einfo with elog
+
+  24 Apr 2005; Michael Hanselmann <hansmi@gentoo.org>
+  hercules-2.17.1-r1.ebuild:
+  Stable on ppc.
+
+  24 Feb 2005; Malcolm Lashley <malc@gentoo.org> :
+  Version bump - add ~amd64 - Bugs #71067 #74192
+
+  10 Apr 2004; Michael Sterrett <mr_bones_@gentoo.org>
+  hercules-2.17.1-r1.ebuild, hercules-3.00.ebuild, hercules-3.01.ebuild:
+  don't assign default to S; tidy
+
+  21 Feb 2004; Heinrich Wendel <lanius@gentoo.org> hercules-3.01.ebuild:
+  bug #41491
+
+*hercules-3.01 (11 Feb 2004)
+
+  11 Feb 2004; Heinrich Wendel <lanius@gentoo.org> hercules-3.01.ebuild:
+  version bump, bug #39612
+
+*hercules-3.00 (12 Oct 2003)
+
+  12 Oct 2003; Heinrich Wendel <lanius@gentoo.org> hercules-2.15.ebuild,
+  hercules-2.17.1.ebuild, hercules-3.00.ebuild:
+  version bump #30926
+
+  04 Oct 2003; Aron Griffis <agriffis@gentoo.org> hercules-2.17.1-r1.ebuild:
+  Stable on alpha
+
+*hercules-2.17.1-r1 (22 Mar 2003)
+
+  22 Mar 2003; Alain Penders <alain@gentoo.org> :
+  Integrated changes provided by Todd Wright <wylie@geekasylum.org>
+
+*hercules-2.17.1 (09 Mar 2003)
+
+  09 Mar 2003; Daniel Ahlberg <aliz@gentoo.org> :
+  Version bump.
+
+*hercules-2.15 (26 Jul 2002)
+
+  26 Jul 2002; Stuart Bouyer <stubear@gentoo.org> hercules-2.15.ebuild :
+
+  Added LICENSE and KEYWORDS="x86" for QA happiness.
+
+*hercules-2.15 (26 Apr 2002)
+
+  26 Apr 2002; Tod Neidt <tod@gentoo.org> hercules-2.15.ebuild :
+ 
+  Initial commit. Ebuild submitted by Todd Wright.

@@ -1,0 +1,66 @@
+# ChangeLog for x11-misc/glipper
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/glipper/ChangeLog,v 1.13 2008/06/18 21:10:28 swegener Exp $
+
+  18 Jun 2008; Sven Wegener <swegener@gentoo.org> -glipper-1.0.ebuild,
+  -glipper-1.0-r1.ebuild:
+  Cleanup.
+
+  29 May 2008; Ali Polatel <hawking@gentoo.org> glipper-1.0.ebuild,
+  glipper-1.0-r1.ebuild, glipper-1.0-r2.ebuild:
+  python_mod_optimize is ROOT aware. Multilib love.
+
+*glipper-1.0-r2 (23 Mar 2008)
+
+  23 Mar 2008; Sven Wegener <swegener@gentoo.org>
+  +files/glipper-1.0-transparent.patch, +glipper-1.0-r2.ebuild:
+  Revision bump, include a patch to make the applet icon transparent, bug
+  #212265.
+
+*glipper-1.0-r1 (03 Jan 2008)
+
+  03 Jan 2008; Sven Wegener <swegener@gentoo.org>
+  +files/glipper-1.0-binary-data.patch, +glipper-1.0-r1.ebuild:
+  Pull in a patch from upstream that should fix binary data clipboard items.
+  This should fix bug #177461.
+
+  22 Sep 2007; Sven Wegener <swegener@gentoo.org> -glipper-0.95.1.ebuild,
+  -glipper-0.95.1-r1.ebuild:
+  Cleanup.
+
+  11 Sep 2007; Sven Wegener <swegener@gentoo.org> glipper-1.0.ebuild:
+  Add missing dependencies, move dependencies to both DEPEND and RDEPEND, bug
+  #176421.
+
+  10 Sep 2007; Sven Wegener <swegener@gentoo.org> glipper-1.0.ebuild:
+  Install gconf schema files.
+
+*glipper-1.0 (09 Sep 2007)
+
+  09 Sep 2007; Sven Wegener <swegener@gentoo.org> +glipper-1.0.ebuild:
+  Version bump.
+
+*glipper-0.95.1-r1 (05 Mar 2007)
+
+  05 Mar 2007; Sven Wegener <swegener@gentoo.org> +glipper-0.95.1-r1.ebuild:
+  Add support for the gnome USE flag, thanks to Oliver Schinagl and Jakub Moc
+  in bug #158590.
+
+  09 Jan 2007; Sven Wegener <swegener@gentoo.org> glipper-0.95.1.ebuild:
+  Add proper autotoold dependency for bug #158535.
+
+  07 Dec 2006; Sven Wegener <swegener@gentoo.org> glipper-0.95.1.ebuild:
+  Add missing gnome-doc-utils dependency, bug #157461.
+
+*glipper-0.95.1 (02 Dec 2006)
+
+  02 Dec 2006; Sven Wegener <swegener@gentoo.org>
+  -files/0.89-as-needed.patch, -glipper-0.89.ebuild, +glipper-0.95.1.ebuild:
+  Version bump.
+
+*glipper-0.89 (09 Nov 2006)
+
+  09 Nov 2006; Sven Wegener <swegener@gentoo.org>
+  +files/0.89-as-needed.patch, +metadata.xml, +glipper-0.89.ebuild:
+  Initial commit, bug #134991. Written by Paul Bredbury, with some
+  modifications by me.

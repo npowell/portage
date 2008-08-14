@@ -1,0 +1,91 @@
+# ChangeLog for sec-policy/selinux-apache
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sec-policy/selinux-apache/ChangeLog,v 1.19 2008/05/25 23:49:57 pebenito Exp $
+
+*selinux-apache-20080525 (25 May 2008)
+
+  25 May 2008; Chris PeBenito <pebenito@gentoo.org>
+  +selinux-apache-20080525.ebuild:
+  New SVN snapshot.
+
+  16 Mar 2008; Chris PeBenito <pebenito@gentoo.org>
+  -selinux-apache-20040925.ebuild, -selinux-apache-20050211.ebuild,
+  -selinux-apache-20061114.ebuild:
+  Remove old ebuilds.
+
+  03 Feb 2008; Chris PeBenito <pebenito@gentoo.org>
+  selinux-apache-20070928.ebuild:
+  Mark stable.
+
+*selinux-apache-20070928 (26 Nov 2007)
+
+  26 Nov 2007; Chris PeBenito <pebenito@gentoo.org>
+  +selinux-apache-20070928.ebuild:
+  New SVN snapshot.
+
+  29 Aug 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing kaiowas from metadata due to his retirement (see #61930 for
+  reference).
+
+  04 Jun 2007; Chris PeBenito <pebenito@gentoo.org>
+  selinux-apache-20070329.ebuild:
+  Mark stable.
+
+*selinux-apache-20070329 (29 Mar 2007)
+
+  29 Mar 2007; Chris PeBenito <pebenito@gentoo.org>
+  +selinux-apache-20070329.ebuild:
+  New SVN snapshot.
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+*selinux-apache-20061114 (15 Nov 2006)
+
+  15 Nov 2006; Chris PeBenito <pebenito@gentoo.org>
+  +selinux-apache-20061114.ebuild:
+  New SVN snapshot.
+
+*selinux-apache-20061008 (09 Oct 2006)
+
+  09 Oct 2006; Chris PeBenito <pebenito@gentoo.org>
+  +selinux-apache-20061008.ebuild:
+  First mainstream reference policy testing release.
+
+  24 Feb 2005; petre rodan <kaiowas@gentoo.org>
+  selinux-apache-20050211.ebuild:
+  mark stable
+
+*selinux-apache-20050211 (11 Feb 2005)
+
+  11 Feb 2005; petre rodan <kaiowas@gentoo.org>
+  -selinux-apache-20040704.ebuild, +selinux-apache-20050211.ebuild:
+  added contexts needed by >=apache-2.0.52-r3 - bug 81365
+
+  23 Nov 2004; petre rodan <kaiowas@gentoo.org>
+  selinux-apache-20040925.ebuild:
+  mark stable
+
+*selinux-apache-20040925 (23 Oct 2004)
+
+  23 Oct 2004; petre rodan <kaiowas@gentoo.org> metadata.xml,
+  +selinux-apache-20040925.ebuild:
+  update needed by base-policy-20041023
+
+*selinux-apache-20040704 (04 Jul 2004)
+
+  04 Jul 2004; Chris PeBenito <pebenito@gentoo.org>
+  +selinux-apache-20040704.ebuild:
+  Sysadmfile cleanup, and updates from #52730 and #55006.
+
+*selinux-apache-20040426 (26 Apr 2004)
+
+  26 Apr 2004; Chris PeBenito <pebenito@gentoo.org>
+  +selinux-apache-20040426.ebuild:
+  Fix for 2004.1
+
+*selinux-apache-20040103 (03 Jan 2004)
+
+  03 Jan 2004; Chris PeBenito <pebenito@gentoo.org> :
+  Initial commit.
+

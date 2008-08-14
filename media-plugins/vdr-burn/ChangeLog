@@ -1,0 +1,152 @@
+# ChangeLog for media-plugins/vdr-burn
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-burn/ChangeLog,v 1.30 2008/08/01 19:27:50 cardoe Exp $
+
+  01 Aug 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
+  add GLEP 56 USE flag desc from use.local.desc
+
+  15 Jun 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/0.1.0_pre21/vdr-burn-0.1.0_pre21-gcc43.patch,
+  vdr-burn-0.1.0_pre21-r4.ebuild:
+  patch to fix gcc-4.3.x compile problems; thanks to M.Brakemeier on bug
+  #227161
+
+*vdr-burn-0.1.0_pre21-r4 (15 May 2008)
+
+  15 May 2008; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-burn-0.0.9-r2.ebuild, vdr-burn-0.0.9-r3.ebuild,
+  -vdr-burn-0.1.0_pre21-r3.ebuild, +vdr-burn-0.1.0_pre21-r4.ebuild:
+  Let vdr-burn-0.1.0_pre21 now depend on projectx-0.90.4.00-r4 as that fixes
+  very ugly hangups due to log parsing problems. Quoting cleanup.
+
+  29 Mar 2008; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-burn-0.1.0_pre21-r3.ebuild:
+  Do depend on virtual/eject instead of sys-apps/eject.
+
+  25 Mar 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-burn-0.1.0_pre21-r3.ebuild:
+  added sys-apps/eject to fix RDEPEND, reported by T.Reinhold; qouting fixed
+
+  27 Sep 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  -vdr-burn-0.1.0_pre21-r2.ebuild, vdr-burn-0.1.0_pre21-r3.ebuild:
+  fixed build_with_use jpeg depend on media-libs/gd, reported by
+  magicteddy@vdrportal.de; cleanup
+
+*vdr-burn-0.1.0_pre21-r3 (30 Jun 2007)
+
+  30 Jun 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +files/0.1.0_pre21/requantfactor.diff,
+  +files/0.1.0_pre21/charset-vdr-1.5.diff, +files/0.1.0_pre21/series,
+  +vdr-burn-0.1.0_pre21-r3.ebuild:
+  Corrected calculation of requant factor. Added patch to get correct charset
+  for vdr-1.5.
+
+  22 May 2007; Matthias Schwarzott <zzam@gentoo.org>
+  files/0.1.0_pre21/rc-addon.sh:
+  Removed bashism.
+
+  08 May 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/0.1.0_pre21/vdr-burn-0.1.0_pre21_setdefaults.diff,
+  vdr-burn-0.1.0_pre21-r2.ebuild:
+  new default-setting.diff; add transcode to rdepend; fixed install of dmh
+  counter/standart file
+
+  08 May 2007; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-burn-0.1.0_pre21-r2.ebuild:
+  Depend on virtual/cdrtools, instead of directly on app-cdr/cdrtools, Bug
+  #177564.
+
+  07 May 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  files/0.1.0_pre21/i18n.diff, files/0.1.0_pre21/menuburn.diff,
+  files/0.1.0_pre21/menuitems.diff:
+  removed unneeded patchlines for header
+
+*vdr-burn-0.1.0_pre21-r2 (07 May 2007)
+
+  07 May 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/0.1.0_pre21/confd, +files/0.1.0_pre21/i18n.diff,
+  +files/0.1.0_pre21/menuburn.diff, +files/0.1.0_pre21/menuitems.diff,
+  +files/0.1.0_pre21/vdr-burn-0.1.0_pre21-gentoo.diff,
+  +files/0.1.0_pre21/rc-addon.sh,
+  +files/0.1.0_pre21/vdr-burn-0.1.0_pre21_RemovePath-fix.diff,
+  +vdr-burn-0.1.0_pre21-r2.ebuild:
+  version bump; total rewrite of vdr-burn sources
+
+  17 Apr 2007; Matthias Schwarzott <zzam@gentoo.org>
+  files/rc-addon-0.0.9.sh:
+  Removed bash specific stuff.
+
+  17 Feb 2007; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-burn-0.0.9-r2.ebuild, vdr-burn-0.0.9-r3.ebuild:
+  No longer check ROOT for header-files, Bug #167285.
+
+  16 Jan 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-burn-0.0.9-r2.ebuild:
+  fixed typo in depend
+
+  16 Jan 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-burn-0.0.9-r2.ebuild:
+  changed depend requant to m2vrequantizer
+
+*vdr-burn-0.0.9-r3 (15 Jan 2007)
+
+  15 Jan 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +vdr-burn-0.0.9-r3.ebuild:
+  changed/fixed depend to media-video/m2vrequantizer-20060306
+
+  05 Jan 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-burn-0.0.9-r2.ebuild:
+  einfo converted to elog
+
+  07 Sep 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-burn-0.0.9-r2.ebuild:
+  Fixed ebuild, it missed a call to vdr-plugin_pkg_setup, thanks to erm67 from
+  #gentoo-vdr for reporting. Removed useless png from IUSE.
+
+  26 Aug 2006; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-burn-0.0.9-r2.ebuild:
+  check for png2yuv added
+
+  15 Aug 2006; Matthias Schwarzott <zzam@gentoo.org> metadata.xml:
+  Assigned to Gentoo VDR Project.
+
+  21 May 2006; Joerg Bornkessel <hd_brummy@gentoo.org> +files/confd-0.0.9,
+  +files/rc-addon-0.0.9.sh, -files/confd, -files/rc-addon.sh,
+  vdr-burn-0.0.9-r2.ebuild:
+  DEPEND/RDEPEND fixed; changed/added versions depended confd rc-addon handling
+
+  08 May 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-burn-0.0.9-r2.ebuild:
+  added eutils to inherit
+
+  05 May 2006; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-burn-0.0.9-r2.ebuild:
+  depend for patch changed
+
+  04 May 2006; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-burn-0.0.9-r2.ebuild:
+  fix typo in src_install
+
+  04 May 2006; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/vdr-burn-0.0.9_vdr-1.3.47-compile.diff, vdr-burn-0.0.9-r2.ebuild:
+  add patch to fix compile Problems on >=media-video/vdr-1.3.47
+
+  01 Apr 2006; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-burn-0.0.9-r2.ebuild:
+  small typo fixed in pkg_postinst
+
+  01 Apr 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-burn-0.0.9-r2.ebuild:
+  Marked stable on x86
+
+  06 Mar 2006; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-burn-templates-0.0.1.ebuild:
+  changed path/link for a better work with vdr-image plugin
+
+*vdr-burn-0.0.9-r2 (05 Mar 2006)
+
+  05 Mar 2006; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/vdr-burn-0.0.9-gentoo.diff, +files/confd, +files/rc-addon.sh,
+  +files/reccmds.burn.conf, +metadata.xml, +vdr-burn-0.0.9-r2.ebuild:
+  import ebuild from gentoo.de cvs, rewritten
+

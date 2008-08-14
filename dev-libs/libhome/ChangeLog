@@ -1,0 +1,38 @@
+# ChangeLog for dev-libs/libhome
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/libhome/ChangeLog,v 1.8 2008/06/10 09:29:48 flameeyes Exp $
+
+  10 Jun 2008; Diego Pettenò <flameeyes@gentoo.org>
+  -files/libhome-0.10.1-fixlt.patch, libhome-0.10.1.ebuild:
+  Use sed rather than a patch to fix the bug, so that it's not thrown off by
+  CVS keywords.
+
+  09 Jun 2008; Diego Pettenò <flameeyes@gentoo.org>
+  files/libhome-0.10.1-fixlt.patch:
+  Fix patch to avoid CVS keywords.
+
+  09 Jun 2008; Diego Pettenò <flameeyes@gentoo.org>
+  +files/libhome-0.10.1-fixlt.patch, libhome-0.10.1.ebuild:
+  Add a patch to fix bug #225579. Yes you can shoot yourself in the foot
+  with autotools doing crazy stuff.
+
+  01 Jun 2008; Benedikt Böhm <hollow@gentoo.org> libhome-0.10.1.ebuild:
+  fix #220887
+
+  21 May 2008; Tiziano Müller <dev-zero@gentoo.org> libhome-0.10.1.ebuild:
+  Changed dependency for postgresql from dev-db/postgresql to
+  virtual/postgresql-server
+
+  14 May 2008; Diego Pettenò <flameeyes@gentoo.org> libhome-0.10.1.ebuild:
+  Depend on virtual/pam as the code builds fine with OpenPAM.
+
+  23 Mar 2008; Benedikt Böhm <hollow@gentoo.org> metadata.xml:
+  fix metadata
+
+*libhome-0.10.1 (09 Sep 2007)
+
+  09 Sep 2007; Benedikt Böhm <hollow@gentoo.org>
+  +files/libhome-0.10.1-Makefile.patch, +metadata.xml,
+  +libhome-0.10.1.ebuild:
+  initial version
+

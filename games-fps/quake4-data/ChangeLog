@@ -1,0 +1,41 @@
+# ChangeLog for games-fps/quake4-data
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-fps/quake4-data/ChangeLog,v 1.8 2008/06/05 20:29:55 wolf31o2 Exp $
+
+  05 Jun 2008; Chris Gianelloni <wolf31o2@gentoo.org> metadata.xml:
+  Removing myself as maintainer.
+
+  24 Oct 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  quake4-data-1.0.2147.12.ebuild:
+  Moved cdrom_get_cds to src_install since binary packages don't require the
+  original media to install.
+
+  27 Sep 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  quake4-data-1.0.2147.12.ebuild:
+  Added games-fps/quake4-bin to PDEPEND so it will get merged if someone does
+  an 'emerge quake4-data'.
+
+  27 Sep 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  quake4-data-1.0.2147.12.ebuild:
+  Removed games-fps/quake4-bin from RDEPEND due to the new behavior in portage
+  which makes circular dependencies such as this, even when they are valid, an
+  error that causes the merge to fail. Closing bug #149345.
+
+  31 Mar 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  quake4-data-1.0.2147.12.ebuild:
+  Changed nostrip to strip.
+
+  22 Jan 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  quake4-data-1.0.2147.12.ebuild:
+  Marking stable on amd64.
+
+  22 Jan 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  quake4-data-1.0.2147.12.ebuild:
+  Marked stable on x86 and closing bug #119970.
+
+*quake4-data-1.0.2147.12 (24 Oct 2005)
+
+  24 Oct 2005; Chris Gianelloni <wolf31o2@gentoo.org> +metadata.xml,
+  +quake4-data-1.0.2147.12.ebuild:
+  Initial import.  Ebuilds by me.  Closing bug #109825.
+

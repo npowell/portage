@@ -1,0 +1,27 @@
+# ChangeLog for x11-drivers/xf86-video-impact
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-drivers/xf86-video-impact/ChangeLog,v 1.5 2008/02/24 02:45:53 dberkholz Exp $
+
+  24 Feb 2008; Donnie Berkholz <dberkholz@gentoo.org>; ChangeLog:
+  Update my email.
+
+  11 Oct 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  xf86-video-impact-0.2.0.ebuild:
+  Update description to be less generic.
+
+  01 Jul 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  xf86-video-impact-0.2.0.ebuild:
+  stable on mips
+
+  28 Jun 2006; Stephen P. Becker <geoman@gentoo.org>
+  +files/xf86-video-impact-0.2.0-DCACHE.patch,
+  xf86-video-impact-0.2.0.ebuild:
+  add patch to fix compilation on non-mips arches where linux-mips tree
+  headers are not present
+
+*xf86-video-impact-0.2.0 (28 Jun 2006)
+
+  28 Jun 2006; Stephen P. Becker <geoman@gentoo.org> +metadata.xml,
+  +xf86-video-impact-0.2.0.ebuild:
+  initial commit, adding ebuild for impact driver for sgi ip28 and ip30 machines
+

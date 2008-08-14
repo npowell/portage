@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+
+<pkgmetadata>
+	<herd>kernel</herd>
+	<maintainer>
+		<email>kernel@gentoo.org</email>
+		<name>Gentoo kernel team</name>
+	</maintainer>
+	<longdescription>
+		Vanilla prepatch/rc sources, for people who like to have the latest kernel available
+	</longdescription>
+</pkgmetadata>

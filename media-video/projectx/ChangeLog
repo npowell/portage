@@ -1,0 +1,94 @@
+# ChangeLog for media-video/projectx
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/projectx/ChangeLog,v 1.30 2008/05/15 08:49:16 zzam Exp $
+
+*projectx-0.90.4.00-r4 (15 May 2008)
+
+  15 May 2008; Matthias Schwarzott <zzam@gentoo.org>
+  +files/projectx-0.90.4.00-stdout-corrupt.diff,
+  +projectx-0.90.4.00-r4.ebuild:
+  Add a patch to clean up the stdout of the non-gui version. This makes the
+  output parsable by other software, especially by vdr-burn, solving some
+  strange bugs there.
+
+  03 Apr 2008; Brent Baude <ranger@gentoo.org> projectx-0.90.4.00-r3.ebuild:
+  stable ppc, bug 208138
+
+  28 Mar 2008; Markus Meier <maekke@gentoo.org>
+  projectx-0.90.4.00-r3.ebuild:
+  amd64 stable, bug #208138
+
+  24 Feb 2008; Brent Baude <ranger@gentoo.org> projectx-0.90.4.00-r3.ebuild:
+  stable ppc64, bug 208138
+
+  16 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  projectx-0.90.4.00-r3.ebuild:
+  stable x86, bug 208138
+
+  30 Oct 2007; Petteri Räty <betelgeuse@gentoo.org>
+  -projectx-0.90.4.00-r2.ebuild:
+  Remove old revision.
+
+  30 Oct 2007; Petteri Räty <betelgeuse@gentoo.org>
+  projectx-0.90.4.00-r3.ebuild:
+  Relax dev-java/browserlauncher2 dependency to match 1.3 too.
+
+*projectx-0.90.4.00-r3 (01 May 2007)
+
+  01 May 2007; Stefan Briesenick <sbriesen@gentoo.org>
+  +projectx-0.90.4.00-r3.ebuild:
+  added patches (BrowserLauncher2, subtitle clut, subtitle charset), added
+  fast IDCT implementation.
+
+  11 Mar 2007; Stefan Briesenick <sbriesen@gentoo.org>
+  files/build-0.90.4.xml, projectx-0.90.4.00-r2.ebuild:
+  build.xml + ebuild cleanups.
+
+  11 Mar 2007; Stefan Briesenick <sbriesen@gentoo.org>
+  -files/build-0.90.3.xml, -projectx-0.90.3.00.ebuild,
+  -projectx-0.90.3.01.ebuild, -projectx-0.90.4.00.ebuild,
+  -projectx-0.90.4.00-r1.ebuild:
+  removed old versions.
+
+  27 Dec 2006; Markus Rothe <corsair@gentoo.org> projectx-0.90.3.00.ebuild,
+  projectx-0.90.3.01.ebuild, projectx-0.90.4.00.ebuild,
+  projectx-0.90.4.00-r1.ebuild, projectx-0.90.4.00-r2.ebuild:
+  Added ~ppc64
+
+  22 Jul 2006; Krzysiek Pawlik <nelchael@gentoo.org>
+  projectx-0.90.4.00-r1.ebuild, projectx-0.90.4.00-r2.ebuild:
+  ant_src_unpack -> src_unpack
+
+*projectx-0.90.4.00-r2 (10 Jul 2006)
+
+  10 Jul 2006; Stefan Briesenick <sbriesen@gentoo.org>
+  +projectx-0.90.4.00-r2.ebuild:
+  Always create 'projectx_nogui' wrapper script and symlink 'projectx'
+  corresponding to the 'X' use-flag either to 'projectx_gui' or
+  'projectx_nogui', solving bug #139883.
+
+*projectx-0.90.4.00-r1 (05 Jul 2006)
+
+  05 Jul 2006; Stefan Briesenick <sbriesen@gentoo.org>
+  +projectx-0.90.4.00-r1.ebuild:
+  converted ebuild to use new java-pkg-2 and java-ant-2 eclasses.
+
+*projectx-0.90.4.00 (02 Apr 2006)
+
+  02 Apr 2006; Stefan Briesenick <sbriesen@gentoo.org>
+  +files/build-0.90.4.xml, +projectx-0.90.4.00.ebuild:
+  version bump, internal ebuild enhancements, solving bug #128167.
+
+*projectx-0.90.3.01 (06 Feb 2006)
+
+  06 Feb 2006; Stefan Briesenick <sbriesen@gentoo.org>
+  +projectx-0.90.3.01.ebuild:
+  version bump.
+
+*projectx-0.90.3.00 (21 Jan 2006)
+
+  21 Jan 2006; Stefan Briesenick <sbriesen@gentoo.org>
+  +files/build-0.90.3.xml, +metadata.xml, +projectx-0.90.3.00.ebuild:
+  initial (re-)commit, using same keywords as old removed package. solving bug
+  #108993.
+

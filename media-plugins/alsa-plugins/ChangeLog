@@ -1,0 +1,357 @@
+# ChangeLog for media-plugins/alsa-plugins
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/alsa-plugins/ChangeLog,v 1.78 2008/08/06 22:37:28 yngwin Exp $
+
+*alsa-plugins-1.0.17-r1 (06 Aug 2008)
+
+  06 Aug 2008; Ben de Groot <yngwin@gentoo.org> +files/ffmpeg-headers.patch,
+  +alsa-plugins-1.0.17-r1.ebuild:
+  Adding patch to detect new ffmpeg headers location. Thanks to Rafał
+  Mużyło and Martin von Gagern in bug 218088.
+
+  03 Aug 2008; Petteri Räty <betelgeuse@gentoo.org>
+  alsa-plugins-1.0.14.ebuild, alsa-plugins-1.0.16.ebuild:
+  ffmpeg support doesn't work with latest ffmpeg so require an old version
+
+*alsa-plugins-1.0.17 (02 Aug 2008)
+
+  02 Aug 2008; Petteri Räty <betelgeuse@gentoo.org>
+  +files/alsa-plugins-1.0.17-automagic.patch, +alsa-plugins-1.0.17.ebuild:
+  Version bump. Fixes bug #227043. Thanks to chutzpah for the help.
+
+  05 Jun 2008; Raúl Porcel <armin76@gentoo.org> alsa-plugins-1.0.16.ebuild:
+  ia64 stable
+
+  13 May 2008; Steve Dibb <beandog@gentoo.org> alsa-plugins-1.0.16.ebuild:
+  amd64 stable, bug 217075
+
+  18 Apr 2008; Ferris McCormick <fmccor@gentoo.org>
+  alsa-plugins-1.0.16.ebuild:
+  Sparc stable, Bug #217075.
+
+  16 Apr 2008; Tobias Klausmann <klausman@gentoo.org>
+  alsa-plugins-1.0.16.ebuild:
+  Stable on alpha, bug #217075
+
+  15 Apr 2008; Jeroen Roovers <jer@gentoo.org> alsa-plugins-1.0.16.ebuild:
+  Stable for HPPA (bug #217075).
+
+  12 Apr 2008; nixnut <nixnut@gentoo.org> alsa-plugins-1.0.16.ebuild:
+  Stable on ppc wrt bug 217075
+
+  12 Apr 2008; Mike Doty <kingtaco@gentoo.org> alsa-plugins-1.0.16.ebuild:
+  x86 stable, bug 217075
+
+  11 Apr 2008; Markus Rothe <corsair@gentoo.org> alsa-plugins-1.0.16.ebuild:
+  Stable on ppc64; bug #217075
+
+*alsa-plugins-1.0.16 (13 Mar 2008)
+
+  13 Mar 2008; Tony Vroon <chainsaw@gentoo.org> +alsa-plugins-1.0.16.ebuild:
+  Version bump, for bug #210249.
+
+*alsa-plugins-1.0.16_rc1 (31 Jan 2008)
+
+  31 Jan 2008; Tony Vroon <chainsaw@gentoo.org>
+  +alsa-plugins-1.0.16_rc1.ebuild:
+  Version bump, for bug #207427.
+
+  24 Oct 2007; Raúl Porcel <armin76@gentoo.org> alsa-plugins-1.0.14.ebuild:
+  alpha/ia64 stable wrt #189155
+
+  24 Oct 2007; Christian Heim <phreak@gentoo.org>
+  -alsa-plugins-1.0.11.ebuild, -alsa-plugins-1.0.14_rc1-r2.ebuild,
+  -alsa-plugins-1.0.14_rc2.ebuild, -alsa-plugins-1.0.14_rc3.ebuild,
+  -alsa-plugins-1.0.14_rc4.ebuild:
+  Cleaning up old ebuilds.
+
+*alsa-plugins-1.0.14-r1 (20 Oct 2007)
+
+  20 Oct 2007; Christian Heim <phreak@gentoo.org>
+  +alsa-plugins-1.0.14-r1.ebuild:
+  Backport the speex changes from #193768 to 1.0.14.
+
+  20 Oct 2007; Christian Heim <phreak@gentoo.org>
+  alsa-plugins-1.0.15.ebuild:
+  Fixing the linking against an installed media-libs/speex (automagic
+  dependency - #193768 thanks to Sybolt de Boer <sybolt at xs4all.nl> and
+  Diego).
+
+*alsa-plugins-1.0.15 (18 Oct 2007)
+
+  18 Oct 2007; Christian Heim <phreak@gentoo.org>
+  +alsa-plugins-1.0.15.ebuild:
+  Version bump, finally at 1.0.15.
+
+  17 Sep 2007; Christian Heim <phreak@gentoo.org>
+  alsa-plugins-1.0.14.ebuild:
+  Add missing speexrate.txt to /usr/share/doc (#189554 thanks to octoploid
+  <cryptooctoploid at gmail.com>).
+
+  10 Sep 2007; Jeroen Roovers <jer@gentoo.org> alsa-plugins-1.0.14.ebuild:
+  Stable for HPPA (bug #189155).
+
+  08 Sep 2007; Joseph Jezak <josejx@gentoo.org> alsa-plugins-1.0.14.ebuild:
+  Marked ppc/ppc64 for bug #189155.
+
+  27 Aug 2007; Jurek Bartuszek <jurek@gentoo.org>
+  alsa-plugins-1.0.14.ebuild:
+  x86 stable (bug #189155)
+
+  25 Aug 2007; Steve Dibb <beandog@gentoo.org> alsa-plugins-1.0.14.ebuild:
+  amd64 stable
+
+  16 Aug 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  alsa-plugins-1.0.14.ebuild:
+  Stable on sparc
+
+*alsa-plugins-1.0.14 (27 Jun 2007)
+
+  27 Jun 2007; Tony Vroon <chainsaw@gentoo.org> +alsa-plugins-1.0.14.ebuild:
+  Version bump to 1.0.14 final as requested in bug #181042.
+
+*alsa-plugins-1.0.14_rc4 (07 May 2007)
+
+  07 May 2007; Stefan Schweizer <genstef@gentoo.org>
+  +alsa-plugins-1.0.14_rc4.ebuild:
+  version bump
+
+  01 May 2007; Markus Rothe <corsair@gentoo.org>
+  alsa-plugins-1.0.14_rc2.ebuild:
+  Stable on ppc64; bug #175141
+
+  26 Apr 2007; Steve Dibb <beandog@gentoo.org>
+  alsa-plugins-1.0.14_rc2.ebuild:
+  amd64 stable, bug 175141
+
+  22 Apr 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  alsa-plugins-1.0.14_rc2.ebuild:
+  ppc stable, bug #175141
+
+  19 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  alsa-plugins-1.0.14_rc3.ebuild:
+  Stable on sparc wrt #175141
+
+*alsa-plugins-1.0.14_rc3 (17 Mar 2007)
+
+  17 Mar 2007; Petteri Räty <betelgeuse@gentoo.org>
+  +files/1.0.14_rc3-gcd.h, +alsa-plugins-1.0.14_rc3.ebuild:
+  Version bump. Thanks to Diego Pettenò <flameeyes@gmail.com>.
+
+  11 Feb 2007; Simon Stelling <blubb@gentoo.org>
+  alsa-plugins-1.0.14_rc1-r1.ebuild:
+  stable on amd64; bug 158678
+
+  05 Feb 2007; Chris Gianelloni <wolf31o2@gentoo.org>
+  alsa-plugins-1.0.14_rc1-r1.ebuild:
+  Stable on alpha wrt bug #158678.
+
+  23 Jan 2007; Jeroen Roovers <jer@gentoo.org>
+  alsa-plugins-1.0.14_rc1-r1.ebuild:
+  Stable for HPPA (bug #158678).
+
+*alsa-plugins-1.0.14_rc2 (16 Jan 2007)
+
+  16 Jan 2007; Diego Pettenò <flameeyes@gentoo.org>
+  +alsa-plugins-1.0.14_rc2.ebuild:
+  Version bump.
+
+  14 Jan 2007; Joseph Jezak <josejx@gentoo.org>
+  alsa-plugins-1.0.14_rc1-r1.ebuild:
+  Marked ppc stable for bug #158678.
+
+  09 Jan 2007; Markus Rothe <corsair@gentoo.org>
+  alsa-plugins-1.0.14_rc1-r1.ebuild:
+  Stable on ppc64; bug #158678
+
+  08 Jan 2007; Diego Pettenò <flameeyes@gentoo.org>
+  alsa-plugins-1.0.11.ebuild, alsa-plugins-1.0.13.ebuild,
+  alsa-plugins-1.0.14_rc1-r1.ebuild:
+  Remove the ffmpeg useflag and disable avcodec support in all previous
+  versions of alsa-plugins as the a52 plugin is broken till 1.0.14_rc1
+  included (fixed in our -r2).
+
+*alsa-plugins-1.0.14_rc1-r2 (08 Jan 2007)
+
+  08 Jan 2007; Diego Pettenò <flameeyes@gentoo.org>
+  +files/alsa-plugins-1.0.14_rc1-init-ffmpeg.patch,
+  +alsa-plugins-1.0.14_rc1-r2.ebuild:
+  Add patch that initialises FFmpeg and allows the a52 plugin to actually work.
+
+  04 Jan 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  alsa-plugins-1.0.14_rc1-r1.ebuild:
+  Stable on sparc wrt #158678
+
+  04 Jan 2007; Christian Faulhammer <opfer@gentoo.org>
+  alsa-plugins-1.0.14_rc1-r1.ebuild:
+  stable x86, bug #158678
+
+  26 Dec 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +files/alsa-plugins-1.0.12-automagic.patch,
+  -files/alsa-plugins-1.0.12_rc1-automagic.patch:
+  The wrong patch was removed, restore and close bug #158912, thanks to Carl
+  Fongheiser for reporting.
+
+  21 Dec 2006; Bryan Østergaard <kloeri@gentoo.org>
+  alsa-plugins-1.0.13.ebuild:
+  Stable on Alpha + IA64.
+
+  21 Dec 2006; Diego Pettenò <flameeyes@gentoo.org>
+  -files/alsa-plugins-1.0.12-automagic.patch, -alsa-plugins-1.0.12.ebuild,
+  -alsa-plugins-1.0.14_rc1.ebuild:
+  Winter cleaning, so to let arch teams know that they need to hurry up on
+  cleaning after themselves.
+
+*alsa-plugins-1.0.14_rc1-r1 (11 Dec 2006)
+
+  11 Dec 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +alsa-plugins-1.0.14_rc1-r1.ebuild:
+  Bump to 1.0.14_rc1a.
+
+*alsa-plugins-1.0.14_rc1 (11 Dec 2006)
+
+  11 Dec 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +files/alsa-plugins-1.0.14_rc1-automagic.patch,
+  +alsa-plugins-1.0.14_rc1.ebuild:
+  Version bump.
+
+  25 Nov 2006; Bryan Østergaard <kloeri@gentoo.org>
+  alsa-plugins-1.0.13.ebuild:
+  Add ~alpha keyword.
+
+  13 Nov 2006; Joseph Jezak <josejx@gentoo.org> alsa-plugins-1.0.13.ebuild:
+  Marked ppc stable.
+
+  08 Nov 2006; Jeroen Roovers <jer@gentoo.org> alsa-plugins-1.0.13.ebuild:
+  Marked ~hppa (bug #150540).
+
+  25 Oct 2006; Joshua Jackson <tsunam@gentoo.org>
+  alsa-plugins-1.0.13.ebuild:
+  Stable x86; bug #150540
+
+  24 Oct 2006; Simon Stelling <blubb@gentoo.org> alsa-plugins-1.0.11.ebuild:
+  stable on amd64
+
+  22 Oct 2006; Markus Rothe <corsair@gentoo.org> alsa-plugins-1.0.13.ebuild:
+  Stable on ppc64; bug #150540
+
+  20 Oct 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  alsa-plugins-1.0.13.ebuild:
+  Stable on sparc wrt #150540
+
+  19 Oct 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  alsa-plugins-1.0.12.ebuild, alsa-plugins-1.0.13.ebuild:
+  Keyworded ~sparc wrt #141727
+
+  18 Oct 2006; Joshua Jackson <tsunam@gentoo.org>
+  alsa-plugins-1.0.11.ebuild:
+  Stable x86;bug #150540
+
+  14 Oct 2006; Aron Griffis <agriffis@gentoo.org>
+  alsa-plugins-1.0.11.ebuild, alsa-plugins-1.0.12.ebuild,
+  alsa-plugins-1.0.13.ebuild:
+  Mark 1.0.11 stable on ia64, mark 1.0.13 1.0.12 ~ia64. #150540
+
+  11 Oct 2006; Markus Rothe <corsair@gentoo.org> alsa-plugins-1.0.11.ebuild:
+  Stable on ppc64; bug #150540
+
+  10 Oct 2006; Jeroen Roovers <jer@gentoo.org> alsa-plugins-1.0.11.ebuild:
+  Stable for HPPA (bug #150540).
+
+  09 Oct 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  alsa-plugins-1.0.11.ebuild:
+  Stable on sparc wrt #150540
+
+  09 Oct 2006; Luca Barbato <lu_zero@gentoo.org> alsa-plugins-1.0.11.ebuild:
+  Marked ppc
+
+  05 Oct 2006; Joseph Jezak <josejx@gentoo.org> alsa-plugins-1.0.12.ebuild,
+  alsa-plugins-1.0.13.ebuild:
+  Marked ~ppc for bug #141727.
+
+  02 Oct 2006; Diego Pettenò <flameeyes@gentoo.org> metadata.xml:
+  Move maintainership over to new alsa herd.
+
+  01 Oct 2006; Diego Pettenò <flameeyes@gentoo.org>
+  -alsa-plugins-1.0.13_rc2.ebuild:
+  Remove 1.0.13 release candidates.
+
+*alsa-plugins-1.0.13 (30 Sep 2006)
+
+  30 Sep 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +alsa-plugins-1.0.13.ebuild:
+  Version bump.
+
+  24 Sep 2006; Diego Pettenò <flameeyes@gentoo.org>
+  alsa-plugins-1.0.11.ebuild, alsa-plugins-1.0.12.ebuild,
+  alsa-plugins-1.0.13_rc2.ebuild:
+  Fix the autotools version dependencies.
+
+*alsa-plugins-1.0.13_rc2 (16 Sep 2006)
+
+  16 Sep 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +alsa-plugins-1.0.13_rc2.ebuild:
+  Version bump to latest rc.
+
+  31 Aug 2006; Diego Pettenò <flameeyes@gentoo.org>
+  alsa-plugins-1.0.12.ebuild:
+  Remove pkg_postinst as it's not needed anymore.
+
+*alsa-plugins-1.0.12 (31 Aug 2006)
+
+  31 Aug 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +files/alsa-plugins-1.0.12-automagic.patch,
+  -alsa-plugins-1.0.12_rc1.ebuild, -alsa-plugins-1.0.12_rc1-r1.ebuild,
+  +alsa-plugins-1.0.12.ebuild:
+  Version bump to latest version, and remove release candidate.
+
+  11 Aug 2006; Markus Rothe <corsair@gentoo.org>
+  alsa-plugins-1.0.12_rc1-r1.ebuild:
+  Added ~ppc64; bug #141727
+
+  26 Jul 2006; Diego Pettenò <flameeyes@gentoo.org>
+  alsa-plugins-1.0.12_rc1.ebuild, alsa-plugins-1.0.12_rc1-r1.ebuild:
+  Require 1.0.12 alsa-lib, although upstream didn't change the requirements in
+  the configure file, it fails to build otherwise.
+
+  22 Jul 2006; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  alsa-plugins-1.0.12_rc1-r1.ebuild:
+  mark ~x86
+
+*alsa-plugins-1.0.12_rc1-r1 (17 Jul 2006)
+
+  17 Jul 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +alsa-plugins-1.0.12_rc1-r1.ebuild:
+  Add support for PulseAudio plugin (by using polyp plugin as the new renamed
+  plugin isn't released yet), and debug useflag to disable asserts and other
+  debugging code.
+
+*alsa-plugins-1.0.12_rc1 (23 Jun 2006)
+
+  23 Jun 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +files/alsa-plugins-1.0.12_rc1-automagic.patch,
+  +alsa-plugins-1.0.12_rc1.ebuild:
+  Version bump to 1.0.12_rc1 version.
+
+  01 May 2006; Joseph Jezak <josejx@gentoo.org> alsa-plugins-1.0.11.ebuild:
+  Marked ~ppc for bug #131082.
+
+  30 Apr 2006; Mark Loeser <halcy0n@gentoo.org> alsa-plugins-1.0.11.ebuild:
+  Marked ~x86; bug #131082
+
+  26 Apr 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  alsa-plugins-1.0.11.ebuild:
+  ~sparc'ed wrt #131082
+
+  24 Apr 2006; Markus Rothe <corsair@gentoo.org> alsa-plugins-1.0.11.ebuild:
+  Added ~ppc64; bug #131082
+
+*alsa-plugins-1.0.11 (24 Apr 2006)
+
+  24 Apr 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +files/alsa-plugins-1.0.11-automagic.patch, +metadata.xml,
+  +alsa-plugins-1.0.11.ebuild:
+  New package alsa-plugins, built from upstream's alsa-plugins tarball.
+  Features jack, resampling, a52 and other plugins. Supersedes
+  media-plugins/alsa-jack.
+

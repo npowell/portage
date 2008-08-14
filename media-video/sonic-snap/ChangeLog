@@ -1,0 +1,25 @@
+# ChangeLog for media-video/sonic-snap
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/sonic-snap/ChangeLog,v 1.5 2007/11/27 11:51:42 zzam Exp $
+
+  27 Nov 2007; Matthias Schwarzott <zzam@gentoo.org> sonic-snap-1.5.ebuild:
+  Fixed quoting.
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  sonic-snap-1.5.ebuild:
+  Drop virtual/x11 references.
+
+  05 Jan 2007; Diego Pettenò <flameeyes@gentoo.org> sonic-snap-1.5.ebuild:
+  Convert to use elog.
+
+  25 Sep 2006; Steve Arnold <nerdboy@gentoo.org> sonic-snap-1.5.ebuild:
+  stable bump for x86 and amd64, and modular X fix (bug #147801)
+
+*sonic-snap-1.5 (15 May 2005)
+
+  15 May 2005; Steve Arnold <nerdboy@gentoo.org> +metadata.xml,
+  +sonic-snap-1.5.ebuild:
+  New cam ebuild to work with sn9c102 driver. It can conceivably work
+  with any arch with proper USB and and a newer 2.6 kernel, so feel
+  free to try on other arches.
+

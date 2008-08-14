@@ -1,0 +1,162 @@
+# ChangeLog for dev-db/gigabase
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-db/gigabase/ChangeLog,v 1.36 2008/07/03 16:09:37 pva Exp $
+
+*gigabase-3.66 (03 Jul 2008)
+
+  03 Jul 2008; Peter Volkov <pva@gentoo.org> gigabase-3.65.ebuild,
+  +gigabase-3.66.ebuild:
+  Version bump.
+
+*gigabase-3.65 (11 May 2008)
+
+  11 May 2008; Peter Volkov <pva@gentoo.org>
+  -files/gigabase-3.60-confdefs.h-and-warnings.patch, -gigabase-3.64.ebuild,
+  +gigabase-3.65.ebuild:
+  Version bump, fixes bug #220503 reported by Xavian-Anderson Macpherson.
+  Removed broken ebuild.
+
+*gigabase-3.64 (20 Mar 2008)
+
+  20 Mar 2008; Peter Volkov <pva@gentoo.org> +gigabase-3.64.ebuild:
+  Version bump.
+
+*gigabase-3.63 (03 Mar 2008)
+
+  03 Mar 2008; <pva@gentoo.org> -gigabase-3.59.ebuild,
+  -gigabase-3.60.ebuild, +gigabase-3.63.ebuild:
+  Version bump.
+
+*gigabase-3.62 (14 Feb 2008)
+
+  14 Feb 2008; <pva@gentoo.org> +gigabase-3.62.ebuild:
+  Version bump.
+
+  19 Dec 2007; Samuli Suominen <drac@gentoo.org> gigabase-3.61.ebuild:
+  amd64 stable wrt #201840, run eautoreconf to fix libtool & asneeded issues.
+
+  19 Dec 2007; <pva@gentoo.org>
+  +files/gigabase-3.54-cli.h-redudant-typedef-fix.patch:
+  Reverting back required patch. Thank Samuli Suominen <drac AT gentoo.org>
+  for report in bug #201840.
+
+  10 Dec 2007; Dawid Węgliński <cla@gentoo.org> gigabase-3.61.ebuild:
+  Stable on x86 (bug #201840)
+
+*gigabase-3.61 (11 Nov 2007)
+
+  11 Nov 2007; <pva@gentoo.org> +gigabase-3.61.ebuild:
+  Version bump.
+
+*gigabase-3.60 (01 Nov 2007)
+
+  01 Nov 2007; <pva@gentoo.org>
+  -files/gigabase-3.54-cli.h-redudant-typedef-fix.patch,
+  +files/gigabase-3.60-confdefs.h-and-warnings.patch, -gigabase-3.51.ebuild,
+  -gigabase-3.55.ebuild, -gigabase-3.56.ebuild, -gigabase-3.57.ebuild,
+  -gigabase-3.58.ebuild, +gigabase-3.60.ebuild:
+  Version bump. Remove old.
+
+*gigabase-3.59 (31 Aug 2007)
+
+  31 Aug 2007; <pva@gentoo.org> +gigabase-3.59.ebuild:
+  Version bump.
+
+*gigabase-3.58 (05 May 2007)
+
+  05 May 2007; <pva@gentoo.org> +gigabase-3.58.ebuild:
+  Version bump.
+
+  08 Apr 2007; Christian Faulhammer <opfer@gentoo.org> gigabase-3.54.ebuild:
+  stable amd64, bug 168564
+
+*gigabase-3.57 (05 Apr 2007)
+
+  05 Apr 2007; <pva@gentoo.org> +gigabase-3.57.ebuild:
+  Version bump.
+
+*gigabase-3.56 (16 Mar 2007)
+
+  16 Mar 2007; <pva@gentoo.org> +gigabase-3.56.ebuild:
+  Version bump.
+
+  27 Feb 2007; Raúl Porcel <armin76@gentoo.org> gigabase-3.54.ebuild:
+  x86 stable wrt bug 168564
+
+*gigabase-3.55 (27 Feb 2007)
+
+  27 Feb 2007; <pva@gentoo.org> -gigabase-2.79.ebuild,
+  -gigabase-3.31.ebuild, -gigabase-3.41.ebuild, -gigabase-3.52.ebuild,
+  +gigabase-3.55.ebuild:
+  Version bump.
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*gigabase-3.54 (10 Dec 2006)
+
+  10 Dec 2006; Peter Volkov <pva@gentoo.org>
+  +files/gigabase-3.54-cli.h-redudant-typedef-fix.patch,
+  gigabase-3.52.ebuild, +gigabase-3.54.ebuild:
+  Version bump. Fix for bug #157581, thank playmiac <eap at iname.com> for
+  report.
+
+  15 Nov 2006; Steve Dibb <beandog@gentoo.org> gigabase-3.51.ebuild:
+  amd64 stable, bug 145549
+
+*gigabase-3.52 (14 Oct 2006)
+
+  14 Oct 2006; Peter Volkov <pva@gentoo.org> +gigabase-3.52.ebuild:
+  Version bump.
+
+  08 Sep 2006; Joshua Jackson <tsunam@gentoo.org> gigabase-3.51.ebuild:
+  Stable x86; bug #145549
+
+  28 Aug 2006; Peter Volkov <pva@gentoo.org> -gigabase-2.75.ebuild,
+  -gigabase-2.76.ebuild, gigabase-2.79.ebuild, -gigabase-3.02.ebuild,
+  gigabase-3.31.ebuild, gigabase-3.41.ebuild:
+  Cleaning out old versions. Changed einfo -> elog.
+
+*gigabase-3.51 (28 Aug 2006)
+
+  28 Aug 2006; Peter Volkov <pva@gentoo.org> metadata.xml,
+  +gigabase-3.51.ebuild:
+  Version bump. Thank Joshua Jackson for report (bug #103010). Also fixed bug
+  #131076 and added ~amd64 KEYWORD.
+
+*gigabase-3.41 (27 Aug 2005)
+
+  27 Aug 2005; <rphillips@gentoo.org> +gigabase-3.41.ebuild:
+  Version bump and changed SRC_URI to mirror sourceforge site. Thanks to
+  Joshua Jackson
+
+  06 Jan 2005; <rphillips@gentoo.org> gigabase-3.31.ebuild:
+  version bump
+
+  25 Apr 2004; Aron Griffis <agriffis@gentoo.org> gigabase-2.75.ebuild,
+  gigabase-2.76.ebuild, gigabase-2.79.ebuild, gigabase-3.02.ebuild:
+  Add die following econf for bug 48950
+
+  16 Apr 2004; Michael McCabe <randy@gentoo.org> gigabase-3.02.ebuild:
+  adding s390 keywords
+
+*gigabase-3.02 (29 Mar 2004)
+
+  29 Mar 2004; Ryan Phillips <rphillips@gentoo.org> gigabase-3.02.ebuild:
+  Version bump
+
+*gigabase-2.79 (18 Feb 2003)
+
+  18 Feb 2003; Nick Hadaway <raker@gentoo.org> gigabase-2.79.ebuild,
+  files/digest-gigabase-2.79 :
+  Version bump
+
+*gigabase-2.76 (14 Dec 2002)
+
+  14 Dec 2002; Ryan Phillips <rphillips@gentoo.org> gigbase-2.76.ebuild :
+  New version
+
+*gigabase-2.75 (11 Dec 2002)
+
+  11 Dec 2002; Ryan Phillips <rphillips@gentoo.org> ChangeLog :
+  First import. 

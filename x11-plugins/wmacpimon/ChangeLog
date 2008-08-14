@@ -1,0 +1,27 @@
+# ChangeLog for x11-plugins/wmacpimon
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-plugins/wmacpimon/ChangeLog,v 1.7 2007/07/22 05:29:57 dberkholz Exp $
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  wmacpimon-0.2.1.ebuild:
+  Drop virtual/x11 references.
+
+  28 Apr 2007; Sven Wegener <swegener@gentoo.org> wmacpimon-0.2.1.ebuild:
+  Fix *initd, *confd and *envd calls (#173884, #174266)
+
+  06 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  22 Jan 2006; Krzysiek Pawlik <nelchael@gentoo.org> wmacpimon-0.2.1.ebuild:
+  Fixed DEPEND for modular X.
+
+  07 Nov 2005; Michele Noberasco <s4t4n@gentoo.org> wmacpimon-0.2.1.ebuild:
+  Wiped out INSTALL from dodoc.
+
+*wmacpimon-0.2.1 (08 Jul 2004)
+
+  13 Jul 2004; Michele Noberasco <s4t4n@gentoo.org> wmacpimon-0.2.1.ebuild:
+  Stable for x86.
+
+  08 Jul 2004; Michele Noberasco <s4t4n@gentoo.org> wmacpimon-0.2.1.ebuild:
+  Initial import.

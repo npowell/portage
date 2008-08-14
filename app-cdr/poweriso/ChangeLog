@@ -1,0 +1,35 @@
+# ChangeLog for app-cdr/poweriso
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-cdr/poweriso/ChangeLog,v 1.7 2008/04/06 14:25:29 maekke Exp $
+
+  06 Apr 2008; Markus Meier <maekke@gentoo.org> -poweriso-1.1.ebuild,
+  poweriso-1.2-r1.ebuild:
+  x86 stable, bug #216149, remove old
+
+*poweriso-1.2-r1 (05 Apr 2008)
+
+  05 Apr 2008; Samuli Suominen <drac@gentoo.org> -poweriso-1.2.ebuild,
+  +poweriso-1.2-r1.ebuild:
+  Install into /opt instead of /usr because it's a binary only application and
+  restrict stripping for same reason wrt #216149.
+
+*poweriso-1.2 (30 Jan 2008)
+
+  30 Jan 2008; Jurek Bartuszek <jurek@gentoo.org> +poweriso-1.2.ebuild:
+  Version bump (bug #206458)
+
+  27 Jun 2007; Christian Faulhammer <opfer@gentoo.org> poweriso-1.1.ebuild:
+  stable x86, bug 182846
+
+  11 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  fix herd
+
+  28 Feb 2007; Herbie Hopkins <herbs@gentoo.org> poweriso-1.1.ebuild:
+  Marked ~amd64.
+
+*poweriso-1.1 (16 Dec 2006)
+
+  16 Dec 2006; Jurek Bartuszek <jurek@gentoo.org> +metadata.xml,
+  +poweriso-1.1.ebuild:
+  Initial version
+

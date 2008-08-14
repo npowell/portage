@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<herd>mobile</herd>
+<maintainer>
+  <email>nerdboy@gentoo.org</email>
+  <name>Steve Arnold</name>
+</maintainer>
+<use>
+  <flag name='garmin'>Adds specific support for Garmin GPS receivers</flag>
+</use>
+</pkgmetadata>

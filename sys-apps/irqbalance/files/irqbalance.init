@@ -1,0 +1,23 @@
+#!/sbin/runscript
+# Copyright 1999-2007 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License, v2 or later
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/irqbalance/files/irqbalance.init,v 1.3 2007/01/21 19:07:25 vapier Exp $
+
+depend() {
+	need localmount
+	after bootmisc
+}
+
+start() {
+	ebegin "Starting irqbalance"
+	start-stop-daemon --start --exec /sbin/irqbalance \
+	        --pidfile /var/run/irqbalance.pid
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping irqbalance"
+	start-stop-daemon --stop --exec /sbin/irqbalance \
+		--pidfile /var/run/irqbalance.pid
+	eend $?
+}

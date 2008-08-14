@@ -1,0 +1,26 @@
+# ChangeLog for net-im/tapioca-xmpp
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-im/tapioca-xmpp/ChangeLog,v 1.7 2007/06/30 17:44:01 peper Exp $
+
+  30 Jun 2007; Piotr Jaroszyński <peper@gentoo.org>
+  tapioca-xmpp-0.3.9.ebuild:
+  Clean up dbus deps wrt bug #183696.
+
+  03 Dec 2006; Piotr Jaroszyński <peper@gentoo.org>
+  tapioca-xmpp-0.3.9.ebuild:
+  Fix dep: dbus wrt bug #154521.
+
+  08 Oct 2006; Simon Stelling <blubb@gentoo.org> tapioca-xmpp-0.3.9.ebuild:
+  added ~amd64
+
+  09 Jun 2006; Stefan Schweizer <genstef@gentoo.org>
+  -tapioca-xmpp-0.3.0.ebuild, +tapioca-xmpp-0.3.9.ebuild:
+  version bump
+
+*tapioca-xmpp-0.3.0 (22 May 2006)
+
+  22 May 2006; Stefan Schweizer <genstef@gentoo.org> +metadata.xml,
+  +tapioca-xmpp-0.3.0.ebuild:
+  New ebuild tapiocad, bug 127383, thanks to zugaina for the inital ebuild
+  work in his overlay
+

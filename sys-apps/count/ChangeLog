@@ -1,0 +1,19 @@
+# ChangeLog for sys-apps/count
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/count/ChangeLog,v 1.4 2007/07/16 14:48:44 armin76 Exp $
+
+  16 Jul 2007; Raúl Porcel <armin76@gentoo.org> count-1.20.ebuild:
+  Fix HOMEPAGE, thanks to Erik Musick <lnxg33k at gmail dot com>, bug 185456
+
+  15 Jul 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Assigning to m-needed, as beu is being retired (#66608).
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+*count-1.20 (07 Jan 2005)
+
+  07 Jan 2005; Stuart Herbert <stuart@gentoo.org> +metadata.xml,
+  +count-1.20.ebuild:
+  Initial version; thanks to Georg Sauthoff <g_sauthoff@web.de>; see bug #76548
+

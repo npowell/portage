@@ -1,0 +1,53 @@
+# ChangeLog for x11-plugins/fsviewer
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-plugins/fsviewer/ChangeLog,v 1.15 2007/07/22 05:36:37 dberkholz Exp $
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  fsviewer-0.2.5.ebuild:
+  Drop virtual/x11 references.
+
+  26 Jan 2006; Michele Noberasco <s4t4n@gentoo.org> fsviewer-0.2.5.ebuild:
+  Fixed DEPEND. Closes bug #150634.
+  -fsviewer-0.2.3e-r1.ebuild:
+  Wiped out previous release.
+
+  03 Sep 2006; Joshua Jackson <tsunam@gentoo.org> fsviewer-0.2.5.ebuild:
+  Stable x86; bug #144835
+
+  26 Aug 2006; <nixnut@gentoo.org> fsviewer-0.2.5.ebuild:
+  Stable on ppc wrt bug #144835
+
+  23 Aug 2006; <malc@gentoo.org> fsviewer-0.2.5.ebuild:
+  Stable on amd64
+
+  22 Jan 2006; Krzysiek Pawlik <nelchael@gentoo.org> metadata.xml:
+  Moved to desktop-dock.
+
+  22 Jan 2006; Krzysiek Pawlik <nelchael@gentoo.org> fsviewer-0.2.5.ebuild:
+  Fixed DEPEND for modular X.
+
+*fsviewer-0.2.5 (22 Jun 2005)
+
+  22 Jun 2005; Jonathan Smith <smithj@gentoo.org>
+  +files/fsviewer-0.2.5-windowmaker.patch, +metadata.xml,
+  +fsviewer-0.2.5.ebuild:
+  added metadata and version bump which fixes #76865
+
+  28 Jun 2004; <augustus@gentoo.org> fsviewer-0.2.3e-r1.ebuild:
+  Marrked amd64.  First fsviewer tag for amd64.
+
+*fsviewer-0.2.3e-r1 (05 Jun 2003)
+
+  05 Jun 2003; robh <robh@gentoo.org> fsviewer-0.2.3e-r1.ebuild,
+  fsviewer-0.2.3e.ebuild:
+  fixed /usr/share/GNUstep sillyness.
+
+*fsviewer-0.2.3e (24 Oct 2002)
+
+  24 Oct 2002; Nick Hadaway <raker@gentoo.org> fsviewer-0.2.3e.ebuild,
+  files/digest-fsviewer-0.2.3e :
+  Initial ebuild in portage.
+
+*FSViewer.app-0.2.3d (24 Jul 2002)                                              
+  
+  24 Jul 2002; R.Wyrick <rob@wyrick.org> ChangeLog :

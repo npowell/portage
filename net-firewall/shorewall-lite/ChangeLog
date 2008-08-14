@@ -1,0 +1,195 @@
+# ChangeLog for net-firewall/shorewall-lite
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-firewall/shorewall-lite/ChangeLog,v 1.42 2008/08/07 00:32:48 jer Exp $
+
+*shorewall-lite-4.0.13 (07 Aug 2008)
+
+  07 Aug 2008; Jeroen Roovers <jer@gentoo.org>
+  +shorewall-lite-4.0.13.ebuild:
+  Version bump thanks to Vieri (bug #234074).
+
+*shorewall-lite-4.0.12 (05 Jul 2008)
+
+  05 Jul 2008; Peter Volkov <pva@gentoo.org> +shorewall-lite-4.0.12.ebuild:
+  Version bump, bug #230467, thank Vieri for all the work
+
+*shorewall-lite-4.0.11 (21 May 2008)
+
+  21 May 2008; Markus Ullmann <jokey@gentoo.org>
+  +shorewall-lite-4.0.11.ebuild:
+  Version bump
+
+  16 May 2008; Raúl Porcel <armin76@gentoo.org>
+  shorewall-lite-3.4.8.ebuild:
+  sparc stable wrt #216224
+
+  16 Apr 2008; Tobias Klausmann <klausman@gentoo.org>
+  shorewall-lite-3.4.8.ebuild:
+  Stable on alpha, bug #216224
+
+  16 Apr 2008; Tobias Klausmann <klausman@gentoo.org>
+  shorewall-lite-3.4.8.ebuild:
+  Keyworded on alpha, bug #216224
+
+  13 Apr 2008; Markus Meier <maekke@gentoo.org> shorewall-lite-3.4.8.ebuild:
+  amd64/x86 stable, bug #216224
+
+  10 Apr 2008; Jeroen Roovers <jer@gentoo.org> shorewall-lite-3.4.8.ebuild:
+  Stable for HPPA (bug #216224).
+
+*shorewall-lite-4.0.10 (01 Apr 2008)
+
+  01 Apr 2008; Peter Volkov <pva@gentoo.org> +shorewall-lite-4.0.10.ebuild:
+  Version bump, bug #215548, thank Vieri <rentorbuy AT yahoo.com> for
+  maintaining!
+
+*shorewall-lite-3.4.8 (02 Mar 2008)
+
+  02 Mar 2008; <pva@gentoo.org> +shorewall-lite-3.4.8.ebuild:
+  Version bump, bug #212067. Thank Vieri for report.
+
+  27 Feb 2008; Raúl Porcel <armin76@gentoo.org>
+  shorewall-lite-3.4.7.ebuild:
+  sparc stable wrt #210902
+
+  25 Feb 2008; <pva@gentoo.org> shorewall-lite-4.0.9.ebuild:
+  Don't depend on shorewall-shell by default, bug #211321, thank you Stefan
+  Wimmer for report and Vieri for the fix.
+
+  25 Feb 2008; Jeroen Roovers <jer@gentoo.org> shorewall-lite-3.4.7.ebuild:
+  Stable for HPPA (bug #210902).
+
+  24 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  shorewall-lite-3.4.7.ebuild:
+  stable x86, bug 210902
+
+*shorewall-lite-4.0.9 (24 Feb 2008)
+
+  24 Feb 2008; <pva@gentoo.org> +shorewall-lite-4.0.9.ebuild:
+  Version bump, bug 211191. Thank Vieri <rentorbuy AT yahoo.com> for all work!
+
+*shorewall-lite-4.0.8 (27 Jan 2008)
+
+  27 Jan 2008; Markus Ullmann <jokey@gentoo.org>
+  +shorewall-lite-4.0.8.ebuild:
+  Version bump, thanks to Vieri for the notification in bug #196695
+
+  14 Nov 2007; Peter Weller <welp@gentoo.org> shorewall-lite-3.4.6.ebuild:
+  Stable on amd64 wrt bug 191475
+
+*shorewall-lite-3.4.7 (10 Nov 2007)
+
+  10 Nov 2007; Martin Jackson <mjolnir@gentoo.org>
+  +shorewall-lite-3.4.7.ebuild:
+  Bump for #198603
+
+  14 Sep 2007; Ferris McCormick <fmccor@gentoo.org>
+  shorewall-lite-4.0.3.ebuild:
+  Add ~sparc keyword --- related to Bug #191624
+
+  09 Sep 2007; Jeroen Roovers <jer@gentoo.org> shorewall-lite-4.0.3.ebuild:
+  Marked ~hppa too.
+
+  09 Sep 2007; Joseph Jezak <josejx@gentoo.org> shorewall-lite-4.0.3.ebuild:
+  Marked ~ppc/~ppc64 for bug #191624.
+
+  07 Sep 2007; Markus Ullmann <jokey@gentoo.org>
+  shorewall-lite-3.4.6.ebuild:
+  einfo to elog transition
+
+  06 Sep 2007; Markus Ullmann <jokey@gentoo.org>
+  -shorewall-lite-3.2.10.ebuild, -shorewall-lite-3.4.3.ebuild,
+  -shorewall-lite-3.4.5.ebuild:
+  Drop old
+
+  06 Sep 2007; Markus Ullmann <jokey@gentoo.org> metadata.xml:
+  Add Vieri as co-maintainer
+
+*shorewall-lite-4.0.3 (06 Sep 2007)
+
+  06 Sep 2007; Markus Ullmann <jokey@gentoo.org>
+  +shorewall-lite-4.0.3.ebuild:
+  Initial import of shorewall 4.x series wrt bug #174588 thanks to Vieri
+
+  06 Sep 2007; Markus Ullmann <jokey@gentoo.org>
+  shorewall-lite-3.4.6.ebuild:
+  Stable on sparc / x86
+
+*shorewall-lite-3.4.6 (20 Aug 2007)
+
+  20 Aug 2007; Martin Jackson <mjolnir@gentoo.org>
+  +shorewall-lite-3.4.6.ebuild:
+  Bump -lite too for #189492
+
+  16 Aug 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  shorewall-lite-3.4.5.ebuild:
+  Stable on sparc
+
+*shorewall-lite-3.4.5 (16 Jul 2007)
+
+  16 Jul 2007; Markus Ullmann <jokey@gentoo.org>
+  -shorewall-lite-3.4.2.ebuild, +shorewall-lite-3.4.5.ebuild:
+  Version bump wrt bug #182544
+
+*shorewall-lite-3.4.3 (20 May 2007)
+
+  20 May 2007; Martin Jackson <mjolnir@gentoo.org>
+  +shorewall-lite-3.4.3.ebuild:
+  Bump to 3.4.3 for #177339
+
+  20 May 2007; Martin Jackson <mjolnir@gentoo.org> +files/shorewall-lite:
+  Commit shorewall-lite init script to fix 174590
+
+  13 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  shorewall-lite-3.2.9.ebuild, shorewall-lite-3.2.10.ebuild,
+  shorewall-lite-3.4.2.ebuild:
+  ~sparc here, sparc there
+
+  13 Apr 2007; Jeroen Roovers <jer@gentoo.org> shorewall-lite-3.4.2.ebuild:
+  Marked ~hppa too.
+
+  13 Apr 2007; Jeroen Roovers <jer@gentoo.org> shorewall-lite-3.2.10.ebuild:
+  Marked ~hppa too.
+
+  13 Apr 2007; Jeroen Roovers <jer@gentoo.org> shorewall-lite-3.2.9.ebuild:
+  Stable for HPPA (bug #174312).
+
+  12 Apr 2007; <welp@gentoo.org> shorewall-lite-3.2.9.ebuild:
+  Stable on amd64 wrt bug 174312
+
+*shorewall-lite-3.4.2 (12 Apr 2007)
+
+  12 Apr 2007; Markus Ullmann <jokey@gentoo.org>
+  +shorewall-lite-3.4.2.ebuild:
+  Version bump wrt bug #170448
+
+*shorewall-lite-3.2.10 (12 Apr 2007)
+
+  12 Apr 2007; Markus Ullmann <jokey@gentoo.org>
+  -shorewall-lite-3.2.4.ebuild, -shorewall-lite-3.2.8.ebuild,
+  +shorewall-lite-3.2.10.ebuild:
+  Version bump wrt bug #173886
+
+*shorewall-lite-3.2.9 (15 Feb 2007)
+
+  15 Feb 2007; Markus Ullmann <jokey@gentoo.org>
+  +shorewall-lite-3.2.9.ebuild:
+  Version bump wrt bug #166382
+
+*shorewall-lite-3.2.8 (03 Feb 2007)
+
+  03 Feb 2007; Martin Jackson <mjolnir@gentoo.org>
+  +shorewall-lite-3.2.8.ebuild:
+  Version bump per bug #164956
+
+  11 Oct 2006; Markus Ullmann <jokey@gentoo.org>
+  shorewall-lite-3.2.4.ebuild:
+  Missing IUSE
+
+*shorewall-lite-3.2.4 (10 Oct 2006)
+
+  10 Oct 2006; Markus Ullmann <jokey@gentoo.org> +metadata.xml,
+  +shorewall-lite-3.2.4.ebuild:
+  Was forgotten to add during addition of Shorewall 3.2 Series, fixing bug
+  #140001
+

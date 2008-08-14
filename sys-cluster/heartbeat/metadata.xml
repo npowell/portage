@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+
+<pkgmetadata>
+  <herd>ha-cluster</herd>
+  <maintainer>
+    <email>ha-cluster@gentoo.org</email>
+  </maintainer>
+  <longdescription>
+    Heartbeat is a cluster manager to handle failover of 2 nodes.
+  </longdescription>
+  <use>
+  	<flag name='ldirectord'>Adds support for ldiretord, use enabled because it
+	has a lot of deps</flag>
+  	<flag name='management'>Adds support for management GUI.</flag>
+  </use>
+</pkgmetadata>

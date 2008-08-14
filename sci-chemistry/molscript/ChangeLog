@@ -1,0 +1,32 @@
+# ChangeLog for sci-chemistry/molscript
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/molscript/ChangeLog,v 1.7 2007/02/20 01:46:09 je_fro Exp $
+
+  20 Feb 2007; Jeff Gardner <je_fro@gentoo.org> molscript-2.1.2.ebuild:
+  Removing old X dep per Bug 167408.
+
+  20 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  (#148281) Change herd to sci-chemistry from sci.
+
+  02 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  molscript-2.1.2.ebuild:
+  Keyword ~ppc.
+
+  05 Aug 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Remove myself as maintainer, anyone feel free to work on this, although I'll
+  continue to do so as well.
+
+  09 Jul 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  molscript-2.1.2.ebuild:
+  x86 stable.
+
+  07 Jul 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Update to my new email address.
+
+*molscript-2.1.2 (21 Nov 2005)
+
+  21 Nov 2005; Donnie Berkholz <dberkholz@gentoo.org>;
+  +files/fix-makefile-shared.patch, +files/glutbitmap.h, +metadata.xml,
+  +molscript-2.1.2.ebuild:
+  New molecular graphics package. GLUT license is for files/glutbitmap.h.
+

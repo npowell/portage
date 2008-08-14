@@ -1,0 +1,45 @@
+# ChangeLog for dev-python/qscintilla-python
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/qscintilla-python/ChangeLog,v 1.9 2008/05/25 10:48:12 yngwin Exp $
+
+  25 May 2008; Ben de Groot <yngwin@gentoo.org>
+  +files/qscintilla-python-2.2-nostrip.patch:
+  Adding patch I forgot to copy over yesterday.
+
+*qscintilla-python-2.2 (24 May 2008)
+
+  24 May 2008; Ben de Groot <yngwin@gentoo.org>
+  +qscintilla-python-2.2.ebuild:
+  Version bump. Updated homepage URL.
+
+  12 May 2008; Markus Rothe <corsair@gentoo.org>
+  qscintilla-python-2.1.ebuild:
+  Stable on ppc64
+
+  22 Mar 2008; Santiago M. Mola <coldwind@gentoo.org>
+  qscintilla-python-2.1.ebuild:
+  amd64 stable
+
+  21 Feb 2008; Raúl Porcel <armin76@gentoo.org>
+  qscintilla-python-2.1.ebuild:
+  alpha/ia64/sparc stable
+
+  09 Feb 2008; Markus Ullmann <jokey@gentoo.org>
+  qscintilla-python-2.1.ebuild:
+  Stable on x86
+
+  04 Dec 2007; Ali Polatel <hawking@gentoo.org>
+  +files/qscintilla-python-2.1-nostrip.patch, qscintilla-python-2.1.ebuild:
+  Added patch to disable stripping, #199925
+
+  21 Nov 2007; Ali Polatel <hawking@gentoo.org>
+  qscintilla-python-2.1.ebuild:
+  fixed dependency issue with qscintilla.
+
+*qscintilla-python-2.1 (20 Nov 2007)
+
+  20 Nov 2007; Ali Polatel <hawking@gentoo.org> +metadata.xml,
+  +qscintilla-python-2.1.ebuild:
+  split dev-python/qscintilla to x11-libs/qscintilla and
+  dev-python/qscintilla-python, to break circular dependency bug 199543.
+

@@ -1,0 +1,23 @@
+# ChangeLog for dev-ruby/ruby2ruby
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby2ruby/ChangeLog,v 1.4 2008/02/21 06:30:32 graaff Exp $
+
+*ruby2ruby-1.1.8 (21 Feb 2008)
+
+  21 Feb 2008; Hans de Graaff <graaff@gentoo.org> +ruby2ruby-1.1.8.ebuild:
+  Version bump: closes #209836
+
+  14 Oct 2007; Tom Gall <tgall@gentoo.org> ruby2ruby-1.1.7.ebuild:
+  added ~ppc64
+
+*ruby2ruby-1.1.7 (25 Aug 2007)
+
+  25 Aug 2007; Hans de Graaff <graaff@gentoo.org> +ruby2ruby-1.1.7.ebuild:
+  Version bump: 2 major and 5 minor enhancements, 6 bugs fixed.
+
+*ruby2ruby-1.1.5 (14 Apr 2007)
+
+  14 Apr 2007; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml,
+  +ruby2ruby-1.1.5.ebuild:
+  Initial commit. Ebuild by Robin H. Johnson <robbat2@gentoo.org>.
+

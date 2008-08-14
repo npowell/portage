@@ -1,0 +1,16 @@
+# ChangeLog for net-dns/tinystats
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-dns/tinystats/ChangeLog,v 1.3 2008/01/25 23:10:02 bangert Exp $
+
+  25 Jan 2008; Thilo Bangert <bangert@gentoo.org> tinystats-1.1.ebuild:
+  die on dobin
+
+  12 Jun 2006; Thilo Bangert <bangert@gentoo.org> ChangeLog:
+  fix ChangeLog
+
+*tinystats-1.1 (14 May 2006)
+
+  14 May 2006; Thilo Bangert <bangert@gentoo.org> ChangeLog:
+  initial import. tinystats is a filter that reads tinydns logs 
+  and stores stats about query types and errors.
+

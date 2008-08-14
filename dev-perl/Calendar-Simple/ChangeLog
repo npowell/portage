@@ -1,0 +1,56 @@
+# ChangeLog for dev-perl/Calendar-Simple
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Calendar-Simple/ChangeLog,v 1.12 2007/12/27 14:05:30 ticho Exp $
+
+  27 Dec 2007; Andrej Kacian <ticho@gentoo.org> Calendar-Simple-1.17.ebuild:
+  Stable on x86.
+
+  24 Nov 2006; Michael Cummings <mcummings@gentoo.org>
+  Calendar-Simple-1.17.ebuild:
+  Marking sparc stable
+
+  24 Nov 2006; Michael Cummings <mcummings@gentoo.org>
+  Calendar-Simple-1.17.ebuild:
+  Marking amd64 stable
+
+  25 Oct 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  Calendar-Simple-1.14.ebuild:
+  Stable on sparc
+
+*Calendar-Simple-1.17 (21 Oct 2006)
+
+  21 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  Calendar-Simple-1.13.ebuild, Calendar-Simple-1.14.ebuild,
+  +Calendar-Simple-1.17.ebuild:
+  Version bump
+
+  20 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  Calendar-Simple-1.14.ebuild:
+  Marking amd64 stable
+
+*Calendar-Simple-1.14 (11 Sep 2006)
+
+  11 Sep 2006; Yuval Yaari <yuval@gentoo.org> +Calendar-Simple-1.14.ebuild:
+  Version bump
+
+  06 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Calendar-Simple-1.13.ebuild:
+  Marking amd64, sparc stable
+
+  04 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Calendar-Simple-1.13.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  14 Jul 2006; Michael Cummings <mcummings@gentoo.org>
+  Calendar-Simple-1.13.ebuild:
+  Forcing mb version
+
+  21 Jun 2006; <nixnut@gentoo.org> Calendar-Simple-1.13.ebuild:
+  Added ~ppc wrt bug #137128
+
+*Calendar-Simple-1.13 (18 Jun 2006)
+
+  18 Jun 2006; Michael Cummings <mcummings@gentoo.org> +metadata.xml,
+  +Calendar-Simple-1.13.ebuild:
+  bug 137128, new dep for rt
+

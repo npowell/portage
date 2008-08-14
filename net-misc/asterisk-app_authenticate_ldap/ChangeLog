@@ -1,0 +1,19 @@
+# ChangeLog for net-misc/asterisk-app_authenticate_ldap
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/asterisk-app_authenticate_ldap/ChangeLog,v 1.3 2007/02/09 04:40:07 flameeyes Exp $
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  16 Apr 2006; Stefan Knoblich <stkn@gentoo.org>
+  +files/app_authenticate_ldap-0.1.3-include.diff,
+  asterisk-app_authenticate_ldap-0.1.3.ebuild:
+  Compiles with asterisk-1.2.x only, add include order patch and fix DEPEND.
+
+*asterisk-app_authenticate_ldap-0.1.3 (28 Aug 2005)
+
+  28 Aug 2005; Stefan Knoblich <stkn@gentoo.org>
+  +files/app_authenticate_ldap-0.1.3-astcfg.diff, +metadata.xml,
+  +asterisk-app_authenticate_ldap-0.1.3.ebuild:
+  Initial import.
+

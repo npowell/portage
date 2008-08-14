@@ -1,0 +1,123 @@
+# ChangeLog for sci-mathematics/gimps
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-mathematics/gimps/ChangeLog,v 1.22 2008/07/16 20:23:59 spock Exp $
+
+*gimps-25.6 (16 Jul 2008)
+
+  16 Jul 2008; Michał Januszewski <spock@gentoo.org>
+  +files/gimps-25.6-conf.d, +files/gimps-25.6-init.d, gimps-24.14-r1.ebuild,
+  +gimps-25.6.ebuild:
+  Version bump. Make 24.14-r1 fail if the kernel doesn't support 32-bit ELF
+  binaries (bug #225107).
+
+  21 Jan 2008; Michał Januszewski <spock@gentoo.org>
+  files/gimps-24.14-init.d, gimps-24.14-r1.ebuild:
+  Really make gimps stable on amd64 this time. Fix the initscript so that
+  error messages are not displayed when it's first run.
+
+  14 Nov 2007; Michał Januszewski <spock@gentoo.org> gimps-24.14-r1.ebuild:
+  amd64 stable, bug #189861.
+
+  10 Sep 2007; Christian Faulhammer <opfer@gentoo.org>
+  gimps-24.14-r1.ebuild:
+  stable x86, bug 189861
+
+  22 Apr 2007; Michał Januszewski <spock@gentoo.org> gimps-24.14.ebuild,
+  gimps-24.14-r1.ebuild:
+  Use newinitd and newconfd (bug #174266).
+
+  22 Apr 2007; Michał Januszewski <spock@gentoo.org> -gimps-24.13.ebuild:
+  Remove old ebuild.
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  23 Sep 2006; Michał Januszewski <spock@gentoo.org> gimps-24.13.ebuild,
+  gimps-24.14.ebuild, gimps-24.14-r1.ebuild:
+  Removed explicit dependency on sys-apps/baselayout (bug #148663).
+
+*gimps-24.14-r1 (06 Nov 2005)
+
+  06 Nov 2005; Michał Januszewski <spock@gentoo.org>
+  +files/gimps-24.14-conf.d, +files/gimps-24.14-init.d,
+  +gimps-24.14-r1.ebuild:
+  Updated the initscript to use start-stop-daemon. Added the option to run
+  mprime as a non-root user (bug #107168).
+
+  12 Oct 2005; Luis Medinas <metalgod@gentoo.org> gimps-24.14.ebuild:
+  Marked Stable on amd64. Bug #108265.
+
+  17 Sep 2005; Michał Januszewski <spock@gentoo.org> gimps-24.14.ebuild:
+  Changed the info messages about starting gimps manually (bug #106039).
+  Marked 24.14 stable on x86.
+
+  26 Aug 2005; Michał Januszewski <spock@gentoo.org> -gimps-24.6.ebuild,
+  gimps-24.13.ebuild, gimps-24.14.ebuild:
+  Changed 'chown root:root' to 'chown root:0' (bug #103563). Removed old
+  ebuild. Marked 24.13 stable on x86.
+
+*gimps-24.14 (16 Aug 2005)
+
+  16 Aug 2005; Michał Januszewski <spock@gentoo.org> -gimps-23.5.ebuild,
+  -gimps-23.9-r1.ebuild, +gimps-24.14.ebuild:
+  Version bump (bug #102210). Removed old ebuilds. 
+
+*gimps-24.13 (13 Jul 2005)
+
+  13 Jul 2005; Michał Januszewski <spock@gentoo.org> +gimps-24.13.ebuild:
+  Version bump. Closes #98867.
+
+  07 Jul 2005; Michał Januszewski <spock@gentoo.org> gimps-24.6.ebuild:
+  Marked stable on x86.
+
+  14 Apr 2005; Michał Januszewski <spock@gentoo.org> files/gimps-conf.d:
+  Fixed comments in the config file (bug #89129).
+
+  04 Jan 2005; Karol Wojtaszek <sekretarz@gentoo.org> gimps-24.6.ebuild:
+  Added to ~amd64, bug #76320
+
+*gimps-24.6 (28 Dec 2004)
+
+  28 Dec 2004; Michal Januszewski <spock@gentoo.org> +gimps-24.6.ebuild:
+  Version bump. Closes #74981.
+
+*gimps-23.5 (28 Dec 2004)
+
+  28 Dec 2004; Olivier Fisette <ribosome@gentoo.org> +metadata.xml,
+  +files/gimps-conf.d, +files/gimps-init.d, +gimps-23.5.ebuild,
+  +gimps-23.9-r1.ebuild:
+  Moved from app-sci/gimps to sci-mathematics/gimps.
+
+  18 Nov 2004; Olivier Fisette <ribosome@gentoo.org> -gimps-23.9.ebuild:
+  Removed insecure version. (See GLSA 200411-26.)
+
+*gimps-23.9-r1 (04 Nov 2004)
+
+  04 Nov 2004; Michal Januszewski <spock@gentoo.org> gimps-23.5.ebuild,
+  +gimps-23.9-r1.ebuild:
+  Changed ownership of mprime to root:root. Marked 23.9-r1 stable.
+
+  04 Nov 2004; Michal Januszewski <spock@gentoo.org> gimps-23.5.ebuild,
+  gimps-23.9.ebuild:
+  Changed default permissions to fix bug #69868.
+
+  17 Oct 2004; David Holm <dholm@gentoo.org> gimps-23.9.ebuild:
+  Added binary-only keyword
+
+*gimps-23.9 (23 Sep 2004)
+
+  23 Sep 2004; Michal Januszewski <spock@gentoo.org> +gimps-23.9.ebuild:
+  Version bump.
+
+  29 Feb 2004; Michal Januszewski <spock@gentoo.org> files/gimps-init.d:
+  Init script clean-up, closes #43044.
+
+  18 Feb 2004; Michal Januszewski <spock@gentoo.org> gimps-23.5.ebuild:
+  Marked stable on x86.
+
+*gimps-23.5 (23 Jan 2004)
+
+  23 Jan 2004; Michal Januszewski <spock@gentoo.org>
+  gimps-23.5.ebuild, metadata.xml:
+  Initial commit, closes bug #38010.
+

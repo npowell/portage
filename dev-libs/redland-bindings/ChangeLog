@@ -1,0 +1,83 @@
+# ChangeLog for dev-libs/redland-bindings
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/redland-bindings/ChangeLog,v 1.15 2008/08/05 14:56:27 aballier Exp $
+
+*redland-bindings-1.0.8.1 (05 Aug 2008)
+
+  05 Aug 2008; Alexis Ballier <aballier@gentoo.org>
+  +redland-bindings-1.0.8.1.ebuild:
+  version bump
+
+  14 May 2008; Samuli Suominen <drac@gentoo.org>
+  -redland-bindings-1.0.4.1.ebuild, -redland-bindings-1.0.5.1.ebuild,
+  -redland-bindings-1.0.6.1.ebuild, redland-bindings-1.0.7.1.ebuild:
+  Revert last commit by Caleb, and move swig to DEPEND.
+
+*redland-bindings-1.0.7.1 (14 May 2008)
+
+  14 May 2008; Caleb Tennis <caleb@gentoo.org>
+  +redland-bindings-1.0.7.1.ebuild:
+  version bump, move swig to RDEPEND (#221465)
+
+  19 Jan 2008; Samuli Suominen <drac@gentoo.org> metadata.xml:
+  sound herd will take this ebuild.
+
+  04 Nov 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Assigning to maintainer-needed.
+
+  14 Jun 2007; Christian Heim <phreak@gentoo.org>
+  redland-bindings-1.0.4.1.ebuild, redland-bindings-1.0.5.1.ebuild,
+  redland-bindings-1.0.6.1.ebuild:
+  LICENSE update (#181981 thanks to Carsten for noticing).
+
+  14 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+*redland-bindings-1.0.6.1 (12 May 2007)
+
+  12 May 2007; Christian Heim <phreak@gentoo.org> metadata.xml,
+  +redland-bindings-1.0.6.1.ebuild:
+  Version bump, assigning dev-libs/redland-bindings to myself. Fixing the
+  remaining ebuild.badheader.
+
+*redland-bindings-1.0.5.1 (26 Nov 2006)
+
+  26 Nov 2006; Mike Frysinger <vapier@gentoo.org>
+  +redland-bindings-1.0.5.1.ebuild:
+  Version bump.
+
+*redland-bindings-1.0.4.1 (25 Sep 2006)
+
+  25 Sep 2006; Mike Frysinger <vapier@gentoo.org>
+  +redland-bindings-1.0.4.1.ebuild:
+  Version bump #148173 by Lars Bröcker.
+
+*redland-bindings-1.0.2.1 (18 Oct 2005)
+
+  18 Oct 2005; Mike Frysinger <vapier@gentoo.org>
+  +redland-bindings-1.0.2.1.ebuild:
+  Version bump.
+
+  12 Aug 2005; Mike Frysinger <vapier@gentoo.org>
+  +files/redland-bindings-1.0.0.2-DESTDIR.patch,
+  +files/redland-bindings-1.0.0.2-configure.patch,
+  redland-bindings-1.0.0.2.ebuild:
+  Add support for mono by Ugo Riboni #101761.
+
+*redland-bindings-1.0.0.2 (08 Mar 2005)
+
+  08 Mar 2005; Mike Frysinger <vapier@gentoo.org>
+  +redland-bindings-1.0.0.2.ebuild:
+  Version bump #84092 by Simon Cross.
+
+*redland-bindings-0.9.19.1 (10 Nov 2004)
+
+  10 Nov 2004; Mike Frysinger <vapier@gentoo.org>
+  +redland-bindings-0.9.19.1.ebuild:
+  Version bump.
+
+*redland-bindings-0.9.18.1 (15 Aug 2004)
+
+  15 Aug 2004; Mike Frysinger <vapier@gentoo.org>
+  +redland-bindings-0.9.18.1.ebuild:
+  Version bump #60037 by Russell Cloran.

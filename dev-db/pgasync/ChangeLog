@@ -1,0 +1,19 @@
+# ChangeLog for dev-db/pgasync
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-db/pgasync/ChangeLog,v 1.3 2007/02/05 23:31:07 flameeyes Exp $
+
+  05 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+*pgasync-2.01 (15 Mar 2005)
+
+  15 Mar 2005; Masatomo Nakano <nakano@gentoo.org> +pgasync-2.01.ebuild:
+  Version bump.
+
+*pgasync-1.15b (01 Mar 2005)
+
+  01 Mar 2005; Masatomo Nakano <nakano@gentoo.org> +metadata.xml,
+  +pgasync-1.15b.ebuild:
+  Initial import. Ebuild submitted by Marien Zwart <m_zwart@123mail.org>.
+  (#83183)
+

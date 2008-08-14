@@ -1,0 +1,28 @@
+# ChangeLog for app-i18n/kcc
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-i18n/kcc/ChangeLog,v 1.9 2007/02/21 22:05:33 peper Exp $
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  26 Nov 2006; Steve Dibb <beandog@gentoo.org> kcc-1.0.ebuild:
+  Fix homepage
+
+  14 Oct 2006; Diego Pettenò <flameeyes@gentoo.org> kcc-1.0.ebuild:
+  Make the GCC 3.3 patch unconditional, as it's needed for 4.x and later too.
+  Thanks to Patrick Lauer for reporting in bug #151273.
+
+  07 Jan 2004; <usata@gentoo.org> kcc-1.0.ebuild, files/kcc-gcc3-gentoo.diff,
+  files/kcc-1.0/gentoo.diff:
+  Fixed compilation when using gcc-3.3.x, closing bug #34936
+
+  12 Jun 2003; <msterret@gentoo.org> kcc-1.0.ebuild:
+  add Header
+
+*kcc-1.0 (28 Oct 2002)
+
+  28 Oct 2002; Stuart Bouyer <stubear@gentoo.org> kcc-1.0.ebuild  :
+
+  Initial ebuild submitted by Yukihiro Nakai <nakai@gnome.gr.jp>. Warning
+  the SRC_URI is sometimes slow to download from. I'm looking for mirrors,
+  but this is an old package.

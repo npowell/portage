@@ -1,0 +1,60 @@
+# ChangeLog for dev-perl/LockFile-Simple
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/LockFile-Simple/ChangeLog,v 1.18 2007/01/16 01:20:06 mcummings Exp $
+
+  16 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  LockFile-Simple-0.2.5-r1.ebuild:
+  Ebuild maintenance
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  LockFile-Simple-0.2.5-r1.ebuild:
+  Adding perl dep; fixed header; fixed DEPEND
+
+  27 Nov 2005; Tom Gall <tgall@gentoo.org> LockFile-Simple-0.2.5-r1.ebuild:
+  stable on ppc64
+
+  02 Oct 2005; Aron Griffis <agriffis@gentoo.org>
+  LockFile-Simple-0.2.5-r1.ebuild:
+  Mark 0.2.5-r1 stable on ia64
+
+  25 Aug 2005; Aron Griffis <agriffis@gentoo.org>
+  LockFile-Simple-0.2.5-r1.ebuild:
+  add ~ia64
+
+  28 Apr 2005; Michael Cummings <mcummings@gentoo.org>
+  -LockFile-Simple-0.2.5.ebuild, LockFile-Simple-0.2.5-r1.ebuild:
+  Just cleaning up
+
+  24 Dec 2004; Yuta SATOH <nigoro@gentoo.org> LockFile-Simple-0.2.5-r1.ebuild:
+  added ~ppc64
+
+  15 Apr 2004; Michael McCabe <randy@gentoo.org>
+  LockFile-Simple-0.2.5-r1.ebuild:
+  adding s390 keywords
+
+  06 Dec 2002; Rodney Rees <manson@gentoo.org> : changed sparc ~sparc keywords
+ 
+  29 Oct 2002; Seemant Kulleen <seemant@gentoo.org> ChangeLog  :
+  forced version bump to install into correct locations
+
+*LockFile-Simple-0.2.5-r1 (5 May 2002)
+
+  31 Jul 2002; Calum Selkirk <cselkirk@gentoo.org>
+  LockFile-Simple-0.2.5-r1.ebuild :
+
+  Added ppc to KEYWORDS.
+
+  5 May 2002; Seemant Kulleen <seemant@gentoo.org>
+  LockFile-Simple-0.2.5-r1.ebuild files/digest-LockFile-Simple-0.2.5-r1 :
+
+  Conversion to eclasses.
+
+*LockFile-Simple-0.2.5 (1 Feb 2002)
+
+  1 Feb 2002; G.Bevin <gbevin@gentoo.org> ChangeLog :
+  
+  Added initial ChangeLog which should be updated whenever the package is
+  updated in any way. This changelog is targetted to users. This means that the
+  comments should well explained and written in clean English. The details about
+  writing correct changelogs are explained in the skel.ChangeLog file which you
+  can find in the root directory of the portage repository.

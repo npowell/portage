@@ -1,0 +1,46 @@
+# ChangeLog for dev-lang/idb
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/idb/ChangeLog,v 1.10 2008/07/10 16:52:17 bicatali Exp $
+
+  10 Jul 2008; Sébastien Fabbro <bicatali@gentoo.org> idb-10.1.017.ebuild:
+  Removed slotting, not ready.
+
+*idb-10.1.017 (10 Jul 2008)
+
+  10 Jul 2008; Sébastien Fabbro <bicatali@gentoo.org> -idb-10.1.012.ebuild,
+  idb-10.1.013.ebuild, +idb-10.1.017.ebuild:
+  Version bump
+
+*idb-10.1.012 (28 Feb 2008)
+
+  28 Feb 2008; Sébastien Fabbro <bicatali@gentoo.org> metadata.xml,
+  -idb-10.1.008.ebuild, +idb-10.1.012.ebuild:
+  Version bump
+
+  05 Dec 2007; Raúl Porcel <armin76@gentoo.org> idb-10.0.026.ebuild,
+  idb-10.1.008.ebuild:
+  Drop ia64 keyword because gcc-3.3.2-r7 is missing
+
+*idb-10.1.008 (21 Nov 2007)
+
+  21 Nov 2007; Sébastien Fabbro <bicatali@gentoo.org> +idb-10.1.008.ebuild:
+  Version bump
+
+  14 Nov 2007; Sébastien Fabbro <bicatali@gentoo.org> idb-10.0.026.ebuild:
+  amd64 stable wrt bug #197983, with kingtaco's green light.
+
+  09 Nov 2007; Raúl Porcel <armin76@gentoo.org> idb-10.0.026.ebuild:
+  ia64 stable wrt #197983
+
+  07 Nov 2007; Christian Faulhammer <opfer@gentoo.org> idb-10.0.026.ebuild:
+  stable x86, bug 197983
+
+  06 Nov 2007; Sébastien Fabbro <bicatali@gentoo.org> idb-10.0.026.ebuild:
+  Fix multiple rpm unpacking
+
+*idb-10.0.026 (02 Oct 2007)
+
+  02 Oct 2007; Sébastien Fabbro <bicatali@gentoo.org> +metadata.xml,
+  +idb-10.0.026.ebuild:
+  Intial import, split from dev-lang/icc or dev-lang/ifc
+

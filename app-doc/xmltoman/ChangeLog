@@ -1,0 +1,22 @@
+# ChangeLog for app-doc/xmltoman
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-doc/xmltoman/ChangeLog,v 1.5 2007/02/03 17:17:05 swegener Exp $
+
+  03 Feb 2007; Sven Wegener <swegener@gentoo.org> xmltoman-0.3.ebuild:
+  Add ~amd64 keyword.
+
+  23 Jan 2007; nixnut <nixnut@gentoo.org> xmltoman-0.3.ebuild:
+  Added ~ppc wrt bug 163326
+
+  26 Nov 2006; Steve Dibb <beandog@gentoo.org> xmltoman-0.3.ebuild:
+  Fix homepage
+
+  06 Jan 2006; Jason Wever <weeve@gentoo.org> xmltoman-0.3.ebuild:
+  Added ~sparc keyword.
+
+*xmltoman-0.3 (12 Sep 2005)
+
+  12 Sep 2005; Sven Wegener <swegener@gentoo.org> +metadata.xml,
+  +xmltoman-0.3.ebuild:
+  Initial commit, ebuild written by me.
+

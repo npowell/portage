@@ -1,0 +1,179 @@
+# ChangeLog for dev-perl/config-general
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/config-general/ChangeLog,v 1.43 2007/08/09 15:29:21 dertobi123 Exp $
+
+  09 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  config-general-2.33.ebuild:
+  Stable on ppc.
+
+  07 Jul 2007; Tom Gall <tgall@gentoo.org> config-general-2.33.ebuild:
+  stable on ppc64
+
+  05 Jul 2007; Raúl Porcel <armin76@gentoo.org> config-general-2.33.ebuild:
+  alpha/ia64/x86 stable
+
+  21 Jun 2007; Michael Cummings <mcummings@gentoo.org>
+  config-general-2.33.ebuild:
+  Marking sparc stable
+
+  15 Jun 2007; Michael Cummings <mcummings@gentoo.org>
+  config-general-2.33.ebuild:
+  Marking amd64 stable
+
+  05 May 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  config-general-2.32.ebuild:
+  ppc stable
+
+*config-general-2.33 (22 Apr 2007)
+
+  22 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  +config-general-2.33.ebuild:
+  Version bump
+
+  10 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  config-general-2.32.ebuild:
+  sparc stable
+
+  08 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  config-general-2.32.ebuild:
+  Marking amd64 stable
+
+*config-general-2.32 (09 Mar 2007)
+
+  09 Mar 2007; Michael Cummings <mcummings@gentoo.org>
+  +config-general-2.32.ebuild:
+  Version bump
+
+  20 Oct 2006; Bryan Østergaard <kloeri@gentoo.org>
+  config-general-2.31.ebuild:
+  Stable on Alpha.
+
+  20 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  -config-general-2.21.ebuild, -config-general-2.27.ebuild,
+  -config-general-2.29.ebuild, config-general-2.30.ebuild,
+  config-general-2.31.ebuild:
+  Marking amd64, sparc stable; cleaning out old ebuilds
+
+  06 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  config-general-2.21.ebuild, config-general-2.27.ebuild,
+  config-general-2.29.ebuild, config-general-2.30.ebuild,
+  config-general-2.31.ebuild:
+  Adding perl dep; fixed header; fixed DEPEND
+
+  02 Jul 2006; Michael Cummings <mcummings@gentoo.org>
+  config-general-2.31.ebuild:
+  Marking amd64 stable
+
+  28 Mar 2006; Aron Griffis <agriffis@gentoo.org>
+  config-general-2.31.ebuild:
+  Mark 2.31 stable on ia64
+
+  27 Mar 2006; Markus Rothe <corsair@gentoo.org> config-general-2.31.ebuild:
+  Stable on ppc64
+
+  23 Mar 2006; Michael Hanselmann <hansmi@gentoo.org>
+  config-general-2.31.ebuild:
+  Stable on ppc.
+
+  23 Mar 2006; Michael Cummings <mcummings@gentoo.org>
+  config-general-2.31.ebuild:
+  Marking sparc and x86 stable
+
+  06 Feb 2006; Simon Stelling <blubb@gentoo.org> config-general-2.30.ebuild:
+  stable on amd64
+
+  04 Feb 2006; Aron Griffis <agriffis@gentoo.org>
+  config-general-2.30.ebuild:
+  Mark 2.30 stable on ia64
+
+  31 Jan 2006; Aron Griffis <agriffis@gentoo.org>
+  config-general-2.30.ebuild:
+  Mark 2.30 stable on alpha
+
+  21 Jan 2006; Markus Rothe <corsair@gentoo.org> config-general-2.30.ebuild:
+  Stable on ppc64
+
+*config-general-2.31 (16 Jan 2006)
+
+  16 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  +config-general-2.31.ebuild:
+  Version bump, bugfixes
+
+  15 Jan 2006; Michael Hanselmann <hansmi@gentoo.org>
+  config-general-2.30.ebuild:
+  Stable on ppc.
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  config-general-2.30.ebuild:
+  Marking stable sparc x86
+
+  25 Nov 2005; Tom Gal <tgall@gentoo.org> config-general-2.27.ebuild:
+  stable on ppc64
+
+*config-general-2.30 (12 Nov 2005)
+
+  12 Nov 2005; Michael Cummings <mcummings@gentoo.org>
+  +config-general-2.30.ebuild:
+  Version bump upstream
+
+  26 Aug 2005; Aron Griffis <agriffis@gentoo.org>
+  config-general-2.29.ebuild:
+  add ~ia64
+
+*config-general-2.29 (17 Jul 2005)
+
+  17 Jul 2005; Michael Cummings <mcummings@gentoo.org>
+  +config-general-2.29.ebuild:
+  Version bump upstream
+
+  17 Jun 2005; Michael Hanselmann <hansmi@gentoo.org>
+  config-general-2.27.ebuild:
+  Stable on ppc.
+
+  01 May 2005; Tom Martin <slarti@gentoo.org> config-general-2.27.ebuild:
+  Stable on amd64.
+
+  30 Apr 2005; Bryan Østergaard <kloeri@gentoo.org>
+  config-general-2.27.ebuild:
+  Stable on alpha.
+
+  28 Apr 2005; Michael Cummings <mcummings@gentoo.org>
+  -config-general-2.26.ebuild, config-general-2.27.ebuild:
+  Cleaning
+
+  22 Apr 2005; Simon Stelling <blubb@gentoo.org> config-general-2.21.ebuild:
+  stable on amd64
+
+  30 Dec 2004; Ciaran McCreesh <ciaranm@gentoo.org> :
+  Change encoding to UTF-8 for GLEP 31 compliance
+
+  24 Dec 2004; Yuta SATOH <nigoro@gentoo.org> config-general-2.27.ebuild:
+  added ~ppc64
+
+*config-general-2.27 (30 Jul 2004)
+
+  30 Jul 2004; Michael Cummings <mcummings@gentoo.org>
+  +config-general-2.27.ebuild:
+  New version on CPAN
+
+*config-general-2.26 (05 Jun 2004)
+
+  05 Jun 2004; Michael Cummings <mcummings@gentoo.org>
+  config-general-2.26.ebuild:
+  new version on cpan
+
+  28 May 2004; Bryan Østergaard <kloeri@gentoo.org>
+  config-general-2.21.ebuild:
+  Stable on alpha.
+
+  30 Dec 2003; Michael Cummings,,, <mcummings@gentoo.org>
+  config-general-2.21.ebuild:
+  No bugs; installed and tested on sparc and x86
+
+*config-general-2.21 (08 Sep 2003)
+
+  08 Sep 2003; Michael Cummings <mcummings@gentoo.org>
+  config-general-2.21.ebuild:
+  Original ebuild submitted in bug 27233 by Janne Pikkarainen
+  <jaba@mikrobitti.fi>
+

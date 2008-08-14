@@ -1,0 +1,36 @@
+# ChangeLog for net-analyzer/snips
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/snips/ChangeLog,v 1.4 2008/07/04 14:46:06 chainsaw Exp $
+
+  04 Jul 2008; <chainsaw@gentoo.org>
+  +files/snips-1.2-link-correct-snmp-lib.patch, snips-1.2-r2.ebuild:
+  Linking fix, trapmon failed to link if net-snmp was installed on the
+  system. No revision bump, if this applied to you then your build broke.
+
+*snips-1.2-r2 (04 Jul 2008)
+
+  04 Jul 2008; <chainsaw@gentoo.org> +files/snips-1.2-install-missing.patch,
+  -files/snips-1.2-r1-precache-config, +files/snips-1.2-r2-precache-config,
+  -snips-1.2-r1.ebuild, +snips-1.2-r2.ebuild:
+  Add a snips user & group to the system and set permissions appropriately.
+  Install 3 missing files.
+
+*snips-1.2-r1 (30 Jun 2008)
+
+  30 Jun 2008; <chainsaw@gentoo.org>
+  +files/snips-1.2-destdir-awareness.patch,
+  -files/snips-1.2-precache-config, +files/snips-1.2-r1-precache-config,
+  -snips-1.2.ebuild, +snips-1.2-r1.ebuild:
+  Make the build system DESTDIR-aware to de-uglify the ebuild. Patch applied
+  upstream. Eternal glory for a libtool patch that makes the QA warning go
+  away.
+
+*snips-1.2 (27 Jun 2008)
+
+  27 Jun 2008; <chainsaw@gentoo.org> +files/snips-1.2-code-ordering.patch,
+  +files/snips-1.2-conflicting-types.patch,
+  +files/snips-1.2-implicit-declarations.patch,
+  +files/snips-1.2-non-interactive.patch, +files/snips-1.2-precache-config,
+  +snips-1.2.ebuild:
+  Initial commit, ebuild by me.
+

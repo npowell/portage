@@ -1,0 +1,179 @@
+# ChangeLog for media-gfx/tuxpaint
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/tuxpaint/ChangeLog,v 1.40 2007/12/01 12:10:11 nixnut Exp $
+
+  01 Dec 2007; nixnut <nixnut@gentoo.org> tuxpaint-0.9.17-r1.ebuild:
+  Stable on ppc wrt bug 200640
+
+  28 Nov 2007; Dawid Węgliński <cla@gentoo.org> tuxpaint-0.9.17-r1.ebuild:
+  Stable on x86 (bug #200640)
+
+  28 Nov 2007; Samuli Suominen <drac@gentoo.org> tuxpaint-0.9.17-r1.ebuild:
+  amd64 stable wrt #200640
+
+*tuxpaint-0.9.18 (28 Nov 2007)
+
+  28 Nov 2007; Leonardo Boshell <leonardop@gentoo.org>
+  +files/tuxpaint-0.9.18-gentoo.patch, +tuxpaint-0.9.18.ebuild:
+  New version. Updated gentoo's patch. Added sdl-pango dependency.
+
+*tuxpaint-0.9.17-r1 (11 Sep 2007)
+
+  11 Sep 2007; Leonardo Boshell <leonardop@gentoo.org>
+  +files/tuxpaint-0.9.17-printing.patch, +tuxpaint-0.9.17-r1.ebuild:
+  Added patch to fix printing on localised systems (bug #191987).
+
+  16 Aug 2007; Leonardo Boshell <leonardop@gentoo.org>
+  tuxpaint-0.9.17.ebuild:
+  Added libpaper dependency (bug #189002). Removed netpbm which is no longer
+  used by tuxpaint.
+
+*tuxpaint-0.9.17 (07 Aug 2007)
+
+  07 Aug 2007; Leonardo Boshell <leonardop@gentoo.org>
+  +files/tuxpaint-0.9.17-gentoo.patch, +tuxpaint-0.9.17.ebuild:
+  Version bump (bug #187918). Added the 'svg' USE flag.
+
+  07 Aug 2007; Leonardo Boshell <leonardop@gentoo.org>
+  -files/tuxpaint-0.9.15b-gentoo.patch, -files/tuxpaint-0.9.16-gentoo.patch,
+  -tuxpaint-0.9.15b-r1.ebuild, -tuxpaint-0.9.16.ebuild:
+  Dropping old ebuilds.
+
+  30 Apr 2007; Marius Mauch <genone@gentoo.org> tuxpaint-0.9.15b-r1.ebuild,
+  tuxpaint-0.9.16.ebuild, tuxpaint-0.9.16-r1.ebuild:
+  Replacing einfo with elog
+
+  08 Apr 2007; Peter Weller <welp@gentoo.org> tuxpaint-0.9.16-r1.ebuild:
+  Stable on amd64 wrt bug 172165
+
+  06 Apr 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  tuxpaint-0.9.16-r1.ebuild:
+  ppc stable, bug #172165
+
+  25 Mar 2007; Andrej Kacian <ticho@gentoo.org> tuxpaint-0.9.16-r1.ebuild:
+  Stable on x86, bug #172165.
+
+*tuxpaint-0.9.16-r1 (13 Dec 2006)
+
+  13 Dec 2006; Leonardo Boshell <leonardop@gentoo.org>
+  +files/tuxpaint-0.9.16-gentoo-r1.patch, +tuxpaint-0.9.16-r1.ebuild:
+  Drop 'gnome' and 'kde' USE flags. Always install the .desktop file and icons
+  in standard places recognized by both desktops (related to bug #157619).
+  Call gnome2_icon_cache_update() from pkg_postinst().
+
+*tuxpaint-0.9.16 (01 Nov 2006)
+
+  01 Nov 2006; Leonardo Boshell <leonardop@gentoo.org>
+  +files/tuxpaint-0.9.16-gentoo.patch, -tuxpaint-0.9.15b.ebuild,
+  +tuxpaint-0.9.16.ebuild:
+  New release (bug #152961).
+
+  03 Oct 2006; Joshua Jackson <tsunam@gentoo.org>
+  tuxpaint-0.9.15b-r1.ebuild:
+  Stable x86; bug #148936
+
+  30 Sep 2006; Daniel Gryniewicz <dang@gentoo.org>
+  tuxpaint-0.9.15b-r1.ebuild:
+  Marked stable on amd64 for bug #148936
+
+  28 Sep 2006; Stephanie Lockwood-Childs <wormo@gentoo.org>
+  tuxpaint-0.9.15b-r1.ebuild:
+  stable on ppc (Bug #148936)
+
+  09 Aug 2006; Leonardo Boshell <leonardop@gentoo.org>
+  files/tuxpaint-0.9.15b-gentoo.patch, tuxpaint-0.9.15b-r1.ebuild:
+  Modified patch to link against libpng12 explicitely (bug #143216).
+
+*tuxpaint-0.9.15b-r1 (14 Feb 2006)
+
+  14 Feb 2006; Leonardo Boshell <leonardop@gentoo.org>
+  files/tuxpaint-0.9.15b-gentoo.patch, +tuxpaint-0.9.15b-r1.ebuild:
+  Modified patch to avoid installing stuff under /usr/X11R6. Rev-bumped to
+  propagate change.
+
+  18 Jan 2006; Simon Stelling <blubb@gentoo.org> tuxpaint-0.9.15b.ebuild:
+  stable on amd64 wrt bug 119316
+
+  18 Jan 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  tuxpaint-0.9.15b.ebuild:
+  ppc stable, bug #119316
+
+  18 Jan 2006; Andrej Kacian <ticho@gentoo.org> tuxpaint-0.9.15b.ebuild:
+  Stable on x86, bug #119316.
+
+*tuxpaint-0.9.15b (22 Dec 2005)
+
+  22 Dec 2005; Leonardo Boshell <leonardop@gentoo.org>
+  +files/tuxpaint-0.9.15b-gentoo.patch, +tuxpaint-0.9.15b.ebuild:
+  New release (bug #115546). Updated patch and use $PKG_ROOT instead of
+  $PREFIX in src_install().
+
+  26 May 2005; Jan Brinkmann <luckyduck@gentoo.org> tuxpaint-0.9.14.ebuild:
+  stable on amd64
+
+  01 May 2005; Michael Hanselmann <hansmi@gentoo.org>
+  tuxpaint-0.9.14.ebuild:
+  Stable on ppc.
+
+  19 Apr 2005; Leonardo Boshell <leonardop@gentoo.org> tuxpaint-0.9.14.ebuild:
+  Marked stable on x86.
+
+  23 Mar 2005; Michael Sterrett <mr_bones_@gentoo.org>
+  tuxpaint-0.9.13-r1.ebuild:
+  rekeyword stable for x86
+
+  22 Mar 2005; Jan Brinkmann <luckyduck@gentoo.org> tuxpaint-0.9.13-r1.ebuild,
+  tuxpaint-0.9.14.ebuild:
+  added ~amd64 to KEYWORDS, fixes #79703
+
+  20 Mar 2005; Leonardo Boshell <leonardop@gentoo.org>
+  tuxpaint-0.9.13-r1.ebuild,
+  files/tuxpaint-0.9.13-fix_error_directives.patch:
+  Added a patch to remove a few useless #error directives that were breaking
+  compilation. Resolves bug #82598.
+
+*tuxpaint-0.9.14 (20 Mar 2005)
+
+  20 Mar 2005; Leonardo Boshell <leonardop@gentoo.org> tuxpaint-0.9.14.ebuild:
+  New release. Uses a modified patch to fix a few small problems.
+
+  20 Mar 2005; Leonardo Boshell <leonardop@gentoo.org>
+  tuxpaint-0.9.13-r1.ebuild:
+  Marked stable on x86.
+  
+  12 Feb 2005; Gregorio Guidi <greg_g@gentoo.org> tuxpaint-0.9.13-r1.ebuild:
+  Install kde files in /usr (#63863).
+
+*tuxpaint-0.9.13-r1 (23 Nov 2004)
+
+  23 Nov 2004; L. Boshell <leonardop@gentoo.org> tuxpaint-0.9.13-r1.ebuild:
+  New revision with some style changes, a new patch for its Makefile which
+  should resolve bug #42971, and support for the `nls' USE flag.
+
+  31 Aug 2004; David Holm <dholm@gentoo.org> tuxpaint-0.9.13.ebuild:
+  Added to ~ppc.
+
+  07 Jun 2004; Aron Griffis <agriffis@gentoo.org> tuxpaint-0.9.12.ebuild,
+  tuxpaint-0.9.13.ebuild:
+  Fix use invocation
+
+  17 Feb 2004; L. Boshell <leonardop@gentoo.org> tuxpaint-0.9.13.ebuild:
+  Marked as stable on x86.
+
+*tuxpaint-0.9.13 (10 Jan 2004)
+
+  10 Jan 2004; L. Boshell <leonardop@gentoo.org> tuxpaint-0.9.13.ebuild:
+  Version bump.
+
+  10 Dec 2003; L. Boshell <leonardop@gentoo.org> tuxpaint-0.9.12.ebuild:
+  Marked as stable on x86.
+
+  09 Nov 2003; L. Boshell <leonardop@gentoo.org> tuxpaint-0.9.12.ebuild :
+  Fix for sandbox violations when the `gnome' USE flag is not present.
+  Closes bug #32862.
+  
+*tuxpaint-0.9.12 (31 Oct 2003)
+
+  31 Oct 2003; L. Boshell <leonardop@gentoo.org> tuxpaint-0.9.12.ebuild :
+  Initial import. Thanks to Ron for the contribution on bug #15530. Thanks
+  to user Mario Beroiza for his help with KDE-related problems.

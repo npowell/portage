@@ -1,0 +1,24 @@
+# ChangeLog for sys-fs/copyfs
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/copyfs/ChangeLog,v 1.5 2007/07/02 15:32:49 peper Exp $
+
+  02 Jul 2007; Piotr Jaroszyński <peper@gentoo.org> copyfs-1.0.ebuild:
+  (QA) RESTRICT clean up.
+
+  02 May 2007; Robin H. Johnson <robbat2@gentoo.org> copyfs-1.0.ebuild:
+  Add ~amd64 and ~ppc after some quick testing.
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  18 Dec 2004; Stuart Herbert <stuart@gentoo.org>
+  files/copyfs-1.0-unlink.patch:
+  Updated the unlink patch to prevent it leaking memory
+
+*copyfs-1.0 (16 Dec 2004)
+
+  16 Dec 2004; Stuart Herbert <stuart@gentoo.org> +metadata.xml,
+  +files/copyfs-1.0-gentoo.patch, +files/copyfs-1.0-unlink.patch,
+  +copyfs-1.0.ebuild:
+  Initial import
+

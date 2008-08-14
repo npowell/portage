@@ -1,0 +1,44 @@
+# ChangeLog for app-editors/leo
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-editors/leo/ChangeLog,v 1.10 2008/03/01 11:51:09 dev-zero Exp $
+
+*leo-4.4.7 (01 Mar 2008)
+
+  01 Mar 2008; Tiziano Müller <dev-zero@gentoo.org>
+  -files/leoGlobals-4.4.1_beta2.patch, -leo-4.4.1_beta2.ebuild,
+  +leo-4.4.7.ebuild:
+  Version bump (bug #153233). Dropped old version.
+
+  23 Jun 2007; Ali Polatel <hawking@gentoo.org> leo-4.2.ebuild,
+  leo-4.4.1_beta2.ebuild:
+  check tk support for python (bug #154459, thanks to Cliff Yapp), fix
+  headers, cosmetics
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*leo-4.4.1_beta2 (25 Jun 2006)
+
+  25 Jun 2006; Lukasz Strzygowski <lucass@gentoo.org>
+  +files/leoGlobals-4.4.1_beta2.patch, +leo-4.4.1_beta2.ebuild:
+  Version bump: marked ~amd64, updated patch, ebuild cleanup, bug #137952.
+
+  16 Sep 2005; Michael Sterrett <mr_bones_@gentoo.org> leo-4.2.ebuild:
+  needs app-arch/unzip; tidy
+
+  05 Jun 2005; Michael Hanselmann <hansmi@gentoo.org> leo-4.2.ebuild:
+  Stable on ppc.
+
+  07 May 2005; Stephanie Lockwood-Childs <wormo@gentoo.org> leo-4.2.ebuild:
+  mark ~ppc
+
+  28 Feb 2005; Rob Cakebread <pythonhead@gentoo.org>
+  files/leoConfig.py.patch, leo-4.2.ebuild:
+  Fixed patch. bug# 83404
+
+*leo-4.2 (01 Dec 2004)
+
+  01 Dec 2004; Rob Cakebread <pythonhead@gentoo.org> +metadata.xml,
+  +files/leoConfig.py.patch, +leo-4.2.ebuild:
+  Initial commit. Closes bug# 69561
+

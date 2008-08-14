@@ -1,0 +1,94 @@
+# ChangeLog for dev-perl/text-wrapper
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/text-wrapper/ChangeLog,v 1.25 2008/08/02 19:07:45 tove Exp $
+
+  02 Aug 2008; Torsten Veller <tove@gentoo.org> -text-wrapper-1.000.ebuild:
+  Cleanup
+
+*text-wrapper-1.02 (02 Aug 2008)
+
+  02 Aug 2008; Torsten Veller <tove@gentoo.org> +text-wrapper-1.02.ebuild:
+  Version bump
+
+  28 Mar 2008; Jeroen Roovers <jer@gentoo.org> text-wrapper-1.01.ebuild:
+  Stable for HPPA too.
+
+  10 Nov 2007; Samuli Suominen <drac@gentoo.org> text-wrapper-1.01.ebuild:
+  amd64 stable
+
+  09 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  text-wrapper-1.01.ebuild:
+  Stable on ppc.
+
+  14 Jul 2007; Raúl Porcel <armin76@gentoo.org> text-wrapper-1.01.ebuild:
+  alpha/ia64/x86 stable
+
+  07 Jul 2007; Tom Gall <tgall@gentoo.org> text-wrapper-1.01.ebuild:
+  stable on ppc64
+
+  21 Jun 2007; Michael Cummings <mcummings@gentoo.org>
+  text-wrapper-1.01.ebuild:
+  Marking sparc stable
+
+*text-wrapper-1.01 (06 Apr 2007)
+
+  06 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  +text-wrapper-1.01.ebuild:
+  Version bump
+
+  19 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  text-wrapper-1.000.ebuild:
+  Ebuild maintenance
+
+  06 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  text-wrapper-1.000.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  29 Jun 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  text-wrapper-1.000.ebuild:
+  Stable on hppa
+
+  02 Oct 2005; Aron Griffis <agriffis@gentoo.org> text-wrapper-1.000.ebuild:
+  Mark 1.000 stable on ia64
+
+  26 Aug 2005; Aron Griffis <agriffis@gentoo.org> text-wrapper-1.000.ebuild:
+  add ~ia64
+
+  29 Apr 2005; Michael Cummings <mcummings@gentoo.org>
+  text-wrapper-1.000.ebuild:
+  Cleaning for mirror syntax
+
+  24 Apr 2005; Michael Hanselmann <hansmi@gentoo.org>
+  text-wrapper-1.000.ebuild:
+  Stable on ppc.
+
+  22 Apr 2005; Simon Stelling <blubb@gentoo.org> text-wrapper-1.000.ebuild:
+  stable on amd64
+
+  02 Apr 2005; Yuta SATOH <nigoro@gentoo.org> text-wrapper-1.000.ebuild:
+  Stable on ppc64
+
+  13 Jan 2005; Gustavo Zacarias <gustavoz@gentoo.org>
+  text-wrapper-1.000.ebuild:
+  Stable on sparc
+
+  30 Dec 2004; Ciaran McCreesh <ciaranm@gentoo.org> :
+  Change encoding to UTF-8 for GLEP 31 compliance
+
+  25 Dec 2004; Yuta SATOH <nigoro@gentoo.org> text-wrapper-1.000.ebuild:
+  added ~ppc64
+
+  30 May 2004; Bryan Østergaard <kloeri@gentoo.org> text-wrapper-1.000.ebuild:
+  Stable on alpha.
+
+  22 Aug 2003; Michael Cummings <mcummings@gentoo.org>
+  text-wrapper-1.000.ebuild:
+  No sense in keeping masked. Also, failed to thank Celestial Wizard
+  <gentoo@dev.celestialwizard.org> in initial update.
+
+*text-wrapper-1.000 (22 Aug 2003)
+
+  22 Aug 2003; Michael Cummings <mcummings@gentoo.org>
+  text-wrapper-1.000.ebuild:
+  Bug 24881. Dep for request tracker.
+

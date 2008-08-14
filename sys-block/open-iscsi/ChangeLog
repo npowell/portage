@@ -1,0 +1,106 @@
+# ChangeLog for sys-block/open-iscsi
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-block/open-iscsi/ChangeLog,v 1.17 2008/08/08 06:22:02 ulm Exp $
+
+  08 Aug 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
+  Add USE flag description to metadata wrt GLEP 56.
+
+*open-iscsi-2.0.868_rc1 (25 Mar 2008)
+
+  25 Mar 2008; Mike Doty <kingtaco@gentoo.org>
+  +files/iscsid-2.0.868_rc1.conf.d, +files/iscsid-2.0.868_rc1.init.d,
+  +open-iscsi-2.0.868_rc1.ebuild:
+  adding open-iscsi-2.0.868_rc1.ebuild and related files thanks to Craig
+  <craig -at- haquarter.de> Bug 196096
+
+  14 Jan 2008; Robin H. Johnson <robbat2@gentoo.org> metadata.xml:
+  Add herd per email.
+
+  14 Jan 2008; Robin H. Johnson <robbat2@gentoo.org>
+  -files/r438-idbm-file-locking.diff, -files/backward-compile-2.6.13.patch,
+  -files/open-iscsi-485-out.state.patch, metadata.xml,
+  -open-iscsi-0.4.413.ebuild, -open-iscsi-0.4.413-r1.ebuild,
+  -open-iscsi-0.4.434.ebuild, -open-iscsi-0.4.438.ebuild,
+  -open-iscsi-0.5.485.ebuild, -open-iscsi-1.0.490.ebuild,
+  -open-iscsi-1.0.490-r1.ebuild, -open-iscsi-1.0.514.ebuild,
+  open-iscsi-2.0.865.12.ebuild:
+  Remove old ebuilds (they were for really old kernels), clean up remaining
+  ebuild, then remove myself from the metadata.
+
+*open-iscsi-2.0.865.12 (28 Aug 2007)
+
+  28 Aug 2007; Mike Doty <kingtaco@gentoo.org> metadata.xml,
+  +open-iscsi-2.0.865.12.ebuild:
+  version bump
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  23 May 2006; Robin H. Johnson <robbat2@gentoo.org>
+  open-iscsi-1.0.514.ebuild:
+  Add ~ppc.
+
+  08 Mar 2006; Robin H. Johnson <robbat2@gentoo.org>
+  files/initiatorname.iscsi:
+  Include instructions for initiatorname.iscsi.
+
+*open-iscsi-1.0.514 (07 Mar 2006)
+*open-iscsi-1.0.490-r1 (07 Mar 2006)
+*open-iscsi-1.0.490 (07 Mar 2006)
+
+  07 Mar 2006; Robin H. Johnson <robbat2@gentoo.org>
+  +files/open-iscsi-485-out.state.patch, files/iscsid-init.d,
+  +open-iscsi-1.0.490.ebuild, +open-iscsi-1.0.490-r1.ebuild,
+  +open-iscsi-1.0.514.ebuild:
+  New upstream snapshots. Not for production use at all!.
+
+  02 Feb 2006; Robin H. Johnson <robbat2@gentoo.org>
+  open-iscsi-0.5.485.ebuild:
+  Add missing dep on berkdb.
+
+*open-iscsi-0.5.485 (02 Feb 2006)
+
+  02 Feb 2006; Robin H. Johnson <robbat2@gentoo.org>
+  +open-iscsi-0.5.485.ebuild:
+  New version.
+
+*open-iscsi-0.4.438 (06 Nov 2005)
+
+  06 Nov 2005; Robin H. Johnson <robbat2@gentoo.org>
+  +files/r438-idbm-file-locking.diff, +files/backward-compile-2.6.13.patch,
+  +open-iscsi-0.4.438.ebuild:
+  Version bump. Custom patches for compile agasinst 2.6.13 or newer, and
+  possible IDBM corruption fix.
+
+*open-iscsi-0.4.434 (03 Nov 2005)
+
+  03 Nov 2005; Robin H. Johnson <robbat2@gentoo.org>
+  +open-iscsi-0.4.434.ebuild:
+  Version bump.
+
+*open-iscsi-0.4.413-r1 (23 Sep 2005)
+
+  23 Sep 2005; Robin H. Johnson <robbat2@gentoo.org> files/iscsid-init.d,
+  +open-iscsi-0.4.413-r1.ebuild:
+  Add debug support, and improve init script to properly stop iscsid.
+
+  21 Sep 2005; Robin H. Johnson <robbat2@gentoo.org>
+  files/digest-open-iscsi-0.4.413, Manifest:
+  Incorrect digest from duplicate tarball.
+
+  20 Sep 2005; Robin H. Johnson <robbat2@gentoo.org> files/iscsid-init.d,
+  open-iscsi-0.4.413.ebuild:
+  Change SRC_URI to mirror://gentoo/ now that the source has spread, also
+  clean up install location for modules, security of config file and
+  databases, and clean up the init script to be gentoo-like instead of
+  debian-like.
+
+*open-iscsi-0.4.413 (20 Sep 2005)
+
+  20 Sep 2005; Robin H. Johnson <robbat2@gentoo.org>
+  +files/initiatorname.iscsi, +files/iscsid-init.d, +metadata.xml,
+  +open-iscsi-0.4.413.ebuild:
+  Initial commit. Ebuild by Robin H. Johnson <robbat2@gentoo.org>. A special
+  thanks to The Gallery Group (www.thegallerygroup.com) for helping to support
+  iSCSI on Gentoo.
+

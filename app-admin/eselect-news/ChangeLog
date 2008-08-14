@@ -1,0 +1,47 @@
+# ChangeLog for app-admin/eselect-news
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/eselect-news/ChangeLog,v 1.9 2008/06/20 20:52:43 zmedico Exp $
+
+  20 Jun 2008; Zac Medico <zmedico@gentoo.org> eselect-news-20080320.ebuild:
+  Make repoman happy by adding ~m68k, ~sh, and ~sparc-fbsd to KEYWORDS.
+
+  20 Jun 2008; Javier Villavicencio <the_paya@gentoo.org>
+  eselect-news-20080320.ebuild:
+  Added ~x86-fbsd keyword.
+
+*eselect-news-20080320 (20 Mar 2008)
+
+  20 Mar 2008; Piotr Jaroszyński <peper@gentoo.org>
+  +eselect-news-20080320.ebuild:
+  Add 20080320.
+
+*eselect-news-20071201 (01 Dec 2007)
+
+  01 Dec 2007; Piotr Jaroszyński <peper@gentoo.org>
+  +eselect-news-20071201.ebuild:
+  Add 20071201.
+
+*eselect-news-20071025 (25 Oct 2007)
+
+  25 Oct 2007; Piotr Jaroszyński <peper@gentoo.org>
+  +eselect-news-20071025.ebuild:
+  Add 20071025.
+
+  25 Jul 2007; Piotr Jaroszyński <peper@gentoo.org>
+  eselect-news-20070709.ebuild:
+  Fix deps.
+
+  25 Jul 2007; Piotr Jaroszyński <peper@gentoo.org>
+  eselect-news-20070709.ebuild:
+  Force eselect-news to be pulled after sys-apps/paludis.
+
+  09 Jul 2007; Piotr Jaroszyński <peper@gentoo.org>
+  eselect-news-20070709.ebuild:
+  Add some more keywords.
+
+*eselect-news-20070709 (09 Jul 2007)
+
+  09 Jul 2007; Piotr Jaroszyński <peper@gentoo.org> +metadata.xml,
+  +eselect-news-20070709.ebuild:
+  New package.
+

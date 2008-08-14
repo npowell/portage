@@ -1,0 +1,39 @@
+# ChangeLog for media-plugins/gst-plugins-amrnb
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/gst-plugins-amrnb/ChangeLog,v 1.7 2008/08/08 17:58:52 maekke Exp $
+
+  08 Aug 2008; Markus Meier <maekke@gentoo.org>
+  gst-plugins-amrnb-0.10.8.ebuild:
+  x86 stable, bug #232054
+
+  07 Aug 2008; Tobias Klausmann <klausman@gentoo.org>
+  gst-plugins-amrnb-0.10.8.ebuild:
+  Stable on alpha, bug #232054
+
+  26 Jul 2008; Olivier Crête <tester@gentoo.org>
+  gst-plugins-amrnb-0.10.8.ebuild:
+  Stable on amd64, bug #232054
+
+*gst-plugins-amrnb-0.10.8 (29 Jun 2008)
+
+  29 Jun 2008; Samuli Suominen <drac@gentoo.org>
+  -gst-plugins-amrnb-0.10.6.ebuild, -gst-plugins-amrnb-0.10.7.ebuild,
+  +gst-plugins-amrnb-0.10.8.ebuild:
+  Version bump.
+
+*gst-plugins-amrnb-0.10.7 (21 Feb 2008)
+
+  21 Feb 2008; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  +gst-plugins-amrnb-0.10.7.ebuild:
+  version bump
+
+  18 Nov 2007; Samuli Suominen <drac@gentoo.org>
+  gst-plugins-amrnb-0.10.6.ebuild:
+  Keyword ~amd64.
+
+*gst-plugins-amrnb-0.10.6 (01 Sep 2007)
+
+  01 Sep 2007; Samuli Suominen <drac@gentoo.org>
+  +gst-plugins-amrnb-0.10.6.ebuild:
+  Initial commit for bug 176448.
+

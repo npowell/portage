@@ -1,0 +1,23 @@
+# ChangeLog for net-zope/zaaplugins
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-zope/zaaplugins/ChangeLog,v 1.5 2008/05/27 21:27:22 tupone Exp $
+
+  27 May 2008; Tupone Alfredo <tupone@gentoo.org> zaaplugins-2.12.ebuild:
+  Making repoman happy
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  18 Mar 2006; Radoslaw Stachowiak <radek@gentoo.org>
+  zaaplugins-2.12.ebuild:
+  changed xpdf to poppler, fixing #121708
+
+  14 Oct 2004; David Holm <dholm@gentoo.org> zaaplugins-2.12.ebuild:
+  Added to ~ppc.
+
+*zaaplugins-2.12 (26 Sep 2004)
+
+  26 Sep 2004; Radoslaw Stachowiak <radek@gentoo.org> +metadata.xml,
+  +zaaplugins-2.12.ebuild:
+  Initial relase based on work by Ernst <ernst@cypres.demon.nl>. Bug #46958.
+

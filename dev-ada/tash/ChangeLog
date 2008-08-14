@@ -1,0 +1,19 @@
+# ChangeLog for dev-ada/tash
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ada/tash/ChangeLog,v 1.4 2008/01/27 00:20:34 george Exp $
+
+  27 Jan 2008; George Shapovalov <george@gentoo.org> tash-8.4.1a.ebuild:
+  adjusted DEPEND to use new virtual/ada, fixed quoting
+
+  19 Jan 2008; George Shapovalov <george@gentoo.org> tash-8.4.1a.ebuild:
+  updated HOMEPAGE, now it seems there is a site to which it can be set
+
+  07 Apr 2007; Mike Frysinger <vapier@gentoo.org> tash-8.4.1a.ebuild:
+  Remove DOCDESTTREE reference since it isnt set anywhere and it defaults to "".
+
+*tash-8.4.1a (13 Feb 2007)
+
+  13 Feb 2007; George Shapovalov <george@gentoo.org> +metadata.xml,
+  +tash-8.4.1a.ebuild:
+  first addition - a tcl/tk Ada binding
+

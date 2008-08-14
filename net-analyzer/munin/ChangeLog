@@ -1,0 +1,102 @@
+# ChangeLog for net-analyzer/munin
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/munin/ChangeLog,v 1.20 2008/08/08 20:09:42 nixnut Exp $
+
+  08 Aug 2008; nixnut <nixnut@gentoo.org> munin-1.3.4-r1.ebuild:
+  Stable on ppc wrt bug 214232
+
+  06 Aug 2008; Markus Meier <maekke@gentoo.org> munin-1.3.4-r1.ebuild:
+  add quotes
+
+  06 Aug 2008; Markus Meier <maekke@gentoo.org> munin-1.3.4-r1.ebuild:
+  amd64/x86 stable, bug #214232
+
+  05 Aug 2008; Ferris McCormick <fmccor@gentoo.org> munin-1.3.4-r1.ebuild:
+  Sparc stable as to bug #214232.
+
+  04 Aug 2008; Jeroen Roovers <jer@gentoo.org> metadata.xml:
+  Describe local USE flags for GLEP 56.
+
+  24 Jun 2008; Robin H. Johnson <robbat2@gentoo.org> munin-1.3.4-r1.ebuild:
+  Update for newer postgres.
+
+*munin-1.3.4-r1 (09 Jun 2008)
+
+  09 Jun 2008; Robin H. Johnson <robbat2@gentoo.org>
+  +files/munin-1.3.4-no-html-if-no-input.patch, +munin-1.3.4-r1.ebuild~,
+  +munin-1.3.4-r1.ebuild:
+  Resolve bug #225671 and also clean up USE flags to better represent the
+  new 1.3.4 version.
+
+  01 Jun 2008; Robin H. Johnson <robbat2@gentoo.org> munin-1.3.4.ebuild:
+  Bug #205293, dcron is fussy about crontab call syntax.
+
+*munin-1.3.4 (31 May 2008)
+
+  31 May 2008; Robin H. Johnson <robbat2@gentoo.org>
+  +files/munin-1.3.3-fw_conntrack_plugins.patch,
+  +files/munin-1.3.4-Makefile.patch,
+  +files/munin-1.3.4-plugin-cleanup.patch, +munin-1.3.4.ebuild:
+  Bug #214152, version bump. Includes fw_conntrack fixes per bug 195964.
+
+  30 Jun 2007; Joshua Kinard <kumba@gentoo.org> munin-1.3.3-r2.ebuild:
+  Marked unstable on mips, per #183588.
+
+*munin-1.3.3-r2 (22 May 2007)
+
+  22 May 2007; Robin H. Johnson <robbat2@gentoo.org>
+  files/munin-1.3.3-Makefile.patch, +munin-1.3.3-r2.ebuild:
+  Bug #179321, previous DESTDIR patching missed a single case for the
+  munin-node.conf file.
+
+  13 May 2007; Robin H. Johnson <robbat2@gentoo.org> munin-1.3.3.ebuild:
+  Forgot IUSE=doc.
+
+*munin-1.3.3-r1 (13 May 2007)
+
+  13 May 2007; Robin H. Johnson <robbat2@gentoo.org>
+  +files/munin-node_conf.d_1.3.3-r1, +files/munin-node_init.d_1.3.3-r1,
+  +munin-1.3.3-r1.ebuild:
+  Bugfixes: #171174, #176309, #176485.
+
+  13 Mar 2007; Gustavo Zacarias <gustavoz@gentoo.org> munin-1.3.3.ebuild:
+  Keyworded ~sparc wrt #169941
+
+*munin-1.3.3 (25 Feb 2007)
+
+  25 Feb 2007; Robin H. Johnson <robbat2@gentoo.org>
+  +files/munin-1.3.3-Makefile.patch, +files/munin-1.3.3-crontab,
+  +munin-1.3.3.ebuild:
+  Version bump. Fix bug 156311.
+
+*munin-1.3.2-r3 (13 Nov 2006)
+
+  13 Nov 2006; Robin H. Johnson <robbat2@gentoo.org>
+  +files/munin-1.3.2-r3-Makefile.patch, +munin-1.3.2-r3.ebuild:
+  Bug #153878 - correct mandir location.
+
+*munin-1.3.2-r2 (19 Oct 2006)
+
+  19 Oct 2006; Robin H. Johnson <robbat2@gentoo.org> +munin-1.3.2-r2.ebuild:
+  Bug #151928 - make SSL support optional. Bug #150867 - Ensure rrdtool is
+  built with USE=perl if we need it to be.
+
+  04 Oct 2006; Robin H. Johnson <robbat2@gentoo.org> munin-1.3.2-r1.ebuild:
+  Add more instructions for users - bug #150045.
+
+*munin-1.3.2-r1 (08 Sep 2006)
+
+  08 Sep 2006; Robin H. Johnson <robbat2@gentoo.org> +munin-1.3.2-r1.ebuild:
+  Bug #146429, try to have a minimal version, might not work right yet.
+
+*munin-1.3.2 (11 Jul 2006)
+
+  11 Jul 2006; Robin H. Johnson <robbat2@gentoo.org>
+  +files/munin-1.3.2-Makefile.patch, +files/munin-1.3.2-crontab,
+  +files/munin-1.3.2-plugin-cleanup.patch, +files/munin-1.3.2-plugins.conf,
+  +files/munin-1.3.2-rrdtool-comments.patch, +files/munin-init.d,
+  +metadata.xml, +munin-1.3.2.ebuild:
+  Initial commit. Bug #76018. Final ebuild by Robin H. Johnson
+  <robbat2@gentoo.org>, with signicent contributions by Allen Parker
+  <infowolfe@gmail.com>.
+

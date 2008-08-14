@@ -1,0 +1,97 @@
+# ChangeLog for media-fonts/font-daewoo-misc
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-fonts/font-daewoo-misc/ChangeLog,v 1.22 2007/08/10 17:57:53 armin76 Exp $
+
+  10 Aug 2007; Raúl Porcel <armin76@gentoo.org>
+  font-daewoo-misc-1.0.0.ebuild:
+  alpha stable wrt #184462
+
+  24 Jul 2007; Steve Dibb <beandog@gentoo.org>
+  font-daewoo-misc-1.0.0.ebuild:
+  amd64 stable, bug 184462
+
+  18 Jul 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  font-daewoo-misc-1.0.0.ebuild:
+  Stable on sparc wrt #184462
+
+  18 Jul 2007; Jeroen Roovers <jer@gentoo.org>
+  font-daewoo-misc-1.0.0.ebuild:
+  Stable for HPPA (bug #184462).
+
+  12 Jul 2007; Raúl Porcel <armin76@gentoo.org>
+  font-daewoo-misc-1.0.0.ebuild:
+  Add ~alpha
+
+  07 Jul 2007; Lars Weiler <pylon@gentoo.org> font-daewoo-misc-1.0.0.ebuild:
+  Stable on ppc; bug #184462.
+
+  21 Feb 2007; Christian Faulhammer <opfer@gentoo.org>
+  font-daewoo-misc-1.0.0.ebuild:
+  stable x86; bug 167022
+
+  26 Nov 2006; Diego Pettenò <flameeyes@gentoo.org>
+  font-daewoo-misc-1.0.0.ebuild:
+  Add ~x86-fbsd keyword.
+
+  11 Jul 2006; Aron Griffis <agriffis@gentoo.org>
+  font-daewoo-misc-1.0.0.ebuild:
+  Mark 1.0.0 stable on ia64
+
+  02 Jul 2006; Markus Rothe <corsair@gentoo.org>
+  font-daewoo-misc-1.0.0.ebuild:
+  Stable on ppc64
+
+  04 Jun 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  font-daewoo-misc-1.0.0.ebuild:
+  (#133980) Add a real description (Max Lorenz).
+
+  14 Feb 2006; Markus Rothe <corsair@gentoo.org>
+  font-daewoo-misc-1.0.0.ebuild:
+  Added ~ppc64
+
+  10 Jan 2006; Michael Hanselmann <hansmi@gentoo.org>
+  font-daewoo-misc-1.0.0.ebuild:
+  Added to ~hppa, ~ppc.
+
+*font-daewoo-misc-1.0.0 (18 Dec 2005)
+
+  18 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  -font-daewoo-misc-0.99.1.ebuild, +font-daewoo-misc-1.0.0.ebuild:
+  Bump for 7.0RC4.
+
+  10 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  font-daewoo-misc-0.99.1.ebuild:
+  Remove mkfontscale and mkfontdir deps; moved to x-modular.eclass.
+
+  07 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  -font-daewoo-misc-0.99.0.ebuild:
+  Pull old versions.
+
+*font-daewoo-misc-0.99.1 (07 Dec 2005)
+
+  07 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +font-daewoo-misc-0.99.1.ebuild:
+  Bump for 7.0RC3.
+
+  09 Sep 2005; Donnie Berkholz <spyderous@gentoo.org>; +metadata.xml:
+  Add metadata.
+
+  14 Aug 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  font-daewoo-misc-0.99.0.ebuild:
+  Autodiscover fonts instead of specifying them.
+
+  11 Aug 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  font-daewoo-misc-0.99.0.ebuild:
+  Update to use new x-modular.eclass setup code. See font-misc-misc ChangeLog
+  for more details.
+
+  09 Aug 2005; Ferris McCormick <fmccor@gentoo.org>
+  font-daewoo-misc-0.99.0.ebuild:
+  Add ~sparc keyword (modular X testing).
+
+*font-daewoo-misc-0.99.0 (08 Aug 2005)
+
+  08 Aug 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +font-daewoo-misc-0.99.0.ebuild:
+  Initial commit for modular X.
+

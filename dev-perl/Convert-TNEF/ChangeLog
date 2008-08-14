@@ -1,0 +1,57 @@
+# ChangeLog for dev-perl/Convert-TNEF
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Convert-TNEF/ChangeLog,v 1.16 2007/01/15 15:18:25 mcummings Exp $
+
+  15 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  Convert-TNEF-0.17-r2.ebuild:
+  Ebuild maintenance
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Convert-TNEF-0.17-r2.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  04 Jul 2006; Christian Hartmann <ian@gentoo.org>
+  Convert-TNEF-0.17-r2.ebuild:
+  Fixed RDEPEND wrt bug #134781; fixed header; fixed DEPEND
+
+  03 Oct 2005; Aron Griffis <agriffis@gentoo.org>
+  Convert-TNEF-0.17-r2.ebuild:
+  Mark 0.17-r2 stable on ia64
+
+  26 Aug 2005; Aron Griffis <agriffis@gentoo.org>
+  Convert-TNEF-0.17-r2.ebuild:
+  add ~ia64
+
+  25 Apr 2005; Elfyn McBratney <beu@gentoo.org> :
+  Digest fix.
+
+  24 Apr 2005; Michael Cummings <mcummings@gentoo.org>
+  -Convert-TNEF-0.17.ebuild, -Convert-TNEF-0.17-r1.ebuild,
+  Convert-TNEF-0.17-r2.ebuild:
+  cleaning
+
+  06 Feb 2005; Markus Rothe <corsair@gentoo.org> Convert-TNEF-0.17-r2.ebuild:
+  Stable on ppc64
+
+  29 Dec 2004; Markus Rothe <corsair@gentoo.org> Convert-TNEF-0.17-r2.ebuild:
+  Added ~ppc64 to KEYWORDS
+
+  06 Dec 2002; Rodney Rees <manson@gentoo.org> : changed sparc ~sparc keywords
+ 
+*Convert-TNEF-0.17-r2 (26 Nov 2002)
+
+  26 Nov 2002; Michael Cummings <mcummings@gentoo.org> \
+  Convert-TNEF-0.17-r2.ebuild:
+  
+  Was missing module deps. Thanks to Alexander Holler in bug 10355.
+  
+*Convert-TNEF-0.17-r1 (21 Jun 2003)
+ 
+  12 Jul 2003; Daniel Ahlberg <aliz@gentoo.org> :
+  Added missing changelog entry.
+
+*Convert-TNEF-0.17 (23 Oct 2002)
+
+  23 Oct 2002; Nick Hadaway <raker@gentoo.org> Convert-TNEF-0.17.ebuild,
+  files/digest-Convert-TNEF-0.17 :
+  New ebuild.  Added to support net-mail/amavis

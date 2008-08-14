@@ -1,0 +1,44 @@
+# ChangeLog for dev-libs/libgringotts
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/libgringotts/ChangeLog,v 1.12 2008/04/27 03:57:39 drac Exp $
+
+  27 Apr 2008; Samuli Suominen <drac@gentoo.org> libgringotts-1.2.1.ebuild:
+  Move pkgconfig to DEPEND and fix documentation install paths.
+
+  27 Apr 2008; Samuli Suominen <drac@gentoo.org> libgringotts-1.2.1.ebuild:
+  Move pkgconfig from RDEPEND to DEPEND.
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  21 Apr 2005; Simon Stelling <blubb@gentoo.org> libgringotts-1.2.1.ebuild:
+  stable on amd64
+
+  22 Nov 2004; Leonardo Boshell <leonardop@gentoo.org>
+  libgringotts-1.2.1.ebuild:
+  Don't use einstall. See bug #71721.
+
+*libgringotts-1.2.1 (29 Apr 2003)
+
+  29 Apr 2003; Alastair Tse <liquidx@gentoo.org> libgringotts-1.2.1.ebuild:
+  version bump
+
+  29 Apr 2003; Alastair Tse <liquidx@gentoo.org> libgringotts-1.1.2.ebuild:
+  removed X useflag. marked stable for x86.
+
+*libgringotts-1.1.2 (14 Jan 2003)
+
+  28 Mar 2003; Pieter Van den Abeele <pvdabeel@gentoo.org> : 
+  Added ~ppc keyword
+
+  14 Jan 2003; L. Boshell <leonardop@gentoo.org> : New version.
+  Dependencies are more comprehensive now, thanks to Alastair Tse (bug
+  #11919).
+
+*libgringotts-1.1.1 (05 Dec 2002)
+
+  05 Dec 2002; L. Boshell <leonardop@gentoo.org> ChangeLog,
+  libgringotts-1.1.1.ebuild : Initial import.

@@ -1,0 +1,18 @@
+# ChangeLog for media-plugins/vdr-remoteosd
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-remoteosd/ChangeLog,v 1.2 2007/10/07 11:21:30 zzam Exp $
+
+*vdr-remoteosd-0.0.2 (07 Oct 2007)
+
+  07 Oct 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +files/vdr-remoteosd-0.0.2-readconfig.diff, +vdr-remoteosd-0.0.2.ebuild:
+  Version bumped.
+
+*vdr-remoteosd-0.0.1 (27 Sep 2006)
+
+  27 Sep 2006; Joerg Bornkessel <hd_brummy@gentoo.org>
+  +files/vdr-remoteosd-0.0.1-include.patch, +metadata.xml,
+  +vdr-remoteosd-0.0.1.ebuild:
+  initial ebuild; thx to Mentox at
+  http://www.vdr-portal.de/board/thread.php?postid=498072
+

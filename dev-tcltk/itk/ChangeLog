@@ -1,0 +1,50 @@
+# ChangeLog for dev-tcltk/itk
+# Copyright 1999-2006 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-tcltk/itk/ChangeLog,v 1.13 2006/10/21 21:47:41 kloeri Exp $
+
+  21 Oct 2006; Bryan Østergaard <kloeri@gentoo.org> itk-3.3-r1.ebuild:
+  Add ~alpha keyword.
+
+  14 Sep 2006; Tobias Scherbaum <dertobi123@gentoo.org> itk-3.3-r1.ebuild:
+  ppc stable, bug #115177
+
+  15 Jul 2006; Joshua Jackson <tsunam@gentoo.org> itk-3.3-r1.ebuild:
+  Stable x86; bug #139367
+
+  06 Jul 2006; Jon Hood <squinky86@gentoo.org> itk-3.3-r1.ebuild:
+  Stable on amd64, bug #139367.
+
+  06 Jul 2006; Jason Wever <weeve@gentoo.org> itk-3.3-r1.ebuild:
+  Stable on SPARC wrt bug #139367.
+
+  10 Mar 2006; Aron Griffis <agriffis@gentoo.org> itk-3.3-r1.ebuild:
+  Mark 3.3-r1 stable on ia64. #115177
+
+  22 Jan 2006; Joseph Jezak <josejx@gentoo.org> itk-3.3-r1.ebuild:
+  Marked ~ppc for bug #115177.
+
+  16 Jan 2006; Jason Wever <weeve@gentoo.org> itk-3.3.ebuild:
+  Stable on SPARC.
+
+*itk-3.3-r1 (09 Jan 2006)
+
+  09 Jan 2006; MATSUU Takuto <matsuu@gentoo.org> +itk-3.3-r1.ebuild:
+  Fixed fails with bash-3.1
+
+  29 Dec 2005; Simon Stelling <blubb@gentoo.org> itk-3.3.ebuild:
+  stable on amd64
+
+  16 Dec 2005; Mark Loeser <halcy0n@gentoo.org> itk-3.3.ebuild:
+  Stable on x86; bug #115177
+
+  12 Dec 2005; Ferris McCormick <fmccor@gentoo.org> itk-3.3.ebuild:
+  Add ~sparc keyword at developer's request --- Bug #115177 --- package builds
+  without any problems, and appears to run.  Notice, however, that the
+  interp.test fails (all other tests are fine).  This requires resolution or
+  explanation before sparc can go stable.
+
+*itk-3.3 (03 Jul 2005)
+
+  03 Jul 2005; MATSUU Takuto <matsuu@gentoo.org> +itk-3.3.ebuild:
+  Initial ebuild. Bug 93311.
+

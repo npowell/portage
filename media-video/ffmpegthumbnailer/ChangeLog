@@ -1,0 +1,249 @@
+# ChangeLog for media-video/ffmpegthumbnailer
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/ffmpegthumbnailer/ChangeLog,v 1.52 2008/06/02 04:06:49 jer Exp $
+
+  02 Jun 2008; Jeroen Roovers <jer@gentoo.org>
+  ffmpegthumbnailer-1.2.5.ebuild:
+  Stable for HPPA (bug #224079).
+
+  01 Jun 2008; nixnut <nixnut@gentoo.org> ffmpegthumbnailer-1.2.5.ebuild:
+  Stable on ppc wrt bug 224079
+
+  31 May 2008; Samuli Suominen <drac@gentoo.org>
+  -files/ffmpegthumbnailer-1.1.2-ffmpeg.patch,
+  -ffmpegthumbnailer-1.1.2.ebuild, ffmpegthumbnailer-1.2.5.ebuild:
+  amd64/arm stable, remove old
+
+  29 May 2008; Raúl Porcel <armin76@gentoo.org>
+  ffmpegthumbnailer-1.2.5.ebuild:
+  alpha/ia64/sparc stable wrt #224079
+
+  29 May 2008; Markus Rothe <corsair@gentoo.org>
+  ffmpegthumbnailer-1.2.5.ebuild:
+  Stable on ppc64; bug #224079
+
+  29 May 2008; Christian Faulhammer <opfer@gentoo.org>
+  ffmpegthumbnailer-1.2.5.ebuild:
+  stable x86, bug 224079
+
+*ffmpegthumbnailer-1.2.5 (29 Apr 2008)
+
+  29 Apr 2008; Samuli Suominen <drac@gentoo.org>
+  +ffmpegthumbnailer-1.2.5.ebuild:
+  Version bump, fixes crash with raw avi files.
+
+  24 Apr 2008; Markus Rothe <corsair@gentoo.org>
+  ffmpegthumbnailer-1.2.4.ebuild:
+  Stable on ppc64; bug #218568
+
+  21 Apr 2008; Raúl Porcel <armin76@gentoo.org>
+  ffmpegthumbnailer-1.2.4.ebuild:
+  alpha/ia64/sparc/x86 stable wrt #218568
+
+  20 Apr 2008; nixnut <nixnut@gentoo.org> ffmpegthumbnailer-1.2.4.ebuild:
+  Stable on ppc wrt bug 218568
+
+*ffmpegthumbnailer-1.2.4 (20 Apr 2008)
+
+  20 Apr 2008; Samuli Suominen <drac@gentoo.org>
+  -files/ffmpegthumbnailer-1.2.3-gcc43.patch,
+  -ffmpegthumbnailer-1.2.3.ebuild, +ffmpegthumbnailer-1.2.4.ebuild:
+  Version bump to 1.2.4 which is same as 1.2.3 with gcc 4.3 fix.
+  amd64 stable, only trivial change from previous version.
+
+  15 Apr 2008; Samuli Suominen <drac@gentoo.org>
+  +files/ffmpegthumbnailer-1.2.3-gcc43.patch,
+  ffmpegthumbnailer-1.2.3.ebuild:
+  GCC 4.3 fix by me and Sergey Dryabzhinsky wrt #213725.
+
+*ffmpegthumbnailer-1.2.3 (09 Apr 2008)
+
+  09 Apr 2008; Samuli Suominen <drac@gentoo.org>
+  +ffmpegthumbnailer-1.2.3.ebuild:
+  Version bump. This version includes a patch from Alexis Ballier to build
+  against recent ffmpeg snapshots.
+
+  26 Mar 2008; Jeroen Roovers <jer@gentoo.org>
+  ffmpegthumbnailer-1.2.2.ebuild:
+  Stable for HPPA (bug #214130).
+
+  24 Mar 2008; Raúl Porcel <armin76@gentoo.org>
+  ffmpegthumbnailer-1.2.2.ebuild:
+  ia64/sparc stable wrt #214130
+
+  22 Mar 2008; Brent Baude <ranger@gentoo.org>
+  ffmpegthumbnailer-1.2.2.ebuild:
+  Marking ffmpegthumbnailer-1.2.2 ppc64 for bug 214130
+
+  22 Mar 2008; nixnut <nixnut@gentoo.org> ffmpegthumbnailer-1.2.2.ebuild:
+  Stable on ppc wrt bug 214130
+
+  21 Mar 2008; Tobias Klausmann <klausman@gentoo.org>
+  ffmpegthumbnailer-1.2.2.ebuild:
+  Stable on alpha, bug #214130
+
+  21 Mar 2008; Dawid Węgliński <cla@gentoo.org>
+  ffmpegthumbnailer-1.2.2.ebuild:
+  Stable on x86 (bug #214130)
+
+  21 Mar 2008; Samuli Suominen <drac@gentoo.org>
+  ffmpegthumbnailer-1.2.2.ebuild:
+  amd64 stable
+
+*ffmpegthumbnailer-1.2.2 (26 Feb 2008)
+
+  26 Feb 2008; Samuli Suominen <drac@gentoo.org>
+  -files/ffmpegthumbnailer-1.2.1-asneeded.patch,
+  -ffmpegthumbnailer-1.1.5.ebuild, -ffmpegthumbnailer-1.2.1.ebuild,
+  +ffmpegthumbnailer-1.2.2.ebuild:
+  Version bump, only change from 1.2.1 is that upstream applied our
+  -Wl,--as-needed patch so we can avoid running eautomake.
+
+*ffmpegthumbnailer-1.2.1 (26 Feb 2008)
+
+  26 Feb 2008; Samuli Suominen <drac@gentoo.org>
+  +files/ffmpegthumbnailer-1.2.1-asneeded.patch,
+  +ffmpegthumbnailer-1.2.1.ebuild:
+  Version bump.
+
+*ffmpegthumbnailer-1.1.5 (16 Feb 2008)
+
+  16 Feb 2008; Samuli Suominen <drac@gentoo.org>
+  +ffmpegthumbnailer-1.1.5.ebuild:
+  Version bump.
+
+  18 Aug 2007; Samuli Suominen <drac@gentoo.org>
+  ffmpegthumbnailer-1.1.2.ebuild:
+  Keyworded ~arm wrt #172867
+
+  09 Jul 2007; Jeroen Roovers <jer@gentoo.org>
+  ffmpegthumbnailer-1.1.2.ebuild:
+  Stable for HPPA (bug #184267).
+
+  06 Jul 2007; Lars Weiler <pylon@gentoo.org>
+  ffmpegthumbnailer-1.1.2.ebuild:
+  Stable on ppc; bug #184267.
+
+  06 Jul 2007; Markus Rothe <corsair@gentoo.org>
+  ffmpegthumbnailer-1.1.2.ebuild:
+  Stable on ppc64; bug #184267
+
+  05 Jul 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  ffmpegthumbnailer-1.1.2.ebuild:
+  Stable on sparc wrt #184267
+
+  05 Jul 2007; Christoph Mende <angelos@gentoo.org>
+  ffmpegthumbnailer-1.1.2.ebuild:
+  Stable on amd64 wrt bug #184267
+
+  05 Jul 2007; Raúl Porcel <armin76@gentoo.org>
+  ffmpegthumbnailer-1.1.2.ebuild:
+  alpha/ia64/x86 stable wrt #184267
+
+  27 Jun 2007; Samuli Suominen <drac@gentoo.org>
+  -files/ffmpegthumbnailer-1.1.1-ffmpeg.patch,
+  +files/ffmpegthumbnailer-1.1.2-ffmpeg.patch,
+  -files/ffmpegthumbnailer-1.1.2-swscale.patch,
+  -ffmpegthumbnailer-1.1.1-r1.ebuild, ffmpegthumbnailer-1.1.2.ebuild:
+  Patch to allow building with old and new ffmpeg still supporting asneeded,
+  using autotools and pkgconfig.
+
+*ffmpegthumbnailer-1.1.2 (27 Jun 2007)
+
+  27 Jun 2007; Samuli Suominen <drac@gentoo.org>
+  +files/ffmpegthumbnailer-1.1.2-swscale.patch,
+  +ffmpegthumbnailer-1.1.2.ebuild:
+  Version bump with swscale patch.
+
+  14 Jun 2007; Raúl Porcel <armin76@gentoo.org>
+  ffmpegthumbnailer-1.1.1.ebuild:
+  alpha stable
+
+*ffmpegthumbnailer-1.1.1-r1 (01 Jun 2007)
+
+  01 Jun 2007; Samuli Suominen <drac@gentoo.org>
+  +files/ffmpegthumbnailer-1.1.1-ffmpeg.patch,
+  +ffmpegthumbnailer-1.1.1-r1.ebuild:
+  Fix building with media-video/ffmpeg-0.4.9_p20070525.
+
+  01 Jun 2007; Samuli Suominen <drac@gentoo.org>
+  ffmpegthumbnailer-1.1.1.ebuild:
+  ffmpeg snapshot from 20070525 breaks so force 20070330 for now.
+
+  31 May 2007; Brent Baude <ranger@gentoo.org>
+  ffmpegthumbnailer-1.1.1.ebuild:
+  Marking ffmpegthumbnailer-1.1.1 ppc64 stable for bug #178510
+
+  24 May 2007; Lars Weiler <pylon@gentoo.org>
+  ffmpegthumbnailer-1.1.1.ebuild:
+  Stable on ppc; bug #178510.
+
+  21 May 2007; Jeroen Roovers <jer@gentoo.org>
+  ffmpegthumbnailer-1.1.1.ebuild:
+  Stable for HPPA (bug #178510).
+
+  19 May 2007; Peter Weller <welp@gentoo.org>
+  ffmpegthumbnailer-1.1.1.ebuild:
+  Stable on amd64 wrt bug 178510
+
+  18 May 2007; Raúl Porcel <armin76@gentoo.org>
+  ffmpegthumbnailer-1.1.1.ebuild:
+  Add ~alpha wrt #175749
+
+  18 May 2007; Raúl Porcel <armin76@gentoo.org>
+  ffmpegthumbnailer-1.1.1.ebuild:
+  ia64 + x86 stable wrt #178510
+
+  15 May 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  ffmpegthumbnailer-1.1.1.ebuild:
+  Stable on sparc wrt #178510
+
+*ffmpegthumbnailer-1.1.1 (08 May 2007)
+
+  08 May 2007; Samuli Suominen <drac@gentoo.org>
+  -files/ffmpegthumbnailer-1.1-int.patch,
+  -files/ffmpegthumbnailer-1.1-inttypes.patch,
+  -ffmpegthumbnailer-1.1.ebuild, -ffmpegthumbnailer-1.1-r1.ebuild,
+  +ffmpegthumbnailer-1.1.1.ebuild:
+  Version bump.
+
+  28 Apr 2007; nixnut <nixnut@gentoo.org> ffmpegthumbnailer-1.1-r1.ebuild:
+  Added ~ppc wrt bug 175749
+
+  26 Apr 2007; Jeroen Roovers <jer@gentoo.org>
+  ffmpegthumbnailer-1.1-r1.ebuild:
+  Marked ~hppa (bug #175749).
+
+*ffmpegthumbnailer-1.1-r1 (13 Apr 2007)
+
+  13 Apr 2007; Samuli Suominen <drac@gentoo.org>
+  +files/ffmpegthumbnailer-1.1-inttypes.patch,
+  +ffmpegthumbnailer-1.1-r1.ebuild:
+  Fix compilation with new ffmpeg for bug 173692, thanks to ebfe
+  <knabberknusperhaus AT yahoo.de>
+
+  03 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  ffmpegthumbnailer-1.1.ebuild:
+  Keyworded ~sparc wrt #172867
+
+  02 Apr 2007; Peter Weller <welp@gentoo.org> ffmpegthumbnailer-1.1.ebuild:
+  Keyworded ~amd64 wrt bug 172867
+
+  01 Apr 2007; Markus Rothe <corsair@gentoo.org>
+  ffmpegthumbnailer-1.1.ebuild:
+  Added ~ppc64
+
+  31 Mar 2007; Raúl Porcel <armin76@gentoo.org>
+  ffmpegthumbnailer-1.1.ebuild:
+  Add ~ia64 wrt bug 172867
+
+  31 Mar 2007; Samuli Suominen <drac@gentoo.org>
+  +files/ffmpegthumbnailer-1.1-int.patch, ffmpegthumbnailer-1.1.ebuild:
+  64bit fix from bug 172875, thanks to Markus Rothe for patch.
+
+*ffmpegthumbnailer-1.1 (31 Mar 2007)
+
+  31 Mar 2007; Samuli Suominen <drac@gentoo.org> +metadata.xml,
+  +ffmpegthumbnailer-1.1.ebuild:
+  Initial commit.
+

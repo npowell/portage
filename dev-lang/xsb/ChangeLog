@@ -1,0 +1,67 @@
+# ChangeLog for dev-lang/xsb
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/xsb/ChangeLog,v 1.13 2008/08/14 08:13:48 keri Exp $
+
+  14 Aug 2008; <keri@gentoo.org> xsb-3.1.ebuild:
+  Fix up interprolog and mt options. Closes #234192.
+
+  09 May 2008; keri <keri@gentoo.org> xsb-3.0.1.ebuild:
+  inherit java-pkg-opt-2
+
+  16 Feb 2008; keri <keri@gentoo.org> xsb-3.0.1.ebuild, xsb-3.1.ebuild:
+  Move eautoconf to src_unpack. Closes #207441.
+
+  26 Nov 2007; keri <keri@gentoo.org> files/xsb-3.1-portage.patch:
+  Do not install xsb_configuration.P since we do not regenerate
+  xsb_configuration.xwam.
+
+*xsb-3.1 (25 Nov 2007)
+
+  25 Nov 2007; keri <keri@gentoo.org> +files/xsb-3.1-chr_d.patch,
+  +files/xsb-3.1-configure.patch, +files/xsb-3.1-gap.patch,
+  +files/xsb-3.1-justify.patch, +files/xsb-3.1-mysql.patch,
+  +files/xsb-3.1-nostrip.patch, +files/xsb-3.1-odbc.patch,
+  +files/xsb-3.1-orient.patch, +files/xsb-3.1-packages.patch,
+  +files/xsb-3.1-portage.patch, +files/xsb-3.1-varstring.patch,
+  +files/xsb-3.1-xpath.patch, +files/xsb-3.1-xsb-script.patch,
+  +xsb-3.1.ebuild:
+  Version bump.
+
+  24 Apr 2007; keri <keri@gentoo.org> files/xsb-3.0.1-configure.patch:
+  Respect -odbc -iodbc in USE flags. Closes bug #174696.
+
+  08 Feb 2007; keri <keri@gentoo.org> files/xsb-3.0.1-configure.patch,
+  files/xsb-3.0.1-portage.patch:
+  Respect iodbc headers in odbc module. Closes bug #165853 reported by Berk
+  Birand.
+
+  03 Feb 2007; keri <keri@gentoo.org> +files/xsb-3.0.1-debug.patch,
+  xsb-3.0.1.ebuild:
+  Fix clause_reference hashing in debug mode.
+
+  02 Feb 2007; keri <keri@gentoo.org> files/xsb-3.0.1-portage.patch:
+  Parallelize compile of Prolog engine.
+
+  29 Jan 2007; keri <keri@gentoo.org> xsb-3.0.1.ebuild:
+  Enable interprolog with Java.
+
+  29 Jan 2007; keri <keri@gentoo.org> files/xsb-3.0.1-mysql.patch,
+  files/xsb-3.0.1-odbc.patch, files/xsb-3.0.1-xsb-script.patch:
+  Fix .so dependencies in ODBC and MySQL drivers.
+
+  29 Jan 2007; keri <keri@gentoo.org> files/xsb-3.0.1-configure.patch:
+  Enable use of iODBC driver manager without explicit support for ODBC.
+
+*xsb-3.0.1 (28 Jan 2007)
+
+  28 Jan 2007; keri <keri@gentoo.org> +files/xsb-3.0.1-chr_d.patch,
+  +files/xsb-3.0.1-configure.patch, +files/xsb-3.0.1-gap.patch,
+  +files/xsb-3.0.1-justify.patch, +files/xsb-3.0.1-libwww.patch,
+  +files/xsb-3.0.1-mysql.patch, +files/xsb-3.0.1-nostrip.patch,
+  +files/xsb-3.0.1-odbc.patch, +files/xsb-3.0.1-packages.patch,
+  +files/xsb-3.0.1-perlmatch.patch, +files/xsb-3.0.1-portage.patch,
+  +files/xsb-3.0.1-sgml.patch, +files/xsb-3.0.1-slx.patch,
+  +files/xsb-3.0.1-wildmatch.patch, +files/xsb-3.0.1-xpath.patch,
+  +files/xsb-3.0.1-xsb-script.patch, +metadata.xml, +xsb-3.0.1.ebuild:
+  Initial import.
+

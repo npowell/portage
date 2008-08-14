@@ -1,0 +1,81 @@
+# ChangeLog for net-print/foomatic-db-ppds
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-print/foomatic-db-ppds/ChangeLog,v 1.16 2008/05/07 23:33:03 tgurr Exp $
+
+*foomatic-db-ppds-3.0.20080507 (07 May 2008)
+*foomatic-db-ppds-3.0.20070508 (07 May 2008)
+*foomatic-db-ppds-3.0.20060720 (07 May 2008)
+
+  07 May 2008; Timo Gurr <tgurr@gentoo.org>
+  +foomatic-db-ppds-3.0.20060720.ebuild,
+  +foomatic-db-ppds-3.0.20070508.ebuild,
+  +foomatic-db-ppds-3.0.20080507.ebuild, -foomatic-db-ppds-20060720.ebuild,
+  -foomatic-db-ppds-20070508.ebuild:
+  Add new snapshot, change versioning to reflect upstream naming, move mips
+  to unstable.
+
+  20 Nov 2007; Joshua Kinard <kumba@gentoo.org>
+  foomatic-db-ppds-20060720.ebuild:
+  Stable on mips, per #155545.
+
+  12 Jul 2007; Roy Marples <uberlord@gentoo.org>
+  foomatic-db-ppds-20070508.ebuild:
+  Keyworded ~sparc-fbsd.
+
+  11 May 2007; Denis Dupeyron <calchan@gentoo.org>
+  foomatic-db-ppds-20070508.ebuild:
+  Added mirror URI.
+
+*foomatic-db-ppds-20070508 (08 May 2007)
+
+  08 May 2007; Denis Dupeyron <calchan@gentoo.org>
+  +files/Makefile.in-20070508.patch, +foomatic-db-ppds-20070508.ebuild:
+  Version bump. Fixed copyright dates.
+
+  03 Dec 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  foomatic-db-ppds-20060720.ebuild:
+  ppc stable, bug #155545
+
+  01 Dec 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  foomatic-db-ppds-20060720.ebuild:
+  Stable on hppa wrt #155545
+
+  25 Nov 2006; Bryan Østergaard <kloeri@gentoo.org>
+  foomatic-db-ppds-20060720.ebuild:
+  Stable on Alpha + ia64.
+
+  24 Nov 2006; Markus Rothe <corsair@gentoo.org>
+  foomatic-db-ppds-20060720.ebuild:
+  Stable on ppc64; bug #155545
+
+  23 Nov 2006; <blubb@gentoo.org> foomatic-db-ppds-20060720.ebuild:
+  stable on amd64
+
+  22 Nov 2006; Christian Faulhammer <opfer@gentoo.org>
+  foomatic-db-ppds-20060720.ebuild:
+  stable x86, bug #155545
+
+  20 Nov 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  foomatic-db-ppds-20060720.ebuild:
+  Stable on sparc wrt #155545
+
+  18 Nov 2006; Stefan Schweizer <genstef@gentoo.org>
+  -foomatic-db-ppds-20060601.ebuild:
+  remove old
+
+  28 Oct 2006; Diego Pettenò <flameeyes@gentoo.org>
+  foomatic-db-ppds-20060720.ebuild:
+  Add ~x86-fbsd keyword.
+
+*foomatic-db-ppds-20060720 (20 Jul 2006)
+
+  20 Jul 2006; Stefan Schweizer <genstef@gentoo.org>
+  +foomatic-db-ppds-20060720.ebuild:
+  version bump
+
+*foomatic-db-ppds-20060601 (04 Jun 2006)
+
+  04 Jun 2006; Stefan Schweizer <genstef@gentoo.org> +metadata.xml,
+  +foomatic-db-ppds-20060601.ebuild:
+  Split up foomatic-db
+

@@ -1,0 +1,79 @@
+# ChangeLog for www-servers/publicfile
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-servers/publicfile/ChangeLog,v 1.9 2007/02/22 00:27:33 jokey Exp $
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  31 Dec 2005; Diego Pettenò <flameeyes@gentoo.org> publicfile-0.52.ebuild:
+  Change /bin/false to -1 in enewuser call.
+
+  23 Aug 2005; Diego Pettenò <flameeyes@gentoo.org>
+  publicfile-0.52-r1.ebuild:
+  Use -1 instead of /bin/false on enewuser call.
+
+  25 Jul 2005; Rene Nussbaumer <killerfox@gentoo.org>
+  publicfile-0.52-r1.ebuild:
+  Stable on hppa.
+
+  19 Jun 2005; Rene Nussbaumer <killerfox@gentoo.org>
+  publicfile-0.52-r1.ebuild:
+  Added to ~hppa.
+
+  03 Mar 2005; Ciaran McCreesh <ciaranm@gentoo.org>
+  publicfile-0.52-r1.ebuild, publicfile-0.52.ebuild:
+  Move sys-apps/daemontools -> sys-process/daemontools
+
+  05 Sep 2004; Sven Wegener <swegener@gentoo.org> :
+  Fixed ChangeLog header.
+
+  03 Sep 2004; Pieter Van den Abeele <pvdabeel@gentoo.org>
+  publicfile-0.52-r1.ebuild:
+  Masked publicfile-0.52-r1.ebuild stable for ppc
+
+*publicfile-0.52 (08 Aug 2004)
+
+  08 Aug 2004; Stuart Herbert <stuart@gentoo.org> +metadata.xml,
+  +publicfile-0.52-r1.ebuild, +publicfile-0.52.ebuild:
+  Moved from net-www/publicfile to www-servers/publicfile.
+
+  27 Jul 2004; Rob Holland <tigger@gentoo.org> publicfile-0.52-r1.ebuild,
+  publicfile-0.52.ebuild:
+  Fix user/group additions re #58526.
+
+  06 Jun 2004; Jason Wever <weeve@gentoo.org> publicfile-0.52-r1.ebuild:
+  Stable on sparc.
+
+  23 Apr 2004; Stuart Herbert <stuart@gentoo.org> publicfile-0.52-r1.ebuild:
+  Marked stable on x86
+
+  06 Apr 2004; Joshua Brindle <method@gentoo.org> publicfile-0.52-r1.ebuild,
+  publicfile-0.52.ebuild:
+  added selinux policy to rdepend
+
+*publicfile-0.52-r1 (30 Dec 2003)
+
+  30 Dec 2003; Martin Holzer <mholzer@gentoo.org> publicfile-0.52-r1.ebuild:
+  Ebuild enhancement submitted by adam morley <axm135@po.cwru.edu> in 31558
+
+  06 Dec 2002; Rodney Rees <manson@gentoo.org> : changed sparc ~sparc keywords
+ 
+  14 Aug 2002; Mark Guertin <gerk@gentoo.org> publicfile-0.52.ebuild :
+  Fixed other part of pkg_postinst to reflect /home/public dir :)
+
+  09 May 2002; Thilo Bangert <bangert@gentoo.org> :
+
+  fixed description in pkg_postinst to reflect /home/public dir
+
+
+*publicfile-0.52 (09 May 2002)
+
+  25 Mar 2003; Alastair Tse <liquidx@gentoo.org> publicfile-0.52.ebuild:
+  glibc-2.3.2 errno fix. thanks to Andy Dustman. bug #17805.
+
+  14 Jul 2002; Daniel Ahlberg <aliz@gentoo.org> publicfile-0.52.ebuild :
+  Added KEYWORDS, SLOT.
+
+  09 May 2002; Thilo Bangert <bangert@gentoo.org> :
+
+  initial release - contribution by jakd@gu.st

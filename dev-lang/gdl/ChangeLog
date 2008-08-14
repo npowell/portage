@@ -1,0 +1,55 @@
+# ChangeLog for dev-lang/gdl
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/gdl/ChangeLog,v 1.9 2008/06/06 14:31:45 markusle Exp $
+
+  06 Jun 2008; Markus Dittrich <markusle@gentoo.org> gdl-0.9_rc1.ebuild:
+  Make gdl backward compatible to <plplot-5.9 (fixes bug #225027).
+
+  24 May 2008; Markus Dittrich <markusle@gentoo.org>
+  +files/gdl-0.9_rc1-magick.patch, +files/gdl-0.9_rc1-gcc4.3.patch,
+  gdl-0.9_rc1.ebuild:
+  Replaced imagemagick patch which broke due to additiona autoconf step
+  (fixes bug #223321). Added gcc4.3 compile patch.
+
+*gdl-0.9_rc1 (22 May 2008)
+
+  22 May 2008; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/gdl-0.9_rc1-proj4.patch, -gdl-0.9_pre5.ebuild, +gdl-0.9_rc1.ebuild:
+  Version bump
+
+  13 Apr 2008; Markus Dittrich <markusle@gentoo.org>
+  +files/gdl-0.9_pre6-plplot-5.9.patch, gdl-0.9_pre6.ebuild:
+  Added patch for plplot-5.9 support (fixes bug #217361).
+
+  21 Mar 2008; Markus Dittrich <markusle@gentoo.org>
+  +files/gdl-0.9_pre6-magick.patch, gdl-0.9_pre5.ebuild,
+  gdl-0.9_pre6.ebuild:
+  Added patch to fix compilation issues with imagemagick-6.3.9* 
+  (see bug #214040).
+
+*gdl-0.9_pre6 (05 Nov 2007)
+
+  05 Nov 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/gdl-0.9_pre6-proj4.patch, +gdl-0.9_pre6.ebuild:
+  Version bump
+
+*gdl-0.9_pre5 (21 Aug 2007)
+
+  21 Aug 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/gdl-0.9_pre5-proj4.patch, metadata.xml, +gdl-0.9_pre5.ebuild:
+  Version bump.
+
+  29 Sep 2006; Markus Dittrich <markusle@gentoo.org>
+  +files/gdl-0.8.11-gcc4-gentoo.patch, gdl-0.8.11.ebuild:
+  Added patch to fix compile problems with gcc4.x. This fixes
+  bug #149299.
+
+*gdl-0.8.11 (21 Dec 2005)
+
+  21 Dec 2005; Markus Dittrich <markusle@gentoo.org> +metadata.xml,
+  +gdl-0.8.11.ebuild:
+  Initial import (fixes bug #82660). Thanks to Sebastien Fabbro
+  <seb@ist.utl.pt>, Jose Marino <braket@hotmail.com>, Steven Rieder
+  <steven@rieder.nl>, and Daniel Veillette <danielv@snet.net> for 
+  their ebuilds and testing.
+

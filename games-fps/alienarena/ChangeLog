@@ -1,0 +1,61 @@
+# ChangeLog for games-fps/alienarena
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-fps/alienarena/ChangeLog,v 1.11 2008/06/06 04:34:37 nyhm Exp $
+
+*alienarena-20080603 (06 Jun 2008)
+
+  06 Jun 2008; Tristan Heaven <nyhm@gentoo.org> +alienarena-20080603.ebuild:
+  Version bump
+
+*alienarena-20080227 (25 Mar 2008)
+
+  25 Mar 2008; Tristan Heaven <nyhm@gentoo.org>
+  +files/alienarena-20080227-include.patch, +alienarena-20080227.ebuild:
+  Version bump, thanks to Paul Bredbury and Rémy Dupont, bug #212575
+
+  22 Jan 2008; Tristan Heaven <nyhm@gentoo.org> alienarena-20071011.ebuild:
+  Fix deps again, bug #206378
+
+*alienarena-20071011 (23 Nov 2007)
+
+  23 Nov 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/alienarena-20071011-paths.patch, +alienarena-20071011.ebuild:
+  Version bump by Paul Bredbury, bug #195545
+
+*alienarena-20070613-r1 (24 Sep 2007)
+
+  24 Sep 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/alienarena-20070613-dos.patch,
+  +files/alienarena-20070613-format-strings.patch,
+  -alienarena-20070613.ebuild, +alienarena-20070613-r1.ebuild:
+  Security fixes from Debian, bug #191484
+
+  28 Jul 2007; Tristan Heaven <nyhm@gentoo.org> alienarena-20070613.ebuild:
+  Fix dependencies for USE=sdl
+
+*alienarena-20070613 (14 Jun 2007)
+
+  14 Jun 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/alienarena-20070613-paths.patch, +files/alienarena.xpm,
+  +alienarena-20070613.ebuild:
+  Version bump
+
+  07 Mar 2007; Piotr Jaroszyński <peper@gentoo.org>
+  alienarena-20070224-r1.ebuild:
+  Add ~amd64 wrt bug #169049.
+
+*alienarena-20070224-r1 (26 Feb 2007)
+
+  26 Feb 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/alienarena-20070224-gamedir.patch, +alienarena-20070224-r1.ebuild:
+  Revision bump with upstream patch
+
+*alienarena-20070224 (25 Feb 2007)
+
+  25 Feb 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/alienarena-20070224-build.patch,
+  +files/alienarena-20070224-exec-stack.patch,
+  +files/alienarena-20070224-paths.patch, +metadata.xml,
+  +alienarena-20070224.ebuild:
+  Initial commit, based on Paul Bredbury's ebuild from bug #110972
+

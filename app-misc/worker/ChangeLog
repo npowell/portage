@@ -1,0 +1,52 @@
+# ChangeLog for app-misc/worker
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/worker/ChangeLog,v 1.57 2008/07/31 17:20:38 ulm Exp $
+
+  31 Jul 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
+  Add USE flag description to metadata wrt GLEP 56.
+
+*worker-2.16.5 (05 Jul 2008)
+
+  05 Jul 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  -worker-2.11.1.ebuild, -worker-2.16.4.ebuild, +worker-2.16.5.ebuild:
+  Version bump & Cleanup
+
+  05 Jul 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  worker-2.16.2.ebuild:
+  ppc stable, bug #230531
+
+  04 Jul 2008; Raúl Porcel <armin76@gentoo.org> worker-2.16.2.ebuild:
+  alpha/ia64/x86 stable wrt #230531
+
+  02 Jul 2008; Thomas Anderson <gentoofan23@gentoo.org>
+  worker-2.16.2.ebuild:
+  stable amd64, bug 230531
+
+  02 Jul 2008; Ferris McCormick <fmccor@gentoo.org> worker-2.16.2.ebuild:
+  Sparc stable, Bug #230531.  Seems to work fine.
+
+*worker-2.16.4 (02 Jul 2008)
+
+  02 Jul 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  +worker-2.16.4.ebuild:
+  Version bump
+
+*worker-2.16.2 (08 Mar 2008)
+
+  08 Mar 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  -worker-2.16.1.ebuild, +worker-2.16.2.ebuild:
+  Version bump
+
+*worker-2.16.1 (04 Dec 2007)
+
+  04 Dec 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  -worker-2.14.0.ebuild, -worker-2.15.0.ebuild, +worker-2.16.1.ebuild:
+  Version bump, fix desktop file (bug #197970 thanks to Dominique Michel)
+
+*worker-2.15.0 (26 Aug 2007)
+
+  26 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  -worker-2.13.1.ebuild, -worker-2.14.0-r1.ebuild, -worker-2.14.4.ebuild,
+  +worker-2.15.0.ebuild:
+  Purge old versions,  version bump
+

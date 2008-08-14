@@ -1,0 +1,32 @@
+# ChangeLog for dev-perl/mogilefs-server
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/mogilefs-server/ChangeLog,v 1.4 2007/10/27 01:16:02 robbat2 Exp $
+
+*mogilefs-server-2.17 (27 Oct 2007)
+
+  27 Oct 2007; Robin H. Johnson <robbat2@gentoo.org>
+  +mogilefs-server-2.17.ebuild:
+  Version bump.
+
+*mogilefs-server-2.16 (16 May 2007)
+
+  16 May 2007; Robin H. Johnson <robbat2@gentoo.org>
+  +files/mogilefsd-conf.d-2.16, +files/mogilefsd-init.d-2.16,
+  +files/mogilefsd.conf-2.16, +files/mogstored-conf.d-2.16,
+  +files/mogstored-init.d-2.16, +files/mogstored.conf-2.16,
+  +files/mogilefs-server-2.16-Use-saner-name-in-process-listing.patch,
+  +mogilefs-server-2.16.ebuild:
+  Version bump, now includes init scripts and all the other nice bits.
+
+*mogilefs-server-2.15 (09 May 2007)
+
+  09 May 2007; Robin H. Johnson <robbat2@gentoo.org>
+  +mogilefs-server-2.15.ebuild:
+  Version bump.
+
+*mogilefs-server-2.10 (30 Apr 2007)
+
+  30 Apr 2007; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml,
+  +mogilefs-server-2.10.ebuild:
+  Initial commit, ebuild by Robin H. Johnson <robbat2@gentoo.org>.
+

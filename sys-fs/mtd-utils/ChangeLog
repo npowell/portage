@@ -1,0 +1,63 @@
+# ChangeLog for sys-fs/mtd-utils
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/mtd-utils/ChangeLog,v 1.14 2008/06/23 00:54:37 zmedico Exp $
+
+  22 Jun 2008; Zac Medico <zmedico@gentoo.org> mtd-utils-9999.ebuild:
+  Add -f to rm arguments in src_install since ${D}/usr/include doesn't
+  necessarily exist. Also add emake -j1 option to avoid make failures.
+
+  16 Jun 2008; <solar@gentoo.org> mtd-utils-20080102.ebuild:
+  - don't use argp.h http://patchwork.ozlabs.org/linux-mtd/patch?id=17501
+
+  25 May 2008; <solar@gentoo.org> mtd-utils-20080102.ebuild:
+  - stable on arm/amd64/x86
+
+  23 Feb 2008; Mike Frysinger <vapier@gentoo.org> mtd-utils-20060907.ebuild:
+  Move to amd64 stable #203855.
+
+  01 Feb 2008; Mike Frysinger <vapier@gentoo.org> mtd-utils-9999.ebuild,
+  -mtd-utils-20060606.ebuild, mtd-utils-20080102.ebuild:
+  Pull in lzo since we use it #208428 by Mart Raudsepp.
+
+  26 Jan 2008; Mike Frysinger <vapier@gentoo.org> mtd-utils-20060907.ebuild:
+  Move to mips stable #203855.
+
+*mtd-utils-20080102 (02 Jan 2008)
+
+  02 Jan 2008; Robin H. Johnson <robbat2@gentoo.org> mtd-utils-9999.ebuild,
+  +mtd-utils-20080102.ebuild:
+  Version bump using a snapshot from the actual Git repo now. Also update the
+  live ebuild to use the Git repo directly. attr/acl are totally optional now.
+
+  01 Jan 2008; Markus Meier <maekke@gentoo.org> mtd-utils-20060907.ebuild:
+  x86 stable, bug #203855
+
+  31 Dec 2007; Joseph Jezak <josejx@gentoo.org> mtd-utils-20060907.ebuild:
+  Marked ppc stable for bug #203855.
+
+*mtd-utils-9999 (27 Dec 2007)
+
+  27 Dec 2007; Mike Frysinger <vapier@gentoo.org> +mtd-utils-9999.ebuild:
+  Live cvs ebuild.
+
+  26 Dec 2007; Robin H. Johnson <robbat2@gentoo.org>
+  mtd-utils-20060907.ebuild:
+  Fix the deps, acl is only needed to build, as the headers are used. No linking.
+
+*mtd-utils-20060907 (08 Sep 2006)
+
+  08 Sep 2006; Robin H. Johnson <robbat2@gentoo.org>
+  mtd-utils-20060606.ebuild, +mtd-utils-20060907.ebuild:
+  Fix bug #146362 and version bump.
+
+  08 Jun 2006; Robin H. Johnson <robbat2@gentoo.org>
+  mtd-utils-20060606.ebuild:
+  Forgot to block old package.
+
+*mtd-utils-20060606 (08 Jun 2006)
+
+  08 Jun 2006; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml,
+  +mtd-utils-20060606.ebuild:
+  Initial commit. New variant of the old sys-fs/mtd package, maintained
+  seperately by upstream.
+

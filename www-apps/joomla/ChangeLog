@@ -1,0 +1,114 @@
+# ChangeLog for www-apps/joomla
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-apps/joomla/ChangeLog,v 1.22 2008/08/01 04:30:01 wrobel Exp $
+
+  01 Aug 2008; wrobel@gentoo.org joomla-1.5.5.ebuild:
+  Require PHP with xml (Bug #232574).
+
+*joomla-1.5.5 (31 Jul 2008)
+
+  31 Jul 2008; wrobel@gentoo.org -joomla-1.5.3.ebuild, +joomla-1.5.5.ebuild:
+  Bumped to 1.5.5 in response to sec issue #231579.
+
+*joomla-1.5.3 (27 Apr 2008)
+
+  27 Apr 2008; wrobel@gentoo.org -joomla-1.5.1.ebuild, +joomla-1.5.3.ebuild:
+  Added joomla-1.5.3.
+
+*joomla-1.0.15 (23 Feb 2008)
+
+  23 Feb 2008; Benedikt Böhm <hollow@gentoo.org> +joomla-1.0.15.ebuild,
+  joomla-1.5.1.ebuild:
+  readd 1.0 branch
+
+*joomla-1.5.1 (23 Feb 2008)
+
+  23 Feb 2008; Benedikt Böhm <hollow@gentoo.org> metadata.xml,
+  -joomla-1.5.0.ebuild, +joomla-1.5.1.ebuild:
+  version bump; fixes #210225 and security #204335; remove vulnerable version
+
+*joomla-1.5.0 (23 Jan 2008)
+
+  23 Jan 2008; Gunnar Wrobel <wrobel@gentoo.org> files/postinstall-en.txt,
+  -joomla-1.0.13.ebuild, +joomla-1.5.0.ebuild:
+  Added joomla-1.5.0 in response to sec issue #204335. Removed insecure
+  joomla-1.0.13.
+
+*joomla-1.0.12 (03 Jan 2007)
+
+  03 Jan 2007; Renat Lumpau <rl03@gentoo.org> -joomla-1.0.11.ebuild,
+  +joomla-1.0.12.ebuild:
+  Version bump, bug #159193.
+
+  23 Nov 2006; Francesco Riosa <vivo@gentoo.org> joomla-1.0.11.ebuild:
+  dev-db/mysql => virtual/mysql
+
+*joomla-1.0.11 (02 Sep 2006)
+
+  02 Sep 2006; Renat Lumpau <rl03@gentoo.org> -joomla-1.0.10.ebuild,
+  +joomla-1.0.11.ebuild:
+  Version bump, bug #145481, bug #145516, bug #145518.
+
+  14 Jul 2006; Renat Lumpau <rl03@gentoo.org> joomla-1.0.10.ebuild:
+  Add write access to mambots/system per bug #140342.
+
+*joomla-1.0.10 (27 Jun 2006)
+
+  27 Jun 2006; Renat Lumpau <rl03@gentoo.org> -joomla-1.0.8.ebuild,
+  -joomla-1.0.9.ebuild, +joomla-1.0.10.ebuild:
+  Version bump, security bug #138054.
+
+*joomla-1.0.9 (20 Jun 2006)
+
+  20 Jun 2006; Luca Longinotti <chtekk@gentoo.org> joomla-1.0.8.ebuild,
+  +joomla-1.0.9.ebuild:
+  Version bump
+
+  29 Apr 2006; Renat Lumpau <rl03@gentoo.org> joomla-1.0.8.ebuild:
+  Removed pkg_config per bug #129558.
+
+*joomla-1.0.8 (26 Feb 2006)
+
+  26 Feb 2006; Renat Lumpau <rl03@gentoo.org> files/postinstall-en.txt,
+  -joomla-1.0.7.ebuild, +joomla-1.0.8.ebuild:
+  Version bump, #124082.
+
+*joomla-1.0.7 (17 Jan 2006)
+
+  17 Jan 2006; Renat Lumpau <rl03@gentoo.org> -joomla-1.0.5.ebuild,
+  +joomla-1.0.7.ebuild:
+  Version bump
+
+  16 Jan 2006; Renat Lumpau <rl03@gentoo.org> joomla-1.0.5.ebuild:
+  Fixes bug #119112.
+
+*joomla-1.0.5 (07 Jan 2006)
+
+  07 Jan 2006; Renat Lumpau <rl03@gentoo.org> -joomla-1.0.4.ebuild,
+  +joomla-1.0.5.ebuild:
+  Version bump wrt security bug #118084, cleaned out old version.
+
+*joomla-1.0.4 (27 Nov 2005)
+
+  27 Nov 2005; Renat Lumpau <rl03@gentoo.org> -joomla-1.0.3.ebuild,
+  +joomla-1.0.4.ebuild:
+  Version bump wrt security bug #113574.
+
+*joomla-1.0.3 (23 Oct 2005)
+
+  23 Oct 2005; Renat Lumpau <rl03@gentoo.org> -joomla-1.0.1.ebuild,
+  +joomla-1.0.3.ebuild:
+  Version bump wrt bug #108621.
+
+  23 Oct 2005; Renat Lumpau <rl03@gentoo.org> joomla-1.0.1.ebuild:
+  Fixed emerge --config wrt bug #109482.
+
+  29 Sep 2005; Renat Lumpau <rl03@gentoo.org> joomla-1.0.1.ebuild:
+  Fixed reference to old name
+
+*joomla-1.0.1 (28 Sep 2005)
+
+  28 Sep 2005; Renat Lumpau <rl03@gentoo.org> +files/postinstall-en.txt,
+  +metadata.xml, +joomla-1.0.1.ebuild:
+  Initial ebuild wrt bug #107129.
+

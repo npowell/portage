@@ -1,0 +1,27 @@
+# ChangeLog for dev-python/iconvcodec
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/iconvcodec/ChangeLog,v 1.7 2008/05/02 18:35:54 pythonhead Exp $
+
+  02 May 2008; Rob Cakebread <pythonhead@gentoo.org>
+  iconvcodec-1.1.2.ebuild:
+  Use berlios mirror. bug #218657
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  12 Jul 2006; Aron Griffis <agriffis@gentoo.org> iconvcodec-1.1.2.ebuild:
+  Mark 1.1.2 stable on ia64
+
+  01 Apr 2006; Aron Griffis <agriffis@gentoo.org> iconvcodec-1.1.2.ebuild:
+  Mark 1.1.2 ~ia64
+
+*iconvcodec-1.1.2 (05 Dec 2003)
+
+  05 Dec 2003; Alastair Tse <liquidx@gentoo.org> iconvcodec-1.1.2.ebuild:
+  version bump
+
+*iconvcodec-1.1.1 (28 Jun 2003)
+
+  28 Jun 2003; Alastair Tse <liquidx@gentoo.org> iconvcodec-1.1.1.ebuild:
+  iconv codecs for python
+

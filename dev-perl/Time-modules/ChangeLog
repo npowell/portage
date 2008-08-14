@@ -1,0 +1,87 @@
+# ChangeLog for dev-perl/Time-modules
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Time-modules/ChangeLog,v 1.22 2007/07/14 13:47:19 armin76 Exp $
+
+  14 Jul 2007; Raúl Porcel <armin76@gentoo.org>
+  Time-modules-2006.0814.ebuild:
+  alpha stable
+
+  16 Apr 2007; Markus Rothe <corsair@gentoo.org>
+  Time-modules-2006.0814.ebuild:
+  Stable on ppc64
+
+  05 Mar 2007; Andrej Kacian <ticho@gentoo.org>
+  Time-modules-2006.0814.ebuild:
+  Stable on x86, bug #169152.
+
+  21 Oct 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  Time-modules-2006.0814.ebuild:
+  ppc stable
+
+  20 Oct 2006; Aron Griffis <agriffis@gentoo.org>
+  Time-modules-2006.0814.ebuild:
+  Mark 2006.0814 stable on ia64
+
+  15 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  -Time-modules-2003.0211.ebuild, Time-modules-2006.0814.ebuild:
+  Marking amd64, sparc stable; cleaning up ebuilds
+
+*Time-modules-2006.0814 (20 Aug 2006)
+
+  20 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Time-modules-2003.0211.ebuild, Time-modules-2003.1126.ebuild,
+  +Time-modules-2006.0814.ebuild:
+  Version bump
+
+  06 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Time-modules-2003.0211.ebuild, Time-modules-2003.1126.ebuild:
+  Adding perl dep; fixed header; fixed DEPEND
+
+  17 Sep 2005; Aron Griffis <agriffis@gentoo.org>
+  Time-modules-2003.1126.ebuild:
+  Mark 2003.1126 stable on ia64
+
+  26 Aug 2005; Aron Griffis <agriffis@gentoo.org>
+  Time-modules-2003.1126.ebuild:
+  add ~ia64
+
+  01 May 2005; Tom Martin <slarti@gentoo.org> Time-modules-2003.1126.ebuild:
+  Stable on amd64.
+
+  30 Apr 2005; Bryan Østergaard <kloeri@gentoo.org>
+  Time-modules-2003.1126.ebuild:
+  Stable on alpha.
+
+  29 Apr 2005; Michael Cummings <mcummings@gentoo.org>
+  Time-modules-2003.0211.ebuild, Time-modules-2003.1126.ebuild:
+  Cleaning for mirror syntax
+
+  30 Dec 2004; Ciaran McCreesh <ciaranm@gentoo.org> :
+  Change encoding to UTF-8 for GLEP 31 compliance
+
+  23 Dec 2004; Yuta SATOH <nigoro@gentoo.org> Time-modules-2003.1126.ebuild:
+  added ~ppc64
+
+*Time-modules-2003.1126 (10 Jun 2004)
+
+  10 Jun 2004; Michael Cummings <mcummings@gentoo.org>
+  Time-modules-2003.1126.ebuild:
+  new version on cpan
+
+  26 May 2004; Bryan Østergaard <kloeri@gentoo.org>
+  Time-modules-2003.0211.ebuild:
+  Stable on alpha.
+
+*Time-modules-2003.0211 (08 Jun 2003)
+
+  08 Jun 2003; <rac@gentoo.org> Time-modules-2002.1001.ebuild,
+  Time-modules-2003.0211.ebuild:
+  Version bump, add IUSE, fix header
+
+*Time-modules-2002.1001 (21 Dec 2002)
+
+  22 Dec 2002; Michael Cummings <mcummings@gentoo.org>
+  Time-modules-2002.1001.ebuild:
+
+  Initial import.  Ebuild submitted by bnelson@itministry.org (Brian
+  Nelson) bug 10108 - future dep

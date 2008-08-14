@@ -1,0 +1,50 @@
+# ChangeLog for app-portage/portpeek
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-portage/portpeek/ChangeLog,v 1.11 2008/08/08 20:00:11 nixnut Exp $
+
+  08 Aug 2008; nixnut <nixnut@gentoo.org> portpeek-1.5.7.ebuild:
+  Stable on ppc wrt bug 233580
+
+  06 Aug 2008; Thomas Anderson <gentoofan23@gentoo.org>
+  portpeek-1.5.7.ebuild:
+  stable amd64, bug 233580, remove redundant directory change to 'S'
+
+  01 Aug 2008; Ferris McCormick <fmccor@gentoo.org> portpeek-1.5.7.ebuild:
+  Sparc stable, Bug #233644.
+
+*portpeek-1.6.5 (01 Aug 2008)
+
+  01 Aug 2008; Mike Pagano <mpagano@gentoo.org> +portpeek-1.6.5.ebuild:
+  Version bump
+
+  26 Jun 2008; Ferris McCormick <fmccor@gentoo.org> portpeek-1.5.7.ebuild,
+  portpeek-1.6.1.ebuild:
+  Add ~sparc keyword at usr (Dustin Surawicz) request, Bug #229615.
+
+*portpeek-1.6.1 (26 Jun 2008)
+
+  26 Jun 2008; Mike Pagano <mpagano@gentoo.org> -portpeek-1.6.0.ebuild,
+  +portpeek-1.6.1.ebuild:
+  Fix leftover references to deprecated modules
+
+*portpeek-1.6.0 (22 Jun 2008)
+
+  22 Jun 2008; Mike Pagano <mpagano@gentoo.org> +portpeek-1.6.0.ebuild:
+  Remove use of deprecated portage modules
+
+  31 Mar 2008; Doug Goldstein <cardoe@gentoo.org> portpeek-1.5.7.ebuild:
+  Add ~amd64
+
+  30 Jan 2008; Dawid Węgliński <cla@gentoo.org> portpeek-1.5.7.ebuild:
+  Stable on x86 (bug #207748)
+
+  15 Oct 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  portpeek-1.5.7.ebuild:
+  Keyword ~ppc.
+
+*portpeek-1.5.7 (10 Oct 2007)
+
+  10 Oct 2007; Mike Pagano <mpagano@gentoo.org> +metadata.xml,
+  +portpeek-1.5.7.ebuild:
+  Initial ebuild for new package.
+

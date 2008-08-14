@@ -1,0 +1,914 @@
+# ChangeLog for media-video/totem
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/totem/ChangeLog,v 1.222 2008/08/12 14:11:27 armin76 Exp $
+
+  12 Aug 2008; Raúl Porcel <armin76@gentoo.org> totem-2.22.2-r1.ebuild:
+  alpha/ia64/sparc stable wrt #229709
+
+  10 Aug 2008; Markus Meier <maekke@gentoo.org> totem-2.22.2-r1.ebuild:
+  x86 stable, bug #229709
+
+  30 Jul 2008; Brent Baude <ranger@gentoo.org> totem-2.22.2-r1.ebuild:
+  Marking totem-2.22.2-r1 ppc stable for bug 229709
+
+  26 Jul 2008; Olivier Crête <tester@gentoo.org> totem-2.22.2-r1.ebuild:
+  Stable on amd64, bug #229709
+
+  05 Jun 2008; Rémi Cardona <remi@gentoo.org> totem-2.20.3.ebuild,
+  totem-2.20.4.ebuild:
+  pkgmove to gnome-base/gnome-control-center
+
+  02 Jun 2008; Alexis Ballier <aballier@gentoo.org> totem-2.22.2-r1.ebuild:
+  keyword ~x86-fbsd
+
+  01 Jun 2008; nixnut <nixnut@gentoo.org> totem-2.22.2-r1.ebuild:
+  Added ~ppc wrt bug 218794
+
+*totem-2.22.2-r1 (09 May 2008)
+
+  09 May 2008; Rémi Cardona <remi@gentoo.org>
+  +files/totem-2.22.2-fix-python-and-libtool-2.2.patch,
+  +totem-2.22.2-r1.ebuild:
+  Add a patch for python detection (and libtool 2.2) and clean up the ebuild
+
+*totem-2.22.2 (01 May 2008)
+
+  01 May 2008; Gilles Dartiguelongue <eva@gentoo.org> -totem-2.22.0.ebuild,
+  +totem-2.22.2.ebuild:
+  bump to 2.22.2. Fix libsoup detection in youtube plugin, fix a warning in
+  gstreamer backend and fix some documentation links to pass make check.
+
+  24 Apr 2008; Markus Rothe <corsair@gentoo.org> totem-2.22.1.ebuild:
+  Added ~ppc64; bug #218794
+
+  22 Apr 2008; Raúl Porcel <armin76@gentoo.org> totem-2.22.1.ebuild:
+  Add ~alpha/~ia64/~sparc wrt #218794
+
+  21 Apr 2008; Saleem Abdulrasool <compnerd@gentoo.org> totem-2.22.1.ebuild:
+  Add built_with_use check for threading in python in the use=python case
+
+  14 Apr 2008; Gilles Dartiguelongue <eva@gentoo.org> metadata.xml:
+  integrate USE flag documentation from bheekling's and Ford_Prefect's
+  effort.
+
+*totem-2.22.1 (10 Apr 2008)
+
+  10 Apr 2008; Gilles Dartiguelongue <eva@gentoo.org> +totem-2.22.1.ebuild:
+  bump to 2.22.1. Fix some crasher bugs.
+
+*totem-2.20.4 (28 Mar 2008)
+
+  28 Mar 2008; Mart Raudsepp <leio@gentoo.org> +totem-2.20.4.ebuild:
+  New version for the 2.20 series - removes gnome-desktop dependency, fixes
+  DVD ISO detection on some platforms, and a few corner-case crash fixes
+
+  27 Mar 2008; Gilles Dartiguelongue <eva@gentoo.org> totem-2.22.0.ebuild:
+  drop most keywords because of gst-plugins-meta dependency
+
+*totem-2.22.0 (24 Mar 2008)
+
+  24 Mar 2008; Gilles Dartiguelongue <eva@gentoo.org> +totem-2.22.0.ebuild:
+  New version for GNOME-2.22. Lots of fixes, moved totem-pl-parser in its
+  own package, new plugins (Mythtv, local search via tracker, local sharing
+  via avahi).
+
+  17 Mar 2008; Raúl Porcel <armin76@gentoo.org> totem-2.18.3.ebuild,
+  totem-2.20.3.ebuild:
+  Fix deps for net-libs/xulrunner and www-client/mozilla-firefox
+
+  03 Mar 2008; Gilles Dartiguelongue <eva@gentoo.org> totem-2.20.3.ebuild:
+  fix incorrect use logic, bug #211185
+
+  04 Feb 2008; Jeroen Roovers <jer@gentoo.org> totem-2.20.3.ebuild:
+  Stable for HPPA (bug #208366).
+
+  03 Feb 2008; Raúl Porcel <armin76@gentoo.org> totem-2.20.3.ebuild:
+  alpha/ia64/sparc stable wrt #208366
+
+  02 Feb 2008; Chris Gianelloni <wolf31o2@gentoo.org> totem-2.20.3.ebuild:
+  Stable on amd64 wrt bug #208366.
+
+  01 Feb 2008; Brent Baude <ranger@gentoo.org> totem-2.20.3.ebuild:
+  Marking totem-2.20.3 ppc64 and ppc stable for bug 208366
+
+  01 Feb 2008; Christian Faulhammer <opfer@gentoo.org> totem-2.20.3.ebuild:
+  stable x86, bug 208366
+
+*totem-2.20.3 (09 Jan 2008)
+
+  09 Jan 2008; Gilles Dartiguelongue <eva@gentoo.org> +totem-2.20.3.ebuild:
+  bump to 2.20.3
+
+  16 Dec 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +files/totem-2.20.1-startup-notification.patch,
+  +files/totem-2.20.1-xpcom-hack.patch:
+  Be more strict about applying the xpcom hack (bug #198058)
+
+  12 Dec 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  -files/01_build_mozilla_plugin_with_seamonkey_xpcom.patch,
+  -files/totem-1.5.91-mozilla-firefox-include-fix.patch,
+  -files/01_build_mozilla_plugin_with_firefox_xpcom.patch,
+  -totem-2.16.5.ebuild, -totem-2.18.2.ebuild, -totem-2.20.0.ebuild:
+  prune unused versions
+
+  29 Nov 2007; Jeroen Roovers <jer@gentoo.org> totem-2.20.1.ebuild:
+  Stable for HPPA (bug #199740).
+
+  26 Nov 2007; Markus Rothe <corsair@gentoo.org> totem-2.20.1.ebuild:
+  Stable on ppc64; bug #199740
+
+  24 Nov 2007; Brent Baude <ranger@gentoo.org> totem-2.20.1.ebuild:
+  Marking totem-2.20.1 ppc stable for bug 199740
+
+  22 Nov 2007; Raúl Porcel <armin76@gentoo.org> totem-2.20.1.ebuild:
+  alpha/ia64/sparc stable wrt #199740
+
+  21 Nov 2007; Dawid Węgliński <cla@gentoo.org> totem-2.20.1.ebuild:
+  Stable on x86 (bug #199740)
+
+  20 Nov 2007; Samuli Suominen <drac@gentoo.org> totem-2.20.1.ebuild:
+  amd64 stable wrt #199740
+
+  18 Nov 2007; Samuli Suominen <drac@gentoo.org> totem-2.18.3.ebuild,
+  totem-2.20.1.ebuild:
+  Remove redudant built_with_use checks wrt #199496.
+
+  30 Oct 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +files/totem-2.20.1-browser-plugins.patch, totem-2.20.1.ebuild:
+  Fix runtime errors with nsplugins by linking against xpcom
+
+  23 Oct 2007; Gilles Dartiguelongue <eva@gentoo.org> totem-2.16.5.ebuild,
+  totem-2.18.2.ebuild, totem-2.18.3.ebuild:
+  fix quoting
+
+*totem-2.20.1 (23 Oct 2007)
+
+  23 Oct 2007; Gilles Dartiguelongue <eva@gentoo.org> totem-2.20.0.ebuild,
+  +totem-2.20.1.ebuild:
+  bump to 2.20.1
+  fix DEPEND of 2.20.0 and 2.20.1
+  removing intltoolize call from 2.20.1 as it look not necessary anymore
+
+  04 Oct 2007; Mart Raudsepp <leio@gentoo.org> totem-2.18.2.ebuild,
+  totem-2.18.3.ebuild:
+  Correct some dependencies, bug 194735
+
+*totem-2.20.0 (01 Oct 2007)
+
+  01 Oct 2007; Gilles Dartiguelongue <eva@gentoo.org> totem-2.18.2.ebuild,
+  totem-2.18.3.ebuild, +totem-2.20.0.ebuild:
+  fix plugindir and add totem-2.20
+
+  23 Sep 2007; Tom Gall <tgall@gentoo.org> totem-2.18.3.ebuild:
+  stable on ppc64
+
+  18 Sep 2007; Jeroen Roovers <jer@gentoo.org> totem-2.18.3.ebuild:
+  Stable for HPPA too.
+
+  06 Sep 2007; Gilles Dartiguelongue <eva@gentoo.org> totem-2.18.2.ebuild,
+  totem-2.18.3.ebuild:
+  fixing bug 191391, thanks to kristian meier <m.kristian@web.de> for pointing
+  it out.
+
+*totem-2.18.3 (28 Aug 2007)
+
+  28 Aug 2007; Gilles Dartiguelongue <eva@gentoo.org> +totem-2.18.3.ebuild:
+  bump to 2.18.3
+
+  28 Aug 2007; Jeroen Roovers <jer@gentoo.org> totem-2.18.2.ebuild:
+  Stable for HPPA (bug #185823).
+
+  11 Aug 2007; Mart Raudsepp <leio@gentoo.org>
+  -files/totem-1.4.0-autoconf.patch, -files/totem-1.4.1-nsIDOMWINDOW.patch,
+  -files/totem-1.4.2-nsIURI.patch,
+  -files/totem-2.17.5-browser-plugins.patch, -totem-1.2.1-r1.ebuild,
+  -totem-1.4.2-r1.ebuild, -totem-2.18.1-r1.ebuild:
+  Removing Gnome 2.14
+
+  11 Aug 2007; Andrej Kacian <ticho@gentoo.org> totem-2.18.2.ebuild:
+  Stable on x86, bug #185823.
+
+  10 Aug 2007; Christoph Mende <angelos@gentoo.org> totem-2.18.2.ebuild:
+  Stable on amd64 wrt bug #185823
+
+  08 Aug 2007; Raúl Porcel <armin76@gentoo.org> totem-2.18.2.ebuild:
+  alpha/ia64 stable wrt #185823
+
+  07 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org> totem-2.18.2.ebuild:
+  Stable on ppc wrt bug #185823.
+
+  07 Aug 2007; Gustavo Zacarias <gustavoz@gentoo.org> totem-2.18.2.ebuild:
+  Stable on sparc wrt #185823
+
+  02 Aug 2007; Michael Sterrett <mr_bones_@gentoo.org>
+  totem-2.18.1-r1.ebuild, totem-2.18.2.ebuild:
+  correct dbus deps (bug #187369)
+
+  25 Jul 2007; Gustavo Zacarias <gustavoz@gentoo.org> totem-2.18.2.ebuild:
+  SPARC lovin
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  totem-1.4.2-r1.ebuild:
+  Drop virtual/x11 references.
+
+  08 Jul 2007; Michael Sterrett <mr_bones_@gentoo.org>
+  totem-1.2.1-r1.ebuild, totem-2.16.4.ebuild, totem-2.16.5.ebuild,
+  totem-2.18.1-r1.ebuild, totem-2.18.2.ebuild:
+  remove reference to old, removed dbus (bug #183696)
+
+  05 Jul 2007; Roy Marples <uberlord@gentoo.org> totem-2.18.2.ebuild:
+  Keyworded ~x86-fbsd.
+
+*totem-2.18.2 (30 Jun 2007)
+
+  30 Jun 2007; Mart Raudsepp <leio@gentoo.org> +totem-2.18.2.ebuild:
+  Version bump
+
+  11 Jun 2007; Daniel Gryniewicz <dang@gentoo.org> -totem-2.18.1.ebuild:
+  Remove 2.18.1; it has bad deps
+
+  02 Jun 2007; Brent Baude <ranger@gentoo.org> totem-2.16.5.ebuild:
+  Marking totem-2.16.5 ppc stable for bug #171107
+
+  31 May 2007; Jeroen Roovers <jer@gentoo.org> totem-2.16.5.ebuild:
+  Stable for HPPA (bug #171107).
+
+  31 May 2007; Daniel Gryniewicz <dang@gentoo.org> totem-2.16.5.ebuild:
+  Marked stable on amd64 for bug #171107
+
+  31 May 2007; Brent Baude <ranger@gentoo.org> totem-2.16.5.ebuild:
+  Marking totem-2.16.5 ppc64 stable for bug #171107
+
+  30 May 2007; Raúl Porcel <armin76@gentoo.org> totem-2.16.5.ebuild:
+  alpha/ia64 stable wrt #171107
+
+  29 May 2007; Andrej Kacian <ticho@gentoo.org> totem-2.16.5.ebuild:
+  Stable on x86, bug #171107.
+
+  29 May 2007; Gustavo Zacarias <gustavoz@gentoo.org> totem-2.16.5.ebuild:
+  Stable on sparc wrt #171107
+
+*totem-2.18.1-r1 (02 May 2007)
+
+  02 May 2007; Daniel Gryniewicz <dang@gentoo.org> -totem-2.18.0.ebuild,
+  +totem-2.18.1-r1.ebuild:
+  Bump to 2.18.1-r1
+  	- Re-arrange gecko deps so that firefox is the default, and xulrunner and
+  	  seamonkey have USE flags.  This is for 2 reasons:  First, sparc needs a
+  	  seamonkey flag, so it can mask it; second, this brings totem in line with
+  	  other gnome packages like epiphany.
+
+  18 Apr 2007; Saleem Abdulrasool <compnerd@gentoo.org> totem-2.18.1.ebuild:
+  Add inputproto to DEPEND (bug #175128)
+
+*totem-2.18.1 (17 Apr 2007)
+
+  17 Apr 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +files/totem-2.18.1-browser-plugins.patch, +totem-2.18.1.ebuild:
+  Version bump for 2.18.1
+
+  16 Apr 2007; Daniel Gryniewicz <dang@gentoo.org> totem-2.16.4.ebuild,
+  totem-2.16.5.ebuild:
+  Only warn about DVD menus if gstreamer backend is used; bug #173951
+
+*totem-2.18.0 (27 Mar 2007)
+
+  27 Mar 2007; Daniel Gryniewicz <dang@gentoo.org>
+  +files/totem-2.17.5-browser-plugins.patch, +totem-2.18.0.ebuild:
+  gnome 2.18.0
+
+*totem-2.16.5 (26 Feb 2007)
+
+  26 Feb 2007; Luis Medinas <metalgod@gentoo.org> +totem-2.16.5.ebuild:
+  Version Bump. Bug fix release. Closes bug #167135.
+
+  21 Feb 2007; Roy Marples <uberlord@gentoo.org> totem-2.16.4.ebuild:
+  Add ~x86-fbsd keyword.
+
+  04 Feb 2007; Markus Rothe <corsair@gentoo.org> totem-2.16.4.ebuild:
+  Stable on ppc64; bug #164978
+
+  21 Jan 2007; Bryan Østergaard <kloeri@gentoo.org> totem-2.16.4.ebuild:
+  Stable on IA64, bug 156662.
+
+  19 Jan 2007; Jeroen Roovers <jer@gentoo.org> totem-2.16.4.ebuild:
+  Stable for HPPA (bug #147751).
+
+  14 Jan 2007; Bryan Østergaard <kloeri@gentoo.org> totem-2.16.4.ebuild:
+  Stable on Alpha.
+
+  10 Jan 2007; Mart Raudsepp <leio@gentoo.org> -totem-2.16.2-r1.ebuild,
+  -totem-2.16.3.ebuild:
+  Prune old versions
+
+  05 Jan 2007; Diego Pettenò <flameeyes@gentoo.org> totem-1.2.1-r1.ebuild,
+  totem-1.4.2-r1.ebuild, totem-2.16.2-r1.ebuild, totem-2.16.3.ebuild,
+  totem-2.16.4.ebuild:
+  Convert to use elog.
+
+  22 Dec 2006; Tony Vroon <chainsaw@gentoo.org> totem-2.16.2-r1.ebuild,
+  totem-2.16.3.ebuild, totem-2.16.4.ebuild:
+  Remove explicit seamonkey depend for PPC64, we can use firefox these days.
+
+  20 Dec 2006; Saleem Abdulrasool <compnerd@gentoo.org> totem-2.16.4.ebuild:
+  Add xf86vidmodeproto to the dep as per bug #158675, thanks to wolf31o2 for
+  noticing it
+
+  18 Dec 2006; Gustavo Zacarias <gustavoz@gentoo.org> totem-2.16.4.ebuild:
+  Stable on sparc
+
+  17 Dec 2006; Tobias Scherbaum <dertobi123@gentoo.org> totem-2.16.4.ebuild:
+  Stable on ppc wrt bug #156662.
+
+  12 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org> totem-2.16.4.ebuild:
+  Stable on amd64 wrt bug #156662.
+
+  11 Dec 2006; Andrej Kacian <ticho@gentoo.org> totem-2.16.4.ebuild:
+  Stable on x86, bug #156662.
+
+*totem-2.16.4 (29 Nov 2006)
+
+  29 Nov 2006; Saleem Abdulrasool <compnerd@gentoo.org> +totem-2.16.4.ebuild:
+  Version bump from upstream
+
+  25 Nov 2006; Bryan Østergaard <kloeri@gentoo.org> totem-2.16.3.ebuild:
+  Add ~alpha keyword.
+
+  20 Nov 2006; Mart Raudsepp <leio@gentoo.org> -totem-2.16.1.ebuild,
+  -totem-2.16.2.ebuild:
+  Remove old versions
+
+*totem-2.16.3 (15 Nov 2006)
+
+  15 Nov 2006; Luis Medinas <metalgod@gentoo.org> +totem-2.16.3.ebuild:
+  Version Bump. Added dbus love to dependencies fixes bug #155280.
+
+  20 Oct 2006; Aron Griffis <agriffis@gentoo.org> totem-1.4.2-r1.ebuild:
+  Mark 1.4.2-r1 stable on alpha
+
+  16 Oct 2006; <compnerd@gentoo.org>
+  +files/01_build_mozilla_plugin_with_firefox_xpcom.patch,
+  +files/01_build_mozilla_plugin_with_seamonkey_xpcom.patch,
+  totem-2.16.2-r1.ebuild:
+  Add patches from ubuntu for bug #148131
+
+*totem-2.16.2-r1 (16 Oct 2006)
+
+  16 Oct 2006; <compnerd@gentoo.org> +totem-2.16.2-r1.ebuild:
+  Fix browser plugin issue (bug #147280)
+
+*totem-2.16.2 (13 Oct 2006)
+
+  13 Oct 2006; Mart Raudsepp <leio@gentoo.org> +totem-2.16.2.ebuild:
+  Version bump
+
+  03 Oct 2006; Aron Griffis <agriffis@gentoo.org> totem-2.16.1.ebuild:
+  Mark 2.16.1 ~ia64
+
+  19 Sep 2006; Aron Griffis <agriffis@gentoo.org> totem-1.4.2-r1.ebuild:
+  Mark 1.4.2-r1 stable on ia64. #139612
+
+  12 Sep 2006; Daniel Gryniewicz <dang@gentoo.org> totem-2.16.1.ebuild:
+  Remove monolithic X deps
+
+  12 Sep 2006; Daniel Gryniewicz <dang@gentoo.org> totem-2.16.1.ebuild:
+  Fix hardcoded mozilla path
+
+*totem-2.16.1 (11 Sep 2006)
+
+  11 Sep 2006; Daniel Gryniewicz <dang@gentoo.org> -totem-2.16.0.ebuild,
+  +totem-2.16.1.ebuild:
+  Bump to 2.16.1
+
+*totem-2.16.0 (07 Sep 2006)
+
+  07 Sep 2006; Daniel Gryniewicz <dang@gentoo.org>
+  +files/totem-1.5.91-mozilla-firefox-include-fix.patch,
+  +totem-2.16.0.ebuild:
+  New version for gnome 2.16
+
+  19 Aug 2006; Bryan Østergaard <kloeri@gentoo.org> totem-1.4.2-r1.ebuild:
+  Add ~ia64 keyword.
+
+  23 Jul 2006; Daniel Gryniewicz <dang@gentoo.org>
+  -files/totem-dbus-0.60.patch, -files/totem-1.2.1-gecko-sdk.patch,
+  -files/totem-1.3.0-gecko-sdk.patch, -files/totem-1.4.0-as-needed.patch,
+  -files/totem-1.4.0-linguas.patch, -totem-1.4.2.ebuild:
+  Clean up unnecessary versions
+
+  17 Jul 2006; Daniel Gryniewicz <dang@gentoo.org> totem-1.4.2-r1.ebuild:
+  Marked stable on amd64 for bug #139612
+
+  16 Jul 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  totem-1.4.2-r1.ebuild:
+  hppa stable, bug #139612
+
+  14 Jul 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  totem-1.4.2-r1.ebuild:
+  ppc stable, bug #139612
+
+  14 Jul 2006; John N. Laliberte <allanonjl@gentoo.org>
+  totem-1.4.2-r1.ebuild:
+  mark -r1 stable
+
+  12 Jul 2006; Chris Gianelloni <wolf31o2@gentoo.org> totem-1.4.2.ebuild:
+  Stable on x86 wrt bug #139612.
+
+  10 Jul 2006; Gustavo Zacarias <gustavoz@gentoo.org> totem-1.4.2-r1.ebuild:
+  Stable on sparc wrt #139612
+
+  08 Jul 2006; Michael Sterrett <mr_bones_@gentoo.org>
+  totem-1.2.1-r1.ebuild:
+  remove optional dep that is no longer in portage
+
+  07 Jul 2006; Daniel Gryniewicz <dang@gentoo.org> totem-1.4.2-r1.ebuild:
+  Add dep for gst-plugins-good.  Bug #139440
+
+  07 Jul 2006; Michael Sterrett <mr_bones_@gentoo.org> -totem-1.2.1.ebuild:
+  remove older ebuild
+
+*totem-1.4.2-r1 (03 Jul 2006)
+*totem-1.2.1-r1 (03 Jul 2006)
+
+  03 Jul 2006; John N. Laliberte <allanonjl@gentoo.org>
+  -files/totem-1.0.4-fbsd.patch, -files/totem-1.2.0-gecko-sdk.patch,
+  -files/totem-1.2.0-gmoduledep.patch, -files/totem-1.2.0-lang_it_fix.patch,
+  +files/totem-1.4.1-nsIDOMWINDOW.patch, +files/totem-1.4.2-nsIURI.patch,
+  -totem-1.0.4.ebuild, -totem-1.2.0-r1.ebuild, -totem-1.2.0-r2.ebuild,
+  +totem-1.2.1-r1.ebuild, -totem-1.4.0.ebuild, +totem-1.4.2-r1.ebuild:
+  migrate from mozilla and gecko-sdk to seamonkey.  remove old versions.
+
+  01 Jul 2006; Daniel Gryniewicz <dang@gentoo.org> totem-1.4.2.ebuild:
+  Fix bad gst-plugins-base dep.  Bug #138689
+
+*totem-1.4.2 (30 Jun 2006)
+
+  30 Jun 2006; <dang@gentoo.org> +totem-1.4.2.ebuild:
+  Bump for 2.14.2
+
+  29 Jun 2006; Daniel Gryniewicz <dang@gentoo.org>
+  +files/totem-1.4.0-autoconf.patch, totem-1.4.0.ebuild:
+  Fix for autoconf 2.60 from bug# 138210
+
+  18 May 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  +files/totem-1.4.0-linguas.patch, totem-1.4.0.ebuild:
+  Fix for split linguas.  Patch by Alexis Ballier <alexis.ballier@gmail.com>
+  bug #133526
+
+  14 May 2006; Tobias Scherbaum <dertobi123@gentoo.org> totem-1.4.0.ebuild:
+  Added ~hppa, bug #131747
+
+  11 May 2006; John N. Laliberte <allanonjl@gentoo.org>
+  +files/totem-1.4.0-as-needed.patch, totem-1.4.0.ebuild:
+  apply as-needed patch, fixes #128466
+
+  06 May 2006; John N. Laliberte <allanonjl@gentoo.org> totem-1.4.0.ebuild:
+  drop alpha,hppa,ia64, bug filed. prep for 2.14 unmask
+
+  03 May 2006; Gustavo Zacarias <gustavoz@gentoo.org> totem-1.4.0.ebuild:
+  Exclude mpeg2dec & ffmpeg since they're broken for sparc, big time #131747
+
+  27 Mar 2006; Joe McCann <joem@gentoo.org> totem-1.4.0.ebuild:
+  Add another addpredict location, closed bug 126667
+
+  17 Mar 2006; Diego Pettenò <flameeyes@gentoo.org> totem-1.4.0.ebuild:
+  Get rid of a spurious 'i' in the ebuild, thanks to Jose daLuz in bug #126469.
+
+*totem-1.4.0 (16 Mar 2006)
+
+  16 Mar 2006; Joe McCann <joem@gentoo.org>
+  +files/totem-1.3.0-gecko-sdk.patch, +totem-1.4.0.ebuild:
+  New version of totem for gnome-2.14. Contains some ebuild fixes from john
+  and uses gstreamer-0.1.0
+
+  27 Feb 2006; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  totem-1.2.0-r1.ebuild, totem-1.2.0-r2.ebuild, totem-1.2.1.ebuild:
+  fix deps
+
+  18 Feb 2006; Aron Griffis <agriffis@gentoo.org> totem-1.2.1.ebuild:
+  Mark 1.2.1 stable on ia64
+
+  08 Feb 2006; Aron Griffis <agriffis@gentoo.org> totem-1.2.1.ebuild:
+  Mark 1.2.1 stable on alpha
+
+  03 Feb 2006; Guy Martin <gmsoft@gentoo.org> totem-1.2.1.ebuild:
+  Stable on hppa.
+
+  22 Jan 2006; Markus Rothe <corsair@gentoo.org> totem-1.2.1.ebuild:
+  Stable on ppc64
+
+  22 Jan 2006; <dang@gentoo.org> totem-1.2.1.ebuild:
+  Marked stable on amd64 per bug #119634
+
+  22 Jan 2006; Tobias Scherbaum <dertobi123@gentoo.org> totem-1.2.1.ebuild:
+  Marked ppc stable for bug #119634; Stabilize Gnome-2.12.2
+
+  22 Jan 2006; Joshua Jackson <tsunam@gentoo.org> totem-1.2.1.ebuild:
+  Stable on x86 for bug #119634; Stabilize Gnome-2.12.2
+
+  20 Jan 2006; Gustavo Zacarias <gustavoz@gentoo.org> totem-1.2.1.ebuild:
+  Stable on sparc wrt #119634
+
+  20 Jan 2006; Gustavo Zacarias <gustavoz@gentoo.org> totem-1.2.0-r1.ebuild,
+  totem-1.2.0-r2.ebuild, totem-1.2.1.ebuild:
+  = -> ~gst-plugins-ffmpeg-0.8.7 wrt security #119512
+
+*totem-1.2.1 (06 Jan 2006)
+
+  06 Jan 2006; Joe McCann <joem@gentoo.org>
+  +files/totem-1.2.1-gecko-sdk.patch, +totem-1.2.1.ebuild:
+  New minor bugfix release
+
+  05 Jan 2006; Joseph Jezak <josejx@gentoo.org> totem-1.2.0-r2.ebuild:
+  Marked ~ppc.
+
+  04 Jan 2006; Joe McCann <joem@gentoo.org> +files/totem-dbus-0.60.patch,
+  totem-1.2.0-r2.ebuild:
+  add patch to compile with dbus-0.60, remove dbus mask
+
+  02 Jan 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  totem-1.2.0-r1.ebuild, totem-1.2.0-r2.ebuild:
+  Adding dbus 0.60 mask as Cardoe is unmasking
+
+  26 Dec 2005; Bryan Østergaard <kloeri@gentoo.org totem-1.2.0-r2.ebuild:
+  ~alpha keyword.
+
+  06 Dec 2005; Zaheer Abbas Merali <zaheerm@gentoo.org> totem-1.0.4.ebuild,
+  totem-1.2.0-r1.ebuild, totem-1.2.0-r2.ebuild:
+  Fix GStreamer dependencies
+
+  24 Nov 2005; Markus Rothe <corsair@gentoo.org> totem-1.2.0-r1.ebuild,
+  totem-1.2.0-r2.ebuild:
+  Added ~ppc64 keyword; bug #108790
+
+  19 Nov 2005; Joseph Jezak <josejx@gentoo.org> totem-1.2.0-r1.ebuild:
+  Marked ~ppc for bug #108789.
+
+*totem-1.2.0-r2 (02 Nov 2005)
+
+  02 Nov 2005; Martin Schlemmer <azarah@gentoo.org>
+  +files/totem-1.2.0-gmoduledep.patch, +totem-1.2.0-r2.ebuild:
+  Add gmodule depend.  Fixup autoconf stuff, and move omf stuff to last.
+
+  11 Oct 2005; Gustavo Zacarias <gustavoz@gentoo.org> totem-1.2.0-r1.ebuild:
+  Back to ~sparc hand-masking dvd here since gst-plugins-dvdnav is b0rked for us
+
+  11 Oct 2005; John N. Laliberte <allanonjl@gentoo.org>
+  totem-1.2.0-r1.ebuild:
+  remove support for alpha, hppa, ia64, sparc, ppc, ppc64, filed bugs
+
+*totem-1.2.0-r1 (08 Oct 2005)
+
+  08 Oct 2005; Leonardo Boshell <leonardop@gentoo.org>
+  -files/totem-1.1.5-idl.patch, -files/totem-1.1.5-nsi.patch,
+  +files/totem-1.2.0-gecko-sdk.patch, -totem-1.2.0.ebuild,
+  +totem-1.2.0-r1.ebuild:
+  Use gecko-sdk to build browser plugin. Dropped 'mozilla' and 'firefox' USE
+  flags and added 'nsplugin'. Updated dependencies.
+
+  02 Oct 2005; Aron Griffis <agriffis@gentoo.org> totem-1.0.4.ebuild:
+  Mark 1.0.4 stable on ia64
+
+  16 Sep 2005; <dang@gentoo.org> totem-1.2.0.ebuild:
+  mozilla/firefox browser plugin depends on dbus. Bug #106162
+
+  16 Sep 2005; <dang@gentoo.org> +files/totem-1.2.0-lang_it_fix.patch,
+  totem-1.2.0.ebuild:
+  Fix Italian translation formatting issue.  Bug #106070
+
+  15 Sep 2005; Aron Griffis <agriffis@gentoo.org> totem-1.0.4.ebuild:
+  Mark 1.0.4 stable on alpha
+
+*totem-1.2.0 (05 Sep 2005)
+
+  05 Sep 2005; Zaheer Abbas Merali <zaheerm@gentoo.org> +totem-1.2.0.ebuild:
+  version bump
+
+  05 Sep 2005; John N. Laliberte <allanonjl@gentoo.org> totem-1.1.5.ebuild:
+  fix mozilla/firefox dep, thanks to TGL for fix, fixes #104764
+
+  03 Sep 2005; Markus Rothe <corsair@gentoo.org> totem-1.0.4.ebuild:
+  Stable on ppc64
+
+  02 Sep 2005; Michael Hanselmann <hansmi@gentoo.org> totem-1.0.4.ebuild:
+  Stable on ppc.
+
+  01 Sep 2005; Zaheer Abbas Merali <zaheerm@gentoo.org> totem-1.1.5.ebuild:
+  add musicbrainz dep
+
+  31 Aug 2005; Herbie Hopkins <herbs@gentoo.org> totem-1.0.4.ebuild:
+  Stable on amd64.
+
+*totem-1.1.5 (30 Aug 2005)
+
+  30 Aug 2005; John N. Laliberte <allanonjl@gentoo.org>
+  +files/totem-1.1.5-idl.patch, +files/totem-1.1.5-nsi.patch,
+  +totem-1.1.5.ebuild:
+  new version, apply patch to fix paths for idl directories, and another patch
+  to fix includes in the mozilla plugin cpp file for finding the headers.
+
+  29 Aug 2005; Guy Martin <gmsoft@gentoo.org> totem-1.0.4.ebuild:
+  Stable on hppa.
+
+  26 Aug 2005; Gustavo Zacarias <gustavoz@gentoo.org> totem-1.0.4.ebuild:
+  Stable on sparc
+
+  25 Aug 2005; Leonardo Boshell <leonardop@gentoo.org> totem-1.0.4.ebuild:
+  Stable on x86.
+
+  24 Aug 2005; Gustavo Zacarias <gustavoz@gentoo.org> totem-1.0.2-r1.ebuild,
+  totem-1.0.4.ebuild:
+  Back to normal backend behaviour for sparc
+
+  23 Aug 2005; Diego Pettenò <flameeyes@gentoo.org>
+  +files/totem-1.0.4-fbsd.patch, totem-1.0.4.ebuild:
+  Added patch for FreeBSD support.
+
+*totem-1.0.4 (14 Jul 2005)
+
+  14 Jul 2005; Zaheer Abbas Merali <zaheerm@gentoo.org> +totem-1.0.4.ebuild:
+  version bump
+
+  04 Jul 2005; Gustavo Zacarias <gustavoz@gentoo.org> totem-1.0.2-r1.ebuild,
+  totem-1.0.3.ebuild:
+  Force gst in sparc, for real this time
+
+  02 Jul 2005; Bryan Østergaard <kloeri@gentoo.org> totem-1.0.2-r1.ebuild:
+  Stable on alpha.
+
+  26 Jun 2005; Guy Martin <gmsoft@gentoo.org> totem-1.0.2-r1.ebuild,
+  totem-1.0.3.ebuild:
+  Stable on hppa.
+
+*totem-1.0.3 (15 Jun 2005)
+
+  15 Jun 2005; <dang@gentoo.org> totem-1.0.2-r1.ebuild, +totem-1.0.3.ebuild:
+  Added 1.0.3, added xv USE flag to 1.0.3 and 1.0.2-r1 to protect
+  gst-plugins-xvideo re bug #96048
+
+  13 Jun 2005; Bryan Østergaard <kloeri@gentoo.org> totem-1.0.2-r1.ebuild:
+  Add ~alpha keyword.
+
+  12 Jun 2005; Olivier Crête <tester@gentoo.org> totem-1.0.2-r1.ebuild:
+  Stable on amd64
+
+  12 Jun 2005; Tobias Scherbaum <dertobi123@gentoo.org>
+  totem-1.0.2-r1.ebuild:
+  Stable on ppc.
+
+  09 Jun 2005; Gustavo Zacarias <gustavoz@gentoo.org> totem-1.0.2-r1.ebuild:
+  Stable on sparc
+
+  09 Jun 2005; Markus Rothe <corsair@gentoo.org> totem-1.0.2-r1.ebuild:
+  Stable on ppc64
+
+  06 May 2005; Markus Rothe <corsair@gentoo.org> totem-1.0.2-r1.ebuild:
+  Added ~ppc64 to KEYWORDS
+
+*totem-1.0.2-r1 (02 May 2005)
+
+  02 May 2005; foser <foser@gentoo.org> totem-1.0.2-r1.ebuild :
+  Add patch to fix xine xvmc issue (#91168)
+  Thanks to ghepeu@virgilio.it for tracking this down
+
+  02 May 2005; Gustavo Zacarias <gustavoz@gentoo.org> totem-0.100-r2.ebuild,
+  totem-0.100-r3.ebuild, totem-1.0.ebuild, totem-1.0.1.ebuild,
+  totem-1.0.2.ebuild:
+  We really want gst for backend on sparc since newer xines are broken, so
+  adjusting accordingly
+
+*totem-1.0.2 (30 Apr 2005)
+
+  30 Apr 2005; Zaheer Abbas Merali <zaheerm@gentoo.org> +totem-1.0.2.ebuild:
+  new version
+
+  26 Apr 2005; Zaheer Abbas Merali <zaheerm@gentoo.org> totem-0.100-r3.ebuild:
+  Make stable on x86
+
+*totem-0.100-r3 (26 Apr 2005)
+
+  26 Apr 2005; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  +files/totem-0.100-xine_backend-nocdrom.patch, +totem-0.100-r3.ebuild:
+  add fix for cdrom-less machines to use xine-backend (fixes #90362)
+
+  25 Apr 2005; Zaheer Abbas Merali <zaheerm@gentoo.org> totem-1.0.1.ebuild:
+  Added win32codecs USE flag so gstreamer users can play win32 codecs
+
+  19 Apr 2005; <zaheerm@gentoo.org> totem-1.0.1.ebuild, totem-1.0.ebuild:
+  Replaced deprecated oggvorbis use flag with vorbis use flag and made 
+  sure use flags of +theora -ogg will still let you play theora video 
+  streams
+
+*totem-1.0.1 (18 Apr 2005)
+
+  18 Apr 2005; foser <foser@gentoo.org> totem-1.0.1.ebuild :
+  New release (#86902)
+  Remove the sparc specific bits
+
+  11 Mar 2005; Heinrich Wendel <lanius@gentoo.org> totem-0.100-r2.ebuild:
+  fix gst-plugins-ffmpeg dep
+
+*totem-1.0 (10 Mar 2005)
+
+  10 Mar 2005; foser <foser@gentoo.org> totem-1.0.ebuild :
+  Gnome 2.10 release, switched default backend over to GST to confirm with upstream
+  Added a whole bunch of useless USE flags because public opinion is that it's right
+
+  30 Jan 2005; lanius@gentoo.org totem-0.100-r2.ebuild:
+  mark amd64
+
+*totem-0.100-r2 (12 Jan 2005)
+
+  12 Jan 2005; foser <foser@gentoo.org> totem-0.100-r2.ebuild :
+  Redo the kernel 2.4 cdrom/header fix (#68087)
+  Add scrollkeeper dep (#77631)
+  Add a patch with minor speed fixes for gst
+
+*totem-0.100-r1 (09 Jan 2005)
+
+  09 Jan 2005; foser <foser@gentoo.org> totem-0.100-r1.ebuild :
+  Add fix for #68087 & #77204
+
+*totem-0.100 (09 Jan 2005)
+
+  09 Jan 2005; foser <foser@gentoo.org> totem-0.100.ebuild :
+  New release, dep fixes
+
+  29 Nov 2004; foser <foser@gentoo.org> totem-0.99.{19,22-r1}.ebuild :
+  Do the compile fix right #71960 -> #72124, thanks the Ed Catmur for the patch
+
+*totem-0.99.22-r1 (22 Nov 2004)
+
+  22 Nov 2004; foser <foser@gentoo.org> totem-0.99.22-r1.ebuild :
+  Add patch to fix gst backend for released gst-plugins versions 
+  http://bugzilla.gnome.org/show_bug.cgi?id=159049
+
+*totem-0.99.22 (22 Nov 2004)
+
+  22 Nov 2004; foser <foser@gentoo.org> totem-0.99.22.ebuild :
+  Updated xine dep, added real USE=debug
+  Added compile fix from (#71960)
+
+  23 Oct 2004; Sven Wegener <swegener@gentoo.org> metadata.xml:
+  Corrected herd in metadata.xml. (media-video -> video)
+
+*totem-0.99.19 (22 Oct 2004)
+
+  22 Oct 2004; foser <foser@gentoo.org> totem-0.99.19.ebuild :
+  New release, improved gstreamer support (#64434)
+  Disable gtk only build, its broken
+  Add media-video & gstreamer herds to metadata
+
+  20 Aug 2004; Mike Gardiner <obz@gentoo.org> totem-0.99.15.1.ebuild:
+  Added omf_fix for totem-0.99.15.1, thanks to bug #48800
+
+*totem-0.99.15.1 (19 Aug 2004)
+
+  19 Aug 2004; foser <foser@gentoo.org> totem-0.99.{5,8-r2,15.1}.ebuild :
+  New release, update deps (#48800)
+  Remove curl, add gnome USE flags
+  .5 & .8* : Fix compilation issues (#51864)
+
+  14 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  totem-0.99.8-r2.ebuild:
+  Adding to ~sparc but forcing xine backend.
+
+  27 Apr 2004; Aron Griffis <agriffis@gentoo.org> totem-0.99.8-r2.ebuild:
+  Add inherit eutils
+
+  03 Apr 2004; foser <foser@gentoo.org> totem-0.99.*.ebuild :
+  Fix gst deps to 0.6
+
+*totem-0.99.8-r2 (08 Dec 2003)
+
+  08 Dec 2003; <spider@gentoo.org> totem-0.99.8-r2.ebuild,
+  files/totem-0.99.8-nvidia.patch:
+  Added a patch to make video output work by disabling some drivers.
+
+*totem-0.99.8-r1 (07 Dec 2003)
+
+  07 Dec 2003; <spider@gentoo.org> totem-0.99.8-r1.ebuild,
+  files/totem-0.99.8-curl.patch:
+  Added a patch to actually disable curl
+
+*totem-0.99.8 (25 Nov 2003)
+
+  25 Nov 2003; foser <foser@gentoo.org> totem-0.99.8.ebuild :
+  New release with omf sandbox fix as requested in #34299
+
+*totem-0.99.7 (21 Oct 2003)
+
+  21 Oct 2003; foser <foser@gentoo.org> totem-0.99.7.ebuild :
+  New version
+
+*totem-0.99.6 (13 Oct 2003)
+
+  14 Oct 2003; foser <foser@gentoo.org> totem-0.99.6.ebuild :
+  Fix xine-lib and gst deps
+
+  13 Oct 2003; Mike Gardiner <obz@gentoo.org> totem-0.99.6.ebuild:
+  New version
+
+*totem-0.99.5 (17 Sep 2003)
+
+  17 Sep 2003; Mike Gardiner <obz@gentoo.org> totem-0.99.5.ebuild:
+  New version, updated deps for gst-plugins, and added curl to USE
+
+*totem-0.99.4 (04 Sep 2003)
+
+  04 Sep 2003; <spider@gentoo.org> totem-0.99.4.ebuild:
+  Versionbump. this one seems far better than the previous one, that is now
+  being removed from the tree. (its p.masked too)
+
+*totem-0.99.3 (01 Sep 2003)
+
+  01 Sep 2003; Spider <spider@gentoo.org> totem-0.99.3.ebuild:
+  Versionbump
+
+*totem-0.99.2 (26 Jul 2003)
+
+  19 Aug 2003; foser <foser@gentoo.org> totem-0.99.2.ebuild :
+  Added lirc USE flag (#24127) thanks to matt <matt@schick.mine.nu>
+
+  26 Jul 2003; foser <foser@gentoo.org> totem-0.99.2.ebuild, manifest.xml :
+  New version, fixed gtk+ dep so xfree-4.3 is needed (#24194,#21336)
+  added longdescription in manifest.xml adapted from propesed description in #24194
+
+*totem-0.99.1 (23 Jun 2003)
+
+  23 Jun 2003; foser <foser@gentoo.org> totem-0.99.1.ebuild :
+  New version, upped xine-lib dep
+
+*totem-0.99.0 (05 Jun 2003)
+
+  05 Jun 2003; foser <foser@gentoo.org> totem-0.99.0.ebuild :
+  New version, added gstreamer local USE flag
+
+*totem-0.98.0 (13 May 2003)
+
+  13 May 2003; foser <foser@gentoo.org> totem-0.98.0.ebuild :
+  New version
+
+*totem-0.97.0 (30 Apr 2003)
+
+  30 Apr 2003; foser <foser@gentoo.org> totem-0.97.0.ebuild :
+  New version
+
+*totem-0.96.0 (10 Apr 2003)
+
+  14 Apr 2003; foser <foser@gentoo.org> totem-0.96.0.ebuild :
+  Added small patch, which should fix the video thumbnailing
+
+  10 Apr 2003; foser <foser@gentoo.org> totem-0.96.0.ebuild :
+  New version
+
+*totem-0.95.1 (03 Mar 2003)
+
+  09 Mar 2003; foser <foser@gentoo.org> totem-0.95.1.ebuild :
+  Fixed gnome-vfs dep as noted in #17157
+
+  03 Mar 2003; foser <foser@gentoo.org> totem-0.95.1.ebuild :
+  New version
+
+*totem-0.90.0 (04 Feb 2003)
+
+  08 Feb 2003; foser <foser@gentoo.org> totem-0.90.0.ebuild :
+  Fixed deps (#15204)
+
+  04 Feb 2003; Spider <spider@gentoo.org> totem-0.90.0.ebuild : 
+  Clean out the dep-if since the new requires beta3 or higher
+  new version ;)
+
+  16 Jan 2003; foser <foser@gentoo.org> totem-0.13.1.ebuild :
+  Added big if statement to not compile with certain buggy xine-lib releases
+  not very clean, but the least bad way to do it (#13742)
+
+*totem-0.13.1 (17 Dec 2002)
+
+  17 Dec 2002; foser <foser@gentoo.org> totem-0.13.1.ebuild :
+  New version
+
+*totem-0.11.0 (28 Oct 2002)
+
+  28 Oct 2002; foser <foser@gentoo.org> totem-0.11.0.ebuild :
+  New version
+
+*totem-0.10.0.ebuild (08 Sep 2002)
+
+  15 Sep 2002; Seemant Kulleen <seemant@gentoo.org> totem-0.10.0.ebuild :
+
+  added libgnomeui to DEPEND.  thanks to ska-fan (markus below).
+
+  08 Sep 2002; Sascha Schwabbauer <cybersystem@gentoo.org> totem-0.10.0.ebuild :
+
+  Version bump..
+  Ebuild by  Markus Bertheau <twanger@bluetwanger.de>..
+
+*totem-0.8.ebuild (13 Aug 2002)
+
+  13 Aug 2002; Gabriele Giorgetti <stroke@gentoo.org> totem-0.8.ebuild :
+
+  New package.  
+  Ebuild initially written by Markus Bertheau <twanger@bluetwanger.de>
+  Changed description and corrected deps.
+  

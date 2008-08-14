@@ -1,0 +1,71 @@
+# ChangeLog for net-misc/lksctp-tools
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/lksctp-tools/ChangeLog,v 1.15 2008/08/12 13:00:27 fmccor Exp $
+
+  12 Aug 2008; Ferris McCormick <fmccor@gentoo.org>
+  lksctp-tools-1.0.8.ebuild:
+  Sparc stable, needed for Bug #231553 (this package builds lots of tests but
+  doesn't do anything with them).
+
+  19 Jun 2008; Friedrich Oslage <bluebird@gentoo.org>
+  lksctp-tools-1.0.8.ebuild:
+  Add ~sparc keyword, bug #226085
+
+  15 Jun 2008; Tobias Klausmann <klausman@gentoo.org>
+  lksctp-tools-1.0.8.ebuild:
+  Keyworded on alpha, bug #226085
+
+  12 Jun 2008; Brent Baude <ranger@gentoo.org> lksctp-tools-1.0.8.ebuild:
+  Marking lksctp-tools-1.0.8 ~ppc64 for bug 226085
+
+*lksctp-tools-1.0.8 (16 Mar 2008)
+
+  16 Mar 2008; Mike Frysinger <vapier@gentoo.org>
+  +files/lksctp-tools-1.0.8-as-needed.patch,
+  +files/lksctp-tools-1.0.8-prefix.patch, +lksctp-tools-1.0.8.ebuild:
+  Version bump and fix withsctp #181602.
+
+  14 Jan 2008; Robin H. Johnson <robbat2@gentoo.org> metadata.xml:
+  Metadata update.
+
+  11 Jun 2007; nixnut <nixnut@gentoo.org> lksctp-tools-1.0.6.ebuild:
+  Stable on ppc wrt bug 181602
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*lksctp-tools-1.0.6 (28 Sep 2006)
+
+  28 Sep 2006; Robin H. Johnson <robbat2@gentoo.org>
+  +files/lksctp-tools-1.0.6-as-needed.patch, +lksctp-tools-1.0.6.ebuild:
+  Version bump, bug #145992, with as-needed fix.
+
+*lksctp-tools-1.0.4 (12 Dec 2005)
+
+  12 Dec 2005; Robin H. Johnson <robbat2@gentoo.org>
+  +lksctp-tools-1.0.4.ebuild:
+  Version bump.
+
+  25 Jun 2005; Sven Wegener <swegener@gentoo.org> lksctp-tools-1.0.1.ebuild,
+  lksctp-tools-1.0.2.ebuild:
+  Removed useless || dependency.
+
+*lksctp-tools-1.0.2 (01 May 2005)
+
+  01 May 2005; Robin H. Johnson <robbat2@gentoo.org>
+  +lksctp-tools-1.0.2.ebuild:
+  Version bump.
+
+  01 May 2005; Robin H. Johnson <robbat2@gentoo.org>
+  lksctp-tools-1.0.1.ebuild:
+  Fix DESC bug #91051, move to stable x86.
+
+  11 Jan 2005; John Mylchreest <johnm@gentoo.org> lksctp-tools-1.0.1.ebuild:
+  fixing linux-headers DEPEND for 2005.0. can we get away with a virtual?
+
+*lksctp-tools-1.0.1 (23 Nov 2004)
+
+  23 Nov 2004; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml,
+  +lksctp-tools-1.0.1.ebuild:
+  Initial commit. Ebuild by Robin H. Johnson <robbat2@gentoo.org>
+

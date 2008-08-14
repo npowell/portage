@@ -1,0 +1,27 @@
+# ChangeLog for dev-python/pyspf
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pyspf/ChangeLog,v 1.5 2008/08/09 07:48:11 dragonheart Exp $
+
+*pyspf-2.0.5 (09 Aug 2008)
+
+  09 Aug 2008; Daniel Black <dragonheart@gentoo.org> -pyspf-2.0.3.ebuild,
+  +pyspf-2.0.5.ebuild:
+  version bump + old version removal
+
+*pyspf-2.0.4 (26 Jun 2008)
+
+  26 Jun 2008; Daniel Black <dragonheart@gentoo.org> +pyspf-2.0.4.ebuild:
+  version bump
+
+  07 Dec 2007; Christian Faulhammer <opfer@gentoo.org> pyspf-2.0.3.ebuild:
+  keywording ~x86, bug 201487
+
+  15 Oct 2007; Daniel Black <dragonheart@gentoo.org> pyspf-2.0.3.ebuild:
+  fix license + remove python dependency thanks to dev-zero
+
+*pyspf-2.0.3 (06 Oct 2007)
+
+  06 Oct 2007; Daniel Black <dragonheart@gentoo.org> +metadata.xml,
+  +pyspf-2.0.3.ebuild:
+  initial version as per bug #185839 thanks to Frittella Laurento
+

@@ -1,0 +1,22 @@
+# ChangeLog for dev-cpp/gtksourceviewmm
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-cpp/gtksourceviewmm/ChangeLog,v 1.4 2008/08/10 11:19:52 maekke Exp $
+
+  10 Aug 2008; Markus Meier <maekke@gentoo.org>
+  gtksourceviewmm-2.2.0.ebuild:
+  x86 stable, bug #229709
+
+  30 Jul 2008; Brent Baude <ranger@gentoo.org> gtksourceviewmm-2.2.0.ebuild:
+  Marking gtksourceviewmm-2.2.0 ppc stable for bug 229709
+
+  27 Jul 2008; Olivier Crête <tester@gentoo.org>
+  gtksourceviewmm-2.2.0.ebuild:
+  Stable on amd64, bug #229709
+
+*gtksourceviewmm-2.2.0 (19 May 2008)
+
+  19 May 2008; Rémi Cardona <remi@gentoo.org> +metadata.xml,
+  +gtksourceviewmm-2.2.0.ebuild:
+  New package gtksourceviewmm which is just a rename of libgtksourceviewmm,
+  API and installed files are the same
+

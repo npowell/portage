@@ -1,0 +1,33 @@
+# ChangeLog for app-dicts/vdict
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-dicts/vdict/ChangeLog,v 1.6 2008/07/27 19:15:32 carlo Exp $
+
+  27 Jul 2008; Carsten Lohrke <carlo@gentoo.org> vdict-1.94.ebuild,
+  vdict-1.97-r1.ebuild:
+  QA: Get rid of deprecated qt_min_version().
+
+*vdict-1.97-r1 (14 Jun 2008)
+
+  14 Jun 2008; MATSUU Takuto <matsuu@gentoo.org>
+  +files/vdict-1.97-intptr_t.patch, vdict-1.94.ebuild, -vdict-1.97.ebuild,
+  +vdict-1.97-r1.ebuild:
+  Fixed qt dependency, bug #217164. Fixed to work with amd64.
+
+  25 Jan 2007; Marius Mauch <genone@gentoo.org> vdict-1.94.ebuild,
+  vdict-1.97.ebuild:
+  Replacing einfo with elog
+
+*vdict-1.97 (03 Dec 2005)
+
+  03 Dec 2005; <pclouds@gentoo.org> vdict-1.94.ebuild, +vdict-1.97.ebuild:
+  vdict-1.94.ebuild: refer app-dicts/vdict-* instead of vdict website
+  vdict-1.97.ebuild: version bump
+
+  23 Aug 2005; <pclouds@gentoo.org> vdict-1.94.ebuild:
+  Stable on x86
+
+*vdict-1.94 (22 Feb 2005)
+
+  22 Feb 2005; <pclouds@gentoo.org> +metadata.xml, +vdict-1.94.ebuild:
+  New ebuild, submitted by Luu Danh Hieu <ipridian@spymac.com> #82551
+

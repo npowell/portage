@@ -1,0 +1,21 @@
+# ChangeLog for dev-ruby/heckle
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/heckle/ChangeLog,v 1.4 2007/10/14 05:51:36 tgall Exp $
+
+  14 Oct 2007; Tom Gall <tgall@gentoo.org> heckle-1.4.1.ebuild:
+  added ~ppc64
+
+  08 Sep 2007; nixnut <nixnut@gentoo.org> heckle-1.4.1.ebuild:
+  Added ~ppc wrt bug 188306
+
+*heckle-1.4.1 (10 Aug 2007)
+
+  10 Aug 2007; Hans de Graaff <graaff@gentoo.org> +heckle-1.4.1.ebuild:
+  Version bump. Dropping ~ppc keyword due to new dependency on zentest.
+
+*heckle-1.3.0 (14 Apr 2007)
+
+  14 Apr 2007; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml,
+  +heckle-1.3.0.ebuild:
+  Initial commit. Ebuild by Robin H. Johnson <robbat2@gentoo.org>.
+

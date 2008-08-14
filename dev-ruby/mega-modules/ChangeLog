@@ -1,0 +1,20 @@
+# ChangeLog for dev-ruby/mega-modules
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/mega-modules/ChangeLog,v 1.4 2007/09/17 20:23:13 phreak Exp $
+
+  17 Sep 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing citizen428 from metadata.xml (see #56803 for reference).
+
+  29 Dec 2006; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  mega-modules-0.3.1.ebuild:
+  Added missing dep
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org> mega-modules-0.3.1.ebuild:
+  Mark 0.3.1 ~ia64
+
+*mega-modules-0.3.1 (15 Sep 2005)
+
+  15 Sep 2005; Michael Kohl <citizen428@gentoo.org> +metadata.xml,
+  +mega-modules-0.3.1.ebuild:
+  Initial import. Added as a dependency for dev-ruby/nitro.
+

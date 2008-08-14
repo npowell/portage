@@ -1,0 +1,71 @@
+# ChangeLog for x11-themes/tangerine-icon-theme
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-themes/tangerine-icon-theme/ChangeLog,v 1.14 2007/11/06 17:13:35 armin76 Exp $
+
+  06 Nov 2007; Raúl Porcel <armin76@gentoo.org>
+  -tangerine-icon-theme-0.20.ebuild, -tangerine-icon-theme-0.22.ebuild,
+  tangerine-icon-theme-0.26.ebuild:
+  sparc stable wrt #197436, remove old
+
+  02 Nov 2007; Steve Dibb <beandog@gentoo.org>
+  tangerine-icon-theme-0.26.ebuild:
+  amd64 stable, bug 197436
+
+  29 Oct 2007; Dawid Węgliński <cla@gentoo.org>
+  tangerine-icon-theme-0.26.ebuild:
+  Stable on x86 (bug #197436)
+
+*tangerine-icon-theme-0.26 (29 Sep 2007)
+
+  29 Sep 2007; Samuli Suominen <drac@gentoo.org>
+  +tangerine-icon-theme-0.26.ebuild:
+  Version bump with Gentoo branding fixed wrt #193212, thanks to Pacho Ramos
+  for reporting.
+
+*tangerine-icon-theme-0.22 (22 Aug 2007)
+
+  22 Aug 2007; Samuli Suominen <drac@gentoo.org>
+  +tangerine-icon-theme-0.22.ebuild:
+  Version bump.
+
+  25 Jul 2007; Christoph Mende <angelos@gentoo.org>
+  tangerine-icon-theme-0.20.ebuild:
+  Stable on amd64 wrt bug #186469
+
+  15 Jul 2007; Raúl Porcel <armin76@gentoo.org>
+  tangerine-icon-theme-0.20.ebuild:
+  x86 stable
+
+  16 Jun 2007; Samuli Suominen <drac@gentoo.org>
+  tangerine-icon-theme-0.20.ebuild:
+  Add missing quotes.
+
+  07 Jun 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  tangerine-icon-theme-0.20.ebuild:
+  Stable on sparc
+
+*tangerine-icon-theme-0.20 (16 May 2007)
+
+  16 May 2007; Samuli Suominen <drac@gentoo.org>
+  -tangerine-icon-theme-0.15.ebuild, +tangerine-icon-theme-0.20.ebuild:
+  Version bump.
+
+  12 Mar 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  tangerine-icon-theme-0.15.ebuild:
+  Keyworded ~sparc
+
+  11 Mar 2007; Samuli Suominen <drac@gentoo.org>
+  tangerine-icon-theme-0.15.ebuild:
+  Use Gentoo logo instead of Ubuntu logo as start-here.svg
+  Bug 170427. Thanks to Pacho Ramos for reporting.
+
+  11 Mar 2007; Peter Weller <welp@gentoo.org>
+  tangerine-icon-theme-0.15.ebuild:
+  Keyworded ~amd64 wrt bug 170414
+
+*tangerine-icon-theme-0.15 (10 Mar 2007)
+
+  10 Mar 2007; Samuli Suominen <drac@gentoo.org>
+  +tangerine-icon-theme-0.15.ebuild:
+  Initial commit.
+

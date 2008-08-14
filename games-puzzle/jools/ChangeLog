@@ -1,0 +1,21 @@
+# ChangeLog for games-puzzle/jools
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-puzzle/jools/ChangeLog,v 1.4 2008/05/29 16:54:46 hawking Exp $
+
+  29 May 2008; Ali Polatel <hawking@gentoo.org> jools-0.20-r1.ebuild:
+  python_mod_optimize is ROOT aware.
+
+*jools-0.20-r1 (28 Mar 2008)
+
+  28 Mar 2008; Tristan Heaven <nyhm@gentoo.org> -jools-0.20.ebuild,
+  +jools-0.20-r1.ebuild:
+  Install python files into games libdir
+
+  29 Feb 2008; Carsten Lohrke <carlo@gentoo.org> jools-0.20.ebuild:
+  Remove icon extension from desktop entry to match Icon Theme Specification.
+
+*jools-0.20 (14 Jan 2007)
+
+  14 Jan 2007; <tupone@gentoo.org> +jools-0.20.ebuild:
+  New ebuild. Bug #93770 by Anton Romanov
+

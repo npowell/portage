@@ -1,0 +1,214 @@
+# ChangeLog for media-plugins/kipi-plugins
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/kipi-plugins/ChangeLog,v 1.41 2008/06/30 18:16:07 armin76 Exp $
+
+  30 Jun 2008; Raúl Porcel <armin76@gentoo.org>
+  kipi-plugins-0.1.4-r1.ebuild:
+  sparc stable wrt #221855
+
+  29 Jun 2008; Tobias Heinlein <keytoaster@gentoo.org>
+  kipi-plugins-0.1.4-r2.ebuild:
+  Die when x11-libs/qt is built without OpenGL support, bug #205743
+
+*kipi-plugins-0.1.4-r2 (29 Jun 2008)
+
+  29 Jun 2008; Tobias Heinlein <keytoaster@gentoo.org>
+  +files/kipi-plugins-default_chroma_opt.patch,
+  +kipi-plugins-0.1.4-r2.ebuild, kipi-plugins-0.1.5.ebuild:
+  Set default for the -S option for images2mpeg to work correctly, bug
+  #208133
+
+  29 Jun 2008; Tobias Heinlein <keytoaster@gentoo.org>
+  kipi-plugins-0.1.4-r1.ebuild, kipi-plugins-0.1.5.ebuild:
+  Depend on virtual/mpg123 and media-sound/vorbis-tools, bug #222903.
+
+  07 Jun 2008; Ingmar Vanhassel <ingmar@gentoo.org>
+  kipi-plugins-0.1.4-r1.ebuild, kipi-plugins-0.1.5.ebuild:
+  Add $DEPEND to $RDEPEND, bug 225217.
+
+  25 May 2008; Markus Meier <maekke@gentoo.org>
+  kipi-plugins-0.1.4-r1.ebuild:
+  amd64 stable, bug #221855
+
+  23 May 2008; Christian Faulhammer <opfer@gentoo.org>
+  kipi-plugins-0.1.4-r1.ebuild, kipi-plugins-0.1.5.ebuild:
+  quote variable
+
+  23 May 2008; Christian Faulhammer <opfer@gentoo.org>
+  kipi-plugins-0.1.4-r1.ebuild:
+  stable x86, bug 221855
+
+  17 May 2008; Carsten Lohrke <carlo@gentoo.org>
+  kipi-plugins-0.1.4-r1.ebuild:
+  Restore ppc...
+
+  17 May 2008; Carsten Lohrke <carlo@gentoo.org>
+  kipi-plugins-0.1.0_rc1.ebuild, -kipi-plugins-0.1.4.ebuild,
+  kipi-plugins-0.1.4-r1.ebuild, kipi-plugins-0.1.5.ebuild:
+  Clean up. Remove deprecated slot_rebuild() check. Back to ~ppc.
+
+  16 May 2008; nixnut <nixnut@gentoo.org> kipi-plugins-0.1.4-r1.ebuild:
+  Stable on ppc wrt bug 221855
+
+  10 Apr 2008; Ingmar Vanhassel <ingmar@gentoo.org>
+  kipi-plugins-0.1.5.ebuild:
+  media-plugins/kipi-plugins-0.1.5 needs >=libkcraw-0.1.4, bug 217124.
+
+  09 Apr 2008; Ingmar Vanhassel <ingmar@gentoo.org>
+  kipi-plugins-0.1.5.ebuild:
+  Depend on "|| ( kde-base/libkcal:3.5 kde-base/kdepim:3.5 )" for
+  USE=calendar, use EAPI=1 for SLOT dependencies. Bug 217001.
+
+  08 Apr 2008; Tobias Heinlein <keytoaster@gentoo.org>
+  kipi-plugins-0.1.5.ebuild:
+  Adding some USE flags for plugins with optional dependencies.
+
+*kipi-plugins-0.1.5 (08 Apr 2008)
+
+  08 Apr 2008; Tobias Heinlein <keytoaster@gentoo.org>
+  +kipi-plugins-0.1.5.ebuild:
+  Version bump, see bug #216878. New (upstream) build system behaviour: Some
+  plugins are disabled if dependencies are not met, see
+  http://bugs.kde.org/show_bug.cgi?id=149666. Thus no more --without-opengl
+  and no more automagic dependency on libgpod.
+
+  25 Feb 2008; Diego Pettenò <flameeyes@gentoo.org>
+  kipi-plugins-0.1.4-r1.ebuild:
+  Remove WANT_AUTO* variables, or it won't compile with the latest revision of
+  kde.eclass.
+
+*kipi-plugins-0.1.4-r1 (09 Sep 2007)
+
+  09 Sep 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  -files/kipi-plugins-0.1.3-exiv2-fedora.patch,
+  -files/kipi-plugins-0.1.3-external-dcraw.patch,
+  +files/kipi-plugins-0.1.4-ipod-191195.patch, -kipi-plugins-0.1.2.ebuild,
+  -kipi-plugins-0.1.3-r1.ebuild, -kipi-plugins-0.1.3-r2.ebuild,
+  +kipi-plugins-0.1.4-r1.ebuild:
+  Added a patch to correct an automagic dependency on libgpod. Thanks to
+  Matěj Laitl for providing the patch. Fixes bug 191195. Removed obsolete
+  versions.
+
+  17 Jul 2007; Tobias Heinlein <keytoaster@gentoo.org>
+  kipi-plugins-0.1.4.ebuild:
+  Fixing dependency on libkexiv2
+
+*kipi-plugins-0.1.4 (15 Jul 2007)
+
+  15 Jul 2007; Marcus D. Hanwell <cryos@gentoo.org>
+  +kipi-plugins-0.1.4.ebuild:
+  Version bump, closes bug 184377.
+
+*kipi-plugins-0.1.3-r2 (26 May 2007)
+
+  26 May 2007; <pva@gentoo.org>
+  +files/kipi-plugins-0.1.3-exiv2-fedora.patch,
+  +kipi-plugins-0.1.3-r2.ebuild:
+  Fixed compilation problem with exiv2-0.14: now used libkexiv interface
+  instead of exiv2. Patch from fedora.
+
+*kipi-plugins-0.1.3-r1 (17 Mar 2007)
+
+  17 Mar 2007; Marcus D. Hanwell <cryos@gentoo.org>
+  +files/kipi-plugins-0.1.3-external-dcraw.patch,
+  -kipi-plugins-0.1.3.ebuild, +kipi-plugins-0.1.3-r1.ebuild:
+  Updates integrating external dcraw patch and improved deps. Thanks to
+  Guillaume Castagnino <casta@xwing.info> for his work, closes bug 164070.
+
+*kipi-plugins-0.1.3 (17 Mar 2007)
+
+  17 Mar 2007; Marcus D. Hanwell <cryos@gentoo.org>
+  -kipi-plugins-0.1.0_rc2.ebuild, +kipi-plugins-0.1.3.ebuild:
+  Version bump, closes bug 165513.
+
+  01 Jan 2007; Dominik Stadler <centic@gentoo.org>
+  kipi-plugins-0.1.0_rc1.ebuild, kipi-plugins-0.1.0_rc2.ebuild,
+  kipi-plugins-0.1.2.ebuild:
+  Set new homepage http://www.kipi-plugins.org/
+
+*kipi-plugins-0.1.2 (08 Dec 2006)
+
+  08 Dec 2006; Ioannis Aslanidis <deathwing00@gentoo.org>
+  +kipi-plugins-0.1.2.ebuild:
+  Version bump. Major dependency changes.
+
+  17 Oct 2006; Ioannis Aslanidis <deathwing00@gentoo.org>
+  -kipi-plugins-0.1_beta1.ebuild, -kipi-plugins-0.1.0_beta2.ebuild,
+  kipi-plugins-0.1.0_rc1.ebuild, kipi-plugins-0.1.0_rc2.ebuild:
+  Cleaned-up old versions because the latest stable version was more recent.
+  Added a check so that kipi-plugins dies if media-libs/imlib2 is not compiled
+  with the 'X' USE flag. See bug #151683 for additional details. Thanks to
+  Dominik Strehlke for spotting it.
+
+  05 Sep 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  kipi-plugins-0.1.0_rc1.ebuild:
+  Stable on sparc
+
+*kipi-plugins-0.1.0_rc2 (20 May 2006)
+
+  20 May 2006; Carsten Lohrke <carlo@gentoo.org>
+  +kipi-plugins-0.1.0_rc2.ebuild:
+  Version bump.
+
+  27 Apr 2006; Marien Zwart <marienz@gentoo.org>
+  files/digest-kipi-plugins-0.1_beta1,
+  files/digest-kipi-plugins-0.1.0_beta2,
+  files/digest-kipi-plugins-0.1.0_rc1, Manifest:
+  Fixing SHA256 digest, pass four
+
+  17 Apr 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  kipi-plugins-0.1.0_rc1.ebuild:
+  ppc stable, bug #113723
+
+  23 Jan 2006; Dominik Stadler <centic@gentoo.org>
+  kipi-plugins-0.1.0_rc1.ebuild:
+  Make the gphoto2 dependency observe the use-flag
+
+  15 Jan 2006; Marcus D. Hanwell <cryos@gentoo.org>
+  kipi-plugins-0.1.0_rc1.ebuild:
+  Stable on amd64, bug 113723.
+
+  03 Jan 2006; Petteri Räty <betelgeuse@gentoo.org>
+  kipi-plugins-0.1.0_rc1.ebuild:
+  Marked stable on x86 for bug #113723.
+
+  27 Sep 2005; Carsten Lohrke <carlo@gentoo.org>
+  kipi-plugins-0.1_beta1.ebuild, kipi-plugins-0.1.0_beta2.ebuild:
+  add slot_rebuild check to older ebuilds as well
+
+*kipi-plugins-0.1.0_rc1 (25 Sep 2005)
+
+  25 Sep 2005; Carsten Lohrke <carlo@gentoo.org>
+  +kipi-plugins-0.1.0_rc1.ebuild:
+  version bump
+
+  07 Apr 2005; Simon Stelling <blubb@gentoo.org>
+  kipi-plugins-0.1.0_beta2.ebuild:
+  stable on amd64
+
+  04 Mar 2005; Carsten Lohrke <carlo@gentoo.org>
+  kipi-plugins-0.1.0_beta2.ebuild:
+  corrected dependencies and stable on x86
+
+*kipi-plugins-0.1.0_beta2 (09 Feb 2005)
+
+  09 Feb 2005; Dominik Stadler <centic@gentoo.org>
+  +kipi-plugins-0.1.0_beta2.ebuild:
+  Add new version 0.1.0_beta2
+
+  05 Jan 2005; Marcus Hanwell <cryos@gentoo.org>
+  kipi-plugins-0.1_beta1.ebuild:
+  Marked ~amd64 as requested in bug 72943.
+
+  31 Dec 2004; Jason Wever <weeve@gentoo.org> kipi-plugins-0.1_beta1.ebuild:
+  Added ~sparc keyword.
+
+  06 Dec 2004; David Holm <dholm@gentoo.org> kipi-plugins-0.1_beta1.ebuild:
+  Added to ~ppc.
+
+*kipi-plugins-0.1_beta1 (18 Oct 2004)
+
+  18 Oct 2004; Carsten Lohrke <carlo@gentoo.org> +metadata.xml,
+  +kipi-plugins-0.1_beta1.ebuild:
+  Initial commit. Thanks to Maarten Wisse, #67644
+

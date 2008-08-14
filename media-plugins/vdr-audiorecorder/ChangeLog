@@ -1,0 +1,59 @@
+# ChangeLog for media-plugins/vdr-audiorecorder
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-audiorecorder/ChangeLog,v 1.9 2008/04/21 10:56:40 zzam Exp $
+
+  21 Apr 2008; Matthias Schwarzott <zzam@gentoo.org>
+  +files/vdr-audiorecorder-0.1.0_pre6-ffmpeg-0.4.9_p20080326-new_header.diff
+  , vdr-audiorecorder-0.1.0_pre6.ebuild:
+  Added patch for new header location in ffmpeg-0.4.9_p20080326, Bug
+  #218094. Fixed quoting.
+
+  24 Jun 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +files/vdr-audiorecorder-0.1.0_pre6-vdr-1.5.0.diff,
+  vdr-audiorecorder-0.1.0_pre6.ebuild:
+  Added vdr-1.5.0 patch.
+
+  25 Oct 2006; Matthias Schwarzott <zzam@gentoo.org>
+  -files/vdr-audiorecorder-0.1.0_pre4-free_check.diff,
+  -files/vdr-audiorecorder-0.1.0_pre4-gcc4.diff,
+  -vdr-audiorecorder-0.1.0_pre4-r1.ebuild:
+  Cleanup of old version.
+
+  21 Sep 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-audiorecorder-0.1.0_pre6.ebuild:
+  vdr-audiorecorder now has an unconditional dependency to taglib, thanks to
+  E. Scaglione <erm67@yahoo.it> for reporting, Bug #148296.
+
+*vdr-audiorecorder-0.1.0_pre6 (07 Sep 2006)
+
+  07 Sep 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-audiorecorder-0.1.0_pre6.ebuild:
+  Version bumped.
+
+  11 Aug 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-audiorecorder-0.1.0_pre4-r1.ebuild:
+  Corrected bug concerning disabled use-flag taglib, reported by Pizzak from
+  #gentoo-vdr.
+
+*vdr-audiorecorder-0.1.0_pre4-r1 (09 Aug 2006)
+
+  09 Aug 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +files/vdr-audiorecorder-0.1.0_pre4-free_check.diff,
+  -vdr-audiorecorder-0.1.0_pre4.ebuild,
+  +vdr-audiorecorder-0.1.0_pre4-r1.ebuild:
+  Fixed check on free disk space.
+
+*vdr-audiorecorder-0.1.0_pre4 (18 Jul 2006)
+
+  18 Jul 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +files/vdr-audiorecorder-0.1.0_pre4-gcc4.diff,
+  -vdr-audiorecorder-0.1.0_pre3.ebuild,
+  +vdr-audiorecorder-0.1.0_pre4.ebuild:
+  Version bumped.
+
+*vdr-audiorecorder-0.1.0_pre3 (05 Jul 2006)
+
+  05 Jul 2006; Matthias Schwarzott <zzam@gentoo.org> +files/confd,
+  +files/rc-addon.sh, +metadata.xml, +vdr-audiorecorder-0.1.0_pre3.ebuild:
+  Initial import of ebuild written by me.
+

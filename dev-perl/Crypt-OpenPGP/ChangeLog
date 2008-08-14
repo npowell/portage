@@ -1,0 +1,60 @@
+# ChangeLog for dev-perl/Crypt-OpenPGP
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Crypt-OpenPGP/ChangeLog,v 1.14 2007/01/15 15:34:19 mcummings Exp $
+
+  15 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  Crypt-OpenPGP-1.03.ebuild:
+  Ebuild maintenance
+
+  17 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Crypt-OpenPGP-1.03.ebuild:
+  Marking amd64 stable
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Crypt-OpenPGP-1.03.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  24 Jun 2006; Michael Cummings <mcummings@gentoo.org>
+  Crypt-OpenPGP-1.03.ebuild:
+  Disabled tests, keyworing amd64. Another case of older tests.
+
+  13 Feb 2006; <mcumming@gentoo.org> Crypt-OpenPGP-1.03.ebuild:
+  Virtual for perl-core dep
+
+  07 Feb 2006; <mcumming@gentoo.org> Crypt-OpenPGP-1.03.ebuild:
+  bug 121189, dup'd module in tree
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  Crypt-OpenPGP-1.03.ebuild:
+  Marking x86 stable
+
+  07 Jul 2005; Michael Cummings <mcummings@gentoo.org>
+  Crypt-OpenPGP-1.03.ebuild:
+  oops - had it backwards, sorry
+
+  07 Jul 2005; Michael Cummings <mcummings@gentoo.org>
+  Crypt-OpenPGP-1.03.ebuild:
+  Dep=rdep for upcoming rdep changes
+
+  25 May 2005; Michael Cummings <mcummings@gentoo.org>
+  Crypt-OpenPGP-1.03.ebuild:
+  dev-perl/MIME-Base64 => perl-core/MIME-Base64 migration
+
+  24 May 2005; Michael Cummings <mcummings@gentoo.org>
+  Crypt-OpenPGP-1.03.ebuild:
+  dev-perl/Digest-MD5 => perl-core/Digest-MD5
+
+  06 May 2005; Sven Wegener <swegener@gentoo.org> Crypt-OpenPGP-1.03.ebuild:
+  Removed * postfix from <, <=, >= and > dependencies.
+
+  11 Apr 2005; Ferris McCormick <fmccor@gentoo.org>
+  Crypt-OpenPGP-1.03.ebuild:
+  Remove ~sparc keyword; pari-2.1.6 will not build on sparc, and so also will not
+  dev-perl/math-pari-2/010603.
+
+*Crypt-OpenPGP-1.03 (11 Apr 2005)
+
+  11 Apr 2005; Michael Cummings <mcummings@gentoo.org> +metadata.xml,
+  +Crypt-OpenPGP-1.03.ebuild:
+  dep for module-signature
+

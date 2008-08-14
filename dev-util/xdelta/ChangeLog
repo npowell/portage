@@ -1,0 +1,130 @@
+# ChangeLog for dev-util/xdelta
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/xdelta/ChangeLog,v 1.37 2008/04/20 15:18:08 drac Exp $
+
+  20 Apr 2008; Samuli Suominen <drac@gentoo.org> xdelta-1.1.3-r3.ebuild:
+  Move pkgconfig to DEPEND from RDEPEND.
+
+  17 Jan 2008; Markus Meier <maekke@gentoo.org> xdelta-1.1.3-r3.ebuild:
+  add pkgconfig dep, bug #206252
+
+  16 Jan 2008; Samuli Suominen <drac@gentoo.org> -xdelta-1.1.3.ebuild,
+  -xdelta-1.1.3-r1.ebuild, -xdelta-1.1.3-r2.ebuild, xdelta-1.1.3-r3.ebuild:
+  amd64 stable wrt #206009 and remove unused versions.
+
+  16 Jan 2008; Raúl Porcel <armin76@gentoo.org> xdelta-1.1.3-r3.ebuild:
+  alpha/ia64/sparc stable wrt #206009
+
+  16 Jan 2008; Christian Faulhammer <opfer@gentoo.org>
+  xdelta-1.1.3-r3.ebuild:
+  stable x86, bug 206009
+
+  16 Jan 2008; Brent Baude <ranger@gentoo.org> xdelta-1.1.3-r3.ebuild:
+  Marking xdelta-1.1.3-r3 ppc and ppc64 for bug 206009
+
+*xdelta-3.0t (15 Jan 2008)
+
+  15 Jan 2008; Samuli Suominen <drac@gentoo.org> +xdelta-3.0t.ebuild:
+  Version bump wrt #169304, but use a new SLOT since it doesn't seem to
+  provide libraries version 1 does. Thanks to Michael Schmid for reporting and
+  ebuild.
+
+  15 Oct 2007; Markus Rothe <corsair@gentoo.org> xdelta-1.1.3-r2.ebuild:
+  Stable on ppc64
+
+*xdelta-1.1.3-r3 (13 Oct 2007)
+
+  13 Oct 2007; Samuli Suominen <drac@gentoo.org>
+  +files/xdelta-1.1.3-glib2.patch, +xdelta-1.1.3-r3.ebuild:
+  Upgrade from GLIB1 to 2.
+
+  13 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  xdelta-1.1.3-r2.ebuild:
+  ppc. stable
+
+  25 Jul 2007; Raúl Porcel <armin76@gentoo.org> xdelta-1.1.3-r2.ebuild:
+  alpha stable
+
+  15 Jul 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Assigning dev-util/xdelta to m-needed, as beu is being retired (#66608).
+
+  14 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+  23 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  xdelta-1.1.3-r2.ebuild:
+  Stable on sparc
+
+  21 Apr 2007; Raúl Porcel <armin76@gentoo.org> xdelta-1.1.3-r2.ebuild:
+  ia64 + x86 stable
+
+  21 Nov 2006; Timothy Redaelli <drizzt@gentoo.org> xdelta-1.1.3-r1.ebuild:
+  Added tc-export CC.
+
+  08 Aug 2006; Luis Medinas <metalgod@gentoo.org> xdelta-1.1.3-r1.ebuild:
+  Stable on amd64. Bug #141249.
+
+  03 Aug 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  xdelta-1.1.3-r1.ebuild:
+  Stable on sparc
+
+  24 Jul 2006; Andrej Kacian <ticho@gentoo.org> xdelta-1.1.3-r1.ebuild:
+  Stable on x86, bug #141249.
+
+  03 Jul 2006; Lars Weiler <pylon@gentoo.org> xdelta-1.1.3-r1.ebuild:
+  Stable on ppc; gcc-4 related; bug #138099.
+
+  20 Feb 2006; Markus Rothe <corsair@gentoo.org> xdelta-1.1.3-r1.ebuild:
+  Stable on ppc64
+
+  06 Feb 2006; Aron Griffis <agriffis@gentoo.org> xdelta-1.1.3-r1.ebuild:
+  Mark 1.1.3-r1 stable on alpha
+
+  05 Feb 2006; Aron Griffis <agriffis@gentoo.org> xdelta-1.1.3-r1.ebuild:
+  Mark 1.1.3-r1 stable on ia64
+
+  25 Dec 2005; <bharring@gentoo.org> +files/xdelta-1.1.3-freegen.patch,
+  +files/xdelta-1.1.3-gcc4.patch, +xdelta-1.1.3-r1.ebuild:
+  collection of fixups raided from bug 91062, and from loki (work mainly via
+  Ozkan Sezer).
+
+*xdelta-1.1.3 (26 Dec 2005)
+
+  11 Oct 2005; Aron Griffis <agriffis@gentoo.org> xdelta-1.1.3.ebuild:
+  Mark 1.1.3 ~ia64
+
+  10 Sep 2005; Aron Griffis <agriffis@gentoo.org> xdelta-1.1.3.ebuild:
+  Mark 1.1.3 stable on alpha
+
+  18 Jun 2005; Jose Luis Rivero <yoswink@gentoo.org> xdelta-1.1.3.ebuild:
+  Keyworded ~alpha since is needed on #95128
+
+  29 May 2005; Markus Rothe <corsair@gentoo.org> xdelta-1.1.3.ebuild:
+  Stable on ppc64
+
+  27 Apr 2005; Markus Rothe <corsair@gentoo.org> xdelta-1.1.3.ebuild:
+  Added ~ppc64 to KEYWORDS
+
+  11 Apr 2005; Chris Gianelloni <wolf31o2@gentoo.org> xdelta-1.1.3.ebuild:
+  Marking stable on amd64 for loki_patch.
+
+  18 Jul 2004; Daniel Ahlberg <aliz@gentoo.org> xdelta-1.1.3.ebuild:
+  Added amd64 keyword, closing #56947.
+
+  06 Dec 2002; Rodney Rees <manson@gentoo.org> : changed sparc ~sparc keywords
+ 
+
+*xdelta-1.1.3 (11 Apr 2002)
+  11 Apr 2002; Spider <spider@gentoo.org>
+  Update all glib dependencies to use glib-1.2*  in preparation of unmasking the glib-2.0.1 packages
+    
+
+*xdelta-1.1.3 (1 Feb 2002)
+
+  1 Feb 2002; G.Bevin <gbevin@gentoo.org> ChangeLog :
+  
+  Added initial ChangeLog which should be updated whenever the package is
+  updated in any way. This changelog is targetted to users. This means that the
+  comments should well explained and written in clean English. The details about
+  writing correct changelogs are explained in the skel.ChangeLog file which you
+  can find in the root directory of the portage repository.

@@ -1,0 +1,73 @@
+# ChangeLog for media-video/subtitleripper
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/subtitleripper/ChangeLog,v 1.14 2008/04/11 19:18:30 yngwin Exp $
+
+  11 Apr 2008; Ben de Groot <yngwin@gentoo.org>
+  subtitleripper-0.3.4-r3.ebuild:
+  Ebuild cleanup
+
+*subtitleripper-0.3.4-r3 (11 Apr 2008)
+
+  11 Apr 2008; Ben de Groot <yngwin@gentoo.org>
+  subtitleripper-0.3.4-r2.ebuild, +subtitleripper-0.3.4-r3.ebuild:
+  Fixing DEPEND. >=netpbm-0.41.0 changed header locations. Fixes bug 210435.
+
+*subtitleripper-0.3.4-r2 (29 Nov 2006)
+
+  29 Nov 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +subtitleripper-0.3.4-r2.ebuild:
+  Install gocr-filter, thanks to Christian Schmidt <gentoo@digadd.de>, Bug
+  #155853.
+
+  23 Jun 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  subtitleripper-0.3.4-r1.ebuild:
+  Stable on sparc
+
+  22 Apr 2006; Markus Rothe <corsair@gentoo.org>
+  subtitleripper-0.3.4-r1.ebuild:
+  Stable on ppc64
+
+  20 Apr 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  subtitleripper-0.3.4-r1.ebuild:
+  Stable on x86 wrt bug #127495.
+
+  11 Apr 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  subtitleripper-0.3.4-r1.ebuild:
+  Keyworded ~sparc
+
+  25 Mar 2006; Daniel Goller <morfic@gentoo.org>
+  subtitleripper-0.3.4-r1.ebuild:
+  Stable loving the dvd::rip dep
+
+  17 Dec 2005; Markus Rothe <corsair@gentoo.org>
+  subtitleripper-0.3.4-r1.ebuild:
+  Added ~ppc64; bug #97355
+
+*subtitleripper-0.3.4-r1 (17 Dec 2005)
+
+  17 Dec 2005; Diego Pettenò <flameeyes@gentoo.org>
+  +subtitleripper-0.3.4-r1.ebuild:
+  Added ebuild patch by Sven Vermeulen <swift@gentoo.org> in bug #97355.
+  Dropped ppc64 keyword for dependencies.
+
+  27 Jun 2005; Markus Rothe <corsair@gentoo.org>
+  subtitleripper-0.3.4.ebuild:
+  Stable on ppc64
+
+  27 Jun 2005; Markus Rothe <corsair@gentoo.org>
+  subtitleripper-0.3.4.ebuild:
+  Stable on ppc64
+
+  24 May 2005; Markus Rothe <corsair@gentoo.org>
+  subtitleripper-0.3.4.ebuild:
+  Added ~ppc64 to KEYWORDS
+
+  15 May 2005; Joseph Jezak <josejx@gentoo.org> subtitleripper-0.3.4.ebuild:
+  Marked ~ppc for bug #90101.
+
+*subtitleripper-0.3.4 (08 Apr 2005)
+
+  08 Apr 2005; Christian Parpart <trapni@gentoo.org>
+  +subtitleripper-0.3.4.ebuild:
+  initial import; ebuild submitted by Florian E.J. Fruth <fejf@gmx.de>
+

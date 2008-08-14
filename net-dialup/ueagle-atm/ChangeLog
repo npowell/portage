@@ -1,0 +1,34 @@
+# ChangeLog for net-dialup/ueagle-atm
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-dialup/ueagle-atm/ChangeLog,v 1.5 2007/04/15 11:24:54 mrness Exp $
+
+  15 Apr 2007; Alin Năstac <mrness@gentoo.org> -ueagle-atm-1.2.ebuild:
+  Remove non-working version.
+
+*ueagle-atm-1.2 (23 Sep 2006)
+
+  23 Sep 2006; Alin Nastac <mrness@gentoo.org> files/README,
+  ueagle-atm-1.1-r2.ebuild, +ueagle-atm-1.2.ebuild:
+  Modify PPPoA chapter of the documentation (#144194). Stable on x86. Version
+  bump.
+
+*ueagle-atm-1.1-r2 (23 May 2006)
+
+  23 May 2006; Alin Nastac <mrness@gentoo.org> files/README,
+  -ueagle-atm-1.1-r1.ebuild, +ueagle-atm-1.1-r2.ebuild:
+  Keep up with baselayout-1.12.0 development. Improve post-install messages,
+  based on new features available in linux-info.eclass.
+
+*ueagle-atm-1.1-r1 (01 May 2006)
+
+  01 May 2006; Alin Nastac <mrness@gentoo.org> -ueagle-atm-1.1.ebuild,
+  +ueagle-atm-1.1-r1.ebuild:
+  Set world-readable permissions on firmware files. Apparently, firmware
+  loader fails with ENOENT if only root could read these files (#131693).
+
+*ueagle-atm-1.1 (30 Apr 2006)
+
+  30 Apr 2006; Alin Nastac <mrness@gentoo.org> +files/README, +metadata.xml,
+  +ueagle-atm-1.1.ebuild:
+  Initial version, created for fixing bug #131693.
+

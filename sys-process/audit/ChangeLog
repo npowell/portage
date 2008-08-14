@@ -1,0 +1,238 @@
+# ChangeLog for sys-process/audit
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-process/audit/ChangeLog,v 1.51 2008/05/26 19:44:46 dertobi123 Exp $
+
+  26 May 2008; Tobias Scherbaum <dertobi123@gentoo.org> audit-1.7.3.ebuild:
+  ppc stable, bug #215705
+
+  26 May 2008; Raúl Porcel <armin76@gentoo.org> audit-1.7.3.ebuild:
+  ia64/sparc stable wrt security #215705
+
+  25 May 2008; Markus Meier <maekke@gentoo.org> audit-1.7.3.ebuild:
+  amd64 stable, bug #215705
+
+*audit-1.7.4 (25 May 2008)
+
+  25 May 2008; Robin H. Johnson <robbat2@gentoo.org> +audit-1.7.4.ebuild:
+  Version bump.
+
+  24 May 2008; Christian Faulhammer <opfer@gentoo.org> audit-1.7.3.ebuild:
+  stable x86, security bug 215705
+
+  24 May 2008; Jeroen Roovers <jer@gentoo.org> audit-1.7.3.ebuild:
+  Stable for HPPA (bug #215705).
+
+*audit-1.7.3 (22 May 2008)
+
+  22 May 2008; Robin H. Johnson <robbat2@gentoo.org> +audit-1.7.3.ebuild:
+  Bug #215705, bump again for a proper fix to the buffer overflow stuff.
+
+  06 Apr 2008; Tobias Klausmann <klausman@gentoo.org> audit-1.6.8.ebuild:
+  Keyworded on alpha, bug #184563
+
+  03 Apr 2008; Jeroen Roovers <jer@gentoo.org> audit-1.6.8.ebuild:
+  Stable for HPPA too.
+
+*audit-1.7 (02 Apr 2008)
+
+  02 Apr 2008; Robin H. Johnson <robbat2@gentoo.org> +audit-1.7.ebuild:
+  Version bump for security bug #215705.
+
+  31 Mar 2008; <ricmm@gentoo.org> audit-1.5.4.ebuild:
+  Drop to ~mips due to unstable deps
+
+  20 Feb 2008; Robin H. Johnson <robbat2@gentoo.org> audit-1.6.8.ebuild:
+  Disable the testcases as they are redhat specific.
+
+  20 Feb 2008; Robin H. Johnson <robbat2@gentoo.org>
+  +files/audit-1.6.8-subdirs-fix.patch, audit-1.6.8.ebuild:
+  Fix up some build issues with audit, LDAP is only needed for the z/OS
+  plugin, Prelude support is not needed, and it fails to install docs due to a
+  Makefile bug.
+
+  20 Feb 2008; Jeroen Roovers <jer@gentoo.org> audit-1.6.8.ebuild:
+  Marked ~hppa (bug #184563).
+
+  19 Feb 2008; Robin H. Johnson <robbat2@gentoo.org>
+  -files/audit.h-2.6.18-rc4, -files/elf-em.h-2.6.18-rc4:
+  Clean up filesdir.
+
+  19 Feb 2008; Robin H. Johnson <robbat2@gentoo.org> -audit-1.2.9.ebuild,
+  -audit-1.2.9-r1.ebuild, -audit-1.2.9-r2.ebuild, -audit-1.5.1.ebuild:
+  Cleanup old ebuilds.
+
+*audit-1.6.8 (19 Feb 2008)
+
+  19 Feb 2008; Robin H. Johnson <robbat2@gentoo.org> +audit-1.6.8.ebuild:
+  Version bump.
+
+  13 Jan 2008; Joshua Kinard <kumba@gentoo.org> audit-1.6.2.ebuild:
+  Marked unstable on mips.
+
+  13 Jan 2008; Joshua Kinard <kumba@gentoo.org> audit-1.5.4.ebuild:
+  Stable on mips.
+
+  28 Oct 2007; Olivier Crête <tester@gentoo.org> audit-1.5.4.ebuild:
+  Mark stable for bug #196409
+
+  28 Oct 2007; Markus Rothe <corsair@gentoo.org> audit-1.6.2.ebuild:
+  Added ~ppc64; bug #184563
+
+  28 Oct 2007; nixnut <nixnut@gentoo.org> audit-1.5.4.ebuild:
+  Stable on ppc wrt bug 196409
+
+  24 Oct 2007; Dawid Węgliński <cla@gentoo.org> audit-1.5.4.ebuild:
+  Stable on x86 for bug #196409
+
+  24 Oct 2007; Raúl Porcel <armin76@gentoo.org> audit-1.5.4.ebuild:
+  ia64/sparc stable wrt #196409
+
+  02 Oct 2007; Robin H. Johnson <robbat2@gentoo.org> audit-1.6.1.ebuild,
+  audit-1.6.2.ebuild:
+  Fix quoting
+
+*audit-1.6.2 (02 Oct 2007)
+
+  02 Oct 2007; Robin H. Johnson <robbat2@gentoo.org> +audit-1.6.2.ebuild:
+  Version bump again.
+
+*audit-1.6.1 (02 Oct 2007)
+
+  02 Oct 2007; Robin H. Johnson <robbat2@gentoo.org> +audit-1.6.1.ebuild:
+  Bug #190804, version bump.
+
+  15 Jul 2007; Robin H. Johnson <robbat2@gentoo.org>
+  +files/audit-1.5.4-swig-gcc-attribute.patch, audit-1.5.4.ebuild:
+  Make audit-python compile on arches that use GCC __attribute in their
+  headers, as it does not like that.
+
+  11 Jul 2007; Gustavo Zacarias <gustavoz@gentoo.org> audit-1.5.4.ebuild:
+  Keyworded ~sparc wrt #184563
+
+  10 Jul 2007; Raúl Porcel <armin76@gentoo.org> audit-1.5.4.ebuild:
+  Add ~ia64 wrt #184563
+
+  09 Jul 2007; Mike Frysinger <vapier@gentoo.org>
+  +files/audit-1.5.4-build.patch, audit-1.5.4.ebuild:
+  Fix build error when testing #184563.
+
+*audit-1.5.4 (08 Jul 2007)
+
+  08 Jul 2007; Mike Frysinger <vapier@gentoo.org> +audit-1.5.4.ebuild:
+  Version bump.
+
+*audit-1.5.1 (01 Apr 2007)
+
+  01 Apr 2007; Robin H. Johnson <robbat2@gentoo.org> +audit-1.5.1.ebuild:
+  Bug #171282, version bump to fix glibc selinux compile issues.
+
+  01 Mar 2007; Robin H. Johnson <robbat2@gentoo.org> audit-1.2.9-r2.ebuild:
+  Fix another libdir snafu.
+
+  25 Feb 2007; Robin H. Johnson <robbat2@gentoo.org>
+  -files/auditd.confd-0.7.2-r1, -files/auditd.initd-0.7.2-r1,
+  -files/audit-0.9.14-header.patch, -files/audit-1.1.3-compilefix.patch,
+  -files/audit-1.2.3-syscall-partial.patch, -files/auditd.confd,
+  -files/auditd.initd, -audit-0.7.2-r1.ebuild, -audit-0.7.3.ebuild,
+  -audit-0.7.4.ebuild, -audit-0.8.ebuild, -audit-0.8.1.ebuild,
+  -audit-0.9.1.ebuild, -audit-1.1.6.ebuild, -audit-1.2.1.ebuild,
+  -audit-1.2.3.ebuild, -audit-1.2.5.ebuild:
+  Cleanup all of the old stuff.
+
+*audit-1.2.9-r2 (25 Feb 2007)
+
+  25 Feb 2007; Robin H. Johnson <robbat2@gentoo.org> +audit-1.2.9-r2.ebuild:
+  More .la fixering.
+
+*audit-1.2.9-r1 (24 Feb 2007)
+
+  24 Feb 2007; Robin H. Johnson <robbat2@gentoo.org> +audit-1.2.9-r1.ebuild:
+  Fix for bug #161342.
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+*audit-1.2.9 (13 Nov 2006)
+*audit-1.2.5 (13 Nov 2006)
+
+  13 Nov 2006; Robin H. Johnson <robbat2@gentoo.org>
+  +files/audit-0.9.14-header.patch, +files/audit.h-2.6.18-rc4,
+  +files/elf-em.h-2.6.18-rc4, audit-1.1.6.ebuild, audit-1.2.3.ebuild,
+  +audit-1.2.5.ebuild, +audit-1.2.9.ebuild:
+  Bug #142460, combined with version bumping. Audit finally builds again
+  against headers and kernels found in the tree!.
+
+*audit-1.2.3 (22 Jun 2006)
+
+  22 Jun 2006; Robin H. Johnson <robbat2@gentoo.org>
+  +files/auditd-conf.d-1.2.3, +files/auditd-init.d-1.2.3,
+  +files/audit-1.2.3-syscall-partial.patch, +files/audit.rules,
+  +files/audit.rules.stop.post, +files/audit.rules.stop.pre,
+  +audit-1.2.3.ebuild:
+  Version bump to 1.2.3. The kernel is close to being usable, I've now been
+  able to use this for the first time in a very long way.
+
+*audit-1.2.1 (19 Apr 2006)
+*audit-1.1.6 (19 Apr 2006)
+
+  19 Apr 2006; Robin H. Johnson <robbat2@gentoo.org> -audit-1.1.3.ebuild,
+  +audit-1.1.6.ebuild, +audit-1.2.1.ebuild:
+  Put new 1.1.6 and 1.2.1 versions into tree. Still unusable until 2.6.17-rc1
+  headers get out.
+
+  01 Feb 2006; Robin H. Johnson <robbat2@gentoo.org> audit-1.1.3.ebuild:
+  Fix typo.
+
+*audit-1.1.3 (01 Feb 2006)
+
+  01 Feb 2006; Robin H. Johnson <robbat2@gentoo.org>
+  +files/audit-1.1.3-compilefix.patch, +audit-1.1.3.ebuild:
+  Add audit-1.1.3. KEYWORDS are -* because it needs masked kernel headers.
+
+*audit-0.9.1 (06 Jun 2005)
+
+  06 Jun 2005; Elfyn McBratney <beu@gentoo.org> +audit-0.9.1.ebuild:
+  Version bump.
+
+*audit-0.8.1 (19 May 2005)
+
+  19 May 2005; Robin H. Johnson <robbat2@gentoo.org> +audit-0.8.1.ebuild:
+  Version bump.
+
+*audit-0.8 (15 May 2005)
+
+  15 May 2005; Elfyn McBratney <beu@gentoo.org> -audit-0.7.ebuild,
+  -audit-0.7.1.ebuild, -audit-0.7.2.ebuild, +audit-0.8.ebuild:
+  Version bump.  Prune older versions.
+
+*audit-0.7.4 (09 May 2005)
+
+  09 May 2005; Elfyn McBratney <beu@gentoo.org> +audit-0.7.4.ebuild:
+  Version bump.
+
+*audit-0.7.3 (06 May 2005)
+
+  06 May 2005; Elfyn McBratney <beu@gentoo.org> +audit-0.7.3.ebuild:
+  Version bump.
+
+*audit-0.7.2-r1 (30 Apr 2005)
+
+  30 Apr 2005; Robin H. Johnson <robbat2@gentoo.org> metadata.xml,
+  +files/auditd.confd-0.7.2-r1, +files/auditd.initd-0.7.2-r1,
+  +audit-0.7.2-r1.ebuild:
+  Move to /sbin for early boot running, and install sample rules. Also more
+  secure perms as recommended by upstream.
+
+*audit-0.7.2 (01 May 2005)
+
+  01 May 2005; Elfyn McBratney <beu@gentoo.org> +audit-0.7.2.ebuild:
+  Version bump.
+
+  30 Apr 2005; Robin H. Johnson <robbat2@gentoo.org> :
+  Improvements by me!.
+
+*audit-0.7.1 (29 Apr 2005)
+
+  29 Apr 2005; Elfyn McBratney <beu@gentoo.org> :
+  Initial ebuild, from yours truly.
+

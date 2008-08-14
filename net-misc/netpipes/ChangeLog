@@ -1,0 +1,23 @@
+# ChangeLog for net-misc/netpipes
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/netpipes/ChangeLog,v 1.5 2007/02/20 01:06:01 jokey Exp $
+
+  20 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  22 Oct 2006; Thomas Cort <tcort@gentoo.org> netpipes-4.2.ebuild:
+  Added ~amd64 keyword wrt Bug #138357.
+
+  05 Aug 2006; Chris White <chriswhite@gentoo.org> metadata.xml:
+  metadata.xml translation by Yoshino-san in bug #136639
+
+  13 Jan 2005; Sven Wegener <swegener@gentoo.org> :
+  Added missing digest entries.
+
+*netpipes-4.2 (13 Jan 2005)
+
+  13 Jan 2005; Daniel Black <dragonheart@gentoo.org> +netpipes-4.2.ebuild,
+  metadata.xml:
+  Initial import as per bug #72959. Thanks to the author thoth@purplefrog.com
+  for the program and ebuild
+

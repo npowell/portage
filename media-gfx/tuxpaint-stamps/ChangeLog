@@ -1,0 +1,77 @@
+# ChangeLog for media-gfx/tuxpaint-stamps
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/tuxpaint-stamps/ChangeLog,v 1.16 2007/12/01 12:11:37 nixnut Exp $
+
+  01 Dec 2007; nixnut <nixnut@gentoo.org> tuxpaint-stamps-20070701.ebuild:
+  Stable on ppc wrt bug 200640
+
+  28 Nov 2007; Dawid Węgliński <cla@gentoo.org>
+  tuxpaint-stamps-20070701.ebuild:
+  Stable on x86 (bug #200640)
+
+  28 Nov 2007; Samuli Suominen <drac@gentoo.org>
+  tuxpaint-stamps-20070701.ebuild:
+  amd64 stable wrt #200640
+
+*tuxpaint-stamps-20071121 (28 Nov 2007)
+
+  28 Nov 2007; Leonardo Boshell <leonardop@gentoo.org>
+  +tuxpaint-stamps-20071121.ebuild:
+  New release.
+
+*tuxpaint-stamps-20070701 (07 Aug 2007)
+
+  07 Aug 2007; Leonardo Boshell <leonardop@gentoo.org>
+  -tuxpaint-stamps-20051125.ebuild, +tuxpaint-stamps-20070701.ebuild:
+  Version bump.
+
+  08 Apr 2007; Peter Weller <welp@gentoo.org>
+  tuxpaint-stamps-20061021.ebuild:
+  Stable on amd64 wrt bug 172165
+
+  08 Apr 2007; Joseph Jezak <josejx@gentoo.org>
+  tuxpaint-stamps-20061021.ebuild:
+  Marked ~ppc for bug #172283.
+
+  25 Mar 2007; Andrej Kacian <ticho@gentoo.org>
+  tuxpaint-stamps-20061021.ebuild:
+  Stable on x86, bug #172165.
+
+*tuxpaint-stamps-20061021 (01 Nov 2006)
+
+  01 Nov 2006; Leonardo Boshell <leonardop@gentoo.org>
+  -files/tuxpaint-stamps-2004-10-03-makefile.patch,
+  -tuxpaint-stamps-20041003.ebuild, +tuxpaint-stamps-20061021.ebuild:
+  New release (bug #152962).
+
+  03 Oct 2006; Joshua Jackson <tsunam@gentoo.org>
+  tuxpaint-stamps-20051125.ebuild:
+  Stable x86; bug #148937
+
+  30 Sep 2006; Daniel Gryniewicz <dang@gentoo.org>
+  tuxpaint-stamps-20051125.ebuild:
+  Marked stable on amd64 for bug #148937
+
+*tuxpaint-stamps-20051125 (22 Dec 2005)
+
+  22 Dec 2005; Leonardo Boshell <leonardop@gentoo.org>
+  +tuxpaint-stamps-20051125.ebuild:
+  New release (bug #115546).
+
+  21 Dec 2005; Luis Medinas <metalgod@gentoo.org>
+  tuxpaint-stamps-20041003.ebuild:
+  Stable on amd64. Closes bug #116268.
+
+  27 Sep 2005; Luis Medinas <metalgod@gentoo.org>
+  tuxpaint-stamps-20041003.ebuild:
+  Added ~amd64 keyword. Closes bug #107304.
+
+  20 Mar 2005; Leonardo Boshell <leonardop@gentoo.org>
+  tuxpaint-stamps-20041003.ebuild:
+  Marked stable.
+
+*tuxpaint-stamps-20041003 (23 Nov 2004)
+
+  23 Nov 2004; Leonardo Boshell <leonardop@gentoo.org>
+  tuxpaint-stamps-20041003.ebuild:
+  Initial import.

@@ -1,0 +1,19 @@
+# ChangeLog for app-doc/root-docs
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-doc/root-docs/ChangeLog,v 1.8 2007/02/21 20:54:34 peper Exp $
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  19 Dec 2004; Jason Huebel <jhuebel@gentoo.org> root-docs-3.03.04.ebuild:
+  amd64, just docs, no need for testing
+
+  07 Jun 2004; Daniel Black <dragonheart@gentoo.org> +metadata.xml,
+  root-docs-3.03.04.ebuild:
+  QA - IUSE fix
+
+*root-docs-3.03.04 (11 Apr 2002)
+
+  11 Apr 2002; G.Bevin <gbevin@gentoo.org> root-docs-3.03.04.ebuild
+  files/digest-root-docs-3.03.04 :
+  Initial release

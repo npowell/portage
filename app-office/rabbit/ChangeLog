@@ -1,0 +1,18 @@
+# ChangeLog for app-office/rabbit
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-office/rabbit/ChangeLog,v 1.4 2008/08/03 12:10:47 ulm Exp $
+
+  03 Aug 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
+  Add USE flag description to metadata wrt GLEP 56.
+
+*rabbit-0.5.2 (23 Jul 2007)
+
+  23 Jul 2007; Hans de Graaff <graaff@gentoo.org> +rabbit-0.5.2.ebuild:
+  Version bump from Atzm Watanabe in bug #173255.
+
+*rabbit-0.5.0 (18 Dec 2006)
+
+  18 Dec 2006; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  +files/50rabbit-mode-gentoo.el, +metadata.xml, +rabbit-0.5.0.ebuild:
+  New ebuild from Atzm Watanabe <sitosito@p.chan.ne.jp>, bug #104787
+

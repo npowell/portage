@@ -1,0 +1,55 @@
+# ChangeLog for sys-fs/ddrescue
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/ddrescue/ChangeLog,v 1.12 2008/04/21 18:21:11 armin76 Exp $
+
+  21 Apr 2008; Raúl Porcel <armin76@gentoo.org> -ddrescue-1.6.ebuild,
+  ddrescue-1.8.ebuild:
+  x86 stable, remove old
+
+*ddrescue-1.8 (07 Mar 2008)
+
+  07 Mar 2008; Raúl Porcel <armin76@gentoo.org> -ddrescue-1.5.ebuild,
+  ddrescue-1.6.ebuild, +ddrescue-1.8.ebuild:
+  x86 stable, remove old, version bump wrt #211932
+
+  14 Jan 2008; Raúl Porcel <armin76@gentoo.org> ddrescue-1.5.ebuild:
+  x86 stable
+
+*ddrescue-1.6 (15 Dec 2007)
+
+  15 Dec 2007; Mike Frysinger <vapier@gentoo.org> +ddrescue-1.6.ebuild:
+  Version bump #202363 by Remy Blank.
+
+*ddrescue-1.5 (24 Jul 2007)
+
+  24 Jul 2007; Raúl Porcel <armin76@gentoo.org> metadata.xml,
+  -ddrescue-1.2.ebuild, ddrescue-1.3.ebuild, +ddrescue-1.5.ebuild:
+  Version bump, stable x86, remove old, thanks to Jan Simons <jan.simons at
+  web dot de> in bug 186153
+
+  11 May 2007; Thilo Bangert <bangert@gentoo.org> +metadata.xml:
+  add metadata.xml
+
+*ddrescue-1.3 (16 Dec 2006)
+
+  16 Dec 2006; Timothy Redaelli <drizzt@gentoo.org> +ddrescue-1.3.ebuild:
+  Version bump
+
+*ddrescue-1.2 (21 Jun 2006)
+
+  21 Jun 2006; Mike Frysinger <vapier@gentoo.org> +ddrescue-1.2.ebuild:
+  Version bump #137493 by Alexandru Toma.
+
+  29 Sep 2005; Andrej Kacian <ticho@gentoo.org> ddrescue-1.0.ebuild:
+  Stable on x86, bug #101890.
+
+  30 Jun 2005; Gustavo Zacarias <gustavoz@gentoo.org> ddrescue-1.0.ebuild:
+  To ~sparc wrt #97482
+
+  26 Jun 2005; David Holm <dholm@gentoo.org> ddrescue-1.0.ebuild:
+  Added to ~ppc.
+
+*ddrescue-1.0 (26 Jun 2005)
+
+  26 Jun 2005; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by Alexandru Toma #74379.

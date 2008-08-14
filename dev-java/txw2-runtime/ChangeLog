@@ -1,0 +1,46 @@
+# ChangeLog for dev-java/txw2-runtime
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-java/txw2-runtime/ChangeLog,v 1.10 2008/07/30 19:38:48 betelgeuse Exp $
+
+*txw2-runtime-20070407-r1 (30 Jul 2008)
+
+  30 Jul 2008; Petteri Räty <betelgeuse@gentoo.org>
+  +txw2-runtime-20070407-r1.ebuild:
+  Remove a bunch of unneeded dependencies.
+
+  28 Mar 2008; nixnut <nixnut@gentoo.org> txw2-runtime-20070407.ebuild:
+  Stable on ppc wrt bug 214778
+
+  19 Aug 2007; William L. Thomson Jr. <wltjr@gentoo.org>
+  txw2-runtime-20070407.ebuild:
+  amd64 stable, bug #187681.
+
+  15 Aug 2007; Christian Faulhammer <opfer@gentoo.org>
+  txw2-runtime-20070407.ebuild:
+  stable x86, bug 187681
+
+  11 Aug 2007; Krzysiek Pawlik <nelchael@gentoo.org> metadata.xml:
+  Remove myself from <maintainer>.
+
+  23 May 2007; Diego Pettenò <flameeyes@gentoo.org>
+  txw2-runtime-20070407.ebuild:
+  Add ~x86-fbsd keyword. Bug #176906.
+
+  08 May 2007; Krzysiek Pawlik <nelchael@gentoo.org>
+  txw2-runtime-20070407.ebuild:
+  Fix installing javadocs, see bug #177668.
+
+  05 May 2007; Krzysiek Pawlik <nelchael@gentoo.org>
+  txw2-runtime-20070407.ebuild:
+  Move -i to be first option.
+
+  01 May 2007; Krzysiek Pawlik <nelchael@gentoo.org>
+  txw2-runtime-20070407.ebuild:
+  Fix building.
+
+*txw2-runtime-20070407 (01 May 2007)
+
+  01 May 2007; Krzysiek Pawlik <nelchael@gentoo.org>
+  +files/build.xml-20070407, +metadata.xml, +txw2-runtime-20070407.ebuild:
+  Initial commit of txw2-runtime.
+

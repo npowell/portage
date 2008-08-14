@@ -1,0 +1,116 @@
+# ChangeLog for sys-process/atop
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-process/atop/ChangeLog,v 1.25 2008/06/27 17:20:44 dberkholz Exp $
+
+*atop-1.23 (27 Jun 2008)
+
+  27 Jun 2008; Donnie Berkholz <dberkholz@gentoo.org>; +atop-1.23.ebuild:
+  Bump.
+
+*atop-1.22 (16 Feb 2008)
+
+  16 Feb 2008; Mike Frysinger <vapier@gentoo.org> +atop-1.22.ebuild:
+  Version bump #210376 by Bram Schoenmakers.
+
+  28 Nov 2007; Christian Faulhammer <opfer@gentoo.org> atop-1.21.ebuild:
+  stable x86, bug 200574
+
+  28 Nov 2007; Christoph Mende <angelos@gentoo.org> atop-1.21.ebuild:
+  Stable on amd64 wrt bug #200574
+
+  23 Oct 2007; Jeroen Roovers <jer@gentoo.org> atop-1.21.ebuild:
+  Stable for HPPA.
+
+  10 Sep 2007; Mike Frysinger <vapier@gentoo.org> atop-1.21.ebuild:
+  Fix broken cron.d file #191926 by Jeroen Roovers.
+
+*atop-1.21 (10 Sep 2007)
+
+  10 Sep 2007; Jeroen Roovers <jer@gentoo.org> +atop-1.21.ebuild:
+  Version bump.
+
+  10 Aug 2007; Raúl Porcel <armin76@gentoo.org> atop-1.20.ebuild:
+  x86 stable
+
+*atop-1.20 (07 Jul 2007)
+
+  07 Jul 2007; Mike Frysinger <vapier@gentoo.org> +atop-1.20.ebuild:
+  Version bump #184230.
+
+  05 Jul 2007; Christoph Mende <angelos@gentoo.org> atop-1.19.ebuild:
+  Stable on amd64
+
+  04 Jul 2007; Raúl Porcel <armin76@gentoo.org> atop-1.19.ebuild:
+  x86 stable
+
+  04 May 2007; Jeroen Roovers <jer@gentoo.org> atop-1.19.ebuild:
+  Stable for HPPA.
+
+  12 Apr 2007; Jeroen Roovers <jer@gentoo.org> atop-1.19.ebuild:
+  Marked ~hppa too.
+
+  18 Feb 2007; Simon Stelling <blubb@gentoo.org> atop-1.17.ebuild:
+  stable on amd64; bug 167154
+
+  16 Feb 2007; Christian Faulhammer <opfer@gentoo.org> atop-1.17.ebuild:
+  stable x86; bug 167154
+
+*atop-1.19 (16 Feb 2007)
+
+  16 Feb 2007; Mike Frysinger <vapier@gentoo.org> +atop-1.19.ebuild:
+  Version bump #166971 by John Gerritse.
+
+*atop-1.17 (02 Dec 2006)
+
+  02 Dec 2006; Mike Frysinger <vapier@gentoo.org> +atop-1.17.ebuild:
+  Version bump #156592 by John Gerritse.
+
+*atop-1.16 (14 Oct 2006)
+
+  14 Oct 2006; Mike Frysinger <vapier@gentoo.org> +atop-1.16.ebuild:
+  Version bump #150858 by John Gerritse.
+
+  11 Mar 2006; Scott Stoddard <deltacow@gentoo.org> atop-1.15.ebuild:
+  Stable on amd64.
+
+  25 Feb 2006; Andrej Kacian <ticho@gentoo.org> atop-1.15.ebuild:
+  Stable on x86. Bug #12405, reported by Daniel Webert <rockoo at gmail.com>.
+
+*atop-1.15 (06 Jan 2006)
+
+  06 Jan 2006; Mike Frysinger <vapier@gentoo.org> +atop-1.15.ebuild:
+  Version bump #118013 by John Gerritse.
+
+  14 Jun 2005; Mike Frysinger <vapier@gentoo.org> +files/atop.rc,
+  atop-1.14.ebuild:
+  Move init.d script off of mirrors and into $FILESDIR #96054.
+
+*atop-1.14 (07 May 2005)
+
+  07 May 2005; Mike Frysinger <vapier@gentoo.org> +atop-1.14.ebuild:
+  Version bump #76202 by Jonathan Smith.
+
+*atop-1.9 (03 Mar 2005)
+
+  03 Mar 2005; Ciaran McCreesh <ciaranm@gentoo.org> +metadata.xml,
+  +atop-1.13.ebuild, +atop-1.9.ebuild:
+  Moved from sys-apps/atop to sys-process/atop.
+
+  03 Mar 2005; Ciaran McCreesh <ciaranm@gentoo.org> atop-1.13.ebuild:
+  Dependency update: sys-apps/acct -> sys-process/acct.
+
+  03 Mar 2005; Ciaran McCreesh <ciaranm@gentoo.org> atop-1.9.ebuild:
+  Dependency update: sys-apps/acct -> sys-process/acct.
+
+*atop-1.13 (10 Dec 2004)
+
+  10 Dec 2004; Peter Johanson <latexer@gentoo.org> +atop-1.13.ebuild:
+  Bump. See bug #52712.
+
+  30 Jun 2004; Aron Griffis <agriffis@gentoo.org> atop-1.9.ebuild:
+  sync IUSE (missing)
+
+*atop-1.9 (18 Feb 2003)
+
+  18 Feb 2003; Peter Johanson <latexer@gentoo.org> atop-1.9.ebuild files/digest-atop-1.9 :
+  Inital import. Thanks to Thomas Preissler <tomjohn@gmx.de> for the ebuild.

@@ -1,0 +1,128 @@
+# ChangeLog for net-im/centerim
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-im/centerim/ChangeLog,v 1.25 2008/08/05 16:29:04 gentoofan23 Exp $
+
+  05 Aug 2008; Thomas Anderson <gentoofan23@gentoo.org> metadata.xml:
+  Add USE flag description to metadata as per GLEP 56.
+
+  04 Aug 2008; Sven Wegener <swegener@gentoo.org>
+  +files/centerim-4.22.5-libotr-configure.patch, centerim-4.22.5.ebuild:
+  Add patch to fix error in configure.ac, bug #232312.
+
+  19 Jul 2008; Alexis Ballier <aballier@gentoo.org> centerim-4.22.5.ebuild:
+  keyword ~x86-fbsd thanks to Davide Italiano <dav_it@gentoo.org>, bug
+  #232247
+
+  28 Jun 2008; Sven Wegener <swegener@gentoo.org>
+  -files/centerim-4.22.3-url-escape.patch, -centerim-4.22.3-r1.ebuild,
+  -centerim-4.22.4.ebuild:
+  Cleanup.
+
+  25 Jun 2008; Santiago M. Mola <coldwind@gentoo.org>
+  centerim-4.22.5.ebuild:
+  amd64 stable wrt bug #228151
+
+  21 Jun 2008; Christian Faulhammer <opfer@gentoo.org>
+  centerim-4.22.5.ebuild:
+  stable x86, bug 228151
+
+  20 Jun 2008; Sven Wegener <swegener@gentoo.org> centerim-4.22.5.ebuild:
+  Don't execute git commands during src_compile, bug #228151.
+
+*centerim-4.22.5 (10 Apr 2008)
+
+  10 Apr 2008; Sven Wegener <swegener@gentoo.org> +centerim-4.22.5.ebuild:
+  Version bump.
+
+*centerim-4.22.4 (30 Mar 2008)
+
+  30 Mar 2008; Sven Wegener <swegener@gentoo.org> +centerim-4.22.4.ebuild:
+  Version bump.
+
+  30 Mar 2008; Sven Wegener <swegener@gentoo.org>
+  -files/centerim-4.22.2-fribidi.patch, -centerim-4.22.2.ebuild,
+  -centerim-4.22.3.ebuild:
+  Cleanup.
+
+  28 Mar 2008; Markus Meier <maekke@gentoo.org> centerim-4.22.3-r1.ebuild:
+  amd64/x86 stable, security bug #214204
+
+*centerim-4.22.3-r1 (27 Mar 2008)
+
+  27 Mar 2008; Sven Wegener <swegener@gentoo.org>
+  +files/centerim-4.22.3-url-escape.patch, +centerim-4.22.3-r1.ebuild:
+  Revision bump, security bug #214204. This disables external actions
+  (openurl and detectmusic) completely.
+
+*centerim-4.22.3 (12 Mar 2008)
+
+  12 Mar 2008; Sven Wegener <swegener@gentoo.org> +centerim-4.22.3.ebuild:
+  Version bump, bug #213105.
+
+  17 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  centerim-4.22.2.ebuild:
+  stable amd64, bug 209481
+
+  12 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  centerim-4.22.2.ebuild:
+  stable x86, bug 209481
+
+  02 Feb 2008; Sven Wegener <swegener@gentoo.org> centerim-4.22.2.ebuild:
+  OTR is only supported with Jabber, bug #208437.
+
+  01 Jan 2008; Sven Wegener <swegener@gentoo.org>
+  +files/centerim-4.22.2-fribidi.patch, -files/centerim-ack-sbl.patch,
+  -files/centerim-imotr-config.patch, -centerim-4.22.1_p20071003.ebuild,
+  -centerim-4.22.1_p20071022.ebuild, -centerim-4.22.1_p20071103.ebuild,
+  centerim-4.22.2.ebuild:
+  Include a linking fix for bidi support, bug #200900. Cleanup.
+
+*centerim-4.22.2 (08 Dec 2007)
+
+  08 Dec 2007; Sven Wegener <swegener@gentoo.org>
+  -centerim-4.22.1_p20070625.ebuild, centerim-4.22.1_p20071103.ebuild,
+  +centerim-4.22.2.ebuild:
+  Version bump.
+
+*centerim-4.22.1_p20071103 (28 Nov 2007)
+
+  28 Nov 2007; Sven Wegener <swegener@gentoo.org>
+  +files/centerim-ack-sbl.patch, centerim-4.22.1_p20071003.ebuild,
+  centerim-4.22.1_p20071022.ebuild, +centerim-4.22.1_p20071103.ebuild:
+  Version bump. Pull in a patch from upstream to fix contact list problems.
+
+  03 Nov 2007; Sven Wegener <swegener@gentoo.org>
+  centerim-4.22.1_p20071003.ebuild, centerim-4.22.1_p20071022.ebuild:
+  Drop net-im/centericq blockers, because file collisions have been eliminated.
+
+  03 Nov 2007; Sven Wegener <swegener@gentoo.org>
+  +files/centerim-imotr-config.patch, centerim-4.22.1_p20070625.ebuild,
+  centerim-4.22.1_p20071003.ebuild, centerim-4.22.1_p20071022.ebuild:
+  Add jpeg and otr USE flags.
+
+*centerim-4.22.1_p20071022 (02 Nov 2007)
+
+  02 Nov 2007; Sven Wegener <swegener@gentoo.org>
+  centerim-4.22.1_p20070625.ebuild, centerim-4.22.1_p20071003.ebuild,
+  +centerim-4.22.1_p20071022.ebuild:
+  Version bump.
+
+*centerim-4.22.1_p20071003 (07 Oct 2007)
+
+  07 Oct 2007; Sven Wegener <swegener@gentoo.org>
+  -centerim-4.22.1_p20070618.ebuild, +centerim-4.22.1_p20071003.ebuild:
+  Version bump, bug #194912.
+
+*centerim-4.22.1_p20070625 (08 Sep 2007)
+
+  08 Sep 2007; Sven Wegener <swegener@gentoo.org>
+  +centerim-4.22.1_p20070625.ebuild:
+  Version bump.
+
+*centerim-4.22.1_p20070618 (07 Aug 2007)
+
+  07 Aug 2007; Sven Wegener <swegener@gentoo.org> +metadata.xml,
+  +centerim-4.22.1_p20070618.ebuild:
+  Initial commit, ebuild taken from bug #171682 by Kai Sommer and Ryan among
+  others.
+

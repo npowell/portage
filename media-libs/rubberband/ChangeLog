@@ -1,0 +1,29 @@
+# ChangeLog for media-libs/rubberband
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/rubberband/ChangeLog,v 1.6 2008/07/11 16:14:43 aballier Exp $
+
+*rubberband-1.2 (11 Jul 2008)
+
+  11 Jul 2008; Alexis Ballier <aballier@gentoo.org>
+  +files/rubberband-1.2-gcc43.patch, +rubberband-1.2.ebuild:
+  version bump
+
+  15 May 2008; Markus Rothe <corsair@gentoo.org> rubberband-1.0.1.ebuild:
+  Added ~ppc; bug #215033
+
+  28 Apr 2008; Samuli Suominen <drac@gentoo.org>
+  +files/rubberband-1.0.1-gcc43.patch, rubberband-1.0.1.ebuild:
+  GCC 4.3 fix wrt #219539, thanks to Peter Alfredsen.
+
+  27 Mar 2008; Samuli Suominen <drac@gentoo.org> rubberband-1.0.1.ebuild:
+  amd64 stable
+
+  28 Feb 2008; Alexis Ballier <aballier@gentoo.org> rubberband-1.0.1.ebuild:
+  keyword ~x86 too
+
+*rubberband-1.0.1 (26 Feb 2008)
+
+  26 Feb 2008; Alexis Ballier <aballier@gentoo.org> +metadata.xml,
+  +rubberband-1.0.1.ebuild:
+  initial import
+

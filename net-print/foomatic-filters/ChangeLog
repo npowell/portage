@@ -1,0 +1,257 @@
+# ChangeLog for net-print/foomatic-filters
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-print/foomatic-filters/ChangeLog,v 1.62 2008/08/12 15:50:37 ranger Exp $
+
+  12 Aug 2008; Brent Baude <ranger@gentoo.org>
+  foomatic-filters-3.0.20080507.ebuild:
+  Marking foomatic-filters-3.0.20080507 ppc for bug 233968
+
+  12 Aug 2008; Brent Baude <ranger@gentoo.org> ChangeLog:
+  Marking 233968 ppc for bug foomatic-filters-3.0.20080507.ebuild
+
+  06 Aug 2008; Markus Meier <maekke@gentoo.org>
+  foomatic-filters-3.0.20080507.ebuild:
+  amd64/x86 stable, bug #234065
+
+  05 Aug 2008; Markus Rothe <corsair@gentoo.org>
+  foomatic-filters-3.0.20080507.ebuild:
+  Stable on ppc64; bug #233968
+
+*foomatic-filters-3.0.20080507 (07 May 2008)
+
+  07 May 2008; Timo Gurr <tgurr@gentoo.org>
+  -files/foomatic-filters-3.0.2-multilib.patch,
+  -foomatic-filters-3.0.2-r1.ebuild, +foomatic-filters-3.0.20080507.ebuild:
+  Add new snapshot, remove old snapshot.
+
+  10 Mar 2008; <ricmm@gentoo.org> foomatic-filters-3.0.2-r1.ebuild,
+  foomatic-filters-3.0.20060720.ebuild:
+  Drop to ~mips to match net-print/cups
+
+  20 Nov 2007; Joshua Kinard <kumba@gentoo.org>
+  foomatic-filters-3.0.20060720.ebuild:
+  Stable on mips, per #155545.
+
+  11 May 2007; Denis Dupeyron <calchan@gentoo.org>
+  foomatic-filters-3.0.20070501.ebuild:
+  Added mirror URI.
+
+*foomatic-filters-3.0.20070501 (01 May 2007)
+
+  01 May 2007; Denis Dupeyron <calchan@gentoo.org>
+  +foomatic-filters-3.0.20070501.ebuild:
+  Version bump.
+
+  07 Apr 2007; Stefan Schweizer <genstef@gentoo.org> foomatic-filters-3.0.20060720.ebuild:
+  Dont depend on cups for USE=-cups thanks to Cornelius Weig
+  <bitte.keine.werbung.einwerfen@googlemail.com> and David Barnett
+  <daviebdawg@gmail.com> in bug 169230
+
+  19 Feb 2007; <genstef@gentoo.org> foomatic-filters-3.0.20060720.ebuild:
+  Really fix bug 156966
+
+  28 Dec 2006; Javier Villavicencio <the_paya@gentoo.org>
+  foomatic-filters-3.0.20060720.ebuild:
+  Added ~x86-fbsd keyword.
+
+  11 Dec 2006; Stefan Schweizer <genstef@gentoo.org>
+  foomatic-filters-3.0.2-r1.ebuild, foomatic-filters-3.0.20060720.ebuild:
+  fixing USE=-cups properly
+
+  03 Dec 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  foomatic-filters-3.0.20060720.ebuild:
+  ppc stable, bug #155545
+
+  03 Dec 2006; Stefan Schweizer <genstef@gentoo.org>
+  foomatic-filters-3.0.20060720.ebuild:
+  Fix build with USE=-cups thanks to spanky in bug 156966
+
+  01 Dec 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  foomatic-filters-3.0.20060720.ebuild:
+  Stable on hppa wrt #155545
+
+  25 Nov 2006; Bryan Østergaard <kloeri@gentoo.org>
+  foomatic-filters-3.0.20060720.ebuild:
+  Stable on Alpha + ia64.
+
+  24 Nov 2006; Markus Rothe <corsair@gentoo.org>
+  foomatic-filters-3.0.20060720.ebuild:
+  Stable on ppc64; bug #155545
+
+  23 Nov 2006; <blubb@gentoo.org> foomatic-filters-3.0.20060720.ebuild:
+  stable on amd64
+
+  22 Nov 2006; Christian Faulhammer <opfer@gentoo.org>
+  foomatic-filters-3.0.20060720.ebuild:
+  stable x86, bug #155545
+
+  20 Nov 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  foomatic-filters-3.0.20060720.ebuild:
+  Stable on sparc wrt #155545
+
+  18 Nov 2006; Stefan Schweizer <genstef@gentoo.org>
+  -foomatic-filters-3.0.2.ebuild, -foomatic-filters-3.0.20060601.ebuild:
+  remove old
+
+  05 Sep 2006; Joshua Kinard <kumba@gentoo.org>
+  foomatic-filters-3.0.2-r1.ebuild:
+  Marked stable on mips.
+
+  05 Aug 2006; Stefan Schweizer <genstef@gentoo.org>
+  foomatic-filters-3.0.20060720.ebuild:
+  Fix DEPEND thanks to Tiger!P <gentoo-tigerp@tigerp.net> in bug 142825
+
+*foomatic-filters-3.0.20060720 (20 Jul 2006)
+
+  20 Jul 2006; Stefan Schweizer <genstef@gentoo.org>
+  +foomatic-filters-3.0.20060720.ebuild:
+  version bump
+
+  13 Jul 2006; Aron Griffis <agriffis@gentoo.org>
+  foomatic-filters-3.0.2-r1.ebuild:
+  Mark 3.0.2-r1 stable on ia64
+
+*foomatic-filters-3.0.20060601 (04 Jun 2006)
+
+  04 Jun 2006; Stefan Schweizer <genstef@gentoo.org>
+  +foomatic-filters-3.0.20060601.ebuild:
+  version bump
+
+  09 May 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  foomatic-filters-3.0.2-r1.ebuild:
+  Stable on hppa wrt #130209
+
+  08 May 2006; Stefan Schweizer <genstef@gentoo.org>
+  foomatic-filters-3.0.2-r1.ebuild:
+  Make cups-1.2 aware, no revbump because no installed files were changed
+
+*foomatic-filters-3.0.2-r1 (05 May 2006)
+
+  05 May 2006; Stefan Schweizer <genstef@gentoo.org>
+  +foomatic-filters-3.0.2-r1.ebuild:
+  rev-bump foomatic-filters to force remerge, no changes apart from the
+  foomatic-db-old block, stable from the beginning, bug 131533
+
+  18 Jul 2005; Herbie Hopkins <herbs@gentoo.org>
+  +files/foomatic-filters-3.0.2-multilib.patch,
+  foomatic-filters-3.0.2.ebuild:
+  Multilib fixes.
+
+  06 Jun 2005; Sven Wegener <swegener@gentoo.org>
+  foomatic-filters-3.0.2.ebuild:
+  Changed the sub || DEPEND to one toplevel || DEPEND. Trim trailing whitespace.
+
+  06 Jun 2005; Heinrich Wendel <lanius@gentoo.org>
+  -foomatic-filters-3.0.0.ebuild, -foomatic-filters-3.0.0.20031018.ebuild,
+  -foomatic-filters-3.0.1.ebuild:
+  cleanups
+
+  06 Jun 2005; Heinrich Wendel <lanius@gentoo.org>
+  foomatic-filters-3.0.2.ebuild:
+  bug #76978
+
+  29 Dec 2004; Ciaran McCreesh <ciaranm@gentoo.org> :
+  Change encoding to UTF-8 for GLEP 31 compliance
+
+  09 Oct 2004; Tom Gall <tgall@gentoo.org> foomatic-filters-3.0.2.ebuild:
+  stable on ppc64, bug #64166
+
+  22 Sep 2004; Joshua Kinard <kumba@gentoo.org> foomatic-filters-3.0.2.ebuild:
+  Marked stable on mips.
+
+  19 Sep 2004; Danny van Dyk <kugelfang@gentoo.org>
+  foomatic-filters-3.0.2.ebuild:
+  Marked stable on amd64.
+
+  17 Sep 2004; Bryan Østergaard,,, <kloeri@gentoo.org>
+  foomatic-filters-3.0.2.ebuild:
+  Stable on alpha, bug 64166.
+
+  16 Sep 2004; Gustavo Zacarias <gustavoz@gentoo.org>
+  foomatic-filters-3.0.2.ebuild:
+  Stable on sparc wrt #64166
+
+  16 Sep 2004; <SeJo@gentoo.org> foomatic-filters-3.0.2.ebuild:
+  stable ppc bug: 64166
+
+*foomatic-filters-3.0.2 (16 Sep 2004)
+
+  16 Sep 2004; Heinrich Wendel <lanius@gentoo.org>
+  +foomatic-filters-3.0.2.ebuild:
+  security bump, bug #64166
+
+  19 Jul 2004; Bryan Østergaard <kloeri@gentoo.org>
+  foomatic-filters-3.0.1.ebuild:
+  Stable on alpha.
+
+  17 Jul 2004; Tom Gall <tgall@gentoo.org> foomatic-filters-3.0.1.ebuild:
+  stable on ppc64, bug #55797
+
+  25 Jun 2004; Danny van Dyk <kugelfang@gentoo.org>
+  foomatic-filters-3.0.1.ebuild:
+  Marked stable on amd64.
+
+  14 Jun 2004; Aron Griffis <agriffis@gentoo.org>
+  foomatic-filters-3.0.0.20031018.ebuild, foomatic-filters-3.0.0.ebuild,
+  foomatic-filters-3.0.1.ebuild:
+  Fix use invocation
+
+  26 Apr 2004; Aron Griffis <agriffis@gentoo.org>
+  foomatic-filters-3.0.0.20031018.ebuild, foomatic-filters-3.0.0.ebuild:
+  Add die following econf for bug 48950
+
+  19 Apr 2004; Guy Martin <gmsoft@gentoo.org> foomatic-filters-3.0.1.ebuild:
+  Marked stable on hppa.
+
+  11 Apr 2004; Gustavo Zacarias <gustavoz@gentoo.org>
+  foomatic-filters-3.0.1.ebuild:
+  stable on sparc
+
+  09 Apr 2004; Heinrich Wendel <lanius@gentoo.org>
+  foomatic-filters-3.0.1.ebuild:
+  stable on x86
+
+  13 Mar 2004; Stephen P. Becker <geoman@gentoo.org>
+  foomatic-filters-3.0.1.ebuild:
+  Added ~mips to keywords.
+
+  08 Apr 2004; Heinrich Wendel <lanius@gentoo.org>
+  foomatic-filters-3.0.0.20031018.ebuild, foomatic-filters-3.0.1.ebuild:
+  add gs to deps, bug #46796
+
+*foomatic-filters-3.0.1 (02 Mar 2004)
+
+  02 Mar 2004; Heinrich Wendel <lanius@gentoo.org>
+  foomatic-filters-3.0.1.ebuild:
+  version bump
+
+*foomatic-filters-3.0.0.20031018 (28 Jan 2004)
+
+  28 Jan 2004; Aron Griffis <agriffis@gentoo.org>
+  foomatic-filters-3.0.0.20031018.ebuild:
+  stable on ia64
+
+*foomatic-filters-3.0.20031018 (31 Dec 2003)
+
+  31 Dec 2003; Heinrich Wendel <lanius@gentoo.org>
+  foomatic-filters-20031018.ebuild, foomatic-filters-3.0.20031018.ebuild:
+  fixed version scheme
+
+*foomatic-filters-20031018 (10 Dec 2003)
+
+  10 Dec 2003; Heinrich Wendel <lanius@gentoo.org>
+  foomatic-filters-20031018.ebuild:
+  stable
+
+  18 Oct 2003; Heinrich Wendel <lanius@gentoo.org> :
+  bump
+
+  29 Jul 2003; lanius@gentoo.org foomatic-filters-3.0.0.ebuild:
+  stable bump
+
+*foomatic-filters-3.0.0 (16 Jul 2003)
+
+  16 Jul 2003; Heinrich Wendel <lanius@gentoo.org>
+  foomatic-filters-3.0.0.ebuild:
+  initial release
+

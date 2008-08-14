@@ -1,0 +1,47 @@
+# ChangeLog for x11-libs/libmatchbox
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/libmatchbox/ChangeLog,v 1.10 2008/05/23 11:28:02 solar Exp $
+
+  23 May 2008; <solar@gentoo.org> libmatchbox-1.9.ebuild:
+  - Keyworded
+
+  27 Feb 2008; Yuri Vasilevski <yvasilev@gentoo.org> libmatchbox-1.8.ebuild,
+  libmatchbox-1.9.ebuild:
+  Updated HOMEPAGE and SRC_URI to it's new location
+  http://matchbox-project.org/ (Bug #211244).
+
+  26 Sep 2007; Jeroen Roovers <jer@gentoo.org> libmatchbox-1.9.ebuild:
+  Marked ~hppa too.
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  libmatchbox-1.8.ebuild, libmatchbox-1.9.ebuild:
+  Drop virtual/x11 references.
+
+*libmatchbox-1.9 (17 Aug 2006)
+
+  17 Aug 2006; <yvasilev@gentoo.org> -libmatchbox-1.7.ebuild,
+  libmatchbox-1.8.ebuild, +libmatchbox-1.9.ebuild:
+  Added version 1.9 (bug #143137), removed version 1.7 and put KEYWORDS in
+  alphabetical order.
+
+  07 Aug 2006; <yvasilev@gentoo.org> libmatchbox-1.8.ebuild:
+  Added ~arm keyword.
+
+  14 Jul 2006; <yvasilev@gentoo.org> libmatchbox-1.7.ebuild,
+  libmatchbox-1.8.ebuild:
+  Added a warning if emerging with incompatible USE flags. Bug #138135
+
+*libmatchbox-1.8 (04 Jun 2006)
+
+  04 Jun 2006; <yvasilev@gentoo.org> +libmatchbox-1.8.ebuild:
+  - Version dump.
+
+  27 Apr 2006; Alec Warner <antarus@gentoo.org> Manifest:
+  Fixing SHA256 digest, pass four
+
+*libmatchbox-1.7 (12 Mar 2006)
+
+  12 Mar 2006; <yvasilev@gentoo.org> +metadata.xml, +libmatchbox-1.7.ebuild:
+  - Initial import. Original ebuild by Priit Laes, modificationsby Björn
+  Ruberg and Yuri Vasilevski.
+

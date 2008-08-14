@@ -1,0 +1,34 @@
+# ChangeLog for x11-wm/xmonad
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-wm/xmonad/ChangeLog,v 1.7 2008/08/07 22:03:15 jer Exp $
+
+  07 Aug 2008; Jeroen Roovers <jer@gentoo.org> xmonad-0.7.ebuild:
+  Marked ~hppa too.
+
+*xmonad-0.7 (11 Apr 2008)
+
+  11 Apr 2008; Lennart Kolmodin <kolmodin@gentoo.org> files/xmonad.desktop,
+  +xmonad-0.7.ebuild:
+  Version bump to 0.7, and set proper Type in the xmonad.desktop file.
+
+*xmonad-0.6 (02 Feb 2008)
+
+  02 Feb 2008; Lennart Kolmodin <kolmodin@gentoo.org> +xmonad-0.6.ebuild:
+  Version bump
+
+  14 Jan 2008; Lennart Kolmodin <kolmodin@gentoo.org> xmonad-0.5-r1.ebuild:
+  Update the ebuild with recommendations and hints in pkg_postinst.
+  Patch by "Ivan Miljenovic" <Ivan.Miljenovic@gmail.com>.
+
+*xmonad-0.5-r1 (02 Jan 2008)
+
+  02 Jan 2008; Lennart Kolmodin <kolmodin@gentoo.org> +xmonad-0.5-r1.ebuild:
+  Install configuration instruction and sample config
+
+*xmonad-0.5 (16 Dec 2007)
+
+  16 Dec 2007; Lennart Kolmodin <kolmodin@gentoo.org> +files/xmonad.desktop,
+  +metadata.xml, +xmonad-0.5.ebuild:
+  Initial import. xmonad is a tiling window manager for X. xmonad is
+  extensible in Haskell, allowing for powerful customisation.
+

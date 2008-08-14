@@ -1,0 +1,28 @@
+# ChangeLog for media-plugins/quodlibet-ipod
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/quodlibet-ipod/ChangeLog,v 1.6 2007/04/28 16:33:00 swegener Exp $
+
+  28 Apr 2007; Sven Wegener <swegener@gentoo.org> quodlibet-ipod-0.4.ebuild:
+  Drop dodir from dodir/*into combination.
+
+  29 Mar 2007; Markus Rothe <corsair@gentoo.org> quodlibet-ipod-0.4.ebuild:
+  Added ~ppc64
+
+  19 Mar 2007; Bryan Østergaard <kloeri@gentoo.org> metadata.xml:
+  Remove tcort from metadata.xml due to retirement.
+
+  08 Oct 2006; <malc@gentoo.org> quodlibet-ipod-0.4.ebuild:
+  Add ~amd64, bug #150473
+
+  09 Sep 2006; Thomas Cort <tcort@gentoo.org> +files/0.4-ipod-detect.patch,
+  quodlibet-ipod-0.4.ebuild:
+  Added ipod detection patch from Frittella Laurento <mrfree@infinito.it>.
+
+*quodlibet-ipod-0.4 (09 Sep 2006)
+
+  09 Sep 2006; Thomas Cort <tcort@gentoo.org> +metadata.xml,
+  +quodlibet-ipod-0.4.ebuild:
+  Initial Commit. Ebuild from Bug #143269. Submitted by Frittella Laurento
+  <mrfree@infinito.it> with changes by Kai Huuhko <kai.huuhko@gmail.com> and
+  Thomas Cort <tcort@gentoo.org>.
+

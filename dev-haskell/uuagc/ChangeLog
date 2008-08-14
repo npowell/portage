@@ -1,0 +1,51 @@
+# ChangeLog for dev-haskell/uuagc
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-haskell/uuagc/ChangeLog,v 1.14 2007/12/13 17:29:17 dcoutts Exp $
+
+*uuagc-0.9.5 (13 Dec 2007)
+
+  13 Dec 2007; Duncan Coutts <dcoutts@gentoo.org> +uuagc-0.9.5.ebuild:
+  New version.
+
+  31 Oct 2007; Duncan Coutts <dcoutts@gentoo.org> uuagc-0.9.1.ebuild:
+  Drop virtual/ghc in favour of dev-lang/ghc
+
+  12 Nov 2006; Matti Bickel <mabi@gentoo.org> uuagc-0.9.1.ebuild:
+  Stable on ppc
+
+  05 Oct 2006; Chris Parrott <cparrott@gentoo.org> uuagc-0.9.1.ebuild:
+  marked stable for amd64 (bug 144678)
+
+  04 Oct 2006; Joshua Jackson <tsunam@gentoo.org> uuagc-0.9.1.ebuild:
+  Stable x86; bug #144678
+
+  30 Sep 2006; Stephanie Lockwood-Childs <wormo@gentoo.org>
+  uuagc-0.9.1.ebuild:
+  mark ~ppc (related to Bug #144678, though not specifically requested...)
+
+  25 Aug 2006; Ferris McCormick <fmccor@gentoo.org> uuagc-0.9.1.ebuild:
+  Stable on sparc --- Bug #144678 --- no problems.
+
+  24 Aug 2006; Markus Rothe <corsair@gentoo.org> uuagc-0.9.1.ebuild:
+  Stable on ppc64; bug #144678
+
+  27 Apr 2006; Marien Zwart <marienz@gentoo.org> Manifest:
+  Fixing SHA256 digest, pass four
+
+  01 Mar 2006; Markus Rothe <corsair@gentoo.org> uuagc-0.9.1.ebuild:
+  Added ~ppc64; bug #124469
+
+  27 Feb 2006; Duncan Coutts <dcoutts@gentoo.org> uuagc-0.9.1.ebuild:
+  Add ~sparc to KEYWORDS
+
+  16 Feb 2006; <dcoutts@gentoo.org> uuagc-0.9.1.ebuild:
+  Add "bin" to CABAL_FEATURES in preparation for pending eclass updates.
+
+  13 Feb 2006; <dcoutts@gentoo.org> uuagc-0.9.1.ebuild:
+  dded ~amd64 to KEYWORDS
+
+*uuagc-0.9.1 (14 Dec 2005)
+
+  14 Dec 2005; <dcoutts@gentoo.org> +metadata.xml, +uuagc-0.9.1.ebuild:
+  Initial import.
+

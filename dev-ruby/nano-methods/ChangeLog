@@ -1,0 +1,22 @@
+# ChangeLog for dev-ruby/nano-methods
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/nano-methods/ChangeLog,v 1.6 2007/09/17 20:24:25 phreak Exp $
+
+  17 Sep 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing citizen428 from metadata.xml (see #56803 for reference).
+
+  13 Mar 2007; Tom Gall <tgall@gentoo.org> nano-methods-0.8.2.ebuild:
+  added ~ppc64
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org> nano-methods-0.8.2.ebuild:
+  Mark 0.8.2 ~ia64
+
+*nano-methods-0.8.2 (15 Sep 2005)
+
+  15 Sep 2005; Michael Kohl <citizen428@gentoo.org> +metadata.xml,
+  +nano-methods-0.8.2.ebuild:
+  Initial import. Added as a dependency for dev-ruby/nitro.
+

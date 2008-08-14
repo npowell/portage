@@ -1,0 +1,40 @@
+# ChangeLog for net-analyzer/cacti-spine
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/cacti-spine/ChangeLog,v 1.9 2008/08/14 18:25:17 pva Exp $
+
+*cacti-spine-0.8.7a_p4650 (14 Aug 2008)
+
+  14 Aug 2008; Peter Volkov <pva@gentoo.org>
+  +cacti-spine-0.8.7a_p4650.ebuild:
+  Bump to the recent SVN snapshot, should fix bug #234749, thank Chris
+  Gianelloni for report.
+
+  19 May 2008; Peter Volkov <pva@gentoo.org> cacti-spine-0.8.7a.ebuild:
+  Fixed typo in postinstall message, bug #222801, thank Chris Lee for
+  report.
+
+  27 Apr 2008; Markus Meier <maekke@gentoo.org> cacti-spine-0.8.7a.ebuild:
+  amd64 stable, bug #210840
+
+  26 Feb 2008; Raúl Porcel <armin76@gentoo.org> cacti-spine-0.8.7a.ebuild:
+  sparc stable wrt #210840
+
+  24 Feb 2008; Markus Meier <maekke@gentoo.org> cacti-spine-0.8.7a.ebuild:
+  x86 stable, bug #210840
+
+  22 Feb 2008; Brent Baude <ranger@gentoo.org> cacti-spine-0.8.7a.ebuild:
+  Marking cacti-spine-0.8.7a ppc64 for bug 210840
+
+  21 Feb 2008; nixnut <nixnut@gentoo.org> cacti-spine-0.8.7a.ebuild:
+  Stable on ppc wrt bug 210840
+
+  26 Jan 2008; <pva@gentoo.org> cacti-spine-0.8.7a.ebuild:
+  Moved autotools to src_unpack, bug #207461, thank Diego Pettenò <flameeyes
+  AT gentoo.org> for report.
+
+*cacti-spine-0.8.7a (08 Jan 2008)
+
+  08 Jan 2008; <pva@gentoo.org> +metadata.xml, +cacti-spine-0.8.7a.ebuild:
+  Initial import. Thank you Nathan Sullivan <nathan AT nightsys.net> for
+  notification and ebuild, bug #204852.
+

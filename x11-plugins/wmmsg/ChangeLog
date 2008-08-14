@@ -1,0 +1,56 @@
+# ChangeLog for x11-plugins/wmmsg
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-plugins/wmmsg/ChangeLog,v 1.16 2008/03/23 13:27:54 nixnut Exp $
+
+  23 Mar 2008; nixnut <nixnut@gentoo.org> wmmsg-1.0.1.ebuild:
+  Stable on ppc wrt bug 214344
+
+  23 Mar 2008; Christian Faulhammer <opfer@gentoo.org> wmmsg-1.0.1.ebuild:
+  stable x86, bug 214344
+
+  21 Mar 2008; Samuli Suominen <drac@gentoo.org> wmmsg-1.0.1.ebuild:
+  amd64 stable
+
+*wmmsg-1.0.1 (12 Mar 2008)
+
+  12 Mar 2008; Samuli Suominen <drac@gentoo.org>
+  +files/wmmsg-1.0.1-use_gtk2.patch, +wmmsg-1.0.1.ebuild:
+  Version bump.
+
+  01 Feb 2008; Michele Noberasco <s4t4n@gentoo.org> wmmsg-1.0.ebuild:
+  Removed RDEPEND as it is equal to DEPEND.
+
+  12 Jan 2008; Santiago M. Mola <coldwind@gentoo.org> wmmsg-1.0.ebuild:
+  Add libXpm to deps (#204539), change HOMEPAGE, SRC_URI, remove redundant
+  src_compile.
+
+  06 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  24 Jan 2006; Krzysiek Pawlik <nelchael@gentoo.org> wmmsg-1.0.ebuild:
+  Fixed DEPEND for modular X.
+
+  11 Nov 2005; Michele Noberasco <s4t4n@gentoo.org> wmmsg-1.0.ebuild:
+  removed INSTALL and COPYING from dodoc.
+
+  07 Aug 2005; Michael Hanselmann <hansmi@gentoo.org> wmmsg-1.0.ebuild:
+  Stable on ppc.
+
+  28 Apr 2005; Stephanie Lockwood-Childs <wormo@gentoo.org> wmmsg-1.0.ebuild:
+  mark ~ppc
+
+  24 Nov 2004; Jason Wever <weeve@gentoo.org> wmmsg-1.0.ebuild:
+  Added ~sparc keyword.
+
+  23 Jul 2004; Michele Noberasco <s4t4n@gentoo.org> wmmsg-1.0.ebuild:
+  Updated dodoc so that it does not try to install non-existent files.
+  Stable for x86.
+
+  26 Apr 2004; Aron Griffis <agriffis@gentoo.org> wmmsg-1.0.ebuild:
+  Add die following econf for bug 48950
+
+*wmmsg-1.0 (15 Apr 2003)
+
+  15 Apr 2003; Alastair Tse <liquidx@gentoo.org> Manifest, wmmsg-1.0.ebuild:
+  initial ebuild. contributed by Susie Edgeworth <arienadean@yahoo.com>
+

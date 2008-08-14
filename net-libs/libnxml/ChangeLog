@@ -1,0 +1,40 @@
+# ChangeLog for net-libs/libnxml
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-libs/libnxml/ChangeLog,v 1.10 2007/12/27 12:55:39 ticho Exp $
+
+  27 Dec 2007; Andrej Kacian <ticho@gentoo.org> libnxml-0.18.0.ebuild:
+  Stable on x86.
+
+*libnxml-0.18.0 (14 Jul 2007)
+
+  14 Jul 2007; Robert Buchholz <rbu@gentoo.org> -libnxml-0.17.2.ebuild,
+  +libnxml-0.18.0.ebuild:
+  Version bump
+
+  17 Jun 2007; Christoph Mende <angelos@gentoo.org> libnxml-0.17.1.ebuild:
+  Stable on amd64 wrt bug 177184
+
+  08 May 2007; Markus Ullmann <jokey@gentoo.org> libnxml-0.17.1.ebuild:
+  Stable wrt bug #177184
+
+*libnxml-0.17.2 (18 Apr 2007)
+
+  18 Apr 2007; Robert Buchholz <rbu@gentoo.org> -libnxml-0.17.ebuild,
+  +libnxml-0.17.2.ebuild:
+  Version bump
+
+  10 Apr 2007; Robert Buchholz <rbu@gentoo.org> libnxml-0.17.ebuild,
+  libnxml-0.17.1.ebuild:
+  LICENSE corrected to LGPL
+
+*libnxml-0.17.1 (02 Apr 2007)
+
+  02 Apr 2007; Robert Buchholz <rbu@gentoo.org> +libnxml-0.17.1.ebuild:
+  version bump fixing a bug about entities
+
+*libnxml-0.17 (15 Mar 2007)
+
+  15 Mar 2007; Robert Buchholz <rbu@gentoo.org> -libnxml-0.16.ebuild,
+  +libnxml-0.17.ebuild:
+  version bump, keyworded ~amd64, removed 0.16 as it had a memleak
+

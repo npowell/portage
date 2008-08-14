@@ -1,0 +1,32 @@
+# ChangeLog for net-fs/fex
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-fs/fex/ChangeLog,v 1.5 2007/12/29 03:56:06 dirtyepic Exp $
+
+*fex-0.8.18-r1 (29 Dec 2007)
+
+  29 Dec 2007; Ryan Hill <dirtyepic@gentoo.org>
+  +files/fex-0.8.18-configure.patch, +files/fex-0.8.18-gcc4.patch,
+  -fex-0.8.18.ebuild, +fex-0.8.18-r1.ebuild:
+  Revision bump.
+   - fix building with GCC 4 (bug #182009)
+   - fix building against log4cpp-1.0 by linking with -lpthread
+   - added debug USE flag
+   - respect user CFLAGS
+   - ebuild cleanup
+
+  11 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  fix spelling of herd in metadata
+
+  06 May 2007; Marius Mauch <genone@gentoo.org> fex-0.8.18.ebuild:
+  Replacing einfo with elog
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*fex-0.8.18 (20 May 2006)
+
+  20 May 2006; Christian Zoffoli <xmerlin@gentoo.org> +files/fex.conf.d,
+  +files/fex.rc, +fex-0.8.18.ebuild:
+  Initial version. Thanks to Michael Reithinger <mreithinger@web.de> for the
+  initial ebuild. Closing bug #83195.
+

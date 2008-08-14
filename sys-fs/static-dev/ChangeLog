@@ -1,0 +1,34 @@
+# ChangeLog for sys-fs/static-dev
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/static-dev/ChangeLog,v 1.9 2007/10/01 01:48:45 vapier Exp $
+
+  01 Oct 2007; Mike Frysinger <vapier@gentoo.org> static-dev-0.1.ebuild:
+  Fixup from Scott Price for devfs test #137434.
+
+  17 Sep 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing johnm from metadata.xml (see #186467 for reference).
+
+  13 Jul 2006; Aron Griffis <agriffis@gentoo.org> static-dev-0.1.ebuild:
+  Mark 0.1 stable on ia64. #107875
+
+  05 Jul 2006; Jeroen Roovers <jer@gentoo.org> static-dev-0.1.ebuild:
+  Stable on hppa (bug #107875).
+
+  26 Jun 2006; Gustavo Zacarias <gustavoz@gentoo.org> static-dev-0.1.ebuild:
+  Stable on sparc wrt #107875
+
+  03 May 2006; Markus Rothe <corsair@gentoo.org> static-dev-0.1.ebuild:
+  Stable on ppc64; bug #107875
+
+  01 May 2006; Joseph Jezak <josejx@gentoo.org> static-dev-0.1.ebuild:
+  Marked ppc stable for bug #107875.
+
+  15 Apr 2006; John Mylchreest <johnm@gentoo.org> static-dev-0.1.ebuild:
+  Exit if trying to install over udev or devfs
+
+*static-dev-0.1 (20 Mar 2006)
+
+  20 Mar 2006; John Mylchreest <johnm@gentoo.org> +metadata.xml,
+  +static-dev-0.1.ebuild:
+  initial commit. A basic static /dev
+

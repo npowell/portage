@@ -1,0 +1,75 @@
+# ChangeLog for dev-texlive/texlive-langcjk
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-texlive/texlive-langcjk/ChangeLog,v 1.17 2008/05/12 19:31:47 nixnut Exp $
+
+  12 May 2008; nixnut <nixnut@gentoo.org> texlive-langcjk-2007-r1.ebuild:
+  Stable on ppc wrt bug 220651
+
+  16 Apr 2008; Peter Volkov <pva@gentoo.org> texlive-langcjk-2007-r1.ebuild:
+  amd64 stable, bug #215735.
+
+  08 Apr 2008; Raúl Porcel <armin76@gentoo.org>
+  texlive-langcjk-2007-r1.ebuild:
+  alpha/ia64/sparc stable wrt #215735
+
+  08 Apr 2008; Jeroen Roovers <jer@gentoo.org>
+  texlive-langcjk-2007-r1.ebuild:
+  Stable for HPPA (bug #215735).
+
+  06 Apr 2008; Markus Rothe <corsair@gentoo.org>
+  texlive-langcjk-2007-r1.ebuild:
+  Added ~ppc; bug #195815
+
+  06 Apr 2008; Markus Rothe <corsair@gentoo.org>
+  texlive-langcjk-2007-r1.ebuild:
+  Stable on ppc64; bug #215735
+
+  01 Apr 2008; Christian Faulhammer <opfer@gentoo.org>
+  texlive-langcjk-2007-r1.ebuild:
+  stable x86, bug 215735
+
+  10 Feb 2008; Alexis Ballier <aballier@gentoo.org>
+  texlive-langcjk-2007-r1.ebuild:
+  keyword ~x86-fbsd
+
+  18 Dec 2007; Jeroen Roovers <jer@gentoo.org>
+  texlive-langcjk-2007-r1.ebuild:
+  Marked ~hppa (bug #195815).
+
+*texlive-langcjk-2007-r1 (11 Nov 2007)
+
+  11 Nov 2007; Alexis Ballier <aballier@gentoo.org>
+  -texlive-langcjk-2007.ebuild, +texlive-langcjk-2007-r1.ebuild:
+  remove CJK and bin-cjkutils from here, dev-tex/cjk-latex takes care of these
+
+  30 Oct 2007; Alexis Ballier <aballier@gentoo.org>
+  texlive-langcjk-2007.ebuild:
+  remove useless dep on texlive-documentation-chinese, thanks to Nick Bowler
+  <draconx@gmail.com>, bug #197487
+
+  26 Oct 2007; Ferris McCormick <fmccor@gentoo.org>
+  texlive-langcjk-2007.ebuild:
+  Add ~amd64 keyword --- Bug #195815
+
+  25 Oct 2007; Markus Rothe <corsair@gentoo.org>
+  texlive-langcjk-2007.ebuild:
+  Added ~ppc64; bug #195815
+
+  25 Oct 2007; Raúl Porcel <armin76@gentoo.org>
+  texlive-langcjk-2007.ebuild:
+  Add ~alpha/~ia64 wrt bug #195815
+
+  25 Oct 2007; Ferris McCormick <fmccor@gentoo.org>
+  texlive-langcjk-2007.ebuild:
+  Add ~sparc keyword --- Bug #195815
+
+  25 Oct 2007; Christian Faulhammer <opfer@gentoo.org>
+  texlive-langcjk-2007.ebuild:
+  keyworded ~x86, bug 195815
+
+*texlive-langcjk-2007 (14 Oct 2007)
+
+  14 Oct 2007; Alexis Ballier <aballier@gentoo.org> +metadata.xml,
+  +texlive-langcjk-2007.ebuild:
+  initial import
+

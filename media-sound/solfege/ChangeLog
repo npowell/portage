@@ -1,0 +1,113 @@
+# ChangeLog for media-sound/solfege
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/solfege/ChangeLog,v 1.26 2008/04/17 16:59:18 drac Exp $
+
+*solfege-3.10.3 (17 Apr 2008)
+
+  17 Apr 2008; Samuli Suominen <drac@gentoo.org> -solfege-3.10.2.ebuild,
+  +solfege-3.10.3.ebuild:
+  Version bump wrt #215666, thanks to Tim Harder for reporting. Make sure
+  python doesn't get byte-compiled at install time wrt #210305.
+
+*solfege-3.10.2 (15 Feb 2008)
+
+  15 Feb 2008; Samuli Suominen <drac@gentoo.org> +solfege-3.10.2.ebuild:
+  Version bump wrt 209788 by Tim H.
+
+  24 Nov 2007; Dawid Węgliński <cla@gentoo.org> -solfege-3.6.0.ebuild,
+  solfege-3.8.2.ebuild:
+  Stable on x86 (bug #200127); remove old version
+
+*solfege-3.8.2 (17 Oct 2007)
+
+  17 Oct 2007; Samuli Suominen <drac@gentoo.org> +solfege-3.8.2.ebuild:
+  Version bump for bug 196135, thanks to Tim Harder for reporting.
+
+*solfege-3.8.1 (26 Jun 2007)
+
+  26 Jun 2007; Samuli Suominen <drac@gentoo.org> +solfege-3.8.1.ebuild:
+  Version bump for bug 183189, thanks to Tim Harder for reporting.
+
+*solfege-3.8.0 (12 Jun 2007)
+
+  12 Jun 2007; Alexis Ballier <aballier@gentoo.org> +solfege-3.8.0.ebuild:
+  Version bump, bug #179965
+
+  25 Mar 2007; Raúl Porcel <armin76@gentoo.org> solfege-3.6.0.ebuild:
+  x86 stable wrt bug 147432
+
+  25 Mar 2007; Samuli Suominen <drac@gentoo.org> solfege-3.6.0.ebuild:
+  Remove redudant || die from end of econf, emptylines, TODO from dodoc.
+
+  05 Feb 2007; Alexis Ballier <aballier@gentoo.org> solfege-3.6.0.ebuild:
+  Update docbook-xsl-stylesheets deps, thanks to Bruno Roggeri for the patch,
+  bug #159611
+
+*solfege-3.6.0 (08 Oct 2006)
+
+  08 Oct 2006; MATSUU Takuto <matsuu@gentoo.org> +solfege-3.6.0.ebuild:
+  Version bumped, 138673.
+
+  15 Aug 2006; Stephanie Lockwood-Childs <wormo@gentoo.org>
+  solfege-3.0.2.ebuild:
+  mark ~ppc
+
+  12 Jan 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  solfege-2.0.5.ebuild, solfege-2.0.6.ebuild:
+  pkgmove gnome-extra/libgtkhtml gnome-extra/gtkhtml
+
+*solfege-3.0.2 (04 Oct 2005)
+
+  04 Oct 2005; MATSUU Takuto <matsuu@gentoo.org> +solfege-3.0.2.ebuild:
+  Version bumped.
+  Cleanup ebuild.
+
+  04 Sep 2005; Diego Pettenò <flameeyes@gentoo.org> solfege-2.0.5.ebuild,
+  solfege-2.0.6.ebuild:
+  Don't install COPYING and INSTALL files.
+
+  18 Dec 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  solfege-2.0.6.ebuild:
+  Stable x86.
+
+*solfege-2.0.6 (19 Nov 2004)
+
+  19 Nov 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  -solfege-2.0.4.ebuild, solfege-2.0.5.ebuild, +solfege-2.0.6.ebuild:
+  Moved to -amd64, -sparc as the package compiles but crashes at startup.
+
+*solfege-2.0.6 (19 Nov 2004)
+
+  19 Nov 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  -solfege-2.0.4.ebuild, solfege-2.0.5.ebuild, +solfege-2.0.6.ebuild:
+  Version bump.
+
+  06 Oct 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  solfege-2.0.5.ebuild:
+  get_libdir fixes.
+
+  03 Sep 2004; Jeremy Huddleston <eradicator@gentoo.org> solfege-2.0.5.ebuild:
+  Stable x86.
+
+*solfege-2.0.5 (30 Jul 2004)
+
+  30 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  +solfege-2.0.5.ebuild:
+  Version bump closes bug #58535.
+
+  19 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org> solfege-2.0.4.ebuild:
+  Added ~amd64
+
+  20 Mar 2004; Jeremy Huddleston <eradicator@gentoo.org> solfege-2.0.4.ebuild:
+  Forcing oss as it is required... see bug #43889.  Stable x86.
+
+  10 Feb 2004; Jeremy Huddleston <eradicator@gentoo.org> solfege-2.0.4.ebuild:
+  Added sed to DEPEND
+
+*solfege-2.0.4 (10 Feb 2004)
+
+  10 Feb 2004; Jeremy Huddleston <eradicator@gentoo.org> metadata.xml,
+  solfege-2.0.4.ebuild:
+  solfege is a package to help you practice ear training (scales, dictation,
+  rythm, etc). Ebuild submitted by TGL <degrenier@easyconnect.fr> ib bug #25085.
+

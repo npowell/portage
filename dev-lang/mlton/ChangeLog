@@ -1,0 +1,33 @@
+# ChangeLog for dev-lang/mlton
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/mlton/ChangeLog,v 1.7 2008/08/06 14:50:56 aballier Exp $
+
+  06 Aug 2008; Alexis Ballier <aballier@gentoo.org> mlton-20070826.ebuild:
+  Set VARTEXFONTS to prevent potential problems with latex font generation,
+  bug #223077
+
+  24 Apr 2008; Raúl Porcel <armin76@gentoo.org>
+  -files/digest-mlton-20070826:
+  Remove digests
+
+*mlton-20070826 (14 Apr 2008)
+
+  14 Apr 2008; Marijn Schouten <hkBst@gentoo.org> +mlton-20070826.ebuild:
+  bump, bug 110233
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  01 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  mlton-20040227.ebuild:
+  virtual/glibc -> virtual/libc
+
+*mlton-20040227 (10 Jun 2004)
+
+  10 Jun 2004; Matthieu Sozeau <mattam@gentoo.org> metadata.xml,
+  mlton-20040227.ebuild, files/mlton-20040227-obsolete-flags.patch:
+  New ebuild for source version of mlton (requires mlton-bin to compile).
+

@@ -1,0 +1,22 @@
+# ChangeLog for app-doc/gimp-user-manual
+# Copyright 2002-2006 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-doc/gimp-user-manual/ChangeLog,v 1.8 2006/07/08 22:21:32 kumba Exp $
+
+  09 Jul 2006; Joshua Kinard <kumba@gentoo.org> gimp-user-manual-2.0.ebuild:
+  Marked stable on mips.
+
+  07 Jun 2004; Daniel Black <dragonheart@gentoo.org> +metadata.xml,
+  gimp-user-manual-2.0.ebuild:
+  QA - IUSE fix
+
+  06 Dec 2002; Rodney Rees <manson@gentoo.org> : changed sparc ~sparc keywords
+ 
+*gimp-user-manual-2.0 (1 Feb 2002)
+
+  1 Feb 2002; G.Bevin <gbevin@gentoo.org> ChangeLog :
+  
+  Added initial ChangeLog which should be updated whenever the package is
+  updated in any way. This changelog is targetted to users. This means that the
+  comments should well explained and written in clean English. The details about
+  writing correct changelogs are explained in the skel.ChangeLog file which you
+  can find in the root directory of the portage repository.

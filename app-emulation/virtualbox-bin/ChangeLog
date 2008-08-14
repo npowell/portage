@@ -1,0 +1,160 @@
+# ChangeLog for app-emulation/virtualbox-bin
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/virtualbox-bin/ChangeLog,v 1.30 2008/08/10 14:38:45 jokey Exp $
+
+*virtualbox-bin-1.6.4 (10 Aug 2008)
+
+  10 Aug 2008; Markus Ullmann <jokey@gentoo.org> files/vboxwebsrv-confd,
+  files/vboxwebsrv-initd, files/virtualbox-bin-wrapper,
+  +virtualbox-bin-1.6.4.ebuild:
+  Add version bump and some improvements from SpanKY wrt bug #233683
+
+  29 Jul 2008; Mike Frysinger <vapier@gentoo.org>
+  virtualbox-bin-1.6.2.ebuild:
+  Use unpack_makeself instead of executing the script (and bundled static
+  binaries) and cleanup ebuild style.
+
+  28 Jul 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
+  add GLEP 56 USE flag desc from use.local.desc
+
+  27 Jul 2008; Carsten Lohrke <carlo@gentoo.org>
+  virtualbox-bin-1.5.2-r1.ebuild, virtualbox-bin-1.5.4.ebuild,
+  virtualbox-bin-1.5.6.ebuild, virtualbox-bin-1.6.2.ebuild:
+  QA: Get rid of deprecated qt_min_version().
+
+*virtualbox-bin-1.6.2 (13 Jun 2008)
+
+  13 Jun 2008; Doug Goldstein <cardoe@gentoo.org> +files/vboxwebsrv-confd,
+  +files/vboxwebsrv-initd, files/virtualbox-bin.desktop,
+  files/virtualbox-bin-wrapper, +virtualbox-bin-1.6.2.ebuild:
+  copy changes from jokey's overlay to the tree as jokey requested
+
+  14 May 2008; Peter Volkov <pva@gentoo.org> virtualbox-bin-1.5.4.ebuild,
+  virtualbox-bin-1.5.6.ebuild:
+  Updated deps: app-doc/kchmviewer moved to app-text/kchmviewer, bug
+  #220741.
+
+  02 May 2008; Tristan Heaven <nyhm@gentoo.org> virtualbox-bin-1.5.6.ebuild:
+  Fix virtualbox-modules dependency so 1.5.7 can be installed, bug #218198
+
+  06 Mar 2008; Christoph Mende <angelos@gentoo.org>
+  virtualbox-bin-1.5.4.ebuild:
+  Stable on amd64, bug #208905
+
+  04 Mar 2008; Markus Ullmann <jokey@gentoo.org>
+  virtualbox-bin-1.5.4.ebuild:
+  Stable on x86 wrt bug #208905
+
+*virtualbox-bin-1.5.6 (25 Feb 2008)
+
+  25 Feb 2008; Diego Pettenò <flameeyes@gentoo.org>
+  +virtualbox-bin-1.5.6.ebuild:
+  Version bump, as requested by the proxy-maintainer Alessio Cassibba.
+
+*virtualbox-bin-1.5.4 (05 Jan 2008)
+
+  05 Jan 2008; Markus Ullmann <jokey@gentoo.org>
+  +files/virtualbox-bin.desktop, +virtualbox-bin-1.5.4.ebuild:
+  Version bump wrt bug #203893 thanks to x-drum
+
+  03 Nov 2007; Markus Ullmann <jokey@gentoo.org>
+  files/virtualbox-bin-wrapper, -virtualbox-bin-1.4.0.ebuild,
+  -virtualbox-bin-1.5.2.ebuild, +virtualbox-bin-1.5.2-r1.ebuild:
+  Some minor cosmetics in the wrapper, fix desktop entry
+
+  29 Oct 2007; Markus Meier <maekke@gentoo.org> virtualbox-bin-1.5.2.ebuild:
+  x86 stable
+
+  22 Oct 2007; Markus Ullmann <jokey@gentoo.org>
+  +files/virtualbox-bin-config, +files/virtualbox-bin-interfaces,
+  files/virtualbox-bin-wrapper, -virtualbox-bin-1.4.0-r1.ebuild,
+  -virtualbox-bin-1.5.0-r1.ebuild:
+  Drop old and add new-style wrapper
+
+*virtualbox-bin-1.5.2 (22 Oct 2007)
+
+  22 Oct 2007; Markus Ullmann <jokey@gentoo.org>
+  +virtualbox-bin-1.5.2.ebuild:
+  Version bump wrt bug #196424 thanks to Alessio for the ebuilds
+
+  07 Oct 2007; Markus Ullmann <jokey@gentoo.org>
+  files/virtualbox-bin-wrapper, virtualbox-bin-1.5.0-r1.ebuild:
+  add blockers for virtualbox-additions bug #194183, thanks to Alessio
+
+*virtualbox-bin-1.5.0-r1 (17 Sep 2007)
+
+  17 Sep 2007; Markus Ullmann <jokey@gentoo.org>
+  -virtualbox-bin-1.5.0.ebuild, +virtualbox-bin-1.5.0-r1.ebuild:
+  Revbump to fix HAL mess, bug #191473
+
+*virtualbox-bin-1.5.0 (04 Sep 2007)
+
+  04 Sep 2007; Markus Ullmann <jokey@gentoo.org>
+  -virtualbox-bin-1.3.8-r1.ebuild, +virtualbox-bin-1.5.0.ebuild:
+  Version bump wrt bug #191142
+
+  23 Jun 2007; Charlie Shepherd <masterdriverz@gentoo.org>
+  virtualbox-bin-1.3.8-r1.ebuild, virtualbox-bin-1.4.0.ebuild,
+  virtualbox-bin-1.4.0-r1.ebuild:
+  Fix headers, thanks to x-drum
+
+*virtualbox-bin-1.4.0-r1 (22 Jun 2007)
+
+  22 Jun 2007; Charlie Shepherd <masterdriverz@gentoo.org>
+  virtualbox-bin-1.4.0.ebuild, +virtualbox-bin-1.4.0-r1.ebuild:
+  Port changes from jokey's overlay; thanks to x-drum: minor changes to
+  desktop entry; libstdc++-3.3 is only needed for x86 binaries, adjusted perms
+  for executables, removed unneeded files; fixed SRC_URI (bug 181161)
+
+*virtualbox-bin-1.4.0 (06 Jun 2007)
+
+  06 Jun 2007; Markus Ullmann <jokey@gentoo.org>
+  +virtualbox-bin-1.4.0.ebuild:
+  Version bump, thanks to Alessio
+
+  13 May 2007; Markus Ullmann <jokey@gentoo.org>
+  virtualbox-bin-1.3.8-r1.ebuild:
+  Fix for sdl useflag bug #177335
+
+  21 Apr 2007; Raúl Porcel <armin76@gentoo.org>
+  virtualbox-bin-1.3.8-r1.ebuild:
+  x86 stable
+
+*virtualbox-bin-1.3.8-r1 (21 Apr 2007)
+
+  21 Apr 2007; Markus Ullmann <jokey@gentoo.org>
+  -virtualbox-bin-1.3.6.ebuild, -virtualbox-bin-1.3.8.ebuild,
+  +virtualbox-bin-1.3.8-r1.ebuild:
+  PaXify bins to make hardened people happy
+
+*virtualbox-bin-1.3.8 (16 Mar 2007)
+
+  16 Mar 2007; Markus Ullmann <jokey@gentoo.org>
+  -files/virtualbox-bin-1.3.6-wrapper, +files/virtualbox-bin-wrapper,
+  -virtualbox-bin-1.3.4.ebuild, virtualbox-bin-1.3.6.ebuild,
+  +virtualbox-bin-1.3.8.ebuild:
+  Version bump
+
+  03 Mar 2007; Markus Ullmann <jokey@gentoo.org>
+  files/digest-virtualbox-bin-1.3.6, Manifest:
+  Better checksums
+
+*virtualbox-bin-1.3.6 (28 Feb 2007)
+
+  28 Feb 2007; Markus Ullmann <jokey@gentoo.org>
+  +files/virtualbox-bin-1.3.6-wrapper, +virtualbox-bin-1.3.6.ebuild:
+  Version bump, thanks to x-drum for the hard work
+
+  25 Feb 2007; <genstef@gentoo.org> virtualbox-bin-1.3.4.ebuild:
+  use KV_DIR only after linux-mod_pkg_setup, bug 168051
+
+  16 Feb 2007; Markus Ullmann <jokey@gentoo.org>
+  virtualbox-bin-1.3.4.ebuild:
+  Fix ROOT
+
+*virtualbox-bin-1.3.4 (15 Feb 2007)
+
+  15 Feb 2007; Markus Ullmann <jokey@gentoo.org> +metadata.xml,
+  +virtualbox-bin-1.3.4.ebuild:
+  Initial version, thanks to Alessio Cassibba
+

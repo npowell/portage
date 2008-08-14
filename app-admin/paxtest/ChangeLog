@@ -1,0 +1,120 @@
+# ChangeLog for app-admin/paxtest
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/paxtest/ChangeLog,v 1.30 2007/11/13 18:22:46 armin76 Exp $
+
+  13 Nov 2007; Raúl Porcel <armin76@gentoo.org> paxtest-0.9.7_pre4.ebuild:
+  Add ~alpha
+
+  02 Jul 2007; Piotr Jaroszyński <peper@gentoo.org>
+  paxtest-0.9.5-r1.ebuild, paxtest-0.9.6.ebuild, paxtest-0.9.7_pre4.ebuild:
+  (QA) RESTRICT clean up.
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*paxtest-0.9.7_pre4 (23 Jan 2007)
+
+  23 Jan 2007; <solar@gentoo.org> +files/Makefile.psm5,
+  +paxtest-0.9.7_pre4.ebuild:
+  - version bump. Includes changes from psm to make paxtest a bit more portable
+
+  08 Sep 2006; Markus Rothe <corsair@gentoo.org> paxtest-0.9.6.ebuild:
+  Back to ~ppc64
+
+  15 Jul 2006; Daniel Gryniewicz <dang@gentoo.org> paxtest-0.9.6.ebuild:
+  Marked ~amd64 per bug# 127458
+
+  18 Oct 2005; Gustavo Zacarias <gustavoz@gentoo.org> paxtest-0.9.6.ebuild:
+  Stable on sparc
+
+  05 Oct 2005; Simon Stelling <blubb@gentoo.org> paxtest-0.9.6.ebuild:
+  make it adhere multilib-strict; bug 107805
+
+  09 Sep 2005; Aron Griffis <agriffis@gentoo.org> paxtest-0.9.6.ebuild:
+  Mark 0.9.6 stable on alpha
+
+  24 Apr 2005; Michael Hanselmann <hansmi@gentoo.org> paxtest-0.9.6.ebuild:
+  Stable on ppc.
+
+  07 Apr 2005; <solar@gentoo.org> paxtest-0.9.6.ebuild:
+  - mark x86 stable
+
+  31 Mar 2005; Aron Griffis <agriffis@gentoo.org> paxtest-0.9.6.ebuild:
+  stable on ia64
+
+  17 Mar 2005; Daniel Ostrow <dostrow@gentoo.org> paxtest-0.9.6.ebuild:
+  Stable on ppc64
+
+  07 Mar 2005; <solar@gentoo.org> paxtest-0.9.6.ebuild:
+  - marking 0.9.6 stable
+
+  21 Oct 2004; Michael Sterrett <mr_bones_@gentoo.org>
+  paxtest-0.9.5-r1.ebuild, paxtest-0.9.6.ebuild:
+  FEATURES is read-only
+
+  02 Sep 2004; Travis Tilley <lv@gentoo.org> paxtest-0.9.6.ebuild:
+  stable on amd64
+
+*paxtest-0.9.6 (06 Aug 2004)
+
+  06 Aug 2004; Travis Tilley <lv@gentoo.org> +files/Makefile-portable,
+  +paxtest-0.9.6.ebuild:
+  version bump, added portable makefile from Peter Mazinger
+
+  29 Jul 2004; Travis Tilley <lv@gentoo.org>
+  +files/paxtest-0.9.5-use-fPIE.patch, paxtest-0.9.5-r1.ebuild:
+  fixed up getheap2 and getmain2 tests for non-x86 archs
+
+  29 Jul 2004; Travis Tilley <lv@gentoo.org> paxtest-0.9.5-r1.ebuild:
+  added very preliminary support for non-x86 archs and added ~amd64 keyword
+
+  07 May 2004; Brandon Hale <tseng@gentoo.org> paxtest-0.9.5-r1.ebuild:
+  Added IUSE=
+
+  10 Jan 2004; <solar@gentoo.org> paxtest-0.9.5-r1.ebuild,
+  paxtest-0.9.5.ebuild:
+  restrict distcc
+
+  28 Nov 2003; <solar@gentoo.org> paxtest-0.9.5-r1.ebuild:
+  pax flags are not stripsafe so we added nostrip restriction
+
+  28 Nov 2003; <solar@gentoo.org> paxtest-0.9.1.ebuild:
+  removed old paxtest
+
+*paxtest-0.9.5-r1 (28 Nov 2003)
+
+  28 Nov 2003; <solar@gentoo.org> paxtest-0.9.4.ebuild,
+  paxtest-0.9.5-r1.ebuild, paxtest-0.9.5.ebuild, files/paxtest-0.9.5.1.diff:
+  added a patch to force paxtest to use orig gcc specs regardless if any spec
+  file modifications existed
+
+  16 Nov 2003; <solar@gentoo.org> paxtest-0.9.4.ebuild, paxtest-0.9.5.ebuild:
+  bumping to stable
+
+*paxtest-0.9.5 (04 Nov 2003)
+
+  04 Nov 2003; <solar@gentoo.org> paxtest-0.9.5.ebuild:
+  version bump
+
+  27 Oct 2003; <solar@gentoo.org> paxtest-0.9.3.ebuild, paxtest-0.9.4.ebuild:
+  removed paxtest-0.9.3 in favor of 0.9.4
+
+*paxtest-0.9.4 (27 Oct 2003)
+
+  27 Oct 2003; <solar@gentoo.org> paxtest-0.9.4.ebuild:
+  paxtest 0.9.4 came out.. version bump
+
+*paxtest-0.9.3 (26 Oct 2003)
+
+  26 Oct 2003; <solar@gentoo.org> paxtest-0.9.1.ebuild, paxtest-0.9.3.ebuild:
+  added paxtest-0.9.3
+
+  26 Oct 2003; <solar@gentoo.org> paxtest-0.9.1.ebuild:
+  bumping 0.9.1 to stable by request of zhen
+
+*paxtest-0.9.1 (04 Aug 2003)
+
+  04 Aug 2003; <solar@gentoo.org> metadata.xml, paxtest-0.9.1.ebuild:
+  Initial import of paxtest into portage, PaX regression test suite developed by
+  Peter Busser
+

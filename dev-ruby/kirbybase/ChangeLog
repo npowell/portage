@@ -1,0 +1,38 @@
+# ChangeLog for dev-ruby/kirbybase
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/kirbybase/ChangeLog,v 1.9 2007/11/03 08:29:39 drac Exp $
+
+  03 Nov 2007; Samuli Suominen <drac@gentoo.org> kirbybase-2.6.ebuild:
+  Keyword ~amd64 wrt #185492.
+
+*kirbybase-2.6 (17 Apr 2007)
+
+  17 Apr 2007; Aggelos Orfanakos <agorf@gentoo.org> +kirbybase-2.6.ebuild:
+  Version bump to 2.6.
+
+  13 Mar 2007; Tom Gall <tgall@gentoo.org> kirbybase-2.5.2.ebuild:
+  added ~ppc64
+
+  13 Jul 2006; Aron Griffis <agriffis@gentoo.org> kirbybase-2.5.2.ebuild:
+  Mark 2.5.2 stable on ia64
+
+  17 Apr 2006; Caleb Tennis <caleb@gentoo.org> -kirbybase-2.3.ebuild:
+  remove old version
+
+  17 Apr 2006; Caleb Tennis <caleb@gentoo.org> kirbybase-2.5.2.ebuild:
+  x86 stable
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org> kirbybase-2.5.2.ebuild:
+  Mark 2.5.2 ~ia64
+
+*kirbybase-2.5.2 (14 Mar 2006)
+
+  14 Mar 2006; Caleb Tennis <caleb@gentoo.org> +kirbybase-2.5.2.ebuild:
+  Version bump, moved to gems format
+
+*kirbybase-2.3 (29 Oct 2005)
+
+  29 Oct 2005; Michael Kohl <citizen428@gentoo.org> +metadata.xml,
+  +kirbybase-2.3.ebuild:
+  Initial import.
+

@@ -1,0 +1,57 @@
+# ChangeLog for sci-chemistry/avogadro
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/avogadro/ChangeLog,v 1.14 2008/08/12 00:26:00 yngwin Exp $
+
+  12 Aug 2008; Ben de Groot <yngwin@gentoo.org> avogadro-0.6.1.ebuild,
+  avogadro-0.8.0.ebuild, avogadro-0.8.1.ebuild:
+  Fix split qt4 deps wrt bug 217161.
+
+*avogadro-0.8.1 (10 Jul 2008)
+
+  10 Jul 2008; Markus Dittrich <markusle@gentoo.org>
+  +files/avogadro-0.8.1-openbabel-2.2.0.patch, +avogadro-0.8.1.ebuild:
+  Version bump and fixed compile issue due to openbabel-2.2.0 API change
+  (see bug #231173).
+
+  21 May 2008; Marcus D. Hanwell <cryos@gentoo.org> avogadro-0.8.0.ebuild:
+  Bumped dependency to cmake-2.4.8. Should fix bug 222947.
+
+*avogadro-0.8.0 (19 May 2008)
+
+  19 May 2008; Marcus D. Hanwell <cryos@gentoo.org> -avogadro-0.2.0.ebuild,
+  -avogadro-0.6.0.ebuild, +avogadro-0.8.0.ebuild:
+  Version bump. Removed old versions.
+
+*avogadro-0.6.1 (09 Mar 2008)
+
+  09 Mar 2008; Marcus D. Hanwell <cryos@gentoo.org> +avogadro-0.6.1.ebuild:
+  Version bump.
+
+*avogadro-0.6.0 (01 Mar 2008)
+
+  01 Mar 2008; Marcus D. Hanwell <cryos@gentoo.org> +avogadro-0.6.0.ebuild:
+  Version bump.
+
+  10 Dec 2007; Marcus D. Hanwell <cryos@gentoo.org> -avogadro-0.1.0.ebuild,
+  avogadro-0.2.0.ebuild:
+  Removed old version, updated to use release build type.
+
+*avogadro-0.2.0 (23 Oct 2007)
+
+  23 Oct 2007; Marcus D. Hanwell <cryos@gentoo.org> +avogadro-0.2.0.ebuild:
+  Version bump.
+
+  01 Jul 2007; Piotr Jaroszyński <peper@gentoo.org>
+  +files/digest-avogadro-0.1.0, Manifest:
+  (QA) Add digests.
+
+  29 Jun 2007; Christian Faulhammer <opfer@gentoo.org>
+  avogadro-0.1.0.ebuild:
+  keyworded ~x86, bug 182986
+
+*avogadro-0.1.0 (17 May 2007)
+
+  17 May 2007; Marcus D. Hanwell <cryos@gentoo.org> +metadata.xml,
+  +avogadro-0.1.0.ebuild:
+  Initial import.
+

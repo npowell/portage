@@ -1,0 +1,42 @@
+# ChangeLog for sci-chemistry/eden
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/eden/ChangeLog,v 1.11 2008/08/06 15:31:00 ulm Exp $
+
+  06 Aug 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
+  Add USE flag description to metadata wrt GLEP 56.
+
+  17 Feb 2008; Markus Dittrich <markusle@gentoo.org> eden-5.3.ebuild:
+  Corrected out of date HOMEPAGE and switched SRC_URI to Gentoo mirrors.
+
+  15 Feb 2008; Markus Dittrich <markusle@gentoo.org> eden-5.3.ebuild:
+  Fixed QA issues and added bindist for >=gsl-1.10 (see bug #199451).
+
+  28 Apr 2007; Sven Wegener <swegener@gentoo.org> eden-5.3.ebuild:
+  Drop dodir from dodir/*into combination.
+
+  15 Mar 2007; Danny van Dyk <kugelfang@gentoo.org> eden-5.3.ebuild:
+  QA: Removed illegal use of ${ROOT}. Bug #168043
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  20 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  (#148281) Change herd to sci-chemistry from sci.
+
+  05 Aug 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Remove myself as maintainer, anyone feel free to work on this, although I'll
+  continue to do so as well.
+
+  09 Jul 2006; Donnie Berkholz <dberkholz@gentoo.org>; eden-5.3.ebuild:
+  x86 stable.
+
+  07 Jul 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Update to my new email address.
+
+*eden-5.3 (16 Dec 2005)
+
+  16 Dec 2005; Donnie Berkholz <dberkholz@gentoo.org>;
+  +files/makefile-fixes.patch, +metadata.xml, +eden-5.3.ebuild:
+  A crystallographic real-space electron-density refinement and optimization
+  program.
+

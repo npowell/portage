@@ -1,0 +1,49 @@
+# ChangeLog for app-misc/nut
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/nut/ChangeLog,v 1.10 2008/05/11 20:53:32 solar Exp $
+
+  11 May 2008; <solar@gentoo.org> nut-12.7.ebuild:
+  - Keyworded ~arm/~amd64 and cross-compile love
+
+*nut-12.7 (09 Sep 2007)
+
+  09 Sep 2007; Santiago M. Mola <coldwind@gentoo.org> nut-10.15.ebuild,
+  nut-12.2.ebuild, +nut-12.7.ebuild:
+  Bump to 12.7, bug #187179
+  Homepage updated.
+
+  29 Aug 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing agriffis from metadata due to his retirement (see #182294 for
+  reference).
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*nut-12.2 (22 Jan 2007)
+
+  22 Jan 2007; Charlie Shepherd <masterdriverz@gentoo.org> -nut-11.0.ebuild,
+  +nut-12.2.ebuild:
+  Bump to nut-12.2, bug 123755. Thanks to Michael Vogt for the ebuild
+
+*nut-11.0 (04 Oct 2005)
+
+  04 Oct 2005; Aron Griffis <agriffis@gentoo.org> -nut-10.7.ebuild,
+  nut-10.15.ebuild, +nut-11.0.ebuild:
+  Bump to 11.0 (from 10.15), adding ~alpha and ~amd64 in the process.
+  Mark 10.15 stable on x86.  Remove 10.7
+
+  10 May 2005; Stephanie Lockwood-Childs <wormo@gentoo.org> nut-10.15.ebuild:
+  mark ~ppc
+
+*nut-10.15 (18 Feb 2005)
+
+  18 Feb 2005; Aron Griffis <agriffis@gentoo.org> +nut-10.15.ebuild,
+  nut-10.7.ebuild:
+  Stabilize 10.7 and update to 10.15 #82397
+
+*nut-10.7 (29 Oct 2004)
+
+  29 Oct 2004; Aron Griffis <agriffis@gentoo.org> +nut-10.7.ebuild:
+  Add ebuild for Jim Jozwiak's nutrition program. Thanks to Chris Houser
+  (Chouser) for the ebuild
+

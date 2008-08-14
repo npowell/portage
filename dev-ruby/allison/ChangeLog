@@ -1,0 +1,29 @@
+# ChangeLog for dev-ruby/allison
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/allison/ChangeLog,v 1.7 2008/04/28 15:19:32 ricmm Exp $
+
+  28 Apr 2008; <ricmm@gentoo.org> allison-2.0.3.ebuild:
+  Add ~mips, bug #206031
+
+*allison-2.0.3 (22 Jan 2008)
+
+  22 Jan 2008; Richard Brown <rbrown@gentoo.org> +allison-2.0.3.ebuild:
+  Version bump.
+
+  17 Jan 2008; Jeroen Roovers <jer@gentoo.org> allison-2.0.2.ebuild:
+  Marked ~hppa (bug #206031).
+
+  16 Jan 2008; Raúl Porcel <armin76@gentoo.org> allison-2.0.2.ebuild:
+  Add ~alpha/~ia64 wrt #206031
+
+  16 Jan 2008; Ferris McCormick <fmccor@gentoo.org> allison-2.0.2.ebuild:
+  ~sparc for testing & paludis --- Bug #206031 --- seems to work.
+
+  16 Jan 2008; Brent Baude <ranger@gentoo.org> allison-2.0.2.ebuild:
+  marking allison-2.0.2 ~ppc and ~ppc64
+
+*allison-2.0.2 (15 Jan 2008)
+
+  15 Jan 2008; Richard Brown <rbrown@gentoo.org> +allison-2.0.2.ebuild:
+  Initial import.
+

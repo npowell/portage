@@ -1,0 +1,16 @@
+# ChangeLog for net-dns/valtz
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-dns/valtz/ChangeLog,v 1.3 2008/01/25 23:05:13 bangert Exp $
+
+  25 Jan 2008; Thilo Bangert <bangert@gentoo.org> valtz-0.7.ebuild:
+  die on dobin
+
+  03 Aug 2006; Thilo Bangert <bangert@gentoo.org> ChangeLog:
+  fix ChangeLog 
+
+*valtz-0.7 (03 Aug 2006)
+
+  30 Apr 2006; Thilo Bangert <bangert@gentoo.org> ChangeLog:
+  Initial import. Validation tool for tinydns-data zone files.
+  first commit :) thanks for the warm welcome - lets rock the house
+

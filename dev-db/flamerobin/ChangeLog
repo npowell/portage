@@ -1,0 +1,69 @@
+# ChangeLog for dev-db/flamerobin
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-db/flamerobin/ChangeLog,v 1.12 2008/03/19 19:33:09 wltjr Exp $
+
+*flamerobin-0.8.6 (19 Mar 2008)
+
+  19 Mar 2008; William L. Thomson Jr. <wltjr@gentoo.org>
+  -flamerobin-0.8.1.ebuild, +flamerobin-0.8.6.ebuild:
+  Bumped to latest release, removed past versions
+
+*flamerobin-0.8.3 (26 Dec 2007)
+
+  26 Dec 2007; William L. Thomson Jr. <wltjr@gentoo.org>
+  -flamerobin-0.7.5-r1.ebuild, -flamerobin-0.7.6.ebuild,
+  -flamerobin-0.8.0.ebuild, +flamerobin-0.8.3.ebuild:
+  Bumped to latest release, removed older versions
+
+*flamerobin-0.8.1 (18 Oct 2007)
+
+  18 Oct 2007; William L. Thomson Jr. <wltjr@gentoo.org>
+  +flamerobin-0.8.1.ebuild:
+  Bumped to latest release. Added temp hack/fix to make configure executable.
+
+*flamerobin-0.8.0 (09 Oct 2007)
+
+  09 Oct 2007; William L. Thomson Jr. <wltjr@gentoo.org>
+  +flamerobin-0.8.0.ebuild:
+  Bumped to latest release. Ideally wants wxGTK 2.8.6, but it's not in tree.
+  Still fully compatible with 2.6
+
+  16 May 2007; Ryan Hill <dirtyepic@gentoo.org> flamerobin-0.7.5-r1.ebuild,
+  flamerobin-0.7.6.ebuild:
+  Pass wx-config location to econf for bug #178713.
+
+  08 Jan 2007; Christian Faulhammer <opfer@gentoo.org>
+  flamerobin-0.7.6.ebuild:
+  stable x86, bug #159228
+
+*flamerobin-0.7.6 (22 Nov 2006)
+
+  22 Nov 2006; William L. Thomson Jr. <wltjr@gentoo.org>
+  +flamerobin-0.7.6.ebuild:
+  Version bump for new release
+
+  07 Nov 2006; William L. Thomson Jr. <wltjr@gentoo.org>
+  flamerobin-0.7.5-r1.ebuild:
+  Attempted fix for bug 154006. Inheriting wxwidgets eclass now and using it's
+  functions.
+
+  05 Nov 2006; William L. Thomson Jr. <wltjr@gentoo.org>
+  -flamerobin-0.7.5.ebuild:
+  Removed previous version with invalid atom
+
+*flamerobin-0.7.5-r1 (04 Nov 2006)
+
+  04 Nov 2006; William L. Thomson Jr. <wltjr@gentoo.org>
+  +flamerobin-0.7.5-r1.ebuild:
+  Fixed dodocs, switch to doicon domenu for desktop entry, fixed invalid dep
+  atom of firebird per bug #154058
+
+  04 Nov 2006; William L. Thomson Jr. <wltjr@gentoo.org> metadata.xml:
+  Got a little herd happy, updated metadata.xml to no-herd
+
+*flamerobin-0.7.5 (04 Nov 2006)
+
+  04 Nov 2006; William L. Thomson Jr. <wltjr@gentoo.org>
+  +files/FlameRobin.desktop, +metadata.xml, +flamerobin-0.7.5.ebuild:
+  Initial ebuild for FlameRobin
+

@@ -1,0 +1,37 @@
+# ChangeLog for net-misc/arpd
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-misc/arpd/ChangeLog,v 1.12 2007/02/22 02:02:02 peper Exp $
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  20 Feb 2006; Markus Ullmann <jokey@gentoo.org> arpd-0.2.ebuild:
+  Removing virtual/libpcap wrt bug #117898
+
+  25 Dec 2005; Jason Wever <weeve@gentoo.org> arpd-0.2.ebuild:
+  Stable on SPARC.
+
+  18 May 2005; Sven Wegener <swegener@gentoo.org> arpd-0.2.ebuild:
+  Moved inherit to the top to stop eclasses from overwriting the DESCRIPTION.
+
+  01 May 2005; Michael Hanselmann <hansmi@gentoo.org> arpd-0.2.ebuild:
+  Stable on ppc.
+
+  27 Apr 2005; Brian Jackson <iggy@gentoo.org> +files/arpd.c.patch,
+  arpd-0.2.ebuild:
+  patch from bug #76833, thanks to those guys, also works on amd64
+
+  30 Jan 2005; Daniel Black <dragonheart@gentoo.org> arpd-0.2.ebuild:
+  Transition dependancy from net-libs/libpcap to virtual/libpcap
+
+*arpd-0.2 (14 Sep 2003)
+
+  14 Sep 2003; <iggy@gentoo.org> arpd-0.2.ebuild:
+  version bump thanks to hillster
+
+  07 Jan 2003; J Robert Ray <jrray@gentoo.org> : Unmasked for x86.
+
+*arpd-0.1 (20 Dec 2002)
+
+  20 Dec 2002; J Robert Ray <jrray@gentoo.org> : Initial ebuild, contributed by
+  Daniel Mannarino <thesnark@operamail.com>.

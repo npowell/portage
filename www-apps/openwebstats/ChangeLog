@@ -1,0 +1,22 @@
+# ChangeLog for www-apps/openwebstats
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-apps/openwebstats/ChangeLog,v 1.5 2007/01/02 22:43:39 rl03 Exp $
+
+  02 Jan 2007; Renat Lumpau <rl03@gentoo.org> openwebstats-1.1.ebuild:
+  Drop mysql dep wrt bug 159781
+
+  23 Nov 2006; Francesco Riosa <vivo@gentoo.org> openwebstats-1.1.ebuild:
+  dev-db/mysql => virtual/mysql
+
+  22 Aug 2005; Renat Lumpau <rl03@gentoo.org> files/postinstall-en.txt:
+  Housekeeping
+
+  09 Aug 2005; Renat Lumpau <rl03@gentoo.org> openwebstats-1.1.ebuild:
+  removed unnecessary eutils
+
+*openwebstats-1.1 (09 Aug 2005)
+
+  09 Aug 2005; Renat Lumpau <rl03@gentoo.org> +files/config.php,
+  +files/postinstall-en.txt, +metadata.xml, +openwebstats-1.1.ebuild:
+  Initial ebuild wrt bug #101022. Thanks to wrobel.
+

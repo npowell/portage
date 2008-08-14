@@ -1,0 +1,45 @@
+# ChangeLog for virtual/perl-locale-maketext
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/virtual/perl-locale-maketext/ChangeLog,v 1.10 2008/07/22 07:29:32 tove Exp $
+
+*perl-locale-maketext-1.13 (22 Jul 2008)
+
+  22 Jul 2008; Torsten Veller <tove@gentoo.org>
+  +perl-locale-maketext-1.13.ebuild:
+  Version bump
+
+  04 Mar 2007; Andrej Kacian <ticho@gentoo.org>
+  perl-locale-maketext-1.10.ebuild:
+  Stable on x86, bug #169153.
+
+  07 Jan 2007; Bryan Østergaard <kloeri@gentoo.org>
+  perl-locale-maketext-1.10.ebuild:
+  Stable on IA64.
+
+  24 Dec 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  perl-locale-maketext-1.10.ebuild:
+  Stable on ppc.
+
+  25 Oct 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  perl-locale-maketext-1.10.ebuild:
+  Stable on sparc
+
+  23 Oct 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  perl-locale-maketext-1.10.ebuild:
+  Stable on hppa
+
+  27 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  perl-locale-maketext-1.10.ebuild:
+  Marking amd64 stable
+
+  13 Feb 2006; Michael Cummings <mcummings@gentoo.org>
+  perl-locale-maketext-1.09.ebuild:
+  Updated RDEPS
+
+*perl-locale-maketext-1.10 (07 Feb 2006)
+*perl-locale-maketext-1.09 (07 Feb 2006)
+
+  07 Feb 2006; Michael Cummings <mcummings@gentoo.org> +metadata.xml,
+  +perl-locale-maketext-1.09.ebuild, +perl-locale-maketext-1.10.ebuild:
+  New virtual for perl-core/locale-maketext
+

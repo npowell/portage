@@ -1,0 +1,78 @@
+# ChangeLog for sci-chemistry/raster3d
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/raster3d/ChangeLog,v 1.15 2008/07/08 03:07:27 dberkholz Exp $
+
+  08 Jul 2008; Donnie Berkholz <dberkholz@gentoo.org>; raster3d-2.7s.ebuild:
+  Keyword ~amd64.
+
+*raster3d-2.7s (08 Jul 2008)
+
+  08 Jul 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  +raster3d-2.7s.ebuild:
+  (#231118) Bump. Small cleanup of make->emake so MAKEOPTS are respected.
+
+*raster3d-2.7d (08 Sep 2007)
+
+  08 Sep 2007; Markus Dittrich <markusle@gentoo.org>
+  +files/raster3d-2.7d-gcc4-gentoo.patch,
+  files/raster3d-gcc-4.1-gentoo.patch, +raster3d-2.7d.ebuild:
+  Fixed gcc patch to work with gcc-4.2 and bumped raster3d to new
+  version (see bug #190511).
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>; raster3d-2.7c.ebuild:
+  Drop virtual/x11 references.
+
+  07 Jan 2007; Danny van Dyk <kugelfang@gentoo.org> -raster3d-2.6e.ebuild:
+  QA: Removed unused versions.
+
+  20 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  (#148281) Change herd to sci-chemistry from sci.
+
+  07 Aug 2006; Donnie Berkholz <dberkholz@gentoo.org>; raster3d-2.7c.ebuild:
+  (#141425) Stable on x86/ppc.
+
+  21 May 2006; Donnie Berkholz <spyderous@gentoo.org>; raster3d-2.7c.ebuild:
+  Keyword ~ppc.
+
+  27 Apr 2006; Alec Warner <antarus@gentoo.org> files/digest-raster3d-2.6e,
+  Manifest:
+  Fixing SHA256 digest, pass four
+
+  12 Apr 2006; Markus Dittrich <markusle@gentoo.org>
+  +files/raster3d-gcc-4.1-gentoo.patch, raster3d-2.7c.ebuild:
+  Applied patch to fix compile problems using gcc-4.1. Thanks to
+  Patrizio Bassi <hetfield666@gmail.com> for testing. This fixes
+  bug #125190.
+
+  11 Apr 2006; Markus Dittrich <markusle@gentoo.org> raster3d-2.6e.ebuild,
+  raster3d-2.7c.ebuild:
+  Added missing x11-misc/imake to DEPEND. This fixes bug #128747.
+  Also moved raster3d-2.6e to modular X.
+
+  18 Jan 2006; Donnie Berkholz <spyderous@gentoo.org>; raster3d-2.7c.ebuild:
+  Fix dependencies for modular X.
+
+*raster3d-2.7c (20 Oct 2005)
+
+  20 Oct 2005; Olivier Fisette <ribosome@gentoo.org> +raster3d-2.7c.ebuild:
+  New version.
+
+*raster3d-2.6e (24 Dec 2004)
+
+  24 Dec 2004; Olivier Fisette <ribosome@gentoo.org> +metadata.xml,
+  +raster3d-2.6e.ebuild:
+  Moved from app-sci/raster3d to sci-chemistry/raster3d.
+
+  19 Apr 2004; Patrick Kursawe <phosphan@gentoo.org> raster3d-2.6e.ebuild:
+  Adding IUSE
+
+*raster3d-2.6e (01 Nov 2002)
+
+  01 Nov 2002; George Shapovalov <george@gentoo.org> raster3d-2.6e.ebuild :
+  
+  first commit
+  Raster3D is a set of tools for
+  generating high quality raster images of proteins or other molecules. The
+  homepage is at http://www.bmsc.washington.edu/raster3d/raster3d.html.
+  
+  ebuild submitted by Jianghai Zhu <zhu5@purdue.edu>

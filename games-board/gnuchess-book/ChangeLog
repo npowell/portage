@@ -1,0 +1,33 @@
+# ChangeLog for games-board/gnuchess-book
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-board/gnuchess-book/ChangeLog,v 1.9 2007/04/13 20:12:50 welp Exp $
+
+  13 Apr 2007; <welp@gentoo.org> gnuchess-book-1.01.ebuild:
+  Stable on amd64 wrt bug 174415
+
+*gnuchess-book-1.01 (30 Mar 2007)
+
+  30 Mar 2007; Michael Sterrett <mr_bones_@gentoo.org>
+  +gnuchess-book-1.01.ebuild:
+  version bump
+
+  08 Feb 2007; Chris Gianelloni <wolf31o2@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  21 May 2006; Markus Rothe <corsair@gentoo.org> gnuchess-book-1.00.ebuild:
+  Stable on ppc64
+
+  23 Jan 2006; Markus Rothe <corsair@gentoo.org> gnuchess-book-1.00.ebuild:
+  Added ~ppc64; bug #120092
+
+  18 Nov 2005; Michael Sterrett <mr_bones_@gentoo.org>
+  gnuchess-book-1.00.ebuild:
+  Work around build issue with userpriv (bug #112898)
+
+  06 Jul 2005; Herbie Hopkins <herbs@gentoo.org> gnuchess-book-1.00.ebuild:
+  Marked ~amd64 wrt bug #93676.
+
+*gnuchess-book-1.00 (22 Feb 2004)
+
+  22 Feb 2004; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by andrey kartashov #40925.

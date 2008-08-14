@@ -1,0 +1,131 @@
+# ChangeLog for media-libs/libsidplay
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/libsidplay/ChangeLog,v 1.35 2007/10/15 14:34:58 corsair Exp $
+
+  15 Oct 2007; Markus Rothe <corsair@gentoo.org> libsidplay-1.36.57.ebuild:
+  Stable on ppc64
+
+*libsidplay-1.36.59 (07 May 2007)
+
+  07 May 2007; Hanno Boeck <hanno@gentoo.org> +libsidplay-1.36.59.ebuild:
+  Version bump.
+
+  16 Apr 2007; Markus Rothe <corsair@gentoo.org> ChangeLog:
+  Stable on ppc64
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  01 Nov 2006; Diego Pettenò <flameeyes@gentoo.org>
+  +files/libsidplay-2.1.1-fbsd.patch, libsidplay-2.1.1.ebuild:
+  Add ~x86-fbsd keyword, with patch from bug #153680.
+
+  28 Aug 2006; Joshua Kinard <kumba@gentoo.org> libsidplay-2.1.1.ebuild:
+  Marked stable on mips.
+
+  30 July 2006; Tom Gall <tgall@gentoo.org> libsidplay-1.36.57.ebuild:
+  added ~ppc64 to satisfy bmpx dep
+
+  25 May 2006; <nixnut@gentoo.org> ChangeLog:
+  Stable on ppc. Bug #133529
+
+  17 Apr 2006; Markus Rothe <corsair@gentoo.org> libsidplay-2.1.1.ebuild:
+  Stable on ppc64; bug #130123
+
+  25 Feb 2006; Stephen P. Becker <spbecker@gentoo.org>
+  libsidplay-2.1.1.ebuild:
+  added ~mips keyword
+
+  19 Feb 2006; Michael Hanselmann <hansmi@gentoo.org>
+  libsidplay-2.1.1.ebuild:
+  Added to ~ppc64.
+
+  23 Jan 2006; Joseph Jezak <josejx@gentoo.org> libsidplay-2.1.1.ebuild:
+  Marked ppc stable.
+
+  20 Dec 2005; Hanno Boeck <hanno@gentoo.org>
+  -files/libsidplay2-gcc34.patch, +files/libsidplay2-gcc41.patch,
+  libsidplay-2.1.1.ebuild:
+  Fix for gcc 4.1.
+
+  28 Nov 2005; Luis Medinas <metalgod@gentoo.org> libsidplay-1.36.57.ebuild:
+  Stable on amd64.
+
+  29 Dec 2004; Ciaran McCreesh <ciaranm@gentoo.org> :
+  Change encoding to UTF-8 for GLEP 31 compliance
+
+  15 Dec 2004; Bryan Østergaard <kloeri@gentoo.org>
+  libsidplay-2.1.1.ebuild:
+  Stable on alpha.
+
+  03 Sep 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  libsidplay-2.1.1.ebuild:
+  Stable amd64, sparc, x86.
+
+  07 Jul 2004; Bryan Østergaard <kloeri@gentoo.org>
+  libsidplay-2.1.1.ebuild:
+  ~alpha keywording, bug #55943.
+
+  03 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  libsidplay-2.1.0-r1.ebuild, libsidplay-2.1.1.ebuild:
+  --with-pic for xmms-sid to work with libsidplay2 on amd64.
+
+*libsidplay-2.1.0-r1 (03 Jul 2004)
+*libsidplay-2.1.1 (03 Jul 2004)
+
+  03 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org> +metadata.xml,
+  files/libsidplay-gcc34.patch, +files/libsidplay2-gcc34.patch,
+  +libsidplay-2.1.0-r1.ebuild, +libsidplay-2.1.1.ebuild:
+  Moving sidplay-libs here under SLOT=2.  Added ~amd64.  Version bump.
+
+  03 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  libsidplay-1.36.57.ebuild:
+  ~amd64.
+
+  03 Jul 2004; Jon Hood <squinky86@gentoo.org> +files/libsidplay-gcc34.patch,
+  libsidplay-1.36.57.ebuild:
+  add gcc-3.4 patch, closes #53322, added IUSE
+
+  01 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  libsidplay-1.36.54.ebuild, libsidplay-1.36.57.ebuild:
+  virtual/glibc -> virtual/libc
+
+  11 Apr 2004; Jason Wever <weeve@gentoo.org> libsidplay-1.36.57.ebuild:
+  Marked stable on sparc.
+
+  30 Mar 2004; David Holm <dholm@gentoo.org> libsidplay-1.36.57.ebuild:
+  Added to ~ppc.
+
+  17 Feb 2004; Aron Griffis <agriffis@gentoo.org> libsidplay-1.36.57.ebuild:
+  stable on alpha and ia64
+
+  22 Oct 2003; Hanno Boeck <hanno@gentoo.org>
+  libsidplay-2.1.0.20021111.ebuild:
+  Remove deprecated cvs version, libsidplay is now part of the sidplay-libs
+  package.
+
+  12 Jun 2003; Seemant Kulleen <seemant@gentoo.org>
+  libsidplay-2.1.0.20021111.ebuild:
+  emake->make
+
+  06 Dec 2002; Rodney Rees <manson@gentoo.org> : changed sparc ~sparc keywords
+ 
+*libsidplay-2.1.0.20021111 (11 Nov 2002)
+
+  11 Nov 2002; Hanno Boeck <hanno@gentoo.org> libsidplay-2.1.0.20021111.ebuild :
+  Added CVS-version of libsidplay, needed by sidplay.
+  Current release-version is unuseable, it doesn't compile in GCC 3.x.
+
+*libsidplay-1.36.57 (05 Nov 2002)
+
+  05 Nov 2002; Daniel Ahlberg <aliz@gentoo.org> :
+  Version bump.
+
+*libsidplay-1.36.54 (18 Jul 2002)
+
+  18 Jul 2002; Karl Trygve Kalleberg <karltk@gentoo.org> libsidplay-1.36.54.ebuild files/digest-1.36.54 :
+
+  libsidplay is a multi-platform C64 music player and SID chip emulator.
+
+  Initial import.
+

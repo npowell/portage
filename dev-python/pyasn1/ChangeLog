@@ -1,0 +1,32 @@
+# ChangeLog for dev-python/pyasn1
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pyasn1/ChangeLog,v 1.6 2008/06/23 06:30:39 dev-zero Exp $
+
+*pyasn1-0.0.8a (23 Jun 2008)
+
+  23 Jun 2008; Tiziano Müller <dev-zero@gentoo.org> +pyasn1-0.0.8a.ebuild:
+  Version bump.
+
+*pyasn1-0.0.7a (10 Sep 2007)
+
+  10 Sep 2007; Martin Jackson <mjolnir@gentoo.org> -pyasn1-0.0.6a.ebuild,
+  +pyasn1-0.0.7a.ebuild:
+  Bump to 0.0.7a, remove 0.0.6a
+
+  24 Feb 2007; Martin Jackson <mjolnir@gentoo.org> -pyasn1-0.0.5a.ebuild:
+  Cleanup old version 0.0.5a
+
+*pyasn1-0.0.6a (24 Feb 2007)
+
+  24 Feb 2007; Martin Jackson <mjolnir@gentoo.org> +pyasn1-0.0.6a.ebuild:
+  Version bump
+
+  30 Dec 2006; Tiziano Müller <dev-zero@gentoo.org> pyasn1-0.0.5a.ebuild:
+  Replaced deprecated mydocs with DOCS
+
+*pyasn1-0.0.5a (30 Dec 2006)
+
+  30 Dec 2006; Tiziano Müller <dev-zero@gentoo.org> +metadata.xml,
+  +pyasn1-0.0.5a.ebuild:
+  New ebuild for bug #121956
+

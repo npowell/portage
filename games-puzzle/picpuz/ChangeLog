@@ -1,0 +1,14 @@
+# ChangeLog for games-puzzle/picpuz
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-puzzle/picpuz/ChangeLog,v 1.2 2008/05/01 11:01:43 nyhm Exp $
+
+  01 May 2008; Tristan Heaven <nyhm@gentoo.org>
+  +files/picpuz-06-gcc43.patch, picpuz-06.ebuild:
+  Fix building with gcc-4.3
+
+*picpuz-06 (21 Feb 2007)
+
+  21 Feb 2007; Michael Sterrett <mr_bones_@gentoo.org> +metadata.xml,
+  +picpuz-06.ebuild:
+  initial commit - ebuild submitted by Wojciech Myrda via bug #158391
+

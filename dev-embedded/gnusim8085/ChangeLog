@@ -1,0 +1,55 @@
+# ChangeLog for dev-embedded/gnusim8085
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-embedded/gnusim8085/ChangeLog,v 1.15 2008/07/05 14:21:57 coldwind Exp $
+
+  05 Jul 2008; Santiago M. Mola <coldwind@gentoo.org>
+  gnusim8085-1.3.3.ebuild:
+  Added ~amd64 keyword, bug #230715.
+
+*gnusim8085-1.3.3 (17 Jun 2008)
+
+  17 Jun 2008; Denis Dupeyron <calchan@gentoo.org> +gnusim8085-1.3.3.ebuild:
+  Version bump, thanks to Matthias Schwarzott (bug #227733).
+
+  29 Feb 2008; Carsten Lohrke <carlo@gentoo.org> gnusim8085-1.2.90.ebuild,
+  gnusim8085-1.3.ebuild:
+  Remove icon extension from desktop entry to match Icon Theme Specification.
+
+  12 Oct 2007; Rémi Cardona <remi@gentoo.org> gnusim8085-1.3.ebuild:
+  update gtksourceview deps (see bug #195366)
+
+*gnusim8085-1.3 (29 Jul 2007)
+
+  29 Jul 2007; Denis Dupeyron <calchan@gentoo.org> +gnusim8085-1.3.ebuild:
+  Version bump (bug #184328).
+
+  21 Feb 2007; Denis Dupeyron <calchan@gentoo.org>
+  files/digest-gnusim8085-1.2.89, Manifest:
+  Transition to Manifest2.
+
+  20 Sep 2006; Denis Dupeyron <calchan@gentoo.org> gnusim8085-1.2.90.ebuild:
+  Fixed doc installation.
+
+*gnusim8085-1.2.90 (18 Sep 2006)
+
+  18 Sep 2006; Denis Dupeyron <calchan@gentoo.org>
+  +gnusim8085-1.2.90.ebuild:
+  Version bump and ebuild cleanup, closing bug #146684.
+
+  11 Feb 2006; Joshua Baergen <joshuabaergen@gentoo.org>
+  gnusim8085-1.2.89.ebuild:
+  Fix dependencies for modular X (bug #121544).
+
+  09 Oct 2005; Daniel Black <dragonheart@gentoo.org>
+  gnusim8085-1.2.89.ebuild:
+  fix dependancies and other qa fixes - bug #106550. Thanks TGL
+
+  24 Mar 2004; Daniel Black <dragonheart@gentoo.org> gnusim8085-1.2.89.ebuild:
+  Marked stable on x86
+
+*gnusim8085-1.2.89 (19 Feb 2004)
+
+  19 Feb 2004; Daniel Black <dragonheart@gentoo.org> :
+  Initial import. bug #34418 - thanks to J. Santiago Hirschfeld
+  <jsantiagoh@yahoo.com.ar>
+

@@ -1,0 +1,134 @@
+# ChangeLog for dev-perl/DBIx-DBSchema
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/DBIx-DBSchema/ChangeLog,v 1.32 2008/03/19 02:58:41 jer Exp $
+
+  19 Mar 2008; Jeroen Roovers <jer@gentoo.org> DBIx-DBSchema-0.33.ebuild:
+  Stable for HPPA too.
+
+  10 Nov 2007; Samuli Suominen <drac@gentoo.org> DBIx-DBSchema-0.33.ebuild:
+  amd64 stable
+
+  09 Aug 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  DBIx-DBSchema-0.33.ebuild:
+  Stable on sparc
+
+  09 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  DBIx-DBSchema-0.33.ebuild:
+  Stable on ppc.
+
+  28 Jul 2007; Raúl Porcel <armin76@gentoo.org> DBIx-DBSchema-0.33.ebuild:
+  alpha/ia64/x86 stable
+
+  06 Jul 2007; Raúl Porcel <armin76@gentoo.org> DBIx-DBSchema-0.32.ebuild:
+  alpha/ia64/x86 stable
+
+*DBIx-DBSchema-0.33 (29 Jun 2007)
+
+  29 Jun 2007; Michael Cummings <mcummings@gentoo.org>
+  +DBIx-DBSchema-0.33.ebuild:
+  Version bump
+
+  21 Jun 2007; Michael Cummings <mcummings@gentoo.org>
+  DBIx-DBSchema-0.32.ebuild:
+  Marking sparc stable
+
+  15 Jun 2007; Michael Cummings <mcummings@gentoo.org>
+  DBIx-DBSchema-0.32.ebuild:
+  Marking amd64 stable
+
+*DBIx-DBSchema-0.32 (22 Apr 2007)
+
+  22 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  +DBIx-DBSchema-0.32.ebuild:
+  Version bump
+
+  05 Mar 2007; Andrej Kacian <ticho@gentoo.org> DBIx-DBSchema-0.31.ebuild:
+  Stable on x86, bug #169152.
+
+  15 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  -DBIx-DBSchema-0.27.ebuild, DBIx-DBSchema-0.28.ebuild,
+  DBIx-DBSchema-0.31.ebuild:
+  Ebuild maintenance
+
+  23 Oct 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  DBIx-DBSchema-0.31.ebuild:
+  Stable on hppa
+
+  20 Oct 2006; Bryan Østergaard <kloeri@gentoo.org>
+  DBIx-DBSchema-0.31.ebuild:
+  Stable on Alpha.
+
+  17 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  DBIx-DBSchema-0.31.ebuild:
+  Marking amd64 stable
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  DBIx-DBSchema-0.27.ebuild, DBIx-DBSchema-0.28.ebuild,
+  DBIx-DBSchema-0.31.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  16 Jul 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  DBIx-DBSchema-0.31.ebuild:
+  ppc stable
+
+  10 Jul 2006; Aron Griffis <agriffis@gentoo.org> DBIx-DBSchema-0.31.ebuild:
+  Mark 0.31 stable on ia64
+
+  04 Jul 2006; Christian Hartmann <ian@gentoo.org>
+  DBIx-DBSchema-0.27.ebuild, DBIx-DBSchema-0.28.ebuild,
+  DBIx-DBSchema-0.31.ebuild:
+  Fixed RDEPEND wrt bug #134781
+
+  12 Jun 2006; Michael Cummings <mcummings@gentoo.org>
+  DBIx-DBSchema-0.31.ebuild:
+  Marking stable sparc
+
+  20 May 2006; Thomas Cort <tcort@gentoo.org> DBIx-DBSchema-0.28.ebuild:
+  Stable on alpha and amd64.
+
+*DBIx-DBSchema-0.31 (25 Apr 2006)
+
+  25 Apr 2006; <mcummings@gentoo.org> +DBIx-DBSchema-0.31.ebuild:
+  Version bump
+
+  21 Apr 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  DBIx-DBSchema-0.28.ebuild:
+  Stable on hppa
+
+  20 Apr 2006; Thomas Cort <tcort@gentoo.org> DBIx-DBSchema-0.28.ebuild:
+  Added ~alpha keyword wrt Bug #112414.
+
+  20 Apr 2006; Thomas Cort <tcort@gentoo.org> DBIx-DBSchema-0.28.ebuild:
+  Added ~amd64 keyword wrt Bug #112414.
+
+  26 Mar 2006; Michael Cummings <mcummings@gentoo.org>
+  DBIx-DBSchema-0.28.ebuild:
+  60+ days, marking stable for sparc and x86
+
+  13 Mar 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  DBIx-DBSchema-0.27.ebuild, DBIx-DBSchema-0.28.ebuild:
+  Keyworded ~hppa wrt #112414
+
+  10 Mar 2006; Aron Griffis <agriffis@gentoo.org> DBIx-DBSchema-0.28.ebuild:
+  Mark 0.28 ~ia64. #112414
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  DBIx-DBSchema-0.27.ebuild:
+  marking stable sparc x86
+
+  13 Jan 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  DBIx-DBSchema-0.28.ebuild:
+  Added to ~ppc, bug #112414
+
+*DBIx-DBSchema-0.28 (13 Jan 2006)
+
+  13 Jan 2006; Michael Cummings <mcummings@gentoo.org>
+  +DBIx-DBSchema-0.28.ebuild:
+  Version bump upstream
+
+*DBIx-DBSchema-0.27 (13 Nov 2005)
+
+  13 Nov 2005; Michael Cummings <mcummings@gentoo.org> +metadata.xml,
+  +DBIx-DBSchema-0.27.ebuild:
+  New dep for DBIx-SearchBuilder
+

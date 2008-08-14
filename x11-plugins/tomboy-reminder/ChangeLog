@@ -1,0 +1,28 @@
+# ChangeLog for x11-plugins/tomboy-reminder
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-plugins/tomboy-reminder/ChangeLog,v 1.5 2007/04/26 02:36:45 compnerd Exp $
+
+  26 Apr 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +files/tomboy-reminder-0.9-unicode-regex.patch,
+  tomboy-reminder-0.9.ebuild:
+  Add a patch to drop the a accent grave for now to allow usage and keyword
+  ~amd64
+
+  28 Dec 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  tomboy-reminder-0.9.ebuild:
+  Fix depends (bug #157802)
+
+  21 Dec 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  +files/tomboy-reminder-0.9-mcs-to-gmcs.patch, tomboy-reminder-0.9.ebuild:
+  add patch to build using gmcs as it uses generics
+
+  07 Dec 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  tomboy-reminder-0.9.ebuild:
+  Fix tomboy dependency
+
+*tomboy-reminder-0.9 (07 Dec 2006)
+
+  07 Dec 2006; Saleem Abdulrasool <compnerd@gentoo.org> +metadata.xml,
+  +tomboy-reminder-0.9.ebuild:
+  Initial import, ebuild by Saleem Abdulrasool <compnerd@compnerd.org>
+

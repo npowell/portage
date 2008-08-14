@@ -1,0 +1,31 @@
+# ChangeLog for net-analyzer/argus-clients
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/argus-clients/ChangeLog,v 1.6 2007/03/31 15:58:35 vanquirius Exp $
+
+  31 Mar 2007; Marcelo Goes <vanquirius@gentoo.org>
+  -argus-clients-2.0.6.ebuild, argus-clients-2.0.6-r1.ebuild:
+  Remove old ebuild, add net-analyzer/rrdtool as a runtime dependency, as it
+  is needed by ragraph.
+
+*argus-clients-2.0.6-r1 (15 Feb 2007)
+
+  15 Feb 2007; Markus Ullmann <jokey@gentoo.org>
+  +files/argus-clients-2.0.6-netmask.patch, +argus-clients-2.0.6-r1.ebuild:
+  Add patch from bug #143290 thanks to Joshua Schmidkofer
+
+  15 Feb 2006; Markus Ullmann <jokey@gentoo.org> argus-clients-2.0.6.ebuild:
+  Removing virtual/libpcap wrt bug #117898
+
+  30 Jan 2006; Simon Stelling <blubb@gentoo.org> argus-clients-2.0.6.ebuild:
+  added ~amd64 keyword
+
+  14 Jan 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  argus-clients-2.0.6.ebuild:
+  added to ~ppc, bug #112157
+
+*argus-clients-2.0.6 (08 Jan 2006)
+
+  08 Jan 2006; Marcelo Goes <vanquirius@gentoo.org> +metadata.xml,
+  +argus-clients-2.0.6.ebuild:
+  Initial commit. Fixes bug 112157. Thanks to aqu <aqu3l at go2 dot pl>.
+

@@ -1,0 +1,50 @@
+# ChangeLog for x11-misc/xdiskusage
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/xdiskusage/ChangeLog,v 1.15 2007/08/02 13:26:20 uberlord Exp $
+
+  02 Aug 2007; Roy Marples <uberlord@gentoo.org> xdiskusage-1.48.ebuild:
+  Keyworded ~x86-fbsd, #156902 thanks to Marc Kowarsky.
+
+  03 Feb 2007; David Shakaryan <omp@gentoo.org> xdiskusage-1.48.ebuild:
+  Remove virtual/glut from dependencies. (bug #45141)
+
+  21 Sep 2006; Krzysiek Pawlik <nelchael@gentoo.org>
+  +files/xdiskusage-1.48-amd64.patch, xdiskusage-1.48.ebuild:
+  Fix bug #135633.
+
+  21 Jan 2006; Krzysiek Pawlik <nelchael@gentoo.org>
+  -xdiskusage-1.46.ebuild, xdiskusage-1.48.ebuild:
+  Fixed DEPEND for modular X.
+
+  16 Nov 2005; Krzysiek Pawlik <nelchael@gentoo.org> xdiskusage-1.48.ebuild:
+  Stable on x86.
+
+  12 Sep 2005; Krzysiek Pawlik <nelchael@gentoo.org> xdiskusage-1.46.ebuild,
+  xdiskusage-1.48.ebuild:
+  Fixed DEPEND, bug #104319.
+
+*xdiskusage-1.48 (15 Jun 2005)
+
+  15 Jun 2005; Markus Nigbur <pyrania@gentoo.org> +xdiskusage-1.48.ebuild:
+  Version bump.
+
+  28 Apr 2005; Stephanie Lockwood-Childs <wormo@gentoo.org>
+  xdiskusage-1.46.ebuild:
+  mark ~ppc
+
+  01 Jun 2004; Brandon Hale <tseng@gentoo.org> xdiskusage-1.46.ebuild:
+  Add IUSE=
+
+  21 Mar 2004; Markus Nigbur <pyrania@gentoo.org> xdiskusage-1.46.ebuild:
+  Added glut DEPEND, fixing bug #45141.
+
+  26 Jan 2004; Markus Nigbur <pyrania@gentoo.org> metadata.xml,
+  xdiskusage-1.46.ebuild:
+  Marked stable on x86, added metadata.xml.
+
+*xdiskusage-1.46 (30 Oct 2003)
+
+  30 Oct 2003; Brandy Westcott brandy@gentoo.org xdiskusage-1.46.ebuild:
+  Initial import. ebuild submitted by Eloi Granado <eloi.granado@millorsoft.es>.
+  Closes bug #31863
+

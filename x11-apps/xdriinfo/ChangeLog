@@ -1,0 +1,125 @@
+# ChangeLog for x11-apps/xdriinfo
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-apps/xdriinfo/ChangeLog,v 1.28 2008/02/05 11:33:20 corsair Exp $
+
+  05 Feb 2008; Markus Rothe <corsair@gentoo.org> xdriinfo-1.0.2.ebuild:
+  Stable on ppc64
+
+  27 Jan 2008; Raúl Porcel <armin76@gentoo.org> xdriinfo-1.0.2.ebuild:
+  alpha/ia64/sparc stable
+
+  21 Jan 2008; Samuli Suominen <drac@gentoo.org> xdriinfo-1.0.2.ebuild:
+  amd64 stable.
+
+  19 Dec 2007; Dawid Węgliński <cla@gentoo.org> xdriinfo-1.0.2.ebuild:
+  Stable on x86 (bug #202087)
+
+*xdriinfo-1.0.2 (08 Sep 2007)
+
+  08 Sep 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  +xdriinfo-1.0.2.ebuild:
+  Bump for 7.3.
+
+  04 Feb 2007; Joshua Baergen <joshuabaergen@gentoo.org>
+  xdriinfo-1.0.1.ebuild:
+  Drop mirroring restriction.  Thanks to Zhang Le of bug #163088.
+
+  10 Oct 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  xdriinfo-1.0.1.ebuild:
+  Update description to be less generic.
+
+  16 Jul 2006; Joshua Baergen <joshuabaergen@gentoo.org>
+  xdriinfo-1.0.1.ebuild:
+  Switch to the xorg-x11 OpenGL header implementation for the compile.  (Bug
+  #138920, reported by Alexander)
+
+  11 Jul 2006; Aron Griffis <agriffis@gentoo.org> xdriinfo-1.0.1.ebuild:
+  Mark 1.0.1 stable on ia64
+
+  06 Jul 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  xdriinfo-1.0.1.ebuild:
+  (#138920) Add missing virtual/opengl dep (Ernestas Liubarskij).
+
+  02 Jul 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  xdriinfo-1.0.1.ebuild:
+  Unkeyword for arm hppa mips sh, as they don't support direct rendering.
+
+  01 Jul 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  xdriinfo-1.0.1.ebuild:
+  More keyword fixing.
+
+  01 Jul 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  xdriinfo-1.0.1.ebuild:
+  alpha/amd64/arm/mips/ppc/ppc64/sh/sparc/x86 stable.
+
+  12 Apr 2006; Daniel Gryniewicz <dang@gentoo.org> xdriinfo-1.0.1.ebuild:
+  Mark ~amd64
+
+  08 Apr 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  -files/nvidia-glx-fix.patch, -xdriinfo-1.0.0-r1.ebuild:
+  Pull old ebuild.
+
+*xdriinfo-1.0.1 (04 Apr 2006)
+
+  04 Apr 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  +xdriinfo-1.0.1.ebuild:
+  Minor correctness and build fixes.
+
+  24 Mar 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  xdriinfo-1.0.0-r1.ebuild:
+  (#127306) Digests changed between release candidates and final release for
+  the same tarballs.
+
+  19 Mar 2006; <nixnut@gentoo.org> xdriinfo-1.0.0-r1.ebuild:
+  Added ~ppc. Bug #126815
+
+  14 Feb 2006; Markus Rothe <corsair@gentoo.org> xdriinfo-1.0.0-r1.ebuild:
+  Added ~ppc64
+
+*xdriinfo-1.0.0-r1 (13 Feb 2006)
+
+  13 Feb 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  +files/nvidia-glx-fix.patch, -xdriinfo-1.0.0.ebuild,
+  +xdriinfo-1.0.0-r1.ebuild:
+  (#122476) Add patch from upstream CVS to fix with Nvidia's OpenGL
+  implementation.
+
+  26 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  -xdriinfo-0.99.2.ebuild:
+  Pull old versions.
+
+*xdriinfo-1.0.0 (18 Dec 2005)
+
+  18 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +xdriinfo-1.0.0.ebuild:
+  Bump for 7.0RC4.
+
+  09 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  -xdriinfo-0.99.1.ebuild:
+  Pull old versions.
+
+*xdriinfo-0.99.2 (04 Dec 2005)
+
+  04 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +xdriinfo-0.99.2.ebuild:
+  Bump for 7.0RC3.
+
+  31 Oct 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  -xdriinfo-0.99.0_pre20050908.ebuild:
+  Pull old versions.
+
+*xdriinfo-0.99.1 (20 Oct 2005)
+
+  20 Oct 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +xdriinfo-0.99.1.ebuild:
+  Bump for 7.0 RC1.
+
+  09 Sep 2005; Donnie Berkholz <spyderous@gentoo.org>; +metadata.xml:
+  Add metadata.
+
+*xdriinfo-0.99.0_pre20050908 (09 Sep 2005)
+
+  09 Sep 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +xdriinfo-0.99.0_pre20050908.ebuild:
+  Initial snapshot for modular x.
+

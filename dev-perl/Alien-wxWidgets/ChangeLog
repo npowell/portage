@@ -1,0 +1,54 @@
+# ChangeLog for dev-perl/Alien-wxWidgets
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Alien-wxWidgets/ChangeLog,v 1.10 2008/04/28 23:21:08 yuval Exp $
+
+*Alien-wxWidgets-0.34 (28 Apr 2008)
+
+  28 Apr 2008; Yuval Yaari <yuval@gentoo.org> +Alien-wxWidgets-0.34.ebuild:
+  Version bump
+
+  22 Apr 2007; Ryan Hill <dirtyepic@gentoo.org>
+  Alien-wxWidgets-0.20-r1.ebuild, Alien-wxWidgets-0.21.ebuild,
+  Alien-wxWidgets-0.30.ebuild:
+  Fix wxwidgets handling for bug #151417.
+
+*Alien-wxWidgets-0.30 (19 Mar 2007)
+
+  19 Mar 2007; <yuval@gentoo.org> +Alien-wxWidgets-0.30.ebuild:
+  Version bump
+
+  15 Oct 2006; Aron Griffis <agriffis@gentoo.org>
+  Alien-wxWidgets-0.21.ebuild:
+  Mark 0.21 ~ia64. #144122
+
+  08 Oct 2006; Michael Cummings <mcummings@gentoo.org>
+  Alien-wxWidgets-0.21.ebuild:
+  Marking amd64 stable
+
+  07 Sep 2006; Michael Cummings <mcummings@gentoo.org>
+  -Alien-wxWidgets-0.19.ebuild, -Alien-wxWidgets-0.20.ebuild:
+  Cleaning up old ebuilds
+
+*Alien-wxWidgets-0.21 (04 Sep 2006)
+
+  04 Sep 2006; Yuval Yaari <yuval@gentoo.org> +Alien-wxWidgets-0.21.ebuild:
+  Version bump
+
+*Alien-wxWidgets-0.20-r1 (20 Aug 2006)
+
+  20 Aug 2006; Yuval Yaari <yuval@gentoo.org>
+  +Alien-wxWidgets-0.20-r1.ebuild:
+  Revision bump: making sure wxGTK's SLOTs don't make problems (reported by
+  Patterner over IRC)
+
+*Alien-wxWidgets-0.20 (20 Aug 2006)
+
+  20 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  +Alien-wxWidgets-0.20.ebuild:
+  Version bump
+
+*Alien-wxWidgets-0.19 (16 Aug 2006)
+
+  16 Aug 2006; <yuval@gentoo.org> +Alien-wxWidgets-0.19.ebuild:
+  Adding dev-perl/Alien-wxWidgets to the tree
+

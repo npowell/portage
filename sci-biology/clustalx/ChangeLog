@@ -1,0 +1,71 @@
+# ChangeLog for sci-biology/clustalx
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-biology/clustalx/ChangeLog,v 1.13 2008/06/27 10:19:52 ulm Exp $
+
+  27 Jun 2008; Ulrich Mueller <ulm@gentoo.org> clustalx-1.83-r2.ebuild:
+  Change dependency from virtual/motif to x11-libs/openmotif, bug 224749.
+
+  24 Oct 2006; Jeff Gardner <je_fro@gentoo.org> clustalx-1.83-r2.ebuild:
+  Keywording ~sparc
+
+  01 Feb 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  clustalx-1.83-r2.ebuild:
+  Fix deps for modular X.
+
+  21 Jan 2006; Olivier Fisette <ribosome@gentoo.org>
+  -clustalx-1.83-r1.ebuild:
+  Removed obsolete version.
+
+  23 Dec 2005; Simon Stelling <blubb@gentoo.org> clustalx-1.83-r2.ebuild:
+  stable on amd64
+
+  15 Dec 2005; Joshua Jackson <tsunam@gentoo.org> clustalx-1.83-r2.ebuild:
+  Stable on x86 for bug #115442
+
+*clustalx-1.83-r2 (13 Nov 2005)
+
+  13 Nov 2005; Olivier Fisette <ribosome@gentoo.org>
+  +clustalx-1.83-r2.ebuild:
+  Added check for X support in the NCBI toolkit, as suggested by Brady
+  Catherman <bradyc@uidaho.edu> (fixes bug #112336).
+
+  02 Jun 2005; Olivier Fisette <ribosome@gentoo.org>
+  clustalx-1.83-r1.ebuild:
+  Use "virtual/motif" instead of "x11-libs/openmotif".
+
+*clustalx-1.83-r1 (16 Feb 2005)
+
+  16 Feb 2005; Olivier Fisette <ribosome@gentoo.org>
+  +clustalx-1.83-r1.ebuild, -clustalx-1.83.ebuild:
+  Fixes bug #82211: ClustalX is incompatible with OpenMotif 2.2.
+
+  30 Jan 2005; Olivier Fisette <ribosome@gentoo.org> clustalx-1.83.ebuild:
+  Ebuild cleanup.
+
+  18 Jan 2005; Olivier Fisette <ribosome@gentoo.org> clustalx-1.83.ebuild:
+  Added to x86.
+
+*clustalx-1.83 (23 Dec 2004)
+
+  23 Dec 2004; Olivier Fisette <ribosome@gentoo.org> +metadata.xml,
+  +clustalx-1.83.ebuild:
+  Moved from app-sci/clustalx to sci-biology/clustalx.
+
+  22 Nov 2004; Karol Wojtaszek <sekretarz@gentoo.org> clustalx-1.83.ebuild:
+  Added to ~amd64, bug #72084
+
+  18 Nov 2004; Michael Sterrett <mr_bones_@gentoo.org> clustalx-1.83.ebuild:
+  needs stable app-sci/ncbi-tools first
+
+  17 Nov 2004; Olivier Fisette <ribosome@gentoo.org> clustalx-1.83.ebuild:
+  Added to x86. Use toolchain-funcs rather than the gcc eclass.
+
+  14 Oct 2004; Olivier Fisette <ribosome@gentoo.org> clustalx-1.83.ebuild:
+  Use gcc.eclass rather than ${CC}.
+
+*clustalx-1.83 (06 Oct 2004)
+
+  06 Oct 2004; Olivier Fisette <ribosome@gentoo.org> +metadata.xml,
+  +clustalx-1.83.ebuild:
+  Initial import.
+

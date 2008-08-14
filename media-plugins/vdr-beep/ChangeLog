@@ -1,0 +1,19 @@
+# ChangeLog for media-plugins/vdr-beep
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-beep/ChangeLog,v 1.3 2008/03/27 21:23:32 hd_brummy Exp $
+
+*vdr-beep-0.1.0 (27 Mar 2008)
+
+  27 Mar 2008; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-beep-0.0.6.ebuild, +vdr-beep-0.1.0.ebuild:
+  keyword ~amd64; beep-0.0.6 stable on x86 ; version bump
+
+  15 Aug 2006; Matthias Schwarzott <zzam@gentoo.org> metadata.xml:
+  Assigned to Gentoo VDR Project.
+
+*vdr-beep-0.0.6 (10 May 2006)
+
+  10 May 2006; Matthias Schwarzott <zzam@gentoo.org> +metadata.xml,
+  +vdr-beep-0.0.6.ebuild:
+  Initial import of ebuild written by me.
+

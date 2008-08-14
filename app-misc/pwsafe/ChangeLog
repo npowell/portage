@@ -1,0 +1,21 @@
+# ChangeLog for app-misc/pwsafe
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/pwsafe/ChangeLog,v 1.5 2008/01/25 02:23:35 hawking Exp $
+
+  25 Jan 2008; Ali Polatel <hawking@gentoo.org> metadata.xml:
+  Added myself as maintainer. Added long description
+
+  25 Dec 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing taviso from metadata.xml as per #202471. Assigning to
+  maintainer-needed.
+
+  01 Sep 2007; Wulf C. Krueger <philantrop@gentoo.org> pwsafe-0.2.0.ebuild:
+  Added ~amd64 keyword as per bug 102677.
+
+  22 Jul 2007; David Shakaryan <omp@gentoo.org> pwsafe-0.2.0.ebuild:
+  Remove virtual/x11 from dependencies.
+
+  08 Jul 2007; Tavis Ormandy <taviso@gentoo.org> ChangeLog:
+  initial import, commandline password manager that can read password safe
+  databases.
+

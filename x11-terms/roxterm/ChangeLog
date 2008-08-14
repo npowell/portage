@@ -1,0 +1,132 @@
+# ChangeLog for x11-terms/roxterm
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-terms/roxterm/ChangeLog,v 1.29 2008/05/13 05:42:12 compnerd Exp $
+
+  13 May 2008; Saleem Abdulrasool <compnerd@gentoo.org>
+  -roxterm-1.7.4.ebuild:
+  prune unused version
+
+*roxterm-1.11.1 (13 May 2008)
+
+  13 May 2008; Saleem Abdulrasool <compnerd@gentoo.org>
+  +roxterm-1.11.1.ebuild:
+  Version bump from upstream (fixes bug #216018)
+
+  26 Feb 2008; Santiago M. Mola <coldwind@gentoo.org> roxterm-1.9.1.ebuild:
+  amd64 stable wrt bug #210354
+
+*roxterm-1.10.1 (24 Feb 2008)
+
+  24 Feb 2008; Saleem Abdulrasool <compnerd@gentoo.org>
+  -roxterm-1.10.0.ebuild, +roxterm-1.10.1.ebuild:
+  Version bump from upstream
+
+  23 Feb 2008; Brent Baude <ranger@gentoo.org> roxterm-1.9.1.ebuild:
+  stable ppc, bug 210354
+
+  22 Feb 2008; Christian Faulhammer <opfer@gentoo.org> roxterm-1.9.1.ebuild:
+  stable x86, bug 210354
+
+  22 Feb 2008; Saleem Abdulrasool <compnerd@gentoo.org>
+  -roxterm-1.8.1.ebuild:
+  prune unused version
+
+*roxterm-1.10.0 (22 Feb 2008)
+
+  22 Feb 2008; Saleem Abdulrasool <compnerd@gentoo.org>
+  +roxterm-1.10.0.ebuild:
+  Version bump from upstream (bug #207754)
+
+*roxterm-1.9.1 (06 Jan 2008)
+
+  06 Jan 2008; Saleem Abdulrasool <compnerd@gentoo.org>
+  +roxterm-1.9.1.ebuild:
+  Version bump from upstream (bug #204267)
+
+  05 Jan 2008; Samuli Suominen <drac@gentoo.org> roxterm-1.7.4.ebuild:
+  amd64 stable wrt #203179
+
+  24 Dec 2007; nixnut <nixnut@gentoo.org> roxterm-1.7.4.ebuild:
+  Stable on ppc wrt bug 203179
+
+  23 Dec 2007; Dawid Węgliński <cla@gentoo.org> roxterm-1.7.4.ebuild:
+  Stable on x86 (bug #203179)
+
+*roxterm-1.8.1 (23 Dec 2007)
+
+  23 Dec 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +roxterm-1.8.1.ebuild:
+  Version bump from upstream
+
+  23 Dec 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  -roxterm-1.4.1.ebuild, -roxterm-1.5.1.ebuild, -roxterm-1.5.2.ebuild:
+  prune unused versions
+
+*roxterm-1.7.4 (22 Sep 2007)
+
+  22 Sep 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +roxterm-1.7.4.ebuild:
+  Version bump from upstream
+
+  02 Aug 2007; Michael Sterrett <mr_bones_@gentoo.org> roxterm-1.4.1.ebuild,
+  roxterm-1.5.1.ebuild, roxterm-1.5.2.ebuild:
+  correct dbus deps (bug #187369)
+
+  03 Jul 2007; Michael Sterrett <mr_bones_@gentoo.org> roxterm-1.4.1.ebuild,
+  roxterm-1.5.1.ebuild, roxterm-1.5.2.ebuild:
+  remove reference to old, removed dbus (bug #183696)
+
+*roxterm-1.5.2 (28 May 2007)
+
+  28 May 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +roxterm-1.5.2.ebuild:
+  Version bump from upstream with some fixes for geometry
+
+  15 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+  24 Mar 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  -roxterm-1.2.3.ebuild, -roxterm-1.3.1.ebuild,
+  -files/roxterm-1.2.3-dbus_close.patch,
+  -files/roxterm-1.2.3-new-button.patch,
+  -files/roxterm-1.3.1-bgimage-entry.patch:
+  prune older files
+
+  24 Mar 2007; Saleem Abdulrasool <compnerd@gentoo.org> +roxterm-1.5.1.ebuild:
+  Version bump from upstream
+
+*roxterm-1.4.1 (13 Feb 2007)
+
+  13 Feb 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +roxterm-1.4.1.ebuild:
+  Version bump from upstream
+
+  07 Feb 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  files/roxterm-1.3.1-bgimage-entry.patch:
+  Change patch to make roxterm build for others too
+
+*roxterm-1.3.1 (28 Jan 2007)
+
+  28 Jan 2007; Saleem Abdulrasool <compnerd@gentoo.org>
+  +files/roxterm-1.3.1-bgimage-entry.patch, +roxterm-1.3.1.ebuild:
+  Version bump from upstream
+
+  23 Dec 2006; <nixnut@gentoo.org> roxterm-1.2.3.ebuild:
+  Added ~ppc wrt bug 158042
+
+  17 Nov 2006; Saleem Abdulrasool <compnerd@gentoo.org> roxterm-1.2.3.ebuild:
+  Fix deps for dbus 1.0
+
+  17 Sep 2006; Jason Huebel <jhuebel@gentoo.org> roxterm-1.2.3.ebuild:
+  ~amd64, bug #147954
+
+  04 Sep 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  +files/roxterm-1.2.3-dbus_close.patch, roxterm-1.2.3.ebuild:
+  add patch to drop deprecated calls in dbus
+
+*roxterm-1.2.3 (29 Jul 2006)
+
+  29 Jul 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  +files/roxterm-1.2.3-new-button.patch, +roxterm-1.2.3.ebuild:
+  Initial import
+

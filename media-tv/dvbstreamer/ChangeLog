@@ -1,0 +1,35 @@
+# ChangeLog for media-tv/dvbstreamer
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-tv/dvbstreamer/ChangeLog,v 1.6 2008/02/01 19:42:02 zzam Exp $
+
+*dvbstreamer-0.9 (01 Feb 2008)
+
+  01 Feb 2008; Matthias Schwarzott <zzam@gentoo.org>
+  +dvbstreamer-0.9.ebuild:
+  Version bumped due to Bug 206107. This should fix many issues.
+
+  27 Nov 2007; Matthias Schwarzott <zzam@gentoo.org> dvbstreamer-0.6.ebuild,
+  dvbstreamer-0.8.ebuild:
+  Fixed quoting.
+
+*dvbstreamer-0.8 (19 Nov 2007)
+
+  19 Nov 2007; Matthias Schwarzott <zzam@gentoo.org> dvbstreamer-0.6.ebuild,
+  +dvbstreamer-0.8.ebuild:
+  Fixed die-calls. Changed libdvbpsi depend. Version bumped. Fixes both issues
+  of Bug #199628.
+
+  24 Jul 2007; Steve Dibb <beandog@gentoo.org> dvbstreamer-0.6.ebuild:
+  add ~amd64, bug 179405
+
+  23 Mar 2007; Matthias Schwarzott <zzam@gentoo.org> dvbstreamer-0.6.ebuild:
+  Strike out not needed linking against libtermcap, thanks to Mike Auty
+  <ikelos@gentoo.org>, Bug #171332.
+
+*dvbstreamer-0.6 (17 Mar 2007)
+
+  17 Mar 2007; Matthias Schwarzott <zzam@gentoo.org> +metadata.xml,
+  +dvbstreamer-0.6.ebuild:
+  Initial import of ebuild, suggested by Roman Polach <rpolach@atlas.cz>, Bug
+  #156763.
+

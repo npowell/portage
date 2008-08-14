@@ -1,0 +1,637 @@
+# ChangeLog for net-wireless/wpa_supplicant
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-wireless/wpa_supplicant/ChangeLog,v 1.107 2008/08/11 11:52:50 armin76 Exp $
+
+  11 Aug 2008; Raúl Porcel <armin76@gentoo.org>
+  wpa_supplicant-0.5.10.ebuild, wpa_supplicant-0.6.3.ebuild:
+  Add qt split deps, bug #217178, patch by Jorge Manuel B. S. Vicetto
+  <jmbsvicetto at gentoo dot org>
+
+  03 Jun 2008; Michael Sterrett <mr_bones_@gentoo.org>
+  wpa_supplicant-0.5.7.ebuild, wpa_supplicant-0.5.8.ebuild,
+  wpa_supplicant-0.5.10.ebuild, wpa_supplicant-0.6.1.ebuild,
+  wpa_supplicant-0.6.3.ebuild:
+  remove reference to old, removed net-wireless/madwifi-ng versions
+
+*wpa_supplicant-0.6.3 (10 Mar 2008)
+
+  10 Mar 2008; Luca Barbato <lu_zero@gentoo.org>
+  +files/wpa_supplicant-0.6.3-ps3_support.patch,
+  +wpa_supplicant-0.6.3.ebuild:
+  New revision, with ps3 support
+
+  09 Mar 2008; Ryan Hill <dirtyepic@gentoo.org>
+  +files/wpa_supplicant-0.5.10-gcc-4.3.patch, wpa_supplicant-0.5.10.ebuild:
+  Add patch for GCC-4.3, bug #203937.
+
+*wpa_supplicant-0.5.10 (09 Mar 2008)
+
+  09 Mar 2008; Steev Klimaszewski <steev@gentoo.org>
+  +wpa_supplicant-0.5.10.ebuild:
+  New 0.5.10 release. Install the system service file when using the dbus
+  useflag.
+
+*wpa_supplicant-0.6.1 (08 Jan 2008)
+
+  08 Jan 2008; Robert Buchholz <rbu@gentoo.org>
+  -wpa_supplicant-0.6.0.ebuild, +wpa_supplicant-0.6.1.ebuild:
+  Version bump by security for remote DoS vulnerability (CVE-2007-6025) in
+  0.6.0 (bug #199828)
+
+  25 Dec 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing uberlord from metadata.xml as per #199318.
+
+  25 Sep 2007; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.5.7.ebuild, wpa_supplicant-0.5.8.ebuild,
+  wpa_supplicant-0.6.0.ebuild:
+  wpa_supplicant requires libs from /usr so it's moving back. Symlinks are in
+  place so that baselayout still works.
+
+  11 Sep 2007; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.5.8.ebuild, wpa_supplicant-0.6.0.ebuild:
+  Default to GNUTLS if both gnutls and ssl are specified.
+
+  01 Jul 2007; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.5.7.ebuild, wpa_supplicant-0.5.8.ebuild,
+  wpa_supplicant-0.6.0.ebuild:
+  Stop inerhiting qt3 otherwise we break qt4 due to pathing on qmake, #183654.
+
+*wpa_supplicant-0.5.8 (29 Jun 2007)
+
+  29 Jun 2007; Roy Marples <uberlord@gentoo.org>
+  +wpa_supplicant-0.5.8.ebuild:
+  Bump.
+
+  29 Jun 2007; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.5.7.ebuild, wpa_supplicant-0.6.0.ebuild:
+  Don't hardcode path to qmake, #182867 thanks to Thomas Capricelli.
+
+  19 Jun 2007; Stefan Schweizer <genstef@gentoo.org>
+  wpa_supplicant-0.5.7.ebuild, wpa_supplicant-0.6.0.ebuild:
+  New madwifi-ng-tools depends thanks to Gordon Malm
+  <bugs-gentoo-org-01@bumpin.org> in bug 179348
+
+*wpa_supplicant-0.6.0 (30 May 2007)
+
+  30 May 2007; Roy Marples <uberlord@gentoo.org>
+  +wpa_supplicant-0.6.0.ebuild:
+  Add new development version.
+
+  23 Feb 2007; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.5.7.ebuild:
+  Stop using $ROOT in src_* functions, #168039
+
+  13 Feb 2007; Chris Gianelloni <wolf31o2@gentoo.org>
+  wpa_supplicant-0.5.7.ebuild:
+  Stable on ppc/x86 wrt bug #165459.
+
+  12 Feb 2007; Simon Stelling <blubb@gentoo.org>
+  wpa_supplicant-0.5.7.ebuild:
+  stable on amd64; bug 165459
+
+  23 Jan 2007; Roy Marples <uberlord@gentoo.org>
+  +files/wpa_supplicant-0.5.7-gnutls.patch, wpa_supplicant-0.5.7.ebuild:
+  Add support for gnutls and internal tls, #163390 thanks to
+  Nikolas 'Atrus' Coukouma.
+
+*wpa_supplicant-0.5.7 (15 Jan 2007)
+
+  15 Jan 2007; Roy Marples <uberlord@gentoo.org>
+  +wpa_supplicant-0.5.7.ebuild:
+  Version bump, #162172 thanks to Brandon Low.
+  Add dbus config file, #161590 thanks to Stian Skjelstad.
+
+  13 Dec 2006; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.5.6.ebuild:
+  Only qt-4.2.2 supports qt3support, #155548 thanks to Jakub Moc.
+
+  11 Dec 2006; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.5.6.ebuild:
+  qt4 requires qt3support, #155548 thanks to Caleb.
+
+  02 Dec 2006; Tony Vroon <chainsaw@gentoo.org> wpa_supplicant-0.5.6.ebuild:
+  Add ~ppc64 keyword. Tested on 64ul with GCC 4, BCM4306 hardware.
+
+*wpa_supplicant-0.5.6 (25 Nov 2006)
+
+  25 Nov 2006; Roy Marples <uberlord@gentoo.org>
+  +files/wpa_supplicant-0.5.6-sigpoll.patch, +wpa_supplicant-0.5.6.ebuild:
+  New upstream release.
+
+  12 Nov 2006; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.5.5.ebuild:
+  Add a warning about the default configuration file changing location, #154862
+  thanks to Mike Auty.
+
+  10 Nov 2006; Roy Marples <uberlord@gentoo.org>
+  +files/wpa_supplicant-0.5.5-inuse-warning.patch,
+  wpa_supplicant-0.5.5.ebuild:
+  Added a patch to display the 'PF_UNIX: Address in use' only when an error
+  occurs that we cannot resolve.
+
+  07 Nov 2006; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.5.5.ebuild:
+  DBus now supports FreeBSD :)
+
+  01 Nov 2006; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.5.5.ebuild:
+  It appears hermes and broadcom drivers fail to build, #153732.
+
+  01 Nov 2006; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.5.5.ebuild:
+  Add support for BROADCOM and HERMES drivers.
+
+  02 Oct 2006; Roy Marples <uberlord@gentoo.org> +files/wpa_supplicant.conf,
+  wpa_supplicant-0.5.5.ebuild:
+  Install a default configuration file which connects to any unsecured AP.
+
+  30 Sep 2006; Roy Marples <uberlord@gentoo.org>
+  +files/wpa_supplicant-0.5.5-default_driver.patch,
+  wpa_supplicant-0.5.5.ebuild:
+  Add a patch to make the wext driver the default instead of hostap.
+  wext works with hostap so this should not break anything.
+
+  29 Sep 2006; Roy Marples <uberlord@gentoo.org>
+  +files/wpa_supplicant-0.5.5-sigpoll.patch, wpa_supplicant-0.5.5.ebuild:
+  Add a patch to enable dbus interface to compile on FreeBSD - you'll still need
+  the dbus-core from the overlay though AND tweak the ebuild slightly.
+  Keyworded ~xf86-fbsd.
+
+  23 Sep 2006; Joseph Jezak <josejx@gentoo.org> wpa_supplicant-0.5.4.ebuild:
+  Marked ppc stable for bug #144997.
+
+  22 Sep 2006; <blubb@gentoo.org> wpa_supplicant-0.5.4.ebuild:
+  stable on amd64
+
+  21 Sep 2006; <ticho@gentoo.org> wpa_supplicant-0.5.4.ebuild:
+  Stable on x86, bug #144997.
+
+  06 Sep 2006; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.4.9.ebuild, wpa_supplicant-0.5.4.ebuild,
+  wpa_supplicant-0.5.5.ebuild:
+  Just warn about Packet Socket instead of requiring linux sources
+
+  05 Sep 2006; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.4.9.ebuild, wpa_supplicant-0.5.4.ebuild,
+  wpa_supplicant-0.5.5.ebuild:
+  wpa_supplicant requires CONFIG_PACKET to work in linux.
+
+  04 Sep 2006; Roy Marples <uberlord@gentoo.org>
+  +files/wpa_supplicant-0.5.5-qt4.patch, wpa_supplicant-0.5.5.ebuild:
+  Fix QT4 support, #146177 thanks to Horst Schirmeier.
+
+  03 Sep 2006; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.5.5.ebuild:
+  QT4 is broken in 0.5.5, #146177.
+
+*wpa_supplicant-0.5.5 (03 Sep 2006)
+
+  03 Sep 2006; Roy Marples <uberlord@gentoo.org>
+  +wpa_supplicant-0.5.5.ebuild:
+  Version bump.
+
+  13 Aug 2006; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.5.4.ebuild:
+  Use correct paths for opensc in the example config, #143750.
+
+  05 Aug 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  wpa_supplicant-0.4.9.ebuild:
+  ppc stable, bug #139998
+
+  01 Aug 2006; Simon Stelling <blubb@gentoo.org>
+  wpa_supplicant-0.4.9.ebuild:
+  stable on amd64
+
+  31 Jul 2006; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.5.4.ebuild:
+  Install a desktop entry for wpa_gui, #142205 thanks to Tiziano Müller.
+
+  11 Jul 2006; Roy Marples <uberlord@gentoo.org>
+  -files/wpa_supplicant-0.4.9-wpa_cli.sh,
+  -files/wpa_supplicant-0.5.4-wpa_cli.sh, +files/wpa_cli.sh, metadata.xml,
+  wpa_supplicant-0.4.9.ebuild, wpa_supplicant-0.5.4.ebuild:
+  New maintainer
+  Fixed some potential quoting issues in 0.5.4
+  Generic wpa_cli.sh for 0.4.9 and 0.5.4
+  wpa_cli.sh now uses logger for all reporting
+
+  26 Jun 2006; Henrik Brix Andersen <brix@gentoo.org>
+  wpa_supplicant-0.4.9.ebuild:
+  Stable on x86.
+
+  24 Jun 2006; Henrik Brix Andersen <brix@gentoo.org>
+  wpa_supplicant-0.4.7.ebuild, wpa_supplicant-0.4.8.ebuild,
+  wpa_supplicant-0.4.9.ebuild, wpa_supplicant-0.5.4.ebuild:
+  Fix compilation with USE=qt3 when Qt-4 is installed.
+
+  24 Jun 2006; Henrik Brix Andersen <brix@gentoo.org>
+  -files/wpa_supplicant-0.5.2-wpa_cli.sh,
+  -files/wpa_supplicant-0.5.3-stakey.patch,
+  -files/wpa_supplicant-0.5.3-wpa_cli.sh, wpa_supplicant-0.4.7.ebuild,
+  wpa_supplicant-0.4.8.ebuild, wpa_supplicant-0.4.9.ebuild,
+  -wpa_supplicant-0.5.2.ebuild, -wpa_supplicant-0.5.3.ebuild,
+  wpa_supplicant-0.5.4.ebuild:
+  Switched to new qt3/qt4 USE flag scheme, thanks to Cardoe. Fixes bug
+  #137659. Also pruned old ebuilds.
+
+*wpa_supplicant-0.5.4 (21 Jun 2006)
+
+  21 Jun 2006; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.5.4-wpa_cli.sh, +wpa_supplicant-0.5.4.ebuild:
+  New developer snapshot.
+
+*wpa_supplicant-0.4.9 (27 May 2006)
+
+  27 May 2006; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.4.9-wpa_cli.sh, +wpa_supplicant-0.4.9.ebuild:
+  Version bump. Backported FreeBSD support and configuration file layout
+  changes from 0.5.x. Also made wpa_cli.sh more verbose on request from
+  Uberlord.
+
+*wpa_supplicant-0.5.3 (29 Apr 2006)
+
+  29 Apr 2006; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.5.3-stakey.patch,
+  +files/wpa_supplicant-0.5.3-wpa_cli.sh, +wpa_supplicant-0.5.3.ebuild:
+  New development snapshot.
+
+  30 Apr 2006; Simon Stelling <blubb@gentoo.org>
+  wpa_supplicant-0.4.8.ebuild:
+  stable on amd64
+
+  22 Apr 2006; Henrik Brix Andersen <brix@gentoo.org>
+  wpa_supplicant-0.5.2.ebuild:
+  Add support for Gentoo FreeBSD, bug #130369. Thanks to Flameeyes for
+  compile-testing.
+
+  14 Apr 2006; Henrik Brix Andersen <brix@gentoo.org>
+  wpa_supplicant-0.4.8.ebuild, wpa_supplicant-0.5.2.ebuild:
+  Updated madwifi dependencies.
+
+  31 Mar 2006; Simon Stelling <blubb@gentoo.org>
+  wpa_supplicant-0.4.8.ebuild:
+  stable on amd64
+
+  26 Mar 2006; Henrik Brix Andersen <brix@gentoo.org>
+  -files/wpa_supplicant-0.4.5-wpa_cli.action,
+  -files/wpa_supplicant-0.4.6-wpa_cli.action,
+  -files/wpa_supplicant-0.5.0-wpa_cli.action,
+  -files/wpa_supplicant-0.5.1-wpa_cli.sh, -wpa_supplicant-0.4.7-r1.ebuild,
+  -wpa_supplicant-0.5.0.ebuild, -wpa_supplicant-0.5.0-r1.ebuild,
+  -wpa_supplicant-0.5.1.ebuild:
+  Pruned old ebuilds.
+
+*wpa_supplicant-0.5.2 (20 Mar 2006)
+
+  20 Mar 2006; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.5.2-wpa_cli.sh, +wpa_supplicant-0.5.2.ebuild:
+  New development snapshot.
+
+  15 Mar 2006; Henrik Brix Andersen <brix@gentoo.org>
+  wpa_supplicant-0.4.8.ebuild:
+  Stable on x86.
+
+  27 Feb 2006; Henrik Brix Andersen <brix@gentoo.org>
+  wpa_supplicant-0.4.7-r1.ebuild, wpa_supplicant-0.4.8.ebuild,
+  wpa_supplicant-0.5.0-r1.ebuild, wpa_supplicant-0.5.1.ebuild:
+  Fix madwifi compilation with ROOT != "/".
+
+*wpa_supplicant-0.4.8 (14 Feb 2006)
+
+  14 Feb 2006; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.4.8-wpa_cli.action, +wpa_supplicant-0.4.8.ebuild:
+  New stable release from upstream.
+
+  06 Feb 2006; Henrik Brix Andersen <brix@gentoo.org>
+  -files/wpa_supplicant-0.5.1-wpa_cli.action,
+  +files/wpa_supplicant-0.5.1-wpa_cli.sh, wpa_supplicant-0.5.1.ebuild:
+  Renamed wpa_cli.action to wpa_cli.sh.
+
+  03 Feb 2006; Henrik Brix Andersen <brix@gentoo.org>
+  -files/wpa_supplicant-0.3.8-r1-conf.d,
+  -files/wpa_supplicant-0.3.8-r1-init.d, -wpa_supplicant-0.3.8-r1.ebuild,
+  -wpa_supplicant-0.3.9-r1.ebuild, -wpa_supplicant-0.4.5.ebuild,
+  -wpa_supplicant-0.4.6.ebuild:
+  Pruned old ebuilds.
+
+*wpa_supplicant-0.5.1 (30 Jan 2006)
+
+  30 Jan 2006; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.5.1-wpa_cli.action, +wpa_supplicant-0.5.1.ebuild:
+  New development snapshot. Moved wpa_cli.action to /etc/wpa_supplicant/ to
+  allow for customization, along with symlink for backwards compatibility.
+  Moved example configuration file away from /etc/.
+
+  17 Jan 2006; Roy Marples <uberlord@gentoo.org>
+  wpa_supplicant-0.4.7-r1.ebuild, wpa_supplicant-0.5.0-r1.ebuild:
+  Marked ~amd64.
+
+*wpa_supplicant-0.4.7-r1 (17 Jan 2006)
+
+  17 Jan 2006; Henrik Brix Andersen <brix@gentoo.org>
+  +wpa_supplicant-0.4.7-r1.ebuild:
+  Backported madwifi support to version 0.4.7.
+
+*wpa_supplicant-0.5.0-r1 (17 Jan 2006)
+
+  17 Jan 2006; Henrik Brix Andersen <brix@gentoo.org>
+  +wpa_supplicant-0.5.0-r1.ebuild:
+  Re-added madwifi support.
+
+  02 Jan 2006; Michael Hanselmann <hansmi@gentoo.org>
+  wpa_supplicant-0.4.7.ebuild:
+  Stable on ppc.
+
+  30 Dec 2005; Henrik Brix Andersen <brix@gentoo.org>
+  wpa_supplicant-0.4.7.ebuild:
+  Stable on x86.
+
+*wpa_supplicant-0.5.0 (20 Dec 2005)
+
+  20 Dec 2005; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.5.0-wpa_cli.action, +wpa_supplicant-0.5.0.ebuild:
+  New development snapshot.
+
+  08 Dec 2005; Henrik Brix Andersen <brix@gentoo.org>
+  wpa_supplicant-0.4.7.ebuild:
+  Add Qt4 support, bug #113581.
+
+  25 Nov 2005; Henrik Brix Andersen <brix@gentoo.org>
+  wpa_supplicant-0.4.5.ebuild, wpa_supplicant-0.4.6.ebuild,
+  wpa_supplicant-0.4.7.ebuild:
+  Always compile with debug support (on request from upstream).
+
+*wpa_supplicant-0.4.7 (21 Nov 2005)
+
+  21 Nov 2005; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.4.7-wpa_cli.action, +wpa_supplicant-0.4.7.ebuild:
+  First release of new stable branch, madwifi support will follow soon.
+
+  09 Nov 2005; Henrik Brix Andersen <brix@gentoo.org>
+  wpa_supplicant-0.4.6.ebuild:
+  Temporarily removed madwifi support until upstream can provide a working
+  version, bug #110791.
+
+*wpa_supplicant-0.4.6 (29 Oct 2005)
+
+  29 Oct 2005; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.4.6-wpa_cli.action, +wpa_supplicant-0.4.6.ebuild:
+  New development release.
+
+  22 Oct 2005; Henrik Brix Andersen <brix@gentoo.org>
+  -files/wpa_supplicant-0.4.3-wpa_cli.action,
+  -files/wpa_supplicant-0.4.4-wpa_cli.action,
+  -wpa_supplicant-0.4.3-r1.ebuild, -wpa_supplicant-0.4.4.ebuild:
+  Pruned old versions.
+
+*wpa_supplicant-0.4.5 (17 Oct 2005)
+
+  17 Oct 2005; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.4.5-wpa_cli.action, +wpa_supplicant-0.4.5.ebuild:
+  New development snapshot, bug #108319.
+
+*wpa_supplicant-0.4.4 (22 Aug 2005)
+
+  22 Aug 2005; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.4.4-wpa_cli.action, +wpa_supplicant-0.4.4.ebuild:
+  New development snapshot. Compile against headers installed by
+  net-wireless/madwifi-driver instead of local snapshot.
+
+  16 Aug 2005; Henrik Brix Andersen <brix@gentoo.org>
+  wpa_supplicant-0.3.9-r1.ebuild:
+  Stable on x86.
+
+  28 Jul 2005; Caleb Tennis <caleb@gentoo.org>
+  wpa_supplicant-0.4.3-r1.ebuild:
+  Fix qt dep per bug #100235
+
+  20 Jul 2005; <brix@gentoo.org> -files/wpa_supplicant-0.3.8-conf.d,
+  -files/wpa_supplicant-0.3.8-init.d, -wpa_supplicant-0.3.8.ebuild,
+  -wpa_supplicant-0.3.9.ebuild, -wpa_supplicant-0.4.3.ebuild:
+  Pruned old ebuilds.
+
+  19 Jul 2005; <brix@gentoo.org> wpa_supplicant-0.3.8-r1.ebuild:
+  Stable for baselayout-1.11.13.
+
+*wpa_supplicant-0.4.3-r1 (13 Jul 2005)
+*wpa_supplicant-0.3.9-r1 (13 Jul 2005)
+*wpa_supplicant-0.3.8-r1 (13 Jul 2005)
+
+  13 Jul 2005; <brix@gentoo.org> +files/wpa_supplicant-0.3.8-r1-conf.d,
+  +files/wpa_supplicant-0.3.8-r1-init.d, +wpa_supplicant-0.3.8-r1.ebuild,
+  +wpa_supplicant-0.3.9-r1.ebuild, +wpa_supplicant-0.4.3-r1.ebuild:
+  Install to / instead of /usr/
+
+  13 Jul 2005; <brix@gentoo.org> -files/wpa_supplicant-0.2.7-conf.d,
+  -files/wpa_supplicant-0.2.7-init.d, -files/wpa_supplicant-0.4.0-conf.d,
+  -files/wpa_supplicant-0.4.0-init.d,
+  -files/wpa_supplicant-0.4.0-wpa_cli.action,
+  -files/wpa_supplicant-0.4.1-conf.d, -files/wpa_supplicant-0.4.1-init.d,
+  -files/wpa_supplicant-0.4.1-wpa_cli.action,
+  -files/wpa_supplicant-0.4.2-wpa_cli.action, -wpa_supplicant-0.2.7.ebuild,
+  -wpa_supplicant-0.4.0.ebuild, -wpa_supplicant-0.4.1.ebuild,
+  -wpa_supplicant-0.4.2.ebuild:
+  Pruned old ebuilds.
+
+*wpa_supplicant-0.4.3 (27 Jun 2005)
+
+  27 Jun 2005; <brix@gentoo.org> +files/wpa_supplicant-0.4.3-wpa_cli.action,
+  +wpa_supplicant-0.4.3.ebuild:
+  New development snapshot.
+
+*wpa_supplicant-0.4.2 (13 Jun 2005)
+
+  13 Jun 2005; <brix@gentoo.org> +files/wpa_supplicant-0.4.2-wpa_cli.action,
+  +wpa_supplicant-0.4.2.ebuild:
+  New development release.
+
+*wpa_supplicant-0.3.9 (11 Jun 2005)
+
+  11 Jun 2005; <brix@gentoo.org> +wpa_supplicant-0.3.9.ebuild:
+  New stable release.
+
+  27 May 2005; Lars Weiler <pylon@gentoo.org> wpa_supplicant-0.3.8.ebuild:
+  Stable on ppc.
+
+*wpa_supplicant-0.4.1 (23 May 2005)
+
+  23 May 2005; <brix@gentoo.org> +files/wpa_supplicant-0.4.1-conf.d,
+  +files/wpa_supplicant-0.4.1-init.d,
+  +files/wpa_supplicant-0.4.1-wpa_cli.action, +wpa_supplicant-0.4.1.ebuild:
+  New development release.
+
+*wpa_supplicant-0.4.0 (27 Apr 2005)
+
+  27 Apr 2005; <brix@gentoo.org> +files/wpa_supplicant-0.4.0-conf.d,
+  +files/wpa_supplicant-0.4.0-init.d,
+  +files/wpa_supplicant-0.4.0-wpa_cli.action, +wpa_supplicant-0.4.0.ebuild:
+  New development snapshot.
+
+  16 Apr 2005; <brix@gentoo.org> wpa_supplicant-0.3.8.ebuild:
+  Stable on x86.
+
+*wpa_supplicant-0.2.7 (14 Feb 2005)
+
+  14 Feb 2005; Henrik Brix Andersen <brix@gentoo.org>
+  -files/wpa_supplicant-0.2.6-conf.d, -files/wpa_supplicant-0.2.6-init.d,
+  +files/wpa_supplicant-0.2.7-conf.d, +files/wpa_supplicant-0.2.7-init.d,
+  -files/wpa_supplicant-0.3.7-conf.d, -files/wpa_supplicant-0.3.7-init.d,
+  -wpa_supplicant-0.2.6.ebuild, +wpa_supplicant-0.2.7.ebuild,
+  -wpa_supplicant-0.3.7.ebuild:
+  Version bump.
+
+*wpa_supplicant-0.3.8 (14 Feb 2005)
+
+  14 Feb 2005; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.3.8-conf.d, +files/wpa_supplicant-0.3.8-init.d,
+  +wpa_supplicant-0.3.8.ebuild:
+  Version bump.
+
+  13 Feb 2005; Henrik Brix Andersen <brix@gentoo.org>
+  -files/wpa_supplicant-0.3.6-conf.d, -files/wpa_supplicant-0.3.6-init.d,
+  -files/wpa_supplicant-0.3.7_pre-conf.d,
+  -files/wpa_supplicant-0.3.7_pre-init.d, -wpa_supplicant-0.3.6.ebuild,
+  -wpa_supplicant-0.3.7_pre.ebuild:
+  Pruned old versions.
+
+*wpa_supplicant-0.3.7 (13 Feb 2005)
+
+  13 Feb 2005; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.3.7-conf.d, +files/wpa_supplicant-0.3.7-init.d,
+  +wpa_supplicant-0.3.7.ebuild:
+  New stable version from upstream.
+
+*wpa_supplicant-0.3.7_pre (07 Feb 2005)
+
+  07 Feb 2005; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.3.7_pre-conf.d,
+  +files/wpa_supplicant-0.3.7_pre-init.d, +wpa_supplicant-0.3.7_pre.ebuild:
+  Added pre-release of 0.3.7 which is supposed to go stable soon, please test.
+
+  25 Jan 2005; Henrik Brix Andersen <brix@gentoo.org>
+  -files/wpa_supplicant-0.2.5-conf.d, -files/wpa_supplicant-0.2.5-config,
+  -files/wpa_supplicant-0.2.5-init.d,
+  -files/wpa_supplicant-0.2.5-pkg-config.patch,
+  -files/wpa_supplicant-0.3.0-conf.d, -files/wpa_supplicant-0.3.0-init.d,
+  -files/wpa_supplicant-0.3.1-conf.d, -files/wpa_supplicant-0.3.1-init.d,
+  -files/wpa_supplicant-0.3.2-conf.d, -files/wpa_supplicant-0.3.2-init.d,
+  -files/wpa_supplicant-0.3.3-conf.d, -files/wpa_supplicant-0.3.3-init.d,
+  -files/wpa_supplicant-0.3.4-conf.d, -files/wpa_supplicant-0.3.4-init.d,
+  -files/wpa_supplicant-0.3.5-conf.d, -files/wpa_supplicant-0.3.5-init.d,
+  -wpa_supplicant-0.2.5-r1.ebuild, -wpa_supplicant-0.3.0.ebuild,
+  -wpa_supplicant-0.3.1.ebuild, -wpa_supplicant-0.3.2.ebuild,
+  -wpa_supplicant-0.3.3.ebuild, -wpa_supplicant-0.3.4.ebuild,
+  -wpa_supplicant-0.3.5.ebuild:
+  Pruned old versions.
+
+*wpa_supplicant-0.3.6 (25 Jan 2005)
+
+  25 Jan 2005; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.3.6-conf.d, +files/wpa_supplicant-0.3.6-init.d,
+  +wpa_supplicant-0.3.6.ebuild:
+  New development snapshot.
+
+*wpa_supplicant-0.3.5 (24 Jan 2005)
+
+  24 Jan 2005; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.3.5-conf.d, +files/wpa_supplicant-0.3.5-init.d,
+  +wpa_supplicant-0.3.5.ebuild:
+  New development snapshot.
+
+  19 Jan 2005; Henrik Brix Andersen <brix@gentoo.org>
+  wpa_supplicant-0.3.4.ebuild:
+  0.3.4 doesn't work on amd64, marking as such. A fix is in upstream CVS.
+
+  14 Jan 2005; Henrik Brix Andersen <brix@gentoo.org>
+  wpa_supplicant-0.2.6.ebuild:
+  Stable on x86.
+
+*wpa_supplicant-0.3.4 (10 Jan 2005)
+
+  10 Jan 2005; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.3.4-conf.d, +files/wpa_supplicant-0.3.4-init.d,
+  +wpa_supplicant-0.3.4.ebuild:
+  New development version, bumped included madwifi-driver.
+
+*wpa_supplicant-0.3.3 (03 Jan 2005)
+
+  03 Jan 2005; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.3.3-conf.d, +files/wpa_supplicant-0.3.3-init.d,
+  +wpa_supplicant-0.3.3.ebuild:
+  New development snapshot.
+
+*wpa_supplicant-0.2.6 (26 Dec 2004)
+
+  26 Dec 2004; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.2.6-conf.d, +files/wpa_supplicant-0.2.6-init.d,
+  +wpa_supplicant-0.2.6.ebuild:
+  Version bump.
+
+*wpa_supplicant-0.3.2 (20 Dec 2004)
+
+  20 Dec 2004; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.3.2-conf.d, +files/wpa_supplicant-0.3.2-init.d,
+  +wpa_supplicant-0.3.2.ebuild:
+  Added new development snapshot.
+
+  19 Dec 2004; Henrik Brix Andersen <brix@gentoo.org>
+  -wpa_supplicant-0.2.5.ebuild:
+  Pruned old version
+
+*wpa_supplicant-0.2.5-r1 (16 Dec 2004)
+
+  16 Dec 2004; Henrik Brix Andersen <brix@gentoo.org>
+  -files/wpa_supplicant-0.2.4-config, -wpa_supplicant-0.2.4.ebuild,
+  +wpa_supplicant-0.2.5-r1.ebuild:
+  Moved wpa_cli and wpa_passphrase to /usr/bin.
+
+*wpa_supplicant-0.3.1 (13 Dec 2004)
+
+  13 Dec 2004; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.3.1-conf.d, +files/wpa_supplicant-0.3.1-init.d,
+  +wpa_supplicant-0.3.1.ebuild:
+  Version bump (development snapshot)
+
+*wpa_supplicant-0.3.0 (11 Dec 2004)
+
+  11 Dec 2004; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.3.0-conf.d, +files/wpa_supplicant-0.3.0-init.d,
+  +wpa_supplicant-0.3.0.ebuild:
+  Version bump. Please note that version 0.3.0 is a development snapshot.
+  USE=gsm is removed in 0.3.0 due to a bug in the code, should be back with next
+  release.
+
+*wpa_supplicant-0.2.5 (10 Dec 2004)
+
+  10 Dec 2004; Henrik Brix Andersen <brix@gentoo.org> +metadata.xml,
+  +files/wpa_supplicant-0.2.4-config, +files/wpa_supplicant-0.2.5-conf.d,
+  +files/wpa_supplicant-0.2.5-config, +files/wpa_supplicant-0.2.5-init.d,
+  +files/wpa_supplicant-0.2.5-pkg-config.patch, +wpa_supplicant-0.2.4.ebuild,
+  +wpa_supplicant-0.2.5.ebuild:
+  Renamed net-wireless/wpa-supplicant to net-wireless/wpa_supplicant to avoid
+  confusion.
+
+  04 Dec 2004; Tom Martin <slarti@gentoo.org> wpa-supplicant-0.2.5.ebuild:
+  Marked ~amd64.
+
+  29 Nov 2004; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa_supplicant-0.2.5-pkg-config.patch, wpa-supplicant-0.2.5.ebuild:
+  Use tc-getCC() to determine CC, clean up sed statements and patch Makefile to
+  use pkg-config (fixes bug #72760).
+
+  18 Oct 2004; David Holm <dholm@gentoo.org> wpa-supplicant-0.2.5.ebuild:
+  Added to ~ppc.
+
+*wpa-supplicant-0.2.5 (16 Oct 2004)
+
+  16 Oct 2004; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa-supplicant-0.2.5-config, +files/wpa_supplicant-0.2.5-conf.d,
+  +files/wpa_supplicant-0.2.5-init.d, +wpa-supplicant-0.2.5.ebuild:
+  Version bump. Added ipw2100 patch from upstream. Added init script.
+
+*wpa-supplicant-0.2.4 (16 Sep 2004)
+
+  16 Sep 2004; Henrik Brix Andersen <brix@gentoo.org>
+  +files/wpa-supplicant-0.2.4-config, +wpa-supplicant-0.2.4.ebuild:
+  Initial import. Fixes bug #57708. Ebuild by latexer and me.
+

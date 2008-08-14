@@ -1,0 +1,17 @@
+# ChangeLog for dev-ruby/ruby-liquid
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-liquid/ChangeLog,v 1.3 2007/03/19 03:12:42 kloeri Exp $
+
+  19 Mar 2007; Bryan Østergaard <kloeri@gentoo.org> metadata.xml:
+  Remove flameeyes from metadata.xml due to retirement.
+
+  08 Dec 2006; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  ruby-liquid-1.0.ebuild:
+  Added ~x86
+
+*ruby-liquid-1.0 (24 Jun 2006)
+
+  24 Jun 2006; Diego Pettenò <flameeyes@gentoo.org> +metadata.xml,
+  +ruby-liquid-1.0.ebuild:
+  Initial import of Liquid Template Library for Ruby.
+

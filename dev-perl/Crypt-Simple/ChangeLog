@@ -1,0 +1,25 @@
+# ChangeLog for dev-perl/Crypt-Simple
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Crypt-Simple/ChangeLog,v 1.5 2007/12/27 13:07:58 ticho Exp $
+
+  27 Dec 2007; Andrej Kacian <ticho@gentoo.org> Crypt-Simple-0.06.ebuild:
+  Stable on x86.
+
+  24 Nov 2006; Michael Cummings <mcummings@gentoo.org>
+  Crypt-Simple-0.06.ebuild:
+  amd64 stable
+
+  10 Sep 2006; Michael Cummings <mcummings@gentoo.org>
+  Crypt-Simple-0.06.ebuild:
+  Keywording ~amd64
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Crypt-Simple-0.06.ebuild:
+  Adding perl dep; fixed DEPEND
+
+*Crypt-Simple-0.06 (20 Jun 2006)
+
+  20 Jun 2006; Christian Hartmann <ian@gentoo.org> +metadata.xml,
+  +Crypt-Simple-0.06.ebuild:
+  New package; dep for bug #137293
+

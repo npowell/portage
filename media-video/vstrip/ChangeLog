@@ -1,0 +1,24 @@
+# ChangeLog for media-video/vstrip
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/vstrip/ChangeLog,v 1.5 2007/03/31 19:26:38 drac Exp $
+
+  31 Mar 2007; Samuli Suominen <drac@gentoo.org>
+  files/vstrip-0.8f-gentoo.patch, vstrip-0.8f.ebuild:
+  Change dos2unix to edos2unix and fix include location from patch.
+
+  03 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  16 Sep 2005; Michael Sterrett <mr_bones_@gentoo.org> vstrip-0.8f.ebuild:
+  needs app-arch/unzip; tidy
+
+  28 Jul 2005; David Holm <dholm@gentoo.org> vstrip-0.8f.ebuild:
+  Added to ~ppc.
+
+*vstrip-0.8f (28 Mar 2005)
+
+  28 Mar 2005; Chris White <chriswhite@gentoo.org> +metadata.xml,
+  +files/vstrip-0.8f-gentoo.patch, +vstrip-0.8f.ebuild:
+  Initial import into the tree. Closes bug #31519. Thanks to swegner for the
+  ebuild!
+

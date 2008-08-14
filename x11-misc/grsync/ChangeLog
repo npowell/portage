@@ -1,0 +1,83 @@
+# ChangeLog for x11-misc/grsync
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/grsync/ChangeLog,v 1.15 2008/05/02 19:24:00 dertobi123 Exp $
+
+*grsync-0.6.1-r1 (02 May 2008)
+
+  02 May 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  +files/session-crash.patch, -grsync-0.6.1.ebuild, +grsync-0.6.1-r1.ebuild:
+  Fix #209377, patch by Mahmoud Kassem as per
+  https://bugs.launchpad.net/ubuntu/+source/grsync/+bug/148272
+
+*grsync-0.6.1 (22 Jan 2008)
+
+  22 Jan 2008; Tobias Scherbaum <dertobi123@gentoo.org> grsync-0.6.ebuild,
+  +grsync-0.6.1.ebuild:
+  Fix #204969 (missing pkgconfig DEPEND), version bump
+
+  26 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  -grsync-0.5.2.ebuild, grsync-0.6.ebuild:
+  ppc stable, purge old version
+
+*grsync-0.6 (30 Jul 2007)
+
+  30 Jul 2007; Tobias Scherbaum <dertobi123@gentoo.org> +grsync-0.6.ebuild:
+  Version bump, bug #187115
+
+  10 Jun 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  -files/grsync-0.5-intltool.patch, -grsync-0.5-r1.ebuild,
+  grsync-0.5.2.ebuild:
+  ppc stable
+
+  10 Mar 2007; Peter Weller <welp@gentoo.org> grsync-0.5.2.ebuild:
+  Keyworded ~x86-fbsd
+
+*grsync-0.5.2 (03 Feb 2007)
+
+  03 Feb 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  +grsync-0.5.2.ebuild:
+  Version bump by Luca Marturana in #165107
+
+  21 Oct 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  -grsync-0.4.2.ebuild, -grsync-0.4.3.ebuild, -grsync-0.5.ebuild,
+  grsync-0.5-r1.ebuild:
+  ppc stable, housekeeping
+
+*grsync-0.5-r1 (17 Sep 2006)
+
+  17 Sep 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  +files/grsync-0.5-intltool.patch, +grsync-0.5-r1.ebuild:
+  build locales, bug #147071 by Luca Marturana
+
+*grsync-0.5 (19 Aug 2006)
+
+  19 Aug 2006; Tobias Scherbaum <dertobi123@gentoo.org> +grsync-0.5.ebuild:
+  Version bump
+
+  15 Jul 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  -files/grsync-0.3.2-destdir.patch, -grsync-0.3.2.ebuild,
+  grsync-0.4.2.ebuild:
+  ppc stable
+
+*grsync-0.4.3 (02 Jul 2006)
+
+  02 Jul 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  +grsync-0.4.3.ebuild:
+  Version bump, bug #138879
+
+  08 Jun 2006; Tobias Scherbaum <dertobi123@gentoo.org> grsync-0.3.2.ebuild:
+  ppc stable
+
+*grsync-0.4.2 (23 May 2006)
+
+  23 May 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  +grsync-0.4.2.ebuild:
+  Version bump, Thanks to Luca Marturana  in bug #134084
+
+*grsync-0.3.2 (16 Apr 2006)
+
+  16 Apr 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  +files/grsync-0.3.2-destdir.patch, +metadata.xml, +grsync-0.3.2.ebuild:
+  Initial import.
+  Ebuild provided by Luca Marturana in bug #129624.
+

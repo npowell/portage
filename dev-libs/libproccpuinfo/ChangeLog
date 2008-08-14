@@ -1,0 +1,70 @@
+# ChangeLog for dev-libs/libproccpuinfo
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/libproccpuinfo/ChangeLog,v 1.14 2008/08/06 10:02:06 ulm Exp $
+
+  06 Aug 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
+  Add USE flag description to metadata wrt GLEP 56.
+
+  11 Jun 2008; Jeremy Olexa <darkside@gentoo.org>
+  libproccpuinfo-0.0.7.ebuild:
+  QA issue, fix multilib check. Thanks to Sandro Bonazzola for the patch and
+  ATs for testing
+
+*libproccpuinfo-0.0.7 (13 Apr 2008)
+
+  13 Apr 2008; Benedikt Böhm <hollow@gentoo.org>
+  libproccpuinfo-0.0.6.1.ebuild, +libproccpuinfo-0.0.7.ebuild:
+  version bump; fix #204385, #216218
+
+  19 Mar 2007; Bryan Østergaard <kloeri@gentoo.org> metadata.xml:
+  Remove tcort from metadata.xml due to retirement.
+
+  04 Sep 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  libproccpuinfo-0.0.6.1.ebuild:
+  stable on x86 (bug #146200)
+
+  04 Sep 2006; Thomas Cort <tcort@gentoo.org> -libproccpuinfo-0.0.4.ebuild,
+  -libproccpuinfo-0.0.5.ebuild:
+  Clean up old versions.
+
+  31 Aug 2006; Thomas Cort <tcort@gentoo.org> libproccpuinfo-0.0.6.1.ebuild:
+  Stable on alpha and amd64.
+
+  15 Aug 2006; Thomas Cort <tcort@gentoo.org> libproccpuinfo-0.0.5.ebuild:
+  Stable on alpha and amd64.
+
+*libproccpuinfo-0.0.6.1 (26 Jul 2006)
+
+  26 Jul 2006; Thomas Cort <tcort@gentoo.org>
+  +libproccpuinfo-0.0.6.1.ebuild:
+  Version bump to 0.0.6.1.
+
+*libproccpuinfo-0.0.5 (22 Jun 2006)
+
+  22 Jun 2006; Thomas Cort <tcort@gentoo.org> -libproccpuinfo-0.0.3.ebuild,
+  +libproccpuinfo-0.0.5.ebuild:
+  Version bump to 0.0.5
+
+*libproccpuinfo-0.0.4 (20 Jun 2006)
+
+  20 Jun 2006; Thomas Cort <tcort@gentoo.org> -libproccpuinfo-0.0.2.ebuild,
+  +libproccpuinfo-0.0.4.ebuild:
+  Version bump to 0.0.4.
+
+*libproccpuinfo-0.0.3 (18 Jun 2006)
+
+  18 Jun 2006; Thomas Cort <tcort@gentoo.org> +libproccpuinfo-0.0.3.ebuild:
+  Version bump to 0.0.3.
+
+*libproccpuinfo-0.0.2 (17 Jun 2006)
+
+  17 Jun 2006; Thomas Cort <tcort@gentoo.org> -libproccpuinfo-0.0.1.ebuild,
+  +libproccpuinfo-0.0.2.ebuild:
+  Version bump to 0.0.2.
+
+*libproccpuinfo-0.0.1 (17 Jun 2006)
+
+  17 Jun 2006; Thomas Cort <tcort@gentoo.org> +metadata.xml,
+  +libproccpuinfo-0.0.1.ebuild:
+  Initial Commit.
+

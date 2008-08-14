@@ -1,0 +1,30 @@
+# ChangeLog for dev-ruby/shorturl
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/shorturl/ChangeLog,v 1.6 2008/07/25 07:24:17 wormo Exp $
+
+  25 Jul 2008; Stephanie Lockwood-Childs <wormo@gentoo.org>
+  shorturl-0.8.4.ebuild:
+  mark ~ppc (needed for bug #230517)
+
+  08 Jul 2008; Javier Villavicencio <the_paya@gentoo.org>
+  shorturl-0.8.4.ebuild:
+  Added ~x86-fbsd keyword.
+
+  07 Jul 2008; Friedrich Oslage <bluebird@gentoo.org> shorturl-0.8.4.ebuild:
+  Add ~sparc keyword, bug #230517
+
+  08 Jan 2008; <nichoj@gentoo.org> shorturl-0.8.4.ebuild:
+  Added ~x86
+
+*shorturl-0.8.4 (07 Jan 2008)
+
+  07 Jan 2008; Diego Pettenò <flameeyes@gentoo.org> +shorturl-0.8.4.ebuild:
+  Version bump.
+
+*shorturl-0.8.3 (17 Dec 2007)
+
+  17 Dec 2007; Diego Pettenò <flameeyes@gentoo.org> +metadata.xml,
+  +shorturl-0.8.3.ebuild:
+  Initial import of dev-ruby/shorturl, needed for net-irc/rbot with shorturl
+  USE flag enabled.
+

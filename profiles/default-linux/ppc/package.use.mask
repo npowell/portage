@@ -1,0 +1,44 @@
+# This file requires >=portage-2.1.1
+
+# nixnut <nixnut@gentoo.org> (11 mar 2008)
+# USE=laptop wants x86 specific packages which can't be build on ppc
+sys-apps/hal laptop
+
+# Mart Raudsepp <leio@gentoo.org> (02 Apr 2008)
+# media-plugins/gst-plugins-{mythtv,dvb,fluendo-mpegdemux} not keyworded
+media-plugins/gst-plugins-meta dvb mythtv
+
+# nixnut <nixnut@gentoo.org> (11 mar 2008)
+# USE=musepack wants musepack-tools which can't be build on ppc
+media-sound/squeezecenter musepack
+
+# Mark Loeser <halcy0n@gentoo.org> (18 Jan 2008)
+# mono doesn't work with Openoffice - bug #202361
+app-office/openoffice mono
+
+=dev-java/ibm-jdk-bin-1.5* -nsplugin 
+=dev-java/ibm-jre-bin-1.5* -nsplugin
+=dev-java/ibm-jdk-bin-1.6* -nsplugin 
+=dev-java/ibm-jre-bin-1.6* -nsplugin
+~dev-util/checkstyle-4.3 test
+
+# Joseph Jezak <josejx@gentoo.org> (28 Jun 2007)
+# Masked Parallel LCD devices for bug #180683
+
+# app-misc/lcd4linux
+app-misc/lcd4linux lcd_devices_hd44780
+
+# app-misc/tomboy is missing ppc support
+gnome-base/gnome mono
+
+# ppc does not have nvidia-drivers
+media-tv/mythtv opengl-xvmc
+
+# Brent Baude <ranger@gentoo.org> (11 June 2008)
+# Mask out java from openoffice; not applicable for powerpc
+ app-office/openoffice java
+
+# Daniel Gryniewicz <dang@gentoo.org> (25 Jul 2008)
+# Mask unkeyworded webkit from liferea
+net-news/liferea webkit
+

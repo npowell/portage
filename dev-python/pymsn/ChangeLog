@@ -1,0 +1,31 @@
+# ChangeLog for dev-python/pymsn
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pymsn/ChangeLog,v 1.6 2008/06/13 16:19:33 coldwind Exp $
+
+  13 Jun 2008; Santiago M. Mola <coldwind@gentoo.org> -pymsn-0.3.0.ebuild:
+  Remove old.
+
+  19 Jan 2008; Santiago M. Mola <coldwind@gentoo.org> pymsn-0.3.0.ebuild,
+  pymsn-0.3.1.ebuild:
+  Fix RDEPEND, #206628.
+
+*pymsn-0.3.1 (16 Jan 2008)
+
+  16 Jan 2008; Santiago M. Mola <coldwind@gentoo.org> pymsn-0.3.0.ebuild,
+  +pymsn-0.3.1.ebuild:
+  Version bump.
+
+*pymsn-0.3.0 (13 Jan 2008)
+
+  13 Jan 2008; Santiago M. Mola <coldwind@gentoo.org> -pymsn-0.2.2.ebuild,
+  +pymsn-0.3.0.ebuild:
+  New version and remove old.
+
+  03 Jul 2007; Santiago M. Mola <coldwind@gentoo.org> metadata.xml:
+  Update metadata.
+
+*pymsn-0.2.2 (10 Jun 2007)
+
+  10 Jun 2007; Santiago M. Mola <gentoo@coldwind.org> +pymsn-0.2.2.ebuild:
+  Initial import from the voip overlay.
+

@@ -1,0 +1,26 @@
+# ChangeLog for x11-libs/xbae
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/xbae/ChangeLog,v 1.6 2008/06/27 10:16:58 ulm Exp $
+
+  27 Jun 2008; Ulrich Mueller <ulm@gentoo.org> xbae-4.60.4.ebuild:
+  Change dependency from virtual/motif to x11-libs/openmotif, bug 224749.
+
+  03 May 2008; Matti Bickel <mabi@gentoo.org> xbae-4.60.4.ebuild:
+  ~ppc added (bug #212198)
+
+  06 Mar 2008; Jeroen Roovers <jer@gentoo.org> xbae-4.60.4.ebuild:
+  Marked ~hppa (bug #212198).
+
+  04 Mar 2008; Raúl Porcel <armin76@gentoo.org> xbae-4.60.4.ebuild:
+  Add ~alpha/~ia64/~sparc wrt #212198
+
+  04 Mar 2008; Brent Baude <ranger@gentoo.org> xbae-4.60.4.ebuild:
+  keyworded ~arch for ppc64, bug 212198
+
+*xbae-4.60.4 (24 Aug 2007)
+
+  24 Aug 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/xbae-4.60.4-Makefile.in.patch, +files/xbae-4.60.4-lxmp.patch,
+  +files/xbae-4.60.4-tmpl.patch, +metadata.xml, +xbae-4.60.4.ebuild:
+  Initial import
+

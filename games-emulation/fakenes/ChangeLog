@@ -1,0 +1,50 @@
+# ChangeLog for games-emulation/fakenes
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-emulation/fakenes/ChangeLog,v 1.14 2007/10/01 19:11:22 opfer Exp $
+
+  01 Oct 2007; Christian Faulhammer <opfer@gentoo.org> fakenes-0.5.8.ebuild:
+  stable x86, bug #192649
+
+  06 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org> fakenes-0.3.1.ebuild:
+  Removed sed-4 from *DEPEND.
+
+  18 Oct 2006; <tupone@gentoo.org> fakenes-0.5.8.ebuild:
+  Added ~amd64 keyword. Bug #132482 by Avuton Olrich
+
+  09 Aug 2006; Chris Gianelloni <wolf31o2@gentoo.org> fakenes-0.5.8.ebuild:
+  Removing dependency on CVS snapshots for openal, to force users onto the new
+  0.0.8 version.
+
+  10 May 2006; Chris Gianelloni <wolf31o2@gentoo.org> fakenes-0.5.8.ebuild:
+  Fixing dependencies for openal.
+
+*fakenes-0.5.8 (06 May 2006)
+
+  06 May 2006; Michael Sterrett <mr_bones_@gentoo.org>
+  +fakenes-0.5.8.ebuild:
+  version bump
+
+  12 Sep 2004; Michael Sterrett <mr_bones_@gentoo.org>
+  +files/0.3.1-allegro.patch, fakenes-0.3.1.ebuild:
+  make the patch use PV so I can clean easier later; no backticks
+
+*fakenes-0.3.1 (01 Sep 2004)
+
+  01 Sep 2004; Mike Frysinger <vapier@gentoo.org> +fakenes-0.3.1.ebuild:
+  Version bump #55090 by Till Maas.
+
+  22 Apr 2004; Michael Sterrett <mr_bones_@gentoo.org> fakenes-0.1.5.ebuild:
+  sync IUSE; error check; tidy
+
+  07 Mar 2004; Michael Sterrett <mr_bones_@gentoo.org> fakenes-0.3.0.ebuild:
+  depend on sed >= 4; more error checking/messages
+
+*fakenes-0.3.0 (25 Sep 2003)
+
+  25 Sep 2003; Mike Frysinger <vapier@gentoo.org> :
+  Version bumpage.  ~x86 since it needs latest allegro.
+
+*fakenes-0.1.5 (13 Jul 2003)
+
+  13 Jul 2003; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by me.

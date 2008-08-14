@@ -1,0 +1,60 @@
+# ChangeLog for x11-misc/xrmap
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/xrmap/ChangeLog,v 1.15 2007/03/09 07:57:25 drac Exp $
+
+  09 Mar 2007; Samuli Suominen <drac@gentoo.org> xrmap-2.29.ebuild,
+  xrmap-2.32.ebuild:
+  Stop using virtual/x11.
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  28 Oct 2006; David Shakaryan <omp@gentoo.org> -xrmap-2.30.ebuild:
+  Remove older version.
+
+  11 Oct 2006; Krzysiek Pawlik <nelchael@gentoo.org> xrmap-2.29.ebuild,
+  xrmap-2.30.ebuild, xrmap-2.32.ebuild:
+  Add missing x11-misc/imake to DEPEND, see bug #150793.
+
+  22 Jan 2006; Krzysiek Pawlik <nelchael@gentoo.org> xrmap-2.29.ebuild,
+  xrmap-2.30.ebuild, xrmap-2.32.ebuild:
+  Fixed DEPEND for modular X.
+
+*xrmap-2.32 (01 Nov 2005)
+
+  01 Nov 2005; Krzysiek Pawlik <nelchael@gentoo.org>
+  +files/xrmap-2.32-Makefile.kit.patch, xrmap-2.29.ebuild,
+  xrmap-2.30.ebuild, +xrmap-2.32.ebuild:
+  Fix dodoc, version bump.
+
+*xrmap-2.30 (15 Jun 2005)
+
+  15 Jun 2005; Jonathan Smith <smithj@gentoo.org> +xrmap-2.30.ebuild:
+  version bump for #71873
+
+  28 Apr 2005; Stephanie Lockwood-Childs <wormo@gentoo.org> xrmap-2.29.ebuild:
+  mark ~ppc
+
+  04 Apr 2005; Jan Brinkmann <luckyduck@gentoo.org> xrmap-2.29.ebuild:
+  added ~amd64 to KEYWORDS. fixes #87862
+
+  27 Aug 2004; <pyrania@gentoo.org> +metadata.xml, xrmap-2.29.ebuild:
+  Fixing bug #56225. Thanks to James Leddy and Alexandre Veyrenc.
+
+  14 Aug 2004; Sven Wegener <swegener@gentoo.org> xrmap-2.10.ebuild,
+  xrmap-2.29.ebuild:
+  Trimmed trailing whitespace.
+
+*xrmap-2.29 (03 Jul 2004)
+
+  03 Jul 2004; <pyrania@gentoo.org> +xrmap-2.29.ebuild:
+  Version bump. Closing bug #47525.
+
+  19 Jun 2004; <pyrania@gentoo.org> xrmap-2.10.ebuild:
+  Stable on x86.
+
+*xrmap-2.10 (06 Mar 2004)
+
+  06 Mar 2004; Markus Nigbur <pyrania@gentoo.org> xrmap-2.10.ebuild:
+  Initial import.
+

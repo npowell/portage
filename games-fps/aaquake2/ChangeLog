@@ -1,0 +1,25 @@
+# ChangeLog for games-fps/aaquake2
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-fps/aaquake2/ChangeLog,v 1.8 2008/03/18 22:41:41 tupone Exp $
+
+  18 Mar 2008; Tupone Alfredo <tupone@gentoo.org>
+  +files/aaquake2-0.1-glibc.patch, aaquake2-0.1.ebuild:
+  Fixing compiling for asm/io.h missing. Bug #212965 by GNUtoo@no-log.org
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  05 May 2006; <Tupone@gentoo.org> +files/aaquake2-0.1-gcc41.patch,
+  files/0.1-gentoo.patch, aaquake2-0.1.ebuild:
+  Fix for gcc-4.1
+
+  15 Mar 2006; Chris Gianelloni <wolf31o2@gentoo.org> aaquake2-0.1.ebuild:
+  Changed to use idsoftware thirdpartymirror.
+
+  26 Sep 2005; Chris Gianelloni <wolf31o2@gentoo.org> aaquake2-0.1.ebuild:
+  Making games last on inherit line.
+
+*aaquake2-0.1 (17 Jul 2003)
+
+  17 Jul 2003; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by me.

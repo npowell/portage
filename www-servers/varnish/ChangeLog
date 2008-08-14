@@ -1,0 +1,64 @@
+# ChangeLog for www-servers/varnish
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/www-servers/varnish/ChangeLog,v 1.14 2008/03/10 22:10:20 bangert Exp $
+
+  10 Mar 2008; Thilo Bangert <bangert@gentoo.org> files/varnishd.initd:
+  allow varnish to lock the logfile to memory - the next version of varnish
+  will require this. Add RDEPEND on gcc - varnish compiles vcl into c code. 
+
+  21 Dec 2007; Thilo Bangert <bangert@gentoo.org>
+  -files/varnish-1.1-build-DESTDIR.patch, varnish-1.0.4.ebuild,
+  -varnish-1.1.ebuild, varnish-1.1.1.ebuild:
+  remove old version - fix quoting
+
+*varnish-1.1.2 (21 Dec 2007)
+
+  21 Dec 2007; Thilo Bangert <bangert@gentoo.org> +varnish-1.1.2.ebuild:
+  version bump
+
+*varnish-1.1.1 (21 Aug 2007)
+
+  21 Aug 2007; Thilo Bangert <bangert@gentoo.org> +varnish-1.1.1.ebuild:
+  version bump
+
+*varnish-1.1 (02 Aug 2007)
+
+  02 Aug 2007; Thilo Bangert <bangert@gentoo.org>
+  +files/varnish-1.1-build-DESTDIR.patch, +varnish-1.1.ebuild:
+  version bump
+
+  11 Jun 2007; Thilo Bangert <bangert@gentoo.org> files/varnishd.initd,
+  -varnish-1.0.3.ebuild:
+  remove old version - init script creates a pidfile
+
+*varnish-1.0.4 (21 May 2007)
+
+  21 May 2007; Thilo Bangert <bangert@gentoo.org> +varnish-1.0.4.ebuild:
+  version bump
+
+  19 May 2007; Thilo Bangert <bangert@gentoo.org> files/varnishd.initd:
+  fix stop in init script
+
+  02 Mar 2007; Thilo Bangert <bangert@gentoo.org> files/varnishd.initd:
+  fix path to varnishd (moved to sbin)
+
+  22 Feb 2007; Thilo Bangert <bangert@gentoo.org> -varnish-1.0.1.ebuild:
+  punt old version
+
+  22 Feb 2007; Thilo Bangert <bangert@gentoo.org> varnish-1.0.3.ebuild:
+  einfo -> elog
+
+*varnish-1.0.3 (20 Feb 2007)
+
+  20 Feb 2007; Thilo Bangert <bangert@gentoo.org> +varnish-1.0.3.ebuild:
+  version bump
+
+  10 Dec 2006; Elfyn McBratney <beu@gentoo.org> varnish-1.0.1.ebuild:
+  Kill redundant *DEPEND on sys-libs/ncurses.
+
+*varnish-1.0.1 (19 Oct 2006)
+
+  19 Oct 2006; Thilo Bangert <bangert@gentoo.org> +files/varnishd.confd,
+  +files/varnishd.initd, +metadata.xml, +varnish-1.0.1.ebuild:
+  varnish - Varnish is an HTTP accelerator. aka a better squid
+

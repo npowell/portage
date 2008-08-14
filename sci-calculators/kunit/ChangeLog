@@ -1,0 +1,32 @@
+# ChangeLog for sci-calculators/kunit
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-calculators/kunit/ChangeLog,v 1.7 2007/02/09 05:20:58 flameeyes Exp $
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  19 Jan 2006; Marcus D. Hanwell <cryos@gentoo.org> kunit-0.5.ebuild:
+  Fix dependencies for modular X, bug 119388.
+
+  23 Aug 2005; Marcus D. Hanwell <cryos@gentoo.org> kunit-0.5.ebuild:
+  Add .desktop entry for kunit, closes bug 101577.
+
+  07 Jul 2005; George Shapovalov <george@gentoo.org> kunit-0.5.ebuild:
+  fixed qt dependency in view of upcoming qt-4 (#98180)
+
+*kunit-0.5 (24 Dec 2004)
+
+  24 Dec 2004; Olivier Fisette <ribosome@gentoo.org> +metadata.xml,
+  +kunit-0.5.ebuild:
+  Moved from app-sci/kunit to sci-calculators/kunit.
+
+  09 Feb 2004; Dylan Carlson <absinthe@gentoo.org> kunit-0.5.ebuild:
+  added amd64 keyword.
+
+*kunit-0.5 (22 Nov 2002)
+
+  15 Feb 2003; Mark Guertin <gerk@gentoo.org> kunit-0.5.ebuild :
+  set ppc in keywords
+
+  22 Nov 2002; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by Dylan Carlson <bsinthe@pobox.com>.

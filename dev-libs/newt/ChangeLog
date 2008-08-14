@@ -1,0 +1,184 @@
+# ChangeLog for dev-libs/newt
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/newt/ChangeLog,v 1.44 2008/06/15 09:48:50 drac Exp $
+
+  15 Jun 2008; Samuli Suominen <drac@gentoo.org> -newt-0.51.6-r1.ebuild,
+  newt-0.52.2.ebuild, newt-0.52.8.ebuild:
+  Remove tree-incompatible versions as slang-1 is no more. Marked 0.52.8
+  stable for arm wrt #209426, as .rpm of 0.52.2 fails to unpack; cpio:
+  premature end of file.
+
+  29 May 2008; Samuli Suominen <drac@gentoo.org> -newt-0.51.6-r2.ebuild,
+  -newt-0.52.7.ebuild, newt-0.52.8.ebuild:
+  Restore ~arm since slang-2 is keyworded. Remove unused.
+
+  17 Mar 2008; Christian Zoffoli <xmerlin@gentoo.org> +newt-0.52.8.ebuild:
+  Version bump, fixes also bug #206302. Removed arm arch, I'll re-add it when slang-2.x will have it.
+
+  03 Mar 2008; Christian Zoffoli <xmerlin@gentoo.org> newt-0.52.2.ebuild,
+  newt-0.52.7.ebuild:
+  Fixed bug #212135, thanks to Chris Slycord <cslycord@gmail.com>.
+
+  15 Feb 2008; Samuli Suominen <drac@gentoo.org> newt-0.52.2.ebuild:
+  Tested with slang-2.
+
+  14 Feb 2008; Jeroen Roovers <jer@gentoo.org> newt-0.52.2.ebuild:
+  Stable for HPPA (bug #209426).
+
+  10 Feb 2008; Tobias Scherbaum <dertobi123@gentoo.org> newt-0.52.2.ebuild:
+  ppc stable, bug #209426
+
+  09 Feb 2008; Raúl Porcel <armin76@gentoo.org> newt-0.52.2.ebuild:
+  alpha/ia64/sparc stable
+
+  09 Feb 2008; Samuli Suominen <drac@gentoo.org> newt-0.52.7.ebuild:
+  Fix newt to work with slang 2.1.3.
+
+  05 Feb 2008; Markus Rothe <corsair@gentoo.org> newt-0.52.2.ebuild:
+  Stable on ppc64
+
+  18 Jan 2008; Christian Zoffoli <xmerlin@gentoo.org>
+  -files/newt-0.52.7-DESTDIR.patch, newt-0.52.2.ebuild, newt-0.52.7.ebuild:
+  Fixed symlink creation, fixed version in 0.52.2.
+
+  18 Jan 2008; Christian Zoffoli <xmerlin@gentoo.org> newt-0.52.2.ebuild,
+  newt-0.52.7.ebuild:
+  Fixed patching on elibc_uclibc, thanks to Natanael Copa
+  <natanael.copa@gmail.com>, closed bug #206088.
+
+*newt-0.52.7 (15 Jan 2008)
+
+  15 Jan 2008; Christian Zoffoli <xmerlin@gentoo.org>
+  +files/newt-0.52.7-DESTDIR.patch, +files/newt-0.52.7-notcl.patch,
+  newt-0.52.2.ebuild, +newt-0.52.7.ebuild:
+  0.52.2 marked stable on x86 and amd64, version bump, updated patches,
+  ebuild cleanup.
+
+  31 Dec 2006; Christian Zoffoli <xmerlin@gentoo.org>
+  newt-0.50.35-r2.ebuild, newt-0.50.35-r3.ebuild, newt-0.50.35-r4.ebuild,
+  newt-0.51.6.ebuild, newt-0.51.6-r1.ebuild, newt-0.51.6-r2.ebuild,
+  newt-0.52.2.ebuild:
+  Fixed licence, bug #156195.
+
+  31 Oct 2006; Piotr Jaroszyński <peper@gentoo.org> newt-0.52.2.ebuild:
+  multilib and symlink fix.
+
+*newt-0.51.6-r2 (14 Oct 2006)
+
+  14 Oct 2006; Christian Zoffoli <xmerlin@gentoo.org>
+  +files/newt-0.51.6-assorted-fixes.patch,
+  +files/newt-0.51.6-do-not-ignore-EARLY-events-in-listbox--and-allow-textbo
+  x-to-take-focus.patch, +newt-0.51.6-r2.ebuild:
+  Merged some mdk patches.
+
+*newt-0.52.2 (09 Sep 2006)
+
+  09 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  +files/newt-0.52.2-cbtpos.patch, +files/newt-0.52.2-colors.patch,
+  +files/newt-0.52.2-cursor.patch, +files/newt-0.52.2-dwchar.patch,
+  +files/newt-0.52.2-focus.patch, +files/newt-0.52.2-notcl.patch,
+  +files/newt-0.52.2-pgupdown-crash.patch,
+  +files/newt-0.52.2-pyexample.patch, +files/newt-0.52.2-screensize.patch,
+  +files/newt-0.52.2-scrollbars.patch, +newt-0.52.2.ebuild:
+  Bump. A cleaner build system allows some cleaning of the ebuild. Also add
+  patches from Red Hat to fix various bugs that didn't merit a version bump.
+  New USE=tcl.
+
+  28 Jul 2006; Christian Zoffoli <xmerlin@gentoo.org>
+  newt-0.50.35-r2.ebuild, newt-0.50.35-r3.ebuild, newt-0.50.35-r4.ebuild,
+  newt-0.51.6.ebuild, newt-0.51.6-r1.ebuild:
+  Fixed slang-1* dep.
+
+  11 May 2006; Christian Zoffoli <xmerlin@gentoo.org> newt-0.51.6.ebuild,
+  newt-0.51.6-r1.ebuild:
+  Fixed link. Closed bug #133018.
+
+*newt-0.51.6-r1 (01 Sep 2005)
+
+  01 Sep 2005; Christian Zoffoli <xmerlin@gentoo.org>
+  +files/newt-0.51.6-newttextbox-memoryleak.patch, +newt-0.51.6-r1.ebuild,
+  newt-0.51.6.ebuild:
+  fixed a memory leak in newtTextbox. Thanks to Robert Gill
+  <locke@twilightsilhouette.org>.
+
+  29 May 2005; <solar@gentoo.org> newt-0.50.35-r4.ebuild, newt-0.51.6.ebuild:
+  - update newt to use libc expanded variable elibc_uclibc vs uclibc so USE=-*
+  works
+
+  24 May 2005; Fernando J. Pereda <ferdy@gentoo.org> newt-0.51.6.ebuild:
+  alpha stable, wrt #87554
+
+  08 Apr 2005; Joseph Jezak <josejx@gentoo.org> newt-0.51.6.ebuild:
+  Marked ppc stable for bug #87554.
+
+  09 Apr 2005; Danny van Dyk <kugelfang@gentoo.org> newt-0.51.6.ebuild:
+  Fixed BUG #87854 (multilib-strict).
+
+  01 Apr 2005; Jan Brinkmann <luckyduck@gentoo.org> newt-0.51.6.ebuild:
+  stable on amd64 wrt #87554
+
+  01 Apr 2005; Gustavo Zacarias <gustavoz@gentoo.org> newt-0.51.6.ebuild:
+  Stable on sparc wrt #87554
+
+*newt-0.51.6 (01 Apr 2005)
+
+  01 Apr 2005; Christian Zoffoli <xmerlin@gentoo.org>
+  +files/newt-0.51.4-fix-wstrlen-for-non-utf8-strings.patch,
+  +files/newt-gpm-fix.diff, +newt-0.51.6.ebuild:
+  Committing directly to stable because of severe bug (double free or corruption 
+  detected by glibc). Closing #86987.
+
+  06 Feb 2005; Markus Rothe <corsair@gentoo.org> newt-0.50.35-r4.ebuild:
+  Stable on ppc64
+
+  27 Dec 2004; Markus Rothe <corsair@gentoo.org> newt-0.50.35-r4.ebuild:
+  Added ~ppc64 to KEYWORDS
+
+  18 Dec 2004; Robin H. Johnson <robbat2@gentoo.org> newt-0.50.35-r4.ebuild:
+  Bug #74508, not parallel-safe during make for high values of -j.
+
+*newt-0.50.35-r4 (14 Dec 2004)
+
+  14 Dec 2004; Robin H. Johnson <robbat2@gentoo.org>
+  +newt-0.50.35-r4.ebuild:
+  Bug #73850, and clean up the build process as well.
+
+*newt-0.50.35-r3 (12 May 2004)
+
+  12 May 2004; Robin H. Johnson <robbat2@gentoo.org> +newt-0.50.35-r3.ebuild:
+  make newt use CFLAGS.
+
+  27 Jan 2004; Alastair Tse <liquidx@gentoo.org> newt-0.50.35-r1.ebuild,
+  newt-0.50.35-r2.ebuild:
+  add dev-lang/python dep. only build against current version of
+  python. (#39347)
+
+  11 Aug 2003; Will Woods <wwoods@gentoo.org> newt-0.50.35-r1.ebuild,
+  newt-0.50.35-r2.ebuild:
+  Marked stable for alpha
+
+*newt-0.50.35-r2 (23 Dec 2002)
+
+  28 Mar 2003; Guy Martin <gmsoft@gentoo.org> newt-0.50.35-r2.ebuild :
+  Added hppa to KEYWORDS.
+
+  23 Dec 2002; Martin Holzer <mholzer@gentoo.org> newt-0.50.35-r2.ebuild files/digest-newt-0.50.35-r2 Changelog :
+  Fixed sandbox error access denied, closes #12615.
+
+*newt-0.50.35-r1 (22 Dec 2002)
+
+  22 Dec 2002; Daniel Robbins <drobbins@gentoo.org>: Added missing /usr/lib/
+  libnewt.so.0.50 library symlink in order to allow partimage (and potentially
+  others) to compile correctly without needing an "ldconfig."
+
+  06 Dec 2002; Rodney Rees <manson@gentoo.org> : changed sparc ~sparc keywords
+ 
+*newt-0.50.35 (23 Jul 2002)
+
+  29 Aug 2002; Mark Guertin <gerk@gentoo.org> newt-0.50.35.ebuild :
+  Changed emake to make, it was not happy at all building on my MP 
+  machine with emake (-j2)
+
+  23 Jul 2002; Brandon Low <lostlogic@gentoo.org> newt-0.50.35.ebuild:
+
+  Thanks to Andreas Kotowicz <koto@mynetix.de> for this initial ebuild.

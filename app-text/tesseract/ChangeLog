@@ -1,0 +1,70 @@
+# ChangeLog for app-text/tesseract
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-text/tesseract/ChangeLog,v 1.13 2008/07/21 01:18:36 hanno Exp $
+
+*tesseract-2.03 (21 Jul 2008)
+
+  21 Jul 2008; Hanno Boeck <hanno@gentoo.org> +files/includes.patch,
+  +tesseract-2.03.ebuild:
+  Version bump.
+
+*tesseract-2.00 (30 Jul 2007)
+
+  30 Jul 2007; Patrick McLean <chutzpah@gentoo.org> +tesseract-2.00.ebuild:
+  Version bump, make tiff dependency optional and add LINGUAS for downloading
+  extra language data.
+
+*tesseract-1.04b (10 Jul 2007)
+
+  10 Jul 2007; Patrick McLean <chutzpah@gentoo.org>
+  +files/tesseract-1.04b-globals.patch, -tesseract-1.02.02022007.ebuild,
+  -tesseract-1.03.ebuild, +tesseract-1.04b.ebuild:
+  Version bump, change the default data directory to /usr/share/tessdata, closes
+  bug #180781. Drop older versions.
+
+  03 Jun 2007; Raúl Porcel <armin76@gentoo.org> tesseract-1.03-r1.ebuild:
+  Add ~alpha wrt #173114
+
+  24 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  tesseract-1.03-r1.ebuild:
+  Stable on sparc
+
+  12 Mar 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  tesseract-1.03-r1.ebuild:
+  Keyworded ~sparc wrt #170430
+
+  01 Mar 2007; Patrick McLean <chutzpah@gentoo.org>
+  +files/tesseract-1.03-globals.patch, tesseract-1.03-r1.ebuild:
+  Add patch contributed by David Watzke <david@watzke.cz> to fix build errors
+  on some systems (fixes bug #168193)
+
+  26 Feb 2007; Michael Cummings <mcummings@gentoo.org>
+  tesseract-1.03-r1.ebuild:
+  Bug 168063, keywording ~sparc
+
+  24 Feb 2007; nixnut <nixnut@gentoo.org> tesseract-1.03-r1.ebuild:
+  Added ~ppc wrt bug 168063
+
+  23 Feb 2007; Markus Rothe <corsair@gentoo.org> tesseract-1.03-r1.ebuild:
+  Added ~ppc64; bug #168063
+
+*tesseract-1.03-r1 (21 Feb 2007)
+
+  21 Feb 2007; Patrick McLean <chutzpah@gentoo.org>
+  +tesseract-1.03-r1.ebuild:
+  Revision bump, for some reason this needs libtiff support specifically
+  turned off to actually work (bug #167047).
+
+*tesseract-1.03 (05 Feb 2007)
+
+  05 Feb 2007; Patrick McLean <chutzpah@gentoo.org> +tesseract-1.03.ebuild:
+  Version bump.
+
+*tesseract-1.02.02022007 (02 Feb 2007)
+
+  02 Feb 2007; Patrick McLean <chutzpah@gentoo.org>
+  +files/tesseract-1.0.xterm-path.patch, +metadata.xml,
+  +tesseract-1.02.02022007.ebuild:
+  Initial commit, ebuild based on ebuild contributed by Dan Davis
+  <d-web-gentoo@dandavis.com>. Closes bug #146390.
+

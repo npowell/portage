@@ -1,0 +1,68 @@
+# ChangeLog for dev-perl/HTML-SimpleParse
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/HTML-SimpleParse/ChangeLog,v 1.18 2007/01/15 23:03:34 mcummings Exp $
+
+  15 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  -HTML-SimpleParse-0.11.ebuild, HTML-SimpleParse-0.12.ebuild:
+  Ebuild maintenance
+
+  05 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  HTML-SimpleParse-0.11.ebuild, HTML-SimpleParse-0.12.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  18 Jul 2006; Michael Cummings <mcummings@gentoo.org>
+  HTML-SimpleParse-0.11.ebuild, HTML-SimpleParse-0.12.ebuild:
+  Forcing mb version
+
+  27 Nov 2005; Tom Gall <tgall@gentoo.org> HTML-SimpleParse-0.12.ebuild:
+  stable on ppc64
+
+  17 Sep 2005; Aron Griffis <agriffis@gentoo.org>
+  HTML-SimpleParse-0.12.ebuild:
+  Mark 0.12 stable on ia64
+
+  25 Aug 2005; Aron Griffis <agriffis@gentoo.org>
+  HTML-SimpleParse-0.12.ebuild:
+  add ~ia64
+
+  01 May 2005; Michael Hanselmann <hansmi@gentoo.org>
+  HTML-SimpleParse-0.12.ebuild:
+  Stable on ppc.
+
+  09 Apr 2005; Gustavo Zacarias <gustavoz@gentoo.org>
+  HTML-SimpleParse-0.12.ebuild:
+  Stable on sparc
+
+  16 Mar 2005; Michael Cummings <mcummings@gentoo.org>
+  HTML-SimpleParse-0.11.ebuild, HTML-SimpleParse-0.12.ebuild:
+  module-build dep
+
+  23 Dec 2004; Yuta SATOH <nigoro@gentoo.org> HTML-SimpleParse-0.12.ebuild:
+  added ~ppc64
+
+  27 Dec 2003; Michael Cummings,,, <mcummings@gentoo.org>
+  HTML-SimpleParse-0.10.ebuild:
+  No longer available
+
+*HTML-SimpleParse-0.12 (09 Jul 2003)
+
+  09 Jul 2003; Michael Cummings <mcummings@gentoo.org>
+  HTML-SimpleParse-0.12.ebuild:
+  Version bump from CPAN
+
+  08 Jun 2003; <rac@gentoo.org> HTML-SimpleParse-0.10.ebuild,
+  HTML-SimpleParse-0.11.ebuild:
+  Fix header, stabilize URL
+
+*HTML-SimpleParse-0.11 (07 Jun 2003)
+
+  07 Jun 2003; Michael Cummings <mcummings@gentoo.org>
+  HTML-SimpleParse-0.11.ebuild:
+  CPAN update
+
+*HTML-SimpleParse-0.10 (18 Dec 2002)
+
+  18 Dec 2002; Michael Cummings <mcummings>
+  HTML-SimpleParse-0.10.ebuild:
+
+  Satisfies future dep, bug 7744 - ebuild courtesy of Todd

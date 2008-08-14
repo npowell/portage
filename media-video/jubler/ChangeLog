@@ -1,0 +1,87 @@
+# ChangeLog for media-video/jubler
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/jubler/ChangeLog,v 1.20 2008/07/18 22:53:23 betelgeuse Exp $
+
+  18 Jul 2008; Petteri Räty <betelgeuse@gentoo.org> jubler-3.4.1.ebuild,
+  jubler-3.9.0.ebuild:
+  Add pkg_preinst to call both java-pkg-2 and gnome2 functions.
+
+  13 Jun 2008; Serkan Kaba <serkan@gentoo.org> jubler-3.4.1.ebuild,
+  jubler-3.9.0.ebuild:
+  Block >=media-video/ffmpeg-0.4.9_p20080206 wrt bug #218091.
+
+  24 May 2008; Serkan Kaba <serkan@gentoo.org> files/jubler-3.9.0.patch:
+  Fix QA warning for pre-stripped binary.
+
+*jubler-3.9.0 (22 May 2008)
+
+  22 May 2008; Serkan Kaba <serkan@gentoo.org> -files/jubler-3.3.0.patch,
+  -files/jubler-3.4.0-freedesktop.patch, -files/jubler-3.4.0.patch,
+  +files/jubler-3.9.0.patch, +jubler-3.9.0.ebuild:
+  Version bump. Remove old patches. Fixes bug #222139.
+
+  28 Apr 2008; Petteri Räty <betelgeuse@gentoo.org>
+  -jubler-3.3.0-r1.ebuild, -jubler-3.4.0.ebuild:
+  Delete old versions.
+
+  28 Mar 2008; Kenneth Prugh <ken69267@gentoo.org> jubler-3.4.1.ebuild:
+  amd64 stable, bug #210484
+
+  26 Mar 2008; Petteri Räty <betelgeuse@gentoo.org> jubler-3.4.1.ebuild:
+  Add a built_with_use check for media-player/mplayer and the srt use flag.
+  Found in bug #210484.
+
+  29 Feb 2008; Carsten Lohrke <carlo@gentoo.org> jubler-3.3.0-r1.ebuild:
+  Remove icon extension from desktop entry to match Icon Theme Specification.
+
+  17 Feb 2008; Christian Faulhammer <opfer@gentoo.org> jubler-3.4.1.ebuild:
+  stable x86, bug 210484
+
+  17 Feb 2008; Petteri Räty <betelgeuse@gentoo.org> jubler-3.4.1.ebuild:
+  Filter ecj-3.2 as it fails. Reported in bug #210484.
+
+  15 Dec 2007; Petteri Räty <betelgeuse@gentoo.org> jubler-3.4.1.ebuild:
+  should not be inheriting java-utils-2 directly
+
+  25 Nov 2007; Samuli Suominen <drac@gentoo.org> jubler-3.3.0-r1.ebuild:
+  amd64 stable wrt #200242
+
+  25 Nov 2007; Dawid Węgliński <cla@gentoo.org> jubler-3.3.0-r1.ebuild:
+  Stable on x86 (bug #200242)
+
+  24 Nov 2007; Petteri Räty <betelgeuse@gentoo.org> -jubler-3.3.0.ebuild:
+  Delete old ebuild.
+
+*jubler-3.4.1 (24 Nov 2007)
+
+  24 Nov 2007; Petteri Räty <betelgeuse@gentoo.org>
+  +files/jubler-3.4.1.patch, +jubler-3.4.1.ebuild:
+  Version bump. Freedesktop patch committed upstream. Fixes bug #200235.
+
+*jubler-3.4.0 (21 Nov 2007)
+
+  21 Nov 2007; Petteri Räty <betelgeuse@gentoo.org>
+  +files/jubler-3.4.0-freedesktop.patch, +files/jubler-3.4.0.patch,
+  +jubler-3.4.0.ebuild:
+  Version bump. Patched to support shared-mime-info spec and otherwise follow
+  freedesktop specs. Fixes bug #199626.
+
+*jubler-3.3.0-r1 (24 Oct 2007)
+
+  24 Oct 2007; Petteri Räty <betelgeuse@gentoo.org>
+  +jubler-3.3.0-r1.ebuild:
+  Add mplayer use flag. Reported in bug #190771.
+
+  01 Oct 2007; Sven Wegener <swegener@gentoo.org> jubler-3.3.0.ebuild:
+  Use full atoms for built_with_use.
+
+  04 Aug 2007; Miroslav Šulc <fordfrog@gentoo.org>
+  files/jubler-3.3.0.patch, jubler-3.3.0.ebuild:
+  Updated to the latest files from svn.
+
+*jubler-3.3.0 (04 Aug 2007)
+
+  04 Aug 2007; Miroslav Šulc <fordfrog@gentoo.org>
+  +files/jubler-3.3.0.patch, +metadata.xml, +jubler-3.3.0.ebuild:
+  Initial ebuild, submitted by Serkan Kaba <serkan_kaba@yahoo.com>, bug #153992.
+

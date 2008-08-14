@@ -1,0 +1,15 @@
+# ChangeLog for dev-ruby/ruby-bz2
+# Copyright 1999-2006 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-bz2/ChangeLog,v 1.2 2006/06/18 19:38:57 ticho Exp $
+
+  18 Jun 2006; Andrej Kacian <ticho@gentoo.org> ruby-bz2-0.2.2.ebuild:
+  Marked ~x86, as requested in bug #136894 by Josip Dzolonga <jdzolonga at
+  gmail.com>.
+
+*ruby-bz2-0.2.2 (15 Jun 2006)
+
+  15 Jun 2006; Diego Pettenò <flameeyes@gentoo.org> +metadata.xml,
+  +ruby-bz2-0.2.2.ebuild:
+  Initial import, requested by Jon Hood (squinky86) in bug #136204, loosely
+  based on work by Josip Dzolonga in the same bug.
+

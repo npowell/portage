@@ -1,0 +1,158 @@
+# ChangeLog for games-fps/quake2-icculus
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-fps/quake2-icculus/ChangeLog,v 1.31 2008/02/29 19:22:02 carlo Exp $
+
+  29 Feb 2008; Carsten Lohrke <carlo@gentoo.org>
+  quake2-icculus-0.16.1.ebuild, quake2-icculus-0.16.1-r1.ebuild:
+  Remove icon extension from desktop entry to match Icon Theme Specification.
+
+  19 Feb 2008; Mike Frysinger <vapier@gentoo.org>
+  +files/quake2-icculus-0.16.1-no-asm-io.patch,
+  quake2-icculus-0.16.1-r1.ebuild:
+  Fix building with sanitized kernel headers #193107.
+
+  15 Feb 2008; Chris Gianelloni <wolf31o2@gentoo.org>
+  quake2-icculus-0.16.1.ebuild, quake2-icculus-0.16.1-r1.ebuild:
+  Fix quoting.
+
+  28 Jan 2008; Michael Sterrett <mr_bones_@gentoo.org>
+  quake2-icculus-0.16.1-r1.ebuild:
+  make the doc message more generic (bug #207773)
+
+  13 Mar 2007; Chris Gianelloni <wolf31o2@gentoo.org>
+  quake2-icculus-0.16.1.ebuild, quake2-icculus-0.16.1-r1.ebuild:
+  Change which to type -P for QA.
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  09 Jan 2007; Chris Gianelloni <wolf31o2@gentoo.org>
+  quake2-icculus-0.16.1-r1.ebuild:
+  Fix up the einfos into elogs and make sure we don't do anything w/ q2ded
+  unless USE=dedicated.
+
+  05 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  quake2-icculus-0.16.1.ebuild, quake2-icculus-0.16.1-r1.ebuild:
+  Removing old virtual/x11 dependency.
+
+  27 Jun 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  +files/0.16-rogue-armor.patch, quake2-icculus-0.16.1.ebuild,
+  quake2-icculus-0.16.1-r1.ebuild:
+  Added patch to fix compiling of rogue.  Closing bug #137855.
+
+*quake2-icculus-0.16.1-r1 (27 Jun 2006)
+
+  27 Jun 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  +quake2-icculus-0.16.1-r1.ebuild:
+  Revision bump to add support for the demo data.  Closing bug #137522.
+
+  05 Jun 2006; Diego Pettenò <flameeyes@gentoo.org>
+  quake2-icculus-0.16.1.ebuild:
+  Add ~x86-fbsd keyword and accept freebsd-ubin as alternative to sharutils
+  (the same command are installed by that package on Gentoo/FreeBSD).
+
+  25 May 2006; Diego Pettenò <flameeyes@gentoo.org>
+  quake2-icculus-0.16.1.ebuild:
+  Use the correct CC value for cross-distcc, and add missing jpeg dependency.
+  Closes bug #134319.
+
+  06 May 2006; <Tupone@gentoo.org> +files/quake2-icculus-0.16.1-gcc41.patch,
+  quake2-icculus-0.16.1.ebuild:
+  Fixing build with xatrix and gcc-4.1, bug #118299 by Adomas Jackevicius
+
+  15 Mar 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  quake2-icculus-0.16.1.ebuild:
+  Changed to use idsoftware thirdpartymirror.
+
+  03 Nov 2005; Chris Gianelloni <wolf31o2@gentoo.org>
+  files/quake2-icculus-0.16.1-gentoo-paths.patch,
+  quake2-icculus-0.16.1.ebuild:
+  Made the ebuild respect USE=dedicated and also adjusted the path patch.
+  Closing bug #104613. Thanks to Paul Bredbury and Tuomas Suutari for finding
+  and fixing these.
+
+  01 Sep 2005; Mike Frysinger <vapier@gentoo.org>
+  quake2-icculus-0.16.1.ebuild:
+  Add support for USE=alsa #102791 by roma1390.
+
+  29 Aug 2005; Mike Frysinger <vapier@gentoo.org>
+  -files/0.16-Makefile-gentoo-opts.patch, -files/0.16-gentoo-path.patch,
+  +files/quake2-icculus-0.16.1-gentoo-paths.patch,
+  quake2-icculus-0.16.1.ebuild:
+  Clean up the way we pass custom settings to the build system.
+
+  29 May 2005; Mike Frysinger <vapier@gentoo.org>
+  quake2-icculus-0.16.1.ebuild:
+  Add support for just building a dedicated server #94187 by Jan Reitz.
+
+  30 Apr 2005; Mike Frysinger <vapier@gentoo.org>
+  +files/quake2-icculus-0.16.1-amd64.patch, quake2-icculus-0.16.1.ebuild:
+  On amd64, select the glx video renderer by default until the software
+  renderers work #86552.
+
+*quake2-icculus-0.16.1 (10 Mar 2005)
+
+  10 Mar 2005; Mike Frysinger <vapier@gentoo.org>
+  +quake2-icculus-0.16.1.ebuild:
+  Version bumpage.
+
+*quake2-icculus-0.16 (03 Jan 2005)
+
+  03 Jan 2005; Mike Frysinger <vapier@gentoo.org>
+  +files/0.16-Makefile-gentoo-opts.patch, +files/0.16-gentoo-path.patch,
+  +files/0.16-rogue-nan.patch, +quake2-icculus-0.16.ebuild:
+  Version bump. Also update the gentoo path patch to fix game .so searching
+  #42389 and video .so searching #60752.
+
+*quake2-icculus-0.15-r2 (27 Nov 2004)
+
+  27 Nov 2004; Chris Gianelloni <wolf31o2@gentoo.org>
+  +files/0.15-Makefile-amd64.patch, +files/0.15-amd64.patch,
+  files/0.15-gentoo-path.patch, -quake2-icculus-0.15-r1.ebuild,
+  +quake2-icculus-0.15-r2.ebuild:
+  Fixed up the path patch, added initial amd64 support, and closing bugs
+  #61801 and #40328.
+
+  23 Nov 2004; Chris Gianelloni <wolf31o2@gentoo.org>
+  quake2-icculus-0.15-r1.ebuild:
+  Updated DEPEND and IUSE and closing bug #63062.
+
+  01 Jul 2004; Michael Sterrett <mr_bones_@gentoo.org>
+  quake2-icculus-0.15-r1.ebuild:
+  Fix typo (bug #55843); no backquotes
+
+  28 Jun 2004; Aron Griffis <agriffis@gentoo.org>
+  quake2-icculus-0.15-r1.ebuild:
+  fix use invocation, glibc -> libc
+
+  27 Mar 2004; Michael Sterrett <mr_bones_@gentoo.org>
+  quake2-icculus-0.15-r1.ebuild:
+  use || in RDEPEND to say what we really mean; depend on sed >= 4; error check
+  sed
+
+*quake2-icculus-0.15-r1 (08 Jan 2004)
+
+  08 Jan 2004; Mike Frysinger <vapier@gentoo.org> :
+  Fix installed paths #35952.
+
+*quake2-relnev-0.15 (29 Jun 2003)
+
+  27 Dec 2003; Mike Frysinger <vapier@gentoo.org> :
+  Add xatrix/rogue game support #33029.
+
+  30 Jun 2003; Mike Frysinger <vapier@gentoo.org> :
+  renamed (whoops) and added support to build qmax & normal binary.
+
+  29 Jun 2003; Mike Frysinger <vapier@gentoo.org> :
+  Reworked and cleaned up to close #8222.
+  All optional features are supported and qmax has been added.
+
+*quake2-0.15.1 (18 Nov 2002)
+
+  18 Nov 2002; Mike Frysinger <vapier@gentoo.org> :
+  Version bump from lundy.
+
+*quake2-0.14.1 (06 Nov 2002)
+
+  06 Nov 2002; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by Mike Lundy <novas007@gmx.net>.

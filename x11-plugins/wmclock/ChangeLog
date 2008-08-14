@@ -1,0 +1,33 @@
+# ChangeLog for x11-plugins/wmclock
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-plugins/wmclock/ChangeLog,v 1.9 2007/07/22 05:18:26 dberkholz Exp $
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  wmclock-1.0.12.2.ebuild:
+  Drop virtual/x11 references.
+
+  17 Jul 2006; Michele Noberasco <s4t4n@gentoo.org> wmclock-1.0.12.2.ebuild:
+  Added x11-misc/imake to DEPEND. Closes bug #140261.
+
+  24 Jan 2006; Krzysiek Pawlik <nelchael@gentoo.org>
+  wmclock-1.0.12.2.ebuild:
+  Fixed DEPEND for modular X.
+
+  28 Jun 2004; Aron Griffis <agriffis@gentoo.org> wmclock-1.0.12.2.ebuild:
+  glibc -> libc
+
+  11 Apr 2004; Jason Wever <weeve@gentoo.org> wmclock-1.0.12.2.ebuild:
+  Added ~sparc keyword.
+
+  27 Dec 2003; Markus Nigbur <pyrania@gentoo.org> wmclock-1.0.12.2.ebuild:
+  Removed windowmaker dependency and moved the binary to /usr/bin.
+
+  14 Dec 2003; Lars Weiler <pylon@gentoo.org> wmclock-1.0.12.2.ebuild:
+  Make stable on ppc
+  Thanks to Florian Daniel for the testing
+
+*wmclock-1.0.12.2 (04 Oct 2003)
+
+  04 Oct 2003; Markus Nigbur <pyrania@gentoo.org> wmclock-1.0.12.2.ebuild:
+  Initial import. Thanks to xorader@mail.ru (bug #29977).
+

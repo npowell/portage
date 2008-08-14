@@ -1,0 +1,16 @@
+# ChangeLog for sys-devel/bmake
+# Copyright 1999-2006 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-devel/bmake/ChangeLog,v 1.3 2006/10/23 13:33:40 exg Exp $
+
+  23 Oct 2006; Emanuele Giaquinta <exg@gentoo.org> bmake-20060728.ebuild:
+  Add to ~ppc.
+
+  22 Oct 2006; Diego Pettenò <flameeyes@gentoo.org> bmake-20060728.ebuild:
+  Add ~amd64 keyword.
+
+*bmake-20060728 (14 Oct 2006)
+
+  14 Oct 2006; Timothy Redaelli <drizzt@gentoo.org>
+  +files/bmake-makefile.patch, +metadata.xml, +bmake-20060728.ebuild:
+  Initial import
+

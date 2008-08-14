@@ -1,0 +1,26 @@
+# ChangeLog for dev-perl/Cache
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Cache/ChangeLog,v 1.6 2007/12/27 13:05:37 ticho Exp $
+
+  27 Dec 2007; Andrej Kacian <ticho@gentoo.org> Cache-2.04.ebuild:
+  Stable on x86.
+
+  14 Jul 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Assigning dev-perl/Cache to perl-herd, as chriswhite has been retired (#56211).
+
+  20 Oct 2006; Michael Cummings <mcummings@gentoo.org> Cache-2.04.ebuild:
+  Marking amd64 stable
+
+  10 Sep 2006; Michael Cummings <mcummings@gentoo.org> Cache-2.04.ebuild:
+  Keywording ~amd64
+
+  04 Aug 2006; Michael Cummings <mcummings@gentoo.org> Cache-2.04.ebuild:
+  Adding perl dep; fixed DEPEND
+
+*Cache-2.04 (17 Apr 2006)
+
+  17 Apr 2006; Chris White <chriswhite@gentoo.org> +metadata.xml,
+  +Cache-2.04.ebuild:
+  Initial import into the tree. Depend of bug #118928. Thanks to distances and
+  Adam Penser for the ebuilds.
+

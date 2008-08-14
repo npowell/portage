@@ -1,0 +1,38 @@
+# ChangeLog for sys-fs/vhba
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/vhba/ChangeLog,v 1.6 2008/08/03 20:45:48 vanquirius Exp $
+
+  03 Aug 2008; Marcelo Goes <vanquirius@gentoo.org> vhba-1.0.0.ebuild:
+  Scatterlist patch should be for kernels >= 2.6.25, not just 2.6.25. Thanks
+  to Michael Brown <mike at mjbinvestments dot com> and Krzysztof Nowicki
+  <krissn at op dot pl> at bug 233342.
+
+*vhba-1.1.0 (16 Jul 2008)
+
+  16 Jul 2008; Marcelo Goes <vanquirius@gentoo.org> +vhba-1.1.0.ebuild:
+  1.1.0 version bump. Thanks to Pham Ngoc Hai <pngochai at yahoo dot com> in
+  bug 198672.
+
+  26 Jun 2008; Santiago M. Mola <coldwind@gentoo.org> vhba-1.0.0.ebuild:
+  Add ~amd64 keyword wrt bug #198672
+
+  06 Jun 2008; Christian Faulhammer <opfer@gentoo.org> vhba-1.0.0.ebuild:
+  stable x86, bug 224825
+
+  20 May 2008; Matthias Schwarzott <zzam@gentoo.org> vhba-1.0.0.ebuild:
+  Remove redundant linux-info_pkg_setup call.
+
+*vhba-1.0.0 (19 May 2008)
+
+  19 May 2008; Marcelo Goes <vanquirius@gentoo.org>
+  +files/vhba-1.0.0-makefile.patch, +files/vhba-1.0.0-scatterlist.patch,
+  +files/vhba-1.0.0-scsicmnd.patch, +metadata.xml, +vhba-1.0.0.ebuild:
+  Add vhba for bug 198672 - userspace cdemu. Thanks to Daniel Lin <ephemient
+  at gmail dot com>, Daniel Fullmer <cgibreak at gmail dot com>, Sebastian
+  Stammler <stammler at stud.tu-darmstadt.de>, Rafal Muzylo <galtgendo at o2
+  dot pl>, Jan Bessai <Jan.Bessai at gmx dot de>, Pham Ngoc Hai <pngochai at
+  yahoo dot com>, Petr Sykora <petr.sykora at gmail dot com>, Dirk Best
+  <fatplumber at gmx dot de>, Marcel Schmedes <sm at kleinreich dot de>, Vladi
+  <vladimir.elisseev at gmail dot com>, Ambroz BIzjak <ambro at b4ever dot
+  net> and anyone I missed.
+

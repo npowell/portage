@@ -1,0 +1,29 @@
+# ChangeLog for media-plugins/gimp-greycstoration
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/gimp-greycstoration/ChangeLog,v 1.5 2008/08/01 17:05:01 cardoe Exp $
+
+  01 Aug 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
+  add GLEP 56 USE flag desc from use.local.desc
+
+*gimp-greycstoration-2.9 (18 Jun 2008)
+
+  18 Jun 2008; Hanno Boeck <hanno@gentoo.org>
+  +gimp-greycstoration-2.9.ebuild:
+  Version bump.
+
+  30 May 2008; Denis Dupeyron <calchan@gentoo.org>
+  gimp-greycstoration-2.8.ebuild:
+  Added unzip to DEPEND, thanks to Marek Miller (bug #114577).
+
+*gimp-greycstoration-2.8 (30 Mar 2008)
+
+  30 Mar 2008; Denis Dupeyron <calchan@gentoo.org>
+  +gimp-greycstoration-2.8.ebuild:
+  Version bump. Added smp support.
+
+*gimp-greycstoration-1.2.7 (25 Feb 2008)
+
+  25 Feb 2008; Denis Dupeyron <calchan@gentoo.org> +metadata.xml,
+  +gimp-greycstoration-1.2.7.ebuild:
+  Initial commit, see bug #114577.
+

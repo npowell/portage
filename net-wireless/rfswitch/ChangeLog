@@ -1,0 +1,30 @@
+# ChangeLog for net-wireless/rfswitch
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-wireless/rfswitch/ChangeLog,v 1.6 2008/03/12 16:08:46 phreak Exp $
+
+  12 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Peter Johanson (latexer, #206688) from metadata.xml.
+
+*rfswitch-1.1 (10 Feb 2007)
+
+  10 Feb 2007; Christian Heim <phreak@gentoo.org> +rfswitch-1.1.ebuild:
+  Version bump, also fixing compile issues with kernel >=2.6.19. Thanks to
+  Sebastian T. Hafner <sonix-gentoobugs at own-hero.net> for reporting.
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  28 May 2005; <brix@gentoo.org> -rfswitch-0.1.ebuild:
+  Removed deprecated non-linux-mod.eclas ebuild.
+
+*rfswitch-0.1-r1 (28 Apr 2005)
+
+  28 Apr 2005; <brix@gentoo.org> +rfswitch-0.1-r1.ebuild:
+  Ported to use linux-mod.eclass.
+
+*rfswitch-0.1 (09 Jul 2004)
+
+  09 Jul 2004; Peter Johanson <latexer@gentoo.org> +metadata.xml,
+  +rfswitch-0.1.ebuild:
+  Initial commit. Ebuild by yours truly.
+

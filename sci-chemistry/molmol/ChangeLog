@@ -1,0 +1,58 @@
+# ChangeLog for sci-chemistry/molmol
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/molmol/ChangeLog,v 1.16 2008/06/27 10:30:13 ulm Exp $
+
+  27 Jun 2008; Ulrich Mueller <ulm@gentoo.org> molmol-2k_p2.ebuild:
+  Change dependency from virtual/motif to x11-libs/openmotif, bug 224749.
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>; molmol-2k_p2.ebuild:
+  Drop virtual/x11 references.
+
+  07 Apr 2007; Mike Frysinger <vapier@gentoo.org> molmol-2k_p2.ebuild:
+  Replace references to *DESTTREE vars with proper calls to the *into functions.
+
+  23 Oct 2006; Jeff Gardner <je_fro@gentoo.org> molmol-2k_p2.ebuild:
+  Specify mesa in DEPEND - bug 152426
+
+  20 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  (#148281) Change herd to sci-chemistry from sci.
+
+  05 Aug 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Remove myself as maintainer, anyone feel free to work on this, although I'll
+  continue to do so as well.
+
+  09 Jul 2006; Donnie Berkholz <dberkholz@gentoo.org>; molmol-2k_p2.ebuild:
+  x86/ppc stable.
+
+  07 Jul 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Update to my new email address.
+
+  20 Feb 2006; Luis Medinas <metalgod@gentoo.org> molmol-2k_p2.ebuild:
+  Added ~amd64 keyword.
+
+  12 Dec 2005; Donnie Berkholz <dberkholz@gentoo.org>; molmol-2k_p2.ebuild:
+  Add modular X dependencies.
+
+  14 Jul 2005; Donnie Berkholz <dberkholz@gentoo.org>; molmol-2k_p2.ebuild:
+  (#99001) Parallel build broken.
+
+  14 Jul 2005; David Holm <dholm@gentoo.org> molmol-2k_p2.ebuild:
+  Added to ~ppc.
+
+  13 Jul 2005; Donnie Berkholz <dberkholz@gentoo.org>;
+  files/pjf_RH9_molmol2k2.diff:
+  -L/usr/X11R6/lib is pointless.
+
+  13 Jul 2005; Donnie Berkholz <dberkholz@gentoo.org>;
+  files/pjf_RH9_molmol2k2.diff:
+  Link against libXpm, not libXp.
+
+  13 Jul 2005; Donnie Berkholz <dberkholz@gentoo.org>; molmol-2k_p2.ebuild:
+  Missed one use of lib instead of get_libdir().
+
+*molmol-2k_p2 (13 Jul 2005)
+
+  13 Jul 2005; Donnie Berkholz <dberkholz@gentoo.org>;
+  +files/pjf_RH9_molmol2k2.diff, +metadata.xml, +molmol-2k_p2.ebuild:
+  Initial commit.
+

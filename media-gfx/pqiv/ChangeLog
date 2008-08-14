@@ -1,0 +1,65 @@
+# ChangeLog for media-gfx/pqiv
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/pqiv/ChangeLog,v 1.13 2008/06/12 17:55:39 armin76 Exp $
+
+  12 Jun 2008; Raúl Porcel <armin76@gentoo.org> pqiv-0.7.1.ebuild:
+  x86 stable
+
+  12 Jun 2008; Samuli Suominen <drac@gentoo.org> pqiv-0.7.1.ebuild:
+  amd64 stable
+
+*pqiv-0.7.1 (24 May 2008)
+
+  24 May 2008; Samuli Suominen <drac@gentoo.org> -pqiv-0.7.ebuild,
+  +pqiv-0.7.1.ebuild:
+  Version bump to close bug 222423. Thanks to Phillip Berndt and Rafał
+  Mużyło.
+
+*pqiv-0.7 (09 Mar 2008)
+
+  09 Mar 2008; Samuli Suominen <drac@gentoo.org> -pqiv-0.5.ebuild,
+  -pqiv-0.6.1.ebuild, +pqiv-0.7.ebuild:
+  Version bump.
+
+*pqiv-0.6.1 (25 Oct 2007)
+
+  25 Oct 2007; Samuli Suominen <drac@gentoo.org> +pqiv-0.6.1.ebuild:
+  Version bump for bug 197021.
+
+*pqiv-0.5 (15 Sep 2007)
+
+  15 Sep 2007; Samuli Suominen <drac@gentoo.org> +pqiv-0.5.ebuild:
+  Version bump.
+
+*pqiv-0.4 (05 Aug 2007)
+
+  05 Aug 2007; Samuli Suominen <drac@gentoo.org>
+  +files/pqiv-0.4-Makefile.patch, +pqiv-0.4.ebuild:
+  Version bump.
+
+*pqiv-0.4_rc1 (27 Jul 2007)
+
+  27 Jul 2007; Samuli Suominen <drac@gentoo.org>
+  +files/pqiv-0.4_rc1-Makefile.patch, +pqiv-0.4_rc1.ebuild:
+  Version bump, and patch to respect DESTDIR and to prevent prestripping of
+  qiv binary. Thanks to Phillip Berndt for original ebuild and software
+  itself.
+
+*pqiv-0.2 (19 Jun 2007)
+
+  19 Jun 2007; Samuli Suominen <drac@gentoo.org> -pqiv-0.1.ebuild,
+  +pqiv-0.2.ebuild:
+  Version bump.
+
+  01 Jun 2007; Christoph Mende <angelos@gentoo.org> pqiv-0.1.ebuild:
+  Added ~amd64
+
+  27 May 2007; Samuli Suominen <drac@gentoo.org> pqiv-0.1.ebuild:
+  Fix HOMEPAGE and install README.
+
+*pqiv-0.1 (27 May 2007)
+
+  27 May 2007; Samuli Suominen <drac@gentoo.org> +metadata.xml,
+  +pqiv-0.1.ebuild:
+  Initial commit for bug 166009. Ebuild and program itself by Phillip Berndt.
+

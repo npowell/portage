@@ -1,0 +1,197 @@
+# ChangeLog for media-gfx/pstoedit
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/pstoedit/ChangeLog,v 1.52 2008/05/11 21:56:08 aballier Exp $
+
+  11 May 2008; Alexis Ballier <aballier@gentoo.org>
+  +files/pstoedit-3.45-gcc-4.3.patch, pstoedit-3.45.ebuild:
+  gcc 4.3 build fix by Martin Väth <vaeth@mathematik.uni-wuerzburg.de>, bug
+  #218013
+
+  17 Mar 2008; Alexis Ballier <aballier@gentoo.org> pstoedit-3.45.ebuild:
+  dont use -pedantic for building as 'long long' used by latest imagemagick
+  headers cause build failures
+
+  04 Mar 2008; Alexis Ballier <aballier@gentoo.org>
+  -files/3.44-as-needed.patch, -files/pstoedit-m4-quoting.patch,
+  -pstoedit-3.44.ebuild:
+  remove old
+
+  04 Mar 2008; Brent Baude <ranger@gentoo.org> pstoedit-3.45.ebuild:
+  stable ppc64, bug 208509
+
+  28 Feb 2008; nixnut <nixnut@gentoo.org> pstoedit-3.45.ebuild:
+  Stable on ppc wrt bug 208509
+
+  27 Feb 2008; Ferris McCormick <fmccor@gentoo.org> pstoedit-3.45.ebuild:
+  Sparc stable --- Bug #208509 --- verfied with .tk driver
+
+  27 Feb 2008; Santiago M. Mola <coldwind@gentoo.org> pstoedit-3.45.ebuild:
+  amd64 stable wrt bug #208509
+
+  27 Feb 2008; Christian Faulhammer <opfer@gentoo.org> pstoedit-3.45.ebuild:
+  stable x86, bug 208509
+
+  27 Feb 2008; Jeroen Roovers <jer@gentoo.org> pstoedit-3.45.ebuild:
+  Stable for HPPA (bug #208509).
+
+  26 Jan 2008; Alexis Ballier <aballier@gentoo.org> pstoedit-3.45.ebuild:
+  now that we dont patch, we dont need to call eautoreconf, fixes bug #207452
+  as a side effect
+
+  24 Jan 2008; Stefan Schweizer <genstef@gentoo.org> ChangeLog:
+  remove as-needed patch, bug 207286
+
+*pstoedit-3.45 (24 Jan 2008)
+
+  24 Jan 2008; Stefan Schweizer <genstef@gentoo.org> -pstoedit-3.33.ebuild,
+  -pstoedit-3.40.ebuild, -pstoedit-3.42.ebuild, +pstoedit-3.45.ebuild:
+  version bump bug 199452 thanks carlo
+
+  09 Apr 2007; Marcus D. Hanwell <cryos@gentoo.org> pstoedit-3.44.ebuild:
+  Stable on amd64.
+
+  09 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org> pstoedit-3.44.ebuild:
+  Stable on sparc
+
+  09 Apr 2007; Jeroen Roovers <jer@gentoo.org> pstoedit-3.44.ebuild:
+  Stable for HPPA (bug #171799).
+
+  08 Apr 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  pstoedit-3.44.ebuild:
+  ppc stable, bug #171799
+
+  08 Apr 2007; Markus Rothe <corsair@gentoo.org> pstoedit-3.44.ebuild:
+  Stable on ppc64; bug #171799
+
+  07 Apr 2007; Christian Faulhammer <opfer@gentoo.org> pstoedit-3.44.ebuild:
+  stable x86, security bug 171799
+
+  07 Apr 2007; Petteri Räty <betelgeuse@gentoo.org> pstoedit-3.44.ebuild:
+  emf is now properly use.masked so remove the !amd64? hack
+
+*pstoedit-3.44 (07 Apr 2007)
+
+  07 Apr 2007; Petteri Räty <betelgeuse@gentoo.org>
+  +files/3.44-as-needed.patch, +pstoedit-3.44.ebuild:
+  Version bump. Fixes bugs #137204, #139024 and bug #131848. Thanks to TGL
+  <degrenier@easyconnect.fr> for the --as-needed patch.
+
+  04 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org> pstoedit-3.42.ebuild:
+  Stable on sparc
+
+  13 Mar 2007; Alexandre Buisse <nattfodd@gentoo.org> metadata.xml:
+  Added printing as maintainer herd.
+
+  12 Mar 2007; Alexandre Buisse <nattfodd@gentoo.org> metadata.xml:
+  Replaced text-markup by tex as maintaining herd (text-markup split).
+
+  12 Mar 2007; Raúl Porcel <armin76@gentoo.org> pstoedit-3.40.ebuild:
+  x86 stable
+
+  23 Feb 2007; Alexandre Buisse <nattfodd@gentoo.org> pstoedit-3.42.ebuild:
+  Fix for compilation failures (bug #137204). Thanks to Denis Dupeyron and Ed
+  Catmur for the patch.
+
+  05 Feb 2007; Jeroen Roovers <jer@gentoo.org> pstoedit-3.42.ebuild:
+  Stable for HPPA (inkscape).
+
+  07 Jul 2006; Jeroen Roovers <jer@gentoo.org> pstoedit-3.42.ebuild:
+  Marked ~hppa for media-gfx/inkscape.
+
+  23 May 2006; Alexandre Buisse <nattfodd@gentoo.org>
+  +files/pstoedit-m4-quoting.patch, pstoedit-3.42.ebuild:
+  Trivial fix to the UNDERQUOTED_DEFINITION in pstoedit.m4. Thanks to TGL in
+  bug #133302.
+
+  21 May 2006; Martin Ehmsen <ehmsen@gentoo.org> pstoedit-3.42.ebuild:
+  Added emf use flag which pulls libemf (only on non amd64), thanks to whereami 
+  <whereami@gmail.com>, bug #133290.
+
+  13 Apr 2006; Patrick McLean <chutzpah@gentoo.org> pstoedit-3.33.ebuild,
+  pstoedit-3.40.ebuild, pstoedit-3.42.ebuild:
+  Drop amd64 keyword so I can drop the keyword from media-libs/libemf (see bug
+  #127328).
+
+*pstoedit-3.42 (02 Nov 2005)
+
+  02 Nov 2005; Leonardo Boshell <leonardop@gentoo.org>
+  pstoedit-3.40.ebuild, +pstoedit-3.42.ebuild:
+  Fix SRC_URI in version 3.40 (bug #110958). Version bump to 3.42.
+
+  22 Jun 2005; Gustavo Zacarias <gustavoz@gentoo.org> pstoedit-3.40.ebuild:
+  Stable on sparc
+
+  09 Jun 2005; <sekretarz@gentoo.org> pstoedit-3.40.ebuild:
+  Stable on amd64
+
+  05 Jun 2005; Markus Rothe <corsair@gentoo.org> pstoedit-3.40.ebuild:
+  Stable on ppc64; dependency for bug #92995
+
+  21 May 2005; Markus Rothe <corsair@gentoo.org> pstoedit-3.40.ebuild:
+  Added ~ppc64 to KEYWORDS
+
+  26 Mar 2005; Jason Wever <weeve@gentoo.org> pstoedit-3.40.ebuild:
+  Added ~sparc keyword wrt bug #86280.
+
+  22 Mar 2005; Karol Wojtaszek <sekretarz@gentoo.org> pstoedit-3.40.ebuild:
+  Added to ~amd64
+
+*pstoedit-3.40 (21 Feb 2005)
+
+  21 Feb 2005; Mamoru KOMACHI <usata@gentoo.org> +pstoedit-3.40.ebuild:
+  Version bumped. Added plututils to IUSE. This closes bug #43820.
+
+  25 Apr 2004; Aron Griffis <agriffis@gentoo.org> pstoedit-3.32.ebuild,
+  pstoedit-3.33.ebuild:
+  Add die following econf for bug 48950
+
+  16 Feb 2004; Mike Gardiner <obz@gentoo.org> pstoedit-3.33.ebuild:
+  Added libemf as a dependency, and fixed libemf related compilation problems by
+  removing -pedantic CFLAG
+
+  02 Feb 2004; Martin Holzer <mholzer@gentoo.org> pstoedit-3.32.ebuild,
+  pstoedit-3.33.ebuild:
+  adding media-libs/libexif to depend. closes 39693
+
+  31 Jan 2004; Mike Gardiner <obz@gentoo.org> pstoedit-3.32.ebuild,
+  pstoedit-3.33.ebuild:
+  Now installs all documentation, and a man page. Removed -pedantic flag which
+  causes errors with libEMF
+
+  09 Dec 2003; Heinrich Wendel <lanius@gentoo.org> pstoedit-3.32.ebuild,
+  pstoedit-3.33.ebuild:
+  changed app-text/ghostscript to virtual/ghostscript
+
+  02 Oct 2003; Mike Gardiner <obz@gentoo.org> metadata.xml,
+  pstoedit-3.33.ebuild:
+  Fixes re bug: 29724 for libEMF and removed ming support which is currently
+  un-supported support (?). We're also going stable on x86
+
+*pstoedit-3.33 (17 Jun 2003)
+
+  17 Jun 2003; Seemant Kulleen <seemant@gentoo.org> pstoedit-3.33.ebuild:
+  version bump, thanks to: Sean P. Kane <spkane@genomatica.com> in bug #22962
+
+*pstoedit-3.32 (22 Oct 2002)
+
+  22 Oct 2002; Seemant Kulleen <seemant@gentoo.org> pstoedit-3.32.ebuild
+  files/digest-pstoedit-3.32 :
+
+  Version bump thanks to: mavos@bigfoot.com (Martin Vollrathson) in bug
+  #8967.
+
+*pstoedit-3.31-r1 (12 Apr 2002)
+
+  12 Apr 2002; Seemant Kulleen <seemant@gentoo.org> pstoedit-3.31-r1.ebuild :
+
+  Compile against latest libpng
+
+*pstoedit-3.31 (1 Feb 2002)
+
+  1 Feb 2002; G.Bevin <gbevin@gentoo.org> ChangeLog :
+  
+  Added initial ChangeLog which should be updated whenever the package is
+  updated in any way. This changelog is targetted to users. This means that the
+  comments should well explained and written in clean English. The details about
+  writing correct changelogs are explained in the skel.ChangeLog file which you
+  can find in the root directory of the portage repository.

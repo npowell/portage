@@ -1,0 +1,81 @@
+# ChangeLog for media-plugins/vdr-pvrinput
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-pvrinput/ChangeLog,v 1.16 2008/07/10 09:59:55 zzam Exp $
+
+*vdr-pvrinput-2008.07.05 (10 Jul 2008)
+
+  10 Jul 2008; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-pvrinput-2008.07.05.ebuild:
+  Version bumped.
+
+*vdr-pvrinput-2008.06.19 (20 Jun 2008)
+
+  20 Jun 2008; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-pvrinput-2008.06.19.ebuild:
+  Version bumped. Fixed version scheme.
+
+*vdr-pvrinput-1.0.0.20080601 (01 Jun 2008)
+
+  01 Jun 2008; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-pvrinput-1.0.0.20080601.ebuild:
+  Version bumped.
+
+  28 Apr 2008; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-pvrinput-1.0.0.20070523.ebuild:
+  Marked stable on x86.
+
+  28 Apr 2008; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-pvrinput-0.1.1.ebuild:
+  Fixed quoting.
+
+*vdr-pvrinput-1.0.0.20070523 (19 Aug 2007)
+
+  19 Aug 2007; Matthias Schwarzott <zzam@gentoo.org>
+  +vdr-pvrinput-1.0.0.20070523.ebuild:
+  Version bumped.
+
+  12 Jun 2007; Matthias Schwarzott <zzam@gentoo.org>
+  -files/vdr-pvrinput-0.1.1_pre1-include-order.patch,
+  -vdr-pvrinput-0.1.1_pre1.ebuild, vdr-pvrinput-0.1.1.ebuild:
+  Added missing inherit eutils. Removed old ebuild.
+
+  19 Nov 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-pvrinput-0.1.1_pre1.ebuild, vdr-pvrinput-0.1.1.ebuild:
+  Marked 0.1.1 stable on x86.
+
+  11 Oct 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-pvrinput-0.1.1_pre1.ebuild, vdr-pvrinput-0.1.1.ebuild:
+  Apply include-order patch only conditional - ivtv-headers is a strange topic.
+
+  15 Aug 2006; Matthias Schwarzott <zzam@gentoo.org> metadata.xml:
+  Assigned to Gentoo VDR Project.
+
+  16 May 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-pvrinput-0.1.1_pre1.ebuild, vdr-pvrinput-0.1.1.ebuild:
+  Added missing IUSE.
+
+  08 May 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-pvrinput-0.1.1_pre1.ebuild:
+  Moved media-tv/ivtv from DEPEND to RDEPEND
+
+  01 May 2006; Joerg Bornkessel <hd_brummy@gentoo.org> metadata.xml,
+  vdr-pvrinput-0.1.1.ebuild:
+  version bump; add myself as 2nd maintainer
+
+*vdr-pvrinput-0.1.1 (01 May 2006)
+
+  01 May 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +files/vdr-pvrinput-0.1.1-include-order.patch, +vdr-pvrinput-0.1.1.ebuild:
+  Version bumped.
+
+  17 Apr 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-pvrinput-0.1.1_pre1.ebuild:
+  Marked stable on x86
+
+*vdr-pvrinput-0.1.1_pre1 (10 Feb 2006)
+
+  10 Feb 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +files/vdr-pvrinput-0.1.1_pre1-include-order.patch, +metadata.xml,
+  +vdr-pvrinput-0.1.1_pre1.ebuild:
+  Imported ebuild from gentoo.de
+

@@ -1,0 +1,28 @@
+# ChangeLog for net-p2p/mktorrent
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-p2p/mktorrent/ChangeLog,v 1.5 2008/01/29 12:24:25 drac Exp $
+
+  29 Jan 2008; Samuli Suominen <drac@gentoo.org> mktorrent-0.4.ebuild:
+  Link to libcrypto instead of libssl for required symbols. Keyword ~amd64 wrt
+  #207845.
+
+  28 Jan 2008; Dawid Węgliński <cla@gentoo.org> mktorrent-0.4.ebuild:
+  Stable on x86 (bug #207845)
+
+*mktorrent-0.4 (30 Dec 2007)
+
+  30 Dec 2007; Raúl Porcel <armin76@gentoo.org> -mktorrent-0.2.ebuild,
+  +mktorrent-0.4.ebuild:
+  Version bump, remove old
+
+  26 Dec 2007; Christian Heim <phreak@gentoo.org>
+  +files/digest-mktorrent-0.2, Manifest:
+  Adding the missing digest.
+
+*mktorrent-0.2 (16 Oct 2007)
+
+  16 Oct 2007; Raúl Porcel <armin76@gentoo.org> +metadata.xml,
+  +mktorrent-0.2.ebuild:
+  New package, initial ebuild by Kalidarn <dcecchin at gmail dot com>, bug
+  #195934
+

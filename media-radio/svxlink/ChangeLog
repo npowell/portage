@@ -1,0 +1,21 @@
+# ChangeLog for media-radio/svxlink
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-radio/svxlink/ChangeLog,v 1.4 2008/06/11 22:02:15 darkside Exp $
+
+  11 Jun 2008; Jeremy Olexa <darkside@gentoo.org> svxlink-080102.ebuild:
+  Fix SRC_URI, thanks to Tobias Blomberg for reporting, bug #216451
+
+  06 Apr 2008; Carsten Lohrke <carlo@gentoo.org> metadata.xml:
+  Maintainer retired.
+
+*svxlink-080102 (30 Mar 2008)
+
+  30 Mar 2008; Lars Weiler <pylon@gentoo.org> +svxlink-080102.ebuild:
+  Version bump.
+
+*svxlink-070415 (16 Dec 2007)
+
+  16 Dec 2007; Lars Weiler <pylon@gentoo.org> +files/kde.patch,
+  +metadata.xml, +svxlink-070415.ebuild:
+  New application for all those Gentoo ham-radio users out there.
+

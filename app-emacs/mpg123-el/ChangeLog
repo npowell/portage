@@ -1,0 +1,54 @@
+# ChangeLog for app-emacs/mpg123-el
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emacs/mpg123-el/ChangeLog,v 1.14 2008/01/14 19:24:40 angelos Exp $
+
+  14 Jan 2008; Christoph Mende <angelos@gentoo.org> mpg123-el-1.50.ebuild:
+  Stable on amd64 wrt bug #204003
+
+  02 Jan 2008; Christian Faulhammer <opfer@gentoo.org>
+  mpg123-el-1.50.ebuild:
+  stable x86, bug 204003
+
+*mpg123-el-1.50 (02 Dec 2007)
+
+  02 Dec 2007; Christian Faulhammer <opfer@gentoo.org>
+  +mpg123-el-1.50.ebuild:
+  version bump
+
+  07 Oct 2007; Ulrich Mueller <ulm@gentoo.org> -mpg123-el-1.42.ebuild,
+  mpg123-el-1.47.ebuild:
+  Remove quotes around tc-getCC command substitution. Remove old.
+
+  30 Mar 2007; Christian Faulhammer <opfer@gentoo.org>
+  mpg123-el-1.47.ebuild:
+  stable x86
+
+*mpg123-el-1.47 (09 Feb 2007)
+
+  09 Feb 2007; Christian Faulhammer <opfer@gentoo.org>
+  +mpg123-el-1.47.ebuild:
+  version bump: removed virtual/emacs from DEPEND, added a quote around a
+  variable
+
+  06 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  26 Dec 2005; Luca Barbato <lu_zero@gentoo.org> mpg123-el-1.42.ebuild:
+  oggvorbis Cleanup
+
+  29 Sep 2005; Joseph Jezak <josejx@gentoo.org> mpg123-el-1.42.ebuild:
+  Marked ~ppc.
+
+  01 Jul 2005; Matthew Kennedy <mkennedy@gentoo.org> mpg123-el-1.42.ebuild:
+  Keywording ~amd64.
+
+  10 Oct 2004; Mamoru KOMACHI <usata@gentoo.org> mpg123-el-1.42.ebuild:
+  Stable on x86.
+
+*mpg123-el-1.42 (05 Jun 2004)
+
+  05 Jun 2004; Mamoru KOMACHI <usata@gentoo.org> mpg123-el-1.42.ebuild,
+  files/50mpg123-el-gentoo.el:
+  Initial import. Thanks to Louis C. Candell <gentoo@ossh.com> and
+  Atzm Watanabe <sitosito@p.chan.ne.jp>, closing bug #37456
+

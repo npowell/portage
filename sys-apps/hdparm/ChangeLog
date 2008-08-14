@@ -1,0 +1,537 @@
+# ChangeLog for sys-apps/hdparm
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/hdparm/ChangeLog,v 1.143 2008/06/17 00:51:53 vapier Exp $
+
+*hdparm-8.9 (17 Jun 2008)
+
+  17 Jun 2008; Mike Frysinger <vapier@gentoo.org> +hdparm-8.9.ebuild:
+  Version bump.
+
+*hdparm-8.8 (11 Jun 2008)
+
+  11 Jun 2008; Mike Frysinger <vapier@gentoo.org> +hdparm-8.8.ebuild:
+  Version bump.
+
+*hdparm-8.7 (02 Jun 2008)
+
+  02 Jun 2008; Mike Frysinger <vapier@gentoo.org> +hdparm-8.7.ebuild:
+  Version bump.
+
+  02 Apr 2008; Tobias Klausmann <klausman@gentoo.org> hdparm-8.6.ebuild:
+  Stable on alpha, bug #215068
+
+  01 Apr 2008; Raúl Porcel <armin76@gentoo.org> hdparm-8.6.ebuild:
+  ia64/sparc stable wrt #215068
+
+  29 Mar 2008; Brent Baude <ranger@gentoo.org> hdparm-8.6.ebuild:
+  stable ppc, bug 215068
+
+  29 Mar 2008; Jeroen Roovers <jer@gentoo.org> hdparm-8.6.ebuild:
+  Stable for HPPA (bug #215068).
+
+  29 Mar 2008; Brent Baude <ranger@gentoo.org> hdparm-8.6.ebuild:
+  stable ppc64, bug 215068
+
+  28 Mar 2008; Markus Meier <maekke@gentoo.org> hdparm-8.6.ebuild:
+  amd64/x86 stable, bug #215068
+
+*hdparm-8.6 (27 Feb 2008)
+
+  27 Feb 2008; Mike Frysinger <vapier@gentoo.org> +hdparm-8.6.ebuild:
+  Version bump.
+
+*hdparm-8.5 (24 Feb 2008)
+
+  24 Feb 2008; Mike Frysinger <vapier@gentoo.org> +hdparm-8.5.ebuild:
+  Version bump.
+
+*hdparm-8.4 (20 Feb 2008)
+
+  20 Feb 2008; Mike Frysinger <vapier@gentoo.org> -hdparm-8.0.ebuild,
+  -hdparm-8.1.ebuild, +hdparm-8.4.ebuild:
+  Version bump.
+
+*hdparm-8.2 (19 Feb 2008)
+
+  19 Feb 2008; Mike Frysinger <vapier@gentoo.org> +hdparm-8.2.ebuild:
+  Version bump.
+
+*hdparm-8.1 (16 Feb 2008)
+
+  16 Feb 2008; Mike Frysinger <vapier@gentoo.org> +hdparm-8.1.ebuild:
+  Version bump.
+
+*hdparm-8.0 (16 Feb 2008)
+
+  16 Feb 2008; Mike Frysinger <vapier@gentoo.org> +hdparm-8.0.ebuild:
+  Version bump.
+
+  19 Nov 2007; Joshua Kinard <kumba@gentoo.org> hdparm-7.7.ebuild:
+  Stable on mips.
+
+  14 Oct 2007; Markus Rothe <corsair@gentoo.org> hdparm-7.7.ebuild:
+  Stable on ppc64; bug #194007
+
+  29 Sep 2007; Joshua Kinard <kumba@gentoo.org> ChangeLog:
+  Stable on mips, per #194007.
+
+  28 Sep 2007; nixnut <nixnut@gentoo.org> hdparm-7.7.ebuild:
+  Stable on ppc wrt bug 194007
+
+  28 Sep 2007; Raúl Porcel <armin76@gentoo.org> hdparm-7.7.ebuild:
+  alpha/ia64/sparc/x86 stable wrt #194007
+
+  28 Sep 2007; Jeroen Roovers <jer@gentoo.org> hdparm-7.7.ebuild:
+  Stable for HPPA (bug #194007).
+
+  28 Sep 2007; Christoph Mende <angelos@gentoo.org> hdparm-7.7.ebuild:
+  Stable on amd64 wrt bug #194007
+
+*hdparm-7.7 (08 Aug 2007)
+
+  08 Aug 2007; Mike Frysinger <vapier@gentoo.org> +hdparm-7.7.ebuild:
+  Version bump.
+
+  30 Jul 2007; Markus Rothe <corsair@gentoo.org> hdparm-7.6.ebuild:
+  Stable on ppc64; bug #186290
+
+  25 Jul 2007; Jeroen Roovers <jer@gentoo.org> hdparm-7.6.ebuild:
+  Stable for HPPA (bug #186290).
+
+  24 Jul 2007; Steve Dibb <beandog@gentoo.org> hdparm-7.6.ebuild:
+  amd64 stable, bug 186290
+
+  23 Jul 2007; Raúl Porcel <armin76@gentoo.org> hdparm-7.6.ebuild:
+  alpha/ia64 stable wrt #186290
+
+  23 Jul 2007; nixnut <nixnut@gentoo.org> hdparm-7.6.ebuild:
+  Stable on ppc wrt bug 186290
+
+  23 Jul 2007; Joshua Kinard <kumba@gentoo.org> hdparm-7.6.ebuild:
+  Stable on mips, per #186290.
+
+  23 Jul 2007; Gustavo Zacarias <gustavoz@gentoo.org> hdparm-7.6.ebuild:
+  Stable on sparc wrt #186290
+
+  23 Jul 2007; Christian Faulhammer <opfer@gentoo.org> hdparm-7.6.ebuild:
+  stable x86, bug 186290
+
+  15 Jul 2007; Raúl Porcel <armin76@gentoo.org> hdparm-7.5.ebuild:
+  ia64/x86 stable
+
+*hdparm-7.6 (20 Jun 2007)
+
+  20 Jun 2007; Mike Frysinger <vapier@gentoo.org> +hdparm-7.6.ebuild:
+  Version bump.
+
+  14 Jun 2007; Tobias Scherbaum <dertobi123@gentoo.org> hdparm-7.3.ebuild:
+  ppc stable, bug #181965
+
+  14 Jun 2007; Jeroen Roovers <jer@gentoo.org> hdparm-7.3.ebuild:
+  Stable for HPPA (bug #181965).
+
+  14 Jun 2007; Raúl Porcel <armin76@gentoo.org> hdparm-7.3.ebuild:
+  alpha/ia64/x86 stable wrt #181965
+
+  14 Jun 2007; Gustavo Zacarias <gustavoz@gentoo.org> hdparm-7.3.ebuild:
+  Stable on sparc wrt #181965
+
+  14 Jun 2007; Markus Rothe <corsair@gentoo.org> hdparm-7.3.ebuild:
+  Stable on ppc64; bug #181965
+
+  14 Jun 2007; Joshua Kinard <kumba@gentoo.org> hdparm-7.3.ebuild:
+  Stable on mips, per #181965.
+
+  14 Jun 2007; Christoph Mende <angelos@gentoo.org> hdparm-7.3.ebuild:
+  Stable on amd64 wrt bug 181965
+
+*hdparm-7.5 (13 Jun 2007)
+
+  13 Jun 2007; Mike Frysinger <vapier@gentoo.org> +hdparm-7.5.ebuild:
+  Version bump #181910 by Raul Porcel.
+
+  12 May 2007; Raúl Porcel <armin76@gentoo.org> hdparm-7.3.ebuild:
+  Back to stable
+
+*hdparm-7.3 (12 May 2007)
+
+  12 May 2007; Mike Frysinger <vapier@gentoo.org> +hdparm-7.3.ebuild:
+  Version bump #177938 by Lars (Polynomial-C).
+
+  24 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org> hdparm-6.9-r1.ebuild:
+  Stable on sparc
+
+  24 Apr 2007; Alexander Færøy <eroyf@gentoo.org> hdparm-6.9-r1.ebuild:
+  Stable on MIPS.
+
+  23 Apr 2007; Raúl Porcel <armin76@gentoo.org> hdparm-6.9-r1.ebuild:
+  ia64 + x86 stable
+
+*hdparm-6.9-r1 (13 Mar 2007)
+
+  13 Mar 2007; Roy Marples <uberlord@gentoo.org> +files/hdparm-init-8,
+  +hdparm-6.9-r1.ebuild:
+  Init script no longer requires bash.
+
+  12 Mar 2007; Bryan Østergaard <kloeri@gentoo.org> hdparm-6.9.ebuild:
+  Stable on Alpha, bug 170122.
+
+  11 Mar 2007; Tony Vroon <chainsaw@gentoo.org> hdparm-6.9.ebuild:
+  Stable on PPC64 for bug #170122. Tested on 64UL with GCC 4.1.2
+
+  11 Mar 2007; Olivier Crête <tester@gentoo.org> hdparm-6.9.ebuild:
+  Stable on amd64 per bug #170122
+
+  10 Mar 2007; nixnut <nixnut@gentoo.org> hdparm-6.9.ebuild:
+  Stable on ppc wrt bug 170122
+
+  09 Mar 2007; Jeroen Roovers <jer@gentoo.org> hdparm-6.9.ebuild:
+  Stable for HPPA (bug #170122).
+
+  09 Mar 2007; Raúl Porcel <armin76@gentoo.org> hdparm-6.9.ebuild:
+  x86 stable wrt bug 170122
+
+  09 Mar 2007; Alexander H. Færøy <eroyf@gentoo.org> hdparm-6.9.ebuild:
+  Stable on MIPS; bug #170122
+
+  20 Feb 2007; Alexander H. Færøy <eroyf@gentoo.org> hdparm-6.6.ebuild:
+  Stable on MIPS; bug #153892
+
+  14 Feb 2007; Chris Gianelloni <wolf31o2@gentoo.org> hdparm-6.6.ebuild:
+  Stable on alpha wrt bug #153892.
+
+  02 Feb 2007; Gustavo Zacarias <gustavoz@gentoo.org> hdparm-6.9.ebuild:
+  Stable on sparc
+
+  29 Nov 2006; Mike Frysinger <vapier@gentoo.org> files/hdparm-init-7:
+  Add support for skipping hdparm init if kernel was booted with
+  gentoo=nohdparm #156489 by Fabio Erculiani.
+
+  15 Nov 2006; Markus Rothe <corsair@gentoo.org> hdparm-6.6.ebuild:
+  Stable on ppc64; bug #153892
+
+  06 Nov 2006; Christian Faulhammer <opfer@gentoo.org> hdparm-6.6.ebuild:
+  stable x86, bug #153892
+
+  04 Nov 2006; Jeroen Roovers <jer@gentoo.org> hdparm-6.6.ebuild:
+  Stable for HPPA (bug #153892).
+
+  03 Nov 2006; Patrick McLean <chutzpah@gentoo.org> hdparm-6.6.ebuild:
+  Stable on amd64 (bug #153892).
+
+  03 Nov 2006; Gustavo Zacarias <gustavoz@gentoo.org> hdparm-6.6.ebuild:
+  Stable on sparc wrt #153892
+
+  03 Nov 2006; Timothy Redaelli <drizzt@gentoo.org> hdparm-6.6.ebuild:
+  Stable on ppc. Bug #153892
+
+*hdparm-6.9 (03 Nov 2006)
+
+  03 Nov 2006; Mike Frysinger <vapier@gentoo.org> +hdparm-6.9.ebuild:
+  Version bump #153760 by Lars (Polynomial-C).
+
+*hdparm-6.6 (25 Jun 2006)
+
+  25 Jun 2006; Mike Frysinger <vapier@gentoo.org> files/hdparm-init-7,
+  files/hdparm-conf.d.3, +hdparm-6.6.ebuild:
+  Version bump and add initial support for SATA drives #130330.
+
+  19 Mar 2006; Fernando J. Pereda <ferdy@gentoo.org> hdparm-6.3.ebuild:
+  Stable on alpha as per bug #125656
+
+  10 Mar 2006; Markus Rothe <corsair@gentoo.org> hdparm-6.3.ebuild:
+  Stable on ppc64; bug #125656
+
+  10 Mar 2006; <nixnut@gentoo.org> hdparm-6.3.ebuild:
+  Stable on ppc. Bug #125656
+
+  10 Mar 2006; Torsten Veller <tove@gentoo.org> hdparm-6.3.ebuild:
+  Stable on x86 (#125656)
+
+  10 Mar 2006; Gustavo Zacarias <gustavoz@gentoo.org> hdparm-6.3.ebuild:
+  Stable on sparc wrt #125656
+
+  10 Mar 2006; Patrick McLean <chutzpah@gentoo.org> hdparm-6.3.ebuild:
+  Stable on amd64 (bug #125656).
+
+*hdparm-6.3 (28 Dec 2005)
+
+  28 Dec 2005; Mike Frysinger <vapier@gentoo.org> files/hdparm-init-7,
+  +hdparm-6.3.ebuild:
+  Version bump #116979 by Michael Cramer and fix init.d script for cdrom
+  devices #104683 by Heiko Baums / Stefan Illner.
+
+  26 Sep 2005; MATSUU Takuto <matsuu@gentoo.org> hdparm-5.9.ebuild:
+  Stable on sh.
+
+  29 Jun 2005; Joshua Kinard <kumba@gentoo.org> hdparm-5.9.ebuild:
+  Marked stable on mips.
+
+  12 Jun 2005; Bryan Østergaard <kloeri@gentoo.org> hdparm-5.9.ebuild:
+  Stable on alpha.
+
+  06 Jun 2005; Markus Rothe <corsair@gentoo.org> hdparm-5.9.ebuild:
+  Stable on ppc64
+
+  31 May 2005; Sven Wegener <swegener@gentoo.org> hdparm-5.7-r1.ebuild,
+  hdparm-5.9.ebuild, hdparm-6.1.ebuild:
+  Let portage handle the stripping of binaries.
+
+  30 May 2005; Sven Wegener <swegener@gentoo.org> hdparm-5.7-r1.ebuild:
+  Moved from gcc.eclass to toolchain-funcs.eclass, bug #92745.
+
+  09 May 2005; Lars Weiler <pylon@gentoo.org> hdparm-5.9.ebuild:
+  Stable on ppc.
+
+  06 May 2005; Gustavo Zacarias <gustavoz@gentoo.org> hdparm-5.9.ebuild:
+  Stable on sparc
+
+*hdparm-6.1 (24 Apr 2005)
+
+  24 Apr 2005; Heinrich Wendel <lanius@gentoo.org> +hdparm-6.1.ebuild:
+  version bump
+
+  19 Feb 2005; Heinrich Wendel <lanius@gentoo.org>
+  -files/hdparm-5.4-readahead_rename.patch, -files/hdparm-conf.d,
+  -files/hdparm-init-2, -hdparm-5.4.ebuild:
+  cleanups
+
+  19 Feb 2005; Markus Rothe <corsair@gentoo.org> hdparm-5.7-r1.ebuild:
+  Stable on ppc64
+
+*hdparm-5.9 (19 Feb 2005)
+
+  19 Feb 2005; Heinrich Wendel <lanius@gentoo.org> -files/hdparm-init-6,
+  -hdparm-5.5-r4.ebuild, -hdparm-5.5.ebuild, -hdparm-5.6.ebuild,
+  -hdparm-5.7.ebuild, -hdparm-5.8.ebuild, +hdparm-5.9.ebuild:
+  cleanups, version bump
+
+  02 Jan 2005; Ciaran McCreesh <ciaranm@gentoo.org> :
+  Change encoding to UTF-8 for GLEP 31 compliance
+
+*hdparm-5.8 (23 Nov 2004)
+
+  23 Nov 2004; Tony Vroon <chainsaw@gentoo.org> +hdparm-5.8.ebuild:
+  Version bump, closes bug #72155. Dropped inherit on eutils eclass, not
+  required.
+
+  01 Nov 2004; Joshua Kinard <kumba@gentoo.org> hdparm-5.7-r1.ebuild:
+  Marked stable on mips.
+
+  02 Oct 2004; Bryan Østergaard <kloeri@gentoo.org> hdparm-5.7-r1.ebuild:
+  Stable on alpha.
+
+  27 Sep 2004; Gustavo Zacarias <gustavoz@gentoo.org> hdparm-5.7-r1.ebuild:
+  Stable on sparc
+
+  26 Sep 2004; Danny van Dyk <kugelfang@gentoo.org> hdparm-5.7-r1.ebuild:
+  Marked stable on amd64.
+
+  24 Sep 2004; Heinrich Wendel <lanius@gentoo.org> hdparm-5.7-r1.ebuild:
+  stable on x86
+
+*hdparm-5.7-r1 (08 Sep 2004)
+
+  08 Sep 2004; Heinrich Wendel <lanius@gentoo.org> +files/hdparm-init-7,
+  +hdparm-5.7-r1.ebuild:
+  support non-devfs compatible udev systems, bug #62915
+
+  06 Sep 2004; Sven Wegener <swegener@gentoo.org> files/hdparm-conf.d,
+  files/hdparm-conf.d.3:
+  Fixed typos in conf.d files. Thanks to Redshift <gentoo@halffull.org> and
+  Steve Dibb <sdibb@myway.com> in bug #62275.
+
+*hdparm-5.7 (04 Sep 2004)
+
+  04 Sep 2004; Tony Vroon <chainsaw@gentoo.org> +hdparm-5.7.ebuild:
+  Version bump as requested in bug #62599 by Lars (Polynomial-C).
+
+  20 Aug 2004; Jon Portnoy <avenj@gentoo.org> files/hdparm-init-6 :
+  Quote argument to -z.  See bug #60989.
+
+*hdparm-5.6 (16 Aug 2004)
+
+  16 Aug 2004; <solar@gentoo.org> +hdparm-5.6.ebuild:
+  This release removed Major number restrictions in preparation for adding HDIO
+  ioctl support to Linux 2.6 SATA/SCsi drivers. There are other minor changes
+  and fixes.
+
+  11 Aug 2004; Heinrich Wendel <lanius@gentoo.org> hdparm-5.5-r4.ebuild:
+  fix installation of rc.d file, bug #60000
+
+  04 Aug 2004; <agriffis@gentoo.org> hdparm-5.5-r3.ebuild:
+  stable on alpha and ia64
+
+*hdparm-5.5-r4 (05 Aug 2004)
+
+  05 Aug 2004; Heinrich Wendel <lanius@gentoo.org> hdparm-5.5-r3.ebuild,
+  hdparm-5.5-r4.ebuild, files/hdparm-init-5, files/hdparm-init-6:
+  fix another bug with more than one argument, bug #59497
+
+*hdparm-5.5-r3 (04 Aug 2004)
+
+  04 Aug 2004; Heinrich Wendel <lanius@gentoo.org> hdparm-5.5-r2.ebuild,
+  hdparm-5.5-r3.ebuild, files/hdparm-init-4, files/hdparm-init-5:
+  run hdparm quiet for more than one parameter, bug #59388
+
+*hdparm-5.5-r2 (03 Aug 2004)
+
+  03 Aug 2004; Heinrich Wendel <lanius@gentoo.org> hdparm-5.5-r1.ebuild,
+  hdparm-5.5-r2.ebuild, files/hdparm-init-3, files/hdparm-init-4:
+  add udev support
+
+*hdparm-5.5-r1 (01 Aug 2004)
+
+  01 Aug 2004; Heinrich Wendel <lanius@gentoo.org> hdparm-5.3-r2.ebuild,
+  hdparm-5.4.ebuild, hdparm-5.5-r1.ebuild, hdparm-5.5.ebuild,
+  files/hdparm-conf.d.3, files/hdparm-init, files/hdparm-init-2,
+  files/hdparm-init-3, files/hdparm-new-init:
+  great enhancements of the init script, see bug #37755, remove old version
+
+  01 Jun 2004; Travis Tilley <lv@gentoo.org> hdparm-5.5.ebuild:
+  stable on amd64
+
+  27 Apr 2004; Aron Griffis <agriffis@gentoo.org> hdparm-5.4.ebuild:
+  Add inherit eutils
+
+  24 Mar 2004; Michael Sterrett <mr_bones_@gentoo.org> hdparm-5.3-r2.ebuild:
+  don't set DEPEND="${RDEPEND}" (bug #45343); IUSE; tidy
+
+  02 Mar 2004; Brian Jackson <iggy@gentoo.org> hdparm-5.5.ebuild:
+  adding initial s390 support
+
+  19 Feb 2004; <tuxus@gentoo.org> hdparm-5.5.ebuild:
+  Marked stable on mips
+
+*hdparm-5.5 (11 Feb 2004)
+
+  11 Feb 2004; Martin Holzer <mholzer@gentoo.org> hdparm-5.5.ebuild:
+  Version bumped.
+
+  08 Feb 2004; Brad House <brad_mssw@gentoo.org> hdparm-5.4.ebuild,
+  files/hdparm-5.4-readahead_rename.patch:
+  Patch provided by James Noble in Bug #40908 to work around glibc
+  2.3.3_pre20040117+ versions which define readahead internally in bits/fcntl.h
+
+  09 Jan 2004; Aron Griffis <agriffis@gentoo.org> hdparm-5.4.ebuild:
+  stable on alpha
+
+*hdparm-5.4 (27 Jun 2003)
+
+  30 Sep 2003; Joshua Kinard <kumba@gentoo.org> hdparm-5.4.ebuild:
+  Added ~mips to KEYWORDS
+
+  28 Aug 2003; Christian Birchinger <joker@gentoo.org> hdparm-5.4.ebuild:
+  Added sparc stable keyword
+
+  26 Aug 2003; Heinrich Wendel <lanius@gentoo.org> files/hdparm-new-init:
+  bug #27282
+
+  04 Aug 2003; Guy Martin <gmsoft@gentoo.org> hdparm-5.4.ebuild :
+  Marked stable on hppa.
+
+  30 Jul 2003; Martin Holzer <mholzer@gentoo.org> hdparm-5.4.ebuild:
+  Marked stable on x86.
+
+  27 Jun 2003; <msterret@gentoo.org> hdparm-5.4.ebuild:
+  version bump (bug 23593)
+
+  24 Jun 2003; Aron Griffis <agriffis@gentoo.org> hdparm-5.3-r2.ebuild:
+  Mark stable on alpha
+
+*hdparm-5.3-r2 (01 Mar 2003)
+
+  16 Apr 2003; Guy Martin <gmsoft@gentoo.org> hdparm-5.3-r2.ebuild :
+  Marked stable on hppa.
+
+  01 Apr 2003; Christian Birchinger <joker@gentoo.org> hdparm-5.3-r2.ebuild:
+  Added sparc stable keyword
+
+  31 Mar 2003; Seemant Kulleen <seemant@gentoo.org> hdparm-5.2-r1.ebuild,
+  hdparm-5.2-r1.ebuild, hdparm-5.2-r2.ebuild, hdparm-5.2-r2.ebuild,
+  hdparm-5.2-r3.ebuild, hdparm-5.3-r2.ebuild:
+  Marked stable, fixed src_uri for 5.2, cleaned old crusty ebuilds.
+
+  01 Mar 2003; Seth Chandler <sethbc@gentoo.org> hdparm-5.3-r2.ebuild,
+  files/hdparm-conf.d, files/hdparm-new-init:
+  updated the rc-scripts for hdparm, thanks to Justin "Nagash" Jones, this fixes
+  bug 16603
+
+*hdparm-5.3-r1 (08 Dec 2002)
+
+  17 Feb 2003; Guy Martin <gmsoft@gentoo.org> hdparm-5.3-r1.ebuild :
+  Added hppa to keywords.
+
+  06 Dec 2002; Rodney Rees <manson@gentoo.org> : changed sparc ~sparc keywords
+ 
+  17 Dec 2002; Seth Chandler <sethbc@gentoo.org> : hdparm-5.3-r1.ebuild
+  masked ebuild for 5.3 and changed the distfiles location, corrupted
+  package on the metalab mirrors  
+
+  08 Dec 2002; Seth Chandler <sethbc@gentoo.org> : hdparm-5.3-r1.ebuild
+  bumped ebuild to 5.3 to fix some BIG_ENDIAN issues, -t for small drives, 
+  and -p output for the SC1200 chipset have been fixed.
+
+
+*hdparm-5.2-r3 (29 Sep 2002)
+
+  11 Jan 2003; Seemant Kulleen <seemant@gentoo.org> hdparm-5.2-r3.ebuild :
+
+  filter -fPIC flag from this ebuild. Interestingly enough, it doesn't
+  affect the 5.3-r1 version, so upstream made some fixes.  Closes bug #13748
+  by jwarren@cheesefoam.dyndns.org (Jeremy Warren)
+
+  30 Sep 2002; Martin Schlemmer <azarah@gentoo.org> :
+
+  Do not add hdparm to default runlevel.  Close bug #8549.
+
+  29 Sep 2002; Martin Schlemmer <azarah@gentoo.org> :
+
+  Braindead me used newins and not newexe to install the
+  rc-script .. Thanks Daniel :D.
+
+*hdparm-5.2-r2 (15 Aug 2002)
+
+  15 Aug 2002; Martin Schlemmer <azarah@gentoo.org> :
+  
+  Add /etc/init.d/hdparm kindly donated by Daniel Robbins.
+
+  19 Jul 2002; Grant Goodyear <g2boojum@gentoo.org> ChangeLog  :
+
+  removed old version, closing bug 1044 the easy way
+
+*hdparm-5.2-r1 (08 Jul 2002)
+
+  14 Jul 2002; phoen][x <phoenix@gentoo.org> hdparm-5.2.ebuild :
+  Added KEYWORDS, SLOT.
+
+  08 Jul 2002; Maik Schreiber <blizzy@gentoo.org> :
+
+  Fixed installation path, closes bug #3170.
+
+*hdparm-5.2 (22 Jun 2002)
+
+  02 May 2002; Michael Nazaroff <naz@gentoo.org> :
+
+  Upgrade to 5.2
+  
+*hdparm-4.9 (02 May 2002)
+
+  14 Jul 2002; phoen][x <phoenix@gentoo.org> hdparm-4.9.ebuild :
+  Added KEYWORDS.
+
+  02 May 2002; Daniel Robbins <drobbins@gentoo.org> :
+
+  Upgrade to 4.9
+
+*hdparm-4.8 (29 Apr 2002)
+
+  29 Apr 2002; Bruce A. Locke <blocke@shivan.org> :
+
+  Update to 4.8
+
+*hdparm-4.6-r1 (12 Mar 2002)
+
+  12 Mar 2002; Daniel Robbins <drobbins@gentoo.org> :
+
+  New hdparm rev.  Order of sed commands reversed, fixing bug #1044.

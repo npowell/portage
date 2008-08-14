@@ -1,0 +1,141 @@
+# ChangeLog for dev-python/twisted-conch
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/twisted-conch/ChangeLog,v 1.33 2008/08/13 11:14:17 armin76 Exp $
+
+  13 Aug 2008; Raúl Porcel <armin76@gentoo.org> twisted-conch-8.1.0.ebuild:
+  alpha/ia64/x86 stable wrt #231675
+
+  13 Aug 2008; Santiago M. Mola <coldwind@gentoo.org>
+  twisted-conch-8.1.0.ebuild:
+  amd64 stable wrt bug #231675
+
+  11 Aug 2008; Ferris McCormick <fmccor@gentoo.org>
+  twisted-conch-8.1.0.ebuild:
+  Sparc stable, all tests good (part of Bug #231675).
+
+*twisted-conch-8.1.0 (25 May 2008)
+
+  25 May 2008; Thomas Raschbacher <lordvan@gentoo.org>
+  +twisted-conch-8.1.0.ebuild:
+  Version bump
+
+  13 May 2008; Ali Polatel <hawking@gentoo.org> twisted-conch-8.0.0.ebuild:
+  Use versionator for twisted dep.
+
+*twisted-conch-8.0.0 (13 May 2008)
+
+  13 May 2008; Ali Polatel <hawking@gentoo.org> +twisted-conch-8.0.0.ebuild:
+  Version bump.
+
+  12 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Marien Zwart (marienz, #107204) from metadata.xml.
+
+  12 Mar 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  twisted-conch-0.7.0.ebuild:
+  Stable on sparc
+
+  12 Mar 2007; Raúl Porcel <armin76@gentoo.org> twisted-conch-0.7.0.ebuild:
+  x86 stable
+
+  14 Jan 2007; Brent Baude <ranger@gentoo.org> twisted-conch-0.8.0.ebuild:
+  Marking twisted-conch-0.8.0 ~ppc64 for bug 144202
+
+  14 Jan 2007; Brent Baude <ranger@gentoo.org> twisted-conch-0.7.0.ebuild:
+  Marking -7 ~ppc64 for bug 144202
+
+*twisted-conch-0.8.0 (11 Jan 2007)
+
+  11 Jan 2007; Marien Zwart <marienz@gentoo.org> twisted-conch-0.7.0.ebuild,
+  -twisted-conch-0.7.0-r1.ebuild, +twisted-conch-0.8.0.ebuild:
+  Version bump, make twisted dependency stricter, drop revision patched to
+  work with python 2.5 (use the new bump instead).
+
+  20 Oct 2006; Bryan Østergaard <kloeri@gentoo.org>
+  twisted-conch-0.7.0.ebuild:
+  Stable on Alpha.
+
+*twisted-conch-0.7.0-r1 (25 Sep 2006)
+
+  25 Sep 2006; Marien Zwart <marienz@gentoo.org>
+  +files/twisted-conch-0.7.0-python-2.5-compat.patch,
+  +twisted-conch-0.7.0-r1.ebuild:
+  Revision bump with patch to work with python 2.5.
+
+  01 Aug 2006; Simon Stelling <blubb@gentoo.org> twisted-conch-0.7.0.ebuild:
+  stable on amd64
+
+  16 Jul 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  twisted-conch-0.7.0.ebuild:
+  ppc stable
+
+  13 Jul 2006; Aron Griffis <agriffis@gentoo.org>
+  twisted-conch-0.7.0.ebuild:
+  Mark 0.7.0 stable on ia64
+
+  30 Jun 2006; Thomas Cort <tcort@gentoo.org> twisted-conch-0.7.0.ebuild:
+  Added ~alpha keyword.
+
+  30 Jun 2006; Thomas Cort <tcort@gentoo.org> twisted-conch-0.5.0-r1.ebuild:
+  Stable on alpha wrt Bug #128688.
+
+  29 May 2006; Simon Stelling <blubb@gentoo.org>
+  twisted-conch-0.5.0-r1.ebuild:
+  stable on amd64
+
+*twisted-conch-0.7.0 (26 May 2006)
+
+  26 May 2006; Marien Zwart <marienz@gentoo.org>
+  +twisted-conch-0.7.0.ebuild:
+  Version bump.
+
+  26 May 2006; Marien Zwart <marienz@gentoo.org>
+  twisted-conch-0.5.0-r1.ebuild, twisted-conch-0.6.0.ebuild:
+  These versions run but do not install with twisted 2.4, so add a < dep.
+
+  03 May 2006; Mark Loeser <halcy0n@gentoo.org>
+  twisted-conch-0.5.0-r1.ebuild:
+  Stable on x86; bug #128688
+
+  29 Apr 2006; Marien Zwart <marienz@gentoo.org>
+  +files/twisted-conch-0.5.0-root-skip.patch,
+  +files/twisted-conch-0.6.0-root-skip.patch, twisted-conch-0.5.0-r1.ebuild,
+  twisted-conch-0.6.0.ebuild:
+  Skip some tests if we are root.
+
+  08 Apr 2006; <nixnut@gentoo.org> twisted-conch-0.5.0-r1.ebuild:
+  Added ~ppc. bug #128688
+
+  03 Apr 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  twisted-conch-0.5.0-r1.ebuild:
+  Stable on sparc wrt #128688
+
+  01 Apr 2006; Aron Griffis <agriffis@gentoo.org>
+  twisted-conch-0.6.0.ebuild:
+  Mark 0.6.0 ~ia64
+
+  28 Jan 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  twisted-conch-0.6.0.ebuild:
+  Added to ~ppc, bug #120454
+
+  30 Nov 2005; Marien Zwart <marienz@gentoo.org>
+  -twisted-conch-0.5.0.ebuild:
+  remove old ebuild
+
+*twisted-conch-0.6.0 (27 Nov 2005)
+*twisted-conch-0.5.0-r1 (27 Nov 2005)
+
+  27 Nov 2005; Marien Zwart <marienz@gentoo.org> metadata.xml,
+  +twisted-conch-0.5.0-r1.ebuild, +twisted-conch-0.6.0.ebuild:
+  Version bump to 0.6.0 and revbump to 0.5.0-r1 to use the new eclass (bug
+  #80639)
+
+  23 Nov 2005; Marien Zwart <marienz@gentoo.org> twisted-conch-0.5.0.ebuild:
+  add missing pycrypto dependency
+
+  07 Sep 2005; Tom Martin <slarti@gentoo.org> twisted-conch-0.5.0.ebuild:
+  Marked ~amd64, satisfies bug 105106.
+
+  08 Apr 2005; Thomas Raschbacher <lordvan@gentoo.org> twisted-conch-0.5.0:
+  initial import
+  twisted-conch was part of the main twisted release
+

@@ -1,0 +1,34 @@
+# ChangeLog for dev-ruby/rcov
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rcov/ChangeLog,v 1.6 2007/11/23 11:37:12 graaff Exp $
+
+*rcov-0.8.1.2.0 (23 Nov 2007)
+
+  23 Nov 2007; Hans de Graaff <graaff@gentoo.org> +rcov-0.8.1.2.0.ebuild:
+  Version bump, fixes #195505.
+
+*rcov-0.8.0.2 (20 Sep 2007)
+
+  20 Sep 2007; Hans de Graaff <graaff@gentoo.org> +rcov-0.8.0.2.ebuild:
+  Version bump.
+
+  17 Mar 2007; Robin H. Johnson <robbat2@gentoo.org> rcov-0.8.0.1.ebuild:
+  Add ~ppc.
+
+*rcov-0.8.0.1 (28 Feb 2007)
+
+  28 Feb 2007; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  -rcov-0.5.0.1.ebuild, -rcov-0.7.0.1.ebuild, +rcov-0.8.0.1.ebuild:
+  Version bump
+
+*rcov-0.7.0.1 (28 Aug 2006)
+
+  28 Aug 2006; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org> +rcov-0.7.0.1.ebuild:
+  Version bump (#144573)
+
+*rcov-0.5.0.1 (02 Jun 2006)
+
+  02 Jun 2006; Caleb Tennis <caleb@gentoo.org> +metadata.xml,
+  +rcov-0.5.0.1.ebuild:
+  Initial import of rcov, code coverage analysis tool
+

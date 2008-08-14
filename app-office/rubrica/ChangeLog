@@ -1,0 +1,19 @@
+# ChangeLog for app-office/rubrica
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-office/rubrica/ChangeLog,v 1.3 2007/12/18 10:16:16 opfer Exp $
+
+  18 Dec 2007; Christian Faulhammer <opfer@gentoo.org> rubrica-2.0.2.ebuild:
+  stable x86, correct copyright header
+
+  10 Oct 2007; Christian Faulhammer <opfer@gentoo.org> metadata.xml:
+  adding desktop-misc team to metadata
+
+*rubrica-2.0.2 (10 Oct 2007)
+
+  10 Oct 2007; Christian Faulhammer <opfer@gentoo.org> +metadata.xml,
+  +rubrica-2.0.2.ebuild:
+  initial commit for bug 16777, based on work of Alex Blazh ke<fiiir@mail.ru>,
+  Frank Eising <frank3@fiberworld.nl>, Tobias Scherbaum
+  <dertobi123@gentoo.org>, ronmon <ronmon@bellsouth.net> and André Lemos
+  <tux@tuxslare.org>
+

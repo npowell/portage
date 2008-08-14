@@ -1,0 +1,18 @@
+# ChangeLog for media-fonts/proggy-fonts
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-fonts/proggy-fonts/ChangeLog,v 1.4 2008/05/25 06:34:16 corsair Exp $
+
+  25 May 2008; Markus Rothe <corsair@gentoo.org> proggy-fonts-1.ebuild:
+  Stable on ppc64
+
+  21 Apr 2008; Raúl Porcel <armin76@gentoo.org> proggy-fonts-1.ebuild:
+  Add ~alpha/~ia64/~sparc
+
+  09 Apr 2008; Markus Rothe <corsair@gentoo.org> proggy-fonts-1.ebuild:
+  Added ~ppc/~ppc64
+
+*proggy-fonts-1 (24 Mar 2008)
+
+  24 Mar 2008; Ben de Groot <yngwin@gentoo.org> +proggy-fonts-1.ebuild:
+  Initial import. Ebuild by me. Fixes bug 109415.
+

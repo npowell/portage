@@ -1,0 +1,71 @@
+# ChangeLog for media-video/tovid
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/tovid/ChangeLog,v 1.14 2008/05/12 08:43:21 aballier Exp $
+
+*tovid-0.31 (12 May 2008)
+
+  12 May 2008; Alexis Ballier <aballier@gentoo.org>
+  +files/tovid-0.31-todisc.patch, +tovid-0.31.ebuild:
+  version bump, thanks to everyone involved in bug #190442
+
+  02 Oct 2007; Ryan Hill <dirtyepic@gentoo.org> tovid-0.30-r2.ebuild:
+  Lock wxpython to 2.6.
+
+  16 Aug 2007; Christian Faulhammer <opfer@gentoo.org> tovid-0.30-r2.ebuild:
+  stable x86, bug 175151
+
+  12 Aug 2007; Steve Dibb <beandog@gentoo.org> tovid-0.30-r2.ebuild:
+  amd64 stable, bug 175151
+
+*tovid-0.30-r2 (12 May 2007)
+
+  12 May 2007; Steve Dibb <beandog@gentoo.org>
+  +files/tovid-0.30-tovid-init.patch, +tovid-0.30-r2.ebuild:
+  init patch, bug 171748
+
+  01 May 2007; Marius Mauch <genone@gentoo.org> tovid-0.30.ebuild,
+  tovid-0.30-r1.ebuild:
+  Replacing einfo with elog
+
+*tovid-0.30-r1 (28 Apr 2007)
+
+  28 Apr 2007; Steve Dibb <beandog@gentoo.org>
+  +files/tovid-0.30-ffmpeg.patch, +tovid-0.30-r1.ebuild:
+  ffmpeg patch, bug 176266
+
+  30 Mar 2007; Steve Dibb <beandog@gentoo.org> -tovid-0.29-r1.ebuild,
+  tovid-0.30.ebuild:
+  Fix tk dep, bug 169536
+
+*tovid-0.30 (25 Feb 2007)
+*tovid-0.29-r1 (25 Feb 2007)
+
+  25 Feb 2007; Steve Dibb <beandog@gentoo.org>
+  +files/tovid-0.30-configure.patch, -tovid-0.29.ebuild,
+  +tovid-0.29-r1.ebuild, +tovid-0.30.ebuild:
+  Version bump, bug 166653, ebuild cleanup
+
+  01 Jan 2007; Steve Dibb <beandog@gentoo.org> tovid-0.28.ebuild,
+  tovid-0.28-r1.ebuild, tovid-0.29.ebuild:
+  Add pycairo dep, bug 159599
+
+*tovid-0.29 (07 Nov 2006)
+
+  07 Nov 2006; Steve Dibb <beandog@gentoo.org> +tovid-0.29.ebuild:
+  Version bump, bug 101346
+
+*tovid-0.28-r1 (23 Oct 2006)
+
+  23 Oct 2006; Steve Dibb <beandog@gentoo.org> +files/makemenu_png8.patch,
+  +tovid-0.28-r1.ebuild:
+  Fix png8 bug, wrt 151591
+
+  11 Sep 2006; Steve Dibb <beandog@gentoo.org> Manifest:
+  Fix manifest, bug # 147079
+
+*tovid-0.28 (04 Sep 2006)
+
+  04 Sep 2006; Steve Dibb <beandog@gentoo.org> +metadata.xml,
+  +tovid-0.28.ebuild:
+  New ebuild, see bug 84761
+

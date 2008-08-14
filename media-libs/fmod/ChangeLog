@@ -1,0 +1,105 @@
+# ChangeLog for media-libs/fmod
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/fmod/ChangeLog,v 1.25 2008/01/03 15:11:21 drac Exp $
+
+*fmod-4.11.03 (03 Jan 2008)
+
+  03 Jan 2008; Samuli Suominen <drac@gentoo.org> +fmod-4.11.03.ebuild:
+  Version bump to latest development release as requested at IRC.
+
+*fmod-4.08.05-r1 (09 Nov 2007)
+
+  09 Nov 2007; Samuli Suominen <drac@gentoo.org> +fmod-4.08.05-r1.ebuild:
+  Add more symlinks for 64bit libraries.
+
+*fmod-4.08.05 (17 Oct 2007)
+
+  17 Oct 2007; Samuli Suominen <drac@gentoo.org> +fmod-4.08.05.ebuild:
+  Version bump to new slot for bug 121506.
+
+*fmod-3.75 (11 Feb 2007)
+
+  11 Feb 2007; Hanno Boeck <hanno@gentoo.org> +fmod-3.75.ebuild:
+  Version bump.
+
+  02 Oct 2006; Diego Pettenò <flameeyes@gentoo.org> fmod-3.73.ebuild,
+  fmod-3.74.ebuild:
+  Restrict stripping. Thanks to Tristan Heaven (nyhm) in bug #137710.
+
+  06 Mar 2006; Diego Pettenò <flameeyes@gentoo.org> fmod-3.73.ebuild,
+  fmod-3.74.ebuild:
+  Drop virtual/libc dependency.
+
+  13 Sep 2005; Simon Stelling <blubb@gentoo.org> fmod-3.73.ebuild,
+  fmod-3.74.ebuild:
+  remove the amd64 keyword wrt bug 91481
+
+  18 Dec 2004; Jeremy Huddleston <eradicator@gentoo.org> fmod-3.74.ebuild:
+  Stable amd64, x86.
+
+  08 Nov 2004; Michael Sterrett <mr_bones_@gentoo.org> fmod-3.74.ebuild:
+  tidy; error check file io
+
+*fmod-3.74 (31 Oct 2004)
+
+  31 Oct 2004; Tony Vroon <chainsaw@gentoo.org> +fmod-3.74.ebuild:
+  Version bump as requested by Nickolay Kolchin-Semyonov in bug #69592.
+
+  05 Oct 2004; Jeremy Huddleston <eradicator@gentoo.org> -fmod-3.71.ebuild:
+  Removing old version.
+
+  01 Sep 2004; Jeremy Huddleston <eradicator@gentoo.org> fmod-3.73.ebuild:
+  Stable amd64.
+
+  13 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org> -fmod-3.61.ebuild,
+  -fmod-3.62.ebuild, -fmod-3.70.ebuild:
+  Stable x86.  ~amd64.  Added amd64 compat libs as DEP.
+
+  07 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org> :
+  Fixed digest because of crazy upstream devs not bumping versions.
+
+*fmod-3.73 (07 Jun 2004)
+
+  07 Jun 2004; Jeremy Huddleston <eradicator@gentoo.org> fmod-3.73.ebuild:
+  Version bump closes bug #53191. Removed non-x86 ARCHS as this is a binary
+  dist.
+
+  28 Apr 2004; Jon Portnoy <avenj@gentoo.org> fmod-3.71.ebuild :
+  Stable on AMD64.
+
+  11 Apr 2004; Jason Wever <weeve@gentoo.org> fmod-3.61.ebuild,
+  fmod-3.62.ebuild, fmod-3.70.ebuild, fmod-3.71.ebuild:
+  Masked on sparc because the package provides a precompiled x86 only binary
+  library.
+
+  26 Mar 2004; Jeremy Huddleston <eradicator@gentoo.org> fmod-3.61.ebuild,
+  fmod-3.62.ebuild, fmod-3.70.ebuild, fmod-3.71.ebuild:
+  .70 and .71 in stable x86.  Added empty IUSE
+
+*fmod-3.71 (29 Feb 2004)
+
+  29 Feb 2004; Jeremy Huddleston <eradicator@gentoo.org> fmod-3.71.ebuild,
+  metadata.xml:
+  Version bump.  Closes bug #43284.
+
+  18 Feb 2004; <augustus@gentoo.org> fmod-3.70.ebuild:
+  Added ~amd64 keyword.
+
+  30 Oct 2003; Luca Barbato <lu_zero@gentoo.org> fmod-3.62.ebuild:
+  Marked ppc
+
+*fmod-3.70 (22 Oct 2003)
+
+  22 Oct 2003; Michael Sterrett <mr_bones_@gentoo.org> fmod-3.70.ebuild:
+  version bump; I modified the KEYWORDS to use ~ instead of - for all the
+  archs since I don't know of any reason this package won't work there.
+
+*fmod-3.62 (07 April 2003)
+
+  07 April 2003; Bob Johnson <livewire@gentoo.org>
+	old version missing from www.fmod.org, bumped version.
+
+*fmod-3.61 (03 Mar 2003)
+
+  03 Mar 2003; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by Mike Gardiner <driver@iinet.net.au> #13537.

@@ -1,0 +1,20 @@
+# ChangeLog for kde-base/dragonplayer
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/kde-base/dragonplayer/ChangeLog,v 1.3 2008/05/30 08:39:34 zlin Exp $
+
+  30 May 2008; Bo Ørsted Andresen <zlin@gentoo.org>
+  dragonplayer-2.0.1.ebuild:
+  KDE4_BUILT_WITH_USE_CHECK is now always an array. Bug #216863.
+
+*dragonplayer-2.0.1 (10 Mar 2008)
+  
+  10 Mar 2008; Ingmar Vanhassel <ingmar@gentoo.org> dragonplayer-2.0.1.ebuild:
+  Version bump.
+
+*dragonplayer-2.0 (18 Feb 2008)
+
+  18 Feb 2008; Bo Ørsted Andresen <zlin@gentoo.org> +metadata.xml,
+  +dragonplayer-2.0.ebuild:
+  Initial import of dragonplayer. It will be part of kdemultimedia-4.1 but a
+  2.0 version has been released for 4.0.x. Bug #209678.
+

@@ -1,0 +1,21 @@
+# ChangeLog for media-plugins/vdr-dummydevice
+# Copyright 1999-2006 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-dummydevice/ChangeLog,v 1.4 2006/08/15 10:30:49 zzam Exp $
+
+  15 Aug 2006; Matthias Schwarzott <zzam@gentoo.org> metadata.xml:
+  Assigned to Gentoo VDR Project.
+
+  27 Apr 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-dummydevice-0.0.1.ebuild:
+  Set correct homepage.
+
+  24 Apr 2006; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-dummydevice-0.0.1.ebuild:
+  Marked stable on x86
+
+*vdr-dummydevice-0.0.1 (09 Mar 2006)
+
+  09 Mar 2006; Matthias Schwarzott <zzam@gentoo.org> +metadata.xml,
+  +vdr-dummydevice-0.0.1.ebuild:
+  Imported ebuild from gentoo.de
+

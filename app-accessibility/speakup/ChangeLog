@@ -1,0 +1,75 @@
+# ChangeLog for app-accessibility/speakup
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-accessibility/speakup/ChangeLog,v 1.12 2008/08/02 15:56:42 williamh Exp $
+
+*speakup-3.0.3_p20080802 (02 Aug 2008)
+
+  02 Aug 2008; William Hubbs <williamh@gentoo.org>
+  -speakup-3.0.3_p20080723.ebuild, +speakup-3.0.3_p20080802.ebuild:
+  New snapshot.
+
+*speakup-3.0.3_p20080723 (24 Jul 2008)
+
+  24 Jul 2008; William Hubbs <williamh@gentoo.org>
+  -speakup-3.0.3_p20080722.ebuild, +speakup-3.0.3_p20080723.ebuild:
+  New snapshot.
+
+*speakup-3.0.3_p20080722 (23 Jul 2008)
+
+  23 Jul 2008; William Hubbs <williamh@gentoo.org>
+  -speakup-3.0.3_p20080716.ebuild, +speakup-3.0.3_p20080722.ebuild:
+  New snapshot.
+
+*speakup-3.0.3_p20080716 (16 Jul 2008)
+
+  16 Jul 2008; William Hubbs <williamh@gentoo.org>
+  -speakup-3.0.3_p20080629.ebuild, -speakup-3.0.3_p20080714.ebuild,
+  +speakup-3.0.3_p20080716.ebuild:
+  New snapshot and removed all previous snapshots.
+
+*speakup-3.0.3_p20080714 (14 Jul 2008)
+
+  14 Jul 2008; William Hubbs <williamh@gentoo.org>
+  -speakup-3.0.3_p20080708.ebuild, +speakup-3.0.3_p20080714.ebuild:
+  New snapshot.
+
+*speakup-3.0.3_p20080708 (09 Jul 2008)
+
+  09 Jul 2008; William Hubbs <williamh@gentoo.org>
+  -speakup-3.0.2_p20080520.ebuild, +speakup-3.0.3_p20080708.ebuild:
+  New snapshot and removed the oldest one.
+
+*speakup-3.0.3_p20080629 (29 Jun 2008)
+
+  29 Jun 2008; William Hubbs <williamh@gentoo.org>
+  +speakup-3.0.3_p20080629.ebuild:
+  Snapshot and version bump.
+
+*speakup-3.0.2_p20080520 (21 May 2008)
+
+  21 May 2008; William Hubbs <williamh@gentoo.org>
+  -speakup-3.0.2_p20080517.ebuild, +speakup-3.0.2_p20080520.ebuild:
+  Snapshot bump.
+
+  17 May 2008; William Hubbs <williamh@gentoo.org>
+  -speakup-3.0.2_p20080414.ebuild, -speakup-3.0.2_p20080509.ebuild:
+  Removed old snapshots due to them having bugs.
+
+*speakup-3.0.2_p20080517 (17 May 2008)
+
+  17 May 2008; William Hubbs <williamh@gentoo.org>
+  +speakup-3.0.2_p20080517.ebuild:
+  New speakup-3.0.2 snapshot, also now supports linux-2.6.26.
+
+*speakup-3.0.2_p20080509 (09 May 2008)
+
+  09 May 2008; William Hubbs <williamh@gentoo.org>
+  +speakup-3.0.2_p20080509.ebuild:
+  New gentoo snapshot.
+
+*speakup-3.0.2_p20080414 (19 Apr 2008)
+
+  19 Apr 2008; William Hubbs <williamh@gentoo.org> +metadata.xml,
+  +speakup-3.0.2_p20080414.ebuild:
+  Initial commit.
+

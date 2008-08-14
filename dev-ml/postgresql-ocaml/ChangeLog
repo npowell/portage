@@ -1,0 +1,42 @@
+# ChangeLog for dev-ml/postgresql-ocaml
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ml/postgresql-ocaml/ChangeLog,v 1.8 2008/06/19 07:26:34 aballier Exp $
+
+  19 Jun 2008; Alexis Ballier <aballier@gentoo.org>
+  postgresql-ocaml-1.8.2.ebuild:
+  Depend on virtual/postgresql-base too as we need libpq, bug #227655
+
+  21 May 2008; Tiziano Müller <dev-zero@gentoo.org>
+  postgresql-ocaml-1.4.6.ebuild, postgresql-ocaml-1.8.2.ebuild:
+  Changed dependency for postgresql from dev-db/postgresql to
+  virtual/postgresql-server
+
+  12 May 2008; Alexis Ballier <aballier@gentoo.org>
+  -postgresql-ocaml-1.7.0.ebuild:
+  remove old
+
+*postgresql-ocaml-1.8.2 (08 Apr 2008)
+
+  08 Apr 2008; Alexis Ballier <aballier@gentoo.org>
+  +postgresql-ocaml-1.8.2.ebuild:
+  version bump
+
+  04 Jan 2008; Alexis Ballier <aballier@gentoo.org>
+  postgresql-ocaml-1.7.0.ebuild:
+  add support to not build with ocmlopt
+
+*postgresql-ocaml-1.7.0 (23 Aug 2007)
+
+  23 Aug 2007; Alexis Ballier <aballier@gentoo.org>
+  +postgresql-ocaml-1.7.0.ebuild:
+  version bump, ~amd64, bug #152994
+
+  05 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+*postgresql-ocaml-1.4.6 (21 Sep 2005)
+
+  21 Sep 2005; Matthieu Sozeau <mattam@gentoo.org> +metadata.xml,
+  +postgresql-ocaml-1.4.6.ebuild:
+  PostGreSQL bindings for OCaml.
+

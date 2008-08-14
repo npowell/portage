@@ -1,0 +1,28 @@
+# ChangeLog for media-libs/liboggz
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/liboggz/ChangeLog,v 1.5 2007/08/22 17:32:58 drac Exp $
+
+*liboggz-0.9.5 (22 Aug 2007)
+
+  22 Aug 2007; Samuli Suominen <drac@gentoo.org> +liboggz-0.9.5.ebuild:
+  Version bump.
+
+  15 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+  11 Dec 2006; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  liboggz-0.9.1.ebuild, liboggz-0.9.3.ebuild:
+  fix licence, fixes #138367
+
+*liboggz-0.9.3 (27 Nov 2005)
+
+  27 Nov 2005; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  +liboggz-0.9.3.ebuild:
+  version bump
+
+*liboggz-0.9.1 (23 Jun 2005)
+
+  23 Jun 2005; Zaheer Abbas Merali <zaheerm@gentoo.org> +metadata.xml,
+  +liboggz-0.9.1.ebuild:
+  initial ebuild
+

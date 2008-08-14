@@ -1,0 +1,248 @@
+# ChangeLog for net-irc/weechat
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-irc/weechat/ChangeLog,v 1.59 2007/11/12 15:31:32 jokey Exp $
+
+  12 Nov 2007; Markus Ullmann <jokey@gentoo.org> weechat-0.2.6.ebuild:
+  Fix LICENSE
+
+  25 Oct 2007; Raúl Porcel <armin76@gentoo.org> -weechat-0.2.5.ebuild:
+  old
+
+  11 Oct 2007; Lars Weiler <pylon@gentoo.org> weechat-0.2.6.ebuild:
+  stable ppc, bug #195108
+
+  09 Oct 2007; Christoph Mende <angelos@gentoo.org> weechat-0.2.6.ebuild:
+  Stable on amd64 wrt bug #195108
+
+  08 Oct 2007; Raúl Porcel <armin76@gentoo.org> weechat-0.2.6.ebuild:
+  x86 stable wrt #195108
+
+*weechat-0.2.6 (06 Sep 2007)
+
+  06 Sep 2007; Markus Ullmann <jokey@gentoo.org> +weechat-0.2.6.ebuild:
+  Version bump
+
+  06 Sep 2007; Christoph Mende <angelos@gentoo.org> weechat-0.2.5.ebuild:
+  Stable on amd64
+
+  09 Jul 2007; Raúl Porcel <armin76@gentoo.org> -weechat-0.2.4.ebuild:
+  old
+
+  09 Jul 2007; Joseph Jezak <josejx@gentoo.org> weechat-0.2.5.ebuild:
+  Marked ppc stable for bug #184627.
+
+  08 Jul 2007; Raúl Porcel <armin76@gentoo.org> weechat-0.2.5.ebuild:
+  x86 stable wrt #184627
+
+*weechat-0.2.5 (08 Jun 2007)
+
+  08 Jun 2007; Raúl Porcel <armin76@gentoo.org> +weechat-0.2.5.ebuild:
+  Version bump, thanks to Shabanov Konstantin <kes.eclipse at gmail dot com>
+  in bug 181278
+
+  20 May 2007; Raúl Porcel <armin76@gentoo.org> -weechat-0.2.3.ebuild:
+  old
+
+  20 May 2007; nixnut <nixnut@gentoo.org> weechat-0.2.4.ebuild:
+  Stable on ppc wrt bug 178805
+
+  16 May 2007; Raúl Porcel <armin76@gentoo.org> weechat-0.2.4.ebuild:
+  x86 stable wrt #178805
+
+*weechat-0.2.4 (06 Apr 2007)
+
+  06 Apr 2007; Sven Wegener <swegener@gentoo.org> +weechat-0.2.4.ebuild:
+  Version bump.
+
+  11 Mar 2007; Raúl Porcel <armin76@gentoo.org> -weechat-0.1.9.ebuild,
+  -weechat-0.2.0.ebuild, -weechat-0.2.1.ebuild:
+  old
+
+  10 Mar 2007; Timothy Redaelli <drizzt@gentoo.org> weechat-0.2.3.ebuild:
+  Add ~x86-fbsd keyword
+
+  24 Feb 2007; nixnut <nixnut@gentoo.org> weechat-0.2.3.ebuild:
+  Stable on ppc wrt bug 164031
+
+  17 Feb 2007; Raúl Porcel <armin76@gentoo.org> weechat-0.2.3.ebuild:
+  x86 stable wrt bug 164031
+
+*weechat-0.2.3 (13 Jan 2007)
+
+  13 Jan 2007; Sven Wegener <swegener@gentoo.org> -weechat-0.2.2.ebuild,
+  +weechat-0.2.3.ebuild:
+  Version bump.
+
+*weechat-0.2.2 (06 Jan 2007)
+
+  06 Jan 2007; Sven Wegener <swegener@gentoo.org> +weechat-0.2.2.ebuild:
+  Version bump.
+
+*weechat-0.2.1 (01 Oct 2006)
+
+  01 Oct 2006; Sven Wegener <swegener@gentoo.org> +weechat-0.2.1.ebuild:
+  Version bump.
+
+  27 Sep 2006; Stephanie Lockwood-Childs <wormo@gentoo.org>
+  weechat-0.1.9.ebuild:
+  stable on ppc (Bug #142462)
+
+  03 Sep 2006; <blubb@gentoo.org> weechat-0.2.0.ebuild:
+  added ~amd64
+
+*weechat-0.2.0 (19 Aug 2006)
+
+  19 Aug 2006; Sven Wegener <swegener@gentoo.org> +weechat-0.2.0.ebuild:
+  Version bump.
+
+  02 Aug 2006; Sven Wegener <swegener@gentoo.org> -weechat-0.1.6.ebuild,
+  -weechat-0.1.7.ebuild, -weechat-0.1.8.ebuild:
+  Cleanup.
+
+  01 Aug 2006; Andrej Kacian <ticho@gentoo.org> weechat-0.1.9.ebuild:
+  Stable on x86, bug #142462.
+
+  01 Aug 2006; Sven Wegener <swegener@gentoo.org> weechat-0.1.9.ebuild:
+  Slightly change the configure logic.
+
+*weechat-0.1.9 (01 Jul 2006)
+
+  01 Jul 2006; Markus Ullmann <jokey@gentoo.org> +weechat-0.1.9.ebuild:
+  Version bump wrt bug #138335
+
+*weechat-0.1.8 (18 Mar 2006)
+
+  18 Mar 2006; Sven Wegener <swegener@gentoo.org> -weechat-0.1.4-r1.ebuild,
+  -weechat-0.1.5.ebuild, +weechat-0.1.8.ebuild:
+  Version bump.
+
+*weechat-0.1.7 (17 Feb 2006)
+
+  17 Feb 2006; Sven Wegener <swegener@gentoo.org> +weechat-0.1.7.ebuild:
+  Version bump, bug #121282.
+
+  17 Feb 2006; Sven Wegener <swegener@gentoo.org> weechat-0.1.6.ebuild:
+  Marked stable on x86.
+
+*weechat-0.1.6 (12 Nov 2005)
+
+  12 Nov 2005; Sven Wegener <swegener@gentoo.org> +weechat-0.1.6.ebuild:
+  Version bump.
+
+  25 Sep 2005; Sven Wegener <swegener@gentoo.org> -weechat-0.1.3.ebuild,
+  -weechat-0.1.4.ebuild:
+  Removed old ebuilds.
+
+*weechat-0.1.5 (24 Sep 2005)
+
+  24 Sep 2005; Sven Wegener <swegener@gentoo.org> weechat-0.1.4-r1.ebuild,
+  +weechat-0.1.5.ebuild:
+  Version bump. 0.1.4-r1 stable on x86.
+
+*weechat-0.1.4-r1 (25 Aug 2005)
+
+  25 Aug 2005; Sven Wegener <swegener@gentoo.org> +weechat-0.1.4-r1.ebuild:
+  Added support for the ssl USE flag, bug #103699.
+
+  01 Aug 2005; Sven Wegener <swegener@gentoo.org> -weechat-0.1.1.ebuild,
+  -weechat-0.1.2.1.ebuild:
+  Removed old ebuilds.
+
+  31 Jul 2005; Sven Wegener <swegener@gentoo.org> weechat-0.1.3.ebuild:
+  Marked stable on x86.
+
+*weechat-0.1.4 (30 Jul 2005)
+
+  30 Jul 2005; Sven Wegener <swegener@gentoo.org> +weechat-0.1.4.ebuild:
+  Version bump.
+
+  07 Jul 2005; Sven Wegener <swegener@gentoo.org> weechat-0.1.2.1.ebuild:
+  Marked stable on x86.
+
+*weechat-0.1.3 (03 Jul 2005)
+
+  03 Jul 2005; Sven Wegener <swegener@gentoo.org> +weechat-0.1.3.ebuild:
+  Version bump.
+
+*weechat-0.1.2.1 (07 Jun 2005)
+
+  07 Jun 2005; Sven Wegener <swegener@gentoo.org> -weechat-0.1.0.ebuild,
+  weechat-0.1.1.ebuild, +weechat-0.1.2.1.ebuild:
+  Version bump, bug #93523. Marked 0.1.1 stable on x86.
+
+  22 Apr 2005; Sven Wegener <swegener@gentoo.org> -weechat-0.0.9.ebuild:
+  Removed old ebuild.
+
+*weechat-0.1.1 (10 Apr 2005)
+
+  10 Apr 2005; Sven Wegener <swegener@gentoo.org> weechat-0.1.0.ebuild,
+  +weechat-0.1.1.ebuild:
+  Version bump. Marked 0.1.0 stable on x86.
+
+  17 Feb 2005; Sven Wegener <swegener@gentoo.org> -weechat-0.0.6.ebuild:
+  Removed old ebuild.
+
+*weechat-0.1.0 (13 Feb 2005)
+
+  13 Feb 2005; Sven Wegener <swegener@gentoo.org> +weechat-0.1.0.ebuild:
+  Version bump.
+
+  07 Feb 2005; Sven Wegener <swegener@gentoo.org> weechat-0.0.9.ebuild:
+  Marked stable on x86.
+
+*weechat-0.0.9 (02 Jan 2005)
+
+  02 Jan 2005; Sven Wegener <swegener@gentoo.org> -weechat-0.0.8.ebuild,
+  +weechat-0.0.9.ebuild:
+  Version bump, bug #76392.
+
+*weechat-0.0.8 (05 Dec 2004)
+
+  05 Dec 2004; Sven Wegener <swegener@gentoo.org> +weechat-0.0.8.ebuild:
+  Version bump. Only includes the ncurses interface as it's the only one being
+  actively developed by upstream maintainers.
+
+  17 Jul 2004; Sven Wegener <swegener@gentoo.org> -weechat-0.0.2.ebuild,
+  -weechat-0.0.3-r1.ebuild, -weechat-0.0.3.ebuild, weechat-0.0.6.ebuild:
+  Removed old ebuilds. Marked 0.0.6 stable on x86.
+
+  01 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  weechat-0.0.3-r1.ebuild, weechat-0.0.3.ebuild:
+  virtual/glibc -> virtual/libc
+
+*weechat-0.0.6 (18 Jun 2004)
+
+  18 Jun 2004; Sven Wegener <swegener@gentoo.org> +weechat-0.0.6.ebuild:
+  Version bump. Made CFLAGS aware and added support for the following USE flags:
+  debug, gtk (dropped gtk2 as it's only for using gtk+-2 over gtk+-1.2), perl
+  and ncurses.
+
+  18 Jun 2004; Sven Wegener <swegener@gentoo.org> metadata.xml,
+  weechat-0.0.2.ebuild, weechat-0.0.3-r1.ebuild, weechat-0.0.3.ebuild:
+  Removed S=${WORKDIR}/${P} and assigned to the net-irc herd
+
+  29 May 2004; Pieter Van den Abeele <pvdabeel@gentoo.org>
+  weechat-0.0.3-r1.ebuild:
+  Masked weechat-0.0.3-r1.ebuild testing for ppc
+
+  10 Dec 2003; Chuck Short <zul@gentoo.org> weechat-0.0.3-r1.ebuild:
+  Typos fixed.
+
+*weechat-0.0.3-r1 (09 Dec 2003)
+
+  09 Dec 2003; Chuck Short <zul@gentoo.org> weechat-0.0.3-r1.ebuild:
+  Added gtk2 support.
+
+*weechat-0.0.3 (09 Dec 2003)
+
+  09 Dec 2003; Chuck Short <zul@gentoo.org> weechat-0.0.2.ebuild,
+  weechat-0.0.3.ebuild:
+  Version bump, previous version marked stable.
+
+*weechat-0.0.2 (16 Oct 2003)
+
+  16 Oct 2003; Chuck Short <zul@gentoo.org> metadata.xml,
+  weechat-0.0.2.ebuild:
+  Initial version, ebuild by psk <gentoo@feeleas.org>.
+  Closes #29823.
+

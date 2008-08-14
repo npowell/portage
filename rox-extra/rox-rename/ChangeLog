@@ -1,0 +1,26 @@
+# ChangeLog for rox-extra/rox-rename
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/rox-extra/rox-rename/ChangeLog,v 1.6 2008/04/04 18:01:41 lack Exp $
+
+*rox-rename-1.0.1 (04 Apr 2008)
+
+  04 Apr 2008; Jim Ramsay <lack@gentoo.org> +rox-rename-1.0.1.ebuild:
+  New version released, Bug 215596
+
+*rox-rename-0.4.0 (22 Jan 2008)
+
+  22 Jan 2008; Jim Ramsay <lack@gentoo.org> +rox-rename-0.4.0.ebuild:
+  Version bump (Bug #207061)
+
+  23 Mar 2007; Raúl Porcel <armin76@gentoo.org> rox-rename-0.0.3.ebuild:
+  Stable on x86 wrt bug #171828.
+
+  01 Nov 2006; Jim Ramsay <lack@gentoo.org> metadata.xml:
+  Now owned by new rox herd
+
+*rox-rename-0.0.3 (06 Oct 2006)
+
+  06 Oct 2006; Jim Ramsay <lack@gentoo.org> +metadata.xml,
+  +rox-rename-0.0.3.ebuild:
+  New package: rox-rename-0.0.3 (Bug #112046)
+

@@ -1,0 +1,69 @@
+# ChangeLog for x11-apps/rstart
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-apps/rstart/ChangeLog,v 1.15 2007/12/19 23:54:30 cla Exp $
+
+  19 Dec 2007; Dawid Węgliński <cla@gentoo.org> rstart-1.0.2.ebuild:
+  Stable on x86 (bug #202087)
+
+  09 Oct 2007; Donnie Berkholz <dberkholz@gentoo.org>; -rstart-1.0.1.ebuild:
+  Drop old ebuilds.
+
+  20 May 2006; Robin H. Johnson <robbat2@gentoo.org> rstart-1.0.2.ebuild:
+  Added ~ppc after testing.
+
+*rstart-1.0.2 (29 Apr 2006)
+
+  29 Apr 2006; Joshua Baergen <joshuabaergen@gentoo.org>
+  +rstart-1.0.2.ebuild:
+  Version bump.  Includes a build fix.
+
+  14 Feb 2006; Markus Rothe <corsair@gentoo.org> rstart-1.0.1.ebuild:
+  Added ~ppc64
+
+  26 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  -rstart-0.99.2.ebuild, -rstart-1.0.0.ebuild:
+  Pull old versions.
+
+*rstart-1.0.1 (23 Dec 2005)
+
+  23 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>; +rstart-1.0.1.ebuild:
+  Bump for 7.0.
+
+*rstart-1.0.0 (18 Dec 2005)
+
+  18 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +rstart-1.0.0.ebuild:
+  Bump for 7.0RC4.
+
+  09 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  -files/rstart-destdir.patch:
+  Unused file.
+
+  09 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  -rstart-0.99.0.ebuild, -rstart-0.99.1.ebuild:
+  Pull old versions.
+
+*rstart-0.99.2 (05 Dec 2005)
+
+  05 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +rstart-0.99.2.ebuild:
+  Bump for 7.0RC3.
+
+*rstart-0.99.1 (20 Oct 2005)
+
+  20 Oct 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +rstart-0.99.1.ebuild:
+  Bump for 7.0 RC1.
+
+  09 Sep 2005; Donnie Berkholz <spyderous@gentoo.org>; +metadata.xml:
+  Add metadata.
+
+  08 Aug 2005; Ferris McCormick <fmccor@gentoo.org> rstart-0.99.0.ebuild:
+  Add ~sparc keyword (Modular X testing).
+
+*rstart-0.99.0 (08 Aug 2005)
+
+  08 Aug 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +files/rstart-destdir.patch, +rstart-0.99.0.ebuild:
+  Initial commit for modular X.
+

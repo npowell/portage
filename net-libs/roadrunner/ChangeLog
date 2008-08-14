@@ -1,0 +1,28 @@
+# ChangeLog for net-libs/roadrunner
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-libs/roadrunner/ChangeLog,v 1.7 2007/06/21 12:35:58 dragonheart Exp $
+
+  21 Jun 2007; Daniel Black <dragonheart@gentoo.org>
+  roadrunner-0.9.1.ebuild:
+  fixed as per bug #165643 as Jakub so kindly requested
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  07 Oct 2005; Daniel Black <dragonheart@gentoo.org>
+  roadrunner-0.9.1.ebuild:
+  ppc stable and QA fixes
+
+  24 Jun 2004; David Holm <dholm@gentoo.org> roadrunner-0.9.1.ebuild:
+  Added to ~ppc.
+
+  15 Jun 2004; Daniel Black <dragonheart@gentoo.org> roadrunner-0.9.1.ebuild:
+  x86 stable. Downgraded gtk-doc version dependancy. Replaced einstall with
+  emake DESTDIR=${D}
+
+*roadrunner-0.9.1 (07 May 2004)
+
+  07 May 2004; Daniel Black <dragonheart@gentoo.org> +metadata.xml,
+  +roadrunner-0.9.1.ebuild:
+  Initial import thanks to Robert Varga <nite@hq.alert.sk> in bug #48467
+

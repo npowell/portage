@@ -1,0 +1,171 @@
+# ChangeLog for app-accessibility/orca
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-accessibility/orca/ChangeLog,v 1.46 2008/08/13 23:47:06 leio Exp $
+
+  13 Aug 2008; Mart Raudsepp <leio@gentoo.org> -orca-2.22.1.ebuild:
+  Remove old
+
+  12 Aug 2008; Raúl Porcel <armin76@gentoo.org> orca-2.22.2.ebuild:
+  alpha/ia64/sparc stable wrt #229709
+
+  10 Aug 2008; Markus Meier <maekke@gentoo.org> orca-2.22.2.ebuild:
+  x86 stable, bug #229709
+
+  30 Jul 2008; Brent Baude <ranger@gentoo.org> orca-2.22.2.ebuild:
+  Marking orca-2.22.2 ppc stable for bug 229709
+
+  26 Jul 2008; Olivier Crête <tester@gentoo.org> orca-2.22.2.ebuild:
+  Stable on amd64, bug #229709
+
+*orca-2.22.3 (02 Jul 2008)
+
+  02 Jul 2008; Gilles Dartiguelongue <eva@gentoo.org> +orca-2.22.3.ebuild:
+  bump to 2.22.3. Bug fixes and translation updates.
+
+  29 May 2008; Ali Polatel <hawking@gentoo.org> orca-2.22.1.ebuild,
+  orca-2.22.2.ebuild:
+  python_mod_optimize is ROOT aware.
+
+*orca-2.22.2 (28 May 2008)
+
+  28 May 2008; Gilles Dartiguelongue <eva@gentoo.org> -orca-2.22.0.ebuild,
+  +orca-2.22.2.ebuild:
+  New version for GNOME-2.22.2. Bug fixes and translation updates.
+
+*orca-2.22.1 (10 Apr 2008)
+
+  10 Apr 2008; Gilles Dartiguelongue <eva@gentoo.org> +orca-2.22.1.ebuild:
+  bump to 2.22.1. Load of bug fixes and translation updates.
+
+*orca-2.22.0 (26 Mar 2008)
+
+  26 Mar 2008; Gilles Dartiguelongue <eva@gentoo.org> +orca-2.22.0.ebuild:
+  New version for GNOME-2.22. Numerous bug fixes.
+
+  09 Mar 2008; Mart Raudsepp <leio@gentoo.org> -orca-2.18.1.ebuild,
+  -orca-2.20.1.ebuild, -orca-2.20.2.ebuild:
+  Remove GNOME 2.18 version and other redundant versions
+
+  18 Feb 2008; Gilles Dartiguelongue <eva@gentoo.org> orca-2.20.3.ebuild:
+  fix python eclass use, bug #207667
+
+  04 Feb 2008; Jeroen Roovers <jer@gentoo.org> orca-2.20.3.ebuild:
+  Stable for HPPA (bug #208366).
+
+  04 Feb 2008; Jeroen Roovers <jer@gentoo.org> ChangeLog:
+  Stable for HPPA (bug #208366).
+
+  03 Feb 2008; Raúl Porcel <armin76@gentoo.org> orca-2.20.3.ebuild:
+  alpha/ia64/sparc stable wrt #208366
+
+  02 Feb 2008; Chris Gianelloni <wolf31o2@gentoo.org> orca-2.20.3.ebuild:
+  Stable on amd64 wrt bug #208366.
+
+  01 Feb 2008; Brent Baude <ranger@gentoo.org> orca-2.20.3.ebuild:
+  Marking orca-2.20.3 ppc64 and ppc stable for bug 208366
+
+  01 Feb 2008; Christian Faulhammer <opfer@gentoo.org> orca-2.20.3.ebuild:
+  stable x86, bug 208366
+
+*orca-2.20.3 (09 Jan 2008)
+
+  09 Jan 2008; Gilles Dartiguelongue <eva@gentoo.org> -orca-1.0.0.ebuild,
+  -orca-2.18.0.ebuild, -orca-2.20.0.1.ebuild, +orca-2.20.3.ebuild:
+  bump to 2.20.3 and clean old revisions
+
+  14 Dec 2007; Raúl Porcel <armin76@gentoo.org> orca-2.20.1.ebuild:
+  alpha/ia64/sparc stable
+
+*orca-2.20.2 (06 Dec 2007)
+
+  06 Dec 2007; Gilles Dartiguelongue <eva@gentoo.org> +orca-2.20.2.ebuild:
+  bump to 2.20.2
+
+  29 Nov 2007; Jeroen Roovers <jer@gentoo.org> orca-2.20.1.ebuild:
+  Stable for HPPA (bug #199740).
+
+  26 Nov 2007; Markus Rothe <corsair@gentoo.org> orca-2.20.1.ebuild:
+  Stable on ppc64; bug #199740
+
+  24 Nov 2007; Brent Baude <ranger@gentoo.org> orca-2.20.1.ebuild:
+  Marking orca-2.20.1 ppc stable for bug 199740
+
+  22 Nov 2007; Raúl Porcel <armin76@gentoo.org> orca-2.20.0.1.ebuild:
+  alpha/ia64/sparc stable wrt #199740
+
+  21 Nov 2007; Dawid Węgliński <cla@gentoo.org> orca-2.20.1.ebuild:
+  Stable on x86 (bug #199740)
+
+  20 Nov 2007; Samuli Suominen <drac@gentoo.org> orca-2.20.1.ebuild:
+  amd64 stable wrt #199740
+
+  15 Nov 2007; Markus Rothe <corsair@gentoo.org> orca-2.18.1.ebuild,
+  orca-2.20.0.1.ebuild, orca-2.20.1.ebuild:
+  2.18.1 stable on ppc64. Added ~ppc64 to 2.20*. Bug #199218
+
+*orca-2.20.1 (29 Oct 2007)
+
+  29 Oct 2007; Gilles Dartiguelongue <eva@gentoo.org> +orca-2.20.1.ebuild:
+  bump to 2.20.1
+
+*orca-2.20.0.1 (14 Oct 2007)
+
+  14 Oct 2007; Gilles Dartiguelongue <eva@gentoo.org> +orca-2.20.0.1.ebuild:
+  bump to 2.20.0.1
+
+  28 Aug 2007; Jeroen Roovers <jer@gentoo.org> orca-2.18.1.ebuild:
+  Stable for HPPA (bug #185823).
+
+  11 Aug 2007; Andrej Kacian <ticho@gentoo.org> orca-2.18.1.ebuild:
+  Stable on x86, bug #185823.
+
+  10 Aug 2007; Christoph Mende <angelos@gentoo.org> orca-2.18.1.ebuild:
+  Stable on amd64 wrt bug #185823
+
+  08 Aug 2007; Raúl Porcel <armin76@gentoo.org> orca-2.18.1.ebuild:
+  alpha/ia64 stable wrt #185823
+
+  07 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org> orca-2.18.1.ebuild:
+  Stable on ppc wrt bug #185823.
+
+  07 Aug 2007; Gustavo Zacarias <gustavoz@gentoo.org> orca-2.18.1.ebuild:
+  Stable on sparc wrt #185823
+
+  10 Jul 2007; Raúl Porcel <armin76@gentoo.org> orca-2.18.1.ebuild:
+  Add ~alpha wrt #176517
+
+  06 Jul 2007; Roy Marples <uberlord@gentoo.org> orca-2.18.1.ebuild:
+  Keyworded ~x86-fbsd
+
+  27 Jun 2007; Brent Baude <ranger@gentoo.org> orca-2.18.0.ebuild:
+  Added ~ppc64 to orca-2.18.0
+
+  26 Jun 2007; Joseph Jezak <josejx@gentoo.org> orca-2.18.0.ebuild,
+  orca-2.18.1.ebuild:
+  Added ~ppc.
+
+  22 Jun 2007; Jeroen Roovers <jer@gentoo.org> orca-2.18.0.ebuild,
+  orca-2.18.1.ebuild:
+  Marked ~hppa (bug #182551).
+
+  19 Jun 2007; Raúl Porcel <armin76@gentoo.org> orca-2.18.1.ebuild:
+  Add ~ia64
+
+*orca-2.18.1 (25 Apr 2007)
+
+  25 Apr 2007; Daniel Gryniewicz <dang@gentoo.org> +orca-2.18.1.ebuild:
+  Bump to 2.18.1
+
+  23 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org> orca-2.18.0.ebuild:
+  Keyworded ~sparc
+
+*orca-2.18.0 (27 Mar 2007)
+
+  27 Mar 2007; Daniel Gryniewicz <dang@gentoo.org> +orca-2.18.0.ebuild:
+  gnome 2.18.0
+
+*orca-1.0.0 (03 Nov 2006)
+
+  03 Nov 2006; Leonardo Boshell <leonardop@gentoo.org>
+  +orca-1.0.0.ebuild:
+  Initial import, requested in bug #153769.

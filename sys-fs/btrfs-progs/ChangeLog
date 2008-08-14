@@ -1,0 +1,66 @@
+# ChangeLog for sys-fs/btrfs-progs
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/btrfs-progs/ChangeLog,v 1.12 2008/08/07 17:37:51 lavajoe Exp $
+
+*btrfs-progs-0.16-r1 (07 Aug 2008)
+
+  07 Aug 2008; Joe Peterson <lavajoe@gentoo.org>
+  +btrfs-progs-0.16-r1.ebuild, btrfs-progs-9999.ebuild:
+  Build and install btrfs-convert as well (bug #234154); install other
+  missing programs; honor CFLAGS/LDFLAGS
+
+*btrfs-progs-0.16 (05 Aug 2008)
+
+  05 Aug 2008; Joe Peterson <lavajoe@gentoo.org> +btrfs-progs-0.16.ebuild:
+  New version 0.16
+
+  28 Jul 2008; Joe Peterson <lavajoe@gentoo.org> btrfs-progs-0.15-r2.ebuild,
+  btrfs-progs-9999.ebuild:
+  Set RDEPEND="${DEPEND}"
+
+  28 Jul 2008; Joe Peterson <lavajoe@gentoo.org>
+  -files/btrfs-progs-0.14-hotfix.patch, -btrfs-progs-0.14.ebuild,
+  -btrfs-progs-0.14-r1.ebuild, -btrfs-progs-0.15.ebuild,
+  -btrfs-progs-0.15-r1.ebuild, btrfs-progs-0.15-r2.ebuild,
+  btrfs-progs-9999.ebuild:
+  Remove unneeded dependency on btrfs-progs; add dependency on e2fsprogs;
+  remove old versions
+
+  09 Jun 2008; Joe Peterson <lavajoe@gentoo.org> btrfs-progs-9999.ebuild:
+  Use unstable repo for live ebuild
+
+*btrfs-progs-9999 (09 Jun 2008)
+
+  09 Jun 2008; Joe Peterson <lavajoe@gentoo.org> +btrfs-progs-9999.ebuild:
+  Add live ebuild (based on ebuild from ToeiRei)
+
+*btrfs-progs-0.15-r2 (01 Jun 2008)
+
+  01 Jun 2008; Joe Peterson <lavajoe@gentoo.org>
+  +btrfs-progs-0.15-r2.ebuild:
+  Do not install /usr/bin/bcp - collides with boost (bug #224327)
+
+*btrfs-progs-0.15-r1 (30 May 2008)
+
+  30 May 2008; Joe Peterson <lavajoe@gentoo.org>
+  +btrfs-progs-0.15-r1.ebuild:
+  Do not make fsck.btrfs link - segfault on boot
+
+*btrfs-progs-0.15 (29 May 2008)
+
+  29 May 2008; Joe Peterson <lavajoe@gentoo.org> +btrfs-progs-0.15.ebuild:
+  Version bump to 0.15
+
+*btrfs-progs-0.14-r1 (27 May 2008)
+
+  27 May 2008; Joe Peterson <lavajoe@gentoo.org>
+  +btrfs-progs-0.14-r1.ebuild:
+  Adjust installed utility names/links
+
+*btrfs-progs-0.14 (24 May 2008)
+
+  24 May 2008; Joe Peterson <lavajoe@gentoo.org>
+  +files/btrfs-progs-0.14-hotfix.patch, +metadata.xml,
+  +btrfs-progs-0.14.ebuild:
+  New package: Btrfs utilities
+

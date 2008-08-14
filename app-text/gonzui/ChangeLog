@@ -1,0 +1,45 @@
+# ChangeLog for app-text/gonzui
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-text/gonzui/ChangeLog,v 1.9 2008/08/13 17:25:30 matsuu Exp $
+
+*gonzui-1.2-r1 (13 Aug 2008)
+
+  13 Aug 2008; MATSUU Takuto <matsuu@gentoo.org>
+  +files/gonzui-1.2-gentoo.patch, +gonzui-1.2-r1.ebuild:
+  Fixed bug @226697.
+
+  28 Jan 2007; Marius Mauch <genone@gentoo.org> gonzui-1.2.ebuild:
+  Replacing einfo with elog
+
+  22 Dec 2006; Mike Frysinger <vapier@gentoo.org>
+  +files/gonzui-1.2-parallel.patch, gonzui-1.2.ebuild:
+  Fix building in parallel.
+
+  28 Sep 2005; MATSUU Takuto <matsuu@gentoo.org> -gonzui-1.1.ebuild,
+  gonzui-1.2.ebuild:
+  Stable on x86.
+
+  30 Jul 2005; MATSUU Takuto <matsuu@gentoo.org> gonzui-1.2.ebuild:
+  Add dev-lang/ocaml to DEPEND. gonzui needs ocamlc to index ocaml programs.
+
+  09 Jul 2005; Aron Griffis <agriffis@gentoo.org> gonzui-1.2.ebuild:
+  Remove dev-lang/ocaml from DEPEND. According to the gonzui web pages, it can
+  index ocaml programs, but there's no dependency involved
+
+*gonzui-1.2 (06 Jul 2005)
+
+  06 Jul 2005; MATSUU Takuto <matsuu@gentoo.org> +gonzui-1.2.ebuild:
+  Version bumped.
+
+  06 Jul 2005; MATSUU Takuto <matsuu@gentoo.org> gonzui-1.1.ebuild:
+  Stable on x86.
+
+  21 Apr 2005; MATSUU Takuto <matsuu@gentoo.org> gonzui-1.1.ebuild:
+  Added ~amd64 and ~ppc.
+
+*gonzui-1.1 (12 Apr 2005)
+
+  12 Apr 2005; MATSUU Takuto <matsuu@gentoo.org> +files/ebuild.rb,
+  +files/gonzui, +gonzui-1.1.ebuild:
+  Initial import. Thanks to bashi at GentooJP EbuildJP,
+  http://ebuild.gentoo.gr.jp/.

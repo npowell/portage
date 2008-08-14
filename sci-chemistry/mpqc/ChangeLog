@@ -1,0 +1,120 @@
+# ChangeLog for sci-chemistry/mpqc
+# Copyright 2002-2006 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/mpqc/ChangeLog,v 1.17 2006/10/05 13:36:54 dberkholz Exp $
+
+  05 Oct 2006; Donnie Berkholz <dberkholz@gentoo.org>; -mpqc-2.2.2.ebuild,
+  -mpqc-2.2.3.ebuild, -mpqc-2.3.0.ebuild, -mpqc-2.3.1.ebuild:
+  Clean up.
+
+  05 Oct 2006; Simon Stelling <blubb@gentoo.org> mpqc-2.3.1-r1.ebuild:
+  stable on amd64
+
+  20 Sep 2006; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  (#148281) Change herd to sci-chemistry from sci.
+
+  19 Sep 2006; Markus Dittrich <markusle@gentoo.org> mpqc-2.3.1.ebuild,
+  mpqc-2.3.1-r1.ebuild:
+  Replaced tcltk with tk useflag. Thanks to je_fro <je_fro@yahoo.com>
+  for his patch. This fixes bug #148213.
+
+  17 Aug 2006; Markus Rothe <corsair@gentoo.org> mpqc-2.3.1-r1.ebuild:
+  Stable on ppc64
+
+  09 Jul 2006; Donnie Berkholz <dberkholz@gentoo.org>; mpqc-2.3.1-r1.ebuild:
+  x86/ppc stable.
+
+*mpqc-2.3.1-r1 (13 May 2006)
+
+  13 May 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  +mpqc-2.3.1-r1.ebuild:
+  Always build shared libraries, so other programs can link against them
+  without mixing PIC and non-PIC code. That breaks architectures including
+  ppc, ppc64, amd64. Do some general ebuild cleanup, and add an RDEPEND so not
+  all the build-time tools are required at runtime.
+
+*mpqc-2.3.1 (11 Apr 2006)
+
+  11 Apr 2006; Markus Dittrich <markusle@gentoo.org> +mpqc-2.3.1.ebuild:
+  Version bump. Thanks much to mll <mlleinin@pacbell.net> for
+  his ebuild. This fixes bug #129535.
+
+  15 Mar 2006; Donnie Berkholz <spyderous@gentoo.org>; mpqc-2.2.2.ebuild,
+  mpqc-2.2.3.ebuild:
+  Remove USE=X, it screws up modular X and doesn't do anything at all.
+
+  20 Nov 2005; Markus Dittrich <markusle@gentoo.org> mpqc-2.3.0.ebuild:
+  Reworked install process to avoid sandbox violations. This fixes bug #113056.
+
+*mpqc-2.3.0 (20 Nov 2005)
+
+  20 Nov 2005; Markus Dittrich <markusle@gentoo.org> metadata.xml,
+  +mpqc-2.3.0.ebuild:
+  New version
+
+  11 Jun 2005; Markus Rothe <corsair@gentoo.org> mpqc-2.2.3.ebuild:
+  Added ~ppc64 and solved bug #62124: ppc64 needs --enable-shared
+
+  24 May 2005; Donnie Berkholz <spyderous@gentoo.org>; mpqc-2.2.2-r1.ebuild,
+  mpqc-2.2.3.ebuild:
+  (#54595) Inherit fortran eclass so we require a fortran compiler.
+
+*mpqc-2.2.3 (24 May 2005)
+
+  24 May 2005; Donnie Berkholz <spyderous@gentoo.org>; +mpqc-2.2.3.ebuild:
+  (#92179) Bump. Fix up indentation, use '-i' with sed instead of moving files
+  around, change .gz to .bz2 for distfiles. Add threads USE flag.
+
+  24 Dec 2004; Olivier Fisette <ribosome@gentoo.org> +metadata.xml,
+  +mpqc-2.2.2-r1.ebuild, +mpqc-2.2.2.ebuild:
+  Moved from app-sci/mpqc to sci-chemistry/mpqc.
+
+  02 Oct 2004; Donnie Berkholz <spyderous@gentoo.org>; mpqc-2.2.2-r1.ebuild,
+  mpqc-2.2.2.ebuild:
+  Add some die()'s (#54595).
+
+  23 Sep 2004; Donnie Berkholz <spyderous@gentoo.org>; mpqc-2.2.2-r1.ebuild:
+  Add previous KEYWORDS as ~arch.
+
+*mpqc-2.2.2-r1 (23 Sep 2004)
+
+  23 Sep 2004; Donnie Berkholz <spyderous@gentoo.org>; +mpqc-2.2.2-r1.ebuild:
+  Update blas and lapack dependencies to the virtuals. This requires a revision
+  bump to fix some issues (#54596, #64200).
+
+  23 Sep 2004; Donnie Berkholz <spyderous@gentoo.org>; -mpqc-2.1.2.ebuild,
+  -mpqc-2.2.0.ebuild:
+  Pull old versions.
+
+  21 Sep 2004; Danny van Dyk <kugelfang@gentoo.org> mpqc-2.2.2.ebuild:
+  Marked stable on amd64.
+
+  27 Jul 2004; Donnie Berkholz <spyderous@gentoo.org>; mpqc-2.2.2.ebuild:
+  x86.
+
+  05 Jun 2004; David Holm <dholm@gentoo.org> mpqc-2.2.2.ebuild:
+  Added to ~ppc.
+
+*mpqc-2.2.2 (03 Jun 2004)
+
+  03 Jun 2004; Donnie Berkholz <spyderous@gentoo.org>; +mpqc-2.2.2.ebuild:
+  Version bump (#52646). Should now work on ppc.
+
+  30 Mar 2004; Donnie Berkholz <spyderous@gentoo.org>; mpqc-2.1.2.ebuild,
+  mpqc-2.2.0.ebuild:
+  Change x11-base/xfree dependency to virtual/x11.
+
+  24 Dec 2003; Donnie Berkholz <spyderous@gentoo.org>; :
+  Bad digest. Closing bug #36425.
+
+*mpqc-2.2.0 (14 Dec 2003)
+
+  14 Dec 2003; Donnie Berkholz <spyderous@gentoo.org>; mpqc-2.2.0.ebuild:
+  Version bump.
+
+  02 Nov 2002; Hannes Mehnert <hannes@gentoo.org> mpqc-2.1.2.ebuild:
+  marked stable for x86
+
+*mpqc-2.1.2 (31 Oct 2002)
+
+  31 Oct 2002; Hannes Mehnert <hannes@gentoo.org> mpqc-2.1.2.ebuild,
+  ChangeLog: Initial ebuild.

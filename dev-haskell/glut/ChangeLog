@@ -1,0 +1,35 @@
+# ChangeLog for dev-haskell/glut
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-haskell/glut/ChangeLog,v 1.8 2008/07/06 20:24:35 maekke Exp $
+
+  06 Jul 2008; Markus Meier <maekke@gentoo.org> glut-2.1.1.1.ebuild:
+  amd64/x86 stable, bug #230919
+
+*glut-2.1.1.1 (20 Dec 2007)
+
+  20 Dec 2007; Duncan Coutts <dcoutts@gentoo.org> +glut-2.1.1.1.ebuild:
+  New version. Released with ghc-6.8 but works with ghc-6.6.
+
+  16 Dec 2007; Samuli Suominen <drac@gentoo.org> glut-2.1.1.ebuild:
+  amd64 stable wrt #201984
+
+  14 Dec 2007; Duncan Coutts <dcoutts@gentoo.org> glut-2.1.1.ebuild:
+  Updates for upward compatability with cabal-1.2 and ghc-6.8
+
+  12 Dec 2007; Ferris McCormick <fmccor@gentoo.org> glut-2.1.1.ebuild:
+  Add ~sparc keyword (completeness with bug #201984)
+
+  12 Dec 2007; Christian Faulhammer <opfer@gentoo.org> glut-2.1.1.ebuild:
+  quote variable
+
+  12 Dec 2007; Christian Faulhammer <opfer@gentoo.org> glut-2.1.1.ebuild:
+  stable x86, bug 201984
+
+*glut-2.1.1 (09 Jul 2007)
+*glut-2.0-r1 (09 Jul 2007)
+*glut-2.0 (09 Jul 2007)
+
+  09 Jul 2007; Duncan Coutts <dcoutts@gentoo.org> +metadata.xml,
+  +glut-2.0.ebuild, +glut-2.0-r1.ebuild, +glut-2.1.1.ebuild:
+  Initial versions.
+

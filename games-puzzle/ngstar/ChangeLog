@@ -1,0 +1,36 @@
+# ChangeLog for games-puzzle/ngstar
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-puzzle/ngstar/ChangeLog,v 1.7 2008/05/02 19:44:34 nyhm Exp $
+
+  02 May 2008; Tristan Heaven <nyhm@gentoo.org>
+  +files/ngstar-2.1.8-gcc43.patch, ngstar-2.1.8-r2.ebuild:
+  Fix building with gcc-4.3
+
+  10 Jun 2007; Tristan Heaven <nyhm@gentoo.org> ngstar-2.1.8-r2.ebuild:
+  Add missing sys-libs/gpm dep
+
+  29 Jun 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  ngstar-2.1.8-r2.ebuild:
+  Fixed binaries being pre-stripped. Thanks to Tristan Heaven
+  <tristanheaven@gmail.com> for the patch. Closing bug #137720.
+
+*ngstar-2.1.8-r2 (01 Jun 2006)
+
+  01 Jun 2006; <Tupone@gentoo.org> -ngstar-2.1.8-r1.ebuild,
+  +ngstar-2.1.8-r2.ebuild:
+  Fixing compiler flags, bug 130504 by Alexandru Toma
+
+  23 Apr 2006; <Tupone@gentoo.org> ngstar-2.1.8-r1.ebuild:
+  Forgot to inherit eutils.
+
+*ngstar-2.1.8-r1 (19 Apr 2006)
+
+  19 Apr 2006; <Tupone@gentoo.org> +files/ngstar-2.1.8-gentoo-path.patch,
+  +ngstar-2.1.8-r1.ebuild:
+  Fixing install path, bug #130504 by Alexandru Toma
+
+*ngstar-2.1.8 (11 Apr 2006)
+
+  11 Apr 2006; <Tupone@gentoo.org> +metadata.xml, +ngstar-2.1.8.ebuild:
+  Initial import. Ebuild submitted by Alexandru Toma, bug #66294
+

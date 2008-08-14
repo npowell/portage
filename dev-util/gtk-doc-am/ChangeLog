@@ -1,0 +1,55 @@
+# ChangeLog for dev-util/gtk-doc-am
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/gtk-doc-am/ChangeLog,v 1.14 2008/08/14 00:15:19 leio Exp $
+
+  14 Aug 2008; Mart Raudsepp <leio@gentoo.org> -gtk-doc-am-1.10.ebuild:
+  Remove old
+
+  30 Jul 2008; Brent Baude <ranger@gentoo.org> gtk-doc-am-1.10-r1.ebuild:
+  Marking gtk-doc-am-1.10-r1 ppc stable for bug 229709
+
+  04 Jun 2008; Raúl Porcel <armin76@gentoo.org> gtk-doc-am-1.10-r1.ebuild:
+  ia64 stable
+
+  04 Jun 2008; Markus Rothe <corsair@gentoo.org> gtk-doc-am-1.10-r1.ebuild:
+  Stable on ppc64; bug #224817
+
+  04 Jun 2008; Jeroen Roovers <jer@gentoo.org> gtk-doc-am-1.10-r1.ebuild:
+  Stable for HPPA (bug #224817).
+
+  26 May 2008; Mart Raudsepp <leio@gentoo.org> gtk-doc-am-1.10.ebuild,
+  gtk-doc-am-1.10-r1.ebuild:
+  Fix the blocker atom to not be typoed, noticed by David Leverton
+
+  25 May 2008; Markus Meier <maekke@gentoo.org> gtk-doc-am-1.10-r1.ebuild:
+  amd64/x86 stable, bug #223297
+
+  24 May 2008; nixnut <nixnut@gentoo.org> gtk-doc-am-1.10.ebuild:
+  Stable on ppc wrt bug 223297
+
+  23 May 2008; Tobias Klausmann <klausman@gentoo.org>
+  gtk-doc-am-1.10-r1.ebuild:
+  Stable on alpha, bug #223297
+
+  23 May 2008; Ferris McCormick <fmccor@gentoo.org>
+  gtk-doc-am-1.10-r1.ebuild:
+  Sparc stable, required for Bug #223297.
+
+  08 Apr 2008; Rémi Cardona <remi@gentoo.org> gtk-doc-am-1.10-r1.ebuild:
+  add empty src_compile(), nothing needs to be built
+
+*gtk-doc-am-1.10-r1 (08 Apr 2008)
+
+  08 Apr 2008; Rémi Cardona <remi@gentoo.org> +gtk-doc-am-1.10-r1.ebuild:
+  keep the original name for the m4 macro file (fixes bug #216634)
+
+  24 Mar 2008; Daniel Gryniewicz <dang@gentoo.org> gtk-doc-am-1.10.ebuild:
+  block gtk-doc-1.10 as well, since -r1 was the first to work with
+  gtk-doc-am
+
+*gtk-doc-am-1.10 (24 Mar 2008)
+
+  24 Mar 2008; Daniel Gryniewicz <dang@gentoo.org> +gtk-doc-am-1.10.ebuild:
+  Package to install just gtk-doc.m4, so that other packages needing it for
+  eautreconf can dep on it
+

@@ -1,0 +1,19 @@
+# ChangeLog for net-analyzer/carl
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/carl/ChangeLog,v 1.4 2007/12/31 14:20:29 armin76 Exp $
+
+  31 Dec 2007; Raúl Porcel <armin76@gentoo.org> carl-0.7.ebuild:
+  Make Tobias happy
+
+  15 Feb 2007; Raúl Porcel <armin76@gentoo.org> carl-0.7.ebuild:
+  x86 stable
+
+  15 Jan 2007; Raúl Porcel <armin76@gentoo.org> carl-0.7.ebuild:
+  Fix HOMEPAGE
+
+*carl-0.7 (09 Jan 2007)
+
+  09 Jan 2007; Raúl Porcel (armin76) <armin76@gentoo.org> +metadata.xml,
+  +carl-0.7.ebuild:
+  New ebuild, handy tool for rsync mirrors
+

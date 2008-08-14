@@ -1,0 +1,207 @@
+# ChangeLog for sci-misc/boinc
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-misc/boinc/ChangeLog,v 1.41 2008/08/06 18:23:54 ulm Exp $
+
+  06 Aug 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
+  Add USE flag description to metadata wrt GLEP 56.
+
+  18 Apr 2008; Markus Dittrich <markusle@gentoo.org> boinc-5.10.45.ebuild:
+  Fixed compilation problems with USE="-X" (see bug #218168).
+
+  17 Apr 2008; Markus Dittrich <markusle@gentoo.org>
+  +files/boinc-5.10.45-gcc4.3.patch, boinc-4.72.20050813-r3.ebuild,
+  boinc-5.2.14.ebuild, boinc-5.4.11.ebuild, boinc-5.5.6.ebuild,
+  boinc-5.10.28.ebuild, boinc-5.10.45.ebuild:
+  Added patch to fix compile problems with gcc-4.3 (see bug #217919).
+  Fixed lots of QA issues.
+
+*boinc-5.10.45 (15 Apr 2008)
+
+  15 Apr 2008; Joshua Jackson <tsunam@gentoo.org> +boinc-5.10.45.ebuild:
+  adding 5.10.45 to the tree
+
+  05 Feb 2008; Benedikt Böhm <hollow@gentoo.org>
+  boinc-4.72.20050813-r3.ebuild, boinc-5.2.14.ebuild, boinc-5.4.11.ebuild,
+  boinc-5.5.6.ebuild, boinc-5.8.15.ebuild, boinc-5.10.28.ebuild:
+  fix depend.apache usage wrt #208584
+
+  17 Jan 2008; Joshua Jackson <tsunam@gentoo.org>
+  +boinc-4.72.20050813-r3.ebuild, +boinc-5.2.14.ebuild,
+  +boinc-5.4.11.ebuild, +boinc-5.5.6.ebuild:
+  I forgot about setiathome
+
+*boinc-5.10.28 (17 Jan 2008)
+
+  17 Jan 2008; Joshua Jackson <tsunam@gentoo.org>
+  -boinc-4.72.20050813-r3.ebuild, -boinc-5.2.14.ebuild,
+  -boinc-5.4.11.ebuild, -boinc-5.5.6.ebuild, +boinc-5.10.28.ebuild:
+  Adding a recent version that matches upstream stable...removing some of the
+  very old versions as well
+
+  29 Jul 2007; Christian Heim <phreak@gentoo.org>
+  boinc-4.72.20050813-r3.ebuild, boinc-5.2.14.ebuild, boinc-5.4.11.ebuild,
+  boinc-5.5.6.ebuild, boinc-5.8.15.ebuild:
+  Fixing the DEPEND/RDEPEND for the move of net-www/apache to
+  www-servers/apache (#78622).
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>;
+  boinc-4.72.20050813-r3.ebuild, boinc-5.2.14.ebuild, boinc-5.4.11.ebuild,
+  boinc-5.5.6.ebuild, boinc-5.8.15.ebuild:
+  Drop virtual/x11 references.
+
+  19 May 2007; Ryan Hill <dirtyepic@gentoo.org>
+  boinc-4.72.20050813-r3.ebuild, boinc-5.2.14.ebuild, boinc-5.4.11.ebuild,
+  boinc-5.5.6.ebuild, boinc-5.8.15.ebuild:
+  Use wxwidgets.eclass.
+
+*boinc-5.8.15 (27 Mar 2007)
+
+  27 Mar 2007; Joshua Jackson <tsunam@gentoo.org> +boinc-5.8.15.ebuild:
+  Adding the new considered stable version to the tree, with help from users
+  in bug #166920
+
+  13 Mar 2007; Danny van Dyk <kugelfang@gentoo.org>
+  boinc-4.72.20050813-r3.ebuild, boinc-5.2.14.ebuild, boinc-5.4.11.ebuild,
+  boinc-5.5.6.ebuild:
+  QA: which -> type -P
+
+  23 Nov 2006; Francesco Riosa <vivo@gentoo.org>
+  boinc-4.72.20050813-r3.ebuild, boinc-5.2.14.ebuild, boinc-5.4.11.ebuild,
+  boinc-5.5.6.ebuild:
+  dev-db/mysql => virtual/mysql
+
+  05 Nov 2006; Marcus D. Hanwell <cryos@gentoo.org>
+  +files/boinc-4.72.20050813-gcc4-fix.patch, +boinc-4.72.20050813-r3.ebuild:
+  Ressurect until new setiathome version is in the tree.
+
+*boinc-5.4.11 (03 Nov 2006)
+
+  03 Nov 2006; Marcus D. Hanwell <cryos@gentoo.org>
+  -files/boinc-4.72.20050813-gcc4-fix.patch, -boinc-4.72.20050813-r3.ebuild,
+  +boinc-5.4.11.ebuild:
+  Version bump to add latest stable, bug 151556. Removed old version.
+
+  15 Oct 2006; Marcus D. Hanwell <cryos@gentoo.org> ChangeLog:
+  Redigesting, should fix bug 151389.
+
+  15 Jul 2006; Marcus D. Hanwell <cryos@gentoo.org> boinc-5.5.6.ebuild:
+  Forced -j1, should fix bug 136374.
+
+  15 Jul 2006; Marcus D. Hanwell <cryos@gentoo.org> boinc-5.2.14.ebuild,
+  boinc-5.5.6.ebuild:
+  Added unicode USE flag, should fix bug 135306.
+
+  11 Jul 2006; Marcus D. Hanwell <cryos@gentoo.org> boinc-5.5.6.ebuild:
+  Updated to call the necessary autotools directly, should fix bug 139923.
+
+*boinc-5.5.6 (10 Jul 2006)
+
+  10 Jul 2006; Marcus D. Hanwell <cryos@gentoo.org> +boinc-5.5.6.ebuild:
+  Version bump, closes bug 135309.
+
+  23 Apr 2006; Thomas Cort <tcort@gentoo.org> boinc-4.72.20050813-r3.ebuild:
+  Added ~alpha keyword wrt Bug #103250.
+
+  14 Apr 2006; Marcus D. Hanwell <cryos@gentoo.org>
+  +files/boinc-5.2.14-gcc-4.1.patch, boinc-5.2.14.ebuild:
+  Added GCC 4.1 patch supplied by Mark Loeser <halcy0n@gentoo.org>, closes bug
+  129592.
+
+  25 Feb 2006; Marcus D. Hanwell <cryos@gentoo.org> boinc-5.2.14.ebuild:
+  Add warning about client password, bug 121896.
+
+  18 Dec 2005; Marcus D. Hanwell <cryos@gentoo.org> files/boinc.init,
+  boinc-5.2.14.ebuild:
+  Fixed dep, bug 115819. Also adjusted handling of the log file.
+
+  11 Dec 2005; Marcus D. Hanwell <cryos@gentoo.org>
+  +files/08_all_Makefile.patch, boinc-5.2.14.ebuild:
+  Added patch to allow linking on systems with older boinc versions installed.
+
+*boinc-5.2.14 (05 Dec 2005)
+
+  05 Dec 2005; Marcus D. Hanwell <cryos@gentoo.org> +boinc-5.2.14.ebuild:
+  Version bump, in p.mask for now until it receives more testing.
+
+*boinc-4.72.20050813-r3 (28 Nov 2005)
+
+  28 Nov 2005; Marcus D. Hanwell <cryos@gentoo.org>
+  +files/boinc-4.72.20050813-gcc4-fix.patch, files/boinc.init,
+  -boinc-4.72.20050813-r2.ebuild, +boinc-4.72.20050813-r3.ebuild:
+  Fix to init script to append log output, bug 103250. Also added GCC 4 fix,
+  thanks to Dario Birtic <dariobirtic@gmx.net>, closes bug 112133.
+
+*boinc-4.72.20050813-r2 (29 Oct 2005)
+
+  29 Oct 2005; Marcus D. Hanwell <cryos@gentoo.org> files/boinc.init,
+  -boinc-4.72.20050813-r1.ebuild, +boinc-4.72.20050813-r2.ebuild:
+  Correct error in init file, revision bump to push it out, closes bug 110839.
+
+  29 Oct 2005; Marcus D. Hanwell <cryos@gentoo.org>
+  -files/boinc-4.32_cmdline_options.patch,
+  -files/boinc-4.32_socket_close_fix.patch:
+  Removed obsolete patches.
+
+*boinc-4.72.20050813-r1 (29 Oct 2005)
+
+  29 Oct 2005; Marcus D. Hanwell <cryos@gentoo.org> files/boinc.conf,
+  files/boinc.init, -boinc-4.32.ebuild, -boinc-4.72.20050813.ebuild,
+  +boinc-4.72.20050813-r1.ebuild:
+  Clean up old versions, several cleanups closing bug 103558, 109567 and
+  110606. Thanks to Tony Murrary <tonymurray@fastmail.fm> and Benjamin
+  Gaillard <gentoo@powercode.net>.
+
+  25 Aug 2005; Aron Griffis <agriffis@gentoo.org>
+  boinc-4.72.20050813.ebuild:
+  add ~ia64 #103250
+
+  23 Aug 2005; Ferris McCormick <fmccor@gentoo.org>
+  boinc-4.72.20050813.ebuild:
+  Add ~sparc keyword (Bug #103250) --- builds and installs on sparc, and
+  runs well enough to benchmark the system, at least.  (Note that on my
+  test system, however, parallel (-j3) make had problems; "-j1" was fine.)
+
+  23 Aug 2005; Marcus D. Hanwell <cryos@gentoo.org> boinc-4.32.ebuild,
+  boinc-4.72.20050813.ebuild:
+  Changed enewuser call to comply with bug 103421.
+
+  20 Aug 2005; Marcus D. Hanwell <cryos@gentoo.org> -boinc-4.19.ebuild,
+  boinc-4.32.ebuild, -boinc-4.72.20050725.ebuild,
+  boinc-4.72.20050813.ebuild:
+  Cleaned out some old ebuilds. Fixed the php dependency to virtual/php
+  closing bug 102835.
+
+*boinc-4.72.20050813 (14 Aug 2005)
+*boinc-4.72.20050725 (14 Aug 2005)
+
+  14 Aug 2005; Olivier Fisette <ribosome@gentoo.org> files/boinc.init,
+  +boinc-4.72.20050725.ebuild, +boinc-4.72.20050813.ebuild:
+  Fixed bug #98342: Boinc is now started using setsid. Fulfilled request in 
+  bug #93744: Boinc ebuilds are now up-to-date. Fixed bug #91930: Boinc now
+  compiles fine with Unicode-enabled wxGTK.
+
+  06 Aug 2005; Michael Hanselmann <hansmi@gentoo.org> boinc-4.32.ebuild:
+  Added to ~sparc.
+
+  22 Jul 2005; Michael Hanselmann <hansmi@gentoo.org> boinc-4.32.ebuild:
+  Added to ~ppc.
+
+  28 May 2005; Marcus D. Hanwell <cryos@gentoo.org> boinc-4.19.ebuild,
+  boinc-4.32.ebuild:
+  Give the boinc user /bin/false as shell.
+
+  24 May 2005; Marcus D. Hanwell <cryos@gentoo.org> metadata.xml:
+  Fix up metadata, thanks to squinky86 in bug 93744.
+
+*boinc-4.32 (21 Apr 2005)
+*boinc-4.19 (21 Apr 2005)
+
+  21 Apr 2005; Marcus D. Hanwell <cryos@gentoo.org>
+  +files/boinc-4.32_cmdline_options.patch,
+  +files/boinc-4.32_socket_close_fix.patch, +files/boinc.conf,
+  +files/boinc.init, +metadata.xml, +boinc-4.19.ebuild, +boinc-4.32.ebuild:
+  Initial import, placed in p.mask for now during initial testing. Thanks go
+  to Robert Moss <robmoss@gentoo.org> and Tony Murray <tonymurray@fastmail.fm>
+  for the ebuilds and maintenance performed by Tony, as well as all the other
+  contributors who helped with this ebuild. This closes bug 54962.
+

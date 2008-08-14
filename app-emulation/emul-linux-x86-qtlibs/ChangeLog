@@ -1,0 +1,210 @@
+# ChangeLog for app-emulation/emul-linux-x86-qtlibs
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/emul-linux-x86-qtlibs/ChangeLog,v 1.43 2008/07/28 18:40:58 cardoe Exp $
+
+  28 Jul 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
+  add GLEP 56 USE flag desc from use.local.desc
+
+*emul-linux-x86-qtlibs-20080316 (17 Mar 2008)
+
+  17 Mar 2008; Peter Weller <welp@gentoo.org>
+  +emul-linux-x86-qtlibs-20080316.ebuild:
+  Bump
+
+  25 Dec 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing herbs from metadata.xml as per #88780.
+
+  25 Dec 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing kugelfang from metadata.xml as per #46972.
+
+  11 Dec 2007; <welp@gentoo.org> emul-linux-x86-qtlibs-20071210.ebuild:
+  Stable on amd64
+
+*emul-linux-x86-qtlibs-20071210 (11 Dec 2007)
+
+  11 Dec 2007; <welp@gentoo.org> +emul-linux-x86-qtlibs-20071210.ebuild:
+  Bump
+
+*emul-linux-x86-qtlibs-20071114-r2 (25 Nov 2007)
+
+  25 Nov 2007; Mike Doty <kingtaco@gentoo.org>
+  +emul-linux-x86-qtlibs-20071114-r2.ebuild:
+  change inherit order to fix DESCRIPTION bug
+
+  24 Nov 2007; Mike Doty <kingtaco@gentoo.org>
+  emul-linux-x86-qtlibs-20071114-r1.ebuild:
+  fix missing inherit, bug 200163
+
+*emul-linux-x86-qtlibs-20071114-r1 (24 Nov 2007)
+
+  24 Nov 2007; Mike Doty <kingtaco@gentoo.org>
+  +emul-linux-x86-qtlibs-20071114-r1.ebuild:
+  we now require soundlibs to be built with USE=arts
+
+  24 Nov 2007; Mike Doty <kingtaco@gentoo.org>
+  emul-linux-x86-qtlibs-20071114.ebuild:
+  amd64 stable for releng
+
+*emul-linux-x86-qtlibs-20071114 (14 Nov 2007)
+
+  14 Nov 2007; Mike Doty <kingtaco@gentoo.org>
+  +emul-linux-x86-qtlibs-20071114.ebuild:
+  New emul-linux-x86-* build system.  Latest x86 stable packages.
+
+  02 Jul 2007; Piotr Jaroszyński <peper@gentoo.org>
+  emul-linux-x86-qtlibs-3.4.4-r5.ebuild:
+  (QA) RESTRICT clean up.
+
+*emul-linux-x86-qtlibs-10.0-r1 (21 Feb 2007)
+
+  21 Feb 2007; Simon Stelling <blubb@gentoo.org>
+  +emul-linux-x86-qtlibs-10.0-r1.ebuild:
+  use the new emul-libs eclass
+
+  19 Feb 2007; Simon Stelling <blubb@gentoo.org>
+  emul-linux-x86-qtlibs-10.0.ebuild:
+  it's RESTRICT=strip
+
+  16 Feb 2007; Simon Stelling <blubb@gentoo.org>
+  -emul-linux-x86-qtlibs-2.2.ebuild, -emul-linux-x86-qtlibs-3.4.4.ebuild,
+  -emul-linux-x86-qtlibs-3.4.4-r1.ebuild,
+  -emul-linux-x86-qtlibs-3.4.4-r4.ebuild, emul-linux-x86-qtlibs-10.0.ebuild:
+  mark 10.0 stable for security bug 153704 & clean up old versions
+
+  13 Feb 2007; Simon Stelling <blubb@gentoo.org>
+  emul-linux-x86-qtlibs-10.0.ebuild:
+  kill unneeded kdeartwork-styles from SRC_URI
+
+  13 Feb 2007; Simon Stelling <blubb@gentoo.org>
+  emul-linux-x86-qtlibs-10.0.ebuild:
+  only install libraries that previous versions also installed; bug 166584
+
+  13 Feb 2007; Simon Stelling <blubb@gentoo.org>
+  emul-linux-x86-qtlibs-10.0.ebuild:
+  kill some unneeded files; partly fixes bug 166584
+
+*emul-linux-x86-qtlibs-10.0 (12 Feb 2007)
+
+  12 Feb 2007; Simon Stelling <blubb@gentoo.org>
+  +emul-linux-x86-qtlibs-10.0.ebuild:
+  version bump; bugs 153704, 160689
+
+*emul-linux-x86-qtlibs-3.4.4-r5 (04 Feb 2007)
+
+  04 Feb 2007; Simon Stelling <blubb@gentoo.org> +files/46emul-qt3,
+  +emul-linux-x86-qtlibs-3.4.4-r5.ebuild:
+  put /usr/qt/3/lib32 into LDPATH; bug 162805
+
+*emul-linux-x86-qtlibs-3.4.4-r4 (05 Jan 2007)
+
+  05 Jan 2007; Mike Frysinger <vapier@gentoo.org>
+  +emul-linux-x86-qtlibs-3.4.4-r4.ebuild:
+  Dont install patch #143390 by Bernard Cafarelli.
+
+*emul-linux-x86-qtlibs-3.4.4-r3 (05 Jan 2007)
+
+  05 Jan 2007; Mike Frysinger <vapier@gentoo.org>
+  +emul-linux-x86-qtlibs-3.4.4-r3.ebuild:
+  Fix encoded /emul to point to lib32 #143390.
+
+*emul-linux-x86-qtlibs-3.4.4-r2 (03 Jan 2007)
+
+  03 Jan 2007; Mike Frysinger <vapier@gentoo.org>
+  +emul-linux-x86-qtlibs-3.4.4-r2.ebuild:
+  Move /emul to /lib32 #143390.
+
+*emul-linux-x86-qtlibs-3.4.4-r1 (29 Dec 2006)
+
+  29 Dec 2006; Danny van Dyk <kugelfang@gentoo.org>
+  files/45emul-linux-x86-qtlibs, +emul-linux-x86-qtlibs-3.4.4-r1.ebuild:
+  Removed QTDIR variable from env.d-file. Bug #159339.
+
+  30 Jul 2006; Herbie Hopkins <herbs@gentoo.org>
+  emul-linux-x86-qtlibs-3.4.4.ebuild:
+  Stable on amd64.
+
+  11 May 2006; Diego Pettenò <flameeyes@gentoo.org>
+  emul-linux-x86-qtlibs-3.4.4.ebuild:
+  Add parenthesis on SRC_URI conditionals. Fix bug #133010 thanks to Jakub Moc.
+
+*emul-linux-x86-qtlibs-3.4.4 (17 Mar 2006)
+
+  17 Mar 2006; Herbie Hopkins <herbs@gentoo.org>
+  -emul-linux-x86-qtlibs-2.1.1.ebuild, +emul-linux-x86-qtlibs-3.4.4.ebuild:
+  Add support for IME, enabled with immqt-bc use flag (bug 125588). Add kde
+  theme engines so 32bit qt apps don't look so out of place. Remove qt2 since
+  there hasn't been a qt2 ebuild in portage for ages.
+
+  09 Mar 2006; Diego Pettenò <flameeyes@gentoo.org>
+  emul-linux-x86-qtlibs-2.1.1.ebuild, emul-linux-x86-qtlibs-2.2.ebuild:
+  Use nostrip instead of strip restriction for compatibility with older portage.
+
+  09 Mar 2006; Diego Pettenò <flameeyes@gentoo.org>
+  emul-linux-x86-qtlibs-2.1.1.ebuild, emul-linux-x86-qtlibs-2.2.ebuild:
+  Add strip restriction, as the binaries are already stripped.
+
+  05 Jan 2006; Herbie Hopkins <herbs@gentoo.org>
+  emul-linux-x86-qtlibs-2.2.ebuild:
+  Stable on amd64.
+
+*emul-linux-x86-qtlibs-2.2 (06 Dec 2005)
+
+  06 Dec 2005; Herbie Hopkins <herbs@gentoo.org>
+  +emul-linux-x86-qtlibs-2.2.ebuild:
+  Bump with newer qt libs.
+
+  06 Sep 2005; Herbie Hopkins <herbs@gentoo.org> metadata.xml,
+  -emul-linux-x86-qtlibs-1.1.ebuild, -emul-linux-x86-qtlibs-2.1.ebuild:
+  Reomove old versions.
+
+  22 May 2005; Simon Stelling <blubb@gentoo.org>
+  emul-linux-x86-qtlibs-2.1.1.ebuild:
+  stable on amd64
+
+*emul-linux-x86-qtlibs-2.1.1 (22 Apr 2005)
+
+  22 Apr 2005; Herbie Hopkins <herbs@gentoo.org>
+  +emul-linux-x86-qtlibs-2.1.1.ebuild:
+  Rebuild qt3 to fix bug #89971
+
+  21 Apr 2005; Herbie Hopkins <herbs@gentoo.org>
+  +files/45emul-linux-x86-qtlibs, -emul-linux-x86-qtlibs-2.0.ebuild,
+  emul-linux-x86-qtlibs-2.1.ebuild, emul-linux-x86-qtlibs-1.1.ebuild:
+  Switch to use doenvd. Mark 1.1 stable.
+
+*emul-linux-x86-qtlibs-2.1 (18 Apr 2005)
+
+  18 Apr 2005; Herbie Hopkins <herbs@gentoo.org>
+  +emul-linux-x86-qtlibs-2.1.ebuild:
+  Version 2.1. Removed unnecessary .a files. Fixed SRC_URI.
+
+*emul-linux-x86-qtlibs-2.0 (15 Apr 2005)
+
+  15 Apr 2005; Simon Stelling <blubb@gentoo.org>
+  +emul-linux-x86-qtlibs-2.0.ebuild:
+  new version provided by Herbie Hopkins
+
+  09 Feb 2005; Marcus D. Hanwell <cryos@gentoo.org>
+  -emul-linux-x86-qtlibs-1.0.ebuild:
+  Removed old ebuild.
+
+  19 Jul 2004; Travis Tilley <lv@gentoo.org> emul-linux-x86-qtlibs-1.1.ebuild:
+  changed dep to fix bug 57608
+
+  01 Jul 2004; Jon Hood <squinky86@gentoo.org>
+  emul-linux-x86-qtlibs-1.1.ebuild:
+  change virtual/glibc to virtual/libc
+
+*emul-linux-x86-qtlibs-1.1 (01 Jul 2004)
+
+  01 Jul 2004; Danny van Dyk <kugelfang@gentoo.org> metadata.xml,
+  +emul-linux-x86-qtlibs-1.1.ebuild:
+  Version Bump to fix BUG #53767. Added libjpeg to the tarball.
+
+*emul-linux-x86-qtlibs-1.0 (13 Apr 2004)
+
+  13 Apr 2004; Danny van Dyk <kugelfang@gentoo.org> emul-linux-x86-qtlibs-1.0.ebuild:
+  Initial import of 32bit qt libraries, compiled with CFLAGS="-mcpu=athlon-xp -msse -msse2".
+  QT Version 3.3.0, all libraries used are stable on x86.
+
+

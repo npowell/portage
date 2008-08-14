@@ -1,0 +1,24 @@
+# ChangeLog for dev-python/coverage
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/coverage/ChangeLog,v 1.5 2008/06/14 17:56:45 coldwind Exp $
+
+  14 Jun 2008; Santiago M. Mola <coldwind@gentoo.org> coverage-2.77.ebuild:
+  amd64 stable wrt bug #209511
+
+  11 Jun 2008; Christian Faulhammer <opfer@gentoo.org> coverage-2.77.ebuild:
+  stable x86, bug 209511
+
+  10 Jun 2008; Robin H. Johnson <robbat2@gentoo.org> coverage-2.77.ebuild:
+  Bug #225701, make sure the bytecode gets compiled, thanks to Paweł Hajdan
+  jr (ph) <phajdan.jr@gmail.com>.
+
+  07 Jun 2008; nixnut <nixnut@gentoo.org> coverage-2.77.ebuild:
+  Stable on ppc wrt bug 209511
+
+*coverage-2.77 (18 Dec 2007)
+
+  18 Dec 2007; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml,
+  +coverage-2.77.ebuild:
+  Initial commit. This is the coverage checker that is supported by
+  dev-python/nose.
+

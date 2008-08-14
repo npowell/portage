@@ -1,0 +1,46 @@
+# ChangeLog for net-analyzer/fragroute
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/fragroute/ChangeLog,v 1.14 2008/04/21 17:46:57 phreak Exp $
+
+  21 Apr 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Fix up metadata.xml. If there's no maintainer for the package, the metadata
+  also needs to contain m-needed@g.o.
+
+  19 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  15 Feb 2006; Markus Ullmann <jokey@gentoo.org> fragroute-1.2.ebuild:
+  Removing virtual/libpcap wrt bug #117898
+
+  09 Jan 2006; Bryan Østergaard <kloeri@gentoo.org metadata.xml:
+  Remove retired dev from metadata.xml
+
+  12 Aug 2005; Olivier Crête <tester@gentoo.org> fragroute-1.2.ebuild:
+  Marked ~amd64, closes bug #102110, thanks to Mike Cvet for testing
+
+  19 Jul 2005; David Holm <dholm@gentoo.org> fragroute-1.2.ebuild:
+  Added to ~ppc.
+
+  29 Jan 2005; Daniel Black <dragonheart@gentoo.org> fragroute-1.2.ebuild:
+  changed net-libs/libpcap depend to virtual/libcap
+
+  24 Aug 2004; Eldad Zack <eldad@gentoo.org> fragroute-1.2.ebuild:
+  Removed ~macos (bad deps)
+
+  05 Aug 2004; Alexander Plank <alexander@gentoo.org> fragroute-1.2.ebuild:
+  add ~macos keyword (ranlib must be run, i need to also commit the libraries which work
+    
+  09 Jul 2004; Eldad Zack <eldad@gentoo.org> fragroute-1.2.ebuild:
+  Tidy up.
+
+  01 Jul 2004; Jon Hood <squinky86@gentoo.org> fragroute-1.2.ebuild:
+  change virtual/glibc to virtual/libc
+
+*fragroute-1.2 (04 Sep 2003)
+
+  04 Sep 2003; Michael Sterrett <msterret@gentoo.org> fragroute-1.2.ebuild:
+  fix DEPEND (dev-libs/libpcap -> net-libs/libpcap)
+
+  28 Aug 2003; Chuck Short <zul@gentoo.org> :
+  Initial version. Ebuild contributed by Daniel Seyffer <gentoo-bugs@seyffer.de>.
+

@@ -1,0 +1,23 @@
+# ChangeLog for app-admin/conary-policy
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/conary-policy/ChangeLog,v 1.4 2007/05/13 08:08:11 bangert Exp $
+
+  13 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add herd
+
+*conary-policy-1.0.11 (13 Mar 2007)
+
+  13 Mar 2007; <smithj@gentoo.org> -conary-policy-1.0.10.ebuild,
+  +conary-policy-1.0.11.ebuild:
+  update to latest
+
+*conary-policy-1.0.10 (02 Feb 2007)
+
+  02 Feb 2007; <smithj@gentoo.org> +conary-policy-1.0.10.ebuild:
+  update to latest
+
+*conary-policy-1.0.9 (23 Oct 2006)
+
+  23 Oct 2006; <smithj@gentoo.org> +conary-policy-1.0.9.ebuild:
+  initial version, needed for app-admin/conary
+

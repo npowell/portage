@@ -1,0 +1,50 @@
+# ChangeLog for app-editors/emact
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-editors/emact/ChangeLog,v 1.11 2008/07/30 10:28:09 ulm Exp $
+
+*emact-2.53.0 (30 Jul 2008)
+
+  30 Jul 2008; Ulrich Mueller <ulm@gentoo.org> -emact-2.50.0.ebuild,
+  +emact-2.53.0.ebuild:
+  Version bump. Remove old.
+
+  01 May 2008; Christian Faulhammer <opfer@gentoo.org> emact-2.52.0.ebuild:
+  stable x86/amd64, bug 217943
+
+  21 Mar 2008; Ulrich Mueller <ulm@gentoo.org> emact-2.50.0.ebuild,
+  emact-2.52.0.ebuild:
+  New location of HOMEPAGE.
+
+*emact-2.52.0 (17 Mar 2008)
+
+  17 Mar 2008; Ulrich Mueller <ulm@gentoo.org> -emact-2.51.0.ebuild,
+  +emact-2.52.0.ebuild:
+  Version bump. Remove intermediate version.
+
+  17 Mar 2008; Ulrich Mueller <ulm@gentoo.org> Manifest:
+  Manifest regenerated; upstream has changed the 2.51.0 tarball after
+  release. Fixes bug 213670.
+
+*emact-2.51.0 (15 Mar 2008)
+
+  15 Mar 2008; Ulrich Mueller <ulm@gentoo.org> +emact-2.51.0.ebuild:
+  Version bump; mainly Unicode related fixes.
+
+  27 Jan 2008; Christian Faulhammer <opfer@gentoo.org> emact-2.50.0.ebuild:
+  stable amd64, bug 207607
+
+  27 Jan 2008; Christian Faulhammer <opfer@gentoo.org> emact-2.50.0.ebuild:
+  stable x86, bug 207607
+
+  10 Oct 2007; Christian Faulhammer <opfer@gentoo.org> emact-2.50.0.ebuild:
+  remove PROVIDE=virtual/editor as we have now a new-style virtual
+
+  01 Jul 2007; Diego Pettenò <flameeyes@gentoo.org> emact-2.50.0.ebuild:
+  Add ~amd64 keyword.
+
+*emact-2.50.0 (01 Jul 2007)
+
+  01 Jul 2007; Ulrich Mueller <ulm@gentoo.org> +metadata.xml,
+  +emact-2.50.0.ebuild:
+  Initial import.
+

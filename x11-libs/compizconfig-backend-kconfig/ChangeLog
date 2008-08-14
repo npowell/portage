@@ -1,0 +1,26 @@
+# ChangeLog for x11-libs/compizconfig-backend-kconfig
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/compizconfig-backend-kconfig/ChangeLog,v 1.5 2007/11/01 01:08:14 tester Exp $
+
+  01 Nov 2007; Olivier Crête <tester@gentoo.org>
+  compizconfig-backend-kconfig-0.6.0.ebuild:
+  Mark ~amd64, bug #197287
+
+  31 Oct 2007; Hanno Boeck <hanno@gentoo.org>
+  compizconfig-backend-kconfig-0.6.0.ebuild:
+  Added proper kde-deps, thanks to jmbsvicetto.
+
+  24 Oct 2007; Luca Barbato <lu_zero@gentoo.org>
+  compizconfig-backend-kconfig-0.6.0.ebuild:
+  Marked ~ppc
+
+  24 Oct 2007; Hanno Boeck <hanno@gentoo.org>
+  compizconfig-backend-kconfig-0.6.0.ebuild:
+  QA fixes.
+
+*compizconfig-backend-kconfig-0.6.0 (23 Oct 2007)
+
+  23 Oct 2007; Hanno Boeck <hanno@gentoo.org> +metadata.xml,
+  +compizconfig-backend-kconfig-0.6.0.ebuild:
+  Initial compiz-fusion commit, ebuild based on xeffects overlay.
+

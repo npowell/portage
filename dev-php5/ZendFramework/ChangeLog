@@ -1,0 +1,179 @@
+# ChangeLog for dev-php5/ZendFramework
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-php5/ZendFramework/ChangeLog,v 1.32 2008/08/08 17:10:45 gurligebis Exp $
+
+*ZendFramework-1.5.3 (08 Aug 2008)
+
+  08 Aug 2008; Bjarke Istrup Pedersen <gurligebis@gentoo.org>
+  -ZendFramework-1.5.2.ebuild, +ZendFramework-1.5.3.ebuild:
+  Bumping to version 1.5.3
+
+  08 Aug 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  ZendFramework-1.5.2.ebuild:
+  Added ~ppc, bug #223565
+
+  27 May 2008; Markus Rothe <corsair@gentoo.org> ZendFramework-1.5.2.ebuild:
+  Added ~ppc64; bug #223565
+
+  25 May 2008; Jeroen Roovers <jer@gentoo.org> ZendFramework-1.5.2.ebuild:
+  Marked ~hppa (bug #223565).
+
+*ZendFramework-1.5.2 (25 May 2008)
+
+  25 May 2008; Bjarke Istrup Pedersen <gurligebis@gentoo.org>
+  -ZendFramework-1.0.4.ebuild, +ZendFramework-1.5.2.ebuild:
+  Bumping to version 1.5.2
+
+  05 May 2008; Markus Meier <maekke@gentoo.org> ZendFramework-1.5.1.ebuild:
+  amd64/x86 stable, bug #219584
+
+*ZendFramework-1.5.1 (29 Mar 2008)
+
+  29 Mar 2008; Bjarke Istrup Pedersen <gurligebis@gentoo.org>
+  -ZendFramework-1.5.0.ebuild, +ZendFramework-1.5.1.ebuild:
+  Bumping to version 1.5.1
+
+  21 Mar 2008; <jokey@gentoo.org> ZendFramework-1.5.0.ebuild:
+  Version bump from project overlay
+
+  20 Mar 2008; Jakub Moc <jakub@gentoo.org>
+  +ZendFramework-1.5.0.ebuild:
+  Version bump, bug #213950
+
+*ZendFramework-1.0.4 (04 Mar 2008)
+
+  04 Mar 2008; Markus Ullmann <jokey@gentoo.org>
+  +ZendFramework-1.0.4.ebuild:
+  Version bump from project overlay
+
+  03 Mar 2008; Jakub Moc <jakub@gentoo.org>
+  +ZendFramework-1.0.4.ebuild:
+  Version bump
+
+*ZendFramework-1.0.3 (24 Dec 2007)
+
+  24 Dec 2007; Raúl Porcel <armin76@gentoo.org>
+  +ZendFramework-1.0.3.ebuild:
+  Version bump from the php-overlay
+
+  21 Dec 2007; Jakub Moc <jakub@gentoo.org>
+  +ZendFramework-1.0.3.ebuild:
+  Version bump, fix LICENSE, do not dodoc INSTALL and LICENSE, fix docs location
+
+  15 Oct 2007; Bjarke Istrup Pedersen <gurligebis@gentoo.org>
+  ZendFramework-1.0.2.ebuild:
+  Cosmetic changes, since upstream has started using sane naming of tar files.
+
+*ZendFramework-1.0.2 (06 Oct 2007)
+
+  06 Oct 2007; Bjarke Istrup Pedersen <gurligebis@gentoo.org>
+  -ZendFramework-1.0.1-r1.ebuild, +ZendFramework-1.0.2.ebuild:
+  Bumping to version 1.0.2
+
+*ZendFramework-1.0.1-r1 (10 Aug 2007)
+
+  10 Aug 2007; Bjarke Istrup Pedersen <gurligebis@gentoo.org>
+  -ZendFramework-1.0.1.ebuild, +ZendFramework-1.0.1-r1.ebuild:
+  Fixing MY_PV and commenting out incubator, fixing bug #188138
+
+*ZendFramework-1.0.1 (04 Aug 2007)
+
+  04 Aug 2007; Bjarke Istrup Pedersen <gurligebis@gentoo.org>
+  -ZendFramework-1.0.0.ebuild, +ZendFramework-1.0.1.ebuild:
+  Bumping to version 1.0.1
+
+*ZendFramework-1.0.0 (03 Jul 2007)
+
+  03 Jul 2007; Bjarke Istrup Pedersen <gurligebis@gentoo.org>
+  -ZendFramework-1.0.0_rc3.ebuild, +ZendFramework-1.0.0.ebuild:
+  Bumping to version 1.0.0
+
+*ZendFramework-1.0.0_rc3 (28 Jun 2007)
+
+  28 Jun 2007; Bjarke Istrup Pedersen <gurligebis@gentoo.org>
+  -ZendFramework-1.0.0_rc1.ebuild, +ZendFramework-1.0.0_rc3.ebuild:
+  Bumping to version 1.0.0_rc3, manual and api doc has moved to seperat source
+  files.
+
+*ZendFramework-1.0.0_rc1 (06 Jun 2007)
+
+  06 Jun 2007; Bjarke Istrup Pedersen <gurligebis@gentoo.org>
+  -ZendFramework-0.9.3.ebuild, +ZendFramework-1.0.0_rc1.ebuild:
+  Version bump.
+
+*ZendFramework-0.9.3 (15 May 2007)
+
+  15 May 2007; Bjarke Istrup Pedersen <gurligebis@gentoo.org>
+  -ZendFramework-0.9.0.ebuild, +ZendFramework-0.9.3.ebuild:
+  Version bump.
+
+*ZendFramework-0.9.0 (18 Mar 2007)
+
+  18 Mar 2007; Luca Longinotti <chtekk@gentoo.org> metadata.xml,
+  -ZendFramework-0.8.0.ebuild, +ZendFramework-0.9.0.ebuild:
+  Cleanup, version bump.
+
+*ZendFramework-0.8.0 (25 Feb 2007)
+
+  25 Feb 2007; Bjarke Istrup Pedersen <gurligebis@gentoo.org>
+  +ZendFramework-0.8.0.ebuild:
+  Version bump.
+
+*ZendFramework-0.2.0 (31 Oct 2006)
+
+  31 Oct 2006; Sebastian Bergmann <sebastian@gentoo.org>
+  +ZendFramework-0.2.0.ebuild:
+  Version bump.
+
+  13 Sep 2006; Sebastian Bergmann <sebastian@gentoo.org>
+  ZendFramework-0.1.5.ebuild:
+  Use new license.
+
+  12 Jul 2006; Sebastian Bergmann <sebastian@gentoo.org>
+  ZendFramework-0.1.5.ebuild:
+  Keyword ~amd64.
+
+*ZendFramework-0.1.5 (11 Jul 2006)
+
+  11 Jul 2006; Sebastian Bergmann <sebastian@gentoo.org>
+  -ZendFramework-0.1.3.ebuild, -ZendFramework-0.1.4.ebuild,
+  +ZendFramework-0.1.5.ebuild:
+  Version bump.
+
+*ZendFramework-0.1.4 (30 Jun 2006)
+
+  30 Jun 2006; Sebastian Bergmann <sebastian@gentoo.org>
+  +ZendFramework-0.1.4.ebuild:
+  Version bump.
+
+  06 Jun 2006; Sebastian Bergmann <sebastian@gentoo.org>
+  ZendFramework-0.1.3.ebuild:
+  Use doc and examples USE flags, implements RFE 135800. Patch by Bjarke
+  Istrup Pedersen <gurligebis@gentoo.org>.
+
+  06 Jun 2006; Sebastian Bergmann <sebastian@gentoo.org>
+  -ZendFramework-0.1.2.ebuild:
+  Remove old version.
+
+  28 Apr 2006; Sebastian Bergmann <sebastian@gentoo.org>
+  ZendFramework-0.1.2.ebuild, ZendFramework-0.1.3.ebuild:
+  LICENSE="ZendFramework" -> LICENSE="ZendFramework-1.0"
+
+*ZendFramework-0.1.3 (19 Apr 2006)
+
+  19 Apr 2006; Sebastian Bergmann <sebastian@gentoo.org>
+  +ZendFramework-0.1.3.ebuild:
+  Version bump.
+
+*ZendFramework-0.1.2 (08 Mar 2006)
+
+  08 Mar 2006; Sebastian Bergmann <sebastian@gentoo.org>
+  -ZendFramework-0.1.1.ebuild, +ZendFramework-0.1.2.ebuild:
+  Version bump.
+
+*ZendFramework-0.1.1 (04 Mar 2006)
+
+  04 Mar 2006; Sebastian Bergmann <sebastian@gentoo.org> +metadata.xml,
+  +ZendFramework-0.1.1.ebuild:
+  Initial ebuild.
+

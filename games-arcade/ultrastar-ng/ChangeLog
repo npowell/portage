@@ -1,0 +1,33 @@
+# ChangeLog for games-arcade/ultrastar-ng
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-arcade/ultrastar-ng/ChangeLog,v 1.5 2008/02/09 21:43:14 mr_bones_ Exp $
+
+  09 Feb 2008; Michael Sterrett <mr_bones_@gentoo.org>
+  -ultrastar-ng-0.1.4.ebuild, -ultrastar-ng-0.2.1.ebuild,
+  ultrastar-ng-0.2.1-r1.ebuild:
+  increase boost dep to avoid missing boost_thread library (bug #209357)
+
+*ultrastar-ng-0.2.1-r1 (03 Dec 2007)
+
+  03 Dec 2007; Tupone Alfredo <tupone@gentoo.org>
+  +ultrastar-ng-0.2.1-r1.ebuild:
+  Adding ultrastar-songs support. Bug #198283 by Lasse Kärkkäinen
+
+*ultrastar-ng-0.2.1 (05 Nov 2007)
+
+  05 Nov 2007; Michael Sterrett <mr_bones_@gentoo.org>
+  +ultrastar-ng-0.2.1.ebuild:
+  version bump - bug #197876
+
+*ultrastar-ng-0.2.0 (02 Nov 2007)
+
+  02 Nov 2007; Michael Sterrett <mr_bones_@gentoo.org>
+  +ultrastar-ng-0.2.0.ebuild:
+  version bump - ebuild patch from Vincent via bug #197876
+
+*ultrastar-ng-0.1.4 (06 Jul 2007)
+
+  06 Jul 2007; Tupone Alfredo <tupone@gentoo.org> +metadata.xml,
+  +ultrastar-ng-0.1.4.ebuild:
+  New package, request bug #163021 by Vincent
+

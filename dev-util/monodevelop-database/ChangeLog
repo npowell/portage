@@ -1,0 +1,16 @@
+# ChangeLog for dev-util/monodevelop-database
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/monodevelop-database/ChangeLog,v 1.2 2008/06/01 14:56:28 jurek Exp $
+
+*monodevelop-database-1.0 (01 Jun 2008)
+
+  01 Jun 2008; Jurek Bartuszek <jurek@gentoo.org>
+  +monodevelop-database-1.0.ebuild:
+  Version bump (bug #195925)
+
+*monodevelop-database-0.18 (31 Dec 2007)
+
+  31 Dec 2007; Jurek Bartuszek <jurek@gentoo.org> +metadata.xml,
+  +monodevelop-database-0.18.ebuild:
+  Initial version
+

@@ -1,0 +1,21 @@
+# ChangeLog for media-tv/ktvschedule
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-tv/ktvschedule/ChangeLog,v 1.4 2008/02/19 01:53:33 ingmar Exp $
+
+  19 Feb 2008; Ingmar Vanhassel <ingmar@gentoo.org>
+  ktvschedule-0.1.9.1.ebuild:
+  Update kde-base/* dependencies so that KDE 4 doesn't satisfy it. bug 206528.
+
+  12 Jun 2007; Matthias Schwarzott <zzam@gentoo.org>
+  ktvschedule-0.1.9.1.ebuild:
+  Changed SRC_URI to use mirror://berlios.
+
+  31 Oct 2006; Steve Dibb <beandog@gentoo.org> metadata.xml:
+  Update metadata
+
+*ktvschedule-0.1.9.1 (24 Oct 2006)
+
+  24 Oct 2006; Steve Dibb <beandog@gentoo.org> +metadata.xml,
+  +ktvschedule-0.1.9.1.ebuild:
+  Inital import, bug 99553, thanks to Benoit Philipps
+

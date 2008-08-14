@@ -1,0 +1,24 @@
+# ChangeLog for dev-python/pyenchant
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pyenchant/ChangeLog,v 1.5 2008/03/12 18:10:15 phreak Exp $
+
+  12 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Marien Zwart (marienz, #107204) from metadata.xml.
+
+  30 Mar 2007; Peter Weller <welp@gentoo.org> pyenchant-1.1.5.ebuild:
+  Stable on amd64 wrt bug 172740
+
+  30 Mar 2007; Christian Faulhammer <opfer@gentoo.org>
+  pyenchant-1.1.5.ebuild:
+  stable x86, bug 172740
+
+  22 Nov 2006; Piotr Jaroszyński <peper@gentoo.org> pyenchant-1.1.5.ebuild:
+  Add ~amd64 wrt bug #136008.
+
+*pyenchant-1.1.5 (07 Jun 2006)
+
+  07 Jun 2006; Marien Zwart <marienz@gentoo.org> +metadata.xml,
+  +pyenchant-1.1.5.ebuild:
+  New package, based on an ebuild from Ryan Kelly (ryan-gentoo@rfk.id.au).
+  Closes bug #85959.
+

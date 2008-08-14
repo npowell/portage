@@ -1,0 +1,22 @@
+# ChangeLog for sci-visualization/extrema
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-visualization/extrema/ChangeLog,v 1.4 2008/06/02 10:23:51 grozin Exp $
+
+*extrema-4.3.6 (02 Jun 2008)
+
+  02 Jun 2008; Andrey Grozin <grozin@gentoo.org> +extrema-4.3.6.ebuild:
+  Version bump
+
+  15 May 2008; Richard Freeman <rich0@gentoo.org> extrema-4.3.5.ebuild:
+  keyword ~amd64 - 220169
+
+  11 May 2008; Andrey Grozin <grozin@gentoo.org> +files/extrema-4.3.5.patch,
+  extrema-4.3.5.ebuild:
+  One example patched. Unwanted files are no longer installed.
+
+*extrema-4.3.5 (04 May 2008)
+
+  04 May 2008; Andrey Grozin <grozin@gentoo.org> +metadata.xml,
+  +extrema-4.3.5.ebuild:
+  Initial import.
+

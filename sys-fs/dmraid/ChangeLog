@@ -1,0 +1,80 @@
+# ChangeLog for sys-fs/dmraid
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/dmraid/ChangeLog,v 1.13 2008/02/25 23:39:55 wolf31o2 Exp $
+
+  25 Feb 2008; Chris Gianelloni <wolf31o2@gentoo.org>
+  dmraid-1.0.0_rc14.ebuild:
+  Marking stable on amd64/x86 for 2008.0's release. We have been using this
+  (via genkernel) for quite some time and there are no older stable versions,
+  so no regressions.
+
+  09 Nov 2007; Ian Stakenvicius (_AxS_) <ian@syndicated-productions.com>
+  dmraid-1.0.0_rc14.ebuild:
+  Fixed bug 198522 (file collision with genkernel)
+
+
+  13 Jun 2007; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
+  if you commit it, even though it's proxy. you're responsible
+
+  13 Jun 2007; Ian Stakenvicius (_AxS_) <ian@syndicated-productions.com>
+  -dmraid-1.0.0_rc13.ebuild:
+  version bump: removed v1.0.0_rc13
+
+  13 Jun 2007; Ian Stakenvicius (_AxS_) <ian@syndicated-productions.com>
+  dmraid-1.0.0_rc14.ebuild:
+  v1.0.0_rc14: Added -j1 to emake to improve emerge consistency on amd64;
+  tested with and without MAKEOPTS=-s (bug 164572)
+
+  13 Jun 2007; Ian Stakenvicius (_AxS_) <ian@syndicated-productions.com>
+  +dmraid-1.0.0_rc13.ebuild, +dmraid-1.0.0_rc14.ebuild,
+  +files/dmraid-destdir-fix.patch, +metadata.xml:
+  Trivial version bump
+
+  13 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+*dmraid-1.0.0_rc13 (02 Nov 2006)
+
+  02 Nov 2006; Stefan Schweizer <genstef@gentoo.org>
+  -dmraid-1.0.0_rc12.ebuild, +dmraid-1.0.0_rc13.ebuild:
+  version bump
+
+  04 Sep 2006; Stefan Schweizer <genstef@gentoo.org>
+  +files/dmraid-destdir-fix.patch, -files/dmraid-manpage-destdir.patch,
+  dmraid-1.0.0_rc12.ebuild:
+  Updated destdir patch to fix bug 145973, thanks to Ian Stakenvicius
+  <ian@syndicated-productions.com> and Michael Weyershäuser
+  <thedude0001@gmx.de>
+
+  02 Sep 2006; Stefan Schweizer <genstef@gentoo.org>
+  dmraid-1.0.0_rc12.ebuild:
+  remvoe generkenl depend, bug 145973
+
+  02 Sep 2006; Alec Warner <antarus@gentoo.org> metadata.xml,
+  -dmraid-1.0.0_rc8-r1.ebuild:
+  removing old cruft
+
+  01 Sep 2006; Ian Stakenvicius <ian@syndicated-productions.com>
+  dmraid-1.0.0_rc12.ebuild:
+  Updated src_uri to match upstream's fix
+
+  01 Sep 2006; Ian Stakenvicius <ian@syndicated-productions.com>
+  +dmraid-1.0.0_rc12.ebuild, +files/dmraid-manpage-destdir.patch:
+  New Ebuild (version bump) for bugs #107826, #139860 -- thanks to genstef,
+  ColdWind; 
+
+  23 Jun 2006; Simon Stelling <blubb@gentoo.org> metadata.xml:
+  it's maintainer-needed, not -wanted
+
+  19 Oct 2005; <solar.@gentoo.org> metadata.xml:
+  - changed metadata status to maintainer-wanted and removed base-system as
+  parent herd. Next version has ulgy harddep on selinux and I dont want to
+  maintain any parts of that. RIP dmraid
+
+*dmraid-1.0.0_rc8-r1 (27 Jul 2005)
+
+  27 Jul 2005; <solar.@gentoo.org> +metadata.xml, +dmraid-1.0.0_rc8-r1.ebuild:
+  - initial version of dmraid. bug #63041 - This software discovers, activates,
+  deactivates and displays properties of software RAID sets (eg, ATARAID) and
+  contained DOS partitions.
+

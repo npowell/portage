@@ -1,0 +1,40 @@
+# ChangeLog for media-sound/soundkonverter
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/soundkonverter/ChangeLog,v 1.7 2008/07/27 21:51:36 carlo Exp $
+
+  27 Jul 2008; Carsten Lohrke <carlo@gentoo.org>
+  soundkonverter-0.3.4.ebuild, soundkonverter-0.3.6.ebuild,
+  soundkonverter-0.3.8.ebuild:
+  QA: Stumbling about a pretty broken KDE ebuild on qt_min_version()
+  deprecation spree.
+
+*soundkonverter-0.3.8 (13 Jun 2008)
+
+  13 Jun 2008; Ben de Groot <yngwin@gentoo.org>
+  +soundkonverter-0.3.8.ebuild:
+  Version bump. This version also works with new ffmpeg headers location.
+  Gcc-4.3 patch still applies.
+
+  24 Apr 2008; Samuli Suominen <drac@gentoo.org>
+  +files/soundkonverter-0.3.6-gcc43.patch, soundkonverter-0.3.6.ebuild:
+  Fix building with GCC 4.3 wrt #219051, thanks to Holger Ackermann.
+
+*soundkonverter-0.3.6 (21 Oct 2007)
+
+  21 Oct 2007; Samuli Suominen <drac@gentoo.org>
+  +soundkonverter-0.3.6.ebuild:
+  Version bump for bug 193346.
+
+  03 Sep 2007; Raúl Porcel <armin76@gentoo.org>
+  soundkonverter-0.3.4.ebuild:
+  Add ~x86 wrt #191107
+
+  26 Aug 2007; Steve Dibb <beandog@gentoo.org> soundkonverter-0.3.4.ebuild:
+  lame use flag to mp3
+
+*soundkonverter-0.3.4 (12 Aug 2007)
+
+  12 Aug 2007; Steve Dibb <beandog@gentoo.org> +metadata.xml,
+  +soundkonverter-0.3.4.ebuild:
+  Initial commit, bug 107189
+

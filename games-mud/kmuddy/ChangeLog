@@ -1,0 +1,77 @@
+# ChangeLog for games-mud/kmuddy
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-mud/kmuddy/ChangeLog,v 1.19 2008/08/01 17:58:12 armin76 Exp $
+
+  01 Aug 2008; Raúl Porcel <armin76@gentoo.org> kmuddy-0.8.ebuild:
+  x86 stable wrt #233441
+
+  24 Jan 2008; Michael Sterrett <mr_bones_@gentoo.org>
+  +files/kmuddy-0.8-idle-crash.patch, kmuddy-0.8.ebuild:
+  add patch from Tanktalus@gmail.com to avoid crash on extreme idle time
+  (bug #206357)
+
+  14 Oct 2007; Michael Sterrett <mr_bones_@gentoo.org>
+  +files/kmuddy-0.8-nocrash.patch, kmuddy-0.8.ebuild:
+  add patch from Tanktalus@gmail.com to fix random crash (bug #190363)
+
+  21 Jul 2007; Tristan Heaven <nyhm@gentoo.org> kmuddy-0.8.ebuild:
+  HOMEPAGE update, bug #185457
+
+  19 May 2007; Christian Faulhammer <opfer@gentoo.org> kmuddy-0.8.ebuild:
+  stable amd64, bug 176122
+
+*kmuddy-0.8 (18 Nov 2006)
+
+  18 Nov 2006; Tristan Heaven <nyhm@gentoo.org> -files/0.6.1-gcc34.patch,
+  -kmuddy-0.7.ebuild, +kmuddy-0.8.ebuild:
+  Version bump, bug #154557
+
+  31 May 2006; Diego Pettenò <flameeyes@gentoo.org> kmuddy-0.7.ebuild,
+  kmuddy-0.7.1.ebuild:
+  Make sure aRTs is required. Thanks to Jakub Moc.
+
+*kmuddy-0.7.1 (05 Apr 2005)
+
+  05 Apr 2005; Michael Sterrett <mr_bones_@gentoo.org> +kmuddy-0.7.1.ebuild:
+  version bump
+
+  12 Mar 2005; Michael Sterrett <mr_bones_@gentoo.org> -kmuddy-0.6.1.ebuild,
+  kmuddy-0.7.ebuild:
+  fix deps for bug #84988; tidy old version
+
+  22 Dec 2004; Joseph Jezak <josejx@gentoo.org> kmuddy-0.7.ebuild:
+  Marked ~ppc.
+
+  19 Dec 2004; Jason Huebel <jhuebel@gentoo.org> kmuddy-0.7.ebuild:
+  ~amd64, bug #67875
+
+*kmuddy-0.7 (30 Nov 2004)
+
+  30 Nov 2004; Michael Sterrett <mr_bones_@gentoo.org> +kmuddy-0.7.ebuild:
+  version bump
+
+  08 Sep 2004; Michael Sterrett <mr_bones_@gentoo.org>
+  +files/0.6.1-gcc34.patch, kmuddy-0.6.1.ebuild:
+  add patch for gcc34 (bug #61313)
+
+*kmuddy-0.6.1 (09 Feb 2004)
+
+  09 Feb 2004; Michael Sterrett <mr_bones_@gentoo.org> kmuddy-0.6.1.ebuild:
+  version bump
+
+  19 Jan 2004; Michael Sterrett <mr_bones_@gentoo.org> kmuddy-0.6.ebuild:
+  mark stable for x86
+
+*kmuddy-0.6 (08 Dec 2003)
+
+  08 Dec 2003; Michael Sterrett <mr_bones_@gentoo.org> kmuddy-0.6.ebuild:
+  version bump
+
+  31 Aug 2003; Michael Sterrett <msterret@gentoo.org> kmuddy-0.5.ebuild:
+  inherit kde-base -> inherit kde
+
+*kmuddy-0.5 (13 Aug 2003)
+
+  13 Aug 2003; Michael Sterrett <msterret@gentoo.org> kmuddy-0.5.ebuild:
+  initial commit.  Ebuild by Rob Cakebread. (bug 26409)
+

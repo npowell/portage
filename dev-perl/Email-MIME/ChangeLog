@@ -1,0 +1,82 @@
+# ChangeLog for dev-perl/Email-MIME
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Email-MIME/ChangeLog,v 1.21 2008/07/15 18:21:39 armin76 Exp $
+
+  15 Jul 2008; Raúl Porcel <armin76@gentoo.org> Email-MIME-1.861.ebuild:
+  alpha/ia64/sparc/x86 stable
+
+*Email-MIME-1.861 (29 Apr 2008)
+
+  29 Apr 2008; Yuval Yaari <yuval@gentoo.org> +Email-MIME-1.861.ebuild:
+  Version bump
+
+  17 Dec 2007; Samuli Suominen <drac@gentoo.org> Email-MIME-1.860.ebuild:
+  amd64 stable
+
+  08 Dec 2007; Raúl Porcel <armin76@gentoo.org> Email-MIME-1.860.ebuild:
+  alpha/ia64/sparc stable
+
+  04 Dec 2007; Markus Rothe <corsair@gentoo.org> Email-MIME-1.860.ebuild:
+  Stable on ppc64; bug #198075
+
+  04 Dec 2007; nixnut <nixnut@gentoo.org> Email-MIME-1.860.ebuild:
+  Stable on ppc wrt bug 198075
+
+  03 Dec 2007; Christian Faulhammer <opfer@gentoo.org>
+  Email-MIME-1.860.ebuild:
+  stable x86, bug 198075
+
+  10 Nov 2007; Samuli Suominen <drac@gentoo.org> Email-MIME-1.859.ebuild:
+  amd64 stable
+
+*Email-MIME-1.860 (19 Oct 2007)
+
+  19 Oct 2007; Christian Hartmann <ian@gentoo.org> +Email-MIME-1.860.ebuild:
+  Version bump
+
+  30 Jun 2007; Raúl Porcel <armin76@gentoo.org> Email-MIME-1.859.ebuild:
+  Add ~alpha wrt #165190
+
+  21 Jun 2007; Michael Cummings <mcummings@gentoo.org>
+  Email-MIME-1.859.ebuild:
+  Marking sparc stable
+
+  17 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  Email-MIME-1.858.ebuild:
+  Stable on sparc
+
+  10 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  Email-MIME-1.857.ebuild:
+  sparc stable
+
+  08 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  Email-MIME-1.858.ebuild:
+  Marking amd64 stable
+
+*Email-MIME-1.859 (06 Apr 2007)
+
+  06 Apr 2007; Michael Cummings <mcummings@gentoo.org>
+  +Email-MIME-1.859.ebuild:
+  Version bump
+
+  27 Mar 2007; Matti Bickel <mabi@gentoo.org> Email-MIME-1.858.ebuild:
+  ~ppc added (bug #165190)
+
+  27 Mar 2007; Raúl Porcel <armin76@gentoo.org> Email-MIME-1.858.ebuild:
+  Add ~ia64 wrt bug 165190
+
+*Email-MIME-1.858 (17 Feb 2007)
+
+  17 Feb 2007; Michael Cummings <mcummings@gentoo.org>
+  +Email-MIME-1.858.ebuild:
+  Version bump
+
+  14 Feb 2007; Markus Rothe <corsair@gentoo.org> Email-MIME-1.857.ebuild:
+  Added ~ppc64
+
+*Email-MIME-1.857 (05 Feb 2007)
+
+  05 Feb 2007; Michael Cummings <mcummings@gentoo.org> +metadata.xml,
+  +Email-MIME-1.857.ebuild:
+  Dep for Email-MIME-Modifier
+

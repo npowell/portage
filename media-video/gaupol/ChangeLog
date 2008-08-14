@@ -1,0 +1,32 @@
+# ChangeLog for media-video/gaupol
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-video/gaupol/ChangeLog,v 1.7 2008/06/19 11:32:27 drac Exp $
+
+  19 Jun 2008; Samuli Suominen <drac@gentoo.org> gaupol-0.12.3.ebuild:
+  Call addpredict for /root/.gconf{,d} instead of ~ wrt #228301, thanks to
+  Petr Pisar for reporting.
+
+*gaupol-0.12.3 (18 Jun 2008)
+
+  18 Jun 2008; Samuli Suominen <drac@gentoo.org> +gaupol-0.12.3.ebuild:
+  Version bump for bug 194634.
+
+*gaupol-0.9 (18 Aug 2007)
+
+  18 Aug 2007; Samuli Suominen <drac@gentoo.org> +gaupol-0.9.ebuild:
+  Version bump.
+
+  15 Aug 2007; Steve Dibb <beandog@gentoo.org> gaupol-0.7.2.ebuild:
+  amd64 stable
+
+  01 May 2007; Marius Mauch <genone@gentoo.org> gaupol-0.7.2.ebuild:
+  Replacing einfo with elog
+
+*gaupol-0.7.2 (25 Jan 2007)
+
+  25 Jan 2007; Steve Dibb <beandog@gentoo.org> +gaupol-0.7.2.ebuild:
+  Version bump, bug 162575
+
+  01 Dec 2006; Steve Dibb <beandog@gentoo.org> ChangeLog:
+  Initial import, bug 118703, thanks to Ben de Groot for ebuild
+

@@ -1,0 +1,64 @@
+# ChangeLog for sci-libs/plplot
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/plplot/ChangeLog,v 1.15 2008/08/07 08:58:08 ulm Exp $
+
+  07 Aug 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
+  Add USE flag description to metadata wrt GLEP 56.
+
+  12 Apr 2008; Sébastien Fabbro <bicatali@gentoo.org> plplot-5.5.2.ebuild:
+  Switch tetex to local jadetex, bug #196745
+
+  05 Apr 2008; Sébastien Fabbro <bicatali@gentoo.org> plplot-5.5.2.ebuild:
+  Removed ifc use flag (see bug #97929)
+
+  14 Aug 2007; Markus Dittrich <markusle@gentoo.org>
+  +files/plplot-5.5.2-macro-fix.patch, plplot-5.5.2.ebuild:
+  Fixed problems with octave files and added a patch to correct
+  a bug in a C macro (see bug #182949).
+
+  22 Jul 2007; Donnie Berkholz <dberkholz@gentoo.org>; plplot-5.5.2.ebuild:
+  Drop virtual/x11 references.
+
+  13 Mar 2007; Danny van Dyk <kugelfang@gentoo.org> plplot-5.5.2.ebuild:
+  QA: which -> type -P
+
+  28 Nov 2006; Christian Faulhammer <opfer@gentoo.org> plplot-5.5.2.ebuild:
+  moved tcltk USE flag over to separate tk and tcl flags, see bug #17808
+
+  18 Nov 2006; Saleem Abdulrasool <compnerd@gentoo.org> plplot-5.5.2.ebuild:
+  Drop gnome useflag for gnome-1.x removal
+
+  27 Aug 2006; Michael Sterrett <mr_bones_@gentoo.org>
+  -files/plplot-5.3.1-gcc-3.4-fix.patch, -plplot-5.3.1.ebuild:
+  clean out older, non-modX ebuild
+
+  11 Jun 2006; Robin H. Johnson <robbat2@gentoo.org> plplot-5.5.2.ebuild:
+  Bug #119388, fix plplot for modular-X. This ebuild is a big mess, and
+  doesn't appear to have much demand.
+
+  20 Aug 2005; Marcus D. Hanwell <cryos@gentoo.org> plplot-5.3.1.ebuild,
+  -plplot-5.5.1.ebuild, plplot-5.5.2.ebuild:
+  Fixed gd-external issues, closes bug 98065. A few small cleanups too.
+
+*plplot-5.5.2 (03 May 2005)
+
+  03 May 2005; Marcus D. Hanwell <cryos@gentoo.org>
+  files/plplot-5.5.1-gcc-3.4-fix.patch, plplot-5.5.1.ebuild,
+  +plplot-5.5.2.ebuild:
+  Version bump. Changed the octave patch to apply more generically.
+
+*plplot-5.5.1 (08 Apr 2005)
+
+  08 Apr 2005; Marcus D. Hanwell <cryos@gentoo.org>
+  +files/plplot-5.5.1-gcc-3.4-fix.patch, +plplot-5.5.1.ebuild:
+  Version bump.
+
+*plplot-5.3.1 (30 Jan 2005)
+
+  30 Jan 2005; Marcus D. Hanwell <cryos@gentoo.org> +metadata.xml,
+  +files/plplot-5.3.1-gcc-3.4-fix.patch, +plplot-5.3.1.ebuild:
+  Initial import of ebuild. Thanks go to Tyler Nielsen <tyler@mithander.com> for
+  the original ebuild as well as Olivier Fisette <ribosome@gentoo.org>, Colin
+  Macdonald <cbm@sfu.ca> and myself who provided numerous improvements to the
+  ebuild in bug 31554.
+

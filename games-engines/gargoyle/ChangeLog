@@ -1,0 +1,42 @@
+# ChangeLog for games-engines/gargoyle
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-engines/gargoyle/ChangeLog,v 1.8 2007/11/21 03:42:37 dirtyepic Exp $
+
+  21 Nov 2007; Ryan Hill <dirtyepic@gentoo.org> gargoyle-20060917-r1.ebuild:
+  Allow building with ftjam for bug #188194
+
+  27 Apr 2007; Michele Noberasco <s4t4n@gentoo.org> gargoyle-20060917-r1.ebuild:
+  Stable for x86.
+
+*gargoyle-20060917-r1 (26 Jan 2007)
+
+  26 Jan 2007; Michele Noberasco <s4t4n@gentoo.org> gargoyle-20060917-r1.ebuild:
+  Revision bump, with patch to fix level9 interpreter compilation. Closes bug #163374.
+  gargoyle-20060917.ebuild:
+  Wiped out previous revision.
+
+*gargoyle-20060917 (22 Jan 2007)
+
+  22 Jan 2007; Michele Noberasco <s4t4n@gentoo.org> gargoyle-20060917.ebuild:
+  Version bump, with updated filenames patch. Also, added missing sdl-sound and
+  sdl-mixer dependancies, and fixed gtk+ detection. Closes bug #157207.
+  gargoyle-20060703:
+  Wiped out previous version.
+
+  24 Aug 2006; Michele Noberasco <s4t4n@gentoo.org> gargoyle-20060703.ebuild:
+  Removed duplicate 'inherit eutils' entry.. Closes bug #144950.
+
+*gargoyle-20060703 (23 Aug 2006)
+
+  23 Aug 2006; Michele Noberasco <s4t4n@gentoo.org> gargoyle-20060703.ebuild:
+  Version bump, with filenames fix. Closes bug #144280.
+  gargoyle-20051002.ebuild:
+  Wiped out older version.
+
+  19 Mar 2006; Mark Loeser <halcy0n@gentoo.org> gargoyle-20051002.ebuild:
+  Add DEPEND on app-arch/unzip
+
+*gargoyle-20051002 (26 Jan 2006)
+
+  26 Jan 2006; Michele Noberasco <s4t4n@gentoo.org> gargoyle-20051002.ebuild:
+  Initial import. Closes bug #116406, submitted by Rafal Rzepecki.

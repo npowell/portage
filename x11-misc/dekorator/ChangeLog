@@ -1,0 +1,38 @@
+# ChangeLog for x11-misc/dekorator
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/dekorator/ChangeLog,v 1.9 2007/03/24 19:27:41 vanquirius Exp $
+
+  24 Mar 2007; Marcelo Goes <vanquirius@gentoo.org> -dekorator-0.2.ebuild:
+  Remove old version.
+
+  06 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  25 May 2006; Marcelo Goes <vanquirius@gentoo.org> dekorator-0.3.ebuild:
+  Mark 0.3 x86 stable.
+
+  24 May 2006; Joseph Jezak <josejx@gentoo.org> dekorator-0.3.ebuild:
+  Marked ~ppc for bug #134123.
+
+  10 Apr 2006; <smithj@gentoo.org> dekorator-0.2.ebuild,
+  dekorator-0.3.ebuild:
+  added IUSE which defaults to kde eclass's IUSE
+
+*dekorator-0.3 (25 Mar 2006)
+
+  25 Mar 2006; Marcelo Goes <vanquirius@gentoo.org> +dekorator-0.3.ebuild:
+  0.3 version bump.
+
+  24 Mar 2006; Seemant Kulleen <seemant@gentoo.org> dekorator-0.2.ebuild:
+  marking for ~amd64
+
+  21 Feb 2006; Marcelo Goes <vanquirius@gentoo.org> dekorator-0.2.ebuild:
+  Mark 0.2 x86 stable.
+
+*dekorator-0.2 (31 Jan 2006)
+
+  31 Jan 2006; Marcelo Goes <vanquirius@gentoo.org> +metadata.xml,
+  +dekorator-0.2.ebuild:
+  Initial commit for bug 113748. Thanks to Bjorn Ruberg <bjoern at ruberg dash
+  wegener dot de> and Luca Marturana <lucamarturana at gmail dot com>.
+

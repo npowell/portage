@@ -1,0 +1,99 @@
+# ChangeLog for app-misc/ca-certificates
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-misc/ca-certificates/ChangeLog,v 1.19 2008/06/10 18:00:30 robbat2 Exp $
+
+  10 Jun 2008; Robin H. Johnson <robbat2@gentoo.org>
+  ca-certificates-20080514-r1.ebuild:
+  Update the RDEPEND per bug #225759.
+
+  31 May 2008; Robin H. Johnson <robbat2@gentoo.org>
+  ca-certificates-20070303-r1.ebuild, ca-certificates-20080514.ebuild,
+  ca-certificates-20080514-r1.ebuild:
+  Fix up the HOMEPAGE, as it merely contains cacert stuff, but it's actually
+  from Debian.
+
+  31 May 2008; Robin H. Johnson <robbat2@gentoo.org>
+  ca-certificates-20070303-r1.ebuild:
+  Drop to ~mips to make repoman happy.
+
+*ca-certificates-20080514-r1 (31 May 2008)
+
+  31 May 2008; Robin H. Johnson <robbat2@gentoo.org>
+  +ca-certificates-20080514-r1.ebuild:
+  Include a bit of CONFIG_PROTECT_MASK magic, so that the
+  /etc/ca-certificates.conf is updated before update-ca-certificates is run,
+  resolves bug #177397.
+
+*ca-certificates-20080514 (25 May 2008)
+
+  25 May 2008; Robin H. Johnson <robbat2@gentoo.org>
+  +ca-certificates-20080514.ebuild:
+  Version bump for ca-certificates.
+
+  28 Mar 2008; Alexis Ballier <aballier@gentoo.org>
+  ca-certificates-20070303-r1.ebuild:
+  freebsd-ubin also provides mktemp, this allows us to install
+  ca-certificates again; bug #215209
+
+  27 Mar 2008; Mike Frysinger <vapier@gentoo.org>
+  ca-certificates-20070303-r1.ebuild:
+  RDEPEND on mktemp since the update script uses it.
+
+  31 Jan 2008; Doug Klima <cardoe@gentoo.org>
+  ca-certificates-20070303-r1.ebuild:
+  need coreutils-6.10-r1
+
+  31 Jan 2008; Mike Frysinger <vapier@gentoo.org>
+  ca-certificates-20070303-r1.ebuild:
+  Depend on mktemp or coreutils #208258 by Chris Gianelloni.
+
+  23 Jun 2007; Daniel Drake <dsd@gentoo.org>
+  ca-certificates-20050804.ebuild, ca-certificates-20061027.2.ebuild,
+  ca-certificates-20070303-r1.ebuild:
+  Change LICENSE to MPL-1.1, bug #176002
+
+*ca-certificates-20070303-r1 (06 May 2007)
+
+  06 May 2007; Mike Frysinger <vapier@gentoo.org>
+  +ca-certificates-20070303-r1.ebuild:
+  Fix ca-certificates.conf generation #177298 by Remy Blank.
+
+*ca-certificates-20070303 (05 May 2007)
+
+  05 May 2007; Mike Frysinger <vapier@gentoo.org>
+  +ca-certificates-20070303.ebuild:
+  Version bump #175999 by Daniel Drake.
+
+*ca-certificates-20061027.2 (20 Feb 2007)
+
+  20 Feb 2007; Mike Frysinger <vapier@gentoo.org>
+  +ca-certificates-20061027.2.ebuild:
+  Version bump #167608 by Peter Gantner.
+
+  03 Feb 2007; Mike Frysinger <vapier@gentoo.org>
+  ca-certificates-20050804.ebuild:
+  Fixup doc installation #164995 by Krzysiek Pawlik.
+
+  17 Oct 2006; Roy Marples <uberlord@gentoo.org>
+  ca-certificates-20050804.ebuild:
+  Added ~sparc-fbsd keyword.
+
+  27 Apr 2006; Alec Warner <antarus@gentoo.org>
+  files/digest-ca-certificates-20050518,
+  files/digest-ca-certificates-20050804, Manifest:
+  Fixing duff SHA256 digests: Bug # 131293
+
+  30 Mar 2006; Diego Pettenò <flameeyes@gentoo.org>
+  ca-certificates-20050804.ebuild:
+  Add ~x86-fbsd keyword.
+
+*ca-certificates-20050804 (04 Sep 2005)
+
+  04 Sep 2005; Daniel Black <dragonheart@gentoo.org>
+  +ca-certificates-20050804.ebuild:
+  version bump
+
+*ca-certificates-20050518 (23 May 2005)
+
+  23 May 2005; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by me for #93520.

@@ -1,0 +1,38 @@
+# ChangeLog for app-xemacs/vm
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-xemacs/vm/ChangeLog,v 1.13 2008/03/19 20:12:17 graaff Exp $
+
+  19 Mar 2008; Hans de Graaff <graaff@gentoo.org> metadata.xml:
+  A herd should not be listed as maintainer
+
+  25 Oct 2007; Hans de Graaff <graaff@gentoo.org> -vm-7.07.ebuild:
+  Remove old version
+
+  03 Jun 2007; Hans de Graaff <graaff@gentoo.org> vm-7.22.ebuild:
+  Stable on amd64, ppc, ppc64, sparc, x86 as per #175560
+
+  30 May 2007; Raúl Porcel <armin76@gentoo.org> vm-7.22.ebuild:
+  alpha stable wrt #175560
+
+*vm-7.22 (12 Nov 2006)
+
+  12 Nov 2006; Hans de Graaff <graaff@gentoo.org> +metadata.xml,
+  +vm-7.22.ebuild:
+  Version bump; add metadata.
+
+  07 Aug 2005; Michael Hanselmann <hansmi@gentoo.org> vm-7.07.ebuild:
+  Stable on ppc.
+
+  09 Aug 2004; Tom Gall <tgall@gentoo.org> vm-7.07.ebuild:
+  stable on ppc64, bug #57174
+
+  02 Oct 2003; Aron Griffis <agriffis@gentoo.org> vm-7.07.ebuild:
+  Stable on alpha
+
+*vm-7.07 (16 Dec 2002)
+
+  22 Feb 2003;  <rendhalver@gentoo.org> vm-7.07.ebuild :
+  Add ~alpha to KEYWORDS
+
+  16 Dec 2002; Rendhalver [Peter Brown] <rendhalver@gentoo.org> :
+  Initial import.

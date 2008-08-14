@@ -1,0 +1,20 @@
+# ChangeLog for net-wireless/madwifi-old-tools
+# Copyright 1999-2006 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-wireless/madwifi-old-tools/ChangeLog,v 1.3 2006/09/10 11:48:55 kloeri Exp $
+
+  10 Sep 2006; Bryan Østergaard <kloeri@gentoo.org> metadata.xml:
+  Remove brix from metadata.xml.
+
+*madwifi-old-tools-0.0.1417.20060128 (09 Jul 2006)
+
+  09 Jul 2006; Henrik Brix Andersen <brix@gentoo.org>
+  +madwifi-old-tools-0.0.1417.20060128.ebuild,
+  -madwifi-old-tools-0.1417.20060128.ebuild:
+  New version scheme to match net-wireless/madwifi-ng-tools.
+
+*madwifi-old-tools-0.1417.20060128 (14 Apr 2006)
+
+  14 Apr 2006; Henrik Brix Andersen <brix@gentoo.org> +metadata.xml,
+  +madwifi-old-tools-0.1417.20060128.ebuild:
+  Added madwifi-old branch to portage, bug #125440.
+

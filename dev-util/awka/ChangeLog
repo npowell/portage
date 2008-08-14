@@ -1,0 +1,24 @@
+# ChangeLog for dev-util/awka
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/awka/ChangeLog,v 1.7 2007/05/15 09:10:31 bangert Exp $
+
+  14 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  06 Mar 2006; Luis Medinas <metalgod@gentoo.org> awka-0.7.5.ebuild:
+  Fix multilib and add ~amd64 keyword this closes bug #124370.
+
+  07 Aug 2004; Tom Martin <slarti@gentoo.org> awka-0.7.5.ebuild:
+  Typo in DESCRIPTION: tranlator -> translator. Bug 59717.
+
+  01 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org> awka-0.7.5.ebuild:
+  virtual/glibc -> virtual/libc
+
+*awka-0.7.5 (24 Aug 2003)
+
+  24 Aug 2003; Martin Schlemmer <azarah@gentoo.org> awka-0.7.5.ebuild :
+  Initial import.  Ebuild submitted by Tom <Eckert.Thomas@gmx.net>, bug #19206.
+

@@ -1,0 +1,25 @@
+# ChangeLog for dev-python/jonpy
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/jonpy/ChangeLog,v 1.6 2007/03/04 10:27:10 lucass Exp $
+
+  04 Mar 2007; Lukasz Strzygowski <lucass@gentoo.org> jonpy-0.06.ebuild:
+  Cleanup: added NEED_PYTHON, added doc/examples use-flags, keyworded ~amd64.
+
+  12 Jul 2006; Aron Griffis <agriffis@gentoo.org> jonpy-0.06.ebuild:
+  Mark 0.06 stable on ia64
+
+  01 Apr 2006; Aron Griffis <agriffis@gentoo.org> jonpy-0.06.ebuild:
+  Mark 0.06 ~ia64
+
+  31 May 2005; Ian Leitch <port001@gentoo.org> jonpy-0.06.ebuild:
+  Stable on x86
+
+  19 Dec 2004; Ian Leitch <port001@gentoo.org> jonpy-0.06.ebuild:
+  Minor fixes
+
+*jonpy-0.06 (19 Dec 2004)
+
+  19 Dec 2004; Ian Leitch <port001@gentoo.org> +metadata.xml,
+  +jonpy-0.06.ebuild:
+  Initial commit
+

@@ -1,0 +1,115 @@
+# ChangeLog for x11-apps/xload
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-apps/xload/ChangeLog,v 1.28 2008/07/11 20:53:34 armin76 Exp $
+
+  11 Jul 2008; Raúl Porcel <armin76@gentoo.org> xload-1.0.2.ebuild:
+  Add ~ia64, sparc stable
+
+  31 Jan 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  -files/xload-1.0.1-setuid.diff, -xload-1.0.1-r1.ebuild:
+  Clean up.
+
+  03 Jul 2007; Lars Weiler <pylon@gentoo.org> xload-1.0.2.ebuild:
+  Stable on ppc; bug #175465.
+
+  02 Jul 2007; Raúl Porcel <armin76@gentoo.org> xload-1.0.2.ebuild:
+  alpha stable wrt #175465
+
+  24 Jun 2007; Joshua Kinard <kumba@gentoo.org> xload-1.0.2.ebuild:
+  Stable on mips, per #175645.
+
+  20 May 2007; Jeroen Roovers <jer@gentoo.org> xload-1.0.2.ebuild:
+  Stable for HPPA (bug #175465).
+
+  05 May 2007; Daniel Gryniewicz <dang@gentoo.org> xload-1.0.2.ebuild:
+  Marked stable on amd64 for bug #175465
+
+  29 Apr 2007; Andrej Kacian <ticho@gentoo.org> xload-1.0.2.ebuild:
+  Stable on x86, bug #175465.
+
+  25 Apr 2007; Markus Rothe <corsair@gentoo.org> xload-1.0.2.ebuild:
+  Stable on ppc64; bug #175465
+
+*xload-1.0.2 (31 Mar 2007)
+
+  31 Mar 2007; Joshua Baergen <joshuabaergen@gentoo.org>
+  +xload-1.0.2.ebuild:
+  Version bump.  Includes the patch from 1.0.1-r1.
+
+  23 Dec 2006; <nixnut@gentoo.org> xload-1.0.1-r1.ebuild:
+  Stable on ppc wrt bug 158858
+
+  10 Oct 2006; Donnie Berkholz <dberkholz@gentoo.org>;
+  xload-1.0.1-r1.ebuild:
+  Update description to be less generic.
+
+  17 Aug 2006; Markus Rothe <corsair@gentoo.org> xload-1.0.1-r1.ebuild:
+  Stable on ppc64
+
+  18 Jul 2006; Joshua Jackson <tsunam@gentoo.org> xload-1.0.1-r1.ebuild:
+  stable x86; bug #140656
+
+  30 Jun 2006; Chris Gianelloni <wolf31o2@gentoo.org> xload-1.0.1-r1.ebuild:
+  Stable on amd64.
+
+*xload-1.0.1-r1 (20 Jun 2006)
+
+  20 Jun 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  +files/xload-1.0.1-setuid.diff, -xload-1.0.1.ebuild,
+  +xload-1.0.1-r1.ebuild:
+  Security bump. Failure to check the return value of setuid() in a privileged
+  process could be used by a local user for file overwriting and possible
+  privilege escalation in corner cases. See
+  http://lists.freedesktop.org/archives/xorg/2006-June/016146.html for more
+  information.
+
+  20 May 2006; Robin H. Johnson <robbat2@gentoo.org> xload-1.0.1.ebuild:
+  Added ~ppc after testing.
+
+  14 Feb 2006; Markus Rothe <corsair@gentoo.org> xload-1.0.1.ebuild:
+  Added ~ppc64
+
+  26 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  -xload-0.99.2.ebuild, -xload-1.0.0.ebuild:
+  Pull old versions.
+
+*xload-1.0.1 (23 Dec 2005)
+
+  23 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>; +xload-1.0.1.ebuild:
+  Bump for 7.0.
+
+*xload-1.0.0 (18 Dec 2005)
+
+  18 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +xload-1.0.0.ebuild:
+  Bump for 7.0RC4.
+
+  09 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>; -xload-0.99.0.ebuild,
+  -xload-0.99.1.ebuild:
+  Pull old versions.
+
+*xload-0.99.2 (04 Dec 2005)
+
+  04 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +xload-0.99.2.ebuild:
+  Bump for 7.0RC3.
+
+  17 Nov 2005; Herbie Hopkins <herbs@gentoo.org> xload-0.99.1.ebuild:
+  Marked ~amd64.
+
+*xload-0.99.1 (20 Oct 2005)
+
+  20 Oct 2005; Donnie Berkholz <spyderous@gentoo.org>; +xload-0.99.1.ebuild:
+  Bump for 7.0 RC1.
+
+  09 Sep 2005; Donnie Berkholz <spyderous@gentoo.org>; +metadata.xml:
+  Add metadata.
+
+  08 Aug 2005; Ferris McCormick <fmccor@gentoo.org> xload-0.99.0.ebuild:
+  Add ~sparc keyword (Modular X testing).
+
+*xload-0.99.0 (08 Aug 2005)
+
+  08 Aug 2005; Donnie Berkholz <spyderous@gentoo.org>; +xload-0.99.0.ebuild:
+  Initial commit for modular X.
+

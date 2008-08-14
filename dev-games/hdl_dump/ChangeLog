@@ -1,0 +1,27 @@
+# ChangeLog for dev-games/hdl_dump
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-games/hdl_dump/ChangeLog,v 1.5 2007/03/07 10:25:13 nyhm Exp $
+
+*hdl_dump-0.8.6.20060901 (07 Mar 2007)
+
+  07 Mar 2007; Tristan Heaven <nyhm@gentoo.org>
+  +hdl_dump-0.8.6.20060901.ebuild:
+  Version bump
+
+  21 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*hdl_dump-0.8.3.20051208 (27 Mar 2006)
+
+  27 Mar 2006; <Tupone@gentoo.org> +hdl_dump-0.8.3.20051208.ebuild:
+  Version bump to 0.8.3.
+
+*hdl_dump-0.8.1 (21 May 2005)
+
+  21 May 2005; Mike Frysinger <vapier@gentoo.org> +hdl_dump-0.8.1.ebuild:
+  Version bump.
+
+*hdl_dump-0.8 (11 Apr 2005)
+
+  11 Apr 2005; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by me.

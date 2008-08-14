@@ -1,0 +1,56 @@
+# ChangeLog for dev-perl/Unicode-Map
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Unicode-Map/ChangeLog,v 1.15 2008/07/02 19:04:17 ranger Exp $
+
+  02 Jul 2008; Brent Baude <ranger@gentoo.org> Unicode-Map-0.112.ebuild:
+  stable ppc, bug 229403
+
+  21 Mar 2007; Michael Cummings <mcummings@gentoo.org>
+  Unicode-Map-0.112.ebuild:
+  Keywording ~mips, tested on swarm, bug 123679 related
+
+  19 Jan 2007; Michael Cummings <mcummings@gentoo.org>
+  Unicode-Map-0.112.ebuild:
+  Version bump, thanks seemant
+
+  18 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Unicode-Map-0.112.ebuild:
+  Marking amd64 stable
+
+  06 Aug 2006; Michael Cummings <mcummings@gentoo.org>
+  Unicode-Map-0.112.ebuild:
+  Adding perl dep; fixed DEPEND
+
+  21 May 2006; Markus Rothe <corsair@gentoo.org> Unicode-Map-0.112.ebuild:
+  Stable on ppc64
+
+  21 Apr 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  Unicode-Map-0.112.ebuild:
+  Stable on hppa
+
+  13 Mar 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  Unicode-Map-0.112.ebuild:
+  Keyworded ~hppa wrt #125189
+
+  08 Mar 2006; Markus Rothe <corsair@gentoo.org> Unicode-Map-0.112.ebuild:
+  Added ~ppc64; bug #125189
+
+  02 Oct 2005; Aron Griffis <agriffis@gentoo.org> Unicode-Map-0.112.ebuild:
+  Mark 0.112 stable on ia64
+
+  08 Sep 2005; Aron Griffis <agriffis@gentoo.org> Unicode-Map-0.112.ebuild:
+  Mark 0.112 stable on alpha
+
+  26 Aug 2005; Aron Griffis <agriffis@gentoo.org> Unicode-Map-0.112.ebuild:
+  add ~ia64
+
+  29 Apr 2005; Michael Cummings <mcummings@gentoo.org>
+  Unicode-Map-0.112.ebuild:
+  Cleaning for mirror
+
+*Unicode-Map-0.112 (06 Jun 2004)
+
+  06 Jun 2004; Michael Cummings <mcummings@gentoo.org>
+  Unicode-Map-0.112.ebuild, metadata.xml:
+  dep for new mime-tools
+

@@ -1,0 +1,46 @@
+# ChangeLog for dev-python/snakeoil
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/snakeoil/ChangeLog,v 1.11 2008/03/18 21:49:37 jokey Exp $
+
+*snakeoil-0.2 (18 Mar 2008)
+
+  18 Mar 2008; Markus Ullmann <jokey@gentoo.org> +snakeoil-0.2.ebuild:
+  Version bump
+
+  12 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Marien Zwart (marienz, #107204) from metadata.xml.
+
+  06 Nov 2007; Raúl Porcel <armin76@gentoo.org> snakeoil-0.1.ebuild:
+  Add ~alpha
+
+*snakeoil-0.1 (03 Nov 2007)
+
+  03 Nov 2007; Markus Ullmann <jokey@gentoo.org> +snakeoil-0.1.ebuild:
+  Version bump, only fixes
+
+  16 Jun 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  snakeoil-0.1_rc2.ebuild:
+  Added ~ppc, bug #181133
+
+  13 Jun 2007; Christoph Mende <angelos@gentoo.org> snakeoil-0.1_rc2.ebuild:
+  Added ~amd64
+
+  08 Jun 2007; Jeroen Roovers <jer@gentoo.org> snakeoil-0.1_rc2.ebuild:
+  Marked ~hppa (bug #181133).
+
+  07 Jun 2007; Markus Rothe <corsair@gentoo.org> snakeoil-0.1_rc2.ebuild:
+  Added ~ppc64; bug #181133
+
+  07 Jun 2007; Ferris McCormick <fmccor@gentoo.org> snakeoil-0.1_rc2.ebuild:
+  Add ~sparc keyword --- Bug #181133 --- Builds and runs all tests (pkgcore
+  support).
+
+  07 Jun 2007; Raúl Porcel <armin76@gentoo.org> snakeoil-0.1_rc2.ebuild:
+  Add ~ia64 wrt #181133
+
+*snakeoil-0.1_rc2 (06 Jun 2007)
+
+  06 Jun 2007; Marien Zwart <marienz@gentoo.org> +metadata.xml,
+  +snakeoil-0.1_rc2.ebuild:
+  New ebuild.
+

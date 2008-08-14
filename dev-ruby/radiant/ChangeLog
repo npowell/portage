@@ -1,0 +1,55 @@
+# ChangeLog for dev-ruby/radiant
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/radiant/ChangeLog,v 1.10 2008/08/03 18:04:49 graaff Exp $
+
+*radiant-0.6.9 (03 Aug 2008)
+
+  03 Aug 2008; Hans de Graaff <graaff@gentoo.org> +radiant-0.6.9.ebuild:
+  Version bump.
+
+  03 Aug 2008; Hans de Graaff <graaff@gentoo.org> -radiant-0.6.3.ebuild,
+  -radiant-0.6.4.ebuild, -radiant-0.6.6.ebuild:
+  Remove old versions
+
+*radiant-0.6.7 (30 May 2008)
+
+  30 May 2008; Hans de Graaff <graaff@gentoo.org> +radiant-0.6.7.ebuild:
+  Version bump
+
+*radiant-0.6.6 (27 Apr 2008)
+
+  27 Apr 2008; Hans de Graaff <graaff@gentoo.org> +radiant-0.6.6.ebuild:
+  Version bump with a huge amount of changes.
+
+  12 Nov 2007; Hans de Graaff <graaff@gentoo.org> -radiant-0.5.2.ebuild,
+  -radiant-0.6.2.ebuild:
+  Remove old versions
+
+*radiant-0.6.4 (12 Nov 2007)
+
+  12 Nov 2007; Hans de Graaff <graaff@gentoo.org> +radiant-0.6.4.ebuild:
+  Version bump. Radiant now includes Rails 1.2.5 and has additional features and
+  bug fixes.
+
+*radiant-0.6.3 (13 Oct 2007)
+
+  13 Oct 2007; Hans de Graaff <graaff@gentoo.org> +radiant-0.6.3.ebuild:
+  Version bump with lots of bug fixes
+
+*radiant-0.6.2 (08 Jul 2007)
+
+  08 Jul 2007; Hans de Graaff <graaff@gentoo.org> +radiant-0.6.2.ebuild:
+  Version bump. Note that versions 0.6.x are not backwards compatible with
+  0.5.x. If you are currently running an 0.5.x version using the gem this
+  upgrade *will* break your site.
+
+  04 Feb 2007; Hans de Graaff <graaff@gentoo.org> radiant-0.5.2.ebuild:
+  Add ~amd64 now that bluecloth and redcloth dependencies are also marked
+  ~amd64.
+
+*radiant-0.5.2 (04 Feb 2007)
+
+  04 Feb 2007; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org> +metadata.xml,
+  +radiant-0.5.2.ebuild:
+  Initial ebuild by Hans de Graaff <graaff@gentoo.org>, #147671
+

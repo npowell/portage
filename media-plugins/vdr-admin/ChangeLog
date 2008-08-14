@@ -1,0 +1,23 @@
+# ChangeLog for media-plugins/vdr-admin
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-admin/ChangeLog,v 1.7 2007/04/17 12:40:17 zzam Exp $
+
+  17 Apr 2007; Matthias Schwarzott <zzam@gentoo.org> files/rc-addon.sh:
+  Removed bash specific stuff.
+
+  05 Jan 2007; Joerg Bornkessel <hd_brummy@gentoo.org>
+  vdr-admin-0.4.0.ebuild:
+  einfo converted to elog
+
+  15 Aug 2006; Matthias Schwarzott <zzam@gentoo.org> metadata.xml:
+  Assigned to Gentoo VDR Project.
+
+  30 Jun 2006; Matthias Schwarzott <zzam@gentoo.org> vdr-admin-0.4.0.ebuild:
+  Changed description to warn about name-similarity to vdradmin.
+
+*vdr-admin-0.4.0 (15 Mar 2006)
+
+  15 Mar 2006; Joerg Bornkessel <hd_brummy@gentoo.org> +files/rc-addon.sh,
+  +metadata.xml, +vdr-admin-0.4.0.ebuild:
+  initial version
+

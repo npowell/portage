@@ -1,0 +1,16 @@
+# ChangeLog for dev-libs/liboobs
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/liboobs/ChangeLog,v 1.2 2008/03/23 13:14:41 eva Exp $
+
+*liboobs-2.22.0 (23 Mar 2008)
+
+  23 Mar 2008; Gilles Dartiguelongue <eva@gentoo.org>
+  +liboobs-2.22.0.ebuild:
+  New version for GNOME-2.22. Add HAL for network support and uses GIO.
+
+*liboobs-2.20.0 (24 Jan 2008)
+
+  24 Jan 2008; Gilles Dartiguelongue <eva@gentoo.org>
+  +liboobs-2.20.0.ebuild:
+  Initial commit
+

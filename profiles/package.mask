@@ -1,0 +1,1596 @@
+####################################################################
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.8882 2008/08/14 16:44:03 mr_bones_ Exp $
+#
+# When you add an entry to the top of this file, add your name, the date, and
+# an explanation of why something is getting masked
+#
+## Example:
+##
+## # Dev E. Loper <developer@gentoo.org> (28 Jun 2012)
+## # Masking  these versions until we can get the
+## # v4l stuff to work properly again
+## =media-video/mplayer-0.90_pre5
+## =media-video/mplayer-0.90_pre5-r1
+#
+# - Best last rites (removal) practices -
+# Include the following info:
+# a) reason for masking
+# b) bug # for the removal (and yes you should have one)
+# c) date of removal (either the date or "in x days")
+# d) the word "removal"
+#
+## Example:
+##
+## Dev E. Loper <developer@gentoo.org> (25 Jan 2012)
+## Masked for removal in 30 days.  Doesn't work
+## with new libfoo. Upstream dead, gtk-1, smells
+## funny. (bug #987654)
+## app-misc/some-package
+
+#--- END OF EXAMPLES ---
+
+# Robin H. Johnson <robbat2@gentoo.org> (13 Aug 2008)
+# Masked for testing
+=sys-libs/db-4.7*
+
+# Robin H. Johnson <robbat2@gentoo.org> (13 Aug 2008)
+# Masked for testing
+=app-backup/amanda-2.6*
+
+# Doug Goldstein <cardoe@gentoo.org> (12 Aug 2008)
+# development versions of cairo
+>=x11-libs/cairo-1.7.0
+
+# Jesus Rivero <neurogeek@gentoo.org> (11 Aug 2008)
+# Masked for removal in 30 days. These packages are
+# unmaintained/deprecated and break stable tree.
+# See bug #231675 for reference. 
+dev-python/twisted-xish
+dev-python/twisted-pair
+dev-python/twisted-flow
+
+# Jesus Rivero <neurogeek@gentoo.org> (11 Aug 2008)
+# Masked for removal in 30 days. Twibber is
+# unmaintained and depends on dev-python/twisted-xish
+# that is to be removed from the tree
+# See bug #231675 for reference. 
+dev-python/twibber
+
+# Mike Doty <kingtaco@gentoo.org> (11 Aug 2008)
+# Masked due to build failure, bug 234448
+=app-emulation/emul-linux-x86-gtklibs-20080810
+
+# Jeremy Olexa <darkside@gentoo.org> (9 Aug 2008)
+# Masked for removal in 60 days. No distfile on the mirrors for the latest
+# version, open bugs (bug #177222, #193629, #202548). Please comment on the 
+# removal bug #232141 if you want this one to stay. No maintainer and no easy 
+# way to get releases from upstream.
+dev-util/elfsh
+
+# Alexis Ballier <aballier@gentoo.org> (6 Aug 2008)
+# Masked for removal.
+# Does not build (bug #206138), unmaintained upstream for years, not very useful
+# nowadays. Use dev-lang/ocaml instead.
+# Will be removed 7 Sep 2008
+dev-lang/caml-light
+
+# Michael Sterrett <mr_bones_@gentoo.org> (04 Aug 2008)
+# Security masked: bug #233929
+games-simulation/openttd
+
+# Rémi Cardona <remi@gentoo.org> (3 Aug 2008)
+# has known issues, newer versions shouls be safer
+=x11-drivers/xf86-video-i810-2.4.0
+
+# Samuli Suominen <drac@gentoo.org> (3 Aug 2008)
+# Unmaintained. Masked for removal wrt #233394.
+# Open security bugs  #208566, #215006 and #231836.
+media-video/mplayer-bin
+
+# Diego Pettenò <flameeyes@gentoo.org> (2 Aug 2008)
+# Deprecated upstream in favour of Linux-PAM's own SHA512 support.
+# If you want to enable SHA512 passwords, enable the sha512 USE flag
+# for sys-auth/pambase instead.
+# Note that it requires glibc 2.7 or later.
+# Scheduled for removal on September 2nd
+sys-auth/pam_sha512
+
+# Raúl Porcel <armin76@gentoo.org> (1 Aug 2008)
+# This is just for preview
+>=www-client/mozilla-firefox-bin-3.1_alpha1
+
+# Patrick McLean <chutzpah@gentoo.org> (31 Jul 2008)
+# buggy, causes browser crashes on certain sites (www.nvidia.com), also see
+# bug #233484
+=net-www/nspluginwrapper-1.1.0
+
+# Doug Goldstein <cardoe@gentoo.org> (30 Jul 2008)
+# mask development version
+>=media-libs/swfdec-0.7.0
+>=net-www/swfdec-mozilla-0.7.0
+>=gnome-extra/swfdec-gnome-2.23
+
+# Chris Gianelloni <wolf31o2@gentoo.org> (28 Jul 2008)
+# These are masked for removal.  Please leave this mask in place, even after the
+# packages have been removed, until at least December 2008.  These packages have
+# been replaced by the Gentoo Release Engineering repository, available via
+# http://sources.gentoo.org/viewcvs.py/releng/
+dev-util/livecd-kconfigs
+dev-util/livecd-specs
+
+# Tiziano Müller <dev-zero@gentoo.org> (26 Jul 2008)
+# Needs testing, no release yet
+dev-db/ctdb
+
+# Alin Năstac <mrness@gentoo.org> (24 Jul 2008)
+# This version stops responding after awhile (#229049).
+=net-proxy/privoxy-3.0.8
+
+# Bernard Cafarelli <voyageur@gentoo.org> (21 Jul 2008)
+# Masked for removal in 30 days 
+# Do not compile anymore with current GNUstep, dead upstream
+# gnustep-apps/helpviewer: bug #232440, last release in 2003
+# gnustep-apps/mylibrary: bug #232438, last release in 2004
+gnustep-apps/helpviewer
+gnustep-apps/mylibrary
+
+# Diego Pettenò <flameeyes@gentoo.org> (20 Jul 2008)
+# Masked pending removal on August 20th, last release in 2004.
+# Use sys-auth/pam_ssh as a replacement.
+sys-auth/pam_ssh_agent
+
+# Jeremy Olexa <darkside@gentoo.org> (17 Jul 2008)
+# Old, broken version with odd SRC_URI. Use
+# app-emulation/basiliskII-jit-1.0_pre20060501 instead. Comment on bug #232039
+=app-emulation/basiliskII-jit-1.0.0-r1
+
+# Marcelo Goes <vanquirius@gentoo.org> (12 Jul 2008)
+# rlog-1.4 breaks encfs, see bug 228951
+>=dev-libs/rlog-1.4
+
+# Bryan Stine <battousai@gentoo.org> (11 Jul 2008)
+# Wanna keep this masked until I get a comment on modprobe.d
+=x11-base/x11-drm-20080710
+
+# MATSUU Takuto <matsuu@gentoo.org> (10 Jul 2008)
+# mask for security bug #231283
+dev-cpp/poslib
+net-dns/posadis
+net-dns/mfedit
+net-dns/dnsquery
+
+# Alexis Ballier <aballier@gentoo.org> (9 Jul 2008)
+# Latest slv2 release has API changes
+# media-sound/traverso fails to build against it
+>=media-libs/slv2-0.6.0
+
+# Markus Ullmann <jokey@gentoo.org> (7 Jul 2008)
+# mask for security bug #190667
+net-irc/bitchx
+
+# Alfredo Tupone <tupone@gentoo.org> (7 Jul 2008)
+# 0.6.2 is not used by anything in the tree
+# Masked for removal in 30 days
+=media-libs/varconf-0.6.2
+
+# Raúl Porcel <armin76@gentoo.org> (6 Jul 2008)
+# 0.13.1 is not supported by anything in the tree, yet
+=net-libs/rb_libtorrent-0.13.1
+
+# Jeremy Olexa <darkside@gentoo.org> (6 Jul 2008)
+# Upstream has stopped working on this project in favor of built in
+# functionality in gimp. Not needed anymore. Masked for removal in ~60 days by
+# treecleaners. bug #211320
+media-gfx/gimp-freetype
+
+# Jeremy Olexa <darkside@gentoo.org> (6 Jul 2008)
+# Masked for removal in ~60 days by treecleaners. bug #202300. This package has
+# a file collision with dev-perl/TimeDate and no one steps up to maintain it.
+app-admin/systemconfigurator
+
+# Jeremy Olexa <darkside@gentoo.org> (3 Jul 2008)
+# Masked for removal in ~60 days by treecleaners. bug #59548
+# dev-util/tla leaks file descriptors. app-emacs/xtla is not usable and depends
+# on tla. Use >=app-editors/emacs-cvs-23 or app-emacs/dvc (from the Emacs 
+# overlay) as a replacement.
+dev-util/tla
+app-emacs/xtla
+
+# Jeremy Olexa <darkside@gentoo.org> (3 Jul 2008)
+# Masked for removal in ~30 days by treecleaners. bug #124383
+# Doesn't compile, dead upstream, no maintainer.
+app-i18n/kon2
+
+# Carsten Lohrke <carlo@gentoo.org> (30 Jun 2008)
+# Masking as it's pretty broken for a long while now.
+# Will investigate in a few days.
+dev-db/rekall
+
+# Jeremy Olexa <darkside@gentoo.org> (29 Jun 2008)
+# Masked for removal in 30 days. Only works with kernels <2.6.24. See HOMEPAGE
+# for details or bug #105919. Going forward this needs to be compiled into the
+# kernel.
+sys-fs/trustees
+
+# Jeremy Olexa <darkside@gentoo.org> (29 Jun 2008)
+# Upstram doesn't support old version and we have the latest version in the 
+# tree now. Remove in ~30 days. If you have a good reason to why we should keep
+# the old versions please comment on bug #157670.
+<=dev-util/gambas-1.0.17
+
+# Tiziano Müller <dev-zero@gentoo.org> (28 Jun 2008)
+# Masked for testing
+=dev-libs/xerces-c-3.0*
+
+# Jeremy Olexa <darkside@gentoo.org> (25 Jun 2008)
+# Masked for removal in 30 days by treecleaners. bug #130950
+=dev-util/gambas-1.9.23
+
+# Samuli Suominen <drac@gentoo.org> (24 Jun 2008)
+# Unported to Portaudio v19
+=media-sound/denemo-0.7.7
+games-simulation/cultivation
+
+# Ali Polatel <hawking@gentoo.org> (24 Jun 2008)
+# Old versions not maintained by upstream anymore.
+=dev-lang/python-2.3*
+
+# Michael Sterrett <mr_bones_@gentoo.org> (23 Jun 2008)
+# Now a part of gnome-games
+games-board/glchess
+
+# Jeroen Roovers <jer@gentoo.org> (23 Jun 2008)
+# Please read http://my.opera.com/desktopteam/blog before using these snapshots
+=www-client/opera-9.52*
+
+# Alin Năstac <mrness@gentoo.org> (20 Jun 2008)
+# Non-working version (#211327)
+=net-libs/wvstreams-4.4.1*
+
+# Ben de Groot <yngwin@gentoo.org> (20 Jun 2008)
+# == The great ffmpeg new headers mask (bug #214740) ==
+# Maintainers have been given ample advance warning of the change in headers
+# location of media-video/ffmpeg-0.4.9_p20080326, see bug 214740 and dependant
+# bugs. The following packages are masked now because they are incompatible,
+# and have not yet been fixed. (~arch versions only, because stable versions
+# will build against current stable ffmpeg)
+# sound herd, bug 218099:
+media-sound/potamus
+# voip herd, bug 218102:
+media-libs/mediastreamer
+# no herd, bug 218105:
+# mpeg4ip-1.5.0.1-r5 has new patches
+=media-video/mpeg4ip-1.5.0.1-r3
+=media-video/mpeg4ip-1.5.0.1-r4
+
+# Jeremy Olexa <darkside@gentoo.org> (20 Jun 2008)
+# Masked for removal in ~30 days by the treecleaners
+# Dead project and predecessor to dev-util/bzr, use that instead. bug #219236
+dev-util/bazaar
+
+# Tony Vroon <chainsaw@gentoo.org> (08 May 2008)
+# Beta driver, unsupported by nVidia
+~x11-drivers/nvidia-drivers-177.13
+~media-video/nvidia-settings-177.13
+
+# Ryan Hill <dirtyepic@gentoo.org> (18 Jun 2008)
+# Consolidated linuxfromscratch ebuilds into one.
+# Please use app-doc/linuxfromscratch instead.
+# Masked for removal 20080718.
+app-doc/linuxfromscratch-html
+app-doc/linuxfromscratch-pdf
+app-doc/linuxfromscratch-text
+
+# Hanno Böck <hanno@gentoo.org (18 Jun 2008)
+# Masked for now, see #226021.
+=net-analyzer/rrdtool-1.3.0
+
+# Jeroen Roovers <jer@gentoo.org> (17 Jun 2008)
+# Masked for security bug #226079.
+<=www-client/opera-9.27
+
+# Jeremy Olexa <darkside@gentoo.org> (17 Jun 2008)
+# Masked for removal in ~30 days by treecleaners at maintainer's request.
+# Dead upstream, doesn't compile. bug #227481
+dev-cpp/libwefts
+
+# Mike Auty <ikelos@gentoo.org> (15 Jun 2008)
+# (#224637) No longer supported upstream and
+# subject to multiple GLSAs.  Masked for removal in 30 days.
+=app-emulation/vmware-workstation-4.5.3.19414-r7
+
+# Jeremy Olexa <darkside@gentoo.org> (14 Jun 2008)
+# Doesn't compile. Removed by treecleaners in ~30 days. bug #199168
+# Later version in tree works.
+=net-analyzer/nepenthes-0.2.0
+
+# Krzysiek Pawlik <nelchael@gentoo.org> (12 Jun 2008)
+# Testing new version.
+>=dev-java/hessian-3.0.20
+=dev-java/mx4j-core-3.0.2
+=dev-java/mx4j-tools-3.0.2
+=dev-java/mx4j-3.0.2
+
+# Torsten Veller <tove@gentoo.org> (11 Jun 2008)
+# Masked for removal in 30 days
+# Bugs: 99776 128014 131249 197816
+mail-mta/xmail
+
+# Hanno Böck <hanno@gentoo.org> (11 Jun 2008)
+# Masking till gnucash and other apps are ported
+>=net-libs/aqbanking-3.0.0
+>=sys-libs/libchipcard-4.0.0
+>=sys-libs/gwenhywfar-3.0.0
+>=app-office/qbankmanager-0.9.48
+
+# Donnie Berkholz <dberkholz@gentoo.org> (10 Jun 2008)
+# xorg-server-1.5 prerelease
+=x11-base/xorg-server-1.4.99*
+=media-libs/mesa-7.1*
+x11-proto/dri2proto
+=x11-libs/libdrm-2.3.1*
+
+# Joe Peterson <lavajoe@gentoo.org> (09 Jun 2008)
+# Live ebuilds too volatile for normal use.
+# User's who need to test these should unmask explicitly.
+=sys-fs/btrfs-9999
+=sys-fs/btrfs-progs-9999
+
+# Tiziano Müller <dev-zero@gentoo.org> (07 Jun 2008)
+# Various bugs and dead upstream
+#   herdstat: 164254, 184035, 222887
+#   libherdstat: 119589, 206876
+# Masked for removal in 30 days
+app-portage/herdstat
+dev-cpp/libherdstat
+
+# Fernando J. Pereda <ferdy@gentoo.org> (07 Jun 2008)
+# Using the git porcelain is recommended over cogito.
+# gitweb is installed by the git ebuild
+dev-util/cogito
+www-apps/gitweb
+
+# Tiziano Müller <dev-zero@gentoo.org> (07 Jun 2008)
+# Live SVN Ebuild
+=dev-python/django-9999
+
+# Samuli Suominen <drac@gentoo.org> (05 Jun 2008)
+# Masked for testing wrt #163724
+dev-libs/libffi
+x11-libs/gtk-server
+virtual/libffi
+>=dev-libs/g-wrap-1.9.11
+>=dev-scheme/guile-gnome-platform-2.16.0
+
+# Jeremy Olexa <darkside@gentoo.org> (04 Jun 2008)
+# Can't download distfile. Newer versions in tree. bug #193625
+# Removed in 60 days by treecleaners
+=dev-lisp/cl-flexi-streams-0.6.3
+
+# Jeremy Olexa <darkside@gentoo.org> (04 Jun 2008)
+# Can't download distfile. Newer versions in tree. bug #193624
+# Removed in 60 days by treecleaners
+=dev-lisp/cl-drakma-0.4.0
+
+# Alexis Ballier <aballier@gentoo.org> (04 Jun 2008)
+# Beta versions, need testing
+>=app-office/lyx-1.6.0_beta
+
+# Peter Alfredsen <loki_val@gentoo.org> (04 Jun 2008)
+# o Fails its own tests in horrendous ways (buuh!)
+=dev-libs/xmlrpc-c-1.15*
+
+# Raúl Porcel <armin76@gentoo.org> (03 Jun 2008)
+# P.mask snapshots
+>=net-libs/rb_libtorrent-0.13_p2335
+>=net-p2p/qbittorrent-1.1.0_beta1
+
+# Peter Alfredsen <loki_val@gentoo.org> (01 Jun 2008)
+# Masked for keywording and testing
+=media-fonts/dejavu-2.25-r1
+=media-fonts/dejavu-2.26
+
+# Jurek Bartuszek <jurek@gentoo.org> (01 Jun 2008)
+# Not used by anything anymore
+# Masked for removal in 30 days
+dev-dotnet/jscall-sharp
+
+# Raúl Porcel <armin76@gentoo.org> (29 May 2008)
+# resolvconf-gentoo is deprecated, please use
+# net-dns/openresolv, bug #219270
+net-dns/resolvconf-gentoo
+
+# Joe Peterson <lavajoe@gentoo.org> (28 May 2008)
+# Beta 25 is broken - intermittently does not work (bombs out).
+# Will test new beta (26) and unmask if working.
+>=media-gfx/povray-3.7.0_beta
+
+# Rémi Cardona <remi@gentoo.org> (27 Mai 2008)
+# mildly broken, see bug #156583
+=app-text/gtranslator-1.1.7
+
+# Vlastimil Babka <caster@gentoo.org> (20 May 2008)
+# Masked for testing
+=app-arch/rpm-5*
+
+# Tiziano Müller <dev-zero@gentoo.org> (19 May 2008)
+# Masked for removal in 30 days. Dead upstream.
+dev-db/pgeasy
+dev-db/pgst
+
+# Mike Pagano <mpagano@gentoo.org> (19 May 2008)
+# Masked for removal in 30 days.  Upstream has changed
+# name to crossvc, which is available in the tree.
+# (bug #213496)
+dev-util/lincvs
+
+# Zac Medico <zmedico@gentoo.org> (18 May 2008)
+# Masked to ensure that pseudo-downgrade happens correctly, following
+# version scheme change from YYYYMMDD to 3.0.YYYYMMDD.
+>net-print/foomatic-db-ppds-20000000
+>net-print/foomatic-db-20000000
+
+# Steve Dibb <beandog@gentoo.org> (16 May 2008)
+# Masked for removal, will be replaced with a virtual
+=app-text/sword-modules-20041209
+
+# Rémi Cardona <remi@gentoo.org> (16 Apr 2008)
+# Masked until somebody picks it up
+dev-cpp/bakery
+
+# Diego Pettenò <flameeyes@gentoo.org> (11 May 2008)
+# Release candidate version, masked for testing.
+=app-admin/sudo-1.7.0_rc*
+
+# Ulrich Mueller <ulm@gentoo.org> (10 May 2008)
+# LessTif is unsupported since it has open issues with several packages.
+# See bug 193505 and bug 204249. You are on your own here.
+x11-libs/lesstif
+
+# Marcus D. Hanwell <cryos@gentoo.org> (08 May 2008)
+# Masking new version until it has received a little more testing
+~dev-util/cmake-2.6.0
+
+# Tony Vroon <chainsaw@gentoo.org> (08 May 2008)
+# Beta driver, unsupported by nVidia
+~x11-drivers/nvidia-drivers-173.08
+~media-video/nvidia-settings-173.08
+
+# Michael Sterrett <mr_bones_@gentoo.org> (05 May 2008)
+# masked until bug #217901 is fixed, again.
+# Still has broken deps and missing license.
+games-server/greenhouse
+
+# Lennart Kolmodin <kolmodin@gentoo.org> (04 May 2008)
+# Some of the older 0.9x regex packages are experimental versions and does
+# not work with ghc-6.8. There are now newer versions that should be used
+# instead. This replaces the older package mask by Duncan Coutts.
+=dev-haskell/regex-compat-0.90
+=dev-haskell/regex-base-0.91
+=dev-haskell/regex-posix-0.92
+
+# Hans de Graaff <graaff@gentoo.org> (4 May 2008)
+# Mask broken and insecure xemacs version added by jmglov
+=app-editors/xemacs-21.5.28
+
+# Marijn Schouten <hkBst@gentoo.org> (1 May 2008)
+# to be removed: live, broken, obsolete
+# bugs 196982, 204935
+# 0.9.2 release in our overlay
+dev-lisp/stumpwm-cvs
+
+# Ulrich Mueller <ulm@gentoo.org> (27 Apr 2008)
+# CVS snapshot, bug 219449.
+~app-emacs/navi2ch-1.7.5_p20080325
+
+# Michael Sterrett <mr_bones_@gentoo.org> (27 Apr 2008)
+# masked until tmw works with the newer version.
+>=dev-games/guichan-0.8
+
+# Mike Auty <ikelos@gentoo.org> (26 Apr 2008)
+# Masking all app-emulation/vmware-workstation-tools packages
+# in favour of app-emulation/open-vm-tools
+=app-emulation/vmware-workstation-tools-4.5.3-r1
+=app-emulation/vmware-workstation-tools-5.5.1-r2
+=app-emulation/vmware-workstation-tools-5.5.2
+=app-emulation/vmware-workstation-tools-5.5.3
+
+# Markus Ullmann <jokey@gentoo.org> (21 Apr 2008)
+# mask beta version
+=net-libs/gloox-1.0_beta*
+
+# Diego Pettenò <flameeyes@gentoo.org> (19 Apr 2008)
+# Masked until we remove "children" .la files, or get better tools -
+# like a revdep-rebuild that does not require an actual rebuild.
+~dev-libs/popt-1.14
+=media-libs/libogg-1.1.3-r1
+
+# Richard Brown <rbrown@gentoo.org> (16 Apr 2008)
+# Masked for test
+=dev-lang/ruby-1.8.7*
+
+# Matthias Schwarzott <zzam@gentoo.org> (15 Apr 2008)
+# Superseded by vdr-dvdswitch and no longer maintained
+media-plugins/vdr-dvdselect
+
+# Marijn Schouten <hkBst@gentoo.org> (14 Apr 2008)
+# binary package, now subsumed by binary use flag on mlton itself
+# will be removed
+dev-lang/mlton-bin
+=dev-lang/mlton-20040227
+
+# Gilles Dartiguelongue <eva@gentoo.org> (12 Apr 2008)
+# Masking gnome-system-tools because it is broken,
+# to help fix it, see bug #214265
+=app-admin/gnome-system-tools-2.14*
+=app-admin/system-tools-backends-1.4*
+
+# Ben de Groot <yngwin@gentoo.org> (12 Apr 2008)
+# Ebuild needs more work
+media-sound/lastfmproxy
+
+# Mike Pagano <mpagano@gentoo.org> (11 Apr 2008)
+# Needs masked qt-4.4 (bug #217175)
+=sys-kernel/kccmp-0.2-r1
+
+# Raúl Porcel <armin76@gentoo.org> (8 Apr 2008)
+# Masked for testing
+>=mail-client/mozilla-thunderbird-3.0_alpha1
+>=mail-client/mozilla-thunderbird-bin-3.0_alpha1
+
+# Ben de Groot <yngwin@gentoo.org> (7 Apr 2008)
+# Versioning scheme change after pkgmove from -svn
+>=media-libs/x264-20000101
+>=media-video/x264-encoder-20000101
+
+# Benedikt Böhm <hollow@gentoo.org> (6 Apr 2008)
+# Mask ebuilds using new qmail.eclass for testing
+=mail-mta/mini-qmail-1.06
+=mail-mta/netqmail-1.06
+=mail-mta/qmail-ldap-1.03-r8
+=net-mail/checkpassword-0.90-r3
+=net-mail/cmd5checkpw-0.30-r1
+=net-mail/dot-forward-0.71-r3
+=sys-apps/ucspi-ssl-0.70-r1
+=sys-apps/ucspi-tcp-0.88-r17
+=sys-process/daemontools-0.76-r6
+
+# Christian Faulhammer <opfer@gentoo.org> (01 Apr 2008)
+# Masked for security reasons: bug 215699
+<net-misc/ltsp-5
+
+# Denis Dupeyron <calchan@gentoo.org> (31 Mar 2008)
+# New versions using guile-1.8 and gtk-2 used to build and run at some point,
+# but not anymore. If you know how or want to fix this feel free to contact
+# me. Warning: dependency hell.
+=sci-electronics/gwave-20070514
+
+# Hanno Boeck <hanno@gentoo.org> (31 Mar 2008)
+# As 1.3.3.x became a stable series and 1.3.4 has crash issues, mask it for now.
+=app-office/scribus-1.3.4-r1
+
+# Markus Ullmann <jokey@gentoo.org> (27 Mar 2008)
+# mask beta version
+=mail-filter/MailScanner-4.68.6.1
+
+# Joerg Bornkessel <hd_brummy@gentoo.org (26 Mar 2008)
+# initial ebuild masked for testing
+=app-misc/iguanaIR-0.93
+
+# Caleb Tennis <caleb@gentoo.org> (26 Mar 2008)
+# Masking per dev-zero request for more testing time
+=dev-db/libpq-8.3*
+=dev-db/postgresql-8.3*
+
+# Luca Barbato <lu_zero@gentoo.org> (26 Mar 2008)
+# huge ffmpeg migration mask
+# we leave intermediate version masked, unmasking 20080326 -yngwin
+=media-video/ffmpeg-0.4.9_p20080206
+
+# William L. Thomson Jr. <wltjr@gentoo.org> (25 Mar 2008)
+# Masked due to bugs and availability of forked alternative Frostwire.
+# Which is more equivalent to Limewire Pro and has been added to portage.
+# This ebuild will be moved to the java junkyard overlay when Frostwire
+# is unmasked or stabilized.
+net-p2p/limewire
+
+# Mike Doty <kingtaco@gentoo.org> (24 Mar 2008)
+# Masked due to lack of testing and user rewritten ebuild/conf.d/init.d.
+# Use at your own risk.  Bug 196096.
+>=sys-block/open-iscsi-2.0.868_rc1
+
+# Joerg Bornkessel <hd_brummy@gentoo.org> (11 Mar 2008)
+# masked for testing
+# http://www.vdr-portal.de/board/thread.php?threadid=74833 (german)
+=net-www/xxv-1.2.1308
+=net-www/xxv-1.2.1315
+
+# Tristan Heaven <nyhm@gentoo.org> (21 Mar 2008)
+# Needs testing
+>=games-strategy/warzone2100-2.1_beta2
+
+# Colin Morey <peitolm@gentoo.org> (20 Mar 2008)
+# Masked for testing, closing lots of little bugs
+=mail-mta/exim-4.69-r1
+
+# Donnie Berkholz <dberkholz@gentoo.org> (17 Mar 2008)
+# Most apps that use lm_sensors aren't compatible with the new version
+>=sys-apps/lm_sensors-3
+
+# Wolfram Schlich <wschlich@gentoo.org> (13 Mar 2008)
+# mondo-rescue previously was a candidate for complete
+# removal and is now a candidate for being proxy-maintained
+# (see bug #106497)
+app-backup/mondo-rescue
+sys-apps/mindi
+sys-apps/mindi-busybox
+
+# Christian Faulhammer <opfer@gentoo.org> (11 Mar 2008)
+# masked for testing
+=app-portage/gatt-9999
+
+# Doug Goldstein <cardoe@gentoo.org> (10 Mar 2008)
+# upstream MythTV development versions
+# complain upstream if something is broken
+# or if it's specific to the ebuild, any bugs that get
+# filed require a patch. i.e. if you can't patch it
+# you shouldn't be running this version
+>=media-tv/mythtv-0.22_alpha1
+>=x11-themes/mythtv-themes-0.22_alpha1
+>=media-plugins/mytharchive-0.22_alpha1
+>=media-plugins/mythbrowser-0.22_alpha1
+>=media-plugins/mythcontrols-0.22_alpha1
+>=media-plugins/mythflix-0.22_alpha1
+>=media-plugins/mythgallery-0.22_alpha1
+>=media-plugins/mythgame-0.22_alpha1
+>=media-plugins/mythmovies-0.22_alpha1
+>=media-plugins/mythmusic-0.22_alpha1
+>=media-plugins/mythnews-0.22_alpha1
+>=media-plugins/mythphone-0.22_alpha1
+>=media-plugins/mythvideo-0.22_alpha1
+>=media-plugins/mythweather-0.22_alpha1
+>=www-apps/mythweb-0.22_alpha1
+>=media-plugins/mythzoneminder-0.22_alpha1
+
+# Jeroen Roovers <jer@gentoo.org> (10 Mar 2008)
+# development version:
+>=app-admin/sysstat-8.1.1
+
+# MATSUU Takuto <matsuu@gentoo.org> (8 Mar 2008)
+# Masked for Bug 173467
+=dev-lang/tcl-8.5*
+=dev-lang/tk-8.5*
+
+# Tiziano Müller <dev-zero@gentoo.org> (8 Mar 2008)
+# Mask pre-version
+=net-fs/samba-3.2*
+
+# Diego Pettenò <flameeyes@gentoo.org> (6 Mar 2008)
+# Mask pending fix for new pambase, see bug #212452
+=x11-apps/xdm-1.1.6-r1
+
+# Chris Gianelloni <wolf31o2@gentoo.org> (3 Mar 2008)
+# Masking due to security bug #194607 and security bug #204067
+games-fps/doom3
+games-fps/doom3-chextrek
+games-fps/doom3-data
+games-fps/doom3-demo
+games-fps/doom3-ducttape
+games-fps/doom3-dungeon
+games-fps/doom3-eventhorizon
+games-fps/doom3-hellcampaign
+games-fps/doom3-inhell
+games-fps/doom3-lms
+games-fps/doom3-mitm
+games-fps/doom3-opencoop
+games-fps/doom3-phantasm
+games-fps/doom3-roe
+games-fps/quake4-bin
+games-fps/quake4-data
+games-fps/quake4-deltactf
+games-fps/quake4-demo
+
+# Benedikt Böhm <hollow@gentoo.org> (23 Feb 2008)
+# Masked due to security issues.
+# https://bugs.gentoo.org/show_bug.cgi?id=211166
+www-apps/joomla
+www-apps/mambo
+www-apps/moregroupware
+www-apps/net2ftp
+=www-apps/phpBB-2*
+www-apps/wordpress
+www-apps/xoops
+
+# Alon Bar-Lev <alonbl@gentoo.org> (23 Feb 2008)
+# These are not yet stable.
+>=sys-fs/dazuko-2.3.5_pre
+sys-fs/redirfs
+
+# Timo Gurr <tgurr@gentoo.org> (22 Feb 2008)
+# Mask KDE4 versions of ktorrent as long as KDE4 is masked.
+>=net-p2p/ktorrent-3.0.0
+
+# Chris Gianelloni <wolf31o2@gentoo.org> (20 Feb 2008)
+# Masking these so people will quit installing them on their systems.  These
+# packages are designed for use on the LiveCD only and will do unspeakably
+# horrible and unexpected things on a normal system.  YOU HAVE BEEN WARNED!!!
+app-misc/livecd-tools
+sys-apps/hwsetup
+x11-misc/mkxf86config
+
+# Raúl Porcel <armin76@gentoo.org> (18 Feb 2008)
+# Probably breaks a lot of stuff, needs testing
+=net-wireless/wireless-tools-30_pre*
+
+# Samuli Suominen <drac@gentoo.org> (12 Feb 2008)
+# If 0.20 fails with hardmasked ffmpeg snapshot,
+# try this instead.
+~media-video/ffmpeg2theora-9999
+
+# Sebastien Fabbro <bicatali@gentoo.org> (05 Feb 2008)
+# sci-libs/metis-5.* still experimental
+>=sci-libs/metis-4.99
+
+# Wulf C. Krueger <philantrop@gentoo.org> (04 Feb 2008)
+# This package has been pretty much broken since 3.5.6.
+# cf. bug 164027
+>=kde-base/pykde-3.5.6
+
+# Ulrich Mueller <ulm@gentoo.org> (01 Feb 2008)
+# Emacs 23 virtual, unmask after Emacs 23 release
+>=virtual/emacs-23
+
+# Peter Volkov <pva@gentoo.org> (28 Jan 2008)
+# net-snmp and sussen are broken with it, bug #205280
+=app-arch/rpm-4.4.7-r3
+
+# Luca Barbato <lu_zero@gentoo.org> (28 Jan 2008)
+# linking broken
+=app-emulation/qemu-user-0.9.1
+
+# Mike Frysinger <vapier@gentoo.org> (26 Jan 2008)
+# Requires modular LSM support in the kernel which was
+# removed in linux-2.6.24 #207421
+sys-apps/rlocate
+
+# Gilles Dartiguelongue <eva@gentoo.org> (24 Jan 2008)
+# add masked gnome-system-tools-2.20 and dependencies
+# for testing purpose
+dev-libs/liboobs
+>=app-admin/system-tools-backends-2
+>=app-admin/gnome-system-tools-2.20
+
+# Stefaan De Roeck <stefaan@gentoo.org> (24 Jan 2008)
+# mask cvs-pulled version as it may not be ready for public use
+# see bug #205829
+>sys-libs/libraw1394-1.3.0
+
+# Saleem Abdulrasool <compnerd@gentoo.org> (22 Jan 2008)
+# Never was stabled, and will not work with future versions of HAL.  Remove when
+# HAL 0.5.10 is stabled on all arches.
+gnome-extra/hal-device-manager
+
+# Ingmar Vanhassel <ingmar@gentoo.org> (16 Jan 2008)
+# Mask KDE 4.0.x for testing. This release of KDE 4 will not be unmasked.
+# This is still not intended for mainstream so DO NOT KEYWORD IT without
+# talking to the KDE herd first.
+# KDE 4 guide: http://www.gentoo.org/proj/en/desktop/kde/kde4.xml
+=kde-base/amor-4*
+=kde-base/ark-4*
+=kde-base/blinken-4*
+=kde-base/bovo-4*
+=kde-base/cervisia-4*
+=kde-base/dolphin-4*
+=kde-base/drkonqi-4*
+=kde-base/gwenview-4*
+=kde-base/juk-4*
+=kde-base/kalgebra-4*
+=kde-base/kalzium-4*
+=kde-base/kamera-4*
+=kde-base/kanagram-4*
+=kde-base/kappfinder-4*
+=kde-base/kapptemplate-4*
+=kde-base/kate-4*
+=kde-base/katomic-4*
+=kde-base/kbattleship-4*
+=kde-base/kblackbox-4*
+=kde-base/kbounce-4*
+=kde-base/kbruch-4*
+=kde-base/kbugbuster-4*
+=kde-base/kcachegrind-4*
+=kde-base/kcalc-4*
+=kde-base/kcharselect-4*
+=kde-base/kcheckpass-4*
+=kde-base/kcminit-4*
+=kde-base/kcmshell-4*
+=kde-base/kcolorchooser-4*
+=kde-base/kcontrol-4*
+=kde-base/kcron-4*
+=kde-base/kde-4*
+=kde-base/kdeaccessibility-4*
+=kde-base/kdeaccessibility-colorschemes-4*
+=kde-base/kdeaccessibility-iconthemes-4*
+=kde-base/kdeaccessibility-meta-4*
+=kde-base/kdeaccounts-plugin-4*
+=kde-base/kdeadmin-4*
+=kde-base/kdeadmin-meta-4*
+=kde-base/kdeartwork-4*
+=kde-base/kdeartwork-colorschemes-4*
+=kde-base/kdeartwork-emoticons-4*
+=kde-base/kdeartwork-icewm-themes-4*
+=kde-base/kdeartwork-iconthemes-4*
+=kde-base/kdeartwork-kscreensaver-4*
+=kde-base/kdeartwork-kworldclock-4*
+=kde-base/kdeartwork-meta-4*
+=kde-base/kdeartwork-sounds-4*
+=kde-base/kdeartwork-styles-4*
+=kde-base/kdeartwork-wallpapers-4*
+=kde-base/kdebase-4*
+=kde-base/kdebase-data-4*
+=kde-base/kdebase-kioslaves-4*
+=kde-base/kdebase-meta-4*
+=kde-base/kdebase-startkde-4*
+=kde-base/kdebugdialog-4*
+=kde-base/kdeedu-4*
+=kde-base/kdeedu-meta-4*
+=kde-base/kdegames-4*
+=kde-base/kdegames-meta-4*
+=kde-base/kdegraphics-4*
+=kde-base/kdegraphics-meta-4*
+=kde-base/kde-l10n-4*
+=kde-base/kdelibs-4*
+=kde-base/kde-menu-4*
+=kde-base/kde-menu-icons-4*
+=kde-base/kde-meta-4*
+=kde-base/kdemultimedia-4*
+=kde-base/kdemultimedia-kioslaves-4*
+=kde-base/kdemultimedia-meta-4*
+=kde-base/kdenetwork-4*
+=kde-base/kdenetwork-filesharing-4*
+=kde-base/kdenetwork-meta-4*
+=kde-base/kdepasswd-4*
+=kde-base/kdepimlibs-4*
+=kde-base/kdesdk-4*
+=kde-base/kdesdk-kioslaves-4*
+=kde-base/kdesdk-meta-4*
+=kde-base/kdesdk-misc-4*
+=kde-base/kdesdk-scripts-4*
+=kde-base/kdessh-4*
+=kde-base/kdesu-4*
+=kde-base/kdetoys-4*
+=kde-base/kdetoys-meta-4*
+=kde-base/kdeutils-4*
+=kde-base/kdeutils-meta-4*
+=kde-base/kde-wallpapers-4*
+=kde-base/kdewebdev-4*
+=kde-base/kdewebdev-meta-4*
+=kde-base/kdf-4*
+=kde-base/kdialog-4*
+=kde-base/kdm-4*
+=kde-base/kdnssd-4*
+=kde-base/keditbookmarks-4*
+=kde-base/kfile-4*
+=kde-base/kfilereplace-4*
+=kde-base/kfind-4*
+=kde-base/kfloppy-4*
+=kde-base/kfourinline-4*
+=kde-base/kgamma-4*
+=kde-base/kgeography-4*
+=kde-base/kget-4*
+=kde-base/kgoldrunner-4*
+=kde-base/kgpg-4*
+=kde-base/khangman-4*
+=kde-base/khelpcenter-4*
+=kde-base/khotkeys-4*
+=kde-base/kig-4*
+=kde-base/kimagemapeditor-4*
+=kde-base/kinfocenter-4*
+=kde-base/kioclient-4*
+=kde-base/kiriki-4*
+=kde-base/kiten-4*
+=kde-base/kjots-4*
+=kde-base/kjumpingcube-4*
+=kde-base/klettres-4*
+=kde-base/klines-4*
+=kde-base/klinkstatus-4*
+=kde-base/klipper-4*
+=kde-base/kmag-4*
+=kde-base/kmahjongg-4*
+=kde-base/kmenuedit-4*
+=kde-base/kmilo-4*
+=kde-base/kmimetypefinder-4*
+=kde-base/kmines-4*
+=kde-base/kmix-4*
+=kde-base/kmousetool-4*
+=kde-base/kmouth-4*
+=kde-base/kmplot-4*
+=kde-base/knetattach-4*
+=kde-base/knetwalk-4*
+=kde-base/knetworkconf-4*
+=kde-base/knewsticker-4*
+=kde-base/knewstuff-4*
+=kde-base/knotify-4*
+=kde-base/kolf-4*
+=kde-base/kolourpaint-4*
+=kde-base/kompare-4*
+=kde-base/konqueror-4*
+=kde-base/konquest-4*
+=kde-base/konsole-4*
+=kde-base/kopete-4*
+=kde-base/kpasswdserver-4*
+=kde-base/kpat-4*
+=kde-base/kpercentage-4*
+=kde-base/kppp-4*
+=kde-base/kquitapp-4*
+=kde-base/krdc-4*
+=kde-base/kreadconfig-4*
+=kde-base/kreversi-4*
+=kde-base/krfb-4*
+=kde-base/kruler-4*
+=kde-base/krunner-4*
+=kde-base/ksame-4*
+=kde-base/kscd-4*
+=kde-base/kscreensaver-4*
+=kde-base/kshisen-4*
+=kde-base/ksmserver-4*
+=kde-base/ksnapshot-4*
+=kde-base/kspaceduel-4*
+=kde-base/ksplash-4*
+=kde-base/ksquares-4*
+=kde-base/kstars-4*
+=kde-base/kstart-4*
+=kde-base/kstartupconfig-4*
+=kde-base/kstyles-4*
+=kde-base/ksudoku-4*
+=kde-base/ksysguard-4*
+=kde-base/ksystraycmd-4*
+=kde-base/kteatime-4*
+=kde-base/ktimer-4*
+=kde-base/ktimezoned-4*
+=kde-base/ktip-4*
+=kde-base/ktouch-4*
+=kde-base/ktraderclient-4*
+=kde-base/kttsd-4*
+=kde-base/ktuberling-4*
+=kde-base/kturtle-4*
+=kde-base/ktux-4*
+=kde-base/kuiserver-4*
+=kde-base/kuiviewer-4*
+=kde-base/kurifilter-plugins-4*
+=kde-base/kuser-4*
+=kde-base/kwallet-4*
+=kde-base/kweather-4*
+=kde-base/kwin-4*
+=kde-base/kwordquiz-4*
+=kde-base/kworldclock-4*
+=kde-base/kwrite-4*
+=kde-base/libkcddb-4*
+=kde-base/libkcompactdisc-4*
+=kde-base/libkdeedu-4*
+=kde-base/libkdegames-4*
+=kde-base/libkmahjongg-4*
+=kde-base/libkonq-4*
+=kde-base/libkscan-4*
+=kde-base/libkworkspace-4*
+=kde-base/libplasma-4*
+=kde-base/libtaskmanager-4*
+=kde-base/lilo-config-4*
+=kde-base/lskat-4*
+=kde-base/marble-4*
+=kde-base/nepomuk-4*
+=kde-base/nsplugins-4*
+=kde-base/okular-4*
+=kde-base/parley-4*
+=kde-base/phonon-4*
+=kde-base/plasma-4*
+=kde-base/poxml-4*
+~kde-base/qimageblitz-0.0.4
+=kde-base/secpolicy-4*
+=kde-base/solid-4*
+=kde-base/soliduiserver-4*
+=kde-base/strigi-analyzer-4*
+=kde-base/superkaramba-4*
+=kde-base/svgpart-4*
+=kde-base/sweeper-4*
+=kde-base/systemsettings-4*
+=kde-base/umbrello-4*
+=kde-base/dragonplayer-2*
+
+# Bo Ørsted Andresen <zlin@gentoo.org> (11 Feb 2008)
+# Mask KDE 4.0.x extragear apps for testing.
+# KDE 4 guide: http://www.gentoo.org/proj/en/desktop/kde/kde4.xml
+=kde-base/kcoloredit-4*
+=kde-base/kfax-4*
+=kde-base/kiconedit-4*
+=kde-base/kpovmodeler-4*
+=kde-misc/extragear-plasma-4*
+=kde-misc/kgrab-0.1*
+=kde-misc/kgraphviewer-2*
+=kde-misc/kio_gopher-0.1*
+kde-misc/kio_perldoc
+=kde-misc/libksane-0.1*
+=kde-misc/rsibreak-0.9*
+=kde-misc/yakuake-2.9*
+=net-p2p/kmldonkey-2*
+
+# Michael Sterrett <mr_bones_@gentoo.org> (15 Jan 2008)
+# Security mask (bug #190835)
+# https://bugs.gentoo.org/show_bug.cgi?id=190835
+games-fps/doomsday
+games-fps/doomsday-resources
+
+# Markus Ullmann <jokey@gentoo.org> (13 Jan 2008)
+# contrib modules need to be added back and needs general testing
+>=net-nds/openldap-2.4
+
+# Peter Volkov <pva@gentoo.org> (06 Jan 2008)
+# Masked unstable sources
+>=sys-kernel/openvz-sources-2.6.22
+
+# Luca Barbato <lu_zero@gentoo.org> (05 Jan 2008)
+# Security issues spotted
+# Superceeded by feng and libnemesi
+# Pending removal
+media-video/fenice
+media-video/nemesi
+
+# Lennart Kolmodin <kolmodin@gentoo.org> (01 Jan 2008)
+# hs-plugins only works with the outdated GHC 6.4.2 compiler,
+# and has not been updated upstream for two years.
+# Pending removal 01 Feb 2008
+dev-haskell/hs-plugins
+
+# Mart Raudsepp <leio@gentoo.org> (28 Dec 2007)
+# Live Subversion ebuild until pending first upstream release
+=games-mud/wxmud-9999
+
+# MATSUU Takuto <matsuu@gentoo.org> (27 Dec 2007)
+# Upstream gone, nothing depends on this.
+# pending removal. Remove in 30 days
+# https://bugs.gentoo.org/show_bug.cgi?id=177912
+dev-tcltk/Tk_Theme
+
+# Christian Hoffmann <hoffie@gentoo.org> (27 Dec 2007)
+# broken (leads to random segfaults); masked until someone steps up to
+# maintain it or it will finally get removed
+dev-php5/php-java-bridge
+
+# Carsten Lohrke <carlo@gentoo.org> (23 Dec 2007)
+# Abandonware. Masked for removal.
+net-misc/fsh
+dev-lang/entity
+
+# Timothy Redaelli <drizzt@gentoo.org> (23 Dec 2007)
+# Masked for testing
+>media-sound/mumble-1.0.0
+>media-sound/murmur-1.0.0
+
+# Ulrich Mueller <ulm@gentoo.org> (21 Dec 2007)
+# Christian Faulhammer <opfer@gentoo.org>
+# CVS snapshots, bug #185106
+=app-emacs/emacs-w3m-1.4.4_p*
+=app-emacs/wanderlust-2.15.5_pre*
+
+# Ulrich Mueller <ulm@gentoo.org> (21 Dec 2007)
+# Christian Faulhammer <opfer@gentoo.org>
+# Live SVN ebuilds
+~app-emacs/gentoo-syntax-9999
+~app-emacs/ngnus-9999
+
+# Marijn Schouten <hkBst@gentoo.org> (20 Dec 2007)
+# Broken, bug 202880
+>=dev-scheme/gambit-4.1.1
+
+# Ingmar Vanhassel <ingmar@gentoo.org> (10 Mar 2008)
+# Masked for testing, various dependencies still need to be updated...
+# yngwin 12 Aug 08: unmasking only 4.4.1, leaving 4.4.0 in place for
+# the moment, pending later removal
+~x11-libs/qt-4.4.0
+~x11-libs/qt-assistant-4.4.0
+~x11-libs/qt-core-4.4.0
+~x11-libs/qt-demo-4.4.0
+~x11-libs/qt-gui-4.4.0
+~x11-libs/qt-script-4.4.0
+~x11-libs/qt-test-4.4.0
+~x11-libs/qt-svg-4.4.0
+~x11-libs/qt-webkit-4.4.0
+~x11-libs/qt-phonon-4.4.0
+~x11-libs/qt-qt3support-4.4.0
+~x11-libs/qt-dbus-4.4.0
+~x11-libs/qt-opengl-4.4.0
+~x11-libs/qt-sql-4.4.0
+~x11-libs/qt-xmlpatterns-4.4.0
+
+# Jeroen Roovers <jer@gentoo.org> (17 Dec 2007)
+# Masked pending removal - see bug #202391
+# Please switch to sys-kernel/gentoo-sources
+sys-kernel/hppa-sources
+
+# Peter Volkov <pva@gentoo.org> (13 Dec 2007)
+# Live svn ebuild... 0.9.4 branch is not supported atm.
+=net-im/sim-9999
+
+# Raúl Porcel <armin76@gentoo.org> (12 Dec 2007)
+# Segfaults with IMAP
+=x11-plugins/replytolist-0.3.0
+
+# Raúl Porcel <armin76@gentoo.org> (04 Dec 2007)
+# Mozilla stopped supporting 1.5 series in October 2007
+# Will be removed when mips stabilizes 2.0
+=mail-client/mozilla-thunderbird-1.5*
+
+# Piotr Jaroszyński <peper@gentoo.org> (26 Nov 2007)
+# opensync svn ebuilds
+=app-pda/libsyncml-9999
+=app-pda/libopensync-9999
+=app-pda/msynctool-9999
+=app-pda/libopensync-plugin-evolution2-9999
+=app-pda/libopensync-plugin-file-9999
+=app-pda/libopensync-plugin-gnokii-9999
+=app-pda/libopensync-plugin-google-calendar-9999
+=app-pda/libopensync-plugin-gpe-9999
+=app-pda/libopensync-plugin-irmc-9999
+=app-pda/libopensync-plugin-kdepim-9999
+=app-pda/libopensync-plugin-palm-9999
+=app-pda/libopensync-plugin-python-9999
+=app-pda/libopensync-plugin-syncml-9999
+=app-pda/libopensync-plugin-vformat-9999
+
+# Saleem Abdulrasool <compnerd@gentoo.org> (23 Nov 2007)
+# These might break automounting, so keep them masked for now.
+>=sys-auth/policykit-0.6
+>=gnome-base/gnome-mount-0.7
+>=gnome-extra/policykit-gnome-0.6
+
+# Tiziano Müller <dev-zero@gentoo.org> (18 Nov 2007)
+# There is a serious regression (bug #199450) due to
+# an incomplete fix for the non-remote vulnerability
+# CVE-2007-4572
+=net-fs/samba-3.0.27
+
+# Doug Goldstein <cardoe@gentoo.org> (16 Nov 2007)
+# new heimdal version that's not too tested
+# anyone looking to take over maintaining heimdal
+# from seemant would make both of us happy
+=app-crypt/heimdal-1.0.1
+
+# Robin H. Johnson <robbat2@gentoo.org> (02 Nov 2007)
+# Brokeness in these
+=mail-mta/nullmailer-1.03*
+
+# Duncan Coutts <dcoutts@gentoo.otg> (05 Nov 2007)
+# dev-lang/ghc-bin is going away, use dev-lang/ghc instead.
+# You can USE=binary with dev-lang/ghc to get the effect of ghc-bin.
+dev-lang/ghc-bin
+
+# Doug Goldstein <cardoe@gentoo.org> (01 Nov 2007)
+# beta NVIDIA drivers, not supported. bug #196679
+~x11-drivers/nvidia-drivers-100.14.23
+
+# Stefan Schweizer <genstef@gentoo.org> (14 Oct 2007)
+# Development release
+>=net-libs/openslp-1.3.0
+
+# Doug Goldstein <cardoe@gentoo.org> (10 Oct 2007)
+# the Asterisk is coming! the Asterisk is coming!
+>=net-misc/zaptel-1.4.0
+>=net-misc/asterisk-1.4.0
+
+# Peter Volkov <pva@gentoo.org> (28 Sep 2007)
+# masked for testing
+>=app-text/kchmviewer-4.0_beta1
+
+# Paul Varner <fuzzyray@gentoo.org> (27 Sep 2007)
+# revdep-rebuild is broken in this release
+=app-portage/gentoolkit-0.2.4_rc1
+
+# Markus Ullmann <jokey@gentoo.org> (05 Sept 2007)
+# masked for testing
+>=net-analyzer/snort-2.7
+
+# Doug Goldstein <cardoe@gentoo.org> (30 Aug 2007)
+# upstream has declared this module dead and broken
+# it is reworked in trunk but will not be moved to 0.20
+# <gbee> not in a fit state for a backport, suppose in a couple or weeks, maybe less it might be usable enough that packagers could backport it themselves - not sure Chutt would want it backported it to -fixes though
+# <gbee> assuming you are talking about mythweather and not some other fix that I was supposed to be backporting
+# <Cardoe> yes, mythweather
+# <Chutt> that's too big for a backport
+# if someone wishes to backport the changes, feel free to open a bug
+<media-plugins/mythweather-0.21_pre10000
+
+# Robert Buchholz <rbu@gentoo.org> (29 Aug 2007)
+# PPTP Plugin doesn't work on amd64
+net-misc/networkmanager-pptp
+
+# Tristan Heaven <nyhm@gentoo.org> (11 Aug 2007)
+# Masked until bug #178110 can be resolved properly.
+media-libs/freeimage
+
+# Sven Wegener <swegener@gentoo.org> (07 Aug 2007)
+# CVS snapshot, needs some more testing
+~app-misc/screen-4.0.3_p20070403
+
+# Marijn Schouten <hkBst@gentoo.org> (26 Jul 2007)
+# problems starting drscheme (segfault)
+=dev-scheme/drscheme-370.6_p20070725
+
+# Raúl Porcel <armin76@gentoo.org> (18 Jul 2007)
+# Mask rc
+=net-p2p/qbittorrent-1.0.0_rc*
+
+# Olivier Fisette <ribosome@gentoo.org> (17 Jul 2007)
+# Software no longer available (redistribution not allowed).
+sci-chemistry/nmrview
+
+# Gustavo Zacarias <gustavoz@gentoo.org> (16 Jul 2007)
+# Mask zaptel-1.2.18-r1 since it seems to have some issues and is experimental
+# See bug #185268
+=net-misc/zaptel-1.2.18-r1
+
+# Saleem Abdulrasool <compnerd@gentoo.org> (10 Jul 2007)
+# Masking for testing (still not a drop in replacement for ipw3945)
+net-wireless/iwlwifi
+
+# Sven Wegener <swegener@gentoo.org> (07 Jul 2007)
+# Development releases
+=dev-db/opendbx-1.3*
+
+# Petteri Räty <betelgeuse@gentoo.org> (01 Jul 2007)
+# Upstream describes this as:
+# Buggy and unmaintained D-BUS service browser for KDE.
+# Seems to segmentation fault on me on startup with current
+# dbus. Removal in 30 days unless someone else takes this
+# package and fixes the problems.
+kde-misc/kdbus
+
+# Roy Marples <uberlord@gentoo.org> (29 Jun 2007)
+# Masked due to several connectivity issues.
+>=net-wireless/wpa_supplicant-0.6.0
+
+# Jurek Bartuszek <jurek@gentoo.org> (23 Jun 2007)
+# Beta versions, testing required
+=app-emulation/ies4linux-2.5*
+
+# Raúl Porcel <armin76@gentoo.org> (15 Jun 2007)
+# Mask livesvn ebuild
+=net-p2p/deluge-9999
+
+# Seemant Kulleen <seemant@gentoo.org> (23 May 2007)
+# Masked because 1.2.1 because it is broken
+=net-wireless/ipw3945-1.2.1
+
+# Ryan Hill <dirtyepic@gentoo.org> (13 May 2007)
+#   Mask for testing.
+=net-fs/sfs-0.8.0_pre20070512
+
+# Stefan Schweizer <genstef@gentoo.org> (11 Mar 2008)
+# Please use kpowersave-0.7.3 with dbus instead of the powersave daemon
+<sys-power/kpowersave-0.7.2
+sys-power/powersave
+
+# Ryan Hill <dirtyepic@gentoo.org> (29 Apr 2007)
+#  Has a hard dependency on wxGTK-2.4 (bug #121818)
+#  Masked until we can update it for 2.6.
+app-pda/plucker
+
+# Bryan Stine <battousai@gentoo.org> (26 Apr 2007)
+# Masked until it works with current baselayout and
+# application locations.
+app-admin/bastille
+
+# Tristan Heaven <nyhm@gentoo.org> (25 Apr 2007)
+# Masked until it's updated to use >=wxpython-2.6
+# https://bugs.gentoo.org/show_bug.cgi?id=115079
+games-rpg/openrpg
+
+# Roy Marples <uberlord@gentoo.org> (15 Apr 2007)
+# Masked as it segfaults and fails with our scripts, #174693.
+=net-wireless/wireless-tools-29_pre17
+
+# Benedikt Böhm <hollow@gentoo.org> (07 Apr 2007)
+# masked for testing
+>=sys-kernel/vserver-sources-2.3
+
+# MATSUU Takuto <matsuu@gentoo.org> (5 Apr 2007)
+# to be tested, seems unstable
+>=app-i18n/scim-anthy-1.3.0
+>=app-i18n/skim-scim-anthy-1.3.0
+
+# Marcelo Goes <vanquirius@gentoo.org> (3 Apr 2007)
+# Nessus 2.3.x was discontinued
+# 2.3.x users, please migrate to 2.2.9
+# See bug 169466 for more information
+>=net-analyzer/nessus-libraries-2.3.1
+>=net-analyzer/libnasl-2.3.1
+>=net-analyzer/nessus-core-2.3.1
+>=net-analyzer/nessus-plugins-2.3.1
+>=net-analyzer/nessus-2.3.1
+
+# Piotr Jaroszyński <peper@gentoo.org> (28 Mar 2006)
+# Unusable for now.
+app-pda/libopensync-plugin-synce
+
+# Mike Doty <kingtaco@gentoo.org> (24 Mar 2007)
+# Sorting out media-video/{spca5xx,gspca{,v1}} bug 159176
+media-video/spca5xx
+media-video/gspca
+
+# Steve Dibb <beandog@gentoo.org> (12 Mar 2007)
+# needs testing
+>=media-video/transcode-1.1.0_alpha4
+
+# Stefan Cornelius <dercorny@gentoo.org> (7 Mar 2007)
+# Masking net-misc/xsupplicant due to security bug 154995
+net-misc/xsupplicant
+
+# Stefan Cornelius <dercorny@gentoo.org> (2 Mar 2007)
+# Masked because it's affected by 7 GLSAs or so, nobody should use it
+<=dev-db/mysql-3.23.58-r1
+
+# Gustavo Felisberto <humpback@gentoo.org> (23 Feb 2007)
+# Masked for remove from tree. Contact me if you need this
+net-misc/ssh
+
+# Alexandre Buisse <nattfodd@gentoo.org> (21 Feb 2007)
+# All of those are provided by tetex-3 which is now stabilized everywhere.
+# The current TeX setup doesn't yet allow for single package updates so
+# those are masked for the time being.
+dev-tex/lineno
+dev-tex/SIunits
+dev-tex/floatflt
+dev-tex/g-brief
+dev-tex/vntex
+
+# Alec Warner <antarus@gentoo.org> (05 Feb 2007)
+# Masked to security problems, use 1.23-r1 until I fix it
+>=app-admin/ulogd-1.24
+
+# Seemant Kulleen <seemant@gentoo.org> (02 Feb 2007)
+# Masked because it causes breakages with guile-1.8 and gnucash-2.
+# See Marijn's comment below
+~dev-libs/g-wrap-1.9.7
+
+# Leonardo Boshell <leonardop@gentoo.org> (26 Jan 2007)
+# GNOME-DB 3.0 betas. For testing purposes only.
+>=gnome-extra/libgda-1.3
+>=gnome-extra/libgnomedb-1.3
+dev-db/mergeant
+
+# Michael Sterrett <mr_bones_@gentoo.org> (28 Jan 2007)
+# masked pending new beta due to bug #164186
+games-strategy/ufo2000
+
+# Diego Pettenò <flameeyes@gentoo.org> (25 Jan 2007)
+# Live Subversion version for Amarok.
+# Use this in place of the broken amarok-svn ebuilds.
+# Please note that you need >=sys-apps/portage-2.1.2-r3 to be able to actually
+# use these versions by adding "**" for them in package.keywords.
+~media-sound/amarok-1.4.9999
+
+# Diego Pettenò <flameeyes@gentoo.org> (25 Jan 2007)
+# Live Mercurial versions of ALSA packages.
+# These are needed for the people wanting to try newer kernel versions
+# when the support is broken in-kernel.
+# Please note that you need >=sys-apps/portage-2.1.2-r3 to be able to actually
+# use these versions by adding "**" for them in package.keywords.
+~media-sound/alsa-driver-9999
+~media-sound/alsa-headers-9999
+~media-sound/alsa-lib-9999
+
+# Raúl Porcel <armin76@gentoo.org> (24 Jan 2007)
+# Mask cvs version of net-p2p/linuxdcpp
+=net-p2p/linuxdcpp-9999
+
+# Chris Gianelloni <wolf31o2@gentoo.org> (15 Jan 2007)
+# The Armagetron Advanced packages in Gentoo's repository are obsolete and will
+# likely remain masked until they can be revisted to be maintainable.  Until
+# that time, the upstream team has created their own overlay:
+#     emerge -a layman
+#     layman -ka armagetron
+games-action/armagetronad
+
+# Mike Frysinger <vapier@gentoo.org> (28 Dec 2006)
+# Build failure on big-endian #154294 and breaks non-default journals #154974
+~sys-fs/reiserfsprogs-3.6.20
+
+# Timothy Redaelli <drizzt@gentoo.org> (28 Nov 2006)
+# Masked for testing.
+>=media-libs/spandsp-0.0.3_pre
+
+# Aron Griffis <agriffis@gentoo.org>
+# Masked for testing new enablement via eselect
+>app-shells/bash-completion-20060301
+
+# Marcus D. Hanwell <cryos@gentoo.org> (03 Nov 2006)
+# 5.5.6 does not work with all projects, please use 5.4 or >=5.8
+=sci-misc/boinc-5.5.6
+
+# Stefaan De Roeck <stefaan@gentoo.org> (09 Sep 2006)
+# 1.5.x is a development branch, people should test 1.4.x by default
+=net-fs/openafs-1.5*
+=net-fs/openafs-kernel-1.5*
+
+# Donnie Berkholz <dberkholz@gentoo.org> (05 Sep 2006)
+# Masked until it gets some testing
+## Below here safe to unmask after testing
+app-admin/firstboot
+app-admin/system-config-keyboard
+app-admin/system-config-bind
+app-admin/system-config-httpd
+# Available languages must be listed in SUPPORTED var in /etc/sysconfig/i18n
+app-admin/system-config-language
+# Seems to require already existing volumes to run
+app-admin/system-config-lvm
+app-admin/system-config-printer
+dev-libs/alchemist
+dev-python/pycups
+# for system-config-bind
+net-dns/bind-dns-keygen
+
+# Alastair Tse <liquidx@gentoo.org> (27 Jul 2006)
+# Masking synce-0.9.2 because of breakages (#141466) (#141491)
+=app-pda/synce-0.9.2
+=app-pda/synce-librapi2-0.9.2
+=app-pda/synce-libsynce-0.9.2
+
+# Tuấn Văn <langthang@gentoo.org> (15 Jul 2006)
+# Initial import. Masked for testing
+mail-filter/sid-milter
+
+# Martin Schlemmer <azarah@gentoo.org> (07 Jul 2006)
+# Testing release to get some feedback.  New features include:
+# - more detailed log format
+# - non-hardcoded default config
+# - stacked per-package config support
+# In general it should behave for intended purposes as expected (except for the
+# log format change), but feedback on config system, etc would be appreciated.
+# Fairly limited comments about it in /etc/sandbox.conf and
+# /etc/sandbox.d/00default.
+>=sys-apps/sandbox-1.2.20_alpha1
+
+# Colin Kingsley <tercel@gentoo.org> (24 Jun 2006)
+# Masked for testing
+=dev-python/visual-4*
+
+# Luca Longinotti <chtekk@gentoo.org> (24 May 2006)
+# Masked for more testing, breaks with stealth mode.
+=app-forensics/samhain-2.2.0
+
+# Diego Pettenò <flameeyes@gentoo.org> (24 Apr 2006)
+# Pre-release snapshots
+=app-mobilephone/kmobiletools-0.5*
+
+# Brent Baude <ranger@gentoo.org> (18 Apr 2006)
+# Masked pending removal. This package had been deprecated
+# in favor of sys-apps/ibm-powerpc-utils and an optional
+# package called sys-apps/ibm-powerpc-utils-papr.  Please
+# unmerge ppc64-utils and emerge ibm-powerpc-utils. And if you
+# if you are running on IBM hardware, emerge ibm-powerpc-utils-papr
+# as well.
+sys-apps/ppc64-utils
+
+# Stefan Knoblich <stkn@gentoo.org> (18 Apr 2006)
+# Masking until asterisk-1.2 gets released into the wild
+net-misc/asterisk-app_authenticate_ldap
+
+# Tavis Ormandy <taviso@gentoo.org> (21 Mar 2006)
+# masked pending unresolved security issues #127319
+games-roguelike/falconseye
+
+# Tavis Ormandy <taviso@gentoo.org> (21 Mar 2006)
+# masked pending unresolved security issues #127167
+games-roguelike/slashem
+
+# Tavis Ormandy <taviso@gentoo.org> (21 Mar 2006)
+# masked pending unresolved security issues #122407
+games-arcade/xkobo
+
+# Tavis Ormandy <taviso@gentoo.org> (21 Mar 2006)
+# masked pending unresolved security issues #125902
+games-roguelike/nethack
+games-util/hearse
+games-roguelike/noegnud-nethack
+
+# Jeremy Huddleston <eradicator@gentoo.org> (21 Mar 2006)
+# Development version of squirrelmail
+>=mail-client/squirrelmail-1.5
+
+# Robin H. Johnson <robbat2@gentoo.org> (11 Mar 2006)
+# Work-in-progress to clean this up
+# TODO
+# - properly fix lazy bindings
+# - fix read-only stuff
+# - seperate data files from binaries
+# - fix crappy state of runnable only in source tree.
+# - provide log output to /var/log somewhere intelligently
+app-benchmarks/ltp
+
+# Robin H. Johnson <robbat2@gentoo.org> (11 Feb 2006)
+# zlib interaction is badly broken. See bug #124733.
+=dev-util/cvs-1.12.13*
+
+# Marcelo Goes <vanquirius@gentoo.org> (16 Feb 2006)
+# Lacks needed functionality - someone volunteered to fix it
+# See bug 117898
+net-libs/libpcap-ringbuffer
+
+# Guillaume Destuynder <kang@gentoo.org> (16 Feb 2006)
+# Masked SVN ebuilds
+=sys-kernel/rsbac-sources-2.6.99
+=sys-apps/rsbac-admin-1.2.99
+
+# Robin H. Johnson <robbat2@gentoo.org> (11 Feb 2006)
+# Robin H. Johnson <robbat2@gentoo.org> (18 Dec 2006) [updated to add 1.03]
+# pending mailer-config
+=mail-mta/nullmailer-1.00-r2
+=mail-mta/nullmailer-1.02-r2
+=mail-mta/nullmailer-1.03-r1
+
+# Chris Gianelloni <wolf31o2@gentoo.org> (19 Dec 2005)
+# This is the Gentoo Linux Installer.  This is currently masked because it will
+# lead to some serious breakages on a machine.  If you are not developing on
+# this package, I would strongly recommend against using it.  If you break your
+# system with this, you're on your own.  You have been warned.
+# This package now is no longer safe to run except on a system where you are
+# planning on doing an install.
+sys-apps/gli
+
+# Luca Longinotti <chtekk@gentoo.org> (12 Jan 2007)
+# Mask MySQL 5.1.* and the alpha versions
+>=dev-db/mysql-5.1
+>=dev-db/mysql-community-5.1
+>=virtual/mysql-5.1
+=dev-db/mysql-4.1.23_alpha20070101-r61
+
+# Matthew Kennedy <mkennedy@gentoo.org> (31 Jul 2005)
+# Upstream author requests official version ports only.
+dev-lisp/cl-blog
+
+# Sven Wegener <swegener@gentoo.org> (05 May 2005)
+# Development versions, without this mask users will not get the upstream
+# stable ~arch version by default, which means we can't mark it stable because
+# it's not tested. If you want it, please unmask.
+>=net-nntp/leafnode-2.0.0_alpha0
+
+# Fernando J. Pereda <ferdy@gentoo.org> (25 April 2005)
+# mask these until the new mailwrapper/mailer-config scheme is ready
+# it is secure to unmask them to test
+net-mail/mailer-config
+=net-mail/mailwrapper-0.2.1-r1
+=mail-mta/nbsmtp-1.00-r3
+=mail-mta/ssmtp-2.61-r30
+=mail-mta/ssmtp-2.61-r31
+=mail-mta/postfix-2.2.10-r1
+
+# Masatomo Nakano <nakano@gentoo.org> (27 Feb 2005)
+# Tihs package is conflict with postgresql at the moment
+# and waiting on implementing virtual/postgresql.
+dev-db/pgcluster
+
+# <dragonheart@gentoo.org> (04 Dec 2004)
+# Bug #70529 indicates problems with configuration file reading
+~dev-libs/log4c-1.0.12
+
+# <mkennedy@gentoo.org> (08 Aug 2004)
+# won't build for now
+dev-lisp/cl-rsm-gen-prog
+dev-lisp/cl-rsm-genetic-alg
+
+# <klieber@gentoo.org> (01 Apr 2004)
+# The following packages contain a remotely-exploitable
+# security vulnerability and have been hard masked accordingly.
+#
+# Please see http://bugs.gentoo.org/show_bug.cgi?id=44351 for more info
+#
+# You may unmask this package by placing an appropriate entry in your
+# /etc/portage/package.unmask file
+games-fps/unreal
+games-fps/unreal-tournament
+games-fps/unreal-tournament-goty
+games-fps/unreal-tournament-strikeforce
+games-fps/unreal-tournament-bonuspacks
+games-fps/aaut
+
+# <lu_zero@gentoo.org> (16 Mar 2003)
+# to be tested, seems unstable
+net-dialup/hcfusbmodem

@@ -1,0 +1,39 @@
+# ChangeLog for sci-visualization/zhu3d
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-visualization/zhu3d/ChangeLog,v 1.7 2008/08/12 12:52:42 markusle Exp $
+
+*zhu3d-4.1.0 (12 Aug 2008)
+
+  12 Aug 2008; Markus Dittrich <markusle@gentoo.org> +zhu3d-4.1.0.ebuild:
+  Version bump (fixes #234493).
+
+  27 Jul 2008; Carsten Lohrke <carlo@gentoo.org> zhu3d-4.0.2.ebuild,
+  zhu3d-4.0.4.ebuild:
+  Fix broken split Qt 4.4 dependencies, cf. bug 217161 comment 11.
+
+*zhu3d-4.0.4 (20 May 2008)
+
+  20 May 2008; Sébastien Fabbro <bicatali@gentoo.org> -zhu3d-3.4.4.ebuild,
+  zhu3d-4.0.2.ebuild, +zhu3d-4.0.4.ebuild:
+  Version bump, adapated support for qt-4.4
+
+*zhu3d-4.0.2 (01 Apr 2008)
+
+  01 Apr 2008; Sébastien Fabbro <bicatali@gentoo.org> -zhu3d-3.4.2.ebuild,
+  +zhu3d-4.0.2.ebuild:
+  Version bump
+
+*zhu3d-3.4.4 (01 Mar 2008)
+
+  01 Mar 2008; Sébastien Fabbro <bicatali@gentoo.org> +zhu3d-3.4.4.ebuild:
+  Version bump
+
+  15 Feb 2008; Sébastien Fabbro <bicatali@gentoo.org> zhu3d-3.4.2.ebuild:
+  Fixed desktop entry
+
+*zhu3d-3.4.2 (08 Feb 2008)
+
+  08 Feb 2008; Sébastien Fabbro <bicatali@gentoo.org> +metadata.xml,
+  +zhu3d-3.4.2.ebuild:
+  Initial import. Thanks dev-zero for his work. Closing bug #142178.
+

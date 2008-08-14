@@ -1,0 +1,82 @@
+# ChangeLog for media-sound/lash
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/lash/ChangeLog,v 1.20 2008/08/07 17:07:39 aballier Exp $
+
+  07 Aug 2008; Alexis Ballier <aballier@gentoo.org>
+  +files/lash-0.5.4-glibc2.8.patch, lash-0.5.4.ebuild:
+  fix build with glibc 2.8, by Olivier Huber <oli.huber@gmail.com>, bug
+  #229603
+
+  03 Jun 2008; Michael Sterrett <mr_bones_@gentoo.org> lash-0.5.4.ebuild:
+  fix libedit typo
+
+  22 Mar 2008; Alexis Ballier <aballier@gentoo.org> lash-0.5.4.ebuild:
+  add missing swig dep when building pylash
+
+  29 Jan 2008; Markus Rothe <corsair@gentoo.org> lash-0.5.4.ebuild:
+  Stable on ppc64; bug #199751
+
+  13 Jan 2008; Alexis Ballier <aballier@gentoo.org> lash-0.5.1.ebuild,
+  lash-0.5.4.ebuild:
+  variable quoting, add missing pkgconfig dep, bug #205626
+
+  13 Jan 2008; Alexis Ballier <aballier@gentoo.org> -lash-0.5.2.ebuild,
+  -lash-0.5.3.ebuild:
+  remove old
+
+*lash-0.5.4 (16 Dec 2007)
+
+  16 Dec 2007; Alexis Ballier <aballier@gentoo.org> +lash-0.5.4.ebuild:
+  version bump
+
+  01 Nov 2007; Raúl Porcel <armin76@gentoo.org> lash-0.5.3.ebuild:
+  Add ~alpha wrt #196587, thanks to Tobias Klausmann for testing
+
+  22 Jul 2007; Markus Rothe <corsair@gentoo.org> lash-0.5.3.ebuild:
+  Added ~ppc64; bug #183570
+
+  06 Jul 2007; Diego Pettenò <flameeyes@gentoo.org> lash-0.5.3.ebuild:
+  Add python and gtk USE flags. Run elibtoolize. Check for midi useflag on
+  alsa-lib when alsa USE flag is enabled.
+
+  04 Jul 2007; Alexis Ballier <aballier@gentoo.org> lash-0.5.3.ebuild:
+  alsa is optional
+
+  03 Jul 2007; Alexis Ballier <aballier@gentoo.org> metadata.xml:
+  move to proaudio herd
+
+*lash-0.5.3 (03 Jul 2007)
+
+  03 Jul 2007; Alexis Ballier <aballier@gentoo.org> +lash-0.5.3.ebuild:
+  version bump
+
+*lash-0.5.2 (25 Nov 2006)
+
+  25 Nov 2006; Alexis Ballier <aballier@gentoo.org> +lash-0.5.2.ebuild:
+  Version bump
+
+  10 Oct 2006; Gustavo Zacarias <gustavoz@gentoo.org> lash-0.5.1.ebuild:
+  Sparc stable directly, see #150398
+
+  28 Sep 2006; Joshua Jackson <tsunam@gentoo.org> lash-0.5.1.ebuild:
+  stable x86; for fluidsynth
+
+  05 Sep 2006; Stephanie Lockwood-Childs <wormo@gentoo.org> lash-0.5.1.ebuild:
+  stable on ppc (needed for Bug #145971)
+
+  04 Sep 2006; <blubb@gentoo.org> lash-0.5.1.ebuild:
+  stable on amd64
+
+  08 Jul 2006; Luca Barbato <lu_zero@gentoo.org> lash-0.5.1.ebuild:
+  Marked ~ppc
+
+  31 Mar 2006; Frank van de Pol <fvdpol@gentoo.org> ChangeLog:
+  LASH is a session management system for JACK and ALSA audio applications on
+  GNU/Linux. Its aim is to allow you to have many different audio programs
+  running at once, to save their setup, close them down and then easily reload
+  the setup at some other time. LASH doesn't deal with any kind of audio data
+  itself; it just runs programs, deals with saving/loading (arbitrary) data
+  and connects different kinds of virtual audio ports together (currently JACK
+  and ALSA sequencer ports). It can also be used to move entire sessions
+  between computers, or post sessions on the Internet for download.
+

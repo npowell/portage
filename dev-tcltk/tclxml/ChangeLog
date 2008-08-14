@@ -1,0 +1,110 @@
+# ChangeLog for dev-tcltk/tclxml
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-tcltk/tclxml/ChangeLog,v 1.31 2007/12/28 17:22:03 mr_bones_ Exp $
+
+  28 Dec 2007; Michael Sterrett <mr_bones_@gentoo.org> +tclxml-2.4.ebuild:
+  resurrect tclxml-2.4.ebuild which is still in use
+
+*tclxml-3.1-r1 (24 Dec 2007)
+
+  24 Dec 2007; MATSUU Takuto <matsuu@gentoo.org>
+  +files/tclxml-3.1-test.patch, -tclxml-2.4.ebuild, -tclxml-2.6.ebuild,
+  +tclxml-3.1-r1.ebuild:
+  Added RESTRICT="test"
+  Removed old versions.
+
+  18 May 2007; Peter Weller <welp@gentoo.org> tclxml-3.0-r1.ebuild,
+  tclxml-3.1.ebuild:
+  3.0-r1 stable on amd64, 3.1 keyworded ~amd64
+
+  30 Apr 2007; Jose Luis Rivero <yoswink@gentoo.org> tclxml-3.0-r1.ebuild:
+  Stable on alpha wrt bug #96933
+
+  30 Nov 2006; Gustavo Zacarias <gustavoz@gentoo.org> tclxml-3.0-r1.ebuild:
+  Stable on sparc
+
+  28 Nov 2006; Christian Faulhammer <opfer@gentoo.org> tclxml-3.0-r1.ebuild:
+  stable x86, bug #96933
+
+  15 Aug 2006; MATSUU Takuto <matsuu@gentoo.org> -tclxml-2.5.ebuild:
+  Removed old versions.
+
+  04 Jun 2006; MATSUU Takuto <matsuu@gentoo.org> tclxml-2.6.ebuild:
+  Fixed bash-3.1 issue
+
+  03 Jun 2006; MATSUU Takuto <matsuu@gentoo.org> tclxml-3.0-r1.ebuild,
+  tclxml-3.1.ebuild:
+  Changed xml2 USE flag for xml, bug 116346
+
+  27 Apr 2006; Marien Zwart <marienz@gentoo.org> files/digest-tclxml-2.4,
+  files/digest-tclxml-2.5, files/digest-tclxml-2.6, Manifest:
+  Fixing SHA256 digest, pass four
+
+*tclxml-3.1 (08 Apr 2006)
+*tclxml-3.0-r1 (08 Apr 2006)
+
+  08 Apr 2006; <reb@gentoo.org> +files/tclxml-3_configure.patch,
+  +files/tclxml-3_include_path.patch, -tclxml-3.0.ebuild,
+  +tclxml-3.0-r1.ebuild, +tclxml-3.1.ebuild:
+  Remove old, not working version (bug #119814 and #123974); Version bump
+
+*tclxml-3.0 (26 Jun 2005)
+
+  26 Jun 2005; MATSUU Takuto <matsuu@gentoo.org> +tclxml-3.0.ebuild:
+  Version bumped.
+  Added expat, threads and xml2 USE flags.
+
+  07 Apr 2005; Jan Brinkmann <luckyduck@gentoo.org> tclxml-2.4.ebuild,
+  tclxml-2.6.ebuild:
+  added ~amd64 to KEYWORDS, fixes #88183
+
+  05 Apr 2005; Gustavo Zacarias <gustavoz@gentoo.org> tclxml-2.6.ebuild:
+  Stable on sparc
+
+  02 Apr 2005; Jason Wever <weeve@gentoo.org> tclxml-2.4.ebuild:
+  Stable on SPARC.
+
+  31 Dec 2004; Ciaran McCreesh <ciaranm@gentoo.org> :
+  Change encoding to UTF-8 for GLEP 31 compliance
+
+  22 Dec 2004; Bryan Østergaard <kloeri@gentoo.org> tclxml-2.6.ebuild:
+  Stable on alpha.
+
+  21 Dec 2004; Bryan Østergaard <kloeri@gentoo.org> tclxml-2.6.ebuild:
+  ~alpha keyword.
+
+  06 Nov 2004; <pyrania@gentoo.org> tclxml-2.6.ebuild:
+  Marked stable on x86.
+
+  23 Oct 2004; Jason Wever <weeve@gentoo.org> tclxml-2.6.ebuild:
+  Added ~sparc keyword.
+
+  17 Oct 2004; David Holm <dholm@gentoo.org> tclxml-2.6.ebuild:
+  Added to ~ppc.
+
+  19 Jun 2004; Jason Wever <weeve@gentoo.org> tclxml-2.4.ebuild:
+  Added ~sparc keyword.
+
+  03 Jun 2004; Bryan Østergaard <kloeri@gentoo.org> tclxml-2.4.ebuild:
+  Stable on alpha.
+
+  14 Apr 2004; Daniel Ahlberg <aliz@gentoo.org> tclxml-2.4.ebuild:
+  Added IUSE=
+
+*tclxml-2.6 (04 Apr 2004)
+
+  26 Nov 2003; Olivier Crete <tester@gentoo.org> tclxml-2.4.ebuild:
+  Added -i option to sed, fixing bugs 30057 and 31262
+
+*tclxml-2.4 (10 Mar 2003)
+
+  08 Jul 2003; Arcady Genkin <agenkin@gentoo.org> :
+  Unmask for x86.
+
+  10 Mar 2003; Aron Griffis <agriffis@gentoo.org> tclxml-2.4.ebuild:
+  Add ~alpha to KEYWORDS
+
+*tclxml-2.5 (01 Feb 2003)
+
+  01 Feb 2003; Arcady Genkin <agenkin@gentoo.org> :
+  Initial version of the package.

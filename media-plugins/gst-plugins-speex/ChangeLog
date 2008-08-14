@@ -1,0 +1,228 @@
+# ChangeLog for media-plugins/gst-plugins-speex
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/gst-plugins-speex/ChangeLog,v 1.48 2008/08/08 19:05:53 maekke Exp $
+
+  08 Aug 2008; Markus Meier <maekke@gentoo.org>
+  gst-plugins-speex-0.10.8.ebuild:
+  x86 stable, bug #232054
+
+  07 Aug 2008; Tobias Klausmann <klausman@gentoo.org>
+  gst-plugins-speex-0.10.8.ebuild:
+  Stable on alpha, bug #232054
+
+  31 Jul 2008; Raúl Porcel <armin76@gentoo.org>
+  gst-plugins-speex-0.10.8.ebuild:
+  sparc stable wrt #232054
+
+  01 Aug 2008; Brent Baude <ranger@gentoo.org>
+  gst-plugins-speex-0.10.8.ebuild:
+  Marking gst-plugins-speex-0.10.8 ppc64 stable for bug 232054
+
+  30 Jul 2008; Brent Baude <ranger@gentoo.org>
+  gst-plugins-speex-0.10.8.ebuild:
+  Marking gst-plugins-speex-0.10.8 ppc stable for bug 232054
+
+  26 Jul 2008; Olivier Crête <tester@gentoo.org>
+  gst-plugins-speex-0.10.8.ebuild:
+  Stable on amd64, bug #232054
+
+*gst-plugins-speex-0.10.8 (29 Jun 2008)
+
+  29 Jun 2008; Samuli Suominen <drac@gentoo.org>
+  -gst-plugins-speex-0.10.5.ebuild, -gst-plugins-speex-0.10.7.ebuild,
+  +gst-plugins-speex-0.10.8.ebuild:
+  Version bump.
+
+  14 Apr 2008; Ferris McCormick <fmccor@gentoo.org>
+  gst-plugins-speex-0.10.7-r1.ebuild:
+  Sparc stable, Security Bug #217609.
+
+  14 Apr 2008; Markus Rothe <corsair@gentoo.org>
+  gst-plugins-speex-0.10.7-r1.ebuild:
+  Stable on ppc64
+
+*gst-plugins-speex-0.10.7-r1 (14 Apr 2008)
+
+  14 Apr 2008; Samuli Suominen <drac@gentoo.org>
+  +files/gst-plugins-speex-0.10.7-sec.patch,
+  +gst-plugins-speex-0.10.7-r1.ebuild:
+  Fix for security #217609.
+
+*gst-plugins-speex-0.10.7 (21 Feb 2008)
+
+  21 Feb 2008; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  +gst-plugins-speex-0.10.7.ebuild:
+  version bump
+
+  01 Nov 2007; Raúl Porcel <armin76@gentoo.org>
+  gst-plugins-speex-0.10.6.ebuild:
+  sparc stable wrt #190900, thanks to Alex Maclean for testing
+
+  11 Oct 2007; Markus Rothe <corsair@gentoo.org>
+  gst-plugins-speex-0.10.6.ebuild:
+  Stable on ppc64; bug #190900
+
+  10 Sep 2007; nixnut <nixnut@gentoo.org> gst-plugins-speex-0.10.6.ebuild:
+  Stable on ppc wrt bug 190900
+
+*gst-plugins-speex-0.10.6 (30 Aug 2007)
+
+  30 Aug 2007; Samuli Suominen <drac@gentoo.org>
+  +gst-plugins-speex-0.10.6.ebuild:
+  Version bump.
+
+  26 Jul 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  gst-plugins-speex-0.10.5.ebuild:
+  Stable on sparc
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*gst-plugins-speex-0.10.5 (25 Jan 2007)
+
+  25 Jan 2007; Jim Ramsay <lack@gentoo.org>
+  +gst-plugins-speex-0.10.5.ebuild:
+  Version bump - gst-plugins-good-0.10.5 is released
+
+  23 Jan 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  gst-plugins-speex-0.10.3.ebuild:
+  Stable on sparc
+
+  11 Jan 2007; Mart Raudsepp <leio@gentoo.org>
+  -gst-plugins-speex-0.8.8.ebuild, -gst-plugins-speex-0.8.9.ebuild,
+  -gst-plugins-speex-0.8.10.ebuild, -gst-plugins-speex-0.10.0.ebuild,
+  -gst-plugins-speex-0.10.1.ebuild:
+  Prune old versions
+
+  21 Oct 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  gst-plugins-speex-0.10.2.ebuild:
+  ppc stable
+
+*gst-plugins-speex-0.10.3 (05 May 2006)
+
+  05 May 2006; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  +gst-plugins-speex-0.10.3.ebuild:
+  version bump
+
+  03 May 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  gst-plugins-speex-0.10.2.ebuild:
+  Stable on sparc wrt #128737
+
+  08 Apr 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  gst-plugins-speex-0.10.2.ebuild:
+  Added to ~ppc
+
+  29 Mar 2006; Markus Rothe <corsair@gentoo.org>
+  gst-plugins-speex-0.10.2.ebuild:
+  Added ~ppc64
+
+  23 Mar 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  gst-plugins-speex-0.10.2.ebuild:
+  Keyworded ~sparc
+
+*gst-plugins-speex-0.8.12 (23 Feb 2006)
+
+  23 Feb 2006; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  +gst-plugins-speex-0.8.12.ebuild:
+  version bump of 0.8 series
+
+*gst-plugins-speex-0.10.2 (15 Feb 2006)
+
+  15 Feb 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  +gst-plugins-speex-0.10.2.ebuild:
+  Version bump from upstream
+
+  23 Jan 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  gst-plugins-speex-0.8.11.ebuild:
+  Stable on ppc wrt bug #119634.
+
+  23 Jan 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  gst-plugins-speex-0.8.11.ebuild:
+  Stable on amd64 wrt bug #119634.
+
+  23 Jan 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  gst-plugins-speex-0.8.11.ebuild:
+  Stable on x86 wrt bug #119634.
+
+  20 Jan 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  gst-plugins-speex-0.8.11.ebuild:
+  Stable on sparc wrt #119634
+
+*gst-plugins-speex-0.10.1 (14 Jan 2006)
+
+  14 Jan 2006; Saleem Abdulrasool <compnerd@gentoo.org>
+  +gst-plugins-speex-0.10.1.ebuild:
+  Version bump from upstream
+
+*gst-plugins-speex-0.10.0 (05 Dec 2005)
+
+  05 Dec 2005; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  -gst-plugins-speex-0.9.7.ebuild, +gst-plugins-speex-0.10.0.ebuild:
+  0.10.0 Release
+
+*gst-plugins-speex-0.9.7 (02 Dec 2005)
+
+  02 Dec 2005; <zaheer@gentoo.org> +gst-plugins-speex-0.9.7.ebuild:
+  0.10 Prerelease
+
+*gst-plugins-speex-0.8.11 (05 Sep 2005)
+
+  05 Sep 2005; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  +gst-plugins-speex-0.8.11.ebuild:
+  version bump
+
+  02 Sep 2005; Michael Hanselmann <hansmi@gentoo.org>
+  gst-plugins-speex-0.8.10.ebuild:
+  Stable on ppc.
+
+  31 Aug 2005; Herbie Hopkins <herbs@gentoo.org>
+  gst-plugins-speex-0.8.10.ebuild:
+  Stable on amd64.
+
+  30 Aug 2005; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  gst-plugins-speex-0.8.10.ebuild:
+  stable on x86
+
+  26 Aug 2005; Gustavo Zacarias <gustavoz@gentoo.org>
+  gst-plugins-speex-0.8.10.ebuild:
+  Stable on sparc
+
+  03 Aug 2005; Gustavo Zacarias <gustavoz@gentoo.org>
+  gst-plugins-speex-0.8.8.ebuild:
+  Stable on sparc
+
+  05 Jul 2005; Gustavo Zacarias <gustavoz@gentoo.org>
+  gst-plugins-speex-0.8.8.ebuild, gst-plugins-speex-0.8.9.ebuild,
+  gst-plugins-speex-0.8.10.ebuild:
+  Keyworded ~sparc
+
+*gst-plugins-speex-0.8.10 (02 Jul 2005)
+
+  02 Jul 2005; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  +gst-plugins-speex-0.8.10.ebuild:
+  version bump
+
+*gst-plugins-speex-0.8.9 (10 Jun 2005)
+
+  10 Jun 2005; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  +gst-plugins-speex-0.8.9.ebuild:
+  version bump
+
+  01 May 2005; Michael Hanselmann <hansmi@gentoo.org>
+  gst-plugins-speex-0.8.8.ebuild:
+  Stable on ppc.
+
+  27 Apr 2005; Jan Brinkmann <luckyduck@gentoo.org>
+  gst-plugins-speex-0.8.8.ebuild:
+  stable on amd64
+
+  25 Apr 2005; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  gst-plugins-speex-0.8.8.ebuild:
+  stabilise on x86
+
+*gst-plugins-speex-0.8.8 (17 Mar 2005)
+
+  17 Mar 2005; <zaheerm@gentoo.org> +gst-plugins-speex-0.8.8.ebuild:
+  Initial commit
+  GStreamer plugin to encode and decode speex (#68779)
+

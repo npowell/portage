@@ -1,0 +1,37 @@
+# ChangeLog for virtual/gnat
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/virtual/gnat/ChangeLog,v 1.8 2007/05/27 18:13:59 george Exp $
+
+*gnat-4.2 (27 May 2007)
+
+  27 May 2007; George Shapovalov <george@gentoo.org>
+  gnat-3.4.ebuild, gnat-4.1.ebuild, +gnat-4.2.ebuild:
+  updated virtuals for 4.1 to reflect new gnat-gpl and added virtual for 4.2
+  to follow with gnat-gcc-4.2.0
+
+  22 Oct 2006; Matti Bickel <mabi@gentoo.org> gnat-4.1.ebuild:
+  ~ppc wrt bug #130509
+
+  31 Aug 2006; George Shapovalov <george@gentoo.org> gnat-4.1.ebuild:
+  fixed SLOT (#145733), thanks to Timothy Stotts for spotting
+
+  23 Aug 2006; Sven Wegener <swegener@gentoo.org> gnat-3.4.ebuild,
+  gnat-4.1.ebuild:
+  Virtual packages have no build-time dependencies.
+
+*gnat-4.1 (13 Apr 2006)
+
+  13 Apr 2006; George Shapovalov <george@gentoo.org> gnat-3.4.ebuild,
+  +gnat-4.1.ebuild:
+  changed HOMEPAGE to point to GLEP-37 (well, just what can I point it at?).
+  Added the virtual for 4.1, only gnat-gcc so far
+
+  13 Apr 2006; George Shapovalov <george@gentoo.org> gnat-3.4.ebuild:
+  keyworded gnat-3.4 ~x86 and ~amd64
+
+*gnat-3.4 (13 Apr 2006)
+
+  13 Apr 2006; George Shapovalov <george@gentoo.org> +metadata.xml,
+  +gnat-3.4.ebuild:
+  added a new virtual for new gnat compilers
+

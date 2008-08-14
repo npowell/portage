@@ -1,0 +1,85 @@
+# ChangeLog for app-arch/alien
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-arch/alien/ChangeLog,v 1.21 2008/02/03 11:20:03 drac Exp $
+
+*alien-8.69 (03 Feb 2008)
+
+  03 Feb 2008; Samuli Suominen <drac@gentoo.org> -alien-8.47.ebuild,
+  -alien-8.53.ebuild, -alien-8.65.ebuild, -alien-8.66.ebuild,
+  +alien-8.69.ebuild:
+  Version bump wrt #203662, thanks to Raúl Porcel for reporting.
+
+  21 May 2007; Raúl Porcel <armin76@gentoo.org> alien-8.64.ebuild:
+  alpha stable wrt #149666
+
+  14 May 2007; Thomas Raschbacher <lordvan@gentoo.org> alien-8.66.ebuild:
+  fixed bug where alien violates sandbox trying to write to /var/lib/alien
+
+*alien-8.66 (13 May 2007)
+
+  13 May 2007; Thomas Raschbacher <lordvan@gentoo.org> +alien-8.66.ebuild:
+  added version 8.66 which now uses perl-app eclass (should fix bug #174095
+  thanks to Pacho Ramos <pacho@condmat1.ciencias.uniovi.es> and
+  jakub@gentoo.org)
+
+*alien-8.65 (19 Feb 2007)
+
+  19 Feb 2007; Thomas Raschbacher <lordvan@gentoo.org> alien-8.47.ebuild,
+  alien-8.53.ebuild, alien-8.64.ebuild, +alien-8.65.ebuild:
+  Fix bug #163300 Thanks to Diego Petten <flameeyes@gmail.com>.
+  Fixed header dates. added Version 8.65
+
+  01 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org> alien-8.64.ebuild:
+  Stable on ppc wrt bug #149666.
+
+  01 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org> alien-8.64.ebuild:
+  Stable on amd64/x86 wrt bug #149666.
+
+*alien-8.64 (25 Jun 2006)
+
+  25 Jun 2006; Thomas Raschbacher <lordvan@gentoo.org> +alien-8.64.ebuild:
+  Version bump. fixes bug #135269 Thanks to Boris Fersing
+  <kernelsensei@gentoo.org> for reporting this.
+
+  13 Oct 2005; Aron Griffis <agriffis@gentoo.org> alien-8.47.ebuild:
+  Mark 8.47 stable on alpha
+
+*alien-8.53 (04 Jul 2005)
+
+  04 Jul 2005; Thomas Raschbacher <lordvan@gentoo.org>
+  -alien-8.21-r1.ebuild, -alien-8.43.ebuild, +alien-8.53.ebuild:
+  new version + cleanup Fixes Bug 74759; Thanks to Marcelo Goes
+  <vanquirius@gentoo.org> for pointing this out
+
+  26 May 2005; Jose Luis Rivero <yoswink@gentoo.org> alien-8.47.ebuild:
+  Keyworded ~alpha due to #90833
+
+*alien-8.47 (08 Oct 2004)
+
+  08 Oct 2004; root <root@gentoo.org> alien-8.47.ebuild:
+  version bump, Bug #65427 (thanks to Jim Faulkner <dogshu@sdf.lonestar.org>)
+
+*alien-8.43 (18 Feb 2004)
+
+  18 Feb 2004; Thomas Raschbacher <lordvan@gentoo.org> alien-8.43.ebuild:
+  version bump + added metadata.xml
+  thanks to Frantz Dhin <fd@redspot.dk>; Bug #19522
+  27 Jan 2004; Martin Holzer <mholzer@gentoo.org> alien-8.21-r1.ebuild,
+  alien-8.21.ebuild:
+  fixing SRC_URI. closes 39313
+
+*alien-8.21-r1 (30 Mar 2003)
+
+  29 Jun 2003; Daniel Ahlberg <aliz@gentoo.org> :
+  Added missing changelog entry.
+
+*alien-8.21 (15 Dec 2002)
+
+  28 Mar 2003; Pieter Van den Abeele <pvdabeel@gentoo.org> alien-8.21-r1.ebuild :
+  Added ~ppc keyword
+
+  15 Dec 2002; Thomas Raschbacher <lordvan@gentoo.org>
+  added initial ebuild bug # 11812
+  26 Jan 2003; Thomas Raschbacher <lordvan@gentoo.org>: alien-8.21-r1.ebuild
+  fixed bug (will work now with any perl version installed)
+  fixed bug that caused sandbox problems (added PREFIX to perl Makefile.PL)

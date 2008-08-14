@@ -1,0 +1,29 @@
+# ChangeLog for net-irc/ii
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-irc/ii/ChangeLog,v 1.5 2008/08/05 17:59:35 armin76 Exp $
+
+  05 Aug 2008; Raúl Porcel <armin76@gentoo.org> ii-1.3.ebuild:
+  Fix HOMEPAGE, SRC_URI
+
+*ii-1.3 (16 Jul 2007)
+
+  16 Jul 2007; Raúl Porcel <armin76@gentoo.org> -ii-1.1.ebuild,
+  +ii-1.3.ebuild:
+  Version bump, drop old
+
+*ii-1.1 (28 May 2007)
+
+  28 May 2007; Raúl Porcel <armin76@gentoo.org> -ii-1.ebuild,
+  +ii-1.1.ebuild:
+  Version bump, old
+
+  22 Feb 2007; Raúl Porcel <armin76@gentoo.org> ii-1.ebuild:
+  respect LDFLAGS, CFLAGS, bug 167994
+
+*ii-1 (22 Feb 2007)
+
+  22 Feb 2007; Raúl Porcel <armin76@gentoo.org> +metadata.xml,
+  +ii-1.ebuild:
+  New ebuild, bug 157822, thanks to Christian Berendt (lhunephel) <christian
+  at suppentopf dot net> for the initial ebuild
+

@@ -1,0 +1,17 @@
+# ChangeLog for app-mobilephone/tsemgr
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-mobilephone/tsemgr/ChangeLog,v 1.4 2008/06/23 23:11:23 mrness Exp $
+
+  23 Jun 2008; Alin Năstac <mrness@gentoo.org> tsemgr-0.08.ebuild:
+  Add pkgconfig dependency (#216437).
+
+  24 Mar 2008; Markus Meier <maekke@gentoo.org> tsemgr-0.08.ebuild:
+  amd64 stable, bug #202670
+
+  26 Dec 2007; Dawid Węgliński <cla@gentoo.org> tsemgr-0.08.ebuild:
+  Stable on x86 (bug #202670)
+
+*tsemgr-0.08 (26 Aug 2006)
+
+  26 Aug 2006; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by Alain #109262.

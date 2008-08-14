@@ -1,0 +1,67 @@
+# ChangeLog for games-action/btanks
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-action/btanks/ChangeLog,v 1.13 2008/08/04 20:47:09 mr_bones_ Exp $
+
+*btanks-0.8.7479 (04 Aug 2008)
+
+  04 Aug 2008; Michael Sterrett <mr_bones_@gentoo.org>
+  +files/btanks-0.8.7479-build.patch,
+  +files/btanks-0.8.7479-scons-blows.patch, +btanks-0.8.7479.ebuild:
+  version bump - ebuild submitted by Aleksandr Yakimov via bug #233461
+
+  20 Apr 2008; Mike Frysinger <vapier@gentoo.org>
+  +files/btanks-0.7.5800-gcc43.patch, btanks-0.7.5800.ebuild:
+  Fix from Debian for building with gcc-4.3 #217944 by Peter Alfredsen.
+
+  28 Mar 2008; Markus Meier <maekke@gentoo.org> btanks-0.7.5800.ebuild:
+  x86 stable, bug #214429
+
+  28 Mar 2008; Santiago M. Mola <coldwind@gentoo.org>
+  btanks-0.7.5800.ebuild:
+  amd64 stable wrt bug #214429
+
+  29 Feb 2008; Carsten Lohrke <carlo@gentoo.org> btanks-0.6.5069.ebuild,
+  btanks-0.7.5800.ebuild:
+  Remove icon extension from desktop entry to match Icon Theme Specification.
+
+  17 Jan 2008; Tupone Alfredo <tupone@gentoo.org> btanks-0.5.4740-r1.ebuild,
+  btanks-0.6.5069.ebuild, btanks-0.7.5800.ebuild:
+  Fix pkg-config dep. Bug #206253 by bugs@dev.gentooexperimental.org
+
+*btanks-0.7.5800 (27 Dec 2007)
+
+  27 Dec 2007; Tupone Alfredo <tupone@gentoo.org>
+  +files/btanks-0.7.5800-scons-blows.patch, +btanks-0.7.5800.ebuild:
+  Version bump to 0.7.5800 Bug #203138 by St.MPA3b
+
+  29 Nov 2007; Christian Faulhammer <opfer@gentoo.org>
+  btanks-0.6.5069.ebuild:
+  stable x86, bug 200612
+
+  28 Nov 2007; Samuli Suominen <drac@gentoo.org> btanks-0.6.5069.ebuild:
+  amd64 stable wrt #200612
+
+*btanks-0.6.5069 (05 Oct 2007)
+
+  05 Oct 2007; Tupone Alfredo <tupone@gentoo.org>
+  +files/btanks-0.6.5069-scons-blows.patch, +btanks-0.6.5069.ebuild:
+  Version bump to 0.6.5069
+
+  28 Aug 2007; Michael Sterrett <mr_bones_@gentoo.org>
+  btanks-0.5.4740-r1.ebuild:
+  fix install name (bug #190544)
+
+*btanks-0.5.4740-r1 (24 Aug 2007)
+
+  24 Aug 2007; Mike Frysinger <vapier@gentoo.org>
+  +files/btanks-0.5.4740-scons-blows.patch, +btanks-0.5.4740-r1.ebuild:
+  Make sure user build env settings are respected and make sure rpath gets set
+  properly in the binary (thus no need for a wrapper script) #190065 by
+  Torsten Kaiser.
+
+*btanks-0.5.4740 (20 Aug 2007)
+
+  20 Aug 2007; Tupone Alfredo <tupone@gentoo.org> +metadata.xml,
+  +btanks-0.5.4740.ebuild:
+  New ebuild requested via bug #172772 by Maks Polunin
+

@@ -1,0 +1,38 @@
+# Copyright 2007 Gentoo Foundation.
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/profiles/hardened/package.mask,v 1.42 2008/08/02 15:09:37 solar Exp $
+
+# supported only by gcc-4, unmask when it's stable wrt #217927
+media-libs/libopenraw
+media-gfx/raw-thumbnailer
+media-gfx/gnome-raw-thumbnailer
+
+# >=acml-3.6 depends on gcc-4*
+>=sci-libs/acml-3.6
+
+# Fails on hardened, bug 187120
+=dev-lang/php-5.2.3-r3
+
+# The following packages need =gcc-4*
+=net-im/skype-1.4.0*
+
+# gcc-4* still isn't ready.
+=sys-devel/gcc-4*
+
+# Mask off glibc-2.4 until the approach for SSP compatibilty is
+# resolved in a way that doesn't break running systems, and we
+# have a sensible upgrade path.  Advise having a static busybox
+# around if you try it in a live system.
+# 2006-03-13 kevquinn
+=sys-libs/glibc-2.4*
+
+# needs =sys-libs/glibc-2.4*
+>=sys-cluster/gfs-kernel-2.02.00
+
+# These packages do more harm than good w/ hardened.
+# users must now the opensource xorg nv driver with nvidia cards.
+# By placing Driver "nv" in xorg.conf
+# 2006-06-29 solar
+x11-drivers/nvidia-drivers
+x11-drivers/nvidia-legacy-drivers
+media-video/nvidia-settings

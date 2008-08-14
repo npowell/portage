@@ -1,0 +1,22 @@
+#!/sbin/runscript
+# Copyright 1999-2006 Gentoo Foundation
+# Distributed under the terms of the GNU General Public License v2
+# $Header: /var/cvsroot/gentoo-x86/www-servers/varnish/files/varnishd.initd,v 1.5 2008/03/10 22:10:20 bangert Exp $
+
+depend() {
+	need net
+}
+
+start() {
+	ebegin "Starting varnish"
+	#allow varnishd to lock logfile to memory
+	ulimit -l 82000
+	start-stop-daemon --quiet --start --pidfile /var/run/varnishd.pid --exec /usr/sbin/varnishd -- -P /var/run/varnishd.pid ${VARNISHD_OPTS} &> /dev/null
+	eend $?
+}
+
+stop() {
+	ebegin "Stopping varnish"
+	start-stop-daemon --quiet --stop --pidfile /var/run/varnishd.pid
+	eend $?
+}

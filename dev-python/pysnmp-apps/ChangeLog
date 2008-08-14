@@ -1,0 +1,36 @@
+# ChangeLog for dev-python/pysnmp-apps
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pysnmp-apps/ChangeLog,v 1.6 2008/06/23 06:46:13 dev-zero Exp $
+
+*pysnmp-apps-0.2.7a (23 Jun 2008)
+
+  23 Jun 2008; Tiziano Müller <dev-zero@gentoo.org>
+  -pysnmp-apps-0.2.6a.ebuild, +pysnmp-apps-0.2.7a.ebuild:
+  Version bump, added CHANGES to DOCS, added missing PYTHON_MODNAME
+
+  18 Aug 2007; Martin Jackson <mjolnir@gentoo.org>
+  -pysnmp-apps-0.2.5a.ebuild:
+  Remove old version
+
+*pysnmp-apps-0.2.6a (15 Aug 2007)
+
+  15 Aug 2007; Martin Jackson <mjolnir@gentoo.org>
+  +pysnmp-apps-0.2.6a.ebuild:
+  Version bump
+
+  24 Feb 2007; Martin Jackson <mjolnir@gentoo.org>
+  -pysnmp-apps-0.2.4a.ebuild:
+  Remove cruft
+
+*pysnmp-apps-0.2.5a (24 Feb 2007)
+
+  24 Feb 2007; Martin Jackson <mjolnir@gentoo.org>
+  +pysnmp-apps-0.2.5a.ebuild:
+  Version bump
+
+*pysnmp-apps-0.2.4a (02 Feb 2007)
+
+  02 Feb 2007; Martin Jackson <mjolnir@gentoo.org> +metadata.xml,
+  +pysnmp-apps-0.2.4a.ebuild:
+  Adding dev-python/pysnmp-apps for #159436
+

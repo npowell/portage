@@ -1,0 +1,346 @@
+# ChangeLog for media-sound/banshee
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/banshee/ChangeLog,v 1.68 2008/08/02 20:52:44 loki_val Exp $
+
+  02 Aug 2008; Peter Alfredsen <loki_val@gentoo.org>
+  banshee-1.0.0-r1.ebuild, banshee-1.2.0.ebuild:
+  Remove boo useflag from banshee-1.0.0-r1 ebuild, since it will
+  automagically depend anyway. Make boo useflag work with banshee-1.2.0, see
+  bug #233709.
+
+*banshee-1.2.0 (01 Aug 2008)
+
+  01 Aug 2008; Peter Alfredsen <loki_val@gentoo.org> +banshee-1.2.0.ebuild:
+  bump to banshee 1.2
+
+  07 Jul 2008; Samuli Suominen <drac@gentoo.org> banshee-1.0.0-r1.ebuild:
+  Update taglib-sharp dep. for bug #230465, thanks to corec.
+
+  05 Jul 2008; Peter Alfredsen <loki_val@gentoo.org>
+  banshee-1.0.0-r1.ebuild:
+  Add back in support for using either cdparanoia or cdio gstreamer plugins
+  to rip cds which mysteriously disappeared in 1.0 release. Thanks Drac for
+  reporting.
+
+  29 Jun 2008; Torsten Veller <tove@gentoo.org> banshee-0.12.1.ebuild,
+  banshee-0.13.1.ebuild:
+  Add missing die: || "..." -> || die "..."
+
+  23 Jun 2008; Peter Alfredsen <loki_val@gentoo.org>
+  banshee-1.0.0-r1.ebuild:
+  Set needed dev-dotnet/mono-addins to >=0.3 as per bug 229149. Thanks to
+  Jose Luis Rivero (yoswink) <yoswink@gentoo.org>.
+
+*banshee-1.0.0-r1 (16 Jun 2008)
+
+  16 Jun 2008; Peter Alfredsen <loki_val@gentoo.org>
+  +files/banshee-1.0.0-notification-icon.patch, -banshee-1.0.0.ebuild,
+  +banshee-1.0.0-r1.ebuild:
+  Add fix for bug 227447, wrongly sized icon with vertical panel.
+
+  16 Jun 2008; Samuli Suominen <drac@gentoo.org> banshee-1.0.0.ebuild:
+  Sane USE defaults; most people don't own removable devices like ipod and
+  mtp. Need >=libmtp-0.2.5-r1 because it's the first version that ships fdi
+  for HAL.
+
+*banshee-1.0.0 (11 Jun 2008)
+
+  11 Jun 2008; Peter Alfredsen <loki_val@gentoo.org> +banshee-1.0.0.ebuild:
+  Bump to 1.0.0.
+
+*banshee-0.13.2-r1 (15 Apr 2008)
+
+  15 Apr 2008; Daniel Gryniewicz <dang@gentoo.org>
+  +banshee-0.13.2-r1.ebuild:
+  Banshee can use either gst-plugins-cdparanoia or gst-plugins-cdio to
+  play/rip CD audio.
+
+  29 Feb 2008; Samuli Suominen <drac@gentoo.org> banshee-0.13.2.ebuild:
+  Fix test suite, thanks to Opfer for reporting in bug 211769.
+
+  28 Jan 2008; Samuli Suominen <drac@gentoo.org> -banshee-0.13.0.ebuild,
+  banshee-0.13.2.ebuild:
+  Remove old version. Rename USE daap to zeroconf in latest and drop unused
+  USE doc. Depend on -bad wrt #150037.
+
+  27 Jan 2008; Christian Faulhammer <opfer@gentoo.org>
+  banshee-0.13.2.ebuild:
+  keyworded ~x86, bug 205210
+
+*banshee-0.13.2 (27 Jan 2008)
+
+  27 Jan 2008; Samuli Suominen <drac@gentoo.org> +banshee-0.13.2.ebuild:
+  Version bump wrt #193686, thanks to Daniel Rothman for reporting.
+
+  01 Jan 2008; Alexis Ballier <aballier@gentoo.org> banshee-0.12.1.ebuild,
+  banshee-0.13.0.ebuild, banshee-0.13.1.ebuild:
+  stick musicbrainz deps to -2*, bug #203784
+
+  25 Dec 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing metalgod from metadata.xml as per #99350.
+
+  24 Aug 2007; <metalgod@gentoo.org> banshee-0.12.1.ebuild:
+  Stable on amd64. Bug #185631.
+
+*banshee-0.13.1 (22 Aug 2007)
+
+  22 Aug 2007; <metalgod@gentoo.org> +banshee-0.13.1.ebuild:
+  Version Bump.
+
+  15 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  banshee-0.12.1.ebuild:
+  ppc stable, bug #185631
+
+*banshee-0.13.0 (07 Aug 2007)
+
+  07 Aug 2007; <metalgod@gentoo.org> +banshee-0.13.0.ebuild:
+  Version Bump.
+
+  30 Jul 2007; Christian Faulhammer <opfer@gentoo.org>
+  banshee-0.12.1.ebuild:
+  stable x86, bug 185631
+
+  17 Jul 2007; <metalgod@gentoo.org> -banshee-0.12.0.ebuild,
+  banshee-0.12.1.ebuild:
+  Remove older version. Update ipod-sharp dependency to 0.6.3 to make sure 
+  we don't have more incompatibility problems fixes bug #178588.
+
+  17 Jul 2007; <metalgod@gentoo.org> -banshee-0.12.0.ebuild,
+  banshee-0.12.1.ebuild:
+  Remove older version. Update ipod-sharp dependency to 0.6.3 to make sure 
+  we don't have more incompatibility problems fixes bug #178588.
+
+  17 Jun 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  banshee-0.12.1.ebuild:
+  Added ~ppc, bug #172063
+
+*banshee-0.12.1 (12 May 2007)
+
+  12 May 2007; Steve Dibb <beandog@gentoo.org> +banshee-0.12.1.ebuild:
+  Version bump, bug 174718
+
+  30 Apr 2007; Marius Mauch <genone@gentoo.org> banshee-0.12.0.ebuild:
+  Replacing einfo with elog
+
+*banshee-0.12.0 (15 Mar 2007)
+
+  15 Mar 2007; <metalgod@gentoo.org> -banshee-0.11.5.ebuild,
+  -banshee-0.11.6.ebuild, -banshee-0.11.7.ebuild, +banshee-0.12.0.ebuild:
+  Version Bump. This is the first release of the new 0.12 series.
+
+*banshee-0.11.7 (22 Feb 2007)
+
+  22 Feb 2007; Luis Medinas <metalgod@gentoo.org> +banshee-0.11.7.ebuild:
+  Version Bump. Added gst-plugins-taglib as a dependency reported on bug
+  #167453. Removed ~ppc keyword related to this bug.
+
+*banshee-0.11.6 (06 Feb 2007)
+
+  06 Feb 2007; Luis Medinas <metalgod@gentoo.org> -banshee-0.11.3.ebuild,
+  +banshee-0.11.6.ebuild:
+  Version Bump. Remove old versions.
+
+*banshee-0.11.5 (25 Jan 2007)
+
+  25 Jan 2007; Luis Medinas <metalgod@gentoo.org> +banshee-0.11.5.ebuild:
+  Version Bump. Closes bug #163387.
+
+  11 Dec 2006; Luis Medinas <metalgod@gentoo.org> banshee-0.11.3.ebuild:
+  Fix ebuild to compile with and without boo because configure is broken for
+  Boo external support.
+
+*banshee-0.11.3 (10 Dec 2006)
+
+  10 Dec 2006; Luis Medinas <metalgod@gentoo.org> +banshee-0.11.3.ebuild:
+  Version Bump. This release fixes ipod support and should close bug #151893
+  and #153348. Also it doesn't have support for mtp and karma until i get the
+  proper dependencies on the tree.
+
+*banshee-0.11.2 (29 Oct 2006)
+
+  29 Oct 2006; Luis Medinas <metalgod@gentoo.org> +banshee-0.11.2.ebuild:
+  Version Bump. This release fixes problems with mono 1.1.18. From now on this
+  needs mono 1.1.17 or higher to work with the new dbus sharp. Fixes bug
+  #151716, #152643 and #151803.
+
+*banshee-0.11.1 (17 Oct 2006)
+
+  17 Oct 2006; Luis Medinas <metalgod@gentoo.org> +banshee-0.11.1.ebuild:
+  Version Bump.
+
+*banshee-0.11.0 (19 Sep 2006)
+
+  19 Sep 2006; Luis Medinas <metalgod@gentoo.org> +banshee-0.11.0.ebuild:
+  Version Bump.
+
+*banshee-0.10.12 (24 Aug 2006)
+
+  24 Aug 2006; Luis Medinas <metalgod@gentoo.org> +banshee-0.10.12.ebuild:
+  Version Bump.
+
+*banshee-0.10.11 (01 Aug 2006)
+
+  01 Aug 2006; Luis Medinas <metalgod@gentoo.org> +banshee-0.10.11.ebuild:
+  Version Bump.
+
+*banshee-0.10.10-r4 (05 Jun 2006)
+
+  05 Jun 2006; Daniel Drake <dsd@gentoo.org>
+  +files/banshee-0.10.10-mp4-mimetype.patch, +banshee-0.10.10-r4.ebuild:
+  Fix import of m4a (AAC) files
+
+*banshee-0.10.10-r3 (28 May 2006)
+
+  28 May 2006; Luis Medinas <metalgod@gentoo.org>
+  files/banshee-0.10.10-disableplugin.patch, -banshee-0.10.10-r2.ebuild,
+  +banshee-0.10.10-r3.ebuild:
+  Revbump to fix the previous commit thanks to Bertrand Lorentz
+  <bertrand.lorentz@free.fr> for reporting the issue on bug #134562.
+
+*banshee-0.10.10-r2 (26 May 2006)
+
+  26 May 2006; Luis Medinas <metalgod@gentoo.org>
+  +files/banshee-0.10.10-disableplugin.patch, -banshee-0.10.10-r1.ebuild,
+  +banshee-0.10.10-r2.ebuild:
+  Removed File System Monitor plugin requested by upstream because it's
+  unmaintained and have lots of bugs. Removed older versions.
+
+*banshee-0.10.10-r1 (10 May 2006)
+
+  10 May 2006; Luis Medinas <metalgod@gentoo.org>
+  +banshee-0.10.10-r1.ebuild:
+  Remove patch that's is causing time problems on 0.10.10.
+
+*banshee-0.10.10 (06 May 2006)
+
+  06 May 2006; Luis Medinas <metalgod@gentoo.org> banshee-0.10.7.ebuild,
+  -banshee-0.10.8.ebuild, banshee-0.10.9.ebuild, banshee-0.10.9-r1.ebuild,
+  +banshee-0.10.10.ebuild:
+  Version Bump from Upstream. Update avahi dependency and removed older version.
+
+  27 Apr 2006; Marien Zwart <marienz@gentoo.org> Manifest:
+  Fixing SHA256 digest, pass four
+
+  22 Apr 2006; Luis Medinas <metalgod@gentoo.org> banshee-0.10.7.ebuild,
+  banshee-0.10.8.ebuild, banshee-0.10.9.ebuild, banshee-0.10.9-r1.ebuild:
+  Improved daap use flag thanks to David Morgan
+  <david.morgan@wadham.oxford.ac.uk> on bug #130297.
+
+  08 Apr 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  banshee-0.10.7.ebuild, banshee-0.10.9-r1.ebuild:
+  Added to ~ppc, bug #115865
+
+*banshee-0.10.9-r1 (01 Apr 2006)
+
+  01 Apr 2006; Luis Medinas <metalgod@gentoo.org>
+  +files/banshee-0.10.9-event-reduction.patch,
+  +files/banshee-0.10.9-statusbar-duration-count.patch,
+  +banshee-0.10.9-r1.ebuild:
+  Added two patches grabbed from gnome bugzilla to fix searches and to reduce
+  the number of events emited by playlist. Added gnome2_pkg_postinst requested
+  by foser.
+
+*banshee-0.10.9 (21 Mar 2006)
+
+  21 Mar 2006; Luis Medinas <metalgod@gentoo.org> +banshee-0.10.9.ebuild:
+  Version Bump. New encode use flag.
+
+  20 Mar 2006; Luis Medinas <metalgod@gentoo.org> banshee-0.10.7.ebuild,
+  banshee-0.10.8.ebuild:
+  Added ~amd64 keyword. Closes bug #125873.
+
+*banshee-0.10.8 (14 Mar 2006)
+
+  14 Mar 2006; Luis Medinas <metalgod@gentoo.org> +banshee-0.10.8.ebuild:
+  Version Bump. For now realplayer support as been removed and daap support is
+  build upon avahi.
+
+  08 Mar 2006; Luis Medinas <metalgod@gentoo.org> banshee-0.10.7.ebuild:
+  Force the use of gst-0.8 on this revision. Fixes bug #125371.
+
+*banshee-0.10.7_p1 (06 Mar 2006)
+
+  06 Mar 2006; Luis Medinas <metalgod@gentoo.org> +banshee-0.10.7_p1.ebuild:
+  Version Bump from Upstream. This version supports fully both gstreamer 0.8
+  and 0.10 but this ebuild only support 0.10 .
+
+*banshee-0.10.7 (06 Mar 2006)
+
+  06 Mar 2006; Luis Medinas <metalgod@gentoo.org> +banshee-0.10.7.ebuild:
+  Version Bump from Upstream. This version supports fully both gstreamer 0.8
+  and 0.10 but this ebuild only support 0.8.
+
+  26 Feb 2006; Luis Medinas <metalgod@gentoo.org>
+  -files/banshee-0.10.5-utilsfix.patch,
+  -files/banshee-0.10-AudioCdCore.cs.diff, -banshee-0.10-r1.ebuild,
+  -banshee-0.10.2.ebuild, -banshee-0.10.4.ebuild, -banshee-0.10.5.ebuild:
+  Removed older versions.
+
+  26 Feb 2006; Luis Medinas <metalgod@gentoo.org> banshee-0.10.6.ebuild:
+  Update gstreamer and dbus versions for dependencies.
+
+*banshee-0.10.6 (13 Feb 2006)
+
+  13 Feb 2006; Luis Medinas <metalgod@gentoo.org> +banshee-0.10.6.ebuild:
+  Version Bump.
+
+*banshee-0.10.5-r1 (08 Feb 2006)
+
+  08 Feb 2006; Luis Medinas <metalgod@gentoo.org> +banshee-0.10.5-r1.ebuild:
+  Added a patch from upstream cvs to fix several issues with notification area
+  specially on amd64.
+
+  07 Feb 2006; Luis Medinas <metalgod@gentoo.org>
+  +files/banshee-0.10.5-utilsfix.patch, banshee-0.10.5.ebuild:
+  Added a patch from last hour fixes from upstream.
+
+*banshee-0.10.5 (07 Feb 2006)
+
+  07 Feb 2006; Luis Medinas <metalgod@gentoo.org> +banshee-0.10.5.ebuild:
+  Version Bump.
+
+*banshee-0.10.4 (18 Jan 2006)
+
+  18 Jan 2006; Luis Medinas <metalgod@gentoo.org> +banshee-0.10.4.ebuild:
+  Version Bump. Daap support disabled by default because it needs the cvs
+  version of avahi.
+
+*banshee-0.10.2 (23 Dec 2005)
+
+  23 Dec 2005; Luis Medinas <metalgod@gentoo.org> -banshee-0.10.ebuild,
+  +banshee-0.10.2.ebuild:
+  Version Bump. This version contains support for njb audio players.
+
+  09 Dec 2005; Luis Medinas <metalgod@gentoo.org> banshee-0.10-r1.ebuild:
+  Added gst-plugins-cdparanoia dependency. Fixes bug #114994.
+
+  09 Dec 2005; Luis Medinas <metalgod@gentoo.org> banshee-0.10-r1.ebuild:
+  Fix crash without ipod use flag enabled. Closes bug #114930.
+
+  08 Dec 2005; Herbie Hopkins <herbs@gentoo.org> banshee-0.10-r1.ebuild:
+  Multilib fix.
+
+*banshee-0.10-r1 (08 Dec 2005)
+
+  08 Dec 2005; Luis Medinas <metalgod@gentoo.org>
+  +files/banshee-0.10-AudioCdCore.cs.diff, +banshee-0.10-r1.ebuild:
+  Add a patch from upstream to fix audio cd's.
+
+  08 Dec 2005; Luis Medinas <metalgod@gentoo.org> banshee-0.10.ebuild:
+  Fixing gstreamer dependencies after zaheerm changes. Fixes bug #114904.
+
+*banshee-0.10 (07 Dec 2005)
+
+  07 Dec 2005; Luis Medinas <metalgod@gentoo.org> +banshee-0.10.ebuild:
+  Version bump. Thanks to John N. Laliberte <allanonJL@gentoo.org> for helping
+  me with this release.
+
+  05 Dec 2005; Zaheer Abbas Merali <zaheerm@gentoo.org>
+  banshee-0.9.12.ebuild:
+  Fix GStreamer dependencies
+
+*banshee-0.9.12 (27 Nov 2005)
+
+  27 Nov 2005; Luis Medinas <metalgod@gentoo.org> +banshee-0.9.12.ebuild:
+  New Package. Thanks to all users involved in bug #91419.
+

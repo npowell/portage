@@ -1,0 +1,201 @@
+# ChangeLog for sys-apps/openrc
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/openrc/ChangeLog,v 1.40 2008/06/09 14:38:45 cardoe Exp $
+
+  09 Jun 2008; Doug Goldstein <cardoe@gentoo.org> openrc-0.2.5.ebuild,
+  openrc-9999.ebuild:
+  always update the dependency tree so we don't boot with an out of date
+  tree. bug #224171
+
+  01 Jun 2008; Mike Frysinger <vapier@gentoo.org> openrc-0.2.5.ebuild,
+  openrc-9999.ebuild:
+  Fix net.lo test in upgrade path as pointed out by compguy284 #224425.
+
+  31 May 2008; Mike Frysinger <vapier@gentoo.org> openrc-0.2.5.ebuild,
+  openrc-9999.ebuild:
+  Do the timezone upgrade before moving the clock conf.d as pointed out by
+  Hopeless #222867.
+
+*openrc-0.2.5 (29 May 2008)
+
+  29 May 2008; Doug Goldstein <cardoe@gentoo.org> +openrc-0.2.5.ebuild:
+  version bump to fix a few outstanding bugs. 1) when a process stops, it
+  may delete it's pid file before actually being stopped
+
+*openrc-0.2.4-r1 (14 May 2008)
+
+  14 May 2008; Doug Goldstein <cardoe@gentoo.org> +openrc-0.2.4-r1.ebuild:
+  fix bug #221751 and bug #220579
+
+*openrc-0.2.4 (11 May 2008)
+
+  11 May 2008; Mike Frysinger <vapier@gentoo.org> +openrc-0.2.4.ebuild:
+  Version bump.
+
+*openrc-0.2.3 (29 Apr 2008)
+
+  29 Apr 2008; Doug Goldstein <cardoe@gentoo.org> +openrc-0.2.3.ebuild:
+  version bump. numerous bug fixes
+
+  19 Apr 2008; Mike Frysinger <vapier@gentoo.org> openrc-0.2.2.ebuild,
+  openrc-9999.ebuild:
+  Make sure to force glibc-2.5+ #218441 by onox.
+
+  15 Apr 2008; Doug Goldstein <cardoe@gentoo.org> openrc-0.2.1-r2.ebuild,
+  openrc-0.2.2.ebuild, openrc-9999.ebuild:
+  have to touch /etc/conf.d/net otherwise unmerge-orphans eats it later on
+
+*openrc-0.2.2 (15 Apr 2008)
+
+  15 Apr 2008; Doug Goldstein <cardoe@gentoo.org> -openrc-0.2.1-r1.ebuild,
+  +openrc-0.2.2.ebuild:
+  version bump to get the latest fixes
+
+  15 Apr 2008; Doug Goldstein <cardoe@gentoo.org> openrc-0.2.1-r1.ebuild,
+  openrc-0.2.1-r2.ebuild, openrc-9999.ebuild:
+  fix bug #217764
+
+*openrc-0.2.1-r2 (15 Apr 2008)
+
+  15 Apr 2008; Doug Goldstein <cardoe@gentoo.org>
+  +files/openrc-0.2.1-bad--help-output.patch,
+  +files/openrc-0.2.1-no-deref-null.patch,
+  +files/openrc-0.2.1-openvz-support.patch,
+  +files/openrc-0.2.1-respect-fastboot.patch, +openrc-0.2.1-r2.ebuild:
+  fix bug #216944 and other assorted issues
+
+  14 Apr 2008; Doug Goldstein <cardoe@gentoo.org> openrc-0.2.1-r1.ebuild,
+  openrc-9999.ebuild:
+  get rid of issue with 'net.*' literally appearing
+
+  12 Apr 2008; Doug Goldstein <cardoe@gentoo.org> openrc-0.2.1-r1.ebuild,
+  openrc-9999.ebuild:
+  reference OpenRC migration guide in pkg_postinst()
+
+  08 Apr 2008; Tobias Klausmann <klausman@gentoo.org>
+  openrc-0.2.1-r1.ebuild:
+  Keyworded on alpha, bug #214957
+
+  08 Apr 2008; Ryan Hill <dirtyepic@gentoo.org> openrc-0.2.1-r1.ebuild:
+  Keyword ~mips.
+
+*openrc-0.2.1-r1 (04 Apr 2008)
+
+  04 Apr 2008; Doug Goldstein <cardoe@gentoo.org>
+  +files/openrc-0.2.1-empty-list-crash.patch,
+  -files/openrc-0.2-freebsd-install-rc.patch,
+  -files/openrc-0.2-multilib-fix.patch,
+  -files/openrc-0.2-multiple-ntp-servers.patch,
+  -files/openrc-0.2-nicelevel-doc.patch,
+  -files/openrc-0.2-path-fix-for-multilib-fix.patch,
+  -files/openrc-0.2-sysctl-vserver-fix.patch, -openrc-0.2.1.ebuild,
+  +openrc-0.2.1-r1.ebuild:
+  fix bug #216091. crash when stringlist was non-existant
+
+  03 Apr 2008; Raúl Porcel <armin76@gentoo.org> openrc-0.2.1.ebuild:
+  Add ~sparc wrt #214957
+
+  02 Apr 2008; Doug Goldstein <cardoe@gentoo.org> openrc-0.2.1.ebuild,
+  openrc-9999.ebuild:
+  fix issue with installing boot initscripts that are provided by currently
+  installing copy of OpenRC
+
+*openrc-0.2.1 (02 Apr 2008)
+
+  02 Apr 2008; Doug Goldstein <cardoe@gentoo.org> -openrc-0.2-r3.ebuild,
+  +openrc-0.2.1.ebuild:
+  version bump. fixes vlans. fixes termencoding/keymap issues.
+
+  31 Mar 2008; Doug Goldstein <cardoe@gentoo.org> openrc-0.2-r3.ebuild,
+  openrc-9999.ebuild:
+  maybe_add_boot_init -> add_boot_init typo
+
+*openrc-0.2-r3 (31 Mar 2008)
+
+  31 Mar 2008; Doug Goldstein <cardoe@gentoo.org>
+  +files/openrc-0.2-nicelevel-doc.patch,
+  +files/openrc-0.2-path-fix-for-multilib-fix.patch, -openrc-0.2-r2.ebuild,
+  +openrc-0.2-r3.ebuild:
+  fix path issue introduced by multilib patch. document SSD_NICELEVEL
+
+  30 Mar 2008; Mike Frysinger <vapier@gentoo.org>
+  +files/9999/0001-msg-style.patch, +files/9999/0003-KV.patch,
+  +files/9999/0002-useful-functions.patch, openrc-0.2-r2.ebuild,
+  openrc-9999.ebuild:
+  Move patches here so we get them in releases.
+
+  30 Mar 2008; Mike Frysinger <vapier@gentoo.org> openrc-0.2-r2.ebuild,
+  openrc-9999.ebuild:
+  Autoadd device-mapper/dmcrypt/mdraid/lvm init.d scripts when
+  possible #215374.
+
+  29 Mar 2008; Jeroen Roovers <jer@gentoo.org> openrc-0.2-r2.ebuild:
+  Marked ~hppa (bug #214957).
+
+*openrc-0.2-r2 (28 Mar 2008)
+
+  28 Mar 2008; Doug Goldstein <cardoe@gentoo.org>
+  +files/openrc-0.2-multilib-fix.patch,
+  +files/openrc-0.2-multiple-ntp-servers.patch,
+  +files/openrc-0.2-sysctl-vserver-fix.patch, -openrc-0.2-r1.ebuild,
+  +openrc-0.2-r2.ebuild:
+  fix multilib issues. support multiple ntp servers. fix sysctl w/ vserver
+  issue.
+
+  28 Mar 2008; Mike Frysinger <vapier@gentoo.org> openrc-0.2-r1.ebuild,
+  openrc-9999.ebuild:
+  Make sure net init.d scripts are symlinks #215233 by Andrey Kislyuk.
+
+  28 Mar 2008; Mike Frysinger <vapier@gentoo.org> openrc-0.2-r1.ebuild,
+  openrc-9999.ebuild:
+  Drop USE=static since it doesnt really result in static.
+
+  28 Mar 2008; Alexis Ballier <aballier@gentoo.org> openrc-0.2-r1.ebuild:
+  keyword ~x86-fbsd
+
+  28 Mar 2008; Raúl Porcel <armin76@gentoo.org> openrc-0.2-r1.ebuild:
+  Add ~ia64 wrt #214957
+
+  27 Mar 2008; Doug Goldstein <cardoe@gentoo.org> openrc-0.2-r1.ebuild:
+  ~sparc-fbsd per bug #214957
+
+  27 Mar 2008; Markus Rothe <corsair@gentoo.org> openrc-0.2-r1.ebuild:
+  Added ~ppc; bug #214957
+
+  27 Mar 2008; Markus Rothe <corsair@gentoo.org> openrc-0.2-r1.ebuild:
+  Added ~ppc64; bug #214957
+
+*openrc-0.2-r1 (27 Mar 2008)
+
+  27 Mar 2008; Doug Goldstein <cardoe@gentoo.org>
+  +files/openrc-0.2-freebsd-install-rc.patch, -openrc-0.2.ebuild,
+  +openrc-0.2-r1.ebuild:
+  install rc & rc.shutdown for Gentoo/FreeBSD users
+
+  27 Mar 2008; Mike Frysinger <vapier@gentoo.org> openrc-0.2.ebuild:
+  Add x86/arm love #214957 by Shvetsov Alexey.
+
+*openrc-0.2 (26 Mar 2008)
+
+  26 Mar 2008; Doug Goldstein <cardoe@gentoo.org>
+  -openrc-0.2_pre20080326.ebuild, +openrc-0.2.ebuild:
+  add OpenRC 0.2
+
+*openrc-0.2_pre20080326 (26 Mar 2008)
+
+  26 Mar 2008; Doug Goldstein <cardoe@gentoo.org>
+  -openrc-0.2_pre20080325.ebuild, +openrc-0.2_pre20080326.ebuild:
+  switched to proper branch for snapshot
+
+*openrc-0.2_pre20080325 (25 Mar 2008)
+
+  25 Mar 2008; Doug Goldstein <cardoe@gentoo.org>
+  +openrc-0.2_pre20080325.ebuild:
+  add OpenRC 0.2 pre-release
+
+*openrc-9999 (23 Mar 2008)
+
+  23 Mar 2008; Mike Frysinger <vapier@gentoo.org> +metadata.xml,
+  +openrc-9999.ebuild:
+  Initial ebuild #212696.
+

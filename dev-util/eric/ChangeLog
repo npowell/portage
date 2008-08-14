@@ -1,0 +1,256 @@
+# ChangeLog for dev-util/eric
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/eric/ChangeLog,v 1.63 2008/07/16 23:17:46 yngwin Exp $
+
+*eric-4.1.6 (16 Jul 2008)
+
+  16 Jul 2008; Ben de Groot <yngwin@gentoo.org> +eric-4.1.6.ebuild:
+  Version bump
+
+  16 Jul 2008; Ben de Groot <yngwin@gentoo.org> eric-4.0.4.ebuild,
+  eric-4.1.1.ebuild:
+  Change deps to allow for split Qt4 ebuilds (#217183), but as there is only
+  >=PyQt4-4.3 in the tree, there is no need to force a version.
+
+  29 May 2008; Ali Polatel <hawking@gentoo.org> eric-3.9.5.ebuild,
+  eric-4.1.1.ebuild, eric-4.1.4.ebuild:
+  python_mod_optimize is ROOT aware. Fixed python_mod_cleanup.
+
+*eric-4.1.4 (24 May 2008)
+
+  24 May 2008; Ben de Groot <yngwin@gentoo.org> +files/4.1.4-paths.patch,
+  +eric-4.1.4.ebuild:
+  Version bump
+
+  12 May 2008; Markus Rothe <corsair@gentoo.org> eric-4.0.4.ebuild:
+  Stable on ppc64
+
+  14 Apr 2008; Ingmar Vanhassel <ingmar@gentoo.org> eric-4.1.1.ebuild:
+  Update HOMEPAGE for bug 217570.
+
+*eric-4.1.1 (11 Mar 2008)
+
+  11 Mar 2008; Markus Ullmann <jokey@gentoo.org> +files/4.1.1-paths.patch,
+  +eric-4.1.1.ebuild:
+  Version bump
+
+  21 Feb 2008; Raúl Porcel <armin76@gentoo.org> eric-4.0.4.ebuild:
+  sparc stable
+
+  09 Feb 2008; Markus Ullmann <jokey@gentoo.org> eric-4.0.4.ebuild:
+  Stable on x86
+
+  04 Jan 2008; Ali Polatel <hawking@gentoo.org> -eric-4.0.1.ebuild,
+  -eric-4.0.3.ebuild, eric-4.0.4.ebuild:
+  Changed qscintilla depend to qscintilla-python. Added built_with_use check
+  for qscintilla-python's qt4 USE flag, bug 198697. Drop old.
+
+  04 Jan 2008; Brent Baude <ranger@gentoo.org> eric-4.0.1.ebuild,
+  eric-4.0.3.ebuild, eric-4.0.4.ebuild:
+  Marking eric-4.0.1|3|4 ~ppc64 per bug 203972
+
+*eric-4.0.4 (01 Jan 2008)
+
+  01 Jan 2008; Markus Ullmann <jokey@gentoo.org> +eric-4.0.4.ebuild:
+  Version bump as  keeps notifying the user that a new version is out
+
+  01 Jan 2008; Raúl Porcel <armin76@gentoo.org> eric-4.0.3.ebuild:
+  Readd ~sparc, keywords were dropped for no reason
+
+  20 Nov 2007; Ali Polatel <hawking@gentoo.org> eric-3.7.2-r1.ebuild,
+  eric-3.9.5.ebuild, eric-4.0.1.ebuild, eric-4.0.3.ebuild:
+  dev-python/qscintilla moved to x11-libs/qscintilla
+
+  05 Oct 2007; Caleb Tennis <caleb@gentoo.org> eric-4.0.3.ebuild:
+  Add linguas to IUSE and dodir instead of mkdir
+
+*eric-4.0.3 (04 Oct 2007)
+
+  04 Oct 2007; Caleb Tennis <caleb@gentoo.org> +eric-4.0.3.ebuild:
+  Version bump
+
+*eric-4.0.1 (07 Sep 2007)
+
+  07 Sep 2007; Ali Polatel <hawking@gentoo.org> +eric-4.0.1.ebuild:
+  version bump, thanks to everyone on bug 158117 and jokey
+
+  25 Jun 2007; Piotr Jaroszyński <peper@gentoo.org> eric-3.7.2-r1.ebuild:
+  (QA) Fix ${ROOT} abuse. bug #167271.
+
+  24 Jun 2007; Tiziano Müller <dev-zero@gentoo.org> eric-3.7.2-r1.ebuild,
+  -eric-3.9.4.ebuild, eric-3.9.5.ebuild:
+  Fixed $ROOT abuse (bug #167271)
+
+  23 Jun 2007; Lukasz Strzygowski <lucass@gentoo.org> eric-3.9.5.ebuild:
+  Added doc/examples use-flags. Cleanup.
+
+*eric-3.9.5 (23 Jun 2007)
+
+  23 Jun 2007; Tiziano Müller <dev-zero@gentoo.org>
+  +files/3.9.5-disable_compilation.patch, +eric-3.9.5.ebuild:
+  Version bump, cleanup & ebuild rework.
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*eric-3.9.4 (30 Dec 2006)
+
+  30 Dec 2006; Tiziano Müller <dev-zero@gentoo.org> -eric-3.9.3.ebuild,
+  +eric-3.9.4.ebuild:
+  Version bump.
+
+  30 Dec 2006; Tiziano Müller <dev-zero@gentoo.org> eric-3.7.2-r1.ebuild,
+  eric-3.9.3.ebuild:
+  Added qscintilla dependency (bug #117945)
+
+*eric-3.9.3 (26 Dec 2006)
+
+  26 Dec 2006; Tiziano Müller <dev-zero@gentoo.org> -eric-3.8.1.ebuild,
+  -eric-3.8.2.ebuild, -eric-3.9.1.ebuild, +eric-3.9.3.ebuild:
+  Version bump with some cleanups. Dropped old versions.
+
+*eric-3.9.1 (14 Oct 2006)
+
+  14 Oct 2006; Bryan Østergaard <kloeri@gentoo.org> +eric-3.9.1.ebuild:
+  Bump version, bug 137883.
+
+*eric-3.8.2 (23 Apr 2006)
+
+  23 Apr 2006; Carsten Lohrke <carlo@gentoo.org> +eric-3.8.2.ebuild:
+  Version bump.
+
+  22 Feb 2006; Carsten Lohrke <carlo@gentoo.org> -eric-3.5.1.ebuild,
+  -eric-3.6.1.ebuild, -eric-3.6.2.ebuild, -eric-3.7.0.ebuild,
+  -eric-3.7.2.ebuild:
+  Clean up.
+
+  24 Jan 2006; Markus Rothe <corsair@gentoo.org> eric-3.7.2-r1.ebuild:
+  Stable on ppc64
+
+  05 Jan 2006; Gustavo Zacarias <gustavoz@gentoo.org> eric-3.5.1.ebuild,
+  eric-3.7.2-r1.ebuild:
+  3.7.2-r1 sparc stable, 3.5.1 nuked sparc keywords wrt cleanup #117246
+
+  05 Jan 2006; Chris White <chriswhite@gentoo.org> eric-3.5.1.ebuild,
+  eric-3.7.2-r1.ebuild:
+  eric-3.7.2-r1 x86 stable per bug #117246.
+
+  31 Dec 2005; Simon Stelling <blubb@gentoo.org> eric-3.7.2-r1.ebuild:
+  stable on amd64
+
+*eric-3.8.1 (31 Dec 2005)
+*eric-3.7.2-r1 (31 Dec 2005)
+
+  31 Dec 2005; Carsten Lohrke <carlo@gentoo.org> +eric-3.7.2-r1.ebuild,
+  +eric-3.8.1.ebuild:
+  version bump
+
+*eric-3.7.2 (30 Sep 2005)
+
+  30 Sep 2005; Bryan Østergaard <kloeri@gentoo.org> +eric-3.7.2.ebuild:
+  Version bump, fixes PyQt problem, bug 107716.
+
+*eric-3.7.0 (06 Jun 2005)
+
+  06 Jun 2005; Fernando Serboncini <fserb@gentoo.org> +eric-3.7.0.ebuild:
+  Version bump
+
+  06 Mar 2005; Carsten Lohrke <carlo@gentoo.org> eric-3.6.2.ebuild:
+  make desktop entry
+
+*eric-3.6.2 (20 Feb 2005)
+
+  20 Feb 2005; Carsten Lohrke <carlo@gentoo.org> +eric-3.6.2.ebuild:
+  version bump
+
+*eric-3.6.1 (29 Jan 2005)
+
+  29 Jan 2005; Carsten Lohrke <carlo@gentoo.org> -eric-3.4.2.ebuild,
+  -eric-3.5.0.ebuild, -eric-3.6.0.ebuild, +eric-3.6.1.ebuild:
+  version bump, clean up
+
+  25 Jan 2005; Jason Wever <weeve@gentoo.org> eric-3.5.1.ebuild:
+  Stable on sparc.
+
+*eric-3.6.0 (24 Jan 2005)
+
+  24 Jan 2005; Carsten Lohrke <carlo@gentoo.org> +eric-3.6.0.ebuild:
+  version bump
+
+  21 Jan 2005; Carsten Lohrke <carlo@gentoo.org> eric-3.5.1.ebuild:
+  stable on x86
+
+  31 Dec 2004; Ciaran McCreesh <ciaranm@gentoo.org> :
+  Change encoding to UTF-8 for GLEP 31 compliance
+
+  09 Dec 2004; Jason Wever <weeve@gentoo.org> eric-3.5.0.ebuild:
+  Stable on sparc.
+
+  07 Dec 2004; Carsten Lohrke <carlo@gentoo.org> :
+  fixed digests
+
+*eric-3.5.1 (05 Dec 2004)
+
+  05 Dec 2004; Bryan Østergaard <kloeri@gentoo.org> +eric-3.5.1.ebuild:
+  Version bump.
+
+  23 Nov 2004; Carsten Lohrke <carlo@gentoo.org> eric-3.5.0.ebuild:
+  stable on x86
+
+  08 Nov 2004; Daniel Ostrow <dostrow@gentoo.org> eric-3.5.0.ebuild:
+  Marked ~ppc64
+
+*eric-3.5.0 (03 Oct 2004)
+
+  03 Oct 2004; Carsten Lohrke <carlo@gentoo.org> +eric-3.5.0.ebuild:
+  version bump
+
+  11 Sep 2004; Daniel Ahlberg <aliz@gentoo.org> eric-3.4.2.ebuild:
+  Added amd64 keyword, closing #63515.
+
+  23 Jul 2004; Carsten Lohrke <carlo@gentoo.org> -eric-3.1.ebuild,
+  eric-3.4.2.ebuild:
+  marked stable on x86
+
+*eric-3.1 (11 Jul 2004)
+
+  11 Jul 2004; Carsten Lohrke <carlo@gentoo.org> +eric-3.1.ebuild,
+  eric-3.4.2.ebuild:
+  readd 3.1 and mark 3.4.2 unstable again
+
+  11 Jul 2004; Carsten Lohrke <carlo@gentoo.org>
+  -files/install.py.eric-3.3.1.diff, -eric-3.1.ebuild, -eric-3.2.ebuild,
+  -eric-3.3.1.ebuild, eric-3.4.2.ebuild:
+  stable on x86
+
+  01 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org> eric-3.1.ebuild,
+  eric-3.2.ebuild, eric-3.3.1.ebuild, eric-3.4.2.ebuild:
+  virtual/glibc -> virtual/libc
+
+*eric-3.4.2 (25 May 2004)
+
+  25 May 2004; Bryan Østergaard <kloeri@gentoo.org> +eric-3.4.2.ebuild:
+  Version bump.
+
+  17 Feb 2004; Aron Griffis <agriffis@gentoo.org> eric-3.3.1.ebuild:
+  Remove alpha keywords because this package eventually depends on >=jdk-1.4,
+  which we don't have on alpha
+
+*eric-3.3.1 (17 Jan 2004)
+
+  17 Jan 2004; Rob Cakebread <pythonhead@gentoo.org> eric-3.2.ebuild,
+  eric-3.3.1.ebuild:
+  Version bump. Bug# 35199. Thanks Carlo <current@myrealbox.com>. Fixed dependency on PyQt.
+
+  11 Jan 2004; Rob Cakebread <pythonhead@gentoo.org> eric-3.2.ebuild:
+  Changed dependency for PyQt <=3.8.1
+
+*eric-3.2 (04 Oct 2003)
+
+  04 Oct 2003; Rob Cakebread <pythonhead@gentoo.org> eric-3.2.ebuild:
+  Version bump (bug #23973)
+
+*eric-3.1 (29 Apr 2003)
+
+  29 Apr 2003; Michele Balistreri <brain@gentoo.org> eric-3.1.ebuild:
+  Initial import.

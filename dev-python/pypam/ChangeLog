@@ -1,0 +1,17 @@
+# ChangeLog for dev-python/pypam
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pypam/ChangeLog,v 1.4 2008/03/12 18:12:49 phreak Exp $
+
+  12 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Marien Zwart (marienz, #107204) from metadata.xml.
+
+  24 Jun 2007; Christoph Mende <angelos@gentoo.org> pypam-0.5.0.ebuild:
+  Added ~amd64 wrt bug 161442
+
+  28 May 2007; Marien Zwart <marienz@gentoo.org>
+  files/pypam-0.5.0-stricter.patch:
+  Mangle the patch to stop a cvs Id from corrupting it.
+
+  28 May 2007; Marien Zwart <marienz@gentoo.org> ChangeLog:
+  New ebuild, thanks to gentoofan23 on freenode for testing.
+

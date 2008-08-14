@@ -1,0 +1,78 @@
+# ChangeLog for games-board/scid
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-board/scid/ChangeLog,v 1.17 2008/07/04 06:33:16 tupone Exp $
+
+*scid-3.6.24 (04 Jul 2008)
+
+  04 Jul 2008; Tupone Alfredo <tupone@gentoo.org>
+  +files/scid-3.6.24-gentoo.patch, +scid-3.6.24.ebuild:
+  Version bump to 3.6.24 Bug #229397 by Thomas Riedel
+
+  06 Apr 2008; Tristan Heaven <nyhm@gentoo.org> scid-3.6.1.ebuild,
+  scid-3.6.1-r2.ebuild:
+  Block games-board/chessdb
+
+*scid-3.6.1-r2 (30 Aug 2007)
+
+  30 Aug 2007; <tupone@gentoo.org> +files/scid-3.6.1-gentoo.patch,
+  -files/scid-3.6.1-snack.patch, -scid-3.6.1-r1.ebuild,
+  +scid-3.6.1-r2.ebuild:
+  Fix for wrong files path, one raising bug #181804 by R. Stephan
+
+  12 Mar 2007; Marius Mauch <genone@gentoo.org> scid-3.6.1-r1.ebuild:
+  Replacing einfo with elog
+
+  01 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org> scid-3.6.1.ebuild,
+  scid-3.6.1-r1.ebuild:
+  Removing old virtual/x11 dependency.
+
+*scid-3.6.1-r1 (07 Sep 2006)
+
+  07 Sep 2006; <tupone@gentoo.org> +files/scid-3.6.1-snack.patch,
+  +scid-3.6.1-r1.ebuild:
+  Fixes and instruction to get speech.
+  Bug #132868 by Paulo Jorge de Oliveira Cantante de Matos
+
+  29 Jan 2006; Joshua Baergen <joshuabaergen@gentoo.org> scid-3.5.ebuild,
+  scid-3.6.1.ebuild:
+  Add modular X dependencies.
+
+  16 Sep 2005; Michael Sterrett <mr_bones_@gentoo.org> scid-3.5.ebuild,
+  scid-3.6.1.ebuild:
+  needs app-arch/unzip
+
+  01 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org> scid-3.5.ebuild,
+  scid-3.6.1.ebuild:
+  virtual/glibc -> virtual/libc
+
+*scid-3.6.1 (21 Jun 2004)
+
+  21 Jun 2004; Michael Sterrett <mr_bones_@gentoo.org> scid-3.6.1.ebuild:
+  version bump (bug #49346) - ebuild provided by Gene Ruebsamen
+
+  30 Mar 2004; Michael Sterrett <mr_bones_@gentoo.org> scid-3.5.ebuild:
+  buggy makefiles bug #46110
+
+*scid-3.5 (04 Jan 2004)
+
+  04 Jan 2004; Michael Sterrett <mr_bones_@gentoo.org> scid-3.4-r1.ebuild,
+  scid-3.5.ebuild:
+  version bump; ebuild supplied by Gene Ruebsamen via bug 37164 (modified)
+
+  13 Dec 2003; Brad House <brad_mssw@gentoo.org> scid-3.4-r1.ebuild:
+  mark stable on amd64
+
+*scid-3.4-r1 (26 Sep 2003)
+
+  26 Sep 2003; Mike Frysinger <vapier@gentoo.org> :
+  Add a few more binaries to the install process.
+
+*scid-3.4 (18 Jun 2003)
+
+  18 Jun 2003; Mike Frysinger <vapier@gentoo.org> :
+  Version bump.
+
+*scid-3.3 (16 Dec 2002)
+
+  16 Dec 2002; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by Thomas T. Veldhouse <veldy@veldy.net>.

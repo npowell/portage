@@ -1,0 +1,84 @@
+# ChangeLog for net-firewall/shorewall-common
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-firewall/shorewall-common/ChangeLog,v 1.17 2008/08/07 00:32:07 jer Exp $
+
+*shorewall-common-4.0.13 (07 Aug 2008)
+
+  07 Aug 2008; Jeroen Roovers <jer@gentoo.org>
+  +shorewall-common-4.0.13.ebuild:
+  Version bump thanks to Vieri (bug #234074).
+
+*shorewall-common-4.0.12 (05 Jul 2008)
+
+  05 Jul 2008; Peter Volkov <pva@gentoo.org>
+  +shorewall-common-4.0.12.ebuild:
+  Version bump, bug #230467, thank Vieri for all the work
+
+*shorewall-common-4.0.11 (21 May 2008)
+
+  21 May 2008; Markus Ullmann <jokey@gentoo.org>
+  +shorewall-common-4.0.11.ebuild:
+  Version bump
+
+  04 May 2008; Peter Volkov <pva@gentoo.org> files/shorewall.initd:
+  Updated init.d script to fix reports of status, bug #219740, thank Vieri
+  <rentorbuy AT yahoo.com> for maintaining!
+
+*shorewall-common-4.0.10.1 (04 May 2008)
+
+  04 May 2008; Peter Volkov <pva@gentoo.org>
+  +shorewall-common-4.0.10.1.ebuild:
+  Version bump, bug #218767, thank Vieri <rentorbuy AT yahoo.com> for
+  maintaining!
+
+*shorewall-common-4.0.10 (01 Apr 2008)
+
+  01 Apr 2008; Peter Volkov <pva@gentoo.org>
+  +shorewall-common-4.0.10.ebuild:
+  Version bump, bug #215548, thank Vieri <rentorbuy AT yahoo.com> for
+  maintaining!
+
+  25 Feb 2008; <pva@gentoo.org> shorewall-common-4.0.9.ebuild:
+  Don't depend on shorewall-shell by default, bug #211321, thank you Stefan
+  Wimmer for report and Vieri for the fix.
+
+*shorewall-common-4.0.9 (24 Feb 2008)
+
+  24 Feb 2008; <pva@gentoo.org> +shorewall-common-4.0.9.ebuild:
+  Version bump, bug 211191. Thank Vieri <rentorbuy AT yahoo.com> for all work!
+
+*shorewall-common-4.0.8 (27 Jan 2008)
+
+  27 Jan 2008; Markus Ullmann <jokey@gentoo.org>
+  +shorewall-common-4.0.8.ebuild:
+  Version bump, thanks to Vieri for the notification in bug #196695
+
+  14 Sep 2007; Ferris McCormick <fmccor@gentoo.org>
+  shorewall-common-4.0.3.ebuild:
+  Add ~sparc keyword --- part of Bug #191624
+
+  09 Sep 2007; Raúl Porcel <armin76@gentoo.org>
+  shorewall-common-4.0.3.ebuild:
+  Add ~alpha wrt #191624, thanks to Tobias Klausmann for testing
+
+  09 Sep 2007; Joseph Jezak <josejx@gentoo.org>
+  shorewall-common-4.0.3.ebuild:
+  Marked ~ppc/~ppc64 for bug #191624.
+
+  07 Sep 2007; Jeroen Roovers <jer@gentoo.org>
+  shorewall-common-4.0.3.ebuild:
+  Marked ~hppa (bug #191624).
+
+  07 Sep 2007; Markus Ullmann <jokey@gentoo.org>
+  shorewall-common-4.0.3.ebuild:
+  Update blocker dep
+
+  06 Sep 2007; Markus Ullmann <jokey@gentoo.org> metadata.xml:
+  Add Vieri as co-maintainer
+
+*shorewall-common-4.0.3 (06 Sep 2007)
+
+  06 Sep 2007; Markus Ullmann <jokey@gentoo.org> +files/shorewall.initd,
+  +metadata.xml, +shorewall-common-4.0.3.ebuild:
+  Initial import of shorewall 4.x series wrt bug #174588 thanks to Vieri
+

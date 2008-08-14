@@ -1,0 +1,82 @@
+# ChangeLog for media-gfx/raw-thumbnailer
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/raw-thumbnailer/ChangeLog,v 1.22 2008/03/23 18:18:25 armin76 Exp $
+
+  23 Mar 2008; Raúl Porcel <armin76@gentoo.org> raw-thumbnailer-0.2.ebuild:
+  ia64/sparc stable wrt #214222
+
+  22 Mar 2008; Christian Faulhammer <opfer@gentoo.org>
+  raw-thumbnailer-0.2.ebuild:
+  stable x86, bug 214222
+
+  22 Mar 2008; Brent Baude <ranger@gentoo.org> raw-thumbnailer-0.2.ebuild:
+  Marking raw-thumbnailer-0.2 ppc64 for bug 214222
+
+  22 Mar 2008; Tobias Klausmann <klausman@gentoo.org>
+  raw-thumbnailer-0.2.ebuild:
+  Stable on alpha, bug #214222
+
+  22 Mar 2008; Jeroen Roovers <jer@gentoo.org> raw-thumbnailer-0.2.ebuild:
+  Stable for HPPA (bug #214222).
+
+  22 Mar 2008; nixnut <nixnut@gentoo.org> raw-thumbnailer-0.2.ebuild:
+  Stable on ppc wrt bug 214222
+
+  22 Mar 2008; Samuli Suominen <drac@gentoo.org> raw-thumbnailer-0.2.ebuild:
+  amd64 stable wrt #214222
+
+*raw-thumbnailer-0.2 (23 Feb 2008)
+
+  23 Feb 2008; Christoph Mende <angelos@gentoo.org>
+  +raw-thumbnailer-0.2.ebuild:
+  Version bump
+
+  23 Jan 2008; Samuli Suominen <drac@gentoo.org> raw-thumbnailer-0.1.ebuild:
+  Block gnome-raw-thumbnailer because both are providing same executable, main
+  difference is gconf and gnome-vfs usage.
+
+  14 Oct 2007; Markus Rothe <corsair@gentoo.org> raw-thumbnailer-0.1.ebuild:
+  Stable on ppc64; bug #195250
+
+  10 Oct 2007; Lars Weiler <pylon@gentoo.org> raw-thumbnailer-0.1.ebuild:
+  stable ppc, bug #195250
+
+  10 Oct 2007; Raúl Porcel <armin76@gentoo.org> raw-thumbnailer-0.1.ebuild:
+  alpha/ia64/sparc stable wrt #195250
+
+  09 Oct 2007; Christian Faulhammer <opfer@gentoo.org>
+  raw-thumbnailer-0.1.ebuild:
+  stable x86, bug 195250
+
+  09 Oct 2007; Jeroen Roovers <jer@gentoo.org> raw-thumbnailer-0.1.ebuild:
+  Stable for HPPA (bug #195250).
+
+  09 Oct 2007; Christoph Mende <angelos@gentoo.org>
+  raw-thumbnailer-0.1.ebuild:
+  Stable on amd64 wrt bug #195250
+
+  16 Sep 2007; Joseph Jezak <josejx@gentoo.org> raw-thumbnailer-0.1.ebuild:
+  Marked ~ppc/~ppc64 for bug #189043.
+
+  24 Aug 2007; Raúl Porcel <armin76@gentoo.org> raw-thumbnailer-0.1.ebuild:
+  Add ~alpha/~ia64 wrt #189043
+
+  23 Aug 2007; Jeroen Roovers <jer@gentoo.org> raw-thumbnailer-0.1.ebuild:
+  Marked ~hppa (bug #189043).
+
+  18 Aug 2007; Samuli Suominen <drac@gentoo.org> raw-thumbnailer-0.1.ebuild:
+  Keyworded ~arm wrt #189043
+
+  16 Aug 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  raw-thumbnailer-0.1.ebuild:
+  Keyworded ~sparc wrt #189043
+
+  13 Aug 2007; Samuli Suominen <drac@gentoo.org> raw-thumbnailer-0.1.ebuild:
+  Keyword ~x86 and clean up a bit.
+
+*raw-thumbnailer-0.1 (13 Aug 2007)
+
+  13 Aug 2007; Christoph Mende <angelos@gentoo.org> +metadata.xml,
+  +raw-thumbnailer-0.1.ebuild:
+  Initial import
+

@@ -1,0 +1,37 @@
+# ChangeLog for media-gfx/aview
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/aview/ChangeLog,v 1.10 2007/05/15 09:55:15 bangert Exp $
+
+  15 May 2007; Thilo Bangert <bangert@gentoo.org> metadata.xml:
+  add <herd>no-herd</herd>
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  16 Aug 2005; Mark Loeser <halcy0n@gentoo.org>
+  +files/aview-1.3.0_rc1-filename-spaces.patch, aview-1.3.0_rc1.ebuild:
+  Adding patch to fix using asciiview with files that have spaces in the name,
+  thanks to kyberneticist AT yahoo DOT com for the patch; bug #39207
+
+  19 Jun 2005; Simon Stelling <blubb@gentoo.org> aview-1.3.0_rc1.ebuild:
+  stable on amd64
+
+  01 Mar 2005; Jan Brinkmann <luckyduck@gentoo.org> aview-1.3.0_rc1.ebuild:
+  added ~amd64 to KEYWORDS. fixes #83701
+
+  08 Jul 2003; Martin Holzer <mholzer@gentoo.org> aview-1.3.0_rc1.ebuild:
+  Changed Desc. Closes #24074.
+
+*aview-1.3.0_rc1 (1 Feb 2002)
+
+  08 Aug 2002; Mark Guertin <gerk@gentoo.org> aview-1.3.0_rc1.ebuild :
+  Fixed broken ${S}, and added to this ChangeLog (no one else has even though
+  the file has been updated several times), added ppc to keywords
+
+  1 Feb 2002; G.Bevin <gbevin@gentoo.org> ChangeLog :
+  
+  Added initial ChangeLog which should be updated whenever the package is
+  updated in any way. This changelog is targetted to users. This means that the
+  comments should well explained and written in clean English. The details about
+  writing correct changelogs are explained in the skel.ChangeLog file which you
+  can find in the root directory of the portage repository.

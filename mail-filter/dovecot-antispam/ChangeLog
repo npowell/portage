@@ -1,0 +1,38 @@
+# ChangeLog for mail-filter/dovecot-antispam
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/mail-filter/dovecot-antispam/ChangeLog,v 1.7 2008/06/01 10:36:54 hollow Exp $
+
+*dovecot-antispam-20080601 (01 Jun 2008)
+
+  01 Jun 2008; Benedikt Böhm <hollow@gentoo.org>
+  +dovecot-antispam-20080601.ebuild:
+  version bump, fixes #212594
+
+*dovecot-antispam-20080424 (24 Apr 2008)
+
+  24 Apr 2008; Benedikt Böhm <hollow@gentoo.org>
+  +dovecot-antispam-20080424.ebuild:
+  version bump
+
+  27 Feb 2008; Benedikt Böhm <hollow@gentoo.org> metadata.xml:
+  fix metadata, no-herd is redundant
+
+*dovecot-antispam-20080227 (27 Feb 2008)
+
+  27 Feb 2008; Benedikt Böhm <hollow@gentoo.org>
+  dovecot-antispam-20071019.ebuild, +dovecot-antispam-20080227.ebuild:
+  version bump; fix #205862
+
+  13 Feb 2008; Christian Faulhammer <opfer@gentoo.org> metadata.xml:
+  add no-herd
+
+  21 Oct 2007; Benedikt Böhm <hollow@gentoo.org>
+  dovecot-antispam-20071019.ebuild:
+  fix moduledir
+
+*dovecot-antispam-20071019 (21 Oct 2007)
+
+  21 Oct 2007; Benedikt Böhm <hollow@gentoo.org> +metadata.xml,
+  +dovecot-antispam-20071019.ebuild:
+  initial ebuild
+

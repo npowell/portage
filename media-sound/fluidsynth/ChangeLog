@@ -1,0 +1,158 @@
+# ChangeLog for media-sound/fluidsynth
+# Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-sound/fluidsynth/ChangeLog,v 1.40 2008/08/08 20:39:50 corsair Exp $
+
+  08 Aug 2008; Markus Rothe <corsair@gentoo.org> fluidsynth-1.0.8.ebuild:
+  Stable on ppc64; bug #234201
+
+  08 Aug 2008; Markus Meier <maekke@gentoo.org> fluidsynth-1.0.8.ebuild:
+  amd64/x86 stable, bug #234201
+
+  08 Aug 2008; nixnut <nixnut@gentoo.org> fluidsynth-1.0.8.ebuild:
+  Stable on ppc wrt bug 234201
+
+  24 May 2008; Joseph Jezak <josejx@gentoo.org> fluidsynth-1.0.7a.ebuild:
+  Marked ppc64 stable.
+
+*fluidsynth-1.0.8 (28 Jan 2008)
+
+  28 Jan 2008; Alexis Ballier <aballier@gentoo.org>
+  +fluidsynth-1.0.8.ebuild:
+  version bump
+
+  22 Nov 2007; Raúl Porcel <armin76@gentoo.org> fluidsynth-1.0.7a.ebuild:
+  sparc/x86 stable wrt #199999
+
+  22 Nov 2007; nixnut <nixnut@gentoo.org> fluidsynth-1.0.7a.ebuild:
+  Stable on ppc wrt bug 199999
+
+  22 Nov 2007; Samuli Suominen <drac@gentoo.org> fluidsynth-1.0.7a.ebuild:
+  amd64 stable wrt #199999
+
+  01 Nov 2007; Raúl Porcel <armin76@gentoo.org> fluidsynth-1.0.7a.ebuild:
+  Add ~alpha wrt #196587, thanks to Tobias Klausmann for testing
+
+  20 Jul 2007; Markus Rothe <corsair@gentoo.org> fluidsynth-1.0.7a.ebuild:
+  Added ~ppc64; bug #183570
+
+*fluidsynth-1.0.7a (20 Jun 2007)
+
+  20 Jun 2007; Diego Pettenò <flameeyes@gentoo.org>
+  +fluidsynth-1.0.7a.ebuild:
+  Add patch from bug #154932 reworked a bit, and remove static useflag. Thanks
+  to Alessio Cassiba. Change version to the actual upstream version rather
+  than using a -r1.
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+  31 Oct 2006; Javier Villavicencio <the_paya@gentoo.org>
+  fluidsynth-1.0.7.ebuild:
+  Added ~x86-fbsd keyword.
+
+  23 Oct 2006; Simon Stelling <blubb@gentoo.org> fluidsynth-1.0.7.ebuild:
+  remove nonsense
+
+  10 Oct 2006; Gustavo Zacarias <gustavoz@gentoo.org>
+  fluidsynth-1.0.7.ebuild:
+  Stable on sparc
+
+  28 Sep 2006; Joshua Jackson <tsunam@gentoo.org> fluidsynth-1.0.7.ebuild:
+  Stable x86; bug #145971
+
+  05 Sep 2006; Stephanie Lockwood-Childs <wormo@gentoo.org>
+  fluidsynth-1.0.7.ebuild:
+  stable on ppc (Bug #145971)
+
+  04 Sep 2006; <blubb@gentoo.org> fluidsynth-1.0.7.ebuild:
+  stable on amd64
+
+  08 Jul 2006; Luca Barbato <lu_zero@gentoo.org> fluidsynth-1.0.7.ebuild:
+  Marked ~ppc
+
+*fluidsynth-1.0.7 (08 Jul 2006)
+
+  08 Jul 2006; Frank van de Pol <fvdpol@gentoo.org>
+  +fluidsynth-1.0.7.ebuild:
+  Version bump to 1.0.7.
+
+*fluidsynth-1.0.6 (11 Jul 2005)
+
+  11 Jul 2005; Frank van de Pol <fvdpol@gentoo.org>
+  +files/fluidsynth-1.0.6.amd64.patch, +fluidsynth-1.0.6.ebuild:
+  Version bump. Included quickfix by Josh Green for crashes on amd64
+  (http://lists.nongnu.org/archive/html/fluid-dev/2005-07/msg00003.html)
+
+  08 Apr 2005; Michael Hanselmann <hansmi@gentoo.org>
+  fluidsynth-1.0.5.ebuild:
+  Stable on ppc.
+
+  12 Nov 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  -fluidsynth-1.0.1.ebuild, fluidsynth-1.0.5.ebuild:
+  Removing 1.0.1.  Stable amd64, sparc, x86.
+
+*fluidsynth-1.0.5 (28 Sep 2004)
+
+  28 Sep 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  +fluidsynth-1.0.5.ebuild:
+  Version bump.  Added ~sparc.  static USE flag support. Now using DESTDIR.
+
+  03 Sep 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  fluidsynth-1.0.3.ebuild:
+  Stable amd64.
+
+  13 Jun 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  fluidsynth-1.0.3.ebuild:
+  Getting rid of virtual/jack.
+
+  07 Jun 2004; Aron Griffis <agriffis@gentoo.org> fluidsynth-1.0.3.ebuild:
+  Fix use invocation
+
+  06 May 2004; David Holm <dholm@gentoo.org> fluidsynth-1.0.3.ebuild:
+  Removed ppc-specific version mask.
+
+  17 Apr 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  fluidsynth-1.0.3.ebuild:
+  IUSE=ladcca
+
+  16 Apr 2004; Travis Tilley <lv@gentoo.org> fluidsynth-1.0.3.ebuild:
+  adding ~amd64 keyword and versioned ladcca dependency - see bug #46916 for
+  more information
+
+  08 Apr 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  fluidsynth-1.0.1.ebuild, fluidsynth-1.0.3.ebuild:
+  Removed ladcca support.  See bug #46916.
+
+  03 Apr 2004; Lars Weiler <pylon@gentoo.org> fluidsynth-1.0.3.ebuild:
+  stable on ppc
+
+  26 Mar 2004; Jeremy Huddleston <eradicator@gentoo.org>
+  fluidsynth-1.0.1.ebuild, fluidsynth-1.0.3.ebuild:
+  Stable on x86.
+
+  21 Mar 2004; David Holm <dholm@gentoo.org> fluidsynth-1.0.3.ebuild:
+  Added to ~ppc.
+
+  15 Feb 2004; David Holm <dholm@gentoo.org> fluidsynth-1.0.3.ebuild:
+  Added fix for nonx86 archs submitted by Axxackall. Keyworded ~ppc.
+
+  07 Dec 2003; Heinrich Wendel <lanius@gentoo.org> fluidsynth-1.0.1.ebuild,
+  fluidsynth-1.0.3.ebuild:
+  removed unnecessary dep on alsa-driver, alsa-utils
+
+*fluidsynth-1.0.3 (21 Sep 2003)
+
+  21 Sep 2003; jje <jje@gentoo.org> fluidsynth-1.0.3.ebuild:
+  Version bump. Now checks USE=sse, codified some comments from Jonathan Kraut
+  on not enabling -msse2 and having USE=sse.
+  
+  Submitted by: Jonathan Kraut <krautj@earthlink.net>
+		Rossen Apostolov <rossen@protein.osaka-u.ac.jp>
+
+*fluidsynth-1.0.1 (24 May 2003)
+
+  24 May 2003; jje <jje@gentoo.org> fluidsynth-1.0.1.ebuild:
+  Initial revision.
+  
+  Submitted by: Jonathan Kraut <jkraut1@nyc.rr.com>
+

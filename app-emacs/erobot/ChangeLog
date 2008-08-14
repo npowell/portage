@@ -1,0 +1,43 @@
+# ChangeLog for app-emacs/erobot
+# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-emacs/erobot/ChangeLog,v 1.12 2007/11/25 16:46:55 ulm Exp $
+
+  25 Nov 2007; Ulrich Mueller <ulm@gentoo.org> -files/50erobot-gentoo.el,
+  -erobot-2.1.0.ebuild, erobot-2.1.0-r1.ebuild:
+  Stable on amd64, bug #195512. Remove old.
+
+  04 Jul 2007; Christian Faulhammer <opfer@gentoo.org>
+  erobot-2.1.0-r1.ebuild:
+  stable x86, bug 184145
+
+  21 Apr 2007; Ulrich Mueller <ulm@gentoo.org>
+  +files/erobot-2.1.0-fix-interactive.patch, erobot-2.1.0-r1.ebuild:
+  Bugfix in interactive function call.
+
+*erobot-2.1.0-r1 (21 Apr 2007)
+
+  21 Apr 2007; Ulrich Mueller <ulm@gentoo.org> +files/51erobot-gentoo.el,
+  erobot-2.1.0.ebuild, +erobot-2.1.0-r1.ebuild:
+  HOMEPAGE updated. Use autoload instead of require.
+
+  07 Mar 2007; Christian Faulhammer <opfer@gentoo.org>
+  files/50erobot-gentoo.el:
+  add load path correctly, fixes bug 169588, reported by Ulrich Mueller
+  <ulm@kph.uni-mainz.de>
+
+  06 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  24 Oct 2005; Joseph Jezak <josejx@gentoo.org> erobot-2.1.0.ebuild:
+  Marked ~ppc.
+
+  01 Jul 2005; Matthew Kennedy <mkennedy@gentoo.org> erobot-2.1.0.ebuild:
+  Keywording ~amd64.
+
+*erobot-2.1.0 (31 Oct 2002)
+
+  31 Oct 2002; Matthew Kennedy <mkennedy@gentoo.org> ChangeLog,
+  erobot-2.1.0.ebuild, files/50erobot-gentoo.el, 
+  files/digest-erobot-2.1.0 :
+
+  Initial import.

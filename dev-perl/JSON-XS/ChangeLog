@@ -1,0 +1,40 @@
+# ChangeLog for dev-perl/JSON-XS
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/JSON-XS/ChangeLog,v 1.7 2008/04/24 16:45:17 yuval Exp $
+
+*JSON-XS-2.2 (24 Apr 2008)
+
+  24 Apr 2008; Yuval Yaari <yuval@gentoo.org> +JSON-XS-2.2.ebuild:
+  Version bump
+
+*JSON-XS-1.52 (19 Oct 2007)
+
+  19 Oct 2007; Christian Hartmann <ian@gentoo.org> +JSON-XS-1.52.ebuild:
+  Version bump
+
+*JSON-XS-1.3 (25 Jun 2007)
+
+  25 Jun 2007; Michael Cummings <mcummings@gentoo.org> +JSON-XS-1.3.ebuild:
+  Version bump
+
+*JSON-XS-1.24 (12 Jun 2007)
+
+  12 Jun 2007; Michael Cummings <mcummings@gentoo.org> +JSON-XS-1.24.ebuild:
+  Version bump
+
+*JSON-XS-1.22 (24 May 2007)
+
+  24 May 2007; Michael Cummings <mcummings@gentoo.org> +JSON-XS-1.22.ebuild:
+  Version bump
+
+*JSON-XS-1.21 (12 May 2007)
+
+  12 May 2007; Michael Cummings <mcummings@gentoo.org> +JSON-XS-1.21.ebuild:
+  Version bump
+
+*JSON-XS-1.11 (03 May 2007)
+
+  03 May 2007; Christian Hartmann <ian@gentoo.org> +metadata.xml,
+  +JSON-XS-1.11.ebuild:
+  New package; bug #175364
+

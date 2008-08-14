@@ -1,0 +1,30 @@
+# ChangeLog for media-gfx/jp2a
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/jp2a/ChangeLog,v 1.6 2008/01/09 21:27:34 ranger Exp $
+
+  09 Jan 2008; Brent Baude <ranger@gentoo.org> jp2a-1.0.6-r1.ebuild:
+  Marking  jp2a-1.0.6-r1 ~ppc64 per chainsaw's request
+
+  09 Jan 2008; Tony Vroon <chainsaw@gentoo.org> jp2a-1.0.6-r1.ebuild:
+  Add ~ppc keyword. Tested on a PowerBook 5,9
+
+  09 Jan 2008; Raúl Porcel <armin76@gentoo.org> jp2a-1.0.6-r1.ebuild:
+  Add ~ia64/~sparc
+
+*jp2a-1.0.6-r1 (09 Jan 2008)
+
+  09 Jan 2008; Tony Vroon <chainsaw@gentoo.org> -jp2a-1.0.6.ebuild,
+  +jp2a-1.0.6-r1.ebuild:
+  Make CURL dependency optional, ebuild enhancement by Nadim Kobeissi
+  <nadim@keihatsu.org>.
+
+  09 Jan 2008; Samuli Suominen <drac@gentoo.org> jp2a-1.0.6.ebuild:
+  Keyword ~amd64.
+
+*jp2a-1.0.6 (09 Jan 2008)
+
+  09 Jan 2008; Tony Vroon <chainsaw@gentoo.org> +metadata.xml,
+  +jp2a-1.0.6.ebuild:
+  Initial commit, ebuild by Nadim Kobeissi <nadim@keihatsu.org> with some
+  final tweaks from me. Closes bug #205004.
+

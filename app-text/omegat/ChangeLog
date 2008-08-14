@@ -1,0 +1,31 @@
+# ChangeLog for app-text/omegat
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-text/omegat/ChangeLog,v 1.6 2008/02/29 17:51:58 carlo Exp $
+
+  29 Feb 2008; Carsten Lohrke <carlo@gentoo.org> omegat-1.7.1.ebuild,
+  omegat-1.7.2.ebuild:
+  Remove icon extension from desktop entry to match Icon Theme Specification.
+
+*omegat-1.7.2 (24 Sep 2007)
+
+  24 Sep 2007; MATSUU Takuto <matsuu@gentoo.org> +omegat-1.7.2.ebuild:
+  Version bumped.
+
+*omegat-1.7.1 (22 Jul 2007)
+
+  22 Jul 2007; MATSUU Takuto <matsuu@gentoo.org> +omegat-1.7.1.ebuild:
+  Version bumped.
+
+  29 Apr 2007; MATSUU Takuto <matsuu@gentoo.org> omegat-1.6.1_p04.ebuild:
+  Fixed docinto problem.
+
+  29 Apr 2007; Vlastimil Babka <caster@gentoo.org> omegat-1.6.1_p04.ebuild:
+  Add java-ant-2 to inherit and rewrite build xml files.
+
+*omegat-1.6.1_p04 (29 Apr 2007)
+
+  29 Apr 2007; MATSUU Takuto <matsuu@gentoo.org> +metadata.xml,
+  +omegat-1.6.1_p04.ebuild:
+  Initial import. Submitted by Magnus Lind <magnus.lind@sverige.nu> and MATSUI
+  Tetsushi <VED03370@nifty.ne.jp> in bug #91559.
+

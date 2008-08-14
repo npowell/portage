@@ -1,0 +1,34 @@
+# ChangeLog for dev-ruby/rubyzip
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rubyzip/ChangeLog,v 1.8 2008/01/02 14:37:29 armin76 Exp $
+
+  02 Jan 2008; Raúl Porcel <armin76@gentoo.org> rubyzip-0.9.1.ebuild:
+  Re-add ~ia64
+
+*rubyzip-0.9.1 (07 Sep 2007)
+
+  07 Sep 2007; Christian Parpart <trapni@gentoo.org> +rubyzip-0.9.1.ebuild:
+  version bump
+
+  28 Mar 2007; Raúl Porcel <armin76@gentoo.org> rubyzip-0.5.12.ebuild:
+  ia64 stable wrt bug 155513
+
+  15 Jan 2007; Steve Dibb <beandog@gentoo.org> rubyzip-0.5.12.ebuild:
+  amd64 stable, bug 155513
+
+  04 Dec 2006; Christian Faulhammer <opfer@gentoo.org>
+  rubyzip-0.5.12.ebuild:
+  stable x86, bug #155513
+
+  08 Aug 2006; Luis Medinas <metalgod@gentoo.org> rubyzip-0.5.12.ebuild:
+  Added ~amd64 keyword.
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org> rubyzip-0.5.12.ebuild:
+  Mark 0.5.12 ~ia64
+
+*rubyzip-0.5.12 (31 Oct 2005)
+
+  31 Oct 2005; Tom Payne <twp@gentoo.org> +metadata.xml,
+  +rubyzip-0.5.12.ebuild:
+  New package.
+

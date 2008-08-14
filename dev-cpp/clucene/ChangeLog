@@ -1,0 +1,55 @@
+# ChangeLog for dev-cpp/clucene
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-cpp/clucene/ChangeLog,v 1.11 2008/04/28 15:54:14 phreak Exp $
+
+  28 Apr 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Remove Wulf C. Krueger (philantrop) from metadata.xml (as per #168573).
+
+  28 Nov 2007; Markus Rothe <corsair@gentoo.org> clucene-0.9.20.ebuild:
+  Added ~ppc64
+
+*clucene-0.9.20 (02 Oct 2007)
+
+  02 Oct 2007; Wulf C. Krueger <philantrop@gentoo.org> metadata.xml,
+  -clucene-0.9.15.ebuild, -clucene-0.9.16a.ebuild, -clucene-0.9.17.ebuild,
+  +clucene-0.9.20.ebuild:
+  Version bump to 0.9.20. Fixes bug 179670. 
+  Removed obsolete versions. 
+  Added myself to metadata.xml as the maintainer.
+
+  19 Mar 2007; Bryan Østergaard <kloeri@gentoo.org> metadata.xml:
+  Remove squinky86 from metadata.xml due to retirement.
+
+  10 Mar 2007; Roy Marples <uberlord@gentoo.org> clucene-0.9.17.ebuild:
+  Added ~x86-fbsd keyword.
+
+*clucene-0.9.17 (08 Mar 2007)
+*clucene-0.9.16a (08 Mar 2007)
+
+  08 Mar 2007; Anant Narayanan <anant@gentoo.org> -clucene-0.9.16.ebuild,
+  +clucene-0.9.16a.ebuild, +clucene-0.9.17.ebuild:
+  vBump to 0.16a stable and 0.17 unstable, closes bug #169875
+
+*clucene-0.9.16 (21 Oct 2006)
+
+  21 Oct 2006; Jon Hood <squinky86@gentoo.org> -clucene-0.9.10.ebuild,
+  +clucene-0.9.16.ebuild:
+  Version bump, remove old version. Adds support for strigi, bug #149362,
+  thanks to Christoph Mockenhaupt <gentoo@mockies.de>.
+
+*clucene-0.9.15 (07 Jul 2006)
+
+  07 Jul 2006; Jon Hood <squinky86@gentoo.org> +clucene-0.9.15.ebuild:
+  Version bump.
+
+  14 Jun 2006; <nixnut@gentoo.org> clucene-0.9.10.ebuild:
+  Added ~ppc wrt bug #136709
+
+*clucene-0.9.10 (13 Jun 2006)
+
+  13 Jun 2006; Jon Hood <squinky86@gentoo.org> +metadata.xml,
+  +clucene-0.9.10.ebuild:
+  Initial import. Clucene is the C++ equivalent to Java's lucene package.
+  Thanks to Rohan McGovern <rohan@rohanpm.net> in bug #95633 for work on this
+  package.
+

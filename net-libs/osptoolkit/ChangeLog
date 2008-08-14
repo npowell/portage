@@ -1,0 +1,36 @@
+# ChangeLog for net-libs/osptoolkit
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-libs/osptoolkit/ChangeLog,v 1.7 2007/05/01 09:25:40 genstef Exp $
+
+*osptoolkit-3.3.6 (01 May 2007)
+
+  01 May 2007; Stefan Schweizer <genstef@gentoo.org>
+  +osptoolkit-3.3.6.ebuild:
+  version bump
+
+  06 Jan 2007; Timothy Redaelli <drizzt@gentoo.org> osptoolkit-3.3.4.ebuild:
+  s/einfo/elog/
+  Misc ebuild cleanups
+
+  06 Oct 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  osptoolkit-3.3.4.ebuild:
+  Stable on x86 wrt bug #144941.
+
+  03 Oct 2006; Stefan Schweizer <genstef@gentoo.org>
+  -osptoolkit-3.3.1.ebuild, osptoolkit-3.3.4.ebuild:
+  Fix get_libdir, bug 141779
+
+*osptoolkit-3.3.4 (02 Feb 2006)
+
+  02 Feb 2006; Stefan Knoblich <stkn@gentoo.org> +osptoolkit-3.3.4.ebuild:
+  Version bump.
+
+  28 Aug 2005; Stefan Knoblich <stkn@gentoo.org> osptoolkit-3.3.1.ebuild:
+  Added multilib support for amd64.
+
+*osptoolkit-3.3.1 (19 Aug 2005)
+
+  19 Aug 2005; Stefan Knoblich <stkn@gentoo.org> +metadata.xml,
+  +osptoolkit-3.3.1.ebuild:
+  Initial import, work-in-progress.
+

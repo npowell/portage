@@ -1,0 +1,35 @@
+# ChangeLog for dev-ruby/xml-simple
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/xml-simple/ChangeLog,v 1.8 2007/12/30 20:14:55 graaff Exp $
+
+*xml-simple-1.0.11 (30 Dec 2007)
+
+  30 Dec 2007; Hans de Graaff <graaff@gentoo.org> +xml-simple-1.0.11.ebuild:
+  Version bump
+
+  25 Jun 2007; Christoph Mende <angelos@gentoo.org> xml-simple-1.0.8.ebuild:
+  Added ~amd64 wrt bug 179696
+
+  21 Jun 2007; Hans de Graaff <graaff@gentoo.org> xml-simple-1.0.8.ebuild:
+  Change USE_RUBY to ruby18, fixes #179696.
+
+  13 Mar 2007; Leonardo Boshell <leonardop@gentoo.org> metadata.xml:
+  Replacing text-markup herd with the new sgml herd.
+
+  22 Feb 2007; Piotr Jaroszyński <peper@gentoo.org> ChangeLog:
+  Transition to Manifest2.
+
+*xml-simple-1.0.8 (19 Apr 2006)
+
+  19 Apr 2006; Caleb Tennis <caleb@gentoo.org> +xml-simple-1.0.8.ebuild:
+  version bump, to an new gems version
+
+  30 Mar 2006; Aron Griffis <agriffis@gentoo.org> xml-simple-1.0.6.ebuild:
+  Mark 1.0.6 ~ia64
+
+*xml-simple-1.0.6 (23 Oct 2004)
+
+  23 Oct 2004; Mamoru KOMACHI <usata@gentoo.org> +xml-simple-1.0.6.ebuild:
+  Initial import. Thanks to DATE Ken at GentooJP EbuildJP,
+  http://ebuild.gentoo.gr.jp/.
+

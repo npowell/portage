@@ -1,0 +1,95 @@
+# ChangeLog for x11-apps/x11perf
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-apps/x11perf/ChangeLog,v 1.21 2008/03/10 01:54:57 dberkholz Exp $
+
+*x11perf-1.5 (10 Mar 2008)
+
+  10 Mar 2008; Donnie Berkholz <dberkholz@gentoo.org>; +x11perf-1.5.ebuild:
+  Bump.
+
+  28 Sep 2007; Joshua Kinard <kumba@gentoo.org> x11perf-1.4.1.ebuild:
+  Stable on mips, per #191615.
+
+  12 May 2007; nixnut <nixnut@gentoo.org> x11perf-1.4.1.ebuild:
+  Stable on ppc wrt bug 165892
+
+  12 May 2007; Markus Rothe <corsair@gentoo.org> x11perf-1.4.1.ebuild:
+  Stable on ppc64; bug #165892
+
+  12 May 2007; Steve Dibb <beandog@gentoo.org> x11perf-1.4.1.ebuild:
+  amd64 stable, bug 165892
+
+  08 May 2007; Gustavo Zacarias <gustavoz@gentoo.org> x11perf-1.4.1.ebuild:
+  Stable on sparc wrt #165892
+
+  08 May 2007; Raúl Porcel <armin76@gentoo.org> x11perf-1.4.1.ebuild:
+  x86 stable wrt bug 165892
+
+  10 Oct 2006; Donnie Berkholz <dberkholz@gentoo.org>; x11perf-1.4.1.ebuild:
+  Update description to be less generic.
+
+  10 Oct 2006; Donnie Berkholz <dberkholz@gentoo.org>; x11perf-1.4.1.ebuild:
+  Update description to be less generic.
+
+  10 Oct 2006; Donnie Berkholz <dberkholz@gentoo.org>; x11perf-1.4.1.ebuild:
+  Update description to be less generic.
+
+  12 May 2006; Donnie Berkholz <spyderous@gentoo.org>; x11perf-1.4.1.ebuild:
+  Keyword ~ppc.
+
+*x11perf-1.4.1 (03 Mar 2006)
+
+  03 Mar 2006; Donnie Berkholz <spyderous@gentoo.org>;
+  -x11perf-1.0.1.ebuild, +x11perf-1.4.1.ebuild:
+  Fixes for various misdetected extensions.
+
+  14 Feb 2006; Markus Rothe <corsair@gentoo.org> x11perf-1.0.1.ebuild:
+  Added ~ppc64
+
+  26 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  -x11perf-0.99.2.ebuild, -x11perf-1.0.0.ebuild:
+  Pull old versions.
+
+*x11perf-1.0.1 (23 Dec 2005)
+
+  23 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +x11perf-1.0.1.ebuild:
+  Bump for 7.0.
+
+*x11perf-1.0.0 (18 Dec 2005)
+
+  18 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +x11perf-1.0.0.ebuild:
+  Bump for 7.0RC4.
+
+  09 Dec 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  -x11perf-0.99.0.ebuild, -x11perf-0.99.1.ebuild:
+  Pull old versions.
+
+*x11perf-0.99.2 (04 Dec 2005)
+
+  04 Dec 2005; Joshua Baergen <joshuabaergen@gentoo.org>
+  +x11perf-0.99.2.ebuild:
+  Bump for 7.0RC3.
+
+  17 Nov 2005; Herbie Hopkins <herbs@gentoo.org> x11perf-0.99.1.ebuild:
+  Marked ~amd64.
+
+*x11perf-0.99.1 (20 Oct 2005)
+
+  20 Oct 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +x11perf-0.99.1.ebuild:
+  Bump for 7.0 RC1.
+
+  09 Sep 2005; Donnie Berkholz <spyderous@gentoo.org>; +metadata.xml:
+  Add metadata.
+
+  08 Aug 2005; Ferris McCormick <fmccor@gentoo.org> x11perf-0.99.0.ebuild:
+  Add ~sparc keyword (Modular X testing).
+
+*x11perf-0.99.0 (08 Aug 2005)
+
+  08 Aug 2005; Donnie Berkholz <spyderous@gentoo.org>;
+  +x11perf-0.99.0.ebuild:
+  Initial commit for modular X.
+

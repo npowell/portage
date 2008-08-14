@@ -1,0 +1,37 @@
+# ChangeLog for sci-mathematics/pspp
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-mathematics/pspp/ChangeLog,v 1.7 2008/08/06 20:47:47 ulm Exp $
+
+  06 Aug 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
+  Add USE flag description to metadata wrt GLEP 56.
+
+*pspp-0.6.0 (30 Jun 2008)
+
+  30 Jun 2008; Markus Dittrich <markusle@gentoo.org>
+  +files/pspp-0.6.0-disable-inline.patch, +pspp-0.6.0.ebuild:
+  Version bump including patch to allow compilation with gcc-4.3 (see bug
+  #229905).
+
+  03 Feb 2008; Markus Dittrich <markusle@gentoo.org> pspp-0.4.0.ebuild:
+  Added bindist USE flag to prevent linking against GPL-3d >=gsl-1.10 
+  if needed (see bug #199451).
+
+  31 Jul 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  files/50pspp-gentoo.el:
+  update site-init file, thanks to Ulrich Mueller <ulm@gentoo.org>
+
+  31 Jul 2007; Sébastien Fabbro <bicatali@gentoo.org>
+  +files/50pspp-gentoo.el, pspp-0.4.0.ebuild:
+  Added patch emacs support, thanks to Christian Faulhammer
+  <opfer@gentoo.org>. Closing bug #187212
+
+  20 Mar 2007; Sébastien Fabbro <bicatali@gentoo.org> metadata.xml:
+  herd sci -> sci-mathematics
+
+*pspp-0.4.0 (19 Mar 2007)
+
+  19 Mar 2007; Sébastien Fabbro <bicatali@gentoo.org> +metadata.xml,
+  +pspp-0.4.0.ebuild:
+  Initial import of pspp. Thanks to Torsten Kurbad <torsten@tk-webart.de> 
+  for his work. Closes bug #79943.
+

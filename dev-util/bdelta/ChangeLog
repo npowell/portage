@@ -1,0 +1,28 @@
+# ChangeLog for dev-util/bdelta
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-util/bdelta/ChangeLog,v 1.6 2007/08/29 18:02:30 genstef Exp $
+
+*bdelta-0.1.0.ebuild (29 Aug 2007)
+
+  29 Aug 2007; Stefan Schweizer <genstef@gentoo.org> bdelta-0.1.0.ebuild:
+  Use CHOST specific cc thanks to Chris Slycord <cslycord@gmail.com> in bug
+  186635
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  13 Aug 2005; Jose Luis Rivero <yoswink@gentoo.org> bdelta-0.1.0.ebuild:
+  Keyworded ~alpha wrt #93379 bdelta-0.1.0.ebuild
+
+  10 May 2005; Herbie Hopkins <herbs@gentoo.org> bdelta-0.1.0.ebuild:
+  Multilib fixes
+
+  10 May 2005; Stefan Schweizer <genstef@gentoo.org> bdelta-0.1.0.ebuild:
+  Fix emake -j1 problem thanks to Arudil <mmueller12345@yahoo.de> in bug 92136
+
+*bdelta-0.1.0 (09 May 2005)
+
+  09 May 2005; Stefan Schweizer <genstef@gentoo.org> +metadata.xml,
+  +bdelta-0.1.0.ebuild:
+  New ebuild based on the one seen on deltup.sf.net
+

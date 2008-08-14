@@ -1,0 +1,32 @@
+# ChangeLog for dev-perl/perl-PBS
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/perl-PBS/ChangeLog,v 1.7 2008/01/31 06:45:40 dberkholz Exp $
+
+  31 Jan 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  -perl-PBS-0.23.ebuild:
+  Clean up.
+
+  26 Apr 2007; Donnie Berkholz <dberkholz@gentoo.org>; metadata.xml:
+  Update for cluster herd split to hp-cluster and ha-cluster.
+
+  12 Dec 2005; Robin H. Johnson <robbat2@gentoo.org> metadata.xml:
+  Add metadata.xml.
+
+  30 Aug 2005; Robin H. Johnson <robbat2@gentoo.org> perl-PBS-0.24.ebuild:
+  Stable on x86.
+
+*perl-PBS-0.24 (11 Aug 2005)
+
+  11 Aug 2005; Robin H. Johnson <robbat2@gentoo.org> +perl-PBS-0.24.ebuild:
+  Version bump. Note that the new release does NOT work with OpenPBS at this
+  time!.
+
+  21 Jul 2005; Robin H. Johnson <robbat2@gentoo.org> perl-PBS-0.23.ebuild:
+  Forget a dep.
+
+*perl-PBS-0.23 (21 Jul 2005)
+
+  21 Jul 2005; Robin H. Johnson <robbat2@gentoo.org> +metadata.xml,
+  +perl-PBS-0.23.ebuild:
+  Initial submission, ebuild by Robin H. Johnson <robbat2@gentoo.org>.
+

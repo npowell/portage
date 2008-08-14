@@ -1,0 +1,17 @@
+# ChangeLog for dev-scheme/ikarus
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-scheme/ikarus/ChangeLog,v 1.2 2008/06/01 18:03:13 pchrist Exp $
+
+  01 Jun 2008; Panagiotis Christopoulos <pchrist@gentoo.org>
+  ikarus-0.0.3.ebuild:
+  Making DESCRIPTION a bit smaller.
+
+*ikarus-0.0.3 (31 May 2008)
+
+  31 May 2008; Panagiotis Christopoulos <pchrist@gentoo.org>
+  +files/ikarus-0.0.3-cpu_has_sse2.patch,
+  +files/ikarus-0.0.3-ikarus-enter.patch, +ikarus-0.0.3.ebuild:
+  Initial Commit of dev-scheme/ikarus. Ebuild first written by Marijn
+  Schouten <hkBst@gentoo.org> and updated by me. Moved from the overlay to
+  the main tree.
+

@@ -1,0 +1,103 @@
+# ChangeLog for sys-fs/lsscsi
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/lsscsi/ChangeLog,v 1.28 2007/11/27 17:19:37 corsair Exp $
+
+  27 Nov 2007; Markus Rothe <corsair@gentoo.org> lsscsi-0.19.ebuild:
+  Added ~ppc64
+
+  03 Jul 2007; Joshua Kinard <kumba@gentoo.org> lsscsi-0.19.ebuild:
+  Stable on mips, per #183932.
+
+  02 Jul 2007; Christian Faulhammer <opfer@gentoo.org> lsscsi-0.19.ebuild:
+  stable x86, bug 183932
+
+  02 Jul 2007; Raúl Porcel <armin76@gentoo.org> lsscsi-0.19.ebuild:
+  alpha stable wrt #183932
+
+  02 Jul 2007; Jeroen Roovers <jer@gentoo.org> lsscsi-0.19.ebuild:
+  Stable for HPPA (bug #183932).
+
+  02 Jul 2007; Christoph Mende <angelos@gentoo.org> lsscsi-0.19.ebuild:
+  Stable on amd64 wrt bug #183932
+
+  02 Jul 2007; Gustavo Zacarias <gustavoz@gentoo.org> lsscsi-0.19.ebuild:
+  Stable on sparc wrt #183932
+
+  02 Jul 2007; Lars Weiler <pylon@gentoo.org> lsscsi-0.19.ebuild:
+  Stable on ppc; bug #183932.
+
+*lsscsi-0.19 (02 Jul 2007)
+
+  02 Jul 2007; Robin H. Johnson <robbat2@gentoo.org> +lsscsi-0.19.ebuild:
+  Version bump. Fixes functionality with kernels newer than 2.6.20.
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+  28 Aug 2006; <blubb@gentoo.org> lsscsi-0.17.ebuild:
+  stable on amd64
+
+  25 Aug 2006; Bryan Østergaard <kloeri@gentoo.org> lsscsi-0.17.ebuild:
+  Stable on x86.
+
+  22 Jul 2006; Bryan Østergaard <kloeri@gentoo.org> lsscsi-0.17.ebuild:
+  Stable on alpha.
+
+  12 Jul 2006; Gustavo Zacarias <gustavoz@gentoo.org> lsscsi-0.17.ebuild:
+  Stable on hppa
+
+  09 Jul 2006; Joshua Kinard <kumba@gentoo.org> lsscsi-0.17.ebuild:
+  Marked stable on mips.
+
+  22 Jun 2006; Gustavo Zacarias <gustavoz@gentoo.org> lsscsi-0.17.ebuild:
+  Stable on sparc
+
+*lsscsi-0.17 (08 Mar 2006)
+
+  08 Mar 2006; Robin H. Johnson <robbat2@gentoo.org> +lsscsi-0.17.ebuild:
+  Version bump.
+
+*lsscsi-0.16 (30 Dec 2005)
+
+  30 Dec 2005; <chainsaw@gentoo.org> +lsscsi-0.16.ebuild:
+  Version bump.
+
+  25 Dec 2005; Joshua Kinard <kumba@gentoo.org> lsscsi-0.15.ebuild:
+  Mark unstable on mips.
+
+*lsscsi-0.15 (29 Nov 2005)
+
+  29 Nov 2005; Mike Frysinger <vapier@gentoo.org> +lsscsi-0.15.ebuild:
+  Version bump.
+
+  01 Oct 2005; Jason Wever <weeve@gentoo.org> lsscsi-0.14.ebuild:
+  Added ~sparc keyword.
+
+  17 Sep 2005; Ciaran McCreesh <ciaranm@gentoo.org> ChangeLog:
+  Converted to UTF-8, fixed encoding screwups
+
+  16 Sep 2005; Aron Griffis <agriffis@gentoo.org> lsscsi-0.14.ebuild:
+  Mark 0.14 stable on alpha
+
+  31 Dec 2004; Bryan Østergaard <kloeri@gentoo.org> lsscsi-0.14.ebuild:
+  ~alpha keyword.
+
+  31 Dec 2004; Bryan Østergaard <kloeri@gentoo.org> lsscsi-0.14.ebuild:
+  ~alpha keyword.
+
+*lsscsi-0.14 (30 Dec 2004)
+
+  30 Dec 2004; Mike Frysinger <vapier@gentoo.org> +lsscsi-0.14.ebuild:
+  Version bump #60673 by Holger Hoffstätte.
+
+  28 Nov 2004; Lars Weiler <pylon@gentoo.org> lsscsi-0.12.ebuild:
+  Added ~hppa to keywords.
+
+  17 Jul 2004; David Holm <dholm@gentoo.org> lsscsi-0.12.ebuild:
+  Added to ~ppc.
+
+*lsscsi-0.12 (08 Jul 2004)
+
+  08 Jul 2004; Robert Coie <rac@gentoo.org> +lsscsi-0.12.ebuild:
+  Initial commit
+

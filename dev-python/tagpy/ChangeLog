@@ -1,0 +1,83 @@
+# ChangeLog for dev-python/tagpy
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/tagpy/ChangeLog,v 1.22 2008/07/10 14:40:26 ranger Exp $
+
+  10 Jul 2008; Brent Baude <ranger@gentoo.org> tagpy-0.94.5.ebuild:
+  stable ppc64, bug 230937
+
+  06 Jul 2008; Markus Meier <maekke@gentoo.org> tagpy-0.94.5.ebuild:
+  amd64/x86 stable, bug #230937
+
+  22 Jun 2008; Santiago M. Mola <coldwind@gentoo.org> tagpy-0.94.5.ebuild:
+  Added dep on setuptools, bug #222815.
+
+*tagpy-0.94.5 (14 May 2008)
+
+  14 May 2008; Ali Polatel <hawking@gentoo.org> +tagpy-0.94.5.ebuild:
+  Version bump.
+
+  21 Apr 2008; Raúl Porcel <armin76@gentoo.org> tagpy-0.93.ebuild:
+  Add ~sparc
+
+  03 Mar 2008; Christoph Mende <angelos@gentoo.org> tagpy-0.93.ebuild:
+  Stable on amd64, bug #211187
+
+  24 Feb 2008; Brent Baude <ranger@gentoo.org> tagpy-0.93.ebuild:
+  stable ppc64, bug 211187
+
+  24 Feb 2008; Markus Meier <maekke@gentoo.org> tagpy-0.93.ebuild:
+  x86 stable, bug #211187
+
+  23 Feb 2008; Tiziano Müller <dev-zero@gentoo.org> tagpy-0.91.ebuild,
+  -tagpy-0.92.ebuild, tagpy-0.93.ebuild:
+  Dropped old version. Changed dependency to require at least boost-1.34.1
+  (bug #195059).
+
+*tagpy-0.93 (17 Nov 2007)
+
+  17 Nov 2007; Stefan Briesenick <sbriesen@gentoo.org> +tagpy-0.93.ebuild:
+  version bump, solving bug #197608.
+
+  14 Oct 2007; Markus Rothe <corsair@gentoo.org> tagpy-0.91.ebuild:
+  Stable on ppc64; bug #193781
+
+  06 Oct 2007; Stefan Briesenick <sbriesen@gentoo.org> -tagpy-0.90.1.ebuild:
+  removed old version.
+
+*tagpy-0.92 (06 Oct 2007)
+
+  06 Oct 2007; Stefan Briesenick <sbriesen@gentoo.org> +tagpy-0.92.ebuild:
+  version bump.
+
+  30 Sep 2007; Markus Meier <maekke@gentoo.org> tagpy-0.91.ebuild:
+  x86 stable, bug #193781
+
+  26 Sep 2007; Christoph Mende <angelos@gentoo.org> tagpy-0.91.ebuild:
+  Stable on amd64 wrt bug #193786
+
+  15 Apr 2007; Markus Rothe <corsair@gentoo.org> tagpy-0.91.ebuild:
+  Added ~ppc64; bug #174689
+
+*tagpy-0.91 (27 Jun 2006)
+
+  27 Jun 2006; Stefan Briesenick <sbriesen@gentoo.org> +tagpy-0.91.ebuild:
+  version bump.
+
+  27 Jun 2006; Stefan Briesenick <sbriesen@gentoo.org> tagpy-0.90.1.ebuild:
+  changed SRC_URI to new location.
+
+  01 Apr 2006; Aron Griffis <agriffis@gentoo.org> tagpy-0.90.1.ebuild:
+  Mark 0.90.1 ~ia64
+
+  04 Mar 2006; Stefan Briesenick <sbriesen@gentoo.org> tagpy-0.90.1.ebuild:
+  removed 'examples' use flag, install examples unconditionally.
+
+  03 Mar 2006; Stefan Briesenick <sbriesen@gentoo.org> tagpy-0.90.1.ebuild:
+  fixed dependencies.
+
+*tagpy-0.90.1 (03 Mar 2006)
+
+  03 Mar 2006; Stefan Briesenick <sbriesen@gentoo.org> +metadata.xml,
+  +tagpy-0.90.1.ebuild:
+  initial commit.
+

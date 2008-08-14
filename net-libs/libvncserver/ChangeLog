@@ -1,0 +1,129 @@
+# ChangeLog for net-libs/libvncserver
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-libs/libvncserver/ChangeLog,v 1.34 2007/10/23 16:02:32 armin76 Exp $
+
+  23 Oct 2007; Raúl Porcel <armin76@gentoo.org> libvncserver-0.9.1.ebuild:
+  sparc stable
+
+  02 Oct 2007; Jeroen Roovers <jer@gentoo.org> libvncserver-0.9.1.ebuild:
+  Stable for HPPA (bug #194441).
+
+  01 Sep 2007; Christoph Mende <angelos@gentoo.org>
+  libvncserver-0.9.1.ebuild:
+  Stable on amd64
+
+  13 Aug 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  libvncserver-0.9.1.ebuild:
+  ppc. stable
+
+  24 Jul 2007; Raúl Porcel <armin76@gentoo.org> libvncserver-0.9.1.ebuild:
+  Add ~alpha, and ia64/x86 stable
+
+  06 Jul 2007; Raúl Porcel <armin76@gentoo.org> libvncserver-0.9.1.ebuild:
+  Add ~ia64 wrt #183009
+
+  25 Jun 2007; Diego Pettenò <flameeyes@gentoo.org>
+  libvncserver-0.9.1.ebuild:
+  Add elibtoolize call.
+
+  25 Jun 2007; Joe Peterson <lavajoe@gentoo.org> libvncserver-0.9.1.ebuild:
+  Add ~x86-fbsd keyword (bug #183009)
+
+  15 Jun 2007; Christoph Mende <angelos@gentoo.org> libvncserver-0.9.ebuild:
+  Stable on amd64 wrt bug 180174
+
+  01 Jun 2007; nixnut <nixnut@gentoo.org> libvncserver-0.9.ebuild:
+  Stable on ppc wrt bug 180174
+
+  01 Jun 2007; Raúl Porcel <armin76@gentoo.org> libvncserver-0.9.ebuild:
+  x86 stable wrt #180174
+
+  01 Jun 2007; Jeroen Roovers <jer@gentoo.org> libvncserver-0.9.ebuild:
+  Stable for HPPA (bug #180174).
+
+  30 May 2007; Gustavo Zacarias <gustavoz@gentoo.org>
+  libvncserver-0.9.ebuild:
+  Stable on sparc wrt #180174
+
+*libvncserver-0.9.1 (29 May 2007)
+
+  29 May 2007; Mike Frysinger <vapier@gentoo.org>
+  +libvncserver-0.9.1.ebuild:
+  Version bump.
+
+*libvncserver-0.9 (09 Apr 2007)
+
+  09 Apr 2007; Mike Frysinger <vapier@gentoo.org> +libvncserver-0.9.ebuild:
+  Version bump.
+
+  29 Jul 2006; Rene Nussbaumer <killerfox@gentoo.org>
+  libvncserver-0.8.2.ebuild:
+  Stable on hppa. See bug #136916.
+
+  28 Jul 2006; Jason Wever <weeve@gentoo.org> libvncserver-0.8.2.ebuild:
+  Stable on SPARC wrt security bug #136916.
+
+  27 Jul 2006; <tcort@gentoo.org> libvncserver-0.8.2.ebuild:
+  Stable on amd64 wrt security Bug #136916.
+
+  23 Jul 2006; Joshua Jackson <tsunam@gentoo.org> ChangeLog:
+  Stable x86; bug #136916
+
+  23 Jul 2006; Tobias Scherbaum <dertobi123@gentoo.org>
+  libvncserver-0.8.2.ebuild:
+  ppc stable, bug #136916
+
+*libvncserver-0.8.2 (15 Jul 2006)
+
+  15 Jul 2006; Mike Frysinger <vapier@gentoo.org>
+  +libvncserver-0.8.2.ebuild:
+  Version bump #136916.
+
+  27 Apr 2006; Alec Warner <antarus@gentoo.org>
+  files/digest-libvncserver-0.7, files/digest-libvncserver-0.7.1, Manifest:
+  Fixing SHA256 digest, pass four
+
+*libvncserver-0.8 (08 Mar 2006)
+
+  08 Mar 2006; Mike Frysinger <vapier@gentoo.org> +libvncserver-0.8.ebuild:
+  Version bump.
+
+*libvncserver-0.8_pre (27 Oct 2005)
+
+  27 Oct 2005; Mike Frysinger <vapier@gentoo.org>
+  +libvncserver-0.8_pre.ebuild:
+  Version bump.
+
+*libvncserver-0.7.1 (17 Jul 2005)
+
+  17 Jul 2005; Mike Frysinger <vapier@gentoo.org>
+  +libvncserver-0.7.1.ebuild:
+  Version bump.
+
+*libvncserver-0.7 (29 Dec 2004)
+
+  29 Dec 2004; Mike Frysinger <vapier@gentoo.org>
+  -files/0.5-optional-configure.ac.patch, -libvncserver-0.6.ebuild,
+  +libvncserver-0.7.ebuild:
+  Version bump for security #76019.
+
+  11 Aug 2004; Tom Martin <slarti@gentoo.org> libvncserver-0.6.ebuild:
+  Marked ~amd64.
+
+  10 Jun 2004; Aron Griffis <agriffis@gentoo.org> libvncserver-0.6.ebuild:
+  Fix use invocation
+
+*libvncserver-0.6 (01 Jan 2003)
+
+  01 Jan 2003; Mike Frysinger <vapier@gentoo.org> :
+  Version bumpage #36975.
+
+*libvncserver-0.5-r1 (12 Aug 2003)
+
+  12 Aug 2003; Mike Frysinger <vapier@gentoo.org> :
+  Make sure storepasswd binary is installed.
+
+*libvncserver-0.5 (07 Aug 2003)
+
+  07 Aug 2003; Mike Frysinger <vapier@gentoo.org> :
+  Initial import.  Ebuild submitted by me.

@@ -1,0 +1,56 @@
+# ChangeLog for dev-ruby/xmpp4r
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/xmpp4r/ChangeLog,v 1.8 2008/03/27 19:40:53 maekke Exp $
+
+  27 Mar 2008; Markus Meier <maekke@gentoo.org> xmpp4r-0.3.2.ebuild:
+  amd64/x86 stable, bug #214612
+
+*xmpp4r-0.3.2 (01 Nov 2007)
+
+  01 Nov 2007; Hans de Graaff <graaff@gentoo.org> +xmpp4r-0.3.2.ebuild:
+  Version bump per bug #197606.
+  
+  * Serious bug involving Ruby threading fixed (caused exceptions with ruby 1.8.6) 
+  * vCard helper fixes 
+  * Jabber RPC (JEP0009) support 
+  * HTTP Binding (JEP0124) support 
+  * Publish-Subscribe support 
+  * XMPPElement: a framework for classes representing XML elements 
+  * Ad-hoc commands support 
+  * Improvements to Dataforms: XData, XDataTitle and XDataInstructions
+
+*xmpp4r-0.3.1 (13 May 2007)
+
+  13 May 2007; Hans de Graaff <graaff@gentoo.org> -xmpp4r-0.3.ebuild,
+  +xmpp4r-0.3.1.ebuild:
+  Version bump: thanks for Jochen Schalanda in #177161.
+  
+  Changes in this version:
+  * SASL fixes
+  * Message#x and Presence#x support element selection by namespace
+  * Proper XML entity escaping for REXML text nodes
+  * Improvements to FileTransfer::Helper and SOCKS5BytestreamsServer
+  * Vcard::Helper fixes
+  * Update Digest module usage to reflect recent Ruby versions
+  * More documentation
+
+  04 Mar 2007; Tom Gall <tgall@gentoo.org> xmpp4r-0.3-r1.ebuild:
+  added ~ppc64
+
+*xmpp4r-0.3-r1 (17 Feb 2007)
+
+  17 Feb 2007; Robin H. Johnson <robbat2@gentoo.org> +xmpp4r-0.3-r1.ebuild:
+  Add GEM variant ebuild, so that other packages can use it. This ebuild tries
+  hard to preserve the examples and docs the same as they were pre-GEM. Also
+  add ~ppc and ~amd64 for my boxen.
+
+  21 Jan 2007; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org>
+  xmpp4r-0.3.ebuild:
+  Added examples use flag to ebuild, #145222
+
+*xmpp4r-0.3 (30 Dec 2006)
+
+  30 Dec 2006; Nguyễn Thái Ngọc Duy <pclouds@gentoo.org> +metadata.xml,
+  +xmpp4r-0.3.ebuild:
+  Initial ebuild by James Le Cuirot <chewi@aura-online.co.uk>, #106127
+

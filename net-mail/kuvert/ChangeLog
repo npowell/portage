@@ -1,0 +1,25 @@
+# ChangeLog for net-mail/kuvert
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-mail/kuvert/ChangeLog,v 1.6 2007/02/09 08:10:41 flameeyes Exp $
+
+  09 Feb 2007; Diego Pettenò <flameeyes@gentoo.org> ChangeLog:
+  Regenerate digest in Manifest2 format.
+
+  03 Jan 2005; Tom Martin <slarti@gentoo.org> kuvert-1.1.8.ebuild:
+  Stable on amd64.
+
+  30 Nov 2004; Sven Wegener <swegener@gentoo.org> kuvert-1.1.8.ebuild:
+  Fixed invalid atoms in *DEPEND.
+
+  20 Nov 2004; Tom Martin <slarti@gentoo.org> kuvert-1.1.8.ebuild:
+  Fix inherit for bug 71475.
+
+  05 Sep 2004; David Holm <dholm@gentoo.org> kuvert-1.1.8.ebuild:
+  Added to ~ppc.
+
+*kuvert-1.1.8 (03 Sep 2004)
+
+  03 Sep 2004; Tom Martin <slarti@gentoo.org> +kuvert-1.1.8.ebuild:
+  Initial import. The ebuild and the patch to get rid of idea stuff were
+  both submitted by Clemens Örtel <gentoo+sender+d53c44@kriegste.net> in bug
+  14567.

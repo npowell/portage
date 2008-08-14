@@ -1,0 +1,30 @@
+# ChangeLog for dev-python/pyalsaaudio
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-python/pyalsaaudio/ChangeLog,v 1.6 2008/03/12 18:08:12 phreak Exp $
+
+  12 Mar 2008; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing Marien Zwart (marienz, #107204) from metadata.xml.
+
+*pyalsaaudio-0.3 (28 Feb 2008)
+
+  28 Feb 2008; Tiziano Müller <dev-zero@gentoo.org>
+  +pyalsaaudio-0.3.ebuild:
+  Version bump (bug #210251).
+
+  15 Nov 2007; Samuli Suominen <drac@gentoo.org> pyalsaaudio-0.2.ebuild:
+  amd64 stable wrt #197514
+
+  30 Jun 2007; Jim Ramsay <lack@gentoo.org> pyalsaaudio-0.2.ebuild:
+  Adding ~amd64 keyword
+
+  20 Nov 2006; Christian Faulhammer <opfer@gentoo.org>
+  pyalsaaudio-0.2.ebuild:
+  stable x86, bug #155521
+
+*pyalsaaudio-0.2 (02 Oct 2006)
+
+  02 Oct 2006; Marien Zwart <marienz@gentoo.org> +metadata.xml,
+  +pyalsaaudio-0.2.ebuild:
+  New package, simplified version of an ebuild from James Kirkham. Closes bug
+  #114526.
+

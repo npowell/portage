@@ -1,0 +1,34 @@
+# ChangeLog for games-arcade/cavezofphear
+# Copyright 2000-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-arcade/cavezofphear/ChangeLog,v 1.9 2007/04/09 21:53:38 welp Exp $
+
+  09 Apr 2007; Peter Weller <welp@gentoo.org> cavezofphear-0.5.ebuild:
+  Keyworded ~x86-fbsd wrt bug 173405
+
+*cavezofphear-0.5 (13 Mar 2007)
+
+  13 Mar 2007; Tristan Heaven <nyhm@gentoo.org> +cavezofphear-0.5.ebuild:
+  Version bump
+
+  06 Dec 2006; Chris Gianelloni <wolf31o2@gentoo.org>
+  cavezofphear-0.1.ebuild:
+  Removed sed-4 from *DEPEND.
+
+  05 Oct 2006; Daniel Gryniewicz <dang@gentoo.org> cavezofphear-0.1.ebuild:
+  Marked stable on amd64 for bug #150189
+
+  21 May 2006; Markus Rothe <corsair@gentoo.org> cavezofphear-0.1.ebuild:
+  Stable on ppc64
+
+  17 Jan 2005; Jason Wever <weeve@gentoo.org> cavezofphear-0.1.ebuild:
+  Added ~sparc keyword.
+
+  22 Dec 2004; Yuta SATOH <nigoro@gentoo.org> cavezofphear-0.1.ebuild:
+  added ~ppc64
+
+*cavezofphear-0.1 (08 Nov 2003)
+
+  08 Nov 2003; Michael Sterrett <mr_bones_@gentoo.org>
+  cavezofphear-0.1.ebuild:
+  initial commit (bug 32507)
+

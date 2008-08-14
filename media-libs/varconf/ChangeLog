@@ -1,0 +1,75 @@
+# ChangeLog for media-libs/varconf
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-libs/varconf/ChangeLog,v 1.22 2008/07/07 06:01:59 tupone Exp $
+
+  07 Jul 2008; Tupone Alfredo <tupone@gentoo.org> varconf-0.6.4.ebuild:
+  Make 0.6.4 depends only on slot 1.2 of dev-libs/libsigc++.
+  Requested via bug #228479 by Rémi Cardona <remi@gentoo.org>
+
+  07 May 2007; Tupone Alfredo <tupone@gentoo.org> varconf-0.6.5.ebuild:
+  Added ~amd64 keyword
+
+*varconf-0.6.5 (14 Jan 2007)
+
+  14 Jan 2007; <tupone@gentoo.org> +varconf-0.6.5.ebuild:
+  Version bump to 0.6.5
+
+*varconf-0.6.4 (10 Jan 2007)
+
+  10 Jan 2007; <tupone@gentoo.org> metadata.xml, +varconf-0.6.4.ebuild:
+  Version bump to 0.6.4
+
+  06 Jan 2007; Danny van Dyk <kugelfang@gentoo.org> -varconf-0.5.0.ebuild,
+  -varconf-0.5.4.ebuild:
+  QA: Removed unused versions.
+
+  12 Dec 2006; Gustavo Zacarias <gustavoz@gentoo.org> varconf-0.5.0.ebuild,
+  varconf-0.5.4.ebuild, varconf-0.6.2.ebuild:
+  Unkeywording sparc, see #153411
+
+  12 Dec 2006; Christian Faulhammer <opfer@gentoo.org> varconf-0.6.2.ebuild:
+  stable x86, bugs #153411
+
+  08 Dec 2006; Charlie Shepherd <masterdriverz@gentoo.org>
+  varconf-0.6.2.ebuild:
+  Add dependencies on libsigc++ and pkgconfig, thanks to Patrick Lauer for
+  reporting; bug 153411
+
+  12 May 2006; Thomas Cort <tcort@gentoo.org> varconf-0.5.0.ebuild,
+  varconf-0.5.4.ebuild, varconf-0.6.2.ebuild:
+  Removed COPYING from dodoc.
+
+  07 Mar 2006; Diego Pettenò <flameeyes@gentoo.org> +metadata.xml,
+  varconf-0.5.0.ebuild, varconf-0.5.4.ebuild, varconf-0.6.2.ebuild:
+  Drop virtual/libc dependency. Add maintainer-needed metadata.
+
+  04 Feb 2005; Sven Wegener <swegener@gentoo.org> varconf-0.5.0.ebuild,
+  varconf-0.5.4.ebuild, varconf-0.6.2.ebuild:
+  Updated HOMEPAGE, bug #80691.
+
+*varconf-0.6.2 (04 Feb 2005)
+
+  04 Feb 2005; <avatar@gentoo.org> +varconf-0.6.2.ebuild:
+  Version bumped and added to ~ppc
+
+  27 Dec 2004; Gustavo Zacarias <gustavoz@gentoo.org> varconf-0.5.4.ebuild:
+  Stable on sparc
+
+  15 Nov 2004; Gustavo Zacarias <gustavoz@gentoo.org> varconf-0.5.4.ebuild:
+  Keyworded ~sparc
+
+  01 Jul 2004; Jeremy Huddleston <eradicator@gentoo.org> varconf-0.5.0.ebuild,
+  varconf-0.5.4.ebuild:
+  virtual/glibc -> virtual/libc
+
+  06 Dec 2002; Rodney Rees <manson@gentoo.org> : changed sparc ~sparc keywords
+ 
+*varconf-0.5.4 (1 Oct 2002) 
+
+  01 Oct 2002; Bart Verwilst <verwilst@gentoo.org>:
+
+  bugfix release
+
+*varconf-0.5.0 (18 Jul 2002)
+
+  18 Jul 2002; Daniel Robbins <drobbins@gentoo.org>: Added missing ChangeLog

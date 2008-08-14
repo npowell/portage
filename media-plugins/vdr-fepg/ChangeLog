@@ -1,0 +1,39 @@
+# ChangeLog for media-plugins/vdr-fepg
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-fepg/ChangeLog,v 1.8 2008/02/25 10:35:31 zzam Exp $
+
+*vdr-fepg-0.4.0 (25 Feb 2008)
+
+  25 Feb 2008; Matthias Schwarzott <zzam@gentoo.org> +vdr-fepg-0.4.0.ebuild:
+  Version bumped.
+
+*vdr-fepg-0.3.1 (13 Dec 2007)
+
+  13 Dec 2007; Matthias Schwarzott <zzam@gentoo.org> +vdr-fepg-0.3.1.ebuild:
+  Version bumped.
+
+  13 Mar 2007; Matthias Schwarzott <zzam@gentoo.org>
+  vdr-fepg-0.2.1-r1.ebuild:
+  Marked stable on x86.
+
+*vdr-fepg-0.2.1-r1 (17 Dec 2006)
+
+  17 Dec 2006; Matthias Schwarzott <zzam@gentoo.org>
+  +files/vdr-fepg-0.2.1-default-no-mute.patch, +vdr-fepg-0.2.1-r1.ebuild:
+  Set default to not toggle mute on open.
+
+  15 Nov 2006; Matthias Schwarzott <zzam@gentoo.org> vdr-fepg-0.2.1.ebuild:
+  Marked stable on x86.
+
+  01 Aug 2006; Matthias Schwarzott <zzam@gentoo.org> metadata.xml:
+  Assigned package to VDR-Project.
+
+  31 May 2006; Matthias Schwarzott <zzam@gentoo.org> vdr-fepg-0.2.1.ebuild:
+  Added to ~amd64
+
+*vdr-fepg-0.2.1 (28 May 2006)
+
+  28 May 2006; Matthias Schwarzott <zzam@gentoo.org> +metadata.xml,
+  +vdr-fepg-0.2.1.ebuild:
+  Initial import of ebuild.
+

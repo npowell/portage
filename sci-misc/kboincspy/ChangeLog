@@ -1,0 +1,22 @@
+# ChangeLog for sci-misc/kboincspy
+# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/sci-misc/kboincspy/ChangeLog,v 1.5 2007/02/22 01:17:46 jokey Exp $
+
+  22 Feb 2007; Markus Ullmann <jokey@gentoo.org> ChangeLog:
+  Redigest for Manifest2
+
+*kboincspy-0.9.1 (09 Apr 2006)
+
+  09 Apr 2006; Marcus D. Hanwell <cryos@gentoo.org> +kboincspy-0.9.1.ebuild:
+  Version bump, closes bug 121958.
+
+  24 Aug 2005; Marcus D. Hanwell <cryos@gentoo.org> kboincspy-0.9.0.ebuild:
+  Marked ~amd64.
+
+*kboincspy-0.9.0 (24 Aug 2005)
+
+  24 Aug 2005; Marcus D. Hanwell <cryos@gentoo.org> +metadata.xml,
+  +kboincspy-0.9.0.ebuild:
+  Initial import of ebuild, thanks to Marcelo Goes <vanquirius@gentoo.org> for
+  the original ebuild, closes bug 74315.
+

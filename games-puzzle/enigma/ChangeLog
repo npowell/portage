@@ -1,0 +1,188 @@
+# ChangeLog for games-puzzle/enigma
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/games-puzzle/enigma/ChangeLog,v 1.39 2008/07/03 17:28:22 rich0 Exp $
+
+  03 Jul 2008; Richard Freeman <rich0@gentoo.org> enigma-1.01.ebuild:
+  amd64 stable - 229139
+
+  25 Jun 2008; nixnut <nixnut@gentoo.org> enigma-1.01.ebuild:
+  Stable on ppc wrt bug 229139
+
+  24 Jun 2008; Christian Faulhammer <opfer@gentoo.org> enigma-1.01.ebuild:
+  stable x86, bug 229139
+
+  30 Apr 2008; Tristan Heaven <nyhm@gentoo.org>
+  +files/enigma-1.01-gcc43.patch, enigma-1.01.ebuild:
+  Patch to fix building with gcc-4.3 from Martin Väth, bug #218941
+
+*enigma-1.01 (04 Nov 2007)
+
+  04 Nov 2007; Tupone Alfredo <tupone@gentoo.org>
+  +files/enigma-1.01-autotools.patch, +enigma-1.01.ebuild:
+  Version bump
+
+  09 Apr 2007; Peter Weller <welp@gentoo.org> enigma-1.00-r2.ebuild:
+  Keyworded ~amd64 wrt bug 159356
+
+  06 Apr 2007; Tobias Scherbaum <dertobi123@gentoo.org>
+  enigma-1.00-r2.ebuild:
+  ppc stable, bug #159356
+
+  06 Apr 2007; Christian Faulhammer <opfer@gentoo.org>
+  enigma-1.00-r2.ebuild:
+  stable x86, security bug 159356
+
+*enigma-1.00-r2 (26 Mar 2007)
+
+  26 Mar 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/enigma-1.00-autotools.patch, +enigma-1.00-r2.ebuild:
+  Use external enet
+
+  07 Feb 2007; Tristan Heaven <nyhm@gentoo.org> enigma-1.00-r1.ebuild:
+  Use mirror://berlios
+
+  31 Jan 2007; Joseph Jezak <josejx@gentoo.org> enigma-1.00-r1.ebuild:
+  Marked ppc stable.
+
+  29 Jan 2007; Michael Sterrett <mr_bones_@gentoo.org>
+  enigma-1.00-r1.ebuild:
+  stable for x86
+
+*enigma-1.00-r1 (01 Jan 2007)
+
+  01 Jan 2007; Tristan Heaven <nyhm@gentoo.org>
+  +files/enigma-1.00-build.patch, -enigma-1.00.ebuild,
+  +enigma-1.00-r1.ebuild:
+  Fix data loading, bug #158759
+
+*enigma-1.00 (21 Dec 2006)
+
+  21 Dec 2006; Michael Sterrett <mr_bones_@gentoo.org> +enigma-1.00.ebuild:
+  version bump (bug #158362)
+
+  05 Oct 2006; Tristan Heaven <nyhm@gentoo.org> enigma-0.92.ebuild:
+  Fix gettext dependency
+
+  30 Mar 2006; Mark Loeser <halcy0n@gentoo.org>
+  +files/enigma-0.92-gcc41.patch, enigma-0.92.ebuild:
+  Add patch to fix compilation with gcc-4.1 by TGL <degrenier AT easyconnect
+  DOT fr>; bug #126922
+
+  16 Sep 2005; Ciaran McCreesh <ciaranm@gentoo.org> ChangeLog:
+  Converted to UTF-8, fixed encoding screwups
+
+  11 Aug 2005; Michael Sterrett <mr_bones_@gentoo.org> -enigma-0.81.ebuild,
+  -enigma-0.91.ebuild:
+  clean old
+
+*enigma-0.92 (17 Jun 2005)
+
+  17 Jun 2005; Michael Sterrett <mr_bones_@gentoo.org> +enigma-0.92.ebuild:
+  version bump
+
+  15 Jun 2005; Chris Gianelloni <wolf31o2@gentoo.org> enigma-0.81.ebuild,
+  enigma-0.91.ebuild:
+  Removed INSTALL file.
+
+  30 May 2005; Michael Sterrett <mr_bones_@gentoo.org> enigma-0.91.ebuild:
+  fix nls support (bug #94502) - patch from ockham@gmx.net
+
+*enigma-0.91 (02 May 2005)
+
+  02 May 2005; Michael Sterrett <mr_bones_@gentoo.org> +enigma-0.91.ebuild:
+  version bump (bug #91090)
+
+  29 Dec 2004; Joseph Jezak <josejx@gentoo.org> enigma-0.81.ebuild:
+  Marked ppc stable.
+
+  05 Nov 2004; Joseph Jezak <josejx@gentoo.org> enigma-0.81.ebuild:
+  Added ~ppc.
+
+  15 Oct 2004; Michael Sterrett <mr_bones_@gentoo.org>
+  +files/enigma-0.81-gcc34.patch, enigma-0.81.ebuild:
+  Add gcc34 patch from Mandrakesoft (bug #66904)
+
+  24 Sep 2004; Michael Sterrett <mr_bones_@gentoo.org> enigma-0.81.ebuild:
+  update HOMEPAGE (bug #65260)
+
+  29 Mar 2004; Jason Wever <weeve@gentoo.org> enigma-0.81.ebuild:
+  Added ~sparc keyword.
+
+  19 Jan 2004; Michael Sterrett <mr_bones_@gentoo.org>
+  enigma-0.80_beta1.ebuild:
+  remove old beta
+
+  13 Oct 2003; Michael Sterrett <mr_bones_@gentoo.org> enigma-0.81.ebuild:
+  mark stable
+
+  13 Oct 2003; Michael Sterrett <mr_bones_@gentoo.org> enigma-0.81.ebuild:
+  fix the DESTDIR support (Thanks Spanky!)
+
+*enigma-0.81 (13 Oct 2003)
+
+  13 Oct 2003; Michael Sterrett <mr_bones_@gentoo.org> enigma-0.81.ebuild:
+  version bump
+
+  25 Sep 2003; Michael Sterrett <msterret@gentoo.org>
+  files/enigma-0.80-beta.patch:
+  Fix patch file so it actually applies.  Doh. (bug 29581)
+
+  24 Sep 2003; Michael Sterrett <msterret@gentoo.org>
+  enigma-0.80_beta1.ebuild, files/enigma-0.80-beta.patch:
+  Added enigma-0.80-beta.patch to files/; more specific DEPENDs
+
+*enigma-0.80_beta1 (16 Sep 2003)
+
+  16 Sep 2003; Michael Sterrett <msterret@gentoo.org>
+  enigma-0.80_beta1.ebuild:
+  Added a beta release per bug 28874
+
+*enigma-0.70 (17 Feb 2003)
+
+  11 Sep 2003; Mike Frysinger <vapier@gentoo.org> :
+  Added gcc3 patch #28332.
+
+  10 Sep 2003; Michael Sterrett <msterret@gentoo.org> enigma-0.70.ebuild:
+  Tried it with lua-5.0 and it worked great.  No need to lock in lua-4.0 then.
+
+  17 Feb 2003; Phil Bordelon <sunflare@gentoo.org> enigma-0.70.ebuild :
+  Version bump.  Enigma now also uses the games eclass.  Deleted old,
+  stale versions of the game as well.
+
+*enigma-0.60 (24 Dec 2002)
+
+  24 Dec 2002; Phil Bordelon <sunflare@gentoo.org> enigma-0.60.ebuild: Version
+  bump.
+
+*enigma-0.50 (15 Aug 2002)
+
+  15 Aug 2002; Phil Bordelon <sunflare@gentoo.org> enigma-0.50.ebuild: Version
+  bump.  Did some minor lintool'ing as well.
+
+*enigma-0.40a (21 Jun 2002)
+
+  17 jul 2002; Jose Alberto Suárez López <bass@gentoo.org> enigma-0.40a.ebuild :
+  Added KEYWORDS.
+
+  21 Jun 2002; J.Alberto Suárez L. <bass@gentoo.org> enigma-0.40a.ebuild:
+
+  Bumped version of Larry Cow,fixed problems with gcc3.
+
+*enigma-0.39a (28 Apr 2002)
+
+  17 jul 2002; Jose Alberto Suárez López <bass@gentoo.org> enigma-0.39a.ebuild :
+  Added LICENSE, KEYWORDS, SLOT.
+
+  28 Apr 2002; Ryan Phillips <rphillips@gentoo.org> enigma-0.39a.ebuild :
+
+  Added line in ebuild to install documentation.
+
+*enigma-0.39a (24 Apr 2002)
+
+  24 Apr 2002; Ryan Phillips <rphillips@gentoo.org> ChangeLog :
+  
+  Added initial ChangeLog which should be updated whenever the package is
+  updated in any way. This changelog is targetted to users. This means that the
+  comments should well explained and written in clean English. The details about
+  writing correct changelogs are explained in the skel.ChangeLog file which you
+  can find in the root directory of the portage repository.

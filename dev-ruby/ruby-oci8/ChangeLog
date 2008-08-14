@@ -1,0 +1,25 @@
+# ChangeLog for dev-ruby/ruby-oci8
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/ruby-oci8/ChangeLog,v 1.4 2008/07/12 05:21:06 graaff Exp $
+
+*ruby-oci8-1.0.2 (12 Jul 2008)
+
+  12 Jul 2008; Hans de Graaff <graaff@gentoo.org> +ruby-oci8-1.0.2.ebuild:
+  Version bump on behalf of Troy Bowman.
+
+*ruby-oci8-1.0.0 (09 Dec 2007)
+
+  09 Dec 2007; Hans de Graaff <graaff@gentoo.org> metadata.xml,
+  +ruby-oci8-1.0.0.ebuild:
+  Version bump. Adding Troy Bowman as proxy maintainer as per #183548.
+  Thanks!
+
+  17 Sep 2007; Christian Heim <phreak@gentoo.org> metadata.xml:
+  Removing mattm from metadata.xml (see #66633 for reference).
+
+*ruby-oci8-0.1.15 (22 Jun 2006)
+
+  22 Jun 2006; Matthew Marlowe <mattm@gentoo.org> +metadata.xml,
+  +ruby-oci8-0.1.15.ebuild:
+  initial commit and test
+

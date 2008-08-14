@@ -1,0 +1,117 @@
+# ChangeLog for dev-java/jdbc-postgresql
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-java/jdbc-postgresql/ChangeLog,v 1.23 2008/06/24 22:46:15 ken69267 Exp $
+
+  24 Jun 2008; Kenneth Prugh <ken69267@gentoo.org>
+  jdbc-postgresql-8.3_p603-r1.ebuild:
+  amd64 stable, bug #219657
+
+  21 May 2008; Tiziano Müller <dev-zero@gentoo.org>
+  jdbc-postgresql-8.2_p504.ebuild, jdbc-postgresql-8.2_p505.ebuild,
+  jdbc-postgresql-8.2_p506.ebuild, jdbc-postgresql-8.3_p603.ebuild,
+  jdbc-postgresql-8.3_p603-r1.ebuild:
+  Changed dependency for postgresql from dev-db/postgresql to
+  virtual/postgresql-server
+
+  12 May 2008; nixnut <nixnut@gentoo.org>
+  jdbc-postgresql-8.3_p603-r1.ebuild:
+  Stable on ppc wrt bug 219657
+
+  04 May 2008; Christian Faulhammer <opfer@gentoo.org>
+  jdbc-postgresql-8.3_p603-r1.ebuild:
+  stable x86, bug 219657
+
+*jdbc-postgresql-8.3_p603-r1 (13 Feb 2008)
+
+  13 Feb 2008; Miroslav Šulc <fordfrog@gentoo.org>
+  +jdbc-postgresql-8.3_p603-r1.ebuild:
+  Added 'java6' USE flag and dropped ~x86-fbsd keyword because there is no
+  such keyword in virtual/jdk-1.6
+
+  06 Feb 2008; Miroslav Šulc <fordfrog@gentoo.org>
+  -jdbc-postgresql-8.0_p320.ebuild, -jdbc-postgresql-8.1_p410.ebuild:
+  Older versions removed
+
+*jdbc-postgresql-8.3_p603 (06 Feb 2008)
+
+  06 Feb 2008; Miroslav Šulc <fordfrog@gentoo.org>
+  +jdbc-postgresql-8.3_p603.ebuild:
+  Version bump
+
+  14 Nov 2007; Steve Dibb <beandog@gentoo.org>
+  jdbc-postgresql-8.2_p505.ebuild:
+  amd64 stable, bug 187615
+
+  18 Oct 2007; Krzysiek Pawlik <nelchael@gentoo.org>
+  jdbc-postgresql-8.2_p505.ebuild:
+  Stable on ppc.
+
+  15 Aug 2007; Christian Faulhammer <opfer@gentoo.org>
+  jdbc-postgresql-8.2_p505.ebuild:
+  stable x86, bug 187615
+
+  04 Aug 2007; Miroslav Šulc <fordfrog@gentoo.org>
+  -jdbc-postgresql-8.0_p319.ebuild, +jdbc-postgresql-8.0_p320.ebuild,
+  -jdbc-postgresql-8.1_p409.ebuild, +jdbc-postgresql-8.1_p410.ebuild,
+  +jdbc-postgresql-8.2_p506.ebuild,
+  -files/jdbc-postgresql-8.0_p319-build.xml.patch,
+  -files/jdbc-postgresql-8.1_p409-build.xml.patch:
+  Version bump. Removed old versions.
+
+  01 May 2007; Miroslav Šulc <fordfrog@gentoo.org>
+  -jdbc-postgresql-8.0_p318.ebuild, jdbc-postgresql-8.0_p319.ebuild,
+  -jdbc-postgresql-8.1_p408.ebuild, jdbc-postgresql-8.1_p409.ebuild,
+  jdbc-postgresql-8.2_p504.ebuild, jdbc-postgresql-8.2_p505.ebuild:
+  Fixed bug #176638, removed old unstable versions
+
+*jdbc-postgresql-8.2_p505 (21 Apr 2007)
+*jdbc-postgresql-8.1_p409 (21 Apr 2007)
+*jdbc-postgresql-8.0_p319 (21 Apr 2007)
+
+  21 Apr 2007; Miroslav Šulc <fordfrog@gentoo.org>
+  +files/jdbc-postgresql-8.0_p319-build.xml.patch,
+  +files/jdbc-postgresql-8.1_p409-build.xml.patch,
+  +files/jdbc-postgresql-8.2_p505-build.xml.patch,
+  +jdbc-postgresql-8.0_p319.ebuild, +jdbc-postgresql-8.1_p409.ebuild,
+  +jdbc-postgresql-8.2_p505.ebuild:
+  Version bumps
+
+  18 Feb 2007; nixnut <nixnut@gentoo.org> jdbc-postgresql-8.2_p504.ebuild:
+  Stable on ppc wrt bug 160569
+
+  06 Feb 2007; Christian Faulhammer <opfer@gentoo.org>
+  jdbc-postgresql-8.2_p504.ebuild:
+  stable x86; bug #160569
+
+  03 Feb 2007; Steve Dibb <beandog@gentoo.org>
+  jdbc-postgresql-8.2_p504.ebuild:
+  amd64 stable, bug 160569
+
+  30 Jan 2007; Vlastimil Babka <caster@gentoo.org>
+  jdbc-postgresql-8.0_p318.ebuild, jdbc-postgresql-8.1_p408.ebuild,
+  jdbc-postgresql-8.2_p504.ebuild:
+  Put java-ant-2 after java-pkg-2 in inherit.
+
+  20 Jan 2007; Markus Rothe <corsair@gentoo.org>
+  jdbc-postgresql-8.2_p504.ebuild:
+  Added ~ppc64 (dep from dev-db/jxtray)
+
+  10 Jan 2007; Diego Pettenò <flameeyes@gentoo.org>
+  jdbc-postgresql-8.2_p504.ebuild:
+  Add ~x86-fbsd keyword.
+
+  08 Jan 2007; Miroslav Šulc <fordfrog@gentoo.org> ChangeLog:
+  Redigested according to bug #157973.
+
+*jdbc-postgresql-8.2_p504 (06 Jan 2007)
+*jdbc-postgresql-8.1_p408 (06 Jan 2007)
+*jdbc-postgresql-8.0_p318 (06 Jan 2007)
+
+  06 Jan 2007; Miroslav Šulc <fordfrog@gentoo.org>
+  +files/jdbc-postgresql-8.0_p318-build.xml.patch,
+  +files/jdbc-postgresql-8.1_p408-build.xml.patch,
+  +files/jdbc-postgresql-8.2_p504-build.xml.patch,
+  +jdbc-postgresql-8.0_p318.ebuild, +jdbc-postgresql-8.1_p408.ebuild,
+  +jdbc-postgresql-8.2_p504.ebuild:
+  Created new ebuilds that will replace jdbc3-postgresql package, bug #157973.
+

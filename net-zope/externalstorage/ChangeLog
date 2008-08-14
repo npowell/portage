@@ -1,0 +1,10 @@
+# ChangeLog for net-zope/externalstorage
+# Copyright 2000-2006 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/net-zope/externalstorage/ChangeLog,v 1.2 2007/01/01 22:06:42 swegener Exp $
+
+*externalstorage-0.6 (28 Dec 2006)
+
+  28 Dec 2006; Radoslaw Stachowiak <radek@gentoo.org> +metadata.xml,
+  +externalstorage-0.6.ebuild:
+  initial version based on mikael lammentausta contribution in #157993
+

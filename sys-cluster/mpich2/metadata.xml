@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+<herd>hp-cluster</herd>
+<maintainer>
+  <email>kanaka@gentoo.org</email>
+  <name>Joel Martin</name>
+</maintainer>
+<use>
+	<flag name='fast'>Enabling fast turns off error checking and timing
+	collection</flag>
+	<flag name='mpe'>Add mpe support</flag>
+	<flag name='mpe-sdk'>Include additional SDK support, jar files</flag>
+	<flag name='pvfs2'>Add pvfs2 support</flag>
+	<flag name='romio'>Enable romio, a high-performance portable MPI-IO
+	implementation</flag>
+</use>
+</pkgmetadata>

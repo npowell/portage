@@ -1,0 +1,73 @@
+# ChangeLog for x11-plugins/purple-plugin_pack
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/x11-plugins/purple-plugin_pack/ChangeLog,v 1.17 2008/08/05 21:11:33 cardoe Exp $
+
+  05 Aug 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
+  add GLEP 56 USE flag desc from use.local.desc
+
+  03 Apr 2008; Brent Baude <ranger@gentoo.org>
+  purple-plugin_pack-2.2.0.ebuild:
+  stable ppc, bug 210642
+
+*purple-plugin_pack-2.3.0 (01 Apr 2008)
+
+  01 Apr 2008; Olivier Crête <tester@gentoo.org>
+  -purple-plugin_pack-1.0.ebuild, -purple-plugin_pack-2.1.1.ebuild,
+  purple-plugin_pack-2.2.0.ebuild, +purple-plugin_pack-2.3.0.ebuild:
+  Version bump, mark stable on amd64, remove old
+
+  21 Feb 2008; Jeroen Roovers <jer@gentoo.org>
+  purple-plugin_pack-2.2.0.ebuild:
+  Stable for HPPA (bug #210642).
+
+  19 Feb 2008; Christian Faulhammer <opfer@gentoo.org>
+  purple-plugin_pack-2.2.0.ebuild:
+  stable x86, bug 210642
+
+  19 Feb 2008; nixnut <nixnut@gentoo.org> purple-plugin_pack-2.2.0.ebuild:
+  Added ~ppc wrt bug 210670
+
+  18 Feb 2008; Jeroen Roovers <jer@gentoo.org>
+  purple-plugin_pack-2.1.1.ebuild, purple-plugin_pack-2.2.0.ebuild:
+  Marked ~hppa (bug #210402).
+
+*purple-plugin_pack-2.2.0 (10 Nov 2007)
+
+  10 Nov 2007; Olivier Crête <tester@gentoo.org>
+  +purple-plugin_pack-2.2.0.ebuild:
+  Version bump
+
+  28 Sep 2007; nixnut <nixnut@gentoo.org> purple-plugin_pack-1.0.ebuild:
+  Stable on ppc wrt bug 189781
+
+  28 Aug 2007; nixnut <nixnut@gentoo.org> purple-plugin_pack-1.0.ebuild:
+  Added ~ppc wrt bug 189781
+
+  26 Aug 2007; Wulf C. Krueger <philantrop@gentoo.org>
+  purple-plugin_pack-1.0.ebuild:
+  Marked stable on amd64 as per bug 189781.
+
+  24 Aug 2007; Christian Faulhammer <opfer@gentoo.org>
+  purple-plugin_pack-1.0.ebuild:
+  stable x86, bug 189781
+
+  23 Aug 2007; Jeroen Roovers <jer@gentoo.org>
+  purple-plugin_pack-1.0.ebuild:
+  Stable for HPPA (bug #189781).
+
+*purple-plugin_pack-2.1.1 (22 Aug 2007)
+
+  22 Aug 2007; Olivier Crête <tester@gentoo.org>
+  +purple-plugin_pack-2.1.1.ebuild:
+  Version bump, bug #186163
+
+  06 Jun 2007; Andrej Kacian <ticho@gentoo.org>
+  purple-plugin_pack-1.0.ebuild:
+  Added ~x86 keyword. Bug #180194, by Santiago M. Mola <gentoo at coldwind.org>.
+
+*purple-plugin_pack-1.0 (26 May 2007)
+
+  26 May 2007; Olivier Crête <tester@gentoo.org> +metadata.xml,
+  +purple-plugin_pack-1.0.ebuild:
+  New package, ebuild submitted by Jürgen Geuter on bug #134430
+

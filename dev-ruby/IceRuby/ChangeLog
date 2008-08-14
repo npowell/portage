@@ -1,0 +1,83 @@
+# ChangeLog for dev-ruby/IceRuby
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/IceRuby/ChangeLog,v 1.14 2008/05/21 18:12:04 caleb Exp $
+
+*IceRuby-3.3.0 (21 May 2008)
+
+  21 May 2008; Caleb Tennis <caleb@gentoo.org>
+  +files/IceRuby-3.3.0-Makefile.patch,
+  -files/IceRuby-3.3.0_beta1-Makefile.patch, -IceRuby-3.3.0_beta1.ebuild,
+  +IceRuby-3.3.0.ebuild:
+  version bump
+
+*IceRuby-3.3.0_beta1 (23 Apr 2008)
+
+  23 Apr 2008; Caleb Tennis <caleb@gentoo.org>
+  +files/IceRuby-3.3.0_beta1-Makefile.patch, +IceRuby-3.3.0_beta1.ebuild:
+  version bump for new ice, currently package.masked
+
+  26 Sep 2007; Christian Faulhammer <opfer@gentoo.org>
+  IceRuby-3.2.1-r1.ebuild:
+  stable x86, bug #192137
+
+  25 Sep 2007; Caleb Tennis <caleb@gentoo.org>
+  +files/testing-Makefile.patch, IceRuby-3.2.1-r1.ebuild:
+  Fix src_test to work properly
+
+  25 Sep 2007; Caleb Tennis <caleb@gentoo.org> IceRuby-3.2.1-r1.ebuild:
+  Fix up quoting a bit
+
+  25 Sep 2007; Caleb Tennis <caleb@gentoo.org>
+  -files/IceRuby-3.2.0-Makefile.patch, -files/cached_connection.patch,
+  -IceRuby-3.2.0.ebuild, -IceRuby-3.2.0-r1.ebuild, -IceRuby-3.2.1.ebuild:
+  remove old versions
+
+*IceRuby-3.2.1-r1 (27 Aug 2007)
+
+  27 Aug 2007; Caleb Tennis <caleb@gentoo.org>
+  +files/IceRuby-3.2.1-ice_type.patch, +IceRuby-3.2.1-r1.ebuild:
+  A patch to fix proxy passing via argument
+
+*IceRuby-3.2.1 (15 Aug 2007)
+
+  15 Aug 2007; Caleb Tennis <caleb@gentoo.org>
+  +files/IceRuby-3.2.1-Makefile.patch, +IceRuby-3.2.1.ebuild:
+  version bump
+
+  24 Jul 2007; Caleb Tennis <caleb@gentoo.org>
+  -files/IceRuby-3.1.1-Makefile.patch, -files/array_fix-3.1.1.patch,
+  -IceRuby-3.1.1-r1.ebuild:
+  remove old version
+
+*IceRuby-3.2.0-r1 (24 Jul 2007)
+
+  24 Jul 2007; Caleb Tennis <caleb@gentoo.org>
+  +files/cached_connection.patch, +IceRuby-3.2.0-r1.ebuild:
+  bump to fix cached connection checking
+
+*IceRuby-3.2.0 (13 Mar 2007)
+
+  13 Mar 2007; Caleb Tennis <caleb@gentoo.org>
+  +files/IceRuby-3.2.0-Makefile.patch,
+  -files/IceRuby-3.2.0_beta1-Makefile.patch, -IceRuby-3.1.1.ebuild,
+  -IceRuby-3.2.0_beta1.ebuild, +IceRuby-3.2.0.ebuild:
+  version bump, remove old versions
+
+*IceRuby-3.2.0_beta1 (08 Mar 2007)
+
+  08 Mar 2007; Caleb Tennis <caleb@gentoo.org>
+  +files/IceRuby-3.2.0_beta1-Makefile.patch, +IceRuby-3.2.0_beta1.ebuild:
+  version bump
+
+*IceRuby-3.1.1-r1 (02 Feb 2007)
+
+  02 Feb 2007; Caleb Tennis <caleb@gentoo.org> +files/array_fix-3.1.1.patch,
+  +IceRuby-3.1.1-r1.ebuild:
+  Add a patch to fix an array bug
+
+*IceRuby-3.1.1 (30 Oct 2006)
+
+  30 Oct 2006; Caleb Tennis <caleb@gentoo.org>
+  +files/IceRuby-3.1.1-Makefile.patch, +metadata.xml, +IceRuby-3.1.1.ebuild:
+  Initial import
+
