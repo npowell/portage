@@ -13,7 +13,11 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~sparc-fbsd ~x86 ~x86-fbsd"
 IUSE="nls"
 
-DEPEND="nls? ( sys-devel/gettext )"
+# drobbins - sys-apps/shadow is needed as a dependency simply because eutils'
+# group adding function needs the "groupadd" command in the shadow package. And
+# I don't want to add a global shadow dep to eutils even though one probabl
+# should be added - don't want to break too much stuff.
+DEPEND="nls? ( sys-devel/gettext ) sys-apps/shadow"
 RDEPEND=">=sys-apps/groff-1.19.2-r1
 	!sys-apps/man-db
 	!app-arch/lzma"
