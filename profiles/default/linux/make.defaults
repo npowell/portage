@@ -13,6 +13,10 @@
 # Default starting set of USE flags for all default/linux profiles.
 USE="berkdb crypt ipv6 ncurses nls pam perl python readline ssl tcpd zlib"
 
+# Since GRP_STAGE23_USE doesn't exist anymore, I am disabling gpm in order to
+# disable a stage3 circular issue with ncurses->gpm->ncurses.
+USE="${USE} -gpm"
+
 # make sure toolchain has sane defaults <tooclhain@gentoo.org>
 USE="${USE} fortran mudflap openmp"
 

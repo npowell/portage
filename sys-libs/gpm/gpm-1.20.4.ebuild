@@ -15,8 +15,7 @@ SLOT="0"
 KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
 IUSE="selinux"
 
-DEPEND="sys-libs/ncurses
-	app-arch/lzma-utils"
+DEPEND="app-arch/lzma-utils"
 RDEPEND="selinux? ( sec-policy/selinux-gpm )"
 
 src_unpack() {
@@ -31,7 +30,11 @@ src_compile() {
 	econf \
 		--libdir=/$(get_libdir) \
 		--sysconfdir=/etc/gpm \
+		--without-curses \
 		|| die "econf failed"
+
+	# drobbins --without-curses fix - not necessary - see
+	# http://invisible-island.net/ncurses/ncurses.faq.html#using_gpm_lib
 
 	# workaround broken release
 	find -name '*.o' | xargs rm
