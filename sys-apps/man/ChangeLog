@@ -2,7 +2,11 @@
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/sys-apps/man/ChangeLog,v 1.136 2008/04/28 11:15:52 armin76 Exp $
 
-  28 Apr 2008; Raúl Porcel <armin76@gentoo.org> man-1.6f-r1.ebuild:
+  16 Aug 2008; Daniel Robbins <drobbins@funtoo.org> man-1.6f-2.ebuild:
+  added sys-apps/shadow DEPEND so that we have groupadd which gets used
+  indirectly by eutils. A temporary fix to avoid messing with eutils.
+
+  28 Apr 2008; RaÃºl Porcel <armin76@gentoo.org> man-1.6f-r1.ebuild:
   ia64 stable wrt #218669
 
   27 Apr 2008; Ferris McCormick <fmccor@gentoo.org> man-1.6f-r1.ebuild:
@@ -14,7 +18,7 @@
   26 Apr 2008; Kenneth Prugh <ken69267@gentoo.org> man-1.6f-r1.ebuild:
   amd64 stable, bug #218669
 
-  26 Apr 2008; Dawid Węgliński <cla@gentoo.org> man-1.6f-r1.ebuild:
+  26 Apr 2008; Dawid WÄgliÅski <cla@gentoo.org> man-1.6f-r1.ebuild:
   Stable on x86 (bug #218669)
 
   24 Apr 2008; Jeroen Roovers <jer@gentoo.org> man-1.6f-r1.ebuild:
@@ -63,10 +67,10 @@
   05 May 2007; Mike Frysinger <vapier@gentoo.org> man-1.6e-r3.ebuild:
   Unset NLSPATH #175258 by Cheyenne Wills.
 
-  24 Apr 2007; Bryan Østergaard <kloeri@gentoo.org> man-1.6e-r3.ebuild:
+  24 Apr 2007; Bryan Ãstergaard <kloeri@gentoo.org> man-1.6e-r3.ebuild:
   Stable on Mips, bug 172761.
 
-  18 Apr 2007; Raúl Porcel <armin76@gentoo.org> man-1.6e-r3.ebuild:
+  18 Apr 2007; RaÃºl Porcel <armin76@gentoo.org> man-1.6e-r3.ebuild:
   x86 stable
 
   18 Apr 2007; Gustavo Zacarias <gustavoz@gentoo.org> man-1.6e-r3.ebuild:
@@ -132,7 +136,7 @@
   22 Aug 2006; Stephen P. Becker <geoman@gentoo.org> man-1.6d.ebuild:
   stable on mips
 
-  21 Aug 2006; Bryan Østergaard <kloeri@gentoo.org> man-1.6d.ebuild:
+  21 Aug 2006; Bryan Ãstergaard <kloeri@gentoo.org> man-1.6d.ebuild:
   Stable on alpha.
 
   21 Aug 2006; Jeroen Roovers <jer@gentoo.org> man-1.6d.ebuild:
@@ -175,13 +179,13 @@
   Manifest:
   Fixing SHA256 digest, pass four
 
-  02 Apr 2006; Diego Pettenò <flameeyes@gentoo.org> man-1.6c.ebuild:
+  02 Apr 2006; Diego PettenÃ² <flameeyes@gentoo.org> man-1.6c.ebuild:
   Update ~x86-fbsd keyword.
 
-  31 Mar 2006; Diego Pettenò <flameeyes@gentoo.org> man-1.6b-r2.ebuild:
+  31 Mar 2006; Diego PettenÃ² <flameeyes@gentoo.org> man-1.6b-r2.ebuild:
   Add ~x86-fbsd keyword to newer version.
 
-  30 Mar 2006; Diego Pettenò <flameeyes@gentoo.org> man-1.6-r1.ebuild:
+  30 Mar 2006; Diego PettenÃ² <flameeyes@gentoo.org> man-1.6-r1.ebuild:
   Add ~x86-fbsd keyword.
 
   07 Mar 2006; Aron Griffis <agriffis@gentoo.org> man-1.6c.ebuild:
@@ -198,10 +202,10 @@
   man-1.6-r1.ebuild, man-1.6a.ebuild, man-1.6b-r2.ebuild:
   Remove fluffy depend on cronbase.
 
-  25 Dec 2005; Diego Pettenò <flameeyes@gentoo.org> man-1.6b-r2.ebuild:
+  25 Dec 2005; Diego PettenÃ² <flameeyes@gentoo.org> man-1.6b-r2.ebuild:
   Use bindnow-flags function instead of -Wl,-z,now.
 
-  16 Dec 2005; Diego Pettenò <flameeyes@gentoo.org> man-1.6b-r2.ebuild:
+  16 Dec 2005; Diego PettenÃ² <flameeyes@gentoo.org> man-1.6b-r2.ebuild:
   Replace root:root in root:0. Bug #103563.
 
 *man-1.6b-r2 (15 Nov 2005)
@@ -299,7 +303,7 @@
 
   03 Oct 2004; Mike Frysinger <vapier@gentoo.org>
   +files/man-1.5m-locale-order.patch, +man-1.5m-r2.ebuild:
-  Add patch to fix locale support #37778 by Magnus Lind / Antti Mäkelä.
+  Add patch to fix locale support #37778 by Magnus Lind / Antti MÃ¤kelÃ¤.
 
   25 Sep 2004; Joshua Kinard <kumba@gentoo.org> man-1.5m-r1.ebuild:
   Marked stable on mips.
@@ -329,7 +333,7 @@
   15 Jun 2004; <solar@gentoo.org> man-1.5l-r6.ebuild, man-1.5m-r1.ebuild:
   fixed up nls usage for uclibc
 
-  11 Jun 2004; Bryan Østergaard <kloeri@gentoo.org> man-1.5m-r1.ebuild:
+  11 Jun 2004; Bryan Ãstergaard <kloeri@gentoo.org> man-1.5m-r1.ebuild:
   Stable on alpha.
 
   02 Jun 2004; Travis Tilley <lv@gentoo.org> man-1.5m-r1.ebuild:
@@ -343,7 +347,7 @@
   03 May 2004; Mike Frysinger <vapier@gentoo.org> :
   Install cronjob as makewhatis instead of makewhatis.cron #40506 by Peter Simons.
 
-  01 May 2004; Bryan Østergaard <kloeri@gentoo.org> +man-1.5m-r1.ebuild:
+  01 May 2004; Bryan Ãstergaard <kloeri@gentoo.org> +man-1.5m-r1.ebuild:
   Add posix sections to MANSECT, bug #47806.
 
   17 Apr 2004; Travis Tilley <lv@gentoo.org> man-1.5m.ebuild:
