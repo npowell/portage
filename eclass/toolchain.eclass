@@ -1404,7 +1404,7 @@ gcc_do_make() {
 		# resulting binaries natively ^^;
 		GCC_MAKE_TARGET=${GCC_MAKE_TARGET-all}
 	elif [[ $(tc-arch) == "x86" || $(tc-arch) == "amd64" ]] \
-		&& [[ ${GCCMAJOR}.${GCCMINOR} > 3.3 ]]
+		&& [[ ${GCCMAJOR}.${GCCMINOR} > 3.3 ]] && ! use build
 	then
 		GCC_MAKE_TARGET=${GCC_MAKE_TARGET-profiledbootstrap}
 	else
