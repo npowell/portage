@@ -29,6 +29,10 @@
 
 #--- END OF EXAMPLES ---
 
+# Daniel Robbins <drobbins@funtoo.org> (15 Aug 2008)
+# due to "invalid address" bug hitting virtual container installations
+>=sys-apps/coreutils-6.12
+
 # Tiziano Müller <dev-zero@gentoo.org> (15 Aug 2008)
 # Masked for testing (works with >=dev-libs/xerces-c-3.0.0_beta2)
 =dev-libs/xqilla-9999
