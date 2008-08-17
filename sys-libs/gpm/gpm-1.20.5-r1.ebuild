@@ -22,13 +22,19 @@ src_unpack() {
 	unpack ${A}
 	cd "${S}"
 	epatch "${FILESDIR}"/${PN}-1.20.5-abi.patch
+
+	# disable ncurses manually since the --disable-curses option doesn't seem to
+	# do anything. We don't need to be linking in the curses stuff.
+
+	cat src/Makefile.in | sed -e "s/@CURSES_OBJS@//" > src/Makefile.in.new
+	mv src/Makefile.in.new src/Makefile.in
+
 }
 
 src_compile() {
 	econf \
 		--libdir=/$(get_libdir) \
 		--sysconfdir=/etc/gpm \
-		--without-curses \
 		|| die "econf failed"
 
 	# workaround broken release

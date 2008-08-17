@@ -19,8 +19,6 @@ SLOT="0"
 KEYWORDS="alpha amd64 arm hppa ia64 m68k ~mips ppc ppc64 s390 sh sparc x86"
 IUSE="selinux" # emacs"
 
-DEPEND="sys-libs/ncurses"
-#	emacs? ( virtual/emacs )"
 RDEPEND="selinux? ( sec-policy/selinux-gpm )"
 
 src_unpack() {
@@ -28,6 +26,13 @@ src_unpack() {
 	cd "${S}"
 	EPATCH_SUFFIX="patch" epatch "${WORKDIR}"/patch
 	epatch "${FILESDIR}"/gpm-configure-LANG.patch
+
+	# disable ncurses manually since the --disable-curses option doesn't seem to
+	# do anything. We don't need to be linking in the curses stuff.
+
+	cat src/Makefile.in | sed -e "s/@CURSES_OBJS@//" > src/Makefile.in.new
+	mv src/Makefile.in.new src/Makefile.in
+
 }
 
 src_compile() {
