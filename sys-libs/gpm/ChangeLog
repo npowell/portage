@@ -2,10 +2,14 @@
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/sys-libs/gpm/ChangeLog,v 1.70 2008/06/19 01:13:40 vapier Exp $
 
+*gpm-1.20.1-r7 (17 Aug 2008)
+
+*gpm-1.20.5-r1 (17 Aug 2008)
+
   16 Aug 2008; Daniel Robbins <drobbins@funtoo.org>
-  gpm-1.20.4.ebuild, gpm-1.20.5.ebuild:
+  gpm-1.20.5-r1.ebuild, gpm-1.20.1-r7.ebuild:
   Removed dependency on ncurses. From what I can tell 
-  (http://invisible-island.net/ncurses/ncurses.faq.html#using_gpm_lib) i
+  (http://invisible-island.net/ncurses/ncurses.faq.html#using_gpm_lib) 
   this is not something one should do and this solves a circular dep
   issue (ncurses->gpm->ncurses) during stage3 build that portage
   currently ignores but really shouldn't.
