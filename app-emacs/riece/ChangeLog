@@ -1,6 +1,15 @@
 # ChangeLog for app-emacs/riece
 # Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-emacs/riece/ChangeLog,v 1.66 2008/06/17 12:37:05 ulm Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emacs/riece/ChangeLog,v 1.69 2008/08/17 18:34:27 armin76 Exp $
+
+  17 Aug 2008; Raúl Porcel <armin76@gentoo.org> riece-5.0.0.ebuild:
+  alpha stable wrt #234864
+
+  17 Aug 2008; Markus Meier <maekke@gentoo.org> riece-5.0.0.ebuild:
+  amd64/x86 stable, bug #234864
+
+  16 Aug 2008; nixnut <nixnut@gentoo.org> riece-5.0.0.ebuild:
+  Stable on ppc wrt bug 234864
 
 *riece-5.0.0 (17 Jun 2008)
 
