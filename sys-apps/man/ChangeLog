@@ -2,7 +2,7 @@
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/sys-apps/man/ChangeLog,v 1.136 2008/04/28 11:15:52 armin76 Exp $
 
-  16 Aug 2008; Daniel Robbins <drobbins@funtoo.org> man-1.6f-2.ebuild:
+  16 Aug 2008; Daniel Robbins <drobbins@funtoo.org> man-1.6f-r2.ebuild:
   added sys-apps/shadow DEPEND so that we have groupadd which gets used
   indirectly by eutils. A temporary fix to avoid messing with eutils.
 
