@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/pciutils/pciutils-3.0.0.ebuild,v 1.1 2008/04/13 22:38:51 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/pciutils/pciutils-3.0.0.ebuild,v 1.3 2008/08/17 20:37:20 maekke Exp $
 
 inherit eutils flag-o-matic toolchain-funcs multilib
 
@@ -10,7 +10,7 @@ SRC_URI="ftp://atrey.karlin.mff.cuni.cz/pub/linux/pci/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86 ~x86-fbsd"
+KEYWORDS="~alpha amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc x86 ~x86-fbsd"
 IUSE="network-cron zlib"
 
 DEPEND="zlib? ( sys-libs/zlib )"
@@ -18,6 +18,8 @@ DEPEND="zlib? ( sys-libs/zlib )"
 src_unpack() {
 	unpack ${A}
 	cd "${S}"
+	epatch "${FILESDIR}"/${PN}-3.0.0-build.patch #233314
+	epatch "${FILESDIR}"/${PN}-3.0.0-resolv.patch #218555
 	epatch "${FILESDIR}"/pcimodules-${PN}-3.0.0.patch
 	epatch "${FILESDIR}"/${PN}-2.2.7-update-pciids-both-forms.patch
 	sed -i -e "/^LIBDIR=/s:/lib:/$(get_libdir):" Makefile

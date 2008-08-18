@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/xine-lib/xine-lib-1.1.15.ebuild,v 1.2 2008/08/15 10:14:20 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/xine-lib/xine-lib-1.1.15.ebuild,v 1.10 2008/08/16 12:13:39 bluebird Exp $
 
 EAPI=1
 
@@ -22,7 +22,7 @@ HOMEPAGE="http://xine.sourceforge.net"
 
 LICENSE="GPL-2"
 SLOT="1"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
+KEYWORDS="alpha amd64 ~arm hppa ia64 ~ppc ppc64 sparc x86 ~x86-fbsd"
 
 IUSE="-aalib -libcaca -arts esd win32codecs nls +dvd +X directfb +vorbis +alsa
 gnome sdl speex +theora ipv6 altivec opengl aac -fbcon +xv xvmc
@@ -85,6 +85,12 @@ DEPEND="${RDEPEND}
 	sys-devel/libtool
 	nls? ( sys-devel/gettext )"
 
+src_unpack() {
+	unpack ${A}
+	cd "${S}"
+	epatch "$FILESDIR"/${P}-libmpeg2-vis.patch
+}
+
 src_compile() {
 	#prevent quicktime crashing
 	append-flags -frename-registers -ffunction-sections
@@ -96,9 +102,6 @@ src_compile() {
 		filter-flags -fno-omit-frame-pointer #breaks per bug #149704
 		is-flag -O? || append-flags -O2
 	fi
-
-	# The default CFLAGS (-O) is the only thing working on hppa.
-	use hppa && unset CFLAGS
 
 	# Too many file names are the same (xine_decoder.c), change the builddir
 	# So that the relative path is used to identify them.
