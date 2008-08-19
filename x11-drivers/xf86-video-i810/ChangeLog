@@ -1,6 +1,31 @@
 # ChangeLog for x11-drivers/xf86-video-i810
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/x11-drivers/xf86-video-i810/ChangeLog,v 1.99 2008/08/11 09:23:00 remi Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-drivers/xf86-video-i810/ChangeLog,v 1.102 2008/08/19 11:49:30 remi Exp $
+
+*xf86-video-i810-2.4.1-r1 (19 Aug 2008)
+
+  19 Aug 2008; Rémi Cardona <remi@gentoo.org>
+  +files/xf86-video-i810-2.4.1-0001-Fix-reverted-LVDS-bios-capability-dword-
+  definition.patch, +xf86-video-i810-2.4.1-r1.ebuild:
+  add a fix for LFP dithering
+
+  19 Aug 2008; Rémi Cardona <remi@gentoo.org>
+  -files/2.4.0/0007-Disable-display-clock-gating-for-4-series-chips.patch,
+  -files/2.4.0/0001-Update-DSPARB-while-planes-are-still-off.patch,
+  -files/2.4.0/0002-Reorder-visuals-reported-by-the-intel-driver.patch,
+  -files/2.4.0/0003-Don-t-program-dsparb-on-new-Intel-chip.patch,
+  -files/2.4.0/0004-Fix-SDVO-reg-definition.patch,
+  -files/2.4.0/0005-Fix-up-the-HP-Pavilion-ze4944ea-quirk.patch,
+  -files/2.4.0/0008-Fix-possible-spurious-interrupts-in-hotplug-detect-o.pat
+  ch, -files/2.4.0/0006-Fix-SDVO-HDMI-encoding-detect-16920.patch,
+  -xf86-video-i810-2.4.0-r1.ebuild:
+  remove 2.4.0-r1
+
+*xf86-video-i810-2.4.1 (18 Aug 2008)
+
+  18 Aug 2008; Rémi Cardona <remi@gentoo.org>
+  +xf86-video-i810-2.4.1.ebuild:
+  bump to 2.4.1
 
   11 Aug 2008; Rémi Cardona <remi@gentoo.org>
   -files/2.3.1/0001-Skip-copying-on-FOURCC_XVMC-surfaces.patch,
