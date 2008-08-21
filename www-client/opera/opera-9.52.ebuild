@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/opera/opera-9.52_pre2084.ebuild,v 1.1 2008/08/01 15:28:02 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/opera/opera-9.52.ebuild,v 1.1 2008/08/20 14:53:44 jer Exp $
 
 GCONF_DEBUG="no"
 
@@ -11,9 +11,9 @@ HOMEPAGE="http://www.opera.com/"
 
 SLOT="0"
 LICENSE="OPERA-9.0"
-KEYWORDS="~amd64 ~x86 ~x86-fbsd"
+KEYWORDS="~amd64 ~ppc ~x86 ~x86-fbsd"
 
-RESTRICT="mirror strip test"
+RESTRICT="strip test"
 
 IUSE="elibc_FreeBSD gnome ia32 qt-static qt3-static spell"
 MY_LINGUAS="be bg cs da de el en en-GB es-ES es-LA fi fr fr-CA fy hi
@@ -23,45 +23,46 @@ for MY_LINGUA in ${MY_LINGUAS}; do
 	IUSE="${IUSE} linguas_${MY_LINGUA/-/_}"
 done
 
-O_SUFF="2084"
-O_P="${PN}-9.52-${O_SUFF}"
-O_URI="http://snapshot.opera.com/unix/snapshot-${O_SUFF}/"
+O_URI="mirror://opera/"
+O_FTP="/952/final/en/"
+O_SUFF="2091"
 
 SRC_URI="
+	ppc? ( ${O_URI}linux${O_FTP}ppc/shared/${P}-${O_SUFF}.gcc4-shared-qt3.ppc.tar.bz2 )
 	x86-fbsd? (
-		qt-static? ( ${O_URI}intel-freebsd/${O_P}.freebsd5-static-qt3.i386.tar.bz2 )
-		!qt-static? ( ${O_URI}intel-freebsd/${O_P}.freebsd5-shared-qt3.i386.tar.bz2 )
+		qt-static? ( ${O_URI}unix/freebsd${O_FTP}intel/static/${P}-${O_SUFF}.freebsd5-static-qt3.i386.tar.bz2 )
+		!qt-static? ( ${O_URI}unix/freebsd${O_FTP}intel/shared/${P}-${O_SUFF}.freebsd5-shared-qt3.i386.tar.bz2 )
 	)
 	qt-static? (
 		qt3-static? (
 			amd64? (
-				ia32? ( ${O_URI}intel-linux/${O_P}.gcc4-static-qt3.i386.tar.bz2 )
-				!ia32? ( ${O_URI}x86_64-linux/${O_P}.gcc4-shared-qt3.x86_64.tar.bz2 )
+				ia32? ( ${O_URI}linux${O_FTP}i386/static/${P}-${O_SUFF}.gcc4-static-qt3.i386.tar.bz2 )
+				!ia32? ( ${O_URI}linux${O_FTP}x86_64/${P}-${O_SUFF}.gcc4-shared-qt3.x86_64.tar.bz2 )
 			)
-			x86? ( ${O_URI}intel-linux/${O_P}.gcc4-static-qt3.i386.tar.bz2 )
+			x86? ( ${O_URI}linux${O_FTP}i386/static/${P}-${O_SUFF}.gcc4-static-qt3.i386.tar.bz2 )
 		)
 		!qt3-static? (
 			amd64? (
-				ia32? ( ${O_URI}intel-linux/${O_P}.gcc4-qt4.i386.tar.bz2 )
-				!ia32? ( ${O_URI}x86_64-linux/${O_P}.gcc4-shared-qt3.x86_64.tar.bz2 )
+				ia32? ( ${O_URI}linux${O_FTP}i386/${P}-${O_SUFF}.gcc4-qt4.i386.tar.bz2 )
+				!ia32? ( ${O_URI}linux${O_FTP}x86_64/${P}-${O_SUFF}.gcc4-shared-qt3.x86_64.tar.bz2 )
 			)
-			x86? ( ${O_URI}intel-linux/${O_P}.gcc4-qt4.i386.tar.bz2 )
+			x86? ( ${O_URI}linux${O_FTP}i386/${P}-${O_SUFF}.gcc4-qt4.i386.tar.bz2 )
 		)
 	)
 	!qt-static? (
 		qt3-static? (
 			amd64? (
-				ia32? ( ${O_URI}intel-linux/${O_P}.gcc4-shared-qt3.i386.tar.bz2 )
-				!ia32? ( ${O_URI}x86_64-linux/${O_P}.gcc4-shared-qt3.x86_64.tar.bz2 )
+				ia32? ( ${O_URI}linux${O_FTP}i386/shared/${P}-${O_SUFF}.gcc4-shared-qt3.i386.tar.bz2 )
+				!ia32? ( ${O_URI}linux${O_FTP}x86_64/${P}-${O_SUFF}.gcc4-shared-qt3.x86_64.tar.bz2 )
 			)
-			x86? ( ${O_URI}intel-linux/${O_P}.gcc4-shared-qt3.i386.tar.bz2 )
+			x86? ( ${O_URI}linux${O_FTP}i386/shared/${P}-${O_SUFF}.gcc4-shared-qt3.i386.tar.bz2 )
 		)
 		!qt3-static? (
 			amd64? (
-				ia32? ( ${O_URI}intel-linux/${O_P}.gcc4-shared-qt3.i386.tar.bz2 )
-				!ia32? ( ${O_URI}x86_64-linux/${O_P}.gcc4-shared-qt3.x86_64.tar.bz2 )
+				ia32? ( ${O_URI}linux${O_FTP}i386/shared/${P}-${O_SUFF}.gcc4-shared-qt3.i386.tar.bz2 )
+				!ia32? ( ${O_URI}linux${O_FTP}x86_64/${P}-${O_SUFF}.gcc4-shared-qt3.x86_64.tar.bz2 )
 			)
-			x86? ( ${O_URI}intel-linux/${O_P}.gcc4-shared-qt3.i386.tar.bz2 )
+			x86? ( ${O_URI}linux${O_FTP}i386/shared/${P}-${O_SUFF}.gcc4-shared-qt3.i386.tar.bz2 )
 		)
 	)
 	"
@@ -86,6 +87,7 @@ RDEPEND="media-libs/libexif
 		ia32? ( app-emulation/emul-linux-x86-qtlibs )
 		!ia32? ( =x11-libs/qt-3* )
 	)
+	ppc? ( =x11-libs/qt-3* )
 	spell? ( app-text/aspell )
 	x86-fbsd? (
 		=virtual/libstdc++-3*
@@ -94,7 +96,7 @@ RDEPEND="media-libs/libexif
 	"
 
 opera_cd() {
-	cd "${WORKDIR}"/${O_P}* || die "failed to enter work directory"
+	cd "${WORKDIR}"/${P}-${O_SUFF}* || die "failed to enter work directory"
 	S="$(pwd)"
 	einfo "Working in ${S}"
 }

@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/iproute2/iproute2-2.6.26.ebuild,v 1.1 2008/08/17 14:28:32 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/iproute2/iproute2-2.6.26-r1.ebuild,v 1.1 2008/08/20 06:31:55 vapier Exp $
 
 inherit eutils toolchain-funcs
 
@@ -84,6 +84,7 @@ src_install() {
 		DESTDIR="${D}" \
 		SBINDIR=/sbin \
 		DOCDIR=/usr/share/doc/${PF} \
+		MANDIR=/usr/share/man \
 		install \
 		|| die "make install failed"
 	if use berkdb ; then
