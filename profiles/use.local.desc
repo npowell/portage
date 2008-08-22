@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation.
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/use.local.desc,v 1.3769 2008/08/19 18:22:14 mrness Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/use.local.desc,v 1.3772 2008/08/21 22:50:56 cardoe Exp $
 # This file contains descriptions of local USE flags, and the ebuilds which
 # contain them.
 # Keep it sorted (use "sort -t: -k1,1 -k2 | sort -s -t/ -k1,1")
@@ -85,6 +85,7 @@
 # net-dns
 # net-firewall
 # net-fs
+# net-ftp
 # net-im
 # net-misc
 # net-nds
@@ -122,6 +123,8 @@
 # x11-misc
 # x11-plugins
 # x11-proto
+# x11-terms
+# x11-themes
 # x11-wm
 # xfce-base
 # xfce-extra
