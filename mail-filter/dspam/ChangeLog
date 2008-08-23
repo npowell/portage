@@ -1,6 +1,21 @@
 # ChangeLog for mail-filter/dspam
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/mail-filter/dspam/ChangeLog,v 1.118 2008/07/15 06:05:12 mrness Exp $
+# $Header: /var/cvsroot/gentoo-x86/mail-filter/dspam/ChangeLog,v 1.121 2008/08/21 17:54:05 bluebird Exp $
+
+  21 Aug 2008; Friedrich Oslage <bluebird@gentoo.org>
+  dspam-3.8.0-r13.ebuild:
+  Stable on sparc, bug #235261
+
+  20 Aug 2008; Markus Meier <maekke@gentoo.org> metadata.xml,
+  dspam-3.8.0-r13.ebuild:
+  amd64/x86 stable, bug #235261; add GLEP 56 USE flag desc from
+  use.local.desc
+
+*dspam-3.8.0-r13 (20 Aug 2008)
+
+  20 Aug 2008; Alin Năstac <mrness@gentoo.org> files/logrotate.dspam,
+  -dspam-3.8.0-r12.ebuild, +dspam-3.8.0-r13.ebuild:
+  Rotate log files using copytruncate (#235205).
 
 *dspam-3.8.0-r12 (15 Jul 2008)
 

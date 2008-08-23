@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/imagemagick/imagemagick-6.4.2.9.ebuild,v 1.3 2008/08/16 16:56:48 maekke Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/imagemagick/imagemagick-6.4.2.9.ebuild,v 1.6 2008/08/21 15:23:20 grobian Exp $
 
 inherit eutils multilib perl-app toolchain-funcs
 
@@ -15,7 +15,7 @@ SRC_URI="ftp://ftp.imagemagick.org/pub/${MY_PN}/${MY_P2}.tar.bz2"
 LICENSE="imagemagick"
 SLOT="0"
 KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
-IUSE="bzip2 djvu doc fontconfig fpx graphviz gs hdri jpeg jpeg2k lcms nocxx
+IUSE="bzip2 djvu doc fontconfig fpx graphviz gs hdri jbig jpeg jpeg2k lcms nocxx
 	openexr openmp perl png q8 q32 svg tiff truetype X wmf xml zlib"
 
 RDEPEND="bzip2? ( app-arch/bzip2 )
@@ -24,6 +24,7 @@ RDEPEND="bzip2? ( app-arch/bzip2 )
 	fpx? ( media-libs/libfpx )
 	graphviz? ( >=media-gfx/graphviz-2.6 )
 	gs? ( virtual/ghostscript )
+	jbig? ( media-libs/jbigkit )
 	jpeg? ( >=media-libs/jpeg-6b )
 	jpeg2k? ( media-libs/jasper )
 	lcms? ( >=media-libs/lcms-1.06 )
@@ -63,11 +64,6 @@ pkg_setup() {
 		elog "the svg USE-flag requires the X USE-flag set."
 		elog "disabling svg support for now."
 	fi
-
-	if use openmp && ! built_with_use sys-devel/gcc openmp; then
-		eerror "sys-devel/gcc needs to be built with openmp support."
-		die "emerge sys-devel/gcc with USE=\"openmp\""
-	fi
 }
 
 src_unpack() {
@@ -78,6 +74,8 @@ src_unpack() {
 		's:DOCUMENTATION_PATH="${DATA_DIR}/doc/${DOCUMENTATION_RELATIVE_PATH}":DOCUMENTATION_PATH="/usr/share/doc/${PF}":g' \
 		"${S}"/configure || die
 
+	cd "${S}"
+	epatch "${FILESDIR}"/${P}-jbig.patch
 }
 
 src_compile() {
@@ -98,7 +96,7 @@ src_compile() {
 
 	#openmp support only works with >=sys-devel/gcc-4.3
 	# see bug #223825
-	if use openmp ; then
+	if use openmp && built_with_use --missing false sys-devel/gcc openmp; then
 		if [[ $(gcc-version) != "4.3" ]] ; then
 			ewarn "you need sys-devel/gcc-4.3 to be able to use openmp, disabling."
 			myconf="${myconf} --disable-openmp"
@@ -106,6 +104,7 @@ src_compile() {
 			myconf="${myconf} --enable-openmp"
 		fi
 	else
+		elog "disabling openmp support"
 		myconf="${myconf} --disable-openmp"
 	fi
 
@@ -128,6 +127,7 @@ src_compile() {
 		$(use_with gs dps) \
 		$(use_with gs gslib) \
 		$(use_with graphviz gvc) \
+		$(use_with jbig) \
 		$(use_with jpeg jpeg) \
 		$(use_with jpeg2k jp2) \
 		$(use_with lcms) \

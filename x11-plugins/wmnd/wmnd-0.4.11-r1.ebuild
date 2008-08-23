@@ -1,11 +1,11 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-plugins/wmnd/wmnd-0.4.11-r1.ebuild,v 1.8 2007/07/22 04:46:01 dberkholz Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-plugins/wmnd/wmnd-0.4.11-r1.ebuild,v 1.9 2008/08/18 10:31:30 s4t4n Exp $
 
 IUSE="snmp"
 DESCRIPTION="WindowMaker Network Devices (dockapp)"
-HOMEPAGE="http://www.yuv.info/wmnd/"
-SRC_URI="ftp://ftp.yuv.info/pub/wmnd/releases/${P}.tar.gz"
+HOMEPAGE="http://www.thregr.org/~wavexx/software/wmnd/"
+SRC_URI="http://www.thregr.org/~wavexx/software/wmnd/releases/${P}.tar.gz"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -36,5 +36,5 @@ src_install()
 	dodoc README AUTHORS ChangeLog NEWS TODO
 
 	# gpl.info is no valid .info file. Causes errors with install-info.
-	rm -r ${D}/usr/share/info
+	rm -r "${D}"/usr/share/info
 }

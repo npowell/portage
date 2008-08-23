@@ -1,6 +1,14 @@
 # ChangeLog for dev-scheme/drscheme
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-scheme/drscheme/ChangeLog,v 1.65 2008/07/28 18:01:22 pchrist Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-scheme/drscheme/ChangeLog,v 1.67 2008/08/21 11:05:43 hkbst Exp $
+
+  21 Aug 2008; Marijn Schouten <hkBst@gentoo.org> drscheme-4.1.ebuild:
+  fix cgc use flag, disable raw-ldflags
+
+*drscheme-4.1 (18 Aug 2008)
+
+  18 Aug 2008; Marijn Schouten <hkBst@gentoo.org> +drscheme-4.1.ebuild:
+  bump
 
   28 Jul 2008; Panagiotis Christopoulos <pchrist@gentoo.org> metadata.xml:
   Update metadata.xml to include USE flag descriptions. Entries taken from

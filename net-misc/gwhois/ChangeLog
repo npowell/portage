@@ -1,6 +1,19 @@
 # ChangeLog for net-misc/gwhois
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/gwhois/ChangeLog,v 1.36 2008/07/19 13:26:27 wschlich Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/gwhois/ChangeLog,v 1.40 2008/08/22 17:27:05 nixnut Exp $
+
+  22 Aug 2008; nixnut <nixnut@gentoo.org> gwhois-20080716.ebuild:
+  Stable on ppc wrt bug 235279
+
+  21 Aug 2008; Friedrich Oslage <bluebird@gentoo.org>
+  gwhois-20080716.ebuild:
+  Stable on sparc, bug #235279
+
+  21 Aug 2008; Jeroen Roovers <jer@gentoo.org> gwhois-20080716.ebuild:
+  Stable for HPPA (bug #235279).
+
+  20 Aug 2008; Dawid Węgliński <cla@gentoo.org> gwhois-20080716.ebuild:
+  Stable on x86 (bug #235279)
 
   19 Jul 2008; Wolfram Schlich <wschlich@gentoo.org>
   -gwhois-20080626.ebuild:
