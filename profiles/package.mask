@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.8903 2008/08/22 03:51:31 ricmm Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.8908 2008/08/23 15:02:42 leio Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked
@@ -28,6 +28,19 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Mart Raudsepp <leio@gentoo.org> (23 Aug 2008)
+# Breaks gnome-base/gdm greeter and therefore graphical
+# login via gdm, bug 235529
+=dev-libs/libxml2-2.6.32-r1
+
+# Peter Volkov <pva@gentoo.org> (23 Aug 2008)
+# Masking release candidate
+=dev-util/bzr-1.6_rc5
+
+# Andreas Proschofsky <suka@gentoo.org> (22 Aug 2008)
+# Beta release, still got some issues
+>=app-office/openoffice-3.0.0_beta2
 
 # Ricardo Mendoza <ricmm@gentoo.org> (21 Aug 2008)
 # Beta driver, masking corresponding nvidia-settings
@@ -387,6 +400,7 @@ mail-mta/xmail
 =media-libs/mesa-7.1*
 x11-proto/dri2proto
 =x11-libs/libdrm-2.3.1*
+x11-drivers/xf86-input-synaptics
 
 # Joe Peterson <lavajoe@gentoo.org> (09 Jun 2008)
 # Live ebuilds too volatile for normal use.
@@ -576,10 +590,6 @@ dev-lang/mlton-bin
 # Ben de Groot <yngwin@gentoo.org> (12 Apr 2008)
 # Ebuild needs more work
 media-sound/lastfmproxy
-
-# Mike Pagano <mpagano@gentoo.org> (11 Apr 2008)
-# Needs masked qt-4.4 (bug #217175)
-=sys-kernel/kccmp-0.2-r1
 
 # Raúl Porcel <armin76@gentoo.org> (8 Apr 2008)
 # Masked for testing
