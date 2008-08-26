@@ -1,6 +1,19 @@
 # ChangeLog for www-client/opera
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/opera/ChangeLog,v 1.276 2008/08/22 20:55:14 maekke Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/opera/ChangeLog,v 1.279 2008/08/25 22:55:39 jer Exp $
+
+*opera-9.60_pre2405 (25 Aug 2008)
+
+  25 Aug 2008; Jeroen Roovers <jer@gentoo.org> +opera-9.60_pre2405.ebuild:
+  Version bump
+  <http://my.opera.com/desktopteam/blog/2008/08/22/first-9-60-snapshot>.
+
+  25 Aug 2008; Jeroen Roovers <jer@gentoo.org> metadata.xml,
+  -opera-9.51.ebuild:
+  Remove old (bug #235298). Squash metadata.xml tabbing.
+
+  25 Aug 2008; Tobias Scherbaum <dertobi123@gentoo.org> opera-9.52.ebuild:
+  ppc stable, bug #235298
 
   22 Aug 2008; Markus Meier <maekke@gentoo.org> opera-9.52.ebuild:
   x86 stable, bug #235298

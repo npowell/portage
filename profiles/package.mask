@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.8908 2008/08/23 15:02:42 leio Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.8915 2008/08/26 00:31:37 robbat2 Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked
@@ -29,14 +29,25 @@
 
 #--- END OF EXAMPLES ---
 
+# Christian Hoffmann <hoffie@gentoo.org> (26 Aug 2008)
+# Masked for security, bug 235052; codebase seems to have lots of problems,
+# needs time to fix or final removing, see the referenced bug for progress
+www-apps/phpcollab
+
+# Christian Hoffmann <hoffie@gentoo.org> (26 Aug 2008)
+# Masked for security, bug 235005, uncooperative upstream (they do not
+# consider XSS a security problem, as referenced in the bug)
+www-apps/xrms
+
+# Jeroen Roovers <jer@gentoo.org> (26 Aug 2008)
+# www-client/opera snapshots are masked. Please read
+# http://my.opera.com/desktopteam/blog/
+=www-client/opera-9.60*
+
 # Mart Raudsepp <leio@gentoo.org> (23 Aug 2008)
 # Breaks gnome-base/gdm greeter and therefore graphical
 # login via gdm, bug 235529
 =dev-libs/libxml2-2.6.32-r1
-
-# Peter Volkov <pva@gentoo.org> (23 Aug 2008)
-# Masking release candidate
-=dev-util/bzr-1.6_rc5
 
 # Andreas Proschofsky <suka@gentoo.org> (22 Aug 2008)
 # Beta release, still got some issues
@@ -84,7 +95,7 @@ media-gfx/autopano-sift-C
 
 # MATSUU Takuto <matsuu@gentoo.org> (15 Aug 2008)
 # Release candidate version, masked for testing.
-=x11-wm/awesome-3.0_rc*
+>=x11-wm/awesome-3
 
 # Ulrich Mueller <ulm@gentoo.org> (15 Aug 2008)
 # Mask live CVS for Emacs 22 base branch, so that users will get
@@ -212,11 +223,6 @@ dev-db/ctdb
 # gnustep-apps/mylibrary: bug #232438, last release in 2004
 gnustep-apps/helpviewer
 gnustep-apps/mylibrary
-
-# Diego Pettenò <flameeyes@gentoo.org> (20 Jul 2008)
-# Masked pending removal on August 20th, last release in 2004.
-# Use sys-auth/pam_ssh as a replacement.
-sys-auth/pam_ssh_agent
 
 # Jeremy Olexa <darkside@gentoo.org> (17 Jul 2008)
 # Old, broken version with odd SRC_URI. Use
@@ -381,11 +387,6 @@ dev-cpp/libwefts
 =dev-java/mx4j-core-3.0.2
 =dev-java/mx4j-tools-3.0.2
 =dev-java/mx4j-3.0.2
-
-# Torsten Veller <tove@gentoo.org> (11 Jun 2008)
-# Masked for removal in 30 days
-# Bugs: 99776 128014 131249 197816
-mail-mta/xmail
 
 # Hanno Böck <hanno@gentoo.org> (11 Jun 2008)
 # Masking till gnucash and other apps are ported
