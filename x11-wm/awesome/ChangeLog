@@ -1,6 +1,18 @@
 # ChangeLog for x11-wm/awesome
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/x11-wm/awesome/ChangeLog,v 1.31 2008/08/22 15:49:24 matsuu Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-wm/awesome/ChangeLog,v 1.34 2008/08/25 16:48:09 matsuu Exp $
+
+  25 Aug 2008; MATSUU Takuto <matsuu@gentoo.org> awesome-3.0_rc4.ebuild:
+  Fixed dependency, bug #235592.
+
+*awesome-2.3.4 (24 Aug 2008)
+
+  24 Aug 2008; MATSUU Takuto <matsuu@gentoo.org> +awesome-2.3.4.ebuild,
+  -awesome-3.0_rc2.ebuild, -awesome-3.0_rc3.ebuild:
+  Version bumped.
+
+  24 Aug 2008; Markus Rothe <corsair@gentoo.org> awesome-3.0_rc4.ebuild:
+  Added ~ppc64; bug #234421
 
 *awesome-3.0_rc4 (22 Aug 2008)
 

@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/debootstrap/debootstrap-1.0.10.ebuild,v 1.3 2008/08/23 17:19:19 jer Exp ${PN}/${PN}-1.0.10.ebuild,v 1.1 2008/07/15 17:46:08 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/debootstrap/debootstrap-1.0.10.ebuild,v 1.8 2008/08/25 23:43:21 jer Exp ${PN}/${PN}-1.0.10.ebuild,v 1.1 2008/07/15 17:46:08 jer Exp $
 
 inherit eutils
 
@@ -10,12 +10,12 @@ SRC_URI="mirror://debian/pool/main/d/${PN}/${PN}_${PV}.tar.gz mirror://gentoo/de
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 hppa ~ia64 ~ppc ~sparc ~x86"
+KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~ppc ~sparc ~x86"
 IUSE=""
 
 DEPEND="sys-devel/binutils
 	net-misc/wget
-	app-arch/dpkg"
+	>=app-arch/dpkg-1.14.20"
 
 S=${WORKDIR}/${PN}
 

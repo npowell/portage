@@ -1,6 +1,21 @@
 # ChangeLog for net-misc/dhcpcd
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/dhcpcd/ChangeLog,v 1.202 2008/08/15 19:47:55 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/dhcpcd/ChangeLog,v 1.205 2008/08/25 10:21:01 remi Exp $
+
+  25 Aug 2008; Rémi Cardona <remi@gentoo.org> Manifest:
+  wrong tarball...
+
+*dhcpcd-4.0.1 (25 Aug 2008)
+
+  25 Aug 2008; Rémi Cardona <remi@gentoo.org> +dhcpcd-4.0.1.ebuild:
+  bump to 4.0.1 as per Roy's comments in bug #235643
+
+*dhcpcd-4.0.0 (24 Aug 2008)
+
+  24 Aug 2008; Raúl Porcel <armin76@gentoo.org> -dhcpcd-4.0.0_beta9.ebuild,
+  -dhcpcd-4.0.0_rc1.ebuild, -dhcpcd-4.0.0_rc2.ebuild,
+  -dhcpcd-4.0.0_rc3.ebuild, -dhcpcd-4.0.0_rc4.ebuild, +dhcpcd-4.0.0.ebuild:
+  Version bump
 
 *dhcpcd-4.0.0_rc5 (15 Aug 2008)
 
