@@ -229,13 +229,6 @@ pkg_setup() {
 		fi
 	fi
 
-	# users have had a chance to phase themselves, time to give em the boot
-	if [[ -e ${ROOT}/etc/locale.gen ]] && [[ -e ${ROOT}/etc/locales.build ]] ; then
-		eerror "You still haven't deleted ${ROOT}/etc/locales.build."
-		eerror "Do so now after making sure ${ROOT}/etc/locale.gen is kosher."
-		die "lazy upgrader detected"
-	fi
-
 	if [[ ${CTARGET} == i386-* ]] ; then
 		eerror "i386 CHOSTs are no longer supported."
 		eerror "Chances are you don't actually want/need i386."
@@ -316,8 +309,8 @@ pkg_preinst() {
 		rm -r "${ROOT}"/$(alt_libdir)/tls || die
 	fi
 
-	# Shouldnt need to keep this updated
-	[[ -e ${ROOT}/etc/locale.gen ]] && rm -f "${D}"/etc/locale.gen
+	# getting this from catalyst
+	rm -f "${D}"/etc/locale.gen
 
 	# simple test to make sure our new glibc isnt completely broken.
 	# make sure we don't test with statically built binaries since
