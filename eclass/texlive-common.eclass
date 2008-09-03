@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/texlive-common.eclass,v 1.5 2008/07/03 21:01:53 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/texlive-common.eclass,v 1.7 2008/09/02 09:56:31 aballier Exp $
 
 # @ECLASS: texlive-common.eclass
 # @MAINTAINER:
@@ -70,6 +70,9 @@ texlive-common_do_symlinks() {
 			cont-??|metafun|mptopdf)
 				elog "Symlink $1 skipped (special case)"
 				;;
+			mf)
+				elog "Symlink $1 -> $2 skipped (texlive-core takes care of it)"
+				;;
 			*)
 				if [ $1 = $2 ];
 				then
@@ -105,3 +108,15 @@ etexlinks() {
 	texlive-common_do_symlinks $(sed '/^[      ]*#/d; /^[      ]*$/d' "$1" | awk '{print $1, $2}')
 }
 
+# @FUNCTION: dobin_texmf_scripts
+# @USAGE: < file1 file2 ... > 
+# @DESCRIPTION:
+# Installs a script from the texmf tree
+
+dobin_texmf_scripts() {
+	while [ $# -gt 0 ] ; do
+		local trg=$(basename ${1} | sed 's,\.[^/]*$,,' | tr '[:upper:]' '[:lower:]')
+		newbin ${1} $trg || die "failed to install ${1} as $trg"
+		shift
+	done
+}

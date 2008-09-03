@@ -1,6 +1,24 @@
 # ChangeLog for dev-libs/opensc
 # Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/opensc/ChangeLog,v 1.49 2008/08/06 11:00:11 ulm Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/opensc/ChangeLog,v 1.54 2008/08/31 15:24:25 armin76 Exp $
+
+  31 Aug 2008; Raúl Porcel <armin76@gentoo.org> opensc-0.11.6.ebuild:
+  alpha/ia64/sparc stable wrt #233543
+
+  31 Aug 2008; Brent Baude <ranger@gentoo.org> opensc-0.11.6.ebuild:
+  Marking opensc-0.11.6 ppc64 and ppc for bug 233543
+
+  31 Aug 2008; Daniel Black <dragonheart@gentoo.org> opensc-0.11.3.ebuild,
+  opensc-0.11.4.ebuild, opensc-0.11.6.ebuild:
+  added missing libXt dependency as per bug #231476. thanks David and Alon
+
+  30 Aug 2008; Markus Meier <maekke@gentoo.org> ChangeLog:
+  amd64/x86 stable, bug #233543
+
+*opensc-0.11.6 (30 Aug 2008)
+
+  30 Aug 2008; Daniel Black <dragonheart@gentoo.org> +opensc-0.11.6.ebuild:
+  version bump thanks to Alon - bug #233519
 
   06 Aug 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
   Add USE flag description to metadata wrt GLEP 56.

@@ -1,6 +1,18 @@
 # ChangeLog for media-video/nvidia-settings
 # Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/nvidia-settings/ChangeLog,v 1.48 2008/08/22 03:45:07 ricmm Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/nvidia-settings/ChangeLog,v 1.50 2008/08/29 00:00:11 ricmm Exp $
+
+*nvidia-settings-177.70 (28 Aug 2008)
+
+  28 Aug 2008; Ricardo Mendoza <ricmm@gentoo.org>
+  +nvidia-settings-177.70.ebuild:
+  Version bump
+
+*nvidia-settings-177.68 (27 Aug 2008)
+
+  27 Aug 2008; Ricardo Mendoza <ricmm@gentoo.org>
+  +nvidia-settings-177.68.ebuild:
+  Added corresponding ebuild to latest beta package
 
 *nvidia-settings-177.67 (22 Aug 2008)
 *nvidia-settings-177.13 (22 Aug 2008)

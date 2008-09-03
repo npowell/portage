@@ -1,6 +1,15 @@
 # ChangeLog for dev-libs/pakchois
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/pakchois/ChangeLog,v 1.5 2008/06/14 16:31:57 nixnut Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/pakchois/ChangeLog,v 1.8 2008/08/31 16:01:26 armin76 Exp $
+
+  31 Aug 2008; Raúl Porcel <armin76@gentoo.org> pakchois-0.4.ebuild:
+  alpha/ia64/sparc stable wrt #236127
+
+  30 Aug 2008; Brent Baude <ranger@gentoo.org> pakchois-0.4.ebuild:
+  stable ppc, bug 236127
+
+  29 Aug 2008; Markus Meier <maekke@gentoo.org> pakchois-0.4.ebuild:
+  amd64/x86 stable, bug #236127
 
   14 Jun 2008; nixnut <nixnut@gentoo.org> pakchois-0.4.ebuild:
   Added ~ppc wrt bug 212056
