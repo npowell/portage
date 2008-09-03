@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/R/R-2.7.1.ebuild,v 1.2 2008/07/18 12:45:45 markusle Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/R/R-2.7.1.ebuild,v 1.9 2008/09/02 16:57:57 keytoaster Exp $
 
 inherit fortran flag-o-matic bash-completion
 
@@ -11,7 +11,7 @@ SRC_URI="mirror://cran/src/base/R-2/${P}.tar.gz
 
 LICENSE="GPL-2 LGPL-2.1"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
+KEYWORDS="alpha amd64 hppa ia64 ~ppc ppc64 sparc x86 ~x86-fbsd"
 
 IUSE="doc java jpeg lapack minimal nls png readline tk X cairo"
 
@@ -65,6 +65,13 @@ pkg_setup() {
 	filter-ldflags -Wl,-Bdirect -Bdirect
 }
 
+src_unpack() {
+	unpack ${A}
+	cd "${S}"
+	epatch "${FILESDIR}"/${PN}-javareconf.patch
+	epatch "${FILESDIR}"/${P}-test-fix.patch
+}
+
 src_compile() {
 	# fix packages.html for doc (bug #205103)
 	# check in later versions if fixed
@@ -114,6 +121,12 @@ src_compile() {
 	fi
 
 	emake -j1 -C src/nmath/standalone || die "emake math library failed"
+}
+
+src_test() {
+	# we need to unset R_HOME otherwise some of the diff based
+	# tests fail due to warnings in the output
+	R_HOME="" make check || die "Some of the tests failed"
 }
 
 src_install() {

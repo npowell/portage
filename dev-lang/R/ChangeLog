@@ -1,6 +1,41 @@
 # ChangeLog for dev-lang/R
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/R/ChangeLog,v 1.125 2008/07/18 12:45:45 markusle Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/R/ChangeLog,v 1.133 2008/09/02 16:57:57 keytoaster Exp $
+
+  02 Sep 2008; Tobias Heinlein <keytoaster@gentoo.org> R-2.7.1.ebuild:
+  amd64 stable wrt security bug #235822
+
+  02 Sep 2008; Jeroen Roovers <jer@gentoo.org> R-2.7.1.ebuild:
+  Stable for HPPA (bug #235822).
+
+  01 Sep 2008; Raúl Porcel <armin76@gentoo.org> R-2.7.1.ebuild:
+  alpha/ia64/x86 stable wrt #235822
+
+  01 Sep 2008; Markus Rothe <corsair@gentoo.org> R-2.7.1.ebuild:
+  Stable on ppc64; bug #235822
+
+  31 Aug 2008; Ferris McCormick <fmccor@gentoo.org> R-2.7.1.ebuild:
+  Sparc stable, security Bug #235822.
+
+  31 Aug 2008; Markus Dittrich <markusle@gentoo.org>
+  files/R-javareconf.patch:
+  Re-added R-javareconf.patch description.
+
+  31 Aug 2008; Markus Dittrich <markusle@gentoo.org>
+  files/R-javareconf.patch:
+  Added further enhancements to R-javareconf.patch (see bug #235822).
+
+*R-2.7.2 (27 Aug 2008)
+
+  27 Aug 2008; Markus Dittrich <markusle@gentoo.org>
+  +files/R-javareconf.patch, +files/R-2.7.1-test-fix.patch,
+  -2.6.1-r1.ebuild, -R-2.6.2.ebuild, -R-2.7.0.ebuild, 
+  R-2.7.1.ebuild, +R-2.7.2.ebuild:
+  Added patch from Debian to fix insecure tempfile handling in 
+  javareconf (fixes bug #235822). NOTE: R-2.2.1-r1.ebuild is not 
+  vulnerable since it does not include the javereconf script. 
+  Also removed old ebuilds and removed two tests from the test
+  suite since they fail with portage.
 
   18 Jul 2008; Markus Dittrich <markusle@gentoo.org> R-2.7.1.ebuild:
   Added missing cairo use flag (see bug #231970).

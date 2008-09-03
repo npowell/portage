@@ -1,6 +1,33 @@
 # ChangeLog for sys-fs/udev
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-fs/udev/ChangeLog,v 1.402 2008/08/20 13:19:54 cardoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-fs/udev/ChangeLog,v 1.407 2008/09/02 15:21:45 zzam Exp $
+
+*udev-127 (02 Sep 2008)
+
+  02 Sep 2008; Matthias Schwarzott <zzam@gentoo.org>
+  +files/udev-127-disable-logging-compile-fix.patch, +udev-127.ebuild:
+  Version bumped.
+
+  28 Aug 2008; Matthias Schwarzott <zzam@gentoo.org> udev-126.ebuild:
+  Change user-message about udevadm and initramfs, as there are no longer
+  any symlinks but only udevadm executable, thanks to polynomial-c for
+  noticing.
+
+  28 Aug 2008; Matthias Schwarzott <zzam@gentoo.org> udev-126.ebuild:
+  Use configure parameters as designed. (--prefix vs. --exec-prefix). No
+  longer need to patch pkgconfig path.
+
+  27 Aug 2008; Matthias Schwarzott <zzam@gentoo.org>
+  +files/udev-start-126.sh, udev-126.ebuild:
+  Silence errors from modprobe unix.
+
+*udev-126 (27 Aug 2008)
+
+  27 Aug 2008; Matthias Schwarzott <zzam@gentoo.org>
+  +files/udev-stop-126.sh, +udev-126.ebuild:
+  Version bumped. Thanks to Polynomial-C for the ebuild. Build system
+  changed to autotools. This leads to no longer building a static library
+  for libvolume_id. Patched makefile to get correct libvolume_id.so version.
 
   20 Aug 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
   update metadata maintainers

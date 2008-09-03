@@ -1,6 +1,18 @@
 # ChangeLog for net-libs/serf
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-libs/serf/ChangeLog,v 1.9 2008/07/01 20:11:54 hollow Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-libs/serf/ChangeLog,v 1.13 2008/08/31 18:07:29 armin76 Exp $
+
+  31 Aug 2008; Raúl Porcel <armin76@gentoo.org> serf-0.2.0.ebuild:
+  alpha/ia64/sparc stable wrt #236130
+
+  31 Aug 2008; Brent Baude <ranger@gentoo.org> serf-0.2.0.ebuild:
+  stable ppc64, bug 236130
+
+  30 Aug 2008; Brent Baude <ranger@gentoo.org> serf-0.2.0.ebuild:
+  stable ppc, bug 236130
+
+  29 Aug 2008; Markus Meier <maekke@gentoo.org> serf-0.2.0.ebuild:
+  amd64/x86 stable, bug #236130
 
 *serf-0.2.0 (01 Jul 2008)
 

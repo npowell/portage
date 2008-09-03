@@ -1,6 +1,18 @@
 # ChangeLog for dev-util/cmake
 # Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/cmake/ChangeLog,v 1.72 2008/05/08 15:53:11 cryos Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/cmake/ChangeLog,v 1.74 2008/09/01 22:22:00 cryos Exp $
+
+  01 Sep 2008; Marcus D. Hanwell <cryos@gentoo.org> ChangeLog:
+  Removed unused version.
+
+*cmake-2.6.1 (27 Aug 2008)
+
+  27 Aug 2008; Timo Gurr <tgurr@gentoo.org>
+  +files/cmake-2.6.1-gc-sections.patch, +files/cmake-2.6.1-rpath.patch,
+  +cmake-2.6.1.ebuild:
+  Version bump. Big thanks to Brad King from kitware, thewtex and Arfrever
+  Frehtes Taifersar Arahesis and everyone else involved. Fixes bug #224901,
+  #232111, #233772 and #235731.
 
 *cmake-2.6.0 (08 May 2008)
 

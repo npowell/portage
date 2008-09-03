@@ -1,6 +1,38 @@
 # ChangeLog for net-irc/quassel
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-irc/quassel/ChangeLog,v 1.22 2008/07/02 22:52:24 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-irc/quassel/ChangeLog,v 1.28 2008/09/01 18:51:57 jokey Exp $
+
+  01 Sep 2008; Markus Ullmann <jokey@gentoo.org> quassel-9999.ebuild:
+  Add new useflags and some style improvements to live ebuild, thanks to
+  Daniel Pielmeier for providing the ebuild diff
+
+*quassel-0.3.0-r1 (30 Aug 2008)
+*quassel-0.2.0_rc1-r1 (30 Aug 2008)
+
+  30 Aug 2008; Markus Ullmann <jokey@gentoo.org> files/quasselcore.init,
+  -quassel-0.2.0_beta1.ebuild, -quassel-0.2.0_rc1.ebuild,
+  +quassel-0.2.0_rc1-r1.ebuild, -quassel-0.2.9999.ebuild,
+  -quassel-0.3.0.ebuild, +quassel-0.3.0-r1.ebuild, +quassel-9999.ebuild,
+  -quassel-9999-r1.ebuild:
+  Make init script baselayout-1 compatible wrt bug #235953 thanks to Daniel
+  Pielmeier, revbump released versions and fix naming for the live ebuild
+
+  27 Aug 2008; Markus Ullmann <jokey@gentoo.org> quassel-0.3.0.ebuild:
+  Add some testing keywords
+
+  27 Aug 2008; Raúl Porcel <armin76@gentoo.org> quassel-0.3.0.ebuild:
+  Add ~sparc
+
+*quassel-0.3.0 (27 Aug 2008)
+
+  27 Aug 2008; Markus Ullmann <jokey@gentoo.org> +quassel-0.3.0.ebuild:
+  0Hour Version bump :D
+
+  26 Aug 2008; Markus Ullmann <jokey@gentoo.org> +files/quasselcore.conf,
+  +files/quasselcore.init, metadata.xml, quassel-0.2.0_rc1.ebuild,
+  quassel-0.2.9999.ebuild, quassel-9999-r1.ebuild:
+  Add init script and some other enhancements from Daniel Pielmeier in bug
+  #217510
 
   02 Jul 2008; Diego Pettenò <flameeyes@gentoo.org>
   quassel-0.2.0_rc1.ebuild, quassel-0.2.9999.ebuild, quassel-9999-r1.ebuild:
