@@ -5,6 +5,11 @@
 # See the rc-scripts ChangeLog in subversion for release info:
 # http://sources.gentoo.org/viewcvs.py/*checkout*/baselayout/trunk/ChangeLog
 
+  04 Sep 2008; Daniel Robbins <drobbins@funtoo.org> baselayout-2.0.0-r1.ebuild:
+  New baselayout ebuild that actually creates device nodes. This has been
+  missing from the ebuild, so I added it from a 1.x version and added MAKEDEV
+  to the portage tree for a quick fix.
+
   19 Aug 2008; Zac Medico <zmedico@gentoo.org> baselayout-2.0.0.ebuild:
   Avoid potential warning messages in the SYMLINK_LIB code which may be
   triggered when find traverses a directory whose parent has already been
