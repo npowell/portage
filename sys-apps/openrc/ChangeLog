@@ -2,6 +2,9 @@
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/sys-apps/openrc/ChangeLog,v 1.40 2008/06/09 14:38:45 cardoe Exp $
 
+  04 Sep 2008; Daniel Robbins <drobbins@funtoo.org> openrc-0.2.5-20080904.ebuild:
+  new ebuild using git snapshot.
+
   09 Jun 2008; Doug Goldstein <cardoe@gentoo.org> openrc-0.2.5.ebuild,
   openrc-9999.ebuild:
   always update the dependency tree so we don't boot with an out of date
