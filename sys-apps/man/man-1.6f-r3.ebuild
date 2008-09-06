@@ -85,7 +85,7 @@ src_install() {
 	insinto /etc
 	# install our own man.conf, which currently differs from the default by its
 	# use of "less -r" to display control chars as bold, etc.
-	doins ${FILESDIR}/etc/man.conf
+	doins ${FILESDIR}/man.conf
 
 	dodoc LSM README* TODO
 
