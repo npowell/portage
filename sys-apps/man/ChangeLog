@@ -2,6 +2,12 @@
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/sys-apps/man/ChangeLog,v 1.136 2008/04/28 11:15:52 armin76 Exp $
 
+  06 Sep 2008; Daniel Robbins <drobbins@funtoo.org> man-1.6f-r3.ebuild:
+  Patch man to not use the PAGER environment variable (as well as a few
+  others). We use what is defined in /etc/man.conf instead. Install our own
+  /etc/man.conf that uses the "less -r" option to display raw control
+  chars as bold, etc. This fixes some display issues for man pages.
+
   16 Aug 2008; Daniel Robbins <drobbins@funtoo.org> man-1.6f-r2.ebuild:
   added sys-apps/shadow DEPEND so that we have groupadd which gets used
   indirectly by eutils. A temporary fix to avoid messing with eutils.
