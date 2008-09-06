@@ -1,8 +1,8 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-editors/leafpad/leafpad-0.8.14.ebuild,v 1.1 2008/03/29 19:37:16 compnerd Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-editors/leafpad/leafpad-0.8.14.ebuild,v 1.3 2008/09/03 16:36:54 compnerd Exp $
 
-inherit eutils
+inherit eutils gnome2-utils
 
 DESCRIPTION="Simple GTK+ Text Editor"
 HOMEPAGE="http://tarot.freeshell.org/leafpad/"
@@ -24,7 +24,16 @@ src_compile() {
 	emake
 }
 
+pkg_preinst() {
+	gnome2_icon_savelist
+}
+
 src_install() {
-	einstall
+	# use emake install over einstall to prevent gtk-icon-theme-update from running
+	emake install DESTDIR="${D}"
 	dodoc AUTHORS ChangeLog NEWS README
+}
+
+pkg_postinst() {
+	gnome2_icon_cache_update
 }

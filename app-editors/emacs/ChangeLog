@@ -1,6 +1,27 @@
 # ChangeLog for app-editors/emacs
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-editors/emacs/ChangeLog,v 1.263 2008/09/02 23:22:51 ulm Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-editors/emacs/ChangeLog,v 1.270 2008/09/06 05:08:09 ulm Exp $
+
+  06 Sep 2008; Ulrich Mueller <ulm@gentoo.org> emacs-18.59-r5.ebuild:
+  Fix licence info, unexelf.c in patch is GPL-2.
+
+*emacs-22.3 (05 Sep 2008)
+
+  05 Sep 2008; Christian Faulhammer <opfer@gentoo.org>
+  -emacs-22.2.92.ebuild, +emacs-22.3.ebuild:
+  official release of 22.3; remove pretest version
+
+  03 Sep 2008; Raúl Porcel <armin76@gentoo.org> emacs-22.2-r3.ebuild:
+  alpha/ia64/sparc/x86 stable
+
+  03 Sep 2008; Jeroen Roovers <jer@gentoo.org> emacs-22.2-r3.ebuild:
+  Stable for HPPA (bug #236498).
+
+  03 Sep 2008; Markus Rothe <corsair@gentoo.org> emacs-22.2-r3.ebuild:
+  Stable on ppc64
+
+  03 Sep 2008; Olivier Crête <tester@gentoo.org> emacs-22.2-r3.ebuild:
+  Stable on amd64 for bug #236498
 
 *emacs-22.2.92 (02 Sep 2008)
 
@@ -14,7 +35,7 @@
 
   02 Sep 2008; Ulrich Mueller <ulm@gentoo.org>
   +files/emacs-22.2-python-nopwd.patch, +emacs-22.2-r3.ebuild:
-  Fix search path for interactive python, security bug 236498.
+  Security fix for interactive python search path, CVE-2008-3949, bug 236498.
 
   28 Jul 2008; Ulrich Mueller <ulm@gentoo.org> metadata.xml:
   Add USE flag description to metadata wrt GLEP 56.

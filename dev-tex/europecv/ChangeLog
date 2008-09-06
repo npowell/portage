@@ -1,6 +1,30 @@
 # ChangeLog for dev-tex/europecv
-# Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-tex/europecv/ChangeLog,v 1.14 2007/03/13 00:16:57 nattfodd Exp $
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-tex/europecv/ChangeLog,v 1.19 2008/09/04 20:49:14 aballier Exp $
+
+  04 Sep 2008; Alexis Ballier <aballier@gentoo.org>
+  europecv-20060424-r1.ebuild:
+  keyword ~x86-fbsd
+
+  04 Sep 2008; Alexis Ballier <aballier@gentoo.org>
+  europecv-20060424-r1.ebuild:
+  The ucs package is needed; provided either by latex-unicode or
+  texlive-latexrecommended. Bug #162807.
+
+*europecv-20060424-r1 (03 Sep 2008)
+
+  03 Sep 2008; Alexis Ballier <aballier@gentoo.org>
+  +europecv-20060424-r1.ebuild:
+  rev bump to install in texmf-site and add examples useflag
+
+  03 Sep 2008; Alexis Ballier <aballier@gentoo.org>
+  europecv-20040603.ebuild, europecv-20060424.ebuild:
+  no need to depend on virtual/tetex, latex-package eclass depends on
+  latex-base already
+
+  03 Sep 2008; Alexis Ballier <aballier@gentoo.org>
+  -europecv-20060123-r1.ebuild:
+  remove unused version
 
   12 Mar 2007; Alexandre Buisse <nattfodd@gentoo.org> metadata.xml:
   Replaced text-markup by tex as maintaining herd (text-markup split).

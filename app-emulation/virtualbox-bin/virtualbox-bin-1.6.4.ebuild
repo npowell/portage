@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/virtualbox-bin/virtualbox-bin-1.6.4.ebuild,v 1.4 2008/08/27 18:27:57 jokey Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/virtualbox-bin/virtualbox-bin-1.6.4.ebuild,v 1.5 2008/09/06 07:16:40 jokey Exp $
 
 EAPI=1
 
@@ -10,8 +10,8 @@ MY_P=VirtualBox-${PV}-Linux
 
 DESCRIPTION="Family of powerful x86 virtualization products for enterprise as well as home use"
 HOMEPAGE="http://www.virtualbox.org/"
-SRC_URI="amd64? ( ${MY_P}_amd64.run )
-	x86? ( ${MY_P}_x86.run )"
+SRC_URI="amd64? ( http://download.virtualbox.org/virtualbox/${PV}/${MY_P}_amd64.run )
+	x86? ( http://download.virtualbox.org/virtualbox/${PV}/${MY_P}_x86.run )"
 
 LICENSE="PUEL"
 SLOT="0"
@@ -52,18 +52,7 @@ RDEPEND="!app-emulation/virtualbox-ose
 
 S=${WORKDIR}
 
-RESTRICT="fetch"
-
-pkg_nofetch() {
-	elog "Please download the package from the site:"
-	elog "https://cds.sun.com/is-bin/INTERSHOP.enfinity/WFS/CDS-CDS_SMI-Site/en_US/-/USD/ViewProductDetail-Start?ProductRef=innotek-1.6-G-F@CDS-CDS_SMI"
-	if use amd64 ; then
-		elog "select \"Linux (AMD64)\" and download \"${MY_P}_amd64.run\""
-	else
-		elog "select \"Linux i386\" and download \"${MY_P}_x86.run\""
-	fi
-	elog "then put this file in ${DISTDIR}"
-}
+RESTRICT="primaryuri"
 
 pkg_setup() {
 	# The VBoxSDL frontend needs media-libs/libsdl compiled
@@ -75,6 +64,8 @@ pkg_setup() {
 			die "media-libs/libsdl should be compiled with the \"X\" USE flag."
 		fi
 	fi
+
+	check_license
 }
 
 src_unpack() {
@@ -145,6 +136,12 @@ src_install() {
 	newexe "${FILESDIR}/${PN}-wrapper" "VBox.sh" || die
 	fowners root:vboxusers /opt/VirtualBox/VBox.sh
 	fperms 0750 /opt/VirtualBox/VBox.sh
+
+	# Disable logging by default, broken in this release (bug #233683)
+	sed -i \
+			-e "/vbox.cfg\"$/a export VBOX_LOG_DEST=\"nofile\"" \
+			"${D}"/opt/VirtualBox/VBox.sh || die "VBox.sh sed failed"
+
 	fowners root:vboxusers /opt/VirtualBox/VBoxAddIF.sh
 	fperms 0750 /opt/VirtualBox/VBoxAddIF.sh
 
