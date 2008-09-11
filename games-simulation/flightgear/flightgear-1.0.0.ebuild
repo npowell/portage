@@ -1,8 +1,8 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/games-simulation/flightgear/flightgear-1.0.0.ebuild,v 1.1 2007/12/23 23:53:36 tupone Exp $
+# $Header: /var/cvsroot/gentoo-x86/games-simulation/flightgear/flightgear-1.0.0.ebuild,v 1.3 2008/09/08 17:18:14 mr_bones_ Exp $
 
-inherit eutils games
+inherit autotools eutils games
 
 MY_PN=FlightGear
 MY_P=${MY_PN}-${PV}
@@ -13,7 +13,7 @@ SRC_URI="mirror://flightgear/Source/${MY_P}.tar.gz
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
+KEYWORDS="~amd64 ~ppc ~sparc x86"
 IUSE="sdl"
 
 DEPEND="virtual/glut
@@ -23,6 +23,13 @@ DEPEND="virtual/glut
 	sdl? ( media-libs/libsdl )"
 
 S=${WORKDIR}/${MY_P}
+
+src_unpack() {
+	unpack ${A}
+	cd "${S}"
+	epatch "${FILESDIR}/${P}-sdl.patch"
+	eautoreconf
+}
 
 src_compile() {
 	egamesconf \

@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-devel/icecream/icecream-0.9.1-r2.ebuild,v 1.1 2008/08/07 18:42:42 bluebird Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-devel/icecream/icecream-0.9.1-r2.ebuild,v 1.5 2008/09/11 13:32:11 ranger Exp $
 
 inherit autotools eutils flag-o-matic
 
@@ -12,7 +12,7 @@ SRC_URI="ftp://ftp.suse.com/pub/projects/${PN}/${MY_P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
+KEYWORDS="amd64 ppc sparc x86"
 IUSE="doc"
 
 RDEPEND="virtual/libc"
@@ -76,11 +76,11 @@ src_install() {
 }
 
 pkg_postinst() {
-	enewgroup icecream || die "Problem creating icecream group"
+	enewgroup icecream
 
 	#are we doing bootstrap with has no useradd?
 	if [ -x /usr/sbin/useradd ]; then
-		enewuser icecream -1 -1 /var/cache/icecream icecream || die "Problem adding icecream user"
+		enewuser icecream -1 -1 /var/cache/icecream icecream
 	else
 		ewarn "You do not have useradd (bootstrap) from shadow so I didn't"
 		ewarn "install the icecream user.  Note that attempting to start the daemon"

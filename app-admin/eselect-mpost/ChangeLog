@@ -1,0 +1,15 @@
+# ChangeLog for app-admin/eselect-mpost
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/eselect-mpost/ChangeLog,v 1.2 2008/09/09 17:44:05 fmccor Exp $
+
+  09 Sep 2008; Ferris McCormick <fmccor@gentoo.org>
+  eselect-mpost-0.1.ebuild:
+  Add ~sparc keyword in preparation for Bug #237202.
+
+*eselect-mpost-0.1 (09 Sep 2008)
+
+  09 Sep 2008; Alexis Ballier <aballier@gentoo.org>
+  +files/mpost.eselect-0.1, +metadata.xml, +eselect-mpost-0.1.ebuild:
+  Initial import: manages /usr/bin/mpost symlinks to allow easy usage of
+  mplib's mpost.
+

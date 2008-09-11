@@ -1,6 +1,21 @@
 # ChangeLog for net-analyzer/nmap
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/nmap/ChangeLog,v 1.182 2008/08/30 21:23:40 spock Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/nmap/ChangeLog,v 1.185 2008/09/10 19:43:46 spock Exp $
+
+  10 Sep 2008; Michał Januszewski <spock@gentoo.org> -nmap-4.62.ebuild,
+  -nmap-4.65.ebuild:
+  Remove old ebuilds.
+
+  10 Sep 2008; Doug Goldstein <cardoe@gentoo.org>
+  +files/nmap-4.75-nolua.patch, nmap-4.75.ebuild:
+  fix bug #237150, compiling with USE='-lua'. Fix from Simon Zilliken
+  <simon@zilliken.name>
+
+*nmap-4.75 (09 Sep 2008)
+
+  09 Sep 2008; Michał Januszewski <spock@gentoo.org>
+  +files/nmap-4.75-include.patch, +nmap-4.75.ebuild:
+  Version bump (bug #237121).
 
   30 Aug 2008; Michał Januszewski <spock@gentoo.org>
   +files/nmap-4.68-concurrent-make-fix.patch, nmap-4.68.ebuild:

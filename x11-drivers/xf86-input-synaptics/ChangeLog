@@ -1,6 +1,29 @@
 # ChangeLog for x11-drivers/xf86-input-synaptics
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/x11-drivers/xf86-input-synaptics/ChangeLog,v 1.6 2008/08/24 14:12:52 corsair Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-drivers/xf86-input-synaptics/ChangeLog,v 1.10 2008/09/11 14:14:19 chainsaw Exp $
+
+*xf86-input-synaptics-0.15.2 (11 Sep 2008)
+
+  11 Sep 2008; <chainsaw@gentoo.org> -xf86-input-synaptics-0.15.0-r1.ebuild,
+  -xf86-input-synaptics-0.15.1.ebuild, +xf86-input-synaptics-0.15.2.ebuild:
+  Version bump, as requested by papillon81 on IRC. Deleted old ebuilds.
+
+*xf86-input-synaptics-0.15.1-r1 (10 Sep 2008)
+
+  10 Sep 2008; <chainsaw@gentoo.org> +files/synaptics-fix-explosion.patch,
+  +xf86-input-synaptics-0.15.1-r1.ebuild:
+  Add explosion avoidance to the driver, upstream patch found by Kamil
+  Kamiński <kamil@mrblur.net>. Closes bug #237074.
+
+  08 Sep 2008; Joseph Jezak <josejx@gentoo.org>
+  xf86-input-synaptics-0.15.1.ebuild:
+  Marked ~ppc for bug #235464.
+
+*xf86-input-synaptics-0.15.1 (08 Sep 2008)
+
+  08 Sep 2008; <chainsaw@gentoo.org> +xf86-input-synaptics-0.15.1.ebuild:
+  Version bump, closes bug #237034 by Kamil Kamiński <kamil@mrblur.net>.
+  X.Org version patch was applied upstream.
 
   24 Aug 2008; Markus Rothe <corsair@gentoo.org>
   xf86-input-synaptics-0.15.0-r1.ebuild:

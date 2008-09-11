@@ -1,6 +1,15 @@
 # ChangeLog for media-gfx/eog
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/eog/ChangeLog,v 1.205 2008/08/28 20:24:14 eva Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/eog/ChangeLog,v 1.208 2008/09/09 11:23:15 armin76 Exp $
+
+  09 Sep 2008; Raúl Porcel <armin76@gentoo.org> eog-2.22.3-r1.ebuild:
+  alpha/ia64/sparc stable wrt #236971
+
+  08 Sep 2008; Markus Meier <maekke@gentoo.org> eog-2.22.3-r1.ebuild:
+  x86 stable, bug #236971
+
+  07 Sep 2008; Olivier Crête <tester@gentoo.org> eog-2.22.3-r1.ebuild:
+  amd64 stable, bug #236971
 
   28 Aug 2008; Gilles Dartiguelongue <eva@gentoo.org> eog-2.20.2.ebuild,
   -eog-2.22.0.ebuild, -eog-2.22.1.ebuild, -eog-2.22.3.ebuild:

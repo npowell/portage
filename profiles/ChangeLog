@@ -1,10 +1,52 @@
 # ChangeLog for profile directory
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.1844 2008/09/06 07:12:48 dberkholz Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.1854 2008/09/11 12:25:51 suka Exp $
 #
 # This ChangeLog should include records for all changes in profiles directory.
 # Only typo fixes which don't affect portage/repoman behaviour could be avoided
 # here. If in doubt put a record here!
+
+  10 Sep 2008; Andreas Proschofsky <suka@gentoo.org> package.mask:
+  Mask upcoming release candidate for openoffice-bin-3.0
+
+  10 Sep 2008; Gunnar Wrobel <wrobel@gentoo.org> package.mask:
+  Masked www-apps/bugport.
+
+  10 Sep 2008; MATSUU Takuto <matsuu@gentoo.org> use.local.desc:
+  Added additional, cangjie5, erbi-qs, extra-phrases, wubi and zhengma local
+  USE flags.
+
+  09 Sep 2008; Alexis Ballier <aballier@gentoo.org> package.mask:
+  remove standalone mh mask, it's included in the big texlive 2008 mask.
+
+  09 Sep 2008; Alexis Ballier <aballier@gentoo.org> package.mask:
+  add eselect-mpost and eselect-pdftex to tl2008 mask
+
+  09 Sep 2008; Alexis Ballier <aballier@gentoo.org> package.mask:
+  Add the big TeX Live 2008 mask
+
+  08 Sep 2008; Alexis Ballier <aballier@gentoo.org> package.mask:
+  remove caml-light mask, its gone
+
+  07 Sep 2008; Mart Raudsepp <leio@gentoo.org> arch/alpha/package.mask,
+  arch/amd64/package.mask, -arch/ia64/package.mask, arch/sparc/package.mask,
+  arch/x86/package.mask, -base/package.mask,
+  default-linux/alpha/2007.0/package.mask, default-linux/amd64/package.mask,
+  -default-linux/ia64/package.mask, default-linux/sparc/package.mask,
+  default-linux/x86/package.mask, -embedded/package.mask:
+  Remove the global GNOME-2.22 mask in base profiles and the therefore
+  unnecessary per-arch unmasks of GNOME-2.22
+
+  07 Sep 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  package.mask:
+  Removed kde-base/qimageblitz-0.0.4 from the kde-4 mask as it's required
+  for kde-4.1.
+
+  07 Sep 2008; Mart Raudsepp <leio@gentoo.org>
+  +arch/powerpc/ppc32/package.mask, +default-linux/ppc/ppc32/package.mask,
+  hardened/ppc/package.mask, +uclibc/ppc/package.mask:
+  Mask GNOME-2.22 temporarily on ppc until keyword visibility problems are
+  sorted out
 
   06 Sep 2008; Donnie Berkholz <dberkholz@gentoo.org>; package.mask:
   Unmask xorg-server 1.5, mesa 7.1, and friends.
