@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-admin/hwreport/hwreport-0.10.0.ebuild,v 1.1 2008/07/24 23:14:21 opfer Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-admin/hwreport/hwreport-0.10.0.ebuild,v 1.3 2008/09/11 23:55:28 gentoofan23 Exp $
 
 inherit toolchain-funcs
 
@@ -10,14 +10,14 @@ SRC_URI="http://hardware4linux.info/res/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
+KEYWORDS="amd64 ~ppc ~sparc ~x86"
 IUSE=""
 
 DEPEND=""
 RDEPEND=">=sys-apps/dmidecode-2.8 >=sys-apps/pciutils-2.2.0"
 
 src_compile() {
-	$(tc-getCC) -o scan-printers scan-printers.c
+	$(tc-getCC) ${CFLAGS} ${LDFLAGS} -o scan-printers scan-printers.c
 }
 
 src_install() {

@@ -1,6 +1,21 @@
 # ChangeLog for dev-util/kdesvn
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/kdesvn/ChangeLog,v 1.49 2008/09/10 21:07:46 george Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/kdesvn/ChangeLog,v 1.52 2008/09/11 19:54:31 george Exp $
+
+  11 Sep 2008; George Shapovalov <george@gentoo.org>
+  -files/kdesvn-0.14.1-as-needed.patch,
+  -files/kdesvn-0.14.1-subversion-1.5.patch, -kdesvn-0.11.2.ebuild,
+  -kdesvn-0.14.1.ebuild:
+  removed stale versions
+
+*kdesvn-1.0.1 (11 Sep 2008)
+
+  11 Sep 2008; George Shapovalov <george@gentoo.org>
+  +files/kdesvn-1.0.1-linkage.patch, +kdesvn-1.0.1.ebuild:
+  added new version (#235356)
+
+  11 Sep 2008; George Shapovalov <george@gentoo.org> kdesvn-0.14.4.ebuild:
+  kdesvn seems to unconditionally need sqlite (#235356)
 
   10 Sep 2008; George Shapovalov <george@gentoo.org> kdesvn-0.14.4.ebuild:
   fixed #224235 and #219503
