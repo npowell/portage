@@ -1,6 +1,18 @@
 # ChangeLog for dev-util/bzr
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/bzr/ChangeLog,v 1.57 2008/08/25 23:10:29 pva Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/bzr/ChangeLog,v 1.59 2008/09/15 13:37:07 pva Exp $
+
+*bzr-1.7_rc1 (15 Sep 2008)
+
+  15 Sep 2008; Peter Volkov <pva@gentoo.org> -bzr-1.6.ebuild,
+  +bzr-1.7_rc1.ebuild:
+  Version bump. Restored ChangeLog, thank alip for IRC report. Remove
+  unused.
+
+*bzr-1.6.1 (07 Sep 2008)
+
+  07 Sep 2008; Peter Volkov <pva@gentoo.org> +bzr-1.6.1.ebuild:
+  Version bump.
 
 *bzr-1.6 (25 Aug 2008)
 

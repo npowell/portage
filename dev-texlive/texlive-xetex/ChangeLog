@@ -1,6 +1,23 @@
 # ChangeLog for dev-texlive/texlive-xetex
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-texlive/texlive-xetex/ChangeLog,v 1.16 2008/05/12 20:22:49 nixnut Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-texlive/texlive-xetex/ChangeLog,v 1.19 2008/09/10 06:45:50 aballier Exp $
+
+*texlive-xetex-2008-r1 (10 Sep 2008)
+
+  10 Sep 2008; Alexis Ballier <aballier@gentoo.org>
+  -texlive-xetex-2008.ebuild, +texlive-xetex-2008-r1.ebuild:
+  Upstream moved ifxetex to latexrecommended, so do we; this fixes some
+  problems with the hyperref package as reported by gim.
+
+  09 Sep 2008; Alexis Ballier <aballier@gentoo.org>
+  texlive-xetex-2007.ebuild:
+  Add empty IUSE to please repoman
+
+*texlive-xetex-2008 (09 Sep 2008)
+
+  09 Sep 2008; Alexis Ballier <aballier@gentoo.org> metadata.xml,
+  +texlive-xetex-2008.ebuild:
+  Bump to 2008
 
   12 May 2008; nixnut <nixnut@gentoo.org> texlive-xetex-2007.ebuild:
   Stable on ppc wrt bug 220651

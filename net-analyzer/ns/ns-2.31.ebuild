@@ -1,6 +1,6 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/ns/ns-2.31.ebuild,v 1.2 2007/10/01 10:59:40 anant Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/ns/ns-2.31.ebuild,v 1.4 2008/09/03 07:36:41 opfer Exp $
 
 inherit eutils toolchain-funcs flag-o-matic
 
@@ -23,12 +23,12 @@ RDEPEND=">=dev-lang/tcl-8.4.5
 					>=dev-libs/dmalloc-4.8.2
 					>=dev-tcltk/tcl-debug-2.0 )"
 DEPEND="${RDEPEND}
-		doc? (	virtual/tetex
+		doc? (	virtual/latex-base
 				virtual/ghostscript
 				dev-tex/latex2html )"
 
 src_unpack() {
-	unpack "${A}"
+	unpack ${A}
 	cd "${S}"
 	sed '/$(CC)/s!-g!$(CFLAGS)!g' "${S}/indep-utils/model-gen/Makefile"
 }

@@ -1,6 +1,16 @@
 # ChangeLog for app-admin/puppet
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-admin/puppet/ChangeLog,v 1.20 2008/08/13 16:51:00 matsuu Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-admin/puppet/ChangeLog,v 1.22 2008/09/15 00:35:23 matsuu Exp $
+
+  15 Sep 2008; MATSUU Takuto <matsuu@gentoo.org> puppet-0.24.4.ebuild,
+  -puppet-0.24.5.ebuild, puppet-0.24.5-r1.ebuild:
+  Removed "|| die", bug #237279.
+
+*puppet-0.24.5-r1 (09 Sep 2008)
+
+  09 Sep 2008; MATSUU Takuto <matsuu@gentoo.org> +files/puppet.init,
+  files/puppetmaster.init, +puppet-0.24.5-r1.ebuild:
+  Fixed init.d issue, bug 237071.
 
 *puppet-0.24.5 (13 Aug 2008)
 

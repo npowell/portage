@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/virtualbox-bin/virtualbox-bin-1.6.4.ebuild,v 1.4 2008/08/27 18:27:57 jokey Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/virtualbox-bin/virtualbox-bin-1.6.4.ebuild,v 1.6 2008/09/15 19:52:56 jokey Exp $
 
 EAPI=1
 
@@ -55,14 +55,17 @@ S=${WORKDIR}
 RESTRICT="fetch"
 
 pkg_nofetch() {
-	elog "Please download the package from the site:"
-	elog "https://cds.sun.com/is-bin/INTERSHOP.enfinity/WFS/CDS-CDS_SMI-Site/en_US/-/USD/ViewProductDetail-Start?ProductRef=innotek-1.6-G-F@CDS-CDS_SMI"
+	# Fetch restriction added due licensing and problems downloading with
+	# wget, see http://www.virtualbox.org/ticket/2148
+	elog "Please download the package from:"
+	elog ""
 	if use amd64 ; then
-		elog "select \"Linux (AMD64)\" and download \"${MY_P}_amd64.run\""
+		elog "http://download.virtualbox.org/virtualbox/${PV}/${MY_P}_amd64.run"
 	else
-		elog "select \"Linux i386\" and download \"${MY_P}_x86.run\""
+		elog "http://download.virtualbox.org/virtualbox/${PV}/${MY_P}_x86.run"
 	fi
-	elog "then put this file in ${DISTDIR}"
+	elog ""
+	elog "and then put it in ${DISTDIR}"
 }
 
 pkg_setup() {
@@ -109,6 +112,7 @@ src_install() {
 		doins vboxwebsrv
 		fowners root:vboxusers /opt/VirtualBox/vboxwebsrv
 		fperms 0750 /opt/VirtualBox/vboxwebsrv
+		dosym /opt/VirtualBox/VBox.sh /usr/bin/vboxwebsrv
 		newinitd "${FILESDIR}"/vboxwebsrv-initd vboxwebsrv
 		newconfd "${FILESDIR}"/vboxwebsrv-confd vboxwebsrv
 	fi
@@ -145,6 +149,12 @@ src_install() {
 	newexe "${FILESDIR}/${PN}-wrapper" "VBox.sh" || die
 	fowners root:vboxusers /opt/VirtualBox/VBox.sh
 	fperms 0750 /opt/VirtualBox/VBox.sh
+
+	# Disable logging by default, broken in this release (bug #233683)
+	sed -i \
+			-e "/vbox.cfg\"$/a export VBOX_LOG_DEST=\"nofile\"" \
+			"${D}"/opt/VirtualBox/VBox.sh || die "VBox.sh sed failed"
+
 	fowners root:vboxusers /opt/VirtualBox/VBoxAddIF.sh
 	fperms 0750 /opt/VirtualBox/VBoxAddIF.sh
 

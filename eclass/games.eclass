@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/games.eclass,v 1.125 2008/04/26 15:50:35 mr_bones_ Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/games.eclass,v 1.127 2008/09/11 16:57:14 nyhm Exp $
 
 # devlist: {vapier,wolf31o2,mr_bones_}@gentoo.org -> games@gentoo.org
 #
@@ -32,7 +32,7 @@ export GAMES_USER_DED=${GAMES_USER_DED:-games}
 export GAMES_GROUP=${GAMES_GROUP:-games}
 
 games_get_libdir() {
-	echo ${GAMES_LIBDIR:-${GAMES_PREFIX}/$(get_libdir)}
+	echo ${GAMES_PREFIX}/$(get_libdir)
 }
 
 egamesconf() {
@@ -44,19 +44,6 @@ egamesconf() {
 		--localstatedir="${GAMES_STATEDIR}" \
 		"$@" \
 		|| die "egamesconf failed"
-}
-
-egamesinstall() {
-	ewarn "Don't use egamesinstall, use emake DESTDIR=\"\${D}\" install instead"
-	epause 30
-	make \
-		prefix="${D}${GAMES_PREFIX}" \
-		mandir="${D}/usr/share/man" \
-		infodir="${D}/usr/share/info" \
-		datadir="${D}${GAMES_DATADIR}" \
-		sysconfdir="${D}${GAMES_SYSCONFDIR}" \
-		localstatedir="${D}${GAMES_STATEDIR}" \
-		"$@" install || die "egamesinstall failed"
 }
 
 gameswrapper() {
@@ -108,25 +95,16 @@ prepgamesdirs() {
 }
 
 gamesenv() {
-	# As much as I hate doing this, we need to be a bit more flexibility with
-	# our library directories.
-	local hasit=0 GAMES_LIBDIRS="" GAMES_LIBDIR=$(games_get_libdir)
-	if has_multilib_profile ; then
-		for libdir in $(get_all_libdirs) ; do
-			if [[ ${GAMES_LIBDIR} != ${GAMES_PREFIX}/${libdir} ]] ; then
-				GAMES_LIBDIRS="${GAMES_LIBDIRS}:${GAMES_PREFIX}/${libdir}"
-			else
-				hasit=1
-			fi
-		done
-	fi
-	[[ ${hasit} == "1" ]] \
-		&& GAMES_LIBDIRS=${GAMES_LIBDIRS:1} \
-		|| GAMES_LIBDIRS="${GAMES_LIBDIR}:${GAMES_LIBDIRS}"
+	local d libdirs
+
+	for d in $(get_all_libdirs) ; do
+		libdirs="${libdirs}:${GAMES_PREFIX}/${d}"
+	done
+
 	# Wish we could use doevnd here, but we dont want the env
 	# file to be tracked in the CONTENTS of every game
 	cat <<-EOF > "${ROOT}"/etc/env.d/${GAMES_ENVD}
-	LDPATH="${GAMES_LIBDIRS}"
+	LDPATH="${libdirs:1}"
 	PATH="${GAMES_BINDIR}"
 	EOF
 }

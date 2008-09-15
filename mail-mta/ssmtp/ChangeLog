@@ -1,6 +1,40 @@
 # ChangeLog for mail-mta/ssmtp
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/mail-mta/ssmtp/ChangeLog,v 1.55 2008/08/23 02:02:28 cardoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/mail-mta/ssmtp/ChangeLog,v 1.63 2008/09/13 16:22:57 armin76 Exp $
+
+  13 Sep 2008; Raúl Porcel <armin76@gentoo.org> ssmtp-2.62-r3.ebuild:
+  alpha/ia64/sparc stable wrt #234391
+
+  12 Sep 2008; Markus Meier <maekke@gentoo.org> ssmtp-2.62-r3.ebuild:
+  amd64/x86 stable, bug #234391
+
+  12 Sep 2008; Jeroen Roovers <jer@gentoo.org> ssmtp-2.61-r2.ebuild,
+  ssmtp-2.62-r3.ebuild:
+  Fix quoting issues in 2.61-r2. 2.62-r3 stable for HPPA (bug #234391).
+
+*ssmtp-2.62-r3 (09 Sep 2008)
+
+  09 Sep 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  +files/CVE-2008-3962.patch, -ssmtp-2.62-r1.ebuild, -ssmtp-2.62-r2.ebuild,
+  +ssmtp-2.62-r3.ebuild:
+  Version bump, security bug #234391
+
+  09 Sep 2008; Robert Buchholz <rbu@gentoo.org> ssmtp-2.62-r1.ebuild:
+  reverting stables
+
+  07 Sep 2008; Markus Meier <maekke@gentoo.org> ssmtp-2.62-r1.ebuild:
+  amd64/x86 stable, bug #236812
+
+  06 Sep 2008; Jeroen Roovers <jer@gentoo.org> ssmtp-2.62-r1.ebuild:
+  Stable for HPPA (bug #236812).
+
+*ssmtp-2.62-r2 (05 Sep 2008)
+
+  05 Sep 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  +files/ssmtp-2.62-maxsysuid.patch, +files/ssmtp-2.62-maxsysuid-conf.patch,
+  metadata.xml, +ssmtp-2.62-r2.ebuild:
+  Allow to specify the last used system user id via +maxsysuid, #231866, patch
+  by Trevor Bowen
 
   23 Aug 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
   add GLEP 56 USE flag desc from use.local.desc

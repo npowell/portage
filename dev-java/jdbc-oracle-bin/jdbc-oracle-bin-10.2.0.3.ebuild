@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-java/jdbc-oracle-bin/jdbc-oracle-bin-10.2.0.3.ebuild,v 1.3 2008/07/08 06:00:07 opfer Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-java/jdbc-oracle-bin/jdbc-oracle-bin-10.2.0.3.ebuild,v 1.4 2008/09/06 13:07:29 caster Exp $
 
 inherit java-pkg-2
 
@@ -19,7 +19,7 @@ file_main="${P}-${file_main_orig}"
 file_main_dms="${P}-${file_main_dms_orig}"
 file_main_debug="${P}-${file_main_debug_orig}"
 file_main_dms_debug="${P}-${file_main_dms_debug_orig}"
-file_doc="${P}-${file_doc_orig}"
+file_doc="${PN}-10.2.0.1-${file_doc_orig}"
 file_demo="${P}-${file_demo_orig}"
 file_nls="${P}-${file_nls_orig}"
 file_ons="${P}-${file_ons_orig}"

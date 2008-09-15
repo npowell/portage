@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-base/x11-drm/x11-drm-20080710.ebuild,v 1.1 2008/07/11 04:57:43 battousai Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-base/x11-drm/x11-drm-20080710.ebuild,v 1.4 2008/09/13 01:12:14 battousai Exp $
 
 WANT_AUTOCONF="latest"
 WANT_AUTOMAKE="1.7"
@@ -27,7 +27,7 @@ IUSE="${IUSE_VIDEO_CARDS} kernel_FreeBSD kernel_linux"
 RESTRICT="strip"
 
 S="${WORKDIR}/drm"
-PATCHVER="0.1"
+PATCHVER="0.3"
 PATCHDIR="${WORKDIR}/patch"
 EXCLUDED="${WORKDIR}/excluded"
 
@@ -49,11 +49,11 @@ pkg_setup() {
 	# Setup the kernel's stuff.
 	kernel_setup
 
-	# Set video cards to build for.
-	set_vidcards
-
 	# Determine which -core dir we build in.
 	get_drm_build_dir
+
+	# Set video cards to build for.
+	set_vidcards
 
 	return 0
 }
@@ -129,8 +129,6 @@ kernel_setup() {
 		K_RV=${CHOST/*-freebsd/}
 	elif use kernel_linux
 	then
-		linux-mod_pkg_setup
-
 		if kernel_is 2 4
 		then
 			eerror "Upstream support for 2.4 kernels has been removed, so this package will no"
@@ -138,11 +136,11 @@ kernel_setup() {
 			die "Please use in-kernel DRM or switch to a 2.6 kernel."
 		fi
 
-		linux_chkconfig_builtin "DRM" && \
-			die "Please disable or modularize DRM in the kernel config. (CONFIG_DRM = n or m)"
+		CONFIG_CHECK="!DRM AGP"
+		ERROR_DRM="Please disable DRM in the kernel config. (CONFIG_DRM = n)"
+		ERROR_AGP="AGPGART support is not enabled in your kernel config (CONFIG_AGP)."
 
-		CONFIG_CHECK="AGP"
-		ERROR_AGP="AGP support is not enabled in your kernel config (CONFIG_AGP)"
+		linux-mod_pkg_setup
 	fi
 }
 
@@ -183,6 +181,19 @@ set_vidcards() {
 			VIDCARDS="${VIDCARDS} tdfx.${KV_OBJ}"
 		use video_cards_xgi && \
 			VIDCARDS="${VIDCARDS} xgi.${KV_OBJ}"
+	fi
+
+	MODULE_NAMES=""
+	if use kernel_linux
+	then
+		LIBDIR="x11-drm"
+		for VIDCARD in ${VIDCARDS}
+		do
+			MODULE_NAMES="${MODULE_NAMES} ${VIDCARD/\.${KV_OBJ}/(${LIBDIR}:${SRC_BUILD})}"
+		done
+		MODULE_NAMES="${MODULE_NAMES} drm(${LIBDIR}:${SRC_BUILD})"
+		BUILD_PARAMS="LINUXDIR=\"${KERNEL_DIR}\" DRM_MODULES=\"${VIDCARDS}\""
+		BUILD_TARGETS="modules"
 	fi
 }
 
@@ -250,17 +261,7 @@ src_install_os() {
 
 src_compile_linux() {
 	# This now uses an M= build system. Makefile does most of the work.
-	cd "${SRC_BUILD}"
-	unset ARCH
-	emake M="${SRC_BUILD}" \
-		LINUXDIR="${KERNEL_DIR}" \
-		DRM_MODULES="${VIDCARDS}" \
-		modules || die_error
-
-	if linux_chkconfig_present DRM
-	then
-		echo "Please disable in-kernel DRM support to use this package."
-	fi
+	linux-mod_src_compile
 
 	# LINUXDIR is needed to allow Makefiles to find kernel release.
 	cd "${SRC_BUILD}"
@@ -300,15 +301,7 @@ die_error() {
 
 src_install_linux() {
 	cd "${SRC_BUILD}"
-	unset ARCH
-	kernel_is 2 6 && DRM_KMOD="drm.${KV_OBJ}"
-	emake KV="${KV_FULL}" \
-		LINUXDIR="${KERNEL_DIR}" \
-		DESTDIR="${D}" \
-		RUNNING_REL="${KV_FULL}" \
-		MODULE_LIST="${VIDCARDS} ${DRM_KMOD}" \
-		O="${KBUILD_OUTPUT}" \
-		install || die "Install failed."
+	linux-mod_src_install
 
 	# Strip binaries, leaving /lib/modules untouched (bug #24415)
 	strip_bins \/lib\/modules
@@ -330,5 +323,14 @@ pkg_postinst_os() {
 	if use kernel_linux
 	then
 		linux-mod_pkg_postinst
+
+		elog "Having in-kernel DRM modules installed can prevent x11-drm modules from being"
+		elog "loaded. It can also lead to unknown symbols in x11-drm modules, which would"
+		elog "be seen during the installation. If you experience any of those problems,"
+		elog "please ensure that the in-kernel DRM modules are not installed."
+		elog "This can be done with the following:"
+		elog "    cd ${KERNEL_DIR}"
+		elog "    make modules modules_install"
+		elog "This should allow the x11-drm modules to load and function normally."
 	fi
 }

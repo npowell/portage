@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.8940 2008/09/02 15:25:24 zzam Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.8984 2008/09/15 14:36:14 ulm Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked
@@ -29,15 +29,432 @@
 
 #--- END OF EXAMPLES ---
 
+# Ulrich Mueller <ulm@gentoo.org> (15 Sep 2008)
+# Broken MIME (RFC 1522) encoding of headers, bug 237730.
+~app-emacs/vm-8.0.11.581
+
+# Jeremy Olexa <darkside@gentoo.org> (13 Sep 2008)
+# Masked for removal in 60 days. Dead upstream, old, no maintainer, based on 2.5
+# kernel, doesn't build with glibc-2.8, bug # 231837, 204671, 226675
+app-admin/powertweak
+
+# Jeremy Olexa <darkside@gentoo.org> (13 Sep 2008)
+# Masked for removal is 60 days. Broke, old, unmaintained. bug # 210689
+x11-base/xdirectfb
+
+# Jeremy Olexa <darkside@gentoo.org> (12 Sep 2008)
+# Masked for removal in 60 days. Broken package, needs love due to automagic
+# deps, missing kernel module, and other issues seen in bug #211702
+app-emulation/sheepshaver
+
+# Jeremy Olexa <darkside@gentoo.org> (12 Sep 2008)
+# Masked for removal in 60 days. Broken in Gentoo for 1.5 years, no maintainer,
+# automagic deps, non trivial to version bump due to now bundled packages.
+# dev-lang/stratego comes for the ride becuase it depends on these two packages.
+# See bug #159048
+dev-libs/aterm
+dev-libs/sdf2-bundle
+dev-lang/stratego
+
+# Jeremy Olexa <darkside@gentoo.org> (12 Sep 2008)
+# Masked for removal in 60 days. dead upstream, broken on current systems. No
+# maintainer, See bug #166875
+net-misc/xf4vnc
+
+# Jeremy Olexa <darkside@gentoo.org> (12 Sep 2008)
+# Masked for removal in 60 days. dead upstream, missed modular X transition.
+# See bug #127193
+x11-terms/root-tail
+
+# Gunnar Wrobel <wrobel@gentoo.org> (10 Sep 2008)
+# Masked for security, bug 235060, upstream dead,
+# will be removed in 30 days
+www-apps/bugport
+
+# Alexis Ballier <aballier@gentoo.org> (09 Sep 2008)
+# The big TeX Live 2008 mask. Needs some testing and keywording love.
+>=dev-texlive/texlive-basic-2008
+>=dev-texlive/texlive-bibtexextra-2008
+>=dev-texlive/texlive-context-2008
+>=dev-texlive/texlive-documentation-base-2008
+>=dev-texlive/texlive-documentation-bulgarian-2008
+>=dev-texlive/texlive-documentation-chinese-2008
+>=dev-texlive/texlive-documentation-czechslovak-2008
+>=dev-texlive/texlive-documentation-dutch-2008
+>=dev-texlive/texlive-documentation-english-2008
+>=dev-texlive/texlive-documentation-finnish-2008
+>=dev-texlive/texlive-documentation-french-2008
+>=dev-texlive/texlive-documentation-german-2008
+>=dev-texlive/texlive-documentation-greek-2008
+>=dev-texlive/texlive-documentation-italian-2008
+>=dev-texlive/texlive-documentation-japanese-2008
+>=dev-texlive/texlive-documentation-korean-2008
+>=dev-texlive/texlive-documentation-mongolian-2008
+>=dev-texlive/texlive-documentation-polish-2008
+>=dev-texlive/texlive-documentation-portuguese-2008
+>=dev-texlive/texlive-documentation-russian-2008
+>=dev-texlive/texlive-documentation-slovenian-2008
+>=dev-texlive/texlive-documentation-spanish-2008
+>=dev-texlive/texlive-documentation-thai-2008
+>=dev-texlive/texlive-documentation-turkish-2008
+>=dev-texlive/texlive-documentation-ukrainian-2008
+>=dev-texlive/texlive-documentation-vietnamese-2008
+>=dev-texlive/texlive-fontsextra-2008
+>=dev-texlive/texlive-fontsrecommended-2008
+>=dev-texlive/texlive-formatsextra-2008
+>=dev-texlive/texlive-games-2008
+>=dev-texlive/texlive-genericextra-2008
+>=dev-texlive/texlive-genericrecommended-2008
+>=dev-texlive/texlive-htmlxml-2008
+>=dev-texlive/texlive-humanities-2008
+>=dev-texlive/texlive-langafrican-2008
+>=dev-texlive/texlive-langarab-2008
+>=dev-texlive/texlive-langarmenian-2008
+>=dev-texlive/texlive-langcjk-2008
+>=dev-texlive/texlive-langcroatian-2008
+>=dev-texlive/texlive-langcyrillic-2008
+>=dev-texlive/texlive-langczechslovak-2008
+>=dev-texlive/texlive-langdanish-2008
+>=dev-texlive/texlive-langdutch-2008
+>=dev-texlive/texlive-langfinnish-2008
+>=dev-texlive/texlive-langfrench-2008
+>=dev-texlive/texlive-langgerman-2008
+>=dev-texlive/texlive-langgreek-2008
+>=dev-texlive/texlive-langhebrew-2008
+>=dev-texlive/texlive-langhungarian-2008
+>=dev-texlive/texlive-langindic-2008
+>=dev-texlive/texlive-langitalian-2008
+>=dev-texlive/texlive-langlatin-2008
+>=dev-texlive/texlive-langmongolian-2008
+>=dev-texlive/texlive-langnorwegian-2008
+>=dev-texlive/texlive-langother-2008
+>=dev-texlive/texlive-langpolish-2008
+>=dev-texlive/texlive-langportuguese-2008
+>=dev-texlive/texlive-langspanish-2008
+>=dev-texlive/texlive-langswedish-2008
+>=dev-texlive/texlive-langtibetan-2008
+>=dev-texlive/texlive-langukenglish-2008
+>=dev-texlive/texlive-langvietnamese-2008
+>=dev-texlive/texlive-latex-2008
+>=dev-texlive/texlive-latex3-2008
+>=dev-texlive/texlive-latexextra-2008
+>=dev-texlive/texlive-latexrecommended-2008
+>=dev-texlive/texlive-mathextra-2008
+>=dev-texlive/texlive-metapost-2008
+>=dev-texlive/texlive-music-2008
+>=dev-texlive/texlive-omega-2008
+>=dev-texlive/texlive-pictures-2008
+>=dev-texlive/texlive-plainextra-2008
+>=dev-texlive/texlive-pstricks-2008
+>=dev-texlive/texlive-psutils-2008
+>=dev-texlive/texlive-publishers-2008
+>=dev-texlive/texlive-science-2008
+>=dev-texlive/texlive-texinfo-2008
+>=dev-texlive/texlive-xetex-2008
+>=app-text/texlive-core-2008
+>=app-text/texlive-2008
+>=dev-tex/mh-20080903
+app-admin/eselect-pdftex
+app-admin/eselect-mpost
+
+# Sébastien Fabbro <bicatali@gentoo.org> (05 Sep 2008)
+# Masked for removal in 30 days. Now obsoleted and replaced
+# with eselect and pkg-config in all blas/lapack implementations
+sci-libs/blas-config
+sci-libs/lapack-config
+
+# Carsten Lohrke <carlo@gentoo.org> (05 Sep 2008)
+# Masked for removal. It's broken and abandoned.
+app-portage/kuroo
+
+# Alexis Ballier <aballier@gentoo.org> (05 Sep 2008)
+# Masked for removal in 30 days.
+# Masked since early 2007. Included in tetex-3, ptex and texlive-langvietnamese.
+# If someone wanted to keep the ebuild around for single package updates, he had
+# plenty of time to do it. Now it is old and unmaintained and therefore will be
+# removed on 06 Oct 2008.
+dev-tex/vntex
+
+# Tony Vroon <chainsaw@gentoo.org> (04 Sep 2008)
+# First v4 branch ebuild for DHCP. Further testing is required, especially of
+# the DHCP server. We can't yet inhibit the build of the server in this new
+# build system either. You can try this out if you're sufficiently confident
+# to send me patches or help me fix it. If that doesn't sound like you, this
+# software is not yet ready for you. Thanks.
+~net-misc/dhcp-4.0.0
+
+# Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org> (03 Sep 2008)
+# Restrict the following mask only to 4.0.* packages. KDE-4.1 won't enter
+# the tree p. masked.
+# Ingmar Vanhassel <ingmar@gentoo.org> (16 Jan 2008)
+# Mask KDE 4.0.x for testing. This release of KDE 4 will not be unmasked.
+# This is still not intended for mainstream so DO NOT KEYWORD IT without
+# talking to the KDE herd first.
+# KDE 4 guide: http://www.gentoo.org/proj/en/desktop/kde/kde4.xml
+=kde-base/amor-4.0*
+=kde-base/ark-4.0*
+=kde-base/blinken-4.0*
+=kde-base/bovo-4.0*
+=kde-base/cervisia-4.0*
+=kde-base/dolphin-4.0*
+=kde-base/drkonqi-4.0*
+=kde-base/gwenview-4.0*
+=kde-base/juk-4.0*
+=kde-base/kalgebra-4.0*
+=kde-base/kalzium-4.0*
+=kde-base/kamera-4.0*
+=kde-base/kanagram-4.0*
+=kde-base/kappfinder-4.0*
+=kde-base/kapptemplate-4.0*
+=kde-base/kate-4.0*
+=kde-base/katomic-4.0*
+=kde-base/kbattleship-4.0*
+=kde-base/kblackbox-4.0*
+=kde-base/kbounce-4.0*
+=kde-base/kbruch-4.0*
+=kde-base/kbugbuster-4.0*
+=kde-base/kcachegrind-4.0*
+=kde-base/kcalc-4.0*
+=kde-base/kcharselect-4.0*
+=kde-base/kcheckpass-4.0*
+=kde-base/kcminit-4.0*
+=kde-base/kcmshell-4.0*
+=kde-base/kcolorchooser-4.0*
+=kde-base/kcontrol-4.0*
+=kde-base/kcron-4.0*
+=kde-base/kde-4.0*
+=kde-base/kdeaccessibility-4.0*
+=kde-base/kdeaccessibility-colorschemes-4.0*
+=kde-base/kdeaccessibility-iconthemes-4.0*
+=kde-base/kdeaccessibility-meta-4.0*
+=kde-base/kdeaccounts-plugin-4.0*
+=kde-base/kdeadmin-4.0*
+=kde-base/kdeadmin-meta-4.0*
+=kde-base/kdeartwork-4.0*
+=kde-base/kdeartwork-colorschemes-4.0*
+=kde-base/kdeartwork-emoticons-4.0*
+=kde-base/kdeartwork-icewm-themes-4.0*
+=kde-base/kdeartwork-iconthemes-4.0*
+=kde-base/kdeartwork-kscreensaver-4.0*
+=kde-base/kdeartwork-kworldclock-4.0*
+=kde-base/kdeartwork-meta-4.0*
+=kde-base/kdeartwork-sounds-4.0*
+=kde-base/kdeartwork-styles-4.0*
+=kde-base/kdeartwork-wallpapers-4.0*
+=kde-base/kdebase-4.0*
+=kde-base/kdebase-data-4.0*
+=kde-base/kdebase-kioslaves-4.0*
+=kde-base/kdebase-meta-4.0*
+=kde-base/kdebase-startkde-4.0*
+=kde-base/kdebugdialog-4.0*
+=kde-base/kdeedu-4.0*
+=kde-base/kdeedu-meta-4.0*
+=kde-base/kdegames-4.0*
+=kde-base/kdegames-meta-4.0*
+=kde-base/kdegraphics-4.0*
+=kde-base/kdegraphics-meta-4.0*
+=kde-base/kde-l10n-4.0*
+=kde-base/kdelibs-4.0*
+=kde-base/kde-menu-4.0*
+=kde-base/kde-menu-icons-4.0*
+=kde-base/kde-meta-4.0*
+=kde-base/kdemultimedia-4.0*
+=kde-base/kdemultimedia-kioslaves-4.0*
+=kde-base/kdemultimedia-meta-4.0*
+=kde-base/kdenetwork-4.0*
+=kde-base/kdenetwork-filesharing-4.0*
+=kde-base/kdenetwork-meta-4.0*
+=kde-base/kdepasswd-4.0*
+=kde-base/kdepimlibs-4.0*
+=kde-base/kdesdk-4.0*
+=kde-base/kdesdk-kioslaves-4.0*
+=kde-base/kdesdk-meta-4.0*
+=kde-base/kdesdk-misc-4.0*
+=kde-base/kdesdk-scripts-4.0*
+=kde-base/kdessh-4.0*
+=kde-base/kdesu-4.0*
+=kde-base/kdetoys-4.0*
+=kde-base/kdetoys-meta-4.0*
+=kde-base/kdeutils-4.0*
+=kde-base/kdeutils-meta-4.0*
+=kde-base/kde-wallpapers-4.0*
+=kde-base/kdewebdev-4.0*
+=kde-base/kdewebdev-meta-4.0*
+=kde-base/kdf-4.0*
+=kde-base/kdialog-4.0*
+=kde-base/kdm-4.0*
+=kde-base/kdnssd-4.0*
+=kde-base/keditbookmarks-4.0*
+=kde-base/kfile-4.0*
+=kde-base/kfilereplace-4.0*
+=kde-base/kfind-4.0*
+=kde-base/kfloppy-4.0*
+=kde-base/kfourinline-4.0*
+=kde-base/kgamma-4.0*
+=kde-base/kgeography-4.0*
+=kde-base/kget-4.0*
+=kde-base/kgoldrunner-4.0*
+=kde-base/kgpg-4.0*
+=kde-base/khangman-4.0*
+=kde-base/khelpcenter-4.0*
+=kde-base/khotkeys-4.0*
+=kde-base/kig-4.0*
+=kde-base/kimagemapeditor-4.0*
+=kde-base/kinfocenter-4.0*
+=kde-base/kioclient-4.0*
+=kde-base/kiriki-4.0*
+=kde-base/kiten-4.0*
+=kde-base/kjots-4.0*
+=kde-base/kjumpingcube-4.0*
+=kde-base/klettres-4.0*
+=kde-base/klines-4.0*
+=kde-base/klinkstatus-4.0*
+=kde-base/klipper-4.0*
+=kde-base/kmag-4.0*
+=kde-base/kmahjongg-4.0*
+=kde-base/kmenuedit-4.0*
+=kde-base/kmilo-4.0*
+=kde-base/kmimetypefinder-4.0*
+=kde-base/kmines-4.0*
+=kde-base/kmix-4.0*
+=kde-base/kmousetool-4.0*
+=kde-base/kmouth-4.0*
+=kde-base/kmplot-4.0*
+=kde-base/knetattach-4.0*
+=kde-base/knetwalk-4.0*
+=kde-base/knetworkconf-4.0*
+=kde-base/knewsticker-4.0*
+=kde-base/knewstuff-4.0*
+=kde-base/knotify-4.0*
+=kde-base/kolf-4.0*
+=kde-base/kolourpaint-4.0*
+=kde-base/kompare-4.0*
+=kde-base/konqueror-4.0*
+=kde-base/konquest-4.0*
+=kde-base/konsole-4.0*
+=kde-base/kopete-4.0*
+=kde-base/kpasswdserver-4.0*
+=kde-base/kpat-4.0*
+=kde-base/kpercentage-4.0*
+=kde-base/kppp-4.0*
+=kde-base/kquitapp-4.0*
+=kde-base/krdc-4.0*
+=kde-base/kreadconfig-4.0*
+=kde-base/kreversi-4.0*
+=kde-base/krfb-4.0*
+=kde-base/kruler-4.0*
+=kde-base/krunner-4.0*
+=kde-base/ksame-4.0*
+=kde-base/kscd-4.0*
+=kde-base/kscreensaver-4.0*
+=kde-base/kshisen-4.0*
+=kde-base/ksmserver-4.0*
+=kde-base/ksnapshot-4.0*
+=kde-base/kspaceduel-4.0*
+=kde-base/ksplash-4.0*
+=kde-base/ksquares-4.0*
+=kde-base/kstars-4.0*
+=kde-base/kstart-4.0*
+=kde-base/kstartupconfig-4.0*
+=kde-base/kstyles-4.0*
+=kde-base/ksudoku-4.0*
+=kde-base/ksysguard-4.0*
+=kde-base/ksystraycmd-4.0*
+=kde-base/kteatime-4.0*
+=kde-base/ktimer-4.0*
+=kde-base/ktimezoned-4.0*
+=kde-base/ktip-4.0*
+=kde-base/ktouch-4.0*
+=kde-base/ktraderclient-4.0*
+=kde-base/kttsd-4.0*
+=kde-base/ktuberling-4.0*
+=kde-base/kturtle-4.0*
+=kde-base/ktux-4.0*
+=kde-base/kuiserver-4.0*
+=kde-base/kuiviewer-4.0*
+=kde-base/kurifilter-plugins-4.0*
+=kde-base/kuser-4.0*
+=kde-base/kwallet-4.0*
+=kde-base/kweather-4.0*
+=kde-base/kwin-4.0*
+=kde-base/kwordquiz-4.0*
+=kde-base/kworldclock-4.0*
+=kde-base/kwrite-4.0*
+=kde-base/libkcddb-4.0*
+=kde-base/libkcompactdisc-4.0*
+=kde-base/libkdeedu-4.0*
+=kde-base/libkdegames-4.0*
+=kde-base/libkmahjongg-4.0*
+=kde-base/libkonq-4.0*
+=kde-base/libkscan-4.0*
+=kde-base/libkworkspace-4.0*
+=kde-base/libplasma-4.0*
+=kde-base/libtaskmanager-4.0*
+=kde-base/lilo-config-4.0*
+=kde-base/lskat-4.0*
+=kde-base/marble-4.0*
+=kde-base/nepomuk-4.0*
+=kde-base/nsplugins-4.0*
+=kde-base/okular-4.0*
+=kde-base/parley-4.0*
+=kde-base/phonon-4.0*
+=kde-base/plasma-4.0*
+=kde-base/poxml-4.0*
+=kde-base/secpolicy-4.0*
+=kde-base/solid-4.0*
+=kde-base/soliduiserver-4.0*
+=kde-base/strigi-analyzer-4.0*
+=kde-base/superkaramba-4.0*
+=kde-base/svgpart-4.0*
+=kde-base/sweeper-4.0*
+=kde-base/systemsettings-4.0*
+=kde-base/umbrello-4.0*
+=kde-base/dragonplayer-2*
+
+# Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org> (03 Sep 2008)
+# Restrict the following mask only to 4.0.* packages. KDE-4.1 won't enter
+# the tree p. masked.
+# Bo Ørsted Andresen <zlin@gentoo.org> (11 Feb 2008)
+# Mask KDE 4.0.x extragear apps for testing.
+# KDE 4 guide: http://www.gentoo.org/proj/en/desktop/kde/kde4.xml
+=kde-base/kcoloredit-4.0*
+=kde-base/kfax-4.0*
+=kde-base/kiconedit-4.0*
+=kde-base/kpovmodeler-4.0*
+=kde-misc/extragear-plasma-4*
+=kde-misc/kgrab-0.1*
+=kde-misc/kgraphviewer-2*
+=kde-misc/kio_gopher-0.1*
+kde-misc/kio_perldoc
+=kde-misc/libksane-0.1*
+=kde-misc/rsibreak-0.9*
+=kde-misc/yakuake-2.9*
+=net-p2p/kmldonkey-2*
+
+# Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org> (03 Sep 2008)
+# Restrict the following mask only to 4.0.* packages. KDE-4.1 won't enter
+# the tree p. masked.
+# Timo Gurr <tgurr@gentoo.org> (22 Feb 2008)
+# Mask KDE4 versions of ktorrent as long as KDE4 is masked.
+=net-p2p/ktorrent-3.0*
+
+# Michael Marineau <marineam@gentoo.org> (03 Sep 2008)
+# Unmaintained and out of date security wise,
+# Please use 2.6.18 instead if it supports your hardware.
+=sys-kernel/xen-sources-2.6.20*
+=sys-kernel/xen-sources-2.6.21*
+
+# Alexis Ballier <aballier@gentoo.org> (03 Sep 2008)
+# Masked for removal on 04 Oct 2008
+# Provided by tetex-3, ptex and texlive-fontsrecommended or
+# texlive-latexrecommended, which makes them uninstallable anyway.
+dev-tex/extsizes
+dev-tex/eurosym
+
 # Jeremy Olexa <darkside@gentoo.org> (02 Sep 2008)
 # Removed at maintainer's request in 30 days by the treecleaners.
 # Please don't waste cds trying to use this program, bug 227143
 app-cdr/mp3burn
-
-# Alexis Ballier <aballier@gentoo.org> (01 Sep 2008)
-# Java programs do not build, bug #236369
-# Mask it until we are sure how to fix it.
-=dev-tex/tex4ht-20080829_p0203
 
 ## Daniel Black <dragonheart@gentoo.org> (31 Aug 2008)
 ## Masked for removal.
@@ -72,321 +489,6 @@ media-sound/gogo
 # Breaks too many packages, bug #235290
 =app-arch/rpm2targz-9.0.0.1g
 
-# Carsten Lohrje <carlo@gentoo.org> (27 Aug 2008)
-# Mask KDE 3.5.10 for day or two as minor issues will show up unevitably
-~kde-base/akregator-3.5.10
-~kde-base/amor-3.5.10
-~kde-base/ark-3.5.10
-~kde-base/arts-3.5.10
-~kde-base/artsplugin-akode-3.5.10
-~kde-base/artsplugin-audiofile-3.5.10
-~kde-base/artsplugin-xine-3.5.10
-~kde-base/atlantik-3.5.10
-~kde-base/atlantikdesigner-3.5.10
-~kde-base/blinken-3.5.10
-~kde-base/certmanager-3.5.10
-~kde-base/cervisia-3.5.10
-~kde-base/dcopc-3.5.10
-~kde-base/dcopjava-3.5.10
-~kde-base/dcopperl-3.5.10
-~kde-base/dcoppython-3.5.10
-~kde-base/dcoprss-3.5.10
-~kde-base/drkonqi-3.5.10
-~kde-base/eyesapplet-3.5.10
-~kde-base/fifteenapplet-3.5.10
-~kde-base/juk-3.5.10
-~kde-base/kaboodle-3.5.10
-~kde-base/kaddressbook-3.5.10
-~kde-base/kaddressbook-plugins-3.5.10
-~kde-base/kalarm-3.5.10
-~kde-base/kalyptus-3.5.10
-~kde-base/kalzium-3.5.10
-~kde-base/kamera-3.5.10
-~kde-base/kanagram-3.5.10
-~kde-base/kandy-3.5.10
-~kde-base/kappfinder-3.5.10
-~kde-base/kapptemplate-3.5.10
-~kde-base/karm-3.5.10
-~kde-base/kasteroids-3.5.10
-~kde-base/kate-3.5.10
-~kde-base/kate-plugins-3.5.10
-~kde-base/katomic-3.5.10
-~kde-base/kaudiocreator-3.5.10
-~kde-base/kbabel-3.5.10
-~kde-base/kbackgammon-3.5.10
-~kde-base/kbattleship-3.5.10
-~kde-base/kblackbox-3.5.10
-~kde-base/kbounce-3.5.10
-~kde-base/kbruch-3.5.10
-~kde-base/kbstateapplet-3.5.10
-~kde-base/kbugbuster-3.5.10
-~kde-base/kcachegrind-3.5.10
-~kde-base/kcalc-3.5.10
-~kde-base/kcharselect-3.5.10
-~kde-base/kcheckpass-3.5.10
-~kde-base/kcminit-3.5.10
-~kde-base/kcoloredit-3.5.10
-~kde-base/kcontrol-3.5.10
-~kde-base/kcron-3.5.10
-~kde-base/kdat-3.5.10
-~kde-base/kdcop-3.5.10
-~kde-base/kde-3.5.10
-~kde-base/kdeaccessibility-3.5.10
-~kde-base/kdeaccessibility-iconthemes-3.5.10
-~kde-base/kdeaccessibility-meta-3.5.10
-~kde-base/kdeaddons-3.5.10
-~kde-base/kdeaddons-docs-konq-plugins-3.5.10
-~kde-base/kdeaddons-kfile-plugins-3.5.10
-~kde-base/kdeaddons-meta-3.5.10
-~kde-base/kdeadmin-3.5.10
-~kde-base/kdeadmin-kfile-plugins-3.5.10
-~kde-base/kdeadmin-meta-3.5.10
-~kde-base/kdeartwork-3.5.10
-~kde-base/kdeartwork-emoticons-3.5.10
-~kde-base/kdeartwork-icewm-themes-3.5.10
-~kde-base/kdeartwork-iconthemes-3.5.10
-~kde-base/kdeartwork-kscreensaver-3.5.10
-~kde-base/kdeartwork-kwin-styles-3.5.10
-~kde-base/kdeartwork-kworldclock-3.5.10
-~kde-base/kdeartwork-meta-3.5.10
-~kde-base/kdeartwork-sounds-3.5.10
-~kde-base/kdeartwork-styles-3.5.10
-~kde-base/kdeartwork-wallpapers-3.5.10
-~kde-base/kdebase-3.5.10
-~kde-base/kdebase-data-3.5.10
-~kde-base/kdebase-kioslaves-3.5.10
-~kde-base/kdebase-meta-3.5.10
-~kde-base/kdebase-startkde-3.5.10
-~kde-base/kdebindings-meta-3.5.10
-~kde-base/kdebugdialog-3.5.10
-~kde-base/kdeedu-3.5.10
-~kde-base/kdeedu-applnk-3.5.10
-~kde-base/kdeedu-meta-3.5.10
-~kde-base/kdegames-3.5.10
-~kde-base/kdegames-meta-3.5.10
-~kde-base/kdegraphics-3.5.10
-~kde-base/kdegraphics-kfile-plugins-3.5.10
-~kde-base/kdegraphics-meta-3.5.10
-~kde-base/kde-i18n-3.5.10
-~kde-base/kdejava-3.5.10
-~kde-base/kdelibs-3.5.10
-~kde-base/kdelirc-3.5.10
-~kde-base/kde-meta-3.5.10
-~kde-base/kdemultimedia-3.5.10
-~kde-base/kdemultimedia-arts-3.5.10
-~kde-base/kdemultimedia-kappfinder-data-3.5.10
-~kde-base/kdemultimedia-kfile-plugins-3.5.10
-~kde-base/kdemultimedia-kioslaves-3.5.10
-~kde-base/kdemultimedia-meta-3.5.10
-~kde-base/kdenetwork-3.5.10
-~kde-base/kdenetwork-filesharing-3.5.10
-~kde-base/kdenetwork-kfile-plugins-3.5.10
-~kde-base/kdenetwork-meta-3.5.10
-~kde-base/kdepasswd-3.5.10
-~kde-base/kdepim-3.5.10
-~kde-base/kdepim-kioslaves-3.5.10
-~kde-base/kdepim-kresources-3.5.10
-~kde-base/kdepim-meta-3.5.10
-~kde-base/kdepim-wizards-3.5.10
-~kde-base/kdeprint-3.5.10
-~kde-base/kdesdk-3.5.10
-~kde-base/kdesdk-kfile-plugins-3.5.10
-~kde-base/kdesdk-kioslaves-3.5.10
-~kde-base/kdesdk-meta-3.5.10
-~kde-base/kdesdk-misc-3.5.10
-~kde-base/kdesdk-scripts-3.5.10
-~kde-base/kdesktop-3.5.10
-~kde-base/kdesu-3.5.10
-~kde-base/kdetoys-3.5.10
-~kde-base/kdetoys-meta-3.5.10
-~kde-base/kdeutils-3.5.10
-~kde-base/kdeutils-meta-3.5.10
-~kde-base/kdewebdev-3.5.10
-~kde-base/kdewebdev-meta-3.5.10
-~kde-base/kdf-3.5.10
-~kde-base/kdialog-3.5.10
-~kde-base/kdict-3.5.10
-~kde-base/kdm-3.5.10
-~kde-base/kdnssd-3.5.10
-~kde-base/kdvi-3.5.10
-~kde-base/kedit-3.5.10
-~kde-base/keduca-3.5.10
-~kde-base/kenolaba-3.5.10
-~kde-base/kfax-3.5.10
-~kde-base/kfilereplace-3.5.10
-~kde-base/kfind-3.5.10
-~kde-base/kfloppy-3.5.10
-~kde-base/kfouleggs-3.5.10
-~kde-base/kgamma-3.5.10
-~kde-base/kgeography-3.5.10
-~kde-base/kget-3.5.10
-~kde-base/kghostview-3.5.10
-~kde-base/kgoldrunner-3.5.10
-~kde-base/kgpg-3.5.10
-~kde-base/khangman-3.5.10
-~kde-base/khelpcenter-3.5.10
-~kde-base/khexedit-3.5.10
-~kde-base/khotkeys-3.5.10
-~kde-base/kicker-3.5.10
-~kde-base/kicker-applets-3.5.10
-~kde-base/kiconedit-3.5.10
-~kde-base/kig-3.5.10
-~kde-base/kimagemapeditor-3.5.10
-~kde-base/kitchensync-3.5.10
-~kde-base/kiten-3.5.10
-~kde-base/kjots-3.5.10
-~kde-base/kjsembed-3.5.10
-~kde-base/kjumpingcube-3.5.10
-~kde-base/klaptopdaemon-3.5.10
-~kde-base/klatin-3.5.10
-~kde-base/klettres-3.5.10
-~kde-base/klickety-3.5.10
-~kde-base/klines-3.5.10
-~kde-base/klinkstatus-3.5.10
-~kde-base/klipper-3.5.10
-~kde-base/kmag-3.5.10
-~kde-base/kmahjongg-3.5.10
-~kde-base/kmail-3.5.10
-~kde-base/kmailcvt-3.5.10
-~kde-base/kmenuedit-3.5.10
-~kde-base/kmid-3.5.10
-~kde-base/kmilo-3.5.10
-~kde-base/kmines-3.5.10
-~kde-base/kmix-3.5.10
-~kde-base/kmoon-3.5.10
-~kde-base/kmousetool-3.5.10
-~kde-base/kmouth-3.5.10
-~kde-base/kmplot-3.5.10
-~kde-base/kmrml-3.5.10
-~kde-base/kmtrace-3.5.10
-~kde-base/knetattach-3.5.10
-~kde-base/knetwalk-3.5.10
-~kde-base/knetworkconf-3.5.10
-~kde-base/knewsticker-3.5.10
-~kde-base/knewsticker-scripts-3.5.10
-~kde-base/knode-3.5.10
-~kde-base/knotes-3.5.10
-~kde-base/kode-3.5.10
-~kde-base/kodo-3.5.10
-~kde-base/kolf-3.5.10
-~kde-base/kolourpaint-3.5.10
-~kde-base/kommander-3.5.10
-~kde-base/kompare-3.5.10
-~kde-base/konq-plugins-3.5.10
-~kde-base/konqueror-3.5.10
-~kde-base/konqueror-akregator-3.5.10
-~kde-base/konquest-3.5.10
-~kde-base/konsole-3.5.10
-~kde-base/konsolekalendar-3.5.10
-~kde-base/kontact-3.5.10
-~kde-base/kontact-specialdates-3.5.10
-~kde-base/kooka-3.5.10
-~kde-base/kopete-3.5.10
-~kde-base/korganizer-3.5.10
-~kde-base/korn-3.5.10
-~kde-base/korundum-3.5.10
-~kde-base/kpackage-3.5.10
-~kde-base/kpager-3.5.10
-~kde-base/kpat-3.5.10
-~kde-base/kpdf-3.5.10
-~kde-base/kpercentage-3.5.10
-~kde-base/kpersonalizer-3.5.10
-~kde-base/kpf-3.5.10
-~kde-base/kpilot-3.5.10
-~kde-base/kpoker-3.5.10
-~kde-base/kpovmodeler-3.5.10
-~kde-base/kppp-3.5.10
-~kde-base/krdc-3.5.10
-~kde-base/kreadconfig-3.5.10
-~kde-base/krec-3.5.10
-~kde-base/kregexpeditor-3.5.10
-~kde-base/kreversi-3.5.10
-~kde-base/krfb-3.5.10
-~kde-base/kruler-3.5.10
-~kde-base/ksame-3.5.10
-~kde-base/ksayit-3.5.10
-~kde-base/kscd-3.5.10
-~kde-base/kscreensaver-3.5.10
-~kde-base/kshisen-3.5.10
-~kde-base/ksig-3.5.10
-~kde-base/ksim-3.5.10
-~kde-base/ksirc-3.5.10
-~kde-base/ksirtet-3.5.10
-~kde-base/ksmiletris-3.5.10
-~kde-base/ksmserver-3.5.10
-~kde-base/ksnake-3.5.10
-~kde-base/ksnapshot-3.5.10
-~kde-base/ksokoban-3.5.10
-~kde-base/kspaceduel-3.5.10
-~kde-base/ksplashml-3.5.10
-~kde-base/kspy-3.5.10
-~kde-base/kstars-3.5.10
-~kde-base/kstart-3.5.10
-~kde-base/ksvg-3.5.10
-~kde-base/ksysguard-3.5.10
-~kde-base/ksystraycmd-3.5.10
-~kde-base/ksysv-3.5.10
-~kde-base/ktalkd-3.5.10
-~kde-base/kteatime-3.5.10
-~kde-base/ktimer-3.5.10
-~kde-base/ktip-3.5.10
-~kde-base/ktnef-3.5.10
-~kde-base/ktouch-3.5.10
-~kde-base/ktron-3.5.10
-~kde-base/kttsd-3.5.10
-~kde-base/ktuberling-3.5.10
-~kde-base/kturtle-3.5.10
-~kde-base/ktux-3.5.10
-~kde-base/kuickshow-3.5.10
-~kde-base/kuiviewer-3.5.10
-~kde-base/kuser-3.5.10
-~kde-base/kverbos-3.5.10
-~kde-base/kview-3.5.10
-~kde-base/kviewshell-3.5.10
-~kde-base/kvoctrain-3.5.10
-~kde-base/kwalletmanager-3.5.10
-~kde-base/kweather-3.5.10
-~kde-base/kwifimanager-3.5.10
-~kde-base/kwin-3.5.10
-~kde-base/kwin4-3.5.10
-~kde-base/kwordquiz-3.5.10
-~kde-base/kworldclock-3.5.10
-~kde-base/kxkb-3.5.10
-~kde-base/kxsldbg-3.5.10
-~kde-base/libkcal-3.5.10
-~kde-base/libkcddb-3.5.10
-~kde-base/libkdeedu-3.5.10
-~kde-base/libkdegames-3.5.10
-~kde-base/libkdenetwork-3.5.10
-~kde-base/libkdepim-3.5.10
-~kde-base/libkholidays-3.5.10
-~kde-base/libkmime-3.5.10
-~kde-base/libkonq-3.5.10
-~kde-base/libkpgp-3.5.10
-~kde-base/libkpimexchange-3.5.10
-~kde-base/libkpimidentities-3.5.10
-~kde-base/libkscan-3.5.10
-~kde-base/libksieve-3.5.10
-~kde-base/librss-3.5.10
-~kde-base/lilo-config-3.5.10
-~kde-base/lisa-3.5.10
-~kde-base/lskat-3.5.10
-~kde-base/mimelib-3.5.10
-~kde-base/networkstatus-3.5.10
-~kde-base/noatun-3.5.10
-~kde-base/noatun-plugins-3.5.10
-~kde-base/nsplugins-3.5.10
-~kde-base/pykde-3.5.10
-~kde-base/qtjava-3.5.10
-~kde-base/qtruby-3.5.10
-~kde-base/quanta-3.5.10
-~kde-base/renamedlg-audio-3.5.10
-~kde-base/renamedlg-images-3.5.10
-~kde-base/secpolicy-3.5.10
-~kde-base/smoke-3.5.10
-~kde-base/superkaramba-3.5.10
-~kde-base/umbrello-3.5.10
-
 # Ricardo Mendoza <ricmm@gentoo.org> (27 Aug 2008)
 # Beta driver, masking corresponding nvidia-settings
 ~x11-drivers/nvidia-drivers-177.68
@@ -415,14 +517,11 @@ www-apps/xrms
 # Andreas Proschofsky <suka@gentoo.org> (22 Aug 2008)
 # Beta release, still got some issues
 >=app-office/openoffice-3.0.0_beta2
+>=app-office/openoffice-bin-3.0.0_rc1
 
 # Ricardo Mendoza <ricmm@gentoo.org> (21 Aug 2008)
 # Beta driver, masking corresponding nvidia-settings
 ~media-video/nvidia-settings-177.67
-
-# Michael Sterrett <mr_bones_@gentoo.org> (21 Aug 2008)
-# doesn't work with guichan-0.8
-games-arcade/diameter
 
 # Ricardo Mendoza <ricmm@gentoo.org> (20 Aug 2008)
 # Beta driver, unsupported by nVidia
@@ -456,14 +555,9 @@ media-gfx/autopano-sift-C
 # Masked for testing
 >=dev-python/sqlalchemy-0.5.0_beta3
 
-# Ulrich Mueller <ulm@gentoo.org> (15 Aug 2008)
-# Mask live CVS for Emacs 22 base branch, so that users will get
-# the official pretest snapshot instead.
-~app-editors/emacs-cvs-22.2.9999
-
 # Alin Năstac <mrness@gentoo.org> (15 Aug 2008)
 # Upstream has stopped working on this project in favor of built in
-# Not working on kernels >= 2.6.20 & dead upstream. 
+# Not working on kernels >= 2.6.20 & dead upstream.
 # Masked for removal in ~60 days by treecleaners.
 net-dialup/bewan-adsl
 
@@ -494,7 +588,7 @@ media-gfx/gimp-freetype
 # Jesus Rivero <neurogeek@gentoo.org> (11 Aug 2008)
 # Masked for removal in 30 days. These packages are
 # unmaintained/deprecated and break stable tree.
-# See bug #231675 for reference. 
+# See bug #231675 for reference.
 dev-python/twisted-xish
 dev-python/twisted-pair
 dev-python/twisted-flow
@@ -503,7 +597,7 @@ dev-python/twisted-flow
 # Masked for removal in 30 days. Twibber is
 # unmaintained and depends on dev-python/twisted-xish
 # that is to be removed from the tree
-# See bug #231675 for reference. 
+# See bug #231675 for reference.
 dev-python/twibber
 
 # Mike Doty <kingtaco@gentoo.org> (11 Aug 2008)
@@ -512,17 +606,10 @@ dev-python/twibber
 
 # Jeremy Olexa <darkside@gentoo.org> (9 Aug 2008)
 # Masked for removal in 60 days. No distfile on the mirrors for the latest
-# version, open bugs (bug #177222, #193629, #202548). Please comment on the 
-# removal bug #232141 if you want this one to stay. No maintainer and no easy 
+# version, open bugs (bug #177222, #193629, #202548). Please comment on the
+# removal bug #232141 if you want this one to stay. No maintainer and no easy
 # way to get releases from upstream.
 dev-util/elfsh
-
-# Alexis Ballier <aballier@gentoo.org> (6 Aug 2008)
-# Masked for removal.
-# Does not build (bug #206138), unmaintained upstream for years, not very useful
-# nowadays. Use dev-lang/ocaml instead.
-# Will be removed 7 Sep 2008
-dev-lang/caml-light
 
 # Michael Sterrett <mr_bones_@gentoo.org> (04 Aug 2008)
 # Security masked: bug #233929
@@ -580,10 +667,6 @@ dev-db/ctdb
 # rlog-1.4 breaks encfs, see bug 228951
 >=dev-libs/rlog-1.4
 
-# Bryan Stine <battousai@gentoo.org> (11 Jul 2008)
-# Wanna keep this masked until I get a comment on modprobe.d
-=x11-base/x11-drm-20080710
-
 # MATSUU Takuto <matsuu@gentoo.org> (10 Jul 2008)
 # mask for security bug #231283
 dev-cpp/poslib
@@ -604,43 +687,14 @@ net-irc/bitchx
 # 0.13.1 is not supported by anything in the tree, yet
 =net-libs/rb_libtorrent-0.13.1
 
-# Jeremy Olexa <darkside@gentoo.org> (6 Jul 2008)
-# Upstream has stopped working on this project in favor of built in
-# functionality in gimp. Not needed anymore. Masked for removal in ~60 days by
-# treecleaners. bug #211320
-media-gfx/gimp-freetype
-
-# Jeremy Olexa <darkside@gentoo.org> (6 Jul 2008)
-# Masked for removal in ~60 days by treecleaners. bug #202300. This package has
-# a file collision with dev-perl/TimeDate and no one steps up to maintain it.
-app-admin/systemconfigurator
-
-# Jeremy Olexa <darkside@gentoo.org> (3 Jul 2008)
-# Masked for removal in ~60 days by treecleaners. bug #59548
-# dev-util/tla leaks file descriptors. app-emacs/xtla is not usable and depends
-# on tla. Use >=app-editors/emacs-cvs-23 or app-emacs/dvc (from the Emacs 
-# overlay) as a replacement.
-dev-util/tla
-app-emacs/xtla
-
 # Carsten Lohrke <carlo@gentoo.org> (30 Jun 2008)
 # Masking as it's pretty broken for a long while now.
 # Will investigate in a few days.
 dev-db/rekall
 
-# Jeremy Olexa <darkside@gentoo.org> (29 Jun 2008)
-# Upstram doesn't support old version and we have the latest version in the 
-# tree now. Remove in ~30 days. If you have a good reason to why we should keep
-# the old versions please comment on bug #157670.
-<=dev-util/gambas-1.0.17
-
 # Tiziano Müller <dev-zero@gentoo.org> (28 Jun 2008)
 # Masked for testing
 =dev-libs/xerces-c-3.0*
-
-# Jeremy Olexa <darkside@gentoo.org> (25 Jun 2008)
-# Masked for removal in 30 days by treecleaners. bug #130950
-=dev-util/gambas-1.9.23
 
 # Samuli Suominen <drac@gentoo.org> (24 Jun 2008)
 # Unported to Portaudio v19
@@ -704,34 +758,11 @@ app-doc/linuxfromscratch-text
 =dev-java/mx4j-tools-3.0.2
 =dev-java/mx4j-3.0.2
 
-# Hanno Böck <hanno@gentoo.org> (11 Jun 2008)
-# Masking till gnucash and other apps are ported
->=net-libs/aqbanking-3.0.0
->=sys-libs/libchipcard-4.0.0
->=sys-libs/gwenhywfar-3.0.0
->=app-office/qbankmanager-0.9.48
-
-# Donnie Berkholz <dberkholz@gentoo.org> (10 Jun 2008)
-# xorg-server-1.5 prerelease
-=x11-base/xorg-server-1.4.99*
-=media-libs/mesa-7.1*
-x11-proto/dri2proto
-=x11-libs/libdrm-2.3.1*
-x11-drivers/xf86-input-synaptics
-
 # Joe Peterson <lavajoe@gentoo.org> (09 Jun 2008)
 # Live ebuilds too volatile for normal use.
 # User's who need to test these should unmask explicitly.
 =sys-fs/btrfs-9999
 =sys-fs/btrfs-progs-9999
-
-# Tiziano Müller <dev-zero@gentoo.org> (07 Jun 2008)
-# Various bugs and dead upstream
-#   herdstat: 164254, 184035, 222887
-#   libherdstat: 119589, 206876
-# Masked for removal in 30 days
-app-portage/herdstat
-dev-cpp/libherdstat
 
 # Fernando J. Pereda <ferdy@gentoo.org> (07 Jun 2008)
 # Using the git porcelain is recommended over cogito.
@@ -1058,7 +1089,6 @@ www-apps/joomla
 www-apps/mambo
 www-apps/moregroupware
 www-apps/net2ftp
-=www-apps/phpBB-2*
 www-apps/wordpress
 www-apps/xoops
 
@@ -1067,17 +1097,13 @@ www-apps/xoops
 >=sys-fs/dazuko-2.3.5_pre
 sys-fs/redirfs
 
-# Timo Gurr <tgurr@gentoo.org> (22 Feb 2008)
-# Mask KDE4 versions of ktorrent as long as KDE4 is masked.
->=net-p2p/ktorrent-3.0.0
-
 # Chris Gianelloni <wolf31o2@gentoo.org> (20 Feb 2008)
 # Masking these so people will quit installing them on their systems.  These
 # packages are designed for use on the LiveCD only and will do unspeakably
 # horrible and unexpected things on a normal system.  YOU HAVE BEEN WARNED!!!
-app-misc/livecd-tools
-sys-apps/hwsetup
-x11-misc/mkxf86config
+=app-misc/livecd-tools-1.2
+#sys-apps/hwsetup
+#x11-misc/mkxf86config
 
 # Raúl Porcel <armin76@gentoo.org> (18 Feb 2008)
 # Probably breaks a lot of stuff, needs testing
@@ -1130,249 +1156,6 @@ dev-libs/liboobs
 # Never was stabled, and will not work with future versions of HAL.  Remove when
 # HAL 0.5.10 is stabled on all arches.
 gnome-extra/hal-device-manager
-
-# Ingmar Vanhassel <ingmar@gentoo.org> (16 Jan 2008)
-# Mask KDE 4.0.x for testing. This release of KDE 4 will not be unmasked.
-# This is still not intended for mainstream so DO NOT KEYWORD IT without
-# talking to the KDE herd first.
-# KDE 4 guide: http://www.gentoo.org/proj/en/desktop/kde/kde4.xml
-=kde-base/amor-4*
-=kde-base/ark-4*
-=kde-base/blinken-4*
-=kde-base/bovo-4*
-=kde-base/cervisia-4*
-=kde-base/dolphin-4*
-=kde-base/drkonqi-4*
-=kde-base/gwenview-4*
-=kde-base/juk-4*
-=kde-base/kalgebra-4*
-=kde-base/kalzium-4*
-=kde-base/kamera-4*
-=kde-base/kanagram-4*
-=kde-base/kappfinder-4*
-=kde-base/kapptemplate-4*
-=kde-base/kate-4*
-=kde-base/katomic-4*
-=kde-base/kbattleship-4*
-=kde-base/kblackbox-4*
-=kde-base/kbounce-4*
-=kde-base/kbruch-4*
-=kde-base/kbugbuster-4*
-=kde-base/kcachegrind-4*
-=kde-base/kcalc-4*
-=kde-base/kcharselect-4*
-=kde-base/kcheckpass-4*
-=kde-base/kcminit-4*
-=kde-base/kcmshell-4*
-=kde-base/kcolorchooser-4*
-=kde-base/kcontrol-4*
-=kde-base/kcron-4*
-=kde-base/kde-4*
-=kde-base/kdeaccessibility-4*
-=kde-base/kdeaccessibility-colorschemes-4*
-=kde-base/kdeaccessibility-iconthemes-4*
-=kde-base/kdeaccessibility-meta-4*
-=kde-base/kdeaccounts-plugin-4*
-=kde-base/kdeadmin-4*
-=kde-base/kdeadmin-meta-4*
-=kde-base/kdeartwork-4*
-=kde-base/kdeartwork-colorschemes-4*
-=kde-base/kdeartwork-emoticons-4*
-=kde-base/kdeartwork-icewm-themes-4*
-=kde-base/kdeartwork-iconthemes-4*
-=kde-base/kdeartwork-kscreensaver-4*
-=kde-base/kdeartwork-kworldclock-4*
-=kde-base/kdeartwork-meta-4*
-=kde-base/kdeartwork-sounds-4*
-=kde-base/kdeartwork-styles-4*
-=kde-base/kdeartwork-wallpapers-4*
-=kde-base/kdebase-4*
-=kde-base/kdebase-data-4*
-=kde-base/kdebase-kioslaves-4*
-=kde-base/kdebase-meta-4*
-=kde-base/kdebase-startkde-4*
-=kde-base/kdebugdialog-4*
-=kde-base/kdeedu-4*
-=kde-base/kdeedu-meta-4*
-=kde-base/kdegames-4*
-=kde-base/kdegames-meta-4*
-=kde-base/kdegraphics-4*
-=kde-base/kdegraphics-meta-4*
-=kde-base/kde-l10n-4*
-=kde-base/kdelibs-4*
-=kde-base/kde-menu-4*
-=kde-base/kde-menu-icons-4*
-=kde-base/kde-meta-4*
-=kde-base/kdemultimedia-4*
-=kde-base/kdemultimedia-kioslaves-4*
-=kde-base/kdemultimedia-meta-4*
-=kde-base/kdenetwork-4*
-=kde-base/kdenetwork-filesharing-4*
-=kde-base/kdenetwork-meta-4*
-=kde-base/kdepasswd-4*
-=kde-base/kdepimlibs-4*
-=kde-base/kdesdk-4*
-=kde-base/kdesdk-kioslaves-4*
-=kde-base/kdesdk-meta-4*
-=kde-base/kdesdk-misc-4*
-=kde-base/kdesdk-scripts-4*
-=kde-base/kdessh-4*
-=kde-base/kdesu-4*
-=kde-base/kdetoys-4*
-=kde-base/kdetoys-meta-4*
-=kde-base/kdeutils-4*
-=kde-base/kdeutils-meta-4*
-=kde-base/kde-wallpapers-4*
-=kde-base/kdewebdev-4*
-=kde-base/kdewebdev-meta-4*
-=kde-base/kdf-4*
-=kde-base/kdialog-4*
-=kde-base/kdm-4*
-=kde-base/kdnssd-4*
-=kde-base/keditbookmarks-4*
-=kde-base/kfile-4*
-=kde-base/kfilereplace-4*
-=kde-base/kfind-4*
-=kde-base/kfloppy-4*
-=kde-base/kfourinline-4*
-=kde-base/kgamma-4*
-=kde-base/kgeography-4*
-=kde-base/kget-4*
-=kde-base/kgoldrunner-4*
-=kde-base/kgpg-4*
-=kde-base/khangman-4*
-=kde-base/khelpcenter-4*
-=kde-base/khotkeys-4*
-=kde-base/kig-4*
-=kde-base/kimagemapeditor-4*
-=kde-base/kinfocenter-4*
-=kde-base/kioclient-4*
-=kde-base/kiriki-4*
-=kde-base/kiten-4*
-=kde-base/kjots-4*
-=kde-base/kjumpingcube-4*
-=kde-base/klettres-4*
-=kde-base/klines-4*
-=kde-base/klinkstatus-4*
-=kde-base/klipper-4*
-=kde-base/kmag-4*
-=kde-base/kmahjongg-4*
-=kde-base/kmenuedit-4*
-=kde-base/kmilo-4*
-=kde-base/kmimetypefinder-4*
-=kde-base/kmines-4*
-=kde-base/kmix-4*
-=kde-base/kmousetool-4*
-=kde-base/kmouth-4*
-=kde-base/kmplot-4*
-=kde-base/knetattach-4*
-=kde-base/knetwalk-4*
-=kde-base/knetworkconf-4*
-=kde-base/knewsticker-4*
-=kde-base/knewstuff-4*
-=kde-base/knotify-4*
-=kde-base/kolf-4*
-=kde-base/kolourpaint-4*
-=kde-base/kompare-4*
-=kde-base/konqueror-4*
-=kde-base/konquest-4*
-=kde-base/konsole-4*
-=kde-base/kopete-4*
-=kde-base/kpasswdserver-4*
-=kde-base/kpat-4*
-=kde-base/kpercentage-4*
-=kde-base/kppp-4*
-=kde-base/kquitapp-4*
-=kde-base/krdc-4*
-=kde-base/kreadconfig-4*
-=kde-base/kreversi-4*
-=kde-base/krfb-4*
-=kde-base/kruler-4*
-=kde-base/krunner-4*
-=kde-base/ksame-4*
-=kde-base/kscd-4*
-=kde-base/kscreensaver-4*
-=kde-base/kshisen-4*
-=kde-base/ksmserver-4*
-=kde-base/ksnapshot-4*
-=kde-base/kspaceduel-4*
-=kde-base/ksplash-4*
-=kde-base/ksquares-4*
-=kde-base/kstars-4*
-=kde-base/kstart-4*
-=kde-base/kstartupconfig-4*
-=kde-base/kstyles-4*
-=kde-base/ksudoku-4*
-=kde-base/ksysguard-4*
-=kde-base/ksystraycmd-4*
-=kde-base/kteatime-4*
-=kde-base/ktimer-4*
-=kde-base/ktimezoned-4*
-=kde-base/ktip-4*
-=kde-base/ktouch-4*
-=kde-base/ktraderclient-4*
-=kde-base/kttsd-4*
-=kde-base/ktuberling-4*
-=kde-base/kturtle-4*
-=kde-base/ktux-4*
-=kde-base/kuiserver-4*
-=kde-base/kuiviewer-4*
-=kde-base/kurifilter-plugins-4*
-=kde-base/kuser-4*
-=kde-base/kwallet-4*
-=kde-base/kweather-4*
-=kde-base/kwin-4*
-=kde-base/kwordquiz-4*
-=kde-base/kworldclock-4*
-=kde-base/kwrite-4*
-=kde-base/libkcddb-4*
-=kde-base/libkcompactdisc-4*
-=kde-base/libkdeedu-4*
-=kde-base/libkdegames-4*
-=kde-base/libkmahjongg-4*
-=kde-base/libkonq-4*
-=kde-base/libkscan-4*
-=kde-base/libkworkspace-4*
-=kde-base/libplasma-4*
-=kde-base/libtaskmanager-4*
-=kde-base/lilo-config-4*
-=kde-base/lskat-4*
-=kde-base/marble-4*
-=kde-base/nepomuk-4*
-=kde-base/nsplugins-4*
-=kde-base/okular-4*
-=kde-base/parley-4*
-=kde-base/phonon-4*
-=kde-base/plasma-4*
-=kde-base/poxml-4*
-~kde-base/qimageblitz-0.0.4
-=kde-base/secpolicy-4*
-=kde-base/solid-4*
-=kde-base/soliduiserver-4*
-=kde-base/strigi-analyzer-4*
-=kde-base/superkaramba-4*
-=kde-base/svgpart-4*
-=kde-base/sweeper-4*
-=kde-base/systemsettings-4*
-=kde-base/umbrello-4*
-=kde-base/dragonplayer-2*
-
-# Bo Ørsted Andresen <zlin@gentoo.org> (11 Feb 2008)
-# Mask KDE 4.0.x extragear apps for testing.
-# KDE 4 guide: http://www.gentoo.org/proj/en/desktop/kde/kde4.xml
-=kde-base/kcoloredit-4*
-=kde-base/kfax-4*
-=kde-base/kiconedit-4*
-=kde-base/kpovmodeler-4*
-=kde-misc/extragear-plasma-4*
-=kde-misc/kgrab-0.1*
-=kde-misc/kgraphviewer-2*
-=kde-misc/kio_gopher-0.1*
-kde-misc/kio_perldoc
-=kde-misc/libksane-0.1*
-=kde-misc/rsibreak-0.9*
-=kde-misc/yakuake-2.9*
-=net-p2p/kmldonkey-2*
 
 # Michael Sterrett <mr_bones_@gentoo.org> (15 Jan 2008)
 # Security mask (bug #190835)

@@ -1,6 +1,18 @@
 # ChangeLog for games-util/qstat
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/games-util/qstat/ChangeLog,v 1.21 2008/04/06 00:32:40 nyhm Exp $
+# $Header: /var/cvsroot/gentoo-x86/games-util/qstat/ChangeLog,v 1.25 2008/09/13 09:46:43 nixnut Exp $
+
+  13 Sep 2008; nixnut <nixnut@gentoo.org> qstat-2.11.ebuild:
+  Stable on ppc wrt bug 236389
+
+  06 Sep 2008; Jeroen Roovers <jer@gentoo.org> qstat-2.11.ebuild:
+  Stable for HPPA (bug #236389).
+
+  06 Sep 2008; Raúl Porcel <armin76@gentoo.org> qstat-2.11.ebuild:
+  x86 stable wrt #236389
+
+  05 Sep 2008; Thomas Anderson <gentoofan23@gentoo.org> qstat-2.11.ebuild:
+  stable amd64, bug 236389
 
   06 Apr 2008; Tristan Heaven <nyhm@gentoo.org> qstat-2.10.ebuild,
   qstat-2.11.ebuild:

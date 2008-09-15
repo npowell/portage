@@ -1,6 +1,51 @@
 # ChangeLog for app-emulation/kvm
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/kvm/ChangeLog,v 1.13 2008/08/23 00:26:31 dang Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/kvm/ChangeLog,v 1.17 2008/09/15 14:14:32 dang Exp $
+
+  15 Sep 2008; Daniel Gryniewicz <dang@gentoo.org> -kvm-71-r2.ebuild,
+  -kvm-72.ebuild, -kvm-72-r1.ebuild:
+  Nuke old versions
+
+*kvm-75 (15 Sep 2008)
+
+  15 Sep 2008; Daniel Gryniewicz <dang@gentoo.org> +kvm-75.ebuild:
+  Bump to kvm-75
+
+  Ballooning is finally enabled in kvm-75. You will need a 2.6.27+ host for
+  ballooning to work properly.
+
+*kvm-74 (09 Sep 2008)
+
+  09 Sep 2008; Daniel Gryniewicz <dang@gentoo.org> -kvm-73.ebuild,
+  +kvm-74.ebuild:
+  Bump to kvm-74
+  Changes from kvm-73:
+  - make real-mode startup state conform to spec
+  - fix scheduling error in experimental big real mode support
+  - fix reboot fault handler exception table entry (Eduardo Habkost)
+  - x86 emulator code cleanup (Roel Kluin)
+  - fix 'neg r/m' instruction emulation forced to byte size
+  - fix shadow ptes corruption on i386 hosts running smp guests
+  - fix kvmtrace ABI breakage (Adrian Bunk)
+  - enable virtio for ia64
+  - add generic shadow page table walker
+  - allocate internal guest memory as MAP_PRIVATE
+  - don't call get_user_pages(.force=1)
+  - paves the way for get_user_pages_fast()
+  - add mov r, imm instructions to the emulator (Mohammed Gamal)
+  - realmode emulator testsuite
+  - ia64 external module support (Xiantao Zhang)
+  - support tap IFF_VNET_HDR (Mark McLoughlin)
+  - merge qemu-svn
+  - improved usb support
+  - usb auto connect/disconnect
+  - protect against possible corruption during qemu fork() on older hosts
+
+  (Marcelo Tosatti)
+
+  09 Sep 2008; Daniel Gryniewicz <dang@gentoo.org> -kvm-70.ebuild,
+  -kvm-70-r1.ebuild:
+  Remove old versions referencing removed patches; bug #236890
 
   23 Aug 2008; Daniel Gryniewicz <dang@gentoo.org> kvm-73.ebuild:
   Fix some whitespace

@@ -1,6 +1,37 @@
 # ChangeLog for media-libs/mesa
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/mesa/ChangeLog,v 1.180 2008/07/09 03:56:04 dberkholz Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/mesa/ChangeLog,v 1.187 2008/09/14 19:53:37 dberkholz Exp $
+
+  14 Sep 2008; Donnie Berkholz <dberkholz@gentoo.org>; mesa-7.2_rc1.ebuild:
+  (#237648) Logic for asm was still wrong on sparc hardened (Does that even
+  exist?). Remove sparc-handling code altogether because the default does
+  the right thing.
+
+  14 Sep 2008; Donnie Berkholz <dberkholz@gentoo.org>; mesa-7.1.ebuild,
+  mesa-7.2_rc1.ebuild:
+  mesa-progs has to be in PDEPEND to avoid a circular dependency through
+  freeglut (reported by Javier Villavicencio).
+
+*mesa-7.2_rc1 (14 Sep 2008)
+
+  14 Sep 2008; Donnie Berkholz <dberkholz@gentoo.org>; +mesa-7.2_rc1.ebuild:
+  Bump to RC. The major upstream change from 7.1 is to remove DRI2 code,
+  which is still a work in progress. (#237648) Assembly code enabling had
+  reversed logic, so it was enabled for pic & sparc but disabled for
+  everyone else.
+
+  11 Sep 2008; Donnie Berkholz <dberkholz@gentoo.org>; mesa-7.1.ebuild:
+  Pull in mesa-progs so people don't get really confused by the lack of
+  glxinfo/glxgears.
+
+  08 Sep 2008; Donnie Berkholz <dberkholz@gentoo.org>; mesa-7.1.ebuild:
+  (#237091) Pull in the latest versions of X libraries and protocol headers
+  so they don't change as easily after mesa is built but before xorg-server.
+
+*mesa-7.1 (06 Sep 2008)
+
+  06 Sep 2008; Donnie Berkholz <dberkholz@gentoo.org>; +mesa-7.1.ebuild:
+  Version bump.
 
 *mesa-7.1_rc3 (09 Jul 2008)
 

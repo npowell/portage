@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/virtualbox-ose/virtualbox-ose-1.6.4.ebuild,v 1.2 2008/08/27 13:43:38 jokey Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/virtualbox-ose/virtualbox-ose-1.6.4.ebuild,v 1.4 2008/09/15 19:54:48 jokey Exp $
 
 EAPI=1
 
@@ -9,7 +9,7 @@ inherit eutils fdo-mime flag-o-matic qt3 toolchain-funcs
 MY_P=VirtualBox-${PV}-OSE
 DESCRIPTION="Softwarefamily of powerful x86 virtualization"
 HOMEPAGE="http://www.virtualbox.org/"
-SRC_URI="http://www.virtualbox.org/download/${PV}/${MY_P}.tar.bz2"
+SRC_URI="http://download.virtualbox.org/virtualbox/${PV}/${MY_P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
@@ -77,7 +77,7 @@ src_compile() {
 
 	local myconf
 	# Don't build vboxdrv kernel module
-	myconf="--disable-kmods"
+	myconf="--disable-kmods --disable-qt4"
 
 	if ! use pulseaudio; then
 			myconf="${myconf} --disable-pulse"
@@ -146,6 +146,12 @@ src_install() {
 	newexe "${FILESDIR}/${PN}-wrapper" "VBox.sh" || die
 	fowners root:vboxusers /opt/VirtualBox/VBox.sh
 	fperms 0750 /opt/VirtualBox/VBox.sh
+
+	# Disable logging by default, broken in this release (bug #233683)
+	sed -i \
+			-e "/vbox.cfg\"$/a export VBOX_LOG_DEST=\"nofile\"" \
+			"${D}"/opt/VirtualBox/VBox.sh || die "VBox.sh sed failed"
+
 	newexe "${S}"/src/VBox/Installer/linux/VBoxAddIF.sh "VBoxAddIF.sh" || die
 	fowners root:vboxusers /opt/VirtualBox/VBoxAddIF.sh
 	fperms 0750 /opt/VirtualBox/VBoxAddIF.sh

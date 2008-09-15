@@ -1,6 +1,21 @@
 # ChangeLog for media-sound/squeezecenter
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/squeezecenter/ChangeLog,v 1.21 2008/08/31 19:56:39 lavajoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/squeezecenter/ChangeLog,v 1.25 2008/09/13 22:47:01 lavajoe Exp $
+
+*squeezecenter-7.2.0-r1 (13 Sep 2008)
+*squeezecenter-7.1.0-r1 (13 Sep 2008)
+
+  13 Sep 2008; Joe Peterson <lavajoe@gentoo.org>
+  +squeezecenter-7.1.0-r1.ebuild, +squeezecenter-7.2.0-r1.ebuild:
+  Do not install perl GD files so as not to conflict with installed
+  dev-perl/GD package (bug #237548)
+
+  10 Sep 2008; Joe Peterson <lavajoe@gentoo.org> squeezecenter-7.1.0.ebuild,
+  squeezecenter-7.2.0.ebuild:
+  Remove || die on enewuser and enewgroup.  No version bump.
+
+  08 Sep 2008; Joe Peterson <lavajoe@gentoo.org> metadata.xml:
+  Add Stuart Hickinbottom as a proxy maintainer to metadata.xml
 
 *squeezecenter-7.2.0 (31 Aug 2008)
 

@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation.
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/use.local.desc,v 1.3827 2008/09/02 23:27:57 robbat2 Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/use.local.desc,v 1.3853 2008/09/15 15:07:42 robbat2 Exp $
 # This file contains descriptions of local USE flags, and the ebuilds which
 # contain them.
 # Keep it sorted (use "LC_ALL=C sort -t: -k1,1 -k2 | LC_ALL=C sort -s -t/ -k1,1")
@@ -13,6 +13,7 @@
 # use.local.desc is now generated automatically, and manual editing of it is
 # disallowed.
 
+app-accessibility/brltty:icu - Adds unicode support using dev-libs/icu
 app-accessibility/festival:mbrola - Adds support for mbrola voices
 app-accessibility/freetts:jsapi - build Java Speech API (JSAPI)
 app-accessibility/freetts:mbrola - Adds support for mbrola voices
@@ -203,7 +204,6 @@ app-emulation/uae:ui - Build the user interface (could be gtk or ncurses based, 
 app-emulation/vice:resid - Enable support for ReSID media-libs/resid
 app-emulation/vice:xrandr - Enable support for the X xrandr extension
 app-emulation/virtualbox-bin:additions - Install Guest System Tools ISO
-app-emulation/virtualbox-bin:chm - Install help files and add chm reader dependency
 app-emulation/virtualbox-bin:headless - Install without any graphic frontend
 app-emulation/virtualbox-bin:sdk - Enable building of SDK
 app-emulation/virtualbox-bin:vboxwebsrv - Install the VirtualBox webservice
@@ -212,6 +212,7 @@ app-emulation/virtualbox-ose:headless - Build without any graphic frontend
 app-emulation/virtualbox-ose:sdk - Enable building of SDK
 app-emulation/vov:gprof - build with profiling support
 app-emulation/wine:gecko - Add support for the Gecko engine when using iexplore
+app-emulation/wine:samba - Add support for NTLM auth. see http://wiki.winehq.org/NtlmAuthSetupGuide and http://wiki.winehq.org/NtlmSigningAndSealing
 app-emulation/xen:acm - Enable the ACM/sHype XSM module from IBM
 app-emulation/xen:custom-cflags - Use CFLAGS from /etc/make.conf rather than the default Xen CFLAGS (not supported)
 app-emulation/xen:flask - Enable the Flask XSM module from NSA
@@ -233,6 +234,12 @@ app-forensics/samhain:userfiles - Compile in the module to check for files in us
 app-forensics/sleuthkit:dbtool - Add patch for dbtool interface from PyFlag
 app-i18n/anthy:ucs4 - Enable ucs4 support
 app-i18n/atokx2:ext-iiimf - Link with the system IIIMF, rather than the bundled version
+app-i18n/ibus-table:additional - Enable to generate additional Engine
+app-i18n/ibus-table:cangjie5 - Enable to generate CangJie5 Engine
+app-i18n/ibus-table:erbi-qs - Enable to generate ErBi-QS Engine
+app-i18n/ibus-table:extra-phrases - Add extra phrases into builded Engine
+app-i18n/ibus-table:wubi - Enable to generate WuBi86 and WuBi98 Engine
+app-i18n/ibus-table:zhengma - Enable to generate ZhengMa Engine
 app-i18n/im-ja:anthy - Support for Anthy input method
 app-i18n/im-ja:skk - Support for SKK input method
 app-i18n/kimera:anthy - Support for Anthy input method
@@ -385,6 +392,8 @@ app-text/sword:lucene - Enable lucene support for faster searching (dev-cpp/cluc
 app-text/sword-modules:intl - Enable different languages
 app-text/texlive:context - Add support for the ConTeXt format (dev-texlive/texlive-context)
 app-text/texlive:cyrillic - Add support for Cyrillic (dev-texlive/texlive-langcyrillic)
+app-text/texlive:detex - Add support for dev-tex/detex, a filter program that removes the LaTeX (or TeX) control sequences
+app-text/texlive:dvi2tty - Add support for dev-tex/dvi2tty to preview dvi-files on text-only devices
 app-text/texlive:extra - Add support for extra TeXLive packages
 app-text/texlive:games - Add typesetting support for games (chess, etc.) (dev-texlive/texlive-games)
 app-text/texlive:graphics - Add support for several graphics packages (pgf, tikz,...)
@@ -397,6 +406,7 @@ app-text/texlive:publishers - Add support for publishers (dev-texlive/texlive-pu
 app-text/texlive:science - Add typesetting support for natural and computer sciences (dev-texlive/texlive-science)
 app-text/texlive:tex4ht - Add support for dev-tex/tex4ht (for converting (La)TeX to (X)HTML, XML and OO.org)
 app-text/texlive:xetex - Add support for XeTeX macros (dev-texlive/texlive-xetex)
+app-text/texlive:xindy - Add support for app-text/xindy, a flexible indexing system
 app-text/webgen:builder - Enable programmatic HTML/XML generation
 app-text/webgen:exif - Enable EXIF information in image galleries
 app-text/webgen:highlight - Enable syntax highlighting for certain plugins
@@ -455,6 +465,7 @@ dev-games/crystalspace:cg - NVIDIA toolkit plugin
 dev-games/crystalspace:ode - include support for Open Dynamics Engine
 dev-games/guichan:allegro - Build the Allegro frontend
 dev-games/ode:double-precision - more precise calculations at the expense of speed
+dev-games/ode:gyroscopic - enable gyroscopic term (may cause instability)
 dev-games/ode:nogyroscopic - disable gyroscopic term maybe improving stability
 dev-games/ode:noopcode - disable OPCODE (trimesh support)
 dev-games/ogre:cegui - build the CEGUI samples
@@ -660,6 +671,9 @@ dev-perl/HTML-Mason:modperl - Enable www-apache/mod_perl support
 dev-perl/PDL:badval - Enable badval support
 dev-perl/RPC-XML:modperl - Enable www-apache/mod_perl support
 dev-php/PEAR-PHP_Shell:auto-completion - Enable tab-completion
+dev-php5/ZendFramework:doc - Installs the documentation
+dev-php5/ZendFramework:examples - Installs the examples
+dev-php5/ZendFramework:minimal - Installs the minimal version without Dojo toolkit, tests and demos
 dev-php5/eaccelerator:contentcache - Enable content caching
 dev-php5/eaccelerator:disassembler - Enable the eA disassembler
 dev-php5/eaccelerator:inode - Use inode-based caching
@@ -806,6 +820,8 @@ games-emulation/snes9x:netplay - Enable playing ROMs over the network (not recom
 games-emulation/xmame:net - Add network support
 games-emulation/xmess:net - Add network support
 games-emulation/zsnes:custom-cflags - Enables custom cflags (not supported)
+games-engines/frobtads:tads2compiler - Build TADS2 compiler
+games-engines/frobtads:tads3compiler - Build TADS3 compiler
 games-engines/scummvm:fluidsynth - compile with support for fluidsynth
 games-fps/darkplaces:cdsound - Enables using CD audio in the engine
 games-fps/darkplaces:demo - Uses the demo data from quake1 (quake1-demodata)
@@ -848,6 +864,7 @@ games-rpg/nwn-data:sou - Installs the Shadows of Undrentide expension pack
 games-simulation/singularity:music - Install music files
 games-sports/xmoto:editor - Depend on inkscape, scripts to convert svg to level (svg2lvl)
 games-strategy/dark-oberon:fmod - Add sound support (fmod)
+games-strategy/defcon-demo:system-libs - Use system libraries instead of the ones included in the upstream distribution.
 games-strategy/freeciv:auth - Add authentication capability
 games-strategy/freelords:editor - Installs optional map editor
 games-strategy/heroes3:maps - Installs optional map data
@@ -859,6 +876,8 @@ games-strategy/uqm:voice - download and install voice files (large)
 games-strategy/wesnoth:editor - Enable compilation of map editor
 games-strategy/wesnoth:lite - Lite install
 games-strategy/wesnoth:server - Enable compilation of server
+games-strategy/wesnoth:smallgui - enable GUI reductions for resolutions down to 800x480 (eeePC, Nokia 8x0)
+games-strategy/wesnoth:tinygui - enable GUI reductions for resolutions down to 320x240 (PDAs)
 games-strategy/wesnoth:tools - Enable compilation of translation tools
 games-strategy/x2:bonusscripts - Add bonus scripts
 games-strategy/x2:dynamic - Use dynamic binaries instead of static
@@ -1062,6 +1081,7 @@ mail-mta/qmail-ldap:gencertdaily - Generate SSL certificates daily instead of ho
 mail-mta/qmail-ldap:highvolume - Prepare qmail for high volume servers
 mail-mta/qmail-ldap:rfc2307 - Add support for RFC2307 compliant uid/gid attributes
 mail-mta/qmail-ldap:rfc822 - Add support for RFC822 compliant mail attributes
+mail-mta/ssmtp:maxsysuid - Allow to define a MinUserId
 mail-mta/ssmtp:md5sum - Enables MD5 summing for ssmtp
 media-fonts/dejavu:fontforge - Use media-gfx/fontforge to build fonts from source
 media-fonts/intlfonts:bdf - Installs BDF fonts in addition to PCF
@@ -1076,6 +1096,8 @@ media-fonts/terminus-font:width - Wider versions of some font elements
 media-gfx/asymptote:boehm-gc -  Enables using the Boehm-Demers-Weiser conservative garbage collector 
 media-gfx/autotrace:flash -  Adds support for creating SWF files using Ming 
 media-gfx/blender:blender-game -  Adds game engine support to blender 
+media-gfx/blender:openmp -  build support for the OpenMP (support parallel computing), requires >=sys-devel/gcc-4.2 built with USE="openmp" 
+media-gfx/blender:player -  Enable blender player 
 media-gfx/blender:verse -  Adds verse clustering features to blender 
 media-gfx/comix:rar -  Pulls app-arch/unrar for rar file support 
 media-gfx/digikam:nfs -  Create sqlite db within ~/.kde, instead in the albums base directory. 
@@ -1294,6 +1316,7 @@ media-sound/squeezecenter:bonjour - Enable support for bonjour
 media-sound/transkode:amarok - Build Amarok script
 media-sound/traverso:lv2 - Add support for Ladspa V2
 media-sound/vorbis-tools:ogg123 - Build ogg123 player, needs libao and curl
+media-sound/xwax:alsa - Enable ALSA support.
 media-tv/freevo:ivtv - Enables ivtv support
 media-tv/freevo:mixer - Enable support for adjusting volume via media-sound/aumix
 media-tv/freevo:tv - Enable support for the tv guide plugin
@@ -1459,6 +1482,7 @@ media-video/vdr:atsc - Support for NorthAmerican Broadcast ( rudimentary )
 media-video/vdr:bigpatch - Enables almost all additional features flying around on the net (including aio)
 media-video/vdr:child-protection - Enable support for the plugin vdr-pin (Protecting some recordings / channels with a PIN)
 media-video/vdr:cmdctrl - allows switching remote control on/off
+media-video/vdr:cmdreccmdi18n - loads translated commands and reccommands files if existing
 media-video/vdr:cmdsubmenu - Allows the creation of submenus in the commands menu
 media-video/vdr:cutterlimit - Limit IO bandwith used for cutting
 media-video/vdr:cutterqueue - Adds a queue of recordings to be cutted
@@ -1769,6 +1793,13 @@ net-irc/charybdis:smallnet - Enables support for smaller IRC networks
 net-irc/ezbounce:boost - Compile against dev-libs/boost libraries
 net-irc/inspircd:openssl - Build dev-libs/openssl module
 net-irc/ircd-hybrid:contrib - Build contrib modules (eg. cloaking)
+net-irc/kvirc:dcc_voice - Support voice over DCC chats
+net-irc/kvirc:gsm - enable support for media-sound/gsm
+net-irc/kvirc:ipc - add support for IPC between kvirc processes
+net-irc/kvirc:qt-dbus - enable use of Qt's DBUS interface for IPC
+net-irc/kvirc:qt-phonon - use phonon instead of command-based sound
+net-irc/kvirc:qt-webkit - enable use of Qt's WebKit
+net-irc/kvirc:transparency - compile in fake-transparency
 net-irc/ngircd:ident - Enables support for net-libs/libident
 net-irc/quassel:X -  Build the Qt 4 GUI client for quassel. If this USE flag is disabled, the GUI is not built, and cannot be used. You might want to disable this on the server, but you need it enabled on the client. 
 net-irc/quassel:server -  Build the server binary. If this USE flag is disabled, the 'core' server binary for quassel is not built, and cannot be used. You need this enabled on the server, but you might want to disable it on the client. 
@@ -1814,7 +1845,6 @@ net-libs/opal:novideo - Disable video codecs
 net-libs/openh323:noaudio - Disable audio codecs
 net-libs/openh323:novideo - Disable video codecs
 net-libs/webkit-gtk:coverage - enable code coverage support
-net-libs/webkit-gtk:hildon - Use Hildon UI extensions
 net-libs/webkit-gtk:pango - Use pango as fontbackend instead of freetype
 net-libs/webkit-gtk:soup - Use SOUP as backend instead of curl
 net-libs/webkit-gtk:xslt - enable support for XSLT
@@ -1887,6 +1917,7 @@ net-misc/mediatomb:taglib -  Use media-libs/taglib for reading files' metadata r
 net-misc/neon:pkcs11 - Add support PKCS11 support
 net-misc/ntp:openntpd - Allow ntp to be installed alongside openntpd
 net-misc/ntp:parse-clocks - Add support for PARSE clocks
+net-misc/nxcl:nxclient - Use nxssh from net-misc/nxclient instead of standard ssh
 net-misc/nxserver-freenx:nxclient - Add support for the commercial nxclient
 net-misc/oidentd:masquerade - Enable support for masqueraded/NAT connections
 net-misc/openssh:X509 - Adds support for X.509 certificate authentication
@@ -2161,6 +2192,9 @@ sci-physics/geant:global - Produce a huge global library instead of small ones
 sci-physics/geant:openinventor - Add support for media-libs/openinventor SGI toolkit
 sci-physics/geant:raytracerx - Enable raytracing for physics events
 sci-physics/geant:vrml - Enable output of geant4 in vrml formats
+sci-physics/hepmc:cm - Build with cm instead of default mm for length units
+sci-physics/hepmc:gev - Build with GeV instead of default MeV for momentum units
+sci-physics/pythia:hepmc - Adds support for High Energy Physics Monte Carlo Generators sci-physics/hepmc
 sci-physics/root:cern -  Build the HBOOK input/ouput functionality. HBOOK is a histogram library. On ROOT versions previous to 5.20.00, it will depend on sci-physics/cernlib. On versions above, it only need a FORTRAN compiler. 
 sci-physics/root:clarens -  Buld the Clarens and PEAC plug-ins, to use in a GRID enabled analysis. The Clarens Grid-Enabled Web Services Framework is an open source portal for ubiquitous access to data and computational resources provided by computing grids. PEAC is an interactive distributed analysis framework that uses Clarens as a glue protocol to advertise and communicate amongst SAM, Global Manager (GM), Local Manager (LM), DCache, and PROOF services. It doesn't need Clarens to build, however if you want to use it, you will require to build Clarens and PEAC on your own, it is not yet in the Gentoo Portage tree. See http://clarens.sourceforge.net/ for Clarens and http://physics.ucsd.edu/~schsu/project/peac.html for PEAC. 
 sci-physics/root:geant4 -  Build the sci-physics/geant (GEANT4) navigator. 
@@ -2266,6 +2300,7 @@ sys-cluster/mpich2:pvfs2 - Add pvfs2 support
 sys-cluster/mpich2:romio - Enable romio, a high-performance portable MPI-IO implementation
 sys-cluster/ocfs:aio - Add aio support
 sys-cluster/openmpi:heterogeneous - Enable features required for heterogeneous platform support
+sys-cluster/openmpi:mpi-threads - Enable MPI_THREAD_MULTIPLE
 sys-cluster/openmpi:pbs - Add support for the Portable Batch System (PBS)
 sys-cluster/openmpi:romio - Build the ROMIO MPI-IO component
 sys-cluster/openmpi:smp - Enable smp locks in atomic ops. Recommended for SMP/multi-threaded environments.
@@ -2364,6 +2399,8 @@ sys-power/cpufreqd:nforce2 - Enable support for nforce2 voltage settings plug-in
 sys-power/cpufreqd:nvidia - Enable nvidia overclocking (media-video/nvclock) plug-in
 sys-power/cpufreqd:pmu - Enable Power Management Unit plug-in
 sys-power/pm-utils:ntp - install support for net-misc/ntp
+sys-power/powerman:genders -  Add support for selecting power control targets using genders (-g option) 
+sys-power/powerman:httppower -  Add support for HTTP based power controllers 
 sys-power/suspend:fbsplash - Add support for framebuffer splash
 sys-process/procps:n32 - Enable n32 ABI support on mips
 www-apache/anyterm:opera - Enable workaround for bug in Opera web browser
@@ -2450,7 +2487,7 @@ x11-base/kdrive:speedo - Enables Speedo font support
 x11-base/kdrive:type1 - Enables Type1 font support
 x11-base/xorg-server:dmx - Build the Distributed Multiheaded X server
 x11-base/xorg-server:kdrive - Build the kdrive X servers
-x11-base/xorg-server:xorg - Build the Xorg X server (HIGHLY RECOMMENDED
+x11-base/xorg-server:xorg - Build the Xorg X server (HIGHLY RECOMMENDED)
 x11-drivers/linuxwacom:module - Build kernel module
 x11-drivers/nvidia-drivers:custom-cflags - Build with CFLAGS from /etc/make.conf (unsupported)
 x11-libs/cairo:glitz - Build with glitz support, which replaces some software render operations with Mesa OpenGL operations

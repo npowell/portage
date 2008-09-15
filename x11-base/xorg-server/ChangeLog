@@ -1,6 +1,28 @@
 # ChangeLog for x11-base/xorg-server
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/x11-base/xorg-server/ChangeLog,v 1.348 2008/08/05 21:22:56 cardoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-base/xorg-server/ChangeLog,v 1.353 2008/09/15 00:39:41 dberkholz Exp $
+
+  15 Sep 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  xorg-server-1.5.0.ebuild:
+  (#237411) Add VIDEO_CARDS=ast to IUSE.
+
+  14 Sep 2008; Friedrich Oslage <bluebird@gentoo.org>
+  xorg-server-1.5.0.ebuild:
+  Add ~sparc keyword, bug #237411
+
+  07 Sep 2008; Carsten Lohrke <carlo@gentoo.org> metadata.xml:
+  Fix a typo.
+
+  06 Sep 2008; <chainsaw@gentoo.org> xorg-server-1.5.0.ebuild:
+  Only depend on x11-drivers/xf86-input-synaptics as the older package does
+  not build against this new server. Closes bug #236870 by Seemant Kulleen
+  <seemant_g2@kulleen.org>.
+
+*xorg-server-1.5.0 (06 Sep 2008)
+
+  06 Sep 2008; Donnie Berkholz <dberkholz@gentoo.org>;
+  +xorg-server-1.5.0.ebuild:
+  Version bump.
 
   05 Aug 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml:
   add GLEP 56 USE flag desc from use.local.desc

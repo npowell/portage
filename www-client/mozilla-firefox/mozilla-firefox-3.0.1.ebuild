@@ -1,11 +1,11 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/mozilla-firefox/mozilla-firefox-3.0.1.ebuild,v 1.6 2008/09/01 12:00:11 redhatter Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/mozilla-firefox/mozilla-firefox-3.0.1.ebuild,v 1.11 2008/09/09 18:01:33 armin76 Exp $
 EAPI="1"
 WANT_AUTOCONF="2.1"
 
 inherit flag-o-matic toolchain-funcs eutils mozconfig-3 makeedit multilib fdo-mime autotools mozextension
-PATCH="${P}-patches-0.2"
+PATCH="${P}-patches-0.3"
 
 LANGS="af ar be ca cs da de el en-GB en-US es-AR es-ES eu fi fr fy-NL ga-IE gu-IN he hu id it ja ka ko ku lt mk mn nb-NO nl nn-NO pa-IN pl pt-BR pt-PT ro ru si sk sl sq sr sv-SE tr uk zh-CN zh-TW"
 NOSHORTLANGS="en-GB es-AR pt-BR zh-CN"
@@ -15,14 +15,15 @@ MY_PV=${PV/3/}
 DESCRIPTION="Firefox Web Browser"
 HOMEPAGE="http://www.mozilla.com/firefox"
 
-KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86"
+KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 -sparc ~x86"
 SLOT="0"
 LICENSE="|| ( MPL-1.1 GPL-2 LGPL-2.1 )"
 IUSE="java mozdevelop bindist restrict-javascript iceweasel +xulrunner"
 
 SRC_URI="mirror://gentoo/${P}.tar.bz2
-	http://dev.gentoo.org/~armin76/${P}.tar.bz2
+	http://dev.gentoo.org/~armin76/dist/${P}.tar.bz2
 	mirror://gentoo/${PATCH}.tar.bz2
+	http://dev.gentoo.org/~armin76/dist/${PATCH}.tar.bz2
 	iceweasel? ( mirror://gentoo/iceweasel-icons-3.0.tar.bz2 )
 	!xulrunner? ( mirror://gentoo/xulrunner-1.9${MY_PV}.tar.bz2 )"
 
@@ -263,7 +264,7 @@ src_install() {
 	if use iceweasel; then
 		newicon "${S}"/browser/base/branding/icon48.png iceweasel-icon.png
 		newmenu "${FILESDIR}"/icon/iceweasel.desktop \
-			mozilla-firefox-2.0.desktop
+			mozilla-firefox-3.0.desktop
 	elif ! use bindist; then
 		newicon "${S}"/other-licenses/branding/firefox/content/icon48.png firefox-icon.png
 		newmenu "${FILESDIR}"/icon/mozilla-firefox-1.5.desktop \

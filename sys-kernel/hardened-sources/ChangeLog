@@ -1,6 +1,39 @@
 # ChangeLog for sys-kernel/hardened-sources
 # Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/ChangeLog,v 1.235 2008/08/31 19:06:09 nixnut Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/hardened-sources/ChangeLog,v 1.241 2008/09/13 20:09:11 gengor Exp $
+
+*hardened-sources-2.6.26-r2 (13 Sep 2008)
+
+  13 Sep 2008; Gordon Malm <gengor@gentoo.org>
+  -hardened-sources-2.6.26.ebuild, +hardened-sources-2.6.26-r2.ebuild:
+  2.6.26-r2: Update to Linux 2.6.26.5, new grsecurity patch adding
+  PAX_REFCOUNT feature, fix bug #237473 (CVE-2008-3525). 2.6.26: Removed.
+
+*hardened-sources-2.6.25-r7 (13 Sep 2008)
+
+  13 Sep 2008; Gordon Malm <gengor@gentoo.org>
+  +hardened-sources-2.6.25-r7.ebuild:
+  Add 2.6.25-r7, fixing bug #237473 (CVE-2008-3525) and a PaX bug.
+
+  10 Sep 2008; Gordon Malm <gengor@gentoo.org>
+  hardened-sources-2.6.25-r4.ebuild, hardened-sources-2.6.25-r5.ebuild,
+  hardened-sources-2.6.25-r6.ebuild, hardened-sources-2.6.26.ebuild,
+  hardened-sources-2.6.26-r1.ebuild:
+  Update DESCRIPTION and HGPV_URI.
+
+*hardened-sources-2.6.25-r6 (09 Sep 2008)
+
+  09 Sep 2008; Gordon Malm <gengor@gentoo.org>
+  -hardened-sources-2.6.24-r3.ebuild, +hardened-sources-2.6.25-r6.ebuild:
+  2.6.25-r6: Update to Linux 2.6.25.17.
+  2.6.24-r3: Removed.
+
+  08 Sep 2008; Gordon Malm <gengor@gentoo.org>
+  hardened-sources-2.6.25-r5.ebuild:
+  Stable on amd64/x86
+
+  07 Sep 2008; Gordon Malm <gengor@gentoo.org> metadata.xml:
+  Update my email address.
 
   31 Aug 2008; nixnut <nixnut@gentoo.org> hardened-sources-2.6.25-r4.ebuild:
   stable on ppc
