@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/kbuild/kbuild-0.1.3.ebuild,v 1.2 2008/09/06 20:18:51 mr_bones_ Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/kbuild/kbuild-0.1.3.ebuild,v 1.3 2008/09/15 19:45:13 jokey Exp $
 
 EAPI=1
 
@@ -18,14 +18,16 @@ SLOT="0"
 KEYWORDS="~amd64 ~x86"
 IUSE=""
 
-DEPEND="dev-util/yacc
-		dev-util/cvs"
+DEPEND="dev-util/cvs"
 
 S=${WORKDIR}/${MY_P/-src}
 
 src_unpack() {
 		unpack ${A}
 		cd "${S}"
+
+		# Fix the unneeded inclusion of sys/acl.h (bug #236949)
+		epatch "${FILESDIR}/${PN}-fix-acl-include.patch"
 
 		rm -rf "${S}/kBuild/bin"
 }
@@ -41,3 +43,4 @@ src_install() {
 		PATH_INS="${D}" \
 		install || die "install failed"
 }
+

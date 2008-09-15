@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-editors/gedit/gedit-2.22.3.ebuild,v 1.6 2008/08/17 19:27:03 ford_prefect Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-editors/gedit/gedit-2.22.3.ebuild,v 1.7 2008/09/15 03:52:40 ford_prefect Exp $
 
 inherit gnome2 python eutils autotools
 
@@ -28,6 +28,7 @@ RDEPEND=">=gnome-base/gconf-2
 		>=dev-python/pygobject-2.12
 		>=dev-python/pygtk-2.12
 		>=dev-python/pygtksourceview-2.2
+		>=dev-python/gnome-python-2.22.0
 	)"
 
 DEPEND="${RDEPEND}
