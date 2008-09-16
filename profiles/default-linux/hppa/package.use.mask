@@ -1,6 +1,16 @@
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/default-linux/hppa/package.use.mask,v 1.27 2008/09/10 19:25:02 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/default-linux/hppa/package.use.mask,v 1.30 2008/09/16 14:01:44 jer Exp $
 # DON'T TOUCH THIS FILE. Instead, file a bug and assign it to <hppa@gentoo.org>.
+
+# Jeroen Roovers <jer@gentoo.org> (16 Sep 2008)
+# dxr2/3 cards have not been tested on HPPA hardware
+# and cpudetection and custom-cpuopts does not apply
+# to HPPA (bug #234629)
+media-video/mplayer dxr3 cpudetection custom-cpuopts
+
+# Jeroen Roovers <jer@gentoo.org> (16 Sep 2008)
+# app-text/xindy needs dev-lisp/clisp and clisp does not build (bug #229217)
+app-text/texlive xindy
 
 # Jeroen Roovers <jer@gentoo.org> (10 Sep 2008)
 # app-misc/tracker isn't keyworded and doesn't work:
