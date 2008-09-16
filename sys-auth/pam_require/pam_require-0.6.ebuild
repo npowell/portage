@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-auth/pam_require/pam_require-0.6.ebuild,v 1.3 2008/05/15 01:21:10 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-auth/pam_require/pam_require-0.6.ebuild,v 1.4 2008/09/16 15:32:28 trapni Exp $
 
 inherit eutils pam
 
@@ -20,7 +20,7 @@ src_compile() {
 }
 
 src_install() {
-	dopammod ${S}/pam_require.so
+	dopammod "${S}/pam_require.so"
 
 	dodoc AUTHORS ChangeLog NEWS README
 }
