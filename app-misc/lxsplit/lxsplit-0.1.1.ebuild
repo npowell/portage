@@ -1,9 +1,9 @@
-# Copyright 1999-2005 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-misc/lxsplit/lxsplit-0.1.1.ebuild,v 1.13 2005/04/21 19:28:58 blubb Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-misc/lxsplit/lxsplit-0.1.1.ebuild,v 1.14 2008/09/17 11:04:46 pva Exp $
 
 DESCRIPTION="Command-line file splitter/joiner for Linux"
-HOMEPAGE="http://remenic.2y.net/lxsplit/"
+HOMEPAGE="http://lxsplit.sourceforge.net"
 SRC_URI="http://www.freebyte.com/download/lxsplit.tar.gz"
 
 LICENSE="GPL-2"
