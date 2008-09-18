@@ -1,6 +1,6 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-emulation/ies4linux/ies4linux-2.5_beta6.ebuild,v 1.3 2007/08/17 21:09:11 rbu Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-emulation/ies4linux/ies4linux-2.5_beta6.ebuild,v 1.4 2008/09/16 22:21:35 hanno Exp $
 
 inherit eutils versionator
 
@@ -28,7 +28,7 @@ S="${WORKDIR}/${MY_P}"
 
 src_unpack() {
 
-	unpack "${A}"
+	unpack ${A}
 	cd "${S}"
 
 	epatch "${FILESDIR}/${P}-Installation_directory_discovery.patch" || die "epatch failed"

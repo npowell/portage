@@ -1,6 +1,13 @@
 # ChangeLog for app-admin/emacs-updater
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-admin/emacs-updater/ChangeLog,v 1.1 2008/09/04 10:30:05 ulm Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-admin/emacs-updater/ChangeLog,v 1.3 2008/09/18 20:03:58 maekke Exp $
+
+  18 Sep 2008; Markus Meier <maekke@gentoo.org> emacs-updater-1.0.ebuild:
+  amd64/x86 stable, bug #238021
+
+  18 Sep 2008; Ferris McCormick <fmccor@gentoo.org>
+  emacs-updater-1.0.ebuild:
+  Sparc stable, part of Bug #238021.
 
 *emacs-updater-1.0 (04 Sep 2008)
 
