@@ -4,4 +4,4 @@ NTPD_HOME=/var/empty
 
 # See ntpd(8) man page ... some popular options:
 #  -s   Set the time immediately at startup
-NTPD_OPTS=""
+NTPD_OPTS="-s"
