@@ -1,6 +1,18 @@
 # ChangeLog for media-video/linux-uvc
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/linux-uvc/ChangeLog,v 1.14 2008/07/06 22:10:15 solar Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/linux-uvc/ChangeLog,v 1.16 2008/09/24 17:13:30 genstef Exp $
+
+*linux-uvc-0.1.0_pre250 (24 Sep 2008)
+
+  24 Sep 2008; Stefan Schweizer <genstef@gentoo.org>
+  -linux-uvc-0.1.0_pre246.ebuild, +linux-uvc-0.1.0_pre250.ebuild:
+  update to correct version
+
+*linux-uvc-0.1.0_pre246 (21 Sep 2008)
+
+  21 Sep 2008; Stefan Schweizer <genstef@gentoo.org>
+  +linux-uvc-0.1.0_pre246.ebuild:
+  version bump, bug 237776
 
 *linux-uvc-0.1.0_pre223 (06 Jul 2008)
 
