@@ -1,0 +1,20 @@
+This is a git repository containing multiple Portage trees. To use this repository, you must have git installed. You
+can choose a branch to use by typing:
+
+# git checkout <branchname>
+
+The following branches are contained in this repository:
+
+gentoo.org
+==========
+To use: git checkout gentoo.org
+Maintainer: Daniel Robbins <drobbins@funtoo.org>
+This branch contains the official gentoo.org Portage repository. It is regularly synchronized so that it tracks 
+gentoo.org changes.
+
+funtoo.org
+==========
+To use: git checkout funtoo.org
+Maintainer: Daniel Robbins <drobbins@funtoo.org>
+This branch contains the funtoo.org Portage repository, which contains minor tweaks and improvements by Daniel Robbins.
+
