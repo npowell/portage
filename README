@@ -7,14 +7,20 @@ The following branches are contained in this repository:
 
 gentoo.org
 ==========
-To use: git checkout gentoo.org
+To use, first create a local gentoo.org branch that tracks our gentoo.org branch:
+# git checkout --track -b gentoo.org origin/gentoo.org
+Then, switch to your new gentoo.org branch:
+# git checkout gentoo.org
 Maintainer: Daniel Robbins <drobbins@funtoo.org>
 This branch contains the official gentoo.org Portage repository. It is regularly synchronized so that it tracks 
 gentoo.org changes.
 
 funtoo.org
 ==========
-To use: git checkout funtoo.org
+To use, first create a local funtoo.org branch that tracks our funtoo.org branch:
+# git checkout --track -b funtoo.org origin/funtoo.org
+Then, switch to your new funtoo.org branch:
+# git checkout funtoo.org
 Maintainer: Daniel Robbins <drobbins@funtoo.org>
 This branch contains the funtoo.org Portage repository, which contains minor tweaks and improvements by Daniel Robbins.
 
