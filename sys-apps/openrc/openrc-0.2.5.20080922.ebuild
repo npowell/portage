@@ -11,6 +11,8 @@ if [[ ${PV} == "9999" ]] ; then
 else
 	SRC_URI="http://www.funtoo.org/openrc/openrc-${PV}.tar.bz2"
 fi
+# dir name is "openrc" for non-official releases
+S=${WORKDIR}/${PN}
 
 DESCRIPTION="OpenRC manages the services, startup and shutdown of a host"
 HOMEPAGE="http://roy.marples.name/openrc"
@@ -55,11 +57,11 @@ pkg_setup() {
 src_unpack() {
 	if [[ ${PV} == "9999" ]] ; then
 		git_src_unpack
+		epatch "${FILESDIR}"/9999/*.patch
 	else
 		unpack ${A}
 	fi
 	cd "${S}"
-	epatch "${FILESDIR}"/9999/*.patch
 }
 
 src_compile() {
