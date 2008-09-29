@@ -1,6 +1,6 @@
-# Copyright 1999-2005 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-vim/alternate/alternate-2.12-r1.ebuild,v 1.6 2005/09/10 06:30:46 agriffis Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-vim/alternate/alternate-2.12-r1.ebuild,v 1.7 2008/09/20 08:05:29 hawking Exp $
 
 inherit vim-plugin eutils
 
@@ -18,7 +18,7 @@ file and the associated .h file. There is also :AS to split windows and
 
 src_unpack() {
 	unpack ${A}
-	cd ${S}
+	cd "${S}"
 	# fix switching between .cc and .hh files, thanks ciaranm
-	epatch ${FILESDIR}/${P}-hh-cc-alternation.patch
+	epatch "${FILESDIR}"/${P}-hh-cc-alternation.patch
 }

@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-vim/colorsel/colorsel-20040416.ebuild,v 1.13 2008/04/26 21:18:00 ricmm Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-vim/colorsel/colorsel-20040416.ebuild,v 1.14 2008/09/20 13:59:45 hawking Exp $
 
 inherit vim-plugin
 
@@ -20,7 +20,7 @@ function src_unpack() {
 	# nothing in non-GUI mode.
 	sed -i \
 		-e "s:echoerr 'Color selector needs GUI':\" mmm, cookies':" \
-		${S}/plugin/${PN}.vim \
+		"${S}"/plugin/${PN}.vim \
 		|| die "d'oh! sed magic didn't work, call an ambulance"
 }
 

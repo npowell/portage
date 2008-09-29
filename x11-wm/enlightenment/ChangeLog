@@ -1,6 +1,25 @@
 # ChangeLog for x11-wm/enlightenment
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/x11-wm/enlightenment/ChangeLog,v 1.99 2008/08/16 15:17:40 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-wm/enlightenment/ChangeLog,v 1.104 2008/09/22 04:25:48 jer Exp $
+
+  22 Sep 2008; Jeroen Roovers <jer@gentoo.org>
+  enlightenment-0.16.8.14.ebuild:
+  Stable for HPPA (bug #238213).
+
+  21 Sep 2008; Raúl Porcel <armin76@gentoo.org>
+  enlightenment-0.16.8.14.ebuild:
+  alpha/ia64/sparc stable wrt #238213
+
+  21 Sep 2008; Markus Meier <maekke@gentoo.org>
+  enlightenment-0.16.8.14.ebuild:
+  amd64/x86 stable, bug #238213
+
+  21 Sep 2008; Brent Baude <ranger@gentoo.org>
+  enlightenment-0.16.8.14.ebuild:
+  stable ppc64, bug 238213
+
+  21 Sep 2008; nixnut <nixnut@gentoo.org> enlightenment-0.16.8.14.ebuild:
+  Stable on ppc wrt bug 238213
 
 *enlightenment-0.16.8.14 (16 Aug 2008)
 

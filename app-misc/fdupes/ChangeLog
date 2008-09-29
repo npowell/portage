@@ -1,6 +1,19 @@
 # ChangeLog for app-misc/fdupes
 # Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-misc/fdupes/ChangeLog,v 1.20 2008/09/19 01:16:40 ranger Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-misc/fdupes/ChangeLog,v 1.24 2008/09/22 04:42:57 jer Exp $
+
+  22 Sep 2008; Jeroen Roovers <jer@gentoo.org> fdupes-1.40-r3.ebuild:
+  Stable for HPPA (bug #237828).
+
+  21 Sep 2008; Brent Baude <ranger@gentoo.org> ChangeLog:
+  stable ppc64, bug 237828
+
+  20 Sep 2008; Raúl Porcel <armin76@gentoo.org> fdupes-1.40-r3.ebuild:
+  ia64/sparc stable wrt #237828
+
+  20 Sep 2008; Tobias Scherbaum <dertobi123@gentoo.org>
+  fdupes-1.40-r3.ebuild:
+  ppc stable, bug #237828
 
   19 Sep 2008; Brent Baude <ranger@gentoo.org> ChangeLog:
   stable ppc64, bug 237828
