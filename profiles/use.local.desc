@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation.
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/use.local.desc,v 1.3878 2008/09/18 04:27:43 robbat2 Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/use.local.desc,v 1.3885 2008/09/23 13:08:06 robbat2 Exp $
 # This file contains descriptions of local USE flags, and the ebuilds which
 # contain them.
 # Keep it sorted (use "LC_ALL=C sort -t: -k1,1 -k2 | LC_ALL=C sort -s -t/ -k1,1")
@@ -28,6 +28,7 @@ app-admin/conky:audacious - enable monitoring of audio tracks that are playing m
 app-admin/conky:bmpx - enable monitoring of audio tracks that are playing media-sound/bmpx
 app-admin/conky:mpd - enable monitoring mpd controlled music media-sound/mpd
 app-admin/conky:nano-syntax - enable syntax highlighting for app-editors/nano
+app-admin/conky:nvidia - enable reading of nvidia card temperature sensors via media-video/nvidia-settings
 app-admin/conky:smapi - enable support for smapi
 app-admin/diradm:automount - Support for automount data in LDAP
 app-admin/diradm:irixpasswd - Support for storing separate IRIX passwords
@@ -1935,8 +1936,11 @@ net-misc/openssh:X509 - Adds support for X.509 certificate authentication
 net-misc/openssh:chroot - Enable chrooting support
 net-misc/openssh:hpn - Enable high performance ssh
 net-misc/openssh:ldap - Add support for storing SSH public keys in LDAP
-net-misc/openswan:extra-algorithms - Include additional algorithms such as Blowfish, Twofish and Serpent
-net-misc/openswan:weak-algorithms - Include weak algorithms such as DH1 and 1DES
+net-misc/openswan:curl - Include curl support (used for fetching CRLs)
+net-misc/openswan:extra-algorithms - Include additional strong algorithms (Blowfish, Twofish, Serpent and SHA2)
+net-misc/openswan:ldap - Include LDAP support (used for fetching CRLs)
+net-misc/openswan:nocrypto-algorithms - Include algorithms that don't even encrypt (1DES)
+net-misc/openswan:weak-algorithms - Include weak algorithms (DH1)
 net-misc/openvpn:iproute2 - Enabled iproute2 support instead of net-tools
 net-misc/openvpn:passwordsave - Enables openvpn to save passwords
 net-misc/openvpn:pkcs11 - Enable PKCS#11 smartcard support
@@ -2210,6 +2214,9 @@ sci-physics/root:cern -  Build the HBOOK input/ouput functionality. HBOOK is a h
 sci-physics/root:clarens -  Buld the Clarens and PEAC plug-ins, to use in a GRID enabled analysis. The Clarens Grid-Enabled Web Services Framework is an open source portal for ubiquitous access to data and computational resources provided by computing grids. PEAC is an interactive distributed analysis framework that uses Clarens as a glue protocol to advertise and communicate amongst SAM, Global Manager (GM), Local Manager (LM), DCache, and PROOF services. It doesn't need Clarens to build, however if you want to use it, you will require to build Clarens and PEAC on your own, it is not yet in the Gentoo Portage tree. See http://clarens.sourceforge.net/ for Clarens and http://physics.ucsd.edu/~schsu/project/peac.html for PEAC. 
 sci-physics/root:geant4 -  Build the sci-physics/geant (GEANT4) navigator. 
 sci-physics/root:math -  Build all math libraries plugins. It includes the sci-libs/gsl bindings in MathMore, the GenVector physical vectors package, the Minuit2 minimization library (same as standalone sci-libs/minuit), the RooFit toolkit for distribution modeling, and the Universal Non-Uniform RANdom number generators (UNURAN) library. 
+sci-physics/root:pythia6 -  Builds the interface to Pythia-6 (sci-physics/pythia) high energy physics generation events library. 
+sci-physics/root:pythia8 -  Builds the interface to Pythia-8 (sci-physics/pythia) high energy physics generation events library. 
+sci-physics/root:reflex -  Builds the reflection database for the C++ interpretor. 
 sci-physics/root:xrootd -  Build the xrootd low latency file server. For more on the eXtended Request Daemon (xrd) and associated software, please see http://xrootd.slac.stanford.edu. 
 sci-visualization/hippodraw:fits -  Enable HippoDraw's built-in support for reading FITS files, by using the CFITSIO library. FITS binary and ASCII tables are supported as well as images. When combine with numpy flag, it can also use the pyfits package. 
 sci-visualization/hippodraw:numpy -  Enable support for the numerical array manipulation and computational capabilities of numpy in python. HippoDraw can return a numerical array to Python from any of the type of objects that are supported. One can also import data to a HippoDraw from a numpy array. 
@@ -2522,7 +2529,6 @@ x11-libs/wxGTK:gnome -  Use gnome-base/libgnomeprintui for printing tasks.
 x11-libs/wxGTK:gstreamer -  Enable the wxMediaCtrl class for playing audio and video through gstreamer. 
 x11-libs/wxGTK:sdl -  Use Simple Directmedia Layer (media-libs/libsdl) for audio. 
 x11-misc/adesklets:ctrlmenu - force CTRL to be pressed to fire context menu
-x11-misc/fbdesk:imlib2 - Add support for imlib2 (pixmap themes)
 x11-misc/notification-daemon-xfce:xfce - Enable integration in XFCE desktop
 x11-misc/openclipart:gzip - Compresses clip art using gzip
 x11-misc/vnc2swf:x11vnc - Install script that depends on x11vnc

@@ -1,6 +1,25 @@
 # ChangeLog for sys-apps/busybox
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/busybox/ChangeLog,v 1.195 2008/08/21 16:29:46 solar Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/busybox/ChangeLog,v 1.201 2008/09/22 03:39:13 jer Exp $
+
+  22 Sep 2008; Jeroen Roovers <jer@gentoo.org> busybox-1.11.1.ebuild:
+  Stable for HPPA (bug #238249).
+
+  21 Sep 2008; Raúl Porcel <armin76@gentoo.org> busybox-1.11.1.ebuild:
+  alpha/ia64/sparc stable wrt #238249
+
+  21 Sep 2008; Brent Baude <ranger@gentoo.org> busybox-1.11.1.ebuild:
+  stable ppc64, bug 238249
+
+  21 Sep 2008; Markus Meier <maekke@gentoo.org> busybox-1.11.1.ebuild:
+  amd64/x86 stable, bug #238249
+
+  21 Sep 2008; nixnut <nixnut@gentoo.org> busybox-1.11.1.ebuild:
+  Stable on ppc wrt bug 238249
+
+  21 Sep 2008; Mike Frysinger <vapier@gentoo.org> busybox-1.11.1.ebuild,
+  busybox-1.12.0.ebuild:
+  Avoid running dodoc on dirs #234096 by Doug Goldstein.
 
 *busybox-1.12.0 (21 Aug 2008)
 
