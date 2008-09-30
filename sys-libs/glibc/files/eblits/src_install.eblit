@@ -207,13 +207,13 @@ src_strip() {
 	local pthread=$(hasq splitdebug ${FEATURES} && echo "libthread_db" || echo "lib{pthread,thread_db}")
 	env \
 		-uRESTRICT \
-		CHOST=${CTARGET} \
+		CHOST=${ACTIVE_CHOST} \
 		STRIP_MASK="/*/{,tls/}${pthread}*" \
 		prepallstrip
 	# if user has stripping enabled and does not have split debug turned on,
 	# then leave the debugging sections in libpthread.
 	if ! hasq nostrip ${FEATURES} && ! hasq splitdebug ${FEATURES} ; then
-		${STRIP:-${CTARGET}-strip} --strip-debug "${D}"/*/libpthread-*.so
+		${STRIP:-${ACTIVE_CHOST}-strip} --strip-debug "${D}"/*/libpthread-*.so
 	fi
 }
 

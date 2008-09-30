@@ -45,6 +45,21 @@ setup_flags() {
 		CHOST=${CTARGET} strip-unsupported-flags
 	fi
 
+	local GCC_CONFIG
+
+	# These eblits were passing the CHOST variable to commands like prepallstrip,
+	# which would cause prepallstrip to look for /usr/bin/$CHOST-strip. However,
+	# it's possible that we are merging to a non-/ ROOT, and that the CHOST in
+	# /etc/make.conf does not reflect the current GCC profile we are using to build.
+	# In this case, the CHOST variable could point to a $CHOST-strip that does not
+	# exist and the build will fail. The new ACTIVE_CHOST variable is meant to 
+	# reflect the CHOST of the currently-active gcc profile so that we can call
+	# the right command. Will be passed to the "strip" commands in the other eblits
+	# - Daniel Robbins
+
+	GCC_CONFIG=`ROOT=/ gcc-config -c`
+	ACTIVE_CHOST=`ROOT=/ gcc-config -S $GCC_CONFIG | cut -f1 -d" "`
+
 	# Store our CFLAGS because it's changed depending on which CTARGET
 	# we are building when pulling glibc on a multilib profile
 	CFLAGS_BASE=${CFLAGS_BASE-${CFLAGS}}
