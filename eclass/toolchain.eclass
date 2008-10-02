@@ -145,7 +145,7 @@ else
 		[[ -n ${D_VER}	 ]] && IUSE="${IUSE} d"
 
 		if tc_version_is_at_least 3 ; then
-			IUSE="${IUSE} bootstrap doc gcj gtk hardened libffi multilib objc vanilla"
+			IUSE="${IUSE} bootstrap doc gcj gtk hardened libffi multilib objc vanilla profiled"
 
 			# gcc-{nios2,bfin} don't accept these
 			if [[ ${PN} == "gcc" ]] ; then
@@ -1404,7 +1404,7 @@ gcc_do_make() {
 		# resulting binaries natively ^^;
 		GCC_MAKE_TARGET=${GCC_MAKE_TARGET-all}
 	elif [[ $(tc-arch) == "x86" || $(tc-arch) == "amd64" ]] \
-		&& [[ ${GCCMAJOR}.${GCCMINOR} > 3.3 ]] && ! use build
+		&& [[ ${GCCMAJOR}.${GCCMINOR} > 3.3 ]] && ! use build && use profiled
 	then
 		GCC_MAKE_TARGET=${GCC_MAKE_TARGET-profiledbootstrap}
 	else
