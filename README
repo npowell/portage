@@ -1,26 +1,47 @@
-This is a git repository containing multiple Portage trees. To use this repository, you must have git installed. You
-can choose a branch to use by typing:
+# Copyright 2008 Funtoo Technologies, LLC
+# Distributed under the terms of the GNU General Public License v2
 
-# git checkout <branchname>
+LICENSE
+=======
 
-The following branches are contained in this repository:
+The contents of this repository is distributed under the terms of the GNU
+General Public License version 2.  Please see the file "LICENSE" for a complete
+copy of the GNU General Public License version 2.
 
-gentoo.org
+The contents of this repository are copyright Gentoo Foundation Inc., Funtoo
+Technologies, LLC as well as others.
+
+REPOSITORY
 ==========
-To use, first create a local gentoo.org branch that tracks our gentoo.org branch:
-# git checkout --track -b gentoo.org origin/gentoo.org
-Then, switch to your new gentoo.org branch:
-# git checkout gentoo.org
-Maintainer: Daniel Robbins <drobbins@funtoo.org>
-This branch contains the official gentoo.org Portage repository. It is regularly synchronized so that it tracks 
-gentoo.org changes.
 
-funtoo.org
+This is a git repository containing multiple Portage trees that can be used by
+Gentoo-compatible GNU/Linux distributions. To use this repository, you must
+have git installed, or alternatively it can be browsed online at
+http://github.com/funtoo/portage/tree/master.
+
+BRANCHES
+========
+
+If you are browsing this repository at http://github.com/funtoo/portage/tree/master, 
+you can view the contents of the repository by choosing a branch under the
+"all branches" menu. This repository contains the following branches:
+
+ * master           Contains this README file as well as licensing information
+
+   gentoo.org       Contains an official Gentoo Linux Portage repository
+    \ 
+     funtoo.org     Contains an official Funtoo Portage repository
+
+HOW TO USE
 ==========
-To use, first create a local funtoo.org branch that tracks our funtoo.org branch:
-# git checkout --track -b funtoo.org origin/funtoo.org
-Then, switch to your new funtoo.org branch:
-# git checkout funtoo.org
-Maintainer: Daniel Robbins <drobbins@funtoo.org>
-This branch contains the funtoo.org Portage repository, which contains minor tweaks and improvements by Daniel Robbins.
 
+Please consult our online documentation at
+http://github.com/funtoo/portage/wikis for up-to-date, easy-to-use
+documentation on how to use this repository for a variety of purposes.
+
+Thanks and Best Regards,
+
+-- 
+
+Daniel Robbins <drobbins@funtoo.org>
+Funtoo Technologies, LLC
