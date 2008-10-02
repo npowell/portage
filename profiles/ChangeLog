@@ -1,10 +1,87 @@
 # ChangeLog for profile directory
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.1895 2008/09/24 19:22:39 loki_val Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.1917 2008/10/02 04:28:35 wrobel Exp $
 #
 # This ChangeLog should include records for all changes in profiles directory.
 # Only typo fixes which don't affect portage/repoman behaviour could be avoided
 # here. If in doubt put a record here!
+
+  02 Oct 2008; Gunnar Wrobel <wrobel@gentoo.org> package.mask:
+  Masking www-apps/dotproject for security reasons (bug #236518)
+  
+  02 Oct 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org> use.desc:
+  Added description for the kdeprefix use flag.
+
+  02 Oct 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  desc/linguas.desc:
+  Added lb locale.
+
+  01 Oct 2008; Ben de Groot <yngwin@gentoo.org> package.mask:
+  Masking x11-misc/obpager to be removed (bug 226007)
+
+  01 Oct 2008; Ben de Groot <yngwin@gentoo.org> desc/linguas.desc:
+  Add es_CR locale
+
+  30 Sep 2008; Mart Raudsepp <leio@gentoo.org> package.mask:
+  Unmask swfdec-0.8 - firefox 3.0.{0,1} didn't like it, but 3.0.3 does
+
+  30 Sep 2008; Mike Auty <ikelos@gentoo.org> package.mask:
+  Remove masks for packages that have been taken out of the tree.
+
+  30 Sep 2008; Mart Raudsepp <leio@gentoo.org> arch/arm/package.mask,
+  arch/powerpc/ppc32/package.mask, arch/powerpc/ppc64/package.mask,
+  arch/sh/package.mask, default-bsd/fbsd/package.mask,
+  default-linux/arm/package.mask, default-linux/ppc/dev/ppc64/package.mask,
+  default-linux/ppc/ppc32/package.mask,
+  default-linux/ppc/ppc64/package.mask, default-linux/sh/package.mask,
+  hardened/ppc/package.mask, hardened/ppc64/package.mask,
+  hardened/x86/package.mask, uclibc/ppc/package.mask:
+  Unmask gnome-base/gail in all remaining profiles, bug 239026
+
+  29 Sep 2008; Petteri Räty <betelgeuse@gentoo.org> package.mask:
+  package.mask abcl-cvs. See bug #227629 for more details.
+
+  29 Sep 2008; Alexis Ballier <aballier@gentoo.org> package.mask:
+  unmask eapi2 audacity
+
+  29 Sep 2008; Alexis Ballier <aballier@gentoo.org> package.mask:
+  mask audacity 1.3.5-r1 until we solve the wxwidgets configure problem
+
+  29 Sep 2008; Peter Volkov <pva@gentoo.org> package.mask:
+  Unmasking mediawiki-1.13.0 as broken ebuild was removed from the tree.
+
+  28 Sep 2008; Peter Volkov <pva@gentoo.org> package.mask:
+  Masked =www-apps/mediawiki-1.13.0, broken, bug #236411
+
+  28 Sep 2008; Mart Raudsepp <leio@gentoo.org> arch/arm/package.use.mask,
+  arch/sh/package.use.mask, default-linux/arm/package.use.mask,
+  default-linux/sh/package.use.mask:
+  Remove "x11-libs/gtk+ vim-syntax" package.use.mask entries as vim-syntax
+  got stabilized on arm/sh
+
+  28 Sep 2008; Mart Raudsepp <leio@gentoo.org> package.mask:
+  Remove libxml2-2.6.32-r1 mask - removed from tree
+
+  28 Sep 2008; Mart Raudsepp <leio@gentoo.org> package.mask:
+  Remove gnome-python-2.22.2 mask as 2.22.3 is in the tree instead by now
+
+  27 Sep 2008; Gilles Dartiguelongue <eva@gentoo.org> package.mask:
+  fix mask, it was meant to be xchat-gnome not xchat
+
+  27 Sep 2008; Gilles Dartiguelongue <eva@gentoo.org> package.mask:
+  create initial entry for GNOME 2.24 mask
+
+  27 Sep 2008; Saleem Abdulrasool <compnerd@gentoo.org> package.mask:
+  Fixup mask
+
+  26 Sep 2008; Raúl Porcel <armin76@gentoo.org> desc/linguas.desc:
+  Add new linguas
+
+  26 Sep 2008; Saleem Abdulrasool <compnerd@gentoo.org> package.mask:
+  Mask poppler and cairo for bumps
+
+  26 Sep 2008; Mike Pagano <mpagano@gentoo.org> package.mask:
+  Adding 2.6.27_rc kernel masks for bug #238489
 
   24 Sep 2008; Peter Alfredsen <loki_val@gentoo.org> package.mask:
   Let the fonts flow free, unmask dejavu testing version.
@@ -585,7 +662,7 @@
   removed soon, but the masks should stay for a while, to let users know
   where to get the data.
 
-  28 Jul 2008; Guy Marting <gmsoft@gentoo.org> profiles.desc: 
+  28 Jul 2008; Guy Marting <gmsoft@gentoo.org> profiles.desc:
   Got rid of hppa/2006.1 profile.
 
   28 Jul 2008; Michele Noberasco <s4t4n@gentoo.org> use.local.desc:
@@ -638,7 +715,7 @@
   Add various use flags for the new ophcrack-tables ebuild.
 
   21 Jul 2008; Markus Dittrich <markusle@gentoo.org> package.mask:
-  Added new upstream releases of sci-libs/*-atlas to package.mask 
+  Added new upstream releases of sci-libs/*-atlas to package.mask
   since they require a bit more testing.
 
   21 Jul 2008; Bernard Cafarelli <voyageur@gentoo.org> package.mask:
@@ -1802,7 +1879,7 @@
   hardened/linux/x86/2008.0/make.defaults:
   Fixing the "new style" hardened profile, to *not* enable either USE=ipv6,
   USE=nls or USE=unicode by default.
- 
+
   21 Apr 2008; Markus Ullmann <jokey@gentoo.org> package.mask:
   Mask gloox beta version
 
@@ -4609,7 +4686,7 @@
   Unmask mesa 6.5.3.
 
   01 Aug 2007; Sébastien Fabbro <bicatali@gentoo.org> use.local.desc:
-  sci-mathematics/freemat:arpack - Add sparse eigen value support via 
+  sci-mathematics/freemat:arpack - Add sparse eigen value support via
   arpack
   sci-mathematics/freemat:ffcall - Enables uses of ffcall
   sci-mathematics/freemat:umfpack - Add sparse solving via umfpack

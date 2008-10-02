@@ -1,6 +1,13 @@
 # ChangeLog for dev-java/java-config
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-java/java-config/ChangeLog,v 1.192 2008/07/02 17:36:27 betelgeuse Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-java/java-config/ChangeLog,v 1.194 2008/09/28 17:51:16 armin76 Exp $
+
+  28 Sep 2008; Raúl Porcel <armin76@gentoo.org>
+  java-config-2.1.6-r1.ebuild:
+  Re-add ~arm/~sh
+
+  27 Sep 2008; Raúl Porcel <armin76@gentoo.org> java-config-2.1.4.ebuild:
+  arm stable wrt #204252
 
 *java-config-2.1.6-r1 (02 Jul 2008)
 

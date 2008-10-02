@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-electronics/eagle/eagle-5.1.0.ebuild,v 1.1 2008/07/17 00:12:09 nixphoeni Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-electronics/eagle/eagle-5.1.0.ebuild,v 1.2 2008/10/02 02:43:17 nixphoeni Exp $
 
 inherit eutils
 
@@ -81,7 +81,11 @@ pkg_postinst() {
 	elog "Run \`env-update && source /etc/profile\` from within \${ROOT}"
 	elog "now to set up the correct paths."
 	elog "You must first run eagle as root to invoke product registration."
-	elog
-	elog "Please read /usr/share/doc/${PF}/UPDATE_${MY_LANG} if you are upgrading from 4.xx."
+	echo
+	ewarn "Due to some necessary changes in the data structure, once you edit"
+	ewarn "a file with version 5.x you will no longer be able to edit it"
+	ewarn "with versions prior to 5.0!"
+	ewarn
+	ewarn "Please read /usr/share/doc/${PF}/UPDATE_${MY_LANG} if you are upgrading from 4.xx."
 
 }

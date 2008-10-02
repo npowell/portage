@@ -1,6 +1,29 @@
 # ChangeLog for media-libs/netpbm
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/netpbm/ChangeLog,v 1.192 2008/08/16 01:40:39 vapier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/netpbm/ChangeLog,v 1.199 2008/10/01 09:02:35 armin76 Exp $
+
+  01 Oct 2008; Raúl Porcel <armin76@gentoo.org> netpbm-10.43.00.ebuild:
+  alpha/ia64 stable wrt #238699
+
+  29 Sep 2008; Jeroen Roovers <jer@gentoo.org> netpbm-10.43.00.ebuild:
+  Stable for HPPA (bug #238699).
+
+  28 Sep 2008; Markus Meier <maekke@gentoo.org> netpbm-10.43.00.ebuild:
+  amd64/x86 stable, bug #238699
+
+  25 Sep 2008; Brent Baude <ranger@gentoo.org> netpbm-10.43.00.ebuild:
+  stable ppc64, bug 238699
+
+  25 Sep 2008; Brent Baude <ranger@gentoo.org> netpbm-10.43.00.ebuild:
+  stable ppc, bug 238699
+
+  25 Sep 2008; Ferris McCormick <fmccor@gentoo.org> netpbm-10.43.00.ebuild:
+  Sparc stable --- Bug #238699 --- looks good.
+
+*netpbm-10.26.57 (25 Sep 2008)
+
+  25 Sep 2008; Mike Frysinger <vapier@gentoo.org> +netpbm-10.26.57.ebuild:
+  Version bump.
 
 *netpbm-10.43.00 (16 Aug 2008)
 

@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.9009 2008/09/25 14:27:35 trapni Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.9035 2008/10/02 04:28:35 wrobel Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked
@@ -29,17 +29,310 @@
 
 #--- END OF EXAMPLES ---
 
+# Gunnar Wrobel <wrobel@gentoo.org> 023 Oct 2008)
+# Masked due to security issues.
+# https://bugs.gentoo.org/show_bug.cgi?id=236518
+www-apps/dotproject
+
+# Tobias Heinlein <keytoaster@gentoo.org> (02 Oct 2008)
+# KDE 4.1.2 ebuilds from the kde overlay are going to enter the tree.
+# Masked to avoid problems on sync.
+=app-misc/strigi-0.5.11
+=app-office/akonadi-server-1.0.0
+=dev-libs/soprano-2.1
+=kde-base/akonadi-4.1.2
+=kde-base/akregator-4.1.2
+=kde-base/amor-4.1.2
+=kde-base/ark-4.1.2
+=kde-base/automoc-0.9.84
+=kde-base/blinken-4.1.2
+=kde-base/bovo-4.1.2
+=kde-base/cervisia-4.1.2
+=kde-base/dolphin-4.1.2
+=kde-base/dragonplayer-4.1.2
+=kde-base/drkonqi-4.1.2
+=kde-base/gwenview-4.1.2
+=kde-base/juk-4.1.2
+=kde-base/kaddressbook-4.1.2
+=kde-base/kalarm-4.1.2
+=kde-base/kalgebra-4.1.2
+=kde-base/kalzium-4.1.2
+=kde-base/kamera-4.1.2
+=kde-base/kanagram-4.1.2
+=kde-base/kappfinder-4.1.2
+=kde-base/kapptemplate-4.1.2
+=kde-base/kate-4.1.2
+=kde-base/katomic-4.1.2
+=kde-base/kbattleship-4.1.2
+=kde-base/kblackbox-4.1.2
+=kde-base/kblocks-4.1.2
+=kde-base/kbounce-4.1.2
+=kde-base/kbreakout-4.1.2
+=kde-base/kbruch-4.1.2
+=kde-base/kbugbuster-4.1.2
+=kde-base/kcachegrind-4.1.2
+=kde-base/kcalc-4.1.2
+=kde-base/kcharselect-4.1.2
+=kde-base/kcheckpass-4.1.2
+=kde-base/kcminit-4.1.2
+=kde-base/kcmshell-4.1.2
+=kde-base/kcolorchooser-4.1.2
+=kde-base/kcontrol-4.1.2
+=kde-base/kcron-4.1.2
+=kde-base/kdeaccessibility-colorschemes-4.1.2
+=kde-base/kdeaccessibility-iconthemes-4.1.2
+=kde-base/kdeaccessibility-meta-4.1.2
+=kde-base/kdeaccounts-plugin-4.1.2
+=kde-base/kdeadmin-meta-4.1.2
+=kde-base/kdeartwork-colorschemes-4.1.2
+=kde-base/kdeartwork-emoticons-4.1.2
+=kde-base/kdeartwork-icewm-themes-4.1.2
+=kde-base/kdeartwork-iconthemes-4.1.2
+=kde-base/kdeartwork-kscreensaver-4.1.2
+=kde-base/kdeartwork-kworldclock-4.1.2
+=kde-base/kdeartwork-meta-4.1.2
+=kde-base/kdeartwork-sounds-4.1.2
+=kde-base/kdeartwork-styles-4.1.2
+=kde-base/kdeartwork-wallpapers-4.1.2
+=kde-base/kdebase-cursors-4.1.2
+=kde-base/kdebase-data-4.1.2
+=kde-base/kdebase-kioslaves-4.1.2
+=kde-base/kdebase-meta-4.1.2
+=kde-base/kdebase-startkde-4.1.2
+=kde-base/kdebugdialog-4.1.2
+=kde-base/kdeedu-meta-4.1.2
+=kde-base/kdegames-meta-4.1.2
+=kde-base/kdegraphics-meta-4.1.2
+=kde-base/kdegraphics-strigi-analyzer-4.1.2
+=kde-base/kde-l10n-4.1.2
+=kde-base/kdelibs-4.1.2
+=kde-base/kdemaildir-4.1.2
+=kde-base/kde-menu-icons-4.1.2
+=kde-base/kde-menu-4.1.2
+=kde-base/kde-meta-4.1.2
+=kde-base/kdemultimedia-kioslaves-4.1.2
+=kde-base/kdemultimedia-meta-4.1.2
+=kde-base/kdenetwork-filesharing-4.1.2
+=kde-base/kdenetwork-meta-4.1.2
+=kde-base/kdepasswd-4.1.2
+=kde-base/kdepim-icons-4.1.2
+=kde-base/kdepim-kresources-4.1.2
+=kde-base/kdepimlibs-4.1.2
+=kde-base/kdepim-meta-4.1.2
+=kde-base/kdepim-strigi-analyzer-4.1.2
+=kde-base/kdepim-wizards-4.1.2
+=kde-base/kdeplasma-addons-4.1.2
+=kde-base/kdesdk-kioslaves-4.1.2
+=kde-base/kdesdk-meta-4.1.2
+=kde-base/kdesdk-misc-4.1.2
+=kde-base/kdesdk-scripts-4.1.2
+=kde-base/kdesdk-strigi-analyzer-4.1.2
+=kde-base/kdessh-4.1.2
+=kde-base/kdesu-4.1.2
+=kde-base/kdetoys-meta-4.1.2
+=kde-base/kdeutils-meta-4.1.2
+=kde-base/kde-wallpapers-4.1.2
+=kde-base/kdf-4.1.2
+=kde-base/kdialog-4.1.2
+=kde-base/kdiamond-4.1.2
+=kde-base/kdm-4.1.2
+=kde-base/kdnssd-4.1.2
+=kde-base/keditbookmarks-4.1.2
+=kde-base/kfile-4.1.2
+=kde-base/kfind-4.1.2
+=kde-base/kfloppy-4.1.2
+=kde-base/kfourinline-4.1.2
+=kde-base/kgamma-4.1.2
+=kde-base/kgeography-4.1.2
+=kde-base/kget-4.1.2
+=kde-base/kgoldrunner-4.1.2
+=kde-base/kgpg-4.1.2
+=kde-base/khangman-4.1.2
+=kde-base/khelpcenter-4.1.2
+=kde-base/khotkeys-4.1.2
+=kde-base/kiconfinder-4.1.2
+=kde-base/kig-4.1.2
+=kde-base/kinfocenter-4.1.2
+=kde-base/kioclient-4.1.2
+=kde-base/kiriki-4.1.2
+=kde-base/kitchensync-4.1.2
+=kde-base/kiten-4.1.2
+=kde-base/kjots-4.1.2
+=kde-base/kjumpingcube-4.1.2
+=kde-base/kleopatra-4.1.2
+=kde-base/klettres-4.1.2
+=kde-base/klines-4.1.2
+=kde-base/klipper-4.1.2
+=kde-base/kmag-4.1.2
+=kde-base/kmahjongg-4.1.2
+=kde-base/kmailcvt-4.1.2
+=kde-base/kmail-4.1.2
+=kde-base/kmenuedit-4.1.2
+=kde-base/kmimetypefinder-4.1.2
+=kde-base/kmines-4.1.2
+=kde-base/kmix-4.1.2
+=kde-base/kmousetool-4.1.2
+=kde-base/kmouth-4.1.2
+=kde-base/kmplot-4.1.2
+=kde-base/knetattach-4.1.2
+=kde-base/knetwalk-4.1.2
+=kde-base/knetworkconf-4.1.2
+=kde-base/knewsticker-4.1.2
+=kde-base/knewstuff-4.1.2
+=kde-base/knode-4.1.2
+=kde-base/knotes-4.1.2
+=kde-base/knotify-4.1.2
+=kde-base/kode-4.1.2
+=kde-base/kolf-4.1.2
+=kde-base/kollision-4.1.2
+=kde-base/kolourpaint-4.1.2
+=kde-base/kompare-4.1.2
+=kde-base/konqueror-4.1.2
+=kde-base/konquest-4.1.2
+=kde-base/konsole-4.1.2
+=kde-base/kontactinterfaces-4.1.2
+=kde-base/kontact-4.1.2
+=kde-base/kopete-4.1.2
+=kde-base/korganizer-4.1.2
+=kde-base/kpasswdserver-4.1.2
+=kde-base/kpat-4.1.2
+=kde-base/kpercentage-4.1.2
+=kde-base/kppp-4.1.2
+=kde-base/kquitapp-4.1.2
+=kde-base/krdc-4.1.2
+=kde-base/kreadconfig-4.1.2
+=kde-base/kreversi-4.1.2
+=kde-base/krfb-4.1.2
+=kde-base/kruler-4.1.2
+=kde-base/krunner-4.1.2
+=kde-base/ksame-4.1.2
+=kde-base/kscd-4.1.2
+=kde-base/kscreensaver-4.1.2
+=kde-base/kshisen-4.1.2
+=kde-base/ksirk-4.1.2
+=kde-base/ksmserver-4.1.2
+=kde-base/ksnapshot-4.1.2
+=kde-base/kspaceduel-4.1.2
+=kde-base/ksplash-4.1.2
+=kde-base/ksquares-4.1.2
+=kde-base/kstars-4.1.2
+=kde-base/kstart-4.1.2
+=kde-base/kstartperf-4.1.2
+=kde-base/kstartupconfig-4.1.2
+=kde-base/kstyles-4.1.2
+=kde-base/ksudoku-4.1.2
+=kde-base/ksysguard-4.1.2
+=kde-base/ksystemlog-4.1.2
+=kde-base/ksystraycmd-4.1.2
+=kde-base/kteatime-4.1.2
+=kde-base/ktimer-4.1.2
+=kde-base/ktimetracker-4.1.2
+=kde-base/ktimezoned-4.1.2
+=kde-base/ktnef-4.1.2
+=kde-base/ktouch-4.1.2
+=kde-base/ktraderclient-4.1.2
+=kde-base/kttsd-4.1.2
+=kde-base/ktuberling-4.1.2
+=kde-base/kturtle-4.1.2
+=kde-base/ktux-4.1.2
+=kde-base/kubrick-4.1.2
+=kde-base/kuiserver-4.1.2
+=kde-base/kuiviewer-4.1.2
+=kde-base/kurifilter-plugins-4.1.2
+=kde-base/kuser-4.1.2
+=kde-base/kwallet-4.1.2
+=kde-base/kweather-4.1.2
+=kde-base/kwin-4.1.2
+=kde-base/kwordquiz-4.1.2
+=kde-base/kwrite-4.1.2
+=kde-base/libkcddb-4.1.2
+=kde-base/libkcompactdisc-4.1.2
+=kde-base/libkdcraw-4.1.2
+=kde-base/libkdeedu-4.1.2
+=kde-base/libkdegames-4.1.2
+=kde-base/libkdepim-4.1.2
+=kde-base/libkexiv2-4.1.2
+=kde-base/libkholidays-4.1.2
+=kde-base/libkipi-4.1.2
+=kde-base/libkleo-4.1.2
+=kde-base/libkmahjongg-4.1.2
+=kde-base/libkonq-4.1.2
+=kde-base/libkpgp-4.1.2
+=kde-base/libksane-4.1.2
+=kde-base/libksieve-4.1.2
+=kde-base/libkworkspace-4.1.2
+=kde-base/libplasma-4.1.2
+=kde-base/libtaskmanager-4.1.2
+=kde-base/lilo-config-4.1.2
+=kde-base/lokalize-4.1.2
+=kde-base/lskat-4.1.2
+=kde-base/marble-4.1.2
+=kde-base/mimelib-4.1.2
+=kde-base/nepomuk-4.1.2
+=kde-base/nsplugins-4.1.2
+=kde-base/okteta-4.1.2
+=kde-base/okular-4.1.2
+=kde-base/parley-4.1.2
+=kde-base/phonon-xine-4.1.2
+=kde-base/plasma-apps-4.1.2
+=kde-base/plasma-workspace-4.1.2
+=kde-base/renamedlg-plugins-4.1.2
+=kde-base/solid-hardware-4.1.2
+=kde-base/solid-4.1.2
+=kde-base/soliduiserver-4.1.2
+=kde-base/step-4.1.2
+=kde-base/superkaramba-4.1.2
+=kde-base/svgpart-4.1.2
+=kde-base/sweeper-4.1.2
+=kde-base/systemsettings-4.1.2
+=kde-base/umbrello-4.1.2
+=kde-misc/kdesudo-3.1
+=kde-misc/krename-3.9.1
+=kde-misc/krusader-2.0.0_beta1
+=kde-misc/lancelot-menu-1.0.3
+=kde-misc/plasmoids-0.2
+=kde-misc/powerdevil-1.2.0
+=kde-misc/yakuake-2.9.3
+=media-gfx/digikam-0.10.0_beta2-r1
+=media-sound/amarok-1.90
+=media-sound/phonon-4.2.0
+=media-video/kmplayer-0.11.0_rc4
+=media-video/mplayerthumbs-1.1
+=net-misc/smb4k-0.10.0
+=net-p2p/ktorrent-3.1.3
+=net-wireless/kdebluetooth4-0.2
+=x11-themes/gtk-engines-qt-1.1
+=x11-themes/plasma-themes-0.2
+
+# Ben de Groot <yngwin@gentoo.org> (01 Oct 2008)
+# Masked for brokenness. Last release 4 years ago. There are plenty
+# alternatives. Pending removal in 30 days. Bug 226007
+x11-misc/obpager
+
+# Lennart Kolmodin <kolmodin@gentoo.org> (29 Sep 2008)
+# Masked for testing.
+>=dev-util/darcs-2.1
+
+# Petteri Räty <betelgeuse@gentoo.org> (29 Sep 2008)
+# Live ebuilds are more appropriate to overlays.
+# See https://bugs.gentoo.org/show_bug.cgi?id=227629
+# for more details.
+dev-lisp/abcl-cvs
+
+# Gilles Dartiguelongue <eva@gentoo.org> (27 Sep 2008)
+# GNOME 2.24 mask being (and related)
+>=net-irc/xchat-gnome-0.24.0
+# GNOME 2.24 mask end
+
+# Saleem Abdulrasool <compnerd@gentoo.org> (26 Sep 2008)
+# temporarily mask to prevent things from breaking
+>=x11-libs/pango-1.22.0
+>=app-text/poppler-0.9.2
+>=app-text/poppler-bindings-0.9.2
+
 # Christian Parpart <trapni@gentoo.org> (25 Sep 2008)
 # for testing/experienced users only
 >=sys-fs/zfs-fuse-9999
-
-# Mart Raudsepp <leio@gentoo.org> (25 Sep 2008)
-# Temporarily masked for build testing library users first
-# and to get gtk+ and gail to ~arch at the same time for
-# a clean migration on upgrade
->=dev-libs/glib-2.18
->=x11-libs/gtk+-2.14
->=gnome-base/gail-1000
 
 # Robin H. Johnson <robbat2@gentoo.org> (25 Sep 2008)
 # Mainly intended for BSD world. Has multiple interface support.
@@ -55,6 +348,7 @@
 # candidate kernel could break network cards
 # Unmask when it is fixed. (see bug #238489)
 >=sys-kernel/git-sources-2.6.27_rc
+>=sys-kernel/vanilla-sources-2.6.27_rc
 
 # Joe Peterson <lavajoe@gentoo.org> (23 Sep 2008)
 # Masked for removal in 30 days (see bug #238442)
@@ -77,12 +371,6 @@ media-sound/slimserver
 # Masked for removal in 30 days (see bug #238442)
 # Replaced by package: media-sound/squeezecenter
 media-sound/slimserver
-
-# Mart Raudsepp <leio@gentoo.org> (22 Sep 2008)
-# New version in which the only change compared to previous
-# version breaks build on GNOME-2.22 systems
-=dev-python/gnome-python-base-2.22.2
-=dev-python/libgnomecanvas-python-2.22.2
 
 # Alin Năstac <mrness@gentoo.org> (21 Sep 2008)
 # Breaks L2TP connections (see bug 237132)
@@ -577,11 +865,6 @@ www-apps/xrms
 # http://my.opera.com/desktopteam/blog/
 =www-client/opera-9.60*
 
-# Mart Raudsepp <leio@gentoo.org> (23 Aug 2008)
-# Breaks gnome-base/gdm greeter and therefore graphical
-# login via gdm, bug 235529
-=dev-libs/libxml2-2.6.32-r1
-
 # Andreas Proschofsky <suka@gentoo.org> (22 Aug 2008)
 # Beta release, still got some issues
 >=app-office/openoffice-3.0.0_beta2
@@ -641,10 +924,6 @@ media-gfx/gimp-freetype
 # Masked for testing
 =sys-libs/db-4.7*
 
-# Doug Goldstein <cardoe@gentoo.org> (12 Aug 2008)
-# development versions of cairo
->=x11-libs/cairo-1.7.0
-
 # Jesus Rivero <neurogeek@gentoo.org> (11 Aug 2008)
 # Masked for removal in 30 days. These packages are
 # unmaintained/deprecated and break stable tree.
@@ -700,12 +979,6 @@ sys-auth/pam_sha512
 # buggy, causes browser crashes on certain sites (www.nvidia.com), also see
 # bug #233484
 =net-www/nspluginwrapper-1.1.0
-
-# Doug Goldstein <cardoe@gentoo.org> (30 Jul 2008)
-# mask development version
->=media-libs/swfdec-0.7.0
->=net-www/swfdec-mozilla-0.7.0
->=gnome-extra/swfdec-gnome-2.23
 
 # Chris Gianelloni <wolf31o2@gentoo.org> (28 Jul 2008)
 # These are masked for removal.  Please leave this mask in place, even after the
@@ -801,11 +1074,6 @@ app-doc/linuxfromscratch-text
 # Jeroen Roovers <jer@gentoo.org> (17 Jun 2008)
 # Masked for security bug #226079.
 <=www-client/opera-9.27
-
-# Mike Auty <ikelos@gentoo.org> (15 Jun 2008)
-# (#224637) No longer supported upstream and
-# subject to multiple GLSAs.  Masked for removal in 30 days.
-=app-emulation/vmware-workstation-4.5.3.19414-r7
 
 # Krzysiek Pawlik <nelchael@gentoo.org> (12 Jun 2008)
 # Testing new version.
@@ -933,14 +1201,6 @@ dev-lisp/stumpwm-cvs
 # Ulrich Mueller <ulm@gentoo.org> (27 Apr 2008)
 # CVS snapshot, bug 219449.
 ~app-emacs/navi2ch-1.7.5_p20080325
-
-# Mike Auty <ikelos@gentoo.org> (26 Apr 2008)
-# Masking all app-emulation/vmware-workstation-tools packages
-# in favour of app-emulation/open-vm-tools
-=app-emulation/vmware-workstation-tools-4.5.3-r1
-=app-emulation/vmware-workstation-tools-5.5.1-r2
-=app-emulation/vmware-workstation-tools-5.5.2
-=app-emulation/vmware-workstation-tools-5.5.3
 
 # Markus Ullmann <jokey@gentoo.org> (21 Apr 2008)
 # mask beta version
@@ -1103,6 +1363,7 @@ sys-apps/mindi-busybox
 # Masked for Bug 173467
 =dev-lang/tcl-8.5*
 =dev-lang/tk-8.5*
+>=net-im/coccinella-0.96.10
 
 # Tiziano Müller <dev-zero@gentoo.org> (8 Mar 2008)
 # Mask pre-version

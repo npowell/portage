@@ -1,6 +1,23 @@
 # ChangeLog for app-crypt/qca
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-crypt/qca/ChangeLog,v 1.53 2008/09/23 12:09:39 fmccor Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-crypt/qca/ChangeLog,v 1.58 2008/09/30 11:19:43 armin76 Exp $
+
+  30 Sep 2008; Raúl Porcel <armin76@gentoo.org> qca-1.0-r3.ebuild:
+  alpha/ia64 stable wrt #238000
+
+  29 Sep 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  qca-1.0-r3.ebuild:
+  Fixed RDEPEND - thanks to Arfrever Frehtes Taifersar Arahesis (Arfrever).
+  Fixes bug 239057.
+
+  28 Sep 2008; Markus Meier <maekke@gentoo.org> qca-1.0-r3.ebuild:
+  x86 stable, bug #238000
+
+  27 Sep 2008; nixnut <nixnut@gentoo.org> qca-1.0-r3.ebuild:
+  Stable on ppc wrt bug 238000
+
+  26 Sep 2008; Jeremy Olexa <darkside@gentoo.org> qca-1.0-r3.ebuild:
+  amd64 stable, bug #238000
 
   23 Sep 2008; Ferris McCormick <fmccor@gentoo.org> qca-1.0-r3.ebuild:
   Sparc stable, Bug #238000.

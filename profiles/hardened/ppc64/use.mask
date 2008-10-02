@@ -2,6 +2,10 @@
 # that should not be used on PPC64
 # Tom Gall <tgall@gentoo.org> manages this list
 
+# 01 Oct 2008	Brent Baude <ranger@gentoo.org>
+# Masking battery USE for bug 238770
+battery
+
 # 02 Apr 2008  Mart Raudsepp <leio@gentoo.org>
 # net-misc/networkmanager not keyworded
 networkmanager
@@ -68,6 +72,7 @@ seamonkey
 # Modular X: mask for architectures on which they aren't available
 video_cards_apm
 video_cards_ark
+video_cards_ast
 video_cards_chips
 video_cards_cirrus
 video_cards_cyrix

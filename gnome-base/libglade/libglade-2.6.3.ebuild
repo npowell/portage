@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/gnome-base/libglade/libglade-2.6.3.ebuild,v 1.1 2008/08/19 08:28:51 leio Exp $
+# $Header: /var/cvsroot/gentoo-x86/gnome-base/libglade/libglade-2.6.3.ebuild,v 1.5 2008/10/02 11:08:59 armin76 Exp $
 
 # FIXME : catalog stuff
 inherit eutils gnome2
@@ -10,7 +10,7 @@ HOMEPAGE="http://www.gnome.org/"
 
 LICENSE="LGPL-2"
 SLOT="2.0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sh ~sparc ~x86 ~x86-fbsd"
+KEYWORDS="alpha amd64 ~arm hppa ia64 ~mips ~ppc ~ppc64 ~sh sparc x86 ~x86-fbsd"
 IUSE="doc"
 
 RDEPEND=">=dev-libs/glib-2.10
@@ -28,6 +28,9 @@ src_compile() {
 	# patch to stop make install installing the xml catalog
 	# because we do it ourselves in postinst()
 	epatch "${FILESDIR}"/Makefile.in.am-2.4.2-xmlcatalog.patch
+
+	# patch to not throw a warning with gtk+-2.14 during tests, as it triggers abort
+	epatch "${FILESDIR}/${P}-fix_tests-page_size.patch"
 
 	gnome2_src_compile
 }

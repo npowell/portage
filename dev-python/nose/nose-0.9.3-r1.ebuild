@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/nose/nose-0.9.3-r1.ebuild,v 1.4 2008/08/01 17:59:41 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/nose/nose-0.9.3-r1.ebuild,v 1.6 2008/10/01 09:13:49 armin76 Exp $
 
 NEED_PYTHON=2.2
 

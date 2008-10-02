@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/fontconfig/fontconfig-2.6.0-r2.ebuild,v 1.2 2008/09/21 02:45:31 solar Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/fontconfig/fontconfig-2.6.0-r2.ebuild,v 1.9 2008/10/02 14:58:37 loki_val Exp $
 
 WANT_AUTOMAKE=1.9
 
@@ -12,7 +12,7 @@ SRC_URI="http://fontconfig.org/release/${P}.tar.gz"
 
 LICENSE="fontconfig"
 SLOT="1.0"
-KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~sparc-fbsd ~x86 ~x86-fbsd"
+KEYWORDS="alpha amd64 arm hppa ia64 ~m68k ~mips ~ppc ppc64 ~s390 sh sparc ~sparc-fbsd x86 ~x86-fbsd"
 IUSE="doc"
 
 # Purposefully dropped the xml USE flag and libxml2 support. Having this is
@@ -26,8 +26,20 @@ RDEPEND=">=media-libs/freetype-2.1.4
 	>=dev-libs/expat-1.95.3"
 DEPEND="${RDEPEND}
 	dev-util/pkgconfig
-	doc? ( app-text/docbook-sgml-utils )"
+	doc? (	app-text/docbook-sgml-utils
+		=app-text/docbook-sgml-dtd-3.1*	)"
 PDEPEND="app-admin/eselect-fontconfig"
+
+pkg_setup() {
+	#To get docbook2pdf
+	if use doc && !	{	built_with_use --missing false app-text/docbook-sgml-utils jadetex \
+				|| \
+				built_with_use --missing false app-text/docbook-sgml-utils tetex;
+			}
+	then
+		die "For this package to be built with the doc use flag, app-text/docbook-sgml-utils must be built with the jadetex use flag"
+	fi
+}
 
 src_unpack() {
 	unpack ${A}
@@ -75,7 +87,7 @@ src_install() {
 
 	if use doc; then
 		doman doc/Fc*.3
-		dohtml doc/fontconfig-devel.html doc
+		dohtml doc/fontconfig-devel.html
 		dodoc doc/fontconfig-devel.{txt,pdf}
 	fi
 

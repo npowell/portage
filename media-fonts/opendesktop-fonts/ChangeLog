@@ -1,6 +1,22 @@
 # ChangeLog for media-fonts/opendesktop-fonts
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-fonts/opendesktop-fonts/ChangeLog,v 1.2 2008/05/30 20:49:46 swegener Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-fonts/opendesktop-fonts/ChangeLog,v 1.6 2008/09/30 16:44:48 jer Exp $
+
+  30 Sep 2008; Jeroen Roovers <jer@gentoo.org>
+  opendesktop-fonts-1.4.2.ebuild:
+  Stable for HPPA (bug #238608).
+
+  28 Sep 2008; Markus Meier <maekke@gentoo.org>
+  opendesktop-fonts-1.4.2.ebuild:
+  x86 stable, bug #238608
+
+  27 Sep 2008; Jeremy Olexa <darkside@gentoo.org>
+  opendesktop-fonts-1.4.2.ebuild:
+  amd64 stable, bug #238608
+
+  25 Sep 2008; Brent Baude <ranger@gentoo.org>
+  opendesktop-fonts-1.4.2.ebuild:
+  stable ppc, bug 238608
 
 *opendesktop-fonts-1.4.2 (30 May 2008)
 

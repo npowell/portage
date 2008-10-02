@@ -1,6 +1,29 @@
 # ChangeLog for x11-libs/gtk+
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/gtk+/ChangeLog,v 1.398 2008/09/25 13:59:48 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/gtk+/ChangeLog,v 1.401 2008/10/01 21:49:03 remi Exp $
+
+*gtk+-2.14.3-r2 (01 Oct 2008)
+
+  01 Oct 2008; Rémi Cardona <remi@gentoo.org>
+  +files/gtk+-2.14.3-fix-combining-broken-diacritics.patch,
+  +files/gtk+-2.14.3-reorder-compose-key-table-order.patch,
+  +gtk+-2.14.3-r2.ebuild:
+  fix broken diacritics on intl keyboards (see gnome bug #554192)
+
+*gtk+-2.14.3-r1 (29 Sep 2008)
+
+  29 Sep 2008; Mart Raudsepp <leio@gentoo.org>
+  +files/gtk+-2.14.3-dont-unset-filechooser-filter-after-first-use.patch,
+  +files/gtk+-2.14.3-fix-filesystem-double-free.patch,
+  +files/gtk+-2.14.3-fix-lpr_write-double-free.patch,
+  +files/gtk+-2.14.3-fix-password-dialog-on-mount.patch,
+  +files/gtk+-2.14.3-notebook-tab-draw-correctness.patch,
+  -gtk+-2.14.3.ebuild, +gtk+-2.14.3-r1.ebuild:
+  Add a few fixes from upstream unreleased code
+
+  28 Sep 2008; Mart Raudsepp <leio@gentoo.org>
+  +files/gtk+-2.14.3-limit-gtksignal-includes.patch, gtk+-2.14.3.ebuild:
+  Adjust a header so that packages using GtkCList will remain buildable
 
   25 Sep 2008; Jeroen Roovers <jer@gentoo.org> gtk+-2.12.11.ebuild:
   Stable for HPPA (bug #236971).

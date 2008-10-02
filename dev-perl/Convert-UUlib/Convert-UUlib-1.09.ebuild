@@ -1,12 +1,11 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-perl/Convert-UUlib/Convert-UUlib-1.09.ebuild,v 1.7 2007/11/10 12:22:35 drac Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-perl/Convert-UUlib/Convert-UUlib-1.09.ebuild,v 1.8 2008/09/30 12:13:55 tove Exp $
 
+MODULE_AUTHOR=MLEHMANN
 inherit perl-module
 
 DESCRIPTION="A Perl interface to the uulib library"
-HOMEPAGE="http://www.cpan.org/modules/by-module/Convert/MLEHMANN/${P}.readme"
-SRC_URI="mirror://cpan/authors/id/M/ML/MLEHMANN/${P}.tar.gz"
 
 LICENSE="Artistic GPL-2"
 SLOT="0"

@@ -1,6 +1,8 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-firewall/fwbuilder/fwbuilder-2.1.18.ebuild,v 1.1 2008/06/09 01:55:32 darkside Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-firewall/fwbuilder/fwbuilder-2.1.18.ebuild,v 1.3 2008/10/01 17:31:34 betelgeuse Exp $
+
+EAPI=2
 
 inherit eutils qt3 autotools
 
@@ -15,18 +17,10 @@ IUSE="nls"
 
 DEPEND="~net-libs/libfwbuilder-${PV}
 	nls? ( >=sys-devel/gettext-0.11.4 )
-	~dev-java/antlr-2.7.7
+	~dev-java/antlr-2.7.7[cxx]
 	>=dev-libs/libxslt-1.0.7"
 
-pkg_setup() {
-	if ! built_with_use dev-java/antlr cxx; then
-		eerror "dev-java/antlr must be compiled with cxx."
-		eerror "recompile it with that use flag set."
-		die "Need dev-java/antlr compiled with the cxx use flag set"
-	fi
-}
-
-src_compile() {
+src_configure() {
 	# we'll use our eqmake instead of bundled script to process qmake files
 	sed -i -e 's:^. ./runqmake.sh$:echo:' configure \
 		|| die "sed configure failed"
@@ -47,8 +41,6 @@ src_compile() {
 			src/pf src/ipf src/ipfw src/parsers; do
 		eqmake3 "${subdir}/${subdir##*/}.pro" -o ${subdir}/Makefile
 	done
-
-	emake || die "make failed"
 }
 
 src_install() {

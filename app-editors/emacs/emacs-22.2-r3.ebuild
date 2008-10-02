@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-editors/emacs/emacs-22.2-r3.ebuild,v 1.8 2008/09/23 20:21:48 opfer Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-editors/emacs/emacs-22.2-r3.ebuild,v 1.10 2008/09/26 06:12:01 armin76 Exp $
 
 inherit autotools elisp-common eutils flag-o-matic
 
@@ -10,7 +10,7 @@ SRC_URI="mirror://gnu/emacs/${P}.tar.gz"
 
 LICENSE="GPL-3 FDL-1.2 BSD"
 SLOT="22"
-KEYWORDS="alpha amd64 arm hppa ia64 ppc ppc64 s390 ~sh sparc ~sparc-fbsd x86 ~x86-fbsd"
+KEYWORDS="alpha amd64 arm hppa ia64 ppc ppc64 s390 sh sparc ~sparc-fbsd x86 ~x86-fbsd"
 IUSE="alsa gif gtk gzip-el hesiod jpeg kerberos motif png spell sound source tiff toolkit-scroll-bars X Xaw3d xpm"
 RESTRICT="strip"
 
@@ -62,6 +62,8 @@ src_unpack() {
 	epatch "${FILESDIR}/${P}-fast-lock.patch"
 	# fix search path for interactive python (bug 236498)
 	epatch "${FILESDIR}/${P}-python-nopwd.patch"
+	# SuperH support (bug 238210)
+	epatch "${FILESDIR}/${P}-sh.patch"
 
 	sed -i -e "s:/usr/lib/crtbegin.o:$(`tc-getCC` -print-file-name=crtbegin.o):g" \
 		-e "s:/usr/lib/crtend.o:$(`tc-getCC` -print-file-name=crtend.o):g" \

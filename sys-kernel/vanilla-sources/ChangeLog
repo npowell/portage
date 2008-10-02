@@ -1,6 +1,22 @@
 # ChangeLog for sys-kernel/vanilla-sources
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/vanilla-sources/ChangeLog,v 1.527 2008/09/22 08:40:59 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/vanilla-sources/ChangeLog,v 1.530 2008/09/30 00:24:14 mpagano Exp $
+
+*vanilla-sources-2.6.27_rc8 (30 Sep 2008)
+
+  30 Sep 2008; Mike Pagano <mpagano@gentoo.org>
+  +vanilla-sources-2.6.27_rc8.ebuild:
+  Version bump
+
+  29 Sep 2008; Jeroen Roovers <jer@gentoo.org>
+  vanilla-sources-2.6.25.14.ebuild:
+  Stable for HPPA too.
+
+  26 Sep 2008; Michael Pagano <mpagano@gentoo.org>
+  vanilla-sources-2.6.27_rc2.ebuild, vanilla-sources-2.6.27_rc3.ebuild,
+  vanilla-sources-2.6.27_rc4.ebuild, vanilla-sources-2.6.27_rc5.ebuild,
+  vanilla-sources-2.6.27_rc6.ebuild, vanilla-sources-2.6.27_rc7.ebuild:
+  Adding warning for 2.6.27_rc* ebuilds due to e1000e bug #238489
 
 *vanilla-sources-2.6.27_rc7 (22 Sep 2008)
 
@@ -12,6 +28,10 @@
 
   10 Sep 2008; Raúl Porcel <armin76@gentoo.org>
   +vanilla-sources-2.6.27_rc6.ebuild:
+  Version bump
+
+  08 Sep 2008; Mike Pagano <mpagano@gentoo.org>
+  vanilla-sources-2.6.26.5.ebuild:
   Version bump
 
 *vanilla-sources-2.4.36.7 (08 Sep 2008)
