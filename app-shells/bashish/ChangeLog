@@ -1,6 +1,19 @@
 # ChangeLog for app-shells/bashish
 # Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-shells/bashish/ChangeLog,v 1.13 2008/07/21 05:26:48 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-shells/bashish/ChangeLog,v 1.17 2008/09/30 11:38:18 armin76 Exp $
+
+  30 Sep 2008; Raúl Porcel <armin76@gentoo.org> bashish-2.0.7.ebuild:
+  alpha/ia64/x86 stable wrt #238944
+
+  30 Sep 2008; Jeremy Olexa <darkside@gentoo.org> bashish-2.0.7.ebuild:
+  amd64 stable. bug #238944. Thanks to José Valentín Gutiérrez Boquete
+  (amd64 AT) for testing
+
+  29 Sep 2008; Friedrich Oslage <bluebird@gentoo.org> bashish-2.0.7.ebuild:
+  Stable on sparc, bug #238944
+
+  28 Sep 2008; Jeroen Roovers <jer@gentoo.org> bashish-2.0.7.ebuild:
+  Stable for HPPA (bug #238944).
 
 *bashish-2.0.7 (21 Jul 2008)
 

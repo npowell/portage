@@ -1,6 +1,31 @@
 # ChangeLog for net-misc/dhcpcd
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/dhcpcd/ChangeLog,v 1.207 2008/09/25 08:34:17 robbat2 Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/dhcpcd/ChangeLog,v 1.214 2008/10/02 11:55:16 fmccor Exp $
+
+  02 Oct 2008; Ferris McCormick <fmccor@gentoo.org> dhcpcd-4.0.2.ebuild:
+  Sparc stable --- Bug #238731 --- Immediate stable because of missed problems
+  with previous.
+
+*dhcpcd-4.0.2 (01 Oct 2008)
+
+  01 Oct 2008; Robin H. Johnson <robbat2@gentoo.org> +dhcpcd-4.0.2.ebuild:
+  Version bump to solve bug #239098 with no file generation with compat
+  mode.
+
+  01 Oct 2008; Brent Baude <ranger@gentoo.org> dhcpcd-4.0.1-r1.ebuild:
+  stable ppc64, bug 238731
+
+  29 Sep 2008; Ferris McCormick <fmccor@gentoo.org> dhcpcd-4.0.1-r1.ebuild:
+  Sparc stable, Bug #238731.
+
+  28 Sep 2008; Jeroen Roovers <jer@gentoo.org> dhcpcd-4.0.1-r1.ebuild:
+  Stable for HPPA (bug #238731).
+
+  28 Sep 2008; Dawid Węgliński <cla@gentoo.org> dhcpcd-4.0.1-r1.ebuild:
+  Stable on amd64/x86 (bug #238731)
+
+  27 Sep 2008; nixnut <nixnut@gentoo.org> dhcpcd-4.0.1-r1.ebuild:
+  Stable on ppc wrt bug 238731
 
 *dhcpcd-4.99.2 (25 Sep 2008)
 

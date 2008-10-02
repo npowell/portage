@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/scipy/scipy-0.6.0-r4.ebuild,v 1.5 2008/07/03 12:13:23 gentoofan23 Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/scipy/scipy-0.6.0-r4.ebuild,v 1.7 2008/09/28 21:39:43 bicatali Exp $
 
 EAPI=1
 NEED_PYTHON=2.3
@@ -59,7 +59,7 @@ scipy_fortran_setup() {
 
 	# when fortran flags are set, pic is removed.
 	use amd64 && [[ -n ${FFLAGS} ]] && FFLAGS="${FFLAGS} -fPIC"
-	export SCIPY_FCONFIG="config_fc --fcompiler=${fc}"
+	export SCIPY_FCONFIG="config_fc --fcompiler=${fc} --noopt --noarch"
 }
 
 pkg_setup() {
@@ -90,14 +90,29 @@ src_unpack() {
 		library_dirs = /usr/$(get_libdir)
 		include_dirs = /usr/include
 		[atlas]
-		include_dirs = $(pkg-config --cflags-only-I lapack \
-			| sed -e 's/^-I//' -e 's/ -I/:/g')
-		library_dirs = $(pkg-config --libs-only-L lapack \
-			| sed -e 's/^-L//' -e 's/ -L/:/g')
-		atlas_libs = $(pkg-config --libs-only-l blas \
-			| sed -e 's/^-l//' -e 's/ -l/, /g' -e 's/,.pthread//g')
-		lapack_libs = $(pkg-config --libs-only-l lapack \
-			| sed -e 's/^-l//' -e 's/ -l/, /g' -e 's/,.pthread//g')
+		include_dirs = $(pkg-config --cflags-only-I \
+			cblas lapack | sed -e 's/^-I//' -e 's/ -I/:/g')
+		library_dirs = $(pkg-config --libs-only-L \
+			cblas lapack | sed -e \
+			's/^-L//' -e 's/ -L/:/g' -e 's/ //g'):/usr/$(get_libdir)
+		atlas_libs = $(pkg-config --libs-only-l \
+			cblas | sed -e 's/^-l//' -e 's/ -l/, /g' -e 's/,.pthread//g')
+		lapack_libs = $(pkg-config --libs-only-l \
+			lapack | sed -e 's/^-l//' -e 's/ -l/, /g' -e 's/,.pthread//g')
+		[blas_opt]
+		include_dirs = $(pkg-config --cflags-only-I \
+			cblas | sed -e 's/^-I//' -e 's/ -I/:/g')
+		library_dirs = $(pkg-config --libs-only-L \
+			cblas | sed -e 's/^-L//' -e 's/ -L/:/g' \
+			-e 's/ //g'):/usr/$(get_libdir)
+		libraries = $(pkg-config --libs-only-l \
+			cblas | sed -e 's/^-l//' -e 's/ -l/, /g' -e 's/,.pthread//g')
+		[lapack_opt]
+		library_dirs = $(pkg-config --libs-only-L \
+			lapack | sed -e 's/^-L//' -e 's/ -L/:/g' \
+			-e 's/ //g'):/usr/$(get_libdir)
+		libraries = $(pkg-config --libs-only-l \
+			lapack | sed -e 's/^-l//' -e 's/ -l/, /g' -e 's/,.pthread//g')
 	EOF
 	if use sandbox; then
 		cd scipy/sandbox

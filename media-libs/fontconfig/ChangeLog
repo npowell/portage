@@ -1,6 +1,39 @@
 # ChangeLog for media-libs/fontconfig
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-libs/fontconfig/ChangeLog,v 1.121 2008/09/21 02:45:31 solar Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-libs/fontconfig/ChangeLog,v 1.128 2008/10/02 14:58:37 loki_val Exp $
+
+  02 Oct 2008; Peter Alfredsen <loki_val@gentoo.org>
+  fontconfig-2.6.0-r2.ebuild:
+  Because opfer was so thoughtful as to change the name of a useflag on
+  stable package, people who had built docbook-sgml-utils before September
+  2nd would have built it with tetex to get docbook2pdf. This changes the
+  built_with_use logic to take that into consideration.
+
+  01 Oct 2008; Peter Alfredsen <loki_val@gentoo.org>
+  ChangeLog, fontconfig-2.6.0-r2.ebuild:
+  Fix emerge failure reported in bug 238908. We need to depend on the right
+  DTD when building sgml docs and docbook-sgml-utils must be built with
+  jadetex so we can have docbook2pdf. Incidentally, we get a false QA
+  failure where the build system runs ../missing --run, which looks like
+  maintainer-mode rebuild to portage. That one will have to be fixed in
+  portage. Also rub away minor typo that caused warning about running dohtml
+  on a dir.
+
+  01 Oct 2008; Brent Baude <ranger@gentoo.org> fontconfig-2.6.0-r2.ebuild:
+  stable ppc64, bug 238908
+
+  30 Sep 2008; Jeroen Roovers <jer@gentoo.org> fontconfig-2.6.0-r2.ebuild:
+  Stable for HPPA (bug #238908).
+
+  30 Sep 2008; Raúl Porcel <armin76@gentoo.org> fontconfig-2.6.0-r2.ebuild:
+  alpha/arm/ia64/sh stable wrt #238908
+
+  28 Sep 2008; Markus Meier <maekke@gentoo.org> fontconfig-2.6.0-r2.ebuild:
+  amd64/x86 stable, bug #238908
+
+  27 Sep 2008; Ferris McCormick <fmccor@gentoo.org>
+  fontconfig-2.6.0-r2.ebuild:
+  Sparc stable --- Bug #238908 --- it can cache fonts and list them.
 
   21 Sep 2008; <solar@gentoo.org> fontconfig-2.6.0-r2.ebuild:
   - make cross compile aware

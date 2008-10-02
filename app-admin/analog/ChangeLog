@@ -1,6 +1,23 @@
 # ChangeLog for app-admin/analog
-# Copyright 2002-2007 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-admin/analog/ChangeLog,v 1.34 2007/02/21 19:33:56 peper Exp $
+# Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/app-admin/analog/ChangeLog,v 1.39 2008/09/29 19:07:26 jer Exp $
+
+  29 Sep 2008; Jeroen Roovers <jer@gentoo.org> analog-6.0.ebuild:
+  Stable for HPPA (bug #238859).
+
+  28 Sep 2008; Markus Meier <maekke@gentoo.org> analog-6.0.ebuild:
+  x86 stable, bug #238859
+
+  28 Sep 2008; Thomas Anderson <gentoofan23@gentoo.org> analog-6.0.ebuild:
+  stable amd64, bug 238859
+
+  27 Sep 2008; Ferris McCormick <fmccor@gentoo.org> analog-6.0.ebuild:
+  Sparc stable --- Bug #238859 --- been around almost 3 years now.
+
+*analog-6.0-r1 (27 Sep 2008)
+
+  27 Sep 2008; Petteri Räty <betelgeuse@gentoo.org> +analog-6.0-r1.ebuild:
+  Use EAPI 2 use dependencies instead of built_with_use.
 
   21 Feb 2007; <peper@gentoo.org> ChangeLog:
   Transition to Manifest2.
