@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation.
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/use.local.desc,v 1.3923 2008/10/02 12:27:45 robbat2 Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/use.local.desc,v 1.3936 2008/10/05 08:47:41 robbat2 Exp $
 # This file contains descriptions of local USE flags, and the ebuilds which
 # contain them.
 # Keep it sorted (use "LC_ALL=C sort -t: -k1,1 -k2 | LC_ALL=C sort -s -t/ -k1,1")
@@ -262,6 +262,9 @@ app-laptop/pbbuttonsd:ibam - Enable support for Intelligent Battery Monitoring
 app-laptop/pbbuttonsd:macbook - Enable support for the Macbook and Macbook Pro
 app-laptop/tp_smapi:hdaps - Install a compatible HDAPS module
 app-laptop/tpctl:tpctlir - Enable support for thinkpad models 760 and 765
+app-misc/anki:graph -  Enable support for making graphs 
+app-misc/anki:kakasi -  Enable app-i18n/kakasi support for furigana generation 
+app-misc/anki:sound -  Enable support for adding sound to cards 
 app-misc/beagle:chm - Enables support for indexing of the MS CHM (Compressed HTML) file format using app-doc/chmlib.
 app-misc/beagle:debug - Enables debug XML dumps of all messages passed between the daemons and the UIs. WARNING, this option will fill up your Beagle Log directory very quickly.
 app-misc/beagle:doc - Builds programmer documentation for Beagle using app-doc/monodoc.
@@ -865,6 +868,9 @@ games-rpg/drascula:audio - Install optional audio files
 games-rpg/eternal-lands-data:music - Install optional music files (extra 30 meg)
 games-rpg/eternal-lands-data:sound - Install optional sound files (extra 40 meg)
 games-rpg/galaxymage:psyco - psyco python accelerator
+games-rpg/mangos:cli - compiles with support command line system
+games-rpg/mangos:ra - compiles with support remote console system
+games-rpg/mangos:sd2 - includes ScriptDev2 to distribution
 games-rpg/nwn:hou - Install the Hordes of the Underdark expansion pack
 games-rpg/nwn:sou - Installs the Shadows of Undrentide expension pack
 games-rpg/nwn-cep:hou - Adds support for the Hordes of the Underdark expansion pack
@@ -881,6 +887,7 @@ games-strategy/freelords:editor - Installs optional map editor
 games-strategy/heroes3:maps - Installs optional map data
 games-strategy/heroes3:music - Installs optional music data
 games-strategy/heroes3:sounds - Installs optional sound data
+games-strategy/ufo-ai:editor - Build map editor
 games-strategy/uqm:music - download and install music files (large)
 games-strategy/uqm:remix - download and install music remix files (large)
 games-strategy/uqm:voice - download and install voice files (large)
@@ -1069,6 +1076,9 @@ mail-filter/dovecot-antispam:dspam - Build mail-filter/dspam backend
 mail-filter/dovecot-antispam:mailtrain - Build mailtrain backend
 mail-filter/dovecot-antispam:signature-log - Build signature-log backend
 mail-filter/dspam:daemon -  Enable support for DSPAM to run in --daemon mode 
+mail-filter/dspam:debug -  Enable debugging support (don't enable this unless something needs testing!) 
+mail-filter/dspam:debug-bnr -  Activates debugging output for Bayesian Noise Reduction 
+mail-filter/dspam:debug-verbose -  Cause DSPAM produce verbose debug output and write them into LOGDIR/dspam.debug file. Never enable this for production builds! 
 mail-filter/dspam:large-domain -  Builds for large domain rather than for domain scale 
 mail-filter/dspam:user-homedirs -  uild with user homedir support 
 mail-filter/dspam:virtual-users -  Build with virtual-users support 
@@ -1181,6 +1191,10 @@ media-libs/glide-v3:voodoo1 - Support 3DFX Voodoo1 video cards
 media-libs/glide-v3:voodoo2 - Support 3DFX Voodoo2 video cards
 media-libs/glide-v3:voodoo5 - Support 3DFX Voodoo4 and Voodoo5 video cards
 media-libs/libass:enca - Enables support for charset discovery and conversion.
+media-libs/libcanberra:alsa - Enables ALSA sound driver.
+media-libs/libcanberra:gstreamer - Enables gstreamer sound driver. Not useful when alsa or pulseaudio is available.
+media-libs/libcanberra:gtk - Enables building of gtk+ helper library, gtk+ runtime sound effects and the canberra-gtk-play utility. To enable the gtk+ sound effects add canberra-gtk-module to the colon separated list of modules in the GTK_MODULES environment variable.
+media-libs/libcanberra:pulseaudio - Enables PulseAudio sound driver that should be able to support positional event sounds. This is the preferred choice for best sound events experience and picked by default if compiled in and possible to use at runtime.
 media-libs/libdc1394:juju - Use the new juju firewire stack in the Linux kernel
 media-libs/libggi:vis - Enables sparc vis support for libggi
 media-libs/libifp:module - Build kernel module for non-root usage
@@ -1257,13 +1271,13 @@ media-sound/alsa-driver:midi - Build the sequencer (midi) modules
 media-sound/alsa-tools:midi - Build the sequencer (midi) utilities
 media-sound/alsa-utils:midi - Build the sequencer (midi) utilities
 media-sound/amarok:amazon - Enable support for downloading covers from amazon.com
-media-sound/amarok:daap - Enable support for DAAP Music Sharing
+media-sound/amarok:daap -  Enable the scripts for music sharing through DAAP. This flag adds dependencies on www-servers/mongrel to allow sharing of the Amarok music collection through DAAP protocol. Please note that turning this flag off has no effect on DAAP browsing. 
 media-sound/amarok:ifp - Enable support for iRiver devices access through libifp
-media-sound/amarok:mp4 - Enable write support for tags in MP4 files (M4A). The resulting Amarok copy is not redistributable.
+media-sound/amarok:mp4 -  Build the TagLib plugin for writing tags in Mp4 container files (m4a). Please note that by enabling this USE flag, the resulting package will not be redistributable, as it links to media-libs/libmp4v2, distributed under a GPL-incompatible license. 
 media-sound/amarok:mtp - Enable support for libMTP (Plays4Sure) devices access through libmtp
 media-sound/amarok:njb - Enable support for NJB (Creative) devices access through libnjb
 media-sound/amarok:python -  Install the Amarok scripts written in Python, depending on dev-python/PyQt. At the moment the only script installed by this flag is the webcontrol script. 
-media-sound/amarok:real - Build with real/helix player support
+media-sound/amarok:real -  Build the Helix engine for Amarok, linked against media-video/realplayer. This is an alternative engine to the xine one, which supports a different set of formats. Only available for x86 architecture as it uses the binary version of RealPlayer. Plase note that by enabling this USE flag, the resulting package will not be redistributable, as it links to the non-GPL compatible RealPlayer. 
 media-sound/amarok:visualization - Support visualization plugins through media-libs/libvisual
 media-sound/aqualung:cdda - Enables libcdda cd audio playback support
 media-sound/aqualung:loop-playback - Enable adjustable loop playback support
@@ -1392,6 +1406,7 @@ media-tv/mythtv:lirc - Adds LIRC support directly to MythTV allowing for built i
 media-tv/mythtv:mmx - Builds ffmpeg's codec libraries with mmx support.
 media-tv/mythtv:opengl - Builds MythTV with support for using OpenGL as the output painter rather then Qt3 built in painter.
 media-tv/mythtv:perl - Builds the perl bindings for MythTV. Allows you to write scripts in Perl to control your MythTV setup or communicate with it.
+media-tv/mythtv:tiff - Add support for tiff loading and rendering which is only used by media-plugins/mythgallery
 media-tv/mythtv:video_cards_i810 - When combined with the xvmc USE flag, enables Intel specific XvMC extension usage.
 media-tv/mythtv:video_cards_nvidia - When combined with the xvmc USE flag, enables NVIDIA specific XvMC extension usage.
 media-tv/mythtv:video_cards_via - When combined with the xvmc USE flag, enables VIA specific XvMC extension usage.
@@ -1673,7 +1688,7 @@ net-analyzer/symon:symon - Build symon daemon
 net-analyzer/symon:symux - Enables the multiplexer which stores incoming symon streams on disk in RRD files
 net-analyzer/tcpdump:chroot - Enable chrooting when dropping privileges
 net-analyzer/tcpreplay:pcapnav - Enable if you want the jump to byte offset feature via net-libs/libpcapnav
-net-analyzer/wireshark:c-ares - Use GNU net-dns/c-ares library to resolve DNS names
+net-analyzer/wireshark:ares - Use GNU net-dns/c-ares library to resolve DNS names
 net-analyzer/wireshark:gcrypt - Use GNU crypto library (dev-libs/libgcrypt) to decrypt SSL traffic
 net-analyzer/wireshark:pcap - Use net-libs/libpcap for network packet capturing (build dumpcap, rawshark)
 net-analyzer/wireshark:smi - Use net-libs/libsmi to resolve numeric OIDs into human readable format
@@ -1794,6 +1809,7 @@ net-im/ejabberd:mod_pubsub - Pubsub support in ejabberd
 net-im/ejabberd:web - Web support in ejabberd
 net-im/ekg2:gsm - Enable gsm plugin
 net-im/ekg2:nogg - Disable Gadu-Gadu plugin
+net-im/empathy:applet - Enable Empathy's applets for gnome-base/gnome-panel.
 net-im/gajim:idle - Enable idle module
 net-im/gajim:srv - SRV capabilities
 net-im/gajim:trayicon - Enable support for trayicon
@@ -2209,6 +2225,8 @@ sci-libs/plplot:jadetex - Add support for app-text/jadetex (for processing tex f
 sci-libs/plplot:octave - Support for sci-mathematics/octave bindings 
 sci-libs/scipy:sandbox - Adds experimental scipy sandbox modules
 sci-libs/scipy:umfpack - Adds support for sparse solving with sci-libs/umfpack
+sci-libs/vtk:boost - Add support for boost
+sci-libs/vtk:cg - Use nvidia's cg shaders
 sci-libs/vtk:patented - Build patented classes
 sci-mathematics/coq:ide - Build the Coq IDE, a clone of proof general using dev-ml/lablgtk
 sci-mathematics/coq:norealanalysis - Do not build real analysis modules (faster compilation)
@@ -2595,6 +2613,8 @@ x11-terms/rxvt:linuxkeys - Define LINUX_KEYS (changes Home/End key)
 x11-terms/rxvt:xgetdefault - Enable resources via X instead of rxvt small version
 x11-terms/rxvt-unicode:afterimage - Enable support for media-libs/libafterimage 
 x11-terms/rxvt-unicode:iso14755 - Enable ISO-14755 support
+x11-terms/rxvt-unicode:wcwidth - Enable wide char width support
+x11-terms/rxvt-unicode:xterm-color - Enable xterm 256 color support
 x11-terms/xterm:paste64 - Enable support for bracketed paste mode
 x11-terms/xterm:toolbar - Enable the xterm toolbar to be built
 x11-themes/gentoo-artwork:grub - Install extra sys-boot/grub themes

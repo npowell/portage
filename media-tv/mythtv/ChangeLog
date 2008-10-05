@@ -1,6 +1,26 @@
 # ChangeLog for media-tv/mythtv
 # Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-tv/mythtv/ChangeLog,v 1.255 2008/10/02 14:49:08 cardoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-tv/mythtv/ChangeLog,v 1.258 2008/10/03 21:13:40 cardoe Exp $
+
+  03 Oct 2008; Doug Goldstein <cardoe@gentoo.org>
+  -mythtv-0.22_alpha18528.ebuild, mythtv-0.22_alpha18535.ebuild:
+  remove opengl USE flag since it does nothing. Use EAPI 2 USE dep short
+  form. Remove nearly dup version
+
+  03 Oct 2008; Doug Goldstein <cardoe@gentoo.org> mythtv-0.21_p17637.ebuild,
+  mythtv-0.21_p17722.ebuild, mythtv-0.21_p18116.ebuild,
+  mythtv-0.21_p18314.ebuild, mythtv-0.21_p18501.ebuild,
+  mythtv-0.22_alpha17733.ebuild, mythtv-0.22_alpha18528.ebuild,
+  mythtv-0.22_alpha18535.ebuild:
+  eselect-xvmc is now dep'd in libXvMC
+
+*mythtv-0.22_alpha18535 (02 Oct 2008)
+
+  02 Oct 2008; Doug Goldstein <cardoe@gentoo.org> metadata.xml,
+  mythtv-0.22_alpha18528.ebuild, +mythtv-0.22_alpha18535.ebuild:
+  Qt's tiff support is only required to be present if we expect MythTV to
+  render tiff images for MythGallery. Adding USE flag at the request of a
+  user. stuartm/gbee provided details.
 
   02 Oct 2008; Doug Goldstein <cardoe@gentoo.org>
   mythtv-0.20.2_p15634.ebuild, mythtv-0.21_p17637.ebuild,

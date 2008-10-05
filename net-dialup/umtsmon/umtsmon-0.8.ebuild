@@ -1,12 +1,12 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-dialup/umtsmon/umtsmon-0.8.ebuild,v 1.2 2008/07/27 22:02:58 carlo Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-dialup/umtsmon/umtsmon-0.8.ebuild,v 1.3 2008/10/05 09:11:19 mrness Exp $
 
 EAPI=1
 
 inherit eutils qt3
 
-DESCRIPTION="UMTSmon is a tool to control and monitor a wireless mobile network card (GPRS, EDGE, WCDMA, UMTS, EV-DO, HSDPA)"
+DESCRIPTION="Tool to control and monitor wireless mobile network cards (GPRS, EDGE, WCDMA, UMTS, EV-DO, HSDPA)"
 HOMEPAGE="http://umtsmon.sourceforge.net/"
 SRC_URI="mirror://sourceforge/umtsmon/${P}.src.tar.gz"
 
