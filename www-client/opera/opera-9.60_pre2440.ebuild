@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/www-client/opera/opera-9.60_pre2440.ebuild,v 1.1 2008/10/02 02:59:20 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/www-client/opera/opera-9.60_pre2440.ebuild,v 1.2 2008/10/06 16:58:28 jer Exp $
 
 GCONF_DEBUG="no"
 
@@ -114,18 +114,24 @@ src_unpack() {
 		epatch "${FILESDIR}/${PN}-9.50-pluginpath.patch"
 	fi
 
-	sed -i -e "s:config_dir=\"/etc\":config_dir=\"${D}/etc/\":g" \
-		-e "s:/usr/share/applnk:${D}/usr/share/applnk:g" \
-		-e "s:/usr/share/pixmaps:${D}/usr/share/pixmaps:g" \
-		-e "s:/usr/share/icons:${D}/usr/share/icons:g" \
-		-e "s:/etc/X11:${D}/etc/X11:g" \
-		-e "s:/usr/share/gnome:${D}/usr/share/gnome:g" \
-		-e "s:/opt/gnome/share:${D}/opt/gnome/share:g" \
-		-e 's:#\(OPERA_FORCE_JAVA_ENABLED=\):\1:' \
-		-e 's:#\(export LD_PRELOAD OPERA_FORCE_JAVA_ENABLED\):\1:' \
-		-e 's:read str_answer:return 0:' \
-		-e "s:/opt/kde:${D}/usr/kde:" \
+#	sed -i -e "s:config_dir=\"/etc\":config_dir=\"${D}/etc/\":g" \
+#		-e "s:/usr/share/applnk:${D}/usr/share/applnk:g" \
+#		-e "s:/usr/share/pixmaps:${D}/usr/share/pixmaps:g" \
+#		-e "s:/usr/share/icons:${D}/usr/share/icons:g" \
+#		-e "s:/etc/X11:${D}/etc/X11:g" \
+#		-e "s:/usr/share/gnome:${D}/usr/share/gnome:g" \
+#		-e "s:/opt/gnome/share:${D}/opt/gnome/share:g" \
+#		-e 's:#\(OPERA_FORCE_JAVA_ENABLED=\):\1:' \
+#		-e 's:#\(export LD_PRELOAD OPERA_FORCE_JAVA_ENABLED\):\1:' \
+#		-e 's:read str_answer:return 0:' \
+#		-e "s:/opt/kde:${D}/usr/kde:" \
+#		-e "s:\(str_localdirplugin=\).*$:\1/opt/opera/lib/opera/plugins:" \
+#		install.sh || die "sed failed"
+
+	sed -i 	-e "s:config_dir=\"/etc\":config_dir=\"${D}/etc/\":g" \
 		-e "s:\(str_localdirplugin=\).*$:\1/opt/opera/lib/opera/plugins:" \
+		-e 's:#\(export LD_PRELOAD OPERA_FORCE_JAVA_ENABLED\):\1:' \
+		-e 's:#\(OPERA_FORCE_JAVA_ENABLED=\):\1:' \
 		install.sh || die "sed failed"
 
 }
@@ -155,17 +161,20 @@ src_install() {
 	dosed /opt/opera/share/opera/java/opera.policy
 
 	# Install the icons
-	insinto /usr/share/pixmaps
-	doins usr/share/pixmaps/opera.xpm
+#	insinto /usr/share/pixmaps
+#	doins usr/share/pixmaps/opera.xpm
 
-	local res
-	for res in 16x16 22x22 32x32 48x48 ; do
-		insinto /usr/share/icons/hicolor/${res}/apps
-		doins usr/share/icons/hicolor/${res}/apps/opera.png
-	done
+#	local res
+#	for res in 16x16 22x22 32x32 48x48 ; do
+#		insinto /usr/share/icons/hicolor/${res}/apps
+#		doins usr/share/icons/hicolor/${res}/apps/opera.png
+#	done
 
 	# Install the menu entry
-	make_desktop_entry opera Opera /usr/share/pixmaps/opera.xpm 'Network;WebBrowser;Email;FileTransfer;IRCClient'
+#	make_desktop_entry opera Opera /usr/share/pixmaps/opera.xpm 'Network;WebBrowser;Email;FileTransfer;IRCClient'
+
+	# Adapt desktop file to Gnome when needed
+	use gnome && sed -i -e s:"GenericName\[":"Comment\[": "${D}"/usr/share/applications/opera.desktop
 
 	# Install a symlink /usr/bin/opera
 	dodir /usr/bin
