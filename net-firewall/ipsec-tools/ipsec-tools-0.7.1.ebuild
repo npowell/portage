@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-firewall/ipsec-tools/ipsec-tools-0.7.1.ebuild,v 1.1 2008/09/09 21:22:55 dragonheart Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-firewall/ipsec-tools/ipsec-tools-0.7.1.ebuild,v 1.3 2008/10/08 19:09:02 maekke Exp $
 
 inherit eutils flag-o-matic autotools linux-info
 
@@ -10,7 +10,7 @@ SRC_URI="mirror://sourceforge/${PN}/${P}.tar.bz2"
 
 LICENSE="BSD"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
+KEYWORDS="amd64 ~ppc ~sparc x86"
 IUSE="idea ipv6 pam rc5 readline selinux ldap kerberos nat hybrid iconv selinux"
 
 # FIXME: what is the correct syntax for ~sparc ???
@@ -131,7 +131,12 @@ kernel_check() {
 				else
 					einfo "....[INET6_XFRM_MODE_BEET] IPv6: IPsec BEET mode is enabled :-)"
 				fi
-			fi
+				if ! { linux_chkconfig_present CRYPTO_NULL; }; then
+					ewarn "[CRYPTO_NULL] Crypto: NULL algorithm is NOT enabled"
+				else
+					einfo "....[CRYPTO_NULL] Cyrpto: Crypto NULL algorithm enabled :-)"
+				fi
+fi
 			# }}}
 
 			eend $?
