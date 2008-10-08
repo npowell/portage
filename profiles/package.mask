@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.9054 2008/10/07 05:56:43 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.9057 2008/10/08 16:08:49 mr_bones_ Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked
@@ -362,8 +362,12 @@ dev-lisp/abcl-cvs
 
 # Saleem Abdulrasool <compnerd@gentoo.org> (26 Sep 2008)
 # temporarily mask to prevent things from breaking
->=app-text/poppler-0.9.2
->=app-text/poppler-bindings-0.9.2
+# Peter Alfredsen <loki_val@gentoo.org> (8 Oct 2008)
+# extend mask to cover all testing versions but warning
+# that this will be unmasked *soon*. We know what breaks.
+# Go fix it.
+=app-text/poppler-0.9*
+=app-text/poppler-bindings-0.9*
 
 # Christian Parpart <trapni@gentoo.org> (25 Sep 2008)
 # for testing/experienced users only
@@ -764,12 +768,6 @@ app-crypt/cryptplug
 dev-tcltk/tclgpgme
 ~app-crypt/gpgme-0.3.14
 
-# Michael Sterrett <mr_bones_@gentoo.org> (31 Aug 2008)
-# Masked for removal.
-# Upstream seems dead and it doesn't build with nasm-2
-# https://bugs.gentoo.org/show_bug.cgi?id=210873
-media-sound/gogo
-
 # Rémi Cardona <remi@gentoo.org> (30 Aug 2008)
 # major file collisions, see bug #236124
 =media-libs/gst-plugins-good-0.10.9
@@ -797,7 +795,7 @@ www-apps/xrms
 # Jeroen Roovers <jer@gentoo.org> (26 Aug 2008)
 # www-client/opera snapshots are masked. Please read
 # http://my.opera.com/desktopteam/blog/
-=www-client/opera-9.60*
+=www-client/opera-9.60_pre*
 
 # Andreas Proschofsky <suka@gentoo.org> (22 Aug 2008)
 # Beta release, still got some issues
