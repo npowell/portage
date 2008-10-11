@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-electronics/pcb/pcb-20080202.ebuild,v 1.5 2008/04/12 07:41:26 nixnut Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-electronics/pcb/pcb-20080202.ebuild,v 1.7 2008/10/10 22:06:35 flameeyes Exp $
 
 inherit eutils fdo-mime
 
@@ -22,6 +22,7 @@ RDEPEND="dbus? ( sys-apps/dbus )
 			xrender? ( x11-libs/libXrender ) ) )
 	png? ( media-libs/gd )"
 DEPEND="${RDEPEND}
+	dev-util/intltool
 	dev-util/pkgconfig
 	x11-proto/xproto
 	tk? ( =dev-lang/tk-8* )"
