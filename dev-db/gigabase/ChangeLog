@@ -1,6 +1,15 @@
 # ChangeLog for dev-db/gigabase
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-db/gigabase/ChangeLog,v 1.36 2008/07/03 16:09:37 pva Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-db/gigabase/ChangeLog,v 1.38 2008/10/09 20:29:30 maekke Exp $
+
+  09 Oct 2008; Markus Meier <maekke@gentoo.org> gigabase-3.66.ebuild:
+  amd64/x86 stable, bug #240724
+
+*gigabase-3.67 (09 Oct 2008)
+
+  09 Oct 2008; Peter Volkov <pva@gentoo.org> -gigabase-3.62.ebuild,
+  -gigabase-3.63.ebuild, -gigabase-3.65.ebuild, +gigabase-3.67.ebuild:
+  Version bump.
 
 *gigabase-3.66 (03 Jul 2008)
 

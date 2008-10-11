@@ -1,6 +1,18 @@
 # ChangeLog for media-sound/pavucontrol
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-sound/pavucontrol/ChangeLog,v 1.16 2008/04/18 04:53:34 flameeyes Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-sound/pavucontrol/ChangeLog,v 1.18 2008/10/10 13:07:04 flameeyes Exp $
+
+*pavucontrol-0.9.7 (10 Oct 2008)
+
+  10 Oct 2008; Diego Pettenò <flameeyes@gentoo.org>
+  +pavucontrol-0.9.7.ebuild:
+  Version bump.
+
+*pavucontrol-0.9.6-r1 (09 Oct 2008)
+
+  09 Oct 2008; Diego Pettenò <flameeyes@gentoo.org>
+  +pavucontrol-0.9.6-r1.ebuild:
+  Update to EAPI=2 and USE deps.
 
 *pavucontrol-0.9.6 (18 Apr 2008)
 
