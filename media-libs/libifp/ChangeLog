@@ -2,6 +2,9 @@
 # Copyright 1999-2007 Gentoo Foundation; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/media-libs/libifp/ChangeLog,v 1.10 2007/02/22 01:55:21 peper Exp $
 
+  12 Oct 2008; Jeff Mitchell <mitchell@kde.org> files/libifp.fdi:
+  Pedantic change
+
   11 Oct 2008; Jeff Mitchell <mitchell@kde.org> +libifp-1.0.0.2-r1.ebuild, +files/libifp.fdi:
   Add HAL fdi file install.
 
