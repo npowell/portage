@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/ffmpeg/ffmpeg-0.4.9_p20080326.ebuild,v 1.3 2008/07/07 20:39:09 loki_val Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/ffmpeg/ffmpeg-0.4.9_p20080326.ebuild,v 1.5 2008/10/14 16:12:07 jer Exp $
 
 inherit eutils flag-o-matic multilib toolchain-funcs
 
@@ -19,7 +19,7 @@ IUSE="aac altivec amr debug doc ieee1394 a52 encode imlib ipv6 mmx vorbis
 	  test theora threads truetype x264 xvid network zlib sdl X mp3
 	  hardcoded-tables bindist"
 
-RDEPEND="imlib? ( media-libs/imlib2 )
+RDEPEND="imlib? ( >=media-libs/imlib2-1.4.0 )
 	truetype? ( >=media-libs/freetype-2 )
 	sdl? ( >=media-libs/libsdl-1.2.10 )
 	encode? (
@@ -60,6 +60,9 @@ src_unpack() {
 	epatch "${FILESDIR}/${PN}-shared-gcc4.1.patch"
 	# disable non pic safe asm, bug #172877, bug #172845 and dupes
 	# epatch "${FILESDIR}/${PN}-0.4.9_p20070330-asmpic.patch"
+
+	# HPPA (parisc) needs PIC (bug #241124):
+	epatch "${FILESDIR}"/${P}-hppa.patch
 }
 
 src_compile() {

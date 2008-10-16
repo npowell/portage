@@ -1,6 +1,6 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/tpp/tpp-1.3.ebuild,v 1.5 2007/04/11 18:38:07 welp Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/tpp/tpp-1.3.ebuild,v 1.6 2008/10/14 12:20:30 graaff Exp $
 
 inherit eutils ruby
 
@@ -21,9 +21,9 @@ RDEPEND="virtual/ruby
 
 src_unpack() {
 	unpack ${A}
-	cd ${S}
+	cd "${S}"
 
-	epatch ${FILESDIR}/${P}-Makefile.patch
+	epatch "${FILESDIR}/${P}-Makefile.patch"
 }
 
 src_compile() {

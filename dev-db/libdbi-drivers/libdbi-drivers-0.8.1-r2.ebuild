@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-db/libdbi-drivers/libdbi-drivers-0.8.1-r2.ebuild,v 1.2 2008/05/21 15:54:57 dev-zero Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-db/libdbi-drivers/libdbi-drivers-0.8.1-r2.ebuild,v 1.4 2008/10/14 03:11:12 robbat2 Exp $
 
 inherit eutils
 
@@ -16,7 +16,7 @@ DEPEND=">=dev-db/libdbi-0.8.0
 		!bindist? ( firebird? ( dev-db/firebird ) )"
 
 IUSE="mysql postgres sqlite oci8 firebird sqlite3 bindist"
-KEYWORDS="~amd64 ~hppa ~ppc ~sparc ~x86"
+KEYWORDS="~amd64 ~hppa ppc ~sparc ~x86"
 SLOT=0
 
 src_unpack() {
@@ -74,4 +74,13 @@ src_compile() {
 src_install () {
 	emake install DESTDIR="${D}" || die "make install failed"
 	dodoc AUTHORS ChangeLog NEWS README README.osx TODO
+}
+src_test() {
+	if [ -z "${WANT_INTERACTIVE_TESTS}" ]; then
+		ewarn "Tests disabled due to interactivity."
+		ewarn "Run with WANT_INTERACTIVE_TESTS=1 if you want them."
+		return 0
+	fi
+	einfo "Running interactive tests"
+	emake check || die "Tests failed"
 }

@@ -3,6 +3,10 @@
 # $Header: /var/cvsroot/gentoo-x86/x11-misc/xscreensaver/ChangeLog,v 1.236 2008/09/09 02:42:50 robbat2 Exp $
 
 *xscreensaver-5.07 (09 Sep 2008)
+  
+  16 Oct 2008; Jeff Mitchell <funtoo@emailgoeshere.com>
+  +files/5.07/02_all_no_intltool.patch:
+  Fix issues with dev-util/intltool-0.40.5 per bug 240958.
 
   09 Sep 2008; Robin H. Johnson <robbat2@gentoo.org>
   +files/5.07/01_all_default_settings.patch, +xscreensaver-5.07.ebuild:

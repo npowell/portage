@@ -1,6 +1,13 @@
 # ChangeLog for x11-base/xorg-x11
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/x11-base/xorg-x11/ChangeLog,v 1.600 2008/10/04 16:20:18 corsair Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-base/xorg-x11/ChangeLog,v 1.602 2008/10/14 18:09:33 dberkholz Exp $
+
+  14 Oct 2008; Donnie Berkholz <dberkholz@gentoo.org>; xorg-x11-7.2.ebuild:
+  Drop to ~mips to avoid warnings.
+
+  14 Oct 2008; Donnie Berkholz <dberkholz@gentoo.org>; xorg-x11-7.4.ebuild:
+  Pull in latest xorg-server (1.5.2) and xtrans (1.2.2). xorg-docs didn't
+  get a 1.5 release so just pull in 1.4.
 
   04 Oct 2008; Markus Rothe <corsair@gentoo.org> xorg-x11-7.4.ebuild:
   Added ~ppc

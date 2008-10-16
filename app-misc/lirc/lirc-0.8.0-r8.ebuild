@@ -1,11 +1,10 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-misc/lirc/lirc-0.8.0-r8.ebuild,v 1.15 2007/10/13 09:20:15 zzam Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-misc/lirc/lirc-0.8.0-r8.ebuild,v 1.16 2008/10/12 19:55:53 zzam Exp $
 
 inherit eutils linux-mod flag-o-matic autotools
 
-DESCRIPTION="LIRC is a package that allows you to decode and send infra-red \
-	signals of many (but not all) commonly used remote controls."
+DESCRIPTION="decode and send infra-red signals of many commonly used remote controls"
 HOMEPAGE="http://www.lirc.org"
 
 SLOT="0"

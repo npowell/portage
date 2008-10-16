@@ -1,8 +1,8 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-proxy/3proxy/3proxy-0.5.3k.ebuild,v 1.1 2008/07/12 22:59:02 mrness Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-proxy/3proxy/3proxy-0.5.3k.ebuild,v 1.3 2008/10/14 20:55:04 ranger Exp $
 
-inherit toolchain-funcs
+inherit toolchain-funcs eutils
 
 DESCRIPTION="really tiny cross-platform proxy servers set"
 HOMEPAGE="http://www.security.nnov.ru/soft/3proxy/"
@@ -10,7 +10,7 @@ SRC_URI="http://www.security.nnov.ru/soft/3proxy/${PV}/${P}.tgz"
 
 LICENSE="3proxy"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~x86"
+KEYWORDS="~amd64 ppc ~x86"
 IUSE=""
 
 DEPEND=""
@@ -19,12 +19,9 @@ S="${WORKDIR}"
 
 src_unpack() {
 	unpack ${A}
+
 	cd "${S}"
-	sed -i \
-		-e "/^CFLAGS/s:-g -O2:${CFLAGS}:" \
-		-e "/^LDFLAGS/s:-O2:${LDFLAGS}:" \
-		Makefile.unix || die "sed Makefile"
-	sed -i 's:/usr/local::' src/stringtable.c || die "sed stringtable"
+	epatch "${FILESDIR}"/${P}-gentoo.patch
 }
 
 src_compile() {
