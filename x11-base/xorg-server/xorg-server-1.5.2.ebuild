@@ -275,6 +275,7 @@ EPATCH_SUFFIX="patch"
 GENTOO_PATCHES=(
 	"${FILESDIR}/1.4-fpic-libxf86config.patch"
 	"${FILESDIR}/1.4-fix-kdrive-automake.patch"
+	"${FILESDIR}/vm86_masks.patch"
 	)
 
 # These have been sent upstream
