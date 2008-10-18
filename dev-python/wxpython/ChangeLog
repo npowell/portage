@@ -1,6 +1,18 @@
 # ChangeLog for dev-python/wxpython
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/wxpython/ChangeLog,v 1.102 2008/10/15 16:14:12 corsair Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/wxpython/ChangeLog,v 1.105 2008/10/18 18:35:18 dirtyepic Exp $
+
+*wxpython-2.8.9.1-r1 (18 Oct 2008)
+
+  18 Oct 2008; Ryan Hill <dirtyepic@gentoo.org> wxpython-2.8.9.1.ebuild,
+  +wxpython-2.8.9.1-r1.ebuild:
+  Revert to EAPI 1 for stable candidate and add -r1 using EAPI 2.
+
+  18 Oct 2008; Raúl Porcel <armin76@gentoo.org> wxpython-2.8.8.1.ebuild:
+  alpha/ia64/sparc stable wrt #242088
+
+  16 Oct 2008; Markus Meier <maekke@gentoo.org> wxpython-2.8.8.1.ebuild:
+  amd64/x86 stable, bug #242088
 
   15 Oct 2008; Markus Rothe <corsair@gentoo.org> wxpython-2.8.8.1.ebuild:
   Stable on ppc64; bug #242088

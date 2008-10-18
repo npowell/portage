@@ -1,6 +1,19 @@
 # ChangeLog for dev-util/subversion
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-util/subversion/ChangeLog,v 1.328 2008/10/14 23:32:56 gentoofan23 Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-util/subversion/ChangeLog,v 1.332 2008/10/18 15:12:32 armin76 Exp $
+
+  18 Oct 2008; Raúl Porcel <armin76@gentoo.org> subversion-1.5.2.ebuild:
+  ia64 stable wrt #241584
+
+  16 Oct 2008; Markus Meier <maekke@gentoo.org> subversion-1.5.2.ebuild:
+  x86 stable, bug #241584
+
+  15 Oct 2008; Jeroen Roovers <jer@gentoo.org> subversion-1.5.2.ebuild:
+  Stable for HPPA (bug #241584).
+
+  15 Oct 2008; Friedrich Oslage <bluebird@gentoo.org>
+  subversion-1.5.2.ebuild:
+  Stable on sparc, bug #241584
 
   14 Oct 2008; Thomas Anderson <gentoofan23@gentoo.org>
   subversion-1.5.2.ebuild:

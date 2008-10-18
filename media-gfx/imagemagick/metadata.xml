@@ -3,6 +3,10 @@
 <pkgmetadata>
 	<herd>graphics</herd>
 	<use>
+		<flag name='corefonts'>
+			pull in <pkg>media-fonts/corefonts</pkg>, which is required for some
+			commands
+		</flag>
 		<flag name='fpx'>
 			enable <pkg>media-libs/libfpx</pkg> support
 		</flag>
@@ -11,10 +15,6 @@
 		</flag>
 		<flag name='hdri'>
 			enable High Dynamic Range Images formats
-		</flag>
-		<flag name='openmp'>
-			build support for the OpenMP (support parallel computing), requires
-			<pkg>sys-devel/gcc-4.3</pkg> built with USE="openmp"
 		</flag>
 		<flag name='q32'>
 			set quantum depth to 32

@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-voip/telepathy-stream-engine/telepathy-stream-engine-0.5.2.ebuild,v 1.2 2008/04/21 22:08:09 tester Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-voip/telepathy-stream-engine/telepathy-stream-engine-0.5.2.ebuild,v 1.3 2008/10/15 19:00:33 tester Exp $
 
 DESCRIPTION="A Telepathy client that handles channels of type 'StreamedMedia'"
 HOMEPAGE="http://telepathy.freedesktop.org/"
@@ -29,7 +29,9 @@ RDEPEND="${DEPEND}
 	esd? ( =media-plugins/gst-plugins-esd-0.10* )
 	oss? ( =media-plugins/gst-plugins-oss-0.10* )
 	gnome? ( =media-plugins/gst-plugins-gconf-0.10* )
-	pulseaudio? ( media-plugins/gst-plugins-pulse )"
+	pulseaudio? ( || (
+		>=media-libs/gst-plugins-good-0.10.9
+		media-plugins/gst-plugins-pulse ) )"
 
 src_compile() {
 	econf \
