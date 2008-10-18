@@ -1,12 +1,13 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/wxpython/wxpython-2.8.9.1.ebuild,v 1.1 2008/10/14 05:59:48 dirtyepic Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/wxpython/wxpython-2.8.9.1.ebuild,v 1.2 2008/10/18 18:35:18 dirtyepic Exp $
 
-EAPI="2"
+EAPI="1"
 WX_GTK_VER="2.8"
 
 inherit alternatives eutils multilib python wxwidgets flag-o-matic
-# We don't use distutils.eclass because it doesn't seem to play nice with
+
+# Note, we don't use distutils.eclass because it doesn't seem to play nice with
 # need-wxwidgets
 
 MY_P="${P/wxpython-/wxPython-src-}"
@@ -19,7 +20,8 @@ SLOT="2.8"
 KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~ppc ~ppc64 ~sparc ~x86"
 IUSE="cairo opengl"
 
-RDEPEND=">=x11-libs/wxGTK-${PV}:2.8[opengl?]
+RDEPEND=">=dev-lang/python-2.4
+	>=x11-libs/wxGTK-${PV}:2.8
 	>=x11-libs/gtk+-2.4
 	>=x11-libs/pango-1.2
 	>=dev-libs/glib-2.0
@@ -30,32 +32,33 @@ RDEPEND=">=x11-libs/wxGTK-${PV}:2.8[opengl?]
 	opengl? ( >=dev-python/pyopengl-2.0.0.44 )"
 
 DEPEND="${RDEPEND}
-	dev-util/pkgconfig
-	>=dev-lang/python-2.4"
+	dev-util/pkgconfig"
 
 S="${WORKDIR}/${MY_P}/wxPython/"
 
-src_prepare() {
+src_unpack() {
+	unpack ${A}
+	cd "${S}"
 	sed -i "s:cflags.append('-O3'):pass:" config.py || die "sed failed"
+
 	epatch "${FILESDIR}"/${PN}-2.8.8-wxversion-scripts.patch
 }
 
-src_configure() {
+src_compile() {
 	local mypyconf
 
 	need-wxwidgets unicode
+	use opengl && check_wxuse opengl
 
 	append-flags -fno-strict-aliasing
 
+	mypyconf="${mypyconf} WX_CONFIG=${WX_CONFIG}"
 	use opengl \
 		&& mypyconf="${mypyconf} BUILD_GLCANVAS=1" \
 		|| mypyconf="${mypyconf} BUILD_GLCANVAS=0"
 
-	mypyconf="${mypyconf} WX_CONFIG=${WX_CONFIG}"
 	mypyconf="${mypyconf} WXPORT=gtk2 UNICODE=1"
-}
 
-src_compile() {
 	python setup.py ${mypyconf} build || die "setup.py build failed"
 }
 

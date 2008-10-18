@@ -1,10 +1,56 @@
 # ChangeLog for profile directory
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.1957 2008/10/15 15:54:46 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.1972 2008/10/18 16:17:13 matsuu Exp $
 #
 # This ChangeLog should include records for all changes in profiles directory.
 # Only typo fixes which don't affect portage/repoman behaviour could be avoided
 # here. If in doubt put a record here!
+
+  18 Oct 2008; MATSUU Takuto <matsuu@gentoo.org> package.mask:
+  Package mask >=sys-devel/distcc-3 for testing.
+
+  18 Oct 2008; Alexis Ballier <aballier@gentoo.org> package.mask:
+  unmask latest ffmpeg/x264/gst-plugins-ffmpeg. Let revdep-rebuild be your
+  friend
+
+  17 Oct 2008; Markus Meier <maekke@gentoo.org> use.desc:
+  move bsf, kontact, openmp, plasma and smp to global use.desc
+
+  17 Oct 2008; Ben de Groot <yngwin@gentoo.org> thirdpartymirrors:
+  Add ftp.easysw.com mirrors
+
+  16 Oct 2008; Timo Gurr <tgurr@gentoo.org> package.mask:
+  Remove murmur mask.
+
+  16 Oct 2008; Christian Faulhammer <opfer@gentoo.org> package.mask:
+  remove Claws mask as all plugins are in the tree
+
+  16 Oct 2008; Alexis Ballier <aballier@gentoo.org> package.mask:
+  remove mlt mask
+
+  16 Oct 2008; Christian Faulhammer <opfer@gentoo.org> package.mask:
+  fix Claws mask once again
+
+  16 Oct 2008; Andreas Proschofsky <suka@gentoo.org> package.mask:
+  Unmask OpenOffice.org 3.0
+
+  16 Oct 2008; Christian Faulhammer <opfer@gentoo.org> package.mask:
+  correct Claws mask
+
+  16 Oct 2008; Markus Meier <maekke@gentoo.org> package.mask:
+  remove unneeded blender mask
+
+  16 Oct 2008; <fauli@gentoo.org> package.mask:
+  mask Claws Mail 3.6.1 and all corresponding plugins so users won't freak
+  out about broken dependency chains
+
+  16 Oct 2008; Markus Meier <maekke@gentoo.org> package.mask:
+  add media-gfx/blender-2.48-r2 to the media-video/ffmpeg-0.4.9_p20081014
+  mask
+
+  15 Oct 2008; Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org>
+  package.mask:
+  Added a mask to krusader-2.0.0_beta1 (beta version).
 
   15 Oct 2008; Alexis Ballier <aballier@gentoo.org> package.mask:
   mask ocaml 3.11.0 beta

@@ -1,6 +1,27 @@
 # ChangeLog for media-plugins/live
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-plugins/live/ChangeLog,v 1.99 2008/10/12 15:44:15 bluebird Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/live/ChangeLog,v 1.105 2008/10/18 14:55:52 aballier Exp $
+
+  18 Oct 2008; Alexis Ballier <aballier@gentoo.org> -live-2007.02.20.ebuild,
+  -live-2008.02.08.ebuild:
+  remove old
+
+  18 Oct 2008; Raúl Porcel <armin76@gentoo.org> live-2008.09.02.ebuild:
+  alpha/arm/ia64 stable wrt #240457
+
+  18 Oct 2008; Brent Baude <ranger@gentoo.org> live-2008.09.02.ebuild:
+  stable ppc64, bug 240457
+
+*live-2008.10.07 (18 Oct 2008)
+
+  18 Oct 2008; Alexis Ballier <aballier@gentoo.org> +live-2008.10.07.ebuild:
+  version bump, abi break unfortunately
+
+  18 Oct 2008; Brent Baude <ranger@gentoo.org> live-2008.09.02.ebuild:
+  stable ppc, bug 240457
+
+  18 Oct 2008; Jeroen Roovers <jer@gentoo.org> live-2008.09.02.ebuild:
+  Stable for HPPA (bug #240457).
 
   12 Oct 2008; Friedrich Oslage <bluebird@gentoo.org>
   live-2008.09.02.ebuild:

@@ -1,12 +1,12 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-libs/gdal/gdal-1.5.2.ebuild,v 1.2 2008/10/12 14:21:06 nixnut Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-libs/gdal/gdal-1.5.2.ebuild,v 1.3 2008/10/18 19:08:36 nerdboy Exp $
 
 WANT_AUTOCONF="2.5"
 inherit autotools distutils eutils perl-module toolchain-funcs
 
-IUSE="curl debug doc fits geos gif gml hdf hdf5 jpeg jpeg2k mysql netcdf \
-odbc png ogdi perl postgres python ruby sqlite threads"
+IUSE="curl debug doc fits geos gif gml hdf hdf5 jpeg jpeg2k mysql \
+netcdf odbc png ogdi perl postgres python ruby sqlite threads"
 
 DESCRIPTION="GDAL is a translator library for raster geospatial data formats (includes OGR support)"
 HOMEPAGE="http://www.gdal.org/"
@@ -32,7 +32,7 @@ RDEPEND=">=sys-libs/zlib-1.1.4
 	ruby? ( >=dev-lang/ruby-1.8.4.20060226 )
 	fits? ( sci-libs/cfitsio )
 	ogdi? ( sci-libs/ogdi )
-	gml? ( >=dev-libs/xerces-c-2.8.0 )
+	gml? ( =dev-libs/xerces-c-2.8* )
 	hdf5? ( >=sci-libs/hdf5-1.6.4 )
 	postgres? ( virtual/postgresql-server )
 	|| (
@@ -179,6 +179,8 @@ src_install() {
 	    insinto /usr/share/${PN}/samples
 	    doins swig/python/samples/*
 	fi
+
+	use perl && fixlocalpod
 }
 
 pkg_postinst() {
