@@ -276,6 +276,7 @@ GENTOO_PATCHES=(
 	"${FILESDIR}/1.4-fpic-libxf86config.patch"
 	"${FILESDIR}/1.4-fix-kdrive-automake.patch"
 	"${FILESDIR}/1.5.2-force-LC_ALL-C-when-running-awk.patch"
+	"${FILESDIR}/vm86_masks.patch"
 	)
 
 # These have been sent upstream
