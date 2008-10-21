@@ -1,6 +1,26 @@
 # ChangeLog for x11-drivers/xf86-video-i810
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/x11-drivers/xf86-video-i810/ChangeLog,v 1.106 2008/09/30 09:55:10 remi Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-drivers/xf86-video-i810/ChangeLog,v 1.109 2008/10/19 23:04:23 remi Exp $
+
+*xf86-video-i810-2.4.98.0 (19 Oct 2008)
+
+  19 Oct 2008; Rémi Cardona <remi@gentoo.org>
+  +xf86-video-i810-2.4.98.0.ebuild:
+  bump to 2.4.98.0 (release candidate)
+
+  19 Oct 2008; Rémi Cardona <remi@gentoo.org>
+  -files/xf86-video-i810-2.4.1-0001-Fix-reverted-LVDS-bios-capability-dword-
+  definition.patch, -xf86-video-i810-2.4.0.ebuild,
+  -xf86-video-i810-2.4.1.ebuild, -xf86-video-i810-2.4.1-r1.ebuild,
+  -xf86-video-i810-2.4.2.ebuild, -xf86-video-i810-2.4.2-r1.ebuild:
+  remove old cruft
+
+*xf86-video-i810-2.4.2-r3 (19 Oct 2008)
+
+  19 Oct 2008; Rémi Cardona <remi@gentoo.org>
+  +files/xf86-video-i810-2.4.2-0003-never-enable-DRI_MM-on-this-branch.patch
+  , +xf86-video-i810-2.4.2-r3.ebuild:
+  add patch for libdrm 2.4.0 support
 
 *xf86-video-i810-2.4.2-r2 (30 Sep 2008)
 

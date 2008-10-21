@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/openoffice/openoffice-3.0.0.ebuild,v 1.7 2008/10/18 17:24:17 suka Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/openoffice/openoffice-3.0.0.ebuild,v 1.13 2008/10/20 18:27:52 suka Exp $
 
 WANT_AUTOCONF="2.5"
 WANT_AUTOMAKE="1.9"
@@ -59,15 +59,11 @@ for X in ${LANGS} ; do
 	IUSE="${IUSE} linguas_${X}"
 done
 
-for Y in ${LANGS1} ; do
-	SRC_URI="${SRC_URI} linguas_${Y}? ( ${DEVPATH}-l10n.tar.bz2 )"
-done
-
 HOMEPAGE="http://go-oo.org"
 
 LICENSE="LGPL-2"
 SLOT="0"
-KEYWORDS="~amd64 ~ppc ~sparc ~x86"
+KEYWORDS="amd64 ~ppc ~sparc x86"
 
 COMMON_DEPEND="!app-office/openoffice-bin
 	x11-libs/libXaw
@@ -115,6 +111,7 @@ RDEPEND="java? ( >=virtual/jre-1.5 )
 
 DEPEND="${COMMON_DEPEND}
 	x11-libs/libXrender
+	x11-libs/libXtst
 	x11-proto/printproto
 	x11-proto/xextproto
 	x11-proto/xproto
@@ -186,6 +183,12 @@ pkg_setup() {
 		ewarn " of the OpenOffice.org functionality being disabled. "
 		ewarn " If something you need does not work for you, rebuild with "
 		ewarn " java in your USE-flags. "
+		ewarn
+	fi
+
+	if use !gtk && use !gnome; then
+		ewarn " If you want the OpenOffice.org systray quickstarter to work "
+		ewarn " activate either the 'gtk' or 'gnome' use flags. "
 		ewarn
 	fi
 
@@ -293,7 +296,6 @@ src_unpack() {
 	echo "`use_enable ldap`" >> ${CONFFILE}
 	echo "`use_enable opengl`" >> ${CONFFILE}
 	echo "`use_with ldap openldap`" >> ${CONFFILE}
-	echo "`use_with templates sun-templates`" >> ${CONFFILE}
 	echo "`use_enable debug crashdump`" >> ${CONFFILE}
 	echo "`use_enable debug strip-solver`" >> ${CONFFILE}
 
@@ -322,7 +324,14 @@ src_compile() {
 	filter-flags "-fstack-protector"
 	filter-flags "-fstack-protector-all"
 	filter-flags "-ftracer"
-	filter-flags "-fforce-addr"
+
+	if has_version <=sys-devel/gcc-3.4.7 ; then
+		use hardened || filter-flags "-fforce-addr"
+		is-flag -fomit-frame-pointer && append-flags "-momit-leaf-frame-pointer"
+	else
+		filter-flags "-fforce-addr"
+	fi
+
 	filter-flags "-O[s2-9]"
 
 	# Build with NVidia cards breaks otherwise
@@ -353,6 +362,7 @@ src_compile() {
 		`use_enable odk` \
 		`use_enable pam` \
 		`use_with java` \
+		`use_with templates sun-templates` \
 		--disable-access \
 		--disable-post-install-scripts \
 		--enable-extensions \

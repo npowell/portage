@@ -1,6 +1,6 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/babel/babel-1.6.ebuild,v 1.4 2007/07/13 05:48:10 mr_bones_ Exp $
+# $Header: /var/cvsroot/gentoo-x86/sci-chemistry/babel/babel-1.6.ebuild,v 1.5 2008/10/19 14:53:11 markusle Exp $
 
 inherit eutils
 
@@ -20,10 +20,10 @@ DEPEND="!sci-chemistry/openbabel"
 src_unpack() {
 
 	unpack ${P}.tar.Z
-	cd ${S}
+	cd "${S}"
 #Patch the Makefile for gentoo-isms
-	epatch ${FILESDIR}/${P}-gentoo.diff
-	epatch ${FILESDIR}/${P}-gcc32.diff
+	epatch "${FILESDIR}"/${P}-gentoo.diff
+	epatch "${FILESDIR}"/${P}-gcc32.diff
 
 }
 
@@ -35,12 +35,12 @@ src_compile() {
 
 src_install () {
 
-	make DESTDIR=${D}/usr/bin install || die
+	make DESTDIR="${D}"/usr/bin install || die
 
 	insinto /usr/share/${PN}
-	doins ${S}/*.lis
+	doins "${S}"/*.lis
 
-	doenvd ${FILESDIR}/10babel
+	doenvd "${FILESDIR}"/10babel
 
 	dodoc README.1ST
 

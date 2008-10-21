@@ -1,6 +1,22 @@
 # ChangeLog for media-video/vlc
 # Copyright 2002-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/vlc/ChangeLog,v 1.395 2008/10/15 16:41:16 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/vlc/ChangeLog,v 1.399 2008/10/19 14:14:38 aballier Exp $
+
+  19 Oct 2008; Alexis Ballier <aballier@gentoo.org> vlc-0.9.4-r1.ebuild:
+  Add a warning if no gui will be built. This will at least warn people not
+  following closely vlc when upgrading from 0.8.6 to 0.9 that they will not
+  have a GUI if they disabled the qt4 useflag.
+
+  19 Oct 2008; Alexis Ballier <aballier@gentoo.org> -vlc-0.9.0_beta3.ebuild,
+  -vlc-0.9.4.ebuild:
+  remove old
+
+  19 Oct 2008; Alexis Ballier <aballier@gentoo.org> metadata.xml:
+  Improve useflag descriptions, by Douglas Anderson
+  <douglasjanderson@gmail.com>, bug #242584
+
+  19 Oct 2008; Markus Rothe <corsair@gentoo.org> vlc-0.9.4-r1.ebuild:
+  Added ~ppc/~ppc64
 
 *vlc-0.9.4-r1 (15 Oct 2008)
 
