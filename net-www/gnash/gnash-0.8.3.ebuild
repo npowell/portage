@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-www/gnash/gnash-0.8.3.ebuild,v 1.6 2008/10/12 16:05:34 bluebird Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-www/gnash/gnash-0.8.3.ebuild,v 1.7 2008/10/19 11:49:10 loki_val Exp $
 
 EAPI=1
 
@@ -59,7 +59,7 @@ RDEPEND="
 	ffmpeg? (
 		!gstreamer? (
 			media-libs/libsdl
-			>=media-video/ffmpeg-0.4.9_p20080326
+			=media-video/ffmpeg-0.4.9_p20080326
 		)
 	)
 
@@ -183,7 +183,7 @@ src_compile() {
 		use ${gui/-*} && guis="${guis},${gui/*-}"
 	done
 	guis=${guis#,}
-	if [ -z ${gui} ]
+	if [ -z "${guis}" ]
 	then
 		guis="GTK2,KDE"
 	fi

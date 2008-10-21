@@ -1,6 +1,15 @@
 # ChangeLog for media-video/dirac
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/dirac/ChangeLog,v 1.18 2008/09/28 07:16:33 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/dirac/ChangeLog,v 1.21 2008/10/20 19:17:10 gmsoft Exp $
+
+  20 Oct 2008; Guy Martin <gmsoft@gentoo.org> dirac-1.0.0.ebuild:
+  hppa stable, #239130
+
+  19 Oct 2008; Markus Meier <maekke@gentoo.org> dirac-1.0.0.ebuild:
+  amd64/x86 stable, bug #239130
+
+  19 Oct 2008; Markus Rothe <corsair@gentoo.org> dirac-1.0.0.ebuild:
+  Added ~ppc
 
   28 Sep 2008; Alexis Ballier <aballier@gentoo.org> -dirac-0.10.0.ebuild:
   remove old

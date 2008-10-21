@@ -1,10 +1,37 @@
 # ChangeLog for profile directory
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.1972 2008/10/18 16:17:13 matsuu Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/ChangeLog,v 1.1980 2008/10/20 21:54:09 eva Exp $
 #
 # This ChangeLog should include records for all changes in profiles directory.
 # Only typo fixes which don't affect portage/repoman behaviour could be avoided
 # here. If in doubt put a record here!
+
+  20 Oct 2008; Gilles Dartiguelongue <eva@gentoo.org> package.mask:
+  update package.mask for GNOME 2.24. (include nautilus)
+
+  20 Oct 2008; Gilles Dartiguelongue <eva@gentoo.org> package.mask:
+  update GNOME 2.24 mask.
+
+  20 Oct 2008; Robin H. Johnson <robbat2@gentoo.org> package.mask:
+  genflags is going away.
+
+  20 Oct 2008; Gilles Dartiguelongue <eva@gentoo.org> package.mask:
+  adding gnome-desktop to gnome 2.24 mask until we move more gnome 2.24
+  packages in tree.
+
+  19 Oct 2008; Mart Raudsepp <leio@gentoo.org> package.mask:
+  Mask bug-buddy-2.24 for now, has some problems
+
+  19 Oct 2008; Rémi Cardona <remi@gentoo.org> package.mask:
+  add =x11-drivers/xf86-video-i810-2.4.98* to p.mask
+
+  19 Oct 2008; Rémi Cardona <remi@gentoo.org> package.mask:
+  add =x11-libs/libdrm-2.4.0* to p.mask
+
+  18 Oct 2008; Mart Raudsepp <leio@gentoo.org>
+  -arch/powerpc/ppc32/package.mask, -default-linux/ppc/ppc32/package.mask,
+  hardened/ppc/package.mask, -uclibc/ppc/package.mask:
+  Unmask GNOME-2.22 on ppc32, also closes bug 236312
 
   18 Oct 2008; MATSUU Takuto <matsuu@gentoo.org> package.mask:
   Package mask >=sys-devel/distcc-3 for testing.
