@@ -34,7 +34,7 @@ pkg_setup() {
 	einfo "See http://www.gentoo.org/doc/en/gentoo-kernel.xml"
 	einfo "for a list of supported kernels."
 	echo
-
+	
 	use usb && CONFIG_CHECK="${CONFIG_CHECK} USB"
 	linux-mod_pkg_setup
 }
@@ -42,6 +42,9 @@ pkg_setup() {
 src_unpack() {
 	unpack ${A}
 	convert_to_m "${S}/driver/Makefile"
+
+	# Fix bug 241688
+	kernel_is 2 6 27 && cd ${S} && epatch "${FILESDIR}/ndiswrapper-2.6.27-fix-build.patch"
 }
 
 src_compile() {
