@@ -1,6 +1,27 @@
 # ChangeLog for net-analyzer/wireshark
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/wireshark/ChangeLog,v 1.125 2008/10/17 10:15:20 pva Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/wireshark/ChangeLog,v 1.131 2008/10/22 18:36:49 gmsoft Exp $
+
+  22 Oct 2008; Guy Martin <gmsoft@gentoo.org> wireshark-1.0.4.ebuild:
+  hppa stable, #242996
+
+  22 Oct 2008; Raúl Porcel <armin76@gentoo.org> wireshark-1.0.4.ebuild:
+  alpha/ia64/x86 stable wrt #242996
+
+  21 Oct 2008; Markus Rothe <corsair@gentoo.org> wireshark-1.0.4.ebuild:
+  Stable on ppc64; bug #242996
+
+  21 Oct 2008; Ferris McCormick <fmccor@gentoo.org> wireshark-1.0.4.ebuild:
+  Sparc stable --- Security Bug #242996 --- appears to work fine.
+
+  21 Oct 2008; Jeremy Olexa <darkside@gentoo.org> wireshark-1.0.4.ebuild:
+  amd64 stable, accelerated due to security. bug #242996
+
+*wireshark-1.0.4 (21 Oct 2008)
+
+  21 Oct 2008; Peter Volkov <pva@gentoo.org> +wireshark-1.0.4.ebuild,
+  wireshark-1.1.1.ebuild:
+  Version bump.
 
   17 Oct 2008; Peter Volkov <pva@gentoo.org>
   +files/wireshark-1.1.1--as-needed.patch,
