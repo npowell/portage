@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-analyzer/wireshark/wireshark-1.1.1.ebuild,v 1.2 2008/10/17 10:15:20 pva Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-analyzer/wireshark/wireshark-1.1.1.ebuild,v 1.3 2008/10/21 05:51:38 pva Exp $
 
 EAPI=1
 inherit autotools libtool flag-o-matic eutils toolchain-funcs
@@ -41,8 +41,7 @@ DEPEND="${RDEPEND}
 	>=dev-util/pkgconfig-0.15.0
 	dev-lang/perl
 	sys-devel/bison
-	sys-devel/flex
-	sys-apps/sed"
+	sys-devel/flex"
 
 pkg_setup() {
 	if ! use gtk; then

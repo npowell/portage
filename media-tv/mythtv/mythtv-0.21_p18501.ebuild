@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-tv/mythtv/mythtv-0.21_p18501.ebuild,v 1.3 2008/10/03 14:46:01 cardoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-tv/mythtv/mythtv-0.21_p18501.ebuild,v 1.4 2008/10/21 17:43:01 cardoe Exp $
 
 EAPI=2
 inherit flag-o-matic multilib eutils qt3 mythtv toolchain-funcs python confutils
@@ -79,6 +79,10 @@ src_prepare() {
 	# Perl bits need to go into vender_perl and not site_perl
 	sed -e "s:pure_install:pure_install INSTALLDIRS=vendor:" \
 		-i "${S}"/bindings/perl/perl.pro
+
+	# fix issue with bttv support being over v4l1, which no longer works
+	# properly with kernel 2.6.25 and higher
+	epatch "${FILESDIR}"/${PN}-0.21-bttv.patch
 }
 
 src_configure() {
