@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation.
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/use.local.desc,v 1.3978 2008/10/23 04:07:46 robbat2 Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/use.local.desc,v 1.3983 2008/10/24 12:47:38 robbat2 Exp $
 # This file contains descriptions of local USE flags, and the ebuilds which
 # contain them.
 # Keep it sorted (use "LC_ALL=C sort -t: -k1,1 -k2 | LC_ALL=C sort -s -t/ -k1,1")
@@ -601,6 +601,7 @@ dev-lang/swig:clisp - Enable CLisp support
 dev-lang/swig:mzscheme - Enable PLT mzscheme support
 dev-lang/swig:octave - Enable Octave support
 dev-lang/swig:pike - Enable Pike scripting support
+dev-lang/vala:vapigen - Enable vala's library binding generator
 dev-libs/DirectFB:fusion - Add Multi Application support (fusion kernel device) 
 dev-libs/DirectFB:sysfs - Add support for the sysfs filesystem (requires Linux-2.6+) 
 dev-libs/DirectFB-extra:flash - Add support for creating SWF files using Ming (media-libs/libflash)
@@ -702,6 +703,7 @@ dev-python/PyQt4:qt3support - enable the Qt3Support libraries for Qt4
 dev-python/cgkit:3ds - Enable support for importing 3D Studio models
 dev-python/dap:server - Enable OpenDAP server support
 dev-python/docutils:glep - Install support for GLEPs
+dev-python/jinja2:i18n - Enables support for i18n with dev-python/Babel
 dev-python/kaa-base:tls - SSL/TLS support via dev-python/tlslite
 dev-python/ldaptor:web - enable the web front end for ldaptor (uses dev-python/nevow)
 dev-python/nose:twisted - install nose.twistedtools to integrate tests with twisted
@@ -1369,7 +1371,6 @@ media-sound/rosegarden:dssi - Enable support for DSSI Soft Synth Interface
 media-sound/rubyripper:cli - Build command line interface rubyripper
 media-sound/rubyripper:normalize - Add support for normalizing audio file volume levels
 media-sound/rubyripper:wav - Add support for wavegain
-media-sound/slimserver:alac - Enable support for alac
 media-sound/sonata:lyrics - Support for lyrics fetching
 media-sound/sonic-visualiser:id3tag - Enables ID3 tagging with id3tag library
 media-sound/sox:amrnb - Enables Adaptive Multi-Rate Audio support (Narrow Band)
