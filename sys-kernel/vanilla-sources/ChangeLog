@@ -1,6 +1,20 @@
 # ChangeLog for sys-kernel/vanilla-sources
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-kernel/vanilla-sources/ChangeLog,v 1.538 2008/10/24 08:40:46 armin76 Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-kernel/vanilla-sources/ChangeLog,v 1.541 2008/10/26 17:31:47 corsair Exp $
+
+  26 Oct 2008; Markus Rothe <corsair@gentoo.org>
+  vanilla-sources-2.6.28_rc1.ebuild:
+  Add ~ppc/~ppc64
+
+  26 Oct 2008; Markus Meier <maekke@gentoo.org>
+  vanilla-sources-2.6.28_rc1.ebuild:
+  add ~x86
+
+*vanilla-sources-2.6.27.4 (26 Oct 2008)
+
+  26 Oct 2008; Raúl Porcel <armin76@gentoo.org>
+  +vanilla-sources-2.6.27.4.ebuild:
+  Version bump
 
 *vanilla-sources-2.6.28_rc1 (24 Oct 2008)
 

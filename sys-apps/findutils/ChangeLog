@@ -1,6 +1,21 @@
 # ChangeLog for sys-apps/findutils
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/sys-apps/findutils/ChangeLog,v 1.165 2008/06/16 03:54:54 josejx Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-apps/findutils/ChangeLog,v 1.169 2008/10/26 14:58:19 fmccor Exp $
+
+  26 Oct 2008; Ferris McCormick <fmccor@gentoo.org> findutils-4.4.0.ebuild:
+  Sparc stable --- Bug #244415 --- everything checks out.
+
+  26 Oct 2008; nixnut <nixnut@gentoo.org> findutils-4.2.33.ebuild,
+  findutils-4.4.0.ebuild:
+  Stable on ppc wrt bug 244412
+
+  26 Oct 2008; Torsten Veller <tove@gentoo.org> findutils-4.4.0.ebuild:
+  Stable on x86 (#244415)
+
+*findutils-4.5.1 (26 Oct 2008)
+
+  26 Oct 2008; Mike Frysinger <vapier@gentoo.org> +findutils-4.5.1.ebuild:
+  Version bump #235928 by Raúl Porcel.
 
   16 Jun 2008; Joseph Jezak <josejx@gentoo.org> findutils-4.3.13.ebuild:
   Marked ppc/ppc64 stable.

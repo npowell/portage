@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.9107 2008/10/24 04:54:37 lavajoe Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.9111 2008/10/26 19:13:09 jmbsvicetto Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked
@@ -28,6 +28,28 @@
 ## app-misc/some-package
 
 #--- END OF EXAMPLES ---
+
+# Jorge Manuel B. S. Vicetto <jmbsvicetto@gentoo.org> (26 Oct 2008)
+# Masked while adding to the tree and pending a final review.
+~dev-python/compizconfig-python-0.7.8
+~x11-apps/ccsm-0.7.8
+~x11-apps/simple-ccsm-0.7.8
+~x11-libs/compiz-bcop-0.7.8
+~x11-libs/compizconfig-backend-gconf-0.7.8
+~x11-libs/compizconfig-backend-kconfig-0.7.8
+~x11-libs/libcompizconfig-0.7.8
+~x11-plugins/compiz-fusion-plugins-extra-0.7.8
+~x11-plugins/compiz-fusion-plugins-main-0.7.8
+~x11-plugins/compiz-fusion-plugins-unsupported-0.7.8
+~x11-wm/compiz-0.7.8
+~x11-wm/compiz-fusion-0.7.8
+~x11-wm/emerald-0.7.8
+
+# Jesus Rivero <neurogeek@gentoo.org> (26 Oct 2008)
+# Masked for removal in 30 days. This package is
+# unmaintained/deprecated.
+# See bug #239978 for reference.
+dev-python/pyframer
 
 # Rémi Cardona <remi@gentoo.org> (24 Oct 2008)
 # version with _massive_ EXA patches from git master
@@ -589,7 +611,7 @@ dev-python/twibber
 
 # Michael Sterrett <mr_bones_@gentoo.org> (04 Aug 2008)
 # Security masked: bug #233929
-games-simulation/openttd
+<games-simulation/openttd-0.6.3
 
 # Samuli Suominen <drac@gentoo.org> (3 Aug 2008)
 # Unmaintained. Masked for removal wrt #233394.
@@ -1224,10 +1246,6 @@ dev-lang/ghc-bin
 # the Asterisk is coming! the Asterisk is coming!
 >=net-misc/zaptel-1.4.0
 >=net-misc/asterisk-1.4.0
-
-# Peter Volkov <pva@gentoo.org> (28 Sep 2007)
-# masked for testing
->=app-text/kchmviewer-4.0_beta1
 
 # Paul Varner <fuzzyray@gentoo.org> (27 Sep 2007)
 # revdep-rebuild is broken in this release

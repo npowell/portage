@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation.
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/profiles/use.local.desc,v 1.3983 2008/10/24 12:47:38 robbat2 Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/use.local.desc,v 1.3990 2008/10/26 19:27:41 robbat2 Exp $
 # This file contains descriptions of local USE flags, and the ebuilds which
 # contain them.
 # Keep it sorted (use "LC_ALL=C sort -t: -k1,1 -k2 | LC_ALL=C sort -s -t/ -k1,1")
@@ -1288,6 +1288,7 @@ media-sound/aqualung:systray - Enable system tray support
 media-sound/ardour:freesound - Enables direct searching and download of samples from Freesound via the Import dialog
 media-sound/audacious:chardet - Try to handle non-UTF8 chinese/japanese/korean ID3 tags
 media-sound/audacity:id3tag - Enables ID3 tagging with id3tag library
+media-sound/audacity:midi - Enables MIDI support
 media-sound/audacity:soundtouch - Enables soundtouch library support
 media-sound/audacity:twolame - Enables twolame support (MPEG Audio Layer 2 encoder)
 media-sound/audacity:vamp - Enables vamp plugins support (Audio analysing plugins)
@@ -1384,7 +1385,10 @@ media-sound/vorbis-tools:ogg123 - Build ogg123 player, needs libao and curl
 media-sound/xwax:alsa - Enable ALSA support.
 media-tv/freevo:ivtv - Enables ivtv support
 media-tv/freevo:mixer - Enable support for adjusting volume via media-sound/aumix
+media-tv/freevo:snes - Enable Super Nintendo games support
 media-tv/freevo:tv - Enable support for the tv guide plugin
+media-tv/freevo:tvtime - Enables tvtime support, additional to tv use flag
+media-tv/freevo:xmame - Enables support for Xmame arcade games
 media-tv/gentoo-vdr-scripts:nvram - Add support for using nvram-wakeup to set wakeup time in bios
 media-tv/kdetv:zvbi - Enable VBI Decoding Library for Zapping
 media-tv/mythtv:alsa - Allows MythTV to directly output sound to ALSA devices, this is needed if you are using ALSA dmix or SPDIF. Note, you will have to physically type your device into the MythTV configuration since it will only give you /dev/dsp devices in the drop down.
@@ -1620,6 +1624,7 @@ media-video/vlc:id3tag - Enables id3tag metadata reader plugin.
 media-video/vlc:kate - Adds support for Ogg Kate subtitles via libkate.
 media-video/vlc:libass - Enables subtitles support using libass.
 media-video/vlc:libgcrypt - Enables cryptography support via libgcrypt.
+media-video/vlc:libv4l2 - Enables Libv4l2 Video4Linux2 support (for conversion from various video formats to standard ones, needed to use v4l2 devices with strange formats).
 media-video/vlc:live - Enables LIVE.com support.
 media-video/vlc:optimisememory - Enable optimisation for memory rather than performance.
 media-video/vlc:pvr - Enables PVR cards access module.
@@ -1877,9 +1882,7 @@ net-irc/ircd-hybrid:contrib - Build contrib modules (eg. cloaking)
 net-irc/kvirc:dcc_voice - Support voice over DCC chats
 net-irc/kvirc:gsm - enable support for media-sound/gsm
 net-irc/kvirc:ipc - add support for IPC between kvirc processes
-net-irc/kvirc:qt-dbus - enable use of Qt's DBUS interface for IPC
-net-irc/kvirc:qt-phonon - use phonon instead of command-based sound
-net-irc/kvirc:qt-webkit - enable use of Qt's WebKit
+net-irc/kvirc:phonon - use phonon instead of command-based sound
 net-irc/kvirc:transparency - compile in fake-transparency
 net-irc/ngircd:ident - Enables support for net-libs/libident
 net-irc/quassel:X -  Build the Qt 4 GUI client for quassel. If this USE flag is disabled, the GUI is not built, and cannot be used. You might want to disable this on the server, but you need it enabled on the client. 
@@ -2407,6 +2410,7 @@ sys-devel/binutils-hppa64:multitarget - Adds support to binutils for cross compi
 sys-devel/binutils-nios2:multislot - Allow for multiple versions of binutils to be emerged at once for same CTARGET
 sys-devel/binutils-nios2:multitarget - Adds support to binutils for cross compiling (does not work with gas)
 sys-devel/gcc:d - Enable support for the D programming language
+sys-devel/gcc:fixed-point - Enable fixed-point arithmetic support for MIPS targets in gcc (Warning: significantly increases compile time!)
 sys-devel/gcc:ip28 - Enable building a compiler capable of building a kernel for SGI Indigo2 Impact R10000 (IP28)
 sys-devel/gcc:ip32r10k - Enable building a compiler capable of building an experimental kernel for SGI O2 w/ R1x000 CPUs (IP32)
 sys-devel/gcc:libffi - Build the portable foreign function interface library

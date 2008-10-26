@@ -1,6 +1,16 @@
 # ChangeLog for media-gfx/tuxpaint
 # Copyright 2000-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/media-gfx/tuxpaint/ChangeLog,v 1.43 2008/10/21 20:25:04 gentoofan23 Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-gfx/tuxpaint/ChangeLog,v 1.46 2008/10/26 19:19:02 maekke Exp $
+
+  26 Oct 2008; Markus Meier <maekke@gentoo.org> tuxpaint-0.9.19.ebuild:
+  x86 stable, bug #242790
+
+  25 Oct 2008; nixnut <nixnut@gentoo.org> tuxpaint-0.9.19.ebuild:
+  Stable on ppc wrt bug 242790
+
+  25 Oct 2008; Markus Meier <maekke@gentoo.org>
+  +files/tuxpaint-0.9.19-strip.patch, tuxpaint-0.9.19.ebuild:
+  do not prestrip files, bug #243836; respect CC variable
 
   21 Oct 2008; Thomas Anderson <gentoofan23@gentoo.org>
   tuxpaint-0.9.19.ebuild:
