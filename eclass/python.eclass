@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/python.eclass,v 1.45 2008/09/01 14:11:54 hawking Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/python.eclass,v 1.49 2008/10/26 17:46:31 hawking Exp $
 
 # @ECLASS: python.eclass
 # @MAINTAINER:
@@ -36,28 +36,6 @@ __python_eclass_test() {
 	echo " PYVER_MINOR: $PYVER_MINOR PYVER_MICRO: $PYVER_MICRO"
 }
 
-# @FUNCTION: python_disable_pyc
-# @DESCRIPTION:
-# Tells python not to automatically recompile modules to .pyc/.pyo
-# even if the timestamps/version stamps don't match. This is done
-# to protect sandbox.
-#
-# note:   supported by >=dev-lang/python-2.2.3-r3 only.
-#
-python_disable_pyc() {
-	export PYTHON_DONTCOMPILE=1
-}
-
-# @FUNCTION: python_enable_pyc
-# @DESCRIPTION:
-# Tells python to automatically recompile modules to .pyc/.pyo if the
-# timestamps/version stamps change
-python_enable_pyc() {
-	unset PYTHON_DONTCOMPILE
-}
-
-python_disable_pyc
-
 # @FUNCTION: python_version
 # @DESCRIPTION:
 # Run without arguments and it will export the version of python
@@ -66,7 +44,7 @@ __python_version_extract() {
 	local verstr=$1
 	export PYVER_MAJOR=${verstr:0:1}
 	export PYVER_MINOR=${verstr:2:1}
-	if [ "${verstr:3}x" = ".x" ]; then
+	if [[ ${verstr:3:1} == . ]]; then
 		export PYVER_MICRO=${verstr:4}
 	fi
 	export PYVER="${PYVER_MAJOR}.${PYVER_MINOR}"
@@ -80,6 +58,38 @@ python_version() {
 	export PYVER_ALL="${tmpstr#Python }"
 	__python_version_extract $PYVER_ALL
 }
+
+# @FUNCTION: python_disable_pyc
+# @DESCRIPTION:
+# Tells python not to automatically recompile modules to .pyc/.pyo
+# even if the timestamps/version stamps don't match. This is done
+# to protect sandbox.
+#
+# note:   supported by >=dev-lang/python-2.2.3-r3 only.
+#
+python_disable_pyc() {
+	python_version
+	if [[ ${PYVER/./,} -ge 2,6 ]]; then
+		export PYTHONDONTWRITEBYTECODE=1
+	else
+		export PYTHON_DONTCOMPILE=1
+	fi
+}
+
+# @FUNCTION: python_enable_pyc
+# @DESCRIPTION:
+# Tells python to automatically recompile modules to .pyc/.pyo if the
+# timestamps/version stamps change
+python_enable_pyc() {
+	python_version
+	if [[ ${PYVER/./,} -ge 2,6 ]]; then
+		unset PYTHONDONTWRITEBYTECODE
+	else
+		unset PYTHON_DONTCOMPILE
+	fi
+}
+
+python_disable_pyc
 
 # @FUNCTION: python_get_libdir
 # @DESCRIPTION:
@@ -132,11 +142,8 @@ python_tkinter_exists() {
 #             echo "gtk support enabled"
 #         fi
 python_mod_exists() {
-	[ -z "$1" ] && die "${FUNCTION} requires an argument!"
-	if ! python -c "import $1" >/dev/null 2>&1; then
-		return 1
-	fi
-	return 0
+	[[ "$1" ]] && die "${FUNCNAME} requires an argument!"
+	python -c "import $1" >/dev/null 2>&1
 }
 
 # @FUNCTION: python_mod_compile
@@ -149,14 +156,14 @@ python_mod_exists() {
 #         python_mod_compile /usr/lib/python2.3/site-packages/pygoogle.py
 #
 python_mod_compile() {
-	local f myroot
+	local f myroot myfiles=()
 
 	# Check if phase is pkg_postinst()
 	[[ ${EBUILD_PHASE} != postinst ]] &&\
 		die "${FUNCNAME} should only be run in pkg_postinst()"
 
 	# allow compiling for older python versions
-	if [ -n "${PYTHON_OVERRIDE_PYVER}" ]; then
+	if [[ "${PYTHON_OVERRIDE_PYVER}" ]]; then
 		PYVER=${PYTHON_OVERRIDE_PYVER}
 	else
 		python_version
@@ -167,12 +174,12 @@ python_mod_compile() {
 
 	# respect ROOT
 	for f in $@; do
-		[ -f "${myroot}/${f}" ] && myfiles="${myfiles} ${myroot}/${f}"
+		[[ -f "${myroot}/${f}" ]] && myfiles+=("${myroot}/${f}")
 	done
 
-	if [ -n "${myfiles}" ]; then
-		python${PYVER} ${myroot}/usr/$(get_libdir)/python${PYVER}/py_compile.py ${myfiles}
-		python${PYVER} -O ${myroot}/usr/$(get_libdir)/python${PYVER}/py_compile.py ${myfiles}
+	if ((${#myfiles[@]})); then
+		python${PYVER} ${myroot}/usr/$(get_libdir)/python${PYVER}/py_compile.py "${myfiles[@]}"
+		python${PYVER} -O ${myroot}/usr/$(get_libdir)/python${PYVER}/py_compile.py "${myfiles[@]}"
 	else
 		ewarn "No files to compile!"
 	fi
@@ -194,7 +201,7 @@ python_mod_compile() {
 # Example:
 #         python_mod_optimize /usr/share/codegen
 python_mod_optimize() {
-	local mydirs myfiles myroot myopts
+	local myroot mydirs=() myfiles=() myopts=()
 
 	# Check if phase is pkg_postinst()
 	[[ ${EBUILD_PHASE} != postinst ]] &&\
@@ -204,23 +211,29 @@ python_mod_optimize() {
 	myroot="${ROOT%/}"
 
 	# respect ROOT and options passed to compileall.py
-	while [ $# -gt 0 ]; do
+	while (($#)); do
 		case $1 in
 			-l|-f|-q)
-				myopts="${myopts} $1"
+				myopts+=("$1")
 				;;
 			-d|-x)
-				myopts="${myopts} $1 $2"
+				myopts+=("$1" "$2")
 				shift
 				;;
 			-*)
 				ewarn "${FUNCNAME}: Ignoring compile option $1"
 				;;
 			*)
-				[ ! -e "${myroot}/${1}" ] && ewarn "${myroot}/${1} doesn't exist!"
-				[ -d "${myroot}/${1#/}" ] && mydirs="${mydirs} ${myroot}/${1#/}"
-				# Files are passed to python_mod_compile which is ROOT-aware
-				[ -f "${myroot}/${1}" ] && myfiles="${myfiles} ${1}"
+				if [[ -d "${myroot}"/$1 ]]; then
+					mydirs+=("${myroot}/$1")
+				elif [[ -f "${myroot}"/$1 ]]; then
+					# Files are passed to python_mod_compile which is ROOT-aware
+					myfiles+=("$1")
+				elif [[ -e "${myroot}/$1" ]]; then
+					ewarn "${myroot}/$1 is not a file or directory!"
+				else
+					ewarn "${myroot}/$1 doesn't exist!"
+				fi
 				;;
 		esac
 		shift
@@ -234,20 +247,20 @@ python_mod_optimize() {
 	fi
 
 	# set additional opts
-	myopts="${myopts} -q"
+	myopts+=(-q)
 
 	ebegin "Byte compiling python modules for python-${PYVER} .."
-	if [ -n "${mydirs}" ]; then
+	if ((${#mydirs[@]})); then
 		python${PYVER} \
-			${myroot}/usr/$(get_libdir)/python${PYVER}/compileall.py \
-			${myopts} ${mydirs}
+			"${myroot}"/usr/$(get_libdir)/python${PYVER}/compileall.py \
+			"${myopts[@]}" "${mydirs[@]}"
 		python${PYVER} -O \
-			${myroot}/usr/$(get_libdir)/python${PYVER}/compileall.py \
-			${myopts} ${mydirs}
+			"${myroot}"/usr/$(get_libdir)/python${PYVER}/compileall.py \
+			"${myopts[@]}" "${mydirs[@]}"
 	fi
 
-	if [ -n "${myfiles}" ]; then
-		python_mod_compile ${myfiles}
+	if ((${#myfiles[@]})); then
+		python_mod_compile "${myfiles[@]}"
 	fi
 
 	eend $?
