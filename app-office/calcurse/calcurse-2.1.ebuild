@@ -1,6 +1,8 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-office/calcurse/calcurse-2.1.ebuild,v 1.1 2008/05/17 15:45:31 cedk Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-office/calcurse/calcurse-2.1.ebuild,v 1.3 2008/10/25 12:58:41 cedk Exp $
+
+inherit eutils autotools
 
 DESCRIPTION="a text-based personal organizer"
 HOMEPAGE="http://culot.org/calcurse/index.html"
@@ -18,6 +20,9 @@ src_unpack() {
 	unpack ${A}
 	cd "${S}"
 	rm po/LINGUAS
+
+	epatch "${FILESDIR}"/${P}-cflags.patch
+	eautoreconf
 }
 
 src_compile() {
@@ -27,7 +32,7 @@ src_compile() {
 	use linguas_fr && ALL_LINGUAS="${ALL_LINGUAS} fr"
 	use linguas_de && ALL_LINGUAS="${ALL_LINGUAS} de"
 	use linguas_es && ALL_LINGUAS="${ALL_LINGUAS} es"
-	use linguas_it && ALL_LINGUAS="${ALL_LINGUAS} nl"
+	use linguas_nl && ALL_LINGUAS="${ALL_LINGUAS} nl"
 
 	ALL_LINGUAS="${ALL_LINGUAS}" econf || die "econf failed"
 

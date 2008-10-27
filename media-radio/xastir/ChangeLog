@@ -1,0 +1,10 @@
+# ChangeLog for media-radio/xastir
+
+  26 Oct 2008; Jeremy Utley <jeremy@jutley.org>:
+    This version will not properly build if xfontsel is not installed
+
+  26 Oct 2008; Jeremy Utley <jeremy@jutley.org>:
+    Added in the patch file required by ebuild
+    
+  26 Oct 2008; Jeremy Utley <jeremy@jutley.org>:
+    Initial import of ebuild from Sunrise overlay
