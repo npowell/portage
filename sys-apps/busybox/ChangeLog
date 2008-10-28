@@ -3,6 +3,11 @@
 # $Header: /var/cvsroot/gentoo-x86/sys-apps/busybox/ChangeLog,v 1.202 2008/10/26 07:48:43 vapier Exp $
 
   27 Oct 2008; Daniel Robbins <drobbins@funtoo.org> busybox-1.12.1.ebuild,
+  busybox-1.11.3.ebuild: putting into unstable again since the older 
+  busybox failed to build, and it looks like it's linux-headers-2.6.27
+  causing the problem.
+
+  27 Oct 2008; Daniel Robbins <drobbins@funtoo.org> busybox-1.12.1.ebuild,
   busybox-1.11.3.ebuild: masking these latest ebuilds as at least 1.12.1
   fails to build on ~amd64.
 

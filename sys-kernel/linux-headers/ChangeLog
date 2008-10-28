@@ -2,6 +2,10 @@
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/sys-kernel/linux-headers/ChangeLog,v 1.273 2008/10/26 10:49:02 vapier Exp $
 
+  27 Oct 2008; Daniel Robbins <drobbins@funtoo.org>
+  linux-headers-2.6.27.ebuild: breaks busybox-1.1[12]* from
+  building, so masking this.
+
 *linux-headers-2.6.27 (26 Oct 2008)
 
   26 Oct 2008; Mike Frysinger <vapier@gentoo.org>
