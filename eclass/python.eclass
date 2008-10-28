@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/eclass/python.eclass,v 1.49 2008/10/26 17:46:31 hawking Exp $
+# $Header: /var/cvsroot/gentoo-x86/eclass/python.eclass,v 1.53 2008/10/27 12:23:50 hawking Exp $
 
 # @ECLASS: python.eclass
 # @MAINTAINER:
@@ -68,12 +68,8 @@ python_version() {
 # note:   supported by >=dev-lang/python-2.2.3-r3 only.
 #
 python_disable_pyc() {
-	python_version
-	if [[ ${PYVER/./,} -ge 2,6 ]]; then
-		export PYTHONDONTWRITEBYTECODE=1
-	else
-		export PYTHON_DONTCOMPILE=1
-	fi
+	export PYTHONDONTWRITEBYTECODE=1 # For 2.6 and above
+	export PYTHON_DONTCOMPILE=1 # For 2.5 and below
 }
 
 # @FUNCTION: python_enable_pyc
@@ -81,15 +77,19 @@ python_disable_pyc() {
 # Tells python to automatically recompile modules to .pyc/.pyo if the
 # timestamps/version stamps change
 python_enable_pyc() {
-	python_version
-	if [[ ${PYVER/./,} -ge 2,6 ]]; then
-		unset PYTHONDONTWRITEBYTECODE
-	else
-		unset PYTHON_DONTCOMPILE
-	fi
+	unset PYTHONDONTWRITEBYTECODE
+	unset PYTHON_DONTCOMPILE
 }
 
 python_disable_pyc
+
+# @FUNCTION: python_need_rebuild
+# @DESCRIPTION: Run without arguments, specifies that the package should be
+# rebuilt after a python upgrade.
+python_need_rebuild() {
+	python_version
+	export PYTHON_NEED_REBUILD=${PYVER}
+}
 
 # @FUNCTION: python_get_libdir
 # @DESCRIPTION:
@@ -173,7 +173,7 @@ python_mod_compile() {
 	myroot="${ROOT%/}"
 
 	# respect ROOT
-	for f in $@; do
+	for f in "$@"; do
 		[[ -f "${myroot}/${f}" ]] && myfiles+=("${myroot}/${f}")
 	done
 
@@ -278,7 +278,7 @@ python_mod_optimize() {
 #
 # This function should only be run in pkg_postrm()
 python_mod_cleanup() {
-	local SEARCH_PATH myroot
+	local SEARCH_PATH=() myroot src_py
 
 	# Check if phase is pkg_postrm()
 	[[ ${EBUILD_PHASE} != postrm ]] &&\
@@ -287,28 +287,25 @@ python_mod_cleanup() {
 	# strip trailing slash
 	myroot="${ROOT%/}"
 
-	if [ $# -gt 0 ]; then
-		for path in $@; do
-			SEARCH_PATH="${SEARCH_PATH} ${myroot}/${path#/}"
-		done
+	if (($#)); then
+		SEARCH_PATH=("${@#/}")
+		SEARCH_PATH=("${SEARCH_PATH[@]/#/$myroot/}")
 	else
-		for path in ${myroot}/usr/lib*/python*/site-packages; do
-			SEARCH_PATH="${SEARCH_PATH} ${path}"
-		done
+		SEARCH_PATH=("${myroot}"/usr/lib*/python*/site-packages)
 	fi
 
-	for path in ${SEARCH_PATH}; do
+	for path in "${SEARCH_PATH[@]}"; do
 		einfo "Cleaning orphaned Python bytecode from ${path} .."
-		for obj in $(find ${path} -name '*.py[co]'); do
-			src_py="${obj%[co]}"
-			if [ ! -f "${src_py}" ]; then
-				einfo "Purging ${src_py}[co]"
-				rm -f ${src_py}[co]
-			fi
-		done
+		while read -rd ''; do
+			src_py="${REPLY%[co]}"
+			[[ -f "${src_py}" ]] && continue
+			einfo "Purging ${src_py}[co]"
+			rm -f "${src_py}"[co]
+		done < <(find "${path}" -name '*.py[co]' -print0)
+
 		# attempt to remove directories that maybe empty
-		for dir in $(find ${path} -type d | sort -r); do
-			rmdir ${dir} 2>/dev/null
-		done
+		while read -r dir; do
+			rmdir "${dir}" 2>/dev/null
+		done < <(find "${path}" -type d | sort -r)
 	done
 }
