@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-lang/tk/tk-8.4.19.ebuild,v 1.1 2008/10/26 11:21:33 mescalinum Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-lang/tk/tk-8.4.19.ebuild,v 1.2 2008/10/27 20:27:07 mescalinum Exp $
 
 WANT_AUTOCONF=latest
 WANT_AUTOMAKE=latest
@@ -20,7 +20,7 @@ RDEPEND="x11-libs/libX11
 	~dev-lang/tcl-${PV}"
 DEPEND="${RDEPEND}
 	x11-libs/libXt
-	x11-proto/xproto"
+	>=x11-proto/xproto-7.0.3"
 
 S=${WORKDIR}/${PN}${PV}
 
@@ -46,6 +46,9 @@ src_unpack() {
 
 	# Bug 125971
 	epatch "${FILESDIR}"/${PN}-8.4.15-tclm4-soname.patch
+
+	# Bug 225999
+	epatch "${FILESDIR}"/${PN}-8.4-lastevent.patch
 
 	local d
 	for d in */configure ; do

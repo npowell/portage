@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/ffmpeg/ffmpeg-0.4.9_p20081014.ebuild,v 1.6 2008/10/18 10:08:41 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/ffmpeg/ffmpeg-0.4.9_p20081014.ebuild,v 1.9 2008/10/28 02:08:33 mr_bones_ Exp $
 
 inherit eutils flag-o-matic multilib toolchain-funcs
 
@@ -16,7 +16,7 @@ S=${WORKDIR}/ffmpeg
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="~alpha ~amd64 ~hppa ~ppc64 ~sparc ~x86 ~x86-fbsd"
+KEYWORDS="~alpha ~amd64 ~arm ~hppa ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
 IUSE="aac altivec amr debug dirac doc ieee1394 encode gsm ipv6 mmx mmxext vorbis
 	  test theora threads x264 xvid network zlib sdl X mp3 schroedinger
 	  hardcoded-tables bindist v4l v4l2 ssse3 vhook"
@@ -141,7 +141,6 @@ src_compile() {
 		break
 	done
 
-
 	# video hooking support. replaced by libavfilter, probably needs to be
 	# dropped at some point.
 	use vhook || myconf="${myconf} --disable-vhook"
@@ -151,8 +150,8 @@ src_compile() {
 			--enable-avfilter --enable-avfilter-lavf \
 			--enable-swscale --disable-stripping"
 
-	# cross compile support (FIXME?)
-	tc-is-cross-compiler && myconf="${myconf} --cross-compile --arch=$(tc-arch-kernel)"
+	# cross compile support
+	tc-is-cross-compiler && myconf="${myconf} --enable-cross-compile --arch=$(tc-arch-kernel)"
 
 	# Misc stuff
 	use hardcoded-tables && myconf="${myconf} --enable-hardcoded-tables"

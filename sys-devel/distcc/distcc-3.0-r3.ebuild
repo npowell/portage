@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/sys-devel/distcc/distcc-3.0-r3.ebuild,v 1.1 2008/10/26 06:44:04 matsuu Exp $
+# $Header: /var/cvsroot/gentoo-x86/sys-devel/distcc/distcc-3.0-r3.ebuild,v 1.3 2008/10/27 21:37:06 matsuu Exp $
 
 inherit eutils fdo-mime flag-o-matic multilib toolchain-funcs
 
@@ -35,7 +35,10 @@ RDEPEND="${RDEPEND}
 	selinux? ( sec-policy/selinux-distcc )
 	xinetd? ( sys-apps/xinetd )"
 
+DISTCC_POTENTIAL_HOSTS=""
+DISTCC_LOG=""
 DCCC_PATH="/usr/$(get_libdir)/distcc/bin"
+DISTCC_VERBOSE="0"
 
 pkg_setup() {
 	enewuser distcc 240 -1 -1 daemon
@@ -46,6 +49,7 @@ src_unpack() {
 	cd "${S}"
 	epatch "${FILESDIR}/${P}-gentoo.patch"
 	epatch "${FILESDIR}/${P}-svn617.patch"
+	epatch "${FILESDIR}/${P}-xinetd.patch"
 	sed -i -e "/PATH/s:\$distcc_location:${DCCC_PATH}:" pump.in || die
 }
 
@@ -75,7 +79,7 @@ src_install() {
 	cp "${FILESDIR}/${PV}/conf" "${T}/distccd"
 	if use avahi; then
 		cat >> "${T}/distccd" <<-EOF
-	
+
 		# Enable zeroconf support in distccd
 		DISTCCD_OPTS="\${DISTCCD_OPTS} --zeroconf"
 		EOF
@@ -83,10 +87,10 @@ src_install() {
 	doconfd "${T}/distccd"
 
 	cat > "${T}/02distcc" <<-EOF
-	# This file is managed by distcc-config; use it to change these settings.'
-	DISTCC_LOG=""
+	# This file is managed by distcc-config; use it to change these settings.
+	DISTCC_LOG="${DISTCC_LOG}"
 	DCCC_PATH="${DCCC_PATH}"
-	DISTCC_VERBOSE="0"
+	DISTCC_VERBOSE="${DISTCC_VERBOSE}"
 	EOF
 	doenvd "${T}/02distcc"
 
@@ -104,15 +108,15 @@ src_install() {
 	fowners distcc:daemon /var/run/distccd
 
 	if use gnome || use gtk; then
-	  einfo "Renaming /usr/bin/distccmon-gnome to /usr/bin/distccmon-gui"
-	  einfo "This is to have a little sensability in naming schemes between distccmon programs"
-	  mv "${D}/usr/bin/distccmon-gnome" "${D}/usr/bin/distccmon-gui" || die
-	  dosym distccmon-gui /usr/bin/distccmon-gnome
+		einfo "Renaming /usr/bin/distccmon-gnome to /usr/bin/distccmon-gui"
+		einfo "This is to have a little sensability in naming schemes between distccmon programs"
+		mv "${D}/usr/bin/distccmon-gnome" "${D}/usr/bin/distccmon-gui" || die
+		dosym distccmon-gui /usr/bin/distccmon-gnome
 	fi
 
 	if use xinetd; then
 		insinto /etc/xinetd.d
-		newins "${FILEDIR}/${PV}/xinetd"
+		newins "doc/example/xinetd" distcc
 	fi
 
 	rm -rf "${D}/etc/default"
@@ -129,7 +133,7 @@ pkg_postinst() {
 	elog "http://www.gentoo.org/doc/en/distcc.xml"
 	elog
 	elog "How to use pump mode with Gentoo:"
-	elog "# distcc-config --set-host \"foo,cpp,lzo bar,cpp,lzo baz,cpp,lzo\""
+	elog "# distcc-config --set-hosts \"foo,cpp,lzo bar,cpp,lzo baz,cpp,lzo\""
 	elog "# pump emerge -u world"
 	elog
 	elog "To use the distccmon programs with Gentoo you should use this command:"
