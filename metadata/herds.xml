@@ -20,7 +20,7 @@
    always a description without a lang attribute. Also there are no overlapping
    descriptions allowed (multiple description tags with the same language)
 
-   $Header: /var/cvsroot/gentoo/xml/htdocs/proj/en/metastructure/herds/herds.xml,v 1.547 2008/10/27 17:12:22 hanno Exp $
+   $Header: /var/cvsroot/gentoo/xml/htdocs/proj/en/metastructure/herds/herds.xml,v 1.555 2008/10/30 16:02:29 rane Exp $
 
 -->
 <herds>
@@ -191,10 +191,6 @@
   <email>gnome@gentoo.org</email>
   <description>GNOME Desktop and related packages</description>
   <maintainer>
-    <email>leonardop@gentoo.org</email>
-    <name>Leonardo Boshell</name>
-  </maintainer>
-  <maintainer>
     <email>dang@gentoo.org</email>
     <name>Daniel Gryniewicz</name>
   </maintainer>
@@ -226,10 +222,6 @@
   <maintainer>
     <email>dang@gentoo.org</email>
     <name>Daniel Gryniewicz</name>
-  </maintainer>
-  <maintainer>
-    <email>leonardop@gentoo.org</email>
-    <name>Leonardo Boshell</name>
   </maintainer>
   <maintainer>
     <email>leio@gentoo.org</email>
@@ -264,10 +256,6 @@
   <maintainer>
     <email>compnerd@gentoo.org</email>
     <name>Saleem Abdulrasool</name>
-  </maintainer>
-  <maintainer>
-    <email>leonardop@gentoo.org</email>
-    <name>Leonardo Boshell</name>
   </maintainer>
   <maintainer>
     <email>dang@gentoo.org</email>
@@ -313,11 +301,6 @@
     <email>dmwaters@gentoo.org</email>
     <name>Deedra Waters</name>
     <role>testing/arch keywording</role>
-  </maintainer>
-  <maintainer>
-    <email>leonardop@gentoo.org</email>
-    <name>Leonardo Boshell</name>
-    <role>The Gnome dude</role>
   </maintainer>
 </herd>
 <herd>
@@ -445,10 +428,6 @@
     <name>Carsten Lohrke</name>
   </maintainer>
   <maintainer>
-    <email>lucass@gentoo.org</email>
-    <name>Lukasz Strzygowski</name>
-  </maintainer>
-  <maintainer>
     <email>dev-zero@gentoo.org</email>
     <name>Tiziano Müller</name>
   </maintainer>
@@ -509,11 +488,6 @@
   <name>base-system</name>
   <email>base-system@gentoo.org</email>
   <description>Core system utilities and libraries.</description>
-  <maintainer>
-    <email>azarah@gentoo.org</email>
-    <name>Martin Schlemmer</name>
-    <role>Top Level Project Lead</role>
-  </maintainer>
   <maintainer>
     <email>pebenito@gentoo.org</email>
     <name>Chris Pebenito</name>
@@ -665,11 +639,6 @@
     <email>chtekk@gentoo.org</email>
     <name>Luca Longinotti</name>
     <role>Core PHP (dev-lang/php, eclasses), PECL, PEAR, misc</role>
-  </maintainer>
-  <maintainer>
-    <email>jakub@gentoo.org</email>
-    <name>Jakub Moc</name>
-    <role>tester, bugwrangler</role>
   </maintainer>
   <maintainer>
     <email>tomk@gentoo.org</email>
@@ -859,6 +828,10 @@
   <email>je_fro@gentoo.org</email>
   <name>Jeff Gardner</name>
   </maintainer>
+  <maintainer>
+    <email>weaver@gentoo.org</email>
+    <name>Andrey Kislyuk</name>
+  </maintainer>
 </herd>
 <herd>
   <name>sci-chemistry</name>
@@ -1027,10 +1000,6 @@
   <name>mozilla</name>
   <email>mozilla@gentoo.org</email>
   <description>Mozilla and related applications</description>
-  <maintainer>
-    <email>azarah@gentoo.org</email>
-    <name>Martin Schlemmer</name>
-  </maintainer>
   <maintainer>
     <email>genstef@gentoo.org</email>
     <name>Stefan Schweizer</name>
@@ -1270,10 +1239,6 @@
   <email>sparc@gentoo.org</email>
   <description>Gentoo/Sparc Team</description>
   <maintainer>
-    <email>eradicator@gentoo.org</email>
-    <name>Jeremy Huddleston</name>
-  </maintainer>
-  <maintainer>
     <email>fmccor@gentoo.org</email>
     <name>Ferris McCormick</name>
   </maintainer>
@@ -1388,11 +1353,6 @@
     <email>peper@gentoo.org</email>
     <name>Piotr Jaroszyński</name>
   </maintainer>
-  <maintainer>
-    <email>jsin@gentoo.org</email>
-    <name>Jason Smathers</name>
-    <role>Blackberry apps</role>
-  </maintainer>
 </herd>
 <herd>
   <name>video</name>
@@ -1488,11 +1448,6 @@
   <email>text-markup@gentoo.org</email>
   <description>Docbook-xml, Docbook-sgml, TeX and text utilities</description>
   <maintainer>
-    <email>leonardop@gentoo.org</email>
-    <name>Leonardo Boshell</name>
-    <role>DocBook and related packages</role>
-  </maintainer>
-  <maintainer>
     <email>ehmsen@gentoo.org</email>
     <name>Martin Ehmsen</name>
   </maintainer>
@@ -1524,9 +1479,6 @@
   <email>pam-bugs@gentoo.org</email>
   <description>PAM related packages</description>
   <maintainer>
-    <email>azarah@gentoo.org</email>
-  </maintainer>
-  <maintainer>
   <email>flameeyes@gentoo.org</email>
   <name>Diego Pettenò</name>
   <role>Linux-PAM, OpenPAM, and generic scapegoat</role>
@@ -1548,10 +1500,6 @@
   <maintainer>
     <email>spock@gentoo.org</email>
     <name>Michal Januszewski</name>
-  </maintainer>
-  <maintainer>
-    <email>eradicator@gentoo.org</email>
-    <name>Jeremy Huddleston</name>
   </maintainer>
   <maintainer>
     <email>chainsaw@gentoo.org</email>
@@ -1618,10 +1566,6 @@
   <description>Kernel packages for Gentoo/SPARC</description>
   <maintainer>
     <email>joker@gentoo.org</email>
-  </maintainer>
-  <maintainer>
-    <email>eradicator@gentoo.org</email>
-    <name>Jeremy Huddleston</name>
   </maintainer>
 </herd>
 <herd>
@@ -2189,17 +2133,8 @@
   <email>toolchain@gentoo.org</email>
   <description>Manages gcc/binutils/glibc and other toolchain-related packages</description>
   <maintainer>
-    <email>azarah@gentoo.org</email>
-    <name>Martin Schlemmer</name>
-  </maintainer>
-  <maintainer>
     <email>dostrow@gentoo.org</email>
     <name>Daniel Ostrow</name>
-  </maintainer>
-  <maintainer>
-    <email>eradicator@gentoo.org</email>
-    <name>Jeremy Huddleston</name>
-    <role>multilib sparc64/amd64</role>
   </maintainer>
   <maintainer>
     <email>halcy0n@gentoo.org</email>
@@ -2234,10 +2169,6 @@
   <name>gcc-porting</name>
   <email>gcc-porting</email>
   <description>Handles porting of packages to newer toolchain versions</description>
-  <maintainer>
-    <email>azarah@gentoo.org</email>
-    <name>Martin Schlemmer</name>
-  </maintainer>
   <maintainer>
     <email>halcy0n@gentoo.org</email>
     <name>Mark Loeser</name>
@@ -2334,11 +2265,6 @@
   <name>gstreamer</name>
   <email>gstreamer@gentoo.org</email>
   <description>Handles all gstreamer related packages</description>
-  <maintainer>
-    <email>zaheerm@gentoo.org</email>
-    <name>Zaheer Merali</name>
-    <role>Slave to the wage</role>
-  </maintainer>
   <maintainer>
     <email>hanno@gentoo.org</email>
     <role>Apprentice</role>
@@ -2583,10 +2509,6 @@
     <email>tex@gentoo.org</email>
     <description>Tex, pdf and text utilities (split of text-markup)</description>
     <maintainer>
-        <email>leonardop@gentoo.org</email>
-        <name>Leonardo Boshell</name>
-    </maintainer>
-    <maintainer>
         <email>aballier@gentoo.org</email>
         <name>Alexis Ballier</name>
     </maintainer>
@@ -2595,10 +2517,6 @@
     <name>sgml</name>
     <email>sgml@gentoo.org</email>
     <description>SGML and docbook packages (split of text-markup)</description>
-    <maintainer>
-        <email>leonardop@gentoo.org</email>
-        <name>Leonardo Boshell</name>
-    </maintainer>
 </herd>
 <herd>
     <name>theology</name>
