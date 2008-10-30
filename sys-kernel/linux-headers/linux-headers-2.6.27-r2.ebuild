@@ -11,7 +11,7 @@ PATCH_VER="2"
 SRC_URI="mirror://gentoo/gentoo-headers-base-${PV}.tar.lzma"
 [[ -n ${PATCH_VER} ]] && SRC_URI="${SRC_URI} mirror://gentoo/gentoo-headers-${PV}-${PATCH_VER}.tar.lzma"
 
-KEYWORDS="-*" 
+KEYWORDS="-* ~alpha ~amd64 ~arm ~hppa ~ia64 ~m68k ~mips ~ppc ~ppc64 ~s390 ~sh ~sparc ~x86"
 
 DEPEND="app-arch/lzma-utils"
 RDEPEND=""
