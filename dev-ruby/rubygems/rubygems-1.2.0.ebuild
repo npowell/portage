@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rubygems/rubygems-1.2.0.ebuild,v 1.5 2008/09/10 05:43:16 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rubygems/rubygems-1.2.0.ebuild,v 1.8 2008/10/31 16:04:13 jer Exp $
 
 inherit ruby
 
@@ -15,7 +15,7 @@ RESTRICT="test"
 # change the filename on the end, it still downloads the same file.
 SRC_URI="mirror://rubyforge/${PN}/${P}.tgz"
 
-KEYWORDS="~alpha ~amd64 ~hppa ~ia64 ~mips ~ppc ~ppc64 ~sparc ~x86 ~x86-fbsd"
+KEYWORDS="~alpha ~amd64 hppa ~ia64 ~mips ~ppc ~ppc64 sparc ~x86 ~x86-fbsd"
 SLOT="0"
 IUSE="doc server"
 DEPEND=">=dev-lang/ruby-1.8"
@@ -59,7 +59,7 @@ src_install() {
 
 	dosym gem18 /usr/bin/gem || die "dosym gem failed"
 
-	dodoc README || die "dodoc README failed"
+	dodoc README ChangeLog TODO || die "dodoc README failed"
 
 	cp "${FILESDIR}/auto_gem.rb" "${D}"/$(${RUBY} -r rbconfig -e 'print Config::CONFIG["sitedir"]') || die "cp auto_gem.rb failed"
 	doenvd "${FILESDIR}/10rubygems" || die "doenvd 10rubygems failed"
