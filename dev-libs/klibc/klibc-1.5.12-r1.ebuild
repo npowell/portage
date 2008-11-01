@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-libs/klibc/klibc-1.5.12-r1.ebuild,v 1.1 2008/07/14 21:06:19 robbat2 Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-libs/klibc/klibc-1.5.12-r1.ebuild,v 1.5 2008/11/01 16:54:39 nixnut Exp $
 
 # Robin H. Johnson <robbat2@gentoo.org>, 12 Nov 2007:
 # This still needs major work.
@@ -27,7 +27,9 @@ if [ -n "${PKV_EXTRA}" ]; then
 	PATCH_URI="mirror://kernel/linux/kernel/v${KV_MAJOR}.${KV_MINOR}/patch-${PKV}.bz2"
 fi
 OKV="${KV_MAJOR}.${KV_MINOR}.${KV_SUB}"
-KERNEL_URI="mirror://kernel/linux/kernel/v${KV_MAJOR}.${KV_MINOR}/testing/linux-${OKV}.tar.bz2"
+KERNEL_URI="
+	mirror://kernel/linux/kernel/v${KV_MAJOR}.${KV_MINOR}/linux-${OKV}.tar.bz2
+	mirror://kernel/linux/kernel/v${KV_MAJOR}.${KV_MINOR}/testing/linux-${OKV}.tar.bz2"
 SRC_URI="
 	mirror://kernel/linux/libs/klibc/${P}.tar.bz2
 	mirror://kernel/linux/libs/klibc/Testing/${P}.tar.bz2
@@ -35,7 +37,7 @@ SRC_URI="
 	${KERNEL_URI}"
 
 LICENSE="|| ( GPL-2 LGPL-2 )"
-KEYWORDS="~amd64 -mips ~ppc ~sparc ~x86"
+KEYWORDS="amd64 -mips ppc ~sparc ~x86"
 SLOT="0"
 IUSE="debug n32"
 
@@ -117,7 +119,7 @@ kernel_asm_arch() {
 }
 
 src_compile() {
-	local myargs
+	local myargs="all"
 	local myARCH="${ARCH}" myABI="${ABI}"
 	# TODO: For cross-compiling
 	# You should set ARCH and ABI here
@@ -139,6 +141,7 @@ src_compile() {
 	cd "${S}"
 
 	use debug && myargs="${myargs} V=1"
+	has test $FEATURES && myargs="${myargs} test"
 
 	emake \
 		EXTRA_KLIBCAFLAGS="-Wa,--noexecstack" \
@@ -236,5 +239,30 @@ src_install() {
 	linkname="${D}/usr/${libdir}/klibc/include/asm"
 	if [ -L "${linkname}" ] && [ ! -e "${linkname}" ] ; then
 		ln -snf asm-${KLIBCASMARCH} "${linkname}"
+	fi
+}
+
+src_test() {
+	if ! tc-is-cross-compiler ; then
+		cd "${S}"/usr/klibc/tests
+		ALL_TESTS="$(ls *.c |sed 's,\.c$,,g')"
+		BROKEN_TESTS="idtest fcntl fnmatch testrand48"
+		failed=0
+		for t in $ALL_TESTS ; do
+			if has $t $BROKEN_TESTS ; then
+				echo "=== $t SKIP"
+			else
+				echo -n "=== $t "
+				./$t </dev/null >/dev/null 
+				rc=$? 
+				if [ $rc -eq 0 ]; then 
+					echo PASS 
+				else
+					echo FAIL
+					failed=1
+				fi
+			fi
+		done
+		[ $failed -ne 0 ] && die "Some tests failed."
 	fi
 }
