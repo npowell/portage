@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-python/omniorbpy/omniorbpy-3.0.ebuild,v 1.4 2008/10/27 10:04:39 hawking Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-python/omniorbpy/omniorbpy-3.0.ebuild,v 1.5 2008/11/01 22:45:29 caster Exp $
 
 inherit eutils python multilib
 
@@ -80,6 +80,7 @@ src_install() {
 	mv "${D}"/usr/$(get_libdir)/python${PYVER}/site-packages/CORBA.py \
 		"${D}"/usr/$(get_libdir)/python${PYVER}/site-packages/omniorbpy_CORBA.py
 
+	rm "${D}"/usr/$(get_libdir)/python${PYVER}/site-packages/omniidl_be/__init__.py*
 }
 
 pkg_postinst() {

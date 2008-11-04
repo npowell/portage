@@ -1,0 +1,16 @@
+# ChangeLog for dev-ruby/uuidtools
+# Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/uuidtools/ChangeLog,v 1.3 2008/11/03 06:17:31 graaff Exp $
+
+  03 Nov 2008; Hans de Graaff <graaff@gentoo.org> uuidtools-1.0.4.ebuild:
+  Keywording ~x86, works fine there
+
+  03 Nov 2008; Diego Pettenò <flameeyes@gentoo.org> uuidtools-1.0.4.ebuild:
+  Add missing rspec dependency.
+
+*uuidtools-1.0.4 (03 Nov 2008)
+
+  03 Nov 2008; Diego Pettenò <flameeyes@gentoo.org> +metadata.xml,
+  +uuidtools-1.0.4.ebuild:
+  Add uuidtools ebuild (if you want to know, my blog uses it.
+

@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/net-misc/curl/curl-7.18.2.ebuild,v 1.7 2008/08/25 20:22:46 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/net-misc/curl/curl-7.18.2.ebuild,v 1.8 2008/11/03 22:10:18 lack Exp $
 
 # NOTE: If you bump this ebuild, make sure you bump dev-python/pycurl!
 
@@ -45,6 +45,7 @@ src_unpack() {
 	unpack ${A}
 	cd "${S}"
 	epatch "${FILESDIR}"/curl-7.17.0-strip-ldflags.patch
+	epatch "${FILESDIR}"/curl-7.18.2-nss-threadsafe.patch
 }
 
 src_compile() {

@@ -1,6 +1,6 @@
-# Copyright 1999-2007 Gentoo Foundation
+# Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-fepg/vdr-fepg-0.2.1-r1.ebuild,v 1.3 2007/07/10 23:09:00 mr_bones_ Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-plugins/vdr-fepg/vdr-fepg-0.2.1-r1.ebuild,v 1.4 2008/11/03 07:58:04 zzam Exp $
 
 inherit vdr-plugin
 
@@ -15,4 +15,4 @@ IUSE=""
 
 DEPEND=">=media-video/vdr-1.3.36"
 
-PATCHES="${FILESDIR}/${P}-default-no-mute.patch"
+PATCHES=("${FILESDIR}/${P}-default-no-mute.patch")
