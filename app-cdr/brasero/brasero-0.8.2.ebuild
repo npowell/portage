@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/app-cdr/brasero/brasero-0.8.2.ebuild,v 1.2 2008/10/01 09:35:06 loki_val Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-cdr/brasero/brasero-0.8.2.ebuild,v 1.4 2008/11/01 22:25:50 loki_val Exp $
 
 EAPI=1
 
@@ -39,7 +39,8 @@ DEPEND="${RDEPEND}
 	app-text/gnome-doc-utils
 	dev-util/pkgconfig
 	sys-devel/gettext
-	dev-util/intltool"
+	dev-util/intltool
+	gnome-base/gconf"
 
 pkg_setup() {
 	G2CONF="${G2CONF} --disable-scrollkeeper
@@ -60,6 +61,11 @@ src_unpack() {
 		-e '/-DGTK_DISABLE_DEPRECATED/d' \
 		src/Makefile.am \
 		|| die "404"
+
+	echo "data/brasero-copy-medium.desktop.in" >> po/POTFILES.skip
+	echo "data/brasero-open-image.desktop.in" >> po/POTFILES.skip
+	echo "data/brasero-open-playlist.desktop.in" >> po/POTFILES.skip
+	echo "data/brasero-open-project.desktop.in" >> po/POTFILES.skip
 
 	eautoreconf
 

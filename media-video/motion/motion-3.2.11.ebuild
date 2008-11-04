@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/motion/motion-3.2.11.ebuild,v 1.1 2008/10/14 17:20:33 aballier Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/motion/motion-3.2.11.ebuild,v 1.3 2008/11/04 15:31:49 loki_val Exp $
 
 inherit eutils
 

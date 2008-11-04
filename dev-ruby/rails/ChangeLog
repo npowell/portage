@@ -1,6 +1,17 @@
 # ChangeLog for dev-ruby/rails
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rails/ChangeLog,v 1.114 2008/10/24 12:23:04 graaff Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-ruby/rails/ChangeLog,v 1.117 2008/11/04 17:50:22 ranger Exp $
+
+  04 Nov 2008; Brent Baude <ranger@gentoo.org> rails-2.0.5.ebuild,
+  rails-2.1.2.ebuild:
+  Marking rails-2.0.5|2.1.2 ppc64 for bug 237385
+
+  03 Nov 2008; Markus Meier <maekke@gentoo.org> rails-2.1.2.ebuild:
+  amd64/x86 stable, bug #237385
+
+  03 Nov 2008; Ferris McCormick <fmccor@gentoo.org> rails-2.0.5.ebuild,
+  rails-2.1.2.ebuild:
+  Sparc stable, Security Bug #237385.
 
 *rails-2.1.2 (24 Oct 2008)
 
