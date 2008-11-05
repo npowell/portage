@@ -1,8 +1,8 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/dev-scheme/drscheme/drscheme-372.ebuild,v 1.1 2008/03/03 09:29:23 hkbst Exp $
+# $Header: /var/cvsroot/gentoo-x86/dev-scheme/drscheme/drscheme-4.1.2.ebuild,v 1.1 2008/11/04 20:58:47 hkbst Exp $
 
-inherit eutils
+inherit eutils latex-package
 
 SRC_URI="http://download.plt-scheme.org/bundles/${PV}/plt/plt-${PV}-src-unix.tgz
 		 http://pre.plt-scheme.org/installers/plt-${PV}-src-unix.tgz"
@@ -27,13 +27,26 @@ RDEPEND="X? ( x11-libs/libICE
 			  opengl? ( virtual/opengl )
 			  media-libs/libpng )"
 
-DEPEND="${RDEPEND}"
+DEPEND="${RDEPEND} !dev-tex/slatex"
 
 S="${WORKDIR}/plt-${PV%%_p*}"
 
+pkg_setup() {
+	if use cairo && use X; then
+		if ! built_with_use x11-libs/cairo X; then
+			eerror "Cairo must be built with X use flag"
+			die "Cairo must be built with X use flag"
+		fi
+	fi
+}
+
 src_unpack() {
-	unpack ${A}; cd "${S}"
+	unpack ${A}
+	cd "${S}"
+
 	sed "s,docdir=\"\${datadir}/plt/doc,docdir=\"\${datadir}/doc/${PF}," -i src/configure
+
+	epatch "${FILESDIR}/${PN}-4.1.2-as_needed.patch"
 }
 
 src_compile() {
@@ -54,15 +67,19 @@ src_compile() {
 		--enable-xrender
 
 	if use cgc; then
-		emake -j1 both || die "emake both failed"
+		emake both || die "emake both failed"
 	else
-		emake -j1 || die "emake failed"
+		emake || die "emake failed"
 	fi
 }
 
 src_install() {
+	# deal with slatex
+	insinto /usr/share/texmf/tex/latex/slatex/
+	doins collects/slatex/slatex.sty
+
 	cd src
-	export MZSCHEME_DYNEXT_LINKER_FLAGS=$(raw-ldflags)
+#	export MZSCHEME_DYNEXT_LINKER_FLAGS=$(raw-ldflags)
 
 	if use cgc; then
 		emake DESTDIR="${D}" install-both || die "emake install-both failed"
