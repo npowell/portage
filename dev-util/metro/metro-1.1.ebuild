@@ -12,7 +12,7 @@ KEYWORDS="x86 amd64"
 IUSE=""
 
 DEPEND=""
-RDEPEND="dev-lang/python app-arch/pbzip2 dev-util/ccache"
+RDEPEND="dev-lang/python app-arch/pbzip2 dev-util/ccache dev-util/git"
 
 src_install() {
 	install -d "${D}/usr/lib" || die "/usr/lib fail"
