@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-libs/gtkhotkey/gtkhotkey-0.2.0.ebuild,v 1.1 2008/11/05 18:24:54 serkan Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-libs/gtkhotkey/gtkhotkey-0.2.0.ebuild,v 1.3 2008/11/09 15:28:09 maekke Exp $
 
 inherit versionator
 
@@ -12,7 +12,7 @@ SRC_URI="http://launchpad.net/${PN}/${MY_CRV}/${PV}/+download/${P}.tar.gz"
 
 LICENSE="LGPL-3"
 SLOT="0"
-KEYWORDS="~amd64"
+KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 COMMON_DEPEND=">=dev-libs/glib-2.16
@@ -30,4 +30,3 @@ src_install() {
 	emake DESTDIR="${D}" install || die "emake install failed"
 	dodoc AUTHORS ChangeLog NEWS README || die "dodoc failed"
 }
-

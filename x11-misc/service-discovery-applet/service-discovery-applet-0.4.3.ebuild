@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/x11-misc/service-discovery-applet/service-discovery-applet-0.4.3.ebuild,v 1.5 2008/04/11 19:12:28 swegener Exp $
+# $Header: /var/cvsroot/gentoo-x86/x11-misc/service-discovery-applet/service-discovery-applet-0.4.3.ebuild,v 1.6 2008/11/09 23:32:11 leio Exp $
 
 inherit eutils gnome2
 
@@ -14,7 +14,6 @@ KEYWORDS="~amd64 ~x86"
 IUSE=""
 
 RDEPEND=">=dev-lang/python-2.4
-	>=dev-python/gnome-python-extras-2
 	>=dev-python/gnome-python-desktop-2.14.0
 	>=dev-python/pygtk-2.0
 	gnome-base/gconf
