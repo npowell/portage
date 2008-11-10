@@ -1,6 +1,21 @@
 # ChangeLog for app-text/rarian
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-text/rarian/ChangeLog,v 1.30 2008/09/25 14:06:48 jer Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-text/rarian/ChangeLog,v 1.35 2008/11/09 18:57:35 armin76 Exp $
+
+  09 Nov 2008; Raúl Porcel <armin76@gentoo.org> rarian-0.8.1.ebuild:
+  alpha/ia64 stable wrt #246048
+
+  09 Nov 2008; nixnut <nixnut@gentoo.org> rarian-0.8.1.ebuild:
+  Stable on ppc wrt bug 246048
+
+  09 Nov 2008; Markus Meier <maekke@gentoo.org> rarian-0.8.1.ebuild:
+  amd64/x86 stable, bug #246048
+
+  08 Nov 2008; Ferris McCormick <fmccor@gentoo.org> rarian-0.8.1.ebuild:
+  Sparc stable, Bug #246048.
+
+  08 Nov 2008; Gilles Dartiguelongue <eva@gentoo.org> rarian-0.8.1.ebuild:
+  remove unneeded line from configure, bug #240564
 
   25 Sep 2008; Jeroen Roovers <jer@gentoo.org> rarian-0.8.0-r1.ebuild:
   Stable for HPPA (bug #236971).
