@@ -2,6 +2,9 @@
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
 # $Header: /var/cvsroot/gentoo-x86/sys-devel/bison/ChangeLog,v 1.73 2008/11/09 19:03:42 zmedico Exp $
 
+  10 Nov 2008; Daniel Robbins <drobbins@funtoo.org> bison-2.4.ebuild:
+  masking to fix ~amd64 and ~x86 build falures, see Bug #246266
+
   09 Nov 2008; Zac Medico <zmedico@gentoo.org> bison-2.4.ebuild:
   Bug #246184 - Rename the yacc.1 man page to avoid collision with
   dev-util/yacc.
