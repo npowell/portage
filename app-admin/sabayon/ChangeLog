@@ -1,6 +1,15 @@
 # ChangeLog for app-admin/sabayon
 # Copyright 1999-2008 Gentoo Foundation; Distributed under the GPL v2
-# $Header: /var/cvsroot/gentoo-x86/app-admin/sabayon/ChangeLog,v 1.52 2008/10/04 19:46:57 leio Exp $
+# $Header: /var/cvsroot/gentoo-x86/app-admin/sabayon/ChangeLog,v 1.55 2008/11/09 19:04:56 armin76 Exp $
+
+  09 Nov 2008; Raúl Porcel <armin76@gentoo.org> sabayon-2.22.1.ebuild:
+  alpha/ia64/sparc stable wrt #246051
+
+  09 Nov 2008; nixnut <nixnut@gentoo.org> sabayon-2.22.1.ebuild:
+  Stable on ppc wrt bug 246051
+
+  09 Nov 2008; Markus Meier <maekke@gentoo.org> sabayon-2.22.1.ebuild:
+  amd64/x86 stable, bug #246051
 
   04 Oct 2008; Mart Raudsepp <leio@gentoo.org> sabayon-2.22.1.ebuild:
   Add missing intltool build dependency, bug 239643
