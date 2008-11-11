@@ -1,5 +1,5 @@
 ####################################################################
-# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.9157 2008/11/10 15:06:32 darkside Exp $
+# $Header: /var/cvsroot/gentoo-x86/profiles/package.mask,v 1.9161 2008/11/11 14:28:15 loki_val Exp $
 #
 # When you add an entry to the top of this file, add your name, the date, and
 # an explanation of why something is getting masked
@@ -29,6 +29,19 @@
 
 #--- END OF EXAMPLES ---
 
+# Jeremy Olexa <darkside@gentoo.org> (11 Nov 2008)
+# Masked for removal in 30 days. Deprecated, use media-radio/tucnak2 (bug
+# #241284)
+media-radio/tucnak1
+media-radio/tucnak1-data
+media-radio/ssbd
+
+# Christoph Mende <angelos@gentoo.org> (10 Nov 2008)
+# Masked for removal in 30 days, it's more or less unmaintained,
+# depends on unmaintained pyxfce and doesn't support most current
+# features
+xfce-extra/pynetworkmanager
+
 # Mike Doty <kingtaco@gentoo.org> (9 Nov 2008)
 # Masked for testing
 =app-emulation/emul-linux-x86-baselibs-20081109
@@ -45,11 +58,6 @@
 media-video/realplayer
 media-libs/amd64codecs
 media-libs/realcodecs
-
-# Jeremy Olexa <darkside@gentoo.org> (4 Nov 2008)
-# Does not compile, no maintainer. Broken for over a year.
-# Removed by treecleaners in 60 days, bug #245479
-app-admin/osiris
 
 # Jeremy Olexa <darkside@gentoo.org> (4 Nov 2008)
 # Masked for removal in 60 days by treecleaners. No maintainer, broken package.
@@ -849,11 +857,6 @@ sys-fs/redirfs
 # Raúl Porcel <armin76@gentoo.org> (18 Feb 2008)
 # Probably breaks a lot of stuff, needs testing
 =net-wireless/wireless-tools-30_pre*
-
-# Samuli Suominen <drac@gentoo.org> (12 Feb 2008)
-# If 0.20 fails with hardmasked ffmpeg snapshot,
-# try this instead.
-~media-video/ffmpeg2theora-9999
 
 # Sebastien Fabbro <bicatali@gentoo.org> (05 Feb 2008)
 # sci-libs/metis-5.* still experimental

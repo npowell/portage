@@ -1,6 +1,6 @@
 # Copyright 1999-2008 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
-# $Header: /var/cvsroot/gentoo-x86/media-video/vdr/vdr-1.4.7-r12.ebuild,v 1.1 2008/06/29 13:32:41 zzam Exp $
+# $Header: /var/cvsroot/gentoo-x86/media-video/vdr/vdr-1.4.7-r12.ebuild,v 1.3 2008/11/11 12:25:46 zzam Exp $
 
 inherit eutils flag-o-matic multilib
 
@@ -27,7 +27,7 @@ SRC_URI="ftp://ftp.cadsoft.de/vdr/${P}.tar.bz2
 
 #http://dev.gentoo.org/~zzam/extensions-patch/${EXT_P}.tar.bz2"
 
-KEYWORDS="~amd64 ~ppc ~x86"
+KEYWORDS="~amd64 ~ppc x86"
 SLOT="0"
 LICENSE="GPL-2"
 
@@ -191,6 +191,7 @@ src_unpack() {
 
 	epatch "${FILESDIR}"/vdr-1.4.7-makefile-destdir.diff
 	epatch "${FILESDIR}"/vdr-1.4.7-makefile-install-header.diff
+	epatch "${FILESDIR}"/vdr-1.4.7-gcc-4.3.diff
 
 	sed -i Makefile \
 		-e 's/runvdr//' \
