@@ -10,7 +10,7 @@ SRC_URI="mirror://gnu/bison/${P}.tar.bz2"
 
 LICENSE="GPL-2"
 SLOT="0"
-KEYWORDS="-*"
+KEYWORDS=""
 IUSE="nls static"
 
 DEPEND="nls? ( sys-devel/gettext )"
